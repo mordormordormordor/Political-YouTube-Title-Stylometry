@@ -2,7 +2,8 @@
   "n_labelled_by_all": 4317,
   "models": [
     "label_qwen3_14b",
-    "label_gemma3_12b"
+    "label_gemma3_12b",
+    "label_claude_code_opus"
   ],
   "label_shares": {
     "label_qwen3_14b": {
@@ -14,8 +15,87 @@
       "neither": 0.479,
       "right": 0.281,
       "left": 0.24
+    },
+    "label_claude_code_opus": {
+      "neither": 0.5884,
+      "left": 0.2326,
+      "right": 0.1791
     }
   },
+  "pairs": [
+    {
+      "a": "label_qwen3_14b",
+      "b": "label_gemma3_12b",
+      "kappa": 0.3756,
+      "exact_agreement": 0.6389,
+      "kappa_political_only": 0.3161,
+      "confusion": {
+        "left": {
+          "left": 237,
+          "neither": 499,
+          "right": 300
+        },
+        "neither": {
+          "left": 17,
+          "neither": 2010,
+          "right": 41
+        },
+        "right": {
+          "left": 77,
+          "neither": 625,
+          "right": 511
+        }
+      }
+    },
+    {
+      "a": "label_qwen3_14b",
+      "b": "label_claude_code_opus",
+      "kappa": 0.3283,
+      "exact_agreement": 0.6509,
+      "kappa_political_only": 0.1251,
+      "confusion": {
+        "left": {
+          "left": 184,
+          "neither": 457,
+          "right": 363
+        },
+        "neither": {
+          "left": 67,
+          "neither": 2305,
+          "right": 168
+        },
+        "right": {
+          "left": 80,
+          "neither": 372,
+          "right": 321
+        }
+      }
+    },
+    {
+      "a": "label_gemma3_12b",
+      "b": "label_claude_code_opus",
+      "kappa": 0.5144,
+      "exact_agreement": 0.7028,
+      "kappa_political_only": 0.5873,
+      "confusion": {
+        "left": {
+          "left": 664,
+          "neither": 135,
+          "right": 205
+        },
+        "neither": {
+          "left": 262,
+          "neither": 1820,
+          "right": 458
+        },
+        "right": {
+          "left": 110,
+          "neither": 113,
+          "right": 550
+        }
+      }
+    }
+  ],
   "kappa": 0.3756,
   "exact_agreement": 0.6389,
   "confusion": {
@@ -35,5 +115,11 @@
       "right": 511
     }
   },
-  "kappa_political_only": 0.3161
+  "kappa_political_only": 0.3161,
+  "all_models_agree_share": 0.5182,
+  "consensus_label_shares": {
+    "neither": 0.8002,
+    "right": 0.1274,
+    "left": 0.0724
+  }
 }

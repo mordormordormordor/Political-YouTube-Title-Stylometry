@@ -454,8 +454,14 @@ def fig_leaning():
     if not (A / "leaning_by_creator.csv").exists():
         return
     bc = rd("leaning_by_creator.csv"); words = rd("leaning_words.csv"); bl = rd("leaning_by_lane.csv")
-    cols = [c for c in bc.columns if c.startswith("label_") and c.endswith("_score")]
-    names = {c: c.replace("label_", "").replace("_score", "").replace("_", ":", 1).replace("_", ".") for c in cols}
+    summ = json.loads((A / "leaning_summary.json").read_text()); val = pd.DataFrame(summ["per_model"])
+    judge = summ["judge_of_record"] + "_score"
+    others = val[val.score.str.startswith("label_") & (val.score != judge)].sort_values("auc_right_vs_left_lane", ascending=False).score.tolist()
+    cols = [others[0], judge] if others else [judge]
+    def _nm(c):
+        c = c.replace("label_", "").replace("_score", "")
+        return ("Claude " + c.replace("claude_code_", "").replace("_", " ").title()) if c.startswith("claude_code_") else c.replace("_", ":", 1).replace("_", ".")
+    names = {c: _nm(c) for c in cols}
     fig, axes = plt.subplots(1, 2, figsize=(12, 5.4), gridspec_kw={"width_ratios": [1.15, 1]})
     ax = axes[0]
     if len(cols) >= 2:
@@ -472,7 +478,7 @@ def fig_leaning():
         ax.set_title(f"Channel scores from the two models (Spearman {r_:.2f})")
     ax = axes[1]
     sc = "judge_score" if "judge_score" in bc.columns else "mean_score"
-    jname = bc["judge_of_record"].iloc[0].replace("label_", "").replace("_", ":", 1).replace("_", ".") if "judge_of_record" in bc.columns else "mean of models"
+    jname = names.get(judge, judge)
     lm = bc.groupby("lane").agg(v=(sc, "mean"), n=("creator", "size")).reset_index().sort_values("v"); y = np.arange(len(lm)); rng = np.random.RandomState(5)
     for i, r in enumerate(lm.itertuples()):
         sub = bc[bc.lane == r.lane]
@@ -482,7 +488,8 @@ def fig_leaning():
     ax.set_xlabel(f"title-leaning score, judge of record {jname} (−1 left … +1 right); dots = channels, bar = lane mean"); ax.set_title("Title leaning by lane")
     fig.tight_layout(); save(fig, "14_leaning_scores.png")
 
-    w = words[words.model == "consensus"] if (words.model == "consensus").any() else words[words.model == words.model.iloc[0]]
+    jm = summ["judge_of_record"]
+    w = words[words.model == jm] if (words.model == jm).any() else words[words.model == "consensus"]
     w = w[(w.count_right + w.count_left) >= 5].copy()
     fig, axes = plt.subplots(1, 2, figsize=(12, 5.6), gridspec_kw={"width_ratios": [1.2, 1]})
     ax = axes[0]
@@ -505,7 +512,7 @@ def fig_leaning():
     ax.text(0.02, 0.90, "right-only words (top row): " + ", ".join(only_r), transform=ax.transAxes, fontsize=7, color=CAT[1], va="top", wrap=True)
     ax.text(0.98, 0.10, "left-only words (right column): " + ", ".join(only_l), transform=ax.transAxes, fontsize=7, color=CAT[0], ha="right", va="bottom", wrap=True)
     ax.set_xlabel("rank among right-labelled titles (1 = most frequent)"); ax.set_ylabel("rank among left-labelled titles")
-    ax.set_title("Where each word ranks on the two sides (titles both models agree on)")
+    ax.set_title(f"Where each word ranks on the two sides (titles labelled by {names.get(judge, _nm(jm))})")
     ax.text(0.02, 0.97, "above the line: more prominent on the right", transform=ax.transAxes, fontsize=7.5, color=CAT[1], va="top")
     ax.text(0.98, 0.03, "below the line: more prominent on the left", transform=ax.transAxes, fontsize=7.5, color=CAT[0], ha="right")
     ax = axes[1]

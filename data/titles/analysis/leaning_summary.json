@@ -1,7 +1,7 @@
 {
-  "judge_of_record": "label_gemma3_12b",
-  "judge_auc": 0.9268,
-  "judge_accuracy": 0.8824,
+  "judge_of_record": "label_claude_code_opus",
+  "judge_auc": 0.9906,
+  "judge_accuracy": 0.9672,
   "per_model": [
     {
       "score": "label_qwen3_14b_score",
@@ -22,22 +22,31 @@
       "mean_score_right_lane": 0.3734
     },
     {
+      "score": "label_claude_code_opus_score",
+      "n_creators": 123,
+      "auc_right_vs_left_lane": 0.9906,
+      "accuracy_sign_vs_lane": 0.9672,
+      "n_nonzero": 122,
+      "mean_score_left_lane": -0.5563,
+      "mean_score_right_lane": 0.4343
+    },
+    {
       "score": "consensus_score",
       "n_creators": 122,
-      "auc_right_vs_left_lane": 0.8123,
-      "accuracy_sign_vs_lane": 0.8317,
-      "n_nonzero": 101,
-      "mean_score_left_lane": -0.03,
-      "mean_score_right_lane": 0.3043
+      "auc_right_vs_left_lane": 0.9567,
+      "accuracy_sign_vs_lane": 0.9691,
+      "n_nonzero": 97,
+      "mean_score_left_lane": -0.2958,
+      "mean_score_right_lane": 0.3307
     },
     {
       "score": "mean_score",
       "n_creators": 123,
-      "auc_right_vs_left_lane": 0.8975,
-      "accuracy_sign_vs_lane": 0.8167,
-      "n_nonzero": 120,
-      "mean_score_left_lane": -0.0575,
-      "mean_score_right_lane": 0.2802
+      "auc_right_vs_left_lane": 0.9881,
+      "accuracy_sign_vs_lane": 0.9421,
+      "n_nonzero": 121,
+      "mean_score_left_lane": -0.2238,
+      "mean_score_right_lane": 0.3316
     }
   ]
 }

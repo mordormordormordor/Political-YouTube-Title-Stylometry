@@ -22,7 +22,7 @@ Question documents, each with its method and limitations:
 | [11. Capitalisation and vocabulary](11_capitalisation_and_vocabulary.md) | each channel's capitalisation profile; the twenty most frequent words |
 | [12. Arousal index](12_arousal_index.md) | a 0-1 emotional-charge index for every channel, with its components |
 | [13. Signature keywords](13_signature_keywords.md) | the words each channel over-uses relative to all others |
-| [14. Political leaning from titles](14_political_leaning.md) | two models label titles left / right / neither: agreement, channel scores vs lanes, and the words each side owns |
+| [14. Political leaning from titles](14_political_leaning.md) | three models (two local, one frontier) label titles left / right / neither: what each sees, channel scores against the channels' own descriptions and the lanes, and the words behind each label |
 
 Alongside: [`title_stylometry.html`](title_stylometry.html) (the interactive page: creator selector, profile cards, and the two landscape maps with names on hover and each creator's neighbours drawn in; open it directly in a browser), [`figures/`](figures/) (the static figures used in the documents), [`cards/`](cards/) (one Markdown card per creator), [`methods_appendix.md`](methods_appendix.md) (every preprocessing step, lexicon, loading, validation number, prompt and runtime), and [`all_tables.md`](all_tables.md) (the reference dump of every table in one file).
 

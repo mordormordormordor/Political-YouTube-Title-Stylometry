@@ -1,239 +1,257 @@
 # 14. Political leaning from titles alone
 
-**The question.** Can a channel's political leaning be read off its titles? Two local models of different families label each sampled title as left, right or neither; a channel's score is the balance of right over left labels; the lane proposal is the yardstick; and the vocabulary behind each side's labels shows what the models are actually reacting to.
+**The question.** Can a channel's political leaning be read off its titles, and what does a model actually react to when it reads one? Three models of different families label each sampled title as left, right or neither; a channel's score is the balance of right over left labels. Everything here is *model-perceived* leaning: how a careful, reader-like model reads the wording of a title, with the disagreement between models as the uncertainty.
 
 ## The finding in one paragraph
 
-One model can, the other largely cannot, and both read the subject rather than the stance. gemma3:12b calls 48 % of titles neither and its channel score separates the left-commentary and right-commentary lanes with an AUC of 0.93, putting 88 % of the 123 commentary channels on their lane's side; it is the judge of record below. qwen3:14b calls 73 % of titles neither, leans right on the rest (it scores the *left*-commentary lane at +0.14 on average) and reaches an AUC of only 0.57. Per title the two agree only moderately (kappa 0.38; their channel scores correlate at Spearman 0.28). The instructive part is where the good judge fails: the channels it gets wrong are the ones whose every title attacks the other side in that side's own vocabulary. MeidasTouch ("Trump PANICS...", "MAGA Mike THROWN UNDER THE BUS") and Brian Shapiro's PTL Radio ("MAGA Caller CAN'T DEFEND...") read as *right* because MAGA, GOP and Trump-panic words are right-coded; Dave Smith's libertarian attacks on Bongino, Patel and Fauci read as *left*. The word lists confirm it: the models' "right" vocabulary is democrat, fraud, gop, maga, islam, liberal; their "left" vocabulary is black, racist, gaza, nazi, fascism, progressive. That is a map of who is being talked about, which tracks who is talking often enough to sort most channels, and fails exactly when it doesn't.
+A frontier model reads stance; the small local models mostly read subject. Claude Opus labels 59 % of titles neither, 23 % left and 18 % right, and its channel score matches the channels' own words: of the 36 channels whose YouTube description declares a leaning ("conservative political commentator", "populist left perspective"), it puts 97 % on the declared side (the one miss is a tie). Against the lane proposal, a weaker yardstick because the lanes are themselves a model's assignment, it reaches an AUC of 0.99 and 97 % of the 123 commentary channels. Gemma-3-12B gets most channels right but misreads hostile coverage as the target's side; Qwen3-14B calls three quarters of titles neither and leans right on the rest. The three agree on 52 % of titles, almost all of them "neither". The words behind the frontier model's labels are stance words: its *right* vocabulary is women, woke, fraud, california, left, democrat, kirk, trans; its *left* vocabulary is trump, maga, iran, israel, war, epstein, breaking, donald, and "Trump PANICS" is left, as it should be, where the small models had it right.
 
 ![Scores by model and by lane.](figures/14_leaning_scores.png)
-*Left: each channel's score from the two models (−1 = every title read as left, +1 = every title read as right). Right: the judge-of-record score by lane, dots = channels.*
+*Left: each channel's score from the two best models (−1 = every title read as left, +1 = every title read as right). Right: the judge-of-record score by lane, dots = channels.*
 
-## How the two models label, and how much they agree
+## What each model sees
 
-| model | neither | right | left |
+Label shares over the 4,317 titles all three labelled:
+
+| model | left | neither | right |
 |---|---|---|---|
-| qwen3:14b | 0.726 | 0.197 | 0.077 |
-| gemma3:12b | 0.479 | 0.281 | 0.240 |
+| qwen3:14b | 0.077 | 0.726 | 0.197 |
+| gemma3:12b | 0.240 | 0.479 | 0.281 |
+| Claude Opus | 0.233 | 0.588 | 0.179 |
 
 
-Per-title confusion (rows qwen3:14b, columns gemma3:12b):
+Agreement between models (Cohen's kappa; the last column restricts to titles both called partisan):
 
-| qwen3:14b \\ gemma3:12b | left | neither | right |
+| models | kappa (3 labels) | exact agreement | kappa (partisan titles only) |
 |---|---|---|---|
-| left | 237 | 17 | 77 |
-| neither | 499 | 2010 | 625 |
-| right | 300 | 41 | 511 |
+| qwen3:14b vs gemma3:12b | 0.38 | 0.64 | 0.32 |
+| qwen3:14b vs Claude Opus | 0.33 | 0.65 | 0.13 |
+| gemma3:12b vs Claude Opus | 0.51 | 0.70 | 0.59 |
 
 
-Exact agreement 64 %; kappa 0.38 over the three labels, 0.32 on the titles both call partisan. Of the titles qwen3:14b calls right, gemma3:12b calls 35 % left: the smaller model treats a title *about* Trump as a right-leaning title.
+All three agree on 52 % of titles; of those, 80 % are neither. Channel scores: Spearman 0.13 with qwen3:14b, 0.78 with gemma3:12b against Claude Opus.
 
-Eight MeidasTouch titles with both labels, as an illustration of the target-versus-stance problem:
+Ten MeidasTouch and PTL Radio titles with all three labels, the case that separated the judges:
 
-| title_raw | qwen3:14b | gemma3:12b |
+| creator | title_raw | qwen3:14b | gemma3:12b | Claude Opus |
+|---|---|---|---|---|
+| @MeidasTouch | Trump & Blanche INSTANTLY COUNTERED as Blanche Takes Over DOJ!!! | right | right | left |
+| @MeidasTouch | Trump WANTS Fox OFF THE AIR after REPORT HE FEARED!! | right | right | left |
+| @MeidasTouch | Obama BREAKS HIS SILENCE and RIPS Trump’s AWFUL DEAL!!! | left | left | left |
+| @MeidasTouch | Fox News FINALLY TURNS AGAINST Trump OVER WAR DISASTER!! | right | left | left |
+| @MeidasTouch | MTG Gets REVENGE on Trump and LEADS BOYCOTT!!! | neither | right | left |
+| @MeidasTouch | Iran GIVES FINAL WARNING to Trump on CEASEFIRE VIOLATIONS!!! | neither | neither | left |
+| @MeidasTouch | THIS Trump Move SHOWS US His PLAN… | neither | right | neither |
+| @MeidasTouch | Trump gives CATASTROPHIC SPEECH on IRAN WAR…in KENTUCKY?!!! | right | right | left |
+| @MeidasTouch | 🚨SECRET Epstein INTERVIEWS SURFACE on Trump…IT’S BAD!! | neither | right | left |
+| @MeidasTouch | 🚨Ivana HAUNTS Trump FROM GRAVE with EPSTEIN FILES!!! | neither | right | left |
+
+
+## Channel scores against two yardsticks
+
+**The channels' own descriptions** (lane-independent: 36 channels with a leaning word in their YouTube description, 19 right, 17 left; rule and hand corrections in `leaning.py`):
+
+| score | n_self_declared | agreement_with_self_description |
 |---|---|---|
-| Trump & Blanche INSTANTLY COUNTERED as Blanche Takes Over DOJ!!! | right | right |
-| Trump WANTS Fox OFF THE AIR after REPORT HE FEARED!! | right | right |
-| Obama BREAKS HIS SILENCE and RIPS Trump’s AWFUL DEAL!!! | left | left |
-| Fox News FINALLY TURNS AGAINST Trump OVER WAR DISASTER!! | right | left |
-| MTG Gets REVENGE on Trump and LEADS BOYCOTT!!! | neither | right |
-| Iran GIVES FINAL WARNING to Trump on CEASEFIRE VIOLATIONS!!! | neither | neither |
-| THIS Trump Move SHOWS US His PLAN… | neither | right |
-| Trump gives CATASTROPHIC SPEECH on IRAN WAR…in KENTUCKY?!!! | right | right |
+| qwen3:14b | 36 | 0.500 |
+| gemma3:12b | 36 | 0.861 |
+| Claude Opus | 36 | 0.972 |
+| mean_score | 36 | 0.917 |
+| judge_score | 36 | 0.972 |
 
 
-## Channel scores against the lanes
+Channels where the judge's sign differs from their self-description (1):
+
+| creator | lane | self_declared | judge_side_sign | judge_score |
+|---|---|---|---|---|
+| @thejimmydoreshow | left commentary | left | tie | 0.00 |
+
+
+**The lane proposal** (consistency check only: `left_commentary` vs `right_commentary`):
 
 | score | n_creators | auc_right_vs_left_lane | accuracy_sign_vs_lane | n_nonzero | mean_score_left_lane | mean_score_right_lane |
 |---|---|---|---|---|---|---|
 | qwen3:14b | 123 | 0.572 | 0.661 | 109 | 0.139 | 0.187 |
 | gemma3:12b | 123 | 0.927 | 0.882 | 119 | -0.254 | 0.373 |
-| consensus_score | 122 | 0.812 | 0.832 | 101 | -0.030 | 0.304 |
-| mean_score | 123 | 0.897 | 0.817 | 120 | -0.058 | 0.280 |
+| Claude Opus | 123 | 0.991 | 0.967 | 122 | -0.556 | 0.434 |
+| consensus_score | 122 | 0.957 | 0.969 | 97 | -0.296 | 0.331 |
+| mean_score | 123 | 0.988 | 0.942 | 121 | -0.224 | 0.332 |
 
 
-The judge of record is the single model with the highest AUC (gemma3:12b); the mean and consensus scores are shown for transparency but are pulled down by the weaker model.
+The judge of record is the model with the highest lane AUC (Claude Opus); the mean and consensus scores are shown for transparency.
 
 Where every channel lands under the judge of record (score above +0.05 = right, below −0.05 = left):
 
 | lane | left | neither / unclear | right |
 |---|---|---|---|
-| centrist / heterodox | 5 | 0 | 7 |
-| explainers / geopolitics | 4 | 1 | 2 |
-| humour / satire | 5 | 0 | 3 |
-| independent digital news | 15 | 1 | 4 |
-| interview podcasts | 7 | 1 | 15 |
-| left commentary | 38 | 2 | 8 |
+| centrist / heterodox | 7 | 1 | 4 |
+| explainers / geopolitics | 2 | 4 | 1 |
+| humour / satire | 4 | 2 | 2 |
+| independent digital news | 17 | 1 | 2 |
+| interview podcasts | 7 | 2 | 14 |
+| left commentary | 44 | 1 | 3 |
 | legal commentary | 6 | 0 | 3 |
-| right commentary | 6 | 2 | 67 |
+| right commentary | 1 | 0 | 74 |
 | right TV networks | 0 | 0 | 4 |
-| streamers | 14 | 6 | 6 |
-| US legacy TV | 2 | 0 | 7 |
-| US press | 9 | 2 | 8 |
-| wires & international | 3 | 5 | 6 |
+| streamers | 19 | 3 | 4 |
+| US legacy TV | 3 | 4 | 2 |
+| US press | 7 | 10 | 2 |
+| wires & international | 8 | 6 | 0 |
 
 
-Lane means (both models; the 'neither' columns are the mean share of a channel's titles labelled neither):
+Two things in that table deserve a look. The news lanes are mostly *neither*, as they should be, but their partisan-read titles tilt left (18 left vs 4 right across the wires, the press and legacy TV): the judge reads a title hostile to the administration as left even in a news headline, so part of that tilt is the target-versus-stance ambiguity that no model fully escapes. And the interview podcasts lean right as a lane (14 right, 7 left), which the lane proposal, built on format rather than politics, did not encode.
 
-| lane | n_creators | qwen3:14b score | gemma3:12b score | qwen3:14b 'neither' | gemma3:12b 'neither' |
-|---|---|---|---|---|---|
-| independent digital news | 20 | 0.04 | -0.18 | 0.70 | 0.47 |
-| explainers / geopolitics | 7 | -0.01 | -0.12 | 0.99 | 0.79 |
-| left commentary | 48 | 0.14 | -0.25 | 0.59 | 0.30 |
-| humour / satire | 8 | 0.02 | -0.09 | 0.80 | 0.57 |
-| streamers | 26 | 0.13 | -0.11 | 0.74 | 0.52 |
-| legal commentary | 9 | 0.07 | -0.04 | 0.58 | 0.31 |
-| US press | 19 | 0.07 | -0.03 | 0.89 | 0.71 |
-| interview podcasts | 23 | 0.07 | 0.01 | 0.79 | 0.56 |
-| centrist / heterodox | 12 | 0.13 | -0.05 | 0.73 | 0.49 |
-| wires & international | 14 | 0.05 | 0.07 | 0.90 | 0.72 |
-| US legacy TV | 9 | 0.10 | 0.13 | 0.80 | 0.63 |
-| right commentary | 75 | 0.19 | 0.37 | 0.70 | 0.41 |
-| right TV networks | 4 | 0.30 | 0.50 | 0.67 | 0.41 |
+Lane means (all models; the 'neither' columns are the mean share of a channel's titles labelled neither):
+
+| lane | n_creators | qwen3:14b score | gemma3:12b score | Claude Opus score | qwen3:14b 'neither' | gemma3:12b 'neither' | Claude Opus 'neither' |
+|---|---|---|---|---|---|---|---|
+| left commentary | 48 | 0.14 | -0.25 | -0.56 | 0.59 | 0.30 | 0.38 |
+| independent digital news | 20 | 0.04 | -0.18 | -0.38 | 0.70 | 0.47 | 0.50 |
+| humour / satire | 8 | 0.02 | -0.09 | -0.20 | 0.80 | 0.57 | 0.65 |
+| legal commentary | 9 | 0.07 | -0.04 | -0.27 | 0.58 | 0.31 | 0.41 |
+| streamers | 26 | 0.13 | -0.11 | -0.24 | 0.74 | 0.52 | 0.64 |
+| explainers / geopolitics | 7 | -0.01 | -0.12 | -0.07 | 0.99 | 0.79 | 0.91 |
+| centrist / heterodox | 12 | 0.13 | -0.05 | -0.14 | 0.73 | 0.49 | 0.59 |
+| US press | 19 | 0.07 | -0.03 | -0.03 | 0.89 | 0.71 | 0.84 |
+| wires & international | 14 | 0.05 | 0.07 | -0.08 | 0.90 | 0.72 | 0.91 |
+| interview podcasts | 23 | 0.07 | 0.01 | 0.01 | 0.79 | 0.56 | 0.68 |
+| US legacy TV | 9 | 0.10 | 0.13 | -0.03 | 0.80 | 0.63 | 0.81 |
+| right commentary | 75 | 0.19 | 0.37 | 0.43 | 0.70 | 0.41 | 0.52 |
+| right TV networks | 4 | 0.30 | 0.50 | 0.36 | 0.67 | 0.41 | 0.64 |
 
 
 The most left-reading and most right-reading channels under the judge of record:
 
 | creator | lane | n_titles | judge_score | judge_side |
 |---|---|---|---|---|
+| @LegalAFMTN | legal commentary | 16 | -1.00 | left |
+| @DannyHaiphongYT | left commentary | 16 | -1.00 | left |
+| @deanwithrs | streamers | 16 | -1.00 | left |
 | @TheDailyBeast | US press | 16 | -1.00 | left |
-| @thewarningwithsteveschmidt | centrist / heterodox | 16 | -0.94 | left |
-| @DemocracyDocket | legal commentary | 16 | -0.88 | left |
-| @TheDonLemonShow | left commentary | 16 | -0.81 | left |
-| @StatusCoup | independent digital news | 16 | -0.81 | left |
-| @SecularTalk | left commentary | 16 | -0.81 | left |
-| @katmabu | left commentary | 16 | -0.75 | left |
-| @YaBoiHakim | left commentary | 16 | -0.75 | left |
-| @BreakThroughNews | independent digital news | 16 | -0.75 | left |
-| @TheJoyReidShow | left commentary | 16 | -0.69 | left |
-| @revleftradio | interview podcasts | 16 | -0.69 | left |
-| @BadFaithPodcast | interview podcasts | 16 | -0.69 | left |
+| @aaronparnas1 | left commentary | 16 | -0.94 | left |
+| @JackCocchiarellaShow | left commentary | 16 | -0.94 | left |
+| @briantylercohen | left commentary | 16 | -0.94 | left |
+| @MeidasTouch | left commentary | 16 | -0.94 | left |
+| @Lunaoi | left commentary | 9 | -0.89 | left |
+| @dollemore | left commentary | 16 | -0.88 | left |
+| @YaBoiHakim | left commentary | 16 | -0.88 | left |
+| @thedavidpakmanshow | left commentary | 16 | -0.88 | left |
 
 
 | creator | lane | n_titles | judge_score | judge_side |
 |---|---|---|---|---|
-| @ActualJusticeWarrior | right commentary | 16 | 1.00 | right |
-| @BlackConservativePerspective | right commentary | 16 | 0.88 | right |
-| @BlazeTV | right commentary | 16 | 0.88 | right |
-| @bennyjohnson | right commentary | 16 | 0.81 | right |
-| @turningpointusa | right commentary | 16 | 0.81 | right |
-| @TheOfficerTatum | right commentary | 16 | 0.81 | right |
-| @CamHigby | right commentary | 16 | 0.81 | right |
-| @NewsmaxTV | right TV networks | 16 | 0.81 | right |
+| @BlackConservativePerspective | right commentary | 16 | 1.00 | right |
+| @CamHigby | right commentary | 16 | 1.00 | right |
+| @ActualJusticeWarrior | right commentary | 16 | 0.94 | right |
+| @OfficialSaharTV | right commentary | 16 | 0.88 | right |
+| @MLChristiansen | right commentary | 16 | 0.88 | right |
+| @nationalreview | US press | 16 | 0.88 | right |
+| @MrReaganUSA | right commentary | 16 | 0.88 | right |
+| @TheOfficerTatum | right commentary | 16 | 0.88 | right |
+| @MarkDice | right commentary | 16 | 0.81 | right |
+| @AndWeKnowOfficial-o9b | right commentary | 16 | 0.81 | right |
 | @X22Report-y5y | right commentary | 16 | 0.75 | right |
-| @clayandbuck | right commentary | 16 | 0.75 | right |
-| @DrSteveTurleyTV | right commentary | 16 | 0.75 | right |
-| @VivaFrei | legal commentary | 16 | 0.75 | right |
+| @bennyjohnson | right commentary | 16 | 0.75 | right |
 
 
-Commentary channels whose title-leaning contradicts their lane under the judge of record (18 of 123):
+Commentary channels whose title-leaning contradicts their lane under the judge of record (5 of 123):
 
 | creator | lane | value | implied_side | n_titles |
 |---|---|---|---|---|
-| @BrittanyVenti | right commentary | -0.31 | left | 16 |
-| @TheAmalaEkpunobi | right commentary | -0.06 | left | 16 |
-| @PartOfTheProblem | right commentary | -0.31 | left | 16 |
-| @PhillipScottPodcast | left commentary | 0.00 | tie | 16 |
-| @SavSays | right commentary | 0.00 | tie | 16 |
-| @ClipsCandaceOwens | right commentary | 0.00 | tie | 16 |
-| @BlaireWhiteX | right commentary | -0.18 | left | 11 |
-| @Tim_Black | left commentary | 0.12 | right | 16 |
-| @TheRealTabithaSpeaks | left commentary | 0.12 | right | 16 |
-| @OwenReport | right commentary | -0.06 | left | 16 |
-| @thejimmydoreshow | left commentary | 0.06 | right | 16 |
-| @ponderingpolitics | left commentary | 0.06 | right | 16 |
-| @SabbySabs | left commentary | 0.12 | right | 16 |
-| @XAVIAER | right commentary | -0.06 | left | 16 |
-| @TheMichaelCohenShow | left commentary | 0.00 | tie | 16 |
-| @MrTariqNasheed | left commentary | 0.38 | right | 16 |
-| @MeidasTouch | left commentary | 0.44 | right | 16 |
-| @PTLRadioShow | left commentary | 0.50 | right | 16 |
+| @OwenReport | right commentary | -0.25 | left | 16 |
+| @PhillipScottPodcast | left commentary | 0.06 | right | 16 |
+| @thejimmydoreshow | left commentary | 0.00 | tie | 16 |
+| @Tim_Black | left commentary | 0.19 | right | 16 |
+| @MrTariqNasheed | left commentary | 0.19 | right | 16 |
 
 
-Three kinds of channel are here: hostile coverage of the other side in its own vocabulary (MeidasTouch, PTL Radio, Tariq Nasheed read right); intra-right criticism (Dave Smith, Owen Shroyer, Xaviaer read left); and culture/gender channels whose titles the model reads as left when they mock women or streamers (Brittany Venti, Blaire White). None of these is a labelling accident; each is the method's definition showing through, and the first kind is also a lane question worth a look.
+These are not labelling accidents: Owen Shroyer's anti-war, anti-establishment titles read left; Tariq Nasheed's and Tim Black's read right on the titles that attack Democrats; Jimmy Dore's split evenly. They are the channels whose politics the left/right axis fits worst, and a reason to treat the lane proposal as provisional.
 
-## What the models call right and what they call left
+## What the frontier model calls right and what it calls left
 
-Titles both models labelled the same way (511 right, 237 left), scored two ways: weighted log-odds (which words are over-used on one side relative to the other) and rank-turbulence divergence (which words move most in the frequency ranking between the two sides).
+Titles Claude Opus labelled right (783) vs left (1017), scored by weighted log-odds (which words are over-used on one side) and rank-turbulence divergence (which words move most between the two frequency rankings).
 
 ![Words by side.](figures/14_leaning_words.png)
 *Left: rank of each word among right-labelled titles against its rank among left-labelled titles (log axes); words far from the diagonal belong to one side. Right: the largest rank-turbulence-divergence contributions, signed by side.*
 
-Right-labelled vocabulary (weighted log-odds, top 20):
+Right-labelled vocabulary (top 20):
 
 | word | log_odds_right_vs_left | z | count_right | count_left | rtd_contribution |
 |---|---|---|---|---|---|
-| democrat | 1.79 | 2.05 | 15 | 0 | 0.00 |
-| fraud | 1.79 | 1.98 | 14 | 0 | 0.00 |
-| gop | 1.79 | 1.75 | 11 | 0 | 0.00 |
-| nick | 1.79 | 1.67 | 10 | 0 | 0.00 |
-| candace | 1.79 | 1.67 | 10 | 0 | 0.00 |
-| islam | 1.79 | 1.59 | 9 | 0 | 0.00 |
-| owens | 1.79 | 1.59 | 9 | 0 | 0.00 |
-| california | 1.08 | 1.46 | 11 | 1 | 0.00 |
-| report | 1.79 | 1.40 | 7 | 0 | 0.00 |
-| liberal | 1.79 | 1.40 | 7 | 0 | 0.00 |
-| hegseth | 1.79 | 1.29 | 6 | 0 | 0.00 |
-| alex | 1.79 | 1.29 | 6 | 0 | 0.00 |
-| republican | 1.79 | 1.29 | 6 | 0 | 0.00 |
-| attacks | 1.79 | 1.29 | 6 | 0 | 0.00 |
-| maga | 0.43 | 1.28 | 31 | 8 | 0.00 |
-| america | 0.48 | 1.26 | 25 | 6 | 0.00 |
-| goes | 0.97 | 1.24 | 9 | 1 | 0.00 |
-| fbi | 0.97 | 1.24 | 9 | 1 | 0.00 |
-| finished | 1.79 | 1.18 | 5 | 0 | 0.00 |
-| ds | 1.79 | 1.18 | 5 | 0 | 0.00 |
+| women | 1.75 | 4.03 | 29 | 5 | 0.01 |
+| woke | 2.32 | 3.88 | 25 | 2 | 0.01 |
+| fraud | 1.71 | 3.49 | 22 | 4 | 0.00 |
+| california | 2.13 | 3.37 | 19 | 2 | 0.00 |
+| left | 1.49 | 3.24 | 21 | 5 | 0.00 |
+| democrat | 2.51 | 3.17 | 17 | 1 | 0.00 |
+| kirk | 2.39 | 2.89 | 14 | 1 | 0.00 |
+| trans | 2.34 | 2.79 | 13 | 1 | 0.00 |
+| people | 1.19 | 2.70 | 18 | 6 | 0.00 |
+| islam | 2.29 | 2.68 | 12 | 1 | 0.00 |
+| white | 0.91 | 2.63 | 24 | 11 | 0.00 |
+| america | 0.72 | 2.57 | 32 | 18 | 0.00 |
+| charlie | 3.41 | 2.56 | 14 | 0 | 0.00 |
+| state | 0.99 | 2.47 | 19 | 8 | 0.00 |
+| men | 2.16 | 2.45 | 10 | 1 | 0.00 |
+| pray | 3.41 | 2.37 | 12 | 0 | 0.00 |
+| biden | 1.26 | 2.36 | 13 | 4 | 0.00 |
+| liberal | 1.63 | 2.31 | 10 | 2 | 0.00 |
+| muslim | 1.63 | 2.31 | 10 | 2 | 0.00 |
+| democrats | 0.73 | 2.28 | 25 | 14 | 0.00 |
 
 
 Left-labelled vocabulary (top 20):
 
 | word | log_odds_right_vs_left | z | count_right | count_left | rtd_contribution |
 |---|---|---|---|---|---|
-| black | -1.24 | -2.75 | 6 | 12 | -0.00 |
-| war | -0.70 | -2.67 | 24 | 25 | -0.00 |
-| trump | -0.30 | -2.28 | 125 | 80 | -0.00 |
-| gaza | -3.10 | -2.05 | 0 | 5 | -0.00 |
-| racist | -3.10 | -2.05 | 0 | 5 | -0.00 |
-| left | -0.85 | -1.96 | 8 | 10 | -0.00 |
-| lies | -1.24 | -1.94 | 3 | 6 | -0.00 |
-| donald | -1.24 | -1.94 | 3 | 6 | -0.00 |
-| hasan | -1.41 | -1.90 | 2 | 5 | -0.00 |
-| progressive | -1.41 | -1.90 | 2 | 5 | -0.00 |
-| money | -1.77 | -1.86 | 1 | 4 | -0.00 |
-| worse | -1.77 | -1.86 | 1 | 4 | -0.00 |
-| nazi | -1.77 | -1.86 | 1 | 4 | -0.00 |
-| israel | -0.66 | -1.69 | 11 | 11 | -0.00 |
-| bombshell | -1.09 | -1.64 | 3 | 5 | -0.00 |
-| fascism | -3.10 | -1.59 | 0 | 3 | -0.00 |
-| fellow | -3.10 | -1.59 | 0 | 3 | -0.00 |
-| resistance | -3.10 | -1.59 | 0 | 3 | -0.00 |
-| detention | -3.10 | -1.59 | 0 | 3 | -0.00 |
-| hasanabi | -3.10 | -1.59 | 0 | 3 | -0.00 |
+| trump | -1.35 | -12.23 | 79 | 426 | -0.00 |
+| maga | -1.97 | -5.23 | 5 | 65 | -0.01 |
+| iran | -1.12 | -4.93 | 20 | 86 | -0.00 |
+| israel | -1.72 | -4.29 | 5 | 46 | -0.00 |
+| war | -0.86 | -4.07 | 26 | 82 | -0.00 |
+| epstein | -1.36 | -3.68 | 7 | 40 | -0.00 |
+| breaking | -2.41 | -3.49 | 1 | 29 | -0.00 |
+| donald | -2.30 | -3.12 | 1 | 23 | -0.00 |
+| hasanabi | -2.13 | -2.68 | 1 | 17 | -0.00 |
+| fox | -2.09 | -2.60 | 1 | 16 | -0.00 |
+| files | -1.39 | -2.50 | 3 | 18 | -0.00 |
+| doj | -1.20 | -2.40 | 4 | 19 | -0.00 |
+| vance | -3.03 | -2.35 | 0 | 15 | -0.00 |
+| republicans | -1.06 | -2.29 | 5 | 20 | -0.00 |
+| secret | -1.30 | -2.28 | 3 | 16 | -0.00 |
+| jd | -3.03 | -2.27 | 0 | 14 | -0.00 |
+| gaza | -1.91 | -2.23 | 1 | 12 | -0.00 |
+| finally | -1.46 | -2.16 | 2 | 13 | -0.00 |
+| israeli | -1.85 | -2.13 | 1 | 11 | -0.00 |
+| ice | -0.56 | -2.10 | 18 | 41 | -0.00 |
 
 
-Per model, the twelve most right-marked and left-marked words:
+Read as a map of the two grammars of attack: the right's titles are about the left, the woke, women and trans issues, Islam, fraud, Newsom and Fauci; the left's are about Trump, MAGA, the war, Epstein, ICE and the DOJ, and they carry the outrage furniture (breaking, secret, panics, disaster). The same lists per model, and for the titles all three agree on (n = 285 right, 162 left):
 
 | model | right | left |
 |---|---|---|
 | qwen3:14b | gop, democrat, trump, maga, fox, nick, islam, candace, report, putin, owens, attacks | black, left, lies, money, gaza, worse, hasan, biden, progressive, piker, aoc, breaking |
 | gemma3:12b | charlie, kirk, nick, fraud, candace, owens, democrat, fbi, america, myron, california, hegseth | trump, war, ice, hasanabi, hasan, breaking, racist, donald, gaza, democratic, israel, dsa |
+| Claude Opus | women, woke, fraud, california, left, democrat, kirk, trans, people, islam, white, america | trump, maga, iran, israel, war, epstein, breaking, donald, hasanabi, fox, files, doj |
+| all three agree | democrat, woke, fraud, islam, california, fbi, liberal, report, election, brutal, jlp, ds | trump, war, iran, israel, donald, black, lies, maga, gaza, worse, breaking, money |
 
+
+The small models' lists are subject maps (MAGA, GOP and Trump-panic words on the "right", racism and Gaza on the "left"); the frontier model's list is closer to a stance map. That difference is the whole story of this document.
 
 ## Method
 
 1. **Sample.** For each of the 274 creators, 16 unique edited-upload titles drawn at random (seed 20260914; creators with fewer than 16 uploads topped up from live VODs): 4,352 titles.
-2. **Labelling.** Two local models via Ollama, temperature 0, batches of 20, one prompt (in `cache/leaning_prompt.txt`): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples. Qwen3-14B (Alibaba) and Gemma-3-12B (Google) are different model families. Every response is cached.
-3. **Scores.** Per channel and model: shares of left / right / neither and score = (right − left) / n; consensus score on titles both labelled the same way; mean of the two. The judge of record is the model whose score best separates the two commentary lanes (AUC); a channel is called right above +0.05, left below −0.05.
-4. **Validation.** Against `left_commentary` and `right_commentary` only: AUC for right vs left lane and the accuracy of the score's sign (ties excluded), per score.
-5. **Words.** Consensus right vs left titles (and per model): weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2020) on the vocabulary tokens of document 11.
+2. **Labelling.** The same prompt for all three judges (`cache/leaning_prompt.txt`): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0, batches of 20, every response cached. Qwen3-14B and Gemma-3-12B run locally through Ollama; Claude Opus runs through the Claude Code CLI in print mode on a Claude Max subscription (218 calls, 52 minutes; the CLI reported an equivalent API cost of $18.86, not charged).
+3. **Scores.** Per channel and model: shares of left / right / neither and score = (right − left) / n; a consensus score on titles all models labelled the same way; the mean of the models. The judge of record is the model whose score best separates the two commentary lanes; a channel is called right above +0.05, left below −0.05.
+4. **Yardsticks.** Self-description: a channel counts as self-declared right or left when its YouTube description contains leaning words (conservative, MAGA, libertarian, right-wing ... vs progressive, leftist, socialist, liberal ...), with nine hand corrections for phrases like "liberal democracy" or "former liberal"; agreement is the share of those channels whose score has the declared sign. Lanes: AUC and sign accuracy over the two commentary lanes only.
+5. **Words.** Right vs left titles per model and for the all-agree set: weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2020) on the vocabulary tokens of document 11.
 
 ## Limitations
 
-- **Ten words carry little stance.** Half to three quarters of titles are neither, so a channel's score rests on a minority of its titles; at 16 titles per channel the score moves in steps of 1/16 and small differences are noise. A 50-title pass for ranked channels, with a split-half reliability check, is the planned next step.
-- **The models read the target, not the politics.** Vocabulary about MAGA, the GOP or Trump's troubles is right-coded; vocabulary about racism, Gaza or fascism is left-coded. That sorts most channels correctly because most channels talk about the other side, and misreads the ones that do so in the other side's own words.
-- **Two instruction-tuned LLMs are not independent judges**; their moderate agreement bounds what either can be trusted for per title. The smaller model's right lean is a model property, not a corpus property.
-- **The yardstick is the lane proposal**, itself a model's assignment from channel names and titles; agreement with it is a consistency check, not accuracy. The accuracy check is the blind adjudication sheet the stage writes (`leaning_human_sheet.csv`, 200 titles, mostly ones the models disagree on, model labels hidden): once filled and passed back with `--human-labels`, every model gets a kappa against a human reader (`leaning_human_agreement.csv`), and that number decides which judge to trust.
-- **A frontier model is available as a further judge** through the Claude Code backend (`--backend claude-code --models opus`), with an optional prompt (v2) that also records the title's target, the failure mode above made explicit.
-- **The word lists describe the models' cues**, not what left or right creators "really" say.
+- **This is perceived leaning.** A model reads a title the way an attentive reader would, and readers disagree; the three-way agreement figures are the honest width of that disagreement. No human panel was used, by choice: one reader cannot supply political ground truth, and a balanced panel is a study of its own. A blind 200-title sheet exists (`leaning_human_sheet.csv`) for anyone who wants a single-reader reliability check.
+- **Ten words carry little stance.** Six in ten titles are neither even for the best judge, so a channel's score rests on a minority of its titles and, at 16 titles per channel, moves in steps of 1/16. Fifty titles per ranked channel is the natural next pass.
+- **Target and stance still blur at the margin.** Hostile-to-Trump wording reads left even when it is a wire headline or an anti-establishment right channel; the news-lane tilt and the Owen Shroyer case are that residue.
+- **The yardsticks are weak.** Self-descriptions cover 36 channels and say what a channel claims; the lane proposal is my own model-made assignment. Agreement with either is consistency, not accuracy.
+- **The small models' failure is a model property, not a corpus property**; their word lists show what a 12-14B model uses as a partisan cue.
 
-Files: `leaning_labels.csv`, `leaning_agreement.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_lane_validation.csv`, `leaning_lane_contradictions.csv`, `leaning_by_lane.csv`, `leaning_words.csv`.
+Files: `leaning_labels.csv`, `leaning_agreement.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_lane_validation.csv`, `leaning_lane_contradictions.csv`, `leaning_by_lane.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`.

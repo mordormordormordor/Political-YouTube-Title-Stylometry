@@ -219,13 +219,20 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
             df[c.replace("label_", "target_")] = df[c].str.split("|").str[1]
             df[c] = df[c].str.split("|").str[0]
     ok = df.dropna(subset=cols)
-    agree = {"n_labelled_by_all": int(len(ok)), "models": cols, "label_shares": {c: ok[c].value_counts(normalize=True).round(4).to_dict() for c in cols}}
-    if len(cols) >= 2:
-        a, b = ok[cols[0]], ok[cols[1]]
-        agree["kappa"] = round(float(cohen_kappa_score(a, b)), 4)
-        agree["exact_agreement"] = round(float((a == b).mean()), 4)
-        agree["confusion"] = pd.crosstab(a, b).to_dict()
-        agree["kappa_political_only"] = round(float(cohen_kappa_score(a[(a != "neither") & (b != "neither")], b[(a != "neither") & (b != "neither")])), 4) if ((a != "neither") & (b != "neither")).sum() > 10 else None
+    agree = {"n_labelled_by_all": int(len(ok)), "models": cols, "label_shares": {c: ok[c].value_counts(normalize=True).round(4).to_dict() for c in cols}, "pairs": []}
+    for i in range(len(cols)):
+        for j in range(i + 1, len(cols)):
+            a, b = ok[cols[i]], ok[cols[j]]
+            pol = (a != "neither") & (b != "neither")
+            agree["pairs"].append({"a": cols[i], "b": cols[j], "kappa": round(float(cohen_kappa_score(a, b)), 4), "exact_agreement": round(float((a == b).mean()), 4),
+                                   "kappa_political_only": round(float(cohen_kappa_score(a[pol], b[pol])), 4) if pol.sum() > 10 else None,
+                                   "confusion": pd.crosstab(a, b).to_dict()})
+    if len(cols) >= 2:        # kept for older readers: the first pair
+        agree["kappa"] = agree["pairs"][0]["kappa"]; agree["exact_agreement"] = agree["pairs"][0]["exact_agreement"]
+        agree["confusion"] = agree["pairs"][0]["confusion"]; agree["kappa_political_only"] = agree["pairs"][0]["kappa_political_only"]
+    all_agree = ok[cols].nunique(axis=1) == 1
+    agree["all_models_agree_share"] = round(float(all_agree.mean()), 4)
+    agree["consensus_label_shares"] = ok.loc[all_agree, cols[0]].value_counts(normalize=True).round(4).to_dict()
     (ANALYSIS_DIR / "leaning_agreement.json").write_text(json.dumps(agree, indent=2))
     info.update({k: v for k, v in agree.items() if k in ("kappa", "exact_agreement", "n_labelled_by_all")})
 
@@ -242,8 +249,8 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
             rec[f"{c}_score"] = float(((v == "right").sum() - (v == "left").sum()) / len(v)) if len(v) else np.nan
             scores.append(rec[f"{c}_score"])
         if len(cols) >= 2:
-            both = g.dropna(subset=cols[:2])
-            cons = both[both[cols[0]] == both[cols[1]]]
+            both = g.dropna(subset=cols)
+            cons = both[both[cols].nunique(axis=1) == 1]
             rec["consensus_n"] = len(cons)
             rec["consensus_score"] = float(((cons[cols[0]] == "right").sum() - (cons[cols[0]] == "left").sum()) / len(cons)) if len(cons) else np.nan
             rec["consensus_neither"] = float((cons[cols[0]] == "neither").mean()) if len(cons) else np.nan
@@ -298,7 +305,7 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
     wrows = []
     sets = {c: (df[df[c] == "right"], df[df[c] == "left"]) for c in cols}
     if len(cols) >= 2:
-        both = df.dropna(subset=cols[:2]); both = both[both[cols[0]] == both[cols[1]]]
+        both = df.dropna(subset=cols); both = both[both[cols].nunique(axis=1) == 1]
         sets["consensus"] = (both[both[cols[0]] == "right"], both[both[cols[0]] == "left"])
     for name, (r, l) in sets.items():
         cr, cl = Counter(), Counter()
@@ -317,6 +324,9 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
                           "rtd_contribution": round(c, 5), "rank_right": ra, "rank_left": rb, "n_right_titles": len(r), "n_left_titles": len(l), "rtd_total": round(rtd, 4)})
     pd.DataFrame(wrows).sort_values(["model", "z"], ascending=[True, False]).to_csv(ANALYSIS_DIR / "leaning_words.csv", index=False)
 
+    # channels' own words as a lane-independent yardstick: leaning words in the channel description
+    self_description_check(bc, cols)
+
     # blind adjudication sheet: 200 titles, mostly disagreements, model labels kept in a separate key
     sheet_path = ANALYSIS_DIR / "leaning_human_sheet.csv"
     if not sheet_path.exists() and len(cols) >= 2:
@@ -328,6 +338,42 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
         pick[["row_id", "creator", "title_raw"]].assign(human_label="", human_target="", notes="").to_csv(sheet_path, index=False)
         pick[["row_id", "creator", "title_raw"] + cols].to_csv(ANALYSIS_DIR / "leaning_human_key.csv", index=False)
         print(f"blind adjudication sheet written: {sheet_path} ({len(pick)} titles; fill human_label with left / right / neither)", flush=True)
+
+
+SELF_RIGHT = r"\b(conservative|conservatives|republican|maga|right[- ]wing|america first|patriot|patriotic|libertarian|pro[- ]trump)\b"
+SELF_LEFT = r"\b(progressive|progressives|leftist|leftists|socialist|socialists|marxist|left[- ]wing|democratic socialist|liberal|liberals|populist left)\b"
+# hand corrections of the regex on the 2026-09-14 descriptions (read by eye): 'liberal democracy', 'former liberal', a PragerU tagline
+SELF_OVERRIDE = {"@bulwarkmedia": "none", "@UnHerd": "none", "@XAVIAER": "none", "@LiberalHivemind": "right", "@MarkDice": "right", "@RealDanBongino": "right",
+                 "@thejimmydoreshow": "left", "@ponderingpolitics": "left", "@PartOfTheProblem": "right"}
+
+
+def self_declared_leaning(description: str) -> str:
+    """'right' / 'left' / 'none' from leaning words in a channel's own description."""
+    d = str(description).lower()
+    r, l = len(re.findall(SELF_RIGHT, d)), len(re.findall(SELF_LEFT, d))
+    if r == l:
+        return "none"
+    return "right" if r > l else "left"
+
+
+def self_description_check(bc: pd.DataFrame, cols: list[str]) -> None:
+    from pipeline_titles.common import load_channels
+    ch = load_channels().drop_duplicates("creator")[["creator", "description"]].fillna("")
+    ch["self_declared"] = [SELF_OVERRIDE.get(c, self_declared_leaning(d)) for c, d in zip(ch["creator"], ch["description"])]
+    m = bc.merge(ch, on="creator", how="left")
+    m = m[m["self_declared"].isin(["left", "right"])].copy()
+    rows = []
+    for sc in [f"{c}_score" for c in cols] + ["mean_score", "judge_score"]:
+        if sc not in m.columns:
+            continue
+        side = np.where(m[sc] > 0, "right", np.where(m[sc] < 0, "left", "tie"))
+        agree = float((side == m["self_declared"]).mean())
+        rows.append({"score": sc, "n_self_declared": len(m), "agreement_with_self_description": round(agree, 3),
+                     "n_right_declared": int((m["self_declared"] == "right").sum()), "n_left_declared": int((m["self_declared"] == "left").sum())})
+    pd.DataFrame(rows).to_csv(ANALYSIS_DIR / "leaning_self_description.csv", index=False)
+    m["judge_side_sign"] = np.where(m["judge_score"] > 0, "right", np.where(m["judge_score"] < 0, "left", "tie"))
+    m[["creator", "lane", "self_declared", "judge_side_sign", "judge_score"] + [f"{c}_score" for c in cols] + ["description"]].sort_values("judge_score") \
+        .assign(description=lambda d: d.description.str.replace(r"\s+", " ", regex=True).str[:160]).to_csv(ANALYSIS_DIR / "leaning_self_description_channels.csv", index=False)
 
 
 def human_agreement(df: pd.DataFrame, cols: list[str], human_path) -> None:
