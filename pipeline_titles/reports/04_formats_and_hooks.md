@@ -8,6 +8,9 @@ The outrage frame is the landscape's default hook, not a niche device. The ratin
 
 ## Formats by lane (share of a creator's titles, mean over creators; edited uploads)
 
+![Structural formats by lane, edited uploads.](figures/04_formats_heatmap.png)
+*Structural formats by lane, edited uploads.*
+
 | lane | n_creators | question | breaking_live | episode_show | interview_guest | reaction | confrontation | listicle | howto_explainer |
 |---|---|---|---|---|---|---|---|---|---|
 | centrist / heterodox | 10.00 | 0.19 | 0.01 | 0.02 | 0.09 | 0.01 | 0.04 | 0.00 | 0.12 |
@@ -44,6 +47,9 @@ Questions are a press and explainer habit; episode numbering belongs to the talk
 
 
 ## The outrage hook by lane (edited uploads)
+
+![Outrage-frame share by lane, edited uploads (left) and live VODs (right).](figures/04_outrage_by_lane.png)
+*Outrage-frame share by lane, edited uploads (left) and live VODs (right).*
 
 | lane | n_creators | outrage | curiosity_gap | humor |
 |---|---|---|---|---|

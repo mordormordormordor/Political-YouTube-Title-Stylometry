@@ -1,6 +1,6 @@
 # Title Stylometry: all tables (reference dump), 2026-01-01 to 2026-09-14
 
-_Generated 2026-09-15T00:38:13+00:00 by `python -m pipeline_titles.report`. Every table below is read from `data/titles/analysis/`; the code is `pipeline_titles/`._
+_Generated 2026-09-15T00:45:28+00:00 by `python -m pipeline_titles.report`. Every table below is read from `data/titles/analysis/`; the code is `pipeline_titles/`._
 
 Corpus: 309,596 titles from 274 creators (300,420 unique within creator x genre; 256,897 edited uploads, 52,699 live-stream VODs; 5,783 on Rumble). Genres are never pooled; a creator x genre with fewer than 50 unique titles is low-n and never ranked.
 

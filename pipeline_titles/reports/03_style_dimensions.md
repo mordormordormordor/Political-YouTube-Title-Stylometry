@@ -8,6 +8,9 @@ Exploratory factor analysis of 74 title-level style features, aggregated to 2,02
 
 ## The twelve factors
 
+![Factor loadings: which title features define each factor (only features loading at 0.35 or more are shown).](figures/03_loadings_heatmap.png)
+*Factor loadings: which title features define each factor (only features loading at 0.35 or more are shown).*
+
 Each factor is named from its loadings (name, share of variance, the features that load on it, and the creators at each extreme after topic control, edited uploads only):
 
 | factor | name | variance | loads on | highest creators (videos) | lowest |
@@ -26,9 +29,15 @@ Each factor is named from its loadings (name, share of variance, the features th
 | F12 | Modal and future speculation (will, could, we) | 2.3% | future_will (+0.54), modal (+0.53), first_pl (+0.42) | @moreperfectunion, @thewarningwithsteveschmidt, @BelleRanch, @CoreyGilShusterAskProject | @AsmonTV, @destinyhqclips, @bennyjohnson, @SydneyWatson |
 
 
+![Scree plot: eigenvalues against the parallel-analysis threshold.](figures/03_scree.png)
+*Scree plot: observed eigenvalues against the parallel-analysis threshold; the vertical line marks the twelve retained factors.*
+
 How to read a creator's position: the profile cards give each score as a percentile rank among ranked creators of the same genre, with the lane median beside it. A creator at the 95th percentile on F9 titles in ALL CAPS more than 95 % of comparable channels.
 
 ## Which lanes sit where (median topic-controlled score, edited uploads, selected factors)
+
+![Lane medians of the topic-controlled scores, all twelve factors.](figures/03_lane_medians_heatmap.png)
+*Lane medians of the topic-controlled scores, all twelve factors.*
 
 | lane | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F9 |
 |---|---|---|---|---|---|---|---|---|---|
@@ -50,6 +59,9 @@ How to read a creator's position: the profile cards give each score as a percent
 The tone factor (F1) already separates the landscape's temperaments: left commentary is the most outrage-toned lane, legacy TV and the US press the most positive/neutral; the legacy wires and TV score high on F2 (clause headlines with a finite verb: "Houthis claim major advance") and F7 (descriptive news prose in sentence case), commentary lanes low. Question framing (F5) belongs to the press and the explainers; person-centred titles (F6) to interview podcasts and right TV.
 
 ## Do the candidate labels survive?
+
+![Creator-level correlation between each LLM rating and each factor score.](figures/03_candidate_correlations.png)
+*Creator-level correlation between each LLM rating and each factor score.*
 
 | candidate | best_factor | creator_level_r | second_factor | second_r | verdict |
 |---|---|---|---|---|---|
@@ -78,6 +90,9 @@ Full creator-level correlation matrix (LLM rating aggregated to creator x genre,
 Three things to take from it. Sensational and Critical are the same thing as far as titles are concerned: a title that attacks is a title that shouts. Analytical is the *absence* of that (the positive pole of F1 plus the question factor), not a dimension of its own. And the model that rated the titles agrees with itself only moderately: on 300 titles rated twice in different batches, quadratic-weighted kappa is 0.74 for sensational, 0.58 critical, 0.56 analytical, 0.66 conversational and only 0.25 educational, so the validation is trustworthy for tone and weak for the rest.
 
 ## How much of a creator's style is just its topics?
+
+![Left: share of each factor's variance explained by topic at the title and creator level. Right: the rater's test-retest reliability per dimension.](figures/03_topic_control_and_retest.png)
+*Left: share of each factor's variance explained by topic at the title and creator level. Right: the rater's test-retest reliability per dimension.*
 
 The scores above are topic-controlled: each title's score minus the mean score of its topic (estimated on the balanced subset), averaged per creator. Topic explains between 4% and 18% of the title-level variance of a factor, most for numbers/dates (F8) and person-centred titles (F6), least for questions (F5) and capitals (F9). At the creator level the raw and controlled scores correlate at 0.80-0.98: what a channel covers moves its score a little, how it titles moves it a lot. `dimensions.csv` carries raw, controlled and the topic-expected component side by side, and `dimensions_by_topic.csv` gives each creator's scores inside the five largest shared topics.
 

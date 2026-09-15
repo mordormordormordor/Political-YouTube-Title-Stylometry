@@ -8,6 +8,9 @@ Lane predicts style almost not at all. Clustering creators in the twelve-dimensi
 
 ## Clusterings against the lanes
 
+![Style space: every ranked creator, coloured by lane family. The interactive version, with names on hover and each creator's five neighbours, is on the HTML page.](figures/05_style_map.png)
+*Style space: every ranked creator, coloured by lane family. The interactive version, with names on hover and each creator's five neighbours, is on the HTML page.*
+
 Style space: agglomerative (Ward) on z-scored topic-controlled factor scores. Topic space: average linkage on the Jensen-Shannon distance between creators' topic mixes. k chosen by silhouette; ARI = adjusted Rand index (1 = identical partitions, 0 = chance).
 
 | genre | titles | n_creators | style_k | style_silhouette | topic_k | topic_silhouette | ari_style_vs_lane | ari_topic_vs_lane | ari_style_vs_topic |
@@ -19,6 +22,12 @@ Style space: agglomerative (Ward) on z-scored topic-controlled factor scores. To
 
 
 The low silhouettes (0.09-0.16) say the same thing from the other side: neither space has well-separated groups, the creators form a continuum.
+
+![Topic space map.](figures/05_topic_map.png)
+*Topic space: MDS of the Jensen-Shannon distances between creators' topic mixes.*
+
+![ARI and cohesion.](figures/05_lanes_vs_style.png)
+*Left: adjusted Rand index of the clusterings against the lanes and against each other. Right: lane cohesion in style space.*
 
 ## Which lanes cohere (edited uploads)
 
@@ -88,6 +97,9 @@ Sister channels do share a house style: the four MeidasTouch Network channels si
 
 ## Who gets named
 
+![Outrage-frame ratio for the 25 most-named people: orange above the corpus baseline, blue below.](figures/05_entities_outrage.png)
+*Outrage-frame ratio for the 25 most-named people: orange above the corpus baseline, blue below.*
+
 Counted on the creator-balanced subset; people keyed by surname, so "Kirk" pools Charlie and Erika Kirk and "Trump" pools every Trump. `outrage_ratio` is the outrage-frame share of titles naming the entity over the corpus share.
 
 | entity | n_titles_balanced | n_creators | top_lanes_by_share | outrage_share | outrage_ratio |
@@ -126,6 +138,9 @@ Counted on the creator-balanced subset; people keyed by surname, so "Kirk" pools
 Trump is in 4.7 % of balanced titles counting both tags, named by 199 of 274 creators, most by legal commentary and left commentary. The entities carrying the most outrage framing relative to baseline are MAGA (1.6x), Pam Bondi, Kash Patel and Candace Owens (1.3-1.5x); the least are the crime-story names (Nancy Guthrie, Lindsay Clancy, 0.3x) and institutions used as datelines (the Senate, the House, the White House). "Hormuz" is a spaCy mistake (a strait tagged as a person) left visible on purpose: entity counts from a small NER model on headline text are noisy at the margin.
 
 ## Convergent formulas
+
+![The most shared verbatim titles across organisations.](figures/05_shared_titles.png)
+*The most shared verbatim titles across organisations.*
 
 Of 1,575 distinct titles (case-insensitive) used by two or more creators, 474 cross organisations; the rest are same-outlet cross-posts (TYT / The Damage Report alone account for hundreds). The most shared:
 

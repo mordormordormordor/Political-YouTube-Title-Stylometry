@@ -8,6 +8,9 @@ Not much, and not in one direction. Of 360 lane x genre x measure series (twelve
 
 ## Outrage share by month (edited uploads; mean of creators)
 
+![Outrage-frame share by month, one panel per lane, against the all-creator mean (grey dashed).](figures/06_drift_outrage.png)
+*Outrage-frame share by month, one panel per lane, against the all-creator mean (grey dashed).*
+
 | lane | 2026-01 | 2026-02 | 2026-03 | 2026-04 | 2026-05 | 2026-06 | 2026-07 | 2026-08 | 2026-09 |
 |---|---|---|---|---|---|---|---|---|---|
 | US legacy TV | 0.32 | 0.32 | 0.37 | 0.32 | 0.34 | 0.33 | 0.35 | 0.36 | 0.28 |
@@ -21,6 +24,9 @@ Not much, and not in one direction. Of 360 lane x genre x measure series (twelve
 
 ## Tone factor (F1, positive vs outrage; topic-controlled) by month
 
+![The tone factor by month, per lane.](figures/06_drift_tone.png)
+*The tone factor by month, per lane.*
+
 | lane | 2026-01 | 2026-02 | 2026-03 | 2026-04 | 2026-05 | 2026-06 | 2026-07 | 2026-08 | 2026-09 |
 |---|---|---|---|---|---|---|---|---|---|
 | US legacy TV | 0.77 | 0.72 | 0.68 | 0.62 | 0.64 | 0.71 | 0.73 | 0.55 | 0.46 |
@@ -33,6 +39,9 @@ Not much, and not in one direction. Of 360 lane x genre x measure series (twelve
 
 
 ## ALL-CAPS factor (F9) by month
+
+![The ALL-CAPS factor by month, per lane.](figures/06_drift_caps.png)
+*The ALL-CAPS factor by month, per lane.*
 
 | lane | 2026-01 | 2026-02 | 2026-03 | 2026-04 | 2026-05 | 2026-06 | 2026-07 | 2026-08 | 2026-09 |
 |---|---|---|---|---|---|---|---|---|---|

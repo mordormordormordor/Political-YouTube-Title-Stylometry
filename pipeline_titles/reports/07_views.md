@@ -8,6 +8,9 @@ Within creator, the outrage frame is the only title feature that predicts views 
 
 ## Within-creator effects, edited uploads (median over channels)
 
+![Per-channel coefficients for every title feature; boxes show the spread across channels, the black line the median.](figures/07_engagement_coefficients.png)
+*Per-channel coefficients for every title feature; boxes show the spread across channels, the black line the median.*
+
 Coefficient = change in log(1 + views) per one within-channel standard deviation of the predictor; `share_positive` = share of channels with a positive coefficient; `share_sig_*` at p < 0.05 (HC3).
 
 | predictor | n_creators | median_coef_per_sd | q25 | q75 | share_positive | share_sig_positive | share_sig_negative | median_r2 |
@@ -33,6 +36,9 @@ Coefficient = change in log(1 + views) per one within-channel standard deviation
 Live VODs (n = 59 channels) show the same picture, outrage +0.044 with 75 % positive, everything else near zero.
 
 ## The outrage effect by lane (edited uploads)
+
+![Median outrage coefficient per lane with the share of channels where it is positive.](figures/07_outrage_effect_by_lane.png)
+*Median outrage coefficient per lane with the share of channels where it is positive.*
 
 | lane | n_creators | median_coef_per_sd | share_positive | share_sig_positive |
 |---|---|---|---|---|
@@ -64,6 +70,9 @@ Specification: `engagement_model.json`; per-channel coefficients: `engagement_co
 
 ## Hit concentration
 
+![Gini coefficient of views per channel, grouped by lane.](figures/07_gini_by_lane.png)
+*Gini coefficient of views per channel, grouped by lane.*
+
 Per channel x genre with at least 100 videos carrying views (all rows, repeats included: a re-uploaded live loop is a separate video with its own views).
 
 | lane | n | median_gini | median_top10_share |
@@ -84,6 +93,9 @@ Per channel x genre with at least 100 videos carrying views (all rows, repeats i
 
 
 Streamers and daily left commentators spread views most evenly (Gini 0.18-0.33 for Tariq Nasheed, Belle of the Ranch, Vaush, the Hasan VOD channel); the wires, legacy TV, the press and the right TV networks are the most hit-driven (median Gini 0.66-0.73; Real America's Voice, Politicon, Axios and The Fifth Column above 0.81, the top tenth of their videos taking three quarters of their views).
+
+![Lorenz curves and the tail test.](figures/07_lorenz_and_tails.png)
+*Left: Lorenz curves for seven channels. Right: the likelihood-ratio statistic of the power-law fit against a lognormal across all video channels.*
 
 **Power law or not.** The `powerlaw` fit (discrete, xmin by KS minimisation) with the likelihood-ratio test against a lognormal supports a power-law tail in 0 of 193 video channels and 1 of 59 stream channels; the ratio even points towards the power law in only 6 % of video channels. Hits are heavy-tailed but lognormal-shaped, so no channel here should be described as having a power-law audience.
 

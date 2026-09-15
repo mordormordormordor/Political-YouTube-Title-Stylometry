@@ -317,6 +317,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         cards = json.loads(CARDS_JSON.read_text())
         REPORTS_DIR.mkdir(parents=True, exist_ok=True)
         (REPORTS_DIR / "all_tables.md").write_text(corpus_report(cards), encoding="utf-8")
+        from pipeline_titles.figures import main as figures_main
+        figures_main()
         from pipeline_titles.report_sections import write_all
         write_all()
         (REPORTS_DIR / "methods_appendix.md").write_text(methods_appendix(), encoding="utf-8")

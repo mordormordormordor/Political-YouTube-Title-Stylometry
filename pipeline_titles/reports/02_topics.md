@@ -8,6 +8,9 @@ A BERTopic model fitted on a 100,041-title creator-stratified sample found 236 t
 
 ## The largest topics (creator-balanced share)
 
+![The fifteen largest topics by creator-balanced share; blue = political, yellow = non-political.](figures/02_top_topics.png)
+*The fifteen largest topics by creator-balanced share; blue = political, yellow = non-political.*
+
 | topic_id | label | political | balanced_share | n_unique_all | n_creators | top_terms |
 |---|---|---|---|---|---|---|
 | 0 | Iran War and Strait of Hormuz Tensions | yes | 0.062 | 27609 | 227 | strait hormuz, strait, hormuz, irans, iranian, iran iran, tehran, war iran, bases, iran strikes |
@@ -27,6 +30,9 @@ A BERTopic model fitted on a 100,041-title creator-stratified sample found 236 t
 `balanced_share` is the mean over lanes of the mean creator share, so a topic that four Indian channels post 8,000 times does not outrank one that 200 channels each post a few times. The "Shocking Events and Reactions" topic is not a story: it is the cluster of content-free exclamations ("HOLY SH*T", "THIS IS INSANE..") that streamers and commentators use as titles, and it is the seed of the shared-title finding in document 5.
 
 ## Political or not
+
+![Mean political share of a creator's titles, by lane.](figures/02_political_share_by_lane.png)
+*Mean political share of a creator's titles, by lane.*
 
 212 of 236 topics were tagged political by the labelling model (politics, government, elections, war, courts, political figures, the culture war); the 24 non-political topics are crime trials (Nancy Guthrie, Lindsay Clancy, the Brown University shooting), weather and disasters, sport (World Cup, MMA), tech and business, and a few channel-specific series. The tagging is generous, and the political share of a creator's unique titles is therefore high everywhere; it separates the lanes only at the bottom:
 
@@ -97,6 +103,9 @@ Document 5 repeats the whole landscape analysis on political titles only; the co
 Read this as "where each lane's attention goes beyond the shared war story": legal commentary on the Supreme Court and DOJ topic, streamers on reactions and streamer drama, the US press on tech and AI, explainers on Israel-Palestine, right commentary on the "modern women and feminism" culture-war topic.
 
 ## The month-by-month story
+
+![Monthly creator-balanced share of the eight largest topics; the hollow marker is the half month of September.](figures/02_topic_timeline.png)
+*Monthly creator-balanced share of the eight largest topics; the hollow marker is the half month of September.*
 
 For each month the topics that rose most against their own nine-month mean (creator-balanced), with the entities named in that month's titles:
 

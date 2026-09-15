@@ -27,9 +27,12 @@ with the tables that carry it and its caveats:
 - `pipeline_titles/reports/methods_appendix.md`: preprocessing, stopwords, feature
   definitions, lexicons, factor loadings, validation numbers, sample sizes, prompts,
   runtimes.
-- `pipeline_titles/reports/title_stylometry.html`: browsable page with a creator selector
-  (profile cards) and the two landscape maps. Open it from a local web server
-  (`python -m http.server --directory pipeline_titles/reports`) so the embedded JSON loads.
+- `pipeline_titles/reports/title_stylometry.html`: the interactive page. A creator selector
+  renders each profile card, and the two landscape maps (style space, topic space) show
+  every creator with names on hover and the selected creator's neighbours drawn in. It is
+  self-contained; open it directly in a browser.
+- `pipeline_titles/reports/figures/`: the static figures embedded in the documents
+  (`python -m pipeline_titles.figures` redraws them from the tables).
 - `pipeline_titles/reports/cards/<creator>.md`: one fixed-layout profile card per creator.
 - `data/titles/analysis/`: machine-readable tables. The interface between stages is
   `features.csv` (creator x genre x month), `dimensions.csv` (creator scores, raw and

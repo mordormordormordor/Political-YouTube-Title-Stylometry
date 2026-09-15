@@ -8,6 +8,9 @@ The corpus is 309,596 titles from 274 creators, but it is wildly uneven: four In
 
 ## Size by genre
 
+![Unique titles and creators per lane. A few news lanes hold most titles; commentary holds most creators.](figures/01_corpus_by_lane.png)
+*Unique titles and creators per lane. A few news lanes hold most titles; commentary holds most creators.*
+
 | genre | groups | rows | unique | balanced | low_n | median_size | max_size |
 |---|---|---|---|---|---|---|---|
 | streams | 168 | 52699 | 44716 | 32656 | 89 | 42 | 8975 |
@@ -15,6 +18,9 @@ The corpus is 309,596 titles from 274 creators, but it is wildly uneven: four In
 
 
 The `streams` genre is small and thin: 89 of its 168 groups are low-n, so stream-level results in the later documents rest on roughly 79 creators.
+
+![Creator x genre group sizes on a log scale, with the low-n line (50) and the balanced cap (2,500).](figures/01_group_sizes.png)
+*Creator x genre group sizes on a log scale, with the low-n line (50) and the balanced cap (2,500).*
 
 ## What was stripped from titles, and why it matters
 

@@ -99,9 +99,15 @@ The corpus is {n_rows:,} titles from {summ.creator.nunique()} creators, but it i
 
 ## Size by genre
 
+![Unique titles and creators per lane. A few news lanes hold most titles; commentary holds most creators.](figures/01_corpus_by_lane.png)
+*Unique titles and creators per lane. A few news lanes hold most titles; commentary holds most creators.*
+
 {table(g, fmt="{:.0f}")}
 
 The `streams` genre is small and thin: {int(g.loc[g.genre == 'streams', 'low_n'].iloc[0])} of its {int(g.loc[g.genre == 'streams', 'groups'].iloc[0])} groups are low-n, so stream-level results in the later documents rest on roughly {int(g.loc[g.genre == 'streams', 'groups'].iloc[0]) - int(g.loc[g.genre == 'streams', 'low_n'].iloc[0])} creators.
+
+![Creator x genre group sizes on a log scale, with the low-n line (50) and the balanced cap (2,500).](figures/01_group_sizes.png)
+*Creator x genre group sizes on a log scale, with the low-n line (50) and the balanced cap (2,500).*
 
 ## What was stripped from titles, and why it matters
 
@@ -150,11 +156,17 @@ A BERTopic model fitted on a {t1.get('fit_n', 0):,}-title creator-stratified sam
 
 ## The largest topics (creator-balanced share)
 
+![The fifteen largest topics by creator-balanced share; blue = political, yellow = non-political.](figures/02_top_topics.png)
+*The fifteen largest topics by creator-balanced share; blue = political, yellow = non-political.*
+
 {table(big, ['topic_id', 'label', 'political', 'balanced_share', 'n_unique_all', 'n_creators', 'top_terms'], fmt='{:.3f}')}
 
 `balanced_share` is the mean over lanes of the mean creator share, so a topic that four Indian channels post 8,000 times does not outrank one that 200 channels each post a few times. The "Shocking Events and Reactions" topic is not a story: it is the cluster of content-free exclamations ("HOLY SH*T", "THIS IS INSANE..") that streamers and commentators use as titles, and it is the seed of the shared-title finding in document 5.
 
 ## Political or not
+
+![Mean political share of a creator's titles, by lane.](figures/02_political_share_by_lane.png)
+*Mean political share of a creator's titles, by lane.*
 
 {int(tl.political.sum())} of {len(tl)} topics were tagged political by the labelling model (politics, government, elections, war, courts, political figures, the culture war); the {int((~tl.political).sum())} non-political topics are crime trials (Nancy Guthrie, Lindsay Clancy, the Brown University shooting), weather and disasters, sport (World Cup, MMA), tech and business, and a few channel-specific series. The tagging is generous, and the political share of a creator's unique titles is therefore high everywhere; it separates the lanes only at the bottom:
 
@@ -169,6 +181,9 @@ Document 5 repeats the whole landscape analysis on political titles only; the co
 Read this as "where each lane's attention goes beyond the shared war story": legal commentary on the Supreme Court and DOJ topic, streamers on reactions and streamer drama, the US press on tech and AI, explainers on Israel-Palestine, right commentary on the "modern women and feminism" culture-war topic.
 
 ## The month-by-month story
+
+![Monthly creator-balanced share of the eight largest topics; the hollow marker is the half month of September.](figures/02_topic_timeline.png)
+*Monthly creator-balanced share of the eight largest topics; the hollow marker is the half month of September.*
 
 For each month the topics that rose most against their own nine-month mean (creator-balanced), with the entities named in that month's titles:
 
@@ -214,19 +229,31 @@ Exploratory factor analysis of {efa['n_features']} title-level style features, a
 
 ## The twelve factors
 
+![Factor loadings: which title features define each factor (only features loading at 0.35 or more are shown).](figures/03_loadings_heatmap.png)
+*Factor loadings: which title features define each factor (only features loading at 0.35 or more are shown).*
+
 Each factor is named from its loadings (name, share of variance, the features that load on it, and the creators at each extreme after topic control, edited uploads only):
 
 {table(pd.DataFrame(rows))}
 
+![Scree plot: eigenvalues against the parallel-analysis threshold.](figures/03_scree.png)
+*Scree plot: observed eigenvalues against the parallel-analysis threshold; the vertical line marks the twelve retained factors.*
+
 How to read a creator's position: the profile cards give each score as a percentile rank among ranked creators of the same genre, with the lane median beside it. A creator at the 95th percentile on F9 titles in ALL CAPS more than 95 % of comparable channels.
 
 ## Which lanes sit where (median topic-controlled score, edited uploads, selected factors)
+
+![Lane medians of the topic-controlled scores, all twelve factors.](figures/03_lane_medians_heatmap.png)
+*Lane medians of the topic-controlled scores, all twelve factors.*
 
 {table(lm, fmt='{:.2f}')}
 
 The tone factor (F1) already separates the landscape's temperaments: left commentary is the most outrage-toned lane, legacy TV and the US press the most positive/neutral; the legacy wires and TV score high on F2 (clause headlines with a finite verb: "Houthis claim major advance") and F7 (descriptive news prose in sentence case), commentary lanes low. Question framing (F5) belongs to the press and the explainers; person-centred titles (F6) to interview podcasts and right TV.
 
 ## Do the candidate labels survive?
+
+![Creator-level correlation between each LLM rating and each factor score.](figures/03_candidate_correlations.png)
+*Creator-level correlation between each LLM rating and each factor score.*
 
 {table(cand, ['candidate', 'best_factor', 'creator_level_r', 'second_factor', 'second_r', 'verdict'], fmt='{:.2f}')}
 
@@ -237,6 +264,9 @@ Full creator-level correlation matrix (LLM rating aggregated to creator x genre,
 Three things to take from it. Sensational and Critical are the same thing as far as titles are concerned: a title that attacks is a title that shouts. Analytical is the *absence* of that (the positive pole of F1 plus the question factor), not a dimension of its own. And the model that rated the titles agrees with itself only moderately: on 300 titles rated twice in different batches, quadratic-weighted kappa is {float(rt.loc[rt.dimension == 'sensational', 'weighted_kappa'].iloc[0]):.2f} for sensational, {float(rt.loc[rt.dimension == 'critical', 'weighted_kappa'].iloc[0]):.2f} critical, {float(rt.loc[rt.dimension == 'analytical', 'weighted_kappa'].iloc[0]):.2f} analytical, {float(rt.loc[rt.dimension == 'conversational', 'weighted_kappa'].iloc[0]):.2f} conversational and only {float(rt.loc[rt.dimension == 'educational', 'weighted_kappa'].iloc[0]):.2f} educational, so the validation is trustworthy for tone and weak for the rest.
 
 ## How much of a creator's style is just its topics?
+
+![Left: share of each factor's variance explained by topic at the title and creator level. Right: the rater's test-retest reliability per dimension.](figures/03_topic_control_and_retest.png)
+*Left: share of each factor's variance explained by topic at the title and creator level. Right: the rater's test-retest reliability per dimension.*
 
 The scores above are topic-controlled: each title's score minus the mean score of its topic (estimated on the balanced subset), averaged per creator. Topic explains between {tcs.title_level_r2_topic.min():.0%} and {tcs.title_level_r2_topic.max():.0%} of the title-level variance of a factor, most for numbers/dates (F8) and person-centred titles (F6), least for questions (F5) and capitals (F9). At the creator level the raw and controlled scores correlate at {tcs.creator_level_corr_raw_controlled.min():.2f}-{tcs.creator_level_corr_raw_controlled.max():.2f}: what a channel covers moves its score a little, how it titles moves it a lot. `dimensions.csv` carries raw, controlled and the topic-expected component side by side, and `dimensions_by_topic.csv` gives each creator's scores inside the five largest shared topics.
 
@@ -272,6 +302,9 @@ The outrage frame is the landscape's default hook, not a niche device. The ratin
 
 ## Formats by lane (share of a creator's titles, mean over creators; edited uploads)
 
+![Structural formats by lane, edited uploads.](figures/04_formats_heatmap.png)
+*Structural formats by lane, edited uploads.*
+
 {table(lv, ['lane', 'n_creators'] + FORMATS, fmt='{:.2f}')}
 
 Questions are a press and explainer habit; episode numbering belongs to the talk shows (interview podcasts, humour) and to the right TV networks, whose stream titles are date-stamped replays; the reaction format is the streamers' own; confrontation wording ("vs", "destroys", "slams") is spread thinly across commentary and streamers and rare in news. Live VODs look different again, with LIVE/BREAKING labels on {pct(float(ls.loc[ls.lane == 'wires & international', 'breaking_live'].iloc[0]))} of wire streams and confrontation on {pct(float(ls.loc[ls.lane == 'streamers', 'confrontation'].iloc[0]))} of streamer streams (debates):
@@ -279,6 +312,9 @@ Questions are a press and explainer habit; episode numbering belongs to the talk
 {table(ls, ['lane', 'n_creators', 'question', 'breaking_live', 'episode_show', 'interview_guest', 'confrontation', 'outrage'], fmt='{:.2f}')}
 
 ## The outrage hook by lane (edited uploads)
+
+![Outrage-frame share by lane, edited uploads (left) and live VODs (right).](figures/04_outrage_by_lane.png)
+*Outrage-frame share by lane, edited uploads (left) and live VODs (right).*
 
 {table(lv.sort_values('outrage', ascending=False), ['lane', 'n_creators', 'outrage', 'curiosity_gap', 'humor'], fmt='{:.2f}')}
 
@@ -323,11 +359,20 @@ Lane predicts style almost not at all. Clustering creators in the twelve-dimensi
 
 ## Clusterings against the lanes
 
+![Style space: every ranked creator, coloured by lane family. The interactive version, with names on hover and each creator's five neighbours, is on the HTML page.](figures/05_style_map.png)
+*Style space: every ranked creator, coloured by lane family. The interactive version, with names on hover and each creator's five neighbours, is on the HTML page.*
+
 Style space: agglomerative (Ward) on z-scored topic-controlled factor scores. Topic space: average linkage on the Jensen-Shannon distance between creators' topic mixes. k chosen by silhouette; ARI = adjusted Rand index (1 = identical partitions, 0 = chance).
 
 {table(ccv, fmt='{:.3f}')}
 
 The low silhouettes (0.09-0.16) say the same thing from the other side: neither space has well-separated groups, the creators form a continuum.
+
+![Topic space map.](figures/05_topic_map.png)
+*Topic space: MDS of the Jensen-Shannon distances between creators' topic mixes.*
+
+![ARI and cohesion.](figures/05_lanes_vs_style.png)
+*Left: adjusted Rand index of the clusterings against the lanes and against each other. Right: lane cohesion in style space.*
 
 ## Which lanes cohere (edited uploads)
 
@@ -355,6 +400,9 @@ Sister channels do share a house style: the four MeidasTouch Network channels si
 
 ## Who gets named
 
+![Outrage-frame ratio for the 25 most-named people: orange above the corpus baseline, blue below.](figures/05_entities_outrage.png)
+*Outrage-frame ratio for the 25 most-named people: orange above the corpus baseline, blue below.*
+
 Counted on the creator-balanced subset; people keyed by surname, so "Kirk" pools Charlie and Erika Kirk and "Trump" pools every Trump. `outrage_ratio` is the outrage-frame share of titles naming the entity over the corpus share.
 
 {table(ep, ['entity', 'n_titles_balanced', 'n_creators', 'top_lanes_by_share', 'outrage_share', 'outrage_ratio'], fmt='{:.2f}')}
@@ -364,6 +412,9 @@ Counted on the creator-balanced subset; people keyed by surname, so "Kirk" pools
 Trump is in {pct(float(ent.loc[(ent.kind == 'organisation') & (ent.entity == 'Trump'), 'share_of_balanced_titles'].iloc[0]), 1)} of balanced titles counting both tags, named by {int(ent.loc[(ent.kind == 'person') & (ent.entity == 'Trump'), 'n_creators'].iloc[0])} of 274 creators, most by legal commentary and left commentary. The entities carrying the most outrage framing relative to baseline are MAGA (1.6x), Pam Bondi, Kash Patel and Candace Owens (1.3-1.5x); the least are the crime-story names (Nancy Guthrie, Lindsay Clancy, 0.3x) and institutions used as datelines (the Senate, the House, the White House). "Hormuz" is a spaCy mistake (a strait tagged as a person) left visible on purpose: entity counts from a small NER model on headline text are noisy at the margin.
 
 ## Convergent formulas
+
+![The most shared verbatim titles across organisations.](figures/05_shared_titles.png)
+*The most shared verbatim titles across organisations.*
 
 Of {len(st):,} distinct titles (case-insensitive) used by two or more creators, {len(cross):,} cross organisations; the rest are same-outlet cross-posts (TYT / The Damage Report alone account for hundreds). The most shared:
 
@@ -402,13 +453,22 @@ Not much, and not in one direction. Of {n_series} lane x genre x measure series 
 
 ## Outrage share by month (edited uploads; mean of creators)
 
+![Outrage-frame share by month, one panel per lane, against the all-creator mean (grey dashed).](figures/06_drift_outrage.png)
+*Outrage-frame share by month, one panel per lane, against the all-creator mean (grey dashed).*
+
 {table(po, fmt='{:.2f}')}
 
 ## Tone factor (F1, positive vs outrage; topic-controlled) by month
 
+![The tone factor by month, per lane.](figures/06_drift_tone.png)
+*The tone factor by month, per lane.*
+
 {table(pf, fmt='{:.2f}')}
 
 ## ALL-CAPS factor (F9) by month
+
+![The ALL-CAPS factor by month, per lane.](figures/06_drift_caps.png)
+*The ALL-CAPS factor by month, per lane.*
 
 {table(p9, fmt='{:.2f}')}
 
@@ -457,6 +517,9 @@ Within creator, the outrage frame is the only title feature that predicts views 
 
 ## Within-creator effects, edited uploads (median over channels)
 
+![Per-channel coefficients for every title feature; boxes show the spread across channels, the black line the median.](figures/07_engagement_coefficients.png)
+*Per-channel coefficients for every title feature; boxes show the spread across channels, the black line the median.*
+
 Coefficient = change in log(1 + views) per one within-channel standard deviation of the predictor; `share_positive` = share of channels with a positive coefficient; `share_sig_*` at p < 0.05 (HC3).
 
 {table(allv, ['predictor', 'n_creators', 'median_coef_per_sd', 'q25', 'q75', 'share_positive', 'share_sig_positive', 'share_sig_negative', 'median_r2'], fmt='{:.3f}')}
@@ -464,6 +527,9 @@ Coefficient = change in log(1 + views) per one within-channel standard deviation
 Live VODs (n = {int(alls.n_creators.max())} channels) show the same picture, outrage {alls.loc[alls.predictor == 'outrage', 'median_coef_per_sd'].iloc[0]:+.3f} with {pct(float(alls.loc[alls.predictor == 'outrage', 'share_positive'].iloc[0]))} positive, everything else near zero.
 
 ## The outrage effect by lane (edited uploads)
+
+![Median outrage coefficient per lane with the share of channels where it is positive.](figures/07_outrage_effect_by_lane.png)
+*Median outrage coefficient per lane with the share of channels where it is positive.*
 
 {table(byl.sort_values('median_coef_per_sd', ascending=False), ['lane', 'n_creators', 'median_coef_per_sd', 'share_positive', 'share_sig_positive'], fmt='{:.3f}')}
 
@@ -480,11 +546,17 @@ Specification: `engagement_model.json`; per-channel coefficients: `engagement_co
 
 ## Hit concentration
 
+![Gini coefficient of views per channel, grouped by lane.](figures/07_gini_by_lane.png)
+*Gini coefficient of views per channel, grouped by lane.*
+
 Per channel x genre with at least 100 videos carrying views (all rows, repeats included: a re-uploaded live loop is a separate video with its own views).
 
 {table(hl.sort_values('median_gini'), fmt='{:.2f}')}
 
 Streamers and daily left commentators spread views most evenly (Gini 0.18-0.33 for Tariq Nasheed, Belle of the Ranch, Vaush, the Hasan VOD channel); the wires, legacy TV, the press and the right TV networks are the most hit-driven (median Gini 0.66-0.73; Real America's Voice, Politicon, Axios and The Fifth Column above 0.81, the top tenth of their videos taking three quarters of their views).
+
+![Lorenz curves and the tail test.](figures/07_lorenz_and_tails.png)
+*Left: Lorenz curves for seven channels. Right: the likelihood-ratio statistic of the power-law fit against a lognormal across all video channels.*
 
 **Power law or not.** The `powerlaw` fit (discrete, xmin by KS minimisation) with the likelihood-ratio test against a lognormal supports a power-law tail in {int(hv.powerlaw_like.sum())} of {len(hv)} video channels and {int(hs.powerlaw_like.sum())} of {len(hs)} stream channels; the ratio even points towards the power law in only {pct(float((hv.lr_vs_lognormal > 0).mean()))} of video channels. Hits are heavy-tailed but lognormal-shaped, so no channel here should be described as having a power-law audience.
 
@@ -551,7 +623,7 @@ Every video title that 274 political-media creators published between 2026-01-01
 | [7. Views](07_views.md) | whether style predicts views within a channel; how concentrated hits are |
 | [8. Null results and caveats](08_null_results_and_caveats.md) | what did not show up, and what to distrust |
 
-Alongside: [`title_stylometry.html`](title_stylometry.html) (creator selector, profile cards, landscape maps; open from a local web server), [`cards/`](cards/) (one Markdown card per creator), [`methods_appendix.md`](methods_appendix.md) (every preprocessing step, lexicon, loading, validation number, prompt and runtime), and [`all_tables.md`](all_tables.md) (the reference dump of every table in one file).
+Alongside: [`title_stylometry.html`](title_stylometry.html) (the interactive page: creator selector, profile cards, and the two landscape maps with names on hover and each creator's neighbours drawn in; open it directly in a browser), [`figures/`](figures/) (the static figures used in the documents), [`cards/`](cards/) (one Markdown card per creator), [`methods_appendix.md`](methods_appendix.md) (every preprocessing step, lexicon, loading, validation number, prompt and runtime), and [`all_tables.md`](all_tables.md) (the reference dump of every table in one file).
 
 ## The findings in six sentences
 

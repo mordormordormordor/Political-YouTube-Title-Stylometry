@@ -13,7 +13,7 @@ Every video title that 274 political-media creators published between 2026-01-01
 | [7. Views](07_views.md) | whether style predicts views within a channel; how concentrated hits are |
 | [8. Null results and caveats](08_null_results_and_caveats.md) | what did not show up, and what to distrust |
 
-Alongside: [`title_stylometry.html`](title_stylometry.html) (creator selector, profile cards, landscape maps; open from a local web server), [`cards/`](cards/) (one Markdown card per creator), [`methods_appendix.md`](methods_appendix.md) (every preprocessing step, lexicon, loading, validation number, prompt and runtime), and [`all_tables.md`](all_tables.md) (the reference dump of every table in one file).
+Alongside: [`title_stylometry.html`](title_stylometry.html) (the interactive page: creator selector, profile cards, and the two landscape maps with names on hover and each creator's neighbours drawn in; open it directly in a browser), [`figures/`](figures/) (the static figures used in the documents), [`cards/`](cards/) (one Markdown card per creator), [`methods_appendix.md`](methods_appendix.md) (every preprocessing step, lexicon, loading, validation number, prompt and runtime), and [`all_tables.md`](all_tables.md) (the reference dump of every table in one file).
 
 ## The findings in six sentences
 
