@@ -1,0 +1,193 @@
+llm,factor,factor_auto_name,score,spearman_r,pearson_r,p,n_groups
+sensational,F1,+vader_compound -vader_neg -shock_word -violence_verb,raw,-0.7109,-0.7251,3.075687934486861e-50,318
+sensational,F1,+vader_compound -vader_neg -shock_word -violence_verb,controlled,-0.6448,-0.6703,9.143319363257415e-39,318
+sensational,F2,+has_finite_verb +present_tense +past_tense +verb_share,raw,0.1087,0.1545,0.05276040229622082,318
+sensational,F2,+has_finite_verb +present_tense +past_tense +verb_share,controlled,0.0726,0.1006,0.1968583350111352,318
+sensational,F3,+lead_colon_label +lead_live +colon -entity_first,raw,-0.1521,-0.0719,0.006571832634634393,318
+sensational,F3,+lead_colon_label +lead_live +colon -entity_first,controlled,-0.0514,-0.0047,0.3612550746864143,318
+sensational,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,raw,0.1519,0.0468,0.006637729977668633,318
+sensational,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,controlled,0.0102,-0.021,0.8560198173559895,318
+sensational,F5,+q_word_start +wh_any +why_marker +q_mark,raw,-0.329,-0.3411,1.8353737634566735e-09,318
+sensational,F5,+q_word_start +wh_any +why_marker +q_mark,controlled,-0.3231,-0.3245,3.6881663614642677e-09,318
+sensational,F6,+n_person +has_person,raw,0.0823,0.1209,0.1431560473384874,318
+sensational,F6,+n_person +has_person,controlled,0.072,0.1142,0.20061881889001096,318
+sensational,F7,+noun_share -cap_token_share +adj_share +n_gpe,raw,-0.0514,-0.1995,0.3608219591615626,318
+sensational,F7,+noun_share -cap_token_share +adj_share +n_gpe,controlled,-0.0798,-0.1672,0.15567334416355352,318
+sensational,F8,+num_share +digit +year_mention,raw,-0.2118,-0.1668,0.00014205890240477463,318
+sensational,F8,+num_share +digit +year_mention,controlled,-0.0125,-0.0388,0.8247356370782664,318
+sensational,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,raw,0.306,0.4345,2.5453330650203344e-08,318
+sensational,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,controlled,0.2278,0.3857,4.134682127831996e-05,318
+sensational,F10,+quoted_speech +quotes,raw,-0.0426,0.0095,0.44853801605785065,318
+sensational,F10,+quoted_speech +quotes,controlled,-0.0189,0.0252,0.7371981332259302,318
+sensational,F11,+vader_pos +n_chars +nominalisation,raw,0.0653,0.0949,0.24588794682850193,318
+sensational,F11,+vader_pos +n_chars +nominalisation,controlled,0.1309,0.1518,0.019548837225107505,318
+sensational,F12,+future_will +modal +first_pl,raw,-0.1984,-0.1479,0.00037104411175967373,318
+sensational,F12,+future_will +modal +first_pl,controlled,-0.2065,-0.1923,0.0002091828053534811,318
+critical,F1,+vader_compound -vader_neg -shock_word -violence_verb,raw,-0.4886,-0.5083,1.737706601212026e-20,318
+critical,F1,+vader_compound -vader_neg -shock_word -violence_verb,controlled,-0.3852,-0.428,1.0912033834928344e-12,318
+critical,F2,+has_finite_verb +present_tense +past_tense +verb_share,raw,0.073,0.1028,0.194313392743361,318
+critical,F2,+has_finite_verb +present_tense +past_tense +verb_share,controlled,0.047,0.0678,0.40384013750174325,318
+critical,F3,+lead_colon_label +lead_live +colon -entity_first,raw,-0.176,-0.1723,0.0016313201685855699,318
+critical,F3,+lead_colon_label +lead_live +colon -entity_first,controlled,-0.0932,-0.1166,0.09715531021774296,318
+critical,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,raw,0.0482,-0.0233,0.39189496011912806,318
+critical,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,controlled,-0.0465,-0.0579,0.4083089007947438,318
+critical,F5,+q_word_start +wh_any +why_marker +q_mark,raw,-0.182,-0.2115,0.00111266644501634,318
+critical,F5,+q_word_start +wh_any +why_marker +q_mark,controlled,-0.192,-0.2033,0.0005779597023111086,318
+critical,F6,+n_person +has_person,raw,0.0943,0.1507,0.09334799807015004,318
+critical,F6,+n_person +has_person,controlled,0.1105,0.167,0.04888277306846176,318
+critical,F7,+noun_share -cap_token_share +adj_share +n_gpe,raw,-0.0917,-0.1559,0.1026971847564573,318
+critical,F7,+noun_share -cap_token_share +adj_share +n_gpe,controlled,-0.0967,-0.1234,0.0850827059525155,318
+critical,F8,+num_share +digit +year_mention,raw,-0.1441,-0.1235,0.010080427532832375,318
+critical,F8,+num_share +digit +year_mention,controlled,0.0224,0.0132,0.6907871069867191,318
+critical,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,raw,0.0712,0.1202,0.2053000576973178,318
+critical,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,controlled,-0.0053,0.081,0.9254817455721762,318
+critical,F10,+quoted_speech +quotes,raw,0.0532,0.0754,0.3442065361474639,318
+critical,F10,+quoted_speech +quotes,controlled,0.022,0.0736,0.6959364152848475,318
+critical,F11,+vader_pos +n_chars +nominalisation,raw,0.0584,0.0947,0.29919359237208637,318
+critical,F11,+vader_pos +n_chars +nominalisation,controlled,0.0768,0.0999,0.1720806591855223,318
+critical,F12,+future_will +modal +first_pl,raw,-0.134,-0.0763,0.01679108992656392,318
+critical,F12,+future_will +modal +first_pl,controlled,-0.1412,-0.0988,0.011684274588628531,318
+analytical,F1,+vader_compound -vader_neg -shock_word -violence_verb,raw,0.4335,0.4404,5.349701128522117e-16,318
+analytical,F1,+vader_compound -vader_neg -shock_word -violence_verb,controlled,0.4697,0.449,7.455607461355674e-19,318
+analytical,F2,+has_finite_verb +present_tense +past_tense +verb_share,raw,-0.0016,-0.0098,0.9769511534033725,318
+analytical,F2,+has_finite_verb +present_tense +past_tense +verb_share,controlled,0.0183,0.0122,0.7448583866500748,318
+analytical,F3,+lead_colon_label +lead_live +colon -entity_first,raw,0.2074,0.0957,0.00019606651079043662,318
+analytical,F3,+lead_colon_label +lead_live +colon -entity_first,controlled,0.0444,0.0275,0.43030409824679633,318
+analytical,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,raw,-0.1342,-0.0337,0.016615514023814355,318
+analytical,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,controlled,-0.0344,0.0278,0.5408605649466417,318
+analytical,F5,+q_word_start +wh_any +why_marker +q_mark,raw,0.425,0.4323,2.227356832647455e-15,318
+analytical,F5,+q_word_start +wh_any +why_marker +q_mark,controlled,0.4276,0.4358,1.4453956346311077e-15,318
+analytical,F6,+n_person +has_person,raw,0.0123,-0.0436,0.8269857605884321,318
+analytical,F6,+n_person +has_person,controlled,0.0338,-0.0199,0.5481086905852763,318
+analytical,F7,+noun_share -cap_token_share +adj_share +n_gpe,raw,0.0124,0.1553,0.8254264827144197,318
+analytical,F7,+noun_share -cap_token_share +adj_share +n_gpe,controlled,-0.0992,0.0466,0.07744029894740272,318
+analytical,F8,+num_share +digit +year_mention,raw,0.18,0.0253,0.0012624822827243423,318
+analytical,F8,+num_share +digit +year_mention,controlled,0.0039,-0.0525,0.9448068330596961,318
+analytical,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,raw,-0.2648,-0.3177,1.6698632383640162e-06,318
+analytical,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,controlled,-0.1594,-0.258,0.004388193788408411,318
+analytical,F10,+quoted_speech +quotes,raw,0.2296,0.1465,3.5831783014593075e-05,318
+analytical,F10,+quoted_speech +quotes,controlled,0.0917,0.0652,0.10270441332491335,318
+analytical,F11,+vader_pos +n_chars +nominalisation,raw,0.1058,0.1245,0.05945141287050738,318
+analytical,F11,+vader_pos +n_chars +nominalisation,controlled,0.0159,0.0312,0.7781485050170283,318
+analytical,F12,+future_will +modal +first_pl,raw,0.3773,0.3163,3.395976988862623e-12,318
+analytical,F12,+future_will +modal +first_pl,controlled,0.2678,0.2443,1.2621612621778617e-06,318
+educational,F1,+vader_compound -vader_neg -shock_word -violence_verb,raw,0.3202,0.344,5.164791023624004e-09,318
+educational,F1,+vader_compound -vader_neg -shock_word -violence_verb,controlled,0.3528,0.3329,9.443138528783004e-11,318
+educational,F2,+has_finite_verb +present_tense +past_tense +verb_share,raw,0.0216,-0.0086,0.7008546212561733,318
+educational,F2,+has_finite_verb +present_tense +past_tense +verb_share,controlled,0.0229,-0.0034,0.683810995027923,318
+educational,F3,+lead_colon_label +lead_live +colon -entity_first,raw,0.0332,-0.0326,0.5549519627606883,318
+educational,F3,+lead_colon_label +lead_live +colon -entity_first,controlled,-0.0144,-0.0486,0.7986594218378794,318
+educational,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,raw,0.0087,0.0712,0.8767650913869051,318
+educational,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,controlled,0.069,0.1098,0.21948415578214245,318
+educational,F5,+q_word_start +wh_any +why_marker +q_mark,raw,0.392,0.4216,3.9798842289129933e-13,318
+educational,F5,+q_word_start +wh_any +why_marker +q_mark,controlled,0.3739,0.4049,5.448167591974182e-12,318
+educational,F6,+n_person +has_person,raw,-0.1098,-0.1179,0.05033462475877917,318
+educational,F6,+n_person +has_person,controlled,-0.0731,-0.0841,0.19359552692233972,318
+educational,F7,+noun_share -cap_token_share +adj_share +n_gpe,raw,-0.0485,0.0609,0.3888568404263785,318
+educational,F7,+noun_share -cap_token_share +adj_share +n_gpe,controlled,-0.1124,0.0233,0.045145540450878756,318
+educational,F8,+num_share +digit +year_mention,raw,0.0564,0.0396,0.3160155347600889,318
+educational,F8,+num_share +digit +year_mention,controlled,-0.0452,0.0152,0.42198770915883316,318
+educational,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,raw,-0.0617,-0.1251,0.2729555512857765,318
+educational,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,controlled,-0.0339,-0.0983,0.5470097120730298,318
+educational,F10,+quoted_speech +quotes,raw,0.1311,0.0654,0.01936074985946982,318
+educational,F10,+quoted_speech +quotes,controlled,0.062,0.0383,0.27020774381755347,318
+educational,F11,+vader_pos +n_chars +nominalisation,raw,0.0529,0.0699,0.347120581029436,318
+educational,F11,+vader_pos +n_chars +nominalisation,controlled,-0.0013,0.0148,0.9819896682887811,318
+educational,F12,+future_will +modal +first_pl,raw,0.1656,0.1321,0.0030568076428796553,318
+educational,F12,+future_will +modal +first_pl,controlled,0.1179,0.1071,0.03561749366996563,318
+conversational,F1,+vader_compound -vader_neg -shock_word -violence_verb,raw,0.1697,0.1859,0.0023928124097341973,318
+conversational,F1,+vader_compound -vader_neg -shock_word -violence_verb,controlled,0.1498,0.1842,0.007472220337597431,318
+conversational,F2,+has_finite_verb +present_tense +past_tense +verb_share,raw,0.0721,0.0289,0.19975239180517004,318
+conversational,F2,+has_finite_verb +present_tense +past_tense +verb_share,controlled,0.0434,-0.0259,0.4407388806277031,318
+conversational,F3,+lead_colon_label +lead_live +colon -entity_first,raw,-0.0866,-0.0749,0.12309289118211653,318
+conversational,F3,+lead_colon_label +lead_live +colon -entity_first,controlled,0.0032,-0.05,0.9552103472233308,318
+conversational,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,raw,0.1766,0.623,0.0015680085422299392,318
+conversational,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,controlled,0.1748,0.6116,0.001749882460331094,318
+conversational,F5,+q_word_start +wh_any +why_marker +q_mark,raw,0.1163,0.0438,0.038109924298706674,318
+conversational,F5,+q_word_start +wh_any +why_marker +q_mark,controlled,0.0824,0.0186,0.14282458855405142,318
+conversational,F6,+n_person +has_person,raw,-0.1421,-0.1581,0.011156142993568144,318
+conversational,F6,+n_person +has_person,controlled,-0.1204,-0.1223,0.03177110145735849,318
+conversational,F7,+noun_share -cap_token_share +adj_share +n_gpe,raw,0.0015,0.0042,0.978079707225045,318
+conversational,F7,+noun_share -cap_token_share +adj_share +n_gpe,controlled,0.058,0.0621,0.30218933803776016,318
+conversational,F8,+num_share +digit +year_mention,raw,-0.0837,0.0165,0.13624193460194808,318
+conversational,F8,+num_share +digit +year_mention,controlled,-0.0492,0.001,0.38147782350851284,318
+conversational,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,raw,0.0089,-0.0118,0.8749655383207602,318
+conversational,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,controlled,-0.0307,-0.0379,0.5850193514223113,318
+conversational,F10,+quoted_speech +quotes,raw,-0.0214,-0.0332,0.7039462199600132,318
+conversational,F10,+quoted_speech +quotes,controlled,0.0148,0.0035,0.7924618240117417,318
+conversational,F11,+vader_pos +n_chars +nominalisation,raw,-0.0162,0.0141,0.7729502580896584,318
+conversational,F11,+vader_pos +n_chars +nominalisation,controlled,0.0009,0.0718,0.9875778489009105,318
+conversational,F12,+future_will +modal +first_pl,raw,-0.0458,0.0388,0.4159069884501994,318
+conversational,F12,+future_will +modal +first_pl,controlled,-0.0105,0.1087,0.8520371483829718,318
+humor,F1,+vader_compound -vader_neg -shock_word -violence_verb,raw,-0.0205,0.0048,0.7156347970700866,318
+humor,F1,+vader_compound -vader_neg -shock_word -violence_verb,controlled,-0.0218,0.0003,0.6984167188308487,318
+humor,F2,+has_finite_verb +present_tense +past_tense +verb_share,raw,0.0822,0.0624,0.1434565225963298,318
+humor,F2,+has_finite_verb +present_tense +past_tense +verb_share,controlled,0.0634,0.0565,0.2596388449209221,318
+humor,F3,+lead_colon_label +lead_live +colon -entity_first,raw,-0.0567,-0.0432,0.31316730241938806,318
+humor,F3,+lead_colon_label +lead_live +colon -entity_first,controlled,-0.0297,-0.0403,0.5980394662074564,318
+humor,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,raw,0.0626,0.0166,0.26555320063923116,318
+humor,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,controlled,0.0391,0.0152,0.4869977431288627,318
+humor,F5,+q_word_start +wh_any +why_marker +q_mark,raw,-0.0355,-0.0043,0.5281806262486305,318
+humor,F5,+q_word_start +wh_any +why_marker +q_mark,controlled,-0.0527,-0.0072,0.34914159849924364,318
+humor,F6,+n_person +has_person,raw,-0.0167,-0.0228,0.7666061697658756,318
+humor,F6,+n_person +has_person,controlled,-0.0093,-0.0265,0.8689447539076723,318
+humor,F7,+noun_share -cap_token_share +adj_share +n_gpe,raw,0.0481,0.073,0.3928008779869014,318
+humor,F7,+noun_share -cap_token_share +adj_share +n_gpe,controlled,0.078,0.0911,0.16500465452337032,318
+humor,F8,+num_share +digit +year_mention,raw,-0.0293,-0.0148,0.6028016983222465,318
+humor,F8,+num_share +digit +year_mention,controlled,0.0013,-0.0018,0.9821235766949814,318
+humor,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,raw,-0.0197,-0.0189,0.7265769589177624,318
+humor,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,controlled,-0.0333,-0.0175,0.5542942981904986,318
+humor,F10,+quoted_speech +quotes,raw,0.0221,0.0425,0.6945488004258105,318
+humor,F10,+quoted_speech +quotes,controlled,0.0242,0.0443,0.6678773707748997,318
+humor,F11,+vader_pos +n_chars +nominalisation,raw,-0.0125,-0.0009,0.8244009556041512,318
+humor,F11,+vader_pos +n_chars +nominalisation,controlled,0.0121,0.0053,0.8301794891474603,318
+humor,F12,+future_will +modal +first_pl,raw,-0.049,-0.0332,0.3839690174699401,318
+humor,F12,+future_will +modal +first_pl,controlled,-0.0021,0.0003,0.9699830759538691,318
+curiosity_gap,F1,+vader_compound -vader_neg -shock_word -violence_verb,raw,-0.0278,-0.0072,0.6216423877774274,318
+curiosity_gap,F1,+vader_compound -vader_neg -shock_word -violence_verb,controlled,-0.0151,0.0154,0.7882431279395283,318
+curiosity_gap,F2,+has_finite_verb +present_tense +past_tense +verb_share,raw,0.107,0.0843,0.05658206933959395,318
+curiosity_gap,F2,+has_finite_verb +present_tense +past_tense +verb_share,controlled,0.0767,0.0494,0.17218796523208957,318
+curiosity_gap,F3,+lead_colon_label +lead_live +colon -entity_first,raw,-0.0932,-0.0957,0.09725036353854472,318
+curiosity_gap,F3,+lead_colon_label +lead_live +colon -entity_first,controlled,-0.0416,-0.0812,0.45984736951335875,318
+curiosity_gap,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,raw,0.1742,0.1114,0.0018215442492400362,318
+curiosity_gap,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,controlled,0.1547,0.081,0.005703706774255232,318
+curiosity_gap,F5,+q_word_start +wh_any +why_marker +q_mark,raw,0.1398,0.0426,0.012606788928559338,318
+curiosity_gap,F5,+q_word_start +wh_any +why_marker +q_mark,controlled,0.1352,0.0319,0.015821303662234904,318
+curiosity_gap,F6,+n_person +has_person,raw,-0.158,-0.1339,0.0047302266558347,318
+curiosity_gap,F6,+n_person +has_person,controlled,-0.1836,-0.1513,0.0010041105770374622,318
+curiosity_gap,F7,+noun_share -cap_token_share +adj_share +n_gpe,raw,-0.169,-0.1319,0.0024914686754544174,318
+curiosity_gap,F7,+noun_share -cap_token_share +adj_share +n_gpe,controlled,-0.1124,-0.1171,0.04518944201597861,318
+curiosity_gap,F8,+num_share +digit +year_mention,raw,-0.1537,-0.0875,0.006009753252125247,318
+curiosity_gap,F8,+num_share +digit +year_mention,controlled,-0.0675,-0.0647,0.23010322732086402,318
+curiosity_gap,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,raw,0.1735,0.0425,0.0018957025385167225,318
+curiosity_gap,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,controlled,0.1386,0.023,0.01336189325809793,318
+curiosity_gap,F10,+quoted_speech +quotes,raw,-0.0805,-0.0652,0.15204022614495025,318
+curiosity_gap,F10,+quoted_speech +quotes,controlled,-0.0728,-0.0715,0.19534575658005582,318
+curiosity_gap,F11,+vader_pos +n_chars +nominalisation,raw,-0.1167,-0.0924,0.037592945274851686,318
+curiosity_gap,F11,+vader_pos +n_chars +nominalisation,controlled,-0.0577,-0.0439,0.3048296829342424,318
+curiosity_gap,F12,+future_will +modal +first_pl,raw,-0.0876,-0.1057,0.11891939609734406,318
+curiosity_gap,F12,+future_will +modal +first_pl,controlled,-0.0871,-0.1077,0.12106693546126102,318
+outrage,F1,+vader_compound -vader_neg -shock_word -violence_verb,raw,-0.6106,-0.6057,7.116143363765768e-34,318
+outrage,F1,+vader_compound -vader_neg -shock_word -violence_verb,controlled,-0.5262,-0.5279,4.781216548919636e-24,318
+outrage,F2,+has_finite_verb +present_tense +past_tense +verb_share,raw,0.0971,0.1444,0.08384538304113087,318
+outrage,F2,+has_finite_verb +present_tense +past_tense +verb_share,controlled,0.0565,0.0855,0.3151357507108183,318
+outrage,F3,+lead_colon_label +lead_live +colon -entity_first,raw,-0.1874,-0.1468,0.0007857450864617374,318
+outrage,F3,+lead_colon_label +lead_live +colon -entity_first,controlled,-0.1058,-0.0846,0.059441826146751184,318
+outrage,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,raw,0.0901,-0.0157,0.10892488361336526,318
+outrage,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,controlled,-0.0381,-0.0713,0.49869396009608236,318
+outrage,F5,+q_word_start +wh_any +why_marker +q_mark,raw,-0.2477,-0.2512,7.852975425380411e-06,318
+outrage,F5,+q_word_start +wh_any +why_marker +q_mark,controlled,-0.2462,-0.2502,8.965621787034161e-06,318
+outrage,F6,+n_person +has_person,raw,-0.0142,0.0156,0.8012095993929053,318
+outrage,F6,+n_person +has_person,controlled,-0.0084,0.0226,0.8815495850507752,318
+outrage,F7,+noun_share -cap_token_share +adj_share +n_gpe,raw,-0.0817,-0.2163,0.146227590642943,318
+outrage,F7,+noun_share -cap_token_share +adj_share +n_gpe,controlled,-0.1062,-0.2017,0.05845630779503663,318
+outrage,F8,+num_share +digit +year_mention,raw,-0.2262,-0.1935,4.695899101223882e-05,318
+outrage,F8,+num_share +digit +year_mention,controlled,-0.0371,-0.0739,0.5100298810726583,318
+outrage,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,raw,0.2125,0.2775,0.00013448090635511154,318
+outrage,F9,+allcaps_word_share +full_caps_title +has_allcaps_word,controlled,0.1665,0.2438,0.0029063365559173883,318
+outrage,F10,+quoted_speech +quotes,raw,-0.0563,0.0014,0.3172323411641922,318
+outrage,F10,+quoted_speech +quotes,controlled,-0.0699,-0.0095,0.21369774320393772,318
+outrage,F11,+vader_pos +n_chars +nominalisation,raw,0.0347,0.051,0.5374614649980243,318
+outrage,F11,+vader_pos +n_chars +nominalisation,controlled,0.0798,0.0842,0.15561068797668565,318
+outrage,F12,+future_will +modal +first_pl,raw,-0.1635,-0.1065,0.003462600210147642,318
+outrage,F12,+future_will +modal +first_pl,controlled,-0.1838,-0.1418,0.000991996453966631,318

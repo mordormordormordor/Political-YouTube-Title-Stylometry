@@ -1,0 +1,30 @@
+{
+  "dependent": "log(1 + view_count) (snapshot at fetch time, 2026-09-14)",
+  "predictors": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "curiosity_gap",
+    "outrage",
+    "humor",
+    "n_tokens"
+  ],
+  "controls": [
+    "publish-month dummies",
+    "topic dummies (topics with >= 5 titles for the creator; others pooled)"
+  ],
+  "standardisation": "predictors z-scored within creator x genre",
+  "se": "HC3",
+  "min_titles": 100,
+  "subscriber_normalisation": "log(views/subscribers) shifts the intercept only; slopes unchanged",
+  "excluded": "Rumble (no view counts), verbatim repeats, titles without a view count"
+}

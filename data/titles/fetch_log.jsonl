@@ -1,0 +1,555 @@
+{"creator": "@AsmonTV", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1051, "kept": 947, "undated": 0, "seconds": 27.3, "fetched_at": "2026-09-14T15:40:03+00:00"}
+{"creator": "@AsmonTV", "tab": "streams", "platform": "youtube", "status": "error", "error": "could not read https://www.youtube.com/@AsmonTV/streams", "seconds": 0.4, "fetched_at": "2026-09-14T15:40:30+00:00"}
+{"creator": "@BenShapiro", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 567, "kept": 525, "undated": 0, "seconds": 14.6, "fetched_at": "2026-09-14T15:40:31+00:00"}
+{"creator": "@BenShapiro", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 19, "kept": 17, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:40:45+00:00"}
+{"creator": "@ClipsCandaceOwens", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 192, "kept": 192, "undated": 0, "seconds": 5.0, "fetched_at": "2026-09-14T15:40:46+00:00"}
+{"creator": "@ClipsCandaceOwens", "tab": "streams", "platform": "youtube", "status": "error", "error": "could not read https://www.youtube.com/@ClipsCandaceOwens/streams", "seconds": 0.4, "fetched_at": "2026-09-14T15:40:51+00:00"}
+{"creator": "@HasanAbi", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 685, "kept": 635, "undated": 0, "seconds": 16.8, "fetched_at": "2026-09-14T15:40:51+00:00"}
+{"creator": "@HasanAbi", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 7, "kept": 7, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T15:41:08+00:00"}
+{"creator": "@HasanAbiVODs3", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 229, "kept": 181, "undated": 0, "seconds": 6.0, "fetched_at": "2026-09-14T15:41:08+00:00"}
+{"creator": "@HasanAbiVODs3", "tab": "streams", "platform": "youtube", "status": "error", "error": "could not read https://www.youtube.com/@HasanAbiVODs3/streams", "seconds": 0.4, "fetched_at": "2026-09-14T15:41:14+00:00"}
+{"creator": "@AsmonTV", "tab": "streams", "platform": "youtube", "status": "error", "error": "could not read https://www.youtube.com/@AsmonTV/streams", "seconds": 0.5, "fetched_at": "2026-09-14T15:41:38+00:00"}
+{"creator": "@ClipsCandaceOwens", "tab": "streams", "platform": "youtube", "status": "error", "error": "could not read https://www.youtube.com/@ClipsCandaceOwens/streams", "seconds": 0.3, "fetched_at": "2026-09-14T15:41:38+00:00"}
+{"creator": "@HasanAbiVODs3", "tab": "streams", "platform": "youtube", "status": "error", "error": "could not read https://www.youtube.com/@HasanAbiVODs3/streams", "seconds": 0.4, "fetched_at": "2026-09-14T15:41:39+00:00"}
+{"creator": "@LukeBeasley", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1273, "kept": 1168, "undated": 0, "seconds": 33.1, "fetched_at": "2026-09-14T15:41:39+00:00"}
+{"creator": "@LukeBeasley", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 247, "kept": 247, "undated": 0, "seconds": 6.5, "fetched_at": "2026-09-14T15:42:12+00:00"}
+{"creator": "@MattWalsh", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 352, "kept": 297, "undated": 0, "seconds": 9.1, "fetched_at": "2026-09-14T15:42:19+00:00"}
+{"creator": "@MattWalsh", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 4, "kept": 2, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:42:28+00:00"}
+{"creator": "@AsmonTV", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @AsmonTV: This channel does not have a streams tab", "seconds": 0.6, "fetched_at": "2026-09-14T15:43:11+00:00"}
+{"creator": "@ClipsCandaceOwens", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @ClipsCandaceOwens: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T15:43:11+00:00"}
+{"creator": "@HasanAbiVODs3", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @HasanAbiVODs3: This channel does not have a streams tab", "seconds": 4.4, "fetched_at": "2026-09-14T15:43:12+00:00"}
+{"creator": "@MegynKelly", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1807, "kept": 1651, "undated": 0, "seconds": 45.7, "fetched_at": "2026-09-14T15:43:16+00:00"}
+{"creator": "@MegynKelly", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 13, "kept": 13, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:44:02+00:00"}
+{"creator": "@MeidasTouch", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 3943, "kept": 3533, "undated": 0, "seconds": 100.6, "fetched_at": "2026-09-14T15:44:02+00:00"}
+{"creator": "@MeidasTouch", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 699, "kept": 631, "undated": 0, "seconds": 18.5, "fetched_at": "2026-09-14T15:45:43+00:00"}
+{"creator": "@MichaelKnowles", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 533, "kept": 472, "undated": 0, "seconds": 13.9, "fetched_at": "2026-09-14T15:46:01+00:00"}
+{"creator": "@MichaelKnowles", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 6, "kept": 4, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:46:15+00:00"}
+{"creator": "@PBDPodcast", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 40, "kept": 38, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T15:46:15+00:00"}
+{"creator": "@PBDPodcast", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 131, "kept": 118, "undated": 0, "seconds": 3.6, "fetched_at": "2026-09-14T15:46:17+00:00"}
+{"creator": "@PartOfTheProblem", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 114, "kept": 103, "undated": 0, "seconds": 2.6, "fetched_at": "2026-09-14T15:46:20+00:00"}
+{"creator": "@PartOfTheProblem", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T15:46:23+00:00"}
+{"creator": "@SecularTalk", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1605, "kept": 1459, "undated": 0, "seconds": 42.2, "fetched_at": "2026-09-14T15:46:23+00:00"}
+{"creator": "@SecularTalk", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:47:05+00:00"}
+{"creator": "@StevenCrowder", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 187, "kept": 169, "undated": 0, "seconds": 5.1, "fetched_at": "2026-09-14T15:47:06+00:00"}
+{"creator": "@StevenCrowder", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 9, "kept": 8, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:47:11+00:00"}
+{"creator": "@TheMajorityReport", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1844, "kept": 1660, "undated": 0, "seconds": 48.2, "fetched_at": "2026-09-14T15:47:11+00:00"}
+{"creator": "@TheMajorityReport", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 216, "kept": 195, "undated": 1, "seconds": 5.8, "fetched_at": "2026-09-14T15:47:59+00:00"}
+{"creator": "@TheYoungTurks", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 3134, "kept": 2872, "undated": 0, "seconds": 84.7, "fetched_at": "2026-09-14T15:48:05+00:00"}
+{"creator": "@TheYoungTurks", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 491, "kept": 451, "undated": 1, "seconds": 12.8, "fetched_at": "2026-09-14T15:49:30+00:00"}
+{"creator": "@TimDillonShow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 74, "kept": 68, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T15:49:43+00:00"}
+{"creator": "@TimDillonShow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.2, "fetched_at": "2026-09-14T15:49:45+00:00"}
+{"creator": "@Timcast", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 222, "kept": 186, "undated": 0, "seconds": 5.5, "fetched_at": "2026-09-14T15:49:45+00:00"}
+{"creator": "@Timcast", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 8, "kept": 6, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:49:50+00:00"}
+{"creator": "@TuckerCarlson", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 133, "kept": 119, "undated": 0, "seconds": 3.5, "fetched_at": "2026-09-14T15:49:51+00:00"}
+{"creator": "@TuckerCarlson", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T15:49:54+00:00"}
+{"creator": "@Vaush", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 493, "kept": 453, "undated": 0, "seconds": 12.6, "fetched_at": "2026-09-14T15:49:55+00:00"}
+{"creator": "@Vaush", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:50:07+00:00"}
+{"creator": "@adammockler", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1278, "kept": 1125, "undated": 0, "seconds": 33.0, "fetched_at": "2026-09-14T15:50:08+00:00"}
+{"creator": "@adammockler", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2, "kept": 2, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T15:50:41+00:00"}
+{"creator": "@bennyjohnson", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1661, "kept": 1508, "undated": 0, "seconds": 43.1, "fetched_at": "2026-09-14T15:50:41+00:00"}
+{"creator": "@bennyjohnson", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 191, "kept": 168, "undated": 0, "seconds": 5.0, "fetched_at": "2026-09-14T15:51:24+00:00"}
+{"creator": "@breakingpoints", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1143, "kept": 1037, "undated": 0, "seconds": 29.3, "fetched_at": "2026-09-14T15:51:29+00:00"}
+{"creator": "@breakingpoints", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 4, "kept": 4, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T15:51:58+00:00"}
+{"creator": "@briantylercohen", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1212, "kept": 1082, "undated": 0, "seconds": 31.1, "fetched_at": "2026-09-14T15:51:59+00:00"}
+{"creator": "@briantylercohen", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 12, "kept": 10, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T15:52:30+00:00"}
+{"creator": "@deanwithrs", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 285, "kept": 265, "undated": 0, "seconds": 7.1, "fetched_at": "2026-09-14T15:52:30+00:00"}
+{"creator": "@deanwithrs", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 298, "kept": 268, "undated": 0, "seconds": 7.3, "fetched_at": "2026-09-14T15:52:37+00:00"}
+{"creator": "@destiny", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 279, "kept": 267, "undated": 0, "seconds": 7.2, "fetched_at": "2026-09-14T15:52:44+00:00"}
+{"creator": "@destiny", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @destiny: This channel does not have a streams tab", "seconds": 0.6, "fetched_at": "2026-09-14T15:52:52+00:00"}
+{"creator": "@glennbeck", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 503, "kept": 460, "undated": 0, "seconds": 12.7, "fetched_at": "2026-09-14T15:52:52+00:00"}
+{"creator": "@glennbeck", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 125, "kept": 125, "undated": 0, "seconds": 3.3, "fetched_at": "2026-09-14T15:53:05+00:00"}
+{"creator": "@hutch", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 174, "kept": 162, "undated": 0, "seconds": 4.3, "fetched_at": "2026-09-14T15:53:08+00:00"}
+{"creator": "@hutch", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 50, "kept": 50, "undated": 0, "seconds": 1.0, "fetched_at": "2026-09-14T15:53:13+00:00"}
+{"creator": "@joerogan", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 156, "kept": 141, "undated": 0, "seconds": 4.3, "fetched_at": "2026-09-14T15:53:14+00:00"}
+{"creator": "@joerogan", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:53:18+00:00"}
+{"creator": "@podsaveamerica", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 803, "kept": 731, "undated": 0, "seconds": 20.3, "fetched_at": "2026-09-14T15:53:18+00:00"}
+{"creator": "@podsaveamerica", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T15:53:39+00:00"}
+{"creator": "@ponderingpolitics", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1619, "kept": 1470, "undated": 0, "seconds": 40.8, "fetched_at": "2026-09-14T15:53:39+00:00"}
+{"creator": "@ponderingpolitics", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2, "kept": 2, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:54:20+00:00"}
+{"creator": "@samharrisorg", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 128, "kept": 116, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T15:54:20+00:00"}
+{"creator": "@samharrisorg", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @samharrisorg: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T15:54:24+00:00"}
+{"creator": "@thedavidpakmanshow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1845, "kept": 1659, "undated": 0, "seconds": 47.6, "fetched_at": "2026-09-14T15:54:24+00:00"}
+{"creator": "@thedavidpakmanshow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 5, "kept": 5, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:55:12+00:00"}
+{"creator": "@triggerpod", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 163, "kept": 152, "undated": 0, "seconds": 4.2, "fetched_at": "2026-09-14T15:55:12+00:00"}
+{"creator": "@triggerpod", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 6, "kept": 6, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:55:16+00:00"}
+{"creator": "@MLChristiansen", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 126, "kept": 118, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T15:55:17+00:00"}
+{"creator": "@MLChristiansen", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 84, "kept": 77, "undated": 0, "seconds": 2.1, "fetched_at": "2026-09-14T15:55:20+00:00"}
+{"creator": "@TheOfficerTatum", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 661, "kept": 617, "undated": 0, "seconds": 17.0, "fetched_at": "2026-09-14T15:55:22+00:00"}
+{"creator": "@TheOfficerTatum", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 195, "kept": 194, "undated": 0, "seconds": 4.9, "fetched_at": "2026-09-14T15:55:39+00:00"}
+{"creator": "@therationalnational", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 154, "kept": 142, "undated": 0, "seconds": 4.2, "fetched_at": "2026-09-14T15:55:44+00:00"}
+{"creator": "@therationalnational", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 7, "kept": 7, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T15:55:48+00:00"}
+{"creator": "@SecondThought", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 22, "kept": 20, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:55:48+00:00"}
+{"creator": "@SecondThought", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @SecondThought: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T15:55:49+00:00"}
+{"creator": "@bulwarkmedia", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 2400, "kept": 2137, "undated": 0, "seconds": 61.1, "fetched_at": "2026-09-14T15:55:49+00:00"}
+{"creator": "@bulwarkmedia", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 234, "kept": 228, "undated": 0, "seconds": 5.9, "fetched_at": "2026-09-14T15:56:50+00:00"}
+{"creator": "@LeejaMiller", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 68, "kept": 60, "undated": 0, "seconds": 2.0, "fetched_at": "2026-09-14T15:56:56+00:00"}
+{"creator": "@LeejaMiller", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:56:58+00:00"}
+{"creator": "@PiersMorganUncensored", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 206, "kept": 181, "undated": 0, "seconds": 5.1, "fetched_at": "2026-09-14T15:56:59+00:00"}
+{"creator": "@PiersMorganUncensored", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:57:04+00:00"}
+{"creator": "@zeteo", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 220, "kept": 206, "undated": 0, "seconds": 5.9, "fetched_at": "2026-09-14T15:57:04+00:00"}
+{"creator": "@zeteo", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 28, "kept": 25, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T15:57:10+00:00"}
+{"creator": "@TheDamageReport", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 3530, "kept": 3206, "undated": 0, "seconds": 93.8, "fetched_at": "2026-09-14T15:57:11+00:00"}
+{"creator": "@TheDamageReport", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 294, "kept": 274, "undated": 0, "seconds": 7.2, "fetched_at": "2026-09-14T15:58:44+00:00"}
+{"creator": "@TheHumanistReport", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 170, "kept": 154, "undated": 0, "seconds": 4.2, "fetched_at": "2026-09-14T15:58:52+00:00"}
+{"creator": "@TheHumanistReport", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 38, "kept": 35, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T15:58:56+00:00"}
+{"creator": "@FarronBalanced", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1912, "kept": 1782, "undated": 0, "seconds": 50.0, "fetched_at": "2026-09-14T15:58:57+00:00"}
+{"creator": "@FarronBalanced", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 197, "kept": 188, "undated": 0, "seconds": 5.1, "fetched_at": "2026-09-14T15:59:47+00:00"}
+{"creator": "@dollemore", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1580, "kept": 1439, "undated": 0, "seconds": 41.9, "fetched_at": "2026-09-14T15:59:52+00:00"}
+{"creator": "@dollemore", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 5, "kept": 4, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:00:34+00:00"}
+{"creator": "@RebelHQ", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1437, "kept": 1293, "undated": 0, "seconds": 38.2, "fetched_at": "2026-09-14T16:00:34+00:00"}
+{"creator": "@RebelHQ", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:01:12+00:00"}
+{"creator": "@StatusCoup", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 573, "kept": 517, "undated": 0, "seconds": 15.7, "fetched_at": "2026-09-14T16:01:13+00:00"}
+{"creator": "@StatusCoup", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 178, "kept": 159, "undated": 0, "seconds": 4.2, "fetched_at": "2026-09-14T16:01:28+00:00"}
+{"creator": "@SMN", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 217, "kept": 197, "undated": 0, "seconds": 5.6, "fetched_at": "2026-09-14T16:01:33+00:00"}
+{"creator": "@SMN", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 8, "kept": 8, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:01:38+00:00"}
+{"creator": "@BelleRanch", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 912, "kept": 822, "undated": 0, "seconds": 23.8, "fetched_at": "2026-09-14T16:01:39+00:00"}
+{"creator": "@BelleRanch", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:02:02+00:00"}
+{"creator": "@harryjsisson", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 751, "kept": 688, "undated": 0, "seconds": 20.2, "fetched_at": "2026-09-14T16:02:03+00:00"}
+{"creator": "@harryjsisson", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 3, "kept": 3, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:02:23+00:00"}
+{"creator": "@aaronparnas1", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 940, "kept": 819, "undated": 0, "seconds": 24.8, "fetched_at": "2026-09-14T16:02:23+00:00"}
+{"creator": "@aaronparnas1", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 14, "kept": 13, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:02:48+00:00"}
+{"creator": "@rolandsmartin", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 815, "kept": 742, "undated": 0, "seconds": 22.2, "fetched_at": "2026-09-14T16:02:48+00:00"}
+{"creator": "@rolandsmartin", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1326, "kept": 1223, "undated": 2, "seconds": 35.7, "fetched_at": "2026-09-14T16:03:11+00:00"}
+{"creator": "@DropSiteNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 241, "kept": 204, "undated": 0, "seconds": 6.6, "fetched_at": "2026-09-14T16:03:46+00:00"}
+{"creator": "@DropSiteNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 47, "kept": 43, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T16:03:53+00:00"}
+{"creator": "@BadFaithPodcast", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 89, "kept": 81, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T16:03:54+00:00"}
+{"creator": "@BadFaithPodcast", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:03:56+00:00"}
+{"creator": "@thejimmydoreshow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1261, "kept": 1146, "undated": 0, "seconds": 35.2, "fetched_at": "2026-09-14T16:03:56+00:00"}
+{"creator": "@thejimmydoreshow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 121, "kept": 116, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T16:04:31+00:00"}
+{"creator": "@KimIversen", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 607, "kept": 534, "undated": 0, "seconds": 16.6, "fetched_at": "2026-09-14T16:04:35+00:00"}
+{"creator": "@KimIversen", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:04:51+00:00"}
+{"creator": "@NovaraMedia", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 650, "kept": 585, "undated": 0, "seconds": 17.1, "fetched_at": "2026-09-14T16:04:52+00:00"}
+{"creator": "@NovaraMedia", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 6, "kept": 4, "undated": 1, "seconds": 0.5, "fetched_at": "2026-09-14T16:05:09+00:00"}
+{"creator": "@lovettorleaveitpodcast", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 129, "kept": 114, "undated": 0, "seconds": 3.6, "fetched_at": "2026-09-14T16:05:09+00:00"}
+{"creator": "@lovettorleaveitpodcast", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @lovettorleaveitpodcast: This channel does not have a streams tab", "seconds": 0.7, "fetched_at": "2026-09-14T16:05:13+00:00"}
+{"creator": "@PoliticsGirl", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 125, "kept": 116, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T16:05:14+00:00"}
+{"creator": "@PoliticsGirl", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:05:17+00:00"}
+{"creator": "@TheLincolnProject", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 131, "kept": 123, "undated": 0, "seconds": 3.6, "fetched_at": "2026-09-14T16:05:17+00:00"}
+{"creator": "@TheLincolnProject", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 31, "kept": 28, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T16:05:21+00:00"}
+{"creator": "@chriscuomo", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 216, "kept": 208, "undated": 0, "seconds": 5.8, "fetched_at": "2026-09-14T16:05:22+00:00"}
+{"creator": "@chriscuomo", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 9, "kept": 9, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:05:28+00:00"}
+{"creator": "@MichaelMaliceofficial", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 59, "kept": 55, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T16:05:28+00:00"}
+{"creator": "@MichaelMaliceofficial", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 3, "kept": 3, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:05:29+00:00"}
+{"creator": "@StosselTV", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 55, "kept": 50, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T16:05:30+00:00"}
+{"creator": "@StosselTV", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:05:31+00:00"}
+{"creator": "@RubinReport", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1211, "kept": 1093, "undated": 0, "seconds": 32.3, "fetched_at": "2026-09-14T16:05:31+00:00"}
+{"creator": "@RubinReport", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 130, "kept": 115, "undated": 1, "seconds": 3.5, "fetched_at": "2026-09-14T16:06:03+00:00"}
+{"creator": "@ColemanHughesOfficial", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 59, "kept": 54, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T16:06:07+00:00"}
+{"creator": "@ColemanHughesOfficial", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.2, "fetched_at": "2026-09-14T16:06:08+00:00"}
+{"creator": "@DarkHorsePod", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 78, "kept": 70, "undated": 0, "seconds": 2.2, "fetched_at": "2026-09-14T16:06:08+00:00"}
+{"creator": "@DarkHorsePod", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 42, "kept": 38, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T16:06:11+00:00"}
+{"creator": "@OfficialFlagrant", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 39, "kept": 35, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T16:06:12+00:00"}
+{"creator": "@OfficialFlagrant", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:06:13+00:00"}
+{"creator": "@turningpointusa", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 212, "kept": 183, "undated": 0, "seconds": 5.7, "fetched_at": "2026-09-14T16:06:13+00:00"}
+{"creator": "@turningpointusa", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 15, "kept": 14, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:06:19+00:00"}
+{"creator": "@marklevinshow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 561, "kept": 505, "undated": 0, "seconds": 14.7, "fetched_at": "2026-09-14T16:06:19+00:00"}
+{"creator": "@marklevinshow", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @marklevinshow: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T16:06:34+00:00"}
+{"creator": "@bbrettcooper", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 159, "kept": 143, "undated": 0, "seconds": 4.3, "fetched_at": "2026-09-14T16:06:35+00:00"}
+{"creator": "@bbrettcooper", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:06:39+00:00"}
+{"creator": "@theisabelbrown", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 167, "kept": 141, "undated": 0, "seconds": 4.3, "fetched_at": "2026-09-14T16:06:39+00:00"}
+{"creator": "@theisabelbrown", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:06:43+00:00"}
+{"creator": "@lizwheeler", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 110, "kept": 86, "undated": 0, "seconds": 2.7, "fetched_at": "2026-09-14T16:06:44+00:00"}
+{"creator": "@lizwheeler", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 70, "kept": 70, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T16:06:46+00:00"}
+{"creator": "@AndrewKlavan", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 217, "kept": 196, "undated": 0, "seconds": 6.0, "fetched_at": "2026-09-14T16:06:48+00:00"}
+{"creator": "@AndrewKlavan", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 4, "kept": 3, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:06:54+00:00"}
+{"creator": "@RealAlexClark", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 88, "kept": 79, "undated": 0, "seconds": 2.0, "fetched_at": "2026-09-14T16:06:55+00:00"}
+{"creator": "@RealAlexClark", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:06:57+00:00"}
+{"creator": "@BlazeTV", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 963, "kept": 868, "undated": 0, "seconds": 25.7, "fetched_at": "2026-09-14T16:06:57+00:00"}
+{"creator": "@BlazeTV", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 14, "kept": 14, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:07:23+00:00"}
+{"creator": "@PragerU", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 430, "kept": 387, "undated": 1, "seconds": 11.3, "fetched_at": "2026-09-14T16:07:23+00:00"}
+{"creator": "@PragerU", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 33, "kept": 32, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T16:07:34+00:00"}
+{"creator": "@TimcastIRL", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1007, "kept": 903, "undated": 0, "seconds": 26.1, "fetched_at": "2026-09-14T16:07:36+00:00"}
+{"creator": "@TimcastIRL", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 169, "kept": 154, "undated": 0, "seconds": 4.5, "fetched_at": "2026-09-14T16:08:02+00:00"}
+{"creator": "@TimcastNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 618, "kept": 548, "undated": 0, "seconds": 15.7, "fetched_at": "2026-09-14T16:08:06+00:00"}
+{"creator": "@TimcastNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 8, "kept": 8, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:08:22+00:00"}
+{"creator": "@AnthonyBrianLogan", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 267, "kept": 248, "undated": 0, "seconds": 6.7, "fetched_at": "2026-09-14T16:08:22+00:00"}
+{"creator": "@AnthonyBrianLogan", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 61, "kept": 52, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T16:08:29+00:00"}
+{"creator": "@DrSteveTurleyTV", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 495, "kept": 444, "undated": 0, "seconds": 12.7, "fetched_at": "2026-09-14T16:08:31+00:00"}
+{"creator": "@DrSteveTurleyTV", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 34, "kept": 31, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T16:08:43+00:00"}
+{"creator": "@SaltyCracker", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 437, "kept": 387, "undated": 0, "seconds": 11.3, "fetched_at": "2026-09-14T16:08:45+00:00"}
+{"creator": "@SaltyCracker", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @SaltyCracker: This channel does not have a streams tab", "seconds": 0.6, "fetched_at": "2026-09-14T16:08:56+00:00"}
+{"creator": "@TheQuartering", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 782, "kept": 691, "undated": 0, "seconds": 20.6, "fetched_at": "2026-09-14T16:08:56+00:00"}
+{"creator": "@TheQuartering", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @TheQuartering: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T16:09:17+00:00"}
+{"creator": "@ActualJusticeWarrior", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 440, "kept": 392, "undated": 0, "seconds": 11.4, "fetched_at": "2026-09-14T16:09:17+00:00"}
+{"creator": "@ActualJusticeWarrior", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:09:29+00:00"}
+{"creator": "@Styxhexenhammer666", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 540, "kept": 449, "undated": 0, "seconds": 14.1, "fetched_at": "2026-09-14T16:09:29+00:00"}
+{"creator": "@Styxhexenhammer666", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 48, "kept": 27, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T16:09:43+00:00"}
+{"creator": "@dineshdsouza", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 160, "kept": 92, "undated": 0, "seconds": 4.4, "fetched_at": "2026-09-14T16:09:45+00:00"}
+{"creator": "@dineshdsouza", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2, "kept": 2, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:09:49+00:00"}
+{"creator": "@RebelNewsOnline", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1562, "kept": 1368, "undated": 0, "seconds": 41.2, "fetched_at": "2026-09-14T16:09:49+00:00"}
+{"creator": "@RebelNewsOnline", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 219, "kept": 197, "undated": 0, "seconds": 5.8, "fetched_at": "2026-09-14T16:10:30+00:00"}
+{"creator": "@SNEAKO", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 7, "kept": 5, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:10:36+00:00"}
+{"creator": "@SNEAKO", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:10:37+00:00"}
+{"creator": "@LIVESNEAKO", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 509, "kept": 481, "undated": 0, "seconds": 13.8, "fetched_at": "2026-09-14T16:10:37+00:00"}
+{"creator": "@LIVESNEAKO", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 71, "kept": 69, "undated": 1, "seconds": 1.9, "fetched_at": "2026-09-14T16:10:51+00:00"}
+{"creator": "@The_Crucible", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 244, "kept": 226, "undated": 0, "seconds": 6.5, "fetched_at": "2026-09-14T16:10:53+00:00"}
+{"creator": "@The_Crucible", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 5, "kept": 5, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:10:59+00:00"}
+{"creator": "@JacksonHinkleOfficial", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 449, "kept": 391, "undated": 0, "seconds": 11.5, "fetched_at": "2026-09-14T16:11:00+00:00"}
+{"creator": "@JacksonHinkleOfficial", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 84, "kept": 83, "undated": 1, "seconds": 2.5, "fetched_at": "2026-09-14T16:11:11+00:00"}
+{"creator": "@lonerboxlive", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 105, "kept": 88, "undated": 0, "seconds": 6.4, "fetched_at": "2026-09-14T16:11:14+00:00"}
+{"creator": "@lonerboxlive", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 0, "undated": 1, "seconds": 0.6, "fetched_at": "2026-09-14T16:11:20+00:00"}
+{"creator": "@Xanderhal", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 372, "kept": 316, "undated": 0, "seconds": 9.8, "fetched_at": "2026-09-14T16:11:20+00:00"}
+{"creator": "@Xanderhal", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 122, "kept": 108, "undated": 0, "seconds": 3.5, "fetched_at": "2026-09-14T16:11:30+00:00"}
+{"creator": "@DailyDenims", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 215, "kept": 215, "undated": 0, "seconds": 5.8, "fetched_at": "2026-09-14T16:11:34+00:00"}
+{"creator": "@DailyDenims", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @DailyDenims: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T16:11:40+00:00"}
+{"creator": "@PiscoLitty", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 62, "kept": 56, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T16:11:40+00:00"}
+{"creator": "@PiscoLitty", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 0, "undated": 1, "seconds": 0.7, "fetched_at": "2026-09-14T16:11:42+00:00"}
+{"creator": "@TheSerfTimes", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 276, "kept": 247, "undated": 0, "seconds": 7.3, "fetched_at": "2026-09-14T16:11:43+00:00"}
+{"creator": "@TheSerfTimes", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 123, "kept": 106, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T16:11:50+00:00"}
+{"creator": "@FreshFitMiami", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 121, "kept": 111, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T16:11:53+00:00"}
+{"creator": "@FreshFitMiami", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 85, "kept": 82, "undated": 0, "seconds": 2.0, "fetched_at": "2026-09-14T16:11:57+00:00"}
+{"creator": "@moreperfectunion", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 78, "kept": 71, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T16:11:59+00:00"}
+{"creator": "@moreperfectunion", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 4, "kept": 4, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:12:01+00:00"}
+{"creator": "@JackCocchiarellaShow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1781, "kept": 1602, "undated": 0, "seconds": 45.5, "fetched_at": "2026-09-14T16:12:01+00:00"}
+{"creator": "@JackCocchiarellaShow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 21, "kept": 21, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:12:46+00:00"}
+{"creator": "@TheRealTabithaSpeaks", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 520, "kept": 452, "undated": 0, "seconds": 13.9, "fetched_at": "2026-09-14T16:12:47+00:00"}
+{"creator": "@TheRealTabithaSpeaks", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 6, "kept": 4, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:13:01+00:00"}
+{"creator": "@PhillipScottPodcast", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 33, "kept": 7, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T16:13:01+00:00"}
+{"creator": "@PhillipScottPodcast", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 154, "kept": 153, "undated": 0, "seconds": 4.3, "fetched_at": "2026-09-14T16:13:02+00:00"}
+{"creator": "@MrTariqNasheed", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 486, "kept": 403, "undated": 3, "seconds": 12.7, "fetched_at": "2026-09-14T16:13:07+00:00"}
+{"creator": "@MrTariqNasheed", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 21, "kept": 19, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:13:19+00:00"}
+{"creator": "@underthedesknews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 90, "kept": 79, "undated": 0, "seconds": 2.7, "fetched_at": "2026-09-14T16:13:20+00:00"}
+{"creator": "@underthedesknews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 119, "kept": 119, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T16:13:22+00:00"}
+{"creator": "@usefulidiots", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 211, "kept": 190, "undated": 0, "seconds": 5.8, "fetched_at": "2026-09-14T16:13:26+00:00"}
+{"creator": "@usefulidiots", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 73, "kept": 69, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T16:13:32+00:00"}
+{"creator": "@thomhartmann", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 847, "kept": 784, "undated": 0, "seconds": 22.3, "fetched_at": "2026-09-14T16:13:34+00:00"}
+{"creator": "@thomhartmann", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2, "kept": 0, "undated": 1, "seconds": 0.3, "fetched_at": "2026-09-14T16:13:56+00:00"}
+{"creator": "@SabbySabs", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 699, "kept": 626, "undated": 2, "seconds": 18.6, "fetched_at": "2026-09-14T16:13:56+00:00"}
+{"creator": "@SabbySabs", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 111, "kept": 103, "undated": 0, "seconds": 2.8, "fetched_at": "2026-09-14T16:14:15+00:00"}
+{"creator": "@DueDissidence", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 738, "kept": 643, "undated": 0, "seconds": 19.2, "fetched_at": "2026-09-14T16:14:18+00:00"}
+{"creator": "@DueDissidence", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 123, "kept": 112, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T16:14:37+00:00"}
+{"creator": "@thegrayzone7996", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 179, "kept": 155, "undated": 0, "seconds": 4.0, "fetched_at": "2026-09-14T16:14:40+00:00"}
+{"creator": "@thegrayzone7996", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 41, "kept": 36, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T16:14:44+00:00"}
+{"creator": "@GeopoliticalEconomyReport", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 79, "kept": 72, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T16:14:45+00:00"}
+{"creator": "@GeopoliticalEconomyReport", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:14:47+00:00"}
+{"creator": "@DannyHaiphongYT", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 84, "kept": 64, "undated": 0, "seconds": 2.0, "fetched_at": "2026-09-14T16:14:47+00:00"}
+{"creator": "@DannyHaiphongYT", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 245, "kept": 228, "undated": 1, "seconds": 6.8, "fetched_at": "2026-09-14T16:14:49+00:00"}
+{"creator": "@judgingfreedom", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 367, "kept": 355, "undated": 0, "seconds": 9.7, "fetched_at": "2026-09-14T16:14:56+00:00"}
+{"creator": "@judgingfreedom", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 776, "kept": 699, "undated": 1, "seconds": 19.2, "fetched_at": "2026-09-14T16:15:06+00:00"}
+{"creator": "@LeverNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 77, "kept": 73, "undated": 0, "seconds": 2.0, "fetched_at": "2026-09-14T16:15:25+00:00"}
+{"creator": "@LeverNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 10, "kept": 9, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:15:27+00:00"}
+{"creator": "@DemocracyNow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 905, "kept": 817, "undated": 0, "seconds": 24.0, "fetched_at": "2026-09-14T16:15:27+00:00"}
+{"creator": "@DemocracyNow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:15:51+00:00"}
+{"creator": "@doomscrollpodcast", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 18, "kept": 17, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:15:52+00:00"}
+{"creator": "@doomscrollpodcast", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @doomscrollpodcast: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T16:15:52+00:00"}
+{"creator": "@DylanBurnsLIVE", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 216, "kept": 190, "undated": 0, "seconds": 5.9, "fetched_at": "2026-09-14T16:15:53+00:00"}
+{"creator": "@DylanBurnsLIVE", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 3, "kept": 3, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:15:59+00:00"}
+{"creator": "@marclamonthillnetwork", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 358, "kept": 321, "undated": 0, "seconds": 9.0, "fetched_at": "2026-09-14T16:15:59+00:00"}
+{"creator": "@marclamonthillnetwork", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 166, "kept": 151, "undated": 0, "seconds": 4.3, "fetched_at": "2026-09-14T16:16:08+00:00"}
+{"creator": "@Tim_Black", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 356, "kept": 329, "undated": 0, "seconds": 8.8, "fetched_at": "2026-09-14T16:16:12+00:00"}
+{"creator": "@Tim_Black", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 17, "kept": 16, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:16:21+00:00"}
+{"creator": "@OwenJonesTalks", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 251, "kept": 233, "undated": 0, "seconds": 6.7, "fetched_at": "2026-09-14T16:16:21+00:00"}
+{"creator": "@OwenJonesTalks", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:16:28+00:00"}
+{"creator": "@DoubleDownNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 69, "kept": 66, "undated": 0, "seconds": 1.8, "fetched_at": "2026-09-14T16:16:29+00:00"}
+{"creator": "@DoubleDownNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:16:30+00:00"}
+{"creator": "@PoliticsJOE", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 380, "kept": 339, "undated": 0, "seconds": 10.1, "fetched_at": "2026-09-14T16:16:31+00:00"}
+{"creator": "@PoliticsJOE", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:16:41+00:00"}
+{"creator": "@TheJoyReidShow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 257, "kept": 238, "undated": 0, "seconds": 6.6, "fetched_at": "2026-09-14T16:16:41+00:00"}
+{"creator": "@TheJoyReidShow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 161, "kept": 144, "undated": 0, "seconds": 4.1, "fetched_at": "2026-09-14T16:16:48+00:00"}
+{"creator": "@TheDonLemonShow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 402, "kept": 366, "undated": 0, "seconds": 10.4, "fetched_at": "2026-09-14T16:16:52+00:00"}
+{"creator": "@TheDonLemonShow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 444, "kept": 400, "undated": 0, "seconds": 11.3, "fetched_at": "2026-09-14T16:17:02+00:00"}
+{"creator": "@jimacosta", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 339, "kept": 314, "undated": 0, "seconds": 8.9, "fetched_at": "2026-09-14T16:17:14+00:00"}
+{"creator": "@jimacosta", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 173, "kept": 161, "undated": 0, "seconds": 4.4, "fetched_at": "2026-09-14T16:17:22+00:00"}
+{"creator": "@msnow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 10879, "kept": 9882, "undated": 0, "seconds": 280.4, "fetched_at": "2026-09-14T16:17:27+00:00"}
+{"creator": "@msnow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 366, "kept": 335, "undated": 0, "seconds": 9.7, "fetched_at": "2026-09-14T16:22:07+00:00"}
+{"creator": "@LegalAFMTN", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 3013, "kept": 2740, "undated": 0, "seconds": 81.3, "fetched_at": "2026-09-14T16:22:17+00:00"}
+{"creator": "@LegalAFMTN", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 49, "kept": 46, "undated": 1, "seconds": 4.7, "fetched_at": "2026-09-14T16:23:38+00:00"}
+{"creator": "@GlennKirschner2", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 294, "kept": 264, "undated": 0, "seconds": 7.5, "fetched_at": "2026-09-14T16:23:43+00:00"}
+{"creator": "@GlennKirschner2", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @GlennKirschner2: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T16:23:50+00:00"}
+{"creator": "@LegalEagle", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 119, "kept": 105, "undated": 0, "seconds": 2.7, "fetched_at": "2026-09-14T16:23:51+00:00"}
+{"creator": "@LegalEagle", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @LegalEagle: This channel does not have a streams tab", "seconds": 0.8, "fetched_at": "2026-09-14T16:23:54+00:00"}
+{"creator": "@DemocracyDocket", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 140, "kept": 129, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T16:23:54+00:00"}
+{"creator": "@DemocracyDocket", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 4, "kept": 4, "undated": 0, "seconds": 3.6, "fetched_at": "2026-09-14T16:23:58+00:00"}
+{"creator": "@katiephangnews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 439, "kept": 403, "undated": 0, "seconds": 11.3, "fetched_at": "2026-09-14T16:24:01+00:00"}
+{"creator": "@katiephangnews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 47, "kept": 45, "undated": 0, "seconds": 1.0, "fetched_at": "2026-09-14T16:24:13+00:00"}
+{"creator": "@TheMichaelCohenShow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 545, "kept": 479, "undated": 0, "seconds": 14.2, "fetched_at": "2026-09-14T16:24:14+00:00"}
+{"creator": "@TheMichaelCohenShow", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @TheMichaelCohenShow: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T16:24:28+00:00"}
+{"creator": "@PTLRadioShow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1879, "kept": 1685, "undated": 0, "seconds": 50.6, "fetched_at": "2026-09-14T16:24:28+00:00"}
+{"creator": "@PTLRadioShow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 222, "kept": 202, "undated": 0, "seconds": 5.7, "fetched_at": "2026-09-14T16:25:19+00:00"}
+{"creator": "@thewarningwithsteveschmidt", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 388, "kept": 363, "undated": 0, "seconds": 9.8, "fetched_at": "2026-09-14T16:25:25+00:00"}
+{"creator": "@thewarningwithsteveschmidt", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 113, "kept": 113, "undated": 0, "seconds": 2.8, "fetched_at": "2026-09-14T16:25:34+00:00"}
+{"creator": "@cafedotcom", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 62, "kept": 54, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T16:25:37+00:00"}
+{"creator": "@cafedotcom", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.2, "fetched_at": "2026-09-14T16:25:39+00:00"}
+{"creator": "@fastpoliticspodcast", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 162, "kept": 145, "undated": 0, "seconds": 4.3, "fetched_at": "2026-09-14T16:25:39+00:00"}
+{"creator": "@fastpoliticspodcast", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @fastpoliticspodcast: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T16:25:44+00:00"}
+{"creator": "@RestPoliticsUS", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 244, "kept": 220, "undated": 0, "seconds": 6.4, "fetched_at": "2026-09-14T16:25:44+00:00"}
+{"creator": "@RestPoliticsUS", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 5, "kept": 5, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:25:50+00:00"}
+{"creator": "@LastWeekTonight", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 37, "kept": 35, "undated": 0, "seconds": 2.3, "fetched_at": "2026-09-14T16:25:51+00:00"}
+{"creator": "@LastWeekTonight", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @LastWeekTonight: This channel does not have a streams tab", "seconds": 0.7, "fetched_at": "2026-09-14T16:25:53+00:00"}
+{"creator": "@thehill", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 4627, "kept": 4250, "undated": 0, "seconds": 121.0, "fetched_at": "2026-09-14T16:25:54+00:00"}
+{"creator": "@thehill", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 559, "kept": 509, "undated": 1, "seconds": 14.6, "fetched_at": "2026-09-14T16:27:55+00:00"}
+{"creator": "@AfterPartyEmily", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 453, "kept": 410, "undated": 0, "seconds": 12.2, "fetched_at": "2026-09-14T16:28:09+00:00"}
+{"creator": "@AfterPartyEmily", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 83, "kept": 74, "undated": 1, "seconds": 1.9, "fetched_at": "2026-09-14T16:28:21+00:00"}
+{"creator": "@wethefifth", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 124, "kept": 112, "undated": 0, "seconds": 3.5, "fetched_at": "2026-09-14T16:28:24+00:00"}
+{"creator": "@wethefifth", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2, "kept": 2, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:28:28+00:00"}
+{"creator": "@morebridgetphetasy", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 225, "kept": 206, "undated": 0, "seconds": 5.9, "fetched_at": "2026-09-14T16:28:28+00:00"}
+{"creator": "@morebridgetphetasy", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @morebridgetphetasy: This channel does not have a streams tab", "seconds": 0.7, "fetched_at": "2026-09-14T16:28:34+00:00"}
+{"creator": "@ZeihanonGeopolitics", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 239, "kept": 217, "undated": 0, "seconds": 5.9, "fetched_at": "2026-09-14T16:28:34+00:00"}
+{"creator": "@ZeihanonGeopolitics", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @ZeihanonGeopolitics: This channel does not have a streams tab", "seconds": 0.7, "fetched_at": "2026-09-14T16:28:40+00:00"}
+{"creator": "@CaspianReport", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 27, "kept": 25, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:28:41+00:00"}
+{"creator": "@CaspianReport", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @CaspianReport: This channel does not have a streams tab", "seconds": 0.6, "fetched_at": "2026-09-14T16:28:41+00:00"}
+{"creator": "@PerunAU", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 41, "kept": 37, "undated": 0, "seconds": 1.4, "fetched_at": "2026-09-14T16:28:42+00:00"}
+{"creator": "@PerunAU", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @PerunAU: This channel does not have a streams tab", "seconds": 0.3, "fetched_at": "2026-09-14T16:28:43+00:00"}
+{"creator": "@UnHerd", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 95, "kept": 83, "undated": 0, "seconds": 2.9, "fetched_at": "2026-09-14T16:28:44+00:00"}
+{"creator": "@UnHerd", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 21, "kept": 17, "undated": 1, "seconds": 0.4, "fetched_at": "2026-09-14T16:28:47+00:00"}
+{"creator": "@ZubyMusic", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 159, "kept": 139, "undated": 0, "seconds": 4.3, "fetched_at": "2026-09-14T16:28:47+00:00"}
+{"creator": "@ZubyMusic", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:28:51+00:00"}
+{"creator": "@winston_marshall", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 119, "kept": 109, "undated": 0, "seconds": 2.7, "fetched_at": "2026-09-14T16:28:52+00:00"}
+{"creator": "@winston_marshall", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @winston_marshall: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T16:28:54+00:00"}
+{"creator": "@ClubRandomPodcast", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 220, "kept": 197, "undated": 0, "seconds": 5.7, "fetched_at": "2026-09-14T16:28:55+00:00"}
+{"creator": "@ClubRandomPodcast", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @ClubRandomPodcast: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T16:29:01+00:00"}
+{"creator": "@TheAdamCarollaShow1", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 436, "kept": 395, "undated": 0, "seconds": 11.3, "fetched_at": "2026-09-14T16:29:01+00:00"}
+{"creator": "@TheAdamCarollaShow1", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T16:29:12+00:00"}
+{"creator": "@NickShirley", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 40, "kept": 32, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T16:29:13+00:00"}
+{"creator": "@NickShirley", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 17, "kept": 13, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:29:14+00:00"}
+{"creator": "@RealDanBongino", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 266, "kept": 266, "undated": 0, "seconds": 6.6, "fetched_at": "2026-09-14T16:29:14+00:00"}
+{"creator": "@RealDanBongino", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:29:21+00:00"}
+{"creator": "@RedactedNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 520, "kept": 452, "undated": 0, "seconds": 13.6, "fetched_at": "2026-09-14T16:29:21+00:00"}
+{"creator": "@RedactedNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 152, "kept": 140, "undated": 0, "seconds": 4.2, "fetched_at": "2026-09-14T16:29:35+00:00"}
+{"creator": "@GrahamAllen", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 247, "kept": 247, "undated": 0, "seconds": 6.7, "fetched_at": "2026-09-14T16:29:39+00:00"}
+{"creator": "@GrahamAllen", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T16:29:46+00:00"}
+{"creator": "@chicksonright", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 527, "kept": 475, "undated": 0, "seconds": 13.8, "fetched_at": "2026-09-14T16:29:46+00:00"}
+{"creator": "@chicksonright", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 196, "kept": 179, "undated": 0, "seconds": 5.1, "fetched_at": "2026-09-14T16:30:00+00:00"}
+{"creator": "@X22Report-y5y", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 418, "kept": 396, "undated": 0, "seconds": 10.7, "fetched_at": "2026-09-14T16:30:05+00:00"}
+{"creator": "@X22Report-y5y", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @X22Report-y5y: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T16:30:16+00:00"}
+{"creator": "@AndWeKnowOfficial-o9b", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 197, "kept": 185, "undated": 0, "seconds": 5.0, "fetched_at": "2026-09-14T16:30:16+00:00"}
+{"creator": "@AndWeKnowOfficial-o9b", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @AndWeKnowOfficial-o9b: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T16:30:21+00:00"}
+{"creator": "@RSBN", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1724, "kept": 1642, "undated": 0, "seconds": 45.9, "fetched_at": "2026-09-14T16:30:22+00:00"}
+{"creator": "@RSBN", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 376, "kept": 337, "undated": 3, "seconds": 9.6, "fetched_at": "2026-09-14T16:31:08+00:00"}
+{"creator": "@RealAmericasVoice", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 3851, "kept": 2659, "undated": 0, "seconds": 108.2, "fetched_at": "2026-09-14T16:31:17+00:00"}
+{"creator": "@RealAmericasVoice", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2989, "kept": 2958, "undated": 11, "seconds": 81.0, "fetched_at": "2026-09-14T16:33:05+00:00"}
+{"creator": "@NewsmaxTV", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 4368, "kept": 3945, "undated": 0, "seconds": 127.5, "fetched_at": "2026-09-14T16:34:26+00:00"}
+{"creator": "@NewsmaxTV", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 438, "kept": 404, "undated": 2, "seconds": 11.4, "fetched_at": "2026-09-14T16:36:34+00:00"}
+{"creator": "@oann", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1887, "kept": 1804, "undated": 0, "seconds": 52.0, "fetched_at": "2026-09-14T16:36:45+00:00"}
+{"creator": "@oann", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 363, "kept": 344, "undated": 0, "seconds": 10.0, "fetched_at": "2026-09-14T16:37:37+00:00"}
+{"creator": "@HangOutwithSeanHannity", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 154, "kept": 154, "undated": 0, "seconds": 4.1, "fetched_at": "2026-09-14T16:37:47+00:00"}
+{"creator": "@HangOutwithSeanHannity", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @HangOutwithSeanHannity: This channel does not have a streams tab", "seconds": 0.7, "fetched_at": "2026-09-14T16:37:51+00:00"}
+{"creator": "@FoxNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 9139, "kept": 8213, "undated": 0, "seconds": 234.3, "fetched_at": "2026-09-14T16:37:52+00:00"}
+{"creator": "@FoxNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 771, "kept": 655, "undated": 1, "seconds": 20.3, "fetched_at": "2026-09-14T16:41:46+00:00"}
+{"creator": "@FoxNewsChannelClips", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 6360, "kept": 5748, "undated": 0, "seconds": 174.6, "fetched_at": "2026-09-14T16:42:07+00:00"}
+{"creator": "@FoxNewsChannelClips", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @FoxNewsChannelClips: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T16:45:01+00:00"}
+{"creator": "@NBCNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 7196, "kept": 6516, "undated": 0, "seconds": 188.0, "fetched_at": "2026-09-14T16:45:02+00:00"}
+{"creator": "@NBCNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 429, "kept": 404, "undated": 1, "seconds": 11.0, "fetched_at": "2026-09-14T16:48:10+00:00"}
+{"creator": "@CNN", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 2123, "kept": 1758, "undated": 0, "seconds": 56.1, "fetched_at": "2026-09-14T16:48:21+00:00"}
+{"creator": "@CNN", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 96, "kept": 95, "undated": 1, "seconds": 2.9, "fetched_at": "2026-09-14T16:49:17+00:00"}
+{"creator": "@ABCNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 8806, "kept": 8002, "undated": 0, "seconds": 234.6, "fetched_at": "2026-09-14T16:49:20+00:00"}
+{"creator": "@ABCNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 699, "kept": 626, "undated": 2, "seconds": 18.4, "fetched_at": "2026-09-14T16:53:14+00:00"}
+{"creator": "@CBSNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 9170, "kept": 8322, "undated": 0, "seconds": 235.0, "fetched_at": "2026-09-14T16:53:33+00:00"}
+{"creator": "@CBSNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 403, "kept": 369, "undated": 1, "seconds": 10.6, "fetched_at": "2026-09-14T16:57:28+00:00"}
+{"creator": "@NewsNation", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 8390, "kept": 7390, "undated": 0, "seconds": 233.2, "fetched_at": "2026-09-14T16:57:38+00:00"}
+{"creator": "@NewsNation", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 338, "kept": 306, "undated": 1, "seconds": 9.0, "fetched_at": "2026-09-14T17:01:32+00:00"}
+{"creator": "@Reuters", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 8856, "kept": 8092, "undated": 0, "seconds": 239.4, "fetched_at": "2026-09-14T17:01:40+00:00"}
+{"creator": "@Reuters", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2559, "kept": 2294, "undated": 2, "seconds": 67.7, "fetched_at": "2026-09-14T17:05:40+00:00"}
+{"creator": "@BBCNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 2683, "kept": 2445, "undated": 0, "seconds": 84.2, "fetched_at": "2026-09-14T17:06:48+00:00"}
+{"creator": "@BBCNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.2, "fetched_at": "2026-09-14T17:08:12+00:00"}
+{"creator": "@aljazeeraenglish", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 7685, "kept": 7006, "undated": 0, "seconds": 199.4, "fetched_at": "2026-09-14T17:08:12+00:00"}
+{"creator": "@aljazeeraenglish", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 0, "undated": 1, "seconds": 0.8, "fetched_at": "2026-09-14T17:11:31+00:00"}
+{"creator": "@AssociatedPress", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 6274, "kept": 5574, "undated": 0, "seconds": 168.7, "fetched_at": "2026-09-14T17:11:32+00:00"}
+{"creator": "@AssociatedPress", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1450, "kept": 1332, "undated": 2, "seconds": 38.7, "fetched_at": "2026-09-14T17:14:21+00:00"}
+{"creator": "@nytimes", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 78, "kept": 71, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T17:15:00+00:00"}
+{"creator": "@nytimes", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 6, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:15:02+00:00"}
+{"creator": "@wsj", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 132, "kept": 119, "undated": 0, "seconds": 3.5, "fetched_at": "2026-09-14T17:15:02+00:00"}
+{"creator": "@wsj", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 11, "kept": 11, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:15:05+00:00"}
+{"creator": "@markets", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 8704, "kept": 8008, "undated": 0, "seconds": 230.9, "fetched_at": "2026-09-14T17:15:06+00:00"}
+{"creator": "@markets", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 62, "kept": 56, "undated": 1, "seconds": 1.9, "fetched_at": "2026-09-14T17:18:57+00:00"}
+{"creator": "@USATODAY", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 2373, "kept": 2224, "undated": 0, "seconds": 63.2, "fetched_at": "2026-09-14T17:18:59+00:00"}
+{"creator": "@USATODAY", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 470, "kept": 430, "undated": 0, "seconds": 12.2, "fetched_at": "2026-09-14T17:20:02+00:00"}
+{"creator": "@NPR", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 75, "kept": 73, "undated": 0, "seconds": 1.8, "fetched_at": "2026-09-14T17:20:14+00:00"}
+{"creator": "@NPR", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:20:16+00:00"}
+{"creator": "@POLITICO", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 318, "kept": 295, "undated": 0, "seconds": 8.0, "fetched_at": "2026-09-14T17:20:16+00:00"}
+{"creator": "@POLITICO", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:20:24+00:00"}
+{"creator": "@axios", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 198, "kept": 138, "undated": 0, "seconds": 5.2, "fetched_at": "2026-09-14T17:20:24+00:00"}
+{"creator": "@axios", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 14, "kept": 8, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:20:30+00:00"}
+{"creator": "@Vox", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 139, "kept": 133, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T17:20:30+00:00"}
+{"creator": "@Vox", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:20:33+00:00"}
+{"creator": "@TheDailyBeast", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 379, "kept": 322, "undated": 0, "seconds": 9.8, "fetched_at": "2026-09-14T17:20:34+00:00"}
+{"creator": "@TheDailyBeast", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 36, "kept": 34, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T17:20:43+00:00"}
+{"creator": "@Semafor", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 164, "kept": 153, "undated": 0, "seconds": 4.3, "fetched_at": "2026-09-14T17:20:45+00:00"}
+{"creator": "@Semafor", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 39, "kept": 30, "undated": 3, "seconds": 1.1, "fetched_at": "2026-09-14T17:20:49+00:00"}
+{"creator": "@FinancialTimes", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 46, "kept": 40, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T17:20:50+00:00"}
+{"creator": "@FinancialTimes", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:20:51+00:00"}
+{"creator": "@Forbes", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1406, "kept": 1269, "undated": 0, "seconds": 37.2, "fetched_at": "2026-09-14T17:20:52+00:00"}
+{"creator": "@Forbes", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 3, "kept": 3, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:21:29+00:00"}
+{"creator": "@TechCrunch", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 169, "kept": 146, "undated": 0, "seconds": 4.3, "fetched_at": "2026-09-14T17:21:29+00:00"}
+{"creator": "@TechCrunch", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:21:33+00:00"}
+{"creator": "@TheAtlantic", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 179, "kept": 166, "undated": 0, "seconds": 4.4, "fetched_at": "2026-09-14T17:21:34+00:00"}
+{"creator": "@TheAtlantic", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 5, "kept": 5, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:21:38+00:00"}
+{"creator": "@newyorker", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 60, "kept": 51, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T17:21:39+00:00"}
+{"creator": "@newyorker", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:21:40+00:00"}
+{"creator": "@TheEconomist", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 157, "kept": 137, "undated": 0, "seconds": 4.1, "fetched_at": "2026-09-14T17:21:41+00:00"}
+{"creator": "@TheEconomist", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:21:45+00:00"}
+{"creator": "@nationalreview", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 212, "kept": 191, "undated": 0, "seconds": 5.6, "fetched_at": "2026-09-14T17:21:45+00:00"}
+{"creator": "@nationalreview", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2, "kept": 2, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:21:51+00:00"}
+{"creator": "@nypost", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 6883, "kept": 6305, "undated": 0, "seconds": 180.8, "fetched_at": "2026-09-14T17:21:51+00:00"}
+{"creator": "@nypost", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 129, "kept": 114, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T17:24:52+00:00"}
+{"creator": "@clayandbuck", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 645, "kept": 581, "undated": 0, "seconds": 17.8, "fetched_at": "2026-09-14T17:24:55+00:00"}
+{"creator": "@clayandbuck", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 43, "kept": 42, "undated": 1, "seconds": 1.1, "fetched_at": "2026-09-14T17:25:13+00:00"}
+{"creator": "@TheBrianKilmeadeShow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 352, "kept": 352, "undated": 0, "seconds": 9.0, "fetched_at": "2026-09-14T17:25:14+00:00"}
+{"creator": "@TheBrianKilmeadeShow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2, "kept": 2, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:25:23+00:00"}
+{"creator": "@MarkDice", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 105, "kept": 92, "undated": 0, "seconds": 2.8, "fetched_at": "2026-09-14T17:25:23+00:00"}
+{"creator": "@MarkDice", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.2, "fetched_at": "2026-09-14T17:25:26+00:00"}
+{"creator": "@PrisonPlanetLive", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 62, "kept": 56, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T17:25:26+00:00"}
+{"creator": "@PrisonPlanetLive", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @PrisonPlanetLive: This channel does not have a streams tab", "seconds": 0.9, "fetched_at": "2026-09-14T17:25:28+00:00"}
+{"creator": "@LiberalHivemind", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 933, "kept": 855, "undated": 0, "seconds": 24.0, "fetched_at": "2026-09-14T17:25:29+00:00"}
+{"creator": "@LiberalHivemind", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @LiberalHivemind: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T17:25:53+00:00"}
+{"creator": "@MrReaganUSA", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 29, "kept": 26, "undated": 0, "seconds": 0.5, "fetched_at": "2026-09-14T17:25:54+00:00"}
+{"creator": "@MrReaganUSA", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 11, "kept": 2, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:25:54+00:00"}
+{"creator": "@BlackConservativePerspective", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 1402, "kept": 1271, "undated": 0, "seconds": 37.1, "fetched_at": "2026-09-14T17:25:55+00:00"}
+{"creator": "@BlackConservativePerspective", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:26:32+00:00"}
+{"creator": "@FleccasTalks", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 298, "kept": 290, "undated": 0, "seconds": 7.8, "fetched_at": "2026-09-14T17:26:32+00:00"}
+{"creator": "@FleccasTalks", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @FleccasTalks: This channel does not have a streams tab", "seconds": 0.6, "fetched_at": "2026-09-14T17:26:40+00:00"}
+{"creator": "@laurenchenclips", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 109, "kept": 109, "undated": 0, "seconds": 2.8, "fetched_at": "2026-09-14T17:26:40+00:00"}
+{"creator": "@laurenchenclips", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @laurenchenclips: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T17:26:43+00:00"}
+{"creator": "@mikhaila", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 28, "kept": 27, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:26:44+00:00"}
+{"creator": "@mikhaila", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @mikhaila: This channel does not have a streams tab", "seconds": 1.0, "fetched_at": "2026-09-14T17:26:44+00:00"}
+{"creator": "@MattBernstein1", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 24, "kept": 21, "undated": 0, "seconds": 4.0, "fetched_at": "2026-09-14T17:26:45+00:00"}
+{"creator": "@MattBernstein1", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @MattBernstein1: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T17:26:49+00:00"}
+{"creator": "@TomiLahrenIsFearless", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 136, "kept": 118, "undated": 0, "seconds": 3.5, "fetched_at": "2026-09-14T17:26:49+00:00"}
+{"creator": "@TomiLahrenIsFearless", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @TomiLahrenIsFearless: This channel does not have a streams tab", "seconds": 0.7, "fetched_at": "2026-09-14T17:26:53+00:00"}
+{"creator": "@RufoandLomez", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 111, "kept": 80, "undated": 0, "seconds": 2.8, "fetched_at": "2026-09-14T17:26:54+00:00"}
+{"creator": "@RufoandLomez", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @RufoandLomez: This channel does not have a streams tab", "seconds": 0.6, "fetched_at": "2026-09-14T17:26:56+00:00"}
+{"creator": "@newdiscourses", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 106, "kept": 98, "undated": 0, "seconds": 2.7, "fetched_at": "2026-09-14T17:26:57+00:00"}
+{"creator": "@newdiscourses", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @newdiscourses: This channel does not have a streams tab", "seconds": 0.6, "fetched_at": "2026-09-14T17:27:00+00:00"}
+{"creator": "@JesseKellyDC", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 572, "kept": 505, "undated": 0, "seconds": 15.9, "fetched_at": "2026-09-14T17:27:00+00:00"}
+{"creator": "@JesseKellyDC", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 3.8, "fetched_at": "2026-09-14T17:27:16+00:00"}
+{"creator": "@TheAmalaEkpunobi", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 237, "kept": 211, "undated": 0, "seconds": 5.8, "fetched_at": "2026-09-14T17:27:20+00:00"}
+{"creator": "@TheAmalaEkpunobi", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 12, "kept": 12, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:27:26+00:00"}
+{"creator": "@XAVIAER", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 79, "kept": 71, "undated": 0, "seconds": 2.5, "fetched_at": "2026-09-14T17:27:26+00:00"}
+{"creator": "@XAVIAER", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 3, "kept": 3, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:27:29+00:00"}
+{"creator": "@BlaireWhiteX", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 12, "kept": 11, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:27:29+00:00"}
+{"creator": "@BlaireWhiteX", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:27:29+00:00"}
+{"creator": "@AlexStein99", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 98, "kept": 87, "undated": 0, "seconds": 2.7, "fetched_at": "2026-09-14T17:27:30+00:00"}
+{"creator": "@AlexStein99", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 57, "kept": 41, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T17:27:32+00:00"}
+{"creator": "@RileyGaines", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 143, "kept": 143, "undated": 0, "seconds": 3.5, "fetched_at": "2026-09-14T17:27:34+00:00"}
+{"creator": "@RileyGaines", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @RileyGaines: This channel does not have a streams tab", "seconds": 0.7, "fetched_at": "2026-09-14T17:27:37+00:00"}
+{"creator": "@SavSays", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 16, "kept": 16, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:27:38+00:00"}
+{"creator": "@SavSays", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:27:38+00:00"}
+{"creator": "@CamHigby", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 248, "kept": 187, "undated": 0, "seconds": 6.6, "fetched_at": "2026-09-14T17:27:39+00:00"}
+{"creator": "@CamHigby", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 101, "kept": 71, "undated": 0, "seconds": 2.7, "fetched_at": "2026-09-14T17:27:45+00:00"}
+{"creator": "@BrittanyVenti", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 57, "kept": 55, "undated": 0, "seconds": 4.7, "fetched_at": "2026-09-14T17:27:48+00:00"}
+{"creator": "@BrittanyVenti", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 22, "kept": 19, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:27:53+00:00"}
+{"creator": "@jlptalk", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 340, "kept": 304, "undated": 0, "seconds": 9.2, "fetched_at": "2026-09-14T17:27:53+00:00"}
+{"creator": "@jlptalk", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 207, "kept": 187, "undated": 1, "seconds": 4.9, "fetched_at": "2026-09-14T17:28:02+00:00"}
+{"creator": "@AnaEscobarShow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 32, "kept": 32, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T17:28:07+00:00"}
+{"creator": "@AnaEscobarShow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 32, "kept": 31, "undated": 1, "seconds": 1.1, "fetched_at": "2026-09-14T17:28:08+00:00"}
+{"creator": "@fightbackpodcast", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 687, "kept": 632, "undated": 0, "seconds": 17.3, "fetched_at": "2026-09-14T17:28:09+00:00"}
+{"creator": "@fightbackpodcast", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 25, "kept": 24, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:28:26+00:00"}
+{"creator": "@JustPearlyThings", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 776, "kept": 669, "undated": 0, "seconds": 19.7, "fetched_at": "2026-09-14T17:28:27+00:00"}
+{"creator": "@JustPearlyThings", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 109, "kept": 96, "undated": 0, "seconds": 2.7, "fetched_at": "2026-09-14T17:28:47+00:00"}
+{"creator": "@MyronGainesX", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 435, "kept": 389, "undated": 0, "seconds": 11.2, "fetched_at": "2026-09-14T17:28:49+00:00"}
+{"creator": "@MyronGainesX", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 255, "kept": 247, "undated": 0, "seconds": 6.7, "fetched_at": "2026-09-14T17:29:00+00:00"}
+{"creator": "@SydneyWatson", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 69, "kept": 61, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T17:29:07+00:00"}
+{"creator": "@SydneyWatson", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @SydneyWatson: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T17:29:09+00:00"}
+{"creator": "@ThePodcastoftheLotusEaters", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 685, "kept": 622, "undated": 0, "seconds": 18.0, "fetched_at": "2026-09-14T17:29:09+00:00"}
+{"creator": "@ThePodcastoftheLotusEaters", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 180, "kept": 179, "undated": 1, "seconds": 4.3, "fetched_at": "2026-09-14T17:29:27+00:00"}
+{"creator": "@VivaFrei", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 369, "kept": 331, "undated": 0, "seconds": 9.4, "fetched_at": "2026-09-14T17:29:32+00:00"}
+{"creator": "@VivaFrei", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 58, "kept": 52, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T17:29:41+00:00"}
+{"creator": "@RobertGouveiaEsq", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 786, "kept": 696, "undated": 0, "seconds": 21.1, "fetched_at": "2026-09-14T17:29:42+00:00"}
+{"creator": "@RobertGouveiaEsq", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 446, "kept": 396, "undated": 0, "seconds": 11.4, "fetched_at": "2026-09-14T17:30:03+00:00"}
+{"creator": "@RekietaLaw", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 21, "kept": 18, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:30:15+00:00"}
+{"creator": "@RekietaLaw", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 122, "kept": 106, "undated": 0, "seconds": 3.3, "fetched_at": "2026-09-14T17:30:15+00:00"}
+{"creator": "@CashJordan", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 304, "kept": 301, "undated": 0, "seconds": 11.7, "fetched_at": "2026-09-14T17:30:19+00:00"}
+{"creator": "@CashJordan", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @CashJordan: This channel does not have a streams tab", "seconds": 0.3, "fetched_at": "2026-09-14T17:30:30+00:00"}
+{"creator": "@ChadPrather1", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 169, "kept": 160, "undated": 0, "seconds": 4.5, "fetched_at": "2026-09-14T17:30:31+00:00"}
+{"creator": "@ChadPrather1", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 230, "kept": 202, "undated": 0, "seconds": 5.9, "fetched_at": "2026-09-14T17:30:35+00:00"}
+{"creator": "@OutKick", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 67, "kept": 51, "undated": 0, "seconds": 1.8, "fetched_at": "2026-09-14T17:30:41+00:00"}
+{"creator": "@OutKick", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 0, "undated": 0, "seconds": 0.5, "fetched_at": "2026-09-14T17:30:43+00:00"}
+{"creator": "@Shoe0nHead", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 11, "kept": 10, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:30:43+00:00"}
+{"creator": "@Shoe0nHead", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @Shoe0nHead: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T17:30:44+00:00"}
+{"creator": "@notsoErudite", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 46, "kept": 43, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T17:30:44+00:00"}
+{"creator": "@notsoErudite", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 21, "kept": 20, "undated": 0, "seconds": 0.5, "fetched_at": "2026-09-14T17:30:45+00:00"}
+{"creator": "@MikeFromPA", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 137, "kept": 129, "undated": 0, "seconds": 3.4, "fetched_at": "2026-09-14T17:30:46+00:00"}
+{"creator": "@MikeFromPA", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @MikeFromPA: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T17:30:49+00:00"}
+{"creator": "@DestinyDGGClips", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 245, "kept": 209, "undated": 0, "seconds": 6.7, "fetched_at": "2026-09-14T17:30:49+00:00"}
+{"creator": "@DestinyDGGClips", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @DestinyDGGClips: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T17:30:56+00:00"}
+{"creator": "@destinyhqclips", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 197, "kept": 197, "undated": 0, "seconds": 5.1, "fetched_at": "2026-09-14T17:30:56+00:00"}
+{"creator": "@destinyhqclips", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @destinyhqclips: This channel does not have a streams tab", "seconds": 0.3, "fetched_at": "2026-09-14T17:31:02+00:00"}
+{"creator": "@TheVaushPit", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 440, "kept": 403, "undated": 0, "seconds": 11.0, "fetched_at": "2026-09-14T17:31:03+00:00"}
+{"creator": "@TheVaushPit", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @TheVaushPit: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T17:31:14+00:00"}
+{"creator": "@HasanReactionsfanTwo", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 372, "kept": 340, "undated": 0, "seconds": 9.8, "fetched_at": "2026-09-14T17:31:14+00:00"}
+{"creator": "@HasanReactionsfanTwo", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @HasanReactionsfanTwo: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T17:31:24+00:00"}
+{"creator": "@HasanabiClips", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 474, "kept": 474, "undated": 0, "seconds": 12.1, "fetched_at": "2026-09-14T17:31:24+00:00"}
+{"creator": "@HasanabiClips", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 35, "kept": 35, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T17:31:36+00:00"}
+{"creator": "@YaBoiHakim", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 17, "kept": 16, "undated": 0, "seconds": 0.5, "fetched_at": "2026-09-14T17:31:37+00:00"}
+{"creator": "@YaBoiHakim", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @YaBoiHakim: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T17:31:38+00:00"}
+{"creator": "@BadEmpanadaLive", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 334, "kept": 298, "undated": 0, "seconds": 8.8, "fetched_at": "2026-09-14T17:31:38+00:00"}
+{"creator": "@BadEmpanadaLive", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:31:47+00:00"}
+{"creator": "@Lunaoi", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 10, "kept": 9, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:31:47+00:00"}
+{"creator": "@Lunaoi", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @Lunaoi: This channel does not have a streams tab", "seconds": 0.5, "fetched_at": "2026-09-14T17:31:48+00:00"}
+{"creator": "@revleftradio", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 45, "kept": 38, "undated": 0, "seconds": 1.3, "fetched_at": "2026-09-14T17:31:48+00:00"}
+{"creator": "@revleftradio", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 3, "kept": 3, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:31:49+00:00"}
+{"creator": "@franifio", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 310, "kept": 282, "undated": 0, "seconds": 8.4, "fetched_at": "2026-09-14T17:31:50+00:00"}
+{"creator": "@franifio", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 69, "kept": 62, "undated": 1, "seconds": 2.0, "fetched_at": "2026-09-14T17:31:58+00:00"}
+{"creator": "@BreakThroughNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 269, "kept": 242, "undated": 0, "seconds": 6.6, "fetched_at": "2026-09-14T17:32:00+00:00"}
+{"creator": "@BreakThroughNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 61, "kept": 57, "undated": 0, "seconds": 1.9, "fetched_at": "2026-09-14T17:32:07+00:00"}
+{"creator": "@JamarlThomas", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 331, "kept": 274, "undated": 0, "seconds": 9.2, "fetched_at": "2026-09-14T17:32:08+00:00"}
+{"creator": "@JamarlThomas", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 240, "kept": 223, "undated": 0, "seconds": 6.5, "fetched_at": "2026-09-14T17:32:18+00:00"}
+{"creator": "@NickCruseRBN", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 26, "kept": 23, "undated": 0, "seconds": 0.5, "fetched_at": "2026-09-14T17:32:24+00:00"}
+{"creator": "@NickCruseRBN", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 118, "kept": 103, "undated": 0, "seconds": 2.9, "fetched_at": "2026-09-14T17:32:25+00:00"}
+{"creator": "@Forthepeoplepodcast305", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 137, "kept": 115, "undated": 0, "seconds": 3.8, "fetched_at": "2026-09-14T17:32:27+00:00"}
+{"creator": "@Forthepeoplepodcast305", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 49, "kept": 45, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T17:32:31+00:00"}
+{"creator": "@RonPlacone", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 70, "kept": 66, "undated": 0, "seconds": 2.0, "fetched_at": "2026-09-14T17:32:32+00:00"}
+{"creator": "@RonPlacone", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 28, "kept": 28, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T17:32:34+00:00"}
+{"creator": "@katmabu", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 37, "kept": 35, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T17:32:36+00:00"}
+{"creator": "@katmabu", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 3.6, "fetched_at": "2026-09-14T17:32:37+00:00"}
+{"creator": "@evanjmez", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 22, "kept": 22, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:32:40+00:00"}
+{"creator": "@evanjmez", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @evanjmez: This channel does not have a streams tab", "seconds": 0.3, "fetched_at": "2026-09-14T17:32:41+00:00"}
+{"creator": "@Politicon", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 534, "kept": 496, "undated": 0, "seconds": 13.8, "fetched_at": "2026-09-14T17:32:41+00:00"}
+{"creator": "@Politicon", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:32:55+00:00"}
+{"creator": "@ColeHastings", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 36, "kept": 32, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T17:32:55+00:00"}
+{"creator": "@ColeHastings", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @ColeHastings: This channel does not have a streams tab", "seconds": 0.6, "fetched_at": "2026-09-14T17:32:56+00:00"}
+{"creator": "@ModernDayDebate", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 57, "kept": 47, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T17:32:57+00:00"}
+{"creator": "@ModernDayDebate", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 119, "kept": 109, "undated": 1, "seconds": 2.7, "fetched_at": "2026-09-14T17:32:58+00:00"}
+{"creator": "@OwenReport", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 432, "kept": 388, "undated": 0, "seconds": 11.4, "fetched_at": "2026-09-14T17:33:01+00:00"}
+{"creator": "@OwenReport", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 201, "kept": 178, "undated": 0, "seconds": 5.3, "fetched_at": "2026-09-14T17:33:12+00:00"}
+{"creator": "@JillianMichaels", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 482, "kept": 457, "undated": 0, "seconds": 13.5, "fetched_at": "2026-09-14T17:33:17+00:00"}
+{"creator": "@JillianMichaels", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @JillianMichaels: This channel does not have a streams tab", "seconds": 0.7, "fetched_at": "2026-09-14T17:33:31+00:00"}
+{"creator": "@ANINewsIndia", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 13628, "kept": 12296, "undated": 0, "seconds": 370.6, "fetched_at": "2026-09-14T17:33:32+00:00"}
+{"creator": "@ANINewsIndia", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 8449, "kept": 7717, "undated": 5, "seconds": 228.6, "fetched_at": "2026-09-14T17:39:42+00:00"}
+{"creator": "@nousnetwork", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 162, "kept": 156, "undated": 0, "seconds": 4.4, "fetched_at": "2026-09-14T17:43:31+00:00"}
+{"creator": "@nousnetwork", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @nousnetwork: This channel does not have a streams tab", "seconds": 0.7, "fetched_at": "2026-09-14T17:43:35+00:00"}
+{"creator": "@bushrakhanum", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 22, "kept": 22, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T17:43:36+00:00"}
+{"creator": "@bushrakhanum", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:43:36+00:00"}
+{"creator": "@theGuardian", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 43, "kept": 39, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T17:43:37+00:00"}
+{"creator": "@theGuardian", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:43:38+00:00"}
+{"creator": "@CoreyGilShusterAskProject", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 60, "kept": 53, "undated": 0, "seconds": 1.8, "fetched_at": "2026-09-14T17:43:38+00:00"}
+{"creator": "@CoreyGilShusterAskProject", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2, "kept": 2, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:43:40+00:00"}
+{"creator": "@ajplus", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 55, "kept": 50, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T17:43:40+00:00"}
+{"creator": "@ajplus", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:43:41+00:00"}
+{"creator": "@Channel5YouTube", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 44, "kept": 43, "undated": 0, "seconds": 1.2, "fetched_at": "2026-09-14T17:43:42+00:00"}
+{"creator": "@Channel5YouTube", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @Channel5YouTube: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T17:43:43+00:00"}
+{"creator": "@OfficialSaharTV", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 969, "kept": 893, "undated": 0, "seconds": 25.6, "fetched_at": "2026-09-14T17:43:43+00:00"}
+{"creator": "@OfficialSaharTV", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2, "kept": 2, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:44:09+00:00"}
+{"creator": "@SkyNews", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 4194, "kept": 3681, "undated": 0, "seconds": 109.0, "fetched_at": "2026-09-14T17:44:09+00:00"}
+{"creator": "@SkyNews", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 2246, "kept": 1976, "undated": 6, "seconds": 60.3, "fetched_at": "2026-09-14T17:45:58+00:00"}
+{"creator": "@NYTOpinion", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 35, "kept": 29, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T17:46:58+00:00"}
+{"creator": "@NYTOpinion", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @NYTOpinion: This channel does not have a streams tab", "seconds": 0.8, "fetched_at": "2026-09-14T17:46:59+00:00"}
+{"creator": "@NYTPodcasts", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 530, "kept": 481, "undated": 0, "seconds": 13.6, "fetched_at": "2026-09-14T17:47:00+00:00"}
+{"creator": "@NYTPodcasts", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @NYTPodcasts: This channel does not have a streams tab", "seconds": 1.2, "fetched_at": "2026-09-14T17:47:14+00:00"}
+{"creator": "@EzraKleinShow", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 75, "kept": 65, "undated": 0, "seconds": 2.1, "fetched_at": "2026-09-14T17:47:15+00:00"}
+{"creator": "@EzraKleinShow", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 1, "kept": 1, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:47:17+00:00"}
+{"creator": "@Unpacked", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 44, "kept": 41, "undated": 0, "seconds": 1.1, "fetched_at": "2026-09-14T17:47:17+00:00"}
+{"creator": "@Unpacked", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 0, "kept": 0, "undated": 0, "seconds": 0.3, "fetched_at": "2026-09-14T17:47:19+00:00"}
+{"creator": "@timesofindia", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 10996, "kept": 9928, "undated": 0, "seconds": 308.9, "fetched_at": "2026-09-14T17:47:19+00:00"}
+{"creator": "@timesofindia", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 4349, "kept": 3582, "undated": 9, "seconds": 126.6, "fetched_at": "2026-09-14T17:52:28+00:00"}
+{"creator": "@Firstpost", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 10920, "kept": 10136, "undated": 2, "seconds": 312.3, "fetched_at": "2026-09-14T17:54:34+00:00"}
+{"creator": "@Firstpost", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 11594, "kept": 10365, "undated": 8, "seconds": 324.4, "fetched_at": "2026-09-14T17:59:47+00:00"}
+{"creator": "@60minutes", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 384, "kept": 325, "undated": 0, "seconds": 9.4, "fetched_at": "2026-09-14T18:05:11+00:00"}
+{"creator": "@60minutes", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @60minutes: This channel does not have a streams tab", "seconds": 0.6, "fetched_at": "2026-09-14T18:05:20+00:00"}
+{"creator": "@chinainsights-r2w", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 352, "kept": 278, "undated": 0, "seconds": 9.3, "fetched_at": "2026-09-14T18:05:21+00:00"}
+{"creator": "@chinainsights-r2w", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @chinainsights-r2w: This channel does not have a streams tab", "seconds": 0.7, "fetched_at": "2026-09-14T18:05:30+00:00"}
+{"creator": "@TimesNowWorld", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 9879, "kept": 9001, "undated": 0, "seconds": 265.2, "fetched_at": "2026-09-14T18:05:31+00:00"}
+{"creator": "@TimesNowWorld", "tab": "streams", "platform": "youtube", "status": "ok", "listed": 5951, "kept": 5323, "undated": 10, "seconds": 168.2, "fetched_at": "2026-09-14T18:09:56+00:00"}
+{"creator": "@johnnyharris", "tab": "videos", "platform": "youtube", "status": "ok", "listed": 18, "kept": 13, "undated": 0, "seconds": 0.4, "fetched_at": "2026-09-14T18:12:44+00:00"}
+{"creator": "@johnnyharris", "tab": "streams", "platform": "youtube", "status": "no_tab", "error": "ERROR: [youtube:tab] @johnnyharris: This channel does not have a streams tab", "seconds": 0.4, "fetched_at": "2026-09-14T18:12:45+00:00"}
+{"creator": "https://rumble.com/c/GGreenwald", "tab": "videos", "platform": "rumble", "status": "ok", "listed": 76, "kept": 76, "undated": 0, "seconds": 3.9, "fetched_at": "2026-09-14T18:12:45+00:00"}
+{"creator": "https://rumble.com/c/russellbrand", "tab": "videos", "platform": "rumble", "status": "ok", "listed": 262, "kept": 262, "undated": 0, "seconds": 12.2, "fetched_at": "2026-09-14T18:12:49+00:00"}
+{"creator": "https://rumble.com/c/BannonsWarRoom", "tab": "videos", "platform": "rumble", "status": "error", "error": "giving up on https://rumble.com/c/BannonsWarRoom?page=147: HTTP 429 for https://rumble.com/c/BannonsWarRoom?page=147", "seconds": 297.4, "fetched_at": "2026-09-14T18:13:01+00:00"}
+{"creator": "https://rumble.com/c/nickjfuentes", "tab": "videos", "platform": "rumble", "status": "error", "error": "giving up on https://rumble.com/c/nickjfuentes?page=5: HTTP 429 for https://rumble.com/c/nickjfuentes?page=5", "seconds": 15.9, "fetched_at": "2026-09-14T18:17:59+00:00"}
+{"creator": "https://rumble.com/c/TheAlexJonesShowLive", "tab": "videos", "platform": "rumble", "status": "error", "error": "giving up on https://rumble.com/c/TheAlexJonesShowLive?page=5: HTTP 429 for https://rumble.com/c/TheAlexJonesShowLive?page=5", "seconds": 15.7, "fetched_at": "2026-09-14T18:18:15+00:00"}
+{"creator": "https://rumble.com/c/BannonsWarRoom", "tab": "videos", "platform": "rumble", "status": "error", "error": "giving up on https://rumble.com/c/BannonsWarRoom?page=155: HTTP 429 for https://rumble.com/c/BannonsWarRoom?page=155", "seconds": 543.9, "fetched_at": "2026-09-14T18:33:28+00:00"}
+{"creator": "https://rumble.com/c/nickjfuentes", "tab": "videos", "platform": "rumble", "status": "error", "error": "giving up on https://rumble.com/c/nickjfuentes?page=5: HTTP 429 for https://rumble.com/c/nickjfuentes?page=5", "seconds": 26.0, "fetched_at": "2026-09-14T18:42:31+00:00"}
+{"creator": "https://rumble.com/c/TheAlexJonesShowLive", "tab": "videos", "platform": "rumble", "status": "error", "error": "giving up on https://rumble.com/c/TheAlexJonesShowLive?page=5: HTTP 429 for https://rumble.com/c/TheAlexJonesShowLive?page=5", "seconds": 25.6, "fetched_at": "2026-09-14T18:42:57+00:00"}
+{"creator": "https://rumble.com/c/BannonsWarRoom", "tab": "videos", "platform": "rumble", "status": "ok", "listed": 4619, "kept": 4619, "undated": 0, "seconds": 2129.5, "fetched_at": "2026-09-14T19:16:23+00:00"}
+{"creator": "https://rumble.com/c/nickjfuentes", "tab": "videos", "platform": "rumble", "status": "ok", "listed": 309, "kept": 309, "undated": 0, "seconds": 124.6, "fetched_at": "2026-09-14T19:51:52+00:00"}
+{"creator": "https://rumble.com/c/TheAlexJonesShowLive", "tab": "videos", "platform": "rumble", "status": "ok", "listed": 517, "kept": 517, "undated": 0, "seconds": 228.7, "fetched_at": "2026-09-14T19:53:57+00:00"}

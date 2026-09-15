@@ -1,0 +1,104 @@
+creator,genre,n_unique_titles,kind,pattern,count,share,example
+@60minutes,videos,325,suffix,# minutes archive,80,0.2462,60 Minutes Archive
+@ABCNews,streams,590,prefix,live: abc news live,232,0.3932,LIVE: ABC News Live
+@ABCNews,streams,590,suffix,abc news,232,0.3932,ABC News
+@AlexStein99,streams,41,suffix,after hours with alex stein,19,0.4634,After Hours with Alex Stein
+@AnaEscobarShow,streams,31,prefix,#,20,0.6452,52
+@AnaEscobarShow,videos,32,prefix,#,28,0.875,36
+@AnthonyBrianLogan,streams,52,colon,🔴 abl live,51,0.9808,🔴 ABL LIVE
+@BBCNews,videos,2440,suffix,bbc news,1768,0.7246,BBC News
+@ClubRandomPodcast,videos,197,suffix,club random with bill maher,40,0.203,Club Random with Bill Maher
+@CoreyGilShusterAskProject,videos,53,colon,israelis,21,0.3962,Israelis
+@CoreyGilShusterAskProject,videos,53,colon,palestinians,17,0.3208,Palestinians
+@DailyDenims,videos,215,colon,denims,200,0.9302,DENIMS
+@DarkHorsePod,videos,70,suffix,darkhorse #,32,0.4571,DarkHorse 340
+@EzraKleinShow,videos,65,suffix,the ezra klein show,61,0.9385,The Ezra Klein Show
+@FinancialTimes,videos,40,suffix,ft film,10,0.25,FT Film
+@Firstpost,streams,8975,suffix,n#g,1959,0.2183,N18G
+@Firstpost,videos,10126,suffix,n#g,3523,0.3479,N18G
+@HangOutwithSeanHannity,videos,154,suffix,hang out with sean hannity,53,0.3442,Hang Out with Sean Hannity
+@HasanReactionsfanTwo,videos,340,suffix,hasanabi reacts,268,0.7882,Hasanabi Reacts
+@JamarlThomas,streams,223,prefix,#,67,0.3004,378
+@LastWeekTonight,videos,35,bracket,hbo,23,0.6571,HBO
+@LegalAFMTN,streams,45,suffix,legal af,16,0.3556,Legal AF
+@LeverNews,videos,73,suffix,lever time,23,0.3151,Lever Time
+@LukeBeasley,streams,246,suffix,members only bonus show,74,0.3008,Members Only Bonus Show
+@MLChristiansen,streams,77,suffix,mc live,75,0.974,MC Live
+@MLChristiansen,videos,118,suffix,mc live clips,29,0.2458,MC Live Clips
+@MichaelMaliceofficial,videos,55,suffix,your welcome,25,0.4545,“YOUR WELCOME”
+@MrTariqNasheed,streams,19,colon,tariq nasheed,15,0.7895,Tariq Nasheed
+@NBCNews,streams,367,suffix,nbc news,234,0.6376,NBC News
+@NewsmaxTV,streams,399,bracket,#/#/#,291,0.7293,9/11/2026
+@NewsmaxTV,streams,399,suffix,the gerry callahan show,131,0.3283,The Gerry Callahan Show
+@NewsmaxTV,streams,399,suffix,the rob carson show,125,0.3133,The Rob Carson Show
+@OutKick,videos,51,suffix,outkick the show w/ clay travis,23,0.451,OutKick the Show w/ Clay Travis
+@PBDPodcast,streams,118,suffix,pbd,78,0.661,PBD
+@PBDPodcast,streams,118,suffix,pbd podcast,31,0.2627,PBD Podcast
+@PBDPodcast,videos,38,suffix,pbd,17,0.4474,PBD
+@PBDPodcast,videos,38,suffix,pbd podcast,16,0.4211,PBD Podcast
+@PartOfTheProblem,videos,103,prefix,dave smith,103,1.0,Dave Smith
+@PartOfTheProblem,videos,103,suffix,part of the problem #,102,0.9903,Part Of The Problem 1441
+@Politicon,videos,496,colon,#,153,0.3085,338
+@Politicon,videos,496,colon,james carville,108,0.2177,James Carville
+@PragerU,videos,385,suffix,prageru,181,0.4701,PragerU
+@RealDanBongino,videos,266,bracket,ep. #,148,0.5564,Ep. 2593
+@RebelNewsOnline,streams,195,suffix,rebel roundup,104,0.5333,Rebel Roundup
+@RedactedNews,streams,140,suffix,redacted,32,0.2286,Redacted
+@RestPoliticsUS,videos,220,prefix,ad free,75,0.3409,AD FREE
+@RileyGaines,videos,143,suffix,the riley gaines show,71,0.4965,The Riley Gaines Show
+@RonPlacone,videos,66,suffix,#,26,0.3939,156
+@SMN,videos,197,colon,ad-free,61,0.3096,AD-FREE
+@SMN,videos,197,suffix,even more news,47,0.2386,EVEN MORE NEWS
+@SecularTalk,videos,1458,suffix,the kyle kulinski show,1065,0.7305,The Kyle Kulinski Show
+@Semafor,streams,30,suffix,semafor world economy #,20,0.6667,Semafor World Economy 2026
+@TechCrunch,videos,145,suffix,equity podcast,69,0.4759,Equity Podcast
+@TheAtlantic,videos,166,suffix,the david frum show,39,0.2349,The David Frum Show
+@TheBrianKilmeadeShow,videos,352,suffix,brian kilmeade show,253,0.7188,Brian Kilmeade Show
+@TheDailyBeast,videos,322,suffix,the daily beast podcast,147,0.4565,The Daily Beast Podcast
+@TheDailyBeast,videos,322,suffix,inside trump's head,117,0.3634,Inside Trump's Head
+@TheDamageReport,streams,271,bracket,m,178,0.6568,M
+@TheDonLemonShow,streams,400,prefix,hot topics,182,0.455,HOT TOPICS
+@TheDonLemonShow,streams,400,prefix,lemon live at #,164,0.41,Lemon LIVE at 5
+@TheDonLemonShow,videos,366,prefix,lemon drop,220,0.6011,LEMON DROP
+@TheDonLemonShow,videos,366,prefix,hot takes,90,0.2459,HOT TAKES!
+@TheEconomist,videos,137,suffix,the economist,106,0.7737,The Economist
+@TheHumanistReport,streams,35,suffix,leftist mafia,32,0.9143,Leftist Mafia
+@TheJoyReidShow,streams,140,suffix,the joy reid show live,115,0.8214,The Joy Reid Show LIVE!
+@TheJoyReidShow,videos,238,suffix,the joy reid show,228,0.958,The Joy Reid Show
+@TheMajorityReport,streams,195,suffix,mr live,180,0.9231,MR Live
+@TheOfficerTatum,streams,194,suffix,officer tatum show,52,0.268,Officer Tatum Show
+@TheOfficerTatum,streams,194,suffix,post show clarity,44,0.2268,Post Show Clarity
+@TheYoungTurks,streams,428,bracket,m,190,0.4439,M
+@TimDillonShow,videos,68,suffix,the tim dillon show,59,0.8676,The Tim Dillon Show
+@TimDillonShow,videos,68,prefix,bonus,26,0.3824,BONUS
+@TimcastIRL,streams,154,suffix,timcast irl,122,0.7922,Timcast IRL
+@TimcastNews,videos,534,suffix,tim pool,164,0.3071,Tim Pool
+@TimesNowWorld,videos,8994,suffix,times now world,1807,0.2009,Times Now World
+@UnHerd,videos,83,suffix,the econoclasts,41,0.494,The Econoclasts
+@UnHerd,videos,83,prefix,yanis varoufakis & wolfgang munchau,29,0.3494,Yanis Varoufakis & Wolfgang Munchau
+@UnHerd,videos,83,suffix,yanis varoufakis & wolfgang munchau,29,0.3494,Yanis Varoufakis & Wolfgang Munchau
+@Vox,videos,133,suffix,the gray area,49,0.3684,The Gray Area
+@ZeihanonGeopolitics,videos,217,suffix,peter zeihan,214,0.9862,Peter Zeihan
+@deanwithrs,streams,266,suffix,debating maga,258,0.9699,Debating MAGA.
+@doomscrollpodcast,videos,17,suffix,doomscroll,17,1.0,Doomscroll
+@franifio,streams,62,bracket,ep #,18,0.2903,Ep 345
+@glennbeck,streams,125,suffix,hour #,122,0.976,Hour 1
+@joerogan,videos,141,prefix,joe rogan experience,127,0.9007,Joe Rogan Experience
+@katmabu,videos,34,suffix,kat abughazaleh for illinois,27,0.7941,Kat Abughazaleh For Illinois
+@marclamonthillnetwork,streams,151,colon,night school,68,0.4503,NIGHT SCHOOL
+@markets,streams,56,suffix,bloomberg this weekend,25,0.4464,Bloomberg This Weekend
+@newyorker,videos,51,suffix,the new yorker,17,0.3333,The New Yorker
+@newyorker,videos,51,suffix,the new yorker radio hour,14,0.2745,The New Yorker Radio Hour
+@samharrisorg,videos,116,bracket,ep. #,41,0.3534,Ep. 492
+@theGuardian,videos,39,suffix,on the ground,12,0.3077,On the Ground
+@thegrayzone7996,streams,36,suffix,the grayzone live,17,0.4722,The Grayzone live
+@thehill,streams,505,colon,happening now,103,0.204,Happening Now
+@thehill,videos,4249,suffix,rising,1669,0.3928,RISING
+@thewarningwithsteveschmidt,streams,110,colon,dead air,34,0.3091,Dead Air
+@thewarningwithsteveschmidt,videos,289,colon,steve schmidt,137,0.474,Steve Schmidt
+@thewarningwithsteveschmidt,videos,289,suffix,steve schmidt,115,0.3979,Steve Schmidt
+@wethefifth,videos,112,suffix,the fifth column,65,0.5804,The Fifth Column
+@wsj,streams,11,suffix,wsj,11,1.0,WSJ
+@wsj,videos,119,suffix,wsj,90,0.7563,WSJ
+https://rumble.com/c/nickjfuentes,videos,305,suffix,america first,127,0.4164,America First
+https://rumble.com/c/russellbrand,videos,259,suffix,sf#,79,0.305,SF756

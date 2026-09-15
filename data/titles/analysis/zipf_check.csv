@@ -1,0 +1,9 @@
+level,text,max_rank,zipf_exponent,ranks_used,n_titles,n_tokens,n_types,top_20
+pooled_balanced,raw,100,0.8563,100,189240,2061945,55465,the trump to in on of s iran live is and as for a with us war after at news
+pooled_balanced,raw,1000,0.7803,1000,189240,2061945,55465,the trump to in on of s iran live is and as for a with us war after at news
+pooled_balanced,raw,5000,1.0204,5000,189240,2061945,55465,the trump to in on of s iran live is and as for a with us war after at news
+pooled_balanced,normalised,100,0.8636,100,189240,2002279,53660,the trump to in on of s iran live is and as for a with us war after at over
+pooled_balanced,normalised,1000,0.7838,1000,189240,2002279,53660,the trump to in on of s iran live is and as for a with us war after at over
+pooled_balanced,normalised,5000,1.0139,5000,189240,2002279,53660,the trump to in on of s iran live is and as for a with us war after at over
+creator_level_mean,raw,200,0.799,200,187187,2042611,498266,median 0.7991 over 318 creator x genre groups (>= 50 titles)
+creator_level_mean,normalised,200,0.7815,200,187187,1984121,494374,median 0.7829 over 318 creator x genre groups (>= 50 titles)

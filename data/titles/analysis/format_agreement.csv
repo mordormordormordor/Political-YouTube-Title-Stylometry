@@ -1,0 +1,12 @@
+category,n,rule_positives,llm_positives,precision_rule_vs_llm,recall_rule_vs_llm,f1,kappa,agreement
+question,3000,424,58,0.101,0.741,0.178,0.149,0.868
+breaking_live,3000,251,268,0.813,0.761,0.786,0.766,0.963
+episode_show,3000,226,228,0.544,0.539,0.542,0.504,0.931
+interview_guest,3000,326,99,0.181,0.596,0.278,0.239,0.898
+reaction,3000,78,56,0.487,0.679,0.567,0.558,0.981
+confrontation,3000,239,98,0.205,0.5,0.291,0.256,0.92
+listicle,3000,3,4,0.667,0.5,0.571,0.571,0.999
+howto_explainer,3000,219,75,0.174,0.507,0.259,0.23,0.927
+"curiosity_gap (classifier, in-sample)",3000,63,62,0.984,1.0,0.992,0.992,1.0
+"outrage (classifier, in-sample)",3000,1623,1716,0.91,0.861,0.885,0.74,0.872
+"humor (classifier, in-sample)",3000,12,11,0.917,1.0,0.957,0.956,1.0

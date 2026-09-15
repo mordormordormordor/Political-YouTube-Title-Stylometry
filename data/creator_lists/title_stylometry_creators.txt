@@ -1,0 +1,285 @@
+# Title Stylometry creator list - 269 YouTube channels + 5 Rumble channels.
+# Reformatted 2026-09-14 from ~/Desktop/title_stylometry_creator_list.rtf (order preserved).
+# 2026-09-14: @UndercurrentsUnHerd and @Bestiny removed - both resolve, but neither posted anything in the 2026 window.
+# One creator per line; '#' lines and blanks are ignored by every reader.
+#   YouTube : @handle          -> read by pipeline_titles.ingest.fetch_video_metadata (yt-dlp flat listing)
+#   Rumble  : rumble.com/c/URL -> same script, routed to the Rumble lister (no yt-dlp)
+# The 33 handles marked '# caption corpus' are the channels whose captions live in data/subtitles/.
+
+# ---------- YouTube ----------
+@AsmonTV                         # caption corpus
+@BenShapiro                      # caption corpus
+@ClipsCandaceOwens               # caption corpus
+@HasanAbi                        # caption corpus
+@HasanAbiVODs3                   # caption corpus
+@LukeBeasley                     # caption corpus
+@MattWalsh                       # caption corpus
+@MegynKelly                      # caption corpus
+@MeidasTouch                     # caption corpus
+@MichaelKnowles                  # caption corpus
+@PBDPodcast                      # caption corpus
+@PartOfTheProblem                # caption corpus
+@SecularTalk                     # caption corpus
+@StevenCrowder                   # caption corpus
+@TheMajorityReport               # caption corpus
+@TheYoungTurks                   # caption corpus
+@TimDillonShow                   # caption corpus
+@Timcast                         # caption corpus
+@TuckerCarlson                   # caption corpus
+@Vaush                           # caption corpus
+@adammockler                     # caption corpus
+@bennyjohnson                    # caption corpus
+@breakingpoints                  # caption corpus
+@briantylercohen                 # caption corpus
+@deanwithrs                      # caption corpus
+@destiny                         # caption corpus
+@glennbeck                       # caption corpus
+@hutch                           # caption corpus
+@joerogan                        # caption corpus
+@podsaveamerica                  # caption corpus
+@ponderingpolitics               # caption corpus
+@samharrisorg                    # caption corpus
+@thedavidpakmanshow              # caption corpus
+@triggerpod
+@MLChristiansen
+@TheOfficerTatum
+@therationalnational
+@SecondThought
+@bulwarkmedia
+@LeejaMiller
+@PiersMorganUncensored
+@zeteo
+@TheDamageReport
+@TheHumanistReport
+@FarronBalanced
+@dollemore
+@RebelHQ
+@StatusCoup
+@SMN
+@BelleRanch
+@harryjsisson
+@aaronparnas1
+@rolandsmartin
+@DropSiteNews
+@BadFaithPodcast
+@thejimmydoreshow
+@KimIversen
+@NovaraMedia
+@lovettorleaveitpodcast
+@PoliticsGirl
+@TheLincolnProject
+@chriscuomo
+@MichaelMaliceofficial
+@StosselTV
+@RubinReport
+@ColemanHughesOfficial
+@DarkHorsePod
+@OfficialFlagrant
+@turningpointusa
+@marklevinshow
+@bbrettcooper
+@theisabelbrown
+@lizwheeler
+@AndrewKlavan
+@RealAlexClark
+@BlazeTV
+@PragerU
+@TimcastIRL
+@TimcastNews
+@AnthonyBrianLogan
+@DrSteveTurleyTV
+@SaltyCracker
+@TheQuartering
+@ActualJusticeWarrior
+@Styxhexenhammer666
+@dineshdsouza
+@RebelNewsOnline
+@SNEAKO
+@LIVESNEAKO
+@The_Crucible
+@JacksonHinkleOfficial
+@lonerboxlive
+@Xanderhal
+@DailyDenims
+@PiscoLitty
+@TheSerfTimes
+@FreshFitMiami
+@moreperfectunion
+@JackCocchiarellaShow
+@TheRealTabithaSpeaks
+@PhillipScottPodcast
+@MrTariqNasheed
+@underthedesknews
+@usefulidiots
+@thomhartmann
+@SabbySabs
+@DueDissidence
+@thegrayzone7996
+@GeopoliticalEconomyReport
+@DannyHaiphongYT
+@judgingfreedom
+@LeverNews
+@DemocracyNow
+@doomscrollpodcast
+@DylanBurnsLIVE
+@marclamonthillnetwork
+@Tim_Black
+@OwenJonesTalks
+@DoubleDownNews
+@PoliticsJOE
+@TheJoyReidShow
+@TheDonLemonShow
+@jimacosta
+@msnow
+@LegalAFMTN
+@GlennKirschner2
+@LegalEagle
+@DemocracyDocket
+@katiephangnews
+@TheMichaelCohenShow
+@PTLRadioShow
+@thewarningwithsteveschmidt
+@cafedotcom
+@fastpoliticspodcast
+@RestPoliticsUS
+@LastWeekTonight
+@thehill
+@AfterPartyEmily
+@wethefifth
+@morebridgetphetasy
+@ZeihanonGeopolitics
+@CaspianReport
+@PerunAU
+@UnHerd
+@ZubyMusic
+@winston_marshall
+@ClubRandomPodcast
+@TheAdamCarollaShow1
+@NickShirley
+@RealDanBongino
+@RedactedNews
+@GrahamAllen
+@chicksonright
+@X22Report-y5y
+@AndWeKnowOfficial-o9b
+@RSBN
+@RealAmericasVoice
+@NewsmaxTV
+@oann
+@HangOutwithSeanHannity
+@FoxNews
+@FoxNewsChannelClips
+@NBCNews
+@CNN
+@ABCNews
+@CBSNews
+@NewsNation
+@Reuters
+@BBCNews
+@aljazeeraenglish
+@AssociatedPress
+@nytimes
+@wsj
+@markets
+@USATODAY
+@NPR
+@POLITICO
+@axios
+@Vox
+@TheDailyBeast
+@Semafor
+@FinancialTimes
+@Forbes
+@TechCrunch
+@TheAtlantic
+@newyorker
+@TheEconomist
+@nationalreview
+@nypost
+@clayandbuck
+@TheBrianKilmeadeShow
+@MarkDice
+@PrisonPlanetLive
+@LiberalHivemind
+@MrReaganUSA
+@BlackConservativePerspective
+@FleccasTalks
+@laurenchenclips
+@mikhaila
+@MattBernstein1
+@TomiLahrenIsFearless
+@RufoandLomez
+@newdiscourses
+@JesseKellyDC
+@TheAmalaEkpunobi
+@XAVIAER
+@BlaireWhiteX
+@AlexStein99
+@RileyGaines
+@SavSays
+@CamHigby
+@BrittanyVenti
+@jlptalk
+@AnaEscobarShow
+@fightbackpodcast
+@JustPearlyThings
+@MyronGainesX
+@SydneyWatson
+@ThePodcastoftheLotusEaters
+@VivaFrei
+@RobertGouveiaEsq
+@RekietaLaw
+@CashJordan
+@ChadPrather1
+@OutKick
+@Shoe0nHead
+@notsoErudite
+@MikeFromPA
+@DestinyDGGClips
+@destinyhqclips
+@TheVaushPit
+@HasanReactionsfanTwo
+@HasanabiClips
+@YaBoiHakim
+@BadEmpanadaLive
+@Lunaoi
+@revleftradio
+@franifio
+@BreakThroughNews
+@JamarlThomas
+@NickCruseRBN
+@Forthepeoplepodcast305
+@RonPlacone
+@katmabu
+@evanjmez
+@Politicon
+@ColeHastings
+@ModernDayDebate
+@OwenReport
+@JillianMichaels
+@ANINewsIndia
+@nousnetwork
+@bushrakhanum
+@theGuardian
+@CoreyGilShusterAskProject
+@ajplus
+@Channel5YouTube
+@OfficialSaharTV
+@SkyNews
+@NYTOpinion
+@NYTPodcasts
+@EzraKleinShow
+@Unpacked
+@timesofindia
+@Firstpost
+@60minutes
+@chinainsights-r2w
+@TimesNowWorld
+@johnnyharris
+
+# ---------- Rumble ----------
+https://rumble.com/c/GGreenwald                  # Glenn Greenwald
+https://rumble.com/c/russellbrand                # Russell Brand
+https://rumble.com/c/BannonsWarRoom              # Bannon's War Room
+https://rumble.com/c/nickjfuentes                # Nicholas J. Fuentes
+https://rumble.com/c/TheAlexJonesShowLive        # Alex Jones

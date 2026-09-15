@@ -1,0 +1,7 @@
+candidate,llm_column,best_factor,factor_auto_name,creator_level_r,second_factor,second_r,verdict,merged_with
+Sensational,sensational,F1,+vader_compound -vader_neg -shock_word -violence_verb,-0.711,F5,-0.329,"merged: Sensational, Critical, Analytical/Informational","Sensational, Critical, Analytical/Informational"
+Critical,critical,F1,+vader_compound -vader_neg -shock_word -violence_verb,-0.489,F5,-0.182,"merged: Sensational, Critical, Analytical/Informational","Sensational, Critical, Analytical/Informational"
+Analytical/Informational,analytical,F1,+vader_compound -vader_neg -shock_word -violence_verb,0.433,F5,0.425,"merged: Sensational, Critical, Analytical/Informational","Sensational, Critical, Analytical/Informational"
+Educational,educational,F5,+q_word_start +wh_any +why_marker +q_mark,0.392,F1,0.32,partial,
+Conversational,conversational,F4,+discourse_marker +trailing_ellipsis +ellipsis +contraction,0.177,F1,0.17,absent,
+Humor,humor,F2,+has_finite_verb +present_tense +past_tense +verb_share,0.082,F4,0.063,absent,

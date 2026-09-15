@@ -1,0 +1,106 @@
+# Political YouTube Title Stylometry
+
+How 274 political-media creators (269 YouTube channels, 5 Rumble channels) title their
+videos: every title they published between 2026-01-01 and 2026-09-14 (309,596 titles),
+described along data-driven style dimensions, controlled for topic, clustered into a
+landscape, tracked month by month, and tested against views.
+
+There are no transcripts, descriptions, tags or thumbnails in this corpus: titles plus the
+listing-level metadata that comes with them are the entire dataset.
+
+## Results
+
+- `pipeline_titles/reports/title_stylometry_report.md`: the corpus report (one headline
+  finding per stage at the top, then every table).
+- `pipeline_titles/reports/methods_appendix.md`: preprocessing, stopwords, feature
+  definitions, lexicons, factor loadings, validation numbers, sample sizes, prompts,
+  runtimes.
+- `pipeline_titles/reports/title_stylometry.html`: browsable page with a creator selector
+  (profile cards) and the two landscape maps. Open it from a local web server
+  (`python -m http.server --directory pipeline_titles/reports`) so the embedded JSON loads.
+- `pipeline_titles/reports/cards/<creator>.md`: one fixed-layout profile card per creator.
+- `data/titles/analysis/`: machine-readable tables. The interface between stages is
+  `features.csv` (creator x genre x month), `dimensions.csv` (creator scores, raw and
+  topic-controlled), `topics.csv` (title -> topic), `labels.csv` (the 3,000 LLM-rated
+  titles), `lanes.csv` (lane / organisation / clipper per creator; a proposal to correct).
+
+Headline findings from the 2026-09-14 run are in `pipeline_titles/reports/headlines.md`.
+
+## Data
+
+`data/titles/videos.csv` is the corpus: one row per video with `creator`, `platform`,
+`tab` (`videos` = edited uploads, `streams` = live-stream VODs), `video_id`, `title`,
+`published` (month-accurate for YouTube, exact for Rumble), `duration`, `view_count`
+(YouTube only, a snapshot at fetch time), `live_status`, `url`, `channel_name`,
+`channel_id`. `data/titles/channels.jsonl` holds subscriber counts, descriptions and tags
+per creator x tab. The creator list is `data/creator_lists/title_stylometry_creators.txt`.
+The raw yt-dlp superset (`videos.jsonl`, 176 MB) is not versioned; the fetcher rebuilds it.
+
+Fetching (yt-dlp flat channel listings, no per-video requests):
+
+```bash
+.venv/bin/python -m pipeline_titles.ingest.fetch_video_metadata --since 2026-01-01 --tabs videos streams
+```
+
+See `docs/pipeline_notes.md` for the fetch notes (Rumble rate limits, resume behaviour).
+
+## Setup
+
+Python 3.12+ (developed on 3.14.2, Apple M4 Pro, 24 GB).
+
+```bash
+python -m venv .venv
+.venv/bin/pip install -r requirements-dev.txt
+.venv/bin/python -m spacy download en_core_web_sm
+```
+
+LLM steps (title ratings, topic labels) use a local Ollama model (`qwen3:14b`); every
+response is cached under `data/titles/analysis/cache/llm*/`, so re-running over an
+unchanged corpus makes no model calls. There is no paid API involved.
+
+## Running the pipeline
+
+```bash
+.venv/bin/python -m pipeline_titles.run_all            # everything, in order
+.venv/bin/python -m pipeline_titles.run_all --from factors --skip llm_rate
+```
+
+Stages (each a `python -m pipeline_titles.<stage>` that reads the previous stage's files
+from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
+
+| stage | what it does |
+|---|---|
+| `prepare` | normalise titles (strip show names, episode numbers, dates, brand tags by a per-creator 20 % rule), mark verbatim repeats, low-n groups, the creator-balanced subset; Zipf check |
+| `lanes` | write the lane / organisation / clipper proposal (`lanes.csv`; edit the CSV, not `lane_seed.py`) |
+| `annotate` | spaCy tokens, POS, entities per unique title (ALL-CAPS titles truecased first) |
+| `embed` | sentence embeddings (all-mpnet-base-v2), cached and incremental |
+| `topics` | BERTopic on a ~100k creator-stratified sample, nearest-centroid assignment for all titles, LLM labels and political flag, per-creator mix, lane shares, monthly spikes |
+| `llm_rate` | 3,000-title stratified sample rated 1-5 on five candidate dimensions plus hook flags and a format label, with a 300-title retest |
+| `features` | ~75 title-level style features -> creator x genre x month; formulaicity; Heaps' and Zipf lexical diversity with sample-size sensitivity |
+| `factors` | exploratory factor analysis (parallel analysis, minres, oblimin), factor scores per cell, creator and title, topic control |
+| `validate` | LLM ratings vs factor scores, candidate-label mapping, test-retest reliability |
+| `formats` | regex formats on raw titles; hook classifier trained on the LLM labels and applied to every title |
+| `landscape` | style vs topic clusterings vs lanes (ARI), nearest neighbours, who gets named, shared titles and templates |
+| `timeline` | monthly drift per lane and creator; month-to-month topic change |
+| `engagement` | within-creator regressions of log views on style with month and topic controls |
+| `hits` | Gini, top-10 % share, Clauset-Shalizi-Newman tail fit vs lognormal |
+| `report_data`, `report` | cards JSON, Markdown report, methods appendix, cards, HTML page |
+
+Hand-edited files that survive re-runs: `data/titles/analysis/lanes.csv`,
+`data/titles/analysis/factor_names.json`, `pipeline_titles/reports/headlines.md`.
+
+Tests (pure helpers, no data or network): `.venv/bin/python -m pytest -q`.
+
+## Layout
+
+```
+pipeline_titles/        the pipeline (see the table above); ingest/ holds the corpus fetcher
+pipeline_titles/reports/ report, appendix, cards, HTML
+data/titles/            corpus + analysis/ outputs
+data/creator_lists/     the creator list
+docs/                   the analysis brief (ANALYSIS_PROMPT.md) and fetch notes
+tests/                  pytest suite
+```
+
+This project was split out of the Political Quotes Project on 2026-09-14; the two Rumble /
+YouTube listing helpers under `pipeline_titles/ingest/` are vendored from there.

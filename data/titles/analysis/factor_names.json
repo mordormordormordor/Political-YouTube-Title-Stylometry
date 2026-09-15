@@ -1,0 +1,50 @@
+{
+  "F1": {
+    "auto": "+vader_compound -vader_neg -shock_word -violence_verb",
+    "name": "Positive tone vs outrage (shock words, violence verbs, negative sentiment)"
+  },
+  "F2": {
+    "auto": "+has_finite_verb +present_tense +past_tense +verb_share",
+    "name": "Clause headline vs noun-phrase (finite verbs, tense)"
+  },
+  "F3": {
+    "auto": "+lead_colon_label +lead_live +colon -entity_first",
+    "name": "Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels)"
+  },
+  "F4": {
+    "auto": "+discourse_marker +trailing_ellipsis +ellipsis +contraction",
+    "name": "Conversational stream talk (chat, ellipsis, contractions, imperatives, we)"
+  },
+  "F5": {
+    "auto": "+q_word_start +wh_any +why_marker +q_mark",
+    "name": "Question and explainer framing (why, what, ?)"
+  },
+  "F6": {
+    "auto": "+n_person +has_person",
+    "name": "Person-centred (named people)"
+  },
+  "F7": {
+    "auto": "+noun_share -cap_token_share +adj_share +n_gpe",
+    "name": "Descriptive news prose vs title-case (nouns, adjectives, places)"
+  },
+  "F8": {
+    "auto": "+num_share +digit +year_mention",
+    "name": "Numeric and dated (digits, years)"
+  },
+  "F9": {
+    "auto": "+allcaps_word_share +full_caps_title +has_allcaps_word",
+    "name": "ALL-CAPS shouting"
+  },
+  "F10": {
+    "auto": "+quoted_speech +quotes",
+    "name": "Quoted speech"
+  },
+  "F11": {
+    "auto": "+vader_pos +n_chars +nominalisation",
+    "name": "Long, upbeat, abstract (length, positive words, nominalisations)"
+  },
+  "F12": {
+    "auto": "+future_will +modal +first_pl",
+    "name": "Modal and future speculation (will, could, we)"
+  }
+}

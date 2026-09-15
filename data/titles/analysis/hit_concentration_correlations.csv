@@ -1,0 +1,545 @@
+scope,lane,genre,target,predictor,n_creators,spearman_r,p
+within_lane,centrist_heterodox,videos,gini,F1_controlled,7,0.429,0.3374
+within_lane,centrist_heterodox,videos,gini,F2_controlled,7,-0.464,0.2939
+within_lane,centrist_heterodox,videos,gini,F3_controlled,7,-0.071,0.879
+within_lane,centrist_heterodox,videos,gini,F4_controlled,7,0.536,0.2152
+within_lane,centrist_heterodox,videos,gini,F5_controlled,7,0.286,0.5345
+within_lane,centrist_heterodox,videos,gini,F6_controlled,7,-0.036,0.9394
+within_lane,centrist_heterodox,videos,gini,F7_controlled,7,0.107,0.8192
+within_lane,centrist_heterodox,videos,gini,F8_controlled,7,0.571,0.1802
+within_lane,centrist_heterodox,videos,gini,F9_controlled,7,0.143,0.7599
+within_lane,centrist_heterodox,videos,gini,F10_controlled,7,0.429,0.3374
+within_lane,centrist_heterodox,videos,gini,F11_controlled,7,0.286,0.5345
+within_lane,centrist_heterodox,videos,gini,F12_controlled,7,-0.429,0.3374
+within_lane,centrist_heterodox,videos,gini,curiosity_gap,7,0.429,0.3374
+within_lane,centrist_heterodox,videos,gini,outrage,7,-0.857,0.0137
+within_lane,centrist_heterodox,videos,gini,humor,7,-0.571,0.1802
+within_lane,centrist_heterodox,videos,gini,log_n_videos,7,-0.143,0.7599
+within_lane,centrist_heterodox,videos,gini,log_subscribers,7,-0.143,0.7599
+within_lane,centrist_heterodox,videos,top10_share,F1_controlled,7,0.607,0.1482
+within_lane,centrist_heterodox,videos,top10_share,F2_controlled,7,-0.321,0.4821
+within_lane,centrist_heterodox,videos,top10_share,F3_controlled,7,-0.25,0.5887
+within_lane,centrist_heterodox,videos,top10_share,F4_controlled,7,0.393,0.3833
+within_lane,centrist_heterodox,videos,top10_share,F5_controlled,7,0.107,0.8192
+within_lane,centrist_heterodox,videos,top10_share,F6_controlled,7,0.036,0.9394
+within_lane,centrist_heterodox,videos,top10_share,F7_controlled,7,0.036,0.9394
+within_lane,centrist_heterodox,videos,top10_share,F8_controlled,7,0.5,0.2532
+within_lane,centrist_heterodox,videos,top10_share,F9_controlled,7,-0.071,0.879
+within_lane,centrist_heterodox,videos,top10_share,F10_controlled,7,0.464,0.2939
+within_lane,centrist_heterodox,videos,top10_share,F11_controlled,7,0.107,0.8192
+within_lane,centrist_heterodox,videos,top10_share,F12_controlled,7,-0.286,0.5345
+within_lane,centrist_heterodox,videos,top10_share,curiosity_gap,7,0.357,0.4316
+within_lane,centrist_heterodox,videos,top10_share,outrage,7,-0.821,0.0234
+within_lane,centrist_heterodox,videos,top10_share,humor,7,-0.394,0.3817
+within_lane,centrist_heterodox,videos,top10_share,log_n_videos,7,0.0,1.0
+within_lane,centrist_heterodox,videos,top10_share,log_subscribers,7,-0.107,0.8192
+within_lane,independent_digital_news,videos,gini,F1_controlled,13,0.335,0.2629
+within_lane,independent_digital_news,videos,gini,F2_controlled,13,0.269,0.3737
+within_lane,independent_digital_news,videos,gini,F3_controlled,13,0.187,0.5411
+within_lane,independent_digital_news,videos,gini,F4_controlled,13,0.352,0.2387
+within_lane,independent_digital_news,videos,gini,F5_controlled,13,0.275,0.3637
+within_lane,independent_digital_news,videos,gini,F6_controlled,13,0.368,0.2159
+within_lane,independent_digital_news,videos,gini,F7_controlled,13,0.038,0.9007
+within_lane,independent_digital_news,videos,gini,F8_controlled,13,-0.022,0.9432
+within_lane,independent_digital_news,videos,gini,F9_controlled,13,-0.143,0.6415
+within_lane,independent_digital_news,videos,gini,F10_controlled,13,0.176,0.5656
+within_lane,independent_digital_news,videos,gini,F11_controlled,13,0.066,0.8305
+within_lane,independent_digital_news,videos,gini,F12_controlled,13,0.291,0.3344
+within_lane,independent_digital_news,videos,gini,curiosity_gap,13,-0.143,0.6415
+within_lane,independent_digital_news,videos,gini,outrage,13,-0.181,0.5533
+within_lane,independent_digital_news,videos,gini,humor,13,-0.026,0.9328
+within_lane,independent_digital_news,videos,gini,log_n_videos,13,-0.11,0.7208
+within_lane,independent_digital_news,videos,gini,log_subscribers,13,-0.082,0.789
+within_lane,independent_digital_news,videos,top10_share,F1_controlled,13,0.148,0.6286
+within_lane,independent_digital_news,videos,top10_share,F2_controlled,13,0.209,0.4936
+within_lane,independent_digital_news,videos,top10_share,F3_controlled,13,0.104,0.7343
+within_lane,independent_digital_news,videos,top10_share,F4_controlled,13,0.407,0.168
+within_lane,independent_digital_news,videos,top10_share,F5_controlled,13,0.236,0.4371
+within_lane,independent_digital_news,videos,top10_share,F6_controlled,13,0.346,0.2466
+within_lane,independent_digital_news,videos,top10_share,F7_controlled,13,0.082,0.789
+within_lane,independent_digital_news,videos,top10_share,F8_controlled,13,-0.016,0.9574
+within_lane,independent_digital_news,videos,top10_share,F9_controlled,13,0.0,1.0
+within_lane,independent_digital_news,videos,top10_share,F10_controlled,13,0.027,0.929
+within_lane,independent_digital_news,videos,top10_share,F11_controlled,13,0.0,1.0
+within_lane,independent_digital_news,videos,top10_share,F12_controlled,13,0.121,0.694
+within_lane,independent_digital_news,videos,top10_share,curiosity_gap,13,0.066,0.8305
+within_lane,independent_digital_news,videos,top10_share,outrage,13,0.022,0.9432
+within_lane,independent_digital_news,videos,top10_share,humor,13,-0.137,0.6542
+within_lane,independent_digital_news,videos,top10_share,log_n_videos,13,-0.093,0.7615
+within_lane,independent_digital_news,videos,top10_share,log_subscribers,13,-0.28,0.3538
+within_lane,interview_podcast,videos,gini,F1_controlled,13,0.648,0.0165
+within_lane,interview_podcast,videos,gini,F2_controlled,13,0.412,0.1618
+within_lane,interview_podcast,videos,gini,F3_controlled,13,-0.39,0.1876
+within_lane,interview_podcast,videos,gini,F4_controlled,13,-0.022,0.9432
+within_lane,interview_podcast,videos,gini,F5_controlled,13,0.615,0.0252
+within_lane,interview_podcast,videos,gini,F6_controlled,13,-0.863,0.0001
+within_lane,interview_podcast,videos,gini,F7_controlled,13,0.088,0.7752
+within_lane,interview_podcast,videos,gini,F8_controlled,13,0.28,0.3538
+within_lane,interview_podcast,videos,gini,F9_controlled,13,0.275,0.3637
+within_lane,interview_podcast,videos,gini,F10_controlled,13,-0.148,0.6286
+within_lane,interview_podcast,videos,gini,F11_controlled,13,-0.33,0.2713
+within_lane,interview_podcast,videos,gini,F12_controlled,13,0.071,0.8166
+within_lane,interview_podcast,videos,gini,curiosity_gap,13,0.102,0.7407
+within_lane,interview_podcast,videos,gini,outrage,13,-0.11,0.7208
+within_lane,interview_podcast,videos,gini,humor,13,0.49,0.0893
+within_lane,interview_podcast,videos,gini,log_n_videos,13,0.489,0.0899
+within_lane,interview_podcast,videos,gini,log_subscribers,13,-0.769,0.0021
+within_lane,interview_podcast,videos,top10_share,F1_controlled,13,0.588,0.0346
+within_lane,interview_podcast,videos,top10_share,F2_controlled,13,0.379,0.2014
+within_lane,interview_podcast,videos,top10_share,F3_controlled,13,-0.324,0.2799
+within_lane,interview_podcast,videos,top10_share,F4_controlled,13,-0.099,0.7479
+within_lane,interview_podcast,videos,top10_share,F5_controlled,13,0.621,0.0235
+within_lane,interview_podcast,videos,top10_share,F6_controlled,13,-0.89,0.0
+within_lane,interview_podcast,videos,top10_share,F7_controlled,13,0.099,0.7479
+within_lane,interview_podcast,videos,top10_share,F8_controlled,13,0.313,0.2974
+within_lane,interview_podcast,videos,top10_share,F9_controlled,13,0.22,0.4706
+within_lane,interview_podcast,videos,top10_share,F10_controlled,13,-0.154,0.6158
+within_lane,interview_podcast,videos,top10_share,F11_controlled,13,-0.412,0.1618
+within_lane,interview_podcast,videos,top10_share,F12_controlled,13,0.055,0.8585
+within_lane,interview_podcast,videos,top10_share,curiosity_gap,13,0.03,0.9218
+within_lane,interview_podcast,videos,top10_share,outrage,13,-0.126,0.6808
+within_lane,interview_podcast,videos,top10_share,humor,13,0.418,0.1551
+within_lane,interview_podcast,videos,top10_share,log_n_videos,13,0.418,0.1557
+within_lane,interview_podcast,videos,top10_share,log_subscribers,13,-0.714,0.0061
+within_lane,left_commentary,streams,gini,F1_controlled,17,0.564,0.0184
+within_lane,left_commentary,streams,gini,F2_controlled,17,0.032,0.9034
+within_lane,left_commentary,streams,gini,F3_controlled,17,0.539,0.0255
+within_lane,left_commentary,streams,gini,F4_controlled,17,0.243,0.348
+within_lane,left_commentary,streams,gini,F5_controlled,17,0.341,0.1809
+within_lane,left_commentary,streams,gini,F6_controlled,17,-0.478,0.0523
+within_lane,left_commentary,streams,gini,F7_controlled,17,-0.321,0.2089
+within_lane,left_commentary,streams,gini,F8_controlled,17,-0.426,0.0878
+within_lane,left_commentary,streams,gini,F9_controlled,17,-0.074,0.7791
+within_lane,left_commentary,streams,gini,F10_controlled,17,-0.147,0.5733
+within_lane,left_commentary,streams,gini,F11_controlled,17,-0.279,0.2774
+within_lane,left_commentary,streams,gini,F12_controlled,17,-0.341,0.1809
+within_lane,left_commentary,streams,gini,curiosity_gap,17,-0.13,0.6192
+within_lane,left_commentary,streams,gini,outrage,17,-0.439,0.0781
+within_lane,left_commentary,streams,gini,humor,17,0.42,0.0932
+within_lane,left_commentary,streams,gini,log_n_videos,17,0.493,0.0444
+within_lane,left_commentary,streams,gini,log_subscribers,17,0.257,0.3187
+within_lane,left_commentary,streams,top10_share,F1_controlled,17,0.566,0.0178
+within_lane,left_commentary,streams,top10_share,F2_controlled,17,0.127,0.6259
+within_lane,left_commentary,streams,top10_share,F3_controlled,17,0.488,0.047
+within_lane,left_commentary,streams,top10_share,F4_controlled,17,0.35,0.1678
+within_lane,left_commentary,streams,top10_share,F5_controlled,17,0.341,0.1809
+within_lane,left_commentary,streams,top10_share,F6_controlled,17,-0.451,0.0692
+within_lane,left_commentary,streams,top10_share,F7_controlled,17,-0.25,0.3332
+within_lane,left_commentary,streams,top10_share,F8_controlled,17,-0.301,0.2396
+within_lane,left_commentary,streams,top10_share,F9_controlled,17,-0.022,0.933
+within_lane,left_commentary,streams,top10_share,F10_controlled,17,-0.091,0.7292
+within_lane,left_commentary,streams,top10_share,F11_controlled,17,-0.304,0.2356
+within_lane,left_commentary,streams,top10_share,F12_controlled,17,-0.306,0.2317
+within_lane,left_commentary,streams,top10_share,curiosity_gap,17,-0.186,0.4741
+within_lane,left_commentary,streams,top10_share,outrage,17,-0.436,0.08
+within_lane,left_commentary,streams,top10_share,humor,17,0.385,0.1269
+within_lane,left_commentary,streams,top10_share,log_n_videos,17,0.547,0.0231
+within_lane,left_commentary,streams,top10_share,log_subscribers,17,0.216,0.4057
+within_lane,left_commentary,videos,gini,F1_controlled,39,0.296,0.0674
+within_lane,left_commentary,videos,gini,F2_controlled,39,-0.021,0.8988
+within_lane,left_commentary,videos,gini,F3_controlled,39,-0.333,0.0384
+within_lane,left_commentary,videos,gini,F4_controlled,39,-0.158,0.3364
+within_lane,left_commentary,videos,gini,F5_controlled,39,0.112,0.4983
+within_lane,left_commentary,videos,gini,F6_controlled,39,0.212,0.1952
+within_lane,left_commentary,videos,gini,F7_controlled,39,-0.26,0.1106
+within_lane,left_commentary,videos,gini,F8_controlled,39,0.273,0.0923
+within_lane,left_commentary,videos,gini,F9_controlled,39,-0.155,0.3465
+within_lane,left_commentary,videos,gini,F10_controlled,39,0.016,0.924
+within_lane,left_commentary,videos,gini,F11_controlled,39,-0.039,0.8114
+within_lane,left_commentary,videos,gini,F12_controlled,39,0.142,0.3875
+within_lane,left_commentary,videos,gini,curiosity_gap,39,-0.113,0.4943
+within_lane,left_commentary,videos,gini,outrage,39,-0.274,0.0913
+within_lane,left_commentary,videos,gini,humor,39,0.226,0.1675
+within_lane,left_commentary,videos,gini,log_n_videos,39,-0.097,0.5558
+within_lane,left_commentary,videos,gini,log_subscribers,39,-0.194,0.2363
+within_lane,left_commentary,videos,top10_share,F1_controlled,39,0.323,0.045
+within_lane,left_commentary,videos,top10_share,F2_controlled,39,0.006,0.9727
+within_lane,left_commentary,videos,top10_share,F3_controlled,39,-0.382,0.0165
+within_lane,left_commentary,videos,top10_share,F4_controlled,39,-0.151,0.3588
+within_lane,left_commentary,videos,top10_share,F5_controlled,39,0.082,0.6198
+within_lane,left_commentary,videos,top10_share,F6_controlled,39,0.157,0.3389
+within_lane,left_commentary,videos,top10_share,F7_controlled,39,-0.278,0.0869
+within_lane,left_commentary,videos,top10_share,F8_controlled,39,0.336,0.0365
+within_lane,left_commentary,videos,top10_share,F9_controlled,39,-0.176,0.2835
+within_lane,left_commentary,videos,top10_share,F10_controlled,39,0.068,0.6799
+within_lane,left_commentary,videos,top10_share,F11_controlled,39,-0.044,0.7897
+within_lane,left_commentary,videos,top10_share,F12_controlled,39,0.059,0.7198
+within_lane,left_commentary,videos,top10_share,curiosity_gap,39,-0.084,0.6094
+within_lane,left_commentary,videos,top10_share,outrage,39,-0.288,0.0754
+within_lane,left_commentary,videos,top10_share,humor,39,0.246,0.131
+within_lane,left_commentary,videos,top10_share,log_n_videos,39,-0.157,0.3386
+within_lane,left_commentary,videos,top10_share,log_subscribers,39,-0.26,0.1103
+within_lane,legal_institutional,videos,gini,F1_controlled,6,-0.543,0.2657
+within_lane,legal_institutional,videos,gini,F2_controlled,6,-0.257,0.6228
+within_lane,legal_institutional,videos,gini,F3_controlled,6,0.371,0.4685
+within_lane,legal_institutional,videos,gini,F4_controlled,6,0.943,0.0048
+within_lane,legal_institutional,videos,gini,F5_controlled,6,0.2,0.704
+within_lane,legal_institutional,videos,gini,F6_controlled,6,0.257,0.6228
+within_lane,legal_institutional,videos,gini,F7_controlled,6,0.257,0.6228
+within_lane,legal_institutional,videos,gini,F8_controlled,6,0.143,0.7872
+within_lane,legal_institutional,videos,gini,F9_controlled,6,0.314,0.5441
+within_lane,legal_institutional,videos,gini,F10_controlled,6,0.029,0.9572
+within_lane,legal_institutional,videos,gini,F11_controlled,6,0.714,0.1108
+within_lane,legal_institutional,videos,gini,F12_controlled,6,0.257,0.6228
+within_lane,legal_institutional,videos,gini,curiosity_gap,6,0.486,0.3287
+within_lane,legal_institutional,videos,gini,outrage,6,0.543,0.2657
+within_lane,legal_institutional,videos,gini,humor,6,-0.213,0.686
+within_lane,legal_institutional,videos,gini,log_n_videos,6,0.771,0.0724
+within_lane,legal_institutional,videos,gini,log_subscribers,6,-0.086,0.8717
+within_lane,legal_institutional,videos,top10_share,F1_controlled,6,-0.143,0.7872
+within_lane,legal_institutional,videos,top10_share,F2_controlled,6,0.314,0.5441
+within_lane,legal_institutional,videos,top10_share,F3_controlled,6,0.486,0.3287
+within_lane,legal_institutional,videos,top10_share,F4_controlled,6,0.771,0.0724
+within_lane,legal_institutional,videos,top10_share,F5_controlled,6,0.771,0.0724
+within_lane,legal_institutional,videos,top10_share,F6_controlled,6,0.6,0.208
+within_lane,legal_institutional,videos,top10_share,F7_controlled,6,-0.486,0.3287
+within_lane,legal_institutional,videos,top10_share,F8_controlled,6,0.429,0.3965
+within_lane,legal_institutional,videos,top10_share,F9_controlled,6,-0.086,0.8717
+within_lane,legal_institutional,videos,top10_share,F10_controlled,6,0.657,0.1562
+within_lane,legal_institutional,videos,top10_share,F11_controlled,6,0.714,0.1108
+within_lane,legal_institutional,videos,top10_share,F12_controlled,6,0.429,0.3965
+within_lane,legal_institutional,videos,top10_share,curiosity_gap,6,0.657,0.1562
+within_lane,legal_institutional,videos,top10_share,outrage,6,0.029,0.9572
+within_lane,legal_institutional,videos,top10_share,humor,6,-0.091,0.8638
+within_lane,legal_institutional,videos,top10_share,log_n_videos,6,0.371,0.4685
+within_lane,legal_institutional,videos,top10_share,log_subscribers,6,-0.2,0.704
+within_lane,right_commentary,streams,gini,F1_controlled,11,-0.045,0.8944
+within_lane,right_commentary,streams,gini,F2_controlled,11,-0.218,0.5192
+within_lane,right_commentary,streams,gini,F3_controlled,11,0.336,0.3118
+within_lane,right_commentary,streams,gini,F4_controlled,11,0.382,0.2466
+within_lane,right_commentary,streams,gini,F5_controlled,11,0.0,1.0
+within_lane,right_commentary,streams,gini,F6_controlled,11,-0.173,0.6115
+within_lane,right_commentary,streams,gini,F7_controlled,11,-0.027,0.9366
+within_lane,right_commentary,streams,gini,F8_controlled,11,-0.409,0.2115
+within_lane,right_commentary,streams,gini,F9_controlled,11,-0.027,0.9366
+within_lane,right_commentary,streams,gini,F10_controlled,11,0.064,0.8525
+within_lane,right_commentary,streams,gini,F11_controlled,11,-0.2,0.5554
+within_lane,right_commentary,streams,gini,F12_controlled,11,-0.636,0.0353
+within_lane,right_commentary,streams,gini,curiosity_gap,11,0.582,0.0604
+within_lane,right_commentary,streams,gini,outrage,11,-0.082,0.811
+within_lane,right_commentary,streams,gini,humor,11,-0.249,0.4611
+within_lane,right_commentary,streams,gini,log_n_videos,11,-0.159,0.6396
+within_lane,right_commentary,streams,gini,log_subscribers,11,0.427,0.1899
+within_lane,right_commentary,streams,top10_share,F1_controlled,11,0.045,0.8944
+within_lane,right_commentary,streams,top10_share,F2_controlled,11,-0.364,0.2716
+within_lane,right_commentary,streams,top10_share,F3_controlled,11,0.391,0.2345
+within_lane,right_commentary,streams,top10_share,F4_controlled,11,0.273,0.4171
+within_lane,right_commentary,streams,top10_share,F5_controlled,11,0.045,0.8944
+within_lane,right_commentary,streams,top10_share,F6_controlled,11,-0.273,0.4171
+within_lane,right_commentary,streams,top10_share,F7_controlled,11,0.1,0.7699
+within_lane,right_commentary,streams,top10_share,F8_controlled,11,-0.527,0.0956
+within_lane,right_commentary,streams,top10_share,F9_controlled,11,0.109,0.7495
+within_lane,right_commentary,streams,top10_share,F10_controlled,11,-0.073,0.8317
+within_lane,right_commentary,streams,top10_share,F11_controlled,11,-0.436,0.1797
+within_lane,right_commentary,streams,top10_share,F12_controlled,11,-0.645,0.032
+within_lane,right_commentary,streams,top10_share,curiosity_gap,11,0.664,0.026
+within_lane,right_commentary,streams,top10_share,outrage,11,-0.227,0.5015
+within_lane,right_commentary,streams,top10_share,humor,11,-0.185,0.586
+within_lane,right_commentary,streams,top10_share,log_n_videos,11,-0.169,0.6203
+within_lane,right_commentary,streams,top10_share,log_subscribers,11,0.455,0.1601
+within_lane,right_commentary,videos,gini,F1_controlled,52,0.06,0.6734
+within_lane,right_commentary,videos,gini,F2_controlled,52,-0.102,0.4725
+within_lane,right_commentary,videos,gini,F3_controlled,52,0.135,0.341
+within_lane,right_commentary,videos,gini,F4_controlled,52,0.038,0.7873
+within_lane,right_commentary,videos,gini,F5_controlled,52,0.508,0.0001
+within_lane,right_commentary,videos,gini,F6_controlled,52,0.327,0.018
+within_lane,right_commentary,videos,gini,F7_controlled,52,-0.156,0.2708
+within_lane,right_commentary,videos,gini,F8_controlled,52,0.127,0.3685
+within_lane,right_commentary,videos,gini,F9_controlled,52,-0.46,0.0006
+within_lane,right_commentary,videos,gini,F10_controlled,52,0.315,0.0228
+within_lane,right_commentary,videos,gini,F11_controlled,52,0.149,0.2924
+within_lane,right_commentary,videos,gini,F12_controlled,52,0.11,0.4395
+within_lane,right_commentary,videos,gini,curiosity_gap,52,-0.117,0.4075
+within_lane,right_commentary,videos,gini,outrage,52,-0.484,0.0003
+within_lane,right_commentary,videos,gini,humor,52,-0.13,0.3576
+within_lane,right_commentary,videos,gini,log_n_videos,52,-0.052,0.7156
+within_lane,right_commentary,videos,gini,log_subscribers,52,-0.234,0.0944
+within_lane,right_commentary,videos,top10_share,F1_controlled,52,0.119,0.4028
+within_lane,right_commentary,videos,top10_share,F2_controlled,52,-0.151,0.2863
+within_lane,right_commentary,videos,top10_share,F3_controlled,52,0.129,0.3637
+within_lane,right_commentary,videos,top10_share,F4_controlled,52,0.005,0.9698
+within_lane,right_commentary,videos,top10_share,F5_controlled,52,0.475,0.0004
+within_lane,right_commentary,videos,top10_share,F6_controlled,52,0.275,0.0489
+within_lane,right_commentary,videos,top10_share,F7_controlled,52,-0.199,0.1574
+within_lane,right_commentary,videos,top10_share,F8_controlled,52,0.046,0.746
+within_lane,right_commentary,videos,top10_share,F9_controlled,52,-0.461,0.0006
+within_lane,right_commentary,videos,top10_share,F10_controlled,52,0.32,0.0206
+within_lane,right_commentary,videos,top10_share,F11_controlled,52,0.142,0.3142
+within_lane,right_commentary,videos,top10_share,F12_controlled,52,0.056,0.6911
+within_lane,right_commentary,videos,top10_share,curiosity_gap,52,-0.151,0.2864
+within_lane,right_commentary,videos,top10_share,outrage,52,-0.526,0.0001
+within_lane,right_commentary,videos,top10_share,humor,52,-0.153,0.2794
+within_lane,right_commentary,videos,top10_share,log_n_videos,52,-0.083,0.5576
+within_lane,right_commentary,videos,top10_share,log_subscribers,52,-0.277,0.0465
+within_lane,streamer_reaction,videos,gini,F1_controlled,21,-0.44,0.0458
+within_lane,streamer_reaction,videos,gini,F2_controlled,21,0.025,0.9154
+within_lane,streamer_reaction,videos,gini,F3_controlled,21,0.186,0.4203
+within_lane,streamer_reaction,videos,gini,F4_controlled,21,-0.369,0.0999
+within_lane,streamer_reaction,videos,gini,F5_controlled,21,0.14,0.5442
+within_lane,streamer_reaction,videos,gini,F6_controlled,21,0.401,0.0714
+within_lane,streamer_reaction,videos,gini,F7_controlled,21,-0.021,0.9288
+within_lane,streamer_reaction,videos,gini,F8_controlled,21,-0.125,0.5903
+within_lane,streamer_reaction,videos,gini,F9_controlled,21,-0.047,0.8405
+within_lane,streamer_reaction,videos,gini,F10_controlled,21,0.438,0.0472
+within_lane,streamer_reaction,videos,gini,F11_controlled,21,0.36,0.1092
+within_lane,streamer_reaction,videos,gini,F12_controlled,21,-0.506,0.0191
+within_lane,streamer_reaction,videos,gini,curiosity_gap,21,-0.425,0.055
+within_lane,streamer_reaction,videos,gini,outrage,21,0.24,0.2942
+within_lane,streamer_reaction,videos,gini,humor,21,0.23,0.3159
+within_lane,streamer_reaction,videos,gini,log_n_videos,21,-0.266,0.2434
+within_lane,streamer_reaction,videos,gini,log_subscribers,21,-0.229,0.319
+within_lane,streamer_reaction,videos,top10_share,F1_controlled,21,-0.432,0.0502
+within_lane,streamer_reaction,videos,top10_share,F2_controlled,21,0.023,0.9199
+within_lane,streamer_reaction,videos,top10_share,F3_controlled,21,0.142,0.5405
+within_lane,streamer_reaction,videos,top10_share,F4_controlled,21,-0.435,0.0487
+within_lane,streamer_reaction,videos,top10_share,F5_controlled,21,0.083,0.7202
+within_lane,streamer_reaction,videos,top10_share,F6_controlled,21,0.41,0.0646
+within_lane,streamer_reaction,videos,top10_share,F7_controlled,21,-0.079,0.7328
+within_lane,streamer_reaction,videos,top10_share,F8_controlled,21,-0.196,0.3942
+within_lane,streamer_reaction,videos,top10_share,F9_controlled,21,0.005,0.9822
+within_lane,streamer_reaction,videos,top10_share,F10_controlled,21,0.387,0.0831
+within_lane,streamer_reaction,videos,top10_share,F11_controlled,21,0.36,0.1092
+within_lane,streamer_reaction,videos,top10_share,F12_controlled,21,-0.401,0.0714
+within_lane,streamer_reaction,videos,top10_share,curiosity_gap,21,-0.517,0.0164
+within_lane,streamer_reaction,videos,top10_share,outrage,21,0.303,0.1824
+within_lane,streamer_reaction,videos,top10_share,humor,21,0.16,0.4875
+within_lane,streamer_reaction,videos,top10_share,log_n_videos,21,-0.234,0.3078
+within_lane,streamer_reaction,videos,top10_share,log_subscribers,21,-0.184,0.4236
+within_lane,us_legacy_tv,streams,gini,F1_controlled,6,0.086,0.8717
+within_lane,us_legacy_tv,streams,gini,F2_controlled,6,-0.371,0.4685
+within_lane,us_legacy_tv,streams,gini,F3_controlled,6,-0.486,0.3287
+within_lane,us_legacy_tv,streams,gini,F4_controlled,6,0.486,0.3287
+within_lane,us_legacy_tv,streams,gini,F5_controlled,6,0.029,0.9572
+within_lane,us_legacy_tv,streams,gini,F6_controlled,6,-0.657,0.1562
+within_lane,us_legacy_tv,streams,gini,F7_controlled,6,0.257,0.6228
+within_lane,us_legacy_tv,streams,gini,F8_controlled,6,0.2,0.704
+within_lane,us_legacy_tv,streams,gini,F9_controlled,6,-0.771,0.0724
+within_lane,us_legacy_tv,streams,gini,F10_controlled,6,-0.257,0.6228
+within_lane,us_legacy_tv,streams,gini,F11_controlled,6,-0.143,0.7872
+within_lane,us_legacy_tv,streams,gini,F12_controlled,6,0.143,0.7872
+within_lane,us_legacy_tv,streams,gini,curiosity_gap,6,-0.771,0.0724
+within_lane,us_legacy_tv,streams,gini,outrage,6,-0.257,0.6228
+within_lane,us_legacy_tv,streams,gini,humor,6,,
+within_lane,us_legacy_tv,streams,gini,log_n_videos,6,-0.2,0.704
+within_lane,us_legacy_tv,streams,gini,log_subscribers,6,-0.486,0.3287
+within_lane,us_legacy_tv,streams,top10_share,F1_controlled,6,0.143,0.7872
+within_lane,us_legacy_tv,streams,top10_share,F2_controlled,6,-0.6,0.208
+within_lane,us_legacy_tv,streams,top10_share,F3_controlled,6,-0.429,0.3965
+within_lane,us_legacy_tv,streams,top10_share,F4_controlled,6,0.6,0.208
+within_lane,us_legacy_tv,streams,top10_share,F5_controlled,6,0.257,0.6228
+within_lane,us_legacy_tv,streams,top10_share,F6_controlled,6,-0.429,0.3965
+within_lane,us_legacy_tv,streams,top10_share,F7_controlled,6,0.086,0.8717
+within_lane,us_legacy_tv,streams,top10_share,F8_controlled,6,0.029,0.9572
+within_lane,us_legacy_tv,streams,top10_share,F9_controlled,6,-0.6,0.208
+within_lane,us_legacy_tv,streams,top10_share,F10_controlled,6,-0.314,0.5441
+within_lane,us_legacy_tv,streams,top10_share,F11_controlled,6,-0.429,0.3965
+within_lane,us_legacy_tv,streams,top10_share,F12_controlled,6,0.2,0.704
+within_lane,us_legacy_tv,streams,top10_share,curiosity_gap,6,-0.6,0.208
+within_lane,us_legacy_tv,streams,top10_share,outrage,6,-0.143,0.7872
+within_lane,us_legacy_tv,streams,top10_share,humor,6,,
+within_lane,us_legacy_tv,streams,top10_share,log_n_videos,6,-0.314,0.5441
+within_lane,us_legacy_tv,streams,top10_share,log_subscribers,6,-0.543,0.2657
+within_lane,us_legacy_tv,videos,gini,F1_controlled,9,0.167,0.6682
+within_lane,us_legacy_tv,videos,gini,F2_controlled,9,-0.367,0.3317
+within_lane,us_legacy_tv,videos,gini,F3_controlled,9,-0.45,0.2242
+within_lane,us_legacy_tv,videos,gini,F4_controlled,9,-0.817,0.0072
+within_lane,us_legacy_tv,videos,gini,F5_controlled,9,-0.233,0.5457
+within_lane,us_legacy_tv,videos,gini,F6_controlled,9,0.3,0.4328
+within_lane,us_legacy_tv,videos,gini,F7_controlled,9,0.3,0.4328
+within_lane,us_legacy_tv,videos,gini,F8_controlled,9,-0.217,0.5755
+within_lane,us_legacy_tv,videos,gini,F9_controlled,9,-0.633,0.0671
+within_lane,us_legacy_tv,videos,gini,F10_controlled,9,-0.583,0.0992
+within_lane,us_legacy_tv,videos,gini,F11_controlled,9,0.417,0.2646
+within_lane,us_legacy_tv,videos,gini,F12_controlled,9,0.017,0.9661
+within_lane,us_legacy_tv,videos,gini,curiosity_gap,9,-0.067,0.8647
+within_lane,us_legacy_tv,videos,gini,outrage,9,-0.45,0.2242
+within_lane,us_legacy_tv,videos,gini,humor,9,-0.636,0.0656
+within_lane,us_legacy_tv,videos,gini,log_n_videos,9,0.117,0.765
+within_lane,us_legacy_tv,videos,gini,log_subscribers,9,-0.368,0.3296
+within_lane,us_legacy_tv,videos,top10_share,F1_controlled,9,0.117,0.765
+within_lane,us_legacy_tv,videos,top10_share,F2_controlled,9,-0.333,0.3807
+within_lane,us_legacy_tv,videos,top10_share,F3_controlled,9,-0.433,0.244
+within_lane,us_legacy_tv,videos,top10_share,F4_controlled,9,-0.867,0.0025
+within_lane,us_legacy_tv,videos,top10_share,F5_controlled,9,-0.317,0.4064
+within_lane,us_legacy_tv,videos,top10_share,F6_controlled,9,0.283,0.46
+within_lane,us_legacy_tv,videos,top10_share,F7_controlled,9,0.367,0.3317
+within_lane,us_legacy_tv,videos,top10_share,F8_controlled,9,-0.283,0.46
+within_lane,us_legacy_tv,videos,top10_share,F9_controlled,9,-0.683,0.0424
+within_lane,us_legacy_tv,videos,top10_share,F10_controlled,9,-0.517,0.1544
+within_lane,us_legacy_tv,videos,top10_share,F11_controlled,9,0.433,0.244
+within_lane,us_legacy_tv,videos,top10_share,F12_controlled,9,0.067,0.8647
+within_lane,us_legacy_tv,videos,top10_share,curiosity_gap,9,0.0,1.0
+within_lane,us_legacy_tv,videos,top10_share,outrage,9,-0.433,0.244
+within_lane,us_legacy_tv,videos,top10_share,humor,9,-0.594,0.0916
+within_lane,us_legacy_tv,videos,top10_share,log_n_videos,9,0.167,0.6682
+within_lane,us_legacy_tv,videos,top10_share,log_subscribers,9,-0.318,0.4043
+within_lane,us_press_print_digital,videos,gini,F1_controlled,15,-0.1,0.7229
+within_lane,us_press_print_digital,videos,gini,F2_controlled,15,-0.343,0.2109
+within_lane,us_press_print_digital,videos,gini,F3_controlled,15,-0.475,0.0736
+within_lane,us_press_print_digital,videos,gini,F4_controlled,15,0.018,0.9496
+within_lane,us_press_print_digital,videos,gini,F5_controlled,15,-0.614,0.0148
+within_lane,us_press_print_digital,videos,gini,F6_controlled,15,0.661,0.0073
+within_lane,us_press_print_digital,videos,gini,F7_controlled,15,0.075,0.7905
+within_lane,us_press_print_digital,videos,gini,F8_controlled,15,0.104,0.7134
+within_lane,us_press_print_digital,videos,gini,F9_controlled,15,0.043,0.8795
+within_lane,us_press_print_digital,videos,gini,F10_controlled,15,0.057,0.8397
+within_lane,us_press_print_digital,videos,gini,F11_controlled,15,0.375,0.1684
+within_lane,us_press_print_digital,videos,gini,F12_controlled,15,0.304,0.2714
+within_lane,us_press_print_digital,videos,gini,curiosity_gap,15,0.029,0.9195
+within_lane,us_press_print_digital,videos,gini,outrage,15,-0.361,0.1866
+within_lane,us_press_print_digital,videos,gini,humor,15,0.27,0.3305
+within_lane,us_press_print_digital,videos,gini,log_n_videos,15,0.15,0.5936
+within_lane,us_press_print_digital,videos,gini,log_subscribers,15,0.079,0.7808
+within_lane,us_press_print_digital,videos,top10_share,F1_controlled,15,-0.089,0.7517
+within_lane,us_press_print_digital,videos,top10_share,F2_controlled,15,-0.382,0.1598
+within_lane,us_press_print_digital,videos,top10_share,F3_controlled,15,-0.507,0.0537
+within_lane,us_press_print_digital,videos,top10_share,F4_controlled,15,-0.029,0.9195
+within_lane,us_press_print_digital,videos,top10_share,F5_controlled,15,-0.664,0.0069
+within_lane,us_press_print_digital,videos,top10_share,F6_controlled,15,0.707,0.0032
+within_lane,us_press_print_digital,videos,top10_share,F7_controlled,15,0.107,0.7039
+within_lane,us_press_print_digital,videos,top10_share,F8_controlled,15,0.118,0.6757
+within_lane,us_press_print_digital,videos,top10_share,F9_controlled,15,0.018,0.9496
+within_lane,us_press_print_digital,videos,top10_share,F10_controlled,15,0.05,0.8595
+within_lane,us_press_print_digital,videos,top10_share,F11_controlled,15,0.4,0.1396
+within_lane,us_press_print_digital,videos,top10_share,F12_controlled,15,0.314,0.2539
+within_lane,us_press_print_digital,videos,top10_share,curiosity_gap,15,0.0,1.0
+within_lane,us_press_print_digital,videos,top10_share,outrage,15,-0.35,0.2009
+within_lane,us_press_print_digital,videos,top10_share,humor,15,0.33,0.2291
+within_lane,us_press_print_digital,videos,top10_share,log_n_videos,15,0.225,0.4201
+within_lane,us_press_print_digital,videos,top10_share,log_subscribers,15,0.018,0.9496
+within_lane,wire_international,streams,gini,F1_controlled,7,0.857,0.0137
+within_lane,wire_international,streams,gini,F2_controlled,7,0.714,0.0713
+within_lane,wire_international,streams,gini,F3_controlled,7,0.821,0.0234
+within_lane,wire_international,streams,gini,F4_controlled,7,-0.107,0.8192
+within_lane,wire_international,streams,gini,F5_controlled,7,0.357,0.4316
+within_lane,wire_international,streams,gini,F6_controlled,7,-0.571,0.1802
+within_lane,wire_international,streams,gini,F7_controlled,7,0.536,0.2152
+within_lane,wire_international,streams,gini,F8_controlled,7,-0.5,0.2532
+within_lane,wire_international,streams,gini,F9_controlled,7,-0.464,0.2939
+within_lane,wire_international,streams,gini,F10_controlled,7,-0.964,0.0005
+within_lane,wire_international,streams,gini,F11_controlled,7,-0.786,0.0362
+within_lane,wire_international,streams,gini,F12_controlled,7,-0.857,0.0137
+within_lane,wire_international,streams,gini,curiosity_gap,7,0.071,0.879
+within_lane,wire_international,streams,gini,outrage,7,-0.929,0.0025
+within_lane,wire_international,streams,gini,humor,7,0.198,0.6701
+within_lane,wire_international,streams,gini,log_n_videos,7,-0.321,0.4821
+within_lane,wire_international,streams,gini,log_subscribers,7,0.036,0.9394
+within_lane,wire_international,streams,top10_share,F1_controlled,7,0.857,0.0137
+within_lane,wire_international,streams,top10_share,F2_controlled,7,0.571,0.1802
+within_lane,wire_international,streams,top10_share,F3_controlled,7,0.821,0.0234
+within_lane,wire_international,streams,top10_share,F4_controlled,7,-0.107,0.8192
+within_lane,wire_international,streams,top10_share,F5_controlled,7,0.071,0.879
+within_lane,wire_international,streams,top10_share,F6_controlled,7,-0.571,0.1802
+within_lane,wire_international,streams,top10_share,F7_controlled,7,0.5,0.2532
+within_lane,wire_international,streams,top10_share,F8_controlled,7,-0.5,0.2532
+within_lane,wire_international,streams,top10_share,F9_controlled,7,-0.607,0.1482
+within_lane,wire_international,streams,top10_share,F10_controlled,7,-0.964,0.0005
+within_lane,wire_international,streams,top10_share,F11_controlled,7,-0.857,0.0137
+within_lane,wire_international,streams,top10_share,F12_controlled,7,-0.857,0.0137
+within_lane,wire_international,streams,top10_share,curiosity_gap,7,-0.107,0.8192
+within_lane,wire_international,streams,top10_share,outrage,7,-0.893,0.0068
+within_lane,wire_international,streams,top10_share,humor,7,0.198,0.6701
+within_lane,wire_international,streams,top10_share,log_n_videos,7,-0.214,0.6445
+within_lane,wire_international,streams,top10_share,log_subscribers,7,-0.036,0.9394
+within_lane,wire_international,videos,gini,F1_controlled,10,-0.273,0.4458
+within_lane,wire_international,videos,gini,F2_controlled,10,-0.358,0.3104
+within_lane,wire_international,videos,gini,F3_controlled,10,-0.176,0.6272
+within_lane,wire_international,videos,gini,F4_controlled,10,-0.467,0.1739
+within_lane,wire_international,videos,gini,F5_controlled,10,-0.503,0.1383
+within_lane,wire_international,videos,gini,F6_controlled,10,0.018,0.9602
+within_lane,wire_international,videos,gini,F7_controlled,10,0.067,0.8548
+within_lane,wire_international,videos,gini,F8_controlled,10,0.236,0.5109
+within_lane,wire_international,videos,gini,F9_controlled,10,-0.212,0.5563
+within_lane,wire_international,videos,gini,F10_controlled,10,0.067,0.8548
+within_lane,wire_international,videos,gini,F11_controlled,10,0.333,0.3466
+within_lane,wire_international,videos,gini,F12_controlled,10,-0.576,0.0816
+within_lane,wire_international,videos,gini,curiosity_gap,10,-0.588,0.0739
+within_lane,wire_international,videos,gini,outrage,10,0.115,0.7514
+within_lane,wire_international,videos,gini,humor,10,0.252,0.4832
+within_lane,wire_international,videos,gini,log_n_videos,10,0.552,0.0984
+within_lane,wire_international,videos,gini,log_subscribers,10,-0.309,0.3848
+within_lane,wire_international,videos,top10_share,F1_controlled,10,-0.164,0.6515
+within_lane,wire_international,videos,top10_share,F2_controlled,10,-0.176,0.6272
+within_lane,wire_international,videos,top10_share,F3_controlled,10,-0.236,0.5109
+within_lane,wire_international,videos,top10_share,F4_controlled,10,-0.552,0.0984
+within_lane,wire_international,videos,top10_share,F5_controlled,10,-0.333,0.3466
+within_lane,wire_international,videos,top10_share,F6_controlled,10,-0.127,0.7261
+within_lane,wire_international,videos,top10_share,F7_controlled,10,0.067,0.8548
+within_lane,wire_international,videos,top10_share,F8_controlled,10,0.018,0.9602
+within_lane,wire_international,videos,top10_share,F9_controlled,10,-0.176,0.6272
+within_lane,wire_international,videos,top10_share,F10_controlled,10,-0.03,0.9338
+within_lane,wire_international,videos,top10_share,F11_controlled,10,0.212,0.5563
+within_lane,wire_international,videos,top10_share,F12_controlled,10,-0.503,0.1383
+within_lane,wire_international,videos,top10_share,curiosity_gap,10,-0.455,0.1869
+within_lane,wire_international,videos,top10_share,outrage,10,0.042,0.9074
+within_lane,wire_international,videos,top10_share,humor,10,0.055,0.8796
+within_lane,wire_international,videos,top10_share,log_n_videos,10,0.455,0.1869
+within_lane,wire_international,videos,top10_share,log_subscribers,10,-0.309,0.3848
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F1_controlled,59,0.343,0.0079
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F2_controlled,59,-0.081,0.5424
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F3_controlled,59,0.375,0.0034
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F4_controlled,59,0.253,0.0528
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F5_controlled,59,0.06,0.6543
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F6_controlled,59,-0.179,0.1757
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F7_controlled,59,-0.113,0.3924
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F8_controlled,59,-0.159,0.2283
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F9_controlled,59,-0.036,0.7851
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F10_controlled,59,-0.338,0.0088
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F11_controlled,59,-0.293,0.0244
+pooled_within_lane (lane-demeaned),ALL,streams,gini,F12_controlled,59,-0.185,0.1612
+pooled_within_lane (lane-demeaned),ALL,streams,gini,curiosity_gap,59,0.032,0.8119
+pooled_within_lane (lane-demeaned),ALL,streams,gini,outrage,59,-0.236,0.0725
+pooled_within_lane (lane-demeaned),ALL,streams,gini,humor,59,0.021,0.8755
+pooled_within_lane (lane-demeaned),ALL,streams,gini,log_n_videos,59,0.096,0.4702
+pooled_within_lane (lane-demeaned),ALL,streams,gini,log_subscribers,59,0.083,0.5319
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F1_controlled,59,0.38,0.003
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F2_controlled,59,-0.162,0.2203
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F3_controlled,59,0.334,0.0098
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F4_controlled,59,0.243,0.0639
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F5_controlled,59,0.108,0.4161
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F6_controlled,59,-0.207,0.1156
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F7_controlled,59,-0.104,0.4339
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F8_controlled,59,-0.102,0.4433
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F9_controlled,59,-0.102,0.4404
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F10_controlled,59,-0.365,0.0044
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F11_controlled,59,-0.307,0.0181
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,F12_controlled,59,-0.159,0.229
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,curiosity_gap,59,0.017,0.8967
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,outrage,59,-0.289,0.0263
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,humor,59,0.092,0.4866
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,log_n_videos,59,0.003,0.9816
+pooled_within_lane (lane-demeaned),ALL,streams,top10_share,log_subscribers,59,0.081,0.5409
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F1_controlled,193,0.13,0.072
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F2_controlled,193,-0.01,0.886
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F3_controlled,193,-0.037,0.6122
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F4_controlled,193,-0.046,0.5276
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F5_controlled,193,0.223,0.0019
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F6_controlled,193,0.182,0.0112
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F7_controlled,193,-0.073,0.3121
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F8_controlled,193,0.148,0.0401
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F9_controlled,193,-0.153,0.0338
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F10_controlled,193,0.122,0.0901
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F11_controlled,193,0.111,0.1248
+pooled_within_lane (lane-demeaned),ALL,videos,gini,F12_controlled,193,0.046,0.523
+pooled_within_lane (lane-demeaned),ALL,videos,gini,curiosity_gap,193,-0.107,0.1395
+pooled_within_lane (lane-demeaned),ALL,videos,gini,outrage,193,-0.274,0.0001
+pooled_within_lane (lane-demeaned),ALL,videos,gini,humor,193,0.042,0.5642
+pooled_within_lane (lane-demeaned),ALL,videos,gini,log_n_videos,193,0.012,0.8694
+pooled_within_lane (lane-demeaned),ALL,videos,gini,log_subscribers,193,-0.305,0.0
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F1_controlled,193,0.154,0.0325
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F2_controlled,193,-0.003,0.9724
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F3_controlled,193,-0.071,0.3271
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F4_controlled,193,-0.076,0.2945
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F5_controlled,193,0.199,0.0056
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F6_controlled,193,0.157,0.0291
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F7_controlled,193,-0.081,0.2614
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F8_controlled,193,0.131,0.0684
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F9_controlled,193,-0.159,0.0273
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F10_controlled,193,0.116,0.1097
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F11_controlled,193,0.097,0.1786
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,F12_controlled,193,0.032,0.6588
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,curiosity_gap,193,-0.114,0.1155
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,outrage,193,-0.281,0.0001
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,humor,193,0.034,0.6415
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,log_n_videos,193,-0.003,0.9656
+pooled_within_lane (lane-demeaned),ALL,videos,top10_share,log_subscribers,193,-0.324,0.0

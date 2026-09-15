@@ -1,0 +1,2226 @@
+creator,genre,kind,template,n_titles,share
+@60minutes,videos,leading,,14,0.0431
+@60minutes,videos,leading,<ENT> | <ENT>,10,0.0308
+@60minutes,videos,leading,<ENT> : the,6,0.0185
+@60minutes,videos,leading,<ENT> 's <ENT>,6,0.0185
+@60minutes,videos,leading,extended interview :,5,0.0154
+@60minutes,videos,trailing,<ENT> on <ENT>,46,0.1415
+@60minutes,videos,trailing,minutes full episodes,34,0.1046
+@60minutes,videos,trailing,<ENT> | <ENT>,19,0.0585
+@60minutes,videos,trailing,,14,0.0431
+@60minutes,videos,trailing,| # minutes,7,0.0215
+@ABCNews,streams,leading,live : <ENT>,317,0.5373
+@ABCNews,streams,leading,live : president,42,0.0712
+@ABCNews,streams,leading,president <ENT> delivers,13,0.022
+@ABCNews,streams,leading,president <ENT> holds,8,0.0136
+@ABCNews,streams,leading,president <ENT> meets,7,0.0119
+@ABCNews,streams,trailing,<ENT> | <ENT>,232,0.3932
+@ABCNews,streams,trailing,<ENT> : live,31,0.0525
+@ABCNews,streams,trailing,live : <ENT>,24,0.0407
+@ABCNews,streams,trailing,<ENT> press briefing,8,0.0136
+@ABCNews,streams,trailing,<ENT> # <ENT>,7,0.0119
+@ABCNews,videos,leading,,387,0.0486
+@ABCNews,videos,leading,good morning america,283,0.0355
+@ABCNews,videos,leading,<ENT> <ENT> with,249,0.0312
+@ABCNews,videos,leading,<ENT> to start,131,0.0164
+@ABCNews,videos,leading,<ENT> and <ENT>,55,0.0069
+@ABCNews,videos,trailing,,387,0.0486
+@ABCNews,videos,trailing,<ENT> with <ENT>,302,0.0379
+@ABCNews,videos,trailing,need to know,276,0.0346
+@ABCNews,videos,trailing,america full broadcast,270,0.0339
+@ABCNews,videos,trailing,start your day,131,0.0164
+@ANINewsIndia,streams,leading,live : <ENT>,1513,0.1996
+@ANINewsIndia,streams,leading,watch live :,744,0.0982
+@ANINewsIndia,streams,leading,watch : <ENT>,332,0.0438
+@ANINewsIndia,streams,leading,live : pm,228,0.0301
+@ANINewsIndia,streams,leading,live : cm,97,0.0128
+@ANINewsIndia,streams,trailing,<ENT> | <ENT>,1176,0.1552
+@ANINewsIndia,streams,trailing,<ENT> # <ENT>,214,0.0282
+@ANINewsIndia,streams,trailing,<ENT> in <ENT>,173,0.0228
+@ANINewsIndia,streams,trailing,<ENT> i <ENT>,81,0.0107
+@ANINewsIndia,streams,trailing,| pm modi,75,0.0099
+@ANINewsIndia,videos,leading,<ENT> president <ENT>,160,0.013
+@ANINewsIndia,videos,leading,watch : <ENT>,160,0.013
+@ANINewsIndia,videos,leading,<ENT> # <ENT>,158,0.0129
+@ANINewsIndia,videos,leading,watch ! <ENT>,142,0.0116
+@ANINewsIndia,videos,leading,must watch !,128,0.0104
+@ANINewsIndia,videos,trailing,<ENT> in <ENT>,345,0.0281
+@ANINewsIndia,videos,trailing,<ENT> | <ENT>,145,0.0118
+@ANINewsIndia,videos,trailing,<ENT> # <ENT>,140,0.0114
+@ANINewsIndia,videos,trailing,<ENT> at <ENT>,114,0.0093
+@ANINewsIndia,videos,trailing,with smita prakash,60,0.0049
+@ActualJusticeWarrior,videos,leading,,40,0.102
+@ActualJusticeWarrior,videos,trailing,,40,0.102
+@ActualJusticeWarrior,videos,trailing,over for <ENT>,4,0.0102
+@AfterPartyEmily,streams,leading,<ENT> # <ENT>,18,0.2432
+@AfterPartyEmily,streams,leading,<ENT> 's <ENT>,4,0.0541
+@AfterPartyEmily,streams,trailing,# w/ <ENT>,13,0.1757
+@AfterPartyEmily,streams,trailing,# with <ENT>,7,0.0946
+@AfterPartyEmily,videos,leading,the truth about,24,0.0585
+@AfterPartyEmily,videos,leading,the <ENT> about,10,0.0244
+@AfterPartyEmily,videos,leading,<ENT> and <ENT>,6,0.0146
+@AfterPartyEmily,videos,leading,<ENT> on <ENT>,5,0.0122
+@AfterPartyEmily,videos,leading,the real reason,5,0.0122
+@AfterPartyEmily,videos,trailing,# with <ENT>,128,0.3122
+@AfterPartyEmily,videos,trailing,# w/ <ENT>,22,0.0537
+@AfterPartyEmily,videos,trailing,<ENT> and <ENT>,8,0.0195
+@AfterPartyEmily,videos,trailing,<ENT> and inez,5,0.0122
+@AfterPartyEmily,videos,trailing,,4,0.0098
+@AlexStein99,streams,trailing,<ENT> ? !,4,0.0976
+@AlexStein99,videos,leading,protest chaos :,4,0.046
+@AlexStein99,videos,trailing,and <ENT> !,4,0.046
+@AnaEscobarShow,videos,trailing,the <ENT> brief,7,0.2188
+@AndWeKnowOfficial-o9b,videos,leading,<ENT> # <ENT>,9,0.0486
+@AndWeKnowOfficial-o9b,videos,trailing,# pray !,111,0.6
+@AndWeKnowOfficial-o9b,videos,trailing,# <ENT> !,15,0.0811
+@AndWeKnowOfficial-o9b,videos,trailing,<ENT> # pray,6,0.0324
+@AndWeKnowOfficial-o9b,videos,trailing,! pray !,5,0.027
+@AndWeKnowOfficial-o9b,videos,trailing,? pray !,4,0.0216
+@AndrewKlavan,videos,leading,,18,0.0918
+@AndrewKlavan,videos,leading,klavans on <ENT>,7,0.0357
+@AndrewKlavan,videos,trailing,,18,0.0918
+@AndrewKlavan,videos,trailing,w / <ENT>,11,0.0561
+@AndrewKlavan,videos,trailing,klavans on <ENT>,4,0.0204
+@AnthonyBrianLogan,streams,leading,<ENT> # <ENT>,18,0.3462
+@AnthonyBrianLogan,streams,trailing,and more !,49,0.9423
+@AnthonyBrianLogan,videos,leading,instagram abl live,17,0.0685
+@AnthonyBrianLogan,videos,leading,,10,0.0403
+@AnthonyBrianLogan,videos,leading,<ENT> <ENT> !,4,0.0161
+@AnthonyBrianLogan,videos,leading,<ENT> at <ENT>,4,0.0161
+@AnthonyBrianLogan,videos,leading,<ENT> 's <ENT>,4,0.0161
+@AnthonyBrianLogan,videos,trailing,me anything !,17,0.0685
+@AnthonyBrianLogan,videos,trailing,<ENT> <ENT> !,11,0.0444
+@AnthonyBrianLogan,videos,trailing,,10,0.0403
+@AnthonyBrianLogan,videos,trailing,in <ENT> !,9,0.0363
+@AnthonyBrianLogan,videos,trailing,# <ENT> !,5,0.0202
+@AsmonTV,videos,leading,what the f*ck,25,0.0286
+@AsmonTV,videos,leading,this is the,18,0.0206
+@AsmonTV,videos,leading,so i tried,18,0.0206
+@AsmonTV,videos,leading,this is genuinely,9,0.0103
+@AsmonTV,videos,leading,this is a,9,0.0103
+@AsmonTV,videos,trailing,in <ENT> #,12,0.0137
+@AsmonTV,videos,trailing,this game #,9,0.0103
+@AsmonTV,videos,trailing,right now #,8,0.0091
+@AsmonTV,videos,trailing,<ENT> ? ?,7,0.008
+@AsmonTV,videos,trailing,this coming #,6,0.0069
+@AssociatedPress,streams,leading,live : <ENT>,493,0.4283
+@AssociatedPress,streams,leading,live : trump,94,0.0817
+@AssociatedPress,streams,leading,live : pope,36,0.0313
+@AssociatedPress,streams,leading,<ENT> vs <ENT>,28,0.0243
+@AssociatedPress,streams,leading,live : outside,16,0.0139
+@AssociatedPress,streams,trailing,<ENT> in <ENT>,38,0.033
+@AssociatedPress,streams,trailing,( full ),32,0.0278
+@AssociatedPress,streams,trailing,<ENT> trial <ENT>,18,0.0156
+@AssociatedPress,streams,trailing,of <ENT> <ENT>,16,0.0139
+@AssociatedPress,streams,trailing,a press conference,13,0.0113
+@AssociatedPress,videos,leading,<ENT> says <ENT>,179,0.0321
+@AssociatedPress,videos,leading,<ENT> and <ENT>,124,0.0223
+@AssociatedPress,videos,leading,<ENT> says he,113,0.0203
+@AssociatedPress,videos,leading,<ENT> 's <ENT>,56,0.0101
+@AssociatedPress,videos,leading,<ENT> says the,36,0.0065
+@AssociatedPress,videos,trailing,<ENT> in <ENT>,105,0.0188
+@AssociatedPress,videos,trailing,<ENT> # <ENT>,77,0.0138
+@AssociatedPress,videos,trailing,# <ENT> says,46,0.0083
+@AssociatedPress,videos,trailing,<ENT> and <ENT>,41,0.0074
+@AssociatedPress,videos,trailing,| <ENT> interview,36,0.0065
+@BBCNews,videos,leading,<ENT> and <ENT>,65,0.0266
+@BBCNews,videos,leading,<ENT> says <ENT>,46,0.0189
+@BBCNews,videos,leading,<ENT> - <ENT>,26,0.0107
+@BBCNews,videos,leading,<ENT> president <ENT>,22,0.009
+@BBCNews,videos,leading,<ENT> says it,12,0.0049
+@BBCNews,videos,trailing,? | <ENT>,280,0.1148
+@BBCNews,videos,trailing,<ENT> | <ENT>,57,0.0234
+@BBCNews,videos,trailing,the global story,47,0.0193
+@BBCNews,videos,trailing,| <ENT> americast,31,0.0127
+@BBCNews,videos,trailing,<ENT> and <ENT>,20,0.0082
+@BadEmpanadaLive,videos,leading,,29,0.0973
+@BadEmpanadaLive,videos,leading,<ENT> is a,7,0.0235
+@BadEmpanadaLive,videos,leading,<ENT> in <ENT>,5,0.0168
+@BadEmpanadaLive,videos,leading,<ENT> on <ENT>,4,0.0134
+@BadEmpanadaLive,videos,leading,<ENT> is <ENT>,4,0.0134
+@BadEmpanadaLive,videos,trailing,,29,0.0973
+@BadFaithPodcast,videos,trailing,w/ <ENT> ),61,0.7531
+@BelleRanch,videos,leading,let 's talk,820,0.9976
+@BelleRanch,videos,trailing,and <ENT> #,45,0.0547
+@BelleRanch,videos,trailing,the <ENT> #,32,0.0389
+@BelleRanch,videos,trailing,in <ENT> #,28,0.0341
+@BelleRanch,videos,trailing,for <ENT> #,16,0.0195
+@BelleRanch,videos,trailing,on <ENT> #,11,0.0134
+@BenShapiro,videos,leading,,50,0.0952
+@BenShapiro,videos,leading,<ENT> 's <ENT>,7,0.0133
+@BenShapiro,videos,leading,<ENT> on <ENT>,6,0.0114
+@BenShapiro,videos,leading,<ENT> reacts to,6,0.0114
+@BenShapiro,videos,leading,<ENT> and <ENT>,5,0.0095
+@BenShapiro,videos,trailing,,50,0.0952
+@BenShapiro,videos,trailing,<ENT> in <ENT>,5,0.0095
+@BenShapiro,videos,trailing,<ENT> 's <ENT>,4,0.0076
+@BenShapiro,videos,trailing,<ENT> ? !,4,0.0076
+@BlackConservativePerspective,videos,leading,woke <ENT> mayor,19,0.0149
+@BlackConservativePerspective,videos,leading,<ENT> and <ENT>,14,0.011
+@BlackConservativePerspective,videos,leading,<ENT> after <ENT>,12,0.0094
+@BlackConservativePerspective,videos,leading,<ENT> shuts down,10,0.0079
+@BlackConservativePerspective,videos,leading,<ENT> down over,10,0.0079
+@BlackConservativePerspective,videos,trailing,in <ENT> !,23,0.0181
+@BlackConservativePerspective,videos,trailing,on <ENT> !,19,0.0149
+@BlackConservativePerspective,videos,trailing,after <ENT> !,18,0.0142
+@BlackConservativePerspective,videos,trailing,for <ENT> !,17,0.0134
+@BlackConservativePerspective,videos,trailing,to <ENT> !,17,0.0134
+@BlaireWhiteX,videos,leading,,4,0.3636
+@BlaireWhiteX,videos,trailing,,4,0.3636
+@BlazeTV,videos,leading,<ENT> 's <ENT>,13,0.015
+@BlazeTV,videos,leading,<ENT> in <ENT>,10,0.0115
+@BlazeTV,videos,leading,the truth about,10,0.0115
+@BlazeTV,videos,leading,""" <ENT> !",9,0.0104
+@BlazeTV,videos,leading,must - see,8,0.0092
+@BlazeTV,videos,trailing,! | <ENT>,22,0.0253
+@BlazeTV,videos,trailing,<ENT> in <ENT>,17,0.0196
+@BlazeTV,videos,trailing,| new <ENT>,10,0.0115
+@BlazeTV,videos,trailing,<ENT> | <ENT>,10,0.0115
+@BlazeTV,videos,trailing,in <ENT> !,10,0.0115
+@BreakThroughNews,streams,leading,live : <ENT>,13,0.2281
+@BreakThroughNews,streams,leading,bt live :,6,0.1053
+@BreakThroughNews,streams,trailing,del pueblo summit,4,0.0702
+@BreakThroughNews,streams,trailing,<ENT> | <ENT>,4,0.0702
+@BreakThroughNews,videos,leading,<ENT> 's <ENT>,4,0.0165
+@BreakThroughNews,videos,leading,<ENT> after <ENT>,4,0.0165
+@BreakThroughNews,videos,leading,<ENT> : <ENT>,4,0.0165
+@BreakThroughNews,videos,trailing,| w/ <ENT>,24,0.0992
+@BreakThroughNews,videos,trailing,# w/ <ENT>,6,0.0248
+@BreakThroughNews,videos,trailing,? w/ <ENT>,4,0.0165
+@BrittanyVenti,videos,leading,,5,0.0909
+@BrittanyVenti,videos,trailing,,5,0.0909
+@CBSNews,streams,leading,<ENT> murder trial,13,0.0353
+@CBSNews,streams,leading,<ENT> secretary <ENT>,13,0.0353
+@CBSNews,streams,leading,officials give update,9,0.0245
+@CBSNews,streams,leading,<ENT> holds briefing,8,0.0217
+@CBSNews,streams,leading,<ENT> # <ENT>,8,0.0217
+@CBSNews,streams,trailing,| full video,259,0.7038
+@CBSNews,streams,trailing,| full coverage,48,0.1304
+@CBSNews,streams,trailing,| full audio,4,0.0109
+@CBSNews,videos,leading,<ENT> says <ENT>,123,0.0148
+@CBSNews,videos,leading,watch : <ENT>,118,0.0142
+@CBSNews,videos,leading,<ENT> # <ENT>,94,0.0113
+@CBSNews,videos,leading,<ENT> and <ENT>,86,0.0103
+@CBSNews,videos,leading,what we know,76,0.0091
+@CBSNews,videos,trailing,| the takeout,174,0.0209
+@CBSNews,videos,trailing,# sources say,81,0.0097
+@CBSNews,videos,trailing,<ENT> and <ENT>,57,0.0068
+@CBSNews,videos,trailing,| special report,56,0.0067
+@CBSNews,videos,trailing,# <ENT> says,54,0.0065
+@CNN,streams,leading,<ENT> press briefing,4,0.0426
+@CNN,videos,leading,<ENT> 's <ENT>,27,0.0154
+@CNN,videos,leading,<ENT> war :,16,0.0091
+@CNN,videos,leading,<ENT> says <ENT>,15,0.0085
+@CNN,videos,leading,<ENT> of <ENT>,14,0.008
+@CNN,videos,leading,<ENT> # <ENT>,13,0.0074
+@CNN,videos,trailing,| enten roundup,32,0.0182
+@CNN,videos,trailing,? | <ENT>,20,0.0114
+@CNN,videos,trailing,| the assignment,15,0.0085
+@CNN,videos,trailing,experts on <ENT>,14,0.008
+@CNN,videos,trailing,<ENT> 's take,14,0.008
+@CamHigby,streams,leading,,7,0.1186
+@CamHigby,streams,leading,🔴 live :,4,0.0678
+@CamHigby,streams,leading,<ENT> in <ENT>,4,0.0678
+@CamHigby,streams,trailing,on the ground,11,0.1864
+@CamHigby,streams,trailing,,7,0.1186
+@CamHigby,streams,trailing,evil and <ENT>,5,0.0847
+@CamHigby,videos,leading,anti - ice,4,0.0215
+@CashJordan,videos,leading,trump just hit,11,0.0368
+@CashJordan,videos,leading,he thought he,7,0.0234
+@CashJordan,videos,leading,<ENT> 's <ENT>,7,0.0234
+@CashJordan,videos,leading,“ no more,6,0.0201
+@CashJordan,videos,leading,breaking : <ENT>,5,0.0167
+@CashJordan,videos,trailing,# until today,13,0.0435
+@CashJordan,videos,trailing,off the <ENT>,8,0.0268
+@CashJordan,videos,trailing,wipes them out,4,0.0134
+@ChadPrather1,streams,leading,,6,0.0299
+@ChadPrather1,streams,leading,part <ENT> -,5,0.0249
+@ChadPrather1,streams,trailing,# and <ENT>,6,0.0299
+@ChadPrather1,streams,trailing,,6,0.0299
+@ChadPrather1,videos,leading,,5,0.0312
+@ChadPrather1,videos,leading,part <ENT> :,4,0.025
+@ChadPrather1,videos,trailing,,5,0.0312
+@ChadPrather1,videos,trailing,<ENT> ? !,4,0.025
+@Channel5YouTube,videos,leading,,17,0.3953
+@Channel5YouTube,videos,trailing,,17,0.3953
+@Channel5YouTube,videos,trailing,ft # <ENT>,4,0.093
+@ClipsCandaceOwens,videos,leading,,11,0.0573
+@ClipsCandaceOwens,videos,leading,<ENT> x <ENT>,7,0.0365
+@ClipsCandaceOwens,videos,leading,responding to <ENT>,5,0.026
+@ClipsCandaceOwens,videos,leading,<ENT> | <ENT>,4,0.0208
+@ClipsCandaceOwens,videos,trailing,,11,0.0573
+@ClipsCandaceOwens,videos,trailing,to <ENT> #,9,0.0469
+@ClipsCandaceOwens,videos,trailing,<ENT> x <ENT>,7,0.0365
+@ClipsCandaceOwens,videos,trailing,# <ENT> #,5,0.026
+@ClipsCandaceOwens,videos,trailing,<ENT> | <ENT>,4,0.0208
+@ClubRandomPodcast,videos,leading,,46,0.2335
+@ClubRandomPodcast,videos,leading,<ENT> on <ENT>,10,0.0508
+@ClubRandomPodcast,videos,leading,<ENT> | club,7,0.0355
+@ClubRandomPodcast,videos,leading,<ENT> : <ENT>,5,0.0254
+@ClubRandomPodcast,videos,leading,<ENT> to <ENT>,4,0.0203
+@ClubRandomPodcast,videos,trailing,,46,0.2335
+@ClubRandomPodcast,videos,trailing,classics with <ENT>,8,0.0406
+@ClubRandomPodcast,videos,trailing,<ENT> | <ENT>,4,0.0203
+@ColeHastings,videos,leading,,9,0.2812
+@ColeHastings,videos,leading,why gen z,6,0.1875
+@ColeHastings,videos,trailing,,9,0.2812
+@CoreyGilShusterAskProject,videos,leading,what do you,8,0.1509
+@DailyDenims,videos,leading,,18,0.0837
+@DailyDenims,videos,leading,denims reacts to,9,0.0419
+@DailyDenims,videos,leading,<ENT> is <ENT>,5,0.0233
+@DailyDenims,videos,leading,<ENT> in <ENT>,4,0.0186
+@DailyDenims,videos,trailing,,18,0.0837
+@DailyDenims,videos,trailing,<ENT> in <ENT>,5,0.0233
+@DailyDenims,videos,trailing,( <ENT> ),5,0.0233
+@DailyDenims,videos,trailing,""" <ENT> """,4,0.0186
+@DailyDenims,videos,trailing,<ENT> is <ENT>,4,0.0186
+@DannyHaiphongYT,streams,leading,<ENT> : <ENT>,44,0.1938
+@DannyHaiphongYT,streams,leading,<ENT> 's <ENT>,18,0.0793
+@DannyHaiphongYT,streams,leading,<ENT> # <ENT>,8,0.0352
+@DannyHaiphongYT,streams,leading,<ENT> <ENT> #,6,0.0264
+@DannyHaiphongYT,streams,leading,<ENT> : trump,4,0.0176
+@DannyHaiphongYT,streams,trailing,<ENT> | <ENT>,46,0.2026
+@DannyHaiphongYT,streams,trailing,<ENT> # <ENT>,20,0.0881
+@DannyHaiphongYT,streams,trailing,<ENT> & <ENT>,6,0.0264
+@DannyHaiphongYT,streams,trailing,war | <ENT>,5,0.022
+@DannyHaiphongYT,streams,trailing,| <ENT> <ENT>,4,0.0176
+@DannyHaiphongYT,videos,leading,<ENT> : <ENT>,11,0.1719
+@DannyHaiphongYT,videos,leading,<ENT> : trump,5,0.0781
+@DannyHaiphongYT,videos,leading,<ENT> 's <ENT>,4,0.0625
+@DannyHaiphongYT,videos,trailing,<ENT> | <ENT>,6,0.0938
+@DarkHorsePod,streams,leading,<ENT> with <ENT>,5,0.1316
+@DarkHorsePod,streams,trailing,<ENT> and <ENT>,36,0.9474
+@DarkHorsePod,videos,leading,,4,0.0571
+@DarkHorsePod,videos,trailing,<ENT> on <ENT>,14,0.2
+@DarkHorsePod,videos,trailing,,4,0.0571
+@DarkHorsePod,videos,trailing,<ENT> on darkhorse,4,0.0571
+@DemocracyDocket,videos,leading,breaking : <ENT>,4,0.031
+@DemocracyDocket,videos,leading,,4,0.031
+@DemocracyDocket,videos,leading,<ENT> : <ENT>,4,0.031
+@DemocracyDocket,videos,leading,<ENT> 's <ENT>,4,0.031
+@DemocracyDocket,videos,trailing,| sen. <ENT>,7,0.0543
+@DemocracyDocket,videos,trailing,<ENT> | <ENT>,5,0.0388
+@DemocracyDocket,videos,trailing,,4,0.031
+@DemocracyDocket,videos,trailing,| rep. <ENT>,4,0.031
+@DemocracyNow,videos,leading,,190,0.2334
+@DemocracyNow,videos,leading,""" <ENT> """,81,0.0995
+@DemocracyNow,videos,leading,“ <ENT> ”,18,0.0221
+@DemocracyNow,videos,leading,report from <ENT>,13,0.016
+@DemocracyNow,videos,leading,<ENT> on <ENT>,13,0.016
+@DemocracyNow,videos,trailing,,190,0.2334
+@DemocracyNow,videos,trailing,<ENT> in <ENT>,24,0.0295
+@DemocracyNow,videos,trailing,<ENT> on <ENT>,17,0.0209
+@DemocracyNow,videos,trailing,<ENT> # <ENT>,14,0.0172
+@DemocracyNow,videos,trailing,""" <ENT> """,10,0.0123
+@DestinyDGGClips,videos,leading,destiny reacts to,5,0.0239
+@DestinyDGGClips,videos,leading,there ’s no,5,0.0239
+@DestinyDGGClips,videos,leading,<ENT> and <ENT>,4,0.0191
+@DoubleDownNews,videos,leading,,4,0.0606
+@DoubleDownNews,videos,trailing,than you think,6,0.0909
+@DoubleDownNews,videos,trailing,you to see,5,0.0758
+@DoubleDownNews,videos,trailing,,4,0.0606
+@DrSteveTurleyTV,streams,trailing,! ! !,28,0.9032
+@DrSteveTurleyTV,videos,leading,you wo n’t,53,0.1199
+@DrSteveTurleyTV,videos,leading,<ENT> as <ENT>,15,0.0339
+@DrSteveTurleyTV,videos,leading,breaking ! <ENT>,12,0.0271
+@DrSteveTurleyTV,videos,leading,<ENT> ’s socialist,6,0.0136
+@DrSteveTurleyTV,videos,leading,<ENT> panic as,5,0.0113
+@DrSteveTurleyTV,videos,trailing,! ! !,397,0.8982
+@DrSteveTurleyTV,videos,trailing,this happened #,30,0.0679
+@DropSiteNews,streams,leading,<ENT> # <ENT>,6,0.1395
+@DropSiteNews,streams,trailing,<ENT> and <ENT>,4,0.093
+@DropSiteNews,videos,leading,<ENT> # <ENT>,6,0.0294
+@DropSiteNews,videos,leading,,5,0.0245
+@DropSiteNews,videos,leading,<ENT> : <ENT>,5,0.0245
+@DropSiteNews,videos,leading,<ENT> 's <ENT>,4,0.0196
+@DropSiteNews,videos,leading,eyeing office :,4,0.0196
+@DropSiteNews,videos,trailing,,5,0.0245
+@DropSiteNews,videos,trailing,<ENT> and <ENT>,5,0.0245
+@DropSiteNews,videos,trailing,<ENT> to <ENT>,4,0.0196
+@DropSiteNews,videos,trailing,<ENT> in <ENT>,4,0.0196
+@DueDissidence,streams,leading,<ENT> # <ENT>,13,0.1161
+@DueDissidence,streams,leading,<ENT> <ENT> #,5,0.0446
+@DueDissidence,streams,trailing,- w/ <ENT>,6,0.0536
+@DueDissidence,videos,leading,,16,0.0249
+@DueDissidence,videos,leading,<ENT> # <ENT>,13,0.0202
+@DueDissidence,videos,leading,<ENT> on <ENT>,9,0.014
+@DueDissidence,videos,leading,<ENT> at <ENT>,8,0.0124
+@DueDissidence,videos,leading,report : <ENT>,7,0.0109
+@DueDissidence,videos,trailing,- w/ <ENT>,32,0.0498
+@DueDissidence,videos,trailing,,16,0.0249
+@DueDissidence,videos,trailing,<ENT> in <ENT>,13,0.0202
+@DueDissidence,videos,trailing,w/ rex jones,7,0.0109
+@DueDissidence,videos,trailing,<ENT> on <ENT>,6,0.0093
+@DylanBurnsLIVE,videos,leading,,10,0.0526
+@DylanBurnsLIVE,videos,leading,<ENT> 's <ENT>,8,0.0421
+@DylanBurnsLIVE,videos,leading,<ENT> to <ENT>,4,0.0211
+@DylanBurnsLIVE,videos,trailing,,10,0.0526
+@EzraKleinShow,videos,leading,,6,0.0923
+@EzraKleinShow,videos,trailing,,6,0.0923
+@FarronBalanced,streams,leading,,18,0.0957
+@FarronBalanced,streams,leading,<ENT> # <ENT>,5,0.0266
+@FarronBalanced,streams,leading,<ENT> as <ENT>,4,0.0213
+@FarronBalanced,streams,trailing,,18,0.0957
+@FarronBalanced,videos,leading,,164,0.0921
+@FarronBalanced,videos,leading,<ENT> after <ENT>,16,0.009
+@FarronBalanced,videos,leading,<ENT> 's <ENT>,12,0.0067
+@FarronBalanced,videos,leading,<ENT> in <ENT>,11,0.0062
+@FarronBalanced,videos,leading,trump admits he,11,0.0062
+@FarronBalanced,videos,trailing,,164,0.0921
+@FarronBalanced,videos,trailing,<ENT> ! !,8,0.0045
+@FarronBalanced,videos,trailing,<ENT> is <ENT>,7,0.0039
+@FarronBalanced,videos,trailing,<ENT> to <ENT>,6,0.0034
+@FarronBalanced,videos,trailing,<ENT> in <ENT>,6,0.0034
+@FinancialTimes,videos,trailing,| ft tech,5,0.125
+@FinancialTimes,videos,trailing,| ft rethink,4,0.1
+@Firstpost,streams,leading,live : <ENT>,1607,0.1791
+@Firstpost,streams,leading,<ENT> : <ENT>,587,0.0654
+@Firstpost,streams,leading,<ENT> live :,444,0.0495
+@Firstpost,streams,leading,live | <ENT>,271,0.0302
+@Firstpost,streams,leading,live : trump,165,0.0184
+@Firstpost,streams,trailing,<ENT> | <ENT>,771,0.0859
+@Firstpost,streams,trailing,with <ENT> sharma,282,0.0314
+@Firstpost,streams,trailing,| <ENT> <ENT>,253,0.0282
+@Firstpost,streams,trailing,| firstpost live,212,0.0236
+@Firstpost,streams,trailing,<ENT> | firstpost,191,0.0213
+@Firstpost,videos,leading,<ENT> 's <ENT>,410,0.0405
+@Firstpost,videos,leading,<ENT> : <ENT>,359,0.0355
+@Firstpost,videos,leading,<ENT> # <ENT>,290,0.0286
+@Firstpost,videos,leading,<ENT> in <ENT>,146,0.0144
+@Firstpost,videos,leading,<ENT> to <ENT>,112,0.0111
+@Firstpost,videos,trailing,| # k,1631,0.1611
+@Firstpost,videos,trailing,| firstpost live,1214,0.1199
+@Firstpost,videos,trailing,<ENT> | <ENT>,1184,0.1169
+@Firstpost,videos,trailing,with <ENT> sharma,793,0.0783
+@Firstpost,videos,trailing,with rupha ramani,507,0.0501
+@FleccasTalks,videos,leading,,95,0.3276
+@FleccasTalks,videos,trailing,,95,0.3276
+@Forbes,videos,leading,,57,0.0454
+@Forbes,videos,leading,<ENT> on <ENT>,15,0.0119
+@Forbes,videos,leading,<ENT> # <ENT>,13,0.0104
+@Forbes,videos,leading,the top #,9,0.0072
+@Forbes,videos,leading,this is how,9,0.0072
+@Forbes,videos,trailing,,57,0.0454
+@Forbes,videos,trailing,<ENT> | <ENT>,19,0.0151
+@Forbes,videos,trailing,<ENT> in <ENT>,12,0.0096
+@Forbes,videos,trailing,world | <ENT>,9,0.0072
+@Forbes,videos,trailing,bikes | <ENT>,8,0.0064
+@Forthepeoplepodcast305,streams,leading,drive time call,6,0.1333
+@Forthepeoplepodcast305,streams,leading,drive time w/,4,0.0889
+@Forthepeoplepodcast305,videos,leading,,4,0.0348
+@Forthepeoplepodcast305,videos,trailing,,4,0.0348
+@Forthepeoplepodcast305,videos,trailing,<ENT> to <ENT>,4,0.0348
+@FoxNews,streams,leading,<ENT> # <ENT>,16,0.0248
+@FoxNews,streams,leading,watch : president,16,0.0248
+@FoxNews,streams,leading,watch : <ENT>,15,0.0233
+@FoxNews,streams,leading,president <ENT> participates,12,0.0186
+@FoxNews,streams,leading,watch : trump,11,0.0171
+@FoxNews,streams,trailing,remarks at <ENT>,8,0.0124
+@FoxNews,streams,trailing,<ENT> # <ENT>,6,0.0093
+@FoxNews,streams,trailing,on <ENT> operations,6,0.0093
+@FoxNews,streams,trailing,<ENT> at <ENT>,5,0.0078
+@FoxNews,streams,trailing,<ENT> murder trial,4,0.0062
+@FoxNews,videos,leading,<ENT> : this,378,0.046
+@FoxNews,videos,leading,breaking : <ENT>,268,0.0326
+@FoxNews,videos,leading,just in :,266,0.0324
+@FoxNews,videos,leading,‘ the <ENT>,166,0.0202
+@FoxNews,videos,leading,,153,0.0186
+@FoxNews,videos,trailing,,153,0.0186
+@FoxNews,videos,trailing,# <ENT> says,45,0.0055
+@FoxNews,videos,trailing,<ENT> of hormuz,36,0.0044
+@FoxNews,videos,trailing,patriot premium ),35,0.0043
+@FoxNews,videos,trailing,<ENT> : <ENT>,31,0.0038
+@FoxNewsChannelClips,videos,leading,<ENT> : this,131,0.0228
+@FoxNewsChannelClips,videos,leading,<ENT> : <ENT>,91,0.0158
+@FoxNewsChannelClips,videos,leading,‘ the <ENT>,79,0.0137
+@FoxNewsChannelClips,videos,leading,' the <ENT>,54,0.0094
+@FoxNewsChannelClips,videos,leading,this is a,32,0.0056
+@FoxNewsChannelClips,videos,trailing,# <ENT> says,52,0.009
+@FoxNewsChannelClips,videos,trailing,# expert says,44,0.0077
+@FoxNewsChannelClips,videos,trailing,<ENT> : <ENT>,42,0.0073
+@FoxNewsChannelClips,videos,trailing,' : <ENT>,25,0.0043
+@FoxNewsChannelClips,videos,trailing,’ : <ENT>,24,0.0042
+@FreshFitMiami,streams,leading,,5,0.0667
+@FreshFitMiami,streams,trailing,,5,0.0667
+@FreshFitMiami,streams,trailing,ft # <ENT>,4,0.0533
+@FreshFitMiami,videos,leading,fresh & fit,10,0.0901
+@FreshFitMiami,videos,trailing,dating standards !,4,0.036
+@GeopoliticalEconomyReport,videos,leading,the real reason,4,0.0556
+@GlennKirschner2,videos,leading,,11,0.042
+@GlennKirschner2,videos,leading,<ENT> 's doj,10,0.0382
+@GlennKirschner2,videos,leading,<ENT> 's <ENT>,9,0.0344
+@GlennKirschner2,videos,leading,<ENT> in <ENT>,6,0.0229
+@GlennKirschner2,videos,trailing,,11,0.042
+@GlennKirschner2,videos,trailing,'s <ENT> !,6,0.0229
+@GlennKirschner2,videos,trailing,<ENT> <ENT> !,6,0.0229
+@GlennKirschner2,videos,trailing,in <ENT> !,6,0.0229
+@GlennKirschner2,videos,trailing,of <ENT> !,5,0.0191
+@GrahamAllen,videos,leading,,8,0.0324
+@GrahamAllen,videos,leading,<ENT> 's <ENT>,5,0.0202
+@GrahamAllen,videos,leading,<ENT> to <ENT>,5,0.0202
+@GrahamAllen,videos,trailing,,8,0.0324
+@GrahamAllen,videos,trailing,<ENT> to <ENT>,4,0.0162
+@GrahamAllen,videos,trailing,<ENT> ? !,4,0.0162
+@HangOutwithSeanHannity,videos,leading,,11,0.0714
+@HangOutwithSeanHannity,videos,leading,<ENT> : <ENT>,7,0.0455
+@HangOutwithSeanHannity,videos,leading,<ENT> : the,5,0.0325
+@HangOutwithSeanHannity,videos,leading,<ENT> : “,5,0.0325
+@HangOutwithSeanHannity,videos,leading,<ENT> : why,4,0.026
+@HangOutwithSeanHannity,videos,trailing,,11,0.0714
+@HangOutwithSeanHannity,videos,trailing,<ENT> on <ENT>,4,0.026
+@HasanAbi,videos,leading,,27,0.043
+@HasanAbi,videos,leading,<ENT> news is,5,0.008
+@HasanAbi,videos,leading,this is so,5,0.008
+@HasanAbi,videos,leading,<ENT> in <ENT>,5,0.008
+@HasanAbi,videos,leading,what the hell,5,0.008
+@HasanAbi,videos,trailing,,27,0.043
+@HasanAbi,videos,trailing,! ! !,20,0.0318
+@HasanAbi,videos,trailing,<ENT> in <ENT>,6,0.0096
+@HasanAbi,videos,trailing,<ENT> ? ?,5,0.008
+@HasanAbi,videos,trailing,? ? ?,4,0.0064
+@HasanAbiVODs3,videos,leading,<ENT> <ENT> –,94,0.5193
+@HasanAbiVODs3,videos,leading,,85,0.4696
+@HasanAbiVODs3,videos,trailing,,85,0.4696
+@HasanAbiVODs3,videos,trailing,– <ENT> visits,5,0.0276
+@HasanAbiVODs3,videos,trailing,no stream today,4,0.0221
+@HasanReactionsfanTwo,videos,leading,,25,0.0735
+@HasanReactionsfanTwo,videos,leading,<ENT> 's <ENT>,9,0.0265
+@HasanReactionsfanTwo,videos,leading,<ENT> is <ENT>,6,0.0176
+@HasanReactionsfanTwo,videos,leading,<ENT> | <ENT>,6,0.0176
+@HasanReactionsfanTwo,videos,leading,<ENT> after <ENT>,5,0.0147
+@HasanReactionsfanTwo,videos,trailing,<ENT> to <ENT>,31,0.0912
+@HasanReactionsfanTwo,videos,trailing,,25,0.0735
+@HasanReactionsfanTwo,videos,trailing,<ENT> 's <ENT>,9,0.0265
+@HasanReactionsfanTwo,videos,trailing,<ENT> in <ENT>,5,0.0147
+@HasanReactionsfanTwo,videos,trailing,ft # <ENT>,5,0.0147
+@HasanabiClips,streams,leading,🎲 <ENT> live,14,0.4375
+@HasanabiClips,streams,leading,🤬 hasanabi live,6,0.1875
+@HasanabiClips,streams,trailing,🔥 <ENT> 🎲,6,0.1875
+@HasanabiClips,videos,leading,<ENT> reacts to,19,0.0401
+@HasanabiClips,videos,leading,<ENT> to <ENT>,17,0.0359
+@HasanabiClips,videos,leading,,12,0.0253
+@HasanabiClips,videos,leading,hasanabi reacts to,12,0.0253
+@HasanabiClips,videos,trailing,# <ENT> reacts,22,0.0464
+@HasanabiClips,videos,trailing,reacts to <ENT>,13,0.0274
+@HasanabiClips,videos,trailing,| <ENT> reacts,13,0.0274
+@HasanabiClips,videos,trailing,,12,0.0253
+@HasanabiClips,videos,trailing,<ENT> <ENT> reacts,10,0.0211
+@JackCocchiarellaShow,videos,leading,,108,0.0709
+@JackCocchiarellaShow,videos,leading,<ENT> as <ENT>,36,0.0236
+@JackCocchiarellaShow,videos,leading,holy sh*t !,26,0.0171
+@JackCocchiarellaShow,videos,leading,<ENT> ! <ENT>,23,0.0151
+@JackCocchiarellaShow,videos,leading,finally ! <ENT>,22,0.0144
+@JackCocchiarellaShow,videos,trailing,,108,0.0709
+@JackCocchiarellaShow,videos,trailing,hell breaks loose,19,0.0125
+@JackCocchiarellaShow,videos,trailing,what he deserves,15,0.0098
+@JackCocchiarellaShow,videos,trailing,<ENT> as <ENT>,13,0.0085
+@JackCocchiarellaShow,videos,trailing,’s bad !,12,0.0079
+@JacksonHinkleOfficial,streams,leading,live : <ENT>,65,0.8025
+@JacksonHinkleOfficial,streams,leading,live : iran,5,0.0617
+@JacksonHinkleOfficial,videos,leading,<ENT> : <ENT>,12,0.0309
+@JacksonHinkleOfficial,videos,leading,<ENT> strikes <ENT>,7,0.018
+@JacksonHinkleOfficial,videos,leading,<ENT> : ',5,0.0129
+@JacksonHinkleOfficial,videos,leading,<ENT> caught lying,4,0.0103
+@JacksonHinkleOfficial,videos,leading,i visited <ENT>,4,0.0103
+@JacksonHinkleOfficial,videos,trailing,<ENT> is done,4,0.0103
+@JacksonHinkleOfficial,videos,trailing,,4,0.0103
+@JamarlThomas,streams,leading,<ENT> | <ENT>,32,0.1435
+@JamarlThomas,streams,leading,<ENT> # <ENT>,17,0.0762
+@JamarlThomas,streams,leading,laith <ENT> |,7,0.0314
+@JamarlThomas,streams,leading,<ENT> 's <ENT>,6,0.0269
+@JamarlThomas,streams,leading,<ENT> i trump,6,0.0269
+@JamarlThomas,streams,trailing,<ENT> # <ENT>,28,0.1256
+@JamarlThomas,streams,trailing,<ENT> 's <ENT>,5,0.0224
+@JamarlThomas,streams,trailing,,4,0.0179
+@JamarlThomas,videos,leading,<ENT> | <ENT>,53,0.1934
+@JamarlThomas,videos,leading,dr. <ENT> |,18,0.0657
+@JamarlThomas,videos,leading,"<ENT> | """,13,0.0474
+@JamarlThomas,videos,leading,<ENT> | why,10,0.0365
+@JamarlThomas,videos,leading,<ENT> 's <ENT>,8,0.0292
+@JamarlThomas,videos,trailing,<ENT> | <ENT>,28,0.1022
+@JamarlThomas,videos,trailing,| dr. <ENT>,20,0.073
+@JamarlThomas,videos,trailing,<ENT> 's <ENT>,10,0.0365
+@JamarlThomas,videos,trailing,""" <ENT> """,6,0.0219
+@JamarlThomas,videos,trailing,""" | <ENT>",4,0.0146
+@JesseKellyDC,videos,leading,,33,0.0655
+@JesseKellyDC,videos,leading,<ENT> senator <ENT>,9,0.0179
+@JesseKellyDC,videos,leading,<ENT> makes major,4,0.0079
+@JesseKellyDC,videos,leading,<ENT> <ENT> caught,4,0.0079
+@JesseKellyDC,videos,leading,<ENT> <ENT> senators,4,0.0079
+@JesseKellyDC,videos,trailing,,33,0.0655
+@JillianMichaels,videos,leading,,19,0.0416
+@JillianMichaels,videos,leading,<ENT> # <ENT>,11,0.0241
+@JillianMichaels,videos,leading,""" <ENT> !",6,0.0131
+@JillianMichaels,videos,leading,the truth about,5,0.0109
+@JillianMichaels,videos,leading,<ENT> and <ENT>,5,0.0109
+@JillianMichaels,videos,trailing,,19,0.0416
+@JillianMichaels,videos,trailing,<ENT> # <ENT>,8,0.0175
+@JillianMichaels,videos,trailing,need to know,5,0.0109
+@JillianMichaels,videos,trailing,<ENT> ? !,4,0.0088
+@JillianMichaels,videos,trailing,""" <ENT> """,4,0.0088
+@JustPearlyThings,streams,leading,,6,0.0625
+@JustPearlyThings,streams,trailing,,6,0.0625
+@JustPearlyThings,streams,trailing,! ! !,4,0.0417
+@JustPearlyThings,videos,leading,,41,0.0613
+@JustPearlyThings,videos,leading,<ENT> of <ENT>,5,0.0075
+@JustPearlyThings,videos,leading,how i got,5,0.0075
+@JustPearlyThings,videos,leading,<ENT> is a,4,0.006
+@JustPearlyThings,videos,trailing,,41,0.0613
+@JustPearlyThings,videos,trailing,! ! !,5,0.0075
+@JustPearlyThings,videos,trailing,<ENT> of <ENT>,5,0.0075
+@JustPearlyThings,videos,trailing,women should obey,5,0.0075
+@JustPearlyThings,videos,trailing,their husbands ?,4,0.006
+@KimIversen,videos,leading,,19,0.0356
+@KimIversen,videos,leading,<ENT> : <ENT>,9,0.0169
+@KimIversen,videos,leading,<ENT> 's <ENT>,7,0.0131
+@KimIversen,videos,leading,<ENT> # <ENT>,5,0.0094
+@KimIversen,videos,leading,this is how,5,0.0094
+@KimIversen,videos,trailing,,19,0.0356
+@KimIversen,videos,trailing,| with <ENT>,6,0.0112
+@KimIversen,videos,trailing,<ENT> in <ENT>,5,0.0094
+@KimIversen,videos,trailing,<ENT> <ENT> ?,4,0.0075
+@KimIversen,videos,trailing,<ENT> on <ENT>,4,0.0075
+@LIVESNEAKO,streams,leading,<ENT> irl stream,5,0.0725
+@LIVESNEAKO,streams,leading,irl in <ENT>,4,0.058
+@LIVESNEAKO,streams,trailing,<ENT> : <ENT>,4,0.058
+@LIVESNEAKO,videos,leading,,23,0.048
+@LIVESNEAKO,videos,leading,sneako interviews <ENT>,18,0.0376
+@LIVESNEAKO,videos,leading,sneako reacts to,14,0.0292
+@LIVESNEAKO,videos,leading,professor <ENT> :,9,0.0188
+@LIVESNEAKO,videos,leading,sneako interviews professor,7,0.0146
+@LIVESNEAKO,videos,trailing,,23,0.048
+@LIVESNEAKO,videos,trailing,<ENT> and <ENT>,5,0.0104
+@LIVESNEAKO,videos,trailing,<ENT> in <ENT>,4,0.0084
+@LIVESNEAKO,videos,trailing,in <ENT> !,4,0.0084
+@LIVESNEAKO,videos,trailing,<ENT> to <ENT>,4,0.0084
+@LastWeekTonight,videos,leading,<ENT> : <ENT>,10,0.2857
+@LastWeekTonight,videos,trailing,<ENT> with <ENT>,23,0.6571
+@LastWeekTonight,videos,trailing,bonus segments ),9,0.2571
+@LeejaMiller,videos,leading,,7,0.1167
+@LeejaMiller,videos,trailing,,7,0.1167
+@LegalAFMTN,streams,leading,live : trump,14,0.3111
+@LegalAFMTN,streams,leading,live : <ENT>,11,0.2444
+@LegalAFMTN,streams,leading,live : landmark,4,0.0889
+@LegalAFMTN,streams,trailing,! ! !,7,0.1556
+@LegalAFMTN,videos,leading,<ENT> as <ENT>,153,0.0559
+@LegalAFMTN,videos,leading,legal af podcast,65,0.0238
+@LegalAFMTN,videos,leading,,43,0.0157
+@LegalAFMTN,videos,leading,the popok pop,42,0.0154
+@LegalAFMTN,videos,leading,trump loses it,37,0.0135
+@LegalAFMTN,videos,trailing,! ! !,678,0.2479
+@LegalAFMTN,videos,trailing,! ? !,233,0.0852
+@LegalAFMTN,videos,trailing,- ads ),96,0.0351
+@LegalAFMTN,videos,trailing,? ! ?,85,0.0311
+@LegalAFMTN,videos,trailing,,43,0.0157
+@LegalEagle,videos,leading,,16,0.1524
+@LegalEagle,videos,trailing,,16,0.1524
+@LeverNews,videos,leading,,5,0.0685
+@LeverNews,videos,trailing,| master <ENT>,7,0.0959
+@LeverNews,videos,trailing,,5,0.0685
+@LeverNews,videos,trailing,with <ENT> ),5,0.0685
+@LiberalHivemind,videos,leading,you wo n't,17,0.0201
+@LiberalHivemind,videos,leading,there 's no,10,0.0118
+@LiberalHivemind,videos,leading,holy crap #,9,0.0106
+@LiberalHivemind,videos,leading,well # that,9,0.0106
+@LiberalHivemind,videos,leading,holy s**t #,8,0.0095
+@LiberalHivemind,videos,trailing,! ! !,91,0.1076
+@LiberalHivemind,videos,trailing,the <ENT> #,11,0.013
+@LiberalHivemind,videos,trailing,! ! 😂,10,0.0118
+@LiberalHivemind,videos,trailing,<ENT> ! !,7,0.0083
+@LiberalHivemind,videos,trailing,is <ENT> #,7,0.0083
+@LukeBeasley,streams,leading,shock breaking :,38,0.1545
+@LukeBeasley,streams,leading,breaking : trump,24,0.0976
+@LukeBeasley,streams,leading,breaking : <ENT>,21,0.0854
+@LukeBeasley,streams,leading,shock live :,21,0.0854
+@LukeBeasley,streams,leading,,10,0.0407
+@LukeBeasley,streams,trailing,,10,0.0407
+@LukeBeasley,streams,trailing,happening ? !,5,0.0203
+@LukeBeasley,videos,leading,oh sh*t :,83,0.0714
+@LukeBeasley,videos,leading,watch : <ENT>,47,0.0404
+@LukeBeasley,videos,leading,<ENT> : <ENT>,29,0.025
+@LukeBeasley,videos,leading,wtf ? !,26,0.0224
+@LukeBeasley,videos,leading,watch : trump,14,0.012
+@LukeBeasley,videos,trailing,only bonus show,66,0.0568
+@LukeBeasley,videos,trailing,only main show,25,0.0215
+@LukeBeasley,videos,trailing,<ENT> ? !,23,0.0198
+@LukeBeasley,videos,trailing,on <ENT> !,21,0.0181
+@LukeBeasley,videos,trailing,on air !,18,0.0155
+@MLChristiansen,streams,leading,<ENT> # <ENT>,23,0.2987
+@MLChristiansen,streams,leading,<ENT> <ENT> #,4,0.0519
+@MLChristiansen,streams,trailing,<ENT> # <ENT>,15,0.1948
+@MLChristiansen,streams,trailing,# guest <ENT>,10,0.1299
+@MLChristiansen,videos,leading,<ENT> on <ENT>,6,0.0508
+@MLChristiansen,videos,leading,<ENT> : <ENT>,4,0.0339
+@MattBernstein1,videos,trailing,and <ENT> ),4,0.1905
+@MattWalsh,videos,leading,,14,0.0471
+@MattWalsh,videos,leading,the real history,5,0.0168
+@MattWalsh,videos,trailing,,14,0.0471
+@MattWalsh,videos,trailing,| official <ENT>,7,0.0236
+@MegynKelly,videos,leading,<ENT> # <ENT>,36,0.0218
+@MegynKelly,videos,leading,the truth about,34,0.0206
+@MegynKelly,videos,leading,<ENT> and <ENT>,34,0.0206
+@MegynKelly,videos,leading,<ENT> in <ENT>,24,0.0145
+@MegynKelly,videos,leading,<ENT> <ENT> #,23,0.0139
+@MegynKelly,videos,trailing,# with <ENT>,250,0.1514
+@MegynKelly,videos,trailing,am update <ENT>,124,0.0751
+@MegynKelly,videos,trailing,# w/ <ENT>,80,0.0485
+@MegynKelly,videos,trailing,<ENT> and <ENT>,73,0.0442
+@MegynKelly,videos,trailing,# and <ENT>,24,0.0145
+@MeidasTouch,streams,leading,live : trump,156,0.2488
+@MeidasTouch,streams,leading,live : <ENT>,117,0.1866
+@MeidasTouch,streams,leading,live : meidastouch,77,0.1228
+@MeidasTouch,streams,leading,live : maga,37,0.059
+@MeidasTouch,streams,leading,live : meiselas,11,0.0175
+@MeidasTouch,streams,trailing,! ! !,74,0.118
+@MeidasTouch,streams,trailing,major breaking news,69,0.11
+@MeidasTouch,streams,trailing,| legal <ENT>,41,0.0654
+@MeidasTouch,streams,trailing,! | <ENT>,21,0.0335
+@MeidasTouch,streams,trailing,news ! !,16,0.0255
+@MeidasTouch,videos,leading,<ENT> as <ENT>,209,0.0592
+@MeidasTouch,videos,leading,trump loses it,142,0.0402
+@MeidasTouch,videos,leading,meidastouch full podcast,71,0.0201
+@MeidasTouch,videos,leading,all hell breaks,64,0.0181
+@MeidasTouch,videos,leading,<ENT> in <ENT>,38,0.0108
+@MeidasTouch,videos,trailing,! ! !,1183,0.3349
+@MeidasTouch,videos,trailing,<ENT> ! !,117,0.0331
+@MeidasTouch,videos,trailing,- free ],68,0.0193
+@MeidasTouch,videos,trailing,? ! !,56,0.0159
+@MeidasTouch,videos,trailing,war ! !,50,0.0142
+@MichaelKnowles,videos,leading,,21,0.0445
+@MichaelKnowles,videos,leading,<ENT> : <ENT>,8,0.0169
+@MichaelKnowles,videos,leading,"<ENT> to """,7,0.0148
+@MichaelKnowles,videos,leading,watch : <ENT>,7,0.0148
+@MichaelKnowles,videos,leading,<ENT> in <ENT>,5,0.0106
+@MichaelKnowles,videos,trailing,,21,0.0445
+@MichaelKnowles,videos,trailing,in <ENT> mins,9,0.0191
+@MichaelKnowles,videos,trailing,<ENT> in <ENT>,9,0.0191
+@MichaelKnowles,videos,trailing,""" <ENT> """,4,0.0085
+@MichaelKnowles,videos,trailing,: <ENT> <ENT>,4,0.0085
+@MichaelMaliceofficial,videos,leading,""" your welcome",11,0.2
+@MichaelMaliceofficial,videos,leading,<ENT> on <ENT>,4,0.0727
+@MichaelMaliceofficial,videos,trailing,<ENT> : <ENT>,10,0.1818
+@MikeFromPA,videos,leading,<ENT> is so,6,0.0465
+@MikeFromPA,videos,trailing,<ENT> ! !,5,0.0388
+@MikeFromPA,videos,trailing,! ? !,4,0.031
+@ModernDayDebate,streams,leading,debate : <ENT>,15,0.1376
+@ModernDayDebate,streams,leading,debate : is,12,0.1101
+@ModernDayDebate,streams,leading,debate : was,5,0.0459
+@ModernDayDebate,streams,leading,<ENT> <ENT> |,4,0.0367
+@ModernDayDebate,streams,leading,debate : flat,4,0.0367
+@ModernDayDebate,streams,trailing,? | <ENT>,10,0.0917
+@ModernDayDebate,streams,trailing,| <ENT> <ENT>,6,0.055
+@MrReaganUSA,videos,leading,maga - man,6,0.2308
+@MrReaganUSA,videos,trailing,""" <ENT> """,6,0.2308
+@MrTariqNasheed,videos,leading,,23,0.0571
+@MrTariqNasheed,videos,leading,<ENT> man says,5,0.0124
+@MrTariqNasheed,videos,leading,<ENT> in <ENT>,4,0.0099
+@MrTariqNasheed,videos,trailing,,23,0.0571
+@MrTariqNasheed,videos,trailing,this true ?,8,0.0199
+@MrTariqNasheed,videos,trailing,in <ENT> ?,7,0.0174
+@MrTariqNasheed,videos,trailing,this about fbas,5,0.0124
+@MrTariqNasheed,videos,trailing,this about fba,5,0.0124
+@MyronGainesX,streams,leading,<ENT> # <ENT>,23,0.0939
+@MyronGainesX,streams,leading,<ENT> and <ENT>,7,0.0286
+@MyronGainesX,streams,leading,<ENT> - <ENT>,6,0.0245
+@MyronGainesX,streams,leading,former <ENT> reacts,5,0.0204
+@MyronGainesX,streams,leading,<ENT> reacts to,5,0.0204
+@MyronGainesX,streams,trailing,# <ENT> !,20,0.0816
+@MyronGainesX,streams,trailing,<ENT> <ENT> !,6,0.0245
+@MyronGainesX,streams,trailing,and more !,6,0.0245
+@MyronGainesX,streams,trailing,and <ENT> !,6,0.0245
+@MyronGainesX,streams,trailing,after <ENT> !,4,0.0163
+@MyronGainesX,videos,leading,<ENT> and <ENT>,15,0.0386
+@MyronGainesX,videos,leading,,12,0.0308
+@MyronGainesX,videos,leading,<ENT> out <ENT>,6,0.0154
+@MyronGainesX,videos,leading,<ENT> to <ENT>,5,0.0129
+@MyronGainesX,videos,leading,<ENT> the dark,5,0.0129
+@MyronGainesX,videos,trailing,,12,0.0308
+@MyronGainesX,videos,trailing,and <ENT> !,8,0.0206
+@MyronGainesX,videos,trailing,on <ENT> !,8,0.0206
+@MyronGainesX,videos,trailing,in <ENT> !,7,0.018
+@MyronGainesX,videos,trailing,<ENT> <ENT> !,6,0.0154
+@NBCNews,streams,leading,stay tuned now,118,0.3215
+@NBCNews,streams,leading,live : trump,102,0.2779
+@NBCNews,streams,leading,live : <ENT>,57,0.1553
+@NBCNews,streams,leading,live : president,9,0.0245
+@NBCNews,streams,leading,<ENT> : watch,8,0.0218
+@NBCNews,streams,trailing,the <ENT> !,107,0.2916
+@NBCNews,streams,trailing,at <ENT> hearing,13,0.0354
+@NBCNews,streams,trailing,now <ENT> !,9,0.0245
+@NBCNews,streams,trailing,<ENT> in <ENT>,5,0.0136
+@NBCNews,streams,trailing,remarks at <ENT>,5,0.0136
+@NBCNews,videos,leading,<ENT> with <ENT>,226,0.0348
+@NBCNews,videos,leading,meet the press,224,0.0345
+@NBCNews,videos,leading,morning news now,195,0.03
+@NBCNews,videos,leading,<ENT> full episode,195,0.03
+@NBCNews,videos,leading,this morning ’s,192,0.0295
+@NBCNews,videos,trailing,| <ENT> now,401,0.0617
+@NBCNews,videos,trailing,now full episode,195,0.03
+@NBCNews,videos,trailing,<ENT> full episode,195,0.03
+@NBCNews,videos,trailing,morning news now,191,0.0294
+@NBCNews,videos,trailing,the press now,188,0.0289
+@NPR,videos,leading,<ENT> # <ENT>,4,0.0571
+@NPR,videos,trailing,sources & methods,4,0.0571
+@NPR,videos,trailing,<ENT> | <ENT>,4,0.0571
+@NYTOpinion,videos,trailing,| nyt opinion,8,0.2759
+@NYTOpinion,videos,trailing,op - docs,5,0.1724
+@NYTPodcasts,videos,leading,,27,0.0561
+@NYTPodcasts,videos,leading,<ENT> # and,24,0.0499
+@NYTPodcasts,videos,leading,<ENT> to <ENT>,8,0.0166
+@NYTPodcasts,videos,leading,<ENT> | <ENT>,8,0.0166
+@NYTPodcasts,videos,leading,<ENT> in <ENT>,8,0.0166
+@NYTPodcasts,videos,trailing,# and <ENT>,30,0.0624
+@NYTPodcasts,videos,trailing,,27,0.0561
+@NYTPodcasts,videos,trailing,<ENT> in <ENT>,11,0.0229
+@NYTPodcasts,videos,trailing,<ENT> | <ENT>,8,0.0166
+@NYTPodcasts,videos,trailing,( encore ),7,0.0146
+@NewsNation,streams,leading,watch live :,106,0.351
+@NewsNation,streams,leading,live : <ENT>,4,0.0132
+@NewsNation,streams,leading,<ENT> # <ENT>,4,0.0132
+@NewsNation,streams,trailing,! with <ENT>,33,0.1093
+@NewsNation,streams,trailing,take with <ENT>,30,0.0993
+@NewsNation,streams,trailing,prove it !,10,0.0331
+@NewsNation,streams,trailing,<ENT> and <ENT>,8,0.0265
+@NewsNation,streams,trailing,operations in <ENT>,6,0.0199
+@NewsNation,videos,leading,<ENT> # <ENT>,120,0.0163
+@NewsNation,videos,leading,<ENT> : <ENT>,73,0.0099
+@NewsNation,videos,leading,<ENT> case :,48,0.0065
+@NewsNation,videos,leading,<ENT> says <ENT>,41,0.0056
+@NewsNation,videos,leading,<ENT> and <ENT>,33,0.0045
+@NewsNation,videos,trailing,<ENT> in <ENT>,699,0.0948
+@NewsNation,videos,trailing,| <ENT> live,354,0.048
+@NewsNation,videos,trailing,| on balance,323,0.0438
+@NewsNation,videos,trailing,| <ENT> <ENT>,316,0.0429
+@NewsNation,videos,trailing,| <ENT> prime,300,0.0407
+@NewsmaxTV,streams,leading,,19,0.0476
+@NewsmaxTV,streams,leading,<ENT> # <ENT>,18,0.0451
+@NewsmaxTV,streams,leading,live : president,11,0.0276
+@NewsmaxTV,streams,leading,the rob carson,11,0.0276
+@NewsmaxTV,streams,leading,from <ENT> to,6,0.015
+@NewsmaxTV,streams,trailing,| newsmax podcasts,53,0.1328
+@NewsmaxTV,streams,trailing,| greta wire,29,0.0727
+@NewsmaxTV,streams,trailing,<ENT> | <ENT>,25,0.0627
+@NewsmaxTV,streams,trailing,,19,0.0476
+@NewsmaxTV,streams,trailing,# and <ENT>,4,0.01
+@NewsmaxTV,videos,leading,<ENT> : <ENT>,177,0.0449
+@NewsmaxTV,videos,leading,<ENT> : ',147,0.0373
+@NewsmaxTV,videos,leading,<ENT> : we,61,0.0155
+@NewsmaxTV,videos,leading,rep. <ENT> :,34,0.0086
+@NewsmaxTV,videos,leading,<ENT> # <ENT>,33,0.0084
+@NewsmaxTV,videos,trailing,<ENT> | <ENT>,382,0.0969
+@NewsmaxTV,videos,trailing,wake up america,342,0.0867
+@NewsmaxTV,videos,trailing,| <ENT> <ENT>,191,0.0484
+@NewsmaxTV,videos,trailing,| national report,93,0.0236
+@NewsmaxTV,videos,trailing,the right squad,88,0.0223
+@NickCruseRBN,streams,leading,<ENT> and <ENT>,12,0.1165
+@NickCruseRBN,streams,leading,<ENT> # <ENT>,6,0.0583
+@NickCruseRBN,streams,leading,<ENT> on <ENT>,4,0.0388
+@NickCruseRBN,streams,trailing,w / <ENT>,4,0.0388
+@NovaraMedia,videos,leading,,39,0.0667
+@NovaraMedia,videos,leading,<ENT> : <ENT>,10,0.0171
+@NovaraMedia,videos,leading,<ENT> <ENT> |,5,0.0085
+@NovaraMedia,videos,leading,the <ENT> is,5,0.0085
+@NovaraMedia,videos,leading,<ENT> | novara,5,0.0085
+@NovaraMedia,videos,trailing,,39,0.0667
+@NovaraMedia,videos,trailing,| novara live,36,0.0615
+@NovaraMedia,videos,trailing,<ENT> meets <ENT>,27,0.0462
+@NovaraMedia,videos,trailing,<ENT> | <ENT>,20,0.0342
+@NovaraMedia,videos,trailing,| <ENT> live,6,0.0103
+@OfficialSaharTV,videos,leading,"<ENT> : """,18,0.0202
+@OfficialSaharTV,videos,leading,<ENT> # then,11,0.0123
+@OfficialSaharTV,videos,leading,you wo n't,10,0.0112
+@OfficialSaharTV,videos,leading,<ENT> to <ENT>,9,0.0101
+@OfficialSaharTV,videos,leading,<ENT> in <ENT>,8,0.009
+@OfficialSaharTV,videos,trailing,<ENT> ! !,28,0.0314
+@OfficialSaharTV,videos,trailing,in <ENT> !,25,0.028
+@OfficialSaharTV,videos,trailing,in <ENT> #,16,0.0179
+@OfficialSaharTV,videos,trailing,on <ENT> !,16,0.0179
+@OfficialSaharTV,videos,trailing,about <ENT> !,14,0.0157
+@OwenJonesTalks,videos,leading,,14,0.0601
+@OwenJonesTalks,videos,trailing,- w/. <ENT>,17,0.073
+@OwenJonesTalks,videos,trailing,,14,0.0601
+@OwenJonesTalks,videos,trailing,w/. sina <ENT>,5,0.0215
+@OwenReport,streams,leading,,8,0.0449
+@OwenReport,streams,leading,<ENT> and <ENT>,5,0.0281
+@OwenReport,streams,trailing,,8,0.0449
+@OwenReport,streams,trailing,<ENT> in <ENT>,5,0.0281
+@OwenReport,videos,leading,,27,0.0696
+@OwenReport,videos,leading,<ENT> and <ENT>,16,0.0412
+@OwenReport,videos,leading,<ENT> 's <ENT>,7,0.018
+@OwenReport,videos,leading,<ENT> is <ENT>,6,0.0155
+@OwenReport,videos,leading,<ENT> x <ENT>,6,0.0155
+@OwenReport,videos,trailing,,27,0.0696
+@OwenReport,videos,trailing,<ENT> and <ENT>,7,0.018
+@OwenReport,videos,trailing,<ENT> is <ENT>,5,0.0129
+@OwenReport,videos,trailing,in <ENT> ?,4,0.0103
+@PBDPodcast,streams,leading,<ENT> # <ENT>,14,0.1186
+@PBDPodcast,streams,leading,<ENT> 's <ENT>,13,0.1102
+@PBDPodcast,streams,leading,,8,0.0678
+@PBDPodcast,streams,trailing,,8,0.0678
+@PBDPodcast,streams,trailing,<ENT> # <ENT>,5,0.0424
+@PBDPodcast,streams,trailing,<ENT> 's <ENT>,4,0.0339
+@PBDPodcast,streams,trailing,| pbd <ENT>,4,0.0339
+@PBDPodcast,videos,trailing,<ENT> # <ENT>,4,0.1053
+@POLITICO,videos,leading,<ENT> # <ENT>,5,0.0169
+@POLITICO,videos,leading,sen. <ENT> on,4,0.0136
+@POLITICO,videos,trailing,| the conversation,9,0.0305
+@POLITICO,videos,trailing,| energy pod,5,0.0169
+@PTLRadioShow,streams,leading,<ENT> and <ENT>,5,0.0249
+@PTLRadioShow,streams,leading,,5,0.0249
+@PTLRadioShow,streams,leading,<ENT> says <ENT>,4,0.0199
+@PTLRadioShow,streams,trailing,,5,0.0249
+@PTLRadioShow,videos,leading,,53,0.0315
+@PTLRadioShow,videos,leading,<ENT> says <ENT>,23,0.0137
+@PTLRadioShow,videos,leading,<ENT> destroys maga,21,0.0125
+@PTLRadioShow,videos,leading,<ENT> and <ENT>,20,0.0119
+@PTLRadioShow,videos,leading,<ENT> reacts to,17,0.0101
+@PTLRadioShow,videos,trailing,,53,0.0315
+@PTLRadioShow,videos,trailing,<ENT> on <ENT>,17,0.0101
+@PTLRadioShow,videos,trailing,live on air,15,0.0089
+@PTLRadioShow,videos,trailing,<ENT> in <ENT>,15,0.0089
+@PTLRadioShow,videos,trailing,then this happens,11,0.0065
+@PartOfTheProblem,videos,leading,,34,0.3301
+@PartOfTheProblem,videos,leading,a <ENT> to,4,0.0388
+@PartOfTheProblem,videos,leading,a response to,4,0.0388
+@PartOfTheProblem,videos,trailing,,34,0.3301
+@PerunAU,videos,leading,<ENT> 's <ENT>,6,0.1622
+@PerunAU,videos,leading,<ENT> # <ENT>,4,0.1081
+@PhillipScottPodcast,streams,leading,<ENT> says she,7,0.0458
+@PhillipScottPodcast,streams,leading,,7,0.0458
+@PhillipScottPodcast,streams,trailing,,7,0.0458
+@PiersMorganUncensored,videos,leading,""" <ENT> !",18,0.0994
+@PiersMorganUncensored,videos,leading,“ <ENT> !,13,0.0718
+@PiersMorganUncensored,videos,leading,“ <ENT> ”,4,0.0221
+@PiersMorganUncensored,videos,trailing,| with <ENT>,15,0.0829
+@PiersMorganUncensored,videos,trailing,<ENT> # <ENT>,8,0.0442
+@PiersMorganUncensored,videos,trailing,<ENT> on <ENT>,5,0.0276
+@PiersMorganUncensored,videos,trailing,<ENT> vs <ENT>,5,0.0276
+@PiersMorganUncensored,videos,trailing,<ENT> | <ENT>,5,0.0276
+@Politicon,videos,leading,,60,0.121
+@Politicon,videos,leading,<ENT> with <ENT>,9,0.0181
+@Politicon,videos,leading,<ENT> : <ENT>,8,0.0161
+@Politicon,videos,leading,# sistersinlaw :,8,0.0161
+@Politicon,videos,leading,<ENT> for president,6,0.0121
+@Politicon,videos,trailing,,60,0.121
+@Politicon,videos,trailing,full episode ),29,0.0585
+@Politicon,videos,trailing,with <ENT> #,19,0.0383
+@Politicon,videos,trailing,<ENT> with <ENT>,12,0.0242
+@Politicon,videos,trailing,| # <ENT>,8,0.0161
+@PoliticsGirl,videos,leading,,13,0.1121
+@PoliticsGirl,videos,trailing,,13,0.1121
+@PoliticsGirl,videos,trailing,conversation with <ENT>,10,0.0862
+@PoliticsJOE,videos,leading,watch : <ENT>,13,0.0383
+@PoliticsJOE,videos,leading,highlights : <ENT>,8,0.0236
+@PoliticsJOE,videos,leading,highlights : keir,8,0.0236
+@PoliticsJOE,videos,leading,asking brits if,8,0.0236
+@PoliticsJOE,videos,leading,<ENT> : <ENT>,6,0.0177
+@PoliticsJOE,videos,trailing,| <ENT> interview,35,0.1032
+@PoliticsJOE,videos,trailing,<ENT> at pmqs,6,0.0177
+@PoliticsJOE,videos,trailing,<ENT> | <ENT>,6,0.0177
+@PoliticsJOE,videos,trailing,as prime minister,5,0.0147
+@PoliticsJOE,videos,trailing,? <ENT> interview,5,0.0147
+@PragerU,streams,leading,parent <ENT> !,18,0.5806
+@PragerU,streams,leading,parent <ENT> :,6,0.1935
+@PragerU,videos,leading,parent <ENT> !,15,0.039
+@PragerU,videos,leading,<ENT> on <ENT>,12,0.0312
+@PragerU,videos,leading,<ENT> | <ENT>,10,0.026
+@PragerU,videos,leading,<ENT> : <ENT>,8,0.0208
+@PragerU,videos,leading,road to liberty,8,0.0208
+@PragerU,videos,trailing,| the brief,36,0.0935
+@PragerU,videos,trailing,- minute videos,36,0.0935
+@PragerU,videos,trailing,<ENT> | <ENT>,28,0.0727
+@PragerU,videos,trailing,| real talk,24,0.0623
+@PragerU,videos,trailing,| <ENT> recovery,13,0.0338
+@RSBN,streams,leading,live replay :,204,0.6053
+@RSBN,streams,leading,live : providence,34,0.1009
+@RSBN,streams,leading,replay : president,29,0.0861
+@RSBN,streams,leading,replay : <ENT>,24,0.0712
+@RSBN,streams,leading,replay : pres,7,0.0208
+@RSBN,streams,trailing,on rsbn- <ENT>,34,0.1009
+@RSBN,streams,trailing,from the <ENT>,15,0.0445
+@RSBN,streams,trailing,<ENT> # <ENT>,14,0.0415
+@RSBN,streams,trailing,a press briefing,14,0.0415
+@RSBN,streams,trailing,<ENT> at <ENT>,8,0.0237
+@RSBN,videos,leading,watch : <ENT>,318,0.1939
+@RSBN,videos,leading,watch : president,302,0.1841
+@RSBN,videos,leading,full event :,189,0.1152
+@RSBN,videos,leading,full speech :,153,0.0933
+@RSBN,videos,leading,"watch : """,41,0.025
+@RSBN,videos,trailing,<ENT> # <ENT>,48,0.0293
+@RSBN,videos,trailing,<ENT> on <ENT>,28,0.0171
+@RSBN,videos,trailing,<ENT> and <ENT>,28,0.0171
+@RSBN,videos,trailing,<ENT> 's <ENT>,27,0.0165
+@RSBN,videos,trailing,<ENT> in <ENT>,26,0.0159
+@RealAlexClark,videos,trailing,<ENT> # <ENT>,15,0.1899
+@RealAlexClark,videos,trailing,| dr. <ENT>,5,0.0633
+@RealAlexClark,videos,trailing,<ENT> | <ENT>,5,0.0633
+@RealAmericasVoice,streams,leading,day <ENT> :,15,0.0097
+@RealAmericasVoice,streams,leading,<ENT> on <ENT>,13,0.0084
+@RealAmericasVoice,streams,leading,,12,0.0078
+@RealAmericasVoice,streams,leading,<ENT> exposes <ENT>,10,0.0065
+@RealAmericasVoice,streams,leading,<ENT> peace deal,10,0.0065
+@RealAmericasVoice,streams,trailing,- no noise,109,0.0706
+@RealAmericasVoice,streams,trailing,from studio <ENT>,91,0.059
+@RealAmericasVoice,streams,trailing,hours w <ENT>,74,0.048
+@RealAmericasVoice,streams,trailing,am <ENT> bannon,72,0.0467
+@RealAmericasVoice,streams,trailing,| <ENT> show,71,0.046
+@RealAmericasVoice,videos,leading,,65,0.0245
+@RealAmericasVoice,videos,leading,<ENT> : <ENT>,42,0.0158
+@RealAmericasVoice,videos,leading,<ENT> on <ENT>,42,0.0158
+@RealAmericasVoice,videos,leading,<ENT> # <ENT>,34,0.0128
+@RealAmericasVoice,videos,leading,<ENT> in <ENT>,32,0.0121
+@RealAmericasVoice,videos,trailing,,65,0.0245
+@RealAmericasVoice,videos,trailing,<ENT> # <ENT>,44,0.0166
+@RealAmericasVoice,videos,trailing,# and <ENT>,35,0.0132
+@RealAmericasVoice,videos,trailing,“ <ENT> ”,34,0.0128
+@RealAmericasVoice,videos,trailing,<ENT> in <ENT>,18,0.0068
+@RealDanBongino,videos,leading,,32,0.1203
+@RealDanBongino,videos,trailing,,32,0.1203
+@RebelHQ,videos,leading,,36,0.0279
+@RebelHQ,videos,leading,<ENT> terrified as,33,0.0255
+@RebelHQ,videos,leading,<ENT> as <ENT>,32,0.0248
+@RebelHQ,videos,leading,<ENT> panic as,22,0.017
+@RebelHQ,videos,leading,<ENT> after <ENT>,13,0.0101
+@RebelHQ,videos,trailing,,36,0.0279
+@RebelHQ,videos,trailing,as <ENT> !,14,0.0108
+@RebelHQ,videos,trailing,not recover !,14,0.0108
+@RebelHQ,videos,trailing,<ENT> 's <ENT>,8,0.0062
+@RebelHQ,videos,trailing,is <ENT> !,8,0.0062
+@RebelNewsOnline,streams,leading,live : <ENT>,7,0.0359
+@RebelNewsOnline,streams,leading,<ENT> on <ENT>,5,0.0256
+@RebelNewsOnline,streams,trailing,| buffalo roundtable,37,0.1897
+@RebelNewsOnline,streams,trailing,| rebel roundtable,16,0.0821
+@RebelNewsOnline,videos,leading,,16,0.0118
+@RebelNewsOnline,videos,leading,<ENT> 's <ENT>,9,0.0066
+@RebelNewsOnline,videos,leading,you wo n't,9,0.0066
+@RebelNewsOnline,videos,leading,this is getting,7,0.0052
+@RebelNewsOnline,videos,leading,<ENT> in <ENT>,5,0.0037
+@RebelNewsOnline,videos,trailing,ezra levant show,93,0.0685
+@RebelNewsOnline,videos,trailing,,16,0.0118
+@RebelNewsOnline,videos,trailing,| <ENT> show,15,0.011
+@RebelNewsOnline,videos,trailing,the gunn show,11,0.0081
+@RebelNewsOnline,videos,trailing,<ENT> in <ENT>,10,0.0074
+@RedactedNews,streams,leading,high alert !,10,0.0714
+@RedactedNews,streams,leading,turning the tide,7,0.05
+@RedactedNews,streams,leading,breaking ! <ENT>,7,0.05
+@RedactedNews,streams,trailing,<ENT> # <ENT>,7,0.05
+@RedactedNews,streams,trailing,<ENT> | <ENT>,6,0.0429
+@RedactedNews,videos,leading,""" <ENT> is",10,0.0221
+@RedactedNews,videos,leading,,9,0.0199
+@RedactedNews,videos,leading,holy sh*t !,7,0.0155
+@RedactedNews,videos,leading,<ENT> 's <ENT>,6,0.0133
+@RedactedNews,videos,leading,col # <ENT>,6,0.0133
+@RedactedNews,videos,trailing,<ENT> | <ENT>,22,0.0487
+@RedactedNews,videos,trailing,w clayton morris,11,0.0243
+@RedactedNews,videos,trailing,,9,0.0199
+@RedactedNews,videos,trailing,? | <ENT>,7,0.0155
+@RedactedNews,videos,trailing,""" | <ENT>",7,0.0155
+@RekietaLaw,streams,leading,<ENT> v. <ENT>,8,0.0755
+@RekietaLaw,streams,leading,<ENT> and <ENT>,4,0.0377
+@RekietaLaw,streams,leading,<ENT> day #,4,0.0377
+@RestPoliticsUS,videos,leading,members exclusive |,15,0.0682
+@RestPoliticsUS,videos,leading,,13,0.0591
+@RestPoliticsUS,videos,leading,why <ENT> 's,10,0.0455
+@RestPoliticsUS,videos,leading,<ENT> 's <ENT>,5,0.0227
+@RestPoliticsUS,videos,leading,how trump 's,5,0.0227
+@RestPoliticsUS,videos,trailing,,13,0.0591
+@RestPoliticsUS,videos,trailing,<ENT> to <ENT>,4,0.0182
+@RestPoliticsUS,videos,trailing,than you think,4,0.0182
+@Reuters,streams,leading,live : <ENT>,1030,0.5129
+@Reuters,streams,leading,live : trump,63,0.0314
+@Reuters,streams,leading,live : fans,54,0.0269
+@Reuters,streams,leading,live : view,37,0.0184
+@Reuters,streams,leading,live : spacex,19,0.0095
+@Reuters,streams,trailing,<ENT> in <ENT>,30,0.0149
+@Reuters,streams,trailing,<ENT> 's <ENT>,29,0.0144
+@Reuters,streams,trailing,<ENT> # <ENT>,29,0.0144
+@Reuters,streams,trailing,<ENT> | <ENT>,20,0.01
+@Reuters,streams,trailing,speaks at <ENT>,19,0.0095
+@Reuters,videos,leading,market talk :,196,0.0243
+@Reuters,videos,leading,<ENT> says <ENT>,189,0.0234
+@Reuters,videos,leading,<ENT> 's <ENT>,140,0.0173
+@Reuters,videos,leading,<ENT> # <ENT>,113,0.014
+@Reuters,videos,leading,graphic warning :,61,0.0076
+@Reuters,videos,trailing,<ENT> | <ENT>,299,0.037
+@Reuters,videos,trailing,? | <ENT>,134,0.0166
+@Reuters,videos,trailing,' | <ENT>,43,0.0053
+@Reuters,videos,trailing,<ENT> in <ENT>,38,0.0047
+@Reuters,videos,trailing,| morning bid,38,0.0047
+@RileyGaines,videos,leading,,15,0.1049
+@RileyGaines,videos,leading,<ENT> # <ENT>,5,0.035
+@RileyGaines,videos,leading,“ <ENT> ”,4,0.028
+@RileyGaines,videos,trailing,,15,0.1049
+@RileyGaines,videos,trailing,<ENT> 's vlog,5,0.035
+@RileyGaines,videos,trailing,<ENT> on <ENT>,5,0.035
+@RileyGaines,videos,trailing,ft # <ENT>,4,0.028
+@RobertGouveiaEsq,streams,leading,<ENT> ! <ENT>,38,0.0987
+@RobertGouveiaEsq,streams,leading,after party !,15,0.039
+@RobertGouveiaEsq,streams,leading,<ENT> ! !,7,0.0182
+@RobertGouveiaEsq,streams,leading,<ENT> ! 🔥,5,0.013
+@RobertGouveiaEsq,streams,leading,<ENT> 's <ENT>,5,0.013
+@RobertGouveiaEsq,streams,trailing,! <ENT> !,65,0.1688
+@RobertGouveiaEsq,streams,trailing,<ENT> ! !,9,0.0234
+@RobertGouveiaEsq,streams,trailing,! more !,8,0.0208
+@RobertGouveiaEsq,streams,trailing,judge <ENT> !,8,0.0208
+@RobertGouveiaEsq,streams,trailing,🔥 <ENT> !,7,0.0182
+@RobertGouveiaEsq,videos,leading,,15,0.0216
+@RobertGouveiaEsq,videos,leading,<ENT> in <ENT>,15,0.0216
+@RobertGouveiaEsq,videos,leading,<ENT> judge <ENT>,11,0.0158
+@RobertGouveiaEsq,videos,leading,<ENT> 's <ENT>,8,0.0115
+@RobertGouveiaEsq,videos,leading,<ENT> after <ENT>,6,0.0086
+@RobertGouveiaEsq,videos,trailing,in <ENT> !,49,0.0704
+@RobertGouveiaEsq,videos,trailing,after <ENT> !,22,0.0316
+@RobertGouveiaEsq,videos,trailing,<ENT> ! !,22,0.0316
+@RobertGouveiaEsq,videos,trailing,to <ENT> !,16,0.023
+@RobertGouveiaEsq,videos,trailing,,15,0.0216
+@RonPlacone,videos,trailing,<ENT> # <ENT>,16,0.2424
+@RubinReport,streams,leading,‘ shark tank,5,0.0439
+@RubinReport,streams,leading,<ENT> as <ENT>,4,0.0351
+@RubinReport,streams,leading,press stunned by,4,0.0351
+@RubinReport,streams,leading,‘ the view,4,0.0351
+@RubinReport,streams,trailing,of his own,4,0.0351
+@RubinReport,videos,leading,<ENT> as <ENT>,28,0.0267
+@RubinReport,videos,leading,,27,0.0258
+@RubinReport,videos,leading,<ENT> # <ENT>,18,0.0172
+@RubinReport,videos,leading,‘ the view,16,0.0153
+@RubinReport,videos,leading,<ENT> face as,16,0.0153
+@RubinReport,videos,trailing,| first look,104,0.0993
+@RubinReport,videos,trailing,<ENT> | <ENT>,29,0.0277
+@RubinReport,videos,trailing,,27,0.0258
+@RubinReport,videos,trailing,on - air,16,0.0153
+@RubinReport,videos,trailing,| dr. <ENT>,13,0.0124
+@RufoandLomez,videos,leading,<ENT> # <ENT>,5,0.0625
+@RufoandLomez,videos,leading,<ENT> : the,4,0.05
+@RufoandLomez,videos,trailing,# and <ENT>,4,0.05
+@SMN,videos,leading,early release :,15,0.0761
+@SMN,videos,leading,,15,0.0761
+@SMN,videos,leading,<ENT> # <ENT>,12,0.0609
+@SMN,videos,leading,early access :,7,0.0355
+@SMN,videos,leading,<ENT> does n't,6,0.0305
+@SMN,videos,trailing,some more news,21,0.1066
+@SMN,videos,trailing,,15,0.0761
+@SMN,videos,trailing,# and <ENT>,4,0.0203
+@SabbySabs,streams,leading,<ENT> strikes <ENT>,6,0.0583
+@SabbySabs,streams,trailing,# <ENT> joins,6,0.0583
+@SabbySabs,streams,trailing,# <ENT> attack,4,0.0388
+@SabbySabs,videos,leading,,79,0.1262
+@SabbySabs,videos,leading,breaking ! <ENT>,55,0.0879
+@SabbySabs,videos,leading,<ENT> ! <ENT>,11,0.0176
+@SabbySabs,videos,leading,what happened to,8,0.0128
+@SabbySabs,videos,leading,<ENT> and <ENT>,6,0.0096
+@SabbySabs,videos,trailing,,79,0.1262
+@SabbySabs,videos,trailing,w / <ENT>,46,0.0735
+@SabbySabs,videos,trailing,! <ENT> !,23,0.0367
+@SabbySabs,videos,trailing,in <ENT> !,8,0.0128
+@SabbySabs,videos,trailing,to <ENT> !,5,0.008
+@SaltyCracker,videos,leading,,22,0.0568
+@SaltyCracker,videos,leading,<ENT> to <ENT>,7,0.0181
+@SaltyCracker,videos,trailing,,22,0.0568
+@SaltyCracker,videos,trailing,<ENT> to <ENT>,6,0.0155
+@SaltyCracker,videos,trailing,""" <ENT> """,5,0.0129
+@SaltyCracker,videos,trailing,<ENT> in <ENT>,5,0.0129
+@SecularTalk,videos,leading,,52,0.0357
+@SecularTalk,videos,leading,breaking : <ENT>,38,0.0261
+@SecularTalk,videos,leading,breaking : trump,25,0.0171
+@SecularTalk,videos,leading,<ENT> as <ENT>,22,0.0151
+@SecularTalk,videos,leading,‘ it ’s,20,0.0137
+@SecularTalk,videos,trailing,<ENT> ! !,82,0.0562
+@SecularTalk,videos,trailing,! ! !,80,0.0549
+@SecularTalk,videos,trailing,! | <ENT>,56,0.0384
+@SecularTalk,videos,trailing,,52,0.0357
+@SecularTalk,videos,trailing,<ENT> | <ENT>,20,0.0137
+@Semafor,streams,leading,,6,0.2
+@Semafor,streams,leading,<ENT> | semafor,5,0.1667
+@Semafor,streams,trailing,| semafor events,6,0.2
+@Semafor,streams,trailing,,6,0.2
+@Semafor,videos,leading,<ENT> ceo <ENT>,20,0.1307
+@Semafor,videos,leading,<ENT> on <ENT>,12,0.0784
+@Semafor,videos,leading,<ENT> 's <ENT>,4,0.0261
+@Semafor,videos,trailing,<ENT> from <ENT>,43,0.281
+@Semafor,videos,trailing,the ceo <ENT>,10,0.0654
+@Semafor,videos,trailing,| mixed signals,8,0.0523
+@Semafor,videos,trailing,? | <ENT>,4,0.0261
+@SkyNews,streams,leading,,55,0.0279
+@SkyNews,streams,leading,the wrap with,47,0.0239
+@SkyNews,streams,leading,<ENT> says <ENT>,40,0.0203
+@SkyNews,streams,leading,<ENT> at <ENT>,35,0.0178
+@SkyNews,streams,leading,<ENT> and <ENT>,31,0.0158
+@SkyNews,streams,trailing,<ENT> with <ENT>,142,0.0722
+@SkyNews,streams,trailing,<ENT> and <ENT>,74,0.0376
+@SkyNews,streams,trailing,world with <ENT>,62,0.0315
+@SkyNews,streams,trailing,,55,0.0279
+@SkyNews,streams,trailing,| <ENT> coverage,54,0.0274
+@SkyNews,videos,leading,<ENT> and <ENT>,27,0.0073
+@SkyNews,videos,leading,<ENT> says <ENT>,20,0.0054
+@SkyNews,videos,leading,<ENT> : <ENT>,19,0.0052
+@SkyNews,videos,leading,<ENT> 's <ENT>,18,0.0049
+@SkyNews,videos,leading,<ENT> : ',17,0.0046
+@SkyNews,videos,trailing,is why #,58,0.0158
+@SkyNews,videos,trailing,| <ENT> analysis,54,0.0147
+@SkyNews,videos,trailing,this is why,53,0.0144
+@SkyNews,videos,trailing,# says <ENT>,30,0.0082
+@SkyNews,videos,trailing,in <ENT> ?,25,0.0068
+@StatusCoup,streams,leading,🚨 breaking :,18,0.1146
+@StatusCoup,streams,leading,live stop trump,9,0.0573
+@StatusCoup,streams,leading,breaking : live,9,0.0573
+@StatusCoup,streams,leading,breaking : <ENT>,8,0.051
+@StatusCoup,streams,leading,live stop <ENT>,7,0.0446
+@StatusCoup,streams,trailing,live from <ENT>,24,0.1529
+@StatusCoup,streams,trailing,<ENT> in <ENT>,7,0.0446
+@StatusCoup,streams,trailing,<ENT> | <ENT>,4,0.0255
+@StatusCoup,streams,trailing,protest in <ENT>,4,0.0255
+@StatusCoup,streams,trailing,protesters at <ENT>,4,0.0255
+@StatusCoup,videos,leading,members video :,11,0.0213
+@StatusCoup,videos,leading,,11,0.0213
+@StatusCoup,videos,leading,breaking : <ENT>,9,0.0174
+@StatusCoup,videos,leading,holy sh*t !,8,0.0155
+@StatusCoup,videos,leading,<ENT> 's ice,5,0.0097
+@StatusCoup,videos,trailing,,11,0.0213
+@StatusCoup,videos,trailing,"<ENT> ! """,8,0.0155
+@StatusCoup,videos,trailing,<ENT> to <ENT>,7,0.0135
+@StatusCoup,videos,trailing,“ <ENT> ”,7,0.0135
+@StatusCoup,videos,trailing,<ENT> ! ”,6,0.0116
+@StevenCrowder,videos,leading,,13,0.0769
+@StevenCrowder,videos,trailing,,13,0.0769
+@StosselTV,videos,leading,ep # #,5,0.1
+@StosselTV,videos,trailing,<ENT> # <ENT>,5,0.1
+@Styxhexenhammer666,streams,leading,<ENT> live :,26,0.963
+@Styxhexenhammer666,streams,trailing,<ENT> # <ENT>,7,0.2593
+@Styxhexenhammer666,videos,leading,,34,0.0762
+@Styxhexenhammer666,videos,leading,<ENT> and <ENT>,14,0.0314
+@Styxhexenhammer666,videos,leading,<ENT> # <ENT>,9,0.0202
+@Styxhexenhammer666,videos,leading,<ENT> is <ENT>,5,0.0112
+@Styxhexenhammer666,videos,leading,<ENT> to <ENT>,4,0.009
+@Styxhexenhammer666,videos,trailing,,34,0.0762
+@Styxhexenhammer666,videos,trailing,<ENT> and <ENT>,13,0.0291
+@Styxhexenhammer666,videos,trailing,<ENT> in <ENT>,8,0.0179
+@Styxhexenhammer666,videos,trailing,occult priestess ),6,0.0135
+@Styxhexenhammer666,videos,trailing,<ENT> # <ENT>,5,0.0112
+@TechCrunch,videos,leading,best of build,6,0.0414
+@TechCrunch,videos,leading,<ENT> 's <ENT>,4,0.0276
+@TechCrunch,videos,trailing,l build mode,22,0.1517
+@TechCrunch,videos,trailing,strictlyvc <ENT> <ENT>,6,0.0414
+@TechCrunch,videos,trailing,<ENT> # <ENT>,5,0.0345
+@TheAdamCarollaShow1,videos,leading,<ENT> on <ENT>,13,0.0329
+@TheAdamCarollaShow1,videos,leading,<ENT> and <ENT>,9,0.0228
+@TheAdamCarollaShow1,videos,leading,<ENT> # <ENT>,9,0.0228
+@TheAdamCarollaShow1,videos,leading,<ENT> : <ENT>,7,0.0177
+@TheAdamCarollaShow1,videos,leading,,7,0.0177
+@TheAdamCarollaShow1,videos,trailing,| <ENT> <ENT>,21,0.0532
+@TheAdamCarollaShow1,videos,trailing,and dr. <ENT>,12,0.0304
+@TheAdamCarollaShow1,videos,trailing,<ENT> on <ENT>,10,0.0253
+@TheAdamCarollaShow1,videos,trailing,,7,0.0177
+@TheAdamCarollaShow1,videos,trailing,<ENT> and <ENT>,6,0.0152
+@TheAmalaEkpunobi,videos,leading,,10,0.0474
+@TheAmalaEkpunobi,videos,trailing,,10,0.0474
+@TheAmalaEkpunobi,videos,trailing,it backfired #,5,0.0237
+@TheAmalaEkpunobi,videos,trailing,now <ENT> #,4,0.019
+@TheAmalaEkpunobi,videos,trailing,( <ENT> ),4,0.019
+@TheAtlantic,videos,leading,,21,0.1265
+@TheAtlantic,videos,leading,a conversation with,6,0.0361
+@TheAtlantic,videos,trailing,,21,0.1265
+@TheBrianKilmeadeShow,videos,leading,""" <ENT> """,28,0.0795
+@TheBrianKilmeadeShow,videos,leading,“ <ENT> ”,9,0.0256
+@TheBrianKilmeadeShow,videos,leading,,9,0.0256
+@TheBrianKilmeadeShow,videos,leading,<ENT> : <ENT>,8,0.0227
+@TheBrianKilmeadeShow,videos,leading,<ENT> on <ENT>,6,0.017
+@TheBrianKilmeadeShow,videos,trailing,<ENT> on <ENT>,11,0.0312
+@TheBrianKilmeadeShow,videos,trailing,,9,0.0256
+@TheBrianKilmeadeShow,videos,trailing,<ENT> in <ENT>,5,0.0142
+@TheBrianKilmeadeShow,videos,trailing,""" <ENT> """,4,0.0114
+@TheBrianKilmeadeShow,videos,trailing,the <ENT> regime,4,0.0114
+@TheDailyBeast,videos,leading,i know why,21,0.0652
+@TheDailyBeast,videos,leading,why <ENT> 's,10,0.0311
+@TheDailyBeast,videos,leading,,9,0.028
+@TheDailyBeast,videos,leading,this is why,8,0.0248
+@TheDailyBeast,videos,leading,why trump is,7,0.0217
+@TheDailyBeast,videos,trailing,trump 's <ENT>,11,0.0342
+@TheDailyBeast,videos,trailing,beast podcast clip,10,0.0311
+@TheDailyBeast,videos,trailing,,9,0.028
+@TheDailyBeast,videos,trailing,trump : wolff,9,0.028
+@TheDailyBeast,videos,trailing,’s head clip,6,0.0186
+@TheDamageReport,streams,leading,<ENT> | <ENT>,21,0.0775
+@TheDamageReport,streams,leading,<ENT> on <ENT>,10,0.0369
+@TheDamageReport,streams,leading,<ENT> member 's,8,0.0295
+@TheDamageReport,streams,leading,<ENT> ? |,8,0.0295
+@TheDamageReport,streams,leading,<ENT> 's <ENT>,6,0.0221
+@TheDamageReport,streams,trailing,<ENT> | <ENT>,13,0.048
+@TheDamageReport,streams,trailing,<ENT> 's <ENT>,10,0.0369
+@TheDamageReport,streams,trailing,'s <ENT> <ENT>,8,0.0295
+@TheDamageReport,streams,trailing,| <ENT> !,7,0.0258
+@TheDamageReport,streams,trailing,| <ENT> <ENT>,5,0.0185
+@TheDamageReport,videos,leading,tyt hour <ENT>,370,0.1155
+@TheDamageReport,videos,leading,,257,0.0802
+@TheDamageReport,videos,leading,the damage report,186,0.0581
+@TheDamageReport,videos,leading,indisputable with dr.,176,0.0549
+@TheDamageReport,videos,leading,<ENT> 's <ENT>,54,0.0169
+@TheDamageReport,videos,trailing,tyt hour <ENT>,370,0.1155
+@TheDamageReport,videos,trailing,,257,0.0802
+@TheDamageReport,videos,trailing,the damage report,180,0.0562
+@TheDamageReport,videos,trailing,with dr. <ENT>,176,0.0549
+@TheDamageReport,videos,trailing,<ENT> as <ENT>,26,0.0081
+@TheDonLemonShow,streams,leading,members - only,30,0.075
+@TheDonLemonShow,streams,leading,,21,0.0525
+@TheDonLemonShow,streams,leading,breaking : <ENT>,19,0.0475
+@TheDonLemonShow,streams,leading,<ENT> 's <ENT>,8,0.02
+@TheDonLemonShow,streams,leading,exclusive : <ENT>,7,0.0175
+@TheDonLemonShow,streams,trailing,with don !,30,0.075
+@TheDonLemonShow,streams,trailing,,21,0.0525
+@TheDonLemonShow,streams,trailing,<ENT> ? !,16,0.04
+@TheDonLemonShow,streams,trailing,<ENT> <ENT> !,14,0.035
+@TheDonLemonShow,streams,trailing,in <ENT> !,7,0.0175
+@TheDonLemonShow,videos,leading,,20,0.0546
+@TheDonLemonShow,videos,leading,<ENT> # <ENT>,15,0.041
+@TheDonLemonShow,videos,leading,<ENT> on <ENT>,7,0.0191
+@TheDonLemonShow,videos,leading,<ENT> 's <ENT>,5,0.0137
+@TheDonLemonShow,videos,leading,<ENT> <ENT> !,5,0.0137
+@TheDonLemonShow,videos,trailing,,20,0.0546
+@TheDonLemonShow,videos,trailing,<ENT> ? !,11,0.0301
+@TheDonLemonShow,videos,trailing,# <ENT> !,10,0.0273
+@TheDonLemonShow,videos,trailing,<ENT> <ENT> !,8,0.0219
+@TheDonLemonShow,videos,trailing,| part <ENT>,6,0.0164
+@TheHumanistReport,streams,leading,,4,0.1143
+@TheHumanistReport,streams,trailing,w/ <ENT> ),10,0.2857
+@TheHumanistReport,streams,trailing,,4,0.1143
+@TheHumanistReport,videos,leading,breaking : <ENT>,4,0.026
+@TheJoyReidShow,streams,leading,,14,0.1
+@TheJoyReidShow,streams,leading,the reiders ’,8,0.0571
+@TheJoyReidShow,streams,leading,special coverage :,6,0.0429
+@TheJoyReidShow,streams,leading,<ENT> # <ENT>,4,0.0286
+@TheJoyReidShow,streams,trailing,,14,0.1
+@TheJoyReidShow,streams,trailing,’s only exclusive,8,0.0571
+@TheJoyReidShow,streams,trailing,<ENT> | <ENT>,5,0.0357
+@TheJoyReidShow,videos,leading,countering white christian,9,0.0378
+@TheJoyReidShow,videos,leading,,8,0.0336
+@TheJoyReidShow,videos,leading,<ENT> # <ENT>,6,0.0252
+@TheJoyReidShow,videos,leading,<ENT> on <ENT>,5,0.021
+@TheJoyReidShow,videos,leading,<ENT> and <ENT>,5,0.021
+@TheJoyReidShow,videos,trailing,,8,0.0336
+@TheJoyReidShow,videos,trailing,ft # <ENT>,6,0.0252
+@TheJoyReidShow,videos,trailing,<ENT> 's <ENT>,5,0.021
+@TheLincolnProject,videos,leading,,22,0.1789
+@TheLincolnProject,videos,leading,<ENT> at <ENT>,4,0.0325
+@TheLincolnProject,videos,trailing,,22,0.1789
+@TheMajorityReport,streams,leading,<ENT> ; <ENT>,38,0.1949
+@TheMajorityReport,streams,leading,<ENT> 's <ENT>,9,0.0462
+@TheMajorityReport,streams,leading,best of <ENT>,7,0.0359
+@TheMajorityReport,streams,leading,,5,0.0256
+@TheMajorityReport,streams,leading,<ENT> in <ENT>,4,0.0205
+@TheMajorityReport,streams,trailing,<ENT> # <ENT>,65,0.3333
+@TheMajorityReport,streams,trailing,<ENT> w/ <ENT>,25,0.1282
+@TheMajorityReport,streams,trailing,; <ENT> <ENT>,8,0.041
+@TheMajorityReport,streams,trailing,,5,0.0256
+@TheMajorityReport,streams,trailing,<ENT> ' parton,5,0.0256
+@TheMajorityReport,videos,leading,,149,0.0899
+@TheMajorityReport,videos,leading,<ENT> 's <ENT>,45,0.0272
+@TheMajorityReport,videos,leading,<ENT> | <ENT>,32,0.0193
+@TheMajorityReport,videos,leading,<ENT> in <ENT>,11,0.0066
+@TheMajorityReport,videos,leading,""" <ENT> """,10,0.006
+@TheMajorityReport,videos,trailing,<ENT> | tmr,236,0.1424
+@TheMajorityReport,videos,trailing,,149,0.0899
+@TheMajorityReport,videos,trailing,<ENT> 's <ENT>,30,0.0181
+@TheMajorityReport,videos,trailing,<ENT> in <ENT>,11,0.0066
+@TheMajorityReport,videos,trailing,<ENT> on <ENT>,10,0.006
+@TheMichaelCohenShow,videos,leading,,21,0.0438
+@TheMichaelCohenShow,videos,leading,trump loses it,13,0.0271
+@TheMichaelCohenShow,videos,leading,🚨 breaking :,11,0.023
+@TheMichaelCohenShow,videos,leading,yikes ! <ENT>,7,0.0146
+@TheMichaelCohenShow,videos,leading,<ENT> on live,6,0.0125
+@TheMichaelCohenShow,videos,trailing,,21,0.0438
+@TheMichaelCohenShow,videos,trailing,<ENT> | <ENT>,16,0.0334
+@TheMichaelCohenShow,videos,trailing,in his face,4,0.0084
+@TheOfficerTatum,streams,leading,live : <ENT>,35,0.1804
+@TheOfficerTatum,streams,leading,breaking : <ENT>,27,0.1392
+@TheOfficerTatum,streams,leading,live : i,11,0.0567
+@TheOfficerTatum,streams,leading,now : <ENT>,8,0.0412
+@TheOfficerTatum,streams,leading,breaking : new,6,0.0309
+@TheOfficerTatum,streams,trailing,| officer tatum,10,0.0515
+@TheOfficerTatum,streams,trailing,<ENT> with <ENT>,6,0.0309
+@TheOfficerTatum,videos,leading,breaking : <ENT>,8,0.013
+@TheOfficerTatum,videos,leading,,7,0.0113
+@TheOfficerTatum,videos,leading,member exclusive :,6,0.0097
+@TheOfficerTatum,videos,leading,<ENT> in <ENT>,6,0.0097
+@TheOfficerTatum,videos,leading,<ENT> after <ENT>,5,0.0081
+@TheOfficerTatum,videos,trailing,| officer <ENT>,16,0.0259
+@TheOfficerTatum,videos,trailing,everything in <ENT>,8,0.013
+@TheOfficerTatum,videos,trailing,,7,0.0113
+@TheOfficerTatum,videos,trailing,officer tatum show,7,0.0113
+@TheOfficerTatum,videos,trailing,truth about <ENT>,5,0.0081
+@ThePodcastoftheLotusEaters,streams,leading,breakfast with <ENT>,45,0.2514
+@ThePodcastoftheLotusEaters,streams,leading,,18,0.1006
+@ThePodcastoftheLotusEaters,streams,leading,<ENT> 's <ENT>,5,0.0279
+@ThePodcastoftheLotusEaters,streams,trailing,breakfast with <ENT>,55,0.3073
+@ThePodcastoftheLotusEaters,streams,trailing,,18,0.1006
+@ThePodcastoftheLotusEaters,streams,trailing,today ’s papers,5,0.0279
+@ThePodcastoftheLotusEaters,videos,leading,,133,0.2138
+@ThePodcastoftheLotusEaters,videos,leading,<ENT> 's <ENT>,4,0.0064
+@ThePodcastoftheLotusEaters,videos,leading,<ENT> in <ENT>,4,0.0064
+@ThePodcastoftheLotusEaters,videos,trailing,,133,0.2138
+@ThePodcastoftheLotusEaters,videos,trailing,<ENT> 's <ENT>,5,0.008
+@ThePodcastoftheLotusEaters,videos,trailing,<ENT> in <ENT>,5,0.008
+@TheQuartering,videos,leading,,58,0.0859
+@TheQuartering,videos,leading,<ENT> just got,8,0.0119
+@TheQuartering,videos,leading,<ENT> ! <ENT>,6,0.0089
+@TheQuartering,videos,leading,anti - ice,6,0.0089
+@TheQuartering,videos,trailing,,58,0.0859
+@TheQuartering,videos,trailing,i the quartering,9,0.0133
+@TheQuartering,videos,trailing,fatigue goes nuclear,6,0.0089
+@TheQuartering,videos,trailing,finds out !,5,0.0074
+@TheQuartering,videos,trailing,as <ENT> !,4,0.0059
+@TheRealTabithaSpeaks,videos,leading,<ENT> # down,14,0.031
+@TheRealTabithaSpeaks,videos,leading,<ENT> # <ENT>,11,0.0243
+@TheRealTabithaSpeaks,videos,leading,<ENT> and <ENT>,11,0.0243
+@TheRealTabithaSpeaks,videos,leading,,10,0.0221
+@TheRealTabithaSpeaks,videos,leading,<ENT> ! !,7,0.0155
+@TheRealTabithaSpeaks,videos,trailing,<ENT> ! !,54,0.1195
+@TheRealTabithaSpeaks,videos,trailing,? ? ?,13,0.0288
+@TheRealTabithaSpeaks,videos,trailing,,10,0.0221
+@TheRealTabithaSpeaks,videos,trailing,and <ENT> !,7,0.0155
+@TheRealTabithaSpeaks,videos,trailing,! ! !,5,0.0111
+@TheSerfTimes,streams,leading,<ENT> and <ENT>,5,0.0485
+@TheSerfTimes,videos,leading,<ENT> and <ENT>,14,0.0567
+@TheSerfTimes,videos,leading,,7,0.0283
+@TheSerfTimes,videos,trailing,<ENT> and <ENT>,8,0.0324
+@TheSerfTimes,videos,trailing,,7,0.0283
+@TheSerfTimes,videos,trailing,in <ENT> ?,4,0.0162
+@TheVaushPit,videos,leading,,40,0.0993
+@TheVaushPit,videos,trailing,,40,0.0993
+@TheYoungTurks,streams,leading,breaking : <ENT>,16,0.0374
+@TheYoungTurks,streams,leading,,13,0.0304
+@TheYoungTurks,streams,leading,<ENT> and <ENT>,12,0.028
+@TheYoungTurks,streams,leading,<ENT> # <ENT>,8,0.0187
+@TheYoungTurks,streams,leading,live : <ENT>,8,0.0187
+@TheYoungTurks,streams,trailing,! ! !,28,0.0654
+@TheYoungTurks,streams,trailing,,13,0.0304
+@TheYoungTurks,streams,trailing,<ENT> ! !,9,0.021
+@TheYoungTurks,streams,trailing,joins to discuss,6,0.014
+@TheYoungTurks,streams,trailing,<ENT> ? !,6,0.014
+@TheYoungTurks,videos,leading,tyt hour <ENT>,371,0.1294
+@TheYoungTurks,videos,leading,,323,0.1126
+@TheYoungTurks,videos,leading,the damage report,185,0.0645
+@TheYoungTurks,videos,leading,indisputable with dr.,176,0.0614
+@TheYoungTurks,videos,leading,<ENT> 's <ENT>,28,0.0098
+@TheYoungTurks,videos,trailing,tyt hour <ENT>,371,0.1294
+@TheYoungTurks,videos,trailing,,323,0.1126
+@TheYoungTurks,videos,trailing,the damage report,179,0.0624
+@TheYoungTurks,videos,trailing,with dr. <ENT>,176,0.0614
+@TheYoungTurks,videos,trailing,! ! !,24,0.0084
+@The_Crucible,videos,leading,,8,0.0354
+@The_Crucible,videos,leading,heated debate with,4,0.0177
+@The_Crucible,videos,trailing,,8,0.0354
+@The_Crucible,videos,trailing,| tiktok invasion,5,0.0221
+@TimDillonShow,videos,leading,<ENT> # <ENT>,14,0.2059
+@TimDillonShow,videos,leading,,10,0.1471
+@TimDillonShow,videos,leading,<ENT> ( ft,4,0.0588
+@TimDillonShow,videos,trailing,,10,0.1471
+@TimDillonShow,videos,trailing,ft <ENT> ),8,0.1176
+@TimDillonShow,videos,trailing,- tim dillon,6,0.0882
+@TimDillonShow,videos,trailing,<ENT> # <ENT>,5,0.0735
+@Tim_Black,videos,leading,heads up !,6,0.0182
+@Tim_Black,videos,leading,<ENT> # <ENT>,5,0.0152
+@Tim_Black,videos,leading,<ENT> to <ENT>,5,0.0152
+@Tim_Black,videos,leading,<ENT> in <ENT>,4,0.0122
+@Tim_Black,videos,trailing,<ENT> | <ENT>,4,0.0122
+@Timcast,videos,leading,,7,0.0383
+@Timcast,videos,trailing,ft # <ENT>,15,0.082
+@Timcast,videos,trailing,,7,0.0383
+@TimcastIRL,streams,leading,<ENT> # <ENT>,6,0.039
+@TimcastIRL,streams,leading,,6,0.039
+@TimcastIRL,streams,trailing,# w/ <ENT>,7,0.0455
+@TimcastIRL,streams,trailing,,6,0.039
+@TimcastIRL,streams,trailing,<ENT> w/ <ENT>,6,0.039
+@TimcastIRL,streams,trailing,<ENT> # <ENT>,5,0.0325
+@TimcastIRL,videos,leading,,29,0.0339
+@TimcastIRL,videos,leading,<ENT> # <ENT>,20,0.0234
+@TimcastIRL,videos,leading,this is the,6,0.007
+@TimcastIRL,videos,leading,<ENT> <ENT> #,5,0.0058
+@TimcastIRL,videos,leading,<ENT> on <ENT>,4,0.0047
+@TimcastIRL,videos,trailing,,29,0.0339
+@TimcastIRL,videos,trailing,<ENT> # <ENT>,15,0.0175
+@TimcastIRL,videos,trailing,<ENT> | <ENT>,12,0.014
+@TimcastIRL,videos,trailing,| timcast irl,4,0.0047
+@TimcastIRL,videos,trailing,# its over,4,0.0047
+@TimcastNews,videos,leading,,18,0.0337
+@TimcastNews,videos,leading,<ENT> # <ENT>,6,0.0112
+@TimcastNews,videos,leading,it just got,6,0.0112
+@TimcastNews,videos,leading,this is how,4,0.0075
+@TimcastNews,videos,leading,this is getting,4,0.0075
+@TimcastNews,videos,trailing,,18,0.0337
+@TimcastNews,videos,trailing,? ? !,4,0.0075
+@TimcastNews,videos,trailing,this proves it,4,0.0075
+@TimesNowWorld,streams,leading,<ENT> | <ENT>,249,0.0828
+@TimesNowWorld,streams,leading,live : <ENT>,198,0.0659
+@TimesNowWorld,streams,leading,<ENT> news live,110,0.0366
+@TimesNowWorld,streams,leading,world news live,98,0.0326
+@TimesNowWorld,streams,leading,<ENT> : <ENT>,77,0.0256
+@TimesNowWorld,streams,trailing,<ENT> | <ENT>,296,0.0985
+@TimesNowWorld,streams,trailing,times now world,119,0.0396
+@TimesNowWorld,streams,trailing,| world news,83,0.0276
+@TimesNowWorld,streams,trailing,<ENT> in <ENT>,67,0.0223
+@TimesNowWorld,streams,trailing,| <ENT> news,45,0.015
+@TimesNowWorld,videos,leading,watch : <ENT>,543,0.0604
+@TimesNowWorld,videos,leading,<ENT> : <ENT>,360,0.04
+@TimesNowWorld,videos,leading,breaking : <ENT>,122,0.0136
+@TimesNowWorld,videos,leading,<ENT> ? <ENT>,114,0.0127
+@TimesNowWorld,videos,leading,watch : ',72,0.008
+@TimesNowWorld,videos,trailing,<ENT> - <ENT>,552,0.0614
+@TimesNowWorld,videos,trailing,<ENT> | <ENT>,302,0.0336
+@TimesNowWorld,videos,trailing,| world news,163,0.0181
+@TimesNowWorld,videos,trailing,<ENT> in <ENT>,143,0.0159
+@TimesNowWorld,videos,trailing,<ENT> # <ENT>,137,0.0152
+@TomiLahrenIsFearless,videos,trailing,<ENT> on <ENT>,6,0.0508
+@TuckerCarlson,videos,leading,<ENT> to <ENT>,9,0.0756
+@TuckerCarlson,videos,leading,<ENT> on <ENT>,7,0.0588
+@TuckerCarlson,videos,leading,<ENT> : <ENT>,6,0.0504
+@TuckerCarlson,videos,leading,<ENT> on the,4,0.0336
+@TuckerCarlson,videos,trailing,# and <ENT>,8,0.0672
+@TuckerCarlson,videos,trailing,<ENT> and <ENT>,7,0.0588
+@USATODAY,streams,leading,live : <ENT>,103,0.247
+@USATODAY,streams,leading,watch live :,38,0.0911
+@USATODAY,streams,leading,live : trump,32,0.0767
+@USATODAY,streams,leading,live : lindsay,13,0.0312
+@USATODAY,streams,leading,tupac trial live,9,0.0216
+@USATODAY,streams,trailing,<ENT> # <ENT>,13,0.0312
+@USATODAY,streams,trailing,<ENT> of testimony,8,0.0192
+@USATODAY,streams,trailing,<ENT> in <ENT>,8,0.0192
+@USATODAY,streams,trailing,with testimony <ENT>,4,0.0096
+@USATODAY,streams,trailing,in press conference,4,0.0096
+@USATODAY,videos,leading,<ENT> # <ENT>,42,0.0189
+@USATODAY,videos,leading,<ENT> says <ENT>,32,0.0144
+@USATODAY,videos,leading,<ENT> speech at,25,0.0113
+@USATODAY,videos,leading,<ENT> press conference,19,0.0086
+@USATODAY,videos,leading,<ENT> 's <ENT>,16,0.0072
+@USATODAY,videos,trailing,| the <ENT>,182,0.0819
+@USATODAY,videos,trailing,dies at <ENT>,30,0.0135
+@USATODAY,videos,trailing,<ENT> # <ENT>,22,0.0099
+@USATODAY,videos,trailing,# <ENT> says,11,0.005
+@USATODAY,videos,trailing,<ENT> and more,9,0.0041
+@UnHerd,streams,leading,debate : this,5,0.2941
+@UnHerd,videos,leading,<ENT> : <ENT>,4,0.0482
+@UnHerd,videos,leading,<ENT> : the,4,0.0482
+@UnHerd,videos,leading,<ENT> : why,4,0.0482
+@UnHerd,videos,trailing,varoufakis & munchau,4,0.0482
+@Unpacked,videos,leading,,8,0.1951
+@Unpacked,videos,leading,the real reason,4,0.0976
+@Unpacked,videos,trailing,,8,0.1951
+@Vaush,videos,leading,,39,0.0861
+@Vaush,videos,leading,<ENT> 's <ENT>,9,0.0199
+@Vaush,videos,leading,breaking : <ENT>,7,0.0155
+@Vaush,videos,leading,<ENT> to <ENT>,4,0.0088
+@Vaush,videos,trailing,,39,0.0861
+@Vaush,videos,trailing,than you think,6,0.0132
+@VivaFrei,streams,leading,<ENT> ; <ENT>,4,0.0769
+@VivaFrei,streams,trailing,and more !,9,0.1731
+@VivaFrei,streams,trailing,! <ENT> !,8,0.1538
+@VivaFrei,streams,trailing,& more !,6,0.1154
+@VivaFrei,streams,trailing,# <ENT> !,6,0.1154
+@VivaFrei,videos,leading,<ENT> ! <ENT>,9,0.0272
+@VivaFrei,videos,leading,""" <ENT> """,6,0.0181
+@VivaFrei,videos,leading,"<ENT> "" <ENT>",4,0.0121
+@VivaFrei,videos,trailing,! viva frei,10,0.0302
+@VivaFrei,videos,trailing,! w/ <ENT>,8,0.0242
+@VivaFrei,videos,trailing,<ENT> <ENT> !,6,0.0181
+@VivaFrei,videos,trailing,! <ENT> !,5,0.0151
+@VivaFrei,videos,trailing,""" <ENT> !",5,0.0151
+@Vox,videos,trailing,<ENT> # actually,24,0.1805
+@Vox,videos,trailing,<ENT> # <ENT>,8,0.0602
+@X22Report-y5y,videos,leading,[ ds ],40,0.1013
+@X22Report-y5y,videos,leading,<ENT> # <ENT>,22,0.0557
+@X22Report-y5y,videos,leading,<ENT> the [,17,0.043
+@X22Report-y5y,videos,leading,[ cb ],16,0.0405
+@X22Report-y5y,videos,leading,<ENT> # trump,6,0.0152
+@X22Report-y5y,videos,trailing,<ENT> # <ENT>,16,0.0405
+@X22Report-y5y,videos,trailing,[ cb ],10,0.0253
+@X22Report-y5y,videos,trailing,[ ds ],6,0.0152
+@X22Report-y5y,videos,trailing,,5,0.0127
+@X22Report-y5y,videos,trailing,timing is everything,4,0.0101
+@XAVIAER,videos,leading,reacting to <ENT>,4,0.0563
+@Xanderhal,streams,trailing,# <ENT> more,9,0.0833
+@Xanderhal,streams,trailing,more <ENT> resynched,5,0.0463
+@Xanderhal,streams,trailing,playing more hytale,4,0.037
+@Xanderhal,streams,trailing,drama & more,4,0.037
+@Xanderhal,videos,leading,,23,0.0728
+@Xanderhal,videos,leading,<ENT> 's <ENT>,4,0.0127
+@Xanderhal,videos,trailing,,23,0.0728
+@Xanderhal,videos,trailing,""" <ENT> """,6,0.019
+@ZeihanonGeopolitics,videos,leading,,21,0.0968
+@ZeihanonGeopolitics,videos,leading,<ENT> : <ENT>,10,0.0461
+@ZeihanonGeopolitics,videos,leading,<ENT> and <ENT>,6,0.0276
+@ZeihanonGeopolitics,videos,leading,the end of,5,0.023
+@ZeihanonGeopolitics,videos,leading,<ENT> 's <ENT>,4,0.0184
+@ZeihanonGeopolitics,videos,trailing,,21,0.0968
+@ZeihanonGeopolitics,videos,trailing,<ENT> in <ENT>,5,0.023
+@ZeihanonGeopolitics,videos,trailing,<ENT> 's <ENT>,4,0.0184
+@ZeihanonGeopolitics,videos,trailing,<ENT> : <ENT>,4,0.0184
+@ZubyMusic,videos,leading,,10,0.0719
+@ZubyMusic,videos,trailing,,10,0.0719
+@aaronparnas1,videos,leading,breaking : <ENT>,329,0.4017
+@aaronparnas1,videos,leading,breaking : trump,171,0.2088
+@aaronparnas1,videos,leading,breaking : massive,13,0.0159
+@aaronparnas1,videos,leading,breaking : major,12,0.0147
+@aaronparnas1,videos,leading,breaking : maga,11,0.0134
+@aaronparnas1,videos,trailing,<ENT> in <ENT>,14,0.0171
+@aaronparnas1,videos,trailing,<ENT> as <ENT>,13,0.0159
+@aaronparnas1,videos,trailing,<ENT> ! !,13,0.0159
+@aaronparnas1,videos,trailing,<ENT> and <ENT>,12,0.0147
+@aaronparnas1,videos,trailing,! ! !,11,0.0134
+@adammockler,videos,leading,,33,0.0295
+@adammockler,videos,leading,<ENT> as <ENT>,23,0.0206
+@adammockler,videos,leading,<ENT> after <ENT>,12,0.0107
+@adammockler,videos,leading,trump lets it,9,0.0081
+@adammockler,videos,leading,breaking : <ENT>,8,0.0072
+@adammockler,videos,trailing,,33,0.0295
+@adammockler,videos,trailing,! ! !,25,0.0224
+@adammockler,videos,trailing,<ENT> as <ENT>,8,0.0072
+@adammockler,videos,trailing,on live tv,7,0.0063
+@adammockler,videos,trailing,did it #,6,0.0054
+@ajplus,videos,leading,it 's bisan,4,0.08
+@aljazeeraenglish,videos,leading,<ENT> - <ENT>,155,0.0221
+@aljazeeraenglish,videos,leading,<ENT> says <ENT>,98,0.014
+@aljazeeraenglish,videos,leading,<ENT> and <ENT>,63,0.009
+@aljazeeraenglish,videos,leading,<ENT> # <ENT>,60,0.0086
+@aljazeeraenglish,videos,leading,<ENT> ’s <ENT>,59,0.0084
+@aljazeeraenglish,videos,trailing,? | <ENT>,302,0.0431
+@aljazeeraenglish,videos,trailing,| the take,156,0.0223
+@aljazeeraenglish,videos,trailing,this is <ENT>,102,0.0146
+@aljazeeraenglish,videos,trailing,# analyst says,70,0.01
+@aljazeeraenglish,videos,trailing,counting the cost,56,0.008
+@axios,videos,leading,view from the,16,0.1168
+@axios,videos,leading,,6,0.0438
+@axios,videos,leading,<ENT> ’s <ENT>,5,0.0365
+@axios,videos,trailing,<ENT> | <ENT>,6,0.0438
+@axios,videos,trailing,axios ’ <ENT>,6,0.0438
+@axios,videos,trailing,,6,0.0438
+@axios,videos,trailing,<ENT> ina fried,5,0.0365
+@axios,videos,trailing,<ENT> ’s <ENT>,5,0.0365
+@bbrettcooper,videos,leading,,11,0.0769
+@bbrettcooper,videos,leading,<ENT> and <ENT>,5,0.035
+@bbrettcooper,videos,leading,reacting to the,5,0.035
+@bbrettcooper,videos,trailing,,11,0.0769
+@bennyjohnson,streams,leading,🚨 <ENT> just,4,0.0238
+@bennyjohnson,streams,leading,🚨 <ENT> in,4,0.0238
+@bennyjohnson,streams,leading,🚨 <ENT> to,4,0.0238
+@bennyjohnson,streams,leading,panic : <ENT>,4,0.0238
+@bennyjohnson,streams,leading,🚨 <ENT> press,4,0.0238
+@bennyjohnson,streams,trailing,<ENT> in <ENT>,5,0.0298
+@bennyjohnson,videos,leading,🚨 breaking :,31,0.0206
+@bennyjohnson,videos,leading,<ENT> : <ENT>,23,0.0153
+@bennyjohnson,videos,leading,<ENT> in <ENT>,21,0.0139
+@bennyjohnson,videos,leading,🚨 <ENT> just,14,0.0093
+@bennyjohnson,videos,leading,🚨 <ENT> <ENT>,11,0.0073
+@bennyjohnson,videos,trailing,in <ENT> #,27,0.0179
+@bennyjohnson,videos,trailing,is <ENT> #,20,0.0133
+@bennyjohnson,videos,trailing,| <ENT> #,15,0.0099
+@bennyjohnson,videos,trailing,# <ENT> #,14,0.0093
+@bennyjohnson,videos,trailing,to <ENT> #,14,0.0093
+@breakingpoints,videos,leading,,31,0.0299
+@breakingpoints,videos,leading,<ENT> # <ENT>,31,0.0299
+@breakingpoints,videos,leading,<ENT> : <ENT>,27,0.026
+@breakingpoints,videos,leading,<ENT> in <ENT>,11,0.0106
+@breakingpoints,videos,leading,<ENT> after <ENT>,9,0.0087
+@breakingpoints,videos,trailing,,31,0.0299
+@breakingpoints,videos,trailing,<ENT> # <ENT>,30,0.0289
+@breakingpoints,videos,trailing,<ENT> in <ENT>,9,0.0087
+@breakingpoints,videos,trailing,<ENT> as <ENT>,9,0.0087
+@breakingpoints,videos,trailing,<ENT> on <ENT>,8,0.0077
+@briantylercohen,streams,leading,live : <ENT>,4,0.4
+@briantylercohen,videos,leading,breaking : <ENT>,48,0.0444
+@briantylercohen,videos,leading,<ENT> : <ENT>,39,0.0361
+@briantylercohen,videos,leading,<ENT> : trump,39,0.0361
+@briantylercohen,videos,leading,breaking : trump,34,0.0315
+@briantylercohen,videos,leading,whoa : <ENT>,18,0.0167
+@briantylercohen,videos,trailing,| another day,184,0.1702
+@briantylercohen,videos,trailing,<ENT> in court,11,0.0102
+@briantylercohen,videos,trailing,bomb on <ENT>,10,0.0093
+@briantylercohen,videos,trailing,with <ENT> announcement,9,0.0083
+@briantylercohen,videos,trailing,makes <ENT> announcement,8,0.0074
+@bulwarkmedia,streams,leading,breaking : <ENT>,23,0.1009
+@bulwarkmedia,streams,leading,breaking : trump,9,0.0395
+@bulwarkmedia,streams,leading,<ENT> # <ENT>,6,0.0263
+@bulwarkmedia,streams,leading,<ENT> and <ENT>,5,0.0219
+@bulwarkmedia,streams,trailing,| maga <ENT>,21,0.0921
+@bulwarkmedia,streams,trailing,bulwark on <ENT>,19,0.0833
+@bulwarkmedia,streams,trailing,w/ <ENT> ),12,0.0526
+@bulwarkmedia,streams,trailing,| morning shots,11,0.0482
+@bulwarkmedia,streams,trailing,morning shots live,11,0.0482
+@bulwarkmedia,videos,leading,<ENT> : <ENT>,64,0.035
+@bulwarkmedia,videos,leading,,53,0.029
+@bulwarkmedia,videos,leading,<ENT> ( w/,44,0.0241
+@bulwarkmedia,videos,leading,<ENT> and <ENT>,34,0.0186
+@bulwarkmedia,videos,leading,breaking : <ENT>,33,0.0181
+@bulwarkmedia,videos,trailing,) | <ENT>,208,0.1139
+@bulwarkmedia,videos,trailing,w/ <ENT> ),130,0.0712
+@bulwarkmedia,videos,trailing,| bulwark podcast,126,0.069
+@bulwarkmedia,videos,trailing,<ENT> | <ENT>,86,0.0471
+@bulwarkmedia,videos,trailing,| illegal news,61,0.0334
+@cafedotcom,videos,trailing,| <ENT> bharara,33,0.6111
+@chicksonright,streams,leading,<ENT> # <ENT>,40,0.2235
+@chicksonright,streams,leading,<ENT> <ENT> #,9,0.0503
+@chicksonright,streams,leading,<ENT> 's <ENT>,4,0.0223
+@chicksonright,streams,trailing,<ENT> # <ENT>,8,0.0447
+@chicksonright,streams,trailing,# <ENT> <ENT>,5,0.0279
+@chicksonright,streams,trailing,<ENT> on <ENT>,4,0.0223
+@chicksonright,videos,leading,,36,0.0758
+@chicksonright,videos,leading,<ENT> and <ENT>,7,0.0147
+@chicksonright,videos,leading,<ENT> # <ENT>,6,0.0126
+@chicksonright,videos,leading,<ENT> <ENT> #,4,0.0084
+@chicksonright,videos,leading,<ENT> on <ENT>,4,0.0084
+@chicksonright,videos,trailing,,36,0.0758
+@chicksonright,videos,trailing,<ENT> ? !,8,0.0168
+@chicksonright,videos,trailing,<ENT> and <ENT>,7,0.0147
+@chicksonright,videos,trailing,<ENT> # <ENT>,5,0.0105
+@chinainsights-r2w,videos,leading,<ENT> 's <ENT>,11,0.0396
+@chinainsights-r2w,videos,leading,<ENT> : <ENT>,6,0.0216
+@chinainsights-r2w,videos,leading,<ENT> # <ENT>,6,0.0216
+@chinainsights-r2w,videos,leading,<ENT> ’s <ENT>,5,0.018
+@chinainsights-r2w,videos,leading,<ENT> in <ENT>,5,0.018
+@chinainsights-r2w,videos,trailing,i china insights,31,0.1115
+@chinainsights-r2w,videos,trailing,i <ENT> insights,21,0.0755
+@chinainsights-r2w,videos,trailing,# and <ENT>,6,0.0216
+@chinainsights-r2w,videos,trailing,<ENT> in <ENT>,5,0.018
+@chinainsights-r2w,videos,trailing,<ENT> # <ENT>,4,0.0144
+@chriscuomo,streams,leading,,4,0.5
+@chriscuomo,streams,trailing,,4,0.5
+@chriscuomo,videos,leading,,19,0.0913
+@chriscuomo,videos,leading,cuomo mornings :,5,0.024
+@chriscuomo,videos,leading,<ENT> on <ENT>,4,0.0192
+@chriscuomo,videos,leading,why <ENT> is,4,0.0192
+@chriscuomo,videos,leading,<ENT> # <ENT>,4,0.0192
+@chriscuomo,videos,trailing,,19,0.0913
+@chriscuomo,videos,trailing,# and <ENT>,7,0.0337
+@clayandbuck,streams,leading,the clay travis,42,1.0
+@clayandbuck,streams,trailing,show live stream,42,1.0
+@clayandbuck,videos,leading,<ENT> on <ENT>,17,0.0293
+@clayandbuck,videos,leading,<ENT> : <ENT>,13,0.0224
+@clayandbuck,videos,leading,<ENT> in <ENT>,12,0.0207
+@clayandbuck,videos,leading,,10,0.0172
+@clayandbuck,videos,leading,<ENT> # <ENT>,10,0.0172
+@clayandbuck,videos,trailing,<ENT> in <ENT>,15,0.0258
+@clayandbuck,videos,trailing,<ENT> and <ENT>,12,0.0207
+@clayandbuck,videos,trailing,,10,0.0172
+@clayandbuck,videos,trailing,# and <ENT>,6,0.0103
+@clayandbuck,videos,trailing,""" <ENT> """,5,0.0086
+@deanwithrs,streams,leading,breaking : <ENT>,7,0.0263
+@deanwithrs,streams,leading,,7,0.0263
+@deanwithrs,streams,leading,breaking : trump,5,0.0188
+@deanwithrs,streams,trailing,,7,0.0263
+@deanwithrs,streams,trailing,? ! ?,5,0.0188
+@deanwithrs,streams,trailing,debating maga !,5,0.0188
+@deanwithrs,streams,trailing,is bad !,5,0.0188
+@deanwithrs,streams,trailing,wtf ? !,4,0.015
+@deanwithrs,videos,leading,,12,0.0453
+@deanwithrs,videos,leading,""" <ENT> """,6,0.0226
+@deanwithrs,videos,leading,disgusting maga man,4,0.0151
+@deanwithrs,videos,leading,<ENT> maga man,4,0.0151
+@deanwithrs,videos,leading,insane maga man,4,0.0151
+@deanwithrs,videos,trailing,,12,0.0453
+@deanwithrs,videos,trailing,in this debate,5,0.0189
+@destiny,videos,leading,,36,0.1348
+@destiny,videos,trailing,,36,0.1348
+@destinyhqclips,videos,leading,,19,0.0964
+@destinyhqclips,videos,leading,destiny reacts to,6,0.0305
+@destinyhqclips,videos,trailing,,19,0.0964
+@destinyhqclips,videos,trailing,- destiny reacts,6,0.0305
+@dineshdsouza,videos,leading,,9,0.0978
+@dineshdsouza,videos,trailing,,9,0.0978
+@dineshdsouza,videos,trailing,dinesh d’souza podcast,7,0.0761
+@dineshdsouza,videos,trailing,series part <ENT>,5,0.0543
+@dollemore,videos,leading,,25,0.0174
+@dollemore,videos,leading,<ENT> to <ENT>,15,0.0104
+@dollemore,videos,leading,<ENT> 's <ENT>,14,0.0097
+@dollemore,videos,leading,<ENT> # <ENT>,12,0.0083
+@dollemore,videos,leading,<ENT> in <ENT>,11,0.0076
+@dollemore,videos,trailing,! ! !,240,0.1668
+@dollemore,videos,trailing,,25,0.0174
+@dollemore,videos,trailing,<ENT> in <ENT>,13,0.009
+@dollemore,videos,trailing,<ENT> to <ENT>,8,0.0056
+@dollemore,videos,trailing,<ENT> on <ENT>,7,0.0049
+@doomscrollpodcast,videos,leading,<ENT> : <ENT>,4,0.2353
+@fastpoliticspodcast,videos,leading,<ENT> on <ENT>,20,0.1379
+@fastpoliticspodcast,videos,leading,,6,0.0414
+@fastpoliticspodcast,videos,leading,<ENT> w/ <ENT>,5,0.0345
+@fastpoliticspodcast,videos,leading,<ENT> 's <ENT>,4,0.0276
+@fastpoliticspodcast,videos,leading,<ENT> on why,4,0.0276
+@fastpoliticspodcast,videos,trailing,? w/ <ENT>,16,0.1103
+@fastpoliticspodcast,videos,trailing,<ENT> w/ <ENT>,13,0.0897
+@fastpoliticspodcast,videos,trailing,! w/ <ENT>,8,0.0552
+@fastpoliticspodcast,videos,trailing,,6,0.0414
+@fastpoliticspodcast,videos,trailing,<ENT> on <ENT>,5,0.0345
+@fightbackpodcast,streams,leading,<ENT> and <ENT>,7,0.2917
+@fightbackpodcast,streams,trailing,- fight back,5,0.2083
+@fightbackpodcast,videos,leading,<ENT> and <ENT>,36,0.0574
+@fightbackpodcast,videos,leading,<ENT> on <ENT>,27,0.0431
+@fightbackpodcast,videos,leading,,14,0.0223
+@fightbackpodcast,videos,leading,<ENT> : <ENT>,13,0.0207
+@fightbackpodcast,videos,leading,<ENT> is a,11,0.0175
+@fightbackpodcast,videos,trailing,# and <ENT>,29,0.0463
+@fightbackpodcast,videos,trailing,- fight back,25,0.0399
+@fightbackpodcast,videos,trailing,,14,0.0223
+@fightbackpodcast,videos,trailing,<ENT> and <ENT>,14,0.0223
+@fightbackpodcast,videos,trailing,? ! ?,7,0.0112
+@franifio,streams,leading,candidate corner :,7,0.1129
+@franifio,streams,trailing,# <ENT> ),4,0.0645
+@franifio,videos,leading,,28,0.0993
+@franifio,videos,leading,<ENT> on <ENT>,7,0.0248
+@franifio,videos,leading,<ENT> to <ENT>,5,0.0177
+@franifio,videos,leading,<ENT> is a,4,0.0142
+@franifio,videos,leading,candidate corner :,4,0.0142
+@franifio,videos,trailing,,28,0.0993
+@franifio,videos,trailing,* teaser *,7,0.0248
+@franifio,videos,trailing,<ENT> to <ENT>,4,0.0142
+@franifio,videos,trailing,<ENT> on <ENT>,4,0.0142
+@glennbeck,streams,leading,live : <ENT>,4,0.032
+@glennbeck,streams,trailing,<ENT> ? !,11,0.088
+@glennbeck,streams,trailing,live : <ENT>,4,0.032
+@glennbeck,videos,leading,,10,0.0217
+@glennbeck,videos,leading,<ENT> 's <ENT>,7,0.0152
+@glennbeck,videos,leading,is this the,6,0.013
+@glennbeck,videos,leading,<ENT> to <ENT>,5,0.0109
+@glennbeck,videos,leading,the real reason,5,0.0109
+@glennbeck,videos,trailing,<ENT> ? !,13,0.0283
+@glennbeck,videos,trailing,,10,0.0217
+@glennbeck,videos,trailing,<ENT> | <ENT>,7,0.0152
+@glennbeck,videos,trailing,this ? !,4,0.0087
+@harryjsisson,videos,leading,<ENT> : <ENT>,28,0.0411
+@harryjsisson,videos,leading,,27,0.0396
+@harryjsisson,videos,leading,trump rages as,11,0.0162
+@harryjsisson,videos,leading,<ENT> # <ENT>,11,0.0162
+@harryjsisson,videos,leading,<ENT> : trump,10,0.0147
+@harryjsisson,videos,trailing,,27,0.0396
+@harryjsisson,videos,trailing,it 's bad,18,0.0264
+@harryjsisson,videos,trailing,posted this #,10,0.0147
+@harryjsisson,videos,trailing,of the cameras,9,0.0132
+@harryjsisson,videos,trailing,it 's <ENT>,8,0.0117
+@hutch,streams,leading,,8,0.16
+@hutch,streams,trailing,,8,0.16
+@hutch,streams,trailing,<ENT> | <ENT>,4,0.08
+@hutch,videos,leading,,14,0.0864
+@hutch,videos,trailing,,14,0.0864
+@jimacosta,streams,leading,🔴 live :,16,0.1
+@jimacosta,streams,leading,live : <ENT>,12,0.075
+@jimacosta,streams,leading,breaking news :,10,0.0625
+@jimacosta,streams,leading,🔴 breaking :,4,0.025
+@jimacosta,streams,trailing,<ENT> and <ENT>,14,0.0875
+@jimacosta,videos,leading,<ENT> on <ENT>,11,0.0351
+@jimacosta,videos,leading,<ENT> : <ENT>,7,0.0224
+@jimacosta,videos,leading,<ENT> : trump,5,0.016
+@jimacosta,videos,leading,<ENT> <ENT> #,5,0.016
+@jimacosta,videos,leading,breaking : <ENT>,4,0.0128
+@jimacosta,videos,trailing,<ENT> # <ENT>,6,0.0192
+@jimacosta,videos,trailing,<ENT> | <ENT>,5,0.016
+@jimacosta,videos,trailing,<ENT> 's <ENT>,4,0.0128
+@jimacosta,videos,trailing,| <ENT> <ENT>,4,0.0128
+@jimacosta,videos,trailing,<ENT> on <ENT>,4,0.0128
+@jlptalk,streams,leading,<ENT> | <ENT>,4,0.0214
+@jlptalk,streams,trailing,# - #,75,0.4011
+@jlptalk,streams,trailing,jlp we d,18,0.0963
+@jlptalk,streams,trailing,| <ENT> mon,16,0.0856
+@jlptalk,streams,trailing,? | <ENT>,14,0.0749
+@jlptalk,streams,trailing,| <ENT> tue,12,0.0642
+@jlptalk,videos,leading,best of week,36,0.1184
+@jlptalk,videos,leading,<ENT> — jlp,5,0.0164
+@jlptalk,videos,leading,""" <ENT> """,4,0.0132
+@jlptalk,videos,trailing,( <ENT> ),58,0.1908
+@jlptalk,videos,trailing,<ENT> # <ENT>,21,0.0691
+@jlptalk,videos,trailing,# ' <ENT>,16,0.0526
+@jlptalk,videos,trailing,| <ENT> reacts,15,0.0493
+@jlptalk,videos,trailing,| <ENT> clips,6,0.0197
+@joerogan,videos,leading,,121,0.8582
+@joerogan,videos,leading,jre mma show,13,0.0922
+@joerogan,videos,trailing,,121,0.8582
+@joerogan,videos,trailing,<ENT> with <ENT>,7,0.0496
+@judgingfreedom,streams,leading,<ENT> # <ENT>,136,0.1951
+@judgingfreedom,streams,leading,<ENT> : <ENT>,120,0.1722
+@judgingfreedom,streams,leading,prof. <ENT> :,115,0.165
+@judgingfreedom,streams,leading,<ENT> : why,24,0.0344
+@judgingfreedom,streams,leading,<ENT> : is,22,0.0316
+@judgingfreedom,streams,trailing,<ENT> : <ENT>,36,0.0516
+@judgingfreedom,streams,trailing,the <ENT> ?,11,0.0158
+@judgingfreedom,streams,trailing,<ENT> in <ENT>,9,0.0129
+@judgingfreedom,streams,trailing,is <ENT> ?,9,0.0129
+@judgingfreedom,streams,trailing,in <ENT> ?,9,0.0129
+@judgingfreedom,videos,leading,<ENT> : <ENT>,26,0.0732
+@judgingfreedom,videos,leading,<ENT> 's <ENT>,19,0.0535
+@judgingfreedom,videos,leading,prof. <ENT> :,12,0.0338
+@judgingfreedom,videos,leading,<ENT> : why,11,0.031
+@judgingfreedom,videos,leading,<ENT> # <ENT>,10,0.0282
+@judgingfreedom,videos,trailing,<ENT> 's <ENT>,12,0.0338
+@judgingfreedom,videos,trailing,,9,0.0254
+@judgingfreedom,videos,trailing,# and <ENT>,7,0.0197
+@judgingfreedom,videos,trailing,<ENT> on <ENT>,5,0.0141
+@judgingfreedom,videos,trailing,<ENT> : <ENT>,5,0.0141
+@katiephangnews,streams,leading,live : <ENT>,31,0.7045
+@katiephangnews,streams,trailing,on breaking news,26,0.5909
+@katiephangnews,videos,leading,<ENT> as <ENT>,29,0.072
+@katiephangnews,videos,leading,,9,0.0223
+@katiephangnews,videos,leading,<ENT> ! <ENT>,8,0.0199
+@katiephangnews,videos,leading,trump loses it,8,0.0199
+@katiephangnews,videos,leading,trump scrambles as,7,0.0174
+@katiephangnews,videos,trailing,<ENT> ! !,39,0.0968
+@katiephangnews,videos,trailing,! ? !,19,0.0471
+@katiephangnews,videos,trailing,lawsuit ! !,11,0.0273
+@katiephangnews,videos,trailing,! ! !,9,0.0223
+@katiephangnews,videos,trailing,,9,0.0223
+@laurenchenclips,videos,leading,,11,0.1009
+@laurenchenclips,videos,trailing,,11,0.1009
+@lizwheeler,streams,leading,the real reason,4,0.0571
+@lizwheeler,streams,trailing,<ENT> ? !,10,0.1429
+@lizwheeler,videos,trailing,( replay ),6,0.0698
+@lonerboxlive,videos,leading,<ENT> and <ENT>,4,0.0455
+@lovettorleaveitpodcast,videos,leading,<ENT> and <ENT>,4,0.0351
+@lovettorleaveitpodcast,videos,trailing,<ENT> # <ENT>,4,0.0351
+@marclamonthillnetwork,streams,leading,office hours :,19,0.1258
+@marclamonthillnetwork,streams,leading,<ENT> # <ENT>,10,0.0662
+@marclamonthillnetwork,streams,leading,<ENT> 's <ENT>,5,0.0331
+@marclamonthillnetwork,streams,trailing,<ENT> | <ENT>,13,0.0861
+@marclamonthillnetwork,streams,trailing,<ENT> | ascending,10,0.0662
+@marclamonthillnetwork,streams,trailing,<ENT> # <ENT>,8,0.053
+@marclamonthillnetwork,streams,trailing,! | ascending,5,0.0331
+@marclamonthillnetwork,videos,leading,<ENT> on <ENT>,43,0.134
+@marclamonthillnetwork,videos,leading,<ENT> reacts to,13,0.0405
+@marclamonthillnetwork,videos,leading,<ENT> to <ENT>,12,0.0374
+@marclamonthillnetwork,videos,leading,<ENT> debates <ENT>,6,0.0187
+@marclamonthillnetwork,videos,leading,<ENT> # <ENT>,6,0.0187
+@marclamonthillnetwork,videos,trailing,""" <ENT> """,7,0.0218
+@marclamonthillnetwork,videos,trailing,! ! !,7,0.0218
+@marclamonthillnetwork,videos,trailing,<ENT> # <ENT>,6,0.0187
+@marclamonthillnetwork,videos,trailing,<ENT> to <ENT>,4,0.0125
+@marclamonthillnetwork,videos,trailing,<ENT> on <ENT>,4,0.0125
+@markets,streams,leading,live : <ENT>,7,0.125
+@markets,streams,leading,<ENT> # <ENT>,4,0.0714
+@markets,streams,trailing,<ENT> | <ENT>,5,0.0893
+@markets,videos,leading,,436,0.0547
+@markets,videos,leading,<ENT> # <ENT>,303,0.038
+@markets,videos,leading,<ENT> 's <ENT>,258,0.0324
+@markets,videos,leading,<ENT> says <ENT>,143,0.0179
+@markets,videos,leading,<ENT> to <ENT>,121,0.0152
+@markets,videos,trailing,<ENT> | <ENT>,518,0.065
+@markets,videos,trailing,,436,0.0547
+@markets,videos,trailing,balance of power,180,0.0226
+@markets,videos,trailing,insight with <ENT>,172,0.0216
+@markets,videos,trailing,| the close,171,0.0214
+@marklevinshow,videos,leading,the best of,40,0.0792
+@marklevinshow,videos,leading,<ENT> : <ENT>,27,0.0535
+@marklevinshow,videos,leading,,18,0.0356
+@marklevinshow,videos,leading,<ENT> 's <ENT>,10,0.0198
+@marklevinshow,videos,leading,<ENT> : the,8,0.0158
+@marklevinshow,videos,trailing,best of <ENT>,37,0.0733
+@marklevinshow,videos,trailing,,18,0.0356
+@marklevinshow,videos,trailing,<ENT> 's <ENT>,14,0.0277
+@marklevinshow,videos,trailing,<ENT> and <ENT>,8,0.0158
+@marklevinshow,videos,trailing,# and <ENT>,7,0.0139
+@morebridgetphetasy,videos,leading,,23,0.1117
+@morebridgetphetasy,videos,trailing,,23,0.1117
+@morebridgetphetasy,videos,trailing,<ENT> welcome <ENT>,14,0.068
+@morebridgetphetasy,videos,trailing,ins welcome <ENT>,4,0.0194
+@moreperfectunion,videos,leading,we went to,5,0.0704
+@moreperfectunion,videos,leading,we uncovered the,5,0.0704
+@moreperfectunion,videos,leading,we investigated the,4,0.0563
+@moreperfectunion,videos,leading,we uncovered a,4,0.0563
+@moreperfectunion,videos,trailing,shock you #,6,0.0845
+@msnow,streams,leading,live : <ENT>,80,0.2462
+@msnow,streams,leading,live : trump,46,0.1415
+@msnow,streams,leading,live : president,29,0.0892
+@msnow,streams,leading,live : secretary,7,0.0215
+@msnow,streams,leading,live : officials,5,0.0154
+@msnow,streams,trailing,testifies before <ENT>,6,0.0185
+@msnow,streams,trailing,<ENT> # <ENT>,5,0.0154
+@msnow,streams,trailing,front of <ENT>,5,0.0154
+@msnow,streams,trailing,<ENT> alleged killer,4,0.0123
+@msnow,streams,trailing,remarks at <ENT>,4,0.0123
+@msnow,videos,leading,<ENT> now highlights,227,0.023
+@msnow,videos,leading,breaking : <ENT>,171,0.0173
+@msnow,videos,leading,the last word,161,0.0163
+@msnow,videos,leading,<ENT> : <ENT>,150,0.0152
+@msnow,videos,leading,<ENT> : trump,71,0.0072
+@msnow,videos,trailing,<ENT> now highlights,227,0.023
+@msnow,videos,trailing,| audio only,197,0.0199
+@msnow,videos,trailing,: dem rep.,42,0.0043
+@msnow,videos,trailing,' : <ENT>,41,0.0042
+@msnow,videos,trailing,<ENT> and <ENT>,37,0.0037
+@nationalreview,videos,leading,why does <ENT>,12,0.0628
+@nationalreview,videos,leading,,8,0.0419
+@nationalreview,videos,leading,why is <ENT>,5,0.0262
+@nationalreview,videos,leading,why <ENT> is,4,0.0209
+@nationalreview,videos,trailing,,8,0.0419
+@nationalreview,videos,trailing,in <ENT> ?,4,0.0209
+@nationalreview,videos,trailing,to <ENT> ?,4,0.0209
+@newdiscourses,videos,leading,,10,0.102
+@newdiscourses,videos,leading,the nazi experiment,7,0.0714
+@newdiscourses,videos,leading,<ENT> the <ENT>,6,0.0612
+@newdiscourses,videos,leading,the myth of,5,0.051
+@newdiscourses,videos,leading,<ENT> # vol,4,0.0408
+@newdiscourses,videos,trailing,,10,0.102
+@newyorker,videos,leading,,5,0.098
+@newyorker,videos,trailing,,5,0.098
+@nousnetwork,videos,leading,<ENT> # <ENT>,6,0.0385
+@nousnetwork,videos,trailing,i nous <ENT>,28,0.1795
+@nousnetwork,videos,trailing,? nous <ENT>,21,0.1346
+@nousnetwork,videos,trailing,<ENT> | <ENT>,10,0.0641
+@nousnetwork,videos,trailing,| dr. <ENT>,9,0.0577
+@nousnetwork,videos,trailing,? | <ENT>,7,0.0449
+@nypost,streams,leading,watch live :,31,0.2818
+@nypost,streams,leading,live : <ENT>,10,0.0909
+@nypost,streams,leading,live : president,8,0.0727
+@nypost,streams,trailing,<ENT> in <ENT>,6,0.0545
+@nypost,streams,trailing,<ENT> at <ENT>,4,0.0364
+@nypost,videos,leading,<ENT> in <ENT>,165,0.0262
+@nypost,videos,leading,,138,0.0219
+@nypost,videos,leading,<ENT> and <ENT>,61,0.0097
+@nypost,videos,leading,<ENT> says <ENT>,57,0.009
+@nypost,videos,leading,<ENT> to <ENT>,53,0.0084
+@nypost,videos,trailing,<ENT> in <ENT>,216,0.0343
+@nypost,videos,trailing,,138,0.0219
+@nypost,videos,trailing,<ENT> | <ENT>,87,0.0138
+@nypost,videos,trailing,<ENT> at <ENT>,50,0.0079
+@nypost,videos,trailing,<ENT> # <ENT>,49,0.0078
+@nytimes,videos,trailing,of a scene,11,0.1549
+@nytimes,videos,trailing,<ENT> in <ENT>,5,0.0704
+@oann,streams,leading,live : <ENT>,55,0.178
+@oann,streams,leading,live : trump,49,0.1586
+@oann,streams,leading,live : president,44,0.1424
+@oann,streams,leading,live : vp,11,0.0356
+@oann,streams,leading,president <ENT> at,8,0.0259
+@oann,streams,trailing,<ENT> at <ENT>,12,0.0388
+@oann,streams,trailing,<ENT> to <ENT>,6,0.0194
+@oann,streams,trailing,in <ENT> #,6,0.0194
+@oann,streams,trailing,<ENT> # <ENT>,6,0.0194
+@oann,streams,trailing,<ENT> in <ENT>,5,0.0162
+@oann,videos,leading,,39,0.0216
+@oann,videos,leading,<ENT> # <ENT>,33,0.0183
+@oann,videos,leading,<ENT> : <ENT>,31,0.0172
+@oann,videos,leading,<ENT> on <ENT>,28,0.0155
+@oann,videos,leading,<ENT> to <ENT>,24,0.0133
+@oann,videos,trailing,,39,0.0216
+@oann,videos,trailing,<ENT> # <ENT>,28,0.0155
+@oann,videos,trailing,| <ENT> <ENT>,28,0.0155
+@oann,videos,trailing,<ENT> in <ENT>,27,0.015
+@oann,videos,trailing,oan news i,22,0.0122
+@podsaveamerica,videos,leading,terminally online :,38,0.057
+@podsaveamerica,videos,leading,,31,0.0465
+@podsaveamerica,videos,leading,<ENT> on <ENT>,12,0.018
+@podsaveamerica,videos,leading,<ENT> and <ENT>,11,0.0165
+@podsaveamerica,videos,leading,breaking : <ENT>,11,0.0165
+@podsaveamerica,videos,trailing,,31,0.0465
+@podsaveamerica,videos,trailing,<ENT> and <ENT>,13,0.0195
+@podsaveamerica,videos,trailing,w/ <ENT> ),11,0.0165
+@podsaveamerica,videos,trailing,<ENT> in <ENT>,11,0.0165
+@podsaveamerica,videos,trailing,<ENT> with <ENT>,9,0.0135
+@ponderingpolitics,videos,leading,<ENT> - #,124,0.0845
+@ponderingpolitics,videos,leading,🚨 breaking :,96,0.0654
+@ponderingpolitics,videos,leading,oh sh*t !,48,0.0327
+@ponderingpolitics,videos,leading,<ENT> as <ENT>,35,0.0239
+@ponderingpolitics,videos,leading,holy sh*t !,27,0.0184
+@ponderingpolitics,videos,trailing,# full episode,123,0.0838
+@ponderingpolitics,videos,trailing,on live tv,50,0.0341
+@ponderingpolitics,videos,trailing,bomb on <ENT>,13,0.0089
+@ponderingpolitics,videos,trailing,to his face,13,0.0089
+@ponderingpolitics,videos,trailing,<ENT> on <ENT>,13,0.0089
+@revleftradio,videos,trailing,# and <ENT>,7,0.1842
+@rolandsmartin,streams,leading,<ENT> # <ENT>,90,0.1541
+@rolandsmartin,streams,leading,<ENT> <ENT> #,13,0.0223
+@rolandsmartin,streams,leading,live : <ENT>,7,0.012
+@rolandsmartin,streams,leading,<ENT> on <ENT>,6,0.0103
+@rolandsmartin,streams,leading,,6,0.0103
+@rolandsmartin,streams,trailing,<ENT> # <ENT>,58,0.0993
+@rolandsmartin,streams,trailing,# <ENT> #,24,0.0411
+@rolandsmartin,streams,trailing,<ENT> in <ENT>,7,0.012
+@rolandsmartin,streams,trailing,# and <ENT>,7,0.012
+@rolandsmartin,streams,trailing,( <ENT> ),6,0.0103
+@rolandsmartin,videos,leading,“ <ENT> #,44,0.0593
+@rolandsmartin,videos,leading,<ENT> # <ENT>,38,0.0512
+@rolandsmartin,videos,leading,“ <ENT> ”,17,0.0229
+@rolandsmartin,videos,leading,wth ? !,16,0.0216
+@rolandsmartin,videos,leading,<ENT> x noah,14,0.0189
+@rolandsmartin,videos,trailing,# <ENT> #,26,0.035
+@rolandsmartin,videos,trailing,<ENT> # <ENT>,12,0.0162
+@rolandsmartin,videos,trailing,<ENT> # ”,11,0.0148
+@rolandsmartin,videos,trailing,,10,0.0135
+@rolandsmartin,videos,trailing,“ <ENT> ”,9,0.0121
+@samharrisorg,videos,leading,more from sam,11,0.0948
+@samharrisorg,videos,leading,,5,0.0431
+@samharrisorg,videos,leading,<ENT> # <ENT>,5,0.0431
+@samharrisorg,videos,trailing,conversation with <ENT>,18,0.1552
+@samharrisorg,videos,trailing,# and more,9,0.0776
+@samharrisorg,videos,trailing,# and <ENT>,8,0.069
+@samharrisorg,videos,trailing,,5,0.0431
+@theGuardian,videos,trailing,<ENT> with <ENT>,6,0.1538
+@thedavidpakmanshow,videos,leading,dear god :,17,0.0104
+@thedavidpakmanshow,videos,leading,oh no :,14,0.0085
+@thedavidpakmanshow,videos,leading,do you realize,12,0.0073
+@thedavidpakmanshow,videos,leading,uh - oh,12,0.0073
+@thedavidpakmanshow,videos,leading,the look on,10,0.0061
+@thedavidpakmanshow,videos,trailing,on live tv,17,0.0104
+@thedavidpakmanshow,videos,trailing,blown wide open,6,0.0037
+@thedavidpakmanshow,videos,trailing,to <ENT> ?,6,0.0037
+@thedavidpakmanshow,videos,trailing,goes horribly wrong,5,0.003
+@thedavidpakmanshow,videos,trailing,like this one,5,0.003
+@thegrayzone7996,streams,trailing,on judging freedom,7,0.1944
+@thegrayzone7996,streams,trailing,on the judge,4,0.1111
+@thehill,streams,leading,<ENT> # <ENT>,45,0.0891
+@thehill,streams,leading,,19,0.0376
+@thehill,streams,leading,watch live :,18,0.0356
+@thehill,streams,leading,<ENT> <ENT> give,17,0.0337
+@thehill,streams,leading,<ENT> in <ENT>,12,0.0238
+@thehill,streams,trailing,,19,0.0376
+@thehill,streams,trailing,<ENT> in <ENT>,15,0.0297
+@thehill,streams,trailing,<ENT> budget request,9,0.0178
+@thehill,streams,trailing,<ENT> # <ENT>,7,0.0139
+@thehill,streams,trailing,<ENT> at <ENT>,6,0.0119
+@thehill,videos,leading,<ENT> # <ENT>,138,0.0325
+@thehill,videos,leading,<ENT> says <ENT>,67,0.0158
+@thehill,videos,leading,<ENT> : <ENT>,62,0.0146
+@thehill,videos,leading,breaking : <ENT>,39,0.0092
+@thehill,videos,leading,<ENT> in <ENT>,31,0.0073
+@thehill,videos,trailing,<ENT> | newsnation,217,0.0511
+@thehill,videos,trailing,<ENT> | trending,178,0.0419
+@thehill,videos,trailing,the hill <ENT>,85,0.02
+@thehill,videos,trailing,whole hog politics,78,0.0184
+@thehill,videos,trailing,<ENT> | <ENT>,60,0.0141
+@theisabelbrown,videos,leading,,8,0.0567
+@theisabelbrown,videos,trailing,,8,0.0567
+@theisabelbrown,videos,trailing,ft # <ENT>,5,0.0355
+@thejimmydoreshow,streams,leading,<ENT> ! <ENT>,5,0.0435
+@thejimmydoreshow,streams,trailing,! w/ <ENT>,35,0.3043
+@thejimmydoreshow,streams,trailing,w / <ENT>,7,0.0609
+@thejimmydoreshow,videos,leading,,16,0.014
+@thejimmydoreshow,videos,leading,here ’s why,13,0.0113
+@thejimmydoreshow,videos,leading,<ENT> ! w/,13,0.0113
+@thejimmydoreshow,videos,leading,the real reason,9,0.0079
+@thejimmydoreshow,videos,leading,here ’s how,9,0.0079
+@thejimmydoreshow,videos,trailing,! w/ <ENT>,258,0.2251
+@thejimmydoreshow,videos,trailing,in <ENT> !,26,0.0227
+@thejimmydoreshow,videos,trailing,over <ENT> !,26,0.0227
+@thejimmydoreshow,videos,trailing,on <ENT> !,20,0.0175
+@thejimmydoreshow,videos,trailing,! – <ENT>,19,0.0166
+@therationalnational,videos,leading,,6,0.0423
+@therationalnational,videos,trailing,,6,0.0423
+@thewarningwithsteveschmidt,streams,leading,<ENT> with <ENT>,11,0.1
+@thewarningwithsteveschmidt,streams,leading,<ENT> | <ENT>,4,0.0364
+@thewarningwithsteveschmidt,streams,leading,<ENT> : <ENT>,4,0.0364
+@thewarningwithsteveschmidt,streams,trailing,<ENT> and <ENT>,33,0.3
+@thewarningwithsteveschmidt,streams,trailing,<ENT> with <ENT>,6,0.0545
+@thewarningwithsteveschmidt,streams,trailing,<ENT> # <ENT>,5,0.0455
+@thewarningwithsteveschmidt,streams,trailing,with <ENT> <ENT>,5,0.0455
+@thewarningwithsteveschmidt,streams,trailing,# <ENT> <ENT>,4,0.0364
+@thewarningwithsteveschmidt,videos,leading,,36,0.1246
+@thewarningwithsteveschmidt,videos,leading,<ENT> and <ENT>,12,0.0415
+@thewarningwithsteveschmidt,videos,leading,<ENT> has lost,4,0.0138
+@thewarningwithsteveschmidt,videos,leading,<ENT> in <ENT>,4,0.0138
+@thewarningwithsteveschmidt,videos,leading,<ENT> <ENT> :,4,0.0138
+@thewarningwithsteveschmidt,videos,trailing,,36,0.1246
+@thewarningwithsteveschmidt,videos,trailing,<ENT> and <ENT>,4,0.0138
+@thomhartmann,videos,leading,,43,0.0548
+@thomhartmann,videos,leading,<ENT> 's <ENT>,14,0.0179
+@thomhartmann,videos,leading,<ENT> and <ENT>,11,0.014
+@thomhartmann,videos,leading,<ENT> to <ENT>,9,0.0115
+@thomhartmann,videos,leading,<ENT> # <ENT>,7,0.0089
+@thomhartmann,videos,trailing,,43,0.0548
+@thomhartmann,videos,trailing,to <ENT> ?,6,0.0077
+@thomhartmann,videos,trailing,<ENT> 's <ENT>,6,0.0077
+@thomhartmann,videos,trailing,# why ?,6,0.0077
+@thomhartmann,videos,trailing,did <ENT> ?,5,0.0064
+@timesofindia,streams,leading,live | <ENT>,189,0.0824
+@timesofindia,streams,leading,live : <ENT>,91,0.0397
+@timesofindia,streams,leading,<ENT> | <ENT>,69,0.0301
+@timesofindia,streams,leading,live | ',64,0.0279
+@timesofindia,streams,leading,<ENT> house live,63,0.0275
+@timesofindia,streams,trailing,<ENT> | watch,76,0.0331
+@timesofindia,streams,trailing,<ENT> | <ENT>,61,0.0266
+@timesofindia,streams,trailing,<ENT> ; <ENT>,36,0.0157
+@timesofindia,streams,trailing,<ENT> # <ENT>,36,0.0157
+@timesofindia,streams,trailing,<ENT> in <ENT>,23,0.01
+@timesofindia,videos,leading,on <ENT> :,239,0.0241
+@timesofindia,videos,leading,breaking : <ENT>,149,0.015
+@timesofindia,videos,leading,<ENT> 's <ENT>,148,0.0149
+@timesofindia,videos,leading,on cam :,132,0.0133
+@timesofindia,videos,leading,<ENT> # <ENT>,106,0.0107
+@timesofindia,videos,trailing,<ENT> | watch,616,0.0621
+@timesofindia,videos,trailing,’ | watch,162,0.0163
+@timesofindia,videos,trailing,<ENT> # <ENT>,139,0.014
+@timesofindia,videos,trailing,' | watch,120,0.0121
+@timesofindia,videos,trailing,<ENT> ; <ENT>,106,0.0107
+@triggerpod,videos,leading,<ENT> members questions,28,0.1854
+@triggerpod,videos,leading,,5,0.0331
+@triggerpod,videos,leading,<ENT> member questions,5,0.0331
+@triggerpod,videos,trailing,<ENT> members questions,29,0.1921
+@triggerpod,videos,trailing,- konstantin kisin,7,0.0464
+@triggerpod,videos,trailing,,5,0.0331
+@triggerpod,videos,trailing,<ENT> member questions,5,0.0331
+@triggerpod,videos,trailing,<ENT> and <ENT>,4,0.0265
+@turningpointusa,streams,leading,watch live :,7,0.5385
+@turningpointusa,streams,leading,<ENT> : <ENT>,5,0.3846
+@turningpointusa,streams,trailing,<ENT> : <ENT>,5,0.3846
+@turningpointusa,videos,leading,<ENT> at wls,7,0.0383
+@turningpointusa,videos,leading,<ENT> on <ENT>,5,0.0273
+@turningpointusa,videos,trailing,at amfest <ENT>,14,0.0765
+@turningpointusa,videos,trailing,at wls <ENT>,11,0.0601
+@turningpointusa,videos,trailing,| shane winnings,9,0.0492
+@turningpointusa,videos,trailing,? | <ENT>,8,0.0437
+@turningpointusa,videos,trailing,turning point tour,8,0.0437
+@underthedesknews,streams,leading,fool me once,16,0.1391
+@underthedesknews,streams,leading,a hill to,13,0.113
+@underthedesknews,streams,leading,,11,0.0957
+@underthedesknews,streams,leading,hot ! geopolitical,9,0.0783
+@underthedesknews,streams,leading,down the rabbit,5,0.0435
+@underthedesknews,streams,trailing,,11,0.0957
+@underthedesknews,streams,trailing,the rabbit hole,4,0.0348
+@underthedesknews,videos,leading,<ENT> # <ENT>,4,0.0506
+@usefulidiots,streams,leading,useful idiots <ENT>,4,0.3333
+@usefulidiots,videos,leading,<ENT> 's <ENT>,8,0.043
+@usefulidiots,videos,leading,<ENT> after <ENT>,7,0.0376
+@usefulidiots,videos,leading,<ENT> on <ENT>,4,0.0215
+@usefulidiots,videos,trailing,| useful idiots,7,0.0376
+@wethefifth,videos,leading,<ENT> on <ENT>,5,0.0446
+@wethefifth,videos,leading,<ENT> and <ENT>,4,0.0357
+@wethefifth,videos,trailing,the fifth column,11,0.0982
+@wethefifth,videos,trailing,the <ENT> column,10,0.0893
+@wethefifth,videos,trailing,# and <ENT>,4,0.0357
+@winston_marshall,videos,leading,,7,0.0642
+@winston_marshall,videos,leading,“ <ENT> ”,4,0.0367
+@winston_marshall,videos,trailing,members ' edition,7,0.0642
+@winston_marshall,videos,trailing,,7,0.0642
+@wsj,streams,leading,watch : <ENT>,4,0.3636
+@wsj,videos,leading,,4,0.0336
+@wsj,videos,trailing,| wsj coveted,6,0.0504
+@wsj,videos,trailing,wsj pro perfected,6,0.0504
+@wsj,videos,trailing,,4,0.0336
+@zeteo,videos,leading,,8,0.0388
+@zeteo,videos,trailing,,8,0.0388
+@zeteo,videos,trailing,# and <ENT>,5,0.0243
+@zeteo,videos,trailing,<ENT> and <ENT>,4,0.0194
+https://rumble.com/c/BannonsWarRoom,videos,leading,<ENT> : <ENT>,382,0.0848
+https://rumble.com/c/BannonsWarRoom,videos,leading,<ENT> : the,135,0.03
+https://rumble.com/c/BannonsWarRoom,videos,leading,bannon : <ENT>,102,0.0226
+https://rumble.com/c/BannonsWarRoom,videos,leading,<ENT> on <ENT>,80,0.0178
+https://rumble.com/c/BannonsWarRoom,videos,leading,<ENT> : we,55,0.0122
+https://rumble.com/c/BannonsWarRoom,videos,trailing,live 🏛 🔴,84,0.0186
+https://rumble.com/c/BannonsWarRoom,videos,trailing,,53,0.0118
+https://rumble.com/c/BannonsWarRoom,videos,trailing,<ENT> ; <ENT>,53,0.0118
+https://rumble.com/c/BannonsWarRoom,videos,trailing,<ENT> in <ENT>,42,0.0093
+https://rumble.com/c/BannonsWarRoom,videos,trailing,# and <ENT>,38,0.0084
+https://rumble.com/c/GGreenwald,videos,trailing,| system update,13,0.1711
+https://rumble.com/c/TheAlexJonesShowLive,videos,leading,,97,0.1891
+https://rumble.com/c/TheAlexJonesShowLive,videos,leading,the alex jones,14,0.0273
+https://rumble.com/c/TheAlexJonesShowLive,videos,leading,must - watch,14,0.0273
+https://rumble.com/c/TheAlexJonesShowLive,videos,leading,<ENT> report :,14,0.0273
+https://rumble.com/c/TheAlexJonesShowLive,videos,leading,<ENT> : <ENT>,12,0.0234
+https://rumble.com/c/TheAlexJonesShowLive,videos,trailing,,97,0.1891
+https://rumble.com/c/TheAlexJonesShowLive,videos,trailing,"<ENT> ! """,16,0.0312
+https://rumble.com/c/TheAlexJonesShowLive,videos,trailing,: <ENT> !,10,0.0195
+https://rumble.com/c/TheAlexJonesShowLive,videos,trailing,- full show,6,0.0117
+https://rumble.com/c/TheAlexJonesShowLive,videos,trailing,in <ENT> !,6,0.0117
+https://rumble.com/c/nickjfuentes,videos,leading,<ENT> war day,18,0.059
+https://rumble.com/c/nickjfuentes,videos,leading,<ENT> ? ?,14,0.0459
+https://rumble.com/c/nickjfuentes,videos,leading,<ENT> <ENT> :,9,0.0295
+https://rumble.com/c/nickjfuentes,videos,leading,,8,0.0262
+https://rumble.com/c/nickjfuentes,videos,leading,<ENT> on <ENT>,4,0.0131
+https://rumble.com/c/nickjfuentes,videos,trailing,? ? ?,20,0.0656
+https://rumble.com/c/nickjfuentes,videos,trailing,! ! !,13,0.0426
+https://rumble.com/c/nickjfuentes,videos,trailing,,8,0.0262
+https://rumble.com/c/nickjfuentes,videos,trailing,<ENT> on <ENT>,5,0.0164
+https://rumble.com/c/nickjfuentes,videos,trailing,<ENT> in <ENT>,4,0.0131
+https://rumble.com/c/russellbrand,videos,leading,,10,0.0386
+https://rumble.com/c/russellbrand,videos,leading,what really happened,4,0.0154
+https://rumble.com/c/russellbrand,videos,trailing,,10,0.0386
+https://rumble.com/c/russellbrand,videos,trailing,reveals everything #,6,0.0232

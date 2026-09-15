@@ -1,0 +1,10 @@
+dimension,n,exact_agreement,within_1,spearman_r,weighted_kappa,kappa
+sensational,300,0.623,0.783,0.743,0.742,
+critical,300,0.713,0.753,0.58,0.581,
+analytical,300,0.583,0.773,0.6,0.561,
+educational,300,0.823,0.953,0.268,0.251,
+conversational,300,0.903,0.947,0.518,0.659,
+humor,300,0.993,,,,0.0
+curiosity_gap,300,0.98,,,,0.49
+outrage,300,0.757,,,,0.497
+format_llm,300,0.797,,,,0.591

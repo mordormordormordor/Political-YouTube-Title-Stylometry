@@ -1,0 +1,13 @@
+factor,n_topics,title_level_r2_topic,creator_level_r2_topic,creator_level_corr_raw_controlled,auto_name
+F1,236,0.1269,0.4709,0.9433,+vader_compound -vader_neg -shock_word -violence_verb
+F2,236,0.0568,0.2798,0.9541,+has_finite_verb +present_tense +past_tense +verb_share
+F3,236,0.1233,0.3207,0.9693,+lead_colon_label +lead_live +colon -entity_first
+F4,236,0.0718,0.1241,0.9778,+discourse_marker +trailing_ellipsis +ellipsis +contraction
+F5,236,0.0387,0.2218,0.9808,+q_word_start +wh_any +why_marker +q_mark
+F6,236,0.1733,0.3933,0.9546,+n_person +has_person
+F7,236,0.1108,0.2742,0.9569,+noun_share -cap_token_share +adj_share +n_gpe
+F8,236,0.1756,0.6813,0.8008,+num_share +digit +year_mention
+F9,236,0.0542,0.1638,0.9805,+allcaps_word_share +full_caps_title +has_allcaps_word
+F10,236,0.0487,0.2067,0.9551,+quoted_speech +quotes
+F11,236,0.0857,0.2717,0.9561,+vader_pos +n_chars +nominalisation
+F12,236,0.0893,0.4295,0.8954,+future_will +modal +first_pl

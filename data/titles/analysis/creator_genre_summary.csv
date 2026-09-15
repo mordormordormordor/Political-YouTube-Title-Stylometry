@@ -1,0 +1,443 @@
+creator,platform,genre,n_rows,n_unique,n_balanced,n_with_views,first_month,last_month,n_norm_fallback,repeat_share,low_n,channel_name,channel_follower_count,channel_is_verified
+@60minutes,youtube,videos,325,325,325,321,2026-01,2026-09,0,0.0,False,60 Minutes,4170000.0,True
+@ABCNews,youtube,streams,626,590,590,626,2026-01,2026-09,256,0.0575,False,ABC News,19800000.0,True
+@ABCNews,youtube,videos,8002,7971,2500,8002,2026-01,2026-09,1,0.0039,False,ABC News,19800000.0,True
+@ANINewsIndia,youtube,streams,7717,7579,2500,7717,2026-01,2026-09,0,0.0179,False,ANI News,9760000.0,True
+@ANINewsIndia,youtube,videos,12296,12279,2500,12296,2026-01,2026-09,0,0.0014,False,ANI News,9760000.0,True
+@ActualJusticeWarrior,youtube,streams,1,1,1,1,2026-01,2026-01,0,0.0,True,Actual Justice Warrior,517000.0,True
+@ActualJusticeWarrior,youtube,videos,392,392,392,392,2026-01,2026-09,0,0.0,False,Actual Justice Warrior,517000.0,True
+@AfterPartyEmily,youtube,streams,74,74,74,74,2026-01,2026-09,0,0.0,False,After Party with Emily Jashinsky,145000.0,True
+@AfterPartyEmily,youtube,videos,410,410,410,410,2026-01,2026-09,0,0.0,False,After Party with Emily Jashinsky,145000.0,True
+@AlexStein99,youtube,streams,41,41,41,41,2026-01,2026-08,0,0.0,True,Alex Stein,369000.0,
+@AlexStein99,youtube,videos,87,87,87,87,2026-01,2026-09,0,0.0,False,Alex Stein,369000.0,
+@AnaEscobarShow,youtube,streams,31,31,31,31,2026-08,2026-09,0,0.0,True,Ana Escobar,9440.0,
+@AnaEscobarShow,youtube,videos,32,32,32,31,2026-05,2026-09,0,0.0,True,Ana Escobar,9440.0,
+@AndWeKnowOfficial-o9b,youtube,videos,185,185,185,185,2026-01,2026-09,0,0.0,False,And We Know Official,16100.0,
+@AndrewKlavan,youtube,streams,3,3,3,3,2026-01,2026-03,0,0.0,True,Andrew Klavan,813000.0,True
+@AndrewKlavan,youtube,videos,196,196,196,196,2026-01,2026-09,0,0.0,False,Andrew Klavan,813000.0,True
+@AnthonyBrianLogan,youtube,streams,52,52,52,52,2026-01,2026-07,0,0.0,False,Anthony Brian Logan,1080000.0,True
+@AnthonyBrianLogan,youtube,videos,248,248,248,248,2026-01,2026-09,0,0.0,False,Anthony Brian Logan,1080000.0,True
+@AsmonTV,youtube,videos,947,875,875,947,2026-01,2026-09,0,0.076,False,Asmongold TV  ,4690000.0,True
+@AssociatedPress,youtube,streams,1332,1151,1151,1332,2026-01,2026-09,0,0.1359,False,Associated Press,4650000.0,True
+@AssociatedPress,youtube,videos,5574,5572,2500,5567,2026-01,2026-09,0,0.0004,False,Associated Press,4650000.0,True
+@BBCNews,youtube,videos,2445,2440,2440,2294,2026-01,2026-09,0,0.002,False,BBC News,20100000.0,True
+@BadEmpanadaLive,youtube,streams,1,1,1,1,2026-04,2026-04,0,0.0,True,BadEmpanada Live,100000.0,True
+@BadEmpanadaLive,youtube,videos,298,298,298,290,2026-01,2026-09,0,0.0,False,BadEmpanada Live,100000.0,True
+@BadFaithPodcast,youtube,streams,1,1,1,1,2026-08,2026-08,0,0.0,True,Bad Faith,187000.0,
+@BadFaithPodcast,youtube,videos,81,81,81,81,2026-01,2026-09,0,0.0,False,Bad Faith,187000.0,
+@BelleRanch,youtube,videos,822,822,822,822,2026-01,2026-09,0,0.0,False,Belle of the Ranch,877000.0,
+@BenShapiro,youtube,streams,17,17,17,17,2026-01,2026-09,0,0.0,True,Ben Shapiro,6980000.0,True
+@BenShapiro,youtube,videos,525,525,525,525,2026-01,2026-09,0,0.0,False,Ben Shapiro,6980000.0,True
+@BlackConservativePerspective,youtube,streams,1,1,1,1,2026-03,2026-03,0,0.0,True,Black Conservative Perspective,1000000.0,True
+@BlackConservativePerspective,youtube,videos,1271,1271,1271,1271,2026-01,2026-09,0,0.0,False,Black Conservative Perspective,1000000.0,True
+@BlaireWhiteX,youtube,videos,11,11,11,11,2026-01,2026-09,0,0.0,True,Blaire White,1540000.0,True
+@BlazeTV,youtube,streams,14,14,14,14,2026-03,2026-09,0,0.0,True,BlazeTV,2230000.0,True
+@BlazeTV,youtube,videos,868,868,868,868,2026-01,2026-09,0,0.0,False,BlazeTV,2230000.0,True
+@BreakThroughNews,youtube,streams,57,57,57,57,2026-01,2026-09,0,0.0,False,BreakThrough News,1080000.0,True
+@BreakThroughNews,youtube,videos,242,242,242,242,2026-01,2026-09,0,0.0,False,BreakThrough News,1080000.0,True
+@BrittanyVenti,youtube,streams,19,19,19,10,2026-01,2026-08,0,0.0,True,Brittany Venti,241000.0,True
+@BrittanyVenti,youtube,videos,55,55,55,54,2026-01,2026-09,0,0.0,False,Brittany Venti,241000.0,True
+@CBSNews,youtube,streams,369,368,368,369,2026-01,2026-09,0,0.0027,False,CBS News,7080000.0,True
+@CBSNews,youtube,videos,8322,8322,2500,8322,2026-01,2026-09,0,0.0,False,CBS News,7080000.0,True
+@CNN,youtube,streams,95,94,94,95,2026-01,2026-09,0,0.0105,False,CNN,19800000.0,True
+@CNN,youtube,videos,1758,1757,1757,1758,2026-01,2026-09,0,0.0006,False,CNN,19800000.0,True
+@CamHigby,youtube,streams,71,59,59,68,2026-01,2026-09,0,0.169,False,Cam Higby,280000.0,
+@CamHigby,youtube,videos,187,186,186,183,2026-01,2026-09,0,0.0053,False,Cam Higby,280000.0,
+@CashJordan,youtube,videos,301,299,299,301,2026-01,2026-09,0,0.0066,False,Cash Jordan,1750000.0,True
+@CaspianReport,youtube,videos,25,25,25,25,2026-01,2026-09,0,0.0,True,CaspianReport,1850000.0,
+@ChadPrather1,youtube,streams,202,201,201,202,2026-01,2026-09,0,0.005,False,Chad Prather,496000.0,True
+@ChadPrather1,youtube,videos,160,160,160,160,2026-01,2026-09,0,0.0,False,Chad Prather,496000.0,True
+@Channel5YouTube,youtube,videos,43,43,43,43,2026-01,2026-09,0,0.0,True,Channel 5 with Andrew Callaghan,3700000.0,True
+@ClipsCandaceOwens,youtube,videos,192,192,192,1,2026-04,2026-09,0,0.0,False,Candace Clips,161000.0,True
+@ClubRandomPodcast,youtube,videos,197,197,197,197,2026-01,2026-09,0,0.0,False,Club Random Podcast,890000.0,True
+@ColeHastings,youtube,videos,32,32,32,32,2026-01,2026-09,0,0.0,True,Cole Hastings,879000.0,True
+@ColemanHughesOfficial,youtube,videos,54,54,54,54,2026-01,2026-09,0,0.0,False,Coleman Hughes,265000.0,True
+@CoreyGilShusterAskProject,youtube,streams,2,2,2,2,2026-03,2026-03,0,0.0,True,Corey Gil-Shuster,374000.0,
+@CoreyGilShusterAskProject,youtube,videos,53,53,53,53,2026-01,2026-09,0,0.0,False,Corey Gil-Shuster,374000.0,
+@DailyDenims,youtube,videos,215,215,215,215,2026-04,2026-09,0,0.0,False,Daily Denims,11400.0,
+@DannyHaiphongYT,youtube,streams,228,227,227,226,2026-01,2026-09,0,0.0044,False,Danny Haiphong,683000.0,True
+@DannyHaiphongYT,youtube,videos,64,64,64,63,2026-01,2026-09,0,0.0,False,Danny Haiphong,683000.0,True
+@DarkHorsePod,youtube,streams,38,38,38,38,2026-01,2026-09,0,0.0,True,Bret Weinstein,551000.0,True
+@DarkHorsePod,youtube,videos,70,70,70,70,2026-01,2026-09,0,0.0,False,Bret Weinstein,551000.0,True
+@DemocracyDocket,youtube,streams,4,4,4,4,2026-09,2026-09,0,0.0,True,Democracy Docket,793000.0,
+@DemocracyDocket,youtube,videos,129,129,129,129,2026-01,2026-09,0,0.0,False,Democracy Docket,793000.0,
+@DemocracyNow,youtube,streams,1,1,1,1,2026-04,2026-04,0,0.0,True,Democracy Now!,3390000.0,True
+@DemocracyNow,youtube,videos,817,814,814,817,2026-01,2026-09,0,0.0037,False,Democracy Now!,3390000.0,True
+@DestinyDGGClips,youtube,videos,209,209,209,209,2026-01,2026-09,0,0.0,False,Destiny DGG Clips,11800.0,
+@DoubleDownNews,youtube,videos,66,66,66,66,2026-01,2026-09,0,0.0,False,Double Down News,1200000.0,True
+@DrSteveTurleyTV,youtube,streams,31,31,31,31,2026-01,2026-09,0,0.0,True,Dr. Steve Turley,1670000.0,True
+@DrSteveTurleyTV,youtube,videos,444,442,442,444,2026-01,2026-09,0,0.0045,False,Dr. Steve Turley,1670000.0,True
+@DropSiteNews,youtube,streams,43,43,43,43,2026-01,2026-09,0,0.0,True,Drop Site News ,219000.0,True
+@DropSiteNews,youtube,videos,204,204,204,204,2026-01,2026-09,0,0.0,False,Drop Site News ,219000.0,True
+@DueDissidence,youtube,streams,112,112,112,112,2026-01,2026-09,0,0.0,False,Due Dissidence,134000.0,True
+@DueDissidence,youtube,videos,643,643,643,643,2026-01,2026-09,0,0.0,False,Due Dissidence,134000.0,True
+@DylanBurnsLIVE,youtube,streams,3,3,3,3,2026-03,2026-08,0,0.0,True,DylanBurnsLIVE,45200.0,
+@DylanBurnsLIVE,youtube,videos,190,190,190,190,2026-01,2026-09,0,0.0,False,DylanBurnsLIVE,45200.0,
+@EzraKleinShow,youtube,streams,1,1,1,1,2026-05,2026-05,0,0.0,True,The Ezra Klein Show,560000.0,True
+@EzraKleinShow,youtube,videos,65,65,65,65,2026-01,2026-09,0,0.0,False,The Ezra Klein Show,560000.0,True
+@FarronBalanced,youtube,streams,188,188,188,188,2026-01,2026-09,0,0.0,False,Farron Balanced,1160000.0,True
+@FarronBalanced,youtube,videos,1782,1780,1780,1781,2026-01,2026-09,0,0.0011,False,Farron Balanced,1160000.0,True
+@FinancialTimes,youtube,videos,40,40,40,40,2026-01,2026-09,0,0.0,True,Financial Times,1450000.0,True
+@Firstpost,youtube,streams,10365,8975,2500,10365,2026-01,2026-09,0,0.1341,False,Firstpost,9720000.0,True
+@Firstpost,youtube,videos,10136,10126,2500,10136,2026-01,2026-09,0,0.001,False,Firstpost,9720000.0,True
+@FleccasTalks,youtube,videos,290,290,290,68,2026-01,2026-09,0,0.0,False,Fleccas Talks,922000.0,True
+@Forbes,youtube,streams,3,3,3,3,2026-06,2026-06,0,0.0,True,Forbes,2180000.0,True
+@Forbes,youtube,videos,1269,1256,1256,1269,2026-01,2026-09,0,0.0102,False,Forbes,2180000.0,True
+@Forthepeoplepodcast305,youtube,streams,45,45,45,45,2026-01,2026-09,0,0.0,True,Niko House,54600.0,
+@Forthepeoplepodcast305,youtube,videos,115,115,115,115,2026-01,2026-09,0,0.0,False,Niko House,54600.0,
+@FoxNews,youtube,streams,655,645,645,655,2026-01,2026-09,0,0.0153,False,Fox News,15500000.0,True
+@FoxNews,youtube,videos,8213,8210,2500,8156,2026-01,2026-09,0,0.0004,False,Fox News,15500000.0,True
+@FoxNewsChannelClips,youtube,videos,5748,5748,2500,5748,2026-01,2026-09,0,0.0,False,Fox News Clips,846000.0,True
+@FreshFitMiami,youtube,streams,82,75,75,82,2026-01,2026-09,0,0.0854,False,FreshandFit,1590000.0,True
+@FreshFitMiami,youtube,videos,111,111,111,111,2026-01,2026-09,0,0.0,False,FreshandFit,1590000.0,True
+@GeopoliticalEconomyReport,youtube,videos,72,72,72,72,2026-01,2026-09,0,0.0,False,Geopolitical Economy Report,760000.0,True
+@GlennKirschner2,youtube,videos,264,262,262,264,2026-01,2026-09,0,0.0076,False,Glenn Kirschner,1260000.0,True
+@GrahamAllen,youtube,videos,247,247,247,247,2026-01,2026-09,0,0.0,False,Graham Allen,192000.0,True
+@HangOutwithSeanHannity,youtube,videos,154,154,154,154,2026-03,2026-09,0,0.0,False,Hang Out with Sean Hannity,178000.0,True
+@HasanAbi,youtube,streams,7,7,7,7,2026-02,2026-03,0,0.0,True,HasanAbi,1950000.0,True
+@HasanAbi,youtube,videos,635,628,628,635,2026-01,2026-09,0,0.011,False,HasanAbi,1950000.0,True
+@HasanAbiVODs3,youtube,videos,181,181,181,181,2026-01,2026-09,0,0.0,False,HasanAbi VODs,10900.0,
+@HasanReactionsfanTwo,youtube,videos,340,340,340,340,2026-01,2026-09,0,0.0,False,Hasan Reactions,254000.0,
+@HasanabiClips,youtube,streams,35,32,32,35,2026-08,2026-09,0,0.0857,True,Hasanabi Clips,112000.0,True
+@HasanabiClips,youtube,videos,474,474,474,474,2026-02,2026-08,0,0.0,False,Hasanabi Clips,112000.0,True
+@JackCocchiarellaShow,youtube,streams,21,21,21,21,2026-03,2026-09,0,0.0,True,Jack Cocchiarella,1610000.0,True
+@JackCocchiarellaShow,youtube,videos,1602,1524,1524,1602,2026-01,2026-09,0,0.0487,False,Jack Cocchiarella,1610000.0,True
+@JacksonHinkleOfficial,youtube,streams,83,81,81,1,2026-01,2026-09,0,0.0241,False,Jackson Hinkle Official,171000.0,True
+@JacksonHinkleOfficial,youtube,videos,391,388,388,4,2026-01,2026-09,0,0.0077,False,Jackson Hinkle Official,171000.0,True
+@JamarlThomas,youtube,streams,223,223,223,223,2026-01,2026-09,0,0.0,False,Jamarl Thomas,77900.0,
+@JamarlThomas,youtube,videos,274,274,274,274,2026-01,2026-09,0,0.0,False,Jamarl Thomas,77900.0,
+@JesseKellyDC,youtube,streams,1,1,1,1,2026-06,2026-06,0,0.0,True,Jesse Kelly,122000.0,True
+@JesseKellyDC,youtube,videos,505,504,504,505,2026-01,2026-09,0,0.002,False,Jesse Kelly,122000.0,True
+@JillianMichaels,youtube,videos,457,457,457,457,2026-01,2026-09,0,0.0,False,Jillian Michaels,764000.0,True
+@JustPearlyThings,youtube,streams,96,96,96,96,2026-01,2026-09,0,0.0,False,Pearl,2060000.0,True
+@JustPearlyThings,youtube,videos,669,669,669,669,2026-01,2026-09,0,0.0,False,Pearl,2060000.0,True
+@KimIversen,youtube,streams,1,1,1,1,2026-08,2026-08,0,0.0,True,Kim Iversen,806000.0,True
+@KimIversen,youtube,videos,534,534,534,534,2026-01,2026-09,0,0.0,False,Kim Iversen,806000.0,True
+@LIVESNEAKO,youtube,streams,69,69,69,69,2026-01,2026-05,0,0.0,False,LIVE SNEAKO,1010000.0,True
+@LIVESNEAKO,youtube,videos,481,479,479,481,2026-01,2026-09,0,0.0042,False,LIVE SNEAKO,1010000.0,True
+@LastWeekTonight,youtube,videos,35,35,35,35,2026-02,2026-08,0,0.0,True,LastWeekTonight,10200000.0,True
+@LeejaMiller,youtube,streams,1,1,1,1,2026-02,2026-02,0,0.0,True,Leeja Miller,708000.0,True
+@LeejaMiller,youtube,videos,60,60,60,60,2026-01,2026-09,0,0.0,False,Leeja Miller,708000.0,True
+@LegalAFMTN,youtube,streams,46,45,45,46,2026-01,2026-09,0,0.0217,True,Legal AF,1230000.0,True
+@LegalAFMTN,youtube,videos,2740,2735,2500,2470,2026-01,2026-09,0,0.0018,False,Legal AF,1230000.0,True
+@LegalEagle,youtube,videos,105,105,105,105,2026-01,2026-09,0,0.0,False,LegalEagle,3950000.0,True
+@LeverNews,youtube,streams,9,9,9,9,2026-03,2026-07,0,0.0,True,The Lever,74700.0,
+@LeverNews,youtube,videos,73,73,73,73,2026-01,2026-09,0,0.0,False,The Lever,74700.0,
+@LiberalHivemind,youtube,videos,855,846,846,855,2026-01,2026-09,0,0.0105,False,Liberal Hivemind,1750000.0,True
+@LukeBeasley,youtube,streams,247,246,246,155,2026-02,2026-09,0,0.004,False,Luke Beasley,1580000.0,True
+@LukeBeasley,youtube,videos,1168,1162,1162,1066,2026-01,2026-09,0,0.0051,False,Luke Beasley,1580000.0,True
+@Lunaoi,youtube,videos,9,9,9,9,2026-01,2026-09,0,0.0,True,Luna oi!,140000.0,
+@MLChristiansen,youtube,streams,77,77,77,77,2026-01,2026-09,0,0.0,False,Matt Christiansen,251000.0,
+@MLChristiansen,youtube,videos,118,118,118,118,2026-01,2026-09,0,0.0,False,Matt Christiansen,251000.0,
+@MarkDice,youtube,videos,92,92,92,92,2026-01,2026-09,0,0.0,False,Mark Dice,1900000.0,True
+@MattBernstein1,youtube,videos,21,21,21,21,2026-01,2026-09,0,0.0,True,matt bernstein,451000.0,
+@MattWalsh,youtube,streams,2,2,2,2,2026-02,2026-03,0,0.0,True,Matt Walsh,3460000.0,True
+@MattWalsh,youtube,videos,297,297,297,263,2026-01,2026-09,0,0.0,False,Matt Walsh,3460000.0,True
+@MegynKelly,youtube,streams,13,13,13,11,2026-02,2026-09,0,0.0,True,Megyn Kelly,4150000.0,True
+@MegynKelly,youtube,videos,1651,1651,1651,1647,2026-01,2026-09,0,0.0,False,Megyn Kelly,4150000.0,True
+@MeidasTouch,youtube,streams,631,627,627,631,2026-01,2026-09,0,0.0063,False,MeidasTouch,6470000.0,True
+@MeidasTouch,youtube,videos,3533,3532,2500,3407,2026-01,2026-09,0,0.0003,False,MeidasTouch,6460000.0,True
+@MichaelKnowles,youtube,streams,4,4,4,4,2026-01,2026-04,0,0.0,True,Michael Knowles,2610000.0,True
+@MichaelKnowles,youtube,videos,472,472,472,472,2026-01,2026-09,0,0.0,False,Michael Knowles,2610000.0,True
+@MichaelMaliceofficial,youtube,streams,3,3,3,3,2026-01,2026-07,0,0.0,True,Michael Malice,241000.0,
+@MichaelMaliceofficial,youtube,videos,55,55,55,55,2026-01,2026-09,0,0.0,False,Michael Malice,241000.0,
+@MikeFromPA,youtube,videos,129,129,129,129,2026-01,2026-09,0,0.0,False,Mike From PA,31900.0,
+@ModernDayDebate,youtube,streams,109,109,109,81,2026-01,2026-09,0,0.0,False,Modern-Day Debate,282000.0,True
+@ModernDayDebate,youtube,videos,47,46,46,42,2026-01,2026-09,0,0.0213,True,Modern-Day Debate,282000.0,True
+@MrReaganUSA,youtube,streams,2,2,2,2,2026-01,2026-01,0,0.0,True,Mr Reagan,440000.0,True
+@MrReaganUSA,youtube,videos,26,26,26,26,2026-01,2026-09,0,0.0,True,Mr Reagan,440000.0,True
+@MrTariqNasheed,youtube,streams,19,19,19,19,2026-01,2026-09,0,0.0,True,Tariq Radio,281000.0,True
+@MrTariqNasheed,youtube,videos,403,403,403,403,2026-01,2026-09,0,0.0,False,Tariq Radio,281000.0,True
+@MyronGainesX,youtube,streams,247,245,245,247,2026-01,2026-09,0,0.0081,False,MyronGainesX,569000.0,True
+@MyronGainesX,youtube,videos,389,389,389,389,2026-01,2026-09,0,0.0,False,MyronGainesX,569000.0,True
+@NBCNews,youtube,streams,404,367,367,404,2026-01,2026-09,0,0.0916,False,NBC News,12100000.0,True
+@NBCNews,youtube,videos,6516,6499,2500,6516,2026-01,2026-09,0,0.0026,False,NBC News,12100000.0,True
+@NPR,youtube,streams,1,1,1,1,2026-09,2026-09,0,0.0,True,NPR,874000.0,True
+@NPR,youtube,videos,73,70,70,73,2026-01,2026-09,0,0.0411,False,NPR,874000.0,True
+@NYTOpinion,youtube,videos,29,29,29,29,2026-01,2026-09,0,0.0,True,New York Times Opinion,184000.0,
+@NYTPodcasts,youtube,videos,481,481,481,473,2026-01,2026-09,0,0.0,False,New York Times Podcasts,523000.0,True
+@NewsNation,youtube,streams,306,302,302,306,2026-01,2026-09,0,0.0131,False,NewsNation,2760000.0,True
+@NewsNation,youtube,videos,7390,7372,2500,7389,2026-01,2026-09,0,0.0024,False,NewsNation,2760000.0,True
+@NewsmaxTV,youtube,streams,404,399,399,404,2026-01,2026-09,0,0.0124,False,Newsmax,2590000.0,True
+@NewsmaxTV,youtube,videos,3945,3944,2500,3945,2026-01,2026-09,0,0.0003,False,Newsmax,2590000.0,True
+@NickCruseRBN,youtube,streams,103,103,103,103,2026-01,2026-09,0,0.0,False,Nick Cruse,10400.0,
+@NickCruseRBN,youtube,videos,23,23,23,23,2026-02,2026-09,0,0.0,True,Nick Cruse,10400.0,
+@NickShirley,youtube,streams,13,13,13,10,2026-01,2026-07,0,0.0,True,Nick Shirley,2000000.0,True
+@NickShirley,youtube,videos,32,32,32,29,2026-01,2026-09,0,0.0,True,Nick Shirley,2000000.0,True
+@NovaraMedia,youtube,streams,4,4,4,4,2026-04,2026-09,0,0.0,True,Novara Media,1320000.0,True
+@NovaraMedia,youtube,videos,585,585,585,585,2026-01,2026-09,0,0.0,False,Novara Media,1320000.0,True
+@OfficialFlagrant,youtube,videos,35,35,35,35,2026-01,2026-09,0,0.0,True,FLAGRANT,1990000.0,True
+@OfficialSaharTV,youtube,streams,2,2,2,2,2026-05,2026-07,0,0.0,True,SaharTV,785000.0,True
+@OfficialSaharTV,youtube,videos,893,893,893,887,2026-01,2026-09,0,0.0,False,SaharTV,785000.0,True
+@OutKick,youtube,videos,51,51,51,51,2026-01,2026-09,0,0.0,False,OutKick,1740000.0,True
+@OwenJonesTalks,youtube,videos,233,233,233,233,2026-01,2026-09,0,0.0,False,Owen Jones,881000.0,True
+@OwenReport,youtube,streams,178,178,178,178,2026-01,2026-09,0,0.0,False,Owen Report,72100.0,
+@OwenReport,youtube,videos,388,388,388,388,2026-01,2026-09,0,0.0,False,Owen Report,72100.0,
+@PBDPodcast,youtube,streams,118,118,118,118,2026-01,2026-09,0,0.0,False,PBD Podcast,2970000.0,True
+@PBDPodcast,youtube,videos,38,38,38,38,2026-01,2026-09,0,0.0,True,PBD Podcast,2970000.0,True
+@POLITICO,youtube,videos,295,295,295,295,2026-01,2026-09,0,0.0,False,POLITICO,225000.0,True
+@PTLRadioShow,youtube,streams,202,201,201,202,2026-01,2026-09,0,0.005,False,Pushing The Limits,212000.0,
+@PTLRadioShow,youtube,videos,1685,1684,1684,1685,2026-01,2026-09,1,0.0006,False,Pushing The Limits,212000.0,
+@PartOfTheProblem,youtube,videos,103,103,103,103,2026-01,2026-09,0,0.0,False,Dave Smith,521000.0,
+@PerunAU,youtube,videos,37,37,37,37,2026-01,2026-09,0,0.0,True,Perun,641000.0,True
+@PhillipScottPodcast,youtube,streams,153,153,153,153,2026-01,2026-09,0,0.0,False,Phillip Scott Podcast,202000.0,True
+@PhillipScottPodcast,youtube,videos,7,7,7,7,2026-01,2026-04,0,0.0,True,Phillip Scott Podcast,202000.0,True
+@PiersMorganUncensored,youtube,videos,181,181,181,181,2026-01,2026-09,0,0.0,False,Piers Morgan Uncensored,4460000.0,True
+@PiscoLitty,youtube,videos,56,56,56,56,2026-01,2026-08,0,0.0,False,Pisco,30100.0,
+@Politicon,youtube,streams,1,1,1,1,2026-06,2026-06,0,0.0,True,Politicon,485000.0,True
+@Politicon,youtube,videos,496,496,496,496,2026-01,2026-09,0,0.0,False,Politicon,485000.0,True
+@PoliticsGirl,youtube,videos,116,116,116,116,2026-01,2026-09,0,0.0,False,PoliticsGirl,505000.0,
+@PoliticsJOE,youtube,videos,339,339,339,339,2026-01,2026-09,0,0.0,False,PoliticsJOE,772000.0,True
+@PragerU,youtube,streams,32,31,31,32,2026-02,2026-09,0,0.0312,True,PragerU,3470000.0,True
+@PragerU,youtube,videos,387,385,385,387,2026-01,2026-09,0,0.0052,False,PragerU,3470000.0,True
+@PrisonPlanetLive,youtube,videos,56,46,46,56,2026-01,2026-09,0,0.1786,True,Paul Joseph Watson,2090000.0,True
+@RSBN,youtube,streams,337,337,337,337,2026-01,2026-09,0,0.0,False,Right Side Broadcasting Network,2080000.0,True
+@RSBN,youtube,videos,1642,1640,1640,1642,2026-01,2026-09,0,0.0012,False,Right Side Broadcasting Network,2080000.0,True
+@RealAlexClark,youtube,videos,79,79,79,79,2026-01,2026-09,0,0.0,False,Real Alex Clark,822000.0,
+@RealAmericasVoice,youtube,streams,2958,1543,1543,2958,2026-01,2026-09,0,0.4784,False,Real America's Voice,323000.0,
+@RealAmericasVoice,youtube,videos,2659,2653,2500,2659,2026-01,2026-09,0,0.0023,False,Real America's Voice,323000.0,
+@RealDanBongino,youtube,videos,266,266,266,266,2026-02,2026-09,0,0.0,False,Dan Bongino,1010000.0,True
+@RebelHQ,youtube,videos,1293,1292,1292,1293,2026-01,2026-09,0,0.0008,False,Rebel HQ,1530000.0,True
+@RebelNewsOnline,youtube,streams,197,195,195,197,2026-01,2026-09,0,0.0102,False,Rebel News,1970000.0,True
+@RebelNewsOnline,youtube,videos,1368,1358,1358,1147,2026-01,2026-09,0,0.0073,False,Rebel News,1970000.0,True
+@RedactedNews,youtube,streams,140,140,140,140,2026-01,2026-09,0,0.0,False,Redacted,2880000.0,True
+@RedactedNews,youtube,videos,452,452,452,452,2026-01,2026-09,0,0.0,False,Redacted,2880000.0,True
+@RekietaLaw,youtube,streams,106,106,106,80,2026-01,2026-09,0,0.0,False,Rekieta Law,402000.0,True
+@RekietaLaw,youtube,videos,18,18,18,18,2026-01,2026-08,0,0.0,True,Rekieta Law,402000.0,True
+@RestPoliticsUS,youtube,streams,5,5,5,5,2026-01,2026-04,0,0.0,True,The Rest Is Politics US,409000.0,
+@RestPoliticsUS,youtube,videos,220,220,220,103,2026-01,2026-09,0,0.0,False,The Rest Is Politics US,409000.0,
+@Reuters,youtube,streams,2294,2008,2008,2294,2026-01,2026-09,0,0.1247,False,Reuters,4310000.0,True
+@Reuters,youtube,videos,8092,8076,2500,8092,2026-01,2026-09,0,0.002,False,Reuters,4310000.0,True
+@RileyGaines,youtube,videos,143,143,143,143,2026-01,2026-09,0,0.0,False,Riley Gaines,70300.0,True
+@RobertGouveiaEsq,youtube,streams,396,385,385,201,2026-01,2026-09,0,0.0278,False,Robert Gouveia Esq.,610000.0,
+@RobertGouveiaEsq,youtube,videos,696,696,696,690,2026-01,2026-09,0,0.0,False,Robert Gouveia Esq.,610000.0,
+@RonPlacone,youtube,streams,28,28,28,28,2026-02,2026-09,0,0.0,True,Ron Placone,25900.0,
+@RonPlacone,youtube,videos,66,66,66,66,2026-01,2026-09,0,0.0,False,Ron Placone,25900.0,
+@RubinReport,youtube,streams,115,114,114,115,2026-01,2026-09,0,0.0087,False,The Rubin Report,3230000.0,True
+@RubinReport,youtube,videos,1093,1047,1047,1093,2026-01,2026-09,0,0.0421,False,The Rubin Report,3230000.0,True
+@RufoandLomez,youtube,videos,80,80,80,80,2026-01,2026-09,0,0.0,False,Rufo & Lomez,16300.0,
+@SMN,youtube,streams,8,8,8,7,2026-02,2026-09,0,0.0,True,Some More News,943000.0,True
+@SMN,youtube,videos,197,197,197,99,2026-01,2026-09,0,0.0,False,Some More News,943000.0,True
+@SNEAKO,youtube,videos,5,5,5,5,2026-01,2026-06,0,0.0,True,SNEAKO,1330000.0,True
+@SabbySabs,youtube,streams,103,103,103,103,2026-01,2026-09,0,0.0,False,Sabby Sabs,424000.0,True
+@SabbySabs,youtube,videos,626,626,626,626,2026-01,2026-09,0,0.0,False,Sabby Sabs,424000.0,True
+@SaltyCracker,youtube,videos,387,387,387,387,2026-01,2026-09,0,0.0,False,Salty Cracker,906000.0,
+@SavSays,youtube,streams,1,1,1,0,2026-03,2026-03,0,0.0,True,Sav Says,144000.0,
+@SavSays,youtube,videos,16,16,16,16,2026-03,2026-09,0,0.0,True,Sav Says,144000.0,
+@SecondThought,youtube,videos,20,20,20,20,2026-01,2026-09,0,0.0,True,Second Thought,1920000.0,True
+@SecularTalk,youtube,streams,1,1,1,1,2026-04,2026-04,0,0.0,True,Secular Talk,2290000.0,True
+@SecularTalk,youtube,videos,1459,1458,1458,1459,2026-01,2026-09,0,0.0007,False,Secular Talk,2290000.0,True
+@Semafor,youtube,streams,30,30,30,30,2026-03,2026-08,0,0.0,True,Semafor,33300.0,True
+@Semafor,youtube,videos,153,153,153,153,2026-01,2026-09,0,0.0,False,Semafor,33300.0,True
+@Shoe0nHead,youtube,videos,10,10,10,10,2026-01,2026-09,0,0.0,True,Shoe0nHead,2520000.0,True
+@SkyNews,youtube,streams,1976,1968,1968,1930,2026-01,2026-09,0,0.004,False,Sky News,9360000.0,True
+@SkyNews,youtube,videos,3681,3677,2500,3681,2026-01,2026-09,0,0.0011,False,Sky News,9360000.0,True
+@StatusCoup,youtube,streams,159,157,157,159,2026-01,2026-09,0,0.0126,False,Status Coup News,737000.0,True
+@StatusCoup,youtube,videos,517,517,517,498,2026-01,2026-09,0,0.0,False,Status Coup News,737000.0,True
+@StevenCrowder,youtube,streams,8,8,8,8,2026-03,2026-08,0,0.0,True,StevenCrowder,5910000.0,True
+@StevenCrowder,youtube,videos,169,169,169,169,2026-01,2026-09,0,0.0,False,StevenCrowder,5910000.0,True
+@StosselTV,youtube,videos,50,50,50,50,2026-01,2026-09,0,0.0,False,John Stossel,1170000.0,True
+@Styxhexenhammer666,youtube,streams,27,27,27,27,2026-01,2026-02,0,0.0,True,Styxhexenhammer666,484000.0,True
+@Styxhexenhammer666,youtube,videos,449,446,446,449,2026-01,2026-08,0,0.0067,False,Styxhexenhammer666,484000.0,True
+@SydneyWatson,youtube,videos,61,61,61,61,2026-01,2026-09,0,0.0,False,Sydney Watson,1170000.0,True
+@TechCrunch,youtube,videos,146,145,145,146,2026-01,2026-09,0,0.0068,False,TechCrunch,675000.0,True
+@TheAdamCarollaShow1,youtube,videos,395,395,395,395,2026-01,2026-09,0,0.0,False,Adam Carolla,685000.0,True
+@TheAmalaEkpunobi,youtube,streams,12,12,12,12,2026-03,2026-06,0,0.0,True,Amala Ekpunobi,2500000.0,True
+@TheAmalaEkpunobi,youtube,videos,211,211,211,211,2026-01,2026-09,0,0.0,False,Amala Ekpunobi,2500000.0,True
+@TheAtlantic,youtube,streams,5,5,5,5,2026-03,2026-08,0,0.0,True,The Atlantic,969000.0,True
+@TheAtlantic,youtube,videos,166,166,166,166,2026-01,2026-09,0,0.0,False,The Atlantic,969000.0,True
+@TheBrianKilmeadeShow,youtube,streams,2,2,2,2,2026-07,2026-07,0,0.0,True,Brian Kilmeade,17100.0,True
+@TheBrianKilmeadeShow,youtube,videos,352,352,352,352,2026-02,2026-09,0,0.0,False,Brian Kilmeade,17100.0,True
+@TheDailyBeast,youtube,streams,34,34,34,3,2026-01,2026-09,0,0.0,True,The Daily Beast,727000.0,True
+@TheDailyBeast,youtube,videos,322,322,322,321,2026-01,2026-09,0,0.0,False,The Daily Beast,727000.0,True
+@TheDamageReport,youtube,streams,274,271,271,84,2026-01,2026-09,0,0.0109,False,The Damage Report,1370000.0,True
+@TheDamageReport,youtube,videos,3206,3204,2500,2227,2026-01,2026-09,0,0.0006,False,The Damage Report,1370000.0,True
+@TheDonLemonShow,youtube,streams,400,400,400,370,2026-01,2026-09,0,0.0,False,Don Lemon,1450000.0,True
+@TheDonLemonShow,youtube,videos,366,366,366,366,2026-01,2026-09,0,0.0,False,Don Lemon,1450000.0,True
+@TheEconomist,youtube,videos,137,137,137,137,2026-01,2026-09,0,0.0,False,The Economist,4150000.0,True
+@TheHumanistReport,youtube,streams,35,35,35,35,2026-01,2026-09,2,0.0,True,The Humanist Report,790000.0,True
+@TheHumanistReport,youtube,videos,154,154,154,154,2026-01,2026-09,0,0.0,False,The Humanist Report,790000.0,True
+@TheJoyReidShow,youtube,streams,144,140,140,135,2026-01,2026-09,0,0.0278,False,The Joy Reid Show,503000.0,True
+@TheJoyReidShow,youtube,videos,238,238,238,237,2026-01,2026-09,0,0.0,False,The Joy Reid Show,503000.0,True
+@TheLincolnProject,youtube,streams,28,28,28,28,2026-01,2026-09,0,0.0,True,The Lincoln Project,1620000.0,True
+@TheLincolnProject,youtube,videos,123,123,123,123,2026-01,2026-09,0,0.0,False,The Lincoln Project,1620000.0,True
+@TheMajorityReport,youtube,streams,195,195,195,195,2026-01,2026-09,0,0.0,False,The Majority Report w/ Sam Seder,2090000.0,True
+@TheMajorityReport,youtube,videos,1660,1657,1657,1660,2026-01,2026-09,0,0.0018,False,The Majority Report w/ Sam Seder,2090000.0,True
+@TheMichaelCohenShow,youtube,videos,479,479,479,477,2026-01,2026-08,1,0.0,False,Michael Cohen,472000.0,
+@TheOfficerTatum,youtube,streams,194,194,194,137,2026-01,2026-09,0,0.0,False,The Officer Tatum,3840000.0,True
+@TheOfficerTatum,youtube,videos,617,617,617,582,2026-01,2026-09,0,0.0,False,The Officer Tatum,3840000.0,True
+@ThePodcastoftheLotusEaters,youtube,streams,179,179,179,179,2026-01,2026-09,0,0.0,False,The Podcast of the Lotus Eaters,600000.0,
+@ThePodcastoftheLotusEaters,youtube,videos,622,622,622,622,2026-01,2026-09,0,0.0,False,The Podcast of the Lotus Eaters,600000.0,
+@TheQuartering,youtube,videos,691,675,675,691,2026-01,2026-09,0,0.0232,False,TheQuartering,2190000.0,True
+@TheRealTabithaSpeaks,youtube,streams,4,4,4,4,2026-01,2026-09,0,0.0,True,TabithaSpeaksPolitics,458000.0,True
+@TheRealTabithaSpeaks,youtube,videos,452,452,452,446,2026-01,2026-09,0,0.0,False,TabithaSpeaksPolitics,458000.0,True
+@TheSerfTimes,youtube,streams,106,103,103,1,2026-01,2026-09,0,0.0283,False,The Serf Times,115000.0,True
+@TheSerfTimes,youtube,videos,247,247,247,247,2026-01,2026-09,0,0.0,False,The Serf Times,115000.0,True
+@TheVaushPit,youtube,videos,403,403,403,403,2026-01,2026-09,0,0.0,False,The Vaush Pit,222000.0,
+@TheYoungTurks,youtube,streams,451,428,428,242,2026-01,2026-09,0,0.051,False,The Young Turks,6720000.0,True
+@TheYoungTurks,youtube,videos,2872,2868,2500,1941,2026-01,2026-09,0,0.0014,False,The Young Turks,6720000.0,True
+@The_Crucible,youtube,streams,5,5,5,5,2026-03,2026-09,0,0.0,True,The Crucible ,383000.0,True
+@The_Crucible,youtube,videos,226,226,226,226,2026-01,2026-09,0,0.0,False,The Crucible ,383000.0,True
+@TimDillonShow,youtube,videos,68,68,68,38,2026-01,2026-09,0,0.0,False,The Tim Dillon Show,1280000.0,True
+@Tim_Black,youtube,streams,16,16,16,16,2026-01,2026-09,0,0.0,True,Tim Black TV,218000.0,True
+@Tim_Black,youtube,videos,329,329,329,329,2026-01,2026-09,0,0.0,False,Tim Black TV,218000.0,True
+@Timcast,youtube,streams,6,6,6,6,2026-01,2026-02,0,0.0,True,Tim Pool,1460000.0,True
+@Timcast,youtube,videos,186,183,183,186,2026-01,2026-09,0,0.0161,False,Tim Pool,1460000.0,True
+@TimcastIRL,youtube,streams,154,154,154,154,2026-01,2026-09,0,0.0,False,Timcast IRL,2780000.0,True
+@TimcastIRL,youtube,videos,903,855,855,903,2026-01,2026-09,0,0.0532,False,Timcast IRL,2780000.0,True
+@TimcastNews,youtube,streams,8,8,8,8,2026-02,2026-09,0,0.0,True,Timcast,2120000.0,True
+@TimcastNews,youtube,videos,548,534,534,548,2026-01,2026-09,0,0.0255,False,Timcast,2120000.0,True
+@TimesNowWorld,youtube,streams,5323,3006,2500,5323,2026-01,2026-09,0,0.4353,False,Times Now World,1290000.0,True
+@TimesNowWorld,youtube,videos,9001,8994,2500,8996,2026-01,2026-09,0,0.0008,False,Times Now World,1290000.0,True
+@TomiLahrenIsFearless,youtube,videos,118,118,118,118,2026-01,2026-09,0,0.0,False,Tomi Lahren Is Fearless,105000.0,True
+@TuckerCarlson,youtube,videos,119,119,119,119,2026-01,2026-09,0,0.0,False,Tucker Carlson,5750000.0,True
+@USATODAY,youtube,streams,430,417,417,430,2026-01,2026-09,0,0.0302,False,USA TODAY,7560000.0,True
+@USATODAY,youtube,videos,2224,2221,2221,2224,2026-01,2026-09,0,0.0013,False,USA TODAY,7560000.0,True
+@UnHerd,youtube,streams,17,17,17,17,2026-01,2026-09,0,0.0,True,UnHerd,544000.0,True
+@UnHerd,youtube,videos,83,83,83,83,2026-01,2026-09,0,0.0,False,UnHerd,544000.0,True
+@Unpacked,youtube,videos,41,41,41,41,2026-01,2026-09,0,0.0,True,Unpacked,536000.0,True
+@Vaush,youtube,streams,1,1,1,1,2026-03,2026-03,0,0.0,True,Vaush,603000.0,True
+@Vaush,youtube,videos,453,453,453,453,2026-01,2026-09,0,0.0,False,Vaush,603000.0,True
+@VivaFrei,youtube,streams,52,52,52,52,2026-01,2026-09,0,0.0,False,Viva Frei,653000.0,True
+@VivaFrei,youtube,videos,331,331,331,331,2026-01,2026-09,0,0.0,False,Viva Frei,653000.0,True
+@Vox,youtube,videos,133,133,133,133,2026-01,2026-09,0,0.0,False,Vox,12700000.0,True
+@X22Report-y5y,youtube,videos,396,395,395,396,2026-01,2026-09,0,0.0025,False,X22Report,887000.0,
+@XAVIAER,youtube,streams,3,3,3,3,2026-01,2026-02,0,0.0,True,"Respectfully, Xaviaer",195000.0,
+@XAVIAER,youtube,videos,71,71,71,71,2026-01,2026-08,0,0.0,False,"Respectfully, Xaviaer",195000.0,
+@Xanderhal,youtube,streams,108,108,108,1,2026-01,2026-09,0,0.0,False,Xanderhal,114000.0,True
+@Xanderhal,youtube,videos,316,316,316,316,2026-01,2026-09,0,0.0,False,Xanderhal,114000.0,True
+@YaBoiHakim,youtube,videos,16,16,16,16,2026-01,2026-09,0,0.0,True,Hakim,377000.0,True
+@ZeihanonGeopolitics,youtube,videos,217,217,217,217,2026-01,2026-09,0,0.0,False,Zeihan on Geopolitics,969000.0,True
+@ZubyMusic,youtube,videos,139,139,139,139,2026-01,2026-09,0,0.0,False,Zuby,282000.0,True
+@aaronparnas1,youtube,streams,13,10,10,13,2026-03,2026-09,0,0.2308,True,Aaron Parnas,826000.0,True
+@aaronparnas1,youtube,videos,819,819,819,819,2026-01,2026-09,0,0.0,False,Aaron Parnas,826000.0,True
+@adammockler,youtube,streams,2,2,2,2,2026-03,2026-06,0,0.0,True,Adam Mockler,2220000.0,True
+@adammockler,youtube,videos,1125,1117,1117,1121,2026-01,2026-09,0,0.0071,False,Adam Mockler,2220000.0,True
+@ajplus,youtube,videos,50,50,50,50,2026-01,2026-09,0,0.0,False,AJ+,2530000.0,True
+@aljazeeraenglish,youtube,videos,7006,7000,2500,7006,2026-01,2026-09,0,0.0009,False,Al Jazeera English,18200000.0,True
+@axios,youtube,streams,8,7,7,8,2026-02,2026-04,0,0.125,True,Axios,114000.0,True
+@axios,youtube,videos,138,137,137,138,2026-01,2026-09,0,0.0072,False,Axios,114000.0,True
+@bbrettcooper,youtube,videos,143,143,143,143,2026-01,2026-09,0,0.0,False,Brett Cooper,1700000.0,True
+@bennyjohnson,youtube,streams,168,168,168,168,2026-01,2026-09,0,0.0,False,Benny Johnson,6100000.0,True
+@bennyjohnson,youtube,videos,1508,1508,1508,1508,2026-01,2026-09,0,0.0,False,Benny Johnson,6100000.0,True
+@breakingpoints,youtube,streams,4,4,4,4,2026-03,2026-08,0,0.0,True,Breaking Points,2100000.0,True
+@breakingpoints,youtube,videos,1037,1037,1037,1037,2026-01,2026-09,0,0.0,False,Breaking Points,2100000.0,True
+@briantylercohen,youtube,streams,10,10,10,10,2026-01,2026-08,0,0.0,True,Brian Tyler Cohen,5260000.0,True
+@briantylercohen,youtube,videos,1082,1081,1081,1082,2026-01,2026-09,0,0.0009,False,Brian Tyler Cohen,5260000.0,True
+@bulwarkmedia,youtube,streams,228,228,228,225,2026-01,2026-09,0,0.0,False,The Bulwark,1760000.0,True
+@bulwarkmedia,youtube,videos,2137,1826,1826,960,2026-01,2026-09,0,0.1455,False,The Bulwark,1760000.0,True
+@bushrakhanum,youtube,videos,22,22,22,22,2026-07,2026-09,0,0.0,True,Bushra Khanum,59700.0,
+@cafedotcom,youtube,videos,54,54,54,54,2026-01,2026-09,0,0.0,False,Stay Tuned with Preet Bharara,61400.0,True
+@chicksonright,youtube,streams,179,179,179,179,2026-01,2026-09,0,0.0,False,Chicks on the Right ,191000.0,True
+@chicksonright,youtube,videos,475,475,475,475,2026-01,2026-09,0,0.0,False,Chicks on the Right ,191000.0,True
+@chinainsights-r2w,youtube,videos,278,278,278,278,2026-01,2026-09,0,0.0,False,China Insights,350000.0,True
+@chriscuomo,youtube,streams,9,8,8,8,2026-06,2026-08,0,0.1111,True,The Chris Cuomo Project,652000.0,True
+@chriscuomo,youtube,videos,208,208,208,127,2026-01,2026-09,0,0.0,False,The Chris Cuomo Project,652000.0,True
+@clayandbuck,youtube,streams,42,42,42,42,2026-08,2026-09,0,0.0,True,The Clay Travis & Buck Sexton Show,150000.0,
+@clayandbuck,youtube,videos,581,581,581,581,2026-01,2026-09,0,0.0,False,The Clay Travis & Buck Sexton Show,150000.0,
+@deanwithrs,youtube,streams,268,266,266,268,2026-01,2026-09,0,0.0075,False,Dean Withers,938000.0,
+@deanwithrs,youtube,videos,265,265,265,265,2026-01,2026-09,0,0.0,False,Dean Withers,938000.0,
+@destiny,youtube,videos,267,267,267,267,2026-01,2026-09,0,0.0,False,Destiny,878000.0,True
+@destinyhqclips,youtube,videos,197,197,197,197,2026-04,2026-09,0,0.0,False,destinyhqclips,10500.0,
+@dineshdsouza,youtube,streams,2,2,2,2,2026-05,2026-09,0,0.0,True,Dinesh D'Souza,810000.0,
+@dineshdsouza,youtube,videos,92,92,92,92,2026-01,2026-09,0,0.0,False,Dinesh D'Souza,810000.0,
+@dollemore,youtube,streams,4,4,4,4,2026-02,2026-08,0,0.0,True,Jesse Dollemore,1300000.0,True
+@dollemore,youtube,videos,1439,1439,1439,1439,2026-01,2026-09,0,0.0,False,Jesse Dollemore,1300000.0,True
+@doomscrollpodcast,youtube,videos,17,17,17,17,2026-01,2026-09,0,0.0,True,Joshua Citarella,146000.0,
+@evanjmez,youtube,videos,22,22,22,22,2026-01,2026-08,0,0.0,True,Evan James,3240.0,
+@fastpoliticspodcast,youtube,videos,145,145,145,135,2026-01,2026-09,0,0.0,False,Fast Politics w/ Molly Jong-Fast,91200.0,
+@fightbackpodcast,youtube,streams,24,24,24,24,2026-01,2026-09,0,0.0,True,Jake Shields' Fight Back Podcast,206000.0,
+@fightbackpodcast,youtube,videos,632,627,627,632,2026-01,2026-09,0,0.0079,False,Jake Shields' Fight Back Podcast,206000.0,
+@franifio,youtube,streams,62,62,62,62,2026-01,2026-09,0,0.0,False,The Bitchuation Room (with Francesca Fiorentini),286000.0,True
+@franifio,youtube,videos,282,282,282,267,2026-01,2026-09,0,0.0,False,The Bitchuation Room (with Francesca Fiorentini),286000.0,True
+@glennbeck,youtube,streams,125,125,125,125,2026-03,2026-09,0,0.0,False,Glenn Beck,1790000.0,True
+@glennbeck,youtube,videos,460,460,460,460,2026-01,2026-09,0,0.0,False,Glenn Beck,1790000.0,True
+@harryjsisson,youtube,streams,3,3,3,3,2026-03,2026-05,0,0.0,True,Harry Sisson,605000.0,True
+@harryjsisson,youtube,videos,688,681,681,688,2026-01,2026-09,0,0.0102,False,Harry Sisson,605000.0,True
+@hutch,youtube,streams,50,50,50,1,2026-07,2026-09,0,0.0,False,Hutch,841000.0,True
+@hutch,youtube,videos,162,162,162,162,2026-01,2026-09,0,0.0,False,Hutch,841000.0,True
+@jimacosta,youtube,streams,161,160,160,161,2026-01,2026-09,0,0.0062,False,Jim Acosta,336000.0,True
+@jimacosta,youtube,videos,314,313,313,312,2026-01,2026-09,0,0.0032,False,Jim Acosta,336000.0,True
+@jlptalk,youtube,streams,187,187,187,187,2026-01,2026-09,0,0.0,False,Jesse Lee Peterson,625000.0,True
+@jlptalk,youtube,videos,304,304,304,288,2026-01,2026-09,0,0.0,False,Jesse Lee Peterson,625000.0,True
+@joerogan,youtube,streams,1,1,1,1,2026-04,2026-04,0,0.0,True,PowerfulJRE,21100000.0,True
+@joerogan,youtube,videos,141,141,141,141,2026-01,2026-09,0,0.0,False,PowerfulJRE,21100000.0,True
+@johnnyharris,youtube,videos,13,13,13,13,2026-01,2026-09,0,0.0,True,Johnny Harris,7950000.0,True
+@judgingfreedom,youtube,streams,699,697,697,699,2026-01,2026-09,0,0.0029,False,Judge Napolitano - Judging Freedom,786000.0,True
+@judgingfreedom,youtube,videos,355,355,355,355,2026-01,2026-09,0,0.0,False,Judge Napolitano - Judging Freedom,786000.0,True
+@katiephangnews,youtube,streams,45,44,44,45,2026-02,2026-09,0,0.0222,True,Katie Phang,812000.0,
+@katiephangnews,youtube,videos,403,403,403,403,2026-01,2026-09,0,0.0,False,Katie Phang,812000.0,
+@katmabu,youtube,videos,35,34,34,35,2026-01,2026-09,0,0.0286,True,Kat Abughazaleh,170000.0,True
+@laurenchenclips,youtube,videos,109,109,109,109,2026-05,2026-09,0,0.0,False,Lauren Chen Clips,11400.0,
+@lizwheeler,youtube,streams,70,70,70,70,2026-01,2026-07,0,0.0,False,Liz Wheeler,445000.0,True
+@lizwheeler,youtube,videos,86,86,86,86,2026-01,2026-09,0,0.0,False,Liz Wheeler,445000.0,True
+@lonerboxlive,youtube,videos,88,88,88,88,2026-01,2026-09,0,0.0,False,LonerBox Live,59700.0,
+@lovettorleaveitpodcast,youtube,videos,114,114,114,114,2026-01,2026-09,0,0.0,False,Lovett or Leave It,144000.0,True
+@marclamonthillnetwork,youtube,streams,151,151,151,151,2026-01,2026-09,0,0.0,False,Marc Lamont Hill Network,275000.0,
+@marclamonthillnetwork,youtube,videos,321,321,321,321,2026-01,2026-09,0,0.0,False,Marc Lamont Hill Network,275000.0,
+@markets,youtube,streams,56,56,56,56,2026-01,2026-09,0,0.0,False,Bloomberg Television,3270000.0,True
+@markets,youtube,videos,8008,7974,2500,8008,2026-01,2026-09,0,0.0042,False,Bloomberg Television,3270000.0,True
+@marklevinshow,youtube,videos,505,505,505,505,2026-01,2026-09,0,0.0,False,The Mark Levin Show,103000.0,True
+@mikhaila,youtube,videos,27,27,27,27,2026-01,2026-08,0,0.0,True,Mikhaila Peterson,1380000.0,True
+@morebridgetphetasy,youtube,videos,206,206,206,206,2026-01,2026-09,0,0.0,False,Walk-Ins Welcome with Bridget Phetasy,13100.0,True
+@moreperfectunion,youtube,streams,4,4,4,4,2026-05,2026-09,0,0.0,True,More Perfect Union,3940000.0,True
+@moreperfectunion,youtube,videos,71,71,71,71,2026-01,2026-09,0,0.0,False,More Perfect Union,3940000.0,True
+@msnow,youtube,streams,335,325,325,335,2026-01,2026-09,0,0.0299,False,MS NOW,9980000.0,True
+@msnow,youtube,videos,9882,9879,2500,9882,2026-01,2026-09,0,0.0003,False,MS NOW,9980000.0,True
+@nationalreview,youtube,streams,2,2,2,2,2026-03,2026-08,0,0.0,True,National Review,116000.0,True
+@nationalreview,youtube,videos,191,191,191,191,2026-01,2026-09,0,0.0,False,National Review,116000.0,True
+@newdiscourses,youtube,videos,98,98,98,84,2026-01,2026-09,0,0.0,False,New Discourses,177000.0,True
+@newyorker,youtube,videos,51,51,51,51,2026-01,2026-09,0,0.0,False,The New Yorker,1200000.0,True
+@notsoErudite,youtube,streams,20,20,20,0,2026-02,2026-05,0,0.0,True,notsoErudite,125000.0,
+@notsoErudite,youtube,videos,43,43,43,43,2026-01,2026-09,0,0.0,True,notsoErudite,125000.0,
+@nousnetwork,youtube,videos,156,156,156,156,2026-01,2026-09,0,0.0,False,nous,88500.0,
+@nypost,youtube,streams,114,110,110,114,2026-01,2026-09,0,0.0351,False,New York Post,2560000.0,True
+@nypost,youtube,videos,6305,6304,2500,6305,2026-01,2026-09,0,0.0002,False,New York Post,2560000.0,True
+@nytimes,youtube,videos,71,71,71,71,2026-01,2026-09,0,0.0,False,The New York Times,5260000.0,True
+@oann,youtube,streams,344,309,309,344,2026-01,2026-09,0,0.1017,False,One America News Network,1420000.0,True
+@oann,youtube,videos,1804,1803,1803,1804,2026-01,2026-09,0,0.0006,False,One America News Network,1420000.0,True
+@podsaveamerica,youtube,videos,731,667,667,285,2026-01,2026-09,0,0.0876,False,Pod Save America,1280000.0,True
+@ponderingpolitics,youtube,streams,2,2,2,2,2026-05,2026-08,0,0.0,True,Pondering Politics,861000.0,True
+@ponderingpolitics,youtube,videos,1470,1467,1467,1338,2026-01,2026-09,0,0.002,False,Pondering Politics,861000.0,True
+@revleftradio,youtube,streams,3,3,3,3,2026-01,2026-06,0,0.0,True,Rev Left Radio,31900.0,
+@revleftradio,youtube,videos,38,38,38,38,2026-01,2026-08,0,0.0,True,Rev Left Radio,31900.0,
+@rolandsmartin,youtube,streams,1223,584,584,1223,2026-01,2026-09,0,0.5225,False,Roland S. Martin,1960000.0,True
+@rolandsmartin,youtube,videos,742,742,742,742,2026-01,2026-09,0,0.0,False,Roland S. Martin,1960000.0,True
+@samharrisorg,youtube,videos,116,116,116,76,2026-01,2026-09,0,0.0,False,Sam Harris,869000.0,True
+@theGuardian,youtube,videos,39,39,39,39,2026-01,2026-09,0,0.0,True,The Guardian,2620000.0,True
+@thedavidpakmanshow,youtube,streams,5,5,5,5,2026-02,2026-05,0,0.0,True,David Pakman Show,3660000.0,True
+@thedavidpakmanshow,youtube,videos,1659,1641,1641,1659,2026-01,2026-09,0,0.0108,False,David Pakman Show,3660000.0,True
+@thegrayzone7996,youtube,streams,36,36,36,36,2026-01,2026-09,0,0.0,True,The Grayzone,575000.0,True
+@thegrayzone7996,youtube,videos,155,155,155,155,2026-01,2026-09,0,0.0,False,The Grayzone,575000.0,True
+@thehill,youtube,streams,509,505,505,509,2026-01,2026-09,0,0.0079,False,The Hill,2150000.0,True
+@thehill,youtube,videos,4250,4249,2500,4250,2026-01,2026-09,0,0.0002,False,The Hill,2150000.0,True
+@theisabelbrown,youtube,videos,141,141,141,141,2026-01,2026-09,0,0.0,False,Isabel Brown,181000.0,True
+@thejimmydoreshow,youtube,streams,116,115,115,116,2026-01,2026-09,0,0.0086,False,The Jimmy Dore Show,1870000.0,True
+@thejimmydoreshow,youtube,videos,1146,1146,1146,1146,2026-01,2026-09,0,0.0,False,The Jimmy Dore Show,1870000.0,True
+@therationalnational,youtube,streams,7,7,7,7,2026-01,2026-05,0,0.0,True,The Rational National,779000.0,True
+@therationalnational,youtube,videos,142,142,142,142,2026-01,2026-09,0,0.0,False,The Rational National,779000.0,True
+@thewarningwithsteveschmidt,youtube,streams,113,110,110,109,2026-01,2026-09,0,0.0265,False,The Warning with Steve Schmidt,528000.0,True
+@thewarningwithsteveschmidt,youtube,videos,363,289,289,223,2026-01,2026-09,0,0.2039,False,The Warning with Steve Schmidt,528000.0,True
+@thomhartmann,youtube,videos,784,784,784,784,2026-01,2026-09,0,0.0,False,Thom Hartmann Program,547000.0,
+@timesofindia,youtube,streams,3582,2295,2295,3582,2026-01,2026-09,0,0.3593,False,Times Of India,6000000.0,True
+@timesofindia,youtube,videos,9928,9926,2500,9928,2026-01,2026-09,0,0.0002,False,Times Of India,6000000.0,True
+@triggerpod,youtube,streams,6,6,6,6,2026-01,2026-07,0,0.0,True,Triggernometry,1920000.0,True
+@triggerpod,youtube,videos,152,151,151,105,2026-01,2026-09,0,0.0066,False,Triggernometry,1920000.0,True
+@turningpointusa,youtube,streams,14,13,13,14,2026-02,2026-09,0,0.0714,True,Turning Point USA,7680000.0,True
+@turningpointusa,youtube,videos,183,183,183,183,2026-01,2026-09,0,0.0,False,Turning Point USA,7680000.0,True
+@underthedesknews,youtube,streams,119,115,115,119,2026-02,2026-09,0,0.0336,False,Under The Desk News,249000.0,True
+@underthedesknews,youtube,videos,79,79,79,79,2026-01,2026-09,0,0.0,False,Under The Desk News,249000.0,True
+@usefulidiots,youtube,streams,69,12,12,69,2026-01,2026-09,0,0.8261,True,Useful Idiots,192000.0,
+@usefulidiots,youtube,videos,190,186,186,165,2026-01,2026-09,0,0.0211,False,Useful Idiots,192000.0,
+@wethefifth,youtube,streams,2,2,2,2,2026-02,2026-04,0,0.0,True,The Fifth Column - A Podcast,75300.0,
+@wethefifth,youtube,videos,112,112,112,112,2026-01,2026-09,0,0.0,False,The Fifth Column - A Podcast,75300.0,
+@winston_marshall,youtube,videos,109,109,109,90,2026-01,2026-09,0,0.0,False,Winston Marshall,494000.0,True
+@wsj,youtube,streams,11,11,11,11,2026-01,2026-03,0,0.0,True,The Wall Street Journal,6690000.0,True
+@wsj,youtube,videos,119,119,119,119,2026-01,2026-09,0,0.0,False,The Wall Street Journal,6690000.0,True
+@zeteo,youtube,streams,25,25,25,25,2026-01,2026-08,0,0.0,True,Zeteo,2240000.0,True
+@zeteo,youtube,videos,206,206,206,206,2026-01,2026-09,0,0.0,False,Zeteo,2240000.0,True
+https://rumble.com/c/BannonsWarRoom,rumble,videos,4619,4506,2500,0,2026-01,2026-09,0,0.0245,False,BannonsWarRoom,,
+https://rumble.com/c/GGreenwald,rumble,videos,76,76,76,0,2026-01,2026-09,0,0.0,False,GGreenwald,,
+https://rumble.com/c/TheAlexJonesShowLive,rumble,videos,517,513,513,0,2026-05,2026-09,0,0.0077,False,TheAlexJonesShowLive,,
+https://rumble.com/c/nickjfuentes,rumble,videos,309,305,305,0,2026-01,2026-09,0,0.0129,False,nickjfuentes,,
+https://rumble.com/c/russellbrand,rumble,videos,262,259,259,0,2026-01,2026-09,0,0.0115,False,russellbrand,,

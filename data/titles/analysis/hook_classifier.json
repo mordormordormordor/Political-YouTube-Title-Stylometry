@@ -1,0 +1,57 @@
+{
+  "features": "768-d sentence embedding + ['allcaps_word_share', 'excl', 'q_mark', 'trailing_ellipsis', 'violence_verb', 'shock_word', 'curiosity_lex', 'fwd_ref_start', 'discourse_marker', 'has_person', 'neg_eval', 'pos_eval']",
+  "model": "StandardScaler + LogisticRegression(class_weight=balanced)",
+  "hooks": {
+    "curiosity_gap": {
+      "n_train": 2400,
+      "n_test": 600,
+      "base_rate": 0.0207,
+      "C": 0.3,
+      "cv_f1_by_C": {
+        "0.03": 0.1599,
+        "0.1": 0.1702,
+        "0.3": 0.182,
+        "1.0": 0.1714
+      },
+      "holdout_accuracy": 0.9533,
+      "holdout_balanced_accuracy": 0.6088,
+      "holdout_f1": 0.1765,
+      "holdout_auc": 0.7363,
+      "holdout_kappa": 0.1546
+    },
+    "outrage": {
+      "n_train": 2400,
+      "n_test": 600,
+      "base_rate": 0.572,
+      "C": 0.03,
+      "cv_f1_by_C": {
+        "0.03": 0.7953,
+        "0.1": 0.7731,
+        "0.3": 0.7574,
+        "1.0": 0.7461
+      },
+      "holdout_accuracy": 0.7617,
+      "holdout_balanced_accuracy": 0.7603,
+      "holdout_f1": 0.7869,
+      "holdout_auc": 0.8431,
+      "holdout_kappa": 0.5169
+    },
+    "humor": {
+      "n_train": 2400,
+      "n_test": 600,
+      "base_rate": 0.0037,
+      "C": 0.03,
+      "cv_f1_by_C": {
+        "0.03": 0.0,
+        "0.1": 0.0,
+        "0.3": 0.0,
+        "1.0": 0.0
+      },
+      "holdout_accuracy": 0.9967,
+      "holdout_balanced_accuracy": 0.5,
+      "holdout_f1": 0.0,
+      "holdout_auc": 0.7291,
+      "holdout_kappa": 0.0
+    }
+  }
+}
