@@ -524,9 +524,76 @@ def fig_leaning():
     fig.tight_layout(); save(fig, "14_leaning_words.png")
 
 
+LANE_ABBR = {"left_commentary": "left comm.", "right_commentary": "right comm.", "centrist_heterodox": "centrist", "us_legacy_tv": "US TV",
+             "right_tv_network": "right TV", "wire_international": "wire/intl", "us_press_print_digital": "US press", "independent_digital_news": "indep. news",
+             "streamer_reaction": "streamer", "interview_podcast": "podcast", "legal_institutional": "legal", "humour_satire": "humour", "explainer_geopolitics": "explainer"}
+
+
+def fig_leaning_channels():
+    """Per-channel breakdowns: stacked left / neither / right shares from the judge of record for every
+    channel (two columns, sorted), the same per lane, and the three models' scores side by side."""
+    if not (A / "leaning_by_creator.csv").exists():
+        return
+    bc = rd("leaning_by_creator.csv"); summ = json.loads((A / "leaning_summary.json").read_text())
+    judge = summ["judge_of_record"]
+
+    def _nm(c):
+        c = c.replace("label_", "").replace("_score", "")
+        return ("Claude " + c.replace("claude_code_", "").replace("_", " ").title()) if c.startswith("claude_code_") else c.replace("_", ":", 1).replace("_", ".")
+    cols = [c[:-6] for c in bc.columns if c.startswith("label_") and c.endswith("_score")]
+    d = bc.sort_values("judge_score").reset_index(drop=True)
+    L, N, R = d[f"{judge}_left"], d[f"{judge}_neither"], d[f"{judge}_right"]
+    labels = [f"{c}  ·  {LANE_ABBR.get(l, l)}" for c, l in zip(d.creator, d.lane)]
+    half = int(np.ceil(len(d) / 2))
+    fig, axes = plt.subplots(1, 2, figsize=(13, 0.135 * half + 1.6))
+    for ax, sl in zip(axes, (slice(0, half), slice(half, len(d)))):
+        y = np.arange(sl.stop - sl.start)
+        ax.barh(y, L.iloc[sl], color=CAT[0], height=0.78, label="left")
+        ax.barh(y, N.iloc[sl], left=L.iloc[sl], color="#d6d5d0", height=0.78, label="neither")
+        ax.barh(y, R.iloc[sl], left=L.iloc[sl] + N.iloc[sl], color=CAT[1], height=0.78, label="right")
+        ax.set_yticks(y, labels[sl], fontsize=5.6); ax.set_ylim(len(y) - 0.5, -0.5); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
+        ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0)); ax.tick_params(axis="x", labelsize=7, top=True, labeltop=True)
+        for yi, sc in zip(y, d.judge_score.iloc[sl]):
+            ax.text(1.005, yi, f"{sc:+.2f}", va="center", ha="left", fontsize=5.2, color=INK2)
+    fig.legend(*axes[0].get_legend_handles_labels(), loc="upper right", fontsize=8, ncol=3, frameon=False, bbox_to_anchor=(0.99, 0.995))
+    fig.suptitle(f"Every channel's titles as read by {_nm(judge)}: share labelled left / neither / right (16 titles each; sorted by score, most left first; score at right)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
+    fig.tight_layout(rect=(0, 0, 1, 0.975)); save(fig, "14_leaning_channels.png")
+
+    # per lane: mean composition
+    comp = bc.groupby("lane")[[f"{judge}_left", f"{judge}_neither", f"{judge}_right"]].mean()
+    comp["n"] = bc.groupby("lane").size(); comp = comp.sort_values(f"{judge}_left")
+    fig, ax = plt.subplots(figsize=(9, 4.6)); y = np.arange(len(comp))
+    ax.barh(y, comp[f"{judge}_left"], color=CAT[0], height=0.7, label="left")
+    ax.barh(y, comp[f"{judge}_neither"], left=comp[f"{judge}_left"], color="#d6d5d0", height=0.7, label="neither")
+    ax.barh(y, comp[f"{judge}_right"], left=comp[f"{judge}_left"] + comp[f"{judge}_neither"], color=CAT[1], height=0.7, label="right")
+    for yi, r in zip(y, comp.itertuples()):
+        ax.text(0.01, yi, f"{getattr(r, judge + '_left'):.0%}", va="center", fontsize=7, color="white", fontweight="bold")
+        ax.text(0.99, yi, f"{getattr(r, judge + '_right'):.0%}", va="center", ha="right", fontsize=7, color="white", fontweight="bold")
+    ax.set_yticks(y, [f"{lane_label(l)} (n={int(n)})" for l, n in zip(comp.index, comp.n)], fontsize=8); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
+    ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0)); ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=3, fontsize=8)
+    ax.set_title(f"Mean composition of a channel's titles by lane ({_nm(judge)})")
+    fig.tight_layout(); save(fig, "14_leaning_lane_composition.png")
+
+    # three models side by side, per channel
+    fig, axes = plt.subplots(1, 2, figsize=(13, 0.135 * half + 1.6))
+    mcol = {c: CAT[i] for i, c in enumerate(sorted(cols, key=lambda c: 0 if c == judge else 1))}
+    markers = {c: ("o" if c == judge else ("s" if "gemma" in c else "^")) for c in cols}
+    for ax, sl in zip(axes, (slice(0, half), slice(half, len(d)))):
+        y = np.arange(sl.stop - sl.start)
+        ax.axvline(0, color=INK, lw=0.8)
+        for yi in y[::2]:
+            ax.axhspan(yi - 0.5, yi + 0.5, color=GRID, alpha=0.35, lw=0)
+        for c in cols:
+            ax.plot(d[f"{c}_score"].iloc[sl], y, markers[c], color=mcol[c], ms=3.6 if c == judge else 3, alpha=0.9 if c == judge else 0.6, label=_nm(c), lw=0)
+        ax.set_yticks(y, labels[sl], fontsize=5.6); ax.set_ylim(len(y) - 0.5, -0.5); ax.set_xlim(-1.05, 1.05); ax.grid(axis="y", visible=False); ax.tick_params(axis="x", labelsize=7, top=True, labeltop=True)
+    fig.legend(*axes[0].get_legend_handles_labels(), loc="upper right", fontsize=8, ncol=3, frameon=False, bbox_to_anchor=(0.99, 0.995))
+    fig.suptitle("Each channel's score from the three models (−1 = every title read left, +1 = every title read right; sorted by the judge of record)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
+    fig.tight_layout(rect=(0, 0, 1, 0.975)); save(fig, "14_leaning_models_by_channel.png")
+
+
 def main() -> int:
     FIG.mkdir(parents=True, exist_ok=True)
-    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views, fig_profiles, fig_leaning):
+    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views, fig_profiles, fig_leaning, fig_leaning_channels):
         fn(); print("done", fn.__name__, flush=True)
     import shutil
     if (A / "scree.png").exists():

@@ -97,6 +97,15 @@ Where every channel lands under the judge of record (score above +0.05 = right, 
 
 {table(side_by_lane, fmt='{:.0f}')}
 
+![Every channel's breakdown.](figures/14_leaning_channels.png)
+*Every channel: the share of its sampled titles the judge of record labels left (blue), neither (grey) and right (orange), sorted from most left-reading to most right-reading, lane after the handle, score at the right.*
+
+![Lane composition.](figures/14_leaning_lane_composition.png)
+*Mean composition by lane.*
+
+![Three models per channel.](figures/14_leaning_models_by_channel.png)
+*The same channels with all three models' scores: circles = judge of record, squares = Gemma, triangles = Qwen. Where the small models' markers sit far from the circle is where they misread the channel.*
+
 Two things in that table deserve a look. The news lanes are mostly *neither*, as they should be, but their partisan-read titles tilt left ({int(news['left'].sum())} left vs {int(news['right'].sum())} right across the wires, the press and legacy TV): the judge reads a title hostile to the administration as left even in a news headline, so part of that tilt is the target-versus-stance ambiguity that no model fully escapes. And the interview podcasts lean right as a lane ({int(side_by_lane.loc[side_by_lane.lane == 'interview podcasts', 'right'].iloc[0])} right, {int(side_by_lane.loc[side_by_lane.lane == 'interview podcasts', 'left'].iloc[0])} left), which the lane proposal, built on format rather than politics, did not encode.
 
 Lane means (all models; the 'neither' columns are the mean share of a channel's titles labelled neither):

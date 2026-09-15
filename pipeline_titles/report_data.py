@@ -149,8 +149,12 @@ def build() -> dict:
             l_ = _rec(lb, creator=r.creator)
             if l_ is not None:
                 cols = [c for c in lb.columns if c.startswith("label_") and c.endswith("_score")]
-                card["leaning"] = {"mean_score": _num(l_.mean_score), "implied_side": l_.implied_side, "n_titles": int(l_.n_titles),
-                                   "consensus_neither": _num(l_.get("consensus_neither")), "judge": str(l_.get("judge_of_record", "")).replace("label_", "").replace("_", ":", 1).replace("_", "."),
+                def _nm(c):
+                    c = c.replace("label_", "").replace("_score", "")
+                    return ("Claude " + c.replace("claude_code_", "").replace("_", " ").title()) if c.startswith("claude_code_") else c.replace("_", ":", 1).replace("_", ".")
+                composition = {_nm(c): {"left": _num(l_[c[:-6] + "_left"]), "neither": _num(l_[c[:-6] + "_neither"]), "right": _num(l_[c[:-6] + "_right"]), "score": _num(l_[c])} for c in cols}
+                card["leaning"] = {"composition": composition, "judge": _nm(str(l_.get("judge_of_record", ""))),"mean_score": _num(l_.mean_score), "implied_side": l_.implied_side, "n_titles": int(l_.n_titles),
+                                   "consensus_neither": _num(l_.get("consensus_neither")),
                                    "judge_score": _num(l_.get("judge_score")), "judge_side": l_.get("judge_side"),
                                    **{c.replace("label_", "").replace("_score", ""): _num(l_[c]) for c in cols}}
         creators[r.creator] = card
