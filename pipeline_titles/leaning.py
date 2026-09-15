@@ -191,14 +191,30 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
         acc = float(((s[nz] > 0).astype(int) == y[nz]).mean()) if nz.sum() else np.nan
         val_rows.append({"score": c, "n_creators": int(m.sum()), "auc_right_vs_left_lane": round(auc, 4), "accuracy_sign_vs_lane": round(acc, 4), "n_nonzero": int(nz.sum()),
                          "mean_score_left_lane": round(float(s[m & (y == 0)].mean()), 4), "mean_score_right_lane": round(float(s[m & (y == 1)].mean()), 4)})
-    for r in two.itertuples():
-        side = "right" if r.mean_score > 0 else ("left" if r.mean_score < 0 else "tie")
-        expected = "right" if r.lane == "right_commentary" else "left"
-        if side != expected:
-            mis.append({"creator": r.creator, "lane": r.lane, "mean_score": round(r.mean_score, 3), "implied_side": side, "n_titles": r.n_titles, "note": r.clipper})
+    score_cols = [f"{c}_score" for c in cols] + (["consensus_score", "mean_score"] if len(cols) >= 2 else ["mean_score"])
+    for sc in score_cols:
+        for r in two.itertuples():
+            v = getattr(r, sc)
+            if pd.isna(v):
+                continue
+            side = "right" if v > 0 else ("left" if v < 0 else "tie")
+            expected = "right" if r.lane == "right_commentary" else "left"
+            if side != expected:
+                mis.append({"score": sc, "creator": r.creator, "lane": r.lane, "value": round(float(v), 3), "implied_side": side, "n_titles": r.n_titles, "clipper": r.clipper})
     pd.DataFrame(val_rows).to_csv(ANALYSIS_DIR / "leaning_lane_validation.csv", index=False)
     pd.DataFrame(mis).to_csv(ANALYSIS_DIR / "leaning_lane_contradictions.csv", index=False)
     info["lane_auc"] = {r["score"]: r["auc_right_vs_left_lane"] for r in val_rows}
+    # judge of record: the single model whose channel score best separates the two commentary lanes
+    per_model = [r for r in val_rows if r["score"].startswith("label_")]
+    best = max(per_model, key=lambda r: (r["auc_right_vs_left_lane"] if not np.isnan(r["auc_right_vs_left_lane"]) else -1))
+    judge = best["score"]
+    bc["judge_of_record"] = judge.replace("_score", "")
+    bc["judge_score"] = bc[judge]
+    bc["judge_side"] = np.where(bc["judge_score"] > 0.05, "right", np.where(bc["judge_score"] < -0.05, "left", "neither / unclear"))
+    bc.to_csv(ANALYSIS_DIR / "leaning_by_creator.csv", index=False)
+    (ANALYSIS_DIR / "leaning_summary.json").write_text(json.dumps({"judge_of_record": judge.replace("_score", ""), "judge_auc": best["auc_right_vs_left_lane"],
+                                                                     "judge_accuracy": best["accuracy_sign_vs_lane"], "per_model": val_rows}, indent=2))
+    info["judge_of_record"] = judge
 
     bl = bc.groupby("lane").agg(n_creators=("creator", "size"), **{f"{c}_score_mean": (f"{c}_score", "mean") for c in cols},
                                 **{f"{c}_neither_mean": (f"{c}_neither", "mean") for c in cols}, mean_score=("mean_score", "mean")).reset_index().sort_values("mean_score")

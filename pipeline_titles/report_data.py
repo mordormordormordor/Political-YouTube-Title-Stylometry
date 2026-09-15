@@ -150,7 +150,9 @@ def build() -> dict:
             if l_ is not None:
                 cols = [c for c in lb.columns if c.startswith("label_") and c.endswith("_score")]
                 card["leaning"] = {"mean_score": _num(l_.mean_score), "implied_side": l_.implied_side, "n_titles": int(l_.n_titles),
-                                   "consensus_neither": _num(l_.get("consensus_neither")), **{c.replace("label_", "").replace("_score", ""): _num(l_[c]) for c in cols}}
+                                   "consensus_neither": _num(l_.get("consensus_neither")), "judge": str(l_.get("judge_of_record", "")).replace("label_", "").replace("_", ":", 1).replace("_", "."),
+                                   "judge_score": _num(l_.get("judge_score")), "judge_side": l_.get("judge_side"),
+                                   **{c.replace("label_", "").replace("_score", ""): _num(l_[c]) for c in cols}}
         creators[r.creator] = card
     data = {"generated": utc_now(), "factors": {f: {"name": names[f].get("name") or names[f]["auto"], "auto": names[f]["auto"]} for f in fcols},
             "lanes": sorted(lanes["lane"].unique()), "lane_medians": lane_med, "hooks": HOOKS, "formats": FORMATS, "months": MONTHS,

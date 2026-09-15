@@ -1,0 +1,275 @@
+creator,n_titles,label_qwen3_14b_n,label_qwen3_14b_left,label_qwen3_14b_right,label_qwen3_14b_neither,label_qwen3_14b_score,label_gemma3_12b_n,label_gemma3_12b_left,label_gemma3_12b_right,label_gemma3_12b_neither,label_gemma3_12b_score,consensus_n,consensus_score,consensus_neither,mean_score,implied_side,lane,organisation,clipper,judge_of_record,judge_score,judge_side
+@TheJoyReidShow,16,16,0.375,0.0,0.625,-0.375,16,0.6875,0.0,0.3125,-0.6875,11,-0.5454545454545454,0.45454545454545453,-0.53125,left,left_commentary,Joy Reid,False,label_gemma3_12b,-0.6875,left
+@Lunaoi,9,9,0.2222222222222222,0.0,0.7777777777777778,-0.2222222222222222,9,0.6666666666666666,0.0,0.3333333333333333,-0.6666666666666666,5,-0.4,0.6,-0.4444444444444444,left,left_commentary,Luna Oi,False,label_gemma3_12b,-0.6666666666666666,left
+@katmabu,16,16,0.125,0.0,0.875,-0.125,16,0.75,0.0,0.25,-0.75,6,-0.3333333333333333,0.6666666666666666,-0.4375,left,left_commentary,Kat Abughazaleh,False,label_gemma3_12b,-0.75,left
+@YaBoiHakim,16,16,0.25,0.125,0.625,-0.125,16,0.8125,0.0625,0.125,-0.75,7,-0.42857142857142855,0.2857142857142857,-0.4375,left,left_commentary,Hakim,False,label_gemma3_12b,-0.75,left
+@rolandsmartin,16,16,0.375,0.125,0.5,-0.25,16,0.5625,0.0,0.4375,-0.5625,13,-0.46153846153846156,0.5384615384615384,-0.40625,left,independent_digital_news,Black Star Network,False,label_gemma3_12b,-0.5625,left
+@TheDonLemonShow,16,16,0.1875,0.25,0.5625,0.0625,16,0.875,0.0625,0.0625,-0.8125,4,-0.75,0.25,-0.375,left,left_commentary,Don Lemon,False,label_gemma3_12b,-0.8125,left
+@LeejaMiller,16,16,0.3125,0.0625,0.625,-0.25,16,0.5,0.0,0.5,-0.5,13,-0.38461538461538464,0.6153846153846154,-0.375,left,legal_institutional,Leeja Miller,False,label_gemma3_12b,-0.5,left
+@bulwarkmedia,16,16,0.3125,0.25,0.4375,-0.0625,16,0.75,0.125,0.125,-0.625,7,-0.5714285714285714,0.14285714285714285,-0.34375,left,centrist_heterodox,The Bulwark,False,label_gemma3_12b,-0.625,left
+@marclamonthillnetwork,16,16,0.25,0.0,0.75,-0.25,16,0.4375,0.0,0.5625,-0.4375,13,-0.3076923076923077,0.6923076923076923,-0.34375,left,left_commentary,Marc Lamont Hill,False,label_gemma3_12b,-0.4375,left
+@zeteo,16,16,0.1875,0.0,0.8125,-0.1875,16,0.5,0.0,0.5,-0.5,11,-0.2727272727272727,0.7272727272727273,-0.34375,left,independent_digital_news,Zeteo,False,label_gemma3_12b,-0.5,left
+@revleftradio,16,16,0.125,0.125,0.75,0.0,16,0.75,0.0625,0.1875,-0.6875,6,-0.16666666666666666,0.5,-0.34375,left,interview_podcast,Rev Left Radio,False,label_gemma3_12b,-0.6875,left
+@SecularTalk,16,11,0.2727272727272727,0.45454545454545453,0.2727272727272727,0.18181818181818182,16,0.875,0.0625,0.0625,-0.8125,4,-0.5,0.0,-0.31534090909090906,left,left_commentary,Kyle Kulinski,False,label_gemma3_12b,-0.8125,left
+@BadFaithPodcast,16,16,0.1875,0.25,0.5625,0.0625,16,0.6875,0.0,0.3125,-0.6875,8,-0.375,0.625,-0.3125,left,interview_podcast,Bad Faith,False,label_gemma3_12b,-0.6875,left
+@DemocracyDocket,16,16,0.0,0.25,0.75,0.25,16,0.875,0.0,0.125,-0.875,2,0.0,1.0,-0.3125,left,legal_institutional,Democracy Docket,False,label_gemma3_12b,-0.875,left
+@BreakThroughNews,16,11,0.18181818181818182,0.36363636363636365,0.45454545454545453,0.18181818181818182,16,0.8125,0.0625,0.125,-0.75,4,-0.5,0.5,-0.28409090909090906,left,independent_digital_news,BreakThrough News,False,label_gemma3_12b,-0.75,left
+@StatusCoup,16,16,0.1875,0.4375,0.375,0.25,16,0.8125,0.0,0.1875,-0.8125,6,-0.5,0.5,-0.28125,left,independent_digital_news,Status Coup,False,label_gemma3_12b,-0.8125,left
+@harryjsisson,16,16,0.0,0.0625,0.9375,0.0625,16,0.625,0.0,0.375,-0.625,6,0.0,1.0,-0.28125,left,left_commentary,Harry Sisson,False,label_gemma3_12b,-0.625,left
+@franifio,16,16,0.125,0.0625,0.8125,-0.0625,16,0.5,0.0,0.5,-0.5,10,-0.2,0.8,-0.28125,left,humour_satire,Bitchuation Room,False,label_gemma3_12b,-0.5,left
+@MikeFromPA,16,16,0.1875,0.125,0.6875,-0.0625,16,0.5625,0.0625,0.375,-0.5,9,-0.2222222222222222,0.5555555555555556,-0.28125,left,streamer_reaction,Mike from PA,False,label_gemma3_12b,-0.5,left
+@HasanAbiVODs3,16,16,0.1875,0.125,0.6875,-0.0625,16,0.4375,0.0,0.5625,-0.4375,12,-0.25,0.75,-0.25,left,streamer_reaction,HasanAbi,True,label_gemma3_12b,-0.4375,left
+@fastpoliticspodcast,16,16,0.0625,0.1875,0.75,0.125,16,0.6875,0.0625,0.25,-0.625,5,-0.2,0.8,-0.25,left,left_commentary,Fast Politics,False,label_gemma3_12b,-0.625,left
+@nousnetwork,16,16,0.0,0.0,1.0,0.0,16,0.625,0.125,0.25,-0.5,4,0.0,1.0,-0.25,left,explainer_geopolitics,nous,False,label_gemma3_12b,-0.5,left
+@lovettorleaveitpodcast,16,16,0.25,0.1875,0.5625,-0.0625,16,0.5,0.0625,0.4375,-0.4375,10,-0.2,0.6,-0.25,left,humour_satire,Crooked Media,False,label_gemma3_12b,-0.4375,left
+@PoliticsJOE,16,16,0.25,0.0625,0.6875,-0.1875,16,0.375,0.0625,0.5625,-0.3125,14,-0.21428571428571427,0.6428571428571429,-0.25,left,independent_digital_news,PoliticsJOE,False,label_gemma3_12b,-0.3125,left
+@TheDailyBeast,16,16,0.0,0.5,0.5,0.5,16,1.0,0.0,0.0,-1.0,0,,,-0.25,left,us_press_print_digital,Daily Beast,False,label_gemma3_12b,-1.0,left
+@DropSiteNews,16,16,0.125,0.0625,0.8125,-0.0625,16,0.375,0.0,0.625,-0.375,12,-0.16666666666666666,0.8333333333333334,-0.21875,left,independent_digital_news,Drop Site,False,label_gemma3_12b,-0.375,left
+@katiephangnews,16,16,0.0625,0.1875,0.75,0.125,16,0.75,0.1875,0.0625,-0.5625,3,0.0,0.3333333333333333,-0.21875,left,left_commentary,MeidasTouch Network,False,label_gemma3_12b,-0.5625,left
+@thegrayzone7996,16,16,0.25,0.25,0.5,0.0,16,0.5625,0.125,0.3125,-0.4375,9,-0.4444444444444444,0.5555555555555556,-0.21875,left,independent_digital_news,The Grayzone,False,label_gemma3_12b,-0.4375,left
+@johnnyharris,13,13,0.07692307692307693,0.0,0.9230769230769231,-0.07692307692307693,13,0.3076923076923077,0.0,0.6923076923076923,-0.3076923076923077,10,-0.1,0.9,-0.19230769230769232,left,explainer_geopolitics,Johnny Harris,False,label_gemma3_12b,-0.3076923076923077,left
+@DemocracyNow,16,16,0.125,0.1875,0.6875,0.0625,16,0.5,0.0625,0.4375,-0.4375,10,-0.1,0.7,-0.1875,left,independent_digital_news,Democracy Now!,False,label_gemma3_12b,-0.4375,left
+@hutch,16,16,0.1875,0.0625,0.75,-0.125,16,0.4375,0.1875,0.375,-0.25,8,-0.125,0.625,-0.1875,left,streamer_reaction,Hutch,False,label_gemma3_12b,-0.25,left
+@thewarningwithsteveschmidt,16,16,0.125,0.6875,0.1875,0.5625,16,0.9375,0.0,0.0625,-0.9375,3,-0.6666666666666666,0.3333333333333333,-0.1875,left,centrist_heterodox,Steve Schmidt,False,label_gemma3_12b,-0.9375,left
+@Politicon,16,16,0.1875,0.0625,0.75,-0.125,16,0.375,0.125,0.5,-0.25,12,-0.16666666666666666,0.6666666666666666,-0.1875,left,interview_podcast,Politicon,False,label_gemma3_12b,-0.25,left
+@GlennKirschner2,16,16,0.4375,0.1875,0.375,-0.25,16,0.5,0.375,0.125,-0.125,10,-0.2,0.2,-0.1875,left,legal_institutional,Glenn Kirschner,False,label_gemma3_12b,-0.125,left
+@underthedesknews,16,16,0.125,0.0,0.875,-0.125,16,0.1875,0.0,0.8125,-0.1875,15,-0.13333333333333333,0.8666666666666667,-0.15625,left,independent_digital_news,Under the Desk News,False,label_gemma3_12b,-0.1875,left
+@cafedotcom,16,16,0.125,0.125,0.75,0.0,16,0.3125,0.0,0.6875,-0.3125,13,-0.15384615384615385,0.8461538461538461,-0.15625,left,legal_institutional,CAFE,False,label_gemma3_12b,-0.3125,left
+@EzraKleinShow,16,16,0.0625,0.0625,0.875,0.0,16,0.375,0.0625,0.5625,-0.3125,10,-0.1,0.9,-0.15625,left,interview_podcast,New York Times,False,label_gemma3_12b,-0.3125,left
+@destinyhqclips,16,16,0.0625,0.1875,0.75,0.125,16,0.5,0.0625,0.4375,-0.4375,9,0.0,0.7777777777777778,-0.15625,left,streamer_reaction,Destiny,True,label_gemma3_12b,-0.4375,left
+@SecondThought,16,16,0.0625,0.0625,0.875,0.0,16,0.375,0.0625,0.5625,-0.3125,10,-0.1,0.9,-0.15625,left,left_commentary,Second Thought,False,label_gemma3_12b,-0.3125,left
+@DestinyDGGClips,16,16,0.0,0.0625,0.9375,0.0625,16,0.375,0.0,0.625,-0.375,10,0.0,1.0,-0.15625,left,streamer_reaction,Destiny,True,label_gemma3_12b,-0.375,left
+@aaronparnas1,16,16,0.125,0.125,0.75,0.0,16,0.625,0.3125,0.0625,-0.3125,4,-0.25,0.25,-0.15625,left,left_commentary,Aaron Parnas,False,label_gemma3_12b,-0.3125,left
+@TheHumanistReport,16,16,0.3125,0.25,0.4375,-0.0625,16,0.5,0.25,0.25,-0.25,12,-0.16666666666666666,0.3333333333333333,-0.15625,left,left_commentary,Humanist Report,False,label_gemma3_12b,-0.25,left
+@chinainsights-r2w,16,16,0.1875,0.0625,0.75,-0.125,16,0.25,0.125,0.625,-0.125,14,-0.14285714285714285,0.7142857142857143,-0.125,left,independent_digital_news,China Insights,False,label_gemma3_12b,-0.125,left
+@TheMajorityReport,16,16,0.125,0.4375,0.4375,0.3125,16,0.6875,0.125,0.1875,-0.5625,7,0.0,0.42857142857142855,-0.125,left,left_commentary,Majority Report,False,label_gemma3_12b,-0.5625,left
+@notsoErudite,16,16,0.0,0.0625,0.9375,0.0625,16,0.3125,0.0,0.6875,-0.3125,11,0.0,1.0,-0.125,left,streamer_reaction,notsoErudite,False,label_gemma3_12b,-0.3125,left
+@RonPlacone,16,16,0.25,0.0625,0.6875,-0.1875,16,0.3125,0.25,0.4375,-0.0625,10,-0.3,0.7,-0.125,left,humour_satire,Ron Placone,False,label_gemma3_12b,-0.0625,left
+@ajplus,16,16,0.125,0.125,0.75,0.0,16,0.25,0.0,0.75,-0.25,10,-0.1,0.9,-0.125,left,wire_international,Al Jazeera,False,label_gemma3_12b,-0.25,left
+@BelleRanch,16,16,0.0,0.125,0.875,0.125,16,0.4375,0.0625,0.5,-0.375,9,0.1111111111111111,0.8888888888888888,-0.125,left,left_commentary,Belle of the Ranch,False,label_gemma3_12b,-0.375,left
+@OwenJonesTalks,16,16,0.375,0.25,0.375,-0.125,16,0.5,0.375,0.125,-0.125,12,-0.16666666666666666,0.16666666666666666,-0.125,left,left_commentary,Owen Jones,False,label_gemma3_12b,-0.125,left
+@BrittanyVenti,16,16,0.0,0.0625,0.9375,0.0625,16,0.3125,0.0,0.6875,-0.3125,10,0.0,1.0,-0.125,left,right_commentary,Brittany Venti,False,label_gemma3_12b,-0.3125,left
+@Forthepeoplepodcast305,16,16,0.1875,0.3125,0.5,0.125,16,0.5,0.125,0.375,-0.375,9,-0.3333333333333333,0.6666666666666666,-0.125,left,left_commentary,Niko House,False,label_gemma3_12b,-0.375,left
+@usefulidiots,16,11,0.18181818181818182,0.45454545454545453,0.36363636363636365,0.2727272727272727,16,0.625,0.125,0.25,-0.5,4,-0.5,0.5,-0.11363636363636365,left,interview_podcast,Useful Idiots,False,label_gemma3_12b,-0.5,left
+@axios,16,16,0.0,0.0,1.0,0.0,16,0.1875,0.0,0.8125,-0.1875,13,0.0,1.0,-0.09375,left,us_press_print_digital,Axios,False,label_gemma3_12b,-0.1875,left
+@judgingfreedom,16,16,0.0625,0.125,0.8125,0.0625,16,0.3125,0.0625,0.625,-0.25,8,0.0,1.0,-0.09375,left,interview_podcast,Judging Freedom,False,label_gemma3_12b,-0.25,left
+@LastWeekTonight,16,16,0.0,0.0,1.0,0.0,16,0.1875,0.0,0.8125,-0.1875,13,0.0,1.0,-0.09375,left,humour_satire,HBO,False,label_gemma3_12b,-0.1875,left
+@NYTOpinion,16,16,0.0,0.0,1.0,0.0,16,0.1875,0.0,0.8125,-0.1875,13,0.0,1.0,-0.09375,left,us_press_print_digital,New York Times,False,label_gemma3_12b,-0.1875,left
+@HasanAbi,16,16,0.0625,0.25,0.6875,0.1875,16,0.375,0.0,0.625,-0.375,11,-0.09090909090909091,0.9090909090909091,-0.09375,left,streamer_reaction,HasanAbi,False,label_gemma3_12b,-0.375,left
+@LeverNews,16,16,0.0,0.0625,0.9375,0.0625,16,0.4375,0.1875,0.375,-0.25,6,0.0,1.0,-0.09375,left,independent_digital_news,The Lever,False,label_gemma3_12b,-0.25,left
+@LegalEagle,16,16,0.1875,0.1875,0.625,0.0,16,0.375,0.1875,0.4375,-0.1875,12,-0.08333333333333333,0.5833333333333334,-0.09375,left,legal_institutional,LegalEagle,False,label_gemma3_12b,-0.1875,left
+@PoliticsGirl,16,16,0.125,0.0625,0.8125,-0.0625,16,0.375,0.25,0.375,-0.125,8,-0.25,0.75,-0.09375,left,left_commentary,PoliticsGirl,False,label_gemma3_12b,-0.125,left
+@moreperfectunion,16,16,0.0,0.0,1.0,0.0,16,0.1875,0.0,0.8125,-0.1875,13,0.0,1.0,-0.09375,left,independent_digital_news,More Perfect Union,False,label_gemma3_12b,-0.1875,left
+@Semafor,16,16,0.0625,0.0,0.9375,-0.0625,16,0.125,0.0,0.875,-0.125,15,-0.06666666666666667,0.9333333333333333,-0.09375,left,us_press_print_digital,Semafor,False,label_gemma3_12b,-0.125,left
+@bushrakhanum,16,16,0.0,0.0,1.0,0.0,16,0.3125,0.125,0.5625,-0.1875,9,0.0,1.0,-0.09375,left,wire_international,Network18,False,label_gemma3_12b,-0.1875,left
+@msnow,16,16,0.125,0.375,0.5,0.25,16,0.5,0.0625,0.4375,-0.4375,10,-0.1,0.7,-0.09375,left,us_legacy_tv,MS NOW,False,label_gemma3_12b,-0.4375,left
+@CoreyGilShusterAskProject,16,16,0.0,0.0,1.0,0.0,16,0.1875,0.0,0.8125,-0.1875,13,0.0,1.0,-0.09375,left,explainer_geopolitics,Ask Project,False,label_gemma3_12b,-0.1875,left
+@wsj,16,16,0.0625,0.0625,0.875,0.0,16,0.125,0.0,0.875,-0.125,15,-0.06666666666666667,0.9333333333333333,-0.0625,left,us_press_print_digital,Wall Street Journal,False,label_gemma3_12b,-0.125,left
+@NPR,16,16,0.0625,0.0,0.9375,-0.0625,16,0.0625,0.0,0.9375,-0.0625,16,-0.0625,0.9375,-0.0625,left,us_press_print_digital,NPR,False,label_gemma3_12b,-0.0625,left
+@dollemore,16,16,0.375,0.375,0.25,0.0,16,0.5625,0.4375,0.0,-0.125,9,-0.1111111111111111,0.0,-0.0625,left,left_commentary,Jesse Dollemore,False,label_gemma3_12b,-0.125,left
+@doomscrollpodcast,16,16,0.0,0.0625,0.9375,0.0625,16,0.3125,0.125,0.5625,-0.1875,10,0.1,0.9,-0.0625,left,interview_podcast,Doomscroll,False,label_gemma3_12b,-0.1875,left
+@ColeHastings,16,16,0.0625,0.0,0.9375,-0.0625,16,0.0625,0.0,0.9375,-0.0625,14,0.0,1.0,-0.0625,left,centrist_heterodox,Cole Hastings,False,label_gemma3_12b,-0.0625,left
+@LukeBeasley,16,16,0.125,0.625,0.25,0.5,16,0.6875,0.0625,0.25,-0.625,7,-0.14285714285714285,0.5714285714285714,-0.0625,left,left_commentary,Luke Beasley,False,label_gemma3_12b,-0.625,left
+@TheAmalaEkpunobi,16,16,0.25,0.1875,0.5625,-0.0625,16,0.3125,0.25,0.4375,-0.0625,11,-0.2727272727272727,0.5454545454545454,-0.0625,left,right_commentary,Amala Ekpunobi,False,label_gemma3_12b,-0.0625,left
+@PartOfTheProblem,16,16,0.0625,0.25,0.6875,0.1875,16,0.5625,0.25,0.1875,-0.3125,4,0.25,0.75,-0.0625,left,right_commentary,Dave Smith,False,label_gemma3_12b,-0.3125,left
+@UnHerd,16,16,0.1875,0.0,0.8125,-0.1875,16,0.1875,0.25,0.5625,0.0625,12,-0.25,0.75,-0.0625,left,centrist_heterodox,UnHerd,False,label_gemma3_12b,0.0625,right
+@DueDissidence,16,16,0.1875,0.375,0.4375,0.1875,16,0.4375,0.125,0.4375,-0.3125,10,-0.2,0.6,-0.0625,left,left_commentary,Due Dissidence,False,label_gemma3_12b,-0.3125,left
+@HasanabiClips,16,16,0.0,0.0625,0.9375,0.0625,16,0.4375,0.25,0.3125,-0.1875,5,0.0,1.0,-0.0625,left,streamer_reaction,HasanAbi,True,label_gemma3_12b,-0.1875,left
+@DylanBurnsLIVE,16,16,0.1875,0.125,0.6875,-0.0625,16,0.25,0.1875,0.5625,-0.0625,12,-0.16666666666666666,0.6666666666666666,-0.0625,left,streamer_reaction,Dylan Burns,False,label_gemma3_12b,-0.0625,left
+@JamarlThomas,16,16,0.0,0.25,0.75,0.25,16,0.5,0.125,0.375,-0.375,8,0.25,0.75,-0.0625,left,left_commentary,Jamarl Thomas,False,label_gemma3_12b,-0.375,left
+@NickCruseRBN,16,16,0.3125,0.375,0.3125,0.0625,16,0.5625,0.375,0.0625,-0.1875,8,-0.125,0.125,-0.0625,left,left_commentary,Revolutionary Blackout Network,False,label_gemma3_12b,-0.1875,left
+@jimacosta,16,16,0.0625,0.25,0.6875,0.1875,16,0.375,0.0625,0.5625,-0.3125,11,0.0,0.8181818181818182,-0.0625,left,left_commentary,Jim Acosta,False,label_gemma3_12b,-0.3125,left
+@HasanReactionsfanTwo,16,16,0.0,0.1875,0.8125,0.1875,16,0.4375,0.1875,0.375,-0.25,9,0.3333333333333333,0.6666666666666666,-0.03125,neither / unclear,streamer_reaction,HasanAbi,True,label_gemma3_12b,-0.25,left
+@wethefifth,16,16,0.0,0.125,0.875,0.125,16,0.3125,0.125,0.5625,-0.1875,11,0.18181818181818182,0.8181818181818182,-0.03125,neither / unclear,centrist_heterodox,The Fifth Column,False,label_gemma3_12b,-0.1875,left
+@AssociatedPress,16,16,0.0625,0.0,0.9375,-0.0625,16,0.125,0.125,0.75,0.0,13,-0.07692307692307693,0.9230769230769231,-0.03125,neither / unclear,wire_international,Associated Press,False,label_gemma3_12b,0.0,neither / unclear
+@NovaraMedia,16,16,0.125,0.1875,0.6875,0.0625,16,0.25,0.125,0.625,-0.125,10,0.0,0.8,-0.03125,neither / unclear,independent_digital_news,Novara Media,False,label_gemma3_12b,-0.125,left
+@destiny,16,16,0.25,0.1875,0.5625,-0.0625,16,0.25,0.25,0.5,0.0,12,0.08333333333333333,0.5833333333333334,-0.03125,neither / unclear,streamer_reaction,Destiny,False,label_gemma3_12b,0.0,neither / unclear
+@theGuardian,16,16,0.0,0.0625,0.9375,0.0625,16,0.1875,0.0625,0.75,-0.125,13,0.07692307692307693,0.9230769230769231,-0.03125,neither / unclear,wire_international,The Guardian,False,label_gemma3_12b,-0.125,left
+@JackCocchiarellaShow,16,16,0.0625,0.5625,0.375,0.5,16,0.75,0.1875,0.0625,-0.5625,2,0.0,0.0,-0.03125,neither / unclear,left_commentary,Jack Cocchiarella,False,label_gemma3_12b,-0.5625,left
+@adammockler,16,16,0.0,0.0,1.0,0.0,16,0.3125,0.25,0.4375,-0.0625,7,0.0,1.0,-0.03125,neither / unclear,left_commentary,Adam Mockler,False,label_gemma3_12b,-0.0625,left
+@PhillipScottPodcast,16,16,0.1875,0.125,0.6875,-0.0625,16,0.3125,0.3125,0.375,0.0,6,0.0,0.6666666666666666,-0.03125,neither / unclear,left_commentary,Phillip Scott,False,label_gemma3_12b,0.0,neither / unclear
+@podsaveamerica,16,16,0.125,0.1875,0.6875,0.0625,16,0.25,0.125,0.625,-0.125,11,0.0,0.8181818181818182,-0.03125,neither / unclear,left_commentary,Crooked Media,False,label_gemma3_12b,-0.125,left
+@SavSays,16,16,0.0625,0.0,0.9375,-0.0625,16,0.125,0.125,0.75,0.0,12,0.0,1.0,-0.03125,neither / unclear,right_commentary,Sav Says,False,label_gemma3_12b,0.0,neither / unclear
+@newyorker,16,16,0.0,0.0,1.0,0.0,16,0.0625,0.0,0.9375,-0.0625,15,0.0,1.0,-0.03125,neither / unclear,us_press_print_digital,The New Yorker,False,label_gemma3_12b,-0.0625,left
+@PerunAU,16,16,0.0,0.0,1.0,0.0,16,0.0625,0.0,0.9375,-0.0625,15,0.0,1.0,-0.03125,neither / unclear,explainer_geopolitics,Perun,False,label_gemma3_12b,-0.0625,left
+@SNEAKO,5,5,0.0,0.0,1.0,0.0,5,0.0,0.0,1.0,0.0,5,0.0,1.0,0.0,neither / unclear,streamer_reaction,SNEAKO,False,label_gemma3_12b,0.0,neither / unclear
+@TheSerfTimes,16,16,0.125,0.3125,0.5625,0.1875,16,0.3125,0.125,0.5625,-0.1875,12,0.0,0.6666666666666666,0.0,neither / unclear,streamer_reaction,Serf Times,False,label_gemma3_12b,-0.1875,left
+@Vaush,16,16,0.125,0.125,0.75,0.0,16,0.1875,0.1875,0.625,0.0,13,-0.07692307692307693,0.7692307692307693,0.0,neither / unclear,streamer_reaction,Vaush,False,label_gemma3_12b,0.0,neither / unclear
+@TheEconomist,16,16,0.0,0.0,1.0,0.0,16,0.0,0.0,1.0,0.0,16,0.0,1.0,0.0,neither / unclear,wire_international,The Economist,False,label_gemma3_12b,0.0,neither / unclear
+@Vox,16,16,0.0,0.0625,0.9375,0.0625,16,0.1875,0.125,0.6875,-0.0625,12,0.08333333333333333,0.9166666666666666,0.0,neither / unclear,us_press_print_digital,Vox,False,label_gemma3_12b,-0.0625,left
+@briantylercohen,16,16,0.1875,0.4375,0.375,0.25,16,0.5625,0.3125,0.125,-0.25,5,0.4,0.2,0.0,neither / unclear,left_commentary,Brian Tyler Cohen,False,label_gemma3_12b,-0.25,left
+@TechCrunch,16,16,0.0,0.0,1.0,0.0,16,0.0,0.0,1.0,0.0,16,0.0,1.0,0.0,neither / unclear,us_press_print_digital,TechCrunch,False,label_gemma3_12b,0.0,neither / unclear
+@CaspianReport,16,16,0.0,0.0,1.0,0.0,16,0.0,0.0,1.0,0.0,16,0.0,1.0,0.0,neither / unclear,explainer_geopolitics,CaspianReport,False,label_gemma3_12b,0.0,neither / unclear
+@ModernDayDebate,16,16,0.0,0.0,1.0,0.0,16,0.0625,0.0625,0.875,0.0,14,0.0,1.0,0.0,neither / unclear,streamer_reaction,Modern-Day Debate,False,label_gemma3_12b,0.0,neither / unclear
+@NBCNews,16,16,0.0,0.0625,0.9375,0.0625,16,0.125,0.0625,0.8125,-0.0625,14,0.07142857142857142,0.9285714285714286,0.0,neither / unclear,us_legacy_tv,NBC News,False,label_gemma3_12b,-0.0625,left
+@DoubleDownNews,16,16,0.1875,0.3125,0.5,0.125,16,0.3125,0.1875,0.5,-0.125,12,0.08333333333333333,0.5833333333333334,0.0,neither / unclear,independent_digital_news,Double Down News,False,label_gemma3_12b,-0.125,left
+@therationalnational,16,16,0.0625,0.1875,0.75,0.125,16,0.25,0.125,0.625,-0.125,10,-0.1,0.9,0.0,neither / unclear,left_commentary,Rational National,False,label_gemma3_12b,-0.125,left
+@ClipsCandaceOwens,16,16,0.0,0.0,1.0,0.0,16,0.1875,0.1875,0.625,0.0,10,0.0,1.0,0.0,neither / unclear,right_commentary,Candace Owens,True,label_gemma3_12b,0.0,neither / unclear
+@FinancialTimes,16,16,0.0,0.0,1.0,0.0,16,0.0,0.0,1.0,0.0,16,0.0,1.0,0.0,neither / unclear,wire_international,Financial Times,False,label_gemma3_12b,0.0,neither / unclear
+@BBCNews,16,16,0.0,0.0,1.0,0.0,16,0.0,0.0,1.0,0.0,16,0.0,1.0,0.0,neither / unclear,wire_international,BBC,False,label_gemma3_12b,0.0,neither / unclear
+@Channel5YouTube,16,16,0.0625,0.0625,0.875,0.0,16,0.1875,0.1875,0.625,0.0,12,0.0,0.8333333333333334,0.0,neither / unclear,independent_digital_news,Channel 5,False,label_gemma3_12b,0.0,neither / unclear
+@joerogan,16,16,0.0,0.0,1.0,0.0,16,0.0,0.0,1.0,0.0,16,0.0,1.0,0.0,neither / unclear,interview_podcast,Joe Rogan,False,label_gemma3_12b,0.0,neither / unclear
+@RestPoliticsUS,16,11,0.0,0.2727272727272727,0.7272727272727273,0.2727272727272727,16,0.375,0.125,0.5,-0.25,7,0.0,1.0,0.011363636363636354,neither / unclear,centrist_heterodox,The Rest Is Politics US,False,label_gemma3_12b,-0.25,left
+@nytimes,16,16,0.0,0.1875,0.8125,0.1875,16,0.1875,0.0625,0.75,-0.125,11,0.0,1.0,0.03125,neither / unclear,us_press_print_digital,New York Times,False,label_gemma3_12b,-0.125,left
+@triggerpod,16,16,0.125,0.125,0.75,0.0,16,0.0625,0.125,0.8125,0.0625,12,-0.08333333333333333,0.9166666666666666,0.03125,neither / unclear,interview_podcast,Triggernometry,False,label_gemma3_12b,0.0625,right
+@evanjmez,16,16,0.125,0.5,0.375,0.375,16,0.5,0.1875,0.3125,-0.3125,6,0.0,0.6666666666666666,0.03125,neither / unclear,left_commentary,Evan James,False,label_gemma3_12b,-0.3125,left
+@ColemanHughesOfficial,16,16,0.125,0.0625,0.8125,-0.0625,16,0.1875,0.3125,0.5,0.125,11,-0.09090909090909091,0.7272727272727273,0.03125,neither / unclear,interview_podcast,Coleman Hughes,False,label_gemma3_12b,0.125,right
+@aljazeeraenglish,16,16,0.0,0.0,1.0,0.0,16,0.1875,0.25,0.5625,0.0625,9,0.0,1.0,0.03125,neither / unclear,wire_international,Al Jazeera,False,label_gemma3_12b,0.0625,right
+@ClubRandomPodcast,16,16,0.0,0.0,1.0,0.0,16,0.0,0.0625,0.9375,0.0625,15,0.0,1.0,0.03125,neither / unclear,interview_podcast,Bill Maher,False,label_gemma3_12b,0.0625,right
+@mikhaila,16,16,0.0,0.0,1.0,0.0,16,0.0,0.0625,0.9375,0.0625,15,0.0,1.0,0.03125,neither / unclear,interview_podcast,Mikhaila Peterson,False,label_gemma3_12b,0.0625,right
+@MattBernstein1,16,16,0.0625,0.1875,0.75,0.125,16,0.375,0.3125,0.3125,-0.0625,8,0.125,0.625,0.03125,neither / unclear,left_commentary,Matt Bernstein,False,label_gemma3_12b,-0.0625,left
+@USATODAY,16,16,0.0,0.0,1.0,0.0,16,0.0625,0.125,0.8125,0.0625,13,0.0,1.0,0.03125,neither / unclear,us_press_print_digital,USA Today,False,label_gemma3_12b,0.0625,right
+@lonerboxlive,16,16,0.0625,0.0625,0.875,0.0,16,0.25,0.3125,0.4375,0.0625,8,0.125,0.875,0.03125,neither / unclear,streamer_reaction,LonerBox,False,label_gemma3_12b,0.0625,right
+@Unpacked,16,16,0.0,0.0,1.0,0.0,16,0.0,0.0625,0.9375,0.0625,15,0.0,1.0,0.03125,neither / unclear,explainer_geopolitics,Unpacked,False,label_gemma3_12b,0.0625,right
+@BlaireWhiteX,11,11,0.0,0.2727272727272727,0.7272727272727273,0.2727272727272727,11,0.45454545454545453,0.2727272727272727,0.2727272727272727,-0.18181818181818182,5,0.4,0.6,0.04545454545454544,neither / unclear,right_commentary,Blaire White,False,label_gemma3_12b,-0.18181818181818182,left
+@AsmonTV,16,16,0.0,0.0,1.0,0.0,16,0.0,0.125,0.875,0.125,14,0.0,1.0,0.0625,right,streamer_reaction,Asmongold,True,label_gemma3_12b,0.125,right
+@TheYoungTurks,16,16,0.125,0.375,0.5,0.25,16,0.375,0.25,0.375,-0.125,10,0.2,0.6,0.0625,right,left_commentary,TYT Network,False,label_gemma3_12b,-0.125,left
+@TimDillonShow,16,16,0.0,0.0,1.0,0.0,16,0.0,0.125,0.875,0.125,14,0.0,1.0,0.0625,right,humour_satire,Tim Dillon,False,label_gemma3_12b,0.125,right
+@Tim_Black,16,16,0.125,0.125,0.75,0.0,16,0.25,0.375,0.375,0.125,6,-0.16666666666666666,0.8333333333333334,0.0625,right,left_commentary,Tim Black,False,label_gemma3_12b,0.125,right
+@TheRealTabithaSpeaks,16,16,0.125,0.125,0.75,0.0,16,0.25,0.375,0.375,0.125,9,-0.1111111111111111,0.6666666666666666,0.0625,right,left_commentary,Tabitha Speaks,False,label_gemma3_12b,0.125,right
+@chriscuomo,16,16,0.0625,0.125,0.8125,0.0625,16,0.25,0.3125,0.4375,0.0625,9,0.0,0.7777777777777778,0.0625,right,centrist_heterodox,Chris Cuomo,False,label_gemma3_12b,0.0625,right
+@JillianMichaels,16,16,0.1875,0.25,0.5625,0.0625,16,0.25,0.3125,0.4375,0.0625,12,0.08333333333333333,0.5833333333333334,0.0625,right,interview_podcast,Jillian Michaels,False,label_gemma3_12b,0.0625,right
+@DailyDenims,16,16,0.0,0.25,0.75,0.25,16,0.25,0.125,0.625,-0.125,11,0.09090909090909091,0.9090909090909091,0.0625,right,streamer_reaction,Denims,True,label_gemma3_12b,-0.125,left
+@RealDanBongino,16,16,0.0,0.0625,0.9375,0.0625,16,0.0625,0.125,0.8125,0.0625,14,0.07142857142857142,0.9285714285714286,0.0625,right,right_commentary,Dan Bongino,False,label_gemma3_12b,0.0625,right
+@FarronBalanced,16,16,0.0625,0.625,0.3125,0.5625,16,0.625,0.1875,0.1875,-0.4375,5,0.0,0.6,0.0625,right,left_commentary,Farron Balanced,False,label_gemma3_12b,-0.4375,left
+@ZeihanonGeopolitics,16,16,0.0,0.0,1.0,0.0,16,0.0,0.125,0.875,0.125,14,0.0,1.0,0.0625,right,explainer_geopolitics,Peter Zeihan,False,label_gemma3_12b,0.125,right
+@PrisonPlanetLive,16,16,0.0,0.0,1.0,0.0,16,0.1875,0.3125,0.5,0.125,8,0.0,1.0,0.0625,right,right_commentary,Paul Joseph Watson,False,label_gemma3_12b,0.125,right
+@FleccasTalks,16,16,0.0,0.0625,0.9375,0.0625,16,0.0,0.0625,0.9375,0.0625,16,0.0625,0.9375,0.0625,right,right_commentary,Fleccas Talks,False,label_gemma3_12b,0.0625,right
+@markets,16,16,0.0,0.0625,0.9375,0.0625,16,0.0,0.0625,0.9375,0.0625,14,0.0,1.0,0.0625,right,us_press_print_digital,Bloomberg,False,label_gemma3_12b,0.0625,right
+@PiscoLitty,16,16,0.0625,0.25,0.6875,0.1875,16,0.375,0.3125,0.3125,-0.0625,9,0.2222222222222222,0.5555555555555556,0.0625,right,streamer_reaction,Pisco,False,label_gemma3_12b,-0.0625,left
+@Reuters,16,16,0.0,0.125,0.875,0.125,16,0.0625,0.0625,0.875,0.0,15,0.06666666666666667,0.9333333333333333,0.0625,right,wire_international,Reuters,False,label_gemma3_12b,0.0,neither / unclear
+@MegynKelly,16,16,0.0625,0.0,0.9375,-0.0625,16,0.125,0.3125,0.5625,0.1875,10,-0.1,0.9,0.0625,right,right_commentary,Megyn Kelly,False,label_gemma3_12b,0.1875,right
+@LegalAFMTN,16,16,0.25,0.5625,0.1875,0.3125,16,0.5625,0.375,0.0625,-0.1875,6,0.16666666666666666,0.16666666666666666,0.0625,right,legal_institutional,MeidasTouch Network,False,label_gemma3_12b,-0.1875,left
+@POLITICO,16,16,0.0,0.125,0.875,0.125,16,0.3125,0.3125,0.375,0.0,6,0.0,1.0,0.0625,right,us_press_print_digital,Politico,False,label_gemma3_12b,0.0,neither / unclear
+@OwenReport,16,16,0.125,0.3125,0.5625,0.1875,16,0.4375,0.375,0.1875,-0.0625,4,-0.25,0.75,0.0625,right,right_commentary,Owen Shroyer,False,label_gemma3_12b,-0.0625,left
+@bbrettcooper,16,16,0.0625,0.0625,0.875,0.0,16,0.0,0.1875,0.8125,0.1875,14,0.07142857142857142,0.9285714285714286,0.09375,right,right_commentary,Brett Cooper,False,label_gemma3_12b,0.1875,right
+@thejimmydoreshow,16,16,0.25,0.375,0.375,0.125,16,0.3125,0.375,0.3125,0.0625,10,0.2,0.4,0.09375,right,left_commentary,Jimmy Dore,False,label_gemma3_12b,0.0625,right
+@TimcastIRL,16,16,0.0,0.0625,0.9375,0.0625,16,0.0625,0.1875,0.75,0.125,13,0.07692307692307693,0.9230769230769231,0.09375,right,right_commentary,Timcast,False,label_gemma3_12b,0.125,right
+@ponderingpolitics,16,16,0.0,0.125,0.875,0.125,16,0.1875,0.25,0.5625,0.0625,8,0.0,1.0,0.09375,right,left_commentary,Pondering Politics,False,label_gemma3_12b,0.0625,right
+@nationalreview,16,16,0.1875,0.125,0.6875,-0.0625,16,0.25,0.5,0.25,0.25,5,0.4,0.6,0.09375,right,us_press_print_digital,National Review,False,label_gemma3_12b,0.25,right
+@samharrisorg,16,16,0.125,0.1875,0.6875,0.0625,16,0.125,0.25,0.625,0.125,13,0.07692307692307693,0.7692307692307693,0.09375,right,interview_podcast,Sam Harris,False,label_gemma3_12b,0.125,right
+@60minutes,16,16,0.0,0.0625,0.9375,0.0625,16,0.0,0.125,0.875,0.125,15,0.06666666666666667,0.9333333333333333,0.09375,right,us_legacy_tv,CBS News,False,label_gemma3_12b,0.125,right
+@SabbySabs,16,16,0.0,0.0625,0.9375,0.0625,16,0.0625,0.1875,0.75,0.125,12,0.0,1.0,0.09375,right,left_commentary,Sabby Sabs,False,label_gemma3_12b,0.125,right
+@ABCNews,16,16,0.0,0.0625,0.9375,0.0625,16,0.0,0.125,0.875,0.125,15,0.06666666666666667,0.9333333333333333,0.09375,right,us_legacy_tv,ABC News,False,label_gemma3_12b,0.125,right
+@NYTPodcasts,16,16,0.0,0.0,1.0,0.0,16,0.0,0.1875,0.8125,0.1875,13,0.0,1.0,0.09375,right,us_press_print_digital,New York Times,False,label_gemma3_12b,0.1875,right
+@SMN,16,16,0.0625,0.3125,0.625,0.25,16,0.4375,0.375,0.1875,-0.0625,8,0.375,0.375,0.09375,right,humour_satire,Some More News,False,label_gemma3_12b,-0.0625,left
+@Forbes,16,16,0.0,0.0625,0.9375,0.0625,16,0.0,0.125,0.875,0.125,15,0.06666666666666667,0.9333333333333333,0.09375,right,us_press_print_digital,Forbes,False,label_gemma3_12b,0.125,right
+@AnthonyBrianLogan,16,16,0.0,0.0,1.0,0.0,16,0.0,0.1875,0.8125,0.1875,13,0.0,1.0,0.09375,right,right_commentary,Anthony Brian Logan,False,label_gemma3_12b,0.1875,right
+@CNN,16,16,0.0,0.125,0.875,0.125,16,0.125,0.1875,0.6875,0.0625,12,0.08333333333333333,0.9166666666666666,0.09375,right,us_legacy_tv,CNN,False,label_gemma3_12b,0.0625,right
+@CBSNews,16,16,0.0625,0.0625,0.875,0.0,16,0.0625,0.25,0.6875,0.1875,13,0.0,0.8461538461538461,0.09375,right,us_legacy_tv,CBS News,False,label_gemma3_12b,0.1875,right
+https://rumble.com/c/russellbrand,16,16,0.0,0.0,1.0,0.0,16,0.0,0.25,0.75,0.25,12,0.0,1.0,0.125,right,centrist_heterodox,Russell Brand,False,label_gemma3_12b,0.25,right
+@NewsNation,16,16,0.125,0.125,0.75,0.0,16,0.0625,0.3125,0.625,0.25,12,0.08333333333333333,0.75,0.125,right,us_legacy_tv,NewsNation,False,label_gemma3_12b,0.25,right
+@TheAdamCarollaShow1,16,16,0.0,0.1875,0.8125,0.1875,16,0.1875,0.25,0.5625,0.0625,11,0.18181818181818182,0.8181818181818182,0.125,right,interview_podcast,Adam Carolla,False,label_gemma3_12b,0.0625,right
+@GrahamAllen,16,16,0.125,0.25,0.625,0.125,16,0.1875,0.3125,0.5,0.125,13,0.07692307692307693,0.6153846153846154,0.125,right,right_commentary,Graham Allen,False,label_gemma3_12b,0.125,right
+@TheVaushPit,16,16,0.0,0.25,0.75,0.25,16,0.25,0.25,0.5,0.0,11,0.2727272727272727,0.7272727272727273,0.125,right,streamer_reaction,Vaush,True,label_gemma3_12b,0.0,neither / unclear
+@XAVIAER,16,16,0.0,0.3125,0.6875,0.3125,16,0.3125,0.25,0.4375,-0.0625,9,0.2222222222222222,0.7777777777777778,0.125,right,right_commentary,PragerU,False,label_gemma3_12b,-0.0625,left
+@RebelHQ,16,16,0.125,0.4375,0.4375,0.3125,16,0.375,0.3125,0.3125,-0.0625,8,0.25,0.5,0.125,right,left_commentary,TYT Network,False,label_gemma3_12b,-0.0625,left
+@thehill,16,16,0.0625,0.125,0.8125,0.0625,16,0.1875,0.375,0.4375,0.1875,9,0.0,0.7777777777777778,0.125,right,us_press_print_digital,The Hill,False,label_gemma3_12b,0.1875,right
+@thomhartmann,16,16,0.125,0.4375,0.4375,0.3125,16,0.375,0.3125,0.3125,-0.0625,11,0.18181818181818182,0.45454545454545453,0.125,right,left_commentary,Thom Hartmann,False,label_gemma3_12b,-0.0625,left
+@TheDamageReport,16,16,0.0625,0.625,0.3125,0.5625,16,0.5625,0.25,0.1875,-0.3125,6,0.5,0.5,0.125,right,left_commentary,TYT Network,False,label_gemma3_12b,-0.3125,left
+@Styxhexenhammer666,16,16,0.125,0.0625,0.8125,-0.0625,16,0.125,0.4375,0.4375,0.3125,9,0.0,0.7777777777777778,0.125,right,right_commentary,Styxhexenhammer,False,label_gemma3_12b,0.3125,right
+@AfterPartyEmily,16,16,0.125,0.125,0.75,0.0,16,0.1875,0.4375,0.375,0.25,9,0.1111111111111111,0.6666666666666666,0.125,right,right_commentary,Emily Jashinsky,False,label_gemma3_12b,0.25,right
+@thedavidpakmanshow,16,16,0.0625,0.5625,0.375,0.5,16,0.5625,0.3125,0.125,-0.25,5,0.8,0.2,0.125,right,left_commentary,David Pakman,False,label_gemma3_12b,-0.25,left
+@Shoe0nHead,10,10,0.0,0.2,0.8,0.2,10,0.2,0.3,0.5,0.1,5,0.2,0.8,0.15000000000000002,right,centrist_heterodox,Shoe0nHead,False,label_gemma3_12b,0.1,right
+@timesofindia,16,16,0.0625,0.125,0.8125,0.0625,16,0.125,0.375,0.5,0.25,11,0.09090909090909091,0.7272727272727273,0.15625,right,wire_international,Times Group,False,label_gemma3_12b,0.25,right
+@morebridgetphetasy,16,16,0.0,0.1875,0.8125,0.1875,16,0.125,0.25,0.625,0.125,11,0.09090909090909091,0.9090909090909091,0.15625,right,interview_podcast,Bridget Phetasy,False,label_gemma3_12b,0.125,right
+@FoxNewsChannelClips,16,16,0.0625,0.125,0.8125,0.0625,16,0.125,0.375,0.5,0.25,10,0.0,0.8,0.15625,right,us_legacy_tv,Fox News,True,label_gemma3_12b,0.25,right
+@AlexStein99,16,16,0.0,0.1875,0.8125,0.1875,16,0.125,0.25,0.625,0.125,12,0.16666666666666666,0.8333333333333334,0.15625,right,humour_satire,Alex Stein,False,label_gemma3_12b,0.125,right
+@MichaelMaliceofficial,16,16,0.0,0.0,1.0,0.0,16,0.0,0.3125,0.6875,0.3125,11,0.0,1.0,0.15625,right,interview_podcast,Michael Malice,False,label_gemma3_12b,0.3125,right
+@OutKick,16,16,0.0,0.125,0.875,0.125,16,0.0,0.1875,0.8125,0.1875,13,0.07692307692307693,0.9230769230769231,0.15625,right,right_commentary,Fox Corporation,False,label_gemma3_12b,0.1875,right
+@RealAlexClark,16,16,0.0,0.0625,0.9375,0.0625,16,0.125,0.375,0.5,0.25,9,0.1111111111111111,0.8888888888888888,0.15625,right,right_commentary,Turning Point USA,False,label_gemma3_12b,0.25,right
+@Xanderhal,16,16,0.125,0.4375,0.4375,0.3125,16,0.3125,0.3125,0.375,0.0,10,0.2,0.6,0.15625,right,streamer_reaction,Xanderhal,False,label_gemma3_12b,0.0,neither / unclear
+@Firstpost,16,16,0.0,0.125,0.875,0.125,16,0.0625,0.25,0.6875,0.1875,13,0.15384615384615385,0.8461538461538461,0.15625,right,wire_international,Network18,False,label_gemma3_12b,0.1875,right
+@MichaelKnowles,16,16,0.0625,0.25,0.6875,0.1875,16,0.125,0.25,0.625,0.125,14,0.14285714285714285,0.7142857142857143,0.15625,right,right_commentary,Daily Wire,False,label_gemma3_12b,0.125,right
+@TheMichaelCohenShow,16,16,0.0625,0.375,0.5625,0.3125,16,0.3125,0.3125,0.375,0.0,9,0.4444444444444444,0.5555555555555556,0.15625,right,left_commentary,MeidasTouch Network,False,label_gemma3_12b,0.0,neither / unclear
+@SkyNews,16,16,0.0,0.0625,0.9375,0.0625,16,0.0,0.25,0.75,0.25,13,0.07692307692307693,0.9230769230769231,0.15625,right,wire_international,Sky News,False,label_gemma3_12b,0.25,right
+@laurenchenclips,16,16,0.0625,0.25,0.6875,0.1875,16,0.125,0.3125,0.5625,0.1875,14,0.21428571428571427,0.6428571428571429,0.1875,right,right_commentary,Lauren Chen,True,label_gemma3_12b,0.1875,right
+@OfficialFlagrant,16,16,0.0,0.0625,0.9375,0.0625,16,0.0,0.3125,0.6875,0.3125,12,0.08333333333333333,0.9166666666666666,0.1875,right,humour_satire,Flagrant,False,label_gemma3_12b,0.3125,right
+@The_Crucible,16,16,0.0,0.3125,0.6875,0.3125,16,0.1875,0.25,0.5625,0.0625,11,0.2727272727272727,0.7272727272727273,0.1875,right,streamer_reaction,The Crucible,False,label_gemma3_12b,0.0625,right
+@PBDPodcast,16,16,0.0,0.0625,0.9375,0.0625,16,0.0,0.3125,0.6875,0.3125,12,0.08333333333333333,0.9166666666666666,0.1875,right,interview_podcast,Valuetainment,False,label_gemma3_12b,0.3125,right
+@theisabelbrown,16,16,0.125,0.1875,0.6875,0.0625,16,0.125,0.4375,0.4375,0.3125,11,0.18181818181818182,0.6363636363636364,0.1875,right,right_commentary,Isabel Brown,False,label_gemma3_12b,0.3125,right
+@DannyHaiphongYT,16,16,0.0,0.5,0.5,0.5,16,0.5625,0.4375,0.0,-0.125,0,,,0.1875,right,left_commentary,Danny Haiphong,False,label_gemma3_12b,-0.125,left
+@TheLincolnProject,16,16,0.0625,0.25,0.6875,0.1875,16,0.1875,0.375,0.4375,0.1875,11,0.18181818181818182,0.6363636363636364,0.1875,right,centrist_heterodox,Lincoln Project,False,label_gemma3_12b,0.1875,right
+@dineshdsouza,16,16,0.0,0.0625,0.9375,0.0625,16,0.125,0.4375,0.4375,0.3125,8,0.125,0.875,0.1875,right,right_commentary,Dinesh D'Souza,False,label_gemma3_12b,0.3125,right
+@Timcast,16,16,0.125,0.25,0.625,0.125,16,0.0625,0.3125,0.625,0.25,15,0.2,0.6666666666666666,0.1875,right,right_commentary,Timcast,False,label_gemma3_12b,0.25,right
+@TheAtlantic,16,16,0.0,0.1875,0.8125,0.1875,16,0.125,0.3125,0.5625,0.1875,10,0.1,0.9,0.1875,right,us_press_print_digital,The Atlantic,False,label_gemma3_12b,0.1875,right
+@LiberalHivemind,16,16,0.125,0.25,0.625,0.125,16,0.0625,0.3125,0.625,0.25,13,0.23076923076923078,0.7692307692307693,0.1875,right,right_commentary,Liberal Hivemind,False,label_gemma3_12b,0.25,right
+https://rumble.com/c/TheAlexJonesShowLive,16,16,0.0,0.0625,0.9375,0.0625,16,0.0,0.3125,0.6875,0.3125,12,0.08333333333333333,0.9166666666666666,0.1875,right,right_commentary,InfoWars,False,label_gemma3_12b,0.3125,right
+@TimcastNews,16,16,0.0,0.25,0.75,0.25,16,0.1875,0.3125,0.5,0.125,12,0.3333333333333333,0.6666666666666666,0.1875,right,right_commentary,Timcast,False,label_gemma3_12b,0.125,right
+@LIVESNEAKO,16,16,0.0,0.25,0.75,0.25,16,0.1875,0.375,0.4375,0.1875,10,0.3,0.7,0.21875,right,streamer_reaction,SNEAKO,False,label_gemma3_12b,0.1875,right
+@deanwithrs,16,16,0.0,0.8125,0.1875,0.8125,16,0.6875,0.3125,0.0,-0.375,5,1.0,0.0,0.21875,right,streamer_reaction,Dean Withers,False,label_gemma3_12b,-0.375,left
+@GeopoliticalEconomyReport,16,16,0.0,0.5,0.5,0.5,16,0.3125,0.25,0.4375,-0.0625,9,0.3333333333333333,0.6666666666666666,0.21875,right,independent_digital_news,Geopolitical Economy Report,False,label_gemma3_12b,-0.0625,left
+@RileyGaines,16,16,0.0,0.0625,0.9375,0.0625,16,0.0625,0.4375,0.5,0.375,9,0.1111111111111111,0.8888888888888888,0.21875,right,right_commentary,Riley Gaines,False,label_gemma3_12b,0.375,right
+@JustPearlyThings,16,16,0.0625,0.25,0.6875,0.1875,16,0.125,0.375,0.5,0.25,11,0.2727272727272727,0.7272727272727273,0.21875,right,right_commentary,Pearl,False,label_gemma3_12b,0.25,right
+@ChadPrather1,16,16,0.0,0.0625,0.9375,0.0625,16,0.0625,0.4375,0.5,0.375,9,0.1111111111111111,0.8888888888888888,0.21875,right,right_commentary,Chad Prather,False,label_gemma3_12b,0.375,right
+@MattWalsh,16,16,0.0625,0.25,0.6875,0.1875,16,0.0625,0.3125,0.625,0.25,14,0.2857142857142857,0.7142857142857143,0.21875,right,right_commentary,Daily Wire,False,label_gemma3_12b,0.25,right
+@nypost,16,16,0.0,0.1875,0.8125,0.1875,16,0.0,0.25,0.75,0.25,15,0.2,0.8,0.21875,right,us_press_print_digital,New York Post,False,label_gemma3_12b,0.25,right
+@BenShapiro,16,16,0.0,0.1875,0.8125,0.1875,16,0.1875,0.4375,0.375,0.25,8,0.25,0.75,0.21875,right,right_commentary,Daily Wire,False,label_gemma3_12b,0.25,right
+@AndrewKlavan,16,16,0.0,0.3125,0.6875,0.3125,16,0.25,0.375,0.375,0.125,10,0.4,0.6,0.21875,right,right_commentary,Daily Wire,False,label_gemma3_12b,0.125,right
+@TomiLahrenIsFearless,16,16,0.0625,0.25,0.6875,0.1875,16,0.0625,0.3125,0.625,0.25,14,0.2857142857142857,0.7142857142857143,0.21875,right,right_commentary,Tomi Lahren,False,label_gemma3_12b,0.25,right
+@TuckerCarlson,16,16,0.125,0.1875,0.6875,0.0625,16,0.125,0.5,0.375,0.375,10,0.2,0.6,0.21875,right,interview_podcast,Tucker Carlson Network,False,label_gemma3_12b,0.375,right
+https://rumble.com/c/GGreenwald,16,16,0.1875,0.25,0.5625,0.0625,16,0.25,0.625,0.125,0.375,6,0.3333333333333333,0.3333333333333333,0.21875,right,independent_digital_news,Glenn Greenwald,False,label_gemma3_12b,0.375,right
+@DarkHorsePod,16,16,0.0,0.125,0.875,0.125,16,0.0625,0.375,0.5625,0.3125,11,0.18181818181818182,0.8181818181818182,0.21875,right,centrist_heterodox,DarkHorse,False,label_gemma3_12b,0.3125,right
+@ThePodcastoftheLotusEaters,16,16,0.0,0.125,0.875,0.125,16,0.0625,0.4375,0.5,0.375,10,0.2,0.8,0.25,right,right_commentary,Lotus Eaters,False,label_gemma3_12b,0.375,right
+@JesseKellyDC,16,16,0.0625,0.1875,0.75,0.125,16,0.125,0.5,0.375,0.375,10,0.2,0.6,0.25,right,right_commentary,Jesse Kelly,False,label_gemma3_12b,0.375,right
+@winston_marshall,16,16,0.0,0.1875,0.8125,0.1875,16,0.1875,0.5,0.3125,0.3125,8,0.375,0.625,0.25,right,interview_podcast,Winston Marshall,False,label_gemma3_12b,0.3125,right
+@MLChristiansen,16,16,0.0625,0.1875,0.75,0.125,16,0.1875,0.5625,0.25,0.375,8,0.25,0.5,0.25,right,right_commentary,Matt Christiansen,False,label_gemma3_12b,0.375,right
+@glennbeck,16,16,0.0625,0.1875,0.75,0.125,16,0.125,0.5,0.375,0.375,10,0.2,0.6,0.25,right,right_commentary,Blaze Media,False,label_gemma3_12b,0.375,right
+@RedactedNews,16,16,0.0,0.0625,0.9375,0.0625,16,0.125,0.5625,0.3125,0.4375,5,0.0,1.0,0.25,right,independent_digital_news,Redacted,False,label_gemma3_12b,0.4375,right
+@SydneyWatson,16,16,0.0,0.1875,0.8125,0.1875,16,0.0,0.3125,0.6875,0.3125,14,0.21428571428571427,0.7857142857142857,0.25,right,right_commentary,Sydney Watson,False,label_gemma3_12b,0.3125,right
+@ZubyMusic,16,16,0.0,0.125,0.875,0.125,16,0.0625,0.4375,0.5,0.375,10,0.2,0.8,0.25,right,interview_podcast,Zuby,False,label_gemma3_12b,0.375,right
+@PiersMorganUncensored,16,16,0.0625,0.375,0.5625,0.3125,16,0.25,0.4375,0.3125,0.1875,9,0.2222222222222222,0.5555555555555556,0.25,right,interview_podcast,Piers Morgan,False,label_gemma3_12b,0.1875,right
+@MrTariqNasheed,16,16,0.0,0.125,0.875,0.125,16,0.0,0.375,0.625,0.375,12,0.16666666666666666,0.8333333333333334,0.25,right,left_commentary,Tariq Nasheed,False,label_gemma3_12b,0.375,right
+@RealAmericasVoice,16,16,0.0625,0.375,0.5625,0.3125,16,0.125,0.375,0.5,0.25,11,0.36363636363636365,0.6363636363636364,0.28125,right,right_tv_network,Real America's Voice,False,label_gemma3_12b,0.25,right
+@ANINewsIndia,16,16,0.0,0.125,0.875,0.125,16,0.0625,0.5,0.4375,0.4375,9,0.2222222222222222,0.7777777777777778,0.28125,right,wire_international,ANI,False,label_gemma3_12b,0.4375,right
+@StosselTV,16,16,0.125,0.125,0.75,0.0,16,0.125,0.6875,0.1875,0.5625,7,0.0,0.42857142857142855,0.28125,right,right_commentary,John Stossel,False,label_gemma3_12b,0.5625,right
+@BadEmpanadaLive,16,16,0.0625,0.4375,0.5,0.375,16,0.1875,0.375,0.4375,0.1875,9,0.2222222222222222,0.5555555555555556,0.28125,right,streamer_reaction,BadEmpanada,False,label_gemma3_12b,0.1875,right
+@TimesNowWorld,16,16,0.0625,0.3125,0.625,0.25,16,0.125,0.4375,0.4375,0.3125,13,0.3076923076923077,0.5384615384615384,0.28125,right,wire_international,Times Group,False,label_gemma3_12b,0.3125,right
+@RebelNewsOnline,16,16,0.0625,0.125,0.8125,0.0625,16,0.0,0.5,0.5,0.5,10,0.2,0.8,0.28125,right,independent_digital_news,Rebel News,False,label_gemma3_12b,0.5,right
+@oann,16,16,0.0,0.1875,0.8125,0.1875,16,0.0,0.375,0.625,0.375,13,0.23076923076923078,0.7692307692307693,0.28125,right,right_tv_network,OAN,False,label_gemma3_12b,0.375,right
+@JacksonHinkleOfficial,16,16,0.0,0.375,0.625,0.375,16,0.25,0.4375,0.3125,0.1875,9,0.4444444444444444,0.5555555555555556,0.28125,right,right_commentary,Jackson Hinkle,False,label_gemma3_12b,0.1875,right
+@HangOutwithSeanHannity,16,16,0.0,0.125,0.875,0.125,16,0.0,0.4375,0.5625,0.4375,11,0.18181818181818182,0.8181818181818182,0.28125,right,interview_podcast,Sean Hannity,False,label_gemma3_12b,0.4375,right
+@RobertGouveiaEsq,16,11,0.2727272727272727,0.2727272727272727,0.45454545454545453,0.0,16,0.125,0.6875,0.1875,0.5625,4,0.5,0.5,0.28125,right,legal_institutional,Robert Gouveia,False,label_gemma3_12b,0.5625,right
+@jlptalk,16,16,0.125,0.3125,0.5625,0.1875,16,0.125,0.5,0.375,0.375,11,0.18181818181818182,0.45454545454545453,0.28125,right,right_commentary,Jesse Lee Peterson,False,label_gemma3_12b,0.375,right
+@AndWeKnowOfficial-o9b,16,11,0.0,0.0,1.0,0.0,16,0.125,0.75,0.125,0.625,1,0.0,1.0,0.3125,right,right_commentary,And We Know,False,label_gemma3_12b,0.625,right
+@SaltyCracker,16,16,0.0,0.1875,0.8125,0.1875,16,0.0,0.4375,0.5625,0.4375,12,0.25,0.75,0.3125,right,streamer_reaction,Salty Cracker,False,label_gemma3_12b,0.4375,right
+@chicksonright,16,16,0.0625,0.3125,0.625,0.25,16,0.1875,0.5625,0.25,0.375,8,0.5,0.5,0.3125,right,right_commentary,Chicks on the Right,False,label_gemma3_12b,0.375,right
+@RufoandLomez,16,16,0.0625,0.4375,0.5,0.375,16,0.25,0.5,0.25,0.25,10,0.6,0.4,0.3125,right,right_commentary,Rufo & Lomez,False,label_gemma3_12b,0.25,right
+@MeidasTouch,16,16,0.1875,0.375,0.4375,0.1875,16,0.25,0.6875,0.0625,0.4375,9,0.2222222222222222,0.1111111111111111,0.3125,right,left_commentary,MeidasTouch Network,False,label_gemma3_12b,0.4375,right
+@breakingpoints,16,11,0.0,0.2727272727272727,0.7272727272727273,0.2727272727272727,16,0.125,0.5,0.375,0.375,4,0.25,0.75,0.32386363636363635,right,independent_digital_news,Breaking Points,False,label_gemma3_12b,0.375,right
+@newdiscourses,16,16,0.0,0.1875,0.8125,0.1875,16,0.0625,0.5625,0.375,0.5,9,0.3333333333333333,0.6666666666666666,0.34375,right,right_commentary,New Discourses,False,label_gemma3_12b,0.5,right
+@StevenCrowder,16,16,0.0625,0.25,0.6875,0.1875,16,0.0,0.5,0.5,0.5,12,0.3333333333333333,0.6666666666666666,0.34375,right,right_commentary,Louder with Crowder,False,label_gemma3_12b,0.5,right
+@RSBN,16,16,0.0,0.125,0.875,0.125,16,0.0625,0.625,0.3125,0.5625,7,0.2857142857142857,0.7142857142857143,0.34375,right,right_tv_network,RSBN,False,label_gemma3_12b,0.5625,right
+@FreshFitMiami,16,16,0.0,0.0,1.0,0.0,16,0.0,0.6875,0.3125,0.6875,5,0.0,1.0,0.34375,right,right_commentary,Fresh & Fit,False,label_gemma3_12b,0.6875,right
+@TheQuartering,16,16,0.0625,0.3125,0.625,0.25,16,0.0625,0.5,0.4375,0.4375,11,0.36363636363636365,0.6363636363636364,0.34375,right,right_commentary,TheQuartering,False,label_gemma3_12b,0.4375,right
+@MarkDice,16,16,0.1875,0.4375,0.375,0.25,16,0.125,0.5625,0.3125,0.4375,11,0.45454545454545453,0.36363636363636365,0.34375,right,right_commentary,Mark Dice,False,label_gemma3_12b,0.4375,right
+@AnaEscobarShow,16,16,0.0625,0.1875,0.75,0.125,16,0.0,0.625,0.375,0.625,9,0.3333333333333333,0.6666666666666666,0.375,right,right_commentary,Ana Escobar,False,label_gemma3_12b,0.625,right
+@lizwheeler,16,16,0.0625,0.375,0.5625,0.3125,16,0.0625,0.5,0.4375,0.4375,10,0.4,0.6,0.375,right,right_commentary,Liz Wheeler,False,label_gemma3_12b,0.4375,right
+@MyronGainesX,16,16,0.25,0.3125,0.4375,0.0625,16,0.125,0.8125,0.0625,0.6875,7,0.5714285714285714,0.14285714285714285,0.375,right,right_commentary,Myron Gaines,False,label_gemma3_12b,0.6875,right
+@NickShirley,16,16,0.0,0.3125,0.6875,0.3125,16,0.0,0.5,0.5,0.5,13,0.38461538461538464,0.6153846153846154,0.40625,right,right_commentary,Nick Shirley,False,label_gemma3_12b,0.5,right
+https://rumble.com/c/nickjfuentes,16,16,0.125,0.5625,0.3125,0.4375,16,0.1875,0.5625,0.25,0.375,10,0.5,0.3,0.40625,right,right_commentary,Nick Fuentes,False,label_gemma3_12b,0.375,right
+@clayandbuck,16,16,0.125,0.1875,0.6875,0.0625,16,0.0,0.75,0.25,0.75,6,0.5,0.5,0.40625,right,right_commentary,Clay & Buck,False,label_gemma3_12b,0.75,right
+@RubinReport,16,16,0.0,0.5,0.5,0.5,16,0.1875,0.5,0.3125,0.3125,10,0.6,0.4,0.40625,right,right_commentary,Rubin Report,False,label_gemma3_12b,0.3125,right
+@KimIversen,16,16,0.0,0.375,0.625,0.375,16,0.0625,0.5,0.4375,0.4375,10,0.4,0.6,0.40625,right,centrist_heterodox,Kim Iversen,False,label_gemma3_12b,0.4375,right
+@PragerU,16,16,0.0,0.25,0.75,0.25,16,0.0,0.5625,0.4375,0.5625,11,0.36363636363636365,0.6363636363636364,0.40625,right,right_commentary,PragerU,False,label_gemma3_12b,0.5625,right
+@RekietaLaw,16,16,0.0,0.3125,0.6875,0.3125,16,0.0,0.5,0.5,0.5,13,0.38461538461538464,0.6153846153846154,0.40625,right,legal_institutional,Rekieta Law,False,label_gemma3_12b,0.5,right
+@turningpointusa,16,16,0.0,0.0625,0.9375,0.0625,16,0.0,0.8125,0.1875,0.8125,4,0.25,0.75,0.4375,right,right_commentary,Turning Point USA,False,label_gemma3_12b,0.8125,right
+@PTLRadioShow,16,16,0.125,0.5,0.375,0.375,16,0.125,0.625,0.25,0.5,14,0.42857142857142855,0.2857142857142857,0.4375,right,left_commentary,Pushing the Limits,False,label_gemma3_12b,0.5,right
+@marklevinshow,16,16,0.0,0.25,0.75,0.25,16,0.0,0.6875,0.3125,0.6875,9,0.4444444444444444,0.5555555555555556,0.46875,right,right_commentary,Mark Levin,False,label_gemma3_12b,0.6875,right
+@MrReaganUSA,16,16,0.0625,0.375,0.5625,0.3125,16,0.0,0.625,0.375,0.625,12,0.5,0.5,0.46875,right,right_commentary,Mr Reagan,False,label_gemma3_12b,0.625,right
+@VivaFrei,16,16,0.0,0.25,0.75,0.25,16,0.0625,0.8125,0.125,0.75,6,0.6666666666666666,0.3333333333333333,0.5,right,legal_institutional,Viva Frei,False,label_gemma3_12b,0.75,right
+@fightbackpodcast,16,16,0.0625,0.375,0.5625,0.3125,16,0.0,0.6875,0.3125,0.6875,10,0.6,0.4,0.5,right,right_commentary,Jake Shields,False,label_gemma3_12b,0.6875,right
+@FoxNews,16,16,0.0625,0.375,0.5625,0.3125,16,0.0625,0.75,0.1875,0.6875,9,0.6666666666666666,0.3333333333333333,0.5,right,us_legacy_tv,Fox News,False,label_gemma3_12b,0.6875,right
+@BlazeTV,16,16,0.25,0.375,0.375,0.125,16,0.0,0.875,0.125,0.875,8,0.75,0.25,0.5,right,right_commentary,Blaze Media,False,label_gemma3_12b,0.875,right
+@TheOfficerTatum,16,16,0.1875,0.4375,0.375,0.25,16,0.0,0.8125,0.1875,0.8125,10,0.7,0.3,0.53125,right,right_commentary,Officer Tatum,False,label_gemma3_12b,0.8125,right
+@TheBrianKilmeadeShow,16,16,0.0,0.4375,0.5625,0.4375,16,0.0,0.625,0.375,0.625,11,0.5454545454545454,0.45454545454545453,0.53125,right,right_commentary,Fox News,False,label_gemma3_12b,0.625,right
+@ActualJusticeWarrior,16,16,0.3125,0.375,0.3125,0.0625,16,0.0,1.0,0.0,1.0,6,1.0,0.0,0.53125,right,right_commentary,Actual Justice Warrior,False,label_gemma3_12b,1.0,right
+@CamHigby,16,16,0.0,0.3125,0.6875,0.3125,16,0.0,0.8125,0.1875,0.8125,8,0.625,0.375,0.5625,right,right_commentary,Cam Higby,False,label_gemma3_12b,0.8125,right
+@bennyjohnson,16,16,0.0625,0.4375,0.5,0.375,16,0.0,0.8125,0.1875,0.8125,10,0.7,0.3,0.59375,right,right_commentary,Benny Johnson,False,label_gemma3_12b,0.8125,right
+@X22Report-y5y,16,16,0.0,0.4375,0.5625,0.4375,16,0.0,0.75,0.25,0.75,11,0.6363636363636364,0.36363636363636365,0.59375,right,right_commentary,X22 Report,False,label_gemma3_12b,0.75,right
+@OfficialSaharTV,16,16,0.0,0.5625,0.4375,0.5625,16,0.0625,0.75,0.1875,0.6875,12,0.75,0.25,0.625,right,right_commentary,Sahar TV,False,label_gemma3_12b,0.6875,right
+@CashJordan,16,16,0.0,0.625,0.375,0.625,16,0.0625,0.6875,0.25,0.625,14,0.7142857142857143,0.2857142857142857,0.625,right,right_commentary,Cash Jordan,False,label_gemma3_12b,0.625,right
+@DrSteveTurleyTV,16,16,0.0625,0.5625,0.375,0.5,16,0.0,0.75,0.25,0.75,11,0.7272727272727273,0.2727272727272727,0.625,right,right_commentary,Steve Turley,False,label_gemma3_12b,0.75,right
+https://rumble.com/c/BannonsWarRoom,16,16,0.0,0.5625,0.4375,0.5625,16,0.0625,0.8125,0.125,0.75,11,0.8181818181818182,0.18181818181818182,0.65625,right,right_commentary,War Room,False,label_gemma3_12b,0.75,right
+@NewsmaxTV,16,16,0.0,0.5625,0.4375,0.5625,16,0.0,0.8125,0.1875,0.8125,10,0.8,0.2,0.6875,right,right_tv_network,Newsmax,False,label_gemma3_12b,0.8125,right
+@BlackConservativePerspective,16,16,0.1875,0.6875,0.125,0.5,16,0.0625,0.9375,0.0,0.875,10,1.0,0.0,0.6875,right,right_commentary,Black Conservative Perspective,False,label_gemma3_12b,0.875,right

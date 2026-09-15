@@ -1,0 +1,5 @@
+score,n_creators,auc_right_vs_left_lane,accuracy_sign_vs_lane,n_nonzero,mean_score_left_lane,mean_score_right_lane
+label_qwen3_14b_score,123,0.5724,0.6606,109,0.1385,0.187
+label_gemma3_12b_score,123,0.9268,0.8824,119,-0.2535,0.3734
+consensus_score,122,0.8123,0.8317,101,-0.03,0.3043
+mean_score,123,0.8975,0.8167,120,-0.0575,0.2802

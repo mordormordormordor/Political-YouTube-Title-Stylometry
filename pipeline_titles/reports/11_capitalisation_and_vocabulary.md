@@ -6,7 +6,7 @@
 
 ### The finding in one paragraph
 
-Averaged over the 239 ranked channels (edited uploads), 49 % of titles are Title Case, 33 % use selective CAPS (one or more shouted words inside a normally cased title: "Trump SLAMS Judge"), 13 % are sentence case, 3 % are ALL CAPS, and the rest are too short to classify or mixed. Selective capitals are the signature of the daily commentary channels: @DannyHaiphongYT, @MeidasTouch, @katiephangnews, @CashJordan, @SabbySabs put an emphasised word in more than 99 % of their titles. Full ALL-CAPS titles are rarer and concentrated in a handful of streamer-adjacent right channels (Jackson Hinkle, Fleccas, Timcast, TheQuartering); the news outlets are sentence case or Title Case with almost no emphasis capitals.
+Averaged over the 239 ranked channels (edited uploads), 49 % of titles are Title Case, 33 % use selective CAPS (one or more shouted words inside a normally cased title: "Trump SLAMS Judge"), 13 % are sentence case, 3 % are ALL CAPS, and the rest are too short to classify or mixed. Selective capitals are the signature of the daily commentary channels: @DannyHaiphongYT, @MeidasTouch, @katiephangnews, @CashJordan, @SabbySabs put an emphasised word in more than 99 % of their titles. Full ALL-CAPS titles are rarer and concentrated in a handful of channels on both sides (Jackson Hinkle, TheQuartering, the three Timcast channels, Fleccas, and the streamers Hasan Piker and Vaush); the news outlets are sentence case or Title Case, and the selective capitals they do show are mostly quoted shouted words ('GAME CHANGER': ...) rather than emphasis.
 
 ![Top 45 channels by capitals.](figures/11_caps_profile_top.png)
 *The 45 channels that use ALL CAPS or selective CAPS most; the bar is the whole channel's titles.*

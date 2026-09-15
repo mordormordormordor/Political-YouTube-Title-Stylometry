@@ -1,0 +1,39 @@
+{
+  "n_labelled_by_all": 4317,
+  "models": [
+    "label_qwen3_14b",
+    "label_gemma3_12b"
+  ],
+  "label_shares": {
+    "label_qwen3_14b": {
+      "neither": 0.726,
+      "right": 0.1974,
+      "left": 0.0767
+    },
+    "label_gemma3_12b": {
+      "neither": 0.479,
+      "right": 0.281,
+      "left": 0.24
+    }
+  },
+  "kappa": 0.3756,
+  "exact_agreement": 0.6389,
+  "confusion": {
+    "left": {
+      "left": 237,
+      "neither": 499,
+      "right": 300
+    },
+    "neither": {
+      "left": 17,
+      "neither": 2010,
+      "right": 41
+    },
+    "right": {
+      "left": 77,
+      "neither": 625,
+      "right": 511
+    }
+  },
+  "kappa_political_only": 0.3161
+}

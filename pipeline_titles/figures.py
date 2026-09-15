@@ -471,13 +471,15 @@ def fig_leaning():
         r_ = bc[cols[0]].corr(bc[cols[1]], method="spearman")
         ax.set_title(f"Channel scores from the two models (Spearman {r_:.2f})")
     ax = axes[1]
-    b = bl.sort_values("mean_score"); y = np.arange(len(b)); rng = np.random.RandomState(5)
-    for i, r in enumerate(b.itertuples()):
+    sc = "judge_score" if "judge_score" in bc.columns else "mean_score"
+    jname = bc["judge_of_record"].iloc[0].replace("label_", "").replace("_", ":", 1).replace("_", ".") if "judge_of_record" in bc.columns else "mean of models"
+    lm = bc.groupby("lane").agg(v=(sc, "mean"), n=("creator", "size")).reset_index().sort_values("v"); y = np.arange(len(lm)); rng = np.random.RandomState(5)
+    for i, r in enumerate(lm.itertuples()):
         sub = bc[bc.lane == r.lane]
-        ax.plot(sub.mean_score, i + rng.uniform(-0.2, 0.2, len(sub)), "o", color=FAM_COLOR[FAMILY_OF[r.lane]], alpha=0.5, ms=4)
-        ax.plot([r.mean_score] * 2, [i - 0.3, i + 0.3], color=INK, lw=2)
-    ax.set_yticks(y, [f"{lane_label(l)} (n={int(n)})" for l, n in zip(b.lane, b.n_creators)], fontsize=8); ax.axvline(0, color=INK, lw=0.8); ax.grid(axis="y", visible=False)
-    ax.set_xlabel("mean title-leaning score (−1 left … +1 right); dots = channels, bar = lane mean"); ax.set_title("Title leaning by lane")
+        ax.plot(sub[sc], i + rng.uniform(-0.2, 0.2, len(sub)), "o", color=FAM_COLOR[FAMILY_OF[r.lane]], alpha=0.5, ms=4)
+        ax.plot([r.v] * 2, [i - 0.3, i + 0.3], color=INK, lw=2)
+    ax.set_yticks(y, [f"{lane_label(l)} (n={int(n)})" for l, n in zip(lm.lane, lm.n)], fontsize=8); ax.axvline(0, color=INK, lw=0.8); ax.grid(axis="y", visible=False)
+    ax.set_xlabel(f"title-leaning score, judge of record {jname} (−1 left … +1 right); dots = channels, bar = lane mean"); ax.set_title("Title leaning by lane")
     fig.tight_layout(); save(fig, "14_leaning_scores.png")
 
     w = words[words.model == "consensus"] if (words.model == "consensus").any() else words[words.model == words.model.iloc[0]]
@@ -486,11 +488,15 @@ def fig_leaning():
     ax = axes[0]
     ax.scatter(w.rank_right, w.rank_left, s=8, color=GRID, alpha=0.8)
     ax.set_xscale("log"); ax.set_yscale("log"); mx = max(w.rank_right.max(), w.rank_left.max()); ax.plot([1, mx], [1, mx], color=INK, lw=0.8, ls="--")
-    lab = pd.concat([w.nlargest(14, "rtd_contribution"), w.nsmallest(14, "rtd_contribution")])
+    both = w[(w.count_right > 0) & (w.count_left > 0)]
+    lab = pd.concat([both.nlargest(9, "rtd_contribution"), both.nsmallest(9, "rtd_contribution")])
     for r in lab.itertuples():
         col_ = CAT[1] if r.rtd_contribution > 0 else CAT[0]
         ax.scatter([r.rank_right], [r.rank_left], s=22, color=col_, zorder=3)
         ax.annotate(r.word, (r.rank_right, r.rank_left), fontsize=7, color=col_, xytext=(3, 2), textcoords="offset points")
+    only_r = w[(w.count_left == 0)].nlargest(10, "rtd_contribution").word.tolist(); only_l = w[(w.count_right == 0)].nsmallest(10, "rtd_contribution").word.tolist()
+    ax.text(0.02, 0.90, "right-only words (top row): " + ", ".join(only_r), transform=ax.transAxes, fontsize=7, color=CAT[1], va="top", wrap=True)
+    ax.text(0.98, 0.10, "left-only words (right column): " + ", ".join(only_l), transform=ax.transAxes, fontsize=7, color=CAT[0], ha="right", va="bottom", wrap=True)
     ax.set_xlabel("rank among right-labelled titles (1 = most frequent)"); ax.set_ylabel("rank among left-labelled titles")
     ax.set_title("Where each word ranks on the two sides (titles both models agree on)")
     ax.text(0.02, 0.97, "above the line: more prominent on the right", transform=ax.transAxes, fontsize=7.5, color=CAT[1], va="top")
