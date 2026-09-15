@@ -11,8 +11,8 @@ listing-level metadata that comes with them are the entire dataset.
 ## Results
 
 Start at [`pipeline_titles/reports/README.md`](pipeline_titles/reports/README.md): the
-write-up is split into eight documents, one per question, each explaining its finding
-with the tables that carry it and its caveats:
+write-up is split into fourteen documents, one per question, each explaining its finding
+with the tables that carry it and its caveats. Eight follow the pipeline's stages:
 
 1. [Corpus and lanes](pipeline_titles/reports/01_corpus_and_lanes.md)
 2. [Topics](pipeline_titles/reports/02_topics.md)
@@ -22,6 +22,22 @@ with the tables that carry it and its caveats:
 6. [Drift](pipeline_titles/reports/06_drift.md)
 7. [Views](pipeline_titles/reports/07_views.md)
 8. [Null results and caveats](pipeline_titles/reports/08_null_results_and_caveats.md)
+
+Six answer a question of their own, each with its method and limitations:
+
+9. [Stylistic twins](pipeline_titles/reports/09_stylistic_twins.md): which left and right
+   commentary creators title the same way
+10. [Outrage by lane](pipeline_titles/reports/10_outrage_by_lane.md): how much of political
+    YouTube is framed as outrage, with confidence intervals
+11. [Capitalisation and vocabulary](pipeline_titles/reports/11_capitalisation_and_vocabulary.md)
+12. [Arousal index](pipeline_titles/reports/12_arousal_index.md): a 0-1 emotional-charge index
+    per channel
+13. [Signature keywords](pipeline_titles/reports/13_signature_keywords.md): the words each
+    channel over-uses
+14. [Political leaning from titles](pipeline_titles/reports/14_political_leaning.md): three
+    models (two local, one frontier) label 12,478 titles left / right / neither, 50 per ranked
+    channel; what each model sees, how reliable the channel score is, channel scores against
+    the channels' own descriptions and the lanes, and the words behind each label
 
 - `pipeline_titles/reports/all_tables.md`: the reference dump of every table in one file.
 - `pipeline_titles/reports/methods_appendix.md`: preprocessing, stopwords, feature
@@ -37,7 +53,8 @@ with the tables that carry it and its caveats:
 - `data/titles/analysis/`: machine-readable tables. The interface between stages is
   `features.csv` (creator x genre x month), `dimensions.csv` (creator scores, raw and
   topic-controlled), `topics.csv` (title -> topic), `labels.csv` (the 3,000 LLM-rated
-  titles), `lanes.csv` (lane / organisation / clipper per creator; a proposal to correct).
+  titles), `leaning_labels.csv` (the 12,478 titles labelled left / right / neither by three
+  judges), `lanes.csv` (lane / organisation / clipper per creator; a proposal to correct).
 
 Headline findings from the 2026-09-14 run are in `pipeline_titles/reports/headlines.md`.
 
@@ -82,8 +99,14 @@ then `claude` once to log in; do not set `ANTHROPIC_API_KEY`, or the CLI bills t
 .venv/bin/python -m pipeline_titles.leaning --backend claude-code --models opus
 ```
 
-Usage-limit replies are waited out. `--prompt-version v2` also asks for the title's
-target (who it attacks), which separates "attacks Trump" from "speaks for the left".
+Usage-limit replies are waited out. The sample is a base draw of 16 titles per creator
+plus a top-up to 50, spread evenly across months, for creators with at least 50 edited
+uploads (`--n-per-creator`, `--min-uploads`); the base draw never changes, so earlier
+labels are reused and only new titles are sent to a model. `--analyse-only` recomputes
+every table (agreement, channel scores, yardsticks, split-half and base-vs-top-up
+reliability, words, lane x month) from the labels on disk without a model call.
+`--prompt-version v2` also asks for the title's target (who it attacks), which separates
+"attacks Trump" from "speaks for the left".
 The stage writes a blind 200-title adjudication sheet
 (`data/titles/analysis/leaning_human_sheet.csv`); fill `human_label` and re-run with
 `--analyse-only --human-labels <that file>` to score every model against a human.

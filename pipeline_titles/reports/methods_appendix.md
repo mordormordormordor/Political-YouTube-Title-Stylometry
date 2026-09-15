@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-15T15:15:00+00:00._
+_Generated 2026-09-15T18:12:00+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -988,6 +988,22 @@ Answer with one JSON object and nothing else:
 ```
 
 
+## Leaning label prompt (leaning_labels.csv; exact text, prompt id leaning-v1, temperature 0, batches of 20; the same prompt for every judge)
+
+```
+You are classifying YouTube video titles from political-media channels by the political viewpoint the TITLE ITSELF signals.
+Labels:
+- left = the framing, word choice or target of criticism signals a left-leaning / progressive stance.
+- right = the framing, word choice or target of criticism signals a right-leaning / conservative stance.
+- neither = a neutral news headline, a non-political title, or a political title whose stance cannot be told from its wording.
+Judge the wording, not the subject: 'Trump signs order' is neither; 'Trump SLAMS radical left' is right; 'Trump's fascist crackdown' is left.
+Output exactly one line per title, in order, as id,label with no other text.
+
+Titles:
+{titles}
+```
+
+
 ## Zipf check
 
 | level | text | max_rank | zipf_exponent | ranks_used | n_titles | n_tokens | n_types | top_20 |
@@ -1468,10 +1484,10 @@ Answer with one JSON object and nothing else:
 | stage5a_timeline | 1.4 | 1.4 | 2026-09-14T23:10:37+00:00 |  |  |  | lane_month_rows=215, top30=30, topic_change_rows=1667 |
 | stage5b_engagement | 9.4 | 9.4 | 2026-09-14T23:10:47+00:00 |  |  |  | creator_genre_models=252 |
 | stage5c_hits | 28.9 | 28.9 | 2026-09-15T01:01:53+00:00 |  |  |  | groups=252, powerlaw_like=1 |
-| report_data | 2.8 | 3.1 | 2026-09-15T15:14:49+00:00 |  |  |  | creators=274 |
-| report | 8.6 | 9.1 | 2026-09-15T15:09:35+00:00 |  |  |  | cards=274 |
+| report_data | 2.9 | 3.1 | 2026-09-15T18:10:49+00:00 |  |  |  | creators=274 |
+| report | 11.7 | 11.7 | 2026-09-15T18:11:01+00:00 |  |  |  | cards=274 |
 | stage6_profiles | 21.1 | 22.3 | 2026-09-15T12:45:34+00:00 |  |  |  | acronyms=956, twin_pairs=2680 |
-| stage7_leaning | 1.0 | 3093.1 | 2026-09-15T15:07:55+00:00 |  |  | 0.0 | backend=claude-code, prompt_id=leaning-v1, llm_seconds=3091.9, reported_cost_usd=18.8607, n_labelled_by_all... |
+| stage7_leaning | 15.8 | 4883.0 | 2026-09-15T18:10:46+00:00 |  |  | 0.0 | backend=claude-code, prompt_id=leaning-v1, llm_seconds=4860.5, reported_cost_usd=36.4107, n_labelled_by_all... |
 
 
 ## Environment

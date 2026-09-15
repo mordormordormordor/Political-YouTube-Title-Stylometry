@@ -1,52 +1,52 @@
 {
   "judge_of_record": "label_claude_code_opus",
-  "judge_auc": 0.9906,
-  "judge_accuracy": 0.9672,
+  "judge_auc": 0.9962,
+  "judge_accuracy": 0.9593,
   "per_model": [
     {
       "score": "label_qwen3_14b_score",
       "n_creators": 123,
-      "auc_right_vs_left_lane": 0.5724,
-      "accuracy_sign_vs_lane": 0.6606,
-      "n_nonzero": 109,
-      "mean_score_left_lane": 0.1385,
-      "mean_score_right_lane": 0.187
+      "auc_right_vs_left_lane": 0.6264,
+      "accuracy_sign_vs_lane": 0.678,
+      "n_nonzero": 118,
+      "mean_score_left_lane": 0.1135,
+      "mean_score_right_lane": 0.1877
     },
     {
       "score": "label_gemma3_12b_score",
       "n_creators": 123,
-      "auc_right_vs_left_lane": 0.9268,
-      "accuracy_sign_vs_lane": 0.8824,
-      "n_nonzero": 119,
-      "mean_score_left_lane": -0.2535,
-      "mean_score_right_lane": 0.3734
+      "auc_right_vs_left_lane": 0.976,
+      "accuracy_sign_vs_lane": 0.9083,
+      "n_nonzero": 120,
+      "mean_score_left_lane": -0.2938,
+      "mean_score_right_lane": 0.3551
     },
     {
       "score": "label_claude_code_opus_score",
       "n_creators": 123,
-      "auc_right_vs_left_lane": 0.9906,
-      "accuracy_sign_vs_lane": 0.9672,
-      "n_nonzero": 122,
-      "mean_score_left_lane": -0.5563,
-      "mean_score_right_lane": 0.4343
+      "auc_right_vs_left_lane": 0.9962,
+      "accuracy_sign_vs_lane": 0.9593,
+      "n_nonzero": 123,
+      "mean_score_left_lane": -0.5774,
+      "mean_score_right_lane": 0.438
     },
     {
       "score": "consensus_score",
-      "n_creators": 122,
-      "auc_right_vs_left_lane": 0.9567,
-      "accuracy_sign_vs_lane": 0.9691,
-      "n_nonzero": 97,
-      "mean_score_left_lane": -0.2958,
-      "mean_score_right_lane": 0.3307
+      "n_creators": 123,
+      "auc_right_vs_left_lane": 0.9847,
+      "accuracy_sign_vs_lane": 0.9727,
+      "n_nonzero": 110,
+      "mean_score_left_lane": -0.331,
+      "mean_score_right_lane": 0.3413
     },
     {
       "score": "mean_score",
       "n_creators": 123,
-      "auc_right_vs_left_lane": 0.9881,
-      "accuracy_sign_vs_lane": 0.9421,
-      "n_nonzero": 121,
-      "mean_score_left_lane": -0.2238,
-      "mean_score_right_lane": 0.3316
+      "auc_right_vs_left_lane": 0.9962,
+      "accuracy_sign_vs_lane": 0.9672,
+      "n_nonzero": 122,
+      "mean_score_left_lane": -0.2526,
+      "mean_score_right_lane": 0.327
     }
   ]
 }

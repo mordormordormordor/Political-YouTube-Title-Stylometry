@@ -1,0 +1,4 @@
+model,n_channels,min_titles_per_half,median_titles_per_half,split_half_spearman_mean,split_half_spearman_sd
+label_qwen3_14b,239,16,25,0.457,0.046
+label_gemma3_12b,239,16,25,0.875,0.01
+label_claude_code_opus,239,16,25,0.967,0.003

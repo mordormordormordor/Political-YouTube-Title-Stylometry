@@ -260,6 +260,8 @@ def methods_appendix() -> str:
     lab = pd.read_csv(A / "labels.csv", nrows=1)
     out.append(f"Model `{lab['model'].iloc[0]}`, temperature {lab['temperature'].iloc[0]}, prompt id `{lab['prompt_id'].iloc[0]}`, sha256 `{lab['prompt_sha256'].iloc[0]}`, rated {lab['rated_at'].iloc[0]}.\n\n```\n{lab['prompt'].iloc[0]}\n```\n")
     out.append("\n## Topic label prompt\n\n```\n" + topics.LABEL_PROMPT + "\n```\n")
+    from pipeline_titles import leaning
+    out.append("\n## Leaning label prompt (leaning_labels.csv; exact text, prompt id leaning-v1, temperature 0, batches of 20; the same prompt for every judge)\n\n```\n" + leaning.PROMPT + "\n```\n")
     out.append("\n## Zipf check\n\n" + md_table(read("zipf_check.csv"), floatfmt="{:.4f}"))
     out.append("\n## Sample sizes\n\n" + md_table(read("creator_genre_summary.csv"), ["creator", "genre", "n_rows", "n_unique", "n_balanced", "n_with_views", "repeat_share", "low_n"], floatfmt="{:.3f}"))
     runs = read_jsonl(RUNTIMES)

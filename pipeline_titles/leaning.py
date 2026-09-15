@@ -1,25 +1,43 @@
-"""Stage 7 - political leaning from titles alone, judged by two models.
+"""Stage 7 - political leaning from titles alone, judged by three models.
 
-A creator-balanced sample (N_PER_CREATOR unique edited-upload titles per creator,
-topped up from live VODs when a creator has fewer; seed 20260914) is labelled
-left / right / neither by two local models of different families (Qwen3-14B and
-Gemma-3-12B via Ollama, temperature 0, batches of 20, every response cached). The
-label is the viewpoint the TITLE'S OWN WORDING signals, not the subject.
+A creator-balanced sample is labelled left / right / neither by two local models of
+different families (Qwen3-14B and Gemma-3-12B via Ollama) and, optionally, a frontier
+model through the Claude Code CLI; temperature 0, batches of 20, every response
+cached. The label is the viewpoint the TITLE'S OWN WORDING signals, not the subject.
+
+Sample. Every creator gets a base draw of N_PER_CREATOR (16) unique edited-upload
+titles (seed 20260914; live VODs top up creators with fewer uploads). Creators with at
+least --min-uploads (50) unique uploads are then topped up to --n-per-creator (50)
+with further uploads spread evenly across months. The base draw never changes, so the
+labels from the 16-title runs are reused (2026-09-15: 12,478 titles; 239 creators at
+50, 35 at their base).
 
 Outputs (data/titles/analysis/):
-    leaning_labels.csv          one row per sampled title with both labels
+    leaning_labels.csv          one row per sampled title with every model's label,
+                                is_base (base draw vs month-spread top-up) and month
     leaning_agreement.json      per-title agreement between the models (kappa, confusion)
     leaning_by_creator.csv      per creator: label shares and a score (right - left) / n
-                                for each model, the consensus score (titles both models
-                                label the same), and the side it implies
+                                for each model, the consensus score (titles all models
+                                label the same), the judge of record's score and side
     leaning_lane_validation.csv how well each model's creator score separates the
-                                left-commentary and right-commentary lanes (AUC, accuracy),
-                                plus the creators whose title-leaning contradicts their lane
+                                left-commentary and right-commentary lanes (AUC, accuracy);
+                                leaning_lane_contradictions.csv lists the creators whose
+                                title-leaning contradicts their lane
     leaning_by_lane.csv         lane means of the scores and of the 'neither' share
+    leaning_self_description*.csv  agreement with the leaning words in the channels' own
+                                YouTube descriptions (a lane-independent yardstick)
     leaning_words.csv           the words each model treats as right vs left: weighted
                                 log-odds (alpha0 = 500) and rank-turbulence-divergence
                                 contributions (alpha = 1/3), for each model and for the
-                                titles both agree on
+                                titles all models agree on
+    leaning_split_half.csv      split-half reliability of the channel scores per model
+                                (channels with >= 32 labels, 20 random splits)
+    leaning_stability.csv       per model: the base 16-title score against the score from
+                                the disjoint top-up titles and from all titles (Spearman,
+                                lane AUC at 16 vs all, mean absolute change, channels whose
+                                side changed); leaning_stability_channels.csv has the
+                                judge's per-channel values
+    leaning_by_lane_month.csv   the judge's partisan share and score per lane x month
 
 Backends. `--backend ollama` (default) calls a local model; `--backend claude-code`
 runs each batch through the Claude Code CLI in print mode (`claude -p`), which is
@@ -214,7 +232,7 @@ def draw_sample(prepared: pd.DataFrame, n_per: int = N_PER_CREATOR, seed: int = 
         vids = g[g["genre"] == "videos"]
         pool = vids if len(vids) >= n_base else pd.concat([vids, g[g["genre"] == "streams"]])
         k = min(n_base, len(pool))
-        base = pool.iloc[np.sort(rng.choice(len(pool), size=k, replace=False))]
+        base = pool.iloc[np.sort(rng.choice(len(pool), size=k, replace=False))].assign(is_base=True)
         parts.append(base)
         extra = n_per - len(base)
         if extra > 0 and len(vids) >= min_uploads:
@@ -227,7 +245,7 @@ def draw_sample(prepared: pd.DataFrame, n_per: int = N_PER_CREATOR, seed: int = 
                 if len(by_month[m]):
                     picked.append(by_month[m].iloc[0]); by_month[m] = by_month[m].iloc[1:]
             if picked:
-                parts.append(pd.DataFrame(picked))
+                parts.append(pd.DataFrame(picked).assign(is_base=False))
     return pd.concat(parts).sort_values("row_id").reset_index(drop=True)
 
 
@@ -237,6 +255,7 @@ def split_half_reliability(df: pd.DataFrame, cols: list[str], min_titles: int = 
     rng = np.random.RandomState(seed)
     rows = []
     big = [c for c, g in df.groupby("creator") if len(g) >= min_titles]
+    half_sizes = [len(g) // 2 for c, g in df.groupby("creator") if c in set(big)]
     for c in cols:
         rs = []
         for _ in range(20):
@@ -251,9 +270,81 @@ def split_half_reliability(df: pd.DataFrame, cols: list[str], min_titles: int = 
                     store.append(((v == "right").sum() - (v == "left").sum()) / len(v))
             if len(a_scores) > 5:
                 rs.append(pd.Series(a_scores).corr(pd.Series(b_scores), method="spearman"))
-        rows.append({"model": c, "n_channels": len(big), "titles_per_half": min_titles // 2, "split_half_spearman_mean": round(float(np.mean(rs)), 3) if rs else np.nan,
+        rows.append({"model": c, "n_channels": len(big), "min_titles_per_half": min_titles // 2, "median_titles_per_half": int(np.median(half_sizes)) if half_sizes else 0,
+                     "split_half_spearman_mean": round(float(np.mean(rs)), 3) if rs else np.nan,
                      "split_half_spearman_sd": round(float(np.std(rs)), 3) if rs else np.nan})
     return pd.DataFrame(rows)
+
+
+def _score(v: pd.Series) -> float:
+    return float(((v == "right").sum() - (v == "left").sum()) / len(v)) if len(v) else np.nan
+
+
+def _side(s: pd.Series, eps: float = 0.05) -> np.ndarray:
+    return np.where(s > eps, "right", np.where(s < -eps, "left", "neither / unclear"))
+
+
+def ensure_sample_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """`is_base` (base draw vs top-up) and `month` for a labels file written before the
+    top-up design; both are recomputed from the prepared titles."""
+    if "is_base" in df.columns and "month" in df.columns:
+        return df
+    prepared = load_prepared()
+    if "month" not in df.columns:
+        df = df.merge(prepared[["row_id", "month"]], on="row_id", how="left")
+    if "is_base" not in df.columns:
+        base_ids = set(draw_sample(prepared, N_PER_CREATOR)["row_id"])   # n_per == n_base: the base draw alone
+        df["is_base"] = df["row_id"].isin(base_ids)
+    return df
+
+
+def stability_check(df: pd.DataFrame, cols: list[str], judge: str, min_topup: int = 10) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """For every topped-up channel, the score from the base draw against the score from
+    its disjoint top-up titles and from all its titles, per model: how much a channel's
+    position depended on which titles were drawn. Also the lane AUC (left vs right
+    commentary) at the base draw and at the full sample, on the same channels. The
+    judge's per-channel values are returned as the second frame."""
+    from sklearn.metrics import roc_auc_score
+    rows, judge_rows = [], pd.DataFrame()
+    for c in cols:
+        recs = []
+        for creator, g in df.dropna(subset=[c]).groupby("creator"):
+            b, t = g[g["is_base"].astype(bool)], g[~g["is_base"].astype(bool)]
+            if len(t) < min_topup or not len(b):
+                continue
+            recs.append({"creator": creator, "lane": g["lane"].iloc[0], "n_base": len(b), "n_topup": len(t), "score_base": _score(b[c]),
+                         "score_topup": _score(t[c]), "score_all": _score(g[c])})
+        r = pd.DataFrame(recs)
+        if len(r) < 5:
+            continue
+        r["side_base"], r["side_all"] = _side(r["score_base"]), _side(r["score_all"])
+        r["change"] = r["score_all"] - r["score_base"]
+        flipped = ((r["side_base"] == "left") & (r["side_all"] == "right")) | ((r["side_base"] == "right") & (r["side_all"] == "left"))
+        two = r[r["lane"].isin(["left_commentary", "right_commentary"])]
+        y = (two["lane"] == "right_commentary").astype(int)
+        auc = {k: (round(float(roc_auc_score(y, two[k])), 4) if y.nunique() == 2 else np.nan) for k in ("score_base", "score_all")}
+        rows.append({"model": c, "n_channels": len(r), "spearman_base_vs_topup": round(float(r["score_base"].corr(r["score_topup"], method="spearman")), 3),
+                     "pearson_base_vs_topup": round(float(r["score_base"].corr(r["score_topup"])), 3),
+                     "spearman_base_vs_all": round(float(r["score_base"].corr(r["score_all"], method="spearman")), 3),
+                     "lane_auc_base": auc["score_base"], "lane_auc_all": auc["score_all"], "n_commentary": int(len(two)),
+                     "mean_abs_change": round(float(r["change"].abs().mean()), 3), "median_abs_change": round(float(r["change"].abs().median()), 3),
+                     "max_abs_change": round(float(r["change"].abs().max()), 3), "side_changed": int((r["side_base"] != r["side_all"]).sum()),
+                     "sign_flipped": int(flipped.sum())})
+        if c == judge:
+            judge_rows = r.sort_values("change").reset_index(drop=True)
+    return pd.DataFrame(rows), judge_rows
+
+
+def lane_month_check(df: pd.DataFrame, judge: str) -> pd.DataFrame:
+    """The judge's labels by lane x month over the month-spread sample: titles, creators,
+    share read as partisan (left or right), left and right shares, score."""
+    d = df.dropna(subset=[judge, "month"]).copy()
+    d["partisan"] = (d[judge] != "neither").astype(float)
+    d["value"] = np.where(d[judge] == "right", 1.0, np.where(d[judge] == "left", -1.0, 0.0))
+    d["is_left"] = (d[judge] == "left").astype(float); d["is_right"] = (d[judge] == "right").astype(float)
+    out = d.groupby(["lane", "month"]).agg(n_titles=("row_id", "size"), n_creators=("creator", "nunique"), partisan_share=("partisan", "mean"),
+                                           left_share=("is_left", "mean"), right_share=("is_right", "mean"), score=("value", "mean")).reset_index()
+    return out.round(4)
 
 
 def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
@@ -377,6 +468,14 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
     shr.to_csv(ANALYSIS_DIR / "leaning_split_half.csv", index=False)
     if len(shr):
         print(shr.to_string(index=False), flush=True)
+    # the base 16-title draw against the month-spread top-up: did the ranking depend on which titles were drawn?
+    if "is_base" in df.columns and "month" in df.columns:
+        stab, stab_ch = stability_check(df, cols, judge.replace("_score", ""))
+        stab.to_csv(ANALYSIS_DIR / "leaning_stability.csv", index=False)
+        stab_ch.to_csv(ANALYSIS_DIR / "leaning_stability_channels.csv", index=False)
+        lane_month_check(df, judge.replace("_score", "")).to_csv(ANALYSIS_DIR / "leaning_by_lane_month.csv", index=False)
+        if len(stab):
+            print(stab[["model", "n_channels", "spearman_base_vs_topup", "lane_auc_base", "lane_auc_all", "side_changed", "sign_flipped"]].to_string(index=False), flush=True)
 
     # blind adjudication sheet: 200 titles, mostly disagreements, model labels kept in a separate key
     sheet_path = ANALYSIS_DIR / "leaning_human_sheet.csv"
@@ -458,8 +557,12 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     with stage_timer("stage7_leaning", models=a.models, backend=a.backend, prompt_id=f"leaning-{a.prompt_version}",
                      api_cost_usd=0.0 if a.backend == "ollama" else "subscription (claude -p); see reported_cost_usd") as info:
         lanes = load_lanes()[["creator", "lane"]]
+        keep_cols = ["row_id", "video_id", "creator", "genre", "lane", "month", "is_base", "title_raw", "title_norm"]
         if a.analyse_only and LABELS_CSV.exists():
             df = pd.read_csv(LABELS_CSV)
+            if "is_base" not in df.columns or "month" not in df.columns:   # labels file from before the top-up design
+                df = ensure_sample_columns(df)
+                df[[c for c in keep_cols if c in df.columns] + [c for c in df.columns if c not in keep_cols]].to_csv(LABELS_CSV, index=False)
         else:
             prepared = load_prepared()
             df = draw_sample(prepared, a.n_per_creator, min_uploads=a.min_uploads).merge(lanes, on="creator", how="left")
@@ -478,7 +581,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                     df.loc[todo, col] = labs
                 print(f"{model}: {df[col].notna().sum()}/{len(df)} labelled", flush=True)
             df["prompt_id"] = f"leaning-{a.prompt_version}"; df["prompt_sha256"] = hashlib.sha256(PROMPTS[a.prompt_version].encode()).hexdigest(); df["temperature"] = 0.0; df["labelled_at"] = utc_now()
-            keep = ["row_id", "video_id", "creator", "genre", "lane", "title_raw", "title_norm"] + [c for c in df.columns if c.startswith("label_")] + ["prompt_id", "prompt_sha256", "temperature", "labelled_at"]
+            keep = keep_cols + [c for c in df.columns if c.startswith("label_")] + ["prompt_id", "prompt_sha256", "temperature", "labelled_at"]
             df[keep].to_csv(LABELS_CSV, index=False)
             (CACHE_DIR / "leaning_prompt.txt").write_text(PROMPT, encoding="utf-8")
             (CACHE_DIR / "leaning_prompt_v2.txt").write_text(PROMPT_V2, encoding="utf-8")

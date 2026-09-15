@@ -1,6 +1,6 @@
 score,n_creators,auc_right_vs_left_lane,accuracy_sign_vs_lane,n_nonzero,mean_score_left_lane,mean_score_right_lane
-label_qwen3_14b_score,123,0.5724,0.6606,109,0.1385,0.187
-label_gemma3_12b_score,123,0.9268,0.8824,119,-0.2535,0.3734
-label_claude_code_opus_score,123,0.9906,0.9672,122,-0.5563,0.4343
-consensus_score,122,0.9567,0.9691,97,-0.2958,0.3307
-mean_score,123,0.9881,0.9421,121,-0.2238,0.3316
+label_qwen3_14b_score,123,0.6264,0.678,118,0.1135,0.1877
+label_gemma3_12b_score,123,0.976,0.9083,120,-0.2938,0.3551
+label_claude_code_opus_score,123,0.9962,0.9593,123,-0.5774,0.438
+consensus_score,123,0.9847,0.9727,110,-0.331,0.3413
+mean_score,123,0.9962,0.9672,122,-0.2526,0.327

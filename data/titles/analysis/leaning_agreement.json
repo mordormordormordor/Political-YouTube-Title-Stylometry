@@ -1,5 +1,5 @@
 {
-  "n_labelled_by_all": 4317,
+  "n_labelled_by_all": 12437,
   "models": [
     "label_qwen3_14b",
     "label_gemma3_12b",
@@ -7,119 +7,119 @@
   ],
   "label_shares": {
     "label_qwen3_14b": {
-      "neither": 0.726,
-      "right": 0.1974,
-      "left": 0.0767
+      "neither": 0.7101,
+      "right": 0.2054,
+      "left": 0.0845
     },
     "label_gemma3_12b": {
-      "neither": 0.479,
-      "right": 0.281,
-      "left": 0.24
+      "neither": 0.4653,
+      "right": 0.2797,
+      "left": 0.255
     },
     "label_claude_code_opus": {
-      "neither": 0.5884,
-      "left": 0.2326,
-      "right": 0.1791
+      "neither": 0.5768,
+      "left": 0.2399,
+      "right": 0.1832
     }
   },
   "pairs": [
     {
       "a": "label_qwen3_14b",
       "b": "label_gemma3_12b",
-      "kappa": 0.3756,
-      "exact_agreement": 0.6389,
-      "kappa_political_only": 0.3161,
+      "kappa": 0.3748,
+      "exact_agreement": 0.6308,
+      "kappa_political_only": 0.3213,
       "confusion": {
         "left": {
-          "left": 237,
-          "neither": 499,
-          "right": 300
+          "left": 775,
+          "neither": 1464,
+          "right": 932
         },
         "neither": {
-          "left": 17,
-          "neither": 2010,
-          "right": 41
+          "left": 50,
+          "neither": 5592,
+          "right": 145
         },
         "right": {
-          "left": 77,
-          "neither": 625,
-          "right": 511
+          "left": 226,
+          "neither": 1775,
+          "right": 1478
         }
       }
     },
     {
       "a": "label_qwen3_14b",
       "b": "label_claude_code_opus",
-      "kappa": 0.3283,
-      "exact_agreement": 0.6509,
-      "kappa_political_only": 0.1251,
+      "kappa": 0.3383,
+      "exact_agreement": 0.6477,
+      "kappa_political_only": 0.1332,
       "confusion": {
         "left": {
-          "left": 184,
-          "neither": 457,
-          "right": 363
+          "left": 619,
+          "neither": 1275,
+          "right": 1090
         },
         "neither": {
-          "left": 67,
-          "neither": 2305,
-          "right": 168
+          "left": 171,
+          "neither": 6487,
+          "right": 516
         },
         "right": {
-          "left": 80,
-          "neither": 372,
-          "right": 321
+          "left": 261,
+          "neither": 1069,
+          "right": 949
         }
       }
     },
     {
       "a": "label_gemma3_12b",
       "b": "label_claude_code_opus",
-      "kappa": 0.5144,
-      "exact_agreement": 0.7028,
-      "kappa_political_only": 0.5873,
+      "kappa": 0.5095,
+      "exact_agreement": 0.6963,
+      "kappa_political_only": 0.5748,
       "confusion": {
         "left": {
-          "left": 664,
-          "neither": 135,
-          "right": 205
+          "left": 1995,
+          "neither": 393,
+          "right": 596
         },
         "neither": {
-          "left": 262,
-          "neither": 1820,
-          "right": 458
+          "left": 810,
+          "neither": 5073,
+          "right": 1291
         },
         "right": {
-          "left": 110,
-          "neither": 113,
-          "right": 550
+          "left": 366,
+          "neither": 321,
+          "right": 1592
         }
       }
     }
   ],
-  "kappa": 0.3756,
-  "exact_agreement": 0.6389,
+  "kappa": 0.3748,
+  "exact_agreement": 0.6308,
   "confusion": {
     "left": {
-      "left": 237,
-      "neither": 499,
-      "right": 300
+      "left": 775,
+      "neither": 1464,
+      "right": 932
     },
     "neither": {
-      "left": 17,
-      "neither": 2010,
-      "right": 41
+      "left": 50,
+      "neither": 5592,
+      "right": 145
     },
     "right": {
-      "left": 77,
-      "neither": 625,
-      "right": 511
+      "left": 226,
+      "neither": 1775,
+      "right": 1478
     }
   },
-  "kappa_political_only": 0.3161,
-  "all_models_agree_share": 0.5182,
+  "kappa_political_only": 0.3213,
+  "all_models_agree_share": 0.5097,
   "consensus_label_shares": {
-    "neither": 0.8002,
-    "right": 0.1274,
-    "left": 0.0724
+    "neither": 0.7845,
+    "right": 0.1284,
+    "left": 0.0871
   }
 }

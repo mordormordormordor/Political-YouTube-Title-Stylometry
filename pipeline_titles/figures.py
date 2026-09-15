@@ -556,7 +556,8 @@ def fig_leaning_channels():
         for yi, sc in zip(y, d.judge_score.iloc[sl]):
             ax.text(1.005, yi, f"{sc:+.2f}", va="center", ha="left", fontsize=5.2, color=INK2)
     fig.legend(*axes[0].get_legend_handles_labels(), loc="upper right", fontsize=8, ncol=3, frameon=False, bbox_to_anchor=(0.99, 0.995))
-    fig.suptitle(f"Every channel's titles as read by {_nm(judge)}: share labelled left / neither / right (16 titles each; sorted by score, most left first; score at right)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
+    n50, nbase = int((bc.n_titles >= 50).sum()), int((bc.n_titles < 50).sum())
+    fig.suptitle(f"Every channel's titles as read by {_nm(judge)}: share labelled left / neither / right ({n50} channels at 50 titles, {nbase} at 16 or fewer; sorted by score, most left first; score at right)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.975)); save(fig, "14_leaning_channels.png")
 
     # per lane: mean composition
@@ -591,9 +592,49 @@ def fig_leaning_channels():
     fig.tight_layout(rect=(0, 0, 1, 0.975)); save(fig, "14_leaning_models_by_channel.png")
 
 
+def fig_leaning_stability():
+    """Does a channel's score depend on which titles were drawn? Left: the judge's score
+    from the original 16-title draw against the score from the disjoint, month-spread
+    top-up titles. Right: split-half reliability and base-vs-top-up Spearman per model."""
+    if not (A / "leaning_stability_channels.csv").exists() or not (A / "leaning_split_half.csv").exists():
+        return
+    ch = rd("leaning_stability_channels.csv"); st = rd("leaning_stability.csv"); sh = rd("leaning_split_half.csv")
+    summ = json.loads((A / "leaning_summary.json").read_text()); judge = summ["judge_of_record"]
+    if not len(ch) or judge not in set(st.model):
+        return
+
+    def _nm(c):
+        c = c.replace("label_", "").replace("_score", "")
+        return ("Claude " + c.replace("claude_code_", "").replace("_", " ").title()) if c.startswith("claude_code_") else c.replace("_", ":", 1).replace("_", ".")
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5.2), gridspec_kw={"width_ratios": [1.15, 1]})
+    ax = axes[0]
+    ax.plot([-1, 1], [-1, 1], color=GRID, lw=1); ax.axhline(0, color=GRID, lw=1); ax.axvline(0, color=GRID, lw=1)
+    for fam in FAMILIES:
+        sub = ch[ch.lane.map(FAMILY_OF) == fam]
+        ax.scatter(sub.score_base, sub.score_topup, s=24, color=FAM_COLOR[fam], alpha=0.8, edgecolor=SURFACE, linewidth=0.6, label=fam)
+    for r in ch.reindex(ch.change.abs().sort_values(ascending=False).index).head(6).itertuples():
+        ax.annotate(r.creator, (r.score_base, r.score_topup), fontsize=6.5, xytext=(3, 3), textcoords="offset points")
+    rho = float(st.loc[st.model == judge, "spearman_base_vs_topup"].iloc[0])
+    nb, nt = int(ch.n_base.median()), int(ch.n_topup.median())
+    ax.set_xlabel(f"score from the original {nb}-title draw ({_nm(judge)})"); ax.set_ylabel(f"score from the {nt} top-up titles (disjoint, spread across months)")
+    ax.set_title(f"Same channel, two disjoint title sets (Spearman {rho:.2f}, n = {len(ch)})"); ax.legend(fontsize=7.5, loc="upper left")
+    ax.set_xlim(-1.05, 1.05); ax.set_ylim(-1.05, 1.05)
+    ax = axes[1]
+    models = sh.model.tolist(); st2 = st.set_index("model").reindex(models)
+    y = np.arange(len(models)); h = 0.38
+    ax.barh(y - h / 2, sh.split_half_spearman_mean, height=h, color=CAT[0], label=f"split-half: two random halves of a channel's titles ({int(sh.median_titles_per_half.iloc[0])} each, 20 splits, n = {int(sh.n_channels.iloc[0])})")
+    ax.barh(y + h / 2, st2.spearman_base_vs_topup, height=h, color=CAT[2], label=f"original {nb} titles vs the {nt} top-up titles (n = {len(ch)})")
+    for yi, (a, b) in enumerate(zip(sh.split_half_spearman_mean, st2.spearman_base_vs_topup)):
+        ax.text(a + 0.01, yi - h / 2, f"{a:.2f}", va="center", fontsize=7.5, color=INK2); ax.text(b + 0.01, yi + h / 2, f"{b:.2f}", va="center", fontsize=7.5, color=INK2)
+    ax.set_yticks(y, [_nm(m) for m in models]); ax.set_xlim(0, 1.12); ax.set_ylim(len(models) - 0.5, -0.5); ax.grid(axis="y", visible=False)
+    ax.set_xlabel("Spearman correlation between the two channel rankings"); ax.set_title("Reliability of the channel score, per model")
+    ax.legend(loc="lower right", fontsize=7)
+    fig.tight_layout(); save(fig, "14_leaning_stability.png")
+
+
 def main() -> int:
     FIG.mkdir(parents=True, exist_ok=True)
-    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views, fig_profiles, fig_leaning, fig_leaning_channels):
+    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views, fig_profiles, fig_leaning, fig_leaning_channels, fig_leaning_stability):
         fn(); print("done", fn.__name__, flush=True)
     import shutil
     if (A / "scree.png").exists():

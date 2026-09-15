@@ -900,7 +900,7 @@ Question documents, each with its method and limitations:
 
 Alongside: [`title_stylometry.html`](title_stylometry.html) (the interactive page: creator selector, profile cards, and the two landscape maps with names on hover and each creator's neighbours drawn in; open it directly in a browser), [`figures/`](figures/) (the static figures used in the documents), [`cards/`](cards/) (one Markdown card per creator), [`methods_appendix.md`](methods_appendix.md) (every preprocessing step, lexicon, loading, validation number, prompt and runtime), and [`all_tables.md`](all_tables.md) (the reference dump of every table in one file).
 
-## The findings in six sentences
+## The findings, one paragraph per stage
 
 {hl}
 """
