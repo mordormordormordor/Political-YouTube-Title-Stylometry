@@ -69,9 +69,24 @@ python -m venv .venv
 .venv/bin/python -m spacy download en_core_web_sm
 ```
 
-LLM steps (title ratings, topic labels) use a local Ollama model (`qwen3:14b`); every
-response is cached under `data/titles/analysis/cache/llm*/`, so re-running over an
-unchanged corpus makes no model calls. There is no paid API involved.
+LLM steps (title ratings, topic labels, leaning labels) use local Ollama models
+(`qwen3:14b`, `gemma3:12b`); every response is cached under
+`data/titles/analysis/cache/llm*/`, so re-running over an unchanged corpus makes no
+model calls. There is no paid API involved.
+
+The leaning stage can also use a frontier model through the Claude Code CLI in print
+mode, which a Claude Pro/Max subscription covers (`npm install -g @anthropic-ai/claude-code`,
+then `claude` once to log in; do not set `ANTHROPIC_API_KEY`, or the CLI bills the API):
+
+```bash
+.venv/bin/python -m pipeline_titles.leaning --backend claude-code --models opus
+```
+
+Usage-limit replies are waited out. `--prompt-version v2` also asks for the title's
+target (who it attacks), which separates "attacks Trump" from "speaks for the left".
+The stage writes a blind 200-title adjudication sheet
+(`data/titles/analysis/leaning_human_sheet.csv`); fill `human_label` and re-run with
+`--analyse-only --human-labels <that file>` to score every model against a human.
 
 ## Running the pipeline
 
