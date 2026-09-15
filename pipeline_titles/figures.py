@@ -489,12 +489,19 @@ def fig_leaning():
     ax.scatter(w.rank_right, w.rank_left, s=8, color=GRID, alpha=0.8)
     ax.set_xscale("log"); ax.set_yscale("log"); mx = max(w.rank_right.max(), w.rank_left.max()); ax.plot([1, mx], [1, mx], color=INK, lw=0.8, ls="--")
     both = w[(w.count_right > 0) & (w.count_left > 0)]
-    lab = pd.concat([both.nlargest(9, "rtd_contribution"), both.nsmallest(9, "rtd_contribution")])
-    for r in lab.itertuples():
+    lab = pd.concat([both.nlargest(8, "rtd_contribution"), both.nsmallest(8, "rtd_contribution")]).sort_values(["rank_left", "rank_right"])
+    offsets = [(4, 3), (4, -10), (-4, 8), (4, 14), (-30, -11)]
+    prev = None
+    for i, r in enumerate(lab.itertuples()):
         col_ = CAT[1] if r.rtd_contribution > 0 else CAT[0]
         ax.scatter([r.rank_right], [r.rank_left], s=22, color=col_, zorder=3)
-        ax.annotate(r.word, (r.rank_right, r.rank_left), fontsize=7, color=col_, xytext=(3, 2), textcoords="offset points")
+        # stagger labels of points that sit at (nearly) the same spot
+        k = (k + 1) if (prev is not None and abs(np.log(r.rank_left) - np.log(prev[1])) < 0.15 and abs(np.log(r.rank_right) - np.log(prev[0])) < 0.5) else 0
+        ax.annotate(r.word, (r.rank_right, r.rank_left), fontsize=7, color=col_, xytext=offsets[k % len(offsets)], textcoords="offset points",
+                    ha="right" if offsets[k % len(offsets)][0] < 0 else "left")
+        prev = (r.rank_right, r.rank_left)
     only_r = w[(w.count_left == 0)].nlargest(10, "rtd_contribution").word.tolist(); only_l = w[(w.count_right == 0)].nsmallest(10, "rtd_contribution").word.tolist()
+    k = 0
     ax.text(0.02, 0.90, "right-only words (top row): " + ", ".join(only_r), transform=ax.transAxes, fontsize=7, color=CAT[1], va="top", wrap=True)
     ax.text(0.98, 0.10, "left-only words (right column): " + ", ".join(only_l), transform=ax.transAxes, fontsize=7, color=CAT[0], ha="right", va="bottom", wrap=True)
     ax.set_xlabel("rank among right-labelled titles (1 = most frequent)"); ax.set_ylabel("rank among left-labelled titles")
