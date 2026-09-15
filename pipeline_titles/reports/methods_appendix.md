@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-15T00:56:47+00:00._
+_Generated 2026-09-15T01:02:01+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -375,7 +375,8 @@ the size-artefact check, and a pooled within-lane estimate (values demeaned by
 lane x genre).
 
 Outputs (data/titles/analysis/):
-    hit_concentration.csv               per creator x genre
+    hit_concentration.csv               per creator x genre (Gini, top shares, CSN fit, rank-size
+                                        Zipf slope of views over all videos and over the top decile)
     hit_concentration_correlations.csv  within-lane and pooled-within-lane correlations
 
 CLI:
@@ -1466,9 +1467,9 @@ Answer with one JSON object and nothing else:
 | stage4_landscape | 24.0 | 24.0 | 2026-09-14T23:15:32+00:00 |  |  |  | crossposted_titles=2237, cluster_runs=4, shared_titles_any=1575, shared_titles_cross_org=474, shared_titles... |
 | stage5a_timeline | 1.4 | 1.4 | 2026-09-14T23:10:37+00:00 |  |  |  | lane_month_rows=215, top30=30, topic_change_rows=1667 |
 | stage5b_engagement | 9.4 | 9.4 | 2026-09-14T23:10:47+00:00 |  |  |  | creator_genre_models=252 |
-| stage5c_hits | 25.6 | 25.6 | 2026-09-14T23:12:37+00:00 |  |  |  | groups=252, powerlaw_like=1 |
-| report_data | 2.5 | 2.6 | 2026-09-14T23:17:25+00:00 |  |  |  | creators=274 |
-| report | 4.8 | 4.8 | 2026-09-15T00:45:33+00:00 |  |  |  | cards=274 |
+| stage5c_hits | 28.9 | 28.9 | 2026-09-15T01:01:53+00:00 |  |  |  | groups=252, powerlaw_like=1 |
+| report_data | 2.6 | 2.6 | 2026-09-15T01:01:56+00:00 |  |  |  | creators=274 |
+| report | 4.8 | 4.8 | 2026-09-15T00:56:47+00:00 |  |  |  | cards=274 |
 
 
 ## Environment

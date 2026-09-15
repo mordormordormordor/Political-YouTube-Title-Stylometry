@@ -47,3 +47,6 @@
 {"stage": "report", "seconds": 0.6, "started": "2026-09-15T00:38:13+00:00", "finished": "2026-09-15T00:38:13+00:00", "cards": 274}
 {"stage": "report", "seconds": 4.8, "started": "2026-09-15T00:45:28+00:00", "finished": "2026-09-15T00:45:33+00:00", "cards": 274}
 {"stage": "report", "seconds": 4.8, "started": "2026-09-15T00:56:42+00:00", "finished": "2026-09-15T00:56:47+00:00", "cards": 274}
+{"stage": "stage5c_hits", "seconds": 28.9, "started": "2026-09-15T01:01:24+00:00", "finished": "2026-09-15T01:01:53+00:00", "groups": 252, "powerlaw_like": 1}
+{"stage": "report_data", "seconds": 2.6, "started": "2026-09-15T01:01:53+00:00", "finished": "2026-09-15T01:01:56+00:00", "creators": 274}
+{"stage": "report", "seconds": 5.2, "started": "2026-09-15T01:01:56+00:00", "finished": "2026-09-15T01:02:01+00:00", "cards": 274}

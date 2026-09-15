@@ -16,7 +16,8 @@ the size-artefact check, and a pooled within-lane estimate (values demeaned by
 lane x genre).
 
 Outputs (data/titles/analysis/):
-    hit_concentration.csv               per creator x genre
+    hit_concentration.csv               per creator x genre (Gini, top shares, CSN fit, rank-size
+                                        Zipf slope of views over all videos and over the top decile)
     hit_concentration_correlations.csv  within-lane and pooled-within-lane correlations
 
 CLI:
@@ -40,6 +41,20 @@ from pipeline_titles.common import (
 )
 
 HOOKS = ["curiosity_gap", "outrage", "humor"]
+
+
+def views_zipf_slope(values: np.ndarray) -> tuple[float, float]:
+    """Rank-size (Zipf) slope of views: OLS of log(views) on log(rank) over all
+    videos with views > 0 (rank 1 = most viewed), and the same over the top decile
+    only (the head, where a straight line would mean a power-law-like tail)."""
+    v = np.sort(values[values > 0])[::-1].astype(float)
+    if len(v) < 20:
+        return float("nan"), float("nan")
+    r = np.arange(1, len(v) + 1)
+    slope_all = np.polyfit(np.log(r), np.log(v), 1)[0]
+    k = max(10, int(np.ceil(len(v) * 0.10)))
+    slope_head = np.polyfit(np.log(r[:k]), np.log(v[:k]), 1)[0]
+    return float(-slope_all), float(-slope_head)
 
 
 def csn_fit(values: np.ndarray) -> dict:
@@ -69,6 +84,7 @@ def run(info: dict) -> None:
         rec = {"creator": c, "genre": g, "n_videos": len(grp), "median_views": float(np.median(v)), "mean_views": float(v.mean()),
                "gini": gini(v), "top10_share": top_share(v, 0.10), "top1_share": top_share(v, 0.01)}
         rec.update(csn_fit(v))
+        rec["zipf_views_all"], rec["zipf_views_head"] = views_zipf_slope(v)
         rows.append(rec)
     hc = pd.DataFrame(rows).merge(lanes, on="creator", how="left")
     hc["subscribers"] = pd.to_numeric(hc["subscribers"], errors="coerce")

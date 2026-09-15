@@ -327,9 +327,37 @@ def fig_views():
     fig.tight_layout(); save(fig, "07_lorenz_and_tails.png")
 
 
+def fig_zipf_views():
+    hc = rd("hit_concentration.csv"); hv = hc[hc.genre == "videos"].copy()
+    pre = pd.read_parquet(A / "titles_prepared.parquet", columns=["creator", "genre", "view_count", "has_views"])
+    picks = ["@FoxNews", "@CNN", "@Reuters", "@BenShapiro", "@briantylercohen", "@HasanAbi", "@Vaush", "@BelleRanch"]
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4.6))
+    ax = axes[0]
+    for i, c in enumerate(picks):
+        v = np.sort(pre[(pre.creator == c) & (pre.genre == "videos") & pre.has_views].view_count.to_numpy())[::-1]
+        v = v[v > 0]
+        if len(v) < 100:
+            continue
+        r = np.arange(1, len(v) + 1)
+        ax.plot(r, v / v[0], lw=1.8, color=CAT[i % 8], label=f"{c} (n={len(v):,}, slope {float(hv.loc[hv.creator == c, 'zipf_views_all'].iloc[0]):.2f})")
+    ax.set_xscale("log"); ax.set_yscale("log"); ax.set_xlabel("rank of the video within the channel (1 = most viewed)"); ax.set_ylabel("views / views of the channel's top video")
+    ax.legend(fontsize=7.5); ax.set_title("Rank-size (Zipf) curves of views, eight channels")
+    ax = axes[1]
+    hv["label"] = hv.lane.map(lane_label); order = hv.groupby("label").zipf_views_all.median().sort_values().index.tolist()
+    rng = np.random.RandomState(2)
+    for i, l in enumerate(order):
+        s = hv[hv.label == l]
+        ax.plot(s.zipf_views_all, i + rng.uniform(-0.2, 0.2, len(s)), "o", color=FAM_COLOR[FAMILY_OF[s.lane.iloc[0]]], alpha=0.7, ms=5)
+        ax.plot([s.zipf_views_all.median()] * 2, [i - 0.3, i + 0.3], color=INK, lw=2)
+    ax.set_yticks(range(len(order)), order, fontsize=8); ax.grid(axis="y", visible=False)
+    ax.set_xlabel("Zipf slope of views (log views vs log rank, all videos; black bar = lane median)")
+    ax.set_title("Zipf slope by lane: steeper = views fall off faster down the ranking")
+    fig.tight_layout(); save(fig, "07_zipf_views.png", "Curves bend down at the tail on log-log axes: lognormal rather than straight-line power-law behaviour.")
+
+
 def main() -> int:
     FIG.mkdir(parents=True, exist_ok=True)
-    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views):
+    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views):
         fn(); print("done", fn.__name__, flush=True)
     import shutil
     if (A / "scree.png").exists():

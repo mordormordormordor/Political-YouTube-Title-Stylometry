@@ -97,6 +97,13 @@ Streamers and daily left commentators spread views most evenly (Gini 0.18-0.33 f
 ![Lorenz curves and the tail test.](figures/07_lorenz_and_tails.png)
 *Left: Lorenz curves for seven channels. Right: the likelihood-ratio statistic of the power-law fit against a lognormal across all video channels.*
 
+## Zipf's law for views
+
+The rank-size view of the same distributions: within each channel, videos ranked by views, plotted on log-log axes. A straight line would be Zipf's law (views proportional to rank to a negative power); the curves instead bend downwards in the tail, which is what a lognormal looks like on these axes and what the formal test below confirms. The slope of log views on log rank over all of a channel's videos summarises how steeply views fall off down the ranking: the lane pattern follows the Gini ordering, shallow for streamers and daily left commentary, steep for the wires and legacy TV. Per-channel slopes (all videos, and the top decile only) are in `hit_concentration.csv` (`zipf_views_all`, `zipf_views_head`).
+
+![Zipf rank-size curves of views and the slope by lane.](figures/07_zipf_views.png)
+*Left: rank-size curves for eight channels, each normalised to its own top video. Right: the all-video Zipf slope per channel, grouped by lane.*
+
 **Power law or not.** The `powerlaw` fit (discrete, xmin by KS minimisation) with the likelihood-ratio test against a lognormal supports a power-law tail in 0 of 193 video channels and 1 of 59 stream channels; the ratio even points towards the power law in only 6 % of video channels. Hits are heavy-tailed but lognormal-shaped, so no channel here should be described as having a power-law audience.
 
 ## Does style go with concentration?
