@@ -630,15 +630,25 @@ def _fightin_words(ax_sc, ax_bar, wc, cutoff, sys_left, sys_right, n_label=12, n
     ax_sc.legend(loc="upper left", fontsize=7.5, title=f"class at |z| ≥ {cutoff:g}", title_fontsize=7.5)
     ax_sc.text(0.02, 0.005, f"dashed lines: ±{cutoff:g}; triangles: words beyond ±{cap:g}, drawn at the edge", transform=ax_sc.transAxes, ha="left", va="bottom", fontsize=7, color=INK2)
     ax_sc.set_title("Every word: z against how often it occurs")
-    top = pd.concat([wc.nsmallest(n_bars, "z"), wc.nlargest(n_bars, "z")]).sort_values("z")
-    y = np.arange(len(top)); ax_bar.barh(y, top.zc, color=[col[c] for c in top.word_class], height=0.72)
-    for yi, r in zip(y, top.itertuples()):
-        if abs(r.z) > cap:
-            ax_bar.text(r.zc + (0.02 * cap if r.z > 0 else -0.02 * cap), yi, f"{r.z:+.0f}", va="center", ha="left" if r.z > 0 else "right", fontsize=6.8, color=INK, fontweight="bold")
-    ax_bar.set_yticks(y, top.word, fontsize=7); ax_bar.axvline(0, color=INK, lw=0.8); ax_bar.grid(axis="y", visible=False); ax_bar.set_xlim(-cap * 1.25, cap * 1.25)
-    ax_bar.axvline(cutoff, color=INK2, lw=0.6, ls="--"); ax_bar.axvline(-cutoff, color=INK2, lw=0.6, ls="--")
-    ax_bar.set_xlabel(f"z  (← more {sys_left}   ·   more {sys_right} →); bars beyond ±{cap:g} are cut and carry their z")
-    ax_bar.set_title(f"The {n_bars} most one-sided words each way")
+    # the two lists side by side, mirrored about a central spine (the layout of wordsandpolitics.com's
+    # "Who over-uses which words"): each side ranked from the top, the word beside the spine, the bar
+    # growing outward, its z at the outer end; bars beyond the cap are cut, drawn paler and keep their z
+    top_l = wc.nsmallest(n_bars, "z").reset_index(drop=True); top_r = wc.nlargest(n_bars, "z").reset_index(drop=True)
+    gutter = 0.42 * cap
+    for side, top, sign in (("left", top_l, -1), ("right", top_r, 1)):
+        for i, r in top.iterrows():
+            length = min(abs(r.z), cap); cut = abs(r.z) > cap
+            ax_bar.barh(i, sign * length, left=sign * gutter, height=0.64, color=col[side], alpha=0.5 if cut else 0.9, edgecolor="none")
+            ax_bar.text(sign * gutter * 0.08, i, r.word, ha="right" if sign < 0 else "left", va="center", fontsize=7.6, color=INK)
+            ax_bar.text(sign * (gutter + length + 0.025 * cap), i, f"{r.z:+.1f}", ha="right" if sign < 0 else "left", va="center", fontsize=6.6, color=INK2, fontweight="bold" if cut else "normal")
+    ax_bar.axvline(0, color=GRID, lw=1.2)
+    ax_bar.text(-gutter, -1.15, f"MORE {sys_left.upper()}", ha="right", va="center", fontsize=8, color=col["left"], fontweight="bold")
+    ax_bar.text(gutter, -1.15, f"MORE {sys_right.upper()}", ha="left", va="center", fontsize=8, color=col["right"], fontweight="bold")
+    ax_bar.set_xlim(-(gutter + cap * 1.3), gutter + cap * 1.3); ax_bar.set_ylim(max(len(top_l), len(top_r)) - 0.4, -1.8)
+    ax_bar.set_xticks([]); ax_bar.set_yticks([]); ax_bar.grid(False)
+    for sp in ax_bar.spines.values():
+        sp.set_visible(False)
+    ax_bar.set_title(f"The {n_bars} words each side over-uses most (z; paler bars are cut at ±{cap:g})")
 
 
 def fig_leaning_logodds():
@@ -651,7 +661,7 @@ def fig_leaning_logodds():
         wc = lo[lo.comparison == name]
         if not len(wc):
             continue
-        fig, axes = plt.subplots(1, 2, figsize=(13, 7.2), gridspec_kw={"width_ratios": [1.45, 1]})
+        fig, axes = plt.subplots(1, 2, figsize=(14, 7.4), gridspec_kw={"width_ratios": [1.2, 1.1]})
         _fightin_words(axes[0], axes[1], wc, cutoff, sys_l, sys_r)
         r = summ[summ.comparison == name].iloc[0]
         fig.suptitle(f"{r.system_left} vs {r.system_right}: weighted log-odds of every word ({int(r.n_words):,} words with 3+ occurrences; Monroe, Colaresi and Quinn 2008, alpha0 = 500)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
