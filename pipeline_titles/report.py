@@ -1,6 +1,7 @@
 """Render the deliverables from the analysis tables:
 
-    pipeline_titles/reports/title_stylometry_report.md   corpus report (headlines + tables)
+    pipeline_titles/reports/README.md + 01..08_*.md      the sectioned write-up (one document per question)
+    pipeline_titles/reports/all_tables.md                reference dump of every table in one file
     pipeline_titles/reports/methods_appendix.md          every preprocessing step, lists, loadings, validation, runtimes
     pipeline_titles/reports/cards/<creator>.md           one fixed-layout profile card per creator
     pipeline_titles/reports/title_stylometry.html        browsable page (creator selector, cards, landscape maps)
@@ -63,7 +64,7 @@ def pct(x) -> str:
 
 # --------------------------------------------------------------------------- #
 def corpus_report(cards: dict) -> str:
-    out = [f"# Title Stylometry: corpus report, 2026-01-01 to 2026-09-14\n", f"_Generated {utc_now()} by `python -m pipeline_titles.report`. Every table below is read from `data/titles/analysis/`; the code is `pipeline_titles/`._\n"]
+    out = [f"# Title Stylometry: all tables (reference dump), 2026-01-01 to 2026-09-14\n", f"_Generated {utc_now()} by `python -m pipeline_titles.report`. Every table below is read from `data/titles/analysis/`; the code is `pipeline_titles/`._\n"]
     summ = read("creator_genre_summary.csv")
     n_rows = int(summ["n_rows"].sum()); n_unique = int(summ["n_unique"].sum())
     out.append(f"Corpus: {n_rows:,} titles from {summ['creator'].nunique()} creators ({summ['n_unique'].sum():,} unique within creator x genre; "
@@ -272,7 +273,7 @@ def methods_appendix() -> str:
              "api_cost_usd": v.get("api_cost_usd", 0 if "llm" in k or "topics" in k else ""),
              "notes": ", ".join(f"{a}={b}" for a, b in longest[k].items() if a not in ("stage", "seconds", "started", "finished", "calls", "output_tokens", "prompt_tokens", "api_cost_usd") and not isinstance(b, (list, dict)))} for k, v in last.items()]
     out.append("\n## Runtime and cost per stage (last run and longest run of each; a --label-only re-run of topics is seconds, the fit was minutes; local Ollama models cost $0)\n\n" + md_table(pd.DataFrame(rows), floatfmt="{:.1f}"))
-    out.append("\n## Environment\n\n```\n" + (PROJECT_ROOT / "requirements-titles.txt").read_text() + "\n```\n")
+    out.append("\n## Environment\n\n```\n" + (PROJECT_ROOT / "requirements.txt").read_text() + "\n```\n")
     return "\n".join(out)
 
 
@@ -315,7 +316,9 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     with stage_timer("report") as info:
         cards = json.loads(CARDS_JSON.read_text())
         REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-        (REPORTS_DIR / "title_stylometry_report.md").write_text(corpus_report(cards), encoding="utf-8")
+        (REPORTS_DIR / "all_tables.md").write_text(corpus_report(cards), encoding="utf-8")
+        from pipeline_titles.report_sections import write_all
+        write_all()
         (REPORTS_DIR / "methods_appendix.md").write_text(methods_appendix(), encoding="utf-8")
         cdir = REPORTS_DIR / "cards"
         cdir.mkdir(exist_ok=True)

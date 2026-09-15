@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-14T23:18:11+00:00._
+_Generated 2026-09-15T00:38:13+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -1468,15 +1468,14 @@ Answer with one JSON object and nothing else:
 | stage5b_engagement | 9.4 | 9.4 | 2026-09-14T23:10:47+00:00 |  |  |  | creator_genre_models=252 |
 | stage5c_hits | 25.6 | 25.6 | 2026-09-14T23:12:37+00:00 |  |  |  | groups=252, powerlaw_like=1 |
 | report_data | 2.5 | 2.6 | 2026-09-14T23:17:25+00:00 |  |  |  | creators=274 |
-| report | 0.5 | 0.5 | 2026-09-14T23:17:25+00:00 |  |  |  | cards=274 |
+| report | 0.6 | 0.6 | 2026-09-15T00:37:45+00:00 |  |  |  | cards=274 |
 
 
 ## Environment
 
 ```
-# Title Stylometry analysis stack (pipeline_titles/*.py). Install on top of
-# requirements.txt into the project .venv:
-#     .venv/bin/pip install -r requirements-titles.txt
+# Political YouTube Title Stylometry - analysis stack (pipeline_titles/*.py).
+#     python -m venv .venv && .venv/bin/pip install -r requirements.txt
 #     .venv/bin/python -m spacy download en_core_web_sm    # 3.8.0 was used
 # Pinned to the versions the 2026-09-14 run used (Python 3.14.2, Apple M4 Pro).
 pandas==3.0.5
@@ -1496,5 +1495,8 @@ factor_analyzer==0.5.1
 spacy==3.8.16
 vaderSentiment==3.3.2
 powerlaw==2.0.0
+# Corpus fetch (pipeline_titles/ingest): yt-dlp changes often, keep it recent.
+yt-dlp>=2026.1.0
+requests==2.34.2
 
 ```

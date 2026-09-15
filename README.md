@@ -10,8 +10,20 @@ listing-level metadata that comes with them are the entire dataset.
 
 ## Results
 
-- `pipeline_titles/reports/title_stylometry_report.md`: the corpus report (one headline
-  finding per stage at the top, then every table).
+Start at [`pipeline_titles/reports/README.md`](pipeline_titles/reports/README.md): the
+write-up is split into eight documents, one per question, each explaining its finding
+with the tables that carry it and its caveats:
+
+1. [Corpus and lanes](pipeline_titles/reports/01_corpus_and_lanes.md)
+2. [Topics](pipeline_titles/reports/02_topics.md)
+3. [Style dimensions](pipeline_titles/reports/03_style_dimensions.md)
+4. [Formats and hooks](pipeline_titles/reports/04_formats_and_hooks.md)
+5. [The landscape](pipeline_titles/reports/05_landscape.md)
+6. [Drift](pipeline_titles/reports/06_drift.md)
+7. [Views](pipeline_titles/reports/07_views.md)
+8. [Null results and caveats](pipeline_titles/reports/08_null_results_and_caveats.md)
+
+- `pipeline_titles/reports/all_tables.md`: the reference dump of every table in one file.
 - `pipeline_titles/reports/methods_appendix.md`: preprocessing, stopwords, feature
   definitions, lexicons, factor loadings, validation numbers, sample sizes, prompts,
   runtimes.
