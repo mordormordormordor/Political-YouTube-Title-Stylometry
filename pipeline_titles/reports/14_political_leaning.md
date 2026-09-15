@@ -311,6 +311,62 @@ Read as a map of the two grammars of attack: the right's titles are about Democr
 
 The small models' lists are subject maps (Trump, GOP and Fox on Qwen's "right"; Hasan, Gaza and racism on its "left"; the named right personalities on Gemma's "right"); the frontier model's list is closer to a stance map. That difference is the whole story of this document. The same allotaxonograph for each of the other judges and for the all-agree set: [Gemma-3-12B](figures/14_allotax_gemma.png), [Qwen3-14B](figures/14_allotax_qwen.png), [all three agree](figures/14_allotax_consensus.png).
 
+## Log-odds: a left / right / neither lexicon, and what a word list can and cannot do
+
+The allotaxonograph ranks words by how far they move between the two rankings; weighted log-odds asks a different question, whether a word is over-used on one side *given how common it is overall*, and gives every word a z-score, so a cutoff turns the vocabulary into a three-way lexicon: right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise (the two-sided 5 % level; words with fewer than 3 occurrences are not classified).
+
+![Log-odds, judge of record.](figures/14_logodds_opus.png)
+*Left: every word by its z (vertical) and its frequency (horizontal, log scale) for the titles Claude Opus read as left against those it read as right; blue = left-class, orange = right-class, grey = neither. Right: the 25 most one-sided words each way. Words beyond the axis cap (one of them "trump") are drawn at the edge with their z.*
+
+How many words clear the cutoff, per comparison (the same five systems as the allotaxonographs):
+
+| comparison | n_words | n_left | n_right | n_neither | share_classified | top_left | top_right |
+|---|---|---|---|---|---|---|---|
+| qwen3:14b | 1951 | 55 | 20 | 1876 | 0.04 | hasan, left, aoc, piker, lies, black, fascism, violence, gaza, democratic, progressive, democracy, genocide, bernie, ... | trump, gop, fox, republican, right, goes, mark, charlie, islam, candace, kirk, noem, lost, end, tucker |
+| gemma3:12b | 3190 | 92 | 81 | 3017 | 0.05 | trump, ice, hasan, war, gaza, breaking, democratic, hasanabi, piker, zohran, disaster, marc, hill, israel, destiny | kirk, charlie, candace, fraud, tucker, owens, nick, carlson, islam, pray, myron, hegseth, jd, california, levin |
+| Claude Opus | 2690 | 85 | 130 | 2475 | 0.08 | trump, maga, war, iran, israel, breaking, epstein, donald, fox, panics, republicans, gaza, venezuela, vance, hasanabi | fraud, democrats, women, woke, kirk, charlie, california, america, left, democrat, trans, islam, pray, black, liberal |
+| all three agree | 856 | 23 | 16 | 817 | 0.05 | trump, war, maga, israel, iran, ice, gaza, donald, breaking, congress, lies, israeli, backfires, brian, fascism | democrats, democrat, fraud, woke, women, kirk, islam, charlie, pray, tucker, mark, liberal, california, ds, levin |
+| the two lanes | 10536 | 880 | 1630 | 8026 | 0.24 | trump, maga, breaking, epstein, fox, let, talk, republicans, panics, war, gets, brian, disaster, hegseth, hour | women, democrat, fraud, democrats, america, woke, mamdani, liberal, men, bannon, president, nyc, karmelo, mayor, anthony |
+
+
+Only a few per cent of words are one-sided at this level for the labelled samples; the lanes, with ten times the titles, classify 24 % of their vocabulary. Comparing the classes between comparisons over the words both classify (kappa over three classes; `same side` restricts to words both call partisan):
+
+| a | b | n_shared_words | kappa | both_partisan | same_side_when_both_partisan | z_spearman |
+|---|---|---|---|---|---|---|
+| qwen3:14b | gemma3:12b | 1928 | 0.25 | 35 | 0.94 | 0.34 |
+| qwen3:14b | Claude Opus | 1849 | 0.10 | 27 | 0.48 | 0.10 |
+| qwen3:14b | all three agree | 856 | 0.27 | 16 | 0.94 | 0.68 |
+| qwen3:14b | the two lanes | 1932 | 0.01 | 51 | 0.55 | 0.06 |
+| gemma3:12b | Claude Opus | 2548 | 0.33 | 77 | 0.87 | 0.55 |
+| gemma3:12b | all three agree | 856 | 0.22 | 23 | 1.00 | 0.68 |
+| gemma3:12b | the two lanes | 3119 | 0.07 | 138 | 0.83 | 0.36 |
+| Claude Opus | all three agree | 856 | 0.30 | 35 | 1.00 | 0.73 |
+| Claude Opus | the two lanes | 2656 | 0.13 | 192 | 0.96 | 0.60 |
+| all three agree | the two lanes | 854 | 0.05 | 37 | 0.95 | 0.49 |
+
+
+Three things stand out. Claude Opus and the lanes agree on direction almost perfectly (96 % of the 192 words both call partisan point the same way; the low kappa is only the lanes classifying many more words), so the judge's left and right vocabularies are the lanes' vocabularies: what the left-commentary lane says is what reads as left. Claude Opus and Gemma mostly agree too (87 % same side, kappa 0.33). Claude Opus and Qwen agree on the side of 48 % of the words both classify; the words that switch sides between them are left, aoc, piker, black, progressive, mamdani, biden, didn't...: Qwen's "right" is the vocabulary of talking *about* the right (trump, fox, gop, noem), which for the frontier model reads left. Between the judge and the lanes the switchers are asmongold, reacts, strait, china, tech, fires, canada, show-name and topic words rather than stance words.
+
+**What a word list can do on its own.** If the judge's reading were vocabulary, a lexicon built from its own labels should reproduce them. It does not, quite: built out of fold (five folds by channel, so no channel's titles help classify themselves) and applied to titles by majority of classified words, the lexicon agrees with Claude Opus on 53 % of titles (kappa 0.26); it puts a word from the list into 63 % of titles; of the titles the judge called partisan it leaves 31 % as neither, and where both call a title partisan they pick the same side 79 % of the time. The errors are the interesting part: the lexicon calls 30 % of the judge's *neither* titles left and 18 % right, because a plain news headline that mentions MAGA, Epstein or Iran carries left-class words without a left stance, and it recovers the judge's right titles worse (44 % recall) than its left ones (63 %), because the right's stance words (woke, fraud, women) are rarer than the left's subject words. At channel level the list does much better, Spearman 0.66 with the judge's channel score and lane AUC 0.86: fifty titles average the noise out, and the ordering of channels is largely vocabulary; the title-level call is not.
+
+![Lexicon against the judge.](figures/14_lexicon_vs_judge.png)
+*Left: each channel's score from the out-of-fold lexicon classes against its score from the judge's labels. Right: the lexicon's class against the judge's label, title by title (row shares).*
+
+The same check for every judge:
+
+| judge | n_titles | coverage | accuracy | kappa | partisan_titles_lexicon_neither | side_agreement_when_both_partisan | recall_left | recall_right | channel_spearman | channel_lane_auc |
+|---|---|---|---|---|---|---|---|---|---|---|
+| qwen3:14b | 12437 | 0.29 | 0.65 | 0.20 | 0.56 | 0.65 | 0.21 | 0.31 | 0.23 | 0.41 |
+| gemma3:12b | 12478 | 0.53 | 0.51 | 0.23 | 0.40 | 0.64 | 0.57 | 0.23 | 0.55 | 0.84 |
+| Claude Opus | 12478 | 0.63 | 0.53 | 0.26 | 0.31 | 0.79 | 0.63 | 0.44 | 0.66 | 0.86 |
+
+
+The lanes' log-odds, for reference (the lexicon of what each lane publishes, no judge involved):
+
+![Log-odds, lanes.](figures/14_logodds_lanes.png)
+*Left-commentary against right-commentary channels, same construction. The left lane's list is Trump and the administration plus show furniture (let, talk, hour); the right lane's is Democrats, women, woke, fraud, Mamdani and America.*
+
+
 ## The same instrument on the lanes
 
 The allotaxonograph does not need a judge: applied to what the two commentary lanes actually published (every unique edited upload of the 48 left-commentary and 75 right-commentary channels in the creator-balanced subset, 35,689 vs 29,090 titles), it shows the two lanes' vocabularies directly, with no labelling in between.
@@ -328,8 +384,9 @@ D<sup>R</sup><sub>1/3</sub> = 0.396: the lanes' whole outputs are closer to each
 4. **Yardsticks.** Self-description: a channel counts as self-declared right or left when its YouTube description contains leaning words (conservative, MAGA, libertarian, right-wing ... vs progressive, leftist, socialist, liberal ...), with nine hand corrections for phrases like "liberal democracy" or "former liberal"; agreement is the share of those channels whose score has the declared sign. Lanes: AUC and sign accuracy over the two commentary lanes only.
 5. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), plus the lane AUC from each; `leaning_stability.csv`, per-channel values for the judge in `leaning_stability_channels.csv`.
 6. **Words.** Right vs left titles per model and for the all-agree set: weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
-7. **Allotaxonographs.** Drawn by allotaxonometer-ui 0.2.2 (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables; five comparisons (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
-8. **Months.** The judge's labels by lane x month (`leaning_by_lane_month.csv`): titles, creators, partisan share, left and right shares, score.
+7. **Log-odds lexicon.** Weighted log-odds (as above) of every word with 3+ occurrences in the two systems together, right against left; a word is right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for each judge, the all-agree set and the two lanes, and Cohen's kappa of the classes between comparisons over their shared words. The lexicon check: each judge's labelled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
+8. **Allotaxonographs.** Drawn by allotaxonometer-ui 0.2.2 (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables; five comparisons (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
+9. **Months.** The judge's labels by lane x month (`leaning_by_lane_month.csv`): titles, creators, partisan share, left and right shares, score.
 
 ## Limitations
 
@@ -340,4 +397,4 @@ D<sup>R</sup><sub>1/3</sub> = 0.396: the lanes' whole outputs are closer to each
 - **The small models' failure is a model property, not a corpus property**, and it comes in two kinds: Gemma's is partly noise (more titles helped) and partly a systematic target-for-stance error (more titles did not help); Qwen's is systematic. Their word lists show what a 12-14B model uses as a partisan cue.
 - **Month-level reading is lane-level only.** Five titles per channel-month is not a monthly channel score; the base 16 were drawn without regard to month, so the monthly table leans on the top-up.
 
-Files: `leaning_labels.csv`, `leaning_agreement.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_lane_validation.csv`, `leaning_lane_contradictions.csv`, `leaning_by_lane.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_lane_month.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.
+Files: `leaning_labels.csv`, `leaning_agreement.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_lane_validation.csv`, `leaning_lane_contradictions.csv`, `leaning_by_lane.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_lane_month.csv`, `leaning_logodds.csv`, `leaning_logodds_summary.csv`, `leaning_logodds_agreement.csv`, `leaning_lexicon_validation.csv`, `leaning_lexicon_channels.csv`, `leaning_lexicon_titles.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.

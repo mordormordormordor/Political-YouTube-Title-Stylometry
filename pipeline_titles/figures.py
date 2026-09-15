@@ -586,15 +586,105 @@ def fig_leaning_stability():
     ax.set_xlim(-1.05, 1.05); ax.set_ylim(-1.05, 1.05)
     ax = axes[1]
     models = sh.model.tolist(); st2 = st.set_index("model").reindex(models)
-    y = np.arange(len(models)); h = 0.38
-    ax.barh(y - h / 2, sh.split_half_spearman_mean, height=h, color=CAT[0], label=f"split-half: two random halves of a channel's titles ({int(sh.median_titles_per_half.iloc[0])} each, 20 splits, n = {int(sh.n_channels.iloc[0])})")
-    ax.barh(y + h / 2, st2.spearman_base_vs_topup, height=h, color=CAT[2], label=f"original {nb} titles vs the {nt} top-up titles (n = {len(ch)})")
+    y = np.arange(len(models)); h = 0.3
+    ax.barh(y - h / 2 - 0.02, sh.split_half_spearman_mean, height=h, color=CAT[0], label=f"split-half: two random halves of each channel's titles, {int(sh.median_titles_per_half.iloc[0])} titles each, mean of 20 splits")
+    ax.barh(y + h / 2 + 0.02, st2.spearman_base_vs_topup, height=h, color=CAT[2], label=f"original {nb}-title draw vs the {nt} top-up titles drawn later")
     for yi, (a, b) in enumerate(zip(sh.split_half_spearman_mean, st2.spearman_base_vs_topup)):
-        ax.text(a + 0.01, yi - h / 2, f"{a:.2f}", va="center", fontsize=7.5, color=INK2); ax.text(b + 0.01, yi + h / 2, f"{b:.2f}", va="center", fontsize=7.5, color=INK2)
-    ax.set_yticks(y, [_nm(m) for m in models]); ax.set_xlim(0, 1.12); ax.set_ylim(len(models) - 0.5, -0.5); ax.grid(axis="y", visible=False)
-    ax.set_xlabel("Spearman correlation between the two channel rankings"); ax.set_title("Reliability of the channel score, per model")
-    ax.legend(loc="lower right", fontsize=7)
+        ax.text(a + 0.015, yi - h / 2 - 0.02, f"{a:.2f}", va="center", fontsize=8.5, color=INK); ax.text(b + 0.015, yi + h / 2 + 0.02, f"{b:.2f}", va="center", fontsize=8.5, color=INK)
+    ax.set_yticks(y, [_nm(m) for m in models], fontsize=9); ax.set_xlim(0, 1.0); ax.set_ylim(len(models) - 0.5, -0.5); ax.grid(axis="y", visible=False)
+    ax.set_xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0]); ax.set_xlabel(f"Spearman correlation between the two channel rankings (n = {int(sh.n_channels.iloc[0])} channels with 50 titles)")
+    ax.set_title("Reliability of the channel score, per model")
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=1, fontsize=8, frameon=False)
     fig.tight_layout(); save(fig, "14_leaning_stability.png")
+
+
+def _fightin_words(ax_sc, ax_bar, wc, cutoff, sys_left, sys_right, n_label=12, n_bars=25):
+    """Monroe et al.'s plot: z of the weighted log-odds against total frequency, classes coloured,
+    the most one-sided words named; beside it the top words each side as diverging bars. The
+    axes are capped at the 99.5th percentile of |z| (at least four cutoffs) and the few words
+    beyond the cap are drawn at the edge and listed with their z, so that one word like
+    "trump" cannot squash the rest of the plot."""
+    wc = wc.copy(); wc["total"] = wc.count_left + wc.count_right
+    col = {"left": CAT[0], "right": CAT[1], "neither": "#c9c8c3"}
+    # cap: the 6th largest |z| rounded up, so at most five words per plot sit beyond the edge
+    cap = float(max(4 * cutoff, np.ceil(wc.z.abs().nlargest(6).iloc[-1])))
+    wc["zc"] = wc.z.clip(-cap, cap); off = wc[wc.z.abs() > cap].sort_values("z")
+    for cls in ("neither", "left", "right"):
+        sub = wc[(wc.word_class == cls) & (wc.z.abs() <= cap)]
+        ax_sc.scatter(sub.total, sub.zc, s=9 if cls == "neither" else 16, color=col[cls], alpha=0.55 if cls == "neither" else 0.9, edgecolor="none", label=f"{cls} ({int((wc.word_class == cls).sum()):,})")
+    for r in off.itertuples():
+        ax_sc.scatter([r.total], [r.zc], marker="v" if r.z < 0 else "^", s=46, color=col[r.word_class], edgecolor=INK, linewidth=0.5, zorder=4)
+    off_l = [f"{r.word} ({r.z:+.0f})" for r in off.itertuples() if r.z < 0]; off_r = [f"{r.word} ({r.z:+.0f})" for r in off[::-1].itertuples() if r.z > 0]
+    # the low-frequency side of the plot is empty at large |z|, so the notes go there
+    if off_l:
+        ax_sc.text(0.02, 0.05, "beyond the lower edge:\n" + ", ".join(off_l), transform=ax_sc.transAxes, ha="left", va="bottom", fontsize=7.5, color=col["left"], fontweight="bold")
+    if off_r:
+        ax_sc.text(0.02, 0.78, "beyond the upper edge:\n" + ", ".join(off_r), transform=ax_sc.transAxes, ha="left", va="top", fontsize=7.5, color=col["right"], fontweight="bold")
+    ax_sc.axhline(cutoff, color=INK2, lw=0.8, ls="--"); ax_sc.axhline(-cutoff, color=INK2, lw=0.8, ls="--"); ax_sc.axhline(0, color=GRID, lw=1)
+    ax_sc.set_xscale("log"); ax_sc.set_ylim(-cap * 1.08, cap * 1.08)
+    on = wc[wc.z.abs() <= cap]
+    lab = pd.concat([on.nlargest(n_label, "z"), on.nsmallest(n_label, "z"), on[on.word_class == "right"].nlargest(5, "total"), on[on.word_class == "left"].nlargest(5, "total")]).drop_duplicates("word")
+    for i, r in enumerate(lab.itertuples()):
+        ax_sc.annotate(r.word, (r.total, r.zc), fontsize=6.8, color=col[r.word_class], xytext=(4, 3 if i % 2 else -8), textcoords="offset points")
+    ax_sc.set_xlabel("occurrences in both systems together (log scale)"); ax_sc.set_ylabel(f"z of the weighted log-odds:  ← over-used in {sys_left}   |   over-used in {sys_right} →")
+    ax_sc.legend(loc="upper left", fontsize=7.5, title=f"class at |z| ≥ {cutoff:g}", title_fontsize=7.5)
+    ax_sc.text(0.02, 0.005, f"dashed lines: ±{cutoff:g}; triangles: words beyond ±{cap:g}, drawn at the edge", transform=ax_sc.transAxes, ha="left", va="bottom", fontsize=7, color=INK2)
+    ax_sc.set_title("Every word: z against how often it occurs")
+    top = pd.concat([wc.nsmallest(n_bars, "z"), wc.nlargest(n_bars, "z")]).sort_values("z")
+    y = np.arange(len(top)); ax_bar.barh(y, top.zc, color=[col[c] for c in top.word_class], height=0.72)
+    for yi, r in zip(y, top.itertuples()):
+        if abs(r.z) > cap:
+            ax_bar.text(r.zc + (0.02 * cap if r.z > 0 else -0.02 * cap), yi, f"{r.z:+.0f}", va="center", ha="left" if r.z > 0 else "right", fontsize=6.8, color=INK, fontweight="bold")
+    ax_bar.set_yticks(y, top.word, fontsize=7); ax_bar.axvline(0, color=INK, lw=0.8); ax_bar.grid(axis="y", visible=False); ax_bar.set_xlim(-cap * 1.25, cap * 1.25)
+    ax_bar.axvline(cutoff, color=INK2, lw=0.6, ls="--"); ax_bar.axvline(-cutoff, color=INK2, lw=0.6, ls="--")
+    ax_bar.set_xlabel(f"z  (← more {sys_left}   ·   more {sys_right} →); bars beyond ±{cap:g} are cut and carry their z")
+    ax_bar.set_title(f"The {n_bars} most one-sided words each way")
+
+
+def fig_leaning_logodds():
+    """Weighted log-odds figures for document 14: the judge's left- vs right-read titles and the
+    two commentary lanes, plus the out-of-fold lexicon classifier against the judge."""
+    if not (A / "leaning_logodds.csv").exists():
+        return
+    lo = rd("leaning_logodds.csv"); summ = rd("leaning_logodds_summary.csv"); cutoff = float(summ.cutoff_z.iloc[0])
+    for name, sys_l, sys_r, fname in (("opus", "left-read titles", "right-read titles", "14_logodds_opus.png"), ("lanes", "left commentary", "right commentary", "14_logodds_lanes.png")):
+        wc = lo[lo.comparison == name]
+        if not len(wc):
+            continue
+        fig, axes = plt.subplots(1, 2, figsize=(13, 7.2), gridspec_kw={"width_ratios": [1.45, 1]})
+        _fightin_words(axes[0], axes[1], wc, cutoff, sys_l, sys_r)
+        r = summ[summ.comparison == name].iloc[0]
+        fig.suptitle(f"{r.system_left} vs {r.system_right}: weighted log-odds of every word ({int(r.n_words):,} words with 3+ occurrences; Monroe, Colaresi and Quinn 2008, alpha0 = 500)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
+        fig.tight_layout(rect=(0, 0, 1, 0.965)); save(fig, fname)
+    if not (A / "leaning_lexicon_channels.csv").exists() or not (A / "leaning_lexicon_validation.csv").exists():
+        return
+    ch = rd("leaning_lexicon_channels.csv"); val = rd("leaning_lexicon_validation.csv")
+    summj = json.loads((A / "leaning_summary.json").read_text()); judge = summj["judge_of_record"]
+    v = val[val.judge == judge].iloc[0] if (val.judge == judge).any() else val.iloc[0]
+
+    def _nm(c):
+        c = c.replace("label_", "").replace("_score", "")
+        return ("Claude " + c.replace("claude_code_", "").replace("_", " ").title()) if c.startswith("claude_code_") else c.replace("_", ":", 1).replace("_", ".")
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5.2), gridspec_kw={"width_ratios": [1.2, 1]})
+    ax = axes[0]
+    ax.plot([-1, 1], [-1, 1], color=GRID, lw=1); ax.axhline(0, color=GRID, lw=1); ax.axvline(0, color=GRID, lw=1)
+    big = ch[ch.n_titles >= 16]
+    for fam in FAMILIES:
+        sub = big[big.lane.map(FAMILY_OF) == fam]
+        ax.scatter(sub.judge_score, sub.lexicon_score, s=22, color=FAM_COLOR[fam], alpha=0.8, edgecolor=SURFACE, linewidth=0.6, label=fam)
+    ax.set_xlabel(f"channel score from {_nm(judge)}'s labels (−1 left … +1 right)"); ax.set_ylabel("channel score from the lexicon classes of the same titles (out of fold)")
+    ax.set_title(f"A word list against the judge, channel by channel (Spearman {v.channel_spearman:.2f}, n = {int(v.n_channels)})"); ax.legend(fontsize=7.5, loc="upper left")
+    ax.set_xlim(-1.05, 1.05); ax.set_ylim(-1.05, 1.05)
+    ax = axes[1]
+    conf = json.loads(v.confusion); classes = ["left", "neither", "right"]
+    m = np.array([[conf[r][c] for c in classes] for r in classes], dtype=float); share = m / m.sum(axis=1, keepdims=True)
+    ax.imshow(share, cmap=SEQ, vmin=0, vmax=1, aspect="auto")
+    for i in range(3):
+        for j in range(3):
+            ax.text(j, i, f"{int(m[i, j]):,}\n{share[i, j]:.0%}", ha="center", va="center", fontsize=8.5, color="white" if share[i, j] > 0.55 else INK)
+    ax.set_xticks(range(3), [f"lexicon: {c}" for c in classes], fontsize=8); ax.set_yticks(range(3), [f"{_nm(judge)}: {c}" for c in classes], fontsize=8); ax.grid(False)
+    ax.set_title(f"Title by title: accuracy {v.accuracy:.0%}, kappa {v.kappa:.2f}; same side on {v.side_agreement_when_both_partisan:.0%} of titles both call partisan")
+    fig.tight_layout(); save(fig, "14_lexicon_vs_judge.png")
 
 
 def fig_allotax():
@@ -609,7 +699,7 @@ def fig_allotax():
 
 def main() -> int:
     FIG.mkdir(parents=True, exist_ok=True)
-    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views, fig_profiles, fig_leaning, fig_leaning_channels, fig_leaning_stability, fig_allotax):
+    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views, fig_profiles, fig_leaning, fig_leaning_channels, fig_leaning_stability, fig_leaning_logodds, fig_allotax):
         fn(); print("done", fn.__name__, flush=True)
     import shutil
     if (A / "scree.png").exists():

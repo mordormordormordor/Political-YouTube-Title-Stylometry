@@ -463,6 +463,9 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
 
     # channels' own words as a lane-independent yardstick: leaning words in the channel description
     self_description_check(bc, cols)
+    # log-odds lexicons (left / right / neither at a z cutoff), their agreement across comparisons, and the out-of-fold lexicon check
+    from pipeline_titles.leaning_lexicon import run as lexicon_run
+    lexicon_run(df, cols, judge.replace("_score", ""), info=info)
     # split-half reliability of the channel scores (channels with >= 32 labelled titles)
     shr = split_half_reliability(df, cols)
     shr.to_csv(ANALYSIS_DIR / "leaning_split_half.csv", index=False)
