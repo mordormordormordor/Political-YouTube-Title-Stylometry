@@ -10,3 +10,5 @@ data/titles/videos.jsonl
 # Binary caches rebuilt by the pipeline (embeddings, spaCy annotations, title-level parquet)
 data/titles/analysis/cache/
 data/titles/analysis/*.parquet
+# Node renderer for the allotaxonographs (npm install in pipeline_titles/allotax_js; Chrome is cached by Puppeteer outside the repo)
+pipeline_titles/allotax_js/node_modules/

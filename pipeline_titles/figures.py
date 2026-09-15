@@ -453,7 +453,7 @@ def fig_profiles():
 def fig_leaning():
     if not (A / "leaning_by_creator.csv").exists():
         return
-    bc = rd("leaning_by_creator.csv"); words = rd("leaning_words.csv"); bl = rd("leaning_by_lane.csv")
+    bc = rd("leaning_by_creator.csv"); bl = rd("leaning_by_lane.csv")
     summ = json.loads((A / "leaning_summary.json").read_text()); val = pd.DataFrame(summ["per_model"])
     judge = summ["judge_of_record"] + "_score"
     others = val[val.score.str.startswith("label_") & (val.score != judge)].sort_values("auc_right_vs_left_lane", ascending=False).score.tolist()
@@ -487,41 +487,6 @@ def fig_leaning():
     ax.set_yticks(y, [f"{lane_label(l)} (n={int(n)})" for l, n in zip(lm.lane, lm.n)], fontsize=8); ax.axvline(0, color=INK, lw=0.8); ax.grid(axis="y", visible=False)
     ax.set_xlabel(f"title-leaning score, judge of record {jname} (−1 left … +1 right); dots = channels, bar = lane mean"); ax.set_title("Title leaning by lane")
     fig.tight_layout(); save(fig, "14_leaning_scores.png")
-
-    jm = summ["judge_of_record"]
-    w = words[words.model == jm] if (words.model == jm).any() else words[words.model == "consensus"]
-    w = w[(w.count_right + w.count_left) >= 5].copy()
-    fig, axes = plt.subplots(1, 2, figsize=(12, 5.6), gridspec_kw={"width_ratios": [1.2, 1]})
-    ax = axes[0]
-    ax.scatter(w.rank_right, w.rank_left, s=8, color=GRID, alpha=0.8)
-    ax.set_xscale("log"); ax.set_yscale("log"); mx = max(w.rank_right.max(), w.rank_left.max()); ax.plot([1, mx], [1, mx], color=INK, lw=0.8, ls="--")
-    both = w[(w.count_right > 0) & (w.count_left > 0)]
-    lab = pd.concat([both.nlargest(8, "rtd_contribution"), both.nsmallest(8, "rtd_contribution")]).sort_values(["rank_left", "rank_right"])
-    offsets = [(4, 3), (4, -10), (-4, 8), (4, 14), (-30, -11)]
-    prev = None
-    for i, r in enumerate(lab.itertuples()):
-        col_ = CAT[1] if r.rtd_contribution > 0 else CAT[0]
-        ax.scatter([r.rank_right], [r.rank_left], s=22, color=col_, zorder=3)
-        # stagger labels of points that sit at (nearly) the same spot
-        k = (k + 1) if (prev is not None and abs(np.log(r.rank_left) - np.log(prev[1])) < 0.15 and abs(np.log(r.rank_right) - np.log(prev[0])) < 0.5) else 0
-        ax.annotate(r.word, (r.rank_right, r.rank_left), fontsize=7, color=col_, xytext=offsets[k % len(offsets)], textcoords="offset points",
-                    ha="right" if offsets[k % len(offsets)][0] < 0 else "left")
-        prev = (r.rank_right, r.rank_left)
-    only_r = w[(w.count_left == 0)].nlargest(10, "rtd_contribution").word.tolist(); only_l = w[(w.count_right == 0)].nsmallest(10, "rtd_contribution").word.tolist()
-    k = 0
-    ax.text(0.02, 0.90, "right-only words (top row): " + ", ".join(only_r), transform=ax.transAxes, fontsize=7, color=CAT[1], va="top", wrap=True)
-    ax.text(0.98, 0.10, "left-only words (right column): " + ", ".join(only_l), transform=ax.transAxes, fontsize=7, color=CAT[0], ha="right", va="bottom", wrap=True)
-    ax.set_xlabel("rank among right-labelled titles (1 = most frequent)"); ax.set_ylabel("rank among left-labelled titles")
-    ax.set_title(f"Where each word ranks on the two sides (titles labelled by {names.get(judge, _nm(jm))})")
-    ax.text(0.02, 0.97, "above the line: more prominent on the right", transform=ax.transAxes, fontsize=7.5, color=CAT[1], va="top")
-    ax.text(0.98, 0.03, "below the line: more prominent on the left", transform=ax.transAxes, fontsize=7.5, color=CAT[0], ha="right")
-    ax = axes[1]
-    top = pd.concat([w.nlargest(15, "rtd_contribution").sort_values("rtd_contribution"), w.nsmallest(15, "rtd_contribution").sort_values("rtd_contribution")]).sort_values("rtd_contribution")
-    y = np.arange(len(top)); ax.barh(y, top.rtd_contribution, color=[CAT[1] if v > 0 else CAT[0] for v in top.rtd_contribution], height=0.7)
-    ax.set_yticks(y, top.word, fontsize=7.5); ax.axvline(0, color=INK, lw=0.8); ax.grid(axis="y", visible=False)
-    ax.set_xlabel("rank-turbulence divergence contribution (alpha = 1/3); orange = right-labelled, blue = left-labelled")
-    ax.set_title("The words that most separate the two labels")
-    fig.tight_layout(); save(fig, "14_leaning_words.png")
 
 
 LANE_ABBR = {"left_commentary": "left comm.", "right_commentary": "right comm.", "centrist_heterodox": "centrist", "us_legacy_tv": "US TV",
@@ -632,9 +597,19 @@ def fig_leaning_stability():
     fig.tight_layout(); save(fig, "14_leaning_stability.png")
 
 
+def fig_allotax():
+    """Allotaxonographs for document 14 (Dodds et al. 2023), drawn by allotaxonometer-ui through
+    Node (pipeline_titles.allotax); skipped with a message when Node or its packages are missing."""
+    from pipeline_titles import allotax
+    if not allotax.available():
+        print(f"allotaxonographs skipped: {allotax.UNAVAILABLE_MSG}")
+        return
+    allotax.main([])
+
+
 def main() -> int:
     FIG.mkdir(parents=True, exist_ok=True)
-    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views, fig_profiles, fig_leaning, fig_leaning_channels, fig_leaning_stability):
+    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views, fig_profiles, fig_leaning, fig_leaning_channels, fig_leaning_stability, fig_allotax):
         fn(); print("done", fn.__name__, flush=True)
     import shutil
     if (A / "scree.png").exists():

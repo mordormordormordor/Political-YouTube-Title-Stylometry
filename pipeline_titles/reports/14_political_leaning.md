@@ -238,61 +238,65 @@ It did not move: left commentary ranges from -0.69 to -0.52; independent digital
 
 ## What the frontier model calls right and what it calls left
 
-Titles Claude Opus labelled right (2,293) vs left (2,992), scored by weighted log-odds (which words are over-used on one side) and rank-turbulence divergence (which words move most between the two frequency rankings).
+Titles Claude Opus labelled left (2,992) vs right (2,293), compared two ways: weighted log-odds (which words are over-used on one side, given how often they appear at all) and rank-turbulence divergence, read off an allotaxonograph (Dodds et al. 2023), the instrument built for exactly this comparison of two Zipfian systems.
 
-![Words by side.](figures/14_leaning_words.png)
-*Left: rank of each word among right-labelled titles against its rank among left-labelled titles (log axes); words far from the diagonal belong to one side. Right: the largest rank-turbulence-divergence contributions, signed by side.*
+![Allotaxonograph, judge of record.](figures/14_allotax_opus.png)
+*Allotaxonograph of the titles Claude Opus read as left (system 1, left flank) against the titles it read as right (system 2, right flank); drawn by the Computational Story Lab's own renderer (allotaxonometer-ui), rank-turbulence divergence with α = 1/3. Diamond: every word placed by its rank in each system on log axes, the rank-rank plane rotated so that words used equally sit on the vertical centre line; colour = how many words share a cell; the words named along the flanks are the furthest from the centre line at each frequency, i.e. the most one-sided. Contour lines join equal contributions to the divergence. Right: the 40 largest contributions, each with its two ranks (system 1 ⇋ system 2), grey bars pulling left, blue bars pulling right. Below the diamond: the balance of tokens, types and exclusive types between the two systems.*
 
-Right-labelled vocabulary (top 20):
+How to read it. The two vocabularies overlap less than the label shares suggest: D<sup>R</sup><sub>1/3</sub> = 0.508, with 52 % of the left-read words never appearing in a right-read title and 50 % the other way. The apex is shared (trump, iran, war: the year's subjects), and the divergence is carried by the flanks: on the left maga, breaking, fox, donald, republicans, panics, epstein, israel; on the right women, fraud, democrats, woke, america, pray, charlie, california. The bottom edges of the diamond, where the dark cells run, are the words used once on one side and never on the other, which is where the labelled sample's smallness shows (5,458 and 5,248 word types from 2,992 and 2,293 titles).
 
-| word | log_odds_right_vs_left | z | count_right | count_left | rtd_contribution |
-|---|---|---|---|---|---|
-| fraud | 2.02 | 6.24 | 67 | 10 | 0.00 |
-| democrats | 1.23 | 6.12 | 92 | 32 | 0.00 |
-| women | 1.56 | 6.09 | 73 | 18 | 0.00 |
-| woke | 2.43 | 5.57 | 53 | 5 | 0.00 |
-| kirk | 1.64 | 5.08 | 49 | 11 | 0.00 |
-| charlie | 1.77 | 5.04 | 46 | 9 | 0.00 |
-| california | 1.96 | 5.04 | 44 | 7 | 0.00 |
-| america | 0.77 | 5.00 | 114 | 64 | 0.00 |
-| left | 1.18 | 4.95 | 63 | 23 | 0.00 |
-| democrat | 1.34 | 4.17 | 39 | 12 | 0.00 |
-| trans | 1.92 | 4.14 | 30 | 5 | 0.00 |
-| islam | 2.67 | 3.99 | 28 | 2 | 0.00 |
-| pray | 3.30 | 3.91 | 32 | 1 | 0.00 |
-| black | 0.79 | 3.90 | 66 | 36 | 0.00 |
-| liberal | 1.69 | 3.87 | 28 | 6 | 0.00 |
-| newsom | 1.62 | 3.68 | 26 | 6 | 0.00 |
-| biden | 1.41 | 3.62 | 28 | 8 | 0.00 |
-| viral | 1.47 | 3.55 | 26 | 7 | 0.00 |
-| somali | 2.42 | 3.51 | 21 | 2 | 0.00 |
-| mamdani | 0.95 | 3.49 | 41 | 19 | 0.00 |
+The two instruments disagree about one word, and the disagreement is instructive: "trump" is the most over-used word on the left by log-odds (1,353 occurrences in left-read titles against 288 in right-read ones), but it sits at the apex of the diamond, because it is the top-ranked word on both sides; rank turbulence measures who *changes* the ordering, not who wins the count, and on that reading the left's signature is maga, breaking, fox and donald, the right's is women, fraud, democrats and woke.
+
+Right-labelled vocabulary (top 20 by weighted log-odds; `rtd_contribution` is the word's share of D, in per cent, signed positive when the word is more prominent in right-labelled titles; ranks are tied ranks over the union of both vocabularies, so a word absent from one side takes that side's last tied rank):
+
+| word | log_odds_right_vs_left | z | count_right | count_left | rank_right | rank_left | rtd_contribution |
+|---|---|---|---|---|---|---|---|
+| fraud | 2.022 | 6.240 | 67 | 10 | 7 | 341.5 | 0.060 |
+| democrats | 1.229 | 6.120 | 92 | 32 | 4 | 42.5 | 0.056 |
+| women | 1.556 | 6.090 | 73 | 18 | 5 | 123 | 0.061 |
+| woke | 2.431 | 5.570 | 53 | 5 | 12 | 818 | 0.054 |
+| kirk | 1.643 | 5.080 | 49 | 11 | 14 | 297.5 | 0.046 |
+| charlie | 1.771 | 5.040 | 46 | 9 | 15 | 394.5 | 0.047 |
+| california | 1.962 | 5.040 | 44 | 7 | 17 | 557.5 | 0.046 |
+| america | 0.768 | 5.000 | 114 | 64 | 2 | 10 | 0.054 |
+| left | 1.181 | 4.950 | 63 | 23 | 9 | 82 | 0.044 |
+| democrat | 1.344 | 4.170 | 39 | 12 | 21.5 | 258.5 | 0.038 |
+| trans | 1.919 | 4.140 | 30 | 5 | 30 | 818 | 0.039 |
+| islam | 2.667 | 3.990 | 28 | 2 | 34.5 | 2050 | 0.041 |
+| pray | 3.303 | 3.910 | 32 | 1 | 27 | 3971.5 | 0.047 |
+| black | 0.794 | 3.900 | 66 | 36 | 8 | 31.5 | 0.035 |
+| liberal | 1.685 | 3.870 | 28 | 6 | 34.5 | 669 | 0.036 |
+| newsom | 1.616 | 3.680 | 26 | 6 | 39 | 669 | 0.034 |
+| biden | 1.414 | 3.620 | 28 | 8 | 34.5 | 468.5 | 0.034 |
+| viral | 1.470 | 3.550 | 26 | 7 | 39 | 557.5 | 0.033 |
+| somali | 2.421 | 3.510 | 21 | 2 | 66.5 | 2050 | 0.033 |
+| mamdani | 0.951 | 3.490 | 41 | 19 | 19 | 108 | 0.032 |
 
 
-Left-labelled vocabulary (top 20):
+Left-labelled vocabulary (top 20 by weighted log-odds):
 
-| word | log_odds_right_vs_left | z | count_right | count_left | rtd_contribution |
-|---|---|---|---|---|---|
-| trump | -1.33 | -21.27 | 288 | 1353 | -0.00 |
-| maga | -2.18 | -9.09 | 16 | 201 | -0.00 |
-| war | -1.07 | -7.49 | 59 | 219 | -0.00 |
-| iran | -0.72 | -6.29 | 100 | 259 | -0.00 |
-| israel | -1.23 | -6.17 | 29 | 128 | -0.00 |
-| breaking | -2.13 | -5.86 | 7 | 84 | -0.00 |
-| epstein | -1.25 | -5.71 | 24 | 108 | -0.00 |
-| donald | -1.86 | -4.59 | 6 | 53 | -0.00 |
-| fox | -2.70 | -4.34 | 2 | 49 | -0.00 |
-| panics | -2.20 | -3.99 | 3 | 39 | -0.00 |
-| republicans | -1.06 | -3.85 | 16 | 59 | -0.00 |
-| gaza | -2.13 | -3.83 | 3 | 36 | -0.00 |
-| venezuela | -1.58 | -3.78 | 6 | 39 | -0.00 |
-| vance | -1.07 | -3.39 | 12 | 45 | -0.00 |
-| hasanabi | -2.85 | -3.34 | 1 | 30 | -0.00 |
-| israeli | -1.68 | -3.32 | 4 | 29 | -0.00 |
-| noem | -1.58 | -3.09 | 4 | 26 | -0.00 |
-| jd | -1.06 | -3.05 | 10 | 37 | -0.00 |
-| plan | -0.86 | -3.05 | 16 | 48 | -0.00 |
-| house | -0.86 | -2.95 | 15 | 45 | -0.00 |
+| word | log_odds_right_vs_left | z | count_right | count_left | rank_right | rank_left | rtd_contribution |
+|---|---|---|---|---|---|---|---|
+| trump | -1.335 | -21.270 | 288 | 1353 | 1 | 1 | -0.000 |
+| maga | -2.176 | -9.090 | 16 | 201 | 130 | 4 | -0.066 |
+| war | -1.069 | -7.490 | 59 | 219 | 10 | 3 | -0.041 |
+| iran | -0.725 | -6.290 | 100 | 259 | 3 | 2 | -0.022 |
+| israel | -1.229 | -6.170 | 29 | 128 | 31.5 | 6 | -0.042 |
+| breaking | -2.132 | -5.860 | 7 | 84 | 458 | 8 | -0.059 |
+| epstein | -1.247 | -5.710 | 24 | 108 | 45 | 7 | -0.043 |
+| donald | -1.863 | -4.590 | 6 | 53 | 566 | 13 | -0.051 |
+| fox | -2.704 | -4.340 | 2 | 49 | 1862.5 | 15 | -0.053 |
+| panics | -2.198 | -3.990 | 3 | 39 | 1240.5 | 26 | -0.043 |
+| republicans | -1.057 | -3.850 | 16 | 59 | 130 | 11 | -0.044 |
+| gaza | -2.130 | -3.830 | 3 | 36 | 1240.5 | 31.5 | -0.040 |
+| venezuela | -1.585 | -3.780 | 6 | 39 | 566 | 26 | -0.040 |
+| vance | -1.073 | -3.390 | 12 | 45 | 204.5 | 21.5 | -0.036 |
+| hasanabi | -2.850 | -3.340 | 1 | 30 | 3768 | 47 | -0.039 |
+| israeli | -1.684 | -3.320 | 4 | 29 | 911 | 51 | -0.032 |
+| noem | -1.585 | -3.090 | 4 | 26 | 911 | 63.5 | -0.030 |
+| jd | -1.060 | -3.050 | 10 | 37 | 270 | 29.5 | -0.033 |
+| plan | -0.860 | -3.050 | 16 | 48 | 130 | 16 | -0.037 |
+| house | -0.860 | -2.950 | 15 | 45 | 146.5 | 21.5 | -0.033 |
 
 
 Read as a map of the two grammars of attack: the right's titles are about Democrats, fraud, women and trans issues, the woke, Charlie Kirk, California and Newsom, Islam and Mamdani; the left's are about Trump, MAGA, the wars (Iran, Israel, Gaza, Venezuela), Epstein, Vance and Noem, and they carry the outrage furniture (breaking, panics). With three times the titles of the first pass the lists are the same lists with steadier counts: every word in the first pass's top eight is still in the top twenty on its side. The same lists per model, and for the titles all three agree on (n = 814 right, 552 left):
@@ -305,7 +309,16 @@ Read as a map of the two grammars of attack: the right's titles are about Democr
 | all three agree | democrats, democrat, woke, fraud, women, kirk, islam, charlie, tucker, mark, liberal, pray | trump, war, maga, israel, iran, ice, gaza, donald, breaking, congress, lies, israeli |
 
 
-The small models' lists are subject maps (Trump, GOP and Fox on Qwen's "right"; Hasan, Gaza and racism on its "left"; the named right personalities on Gemma's "right"); the frontier model's list is closer to a stance map. That difference is the whole story of this document.
+The small models' lists are subject maps (Trump, GOP and Fox on Qwen's "right"; Hasan, Gaza and racism on its "left"; the named right personalities on Gemma's "right"); the frontier model's list is closer to a stance map. That difference is the whole story of this document. The same allotaxonograph for each of the other judges and for the all-agree set: [Gemma-3-12B](figures/14_allotax_gemma.png), [Qwen3-14B](figures/14_allotax_qwen.png), [all three agree](figures/14_allotax_consensus.png).
+
+## The same instrument on the lanes
+
+The allotaxonograph does not need a judge: applied to what the two commentary lanes actually published (every unique edited upload of the 48 left-commentary and 75 right-commentary channels in the creator-balanced subset, 35,689 vs 29,090 titles), it shows the two lanes' vocabularies directly, with no labelling in between.
+
+![Allotaxonograph, lanes.](figures/14_allotax_lanes.png)
+*Left-commentary channels (system 1) against right-commentary channels (system 2), same instrument and α.*
+
+D<sup>R</sup><sub>1/3</sub> = 0.396: the lanes' whole outputs are closer to each other than the judge's left-read and right-read titles are, as they should be, since most of what either lane publishes is the shared news of the year (the apex again: trump, iran, war, ice). The words that separate them are the same words the judge found, now without any judge: the left lane's flank is maga, fox, breaking, tyt, let, hour, talk, panics, republicans, brian; the right lane's is america, women, woke, democrats, democrat, black, fraud, mamdani, muslim, people. Show furniture shows up here too (tyt, hour, talk, let on the left: The Young Turks' and the talk shows' title templates; warroom and jlp on the right), which is the price of comparing channels rather than labelled titles; and the right lane, with 75 channels to the left's 48, brings the larger vocabulary: 49 % of its words never appear in a left-lane title, against 34 % the other way.
 
 ## Method
 
@@ -314,8 +327,9 @@ The small models' lists are subject maps (Trump, GOP and Fox on Qwen's "right"; 
 3. **Scores.** Per channel and model: shares of left / right / neither and score = (right − left) / n; a consensus score on titles all models labelled the same way; the mean of the models. The judge of record is the model whose score best separates the two commentary lanes; a channel is called right above +0.05, left below −0.05.
 4. **Yardsticks.** Self-description: a channel counts as self-declared right or left when its YouTube description contains leaning words (conservative, MAGA, libertarian, right-wing ... vs progressive, leftist, socialist, liberal ...), with nine hand corrections for phrases like "liberal democracy" or "former liberal"; agreement is the share of those channels whose score has the declared sign. Lanes: AUC and sign accuracy over the two commentary lanes only.
 5. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), plus the lane AUC from each; `leaning_stability.csv`, per-channel values for the judge in `leaning_stability_channels.csv`.
-6. **Words.** Right vs left titles per model and for the all-agree set: weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2020) on the vocabulary tokens of document 11.
-7. **Months.** The judge's labels by lane x month (`leaning_by_lane_month.csv`): titles, creators, partisan share, left and right shares, score.
+6. **Words.** Right vs left titles per model and for the all-agree set: weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
+7. **Allotaxonographs.** Drawn by allotaxonometer-ui 0.2.2 (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables; five comparisons (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
+8. **Months.** The judge's labels by lane x month (`leaning_by_lane_month.csv`): titles, creators, partisan share, left and right shares, score.
 
 ## Limitations
 
@@ -326,4 +340,4 @@ The small models' lists are subject maps (Trump, GOP and Fox on Qwen's "right"; 
 - **The small models' failure is a model property, not a corpus property**, and it comes in two kinds: Gemma's is partly noise (more titles helped) and partly a systematic target-for-stance error (more titles did not help); Qwen's is systematic. Their word lists show what a 12-14B model uses as a partisan cue.
 - **Month-level reading is lane-level only.** Five titles per channel-month is not a monthly channel score; the base 16 were drawn without regard to month, so the monthly table leans on the top-up.
 
-Files: `leaning_labels.csv`, `leaning_agreement.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_lane_validation.csv`, `leaning_lane_contradictions.csv`, `leaning_by_lane.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_lane_month.csv`.
+Files: `leaning_labels.csv`, `leaning_agreement.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_lane_validation.csv`, `leaning_lane_contradictions.csv`, `leaning_by_lane.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_lane_month.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.

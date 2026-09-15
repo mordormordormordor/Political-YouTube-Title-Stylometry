@@ -90,34 +90,47 @@ def weighted_log_odds(counts_a: Counter, counts_b: Counter, alpha0: float = 500.
     return out
 
 
+def tied_ranks(counts: dict[str, float], types: Iterable[str]) -> dict[str, float]:
+    """Descending tied ranks (mean of the tied positions, 1-based) over `types`, with
+    types absent from `counts` counted as zero, so every absent type shares one last
+    tied rank: the allotaxonometer convention (Dodds et al. 2023; MATLAB `tiedrank`)."""
+    items = sorted(((t, counts.get(t, 0)) for t in types), key=lambda kv: -kv[1])
+    out, i = {}, 0
+    while i < len(items):
+        j = i
+        while j + 1 < len(items) and items[j + 1][1] == items[i][1]:
+            j += 1
+        mean_rank = (i + 1 + j + 1) / 2
+        for k in range(i, j + 1):
+            out[items[k][0]] = mean_rank
+        i = j + 1
+    return out
+
+
 def rank_turbulence_divergence(counts_a: Counter, counts_b: Counter, alpha: float = 1 / 3) -> tuple[float, list[tuple[str, float, float, float]]]:
-    """Rank-turbulence divergence between two frequency systems (Dodds et al. 2020,
-    tied ranks by the mean rank). Words missing from one system take rank
-    (max rank of that system + 1). Returns (divergence, [(word, contribution,
-    rank_a, rank_b)]) with contribution signed: positive = more prominent in A."""
-    def ranks(c: Counter) -> dict[str, float]:
-        items = sorted(c.items(), key=lambda kv: -kv[1])
-        r, i, out = {}, 0, {}
-        while i < len(items):
-            j = i
-            while j + 1 < len(items) and items[j + 1][1] == items[i][1]:
-                j += 1
-            mean_rank = (i + 1 + j + 1) / 2
-            for k in range(i, j + 1):
-                out[items[k][0]] = mean_rank
-            i = j + 1
-        return out
-    ra, rb = ranks(counts_a), ranks(counts_b)
-    fill_a, fill_b = (max(ra.values()) if ra else 0) + 1, (max(rb.values()) if rb else 0) + 1
-    words = set(ra) | set(rb)
+    """Rank-turbulence divergence D^R_alpha between two frequency systems, exactly as the
+    allotaxonometer computes it (Dodds et al. 2023, EPJ Data Science; allotaxonometer-ui):
+    ranks are tied ranks over the union of types with absent types counted as zero,
+    the per-type term is (alpha + 1) / alpha * |r_a^-alpha - r_b^-alpha|^(1 / (alpha + 1)),
+    and the sum is normalised by the value two disjoint systems of the same sizes would
+    give, so D = 0 for identical rankings and 1 for systems with no type in common.
+    Returns (D, [(type, contribution, rank_a, rank_b)]) sorted by |contribution|, with
+    contribution = the type's normalised term, signed positive when the type is more
+    prominent (lower rank) in A. Contributions sum to D in absolute value."""
+    types = set(counts_a) | set(counts_b)
+    ra, rb = tied_ranks(counts_a, types), tied_ranks(counts_b, types)
+    n_a, n_b = sum(1 for t in types if counts_a.get(t, 0) > 0), sum(1 for t in types if counts_b.get(t, 0) > 0)
+    inv_a_disjoint, inv_b_disjoint = 1 / (n_b + n_a / 2), 1 / (n_a + n_b / 2)   # rank an absent type would take if the systems were disjoint
+    k, e = (alpha + 1) / alpha, 1 / (alpha + 1)
+    term = lambda x, y: k * abs(x ** alpha - y ** alpha) ** e
+    norm = sum(term(1 / ra[t], inv_b_disjoint) for t in types if counts_a.get(t, 0) > 0) + sum(term(inv_a_disjoint, 1 / rb[t]) for t in types if counts_b.get(t, 0) > 0)
+    norm = norm if norm else 1.0
     contribs = []
-    total = 0.0
-    for w in words:
-        a, b = ra.get(w, fill_a), rb.get(w, fill_b)
-        c = abs(a ** -alpha - b ** -alpha)
-        total += c
-        contribs.append((w, c if a < b else -c, a, b))
-    norm = total if total else 1.0
-    contribs = [(w, c / norm, a, b) for w, c, a, b in contribs]
+    for t in types:
+        a, b = ra[t], rb[t]
+        c = term(1 / a, 1 / b) / norm
+        contribs.append((t, c if a < b else -c, a, b))
     contribs.sort(key=lambda x: -abs(x[1]))
-    return float(total), contribs
+    return float(sum(abs(c) for _, c, _, _ in contribs)), contribs
+
+

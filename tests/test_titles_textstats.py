@@ -4,7 +4,7 @@ from collections import Counter
 
 import numpy as np
 
-from pipeline_titles.textstats import caps_style, rank_turbulence_divergence, vocab_tokens, weighted_log_odds
+from pipeline_titles.textstats import caps_style, rank_turbulence_divergence, tied_ranks, vocab_tokens, weighted_log_odds
 
 
 def test_vocab_tokens_strips_possessives_and_stopwords():
@@ -31,13 +31,19 @@ def test_weighted_log_odds_direction_and_shrinkage():
     assert out["insane"][1] > out["trump"][1]
 
 
-def test_rank_turbulence_divergence_symmetry_and_contributions():
+def test_rank_turbulence_divergence_follows_the_allotaxonometer_conventions():
     a = Counter({"x": 10, "y": 5, "z": 1}); b = Counter({"x": 10, "y": 5, "z": 1})
     d, contribs = rank_turbulence_divergence(a, b)
     assert d == 0.0
+    a = Counter({"x": 10, "y": 5}); b = Counter({"q": 10, "p": 5})          # disjoint systems: D is normalised to about 1
+    d, _ = rank_turbulence_divergence(a, b, alpha=1 / 3)
+    assert d > 0.9
     a = Counter({"x": 10, "y": 5}); b = Counter({"y": 10, "q": 5})
     d, contribs = rank_turbulence_divergence(a, b, alpha=1 / 3)
-    assert d > 0 and abs(sum(abs(c) for _, c, _, _ in contribs) - 1.0) < 1e-9
-    top = contribs[0]
-    assert top[0] in ("x", "q")
-    assert next(c for w, c, _, _ in contribs if w == "x") > 0 and next(c for w, c, _, _ in contribs if w == "q") < 0
+    d2, _ = rank_turbulence_divergence(b, a, alpha=1 / 3)
+    assert 0 < d < 1 and abs(d - d2) < 1e-12                                 # symmetric
+    assert abs(sum(abs(c) for _, c, _, _ in contribs) - d) < 1e-12          # contributions sum to D
+    by = {w: (c, ra, rb) for w, c, ra, rb in contribs}
+    assert by["x"][0] > 0 and by["q"][0] < 0                                 # positive = more prominent in A
+    assert by["x"][2] == 3.0 and by["q"][1] == 3.0                           # an absent type takes the tied last rank of the union
+    assert tied_ranks({"a": 5, "b": 5, "c": 1}, ["a", "b", "c", "d"]) == {"a": 1.5, "b": 1.5, "c": 3.0, "d": 4.0}

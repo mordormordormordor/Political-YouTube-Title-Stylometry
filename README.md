@@ -111,6 +111,22 @@ The stage writes a blind 200-title adjudication sheet
 (`data/titles/analysis/leaning_human_sheet.csv`); fill `human_label` and re-run with
 `--analyse-only --human-labels <that file>` to score every model against a human.
 
+The allotaxonographs of document 14 (rank-turbulence divergence, Dodds et al. 2023) are
+drawn by [allotaxonometer-ui](https://github.com/Vermont-Complex-Systems/allotaxonometer-ui),
+the Computational Story Lab's own renderer (the code behind their web app and
+[py-allotax](https://github.com/compstorylab/py-allotax)), through Node and Puppeteer. One-time
+setup (Node 18+; Puppeteer fetches its own Chrome, about 170 MB, into `~/.cache/puppeteer`):
+
+```bash
+cd pipeline_titles/allotax_js && npm install
+```
+
+`python -m pipeline_titles.allotax` then renders the five comparisons in a few seconds (it
+also runs inside `report`); without Node or that install the stage prints why it skipped and
+the tracked figures stay as they are. The repo's own `rank_turbulence_divergence`
+(`pipeline_titles/textstats.py`) reproduces the library's numbers, so the tables and the
+figures agree.
+
 ## Running the pipeline
 
 ```bash
@@ -137,6 +153,7 @@ from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
 | `timeline` | monthly drift per lane and creator; month-to-month topic change |
 | `engagement` | within-creator regressions of log views on style with month and topic controls |
 | `hits` | Gini, top-10 % share, Clauset-Shalizi-Newman tail fit vs lognormal |
+| `allotax` | allotaxonographs for document 14 (needs Node; see above) |
 | `report_data`, `report` | cards JSON, Markdown report, methods appendix, cards, HTML page |
 
 Hand-edited files that survive re-runs: `data/titles/analysis/lanes.csv`,
@@ -147,7 +164,7 @@ Tests (pure helpers, no data or network): `.venv/bin/python -m pytest -q`.
 ## Layout
 
 ```
-pipeline_titles/        the pipeline (see the table above); ingest/ holds the corpus fetcher
+pipeline_titles/        the pipeline (see the table above); ingest/ holds the corpus fetcher; allotax_js/ the Node renderer for the allotaxonographs
 pipeline_titles/reports/ report, appendix, cards, HTML
 data/titles/            corpus + analysis/ outputs
 data/creator_lists/     the creator list

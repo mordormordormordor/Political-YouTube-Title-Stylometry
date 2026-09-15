@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-15T18:12:00+00:00._
+_Generated 2026-09-15T18:39:33+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -1484,10 +1484,11 @@ Titles:
 | stage5a_timeline | 1.4 | 1.4 | 2026-09-14T23:10:37+00:00 |  |  |  | lane_month_rows=215, top30=30, topic_change_rows=1667 |
 | stage5b_engagement | 9.4 | 9.4 | 2026-09-14T23:10:47+00:00 |  |  |  | creator_genre_models=252 |
 | stage5c_hits | 28.9 | 28.9 | 2026-09-15T01:01:53+00:00 |  |  |  | groups=252, powerlaw_like=1 |
-| report_data | 2.9 | 3.1 | 2026-09-15T18:10:49+00:00 |  |  |  | creators=274 |
-| report | 11.7 | 11.7 | 2026-09-15T18:11:01+00:00 |  |  |  | cards=274 |
+| report_data | 3.1 | 3.1 | 2026-09-15T18:37:50+00:00 |  |  |  | creators=274 |
+| report | 23.6 | 23.6 | 2026-09-15T18:38:14+00:00 |  |  |  | cards=274 |
 | stage6_profiles | 21.1 | 22.3 | 2026-09-15T12:45:34+00:00 |  |  |  | acronyms=956, twin_pairs=2680 |
-| stage7_leaning | 15.8 | 4883.0 | 2026-09-15T18:10:46+00:00 |  |  | 0.0 | backend=claude-code, prompt_id=leaning-v1, llm_seconds=4860.5, reported_cost_usd=36.4107, n_labelled_by_all... |
+| stage7_leaning | 16.3 | 4883.0 | 2026-09-15T18:35:58+00:00 |  |  | 0.0 | backend=claude-code, prompt_id=leaning-v1, llm_seconds=4860.5, reported_cost_usd=36.4107, n_labelled_by_all... |
+| allotax | 11.7 | 11.9 | 2026-09-15T18:39:32+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
 
 
 ## Environment

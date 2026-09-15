@@ -1,0 +1,6 @@
+comparison,system_1,system_2,alpha,divergence,n_titles_1,n_titles_2,n_tokens_1,n_tokens_2,n_types_1,n_types_2,n_types_union,exclusive_share_1,exclusive_share_2,figure,bars,allotaxonometer_ui,node
+qwen,Titles Qwen3-14B read as left,Titles Qwen3-14B read as right,0.3333333333333333,0.4751,1051,2555,7079,17179,3099,5119,6306,0.383,0.626,14_allotax_qwen.png,40,0.2.2,v25.5.0
+gemma,Titles Gemma-3-12B read as left,Titles Gemma-3-12B read as right,0.3333333333333333,0.4589,3182,3498,20792,24058,5912,6736,9395,0.45,0.517,14_allotax_gemma.png,40,0.2.2,v25.5.0
+opus,Titles Claude Opus read as left,Titles Claude Opus read as right,0.3333333333333333,0.5077,2992,2293,19526,15840,5458,5248,8108,0.524,0.505,14_allotax_opus.png,40,0.2.2,v25.5.0
+consensus,Titles all three models read as left,Titles all three models read as right,0.3333333333333333,0.6257,552,814,3785,5823,1943,2728,3805,0.554,0.683,14_allotax_consensus.png,40,0.2.2,v25.5.0
+lanes,Left-commentary channels,Right-commentary channels,0.3333333333333333,0.3958,35689,29090,214765,200642,13811,17894,22609,0.341,0.492,14_allotax_lanes.png,40,0.2.2,v25.5.0

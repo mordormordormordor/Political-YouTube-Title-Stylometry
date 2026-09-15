@@ -22,12 +22,33 @@ def _opt(name: str) -> pd.DataFrame | None:
     return rd(name) if (A / name).exists() else None
 
 
+def _allotax_reading(allo: pd.DataFrame | None, allo_c: pd.DataFrame | None, jname: str) -> str:
+    if allo is None or allo_c is None or not (allo.comparison == "opus").any():
+        return "_(allotaxonographs not rendered on this run: see the README for the Node step)_"
+    r = allo[allo.comparison == "opus"].iloc[0]; c = allo_c[allo_c.comparison == "opus"]
+    left = c[c.side == "system_1"].head(8).type.tolist(); right = c[c.side == "system_2"].head(8).type.tolist()
+    return (f"How to read it. The two vocabularies overlap less than the label shares suggest: D<sup>R</sup><sub>1/3</sub> = {r.divergence:.3f}, with {pct(r.exclusive_share_1)} of the left-read words never appearing in a right-read title and {pct(r.exclusive_share_2)} the other way. "
+            f"The apex is shared (trump, iran, war: the year's subjects), and the divergence is carried by the flanks: on the left {', '.join(left)}; on the right {', '.join(right)}. "
+            f"The bottom edges of the diamond, where the dark cells run, are the words used once on one side and never on the other, which is where the labelled sample's smallness shows ({int(r.n_types_1):,} and {int(r.n_types_2):,} word types from {int(r.n_titles_1):,} and {int(r.n_titles_2):,} titles).")
+
+
+def _allotax_lanes_reading(allo: pd.DataFrame | None, allo_c: pd.DataFrame | None) -> str:
+    if allo is None or allo_c is None or not (allo.comparison == "lanes").any():
+        return "_(not rendered on this run)_"
+    r = allo[allo.comparison == "lanes"].iloc[0]; c = allo_c[allo_c.comparison == "lanes"]
+    left = c[c.side == "system_1"].head(10).type.tolist(); right = c[c.side == "system_2"].head(10).type.tolist()
+    return (f"D<sup>R</sup><sub>1/3</sub> = {r.divergence:.3f}: the lanes' whole outputs are closer to each other than the judge's left-read and right-read titles are, as they should be, since most of what either lane publishes is the shared news of the year (the apex again: trump, iran, war, ice). "
+            f"The words that separate them are the same words the judge found, now without any judge: the left lane's flank is {', '.join(left)}; the right lane's is {', '.join(right)}. "
+            f"Show furniture shows up here too (tyt, hour, talk, let on the left: The Young Turks' and the talk shows' title templates; warroom and jlp on the right), which is the price of comparing channels rather than labelled titles; and the right lane, with 75 channels to the left's 48, brings the larger vocabulary: {pct(r.exclusive_share_2)} of its words never appear in a left-lane title, against {pct(r.exclusive_share_1)} the other way.")
+
+
 def doc_leaning() -> str:
     ag = json.loads((A / "leaning_agreement.json").read_text()); summ = json.loads((A / "leaning_summary.json").read_text())
     bc = rd("leaning_by_creator.csv"); val = rd("leaning_lane_validation.csv"); con = rd("leaning_lane_contradictions.csv")
     bl = rd("leaning_by_lane.csv"); words = rd("leaning_words.csv"); labs = rd("leaning_labels.csv")
     sd = rd("leaning_self_description.csv"); sdc = rd("leaning_self_description_channels.csv")
     shr = _opt("leaning_split_half.csv"); stab = _opt("leaning_stability.csv"); stab_ch = _opt("leaning_stability_channels.csv"); lm = _opt("leaning_by_lane_month.csv")
+    allo = _opt("allotax_summary.csv"); allo_c = _opt("allotax_contributions.csv")
     cols = ag["models"]; names = {c: _mname(c) for c in cols}
     judge = summ["judge_of_record"]; jname = names[judge]
     vj = val[val.score == judge + "_score"].iloc[0]
@@ -199,24 +220,37 @@ It did not move: {rng_txt if lm_tab is not None else ''}; the share of all sampl
 
 ## What the frontier model calls right and what it calls left
 
-Titles {jname} labelled right ({int(wj.n_right_titles.iloc[0]):,}) vs left ({int(wj.n_left_titles.iloc[0]):,}), scored by weighted log-odds (which words are over-used on one side) and rank-turbulence divergence (which words move most between the two frequency rankings).
+Titles {jname} labelled left ({int(wj.n_left_titles.iloc[0]):,}) vs right ({int(wj.n_right_titles.iloc[0]):,}), compared two ways: weighted log-odds (which words are over-used on one side, given how often they appear at all) and rank-turbulence divergence, read off an allotaxonograph (Dodds et al. 2023), the instrument built for exactly this comparison of two Zipfian systems.
 
-![Words by side.](figures/14_leaning_words.png)
-*Left: rank of each word among right-labelled titles against its rank among left-labelled titles (log axes); words far from the diagonal belong to one side. Right: the largest rank-turbulence-divergence contributions, signed by side.*
+![Allotaxonograph, judge of record.](figures/14_allotax_opus.png)
+*Allotaxonograph of the titles {jname} read as left (system 1, left flank) against the titles it read as right (system 2, right flank); drawn by the Computational Story Lab's own renderer (allotaxonometer-ui), rank-turbulence divergence with α = 1/3. Diamond: every word placed by its rank in each system on log axes, the rank-rank plane rotated so that words used equally sit on the vertical centre line; colour = how many words share a cell; the words named along the flanks are the furthest from the centre line at each frequency, i.e. the most one-sided. Contour lines join equal contributions to the divergence. Right: the {int(allo.loc[allo.comparison == 'opus', 'bars'].iloc[0]) if allo is not None and 'bars' in allo.columns else 40} largest contributions, each with its two ranks (system 1 ⇋ system 2), grey bars pulling left, blue bars pulling right. Below the diamond: the balance of tokens, types and exclusive types between the two systems.*
 
-Right-labelled vocabulary (top 20):
+{_allotax_reading(allo, allo_c, jname)}
 
-{table(right_w, ['word', 'log_odds_right_vs_left', 'z', 'count_right', 'count_left', 'rtd_contribution'], fmt='{:.2f}')}
+The two instruments disagree about one word, and the disagreement is instructive: "trump" is the most over-used word on the left by log-odds ({int(wj.loc[wj.word == 'trump', 'count_left'].iloc[0]) if (wj.word == 'trump').any() else 0:,} occurrences in left-read titles against {int(wj.loc[wj.word == 'trump', 'count_right'].iloc[0]) if (wj.word == 'trump').any() else 0:,} in right-read ones), but it sits at the apex of the diamond, because it is the top-ranked word on both sides; rank turbulence measures who *changes* the ordering, not who wins the count, and on that reading the left's signature is maga, breaking, fox and donald, the right's is women, fraud, democrats and woke.
 
-Left-labelled vocabulary (top 20):
+Right-labelled vocabulary (top 20 by weighted log-odds; `rtd_contribution` is the word's share of D, in per cent, signed positive when the word is more prominent in right-labelled titles; ranks are tied ranks over the union of both vocabularies, so a word absent from one side takes that side's last tied rank):
 
-{table(left_w, ['word', 'log_odds_right_vs_left', 'z', 'count_right', 'count_left', 'rtd_contribution'], fmt='{:.2f}')}
+{table(right_w.assign(rtd_contribution=right_w.rtd_contribution * 100, rank_right=right_w.rank_right.map('{:g}'.format), rank_left=right_w.rank_left.map('{:g}'.format)), ['word', 'log_odds_right_vs_left', 'z', 'count_right', 'count_left', 'rank_right', 'rank_left', 'rtd_contribution'], fmt='{:.3f}')}
+
+Left-labelled vocabulary (top 20 by weighted log-odds):
+
+{table(left_w.assign(rtd_contribution=left_w.rtd_contribution * 100, rank_right=left_w.rank_right.map('{:g}'.format), rank_left=left_w.rank_left.map('{:g}'.format)), ['word', 'log_odds_right_vs_left', 'z', 'count_right', 'count_left', 'rank_right', 'rank_left', 'rtd_contribution'], fmt='{:.3f}')}
 
 Read as a map of the two grammars of attack: the right's titles are about Democrats, fraud, women and trans issues, the woke, Charlie Kirk, California and Newsom, Islam and Mamdani; the left's are about Trump, MAGA, the wars (Iran, Israel, Gaza, Venezuela), Epstein, Vance and Noem, and they carry the outrage furniture (breaking, panics). With three times the titles of the first pass the lists are the same lists with steadier counts: every word in the first pass's top eight is still in the top twenty on its side. The same lists per model, and for the titles all three agree on (n = {int(wc.n_right_titles.iloc[0]) if len(wc) else 0} right, {int(wc.n_left_titles.iloc[0]) if len(wc) else 0} left):
 
 {table(pd.DataFrame([{'model': names.get(c, c), 'right': ', '.join(per_model[c][0]), 'left': ', '.join(per_model[c][1])} for c in cols] + ([{'model': 'all three agree', 'right': ', '.join(wc.sort_values('z', ascending=False).head(12).word), 'left': ', '.join(wc.sort_values('z').head(12).word)}] if len(wc) else [])))}
 
-The small models' lists are subject maps (Trump, GOP and Fox on Qwen's "right"; Hasan, Gaza and racism on its "left"; the named right personalities on Gemma's "right"); the frontier model's list is closer to a stance map. That difference is the whole story of this document.
+The small models' lists are subject maps (Trump, GOP and Fox on Qwen's "right"; Hasan, Gaza and racism on its "left"; the named right personalities on Gemma's "right"); the frontier model's list is closer to a stance map. That difference is the whole story of this document. The same allotaxonograph for each of the other judges and for the all-agree set: [Gemma-3-12B](figures/14_allotax_gemma.png), [Qwen3-14B](figures/14_allotax_qwen.png), [all three agree](figures/14_allotax_consensus.png).
+
+## The same instrument on the lanes
+
+The allotaxonograph does not need a judge: applied to what the two commentary lanes actually published (every unique edited upload of the 48 left-commentary and 75 right-commentary channels in the creator-balanced subset, {int(allo.loc[allo.comparison == 'lanes', 'n_titles_1'].iloc[0]):,} vs {int(allo.loc[allo.comparison == 'lanes', 'n_titles_2'].iloc[0]):,} titles), it shows the two lanes' vocabularies directly, with no labelling in between.
+
+![Allotaxonograph, lanes.](figures/14_allotax_lanes.png)
+*Left-commentary channels (system 1) against right-commentary channels (system 2), same instrument and α.*
+
+{_allotax_lanes_reading(allo, allo_c)}
 
 ## Method
 
@@ -225,8 +259,9 @@ The small models' lists are subject maps (Trump, GOP and Fox on Qwen's "right"; 
 3. **Scores.** Per channel and model: shares of left / right / neither and score = (right − left) / n; a consensus score on titles all models labelled the same way; the mean of the models. The judge of record is the model whose score best separates the two commentary lanes; a channel is called right above +0.05, left below −0.05.
 4. **Yardsticks.** Self-description: a channel counts as self-declared right or left when its YouTube description contains leaning words (conservative, MAGA, libertarian, right-wing ... vs progressive, leftist, socialist, liberal ...), with nine hand corrections for phrases like "liberal democracy" or "former liberal"; agreement is the share of those channels whose score has the declared sign. Lanes: AUC and sign accuracy over the two commentary lanes only.
 5. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), plus the lane AUC from each; `leaning_stability.csv`, per-channel values for the judge in `leaning_stability_channels.csv`.
-6. **Words.** Right vs left titles per model and for the all-agree set: weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2020) on the vocabulary tokens of document 11.
-7. **Months.** The judge's labels by lane x month (`leaning_by_lane_month.csv`): titles, creators, partisan share, left and right shares, score.
+6. **Words.** Right vs left titles per model and for the all-agree set: weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
+7. **Allotaxonographs.** Drawn by allotaxonometer-ui {allo.allotaxonometer_ui.iloc[0] if allo is not None else ''} (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables; five comparisons (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
+8. **Months.** The judge's labels by lane x month (`leaning_by_lane_month.csv`): titles, creators, partisan share, left and right shares, score.
 
 ## Limitations
 
@@ -237,5 +272,5 @@ The small models' lists are subject maps (Trump, GOP and Fox on Qwen's "right"; 
 - **The small models' failure is a model property, not a corpus property**, and it comes in two kinds: Gemma's is partly noise (more titles helped) and partly a systematic target-for-stance error (more titles did not help); Qwen's is systematic. Their word lists show what a 12-14B model uses as a partisan cue.
 - **Month-level reading is lane-level only.** Five titles per channel-month is not a monthly channel score; the base 16 were drawn without regard to month, so the monthly table leans on the top-up.
 
-Files: `leaning_labels.csv`, `leaning_agreement.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_lane_validation.csv`, `leaning_lane_contradictions.csv`, `leaning_by_lane.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_lane_month.csv`.
+Files: `leaning_labels.csv`, `leaning_agreement.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_lane_validation.csv`, `leaning_lane_contradictions.csv`, `leaning_by_lane.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_lane_month.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.
 """
