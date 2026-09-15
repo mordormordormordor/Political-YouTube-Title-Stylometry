@@ -198,16 +198,62 @@ def label_titles(titles: Sequence[str], model: str, info: dict, backend: str = "
     return results
 
 
-def draw_sample(prepared: pd.DataFrame, n_per: int = N_PER_CREATOR, seed: int = SEED) -> pd.DataFrame:
+def draw_sample(prepared: pd.DataFrame, n_per: int = N_PER_CREATOR, seed: int = SEED, n_base: int = N_PER_CREATOR,
+                min_uploads: int = 50) -> pd.DataFrame:
+    """Creator-balanced sample. Every creator gets `n_base` titles by the original
+    draw (random, seed 20260914; live VODs top up creators with fewer uploads).
+    Creators with at least `min_uploads` unique edited uploads are then topped up to
+    `n_per` with further uploads spread evenly across months (round-robin over the
+    months, random within month), so the extra titles never depend on which month a
+    creator posted most in. The base draw is unchanged, so earlier labels are reused."""
     uniq = prepared[~prepared["is_dup"]]
-    rng = np.random.RandomState(seed)
+    rng = np.random.RandomState(seed)          # base draw: identical to the original 16-title sample
+    rng_top = np.random.RandomState(seed + 1)  # top-up: its own stream, so the base draw never shifts
     parts = []
     for creator, g in uniq.groupby("creator", sort=True):
         vids = g[g["genre"] == "videos"]
-        pool = vids if len(vids) >= n_per else pd.concat([vids, g[g["genre"] == "streams"]])
-        k = min(n_per, len(pool))
-        parts.append(pool.iloc[np.sort(rng.choice(len(pool), size=k, replace=False))])
+        pool = vids if len(vids) >= n_base else pd.concat([vids, g[g["genre"] == "streams"]])
+        k = min(n_base, len(pool))
+        base = pool.iloc[np.sort(rng.choice(len(pool), size=k, replace=False))]
+        parts.append(base)
+        extra = n_per - len(base)
+        if extra > 0 and len(vids) >= min_uploads:
+            rest = vids[~vids["row_id"].isin(base["row_id"])]
+            by_month = {m: grp.iloc[rng_top.permutation(len(grp))] for m, grp in rest.groupby("month")}
+            months = sorted(by_month)
+            picked, i = [], 0
+            while len(picked) < extra and any(len(v) for v in by_month.values()):
+                m = months[i % len(months)]; i += 1
+                if len(by_month[m]):
+                    picked.append(by_month[m].iloc[0]); by_month[m] = by_month[m].iloc[1:]
+            if picked:
+                parts.append(pd.DataFrame(picked))
     return pd.concat(parts).sort_values("row_id").reset_index(drop=True)
+
+
+def split_half_reliability(df: pd.DataFrame, cols: list[str], min_titles: int = 32, seed: int = SEED) -> pd.DataFrame:
+    """Score each channel from two random halves of its titles; Spearman across channels
+    per model (and the mean over 20 random splits)."""
+    rng = np.random.RandomState(seed)
+    rows = []
+    big = [c for c, g in df.groupby("creator") if len(g) >= min_titles]
+    for c in cols:
+        rs = []
+        for _ in range(20):
+            a_scores, b_scores = [], []
+            for creator in big:
+                g = df[(df["creator"] == creator)].dropna(subset=[c])
+                if len(g) < min_titles:
+                    continue
+                idx = rng.permutation(len(g)); h = len(g) // 2
+                for part, store in ((g.iloc[idx[:h]], a_scores), (g.iloc[idx[h:2 * h]], b_scores)):
+                    v = part[c]
+                    store.append(((v == "right").sum() - (v == "left").sum()) / len(v))
+            if len(a_scores) > 5:
+                rs.append(pd.Series(a_scores).corr(pd.Series(b_scores), method="spearman"))
+        rows.append({"model": c, "n_channels": len(big), "titles_per_half": min_titles // 2, "split_half_spearman_mean": round(float(np.mean(rs)), 3) if rs else np.nan,
+                     "split_half_spearman_sd": round(float(np.std(rs)), 3) if rs else np.nan})
+    return pd.DataFrame(rows)
 
 
 def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
@@ -326,6 +372,11 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
 
     # channels' own words as a lane-independent yardstick: leaning words in the channel description
     self_description_check(bc, cols)
+    # split-half reliability of the channel scores (channels with >= 32 labelled titles)
+    shr = split_half_reliability(df, cols)
+    shr.to_csv(ANALYSIS_DIR / "leaning_split_half.csv", index=False)
+    if len(shr):
+        print(shr.to_string(index=False), flush=True)
 
     # blind adjudication sheet: 200 titles, mostly disagreements, model labels kept in a separate key
     sheet_path = ANALYSIS_DIR / "leaning_human_sheet.csv"
@@ -399,7 +450,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap.add_argument("--backend", choices=("ollama", "claude-code"), default="ollama")
     ap.add_argument("--prompt-version", choices=tuple(PROMPTS), default="v1")
     ap.add_argument("--human-labels", default=None, help="filled leaning_human_sheet.csv: report every model's agreement with the human labels")
-    ap.add_argument("--n-per-creator", type=int, default=N_PER_CREATOR)
+    ap.add_argument("--n-per-creator", type=int, default=N_PER_CREATOR, help="titles per ranked creator (base 16 for everyone; top-up spread across months)")
+    ap.add_argument("--min-uploads", type=int, default=50, help="creators with fewer unique edited uploads stay at the base 16")
     ap.add_argument("--analyse-only", action="store_true")
     ap.add_argument("--limit", type=int, default=None)
     a = ap.parse_args(argv)
@@ -410,7 +462,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             df = pd.read_csv(LABELS_CSV)
         else:
             prepared = load_prepared()
-            df = draw_sample(prepared, a.n_per_creator).merge(lanes, on="creator", how="left")
+            df = draw_sample(prepared, a.n_per_creator, min_uploads=a.min_uploads).merge(lanes, on="creator", how="left")
             if a.limit:
                 df = df.head(a.limit)
             if LABELS_CSV.exists():   # keep labels already on disk for other models
