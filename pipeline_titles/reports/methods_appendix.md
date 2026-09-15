@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-15T00:45:33+00:00._
+_Generated 2026-09-15T00:56:47+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -1468,7 +1468,7 @@ Answer with one JSON object and nothing else:
 | stage5b_engagement | 9.4 | 9.4 | 2026-09-14T23:10:47+00:00 |  |  |  | creator_genre_models=252 |
 | stage5c_hits | 25.6 | 25.6 | 2026-09-14T23:12:37+00:00 |  |  |  | groups=252, powerlaw_like=1 |
 | report_data | 2.5 | 2.6 | 2026-09-14T23:17:25+00:00 |  |  |  | creators=274 |
-| report | 0.6 | 0.6 | 2026-09-15T00:38:13+00:00 |  |  |  | cards=274 |
+| report | 4.8 | 4.8 | 2026-09-15T00:45:33+00:00 |  |  |  | cards=274 |
 
 
 ## Environment

@@ -30,6 +30,9 @@ svg.map circle{cursor:pointer}svg.map text.lbl{font-size:10px;fill:var(--fg);poi
 .chip{display:inline-block;padding:1px 7px;border:1px solid var(--line);border-radius:10px;font-size:12px;margin:0 4px 4px 0;cursor:pointer}.chip:hover{background:var(--hl)}
 svg.spark{width:100%;height:46px}.sparkrow{display:grid;grid-template-columns:170px 1fr 60px;gap:8px;align-items:center;border-bottom:1px solid var(--line);padding:2px 0}
 .small{font-size:12px}details summary{cursor:pointer;color:var(--muted)}
+.allwrap{overflow-x:auto}table.all{font-size:12px;white-space:nowrap}table.all th{cursor:pointer;user-select:none;position:sticky;top:0;background:var(--card)}table.all th.sorted{color:var(--accent)}
+table.all td.pc{text-align:center;min-width:34px;font-variant-numeric:tabular-nums}table.all td.name{cursor:pointer;font-weight:600}table.all td.name:hover{text-decoration:underline}
+table.all tr.sel td{background:var(--hl)}
 """
 
 JS = r"""
@@ -115,13 +118,42 @@ function renderMap(kind){
   svg.querySelectorAll('circle').forEach(el=>{ el.onclick=()=>select(el.dataset.c); el.onmousemove=e=>{const t=$('#tip'); t.style.display='block'; t.style.left=(e.clientX+12)+'px'; t.style.top=(e.clientY+12)+'px'; t.textContent=el.dataset.c+' · '+el.dataset.l;}; el.onmouseleave=()=>$('#tip').style.display='none'; });
 }
 function select(c){ if(!D.creators[c]) return; current=c; $('#creator').value=c; renderAll(); }
-function renderAll(){ renderCard(); renderMap('style'); renderMap('topic'); }
+let sortKey='creator', sortDir=1, laneFilter='', textFilter='';
+function pcColor(p){ // percentile 0-100 -> blue (low) .. grey .. red (high), text stays ink
+  if(p==null) return 'transparent'; const t=(p-50)/50; const a=Math.min(1,Math.abs(t))*0.55;
+  return t<0?`rgba(42,120,214,${a})`:`rgba(230,103,103,${a})`; }
+function rowsAll(){
+  const F=Object.keys(D.factors);
+  return creators.map(c=>{ const k=D.creators[c], g=k.genres[genre]; if(!g) return null;
+    const r={creator:c, name:k.channel_name, lane:k.lane, organisation:k.organisation, clipper:k.clipper, n_unique:g.n_unique, low_n:g.low_n, political:g.political_share,
+      outrage:g.hooks?g.hooks.outrage.share:null, question:g.formats?g.formats.question.share:null, gini:g.hits?g.hits.gini:null, top10:g.hits?g.hits.top10_share:null, cluster:g.style_cluster};
+    F.forEach(f=>r[f]=g.dimensions?g.dimensions[f].pct_controlled:null); return r; }).filter(Boolean);
+}
+function renderAllTable(){
+  const F=Object.keys(D.factors); let rows=rowsAll();
+  if(laneFilter) rows=rows.filter(r=>r.lane===laneFilter);
+  if(textFilter) rows=rows.filter(r=>(r.creator+' '+r.name+' '+r.organisation).toLowerCase().includes(textFilter));
+  rows.sort((a,b)=>{ const x=a[sortKey],y=b[sortKey]; if(x==null&&y==null)return 0; if(x==null)return 1; if(y==null)return -1; return (typeof x==='string'? x.localeCompare(y) : x-y)*sortDir; });
+  const cols=[['creator','creator'],['lane','lane'],['n_unique','titles'],['political','political'],['outrage','outrage'],['question','question'],['gini','Gini'],['top10','top 10%'],['cluster','style cl.']].concat(F.map(f=>[f,f]));
+  let h=`<tr>${cols.map(([k,l])=>`<th data-k="${k}" class="${k===sortKey?'sorted':''}" title="${D.factors[k]?esc(D.factors[k].name):''}">${esc(l)}${k===sortKey?(sortDir>0?' ▲':' ▼'):''}</th>`).join('')}</tr>`;
+  for(const r of rows){
+    h+=`<tr class="${r.creator===current?'sel':''}"><td class="name" data-c="${esc(r.creator)}" title="${esc(r.name)}${r.clipper?' (clipper)':''}">${esc(r.creator)}${r.low_n?' <span class="muted" title="low-n: fewer than 50 titles, not ranked">·</span>':''}</td>`;
+    h+=`<td><span style="color:${LANE_COLORS[r.lane]||'#999'}">●</span> ${esc(r.lane)}</td><td class="num">${r.n_unique.toLocaleString()}</td><td class="num">${fmtPct(r.political)}</td><td class="num">${fmtPct(r.outrage)}</td><td class="num">${fmtPct(r.question)}</td><td class="num">${fmt(r.gini)}</td><td class="num">${fmtPct(r.top10)}</td><td class="num">${r.cluster==null?'':'S'+r.cluster}</td>`;
+    h+=F.map(f=>`<td class="pc" style="background:${pcColor(r[f])}">${r[f]==null?'':Math.round(r[f])}</td>`).join('')+'</tr>';
+  }
+  $('#alltable').innerHTML=h; $('#allcount').textContent=`${rows.length} creators with ${genre} titles`;
+  $('#alltable').querySelectorAll('th').forEach(th=>th.onclick=()=>{ const k=th.dataset.k; if(sortKey===k) sortDir=-sortDir; else { sortKey=k; sortDir=(k==='creator'||k==='lane')?1:-1; } renderAllTable(); });
+  $('#alltable').querySelectorAll('td.name').forEach(td=>td.onclick=()=>{ select(td.dataset.c); window.scrollTo({top:0,behavior:'smooth'}); });
+}
+function renderAll(){ renderCard(); renderMap('style'); renderMap('topic'); renderAllTable(); }
 function init(){
   const sel=$('#creator'); creators.forEach(c=>{const o=document.createElement('option'); o.value=c; o.textContent=`${c} — ${D.creators[c].channel_name} [${D.creators[c].lane}]`; sel.appendChild(o);});
   sel.value=current; sel.onchange=()=>select(sel.value);
   $('#search').oninput=e=>{ const q=e.target.value.toLowerCase(); const hit=creators.find(c=>c.toLowerCase().includes(q)||D.creators[c].channel_name.toLowerCase().includes(q)); if(hit) select(hit); };
   $('#genre').onchange=e=>{genre=e.target.value; renderAll();};
   $('#legend').innerHTML = D.lanes.map(l=>`<span><i style="background:${LANE_COLORS[l]}"></i>${esc(l)}</span>`).join('');
+  const lf=$('#lanefilter'); D.lanes.forEach(l=>{const o=document.createElement('option'); o.value=l; o.textContent=l; lf.appendChild(o);});
+  lf.onchange=e=>{laneFilter=e.target.value; renderAllTable();}; $('#allsearch').oninput=e=>{textFilter=e.target.value.toLowerCase(); renderAllTable();};
   $('#factors').innerHTML = Object.entries(D.factors).map(([f,v])=>`<tr><td><b>${f}</b></td><td>${esc(v.name)}</td><td class="muted small">${esc(v.auto)}</td></tr>`).join('');
   renderAll();
 }
@@ -157,6 +189,9 @@ def render_html(cards: dict, comparison: pd.DataFrame, entities: pd.DataFrame, c
 <div class="row"><div class="col card" id="card"></div>
 <div class="col"><div class="card"><h2>Style space</h2><div class="muted small">PCA of topic-controlled factor scores (z-scored across ranked creators of the genre). Lines join the selected creator to its five nearest style neighbours; click a point to select it.</div><svg class="map" id="map-style"></svg></div>
 <div class="card"><h2>Topic space</h2><div class="muted small">MDS of Jensen-Shannon distances between creators' topic mixes; lines join the selected creator to its five nearest topic neighbours.</div><svg class="map" id="map-topic"></svg></div></div></div>
+<div class="card"><h2>All creators</h2><div class="muted small">One row per creator for the selected genre. Dimension columns are percentile ranks of the topic-controlled score among ranked creators (blue = low, red = high; hover a column header for the factor's name). Click a header to sort, a creator to open its card. A dot after the handle marks a low-n group (under 50 titles, shown but not ranked).</div>
+<div class="controls"><label>Lane <select id="lanefilter"><option value="">all lanes</option></select></label><input id="allsearch" placeholder="filter by handle, name or organisation" size="34"><span class="muted small" id="allcount"></span></div>
+<div class="allwrap"><table class="all" id="alltable"></table></div></div>
 <div class="row"><div class="col card"><h2>Dimensions</h2><table><tr><th>factor</th><th>name</th><th>from loadings</th></tr><tbody id="factors"></tbody></table><h3>Candidate labels</h3>{cand}</div>
 <div class="col card"><h2>Clusterings vs lanes (adjusted Rand index)</h2>{comp}<h3>Most-named people (creator-balanced)</h3>{ents}</div></div>
 <div class="tip" id="tip"></div>
