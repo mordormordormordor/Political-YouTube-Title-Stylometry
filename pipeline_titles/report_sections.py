@@ -613,6 +613,263 @@ Correcting the lanes; re-rating the 3,000 titles with a more reliable model (or 
     return out
 
 
+
+
+# --------------------------------------------------------------------------- #
+# Question documents (09-14)
+# --------------------------------------------------------------------------- #
+def doc_twins() -> str:
+    pairs = rd("style_twins.csv"); near = rd("style_twins_nearest.csv"); dims = rd("dimensions.csv")
+    n_left = int((near.lane == "left_commentary").sum()); n_right = int((near.lane == "right_commentary").sum())
+    top = pairs.head(20).copy(); top["distance_percentile_all_pairs"] = top.distance_percentile_all_pairs.round(2)
+    hub = pairs.head(40).right_creator.value_counts().head(3)
+    closer = near.twin_closer_than_any_same_lane.mean()
+    nl = near[near.lane == "left_commentary"].head(12); nr = near[near.lane == "right_commentary"].head(12)
+    return f"""# 9. Stylistic twins across the political divide
+
+**The question.** Which left-commentary and right-commentary creators title their videos the same way?
+
+## The finding in one paragraph
+
+Style ignores the divide. Measured in the twelve-dimensional, topic-controlled style space of document 3, the nearest neighbour of a left-commentary creator is on the right side of the divide about as often as on its own side: for {closer:.0%} of the {len(near)} commentary creators the closest right (or left) creator is closer than *any* creator in their own lane, and the distributions of nearest-twin distance and nearest-lane-mate distance sit almost on top of each other. The closest pairs are not the big names but the mid-sized daily outrage channels on both sides: {top.iloc[0].left_creator} and {top.iloc[0].right_creator}, {top.iloc[2].left_creator} and {top.iloc[2].right_creator}, The Majority Report and Owen Shroyer, The Young Turks and Nick Fuentes. What they share is form: emphasis capitals on one or two words, a named target, a verb of attack or collapse, no question, no label, no numbers.
+
+![The twenty closest pairs and the distance comparison.](figures/09_twins.png)
+*Left: the twenty closest left-right pairs. Right: for every commentary creator, the distance to its nearest creator across the divide against the distance to its nearest lane-mate.*
+
+## The twenty closest pairs
+
+`distance` is Euclidean distance between z-scored topic-controlled factor scores (edited uploads); `distance_percentile_all_pairs` places the pair among all {len(dims[(dims.genre == 'videos') & (~dims.low_n)])} ranked creators' pairwise distances (0 = the closest pair in the whole landscape).
+
+{table(top, ['left_creator', 'right_creator', 'distance', 'distance_percentile_all_pairs'], fmt='{:.2f}')}
+
+A few right-side channels recur as everybody's twin ({', '.join(f'{k} x{v}' for k, v in hub.items())}): they sit near the centre of the commentary cloud, so they are close to many left creators at once. Hubness like this is a property of the space, not evidence of imitation.
+
+## Every creator's twin across the divide
+
+The full table is `style_twins_nearest.csv`; the twelve left and twelve right creators with the closest twins:
+
+{table(nl, ['creator', 'twin_across_divide', 'twin_distance', 'twin_rank_among_all_neighbours', 'nearest_same_lane', 'nearest_same_lane_distance', 'twin_closer_than_any_same_lane'], fmt='{:.2f}')}
+
+{table(nr, ['creator', 'twin_across_divide', 'twin_distance', 'twin_rank_among_all_neighbours', 'nearest_same_lane', 'nearest_same_lane_distance', 'twin_closer_than_any_same_lane'], fmt='{:.2f}')}
+
+`twin_rank_among_all_neighbours` = 1 means the twin is the creator's single nearest neighbour in the whole landscape (any lane).
+
+## Method
+
+1. Style vectors: the twelve factor scores of document 3, topic-controlled (each title's score minus its topic's mean, averaged per creator), edited uploads only, creators with at least 50 unique titles, clip channels excluded ({n_left} left-commentary and {n_right} right-commentary creators).
+2. Each factor z-scored across the ranked creators so that no factor dominates; distance = Euclidean over the twelve.
+3. For every creator on one side, the nearest creator on the other side is its twin; the same distance is computed to the nearest creator on its own side; the pair distance is also expressed as a percentile of all ranked pairwise distances.
+4. "Left" and "right" are the `left_commentary` and `right_commentary` lanes of the proposal in `lanes.csv`.
+
+## Limitations
+
+- The divide is the lane proposal, so a mislabelled creator becomes a spurious twin; centrist, legal, streamer and podcast lanes are not in the comparison at all.
+- The space weights all twelve factors equally after z-scoring; two creators can be twins on capitals, questions and quotes while differing in tone, or the reverse. `dimensions.csv` has the per-factor scores if a narrower definition is wanted.
+- Topic control removes the average effect of a topic on each score, not everything a subject does to a title.
+- Distances shrink for creators near the centre of the cloud (hubness above) and grow for eccentric ones; the percentile column is the fairer comparison.
+- Only edited uploads; live VODs are too thin for both lanes.
+
+Files: `style_twins.csv`, `style_twins_nearest.csv`, `dimensions.csv`, `neighbours_style.csv`.
+"""
+
+
+def doc_outrage() -> str:
+    oc = rd("outrage_by_lane_ci.csv"); hk = json.loads((A / "hook_classifier.json").read_text())["hooks"]["outrage"]; rt = rd("validation_retest.csv"); lab = rd("labels.csv")
+    v = oc[oc.genre == "videos"].copy(); v["lane"] = v.lane.map(lane); s_ = oc[oc.genre == "streams"].copy(); s_["lane"] = s_.lane.map(lane)
+    top, bottom = v.iloc[0], v.iloc[-1]
+    kap = float(rt.loc[rt.dimension == "outrage", "kappa"].iloc[0])
+    return f"""# 10. How much of political YouTube is framed as outrage, lane by lane?
+
+**The question.** What share of a creator's titles frames its subject as outrageous, scandalous or threatening, and how does that differ between lanes?
+
+## The finding in one paragraph
+
+Across the landscape the outrage frame is the majority style of commentary and the minority style of news. Averaging creators within a lane (edited uploads), {top.lane} sits at {pct(top['mean'])} (95 % CI {pct(top.ci95_low)}-{pct(top.ci95_high)}) and {bottom.lane} at {pct(bottom['mean'])} ({pct(bottom.ci95_low)}-{pct(bottom.ci95_high)}); the commentary lanes on both sides, legal commentary and streamers all exceed 60 %, the wires, legacy TV and the press all fall below 45 %. The confidence intervals of the commentary block and the news block do not overlap. Left commentary is higher than right commentary ({pct(float(v.loc[v.lane == 'left commentary', 'mean'].iloc[0]))} vs {pct(float(v.loc[v.lane == 'right commentary', 'mean'].iloc[0]))}), and the two intervals barely touch, so that gap is real but modest. Within every lane the creator-to-creator spread is wide (dots in the figure): lane is a weak predictor of any one channel.
+
+![Outrage share by lane with confidence intervals.](figures/10_outrage_by_lane_ci.png)
+*Each dot is a creator's share; the bar is the lane mean with a bootstrap 95 % interval.*
+
+## Edited uploads
+
+{table(v, ['lane', 'n_creators', 'mean', 'ci95_low', 'ci95_high', 'median', 'q25', 'q75', 'min', 'max'], fmt='{:.2f}')}
+
+## Live VODs
+
+{table(s_, ['lane', 'n_creators', 'mean', 'ci95_low', 'ci95_high', 'median', 'q25', 'q75', 'min', 'max'], fmt='{:.2f}')}
+
+## Method
+
+1. **Definition.** A local model (Qwen3-14B, temperature 0) rated a creator-stratified sample of {len(lab):,} raw titles; the outrage flag was defined in the prompt as "the subject is framed as outrageous, scandalous or threatening (slams, destroys, exposed, disaster, betrayal, meltdown)". {pct(lab.outrage.mean())} of the sample was flagged.
+2. **Classifier.** A logistic regression on the title's sentence embedding plus twelve style features, trained on those labels (5-fold cross-validation for the regularisation strength, then a stratified 20 % hold-out: accuracy {hk['holdout_accuracy']:.2f}, balanced accuracy {hk['holdout_balanced_accuracy']:.2f}, AUC {hk['holdout_auc']:.2f}, kappa {hk['holdout_kappa']:.2f}), refitted on the whole sample and applied to every unique title.
+3. **Aggregation.** Share of flagged titles per creator x genre (verbatim repeats collapsed); lane figure = mean of creators with at least 50 unique titles, with a bootstrap 95 % interval from 1,000 resamples of creators. Medians and quartiles describe the spread.
+
+## Limitations
+
+- **The rater.** The flag's test-retest kappa on 300 titles is {kap:.2f} (moderate); the definition is broad, and a title about a shooting or a flood can be flagged as "threatening" without any editorial outrage. That is why the wires and legacy TV land at 30-45 % rather than near zero: part of their share is event negativity. Document 3's tone factor, built from word lists rather than a model, gives the same lane ordering, which is the check that the pattern is not a rater artefact.
+- **The classifier** is right about three titles in four on held-out data; errors are roughly symmetric, so lane means are less biased than individual titles, but a single creator's share carries an error of several points.
+- **Lanes** are the proposal in `lanes.csv`; small lanes (right TV networks n = 4, explainers n = 3) have wide intervals and should be read as descriptions of a handful of channels.
+- Titles only: an outraged thumbnail over a neutral title, or the reverse, is invisible.
+
+Files: `outrage_by_lane_ci.csv`, `format_hook_shares.csv`, `formats.parquet`, `hook_classifier.json`, `labels.csv`.
+"""
+
+
+def doc_caps_words() -> str:
+    from pipeline_titles.textstats import CAPS_STYLES
+    cp = rd("caps_profile.csv"); tw = rd("top_words.csv"); acr = (A / "caps_acronyms.txt").read_text().split()
+    v = cp[(cp.genre == "videos") & (~cp.low_n)].sort_values("caps_any", ascending=False).copy()
+    means = v[CAPS_STYLES].mean()
+    lanes_mean = v.groupby("lane")[CAPS_STYLES].mean().sort_values("all_caps", ascending=False).reset_index(); lanes_mean["lane"] = lanes_mean.lane.map(lane)
+    ren = {"all_caps": "ALL CAPS", "selective_caps": "selective CAPS", "title_case": "Title Case", "sentence_case": "Sentence case", "mixed_other": "mixed / other", "short_other": "short / other", "caps_any": "ALL + selective"}
+    full = v[["creator", "lane", "n_titles", "caps_any"] + CAPS_STYLES].copy(); full["lane"] = full.lane.map(lane)
+    t20 = tw.head(20).copy()
+    return f"""# 11. Capitalisation profile, and the words titles are made of
+
+## Capitalisation profile
+
+**The question.** How does each channel capitalise its titles: shouting in ALL CAPS, emphasising single words, Title Case, or sentence case?
+
+### The finding in one paragraph
+
+Averaged over the {len(v)} ranked channels (edited uploads), {pct(means['title_case'])} of titles are Title Case, {pct(means['selective_caps'])} use selective CAPS (one or more shouted words inside a normally cased title: "Trump SLAMS Judge"), {pct(means['sentence_case'])} are sentence case, {pct(means['all_caps'])} are ALL CAPS, and the rest are too short to classify or mixed. Selective capitals are the signature of the daily commentary channels: {', '.join(v.head(5).creator)} put an emphasised word in more than {pct(v.iloc[4].caps_any)} of their titles. Full ALL-CAPS titles are rarer and concentrated in a handful of streamer-adjacent right channels (Jackson Hinkle, Fleccas, Timcast, TheQuartering); the news outlets are sentence case or Title Case with almost no emphasis capitals.
+
+![Top 45 channels by capitals.](figures/11_caps_profile_top.png)
+*The 45 channels that use ALL CAPS or selective CAPS most; the bar is the whole channel's titles.*
+
+![Bottom 30 channels by capitals.](figures/11_caps_profile_bottom.png)
+*The 30 channels using capitals least.*
+
+![By lane.](figures/11_caps_profile_by_lane.png)
+*Lane means.*
+
+### By lane (mean of creators)
+
+{table(lanes_mean, ['lane'] + CAPS_STYLES, fmt='{:.2f}', rename=ren)}
+
+### Every ranked channel, sorted by ALL CAPS + selective CAPS
+
+{table(full, ['creator', 'lane', 'n_titles', 'caps_any'] + CAPS_STYLES, fmt='{:.2f}', rename=ren)}
+
+### Method
+
+Each unique normalised title (brand suffixes such as "| Fox News" removed, so channel tags do not count) is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if it starts lower-case; **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself ({len(acr)} words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like. Shares are over a channel's unique titles per genre.
+
+### Limitations
+
+- Any single emphasised word makes a title "selective CAPS", so the category mixes light emphasis ("This Is INSANE") with heavy ("MAGA MELTDOWN as Trump LOSES IT").
+- The acronym exemption is corpus-learned: a word that is usually shouted (e.g. a name a channel always capitalises) can be learned as an acronym and stop counting, and a genuine acronym rarely written in mixed case can count as emphasis.
+- Title Case vs sentence case is a threshold (80 % of content words capitalised); headlines dense with proper nouns can tip over it.
+- Computed on normalised titles; a channel whose only capitals were in a stripped show-name suffix scores lower than its raw titles look.
+
+## The twenty most frequent non-stopwords
+
+**The question.** What words do titles actually use most?
+
+{table(t20, ['rank_balanced', 'word', 'balanced_share_of_titles', 'creators_using', 'raw_pooled_share_of_titles', 'rank_raw'], fmt='{:.3f}')}
+
+![Top words.](figures/11_top_words.png)
+
+Trump is in a seventh of the average creator's titles and in {pct(float(tw.loc[tw.word == 'trump', 'raw_pooled_share_of_titles'].iloc[0]))} of all titles; the war words (iran, war, israel) and the year's institutions (ice, epstein, maga, democrats) follow. The two columns disagree where the big news channels differ from everyone else: "says" is the 4th most frequent word in the raw pool (wire headlinese: "X says Y") but only 11th when creators count equally; "debate", "black" and "truth" are commentary words that the pooled count buries.
+
+### Method
+
+Tokens are lower-cased words from the normalised title with curly apostrophes normalised and possessive "'s" removed (so "Trump's" counts as "trump"); stopwords are the pipeline list plus scikit-learn's English list plus a few title-furniture words (live, new, news, video, full, show, watch, podcast, vs, ft, ep). The creator-balanced share is, for each ranked creator with edited uploads, the share of its unique titles containing the word, averaged over creators; the raw share pools all unique edited-upload titles. The top 400 words by raw count were scored; `top_words.csv` has all of them.
+
+### Limitations
+
+Unigrams only, so "white house" is "white" and "house"; hyphenated and censored words ("f***ing") are split by the tokeniser; the stopword list is a choice (it removes "says"-type words only when they are in the list, which "says" is not).
+
+Files: `caps_profile.csv`, `caps_acronyms.txt`, `top_words.csv`.
+"""
+
+
+def doc_arousal() -> str:
+    ar = rd("arousal_index.csv"); lab = rd("labels.csv"); dims = rd("dimensions.csv")
+    v = ar[(ar.genre == "videos") & (~ar.low_n)].sort_values("arousal_index", ascending=False).copy()
+    # validation against the LLM 'sensational' rating and the tone / caps factors
+    lm = lab[lab.genre == "videos"].groupby("creator").agg(n=("sensational", "size"), sensational=("sensational", "mean")).reset_index()
+    lm = lm[lm.n >= 5].merge(v[["creator", "arousal_index"]], on="creator")
+    r_sens = lm.sensational.corr(lm.arousal_index, method="spearman")
+    dv = dims[(dims.genre == "videos")].merge(v[["creator", "arousal_index"]], on="creator")
+    r_f1 = dv["F1_controlled"].corr(dv.arousal_index, method="spearman"); r_f9 = dv["F9_controlled"].corr(dv.arousal_index, method="spearman")
+    v["lane"] = v.lane.map(lane)
+    cols = ["rank_in_genre", "creator", "lane", "arousal_index", "caps_share", "exclamations", "power_words", "emoji", "vader_intensity", "n_titles"]
+    ren = {"rank_in_genre": "rank", "arousal_index": "index (0-1)", "caps_share": "ALL-CAPS word share", "exclamations": "! per title", "power_words": "power words per title", "emoji": "emoji per title", "vader_intensity": "VADER intensity"}
+    lanes_ = v.groupby("lane").arousal_index.agg(["median", "mean", "min", "max", "size"]).sort_values("median", ascending=False).reset_index()
+    return f"""# 12. Arousal index by channel
+
+**The question.** On one 0-1 scale, how emotionally charged is each channel's titling: capitals, exclamation marks, power words, emoji and sentiment intensity together?
+
+## The finding in one paragraph
+
+The index runs from {v.iloc[0].creator} ({v.iloc[0].arousal_index:.2f}) at the top, followed by {', '.join(v.iloc[1:5].creator)}, to {', '.join(v.tail(4).creator[::-1])} at the bottom (all under 0.02). The top of the ranking is the daily outrage channels of both sides plus the MeidasTouch network; the bottom is magazines, wires and interview podcasts. By lane, left commentary has the highest median, then legal commentary and streamers; the press and legacy TV the lowest. The index agrees with the independent measures it should agree with: Spearman {r_sens:+.2f} with the LLM rater's *sensational* score aggregated per channel, {r_f1:+.2f} with the tone factor (positive = calm) and {r_f9:+.2f} with the ALL-CAPS factor of document 3.
+
+![Arousal index, every ranked channel.](figures/12_arousal_ranked.png)
+*All ranked channels with edited uploads, highest first; colour = lane family.*
+
+![Arousal by lane.](figures/12_arousal_by_lane.png)
+
+## By lane
+
+{table(lanes_, ['lane', 'size', 'median', 'mean', 'min', 'max'], fmt='{:.2f}', rename={'size': 'n_creators'})}
+
+## Every ranked channel (edited uploads), with the raw components
+
+{table(v, cols, fmt='{:.3f}', rename=ren)}
+
+Live VODs and low-n channels are in `arousal_index.csv` (column `genre`, flag `low_n`).
+
+## Method
+
+For each unique title: (1) the share of 2+-letter words in ALL CAPS; (2) the number of exclamation marks, capped at three; (3) power words, the count of shock words, violence/outrage verbs and intensifiers from the pipeline lexicons ("insane", "slams", "exposed", "absolutely"); (4) emoji characters; (5) VADER intensity, the positive plus negative sentiment shares (arousal, not valence: "AMAZING" counts as much as "DISGUSTING"). Each component is averaged per channel x genre; across the ranked channels of a genre it is winsorised at the 2nd and 98th percentile and min-max scaled to 0-1; the index is the mean of the five scaled components. Ranks and percentiles are within genre.
+
+## Limitations
+
+- Equal weights are a choice; a channel that only shouts and a channel that only exclaims can tie.
+- Emoji are rare (most channels average zero per title), so that component mostly separates a few emoji users (MeidasTouch, Benny Johnson, Pondering Politics) from everyone else.
+- Min-max scaling depends on the extremes even after winsorising; the ranking is stable, the spacing between values is not meaningful beyond ordering.
+- VADER is a general-purpose sentiment lexicon on ten-word texts; "war" or "shooting" raise intensity in a wire headline as they do in a rant.
+- Computed on normalised titles (brand suffixes removed).
+
+Files: `arousal_index.csv`.
+"""
+
+
+def doc_keywords() -> str:
+    kw = rd("signature_keywords.csv"); lanes_ = rd("lanes.csv")
+    top5 = kw[kw["rank"] <= 5].groupby("creator").apply(lambda g: ", ".join(f"{w} ({z:.0f})" for w, z in zip(g.word, g.z)), include_groups=False).rename("top 5 (z)").reset_index()
+    top5 = top5.merge(lanes_[["creator", "lane", "channel_name"]], on="creator").sort_values("creator", key=lambda s: s.str.lower())
+    top5["lane"] = top5.lane.map(lane)
+    ex = kw[kw.creator.isin(["@HasanAbi", "@BenShapiro", "@Reuters", "@MeidasTouch", "@CNN", "@joerogan"])].groupby("creator").apply(lambda g: ", ".join(g.word), include_groups=False)
+    return f"""# 13. Signature title keywords per channel
+
+**The question.** Which words does each channel use far more than everyone else?
+
+## The finding in one paragraph
+
+Each channel's signature is scored by weighted log-odds against all other channels' titles, with a prior that shrinks rare words, so the list is the vocabulary a channel *over-uses*, not merely uses. For most channels the top of the list is its own furniture (host names, show segments, a recurring guest), which is expected and is itself a style fact: {ex.get('@BenShapiro', '')[:60]} for Ben Shapiro, {ex.get('@HasanAbi', '')[:60]} for Hasan Piker. Below that, the lists separate beats and registers: {ex.get('@Reuters', '')[:70]} for Reuters, {ex.get('@MeidasTouch', '')[:70]} for MeidasTouch. The top five per channel are below; the top ten with counts are in `signature_keywords.csv` and on each creator's card.
+
+## Every channel's top five (alphabetical)
+
+`z` is the log-odds z-score; larger = more distinctive. Words appear only if the channel used them at least three times.
+
+{table(top5, ['creator', 'channel_name', 'lane', 'top 5 (z)'])}
+
+## Method
+
+Tokens are lower-cased words from the normalised title (curly apostrophes normalised, possessive "'s" removed, the vocabulary stopword list of document 11 removed), pooled over a channel's unique titles in both genres. For each channel the weighted log-odds ratio of every word against all other channels' titles is computed with an informative Dirichlet prior proportional to the pooled corpus frequencies (Monroe, Colaresi and Quinn 2008, "Fightin' Words"), alpha0 = 500, and ranked by the z-score (log-odds divided by its approximate standard error). The top ten with at least three uses by the channel are kept.
+
+## Limitations
+
+- Show and host names survive when they were not stripped in Stage 0 (only patterns above the 20 % rule were), so some lists begin with the channel's own name; that is a real over-use, but not an interesting one.
+- Small channels have few words that reach the count floor; their lists are short or dominated by one series.
+- Unigrams only, and the prior's strength (alpha0) trades distinctiveness against rarity: a larger alpha0 would push common words up, a smaller one rare words.
+- The comparison set is "all other channels", so a word every commentary channel uses (trump, maga) is not a signature for any of them, by design.
+
+Files: `signature_keywords.csv`.
+"""
+
+
 def doc_index() -> str:
     hl = (REPORTS_DIR / "headlines.md").read_text(encoding="utf-8") if (REPORTS_DIR / "headlines.md").exists() else ""
     return f"""# Political YouTube Title Stylometry: the results
@@ -630,6 +887,17 @@ Every video title that 274 political-media creators published between 2026-01-01
 | [7. Views](07_views.md) | whether style predicts views within a channel; how concentrated hits are |
 | [8. Null results and caveats](08_null_results_and_caveats.md) | what did not show up, and what to distrust |
 
+Question documents, each with its method and limitations:
+
+| document | the question |
+|---|---|
+| [9. Stylistic twins](09_stylistic_twins.md) | which left and right commentary creators title the same way |
+| [10. Outrage by lane](10_outrage_by_lane.md) | how much of political YouTube is framed as outrage, lane by lane, with confidence intervals |
+| [11. Capitalisation and vocabulary](11_capitalisation_and_vocabulary.md) | each channel's capitalisation profile; the twenty most frequent words |
+| [12. Arousal index](12_arousal_index.md) | a 0-1 emotional-charge index for every channel, with its components |
+| [13. Signature keywords](13_signature_keywords.md) | the words each channel over-uses relative to all others |
+| [14. Political leaning from titles](14_political_leaning.md) | two models label titles left / right / neither: agreement, channel scores vs lanes, and the words each side owns |
+
 Alongside: [`title_stylometry.html`](title_stylometry.html) (the interactive page: creator selector, profile cards, and the two landscape maps with names on hover and each creator's neighbours drawn in; open it directly in a browser), [`figures/`](figures/) (the static figures used in the documents), [`cards/`](cards/) (one Markdown card per creator), [`methods_appendix.md`](methods_appendix.md) (every preprocessing step, lexicon, loading, validation number, prompt and runtime), and [`all_tables.md`](all_tables.md) (the reference dump of every table in one file).
 
 ## The findings in six sentences
@@ -642,6 +910,11 @@ def write_all() -> None:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     docs = {"01_corpus_and_lanes.md": doc_corpus, "02_topics.md": doc_topics, "03_style_dimensions.md": doc_dimensions,
             "04_formats_and_hooks.md": doc_formats, "05_landscape.md": doc_landscape, "06_drift.md": doc_drift,
-            "07_views.md": doc_views, "08_null_results_and_caveats.md": doc_nulls, "README.md": doc_index}
+            "07_views.md": doc_views, "08_null_results_and_caveats.md": doc_nulls, "09_stylistic_twins.md": doc_twins,
+            "10_outrage_by_lane.md": doc_outrage, "11_capitalisation_and_vocabulary.md": doc_caps_words, "12_arousal_index.md": doc_arousal,
+            "13_signature_keywords.md": doc_keywords, "README.md": doc_index}
+    if (A / "leaning_by_creator.csv").exists():
+        from pipeline_titles.report_leaning import doc_leaning
+        docs["14_political_leaning.md"] = doc_leaning
     for name, fn in docs.items():
         (REPORTS_DIR / name).write_text(fn(), encoding="utf-8")

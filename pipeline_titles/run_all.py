@@ -6,7 +6,8 @@ its own; every stage reads the previous stage's files from disk).
     python -m pipeline_titles.run_all --skip llm_rate embed   # skip cached long stages
 
 Stages, in order: prepare, lanes, annotate, embed, topics, llm_rate, features,
-factors, validate, formats, landscape, timeline, engagement, hits, report.
+factors, validate, formats, landscape, timeline, engagement, hits, profiles,
+leaning, report_data, report.
 The LLM stages (llm_rate, topics' labelling) are fully cached, so a re-run with
 an unchanged corpus makes no model calls.
 """
@@ -19,7 +20,7 @@ import sys
 import time
 
 STAGES = ["prepare", "lanes", "annotate", "embed", "topics", "llm_rate", "features", "factors", "validate",
-          "formats", "landscape", "timeline", "engagement", "hits", "report"]
+          "formats", "landscape", "timeline", "engagement", "hits", "profiles", "leaning", "report_data", "report"]
 
 
 def main(argv=None) -> int:

@@ -73,6 +73,9 @@ def build() -> dict:
     map_s = pd.read_csv(ANALYSIS_DIR / "map_style.csv")
     map_t = pd.read_csv(ANALYSIS_DIR / "map_topic.csv")
     labels = pd.read_csv(ANALYSIS_DIR / "topic_labels.csv")
+    extra = {}
+    for name in ("arousal_index.csv", "caps_profile.csv", "signature_keywords.csv", "leaning_by_creator.csv"):
+        extra[name] = pd.read_csv(ANALYSIS_DIR / name) if (ANALYSIS_DIR / name).exists() else None
     lane_med = {}
     for (lane, genre), g in dims[~dims["low_n"]].groupby(["lane", "genre"]):
         lane_med[f"{lane}|{genre}"] = {f: _num(g[f + "_controlled"].median()) for f in fcols}
@@ -125,7 +128,29 @@ def build() -> dict:
                 g["diversity"] = {"heaps_beta_1500": _num(f.get("heaps_beta_1500")), "zipf_1500": _num(f.get("zipf_1500")),
                                   "formulaic_p100": _num(f.get("formulaic_p100")), "n_chars_mean": _num(f.get("n_chars_mean")),
                                   "n_tokens_mean": _num(f.get("n_tokens_mean"))}
+            ar = extra["arousal_index.csv"]
+            if ar is not None:
+                a = _rec(ar, creator=r.creator, genre=genre)
+                if a is not None:
+                    g["arousal"] = {"index": _num(a.arousal_index), "rank": _num(a.get("rank_in_genre")), "percentile": _num(a.get("percentile_in_genre")),
+                                    "caps_share": _num(a.caps_share), "exclamations": _num(a.exclamations), "power_words": _num(a.power_words), "emoji": _num(a.emoji), "vader_intensity": _num(a.vader_intensity)}
+            cp = extra["caps_profile.csv"]
+            if cp is not None:
+                c_ = _rec(cp, creator=r.creator, genre=genre)
+                if c_ is not None:
+                    g["caps_profile"] = {k: _num(c_[k]) for k in ("all_caps", "selective_caps", "title_case", "sentence_case", "mixed_other", "short_other")}
             card["genres"][genre] = g
+        kw = extra["signature_keywords.csv"]
+        if kw is not None:
+            k_ = kw[kw["creator"] == r.creator].sort_values("rank")
+            card["signature_keywords"] = [{"word": x.word, "z": _num(x.z), "count": int(x.count_creator)} for x in k_.itertuples()]
+        lb = extra["leaning_by_creator.csv"]
+        if lb is not None:
+            l_ = _rec(lb, creator=r.creator)
+            if l_ is not None:
+                cols = [c for c in lb.columns if c.startswith("label_") and c.endswith("_score")]
+                card["leaning"] = {"mean_score": _num(l_.mean_score), "implied_side": l_.implied_side, "n_titles": int(l_.n_titles),
+                                   "consensus_neither": _num(l_.get("consensus_neither")), **{c.replace("label_", "").replace("_score", ""): _num(l_[c]) for c in cols}}
         creators[r.creator] = card
     data = {"generated": utc_now(), "factors": {f: {"name": names[f].get("name") or names[f]["auto"], "auto": names[f]["auto"]} for f in fcols},
             "lanes": sorted(lanes["lane"].unique()), "lane_medians": lane_med, "hooks": HOOKS, "formats": FORMATS, "months": MONTHS,

@@ -17,6 +17,7 @@ import re
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import matplotlib.ticker
 import numpy as np
 import pandas as pd
 from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
@@ -355,9 +356,157 @@ def fig_zipf_views():
     fig.tight_layout(); save(fig, "07_zipf_views.png", "Curves bend down at the tail on log-log axes: lognormal rather than straight-line power-law behaviour.")
 
 
+def fig_profiles():
+    from pipeline_titles.textstats import CAPS_STYLES
+    ar = rd("arousal_index.csv"); a = ar[(ar.genre == "videos") & (~ar.low_n)].sort_values("arousal_index", ascending=False).reset_index(drop=True)
+    half = int(np.ceil(len(a) / 2))
+    fig, axes = plt.subplots(1, 2, figsize=(12, 0.115 * half + 1.2))
+    for ax, part in zip(axes, (a.iloc[:half], a.iloc[half:])):
+        y = np.arange(len(part))
+        ax.hlines(y, 0, part.arousal_index, color=GRID, lw=1.5)
+        ax.scatter(part.arousal_index, y, s=18, color=[FAM_COLOR[FAMILY_OF[l]] for l in part.lane], zorder=3)
+        ax.set_yticks(y, [f"{c}" for c in part.creator], fontsize=5.5); ax.invert_yaxis(); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
+        ax.tick_params(axis="x", labelsize=7)
+    for fam in FAMILIES:
+        axes[0].plot([], [], "o", color=FAM_COLOR[fam], label=fam)
+    axes[0].legend(loc="lower right", fontsize=7)
+    fig.suptitle(f"Arousal index, all {len(a)} ranked channels (edited uploads), highest first", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
+    fig.tight_layout(rect=(0, 0, 1, 0.97)); save(fig, "12_arousal_ranked.png", "0-1 composite of ALL-CAPS share, exclamation marks, power words, emoji and VADER intensity; colour = lane family.")
+
+    fig, ax = plt.subplots(figsize=(9, 4.6))
+    a["label"] = a.lane.map(lane_label); order = a.groupby("label").arousal_index.median().sort_values().index.tolist()
+    rng = np.random.RandomState(3)
+    for i, l in enumerate(order):
+        sub = a[a.label == l]
+        ax.plot(sub.arousal_index, i + rng.uniform(-0.2, 0.2, len(sub)), "o", color=FAM_COLOR[FAMILY_OF[sub.lane.iloc[0]]], alpha=0.7, ms=5)
+        ax.plot([sub.arousal_index.median()] * 2, [i - 0.3, i + 0.3], color=INK, lw=2)
+    ax.set_yticks(range(len(order)), order, fontsize=8); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False); ax.set_xlabel("arousal index (black bar = lane median)")
+    ax.set_title("Arousal index by lane")
+    fig.tight_layout(); save(fig, "12_arousal_by_lane.png")
+
+    cp = rd("caps_profile.csv"); c = cp[(cp.genre == "videos") & (~cp.low_n)].sort_values("caps_any", ascending=False)
+    labels = ["ALL CAPS", "selective CAPS", "Title Case", "Sentence case", "mixed / other", "short / other"]
+    cols = ["#e34948", "#eb6834", "#2a78d6", "#1baf7a", "#8a8983", "#d6d5d0"]
+    for name, sub, title in (("11_caps_profile_top.png", c.head(45), "Capitalisation profile: the 45 channels using most ALL-CAPS or selective CAPS (edited uploads)"),
+                             ("11_caps_profile_bottom.png", c.tail(30), "Capitalisation profile: the 30 channels using least capitals")):
+        fig, ax = plt.subplots(figsize=(10, 0.2 * len(sub) + 1.5))
+        left = np.zeros(len(sub))
+        for lab, col_, style in zip(labels, cols, CAPS_STYLES):
+            ax.barh(np.arange(len(sub)), sub[style], left=left, color=col_, height=0.72, label=lab, edgecolor=SURFACE, linewidth=0.6)
+            left += sub[style].to_numpy()
+        ax.set_yticks(np.arange(len(sub)), sub.creator, fontsize=7); ax.invert_yaxis(); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
+        ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0)); ax.legend(ncol=6, loc="upper center", bbox_to_anchor=(0.5, -0.04), fontsize=7.5)
+        ax.set_title(title)
+        fig.tight_layout(); save(fig, name)
+    lm = c.merge(pd.DataFrame(), how="left") if False else c
+    lanes_mean = lm.groupby("lane")[CAPS_STYLES].mean().sort_values("all_caps", ascending=False); lanes_mean.index = [lane_label(l) for l in lanes_mean.index]
+    fig, ax = plt.subplots(figsize=(9, 4.4))
+    left = np.zeros(len(lanes_mean))
+    for lab, col_, style in zip(labels, cols, CAPS_STYLES):
+        ax.barh(np.arange(len(lanes_mean)), lanes_mean[style], left=left, color=col_, height=0.7, label=lab, edgecolor=SURFACE, linewidth=0.6)
+        left += lanes_mean[style].to_numpy()
+    ax.set_yticks(np.arange(len(lanes_mean)), lanes_mean.index, fontsize=8); ax.invert_yaxis(); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
+    ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0)); ax.legend(ncol=6, loc="upper center", bbox_to_anchor=(0.5, -0.06), fontsize=7.5)
+    ax.set_title("Capitalisation profile by lane (mean of creators, edited uploads)")
+    fig.tight_layout(); save(fig, "11_caps_profile_by_lane.png")
+
+    tw = rd("top_words.csv").head(20)
+    fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+    hbar(axes[0], tw.word, tw.balanced_share_of_titles * 100, CAT[0], fmt="{:.1f}%"); axes[0].set_title("Creator-balanced: mean share of a creator's titles containing the word")
+    raw = rd("top_words.csv").sort_values("raw_titles", ascending=False).head(20)
+    hbar(axes[1], raw.word, raw.raw_pooled_share_of_titles * 100, CAT[1], fmt="{:.1f}%"); axes[1].set_title("Raw pooled: share of all unique titles containing the word")
+    fig.suptitle("The twenty most frequent non-stopwords in titles (edited uploads)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
+    fig.tight_layout(rect=(0, 0, 1, 0.95)); save(fig, "11_top_words.png")
+
+    # twins: the closest cross-divide pairs, and how cross-divide distances compare with same-lane ones
+    pairs = rd("style_twins.csv").head(20); near = rd("style_twins_nearest.csv")
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5.6), gridspec_kw={"width_ratios": [1.35, 1]})
+    ax = axes[0]; y = np.arange(len(pairs))
+    ax.barh(y, pairs.distance, color=GRID, height=0.6)
+    for yi, r in zip(y, pairs.itertuples()):
+        ax.text(0.02, yi, r.left_creator, va="center", ha="left", fontsize=7.5, color=CAT[0], fontweight="bold")
+        ax.text(r.distance + 0.03, yi, r.right_creator, va="center", ha="left", fontsize=7.5, color=CAT[1], fontweight="bold")
+    ax.set_yticks([]); ax.invert_yaxis(); ax.set_xlim(0, pairs.distance.max() + 1.6); ax.grid(axis="y", visible=False)
+    ax.set_xlabel(f"distance in z-scored 12-factor style space (median nearest-neighbour distance {np.nanmedian(near.nearest_same_lane_distance):.1f})"); ax.set_title("The twenty closest left (blue) - right (orange) pairs")
+    ax = axes[1]
+    a_ = np.sort(near.twin_distance.to_numpy()); b_ = np.sort(near.nearest_same_lane_distance.dropna().to_numpy())
+    ax.plot(a_, np.arange(1, len(a_) + 1) / len(a_), color=CAT[2], lw=2, label="nearest creator across the divide")
+    ax.plot(b_, np.arange(1, len(b_) + 1) / len(b_), color=INK, lw=2, ls="--", label="nearest creator in the same lane")
+    ax.set_xlabel("distance to nearest neighbour"); ax.set_ylabel("share of commentary creators"); ax.legend(loc="lower right")
+    ax.set_title(f"For {near.twin_closer_than_any_same_lane.mean():.0%} of commentary creators the twin across the divide is closer than any lane-mate")
+    fig.tight_layout(); save(fig, "09_twins.png", "Left and right commentary creators only, edited uploads, clip channels excluded.")
+
+    # outrage by lane with CI (strip + CI)
+    oc = rd("outrage_by_lane_ci.csv"); sh = rd("format_hook_shares.csv"); cr = sh[(sh.level == "creator") & (~sh.low_n.astype(str).str.lower().eq("true"))]
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4.6))
+    for ax, g in zip(axes, ("videos", "streams")):
+        o = oc[oc.genre == g].sort_values("mean"); y = np.arange(len(o)); rng = np.random.RandomState(4)
+        for i, r in enumerate(o.itertuples()):
+            v = cr[(cr.lane == r.lane) & (cr.genre == g)].outrage
+            ax.plot(v, i + rng.uniform(-0.18, 0.18, len(v)), "o", color=FAM_COLOR[FAMILY_OF[r.lane]], alpha=0.45, ms=4)
+            ax.plot([r.ci95_low, r.ci95_high], [i, i], color=INK, lw=2); ax.plot(r.mean, i, "|", color=INK, ms=12, mew=2)
+        ax.set_yticks(y, [f"{lane_label(l)} (n={int(n)})" for l, n in zip(o.lane, o.n_creators)], fontsize=8); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
+        ax.set_title(f"Outrage-frame share by lane, {g}"); ax.set_xlabel("share of a creator's titles (dots = creators; bar = mean with bootstrap 95 % CI)")
+    fig.tight_layout(); save(fig, "10_outrage_by_lane_ci.png")
+
+
+def fig_leaning():
+    if not (A / "leaning_by_creator.csv").exists():
+        return
+    bc = rd("leaning_by_creator.csv"); words = rd("leaning_words.csv"); bl = rd("leaning_by_lane.csv")
+    cols = [c for c in bc.columns if c.startswith("label_") and c.endswith("_score")]
+    names = {c: c.replace("label_", "").replace("_score", "").replace("_", ":", 1).replace("_", ".") for c in cols}
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5.4), gridspec_kw={"width_ratios": [1.15, 1]})
+    ax = axes[0]
+    if len(cols) >= 2:
+        ax.plot([-1, 1], [-1, 1], color=GRID, lw=1); ax.axhline(0, color=GRID, lw=1); ax.axvline(0, color=GRID, lw=1)
+        for fam in FAMILIES:
+            sub = bc[bc.lane.map(FAMILY_OF) == fam]
+            ax.scatter(sub[cols[0]], sub[cols[1]], s=26, color=FAM_COLOR[fam], alpha=0.8, edgecolor=SURFACE, linewidth=0.6, label=fam)
+        for r in bc.nlargest(4, "mean_score").itertuples():
+            ax.annotate(r.creator, (getattr(r, cols[0]), getattr(r, cols[1])), fontsize=6.5, xytext=(3, 3), textcoords="offset points")
+        for r in bc.nsmallest(4, "mean_score").itertuples():
+            ax.annotate(r.creator, (getattr(r, cols[0]), getattr(r, cols[1])), fontsize=6.5, xytext=(3, 3), textcoords="offset points")
+        ax.set_xlabel(f"{names[cols[0]]} score (right − left) / n"); ax.set_ylabel(f"{names[cols[1]]} score"); ax.legend(fontsize=7.5, loc="upper left")
+        r_ = bc[cols[0]].corr(bc[cols[1]], method="spearman")
+        ax.set_title(f"Channel scores from the two models (Spearman {r_:.2f})")
+    ax = axes[1]
+    b = bl.sort_values("mean_score"); y = np.arange(len(b)); rng = np.random.RandomState(5)
+    for i, r in enumerate(b.itertuples()):
+        sub = bc[bc.lane == r.lane]
+        ax.plot(sub.mean_score, i + rng.uniform(-0.2, 0.2, len(sub)), "o", color=FAM_COLOR[FAMILY_OF[r.lane]], alpha=0.5, ms=4)
+        ax.plot([r.mean_score] * 2, [i - 0.3, i + 0.3], color=INK, lw=2)
+    ax.set_yticks(y, [f"{lane_label(l)} (n={int(n)})" for l, n in zip(b.lane, b.n_creators)], fontsize=8); ax.axvline(0, color=INK, lw=0.8); ax.grid(axis="y", visible=False)
+    ax.set_xlabel("mean title-leaning score (−1 left … +1 right); dots = channels, bar = lane mean"); ax.set_title("Title leaning by lane")
+    fig.tight_layout(); save(fig, "14_leaning_scores.png")
+
+    w = words[words.model == "consensus"] if (words.model == "consensus").any() else words[words.model == words.model.iloc[0]]
+    w = w[(w.count_right + w.count_left) >= 5].copy()
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5.6), gridspec_kw={"width_ratios": [1.2, 1]})
+    ax = axes[0]
+    ax.scatter(w.rank_right, w.rank_left, s=8, color=GRID, alpha=0.8)
+    ax.set_xscale("log"); ax.set_yscale("log"); mx = max(w.rank_right.max(), w.rank_left.max()); ax.plot([1, mx], [1, mx], color=INK, lw=0.8, ls="--")
+    lab = pd.concat([w.nlargest(14, "rtd_contribution"), w.nsmallest(14, "rtd_contribution")])
+    for r in lab.itertuples():
+        col_ = CAT[1] if r.rtd_contribution > 0 else CAT[0]
+        ax.scatter([r.rank_right], [r.rank_left], s=22, color=col_, zorder=3)
+        ax.annotate(r.word, (r.rank_right, r.rank_left), fontsize=7, color=col_, xytext=(3, 2), textcoords="offset points")
+    ax.set_xlabel("rank among right-labelled titles (1 = most frequent)"); ax.set_ylabel("rank among left-labelled titles")
+    ax.set_title("Where each word ranks on the two sides (titles both models agree on)")
+    ax.text(0.02, 0.97, "above the line: more prominent on the right", transform=ax.transAxes, fontsize=7.5, color=CAT[1], va="top")
+    ax.text(0.98, 0.03, "below the line: more prominent on the left", transform=ax.transAxes, fontsize=7.5, color=CAT[0], ha="right")
+    ax = axes[1]
+    top = pd.concat([w.nlargest(15, "rtd_contribution").sort_values("rtd_contribution"), w.nsmallest(15, "rtd_contribution").sort_values("rtd_contribution")]).sort_values("rtd_contribution")
+    y = np.arange(len(top)); ax.barh(y, top.rtd_contribution, color=[CAT[1] if v > 0 else CAT[0] for v in top.rtd_contribution], height=0.7)
+    ax.set_yticks(y, top.word, fontsize=7.5); ax.axvline(0, color=INK, lw=0.8); ax.grid(axis="y", visible=False)
+    ax.set_xlabel("rank-turbulence divergence contribution (alpha = 1/3); orange = right-labelled, blue = left-labelled")
+    ax.set_title("The words that most separate the two labels")
+    fig.tight_layout(); save(fig, "14_leaning_words.png")
+
+
 def main() -> int:
     FIG.mkdir(parents=True, exist_ok=True)
-    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views):
+    for fn in (fig_corpus, fig_topics, fig_dimensions, fig_formats, fig_landscape, fig_drift, fig_views, fig_zipf_views, fig_profiles, fig_leaning):
         fn(); print("done", fn.__name__, flush=True)
     import shutil
     if (A / "scree.png").exists():

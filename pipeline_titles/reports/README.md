@@ -13,6 +13,17 @@ Every video title that 274 political-media creators published between 2026-01-01
 | [7. Views](07_views.md) | whether style predicts views within a channel; how concentrated hits are |
 | [8. Null results and caveats](08_null_results_and_caveats.md) | what did not show up, and what to distrust |
 
+Question documents, each with its method and limitations:
+
+| document | the question |
+|---|---|
+| [9. Stylistic twins](09_stylistic_twins.md) | which left and right commentary creators title the same way |
+| [10. Outrage by lane](10_outrage_by_lane.md) | how much of political YouTube is framed as outrage, lane by lane, with confidence intervals |
+| [11. Capitalisation and vocabulary](11_capitalisation_and_vocabulary.md) | each channel's capitalisation profile; the twenty most frequent words |
+| [12. Arousal index](12_arousal_index.md) | a 0-1 emotional-charge index for every channel, with its components |
+| [13. Signature keywords](13_signature_keywords.md) | the words each channel over-uses relative to all others |
+| [14. Political leaning from titles](14_political_leaning.md) | two models label titles left / right / neither: agreement, channel scores vs lanes, and the words each side owns |
+
 Alongside: [`title_stylometry.html`](title_stylometry.html) (the interactive page: creator selector, profile cards, and the two landscape maps with names on hover and each creator's neighbours drawn in; open it directly in a browser), [`figures/`](figures/) (the static figures used in the documents), [`cards/`](cards/) (one Markdown card per creator), [`methods_appendix.md`](methods_appendix.md) (every preprocessing step, lexicon, loading, validation number, prompt and runtime), and [`all_tables.md`](all_tables.md) (the reference dump of every table in one file).
 
 ## The findings in six sentences
