@@ -582,13 +582,15 @@ def _fightin_words(ax_sc, ax_bar, wc, cutoff, sys_left, sys_right, n_label=12, n
         ax_sc.text(0.02, 0.78, "beyond the upper edge:\n" + ", ".join(off_r), transform=ax_sc.transAxes, ha="left", va="top", fontsize=7.5, color=col["right"], fontweight="bold")
     ax_sc.axhline(cutoff, color=INK2, lw=0.8, ls="--"); ax_sc.axhline(-cutoff, color=INK2, lw=0.8, ls="--"); ax_sc.axhline(0, color=GRID, lw=1)
     ax_sc.set_xscale("log"); ax_sc.set_ylim(-cap * 1.08, cap * 1.08)
+    ax_sc.annotate(f"+{cutoff:g}", (0.995, cutoff), xycoords=ax_sc.get_yaxis_transform(), xytext=(0, 3), textcoords="offset points", ha="right", va="bottom", fontsize=7.5, color=INK2)
+    ax_sc.annotate(f"−{cutoff:g}", (0.995, -cutoff), xycoords=ax_sc.get_yaxis_transform(), xytext=(0, -3), textcoords="offset points", ha="right", va="top", fontsize=7.5, color=INK2)
     on = wc[wc.z.abs() <= cap]
     lab = pd.concat([on.nlargest(n_label, "z"), on.nsmallest(n_label, "z"), on[on.word_class == "right"].nlargest(5, "total"), on[on.word_class == "left"].nlargest(5, "total")]).drop_duplicates("word")
     for i, r in enumerate(lab.itertuples()):
         ax_sc.annotate(r.word, (r.total, r.zc), fontsize=6.8, color=col[r.word_class], xytext=(4, 3 if i % 2 else -8), textcoords="offset points")
     ax_sc.set_xlabel("occurrences in both systems together (log scale)"); ax_sc.set_ylabel(f"z of the weighted log-odds:  ← over-used in {sys_left}   |   over-used in {sys_right} →")
-    ax_sc.legend(loc="upper left", fontsize=7.5, title=f"class at |z| ≥ {cutoff:g}", title_fontsize=7.5)
-    ax_sc.text(0.02, 0.005, f"dashed lines: ±{cutoff:g}; triangles: words beyond ±{cap:g}, drawn at the edge", transform=ax_sc.transAxes, ha="left", va="bottom", fontsize=7, color=INK2)
+    ax_sc.legend(loc="upper left", fontsize=7.5, title="class", title_fontsize=7.5)
+    ax_sc.text(0.02, 0.005, f"triangles: words beyond ±{cap:g}, drawn at the edge", transform=ax_sc.transAxes, ha="left", va="bottom", fontsize=7, color=INK2)
     ax_sc.set_title("Every word: how one-sided (z) against how common")
     # the two lists side by side, mirrored about a central spine (the layout of wordsandpolitics.com's
     # "Who over-uses which words"): each side ranked from the top, the word beside the spine, the bar
