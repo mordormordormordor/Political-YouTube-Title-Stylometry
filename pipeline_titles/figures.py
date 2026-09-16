@@ -589,7 +589,7 @@ def _fightin_words(ax_sc, ax_bar, wc, cutoff, sys_left, sys_right, n_label=12, n
     ax_sc.set_xlabel("occurrences in both systems together (log scale)"); ax_sc.set_ylabel(f"z of the weighted log-odds:  ← over-used in {sys_left}   |   over-used in {sys_right} →")
     ax_sc.legend(loc="upper left", fontsize=7.5, title=f"class at |z| ≥ {cutoff:g}", title_fontsize=7.5)
     ax_sc.text(0.02, 0.005, f"dashed lines: ±{cutoff:g}; triangles: words beyond ±{cap:g}, drawn at the edge", transform=ax_sc.transAxes, ha="left", va="bottom", fontsize=7, color=INK2)
-    ax_sc.set_title("Every word: z against how often it occurs")
+    ax_sc.set_title("Every word: how one-sided (z) against how common")
     # the two lists side by side, mirrored about a central spine (the layout of wordsandpolitics.com's
     # "Who over-uses which words"): each side ranked from the top, the word beside the spine, the bar
     # growing outward, its z at the outer end; bars beyond the cap are cut, drawn paler and keep their z
@@ -614,7 +614,9 @@ def _fightin_words(ax_sc, ax_bar, wc, cutoff, sys_left, sys_right, n_label=12, n
     ax_bar.set_xticks([]); ax_bar.set_yticks([]); ax_bar.grid(False)
     for sp in ax_bar.spines.values():
         sp.set_visible(False)
-    ax_bar.set_title(f"The {n_bars} words each side over-uses most (z at the tip; inside the bar, occurrences on this side vs the other; paler bars are cut at ±{cap:g})")
+    ax_bar.set_title(f"The {n_bars} words each side over-uses most")
+    ax_bar.text(0.5, -0.005, f"bar length = z, printed at the tip  ·  inside the bar: occurrences on this side vs the other  ·  paler bars are cut at ±{cap:g} and keep their z",
+                transform=ax_bar.transAxes, ha="center", va="top", fontsize=7.2, color=INK2)
 
 
 def fig_leaning_logodds():
@@ -630,8 +632,9 @@ def fig_leaning_logodds():
         fig, axes = plt.subplots(1, 2, figsize=(14, 7.4), gridspec_kw={"width_ratios": [1.2, 1.1]})
         _fightin_words(axes[0], axes[1], wc, cutoff, sys_l, sys_r)
         r = summ[summ.comparison == name].iloc[0]
-        fig.suptitle(f"{r.system_left} vs {r.system_right}: weighted log-odds of every word ({int(r.n_words):,} words with 3+ occurrences; Monroe, Colaresi and Quinn 2008, alpha0 = 500)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
-        fig.tight_layout(rect=(0, 0, 1, 0.965)); save(fig, fname)
+        fig.suptitle(f"{r.system_left} vs {r.system_right}: which words each side over-uses", x=0.01, ha="left", fontsize=12, fontweight="bold", color=INK)
+        fig.tight_layout(rect=(0, 0.035, 1, 0.965))
+        save(fig, fname, note=f"Weighted log-odds with an informative Dirichlet prior (Monroe, Colaresi and Quinn 2008; α₀ = 500) over the {int(r.n_words):,} words with three or more occurrences in the two systems together; z = log-odds / its standard error, cutoff |z| ≥ {cutoff:g}.")
     # how many words clear the cutoff, per comparison: left and right classes as shares of the vocabulary, counts printed
     cl = summ[summ.comparison.isin(["titles", "channels"])].set_index("comparison").reindex(["titles", "channels"]).dropna(subset=["n_words"])
     if len(cl):

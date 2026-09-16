@@ -80,7 +80,7 @@ def _logodds_section(lo_s, lo_ag, lex, judge: str, jname: str) -> str:
     return f"""The allotaxonograph ranks words by how far they move between the two rankings; weighted log-odds asks a different question, whether a word is over-used on one side *given how common it is overall*, and gives every word a z-score, so a cutoff turns the vocabulary into a three-way lexicon: right at z ≥ {cut:g}, left at z ≤ −{cut:g}, neither otherwise (the two-sided 5 % level; words with fewer than 3 occurrences are not classified).
 
 ![Log-odds, titles.](figures/14_logodds_titles.png)
-*Left: every word by its z (vertical) and its frequency (horizontal, log scale) for the titles {jname} read as left against those it read as right; blue = left-class, orange = right-class, grey = neither. Right: the 25 words each side over-uses most, mirrored about the spine, the word beside the spine and its z at the bar's end; bars beyond the axis cap are cut, drawn paler, and keep their value.*
+*Weighted log-odds (Monroe, Colaresi and Quinn 2008). Left: every word by its z (vertical) and its frequency (horizontal, log scale) for the titles {jname} read as left against those it read as right; blue = left-class, orange = right-class, grey = neither. Right: the 25 words each side over-uses most, mirrored about the spine, the word beside the spine and its z at the bar's end; bars beyond the axis cap are cut, drawn paler, and keep their value.*
 
 How many words clear the cutoff, for the labelled titles and for the channel groups' whole output (level 2):
 
