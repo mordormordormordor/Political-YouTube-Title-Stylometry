@@ -52,6 +52,16 @@ def _allotax_channels(allo, allo_c) -> str:
             f"{pct(r.exclusive_share_2)} of the right channels' words never appear in a left channel's title, against {pct(r.exclusive_share_1)} the other way.")
 
 
+def _classes_sentence(t: pd.DataFrame) -> str:
+    rows = {r.comparison: r for r in t.itertuples()}
+    a = rows.get("left-read vs right-read titles"); b = rows.get("left vs right channels, every title")
+    if a is None or b is None:
+        return ""
+    return (f"Over the labelled titles the two classes are close in size ({int(a.n_left)} left-class words, {int(a.n_right)} right-class, of {int(a.n_words):,} words with three or more occurrences). "
+            f"Over the channels' whole output, with ten times the titles, {pct(b.share_classified)} of the vocabulary clears the cutoff and the right classifies far more words ({int(b.n_right):,} against {int(b.n_left):,} of {int(b.n_words):,}): "
+            f"the right channels' vocabulary is the more varied one, and its stance words are spread over more distinct terms.")
+
+
 def _logodds_section(lo_s, lo_ag, lex, judge: str, jname: str) -> str:
     if lo_s is None or lex is None or not (lo_s.comparison == "titles").any():
         return "_(not computed on this run)_"
@@ -72,9 +82,12 @@ def _logodds_section(lo_s, lo_ag, lex, judge: str, jname: str) -> str:
 ![Log-odds, titles.](figures/14_logodds_titles.png)
 *Left: every word by its z (vertical) and its frequency (horizontal, log scale) for the titles {jname} read as left against those it read as right; blue = left-class, orange = right-class, grey = neither. Right: the 25 words each side over-uses most, mirrored about the spine, the word beside the spine and its z at the bar's end; bars beyond the axis cap are cut, drawn paler, and keep their value.*
 
-How many words clear the cutoff, for the labelled titles and for the channel groups' whole output (see level 2):
+How many words clear the cutoff, for the labelled titles and for the channel groups' whole output (level 2):
 
-{table(t, ['comparison', 'n_words', 'n_left', 'n_right', 'n_neither', 'share_classified', 'top_left', 'top_right'], fmt='{:.2f}')}
+![Words that clear the cutoff.](figures/14_logodds_classes.png)
+*Left-class and right-class words as shares of each vocabulary, counts printed; the rest are neither.*
+
+{_classes_sentence(t)}
 
 {ag_txt}
 
@@ -162,13 +175,11 @@ Titles {jname} labelled left ({int(wj.n_left_titles.iloc[0]):,}) vs right ({int(
 
 The two instruments disagree about one word, and the disagreement is instructive: "trump" is the most over-used word on the left by log-odds ({int(wj.loc[wj.word == 'trump', 'count_left'].iloc[0]) if (wj.word == 'trump').any() else 0:,} occurrences in left-read titles against {int(wj.loc[wj.word == 'trump', 'count_right'].iloc[0]) if (wj.word == 'trump').any() else 0:,} in right-read ones), but it sits at the apex of the diamond, because it is the top-ranked word on both sides; rank turbulence measures who *changes* the ordering, not who wins the count.
 
-Right-labelled vocabulary (top 20 by weighted log-odds; `rtd_contribution` is the word's share of D, in per cent, signed positive when the word is more prominent in right-labelled titles; ranks are tied ranks over the union of both vocabularies, so a word absent from one side takes that side's last tied rank):
+For reference, the fifteen most one-sided words each way with their z and their occurrences on each side (the full table, with the raw log-odds, the ranks and each word's contribution to the divergence, is `leaning_words.csv`):
 
-{table(right_w.assign(rtd_contribution=right_w.rtd_contribution * 100, rank_right=right_w.rank_right.map('{:g}'.format), rank_left=right_w.rank_left.map('{:g}'.format)), ['word', 'log_odds_right_vs_left', 'z', 'count_right', 'count_left', 'rank_right', 'rank_left', 'rtd_contribution'], fmt='{:.3f}')}
+{table(right_w.head(15), ['word', 'z', 'count_right', 'count_left'], fmt='{:.1f}')}
 
-Left-labelled vocabulary (top 20 by weighted log-odds):
-
-{table(left_w.assign(rtd_contribution=left_w.rtd_contribution * 100, rank_right=left_w.rank_right.map('{:g}'.format), rank_left=left_w.rank_left.map('{:g}'.format)), ['word', 'log_odds_right_vs_left', 'z', 'count_right', 'count_left', 'rank_right', 'rank_left', 'rtd_contribution'], fmt='{:.3f}')}
+{table(left_w.head(15), ['word', 'z', 'count_left', 'count_right'], fmt='{:.1f}')}
 
 Read as a map of the two grammars of attack: the right's titles are about Democrats, fraud, women and trans issues, the woke, Charlie Kirk, California and Newsom, Islam and Mamdani; the left's are about Trump, MAGA, the wars (Iran, Israel, Gaza, Venezuela), Epstein, Vance and Noem, and they carry the outrage furniture (breaking, panics).
 

@@ -609,15 +609,16 @@ def _fightin_words(ax_sc, ax_bar, wc, cutoff, sys_left, sys_right, n_label=12, n
             length = min(abs(r.z), cap); cut = abs(r.z) > cap
             ax_bar.barh(i, sign * length, left=sign * gutter, height=0.64, color=col[side], alpha=0.5 if cut else 0.9, edgecolor="none")
             ax_bar.text(sign * gutter * 0.08, i, r.word, ha="right" if sign < 0 else "left", va="center", fontsize=7.6, color=INK)
-            ax_bar.text(sign * (gutter + length + 0.025 * cap), i, f"{r.z:+.1f}", ha="right" if sign < 0 else "left", va="center", fontsize=6.6, color=INK2, fontweight="bold" if cut else "normal")
+            own, other = (r.count_left, r.count_right) if sign < 0 else (r.count_right, r.count_left)
+            ax_bar.text(sign * (gutter + length + 0.025 * cap), i, f"{r.z:+.1f} · {own:,} vs {other:,}", ha="right" if sign < 0 else "left", va="center", fontsize=6.4, color=INK2, fontweight="bold" if cut else "normal")
     ax_bar.axvline(0, color=GRID, lw=1.2)
     ax_bar.text(-gutter, -1.15, f"MORE {sys_left.upper()}", ha="right", va="center", fontsize=8, color=col["left"], fontweight="bold")
     ax_bar.text(gutter, -1.15, f"MORE {sys_right.upper()}", ha="left", va="center", fontsize=8, color=col["right"], fontweight="bold")
-    ax_bar.set_xlim(-(gutter + cap * 1.3), gutter + cap * 1.3); ax_bar.set_ylim(max(len(top_l), len(top_r)) - 0.4, -1.8)
+    ax_bar.set_xlim(-(gutter + cap * 1.9), gutter + cap * 1.9); ax_bar.set_ylim(max(len(top_l), len(top_r)) - 0.4, -1.8)
     ax_bar.set_xticks([]); ax_bar.set_yticks([]); ax_bar.grid(False)
     for sp in ax_bar.spines.values():
         sp.set_visible(False)
-    ax_bar.set_title(f"The {n_bars} words each side over-uses most (z; paler bars are cut at ±{cap:g})")
+    ax_bar.set_title(f"The {n_bars} words each side over-uses most: z · occurrences on this side vs the other (paler bars are cut at ±{cap:g})")
 
 
 def fig_leaning_logodds():
@@ -635,6 +636,22 @@ def fig_leaning_logodds():
         r = summ[summ.comparison == name].iloc[0]
         fig.suptitle(f"{r.system_left} vs {r.system_right}: weighted log-odds of every word ({int(r.n_words):,} words with 3+ occurrences; Monroe, Colaresi and Quinn 2008, alpha0 = 500)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
         fig.tight_layout(rect=(0, 0, 1, 0.965)); save(fig, fname)
+    # how many words clear the cutoff, per comparison: left and right classes as shares of the vocabulary, counts printed
+    cl = summ[summ.comparison.isin(["titles", "channels"])].set_index("comparison").reindex(["titles", "channels"]).dropna(subset=["n_words"])
+    if len(cl):
+        names = {"titles": "left-read vs right-read titles", "channels": "left vs right channels, every title"}
+        fig, ax = plt.subplots(figsize=(10, 2.6)); y = np.arange(len(cl))
+        pl, pr = cl.n_left / cl.n_words, cl.n_right / cl.n_words
+        ax.barh(y, -pl, color=CAT[0], height=0.55); ax.barh(y, pr, color=CAT[1], height=0.55)
+        for yi, (a, b, r) in enumerate(zip(pl, pr, cl.itertuples())):
+            ax.text(-a - 0.003, yi, f"{int(r.n_left):,} left-class ({a:.1%})", ha="right", va="center", fontsize=8, color=INK)
+            ax.text(b + 0.003, yi, f"{int(r.n_right):,} right-class ({b:.1%})", ha="left", va="center", fontsize=8, color=INK)
+            ax.text(0, yi - 0.42, f"{int(r.n_words):,} words with 3+ occurrences; {int(r.n_neither):,} neither ({1 - a - b:.0%})", ha="center", va="center", fontsize=7.2, color=INK2)
+        ax.axvline(0, color=INK, lw=0.8); ax.set_yticks(y, [names[i] for i in cl.index], fontsize=9); ax.set_ylim(len(cl) - 0.4, -0.9); ax.grid(axis="y", visible=False)
+        lim = max(pl.max(), pr.max()) * 1.9; ax.set_xlim(-lim, lim)
+        ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"{abs(v):.0%}")); ax.set_xlabel(f"share of the vocabulary classified at |z| ≥ {cutoff:g}   (← left-class · right-class →)")
+        ax.set_title("How many words clear the cutoff, and on which side")
+        fig.tight_layout(); save(fig, "14_logodds_classes.png")
     if not (A / "leaning_lexicon_channels.csv").exists() or not (A / "leaning_lexicon_validation.csv").exists():
         return
     ch = rd("leaning_lexicon_channels.csv"); val = rd("leaning_lexicon_validation.csv")

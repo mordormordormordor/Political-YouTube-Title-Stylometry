@@ -55,56 +55,44 @@ How to read it. The two vocabularies overlap less than the label shares suggest:
 
 The two instruments disagree about one word, and the disagreement is instructive: "trump" is the most over-used word on the left by log-odds (1,344 occurrences in left-read titles against 298 in right-read ones), but it sits at the apex of the diamond, because it is the top-ranked word on both sides; rank turbulence measures who *changes* the ordering, not who wins the count.
 
-Right-labelled vocabulary (top 20 by weighted log-odds; `rtd_contribution` is the word's share of D, in per cent, signed positive when the word is more prominent in right-labelled titles; ranks are tied ranks over the union of both vocabularies, so a word absent from one side takes that side's last tied rank):
+For reference, the fifteen most one-sided words each way with their z and their occurrences on each side (the full table, with the raw log-odds, the ranks and each word's contribution to the divergence, is `leaning_words.csv`):
 
-| word | log_odds_right_vs_left | z | count_right | count_left | rank_right | rank_left | rtd_contribution |
-|---|---|---|---|---|---|---|---|
-| fraud | 1.942 | 5.980 | 67 | 10 | 8.5 | 347 | 0.055 |
-| women | 1.461 | 5.700 | 72 | 18 | 7 | 128.5 | 0.052 |
-| democrats | 1.109 | 5.650 | 94 | 34 | 4 | 38.5 | 0.053 |
-| woke | 2.530 | 5.280 | 52 | 4 | 13 | 1066 | 0.052 |
-| left | 1.201 | 4.990 | 67 | 22 | 8.5 | 89 | 0.045 |
-| charlie | 1.517 | 4.870 | 51 | 12 | 14.5 | 270 | 0.043 |
-| california | 1.882 | 4.820 | 44 | 7 | 20 | 568 | 0.042 |
-| america | 0.648 | 4.280 | 115 | 67 | 2 | 10 | 0.052 |
-| kirk | 1.131 | 4.210 | 51 | 18 | 14.5 | 128.5 | 0.038 |
-| democrat | 1.309 | 4.090 | 41 | 12 | 23 | 270 | 0.036 |
-| trans | 1.869 | 4.040 | 31 | 5 | 34.5 | 849 | 0.036 |
-| black | 0.757 | 3.900 | 75 | 39 | 6 | 28.5 | 0.039 |
-| leftist | 1.980 | 3.880 | 28 | 4 | 45 | 1066 | 0.034 |
-| pray | 3.257 | 3.840 | 33 | 1 | 31 | 4022.5 | 0.043 |
-| liberal | 1.604 | 3.680 | 28 | 6 | 45 | 692.5 | 0.032 |
-| newsom | 1.492 | 3.640 | 29 | 7 | 40.5 | 568 | 0.032 |
-| islam | 3.140 | 3.610 | 28 | 1 | 45 | 4022.5 | 0.038 |
-| biden | 1.365 | 3.510 | 29 | 8 | 40.5 | 473.5 | 0.031 |
-| somali | 2.384 | 3.460 | 22 | 2 | 75 | 2064.5 | 0.030 |
-| levin | 1.980 | 3.360 | 21 | 3 | 84 | 1411 | 0.027 |
+| word | z | count_right | count_left |
+|---|---|---|---|
+| fraud | 6.0 | 67 | 10 |
+| women | 5.7 | 72 | 18 |
+| democrats | 5.7 | 94 | 34 |
+| woke | 5.3 | 52 | 4 |
+| left | 5.0 | 67 | 22 |
+| charlie | 4.9 | 51 | 12 |
+| california | 4.8 | 44 | 7 |
+| america | 4.3 | 115 | 67 |
+| kirk | 4.2 | 51 | 18 |
+| democrat | 4.1 | 41 | 12 |
+| trans | 4.0 | 31 | 5 |
+| black | 3.9 | 75 | 39 |
+| leftist | 3.9 | 28 | 4 |
+| pray | 3.8 | 33 | 1 |
+| liberal | 3.7 | 28 | 6 |
 
 
-Left-labelled vocabulary (top 20 by weighted log-odds):
-
-| word | log_odds_right_vs_left | z | count_right | count_left | rank_right | rank_left | rtd_contribution |
-|---|---|---|---|---|---|---|---|
-| trump | -1.384 | -22.280 | 298 | 1344 | 1 | 1 | -0.000 |
-| maga | -2.285 | -9.520 | 16 | 205 | 145 | 4 | -0.065 |
-| war | -1.081 | -7.850 | 65 | 223 | 10 | 3 | -0.040 |
-| israel | -1.238 | -6.550 | 33 | 134 | 31 | 6 | -0.040 |
-| breaking | -1.920 | -6.060 | 10 | 85 | 312 | 8 | -0.055 |
-| iran | -0.671 | -5.880 | 107 | 240 | 3 | 2 | -0.021 |
-| epstein | -1.157 | -5.780 | 30 | 112 | 37.5 | 7 | -0.039 |
-| donald | -1.831 | -4.790 | 7 | 54 | 518.5 | 14 | -0.048 |
-| fox | -2.411 | -4.430 | 3 | 45 | 1377.5 | 18 | -0.048 |
-| republicans | -1.254 | -4.330 | 14 | 58 | 177.5 | 12 | -0.044 |
-| gaza | -2.333 | -4.240 | 3 | 41 | 1377.5 | 27 | -0.042 |
-| panics | -2.290 | -4.140 | 3 | 39 | 1377.5 | 28.5 | -0.041 |
-| hasanabi | -2.583 | -3.970 | 2 | 37 | 2049.5 | 31 | -0.041 |
-| venezuela | -1.476 | -3.960 | 8 | 42 | 437.5 | 26 | -0.037 |
-| vance | -1.201 | -3.810 | 12 | 47 | 236.5 | 16 | -0.041 |
-| jd | -1.146 | -3.300 | 10 | 37 | 312 | 31 | -0.032 |
-| house | -0.908 | -3.290 | 17 | 49 | 131 | 15 | -0.037 |
-| noem | -1.600 | -3.080 | 4 | 24 | 1024 | 79 | -0.027 |
-| kristi | -1.784 | -3.040 | 3 | 22 | 1377.5 | 89 | -0.027 |
-| israeli | -1.430 | -3.020 | 5 | 25 | 796 | 72 | -0.026 |
+| word | z | count_left | count_right |
+|---|---|---|---|
+| trump | -22.3 | 1344 | 298 |
+| maga | -9.5 | 205 | 16 |
+| war | -7.8 | 223 | 65 |
+| israel | -6.5 | 134 | 33 |
+| breaking | -6.1 | 85 | 10 |
+| iran | -5.9 | 240 | 107 |
+| epstein | -5.8 | 112 | 30 |
+| donald | -4.8 | 54 | 7 |
+| fox | -4.4 | 45 | 3 |
+| republicans | -4.3 | 58 | 14 |
+| gaza | -4.2 | 41 | 3 |
+| panics | -4.1 | 39 | 3 |
+| hasanabi | -4.0 | 37 | 2 |
+| venezuela | -4.0 | 42 | 8 |
+| vance | -3.8 | 47 | 12 |
 
 
 Read as a map of the two grammars of attack: the right's titles are about Democrats, fraud, women and trans issues, the woke, Charlie Kirk, California and Newsom, Islam and Mamdani; the left's are about Trump, MAGA, the wars (Iran, Israel, Gaza, Venezuela), Epstein, Vance and Noem, and they carry the outrage furniture (breaking, panics).
@@ -116,13 +104,12 @@ The allotaxonograph ranks words by how far they move between the two rankings; w
 ![Log-odds, titles.](figures/14_logodds_titles.png)
 *Left: every word by its z (vertical) and its frequency (horizontal, log scale) for the titles Claude Opus read as left against those it read as right; blue = left-class, orange = right-class, grey = neither. Right: the 25 words each side over-uses most, mirrored about the spine, the word beside the spine and its z at the bar's end; bars beyond the axis cap are cut, drawn paler, and keep their value.*
 
-How many words clear the cutoff, for the labelled titles and for the channel groups' whole output (see level 2):
+How many words clear the cutoff, for the labelled titles and for the channel groups' whole output (level 2):
 
-| comparison | n_words | n_left | n_right | n_neither | share_classified | top_left | top_right |
-|---|---|---|---|---|---|---|---|
-| left-read vs right-read titles | 2803 | 89 | 120 | 2594 | 0.07 | trump, maga, war, israel, breaking, iran, epstein, donald, fox, republicans, gaza, panics, hasanabi, venezuela, vance | fraud, women, democrats, woke, left, charlie, california, america, kirk, democrat, trans, black, leftist, pray, liberal |
-| left vs right channels, every title | 15845 | 1309 | 2176 | 12360 | 0.22 | trump, maga, war, epstein, breaking, fox, panics, iran, talk, let, republicans, israel, disaster, hour, hegseth | president, fraud, america, democrat, women, woke, democrats, charlie, california, liberal, kirk, mamdani, guthrie, cl... |
+![Words that clear the cutoff.](figures/14_logodds_classes.png)
+*Left-class and right-class words as shares of each vocabulary, counts printed; the rest are neither.*
 
+Over the labelled titles the two classes are close in size (89 left-class words, 120 right-class, of 2,803 words with three or more occurrences). Over the channels' whole output, with ten times the titles, 22 % of the vocabulary clears the cutoff and the right classifies far more words (2,176 against 1,309 of 15,845): the right channels' vocabulary is the more varied one, and its stance words are spread over more distinct terms.
 
 The two lexicons agree: of the 197 words that both the labelled titles and the groups' whole output classify as partisan, 99 % point the same way (kappa 0.12 over three classes, low only because the groups' output, with ten times the titles, classifies many more words). The words that switch sides between the two are rubio, trapped, topic and show-name words rather than stance words.
 
