@@ -451,72 +451,54 @@ def fig_profiles():
     fig.tight_layout(); save(fig, "10_outrage_by_lane_ci.png")
 
 
+GCOL = {"left": CAT[0], "neutral": "#9a9992", "right": CAT[1]}
+
+
+def _judge_name(c):
+    c = c.replace("label_", "").replace("_score", "")
+    return ("Claude " + c.replace("claude_code_", "").replace("_", " ").title()) if c.startswith("claude_code_") else c.replace("_", ":", 1).replace("_", ".")
+
+
 def fig_leaning():
+    """Channel level: every channel's score against the share of its titles read as neither, and
+    how the scores distribute across the three groups."""
     if not (A / "leaning_by_creator.csv").exists():
         return
-    bc = rd("leaning_by_creator.csv"); bl = rd("leaning_by_lane.csv")
-    summ = json.loads((A / "leaning_summary.json").read_text()); val = pd.DataFrame(summ["per_model"])
-    judge = summ["judge_of_record"] + "_score"
-    others = val[val.score.str.startswith("label_") & (val.score != judge)].sort_values("auc_right_vs_left_lane", ascending=False).score.tolist()
-    cols = [others[0], judge] if others else [judge]
-    def _nm(c):
-        c = c.replace("label_", "").replace("_score", "")
-        return ("Claude " + c.replace("claude_code_", "").replace("_", " ").title()) if c.startswith("claude_code_") else c.replace("_", ":", 1).replace("_", ".")
-    names = {c: _nm(c) for c in cols}
-    fig, axes = plt.subplots(1, 2, figsize=(12, 5.4), gridspec_kw={"width_ratios": [1.15, 1]})
+    bc = rd("leaning_by_creator.csv"); summ = json.loads((A / "leaning_summary.json").read_text())
+    judge = summ["judge_of_record"]; eps = float(summ.get("threshold", 0.05)); jname = _judge_name(judge)
+    fig, axes = plt.subplots(1, 2, figsize=(12.5, 5.2), gridspec_kw={"width_ratios": [1.2, 1]})
     ax = axes[0]
-    if len(cols) < 2:   # one judge: the left panel shows its score against the mean 'neither' share instead
-        for fam in FAMILIES:
-            sub = bc[bc.lane.map(FAMILY_OF) == fam]
-            ax.scatter(sub[f"{summ['judge_of_record']}_neither"], sub[judge], s=26, color=FAM_COLOR[fam], alpha=0.8, edgecolor=SURFACE, linewidth=0.6, label=fam)
-        ax.axhline(0, color=GRID, lw=1); ax.set_xlim(-0.02, 1.02); ax.set_ylim(-1.05, 1.05)
-        ax.set_xlabel("share of the channel's titles labelled neither"); ax.set_ylabel(f"{names[judge]} score (right − left) / n"); ax.legend(fontsize=7.5, loc="upper right")
-        ax.set_title("How partisan a channel's titles read, and which way")
-    if len(cols) >= 2:
-        ax.plot([-1, 1], [-1, 1], color=GRID, lw=1); ax.axhline(0, color=GRID, lw=1); ax.axvline(0, color=GRID, lw=1)
-        for fam in FAMILIES:
-            sub = bc[bc.lane.map(FAMILY_OF) == fam]
-            ax.scatter(sub[cols[0]], sub[cols[1]], s=26, color=FAM_COLOR[fam], alpha=0.8, edgecolor=SURFACE, linewidth=0.6, label=fam)
-        for r in bc.nlargest(4, "mean_score").itertuples():
-            ax.annotate(r.creator, (getattr(r, cols[0]), getattr(r, cols[1])), fontsize=6.5, xytext=(3, 3), textcoords="offset points")
-        for r in bc.nsmallest(4, "mean_score").itertuples():
-            ax.annotate(r.creator, (getattr(r, cols[0]), getattr(r, cols[1])), fontsize=6.5, xytext=(3, 3), textcoords="offset points")
-        ax.set_xlabel(f"{names[cols[0]]} score (right − left) / n"); ax.set_ylabel(f"{names[cols[1]]} score"); ax.legend(fontsize=7.5, loc="upper left")
-        r_ = bc[cols[0]].corr(bc[cols[1]], method="spearman")
-        ax.set_title(f"Channel scores from the two models (Spearman {r_:.2f})")
+    for g in ("neutral", "left", "right"):
+        sub = bc[bc.group == g]
+        ax.scatter(sub[f"{judge}_neither"], sub.score, s=26, color=GCOL[g], alpha=0.85, edgecolor=SURFACE, linewidth=0.6, label=f"{g} channels ({len(sub)})")
+    for y in (eps, -eps):
+        ax.axhline(y, color=INK2, lw=0.7, ls="--")
+    ax.axhline(0, color=GRID, lw=1)
+    offsets = [(5, 3), (5, -9), (5, 12), (5, -18)]
+    for i, r in enumerate(pd.concat([bc.nsmallest(4, "score"), bc.nlargest(4, "score")]).itertuples()):
+        ax.annotate(r.creator, (getattr(r, f"{judge}_neither"), r.score), fontsize=6.5, xytext=offsets[i % 4], textcoords="offset points")
+    ax.set_xlim(-0.02, 1.02); ax.set_ylim(-1.05, 1.05)
+    ax.set_xlabel("share of the channel's sampled titles labelled neither"); ax.set_ylabel(f"score = (right − left) / titles  ({jname})")
+    ax.set_title("Every channel: how partisan its titles read, and which way"); ax.legend(fontsize=7.5, loc="upper right", title=f"group at ±{eps:g}", title_fontsize=7.5)
     ax = axes[1]
-    sc = "judge_score" if "judge_score" in bc.columns else "mean_score"
-    jname = names.get(judge, judge)
-    lm = bc.groupby("lane").agg(v=(sc, "mean"), n=("creator", "size")).reset_index().sort_values("v"); y = np.arange(len(lm)); rng = np.random.RandomState(5)
-    for i, r in enumerate(lm.itertuples()):
-        sub = bc[bc.lane == r.lane]
-        ax.plot(sub[sc], i + rng.uniform(-0.2, 0.2, len(sub)), "o", color=FAM_COLOR[FAMILY_OF[r.lane]], alpha=0.5, ms=4)
-        ax.plot([r.v] * 2, [i - 0.3, i + 0.3], color=INK, lw=2)
-    ax.set_yticks(y, [f"{lane_label(l)} (n={int(n)})" for l, n in zip(lm.lane, lm.n)], fontsize=8); ax.axvline(0, color=INK, lw=0.8); ax.grid(axis="y", visible=False)
-    ax.set_xlabel(f"title-leaning score, judge of record {jname} (−1 left … +1 right); dots = channels, bar = lane mean"); ax.set_title("Title leaning by lane")
+    bins = np.arange(-1, 1.0001, 0.1)
+    ax.hist([bc[bc.group == g].score for g in ("left", "neutral", "right")], bins=bins, stacked=True, color=[GCOL[g] for g in ("left", "neutral", "right")], label=["left", "neutral", "right"], edgecolor=SURFACE, linewidth=0.5)
+    for x in (eps, -eps):
+        ax.axvline(x, color=INK2, lw=0.7, ls="--")
+    ax.set_xlabel("channel score (−1 = every sampled title read left, +1 = every one read right)"); ax.set_ylabel("channels")
+    ax.set_title(f"How the {len(bc)} channels distribute"); ax.legend(fontsize=8, loc="upper left")
     fig.tight_layout(); save(fig, "14_leaning_scores.png")
-
-
-LANE_ABBR = {"left_commentary": "left comm.", "right_commentary": "right comm.", "centrist_heterodox": "centrist", "us_legacy_tv": "US TV",
-             "right_tv_network": "right TV", "wire_international": "wire/intl", "us_press_print_digital": "US press", "independent_digital_news": "indep. news",
-             "streamer_reaction": "streamer", "interview_podcast": "podcast", "legal_institutional": "legal", "humour_satire": "humour", "explainer_geopolitics": "explainer"}
 
 
 def fig_leaning_channels():
     """Per-channel breakdowns: stacked left / neither / right shares for every channel (two
-    columns, sorted) and the same per lane."""
+    columns, sorted by score) and the mean composition of the three groups."""
     if not (A / "leaning_by_creator.csv").exists():
         return
     bc = rd("leaning_by_creator.csv"); summ = json.loads((A / "leaning_summary.json").read_text())
-    judge = summ["judge_of_record"]
-
-    def _nm(c):
-        c = c.replace("label_", "").replace("_score", "")
-        return ("Claude " + c.replace("claude_code_", "").replace("_", " ").title()) if c.startswith("claude_code_") else c.replace("_", ":", 1).replace("_", ".")
-    cols = [c[:-6] for c in bc.columns if c.startswith("label_") and c.endswith("_score")]
-    d = bc.sort_values("judge_score").reset_index(drop=True)
+    judge = summ["judge_of_record"]; jname = _judge_name(judge)
+    d = bc.sort_values("score").reset_index(drop=True)
     L, N, R = d[f"{judge}_left"], d[f"{judge}_neither"], d[f"{judge}_right"]
-    labels = [f"{c}  ·  {LANE_ABBR.get(l, l)}" for c, l in zip(d.creator, d.lane)]
     half = int(np.ceil(len(d) / 2))
     fig, axes = plt.subplots(1, 2, figsize=(13, 0.135 * half + 1.6))
     for ax, sl in zip(axes, (slice(0, half), slice(half, len(d)))):
@@ -524,69 +506,64 @@ def fig_leaning_channels():
         ax.barh(y, L.iloc[sl], color=CAT[0], height=0.78, label="left")
         ax.barh(y, N.iloc[sl], left=L.iloc[sl], color="#d6d5d0", height=0.78, label="neither")
         ax.barh(y, R.iloc[sl], left=L.iloc[sl] + N.iloc[sl], color=CAT[1], height=0.78, label="right")
-        ax.set_yticks(y, labels[sl], fontsize=5.6); ax.set_ylim(len(y) - 0.5, -0.5); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
+        ax.set_yticks(y, d.creator.iloc[sl], fontsize=5.6); ax.set_ylim(len(y) - 0.5, -0.5); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
         ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0)); ax.tick_params(axis="x", labelsize=7, top=True, labeltop=True)
-        for yi, sc in zip(y, d.judge_score.iloc[sl]):
-            ax.text(1.005, yi, f"{sc:+.2f}", va="center", ha="left", fontsize=5.2, color=INK2)
+        for yi, sc, g in zip(y, d.score.iloc[sl], d.group.iloc[sl]):
+            ax.text(1.005, yi, f"{sc:+.2f}", va="center", ha="left", fontsize=5.2, color=GCOL[g], fontweight="bold" if g != "neutral" else "normal")
     fig.legend(*axes[0].get_legend_handles_labels(), loc="upper right", fontsize=8, ncol=3, frameon=False, bbox_to_anchor=(0.99, 0.995))
     n50, nbase = int((bc.n_titles >= 50).sum()), int((bc.n_titles < 50).sum())
-    fig.suptitle(f"Every channel's titles as read by {_nm(judge)}: share labelled left / neither / right ({n50} channels at 50 titles, {nbase} at 16 or fewer; sorted by score, most left first; score at right)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
+    fig.suptitle(f"Every channel's sampled titles as labelled by {jname}: share left / neither / right ({n50} channels at 50 titles, {nbase} at 16 or fewer; sorted by score, most left first; score at right, coloured by group)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.975)); save(fig, "14_leaning_channels.png")
 
-    # per lane: mean composition
-    comp = bc.groupby("lane")[[f"{judge}_left", f"{judge}_neither", f"{judge}_right"]].mean()
-    comp["n"] = bc.groupby("lane").size(); comp = comp.sort_values(f"{judge}_left")
-    fig, ax = plt.subplots(figsize=(9, 4.6)); y = np.arange(len(comp))
-    ax.barh(y, comp[f"{judge}_left"], color=CAT[0], height=0.7, label="left")
-    ax.barh(y, comp[f"{judge}_neither"], left=comp[f"{judge}_left"], color="#d6d5d0", height=0.7, label="neither")
-    ax.barh(y, comp[f"{judge}_right"], left=comp[f"{judge}_left"] + comp[f"{judge}_neither"], color=CAT[1], height=0.7, label="right")
+    comp = bc.groupby("group")[[f"{judge}_left", f"{judge}_neither", f"{judge}_right"]].mean().reindex(["right", "neutral", "left"])
+    comp["n"] = bc.groupby("group").size().reindex(comp.index)
+    fig, ax = plt.subplots(figsize=(9, 2.9)); y = np.arange(len(comp))
+    ax.barh(y, comp[f"{judge}_left"], color=CAT[0], height=0.6, label="left titles")
+    ax.barh(y, comp[f"{judge}_neither"], left=comp[f"{judge}_left"], color="#d6d5d0", height=0.6, label="neither")
+    ax.barh(y, comp[f"{judge}_right"], left=comp[f"{judge}_left"] + comp[f"{judge}_neither"], color=CAT[1], height=0.6, label="right titles")
     for yi, r in zip(y, comp.itertuples()):
-        ax.text(0.01, yi, f"{getattr(r, judge + '_left'):.0%}", va="center", fontsize=7, color="white", fontweight="bold")
-        ax.text(0.99, yi, f"{getattr(r, judge + '_right'):.0%}", va="center", ha="right", fontsize=7, color="white", fontweight="bold")
-    ax.set_yticks(y, [f"{lane_label(l)} (n={int(n)})" for l, n in zip(comp.index, comp.n)], fontsize=8); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
-    ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0)); ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=3, fontsize=8)
-    ax.set_title(f"Mean composition of a channel's titles by lane ({_nm(judge)})")
-    fig.tight_layout(); save(fig, "14_leaning_lane_composition.png")
+        ax.text(0.01, yi, f"{getattr(r, judge + '_left'):.0%}", va="center", fontsize=8, color="white", fontweight="bold")
+        ax.text(getattr(r, judge + '_left') + getattr(r, judge + '_neither') / 2, yi, f"{getattr(r, judge + '_neither'):.0%}", va="center", ha="center", fontsize=8, color=INK)
+        ax.text(0.99, yi, f"{getattr(r, judge + '_right'):.0%}", va="center", ha="right", fontsize=8, color="white", fontweight="bold")
+    ax.set_yticks(y, [f"{g} channels (n={int(n)})" for g, n in zip(comp.index, comp.n)], fontsize=9); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
+    ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0)); ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.18), ncol=3, fontsize=8)
+    ax.set_title(f"Mean composition of a channel's sampled titles, by group ({jname})")
+    fig.tight_layout(); save(fig, "14_leaning_group_composition.png")
 
 
 def fig_leaning_stability():
-    """Does a channel's score depend on which titles were drawn? Left: the judge's score
-    from the original 16-title draw against the score from the disjoint, month-spread
-    top-up titles. Right: split-half reliability and base-vs-top-up Spearman per model."""
+    """Does a channel's score depend on which titles were drawn? Left: the score from the
+    original 16-title draw against the score from the disjoint, month-spread top-up titles.
+    Right: split-half reliability and base-vs-top-up Spearman."""
     if not (A / "leaning_stability_channels.csv").exists() or not (A / "leaning_split_half.csv").exists():
         return
     ch = rd("leaning_stability_channels.csv"); st = rd("leaning_stability.csv"); sh = rd("leaning_split_half.csv")
-    summ = json.loads((A / "leaning_summary.json").read_text()); judge = summ["judge_of_record"]
-    if not len(ch) or judge not in set(st.model):
+    summ = json.loads((A / "leaning_summary.json").read_text()); judge = summ["judge_of_record"]; jname = _judge_name(judge)
+    if not len(ch) or not len(st):
         return
-
-    def _nm(c):
-        c = c.replace("label_", "").replace("_score", "")
-        return ("Claude " + c.replace("claude_code_", "").replace("_", " ").title()) if c.startswith("claude_code_") else c.replace("_", ":", 1).replace("_", ".")
+    st_j, sh_j = st.iloc[0], sh.iloc[0]
     fig, axes = plt.subplots(1, 2, figsize=(12, 5.2), gridspec_kw={"width_ratios": [1.15, 1]})
     ax = axes[0]
     ax.plot([-1, 1], [-1, 1], color=GRID, lw=1); ax.axhline(0, color=GRID, lw=1); ax.axvline(0, color=GRID, lw=1)
-    for fam in FAMILIES:
-        sub = ch[ch.lane.map(FAMILY_OF) == fam]
-        ax.scatter(sub.score_base, sub.score_topup, s=24, color=FAM_COLOR[fam], alpha=0.8, edgecolor=SURFACE, linewidth=0.6, label=fam)
+    for g in ("neutral", "left", "right"):
+        sub = ch[ch.group == g]
+        ax.scatter(sub.score_base, sub.score_topup, s=24, color=GCOL[g], alpha=0.85, edgecolor=SURFACE, linewidth=0.6, label=f"{g} channels")
     for r in ch.reindex(ch.change.abs().sort_values(ascending=False).index).head(6).itertuples():
         ax.annotate(r.creator, (r.score_base, r.score_topup), fontsize=6.5, xytext=(3, 3), textcoords="offset points")
-    rho = float(st.loc[st.model == judge, "spearman_base_vs_topup"].iloc[0])
     nb, nt = int(ch.n_base.median()), int(ch.n_topup.median())
-    ax.set_xlabel(f"score from the original {nb}-title draw ({_nm(judge)})"); ax.set_ylabel(f"score from the {nt} top-up titles (disjoint, spread across months)")
-    ax.set_title(f"Same channel, two disjoint title sets (Spearman {rho:.2f}, n = {len(ch)})"); ax.legend(fontsize=7.5, loc="upper left")
+    ax.set_xlabel(f"score from the original {nb}-title draw ({jname})"); ax.set_ylabel(f"score from the {nt} top-up titles (disjoint, spread across months)")
+    ax.set_title(f"Same channel, two disjoint title sets (Spearman {float(st_j.spearman_base_vs_topup):.2f}, n = {len(ch)})"); ax.legend(fontsize=7.5, loc="upper left")
     ax.set_xlim(-1.05, 1.05); ax.set_ylim(-1.05, 1.05)
     ax = axes[1]
-    models = sh.model.tolist(); st2 = st.set_index("model").reindex(models)
-    y = np.arange(len(models)); h = 0.3
-    ax.barh(y - h / 2 - 0.02, sh.split_half_spearman_mean, height=h, color=CAT[0], label=f"split-half: two random halves of each channel's titles, {int(sh.median_titles_per_half.iloc[0])} titles each, mean of 20 splits")
-    ax.barh(y + h / 2 + 0.02, st2.spearman_base_vs_topup, height=h, color=CAT[2], label=f"original {nb}-title draw vs the {nt} top-up titles drawn later")
-    for yi, (a, b) in enumerate(zip(sh.split_half_spearman_mean, st2.spearman_base_vs_topup)):
-        ax.text(a + 0.015, yi - h / 2 - 0.02, f"{a:.2f}", va="center", fontsize=8.5, color=INK); ax.text(b + 0.015, yi + h / 2 + 0.02, f"{b:.2f}", va="center", fontsize=8.5, color=INK)
-    ax.set_yticks(y, [_nm(m) for m in models], fontsize=9); ax.set_xlim(0, 1.0); ax.set_ylim(len(models) - 0.5, -0.5); ax.grid(axis="y", visible=False)
-    ax.set_xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0]); ax.set_xlabel(f"Spearman correlation between the two channel rankings (n = {int(sh.n_channels.iloc[0])} channels with 50 titles)")
-    ax.set_title("Reliability of the channel score, per model")
-    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=1, fontsize=8, frameon=False)
+    vals = [float(sh_j.split_half_spearman_mean), float(st_j.spearman_base_vs_topup)]
+    labels = [f"split-half: two random halves of each channel's titles,\n{int(sh_j.median_titles_per_half)} titles each, mean of 20 splits (n = {int(sh_j.n_channels)})", f"original {nb}-title draw vs the {nt} top-up titles\ndrawn later (n = {len(ch)})"]
+    y = np.arange(2)
+    ax.barh(y, vals, height=0.55, color=[CAT[0], CAT[2]])
+    for yi, v in zip(y, vals):
+        ax.text(v + 0.015, yi, f"{v:.2f}", va="center", fontsize=9, color=INK)
+    ax.set_yticks(y, labels, fontsize=8); ax.set_xlim(0, 1.0); ax.set_ylim(1.6, -0.6); ax.grid(axis="y", visible=False)
+    ax.set_xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0]); ax.set_xlabel("Spearman correlation between the two channel rankings")
+    ax.set_title("Reliability of the channel score")
     fig.tight_layout(); save(fig, "14_leaning_stability.png")
 
 
@@ -649,7 +626,7 @@ def fig_leaning_logodds():
     if not (A / "leaning_logodds.csv").exists():
         return
     lo = rd("leaning_logodds.csv"); summ = rd("leaning_logodds_summary.csv"); cutoff = float(summ.cutoff_z.iloc[0])
-    for name, sys_l, sys_r, fname in (("opus", "left-read titles", "right-read titles", "14_logodds_opus.png"), ("lanes", "left commentary", "right commentary", "14_logodds_lanes.png")):
+    for name, sys_l, sys_r, fname in (("titles", "left-read titles", "right-read titles", "14_logodds_titles.png"), ("channels", "left channels", "right channels", "14_logodds_channels.png")):
         wc = lo[lo.comparison == name]
         if not len(wc):
             continue
@@ -671,9 +648,9 @@ def fig_leaning_logodds():
     ax = axes[0]
     ax.plot([-1, 1], [-1, 1], color=GRID, lw=1); ax.axhline(0, color=GRID, lw=1); ax.axvline(0, color=GRID, lw=1)
     big = ch[ch.n_titles >= 16]
-    for fam in FAMILIES:
-        sub = big[big.lane.map(FAMILY_OF) == fam]
-        ax.scatter(sub.judge_score, sub.lexicon_score, s=22, color=FAM_COLOR[fam], alpha=0.8, edgecolor=SURFACE, linewidth=0.6, label=fam)
+    for g in ("neutral", "left", "right"):
+        sub = big[big.judge_group == g]
+        ax.scatter(sub.judge_score, sub.lexicon_score, s=22, color=GCOL[g], alpha=0.85, edgecolor=SURFACE, linewidth=0.6, label=f"{g} channels (by the judge)")
     ax.set_xlabel(f"channel score from {_nm(judge)}'s labels (−1 left … +1 right)"); ax.set_ylabel("channel score from the lexicon classes of the same titles (out of fold)")
     ax.set_title(f"A word list against the judge, channel by channel (Spearman {v.channel_spearman:.2f}, n = {int(v.n_channels)})"); ax.legend(fontsize=7.5, loc="upper left")
     ax.set_xlim(-1.05, 1.05); ax.set_ylim(-1.05, 1.05)

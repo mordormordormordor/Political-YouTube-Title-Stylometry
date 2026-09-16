@@ -4,7 +4,8 @@ A creator-balanced sample is labelled left / right / neither by Claude Opus thro
 Claude Code CLI in print mode (a Claude Pro/Max subscription covers it; temperature 0;
 twenty titles per call, sent in a seeded random order so that a call mixes channels and
 the judge sees nothing but the title text; every response cached). The label is the
-viewpoint the TITLE'S OWN WORDING signals, not the subject.
+viewpoint the TITLE'S OWN WORDING signals, not the subject. Two levels of analysis follow: the
+titles themselves, and the channels grouped as left / neutral / right by their scores.
 
 Sample. Every creator gets a base draw of N_PER_CREATOR (16) unique edited-upload
 titles (seed 20260914; live VODs top up creators with fewer uploads). Creators with at
@@ -15,24 +16,22 @@ with further uploads spread evenly across months (12,478 titles; 239 creators at
 Outputs (data/titles/analysis/):
     leaning_labels.csv.gz       one row per sampled title with the label, is_base (base draw vs
                                 month-spread top-up) and month
-    leaning_agreement.json      label shares
-    leaning_by_creator.csv      per creator: label shares, score (right - left) / n, side
-    leaning_lane_validation.csv how well the creator score separates the left-commentary and
-                                right-commentary lanes (AUC, accuracy);
-                                leaning_lane_contradictions.csv lists the creators whose
-                                title-leaning contradicts their lane
-    leaning_by_lane.csv         lane means of the score and of the 'neither' share
-    leaning_self_description*.csv  agreement with the leaning words in the channels' own
-                                YouTube descriptions (a lane-independent yardstick)
+    leaning_label_shares.json   the labels' counts and shares
+    leaning_by_creator.csv      per channel: label shares, score = (right - left) / n over its
+                                sampled titles, and the group the score implies (left below
+                                -0.05, right above +0.05, neutral between)
+    leaning_groups.csv          the three groups: channels, titles, mean score and composition
+    leaning_self_description*.csv  the model-free anchor: channels whose own YouTube description
+                                carries a leaning word, and whether the score has that sign
     leaning_words.csv           right vs left vocabulary: weighted log-odds (alpha0 = 500) and
                                 rank-turbulence-divergence contributions (alpha = 1/3)
     leaning_split_half.csv      split-half reliability of the channel scores
                                 (channels with >= 32 labels, 20 random splits)
     leaning_stability.csv       the base 16-title score against the score from the disjoint
-                                top-up titles and from all titles (Spearman, lane AUC at 16 vs
-                                all, mean absolute change, channels whose side changed);
+                                top-up titles and from all titles (Spearman, mean absolute
+                                change, channels whose group changed);
                                 leaning_stability_channels.csv has the per-channel values
-    leaning_by_lane_month.csv   partisan share and score per lane x month
+    leaning_by_group_month.csv  partisan share and score per channel group x month
     plus the log-odds lexicon files of leaning_lexicon.py
 
 Usage-limit replies from the CLI are waited out (5, 15, 30, 60 min). Prompt v2
@@ -42,7 +41,7 @@ which separates "attacks Trump" from "speaks for the left".
 Human check. analyse() writes a blind adjudication sheet (leaning_human_sheet.csv: 200
 titles, model labels hidden). Fill `human_label` and re-run with `--human-labels
 data/titles/analysis/leaning_human_sheet.csv` to get the judge's agreement with a human
-(leaning_human_agreement.csv). That, not the lane proposal, is the accuracy check.
+(leaning_human_agreement.csv). That is the accuracy check.
 
 CLI:
     python -m pipeline_titles.leaning --n-per-creator 50            # sample, label, analyse
@@ -66,7 +65,7 @@ from typing import Optional, Sequence
 import numpy as np
 import pandas as pd
 
-from pipeline_titles.common import ANALYSIS_DIR, CACHE_DIR, SEED, load_lanes, load_prepared, stage_timer, utc_now
+from pipeline_titles.common import ANALYSIS_DIR, CACHE_DIR, SEED, load_prepared, stage_timer, utc_now
 from pipeline_titles.textstats import rank_turbulence_divergence, vocab_tokens, weighted_log_odds
 
 N_PER_CREATOR = 16
@@ -262,13 +261,18 @@ def _score(v: pd.Series) -> float:
     return float(((v == "right").sum() - (v == "left").sum()) / len(v)) if len(v) else np.nan
 
 
-def _side(s: pd.Series, eps: float = 0.05) -> np.ndarray:
-    return np.where(s > eps, "right", np.where(s < -eps, "left", "neither / unclear"))
+GROUP_EPS = 0.05
+GROUPS = ("left", "neutral", "right")
+
+
+def _side(s: pd.Series, eps: float = GROUP_EPS) -> np.ndarray:
+    """A channel's group from its score: right above +eps, left below -eps, neutral between."""
+    return np.where(s > eps, "right", np.where(s < -eps, "left", "neutral"))
 
 
 def ensure_sample_columns(df: pd.DataFrame) -> pd.DataFrame:
-    """`is_base` (base draw vs top-up) and `month` for a labels file written before the
-    top-up design; both are recomputed from the prepared titles."""
+    """`is_base` (base draw vs top-up) and `month` for a labels file that lacks them; both are
+    recomputed from the prepared titles."""
     if "is_base" in df.columns and "month" in df.columns:
         return df
     prepared = load_prepared()
@@ -280,198 +284,126 @@ def ensure_sample_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def stability_check(df: pd.DataFrame, cols: list[str], judge: str, min_topup: int = 10) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """For every topped-up channel, the score from the base draw against the score from
-    its disjoint top-up titles and from all its titles, per model: how much a channel's
-    position depended on which titles were drawn. Also the lane AUC (left vs right
-    commentary) at the base draw and at the full sample, on the same channels. The
-    judge's per-channel values are returned as the second frame."""
-    from sklearn.metrics import roc_auc_score
-    rows, judge_rows = [], pd.DataFrame()
-    for c in cols:
-        recs = []
-        for creator, g in df.dropna(subset=[c]).groupby("creator"):
-            b, t = g[g["is_base"].astype(bool)], g[~g["is_base"].astype(bool)]
-            if len(t) < min_topup or not len(b):
-                continue
-            recs.append({"creator": creator, "lane": g["lane"].iloc[0], "n_base": len(b), "n_topup": len(t), "score_base": _score(b[c]),
-                         "score_topup": _score(t[c]), "score_all": _score(g[c])})
-        r = pd.DataFrame(recs)
-        if len(r) < 5:
+def stability_check(df: pd.DataFrame, judge: str, min_topup: int = 10) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """For every topped-up channel, the score from the base draw against the score from its
+    disjoint top-up titles and from all its titles: how much a channel's score and group
+    depended on which titles were drawn. Returns (one-row summary, per-channel frame)."""
+    recs = []
+    for creator, g in df.dropna(subset=[judge]).groupby("creator"):
+        b, t = g[g["is_base"].astype(bool)], g[~g["is_base"].astype(bool)]
+        if len(t) < min_topup or not len(b):
             continue
-        r["side_base"], r["side_all"] = _side(r["score_base"]), _side(r["score_all"])
-        r["change"] = r["score_all"] - r["score_base"]
-        flipped = ((r["side_base"] == "left") & (r["side_all"] == "right")) | ((r["side_base"] == "right") & (r["side_all"] == "left"))
-        two = r[r["lane"].isin(["left_commentary", "right_commentary"])]
-        y = (two["lane"] == "right_commentary").astype(int)
-        auc = {k: (round(float(roc_auc_score(y, two[k])), 4) if y.nunique() == 2 else np.nan) for k in ("score_base", "score_all")}
-        rows.append({"model": c, "n_channels": len(r), "spearman_base_vs_topup": round(float(r["score_base"].corr(r["score_topup"], method="spearman")), 3),
-                     "pearson_base_vs_topup": round(float(r["score_base"].corr(r["score_topup"])), 3),
-                     "spearman_base_vs_all": round(float(r["score_base"].corr(r["score_all"], method="spearman")), 3),
-                     "lane_auc_base": auc["score_base"], "lane_auc_all": auc["score_all"], "n_commentary": int(len(two)),
-                     "mean_abs_change": round(float(r["change"].abs().mean()), 3), "median_abs_change": round(float(r["change"].abs().median()), 3),
-                     "max_abs_change": round(float(r["change"].abs().max()), 3), "side_changed": int((r["side_base"] != r["side_all"]).sum()),
-                     "sign_flipped": int(flipped.sum())})
-        if c == judge:
-            judge_rows = r.sort_values("change").reset_index(drop=True)
-    return pd.DataFrame(rows), judge_rows
+        recs.append({"creator": creator, "n_base": len(b), "n_topup": len(t), "score_base": _score(b[judge]), "score_topup": _score(t[judge]), "score_all": _score(g[judge])})
+    r = pd.DataFrame(recs)
+    if len(r) < 5:
+        return pd.DataFrame(), r
+    r["group_base"], r["group_all"] = _side(r["score_base"]), _side(r["score_all"])
+    r["change"] = r["score_all"] - r["score_base"]
+    flipped = ((r["group_base"] == "left") & (r["group_all"] == "right")) | ((r["group_base"] == "right") & (r["group_all"] == "left"))
+    summ = pd.DataFrame([{"n_channels": len(r), "spearman_base_vs_topup": round(float(r["score_base"].corr(r["score_topup"], method="spearman")), 3),
+                          "pearson_base_vs_topup": round(float(r["score_base"].corr(r["score_topup"])), 3),
+                          "spearman_base_vs_all": round(float(r["score_base"].corr(r["score_all"], method="spearman")), 3),
+                          "mean_abs_change": round(float(r["change"].abs().mean()), 3), "median_abs_change": round(float(r["change"].abs().median()), 3),
+                          "max_abs_change": round(float(r["change"].abs().max()), 3), "group_changed": int((r["group_base"] != r["group_all"]).sum()), "sign_flipped": int(flipped.sum())}])
+    return summ, r.sort_values("change").reset_index(drop=True)
 
 
-def lane_month_check(df: pd.DataFrame, judge: str) -> pd.DataFrame:
-    """The judge's labels by lane x month over the month-spread sample: titles, creators,
+def group_month_check(df: pd.DataFrame, judge: str, groups: dict[str, str]) -> pd.DataFrame:
+    """The labels by channel group x month over the month-spread sample: titles, channels,
     share read as partisan (left or right), left and right shares, score."""
     d = df.dropna(subset=[judge, "month"]).copy()
+    d["group"] = d["creator"].map(groups)
     d["partisan"] = (d[judge] != "neither").astype(float)
     d["value"] = np.where(d[judge] == "right", 1.0, np.where(d[judge] == "left", -1.0, 0.0))
     d["is_left"] = (d[judge] == "left").astype(float); d["is_right"] = (d[judge] == "right").astype(float)
-    out = d.groupby(["lane", "month"]).agg(n_titles=("row_id", "size"), n_creators=("creator", "nunique"), partisan_share=("partisan", "mean"),
-                                           left_share=("is_left", "mean"), right_share=("is_right", "mean"), score=("value", "mean")).reset_index()
+    out = d.groupby(["group", "month"]).agg(n_titles=("row_id", "size"), n_creators=("creator", "nunique"), partisan_share=("partisan", "mean"),
+                                            left_share=("is_left", "mean"), right_share=("is_right", "mean"), score=("value", "mean")).reset_index()
     return out.round(4)
 
 
 def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
-    from sklearn.metrics import cohen_kappa_score, roc_auc_score
-    lanes = load_lanes()[["creator", "lane", "organisation", "clipper"]]
+    """Two levels. Titles: the judge's labels and their shares. Channels: score = (right - left) / n
+    over a channel's sampled titles, the group it implies (left / neutral / right at +-GROUP_EPS),
+    the groups' composition, reliability, the self-description anchor, the group x month table;
+    then the vocabulary (leaning_words.csv) and the log-odds lexicon (leaning_lexicon.py)."""
     df = df.copy()
     for c in cols:                                   # 'left|democrats_left' -> label column + target column
         if df[c].astype(str).str.contains(r"\|").any():
             df[c.replace("label_", "target_")] = df[c].str.split("|").str[1]
             df[c] = df[c].str.split("|").str[0]
-    ok = df.dropna(subset=cols)
-    agree = {"n_labelled_by_all": int(len(ok)), "models": cols, "label_shares": {c: ok[c].value_counts(normalize=True).round(4).to_dict() for c in cols}, "pairs": []}
-    for i in range(len(cols)):
-        for j in range(i + 1, len(cols)):
-            a, b = ok[cols[i]], ok[cols[j]]
-            pol = (a != "neither") & (b != "neither")
-            agree["pairs"].append({"a": cols[i], "b": cols[j], "kappa": round(float(cohen_kappa_score(a, b)), 4), "exact_agreement": round(float((a == b).mean()), 4),
-                                   "kappa_political_only": round(float(cohen_kappa_score(a[pol], b[pol])), 4) if pol.sum() > 10 else None,
-                                   "confusion": pd.crosstab(a, b).to_dict()})
-    if len(cols) >= 2:        # kept for older readers: the first pair
-        agree["kappa"] = agree["pairs"][0]["kappa"]; agree["exact_agreement"] = agree["pairs"][0]["exact_agreement"]
-        agree["confusion"] = agree["pairs"][0]["confusion"]; agree["kappa_political_only"] = agree["pairs"][0]["kappa_political_only"]
-    all_agree = ok[cols].nunique(axis=1) == 1
-    agree["all_models_agree_share"] = round(float(all_agree.mean()), 4)
-    agree["consensus_label_shares"] = ok.loc[all_agree, cols[0]].value_counts(normalize=True).round(4).to_dict()
-    (ANALYSIS_DIR / "leaning_agreement.json").write_text(json.dumps(agree, indent=2))
-    info.update({k: v for k, v in agree.items() if k in ("kappa", "exact_agreement", "n_labelled_by_all")})
+    judge = next((c for c in cols if "claude_code" in c), cols[0])
+    ok = df.dropna(subset=[judge])
+    counts = ok[judge].value_counts().reindex(LABELS, fill_value=0)
+    (ANALYSIS_DIR / "leaning_label_shares.json").write_text(json.dumps({"judge": judge, "n_labelled": int(len(ok)), "label_counts": {k: int(v) for k, v in counts.items()},
+                                                                          "label_shares": {k: round(float(v / len(ok)), 4) for k, v in counts.items()}}, indent=2))
+    info.update({"n_labelled": int(len(ok)), "label_shares": {k: round(float(v / len(ok)), 4) for k, v in counts.items()}})
 
-    # per creator
+    # channels: score and group
     rows = []
     for creator, g in df.groupby("creator"):
-        rec = {"creator": creator, "n_titles": len(g)}
-        scores = []
-        for c in cols:
-            v = g[c].dropna()
-            rec[f"{c}_n"] = len(v)
-            for l in LABELS:
-                rec[f"{c}_{l}"] = float((v == l).mean()) if len(v) else np.nan
-            rec[f"{c}_score"] = float(((v == "right").sum() - (v == "left").sum()) / len(v)) if len(v) else np.nan
-            scores.append(rec[f"{c}_score"])
-        if len(cols) >= 2:
-            both = g.dropna(subset=cols)
-            cons = both[both[cols].nunique(axis=1) == 1]
-            rec["consensus_n"] = len(cons)
-            rec["consensus_score"] = float(((cons[cols[0]] == "right").sum() - (cons[cols[0]] == "left").sum()) / len(cons)) if len(cons) else np.nan
-            rec["consensus_neither"] = float((cons[cols[0]] == "neither").mean()) if len(cons) else np.nan
-        rec["mean_score"] = float(np.nanmean(scores))
-        rec["implied_side"] = "right" if rec["mean_score"] > 0.05 else ("left" if rec["mean_score"] < -0.05 else "neither / unclear")
+        v = g[judge].dropna()
+        rec = {"creator": creator, "n_titles": len(g), f"{judge}_n": len(v)}
+        for l in LABELS:
+            rec[f"{judge}_{l}"] = float((v == l).mean()) if len(v) else np.nan
+        rec["score"] = _score(v)
+        rec[f"{judge}_score"] = rec["score"]
         rows.append(rec)
-    bc = pd.DataFrame(rows).merge(lanes, on="creator", how="left").sort_values("mean_score")
+    bc = pd.DataFrame(rows)
+    bc["group"] = _side(bc["score"])
+    bc["judge_of_record"] = judge; bc["judge_score"] = bc["score"]; bc["judge_side"] = bc["group"]; bc["mean_score"] = bc["score"]; bc["implied_side"] = bc["group"]   # read by the cards
+    bc = bc.sort_values("score").reset_index(drop=True)
     bc.to_csv(ANALYSIS_DIR / "leaning_by_creator.csv", index=False)
+    groups = dict(zip(bc["creator"], bc["group"]))
+    gs = bc.groupby("group").agg(n_channels=("creator", "size"), n_titles=("n_titles", "sum"), mean_score=("score", "mean"), min_score=("score", "min"), max_score=("score", "max"),
+                                 mean_left=(f"{judge}_left", "mean"), mean_neither=(f"{judge}_neither", "mean"), mean_right=(f"{judge}_right", "mean")).reindex(GROUPS).reset_index()
+    gs.to_csv(ANALYSIS_DIR / "leaning_groups.csv", index=False)
+    (ANALYSIS_DIR / "leaning_summary.json").write_text(json.dumps({"judge_of_record": judge, "threshold": GROUP_EPS, "n_channels": int(len(bc)),
+                                                                     "groups": {g: int(n) for g, n in bc["group"].value_counts().reindex(GROUPS, fill_value=0).items()}}, indent=2))
+    info["groups"] = {g: int(n) for g, n in bc["group"].value_counts().items()}
 
-    # validation against the two commentary lanes
-    val_rows, mis = [], []
-    two = bc[bc["lane"].isin(["left_commentary", "right_commentary"])]
-    y = (two["lane"] == "right_commentary").astype(int)
-    for c in [f"{c}_score" for c in cols] + (["consensus_score", "mean_score"] if len(cols) >= 2 else ["mean_score"]):
-        s = two[c]
-        m = s.notna()
-        auc = float(roc_auc_score(y[m], s[m])) if y[m].nunique() == 2 else np.nan
-        nz = m & (s != 0)
-        acc = float(((s[nz] > 0).astype(int) == y[nz]).mean()) if nz.sum() else np.nan
-        val_rows.append({"score": c, "n_creators": int(m.sum()), "auc_right_vs_left_lane": round(auc, 4), "accuracy_sign_vs_lane": round(acc, 4), "n_nonzero": int(nz.sum()),
-                         "mean_score_left_lane": round(float(s[m & (y == 0)].mean()), 4), "mean_score_right_lane": round(float(s[m & (y == 1)].mean()), 4)})
-    score_cols = [f"{c}_score" for c in cols] + (["consensus_score", "mean_score"] if len(cols) >= 2 else ["mean_score"])
-    for sc in score_cols:
-        for r in two.itertuples():
-            v = getattr(r, sc)
-            if pd.isna(v):
-                continue
-            side = "right" if v > 0 else ("left" if v < 0 else "tie")
-            expected = "right" if r.lane == "right_commentary" else "left"
-            if side != expected:
-                mis.append({"score": sc, "creator": r.creator, "lane": r.lane, "value": round(float(v), 3), "implied_side": side, "n_titles": r.n_titles, "clipper": r.clipper})
-    pd.DataFrame(val_rows).to_csv(ANALYSIS_DIR / "leaning_lane_validation.csv", index=False)
-    pd.DataFrame(mis).to_csv(ANALYSIS_DIR / "leaning_lane_contradictions.csv", index=False)
-    info["lane_auc"] = {r["score"]: r["auc_right_vs_left_lane"] for r in val_rows}
-    # judge of record: the single model whose channel score best separates the two commentary lanes
-    per_model = [r for r in val_rows if r["score"].startswith("label_")]
-    best = max(per_model, key=lambda r: (r["auc_right_vs_left_lane"] if not np.isnan(r["auc_right_vs_left_lane"]) else -1))
-    judge = best["score"]
-    bc["judge_of_record"] = judge.replace("_score", "")
-    bc["judge_score"] = bc[judge]
-    bc["judge_side"] = np.where(bc["judge_score"] > 0.05, "right", np.where(bc["judge_score"] < -0.05, "left", "neither / unclear"))
-    bc.to_csv(ANALYSIS_DIR / "leaning_by_creator.csv", index=False)
-    (ANALYSIS_DIR / "leaning_summary.json").write_text(json.dumps({"judge_of_record": judge.replace("_score", ""), "judge_auc": best["auc_right_vs_left_lane"],
-                                                                     "judge_accuracy": best["accuracy_sign_vs_lane"], "per_model": val_rows}, indent=2))
-    info["judge_of_record"] = judge
-
-    bl = bc.groupby("lane").agg(n_creators=("creator", "size"), **{f"{c}_score_mean": (f"{c}_score", "mean") for c in cols},
-                                **{f"{c}_neither_mean": (f"{c}_neither", "mean") for c in cols}, mean_score=("mean_score", "mean")).reset_index().sort_values("mean_score")
-    bl.to_csv(ANALYSIS_DIR / "leaning_by_lane.csv", index=False)
-
-    # words: right vs left per model and for the consensus set
+    # vocabulary of right-read vs left-read titles
+    r, l = df[df[judge] == "right"], df[df[judge] == "left"]
+    cr, cl = Counter(), Counter()
+    for t in r["title_norm"]:
+        cr.update(vocab_tokens(t))
+    for t in l["title_norm"]:
+        cl.update(vocab_tokens(t))
+    wlo = weighted_log_odds(cr, cl, alpha0=500.0)
+    rtd, contribs = rank_turbulence_divergence(cr, cl, alpha=1 / 3)
+    rtd_map = {w: (c, ra, rb) for w, c, ra, rb in contribs}
     wrows = []
-    sets = {c: (df[df[c] == "right"], df[df[c] == "left"]) for c in cols}
-    if len(cols) >= 2:
-        both = df.dropna(subset=cols); both = both[both[cols].nunique(axis=1) == 1]
-        sets["consensus"] = (both[both[cols[0]] == "right"], both[both[cols[0]] == "left"])
-    for name, (r, l) in sets.items():
-        cr, cl = Counter(), Counter()
-        for t in r["title_norm"]:
-            cr.update(vocab_tokens(t))
-        for t in l["title_norm"]:
-            cl.update(vocab_tokens(t))
-        wlo = weighted_log_odds(cr, cl, alpha0=500.0)
-        rtd, contribs = rank_turbulence_divergence(cr, cl, alpha=1 / 3)
-        rtd_map = {w: (c, ra, rb) for w, c, ra, rb in contribs}
-        for w, (d, z, yr, yl) in wlo.items():
-            if yr + yl < 3:
-                continue
-            c, ra, rb = rtd_map.get(w, (np.nan, np.nan, np.nan))
-            wrows.append({"model": name, "word": w, "log_odds_right_vs_left": round(d, 3), "z": round(z, 2), "count_right": yr, "count_left": yl,
-                          "rtd_contribution": round(c, 5), "rank_right": ra, "rank_left": rb, "n_right_titles": len(r), "n_left_titles": len(l), "rtd_total": round(rtd, 4)})
-    pd.DataFrame(wrows).sort_values(["model", "z"], ascending=[True, False]).to_csv(ANALYSIS_DIR / "leaning_words.csv", index=False)
+    for w, (d, z, yr, yl) in wlo.items():
+        if yr + yl < 3:
+            continue
+        c, ra, rb = rtd_map.get(w, (np.nan, np.nan, np.nan))
+        wrows.append({"model": judge, "word": w, "log_odds_right_vs_left": round(d, 3), "z": round(z, 2), "count_right": yr, "count_left": yl,
+                      "rtd_contribution": round(c, 5), "rank_right": ra, "rank_left": rb, "n_right_titles": len(r), "n_left_titles": len(l), "rtd_total": round(rtd, 4)})
+    pd.DataFrame(wrows).sort_values("z", ascending=False).to_csv(ANALYSIS_DIR / "leaning_words.csv", index=False)
 
-    # channels' own words as a lane-independent yardstick: leaning words in the channel description
-    self_description_check(bc, cols)
-    # log-odds lexicons (left / right / neither at a z cutoff), their agreement across comparisons, and the out-of-fold lexicon check
-    from pipeline_titles.leaning_lexicon import run as lexicon_run
-    lexicon_run(df, cols, judge.replace("_score", ""), info=info)
-    # split-half reliability of the channel scores (channels with >= 32 labelled titles)
-    shr = split_half_reliability(df, cols)
+    # the model-free anchor, reliability, months
+    self_description_check(bc)
+    shr = split_half_reliability(df, [judge])
     shr.to_csv(ANALYSIS_DIR / "leaning_split_half.csv", index=False)
-    if len(shr):
-        print(shr.to_string(index=False), flush=True)
-    # the base 16-title draw against the month-spread top-up: did the ranking depend on which titles were drawn?
     if "is_base" in df.columns and "month" in df.columns:
-        stab, stab_ch = stability_check(df, cols, judge.replace("_score", ""))
+        stab, stab_ch = stability_check(df, judge)
+        stab_ch["group"] = stab_ch["creator"].map(groups)
         stab.to_csv(ANALYSIS_DIR / "leaning_stability.csv", index=False)
         stab_ch.to_csv(ANALYSIS_DIR / "leaning_stability_channels.csv", index=False)
-        lane_month_check(df, judge.replace("_score", "")).to_csv(ANALYSIS_DIR / "leaning_by_lane_month.csv", index=False)
+        group_month_check(df, judge, groups).to_csv(ANALYSIS_DIR / "leaning_by_group_month.csv", index=False)
         if len(stab):
-            print(stab[["model", "n_channels", "spearman_base_vs_topup", "lane_auc_base", "lane_auc_all", "side_changed", "sign_flipped"]].to_string(index=False), flush=True)
+            print(stab[["n_channels", "spearman_base_vs_topup", "group_changed", "sign_flipped"]].to_string(index=False), flush=True)
+    print(f"channels: {info['groups']}; split-half {shr.split_half_spearman_mean.iloc[0] if len(shr) else float('nan')}", flush=True)
+    # log-odds lexicons (left / right / neither at a z cutoff) and the out-of-fold lexicon check
+    from pipeline_titles.leaning_lexicon import run as lexicon_run
+    lexicon_run(df, [judge], judge, info=info)
 
-    # blind adjudication sheet: 200 titles, mostly disagreements, model labels kept in a separate key
+    # blind adjudication sheet: 200 titles, model labels kept out of the sheet
     sheet_path = ANALYSIS_DIR / "leaning_human_sheet.csv"
-    if not sheet_path.exists() and len(cols) >= 2:
+    if not sheet_path.exists():
         rng = np.random.RandomState(SEED + 7)
-        lab_only = df[cols].apply(lambda c: c.str.split("|").str[0])
-        dis = df[(lab_only.nunique(axis=1) > 1)]
-        agr = df[(lab_only.nunique(axis=1) == 1)]
-        pick = pd.concat([dis.sample(min(140, len(dis)), random_state=rng), agr.sample(min(60, len(agr)), random_state=rng)]).sample(frac=1, random_state=rng)
+        part = df[df[judge].isin(["left", "right"])]; neu = df[df[judge] == "neither"]
+        pick = pd.concat([part.sample(min(140, len(part)), random_state=rng), neu.sample(min(60, len(neu)), random_state=rng)]).sample(frac=1, random_state=rng)
         pick[["row_id", "creator", "title_raw"]].assign(human_label="", human_target="", notes="").to_csv(sheet_path, index=False)
-        pick[["row_id", "creator", "title_raw"] + cols].to_csv(ANALYSIS_DIR / "leaning_human_key.csv", index=False)
         print(f"blind adjudication sheet written: {sheet_path} ({len(pick)} titles; fill human_label with left / right / neither)", flush=True)
 
 
@@ -491,23 +423,18 @@ def self_declared_leaning(description: str) -> str:
     return "right" if r > l else "left"
 
 
-def self_description_check(bc: pd.DataFrame, cols: list[str]) -> None:
+def self_description_check(bc: pd.DataFrame) -> None:
+    """The one model-free anchor: channels whose own YouTube description carries a leaning word,
+    and whether the judge's score has the declared sign."""
     from pipeline_titles.common import load_channels
     ch = load_channels().drop_duplicates("creator")[["creator", "description"]].fillna("")
     ch["self_declared"] = [SELF_OVERRIDE.get(c, self_declared_leaning(d)) for c, d in zip(ch["creator"], ch["description"])]
     m = bc.merge(ch, on="creator", how="left")
     m = m[m["self_declared"].isin(["left", "right"])].copy()
-    rows = []
-    for sc in [f"{c}_score" for c in cols] + ["mean_score", "judge_score"]:
-        if sc not in m.columns:
-            continue
-        side = np.where(m[sc] > 0, "right", np.where(m[sc] < 0, "left", "tie"))
-        agree = float((side == m["self_declared"]).mean())
-        rows.append({"score": sc, "n_self_declared": len(m), "agreement_with_self_description": round(agree, 3),
-                     "n_right_declared": int((m["self_declared"] == "right").sum()), "n_left_declared": int((m["self_declared"] == "left").sum())})
-    pd.DataFrame(rows).to_csv(ANALYSIS_DIR / "leaning_self_description.csv", index=False)
-    m["judge_side_sign"] = np.where(m["judge_score"] > 0, "right", np.where(m["judge_score"] < 0, "left", "tie"))
-    m[["creator", "lane", "self_declared", "judge_side_sign", "judge_score"] + [f"{c}_score" for c in cols] + ["description"]].sort_values("judge_score") \
+    m["judge_sign"] = np.where(m["score"] > 0, "right", np.where(m["score"] < 0, "left", "tie"))
+    pd.DataFrame([{"n_self_declared": len(m), "n_right_declared": int((m["self_declared"] == "right").sum()), "n_left_declared": int((m["self_declared"] == "left").sum()),
+                   "agreement_with_self_description": round(float((m["judge_sign"] == m["self_declared"]).mean()), 3) if len(m) else np.nan}]).to_csv(ANALYSIS_DIR / "leaning_self_description.csv", index=False)
+    m[["creator", "self_declared", "judge_sign", "score", "group", "description"]].sort_values("score") \
         .assign(description=lambda d: d.description.str.replace(r"\s+", " ", regex=True).str[:160]).to_csv(ANALYSIS_DIR / "leaning_self_description_channels.csv", index=False)
 
 
@@ -542,16 +469,15 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     a = ap.parse_args(argv)
     with stage_timer("stage7_leaning", models=a.models, backend="claude-code", prompt_id=f"leaning-{a.prompt_version}", batch_order="sample order" if a.no_shuffle else "shuffled",
                      api_cost_usd="subscription (claude -p); see reported_cost_usd") as info:
-        lanes = load_lanes()[["creator", "lane"]]
-        keep_cols = ["row_id", "video_id", "creator", "genre", "lane", "month", "is_base", "title_raw", "title_norm"]
+        keep_cols = ["row_id", "video_id", "creator", "genre", "month", "is_base", "title_raw", "title_norm"]
         if a.analyse_only and LABELS_CSV.exists():
             df = pd.read_csv(LABELS_CSV)
-            if "is_base" not in df.columns or "month" not in df.columns:   # labels file from before the top-up design
-                df = ensure_sample_columns(df)
+            if "is_base" not in df.columns or "month" not in df.columns or "lane" in df.columns:   # older layouts of the labels file
+                df = ensure_sample_columns(df).drop(columns=[c for c in ("lane",) if c in df.columns])
                 df[[c for c in keep_cols if c in df.columns] + [c for c in df.columns if c not in keep_cols]].to_csv(LABELS_CSV, index=False)
         else:
             prepared = load_prepared()
-            df = draw_sample(prepared, a.n_per_creator, min_uploads=a.min_uploads).merge(lanes, on="creator", how="left")
+            df = draw_sample(prepared, a.n_per_creator, min_uploads=a.min_uploads)
             if a.limit:
                 df = df.head(a.limit)
             if LABELS_CSV.exists() and not a.relabel:   # keep labels already on disk

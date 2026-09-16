@@ -34,11 +34,11 @@ Six answer a question of their own, each with its method and limitations:
     per channel
 13. [Signature keywords](pipeline_titles/reports/13_signature_keywords.md): the words each
     channel over-uses
-14. [Political leaning from titles](pipeline_titles/reports/14_political_leaning.md): a
-    frontier model labels 12,478 titles left / right / neither from the title text alone, 50
-    per ranked channel; how reliable the channel score is, channel scores against the
-    channels' own descriptions and the lanes, and the words behind each label (allotaxonographs,
-    log-odds, a lexicon check)
+14. [Political leaning from titles](pipeline_titles/reports/14_political_leaning.md): two
+    levels. Titles: a frontier model labels 12,478 titles left / right / neither from the title
+    text alone, and the vocabulary of each label is analysed (allotaxonographs, log-odds, a
+    lexicon check). Channels: each channel's score from its sampled titles sorts the 274
+    channels into left, neutral and right groups, whose whole output is then compared
 
 - `pipeline_titles/reports/all_tables.md`: the reference dump of every table in one file.
 - `pipeline_titles/reports/methods_appendix.md`: preprocessing, stopwords, feature
@@ -157,7 +157,7 @@ from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
 | `engagement` | within-creator regressions of log views on style with month and topic controls |
 | `hits` | Gini, top-10 % share, Clauset-Shalizi-Newman tail fit vs lognormal |
 | `profiles` | the question documents 9-13: stylistic twins, outrage by lane with confidence intervals, capitalisation profiles and top words, the arousal index, signature keywords |
-| `leaning` | document 14: left / right / neither labels from Claude Opus (title text only, shuffled batches), channel scores, the self-description and lane yardsticks, split-half and base-vs-top-up reliability, lane x month, weighted log-odds and rank-turbulence words, the log-odds lexicon and its out-of-fold check |
+| `leaning` | document 14: left / right / neither labels from Claude Opus (title text only, shuffled batches); channel scores and the left / neutral / right groups they define; split-half and base-vs-top-up reliability; the self-description anchor; group x month; weighted log-odds and rank-turbulence words for the titles and for the groups' whole output; the log-odds lexicon and its out-of-fold check |
 | `allotax` | allotaxonographs for document 14 (needs Node; see above) |
 | `report_data`, `report` | cards JSON, Markdown report, methods appendix, cards, HTML page |
 

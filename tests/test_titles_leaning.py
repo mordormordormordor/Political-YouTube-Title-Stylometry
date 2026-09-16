@@ -3,7 +3,7 @@
 import numpy as np
 import pandas as pd
 
-from pipeline_titles.leaning import N_PER_CREATOR, draw_sample, lane_month_check, parse_labels, self_declared_leaning, stability_check
+from pipeline_titles.leaning import N_PER_CREATOR, draw_sample, group_month_check, parse_labels, self_declared_leaning, stability_check
 
 
 def test_parse_labels_reads_plain_and_decorated_lines_and_targets():
@@ -41,19 +41,18 @@ def test_draw_sample_marks_base_rows_and_spreads_topup_across_months():
     assert not full.row_id.duplicated().any()
 
 
-def test_stability_and_lane_month_checks_on_a_synthetic_sample():
+def test_stability_and_group_month_checks_on_a_synthetic_sample():
     rng = np.random.RandomState(0)
     rows = []
-    for creator, lane, p_right in (("@r1", "right_commentary", 0.8), ("@r2", "right_commentary", 0.6), ("@l1", "left_commentary", 0.1), ("@l2", "left_commentary", 0.2),
-                                   ("@r3", "right_commentary", 0.7), ("@l3", "left_commentary", 0.15)):
+    for creator, p_right in (("@r1", 0.8), ("@r2", 0.6), ("@l1", 0.1), ("@l2", 0.2), ("@r3", 0.7), ("@l3", 0.15)):
         for i in range(50):
-            rows.append({"row_id": len(rows), "creator": creator, "lane": lane, "month": f"2026-0{1 + i % 9}", "is_base": i < 16,
+            rows.append({"row_id": len(rows), "creator": creator, "month": f"2026-0{1 + i % 9}", "is_base": i < 16,
                          "label_m": "right" if rng.rand() < p_right else ("left" if rng.rand() < 0.6 else "neither")})
     df = pd.DataFrame(rows)
-    stab, ch = stability_check(df, ["label_m"], "label_m")
-    assert len(stab) == 1 and stab.n_channels.iloc[0] == 6 and stab.n_commentary.iloc[0] == 6
-    assert stab.lane_auc_all.iloc[0] == 1.0 and stab.spearman_base_vs_topup.iloc[0] > 0.5
-    assert set(ch.columns) >= {"creator", "score_base", "score_topup", "score_all", "side_base", "side_all", "change"} and len(ch) == 6
-    lm = lane_month_check(df, "label_m")
-    assert set(lm.lane) == {"right_commentary", "left_commentary"} and lm.n_titles.sum() == 300
-    assert (lm.partisan_share >= lm.left_share).all() and (lm.score.between(-1, 1)).all()
+    summ, ch = stability_check(df, "label_m")
+    assert len(summ) == 1 and summ.n_channels.iloc[0] == 6 and summ.spearman_base_vs_topup.iloc[0] > 0.5
+    assert set(ch.columns) >= {"creator", "score_base", "score_topup", "score_all", "group_base", "group_all", "change"} and len(ch) == 6
+    groups = {"@r1": "right", "@r2": "right", "@r3": "right", "@l1": "left", "@l2": "left", "@l3": "left"}
+    gm = group_month_check(df, "label_m", groups)
+    assert set(gm.group) == {"right", "left"} and gm.n_titles.sum() == 300
+    assert (gm.partisan_share >= gm.left_share).all() and gm.score.between(-1, 1).all()

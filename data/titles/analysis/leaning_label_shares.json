@@ -1,0 +1,14 @@
+{
+  "judge": "label_claude_code_opus",
+  "n_labelled": 12478,
+  "label_counts": {
+    "left": 3033,
+    "right": 2556,
+    "neither": 6889
+  },
+  "label_shares": {
+    "left": 0.2431,
+    "right": 0.2048,
+    "neither": 0.5521
+  }
+}

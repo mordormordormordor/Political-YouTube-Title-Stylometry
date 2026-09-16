@@ -1,4 +1,4 @@
-"""Allotaxonographs (Dodds et al. 2023) for the leaning systems and the two commentary lanes.
+"""Allotaxonographs (Dodds et al. 2023) for the leaning titles and the left and right channel groups.
 
 Each figure is the Computational Story Lab's own instrument, rendered by allotaxonometer-ui
 (the Svelte library behind the lab's web app and py-allotax) through Node and printed to
@@ -9,9 +9,9 @@ the paper recommends for text.
 
 Comparisons (system 1 on the left flank and the grey bars, system 2 on the right flank and
 the blue bars):
-    opus  : titles the judge labelled left vs titles it labelled right
-    lanes : left-commentary vs right-commentary channels, every unique edited upload in the
-            creator-balanced subset
+    titles   : titles the judge labelled left vs titles it labelled right
+    channels : left channels vs right channels (grouped by their score), every unique edited
+               upload in the creator-balanced subset
 Types are the vocabulary tokens of document 11 (lower-cased words minus stopwords and
 digits, possessives dropped), so the ranks agree with the tables of document 14, whose
 rank-turbulence divergence (textstats.rank_turbulence_divergence) reproduces the
@@ -27,7 +27,7 @@ Needs `node` on the PATH and `npm install` run once in pipeline_titles/allotax_j
 fetches its own Chrome). Without them the stage prints why it skipped and leaves the
 tracked figures as they are. Run by `report` through figures.main(), or alone:
 
-    python -m pipeline_titles.allotax [--only opus lanes] [--alpha 0.3333] [--top-n 40]
+    python -m pipeline_titles.allotax [--only titles channels] [--alpha 0.3333] [--top-n 40]
 """
 
 from __future__ import annotations
@@ -43,7 +43,7 @@ from typing import Iterable, Optional, Sequence
 
 import pandas as pd
 
-from pipeline_titles.common import ANALYSIS_DIR, CACHE_DIR, REPORTS_DIR, load_lanes, load_prepared, stage_timer
+from pipeline_titles.common import ANALYSIS_DIR, CACHE_DIR, REPORTS_DIR, load_prepared, stage_timer
 from pipeline_titles.textstats import vocab_tokens
 
 JS_DIR = Path(__file__).resolve().parent / "allotax_js"
@@ -76,22 +76,26 @@ def alpha_label(alpha: float) -> str:
 
 
 def comparisons(only: Optional[Sequence[str]] = None) -> list[dict]:
-    """The systems to compare: name, titles (long, for the flanks), short names (for the word
-    shift header) and the two title lists."""
+    """The two system pairs: `titles` (the titles the judge read as left vs as right) and
+    `channels` (everything the left channels published vs everything the right channels
+    published, channels grouped by their score; the creator-balanced unique uploads)."""
     out = []
-    labs_path = ANALYSIS_DIR / "leaning_labels.csv.gz"
-    if labs_path.exists():
-        labs = pd.read_csv(labs_path)
-        cols = [c for c in labs.columns if c.startswith("label_") and c in MODEL_NAMES]
-        for c in cols:
-            name, model = MODEL_NAMES[c]
-            out.append({"name": name, "title1": f"Titles {model} read as left", "title2": f"Titles {model} read as right", "short1": "left-read titles", "short2": "right-read titles",
-                        "titles1": labs.loc[labs[c] == "left", "title_norm"].tolist(), "titles2": labs.loc[labs[c] == "right", "title_norm"].tolist()})
-    prepared = load_prepared()
-    lanes = load_lanes()[["creator", "lane"]]
-    d = prepared[(~prepared["is_dup"]) & (prepared["genre"] == "videos") & (prepared["in_balanced"])].merge(lanes, on="creator", how="left")
-    out.append({"name": "lanes", "title1": "Left-commentary channels", "title2": "Right-commentary channels", "short1": "left commentary", "short2": "right commentary",
-                "titles1": d.loc[d["lane"] == "left_commentary", "title_norm"].tolist(), "titles2": d.loc[d["lane"] == "right_commentary", "title_norm"].tolist()})
+    labs = pd.read_csv(ANALYSIS_DIR / "leaning_labels.csv.gz")
+    judge = next((c for c in labs.columns if c in MODEL_NAMES), None)
+    if judge is None:
+        return out
+    _, model = MODEL_NAMES[judge]
+    out.append({"name": "titles", "title1": f"Titles {model} read as left", "title2": f"Titles {model} read as right", "short1": "left-read titles", "short2": "right-read titles",
+                "titles1": labs.loc[labs[judge] == "left", "title_norm"].tolist(), "titles2": labs.loc[labs[judge] == "right", "title_norm"].tolist()})
+    bc_path = ANALYSIS_DIR / "leaning_by_creator.csv"
+    if bc_path.exists():
+        bc = pd.read_csv(bc_path); groups = dict(zip(bc["creator"], bc["group"]))
+        prepared = load_prepared()
+        d = prepared[(~prepared["is_dup"]) & (prepared["genre"] == "videos") & (prepared["in_balanced"])].copy()
+        d["group"] = d["creator"].map(groups)
+        nl, nr = int((bc["group"] == "left").sum()), int((bc["group"] == "right").sum())
+        out.append({"name": "channels", "title1": f"Left channels ({nl}), every title", "title2": f"Right channels ({nr}), every title", "short1": "left channels", "short2": "right channels",
+                    "titles1": d.loc[d["group"] == "left", "title_norm"].tolist(), "titles2": d.loc[d["group"] == "right", "title_norm"].tolist()})
     if only:
         out = [c for c in out if c["name"] in set(only)]
     return out
@@ -110,7 +114,7 @@ def render(spec: dict, spec_path: Path) -> dict:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--only", nargs="*", default=None, help="comparison names to render (default: all)")
+    ap.add_argument("--only", nargs="*", default=None, help="comparison names to render: titles, channels (default: both)")
     ap.add_argument("--alpha", type=float, default=ALPHA)
     ap.add_argument("--top-n", type=int, default=40, help="bars in the word shift")
     ap.add_argument("--scale", type=float, default=2.0, help="device scale factor of the PNG")

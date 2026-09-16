@@ -1,6 +1,6 @@
 """Log-odds lexicons for document 14: which words are over-used on each side, a z cutoff
 that sorts words into left / right / neither, how those classes compare across the judges
-and against the lanes, and what the word list can do on its own (a lexicon classifier of
+and against the channel groups, and what the word list can do on its own (a lexicon classifier of
 titles, scored out of fold).
 
 Weighted log-odds with an informative Dirichlet prior (Monroe, Colaresi and Quinn 2008;
@@ -9,9 +9,9 @@ titles against the left-side titles and its z-score. A word is `right` when z >=
 `left` when z <= -cutoff, otherwise `neither` (cutoff 1.96 = the two-sided 5 % level; words
 with fewer than 3 occurrences in both sides together are not classified).
 
-Comparisons (left side vs right side): opus (titles the judge labelled left vs right) and
-lanes (left- vs right-commentary channels, the creator-balanced unique uploads), the same
-systems as the allotaxonographs.
+Comparisons (left side vs right side): titles (the titles the judge labelled left vs right)
+and channels (everything the left channels published vs everything the right channels
+published, channels grouped by their score), the same systems as the allotaxonographs.
 
 The lexicon check. For each judge, its labelled titles are split into five folds by channel;
 the lexicon is built on four folds and applied to the fifth, so no channel's titles help
@@ -30,7 +30,7 @@ Outputs (data/titles/analysis/):
                                    the counts of each class pair, the words that change side
     leaning_lexicon_validation.csv per judge: agreement of the out-of-fold lexicon classifier with the judge
                                    (coverage, accuracy, kappa, side agreement on partisan titles, per-class
-                                   precision and recall, channel-level Spearman and lane AUC)
+                                   precision and recall, channel-level Spearman and group agreement)
     leaning_lexicon_channels.csv   per channel (judge of record): lexicon score vs judge score
 """
 
@@ -92,9 +92,9 @@ def creator_folds(creators: Sequence[str], n_folds: int = N_FOLDS, seed: int = S
 
 def lexicon_check(df: pd.DataFrame, label_col: str, cutoff: float = CUTOFF, n_folds: int = N_FOLDS) -> tuple[pd.DataFrame, dict]:
     """Out-of-fold lexicon classes for every title with a label from `label_col`; returns the
-    per-title frame (creator, lane, title_norm, label, lexicon_class, n_left_words,
+    per-title frame (creator, title_norm, label, lexicon_class, n_left_words,
     n_right_words, fold) and the agreement summary."""
-    from sklearn.metrics import cohen_kappa_score, roc_auc_score
+    from sklearn.metrics import cohen_kappa_score
     d = df.dropna(subset=[label_col]).copy()
     folds = creator_folds(d["creator"].tolist(), n_folds)
     d["fold"] = d["creator"].map(folds)
@@ -105,7 +105,7 @@ def lexicon_check(df: pd.DataFrame, label_col: str, cutoff: float = CUTOFF, n_fo
         lex = dict(zip(wc.loc[wc["word_class"] != "neither", "word"], wc.loc[wc["word_class"] != "neither", "word_class"]))
         for r in test.itertuples():
             c, n_l, n_r = classify_title(r.title_norm, lex)
-            out.append({"row_id": r.row_id, "creator": r.creator, "lane": r.lane, "title_norm": r.title_norm, "label": getattr(r, label_col), "lexicon_class": c, "n_left_words": n_l, "n_right_words": n_r, "fold": k})
+            out.append({"row_id": r.row_id, "creator": r.creator, "title_norm": r.title_norm, "label": getattr(r, label_col), "lexicon_class": c, "n_left_words": n_l, "n_right_words": n_r, "fold": k})
     t = pd.DataFrame(out)
     y, p = t["label"], t["lexicon_class"]
     partisan = y.isin(["left", "right"])
@@ -122,17 +122,16 @@ def lexicon_check(df: pd.DataFrame, label_col: str, cutoff: float = CUTOFF, n_fo
         summ[f"recall_{c}"] = round(tp / (tp + fn), 4) if tp + fn else np.nan
     summ["confusion"] = json.dumps({r: {c: int(conf.loc[r, c]) for c in CLASSES} for r in CLASSES})
     # channel level
-    ch = t.groupby("creator").agg(lane=("lane", "first"), n_titles=("label", "size"),
+    ch = t.groupby("creator").agg(n_titles=("label", "size"),
                                   lexicon_score=("lexicon_class", lambda s: float(((s == "right").sum() - (s == "left").sum()) / len(s))),
                                   judge_score=("label", lambda s: float(((s == "right").sum() - (s == "left").sum()) / len(s)))).reset_index()
+    side = lambda s: np.where(s > 0.05, "right", np.where(s < -0.05, "left", "neutral"))
+    ch["lexicon_group"], ch["judge_group"] = side(ch["lexicon_score"]), side(ch["judge_score"])
     big = ch[ch["n_titles"] >= 16]
     summ["n_channels"] = int(len(big)); summ["channel_spearman"] = round(float(big["lexicon_score"].corr(big["judge_score"], method="spearman")), 4) if len(big) > 5 else np.nan
-    two = big[big["lane"].isin(["left_commentary", "right_commentary"])]
-    yy = (two["lane"] == "right_commentary").astype(int)
-    summ["channel_lane_auc"] = round(float(roc_auc_score(yy, two["lexicon_score"])), 4) if yy.nunique() == 2 else np.nan
-    nz = two[two["lexicon_score"] != 0]
-    summ["channel_lane_sign_accuracy"] = round(float(((nz["lexicon_score"] > 0).astype(int) == (nz["lane"] == "right_commentary").astype(int)).mean()), 4) if len(nz) else np.nan
-    return t.merge(ch[["creator", "lexicon_score", "judge_score"]], on="creator", how="left"), summ
+    summ["channel_group_agreement"] = round(float((big["lexicon_group"] == big["judge_group"]).mean()), 4) if len(big) else np.nan
+    summ["channel_group_kappa"] = round(float(cohen_kappa_score(big["judge_group"], big["lexicon_group"])), 4) if len(big) > 5 else np.nan
+    return t.merge(ch[["creator", "lexicon_score", "judge_score", "lexicon_group", "judge_group"]], on="creator", how="left"), summ
 
 
 def class_agreement(classes: dict[str, pd.DataFrame]) -> pd.DataFrame:
@@ -181,15 +180,15 @@ def run(df: pd.DataFrame, cols: list[str], judge: str, cutoff: float = CUTOFF, i
         titles, s = lexicon_check(df, c, cutoff)
         val.append(s)
         if c == judge:
-            titles.groupby("creator").agg(lane=("lane", "first"), n_titles=("label", "size"), lexicon_score=("lexicon_score", "first"), judge_score=("judge_score", "first")).reset_index() \
+            titles.groupby("creator").agg(n_titles=("label", "size"), lexicon_score=("lexicon_score", "first"), judge_score=("judge_score", "first"), lexicon_group=("lexicon_group", "first"), judge_group=("judge_group", "first")).reset_index() \
                 .sort_values("judge_score").to_csv(ANALYSIS_DIR / "leaning_lexicon_channels.csv", index=False)
-            titles[["row_id", "creator", "lane", "label", "lexicon_class", "n_left_words", "n_right_words", "fold"]].to_csv(ANALYSIS_DIR / "leaning_lexicon_titles.csv", index=False)
+            titles[["row_id", "creator", "label", "lexicon_class", "n_left_words", "n_right_words", "fold"]].to_csv(ANALYSIS_DIR / "leaning_lexicon_titles.csv", index=False)
     pd.DataFrame(val).to_csv(ANALYSIS_DIR / "leaning_lexicon_validation.csv", index=False)
     if info is not None and val:
         info["lexicon"] = {v["judge"]: {"accuracy": v["accuracy"], "kappa": v["kappa"], "channel_spearman": v["channel_spearman"]} for v in val}
     print(pd.DataFrame(summ_rows)[["comparison", "n_words", "n_left", "n_right", "n_neither"]].to_string(index=False), flush=True)
     if val:
-        print(pd.DataFrame(val)[["judge", "coverage", "accuracy", "kappa", "side_agreement_when_both_partisan", "channel_spearman", "channel_lane_auc"]].to_string(index=False), flush=True)
+        print(pd.DataFrame(val)[["judge", "coverage", "accuracy", "kappa", "side_agreement_when_both_partisan", "channel_spearman", "channel_group_agreement"]].to_string(index=False), flush=True)
 
 
 def main(argv: Optional[Sequence[str]] = None) -> int:

@@ -1,25 +1,10 @@
 {
   "judge_of_record": "label_claude_code_opus",
-  "judge_auc": 0.9899,
-  "judge_accuracy": 0.9512,
-  "per_model": [
-    {
-      "score": "label_claude_code_opus_score",
-      "n_creators": 123,
-      "auc_right_vs_left_lane": 0.9899,
-      "accuracy_sign_vs_lane": 0.9512,
-      "n_nonzero": 123,
-      "mean_score_left_lane": -0.5229,
-      "mean_score_right_lane": 0.4399
-    },
-    {
-      "score": "mean_score",
-      "n_creators": 123,
-      "auc_right_vs_left_lane": 0.9899,
-      "accuracy_sign_vs_lane": 0.9512,
-      "n_nonzero": 123,
-      "mean_score_left_lane": -0.5229,
-      "mean_score_right_lane": 0.4399
-    }
-  ]
+  "threshold": 0.05,
+  "n_channels": 274,
+  "groups": {
+    "left": 122,
+    "neutral": 42,
+    "right": 110
+  }
 }
