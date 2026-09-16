@@ -111,7 +111,7 @@ def doc_leaning() -> str:
     cc_calls = sum(r.get("calls", 0) for r in this); cc_min = sum(r.get("seconds", 0) for r in this) / 60; cc_cost = sum(r.get("reported_cost_usd", 0) or 0 for r in this)
     news = side_by_lane[side_by_lane.lane.isin(["wires & international", "US press", "US legacy TV"])]
     n50, nbase = int((bc.n_titles >= 50).sum()), int((bc.n_titles < 50).sum())
-    miss_txt = ("no misses" if len(sd_dis) == 0 else f"the one miss is {sd_dis.creator.iloc[0]} at {sd_dis.judge_score.iloc[0]:+.2f}" if len(sd_dis) == 1 else f"{len(sd_dis)} misses")
+    miss_txt = ("" if len(sd_dis) == 0 else f" (the one miss is {sd_dis.creator.iloc[0]} at {sd_dis.judge_score.iloc[0]:+.2f})" if len(sd_dis) == 1 else f" ({len(sd_dis)} misses: {', '.join(sd_dis.creator)})")
     sh_j = shr[shr.model == judge].iloc[0] if shr is not None and (shr.model == judge).any() else None
     st_j = stab[stab.model == judge].iloc[0] if stab is not None and (stab.model == judge).any() else None
     movers = stab_ch.reindex(stab_ch.change.abs().sort_values(ascending=False).index).head(8).copy() if stab_ch is not None and len(stab_ch) else None
@@ -135,7 +135,7 @@ def doc_leaning() -> str:
 
 ## The finding in one paragraph
 
-{jname} labels {pct(shares.get('neither', 0))} of titles neither, {pct(shares.get('left', 0))} left and {pct(shares.get('right', 0))} right, and its channel score matches the channels' own words: of the {int(sd.n_self_declared.iloc[0])} channels whose YouTube description declares a leaning ("conservative political commentator", "populist left perspective"), it puts {pct(float(sd.loc[sd.score == js, 'agreement_with_self_description'].iloc[0]))} on the declared side ({miss_txt}). Against the lane proposal, a weaker yardstick because the lanes are themselves a model's assignment, it reaches an AUC of {vj.auc_right_vs_left_lane:.3f} and {pct(vj.accuracy_sign_vs_lane)} of the {int(vj.n_creators)} commentary channels.{rel} The words behind the labels are stance words: the *right* vocabulary is {', '.join(right_w.word.head(8))}; the *left* vocabulary is {', '.join(left_w.word.head(8))}.
+{jname} labels {pct(shares.get('neither', 0))} of titles neither, {pct(shares.get('left', 0))} left and {pct(shares.get('right', 0))} right. Its channel score puts {pct(float(sd.loc[sd.score == js, 'agreement_with_self_description'].iloc[0]))} of the {int(sd.n_self_declared.iloc[0])} channels that declare a leaning in their own YouTube description on the declared side{miss_txt}, and separates the two commentary lanes at AUC {vj.auc_right_vs_left_lane:.3f} ({pct(vj.accuracy_sign_vs_lane)} of {int(vj.n_creators)} channels on the lane's side), though neither yardstick is ground truth: the first covers few channels and the second is a model's own sorting (see "Channel scores against two yardsticks").{rel} The words behind the labels are stance words: the *right* vocabulary is {', '.join(right_w.word.head(8))}; the *left* vocabulary is {', '.join(left_w.word.head(8))}.
 
 ![Scores and lanes.](figures/14_leaning_scores.png)
 *Left: each channel's score against the share of its titles read as neither. Right: the score by lane, dots = channels.*
@@ -159,15 +159,11 @@ The largest movers between the 16-title and the 50-title score:
 
 ## Channel scores against two yardsticks
 
-**The channels' own descriptions** (lane-independent: {int(sd.n_self_declared.iloc[0])} channels with a leaning word in their YouTube description, {int(sd.n_right_declared.iloc[0])} right, {int(sd.n_left_declared.iloc[0])} left; rule and hand corrections in `leaning.py`):
+Neither is ground truth. **The channels' own descriptions** owe nothing to any model, but only {int(sd.n_self_declared.iloc[0])} channels put a leaning word in their YouTube description ({int(sd.n_right_declared.iloc[0])} right, {int(sd.n_left_declared.iloc[0])} left; rule and hand corrections in `leaning.py`), nearly all of them commentary channels that were never in doubt, so agreement here rules out one gross failure, a judge that reads self-declared conservatives as left, and says nothing about the news lanes, the podcasts or the anti-war right. {jname} puts {pct(float(sd.loc[sd.score == js, 'agreement_with_self_description'].iloc[0]))} of them on their declared side{miss_txt}.
 
-{table(sd[sd.score == js].assign(score=jname), ['score', 'n_self_declared', 'agreement_with_self_description'], fmt='{:.3f}')}
+{table(sd[sd.score == js].assign(score=jname), ['score', 'n_self_declared', 'n_right_declared', 'n_left_declared', 'agreement_with_self_description'], fmt='{:.3f}')}
 
-Channels where the judge's sign differs from their self-description ({len(sd_dis)}):
-
-{table(sd_dis, ['creator', 'lane', 'self_declared', 'judge_side_sign', 'judge_score'], fmt='{:.2f}') if len(sd_dis) else '_(none)_'}
-
-**The lane proposal** (consistency check only: `left_commentary` vs `right_commentary`; the lanes were assigned by a model of the same family, from channel names, descriptions and a sample of titles):
+**The lane proposal** covers all {int(vj.n_creators)} left- and right-commentary channels, but the lanes were themselves assigned by a model of the same family (Claude, from channel names, descriptions and a sample of titles; `lane_seed.py`), so the judge agreeing with them is consistency between two related readings, not accuracy:
 
 {table(val[val.score == js].assign(score=jname), ['score', 'n_creators', 'auc_right_vs_left_lane', 'accuracy_sign_vs_lane', 'n_nonzero', 'mean_score_left_lane', 'mean_score_right_lane'], fmt='{:.3f}')}
 

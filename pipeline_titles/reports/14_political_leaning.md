@@ -4,7 +4,7 @@
 
 ## The finding in one paragraph
 
-Claude Opus labels 55 % of titles neither, 24 % left and 20 % right, and its channel score matches the channels' own words: of the 36 channels whose YouTube description declares a leaning ("conservative political commentator", "populist left perspective"), it puts 100 % on the declared side (no misses). Against the lane proposal, a weaker yardstick because the lanes are themselves a model's assignment, it reaches an AUC of 0.990 and 95 % of the 123 commentary channels. The channel score is reliable: two random halves of a channel's titles rank the 239 channels with 50 titles the same way (split-half Spearman 0.96), and the original 16-title draw ranks them the same way as the 34 titles drawn later from other months (Spearman 0.96). The words behind the labels are stance words: the *right* vocabulary is fraud, women, democrats, woke, left, charlie, california, america; the *left* vocabulary is trump, maga, war, israel, breaking, iran, epstein, donald.
+Claude Opus labels 55 % of titles neither, 24 % left and 20 % right. Its channel score puts 100 % of the 36 channels that declare a leaning in their own YouTube description on the declared side, and separates the two commentary lanes at AUC 0.990 (95 % of 123 channels on the lane's side), though neither yardstick is ground truth: the first covers few channels and the second is a model's own sorting (see "Channel scores against two yardsticks"). The channel score is reliable: two random halves of a channel's titles rank the 239 channels with 50 titles the same way (split-half Spearman 0.96), and the original 16-title draw ranks them the same way as the 34 titles drawn later from other months (Spearman 0.96). The words behind the labels are stance words: the *right* vocabulary is fraud, women, democrats, woke, left, charlie, california, america; the *left* vocabulary is trump, maga, war, israel, breaking, iran, epstein, donald.
 
 ![Scores and lanes.](figures/14_leaning_scores.png)
 *Left: each channel's score against the share of its titles read as neither. Right: the score by lane, dots = channels.*
@@ -44,18 +44,14 @@ The largest movers between the 16-title and the 50-title score:
 
 ## Channel scores against two yardsticks
 
-**The channels' own descriptions** (lane-independent: 36 channels with a leaning word in their YouTube description, 19 right, 17 left; rule and hand corrections in `leaning.py`):
+Neither is ground truth. **The channels' own descriptions** owe nothing to any model, but only 36 channels put a leaning word in their YouTube description (19 right, 17 left; rule and hand corrections in `leaning.py`), nearly all of them commentary channels that were never in doubt, so agreement here rules out one gross failure, a judge that reads self-declared conservatives as left, and says nothing about the news lanes, the podcasts or the anti-war right. Claude Opus puts 100 % of them on their declared side.
 
-| score | n_self_declared | agreement_with_self_description |
-|---|---|---|
-| Claude Opus | 36 | 1.000 |
+| score | n_self_declared | n_right_declared | n_left_declared | agreement_with_self_description |
+|---|---|---|---|---|
+| Claude Opus | 36 | 19 | 17 | 1.000 |
 
 
-Channels where the judge's sign differs from their self-description (0):
-
-_(none)_
-
-**The lane proposal** (consistency check only: `left_commentary` vs `right_commentary`; the lanes were assigned by a model of the same family, from channel names, descriptions and a sample of titles):
+**The lane proposal** covers all 123 left- and right-commentary channels, but the lanes were themselves assigned by a model of the same family (Claude, from channel names, descriptions and a sample of titles; `lane_seed.py`), so the judge agreeing with them is consistency between two related readings, not accuracy:
 
 | score | n_creators | auc_right_vs_left_lane | accuracy_sign_vs_lane | n_nonzero | mean_score_left_lane | mean_score_right_lane |
 |---|---|---|---|---|---|---|
