@@ -632,7 +632,11 @@ def fig_leaning_logodds():
         fig, axes = plt.subplots(1, 2, figsize=(14, 7.4), gridspec_kw={"width_ratios": [1.2, 1.1]})
         _fightin_words(axes[0], axes[1], wc, cutoff, sys_l, sys_r)
         r = summ[summ.comparison == name].iloc[0]
-        fig.suptitle(f"{r.system_left} vs {r.system_right}: which words each side over-uses", x=0.01, ha="left", fontsize=12, fontweight="bold", color=INK)
+        groups = json.loads((A / "leaning_summary.json").read_text()).get("groups", {})
+        jn = _judge_name(json.loads((A / "leaning_summary.json").read_text())["judge_of_record"])
+        title = (f"Which words each side over-uses: titles labelled left vs right by {jn}" if name == "titles"
+                 else f"Which words each side over-uses: left channels ({groups.get('left', '?')}) vs right channels ({groups.get('right', '?')}), every title they published")
+        fig.suptitle(title, x=0.01, ha="left", fontsize=12, fontweight="bold", color=INK)
         fig.tight_layout(rect=(0, 0.035, 1, 0.965))
         save(fig, fname, note=f"Weighted log-odds with an informative Dirichlet prior (Monroe, Colaresi and Quinn 2008; α₀ = 500) over the {int(r.n_words):,} words with three or more occurrences in the two systems together; z = log-odds / its standard error, cutoff |z| ≥ {cutoff:g}.")
     # how many words clear the cutoff, per comparison: left and right classes as shares of the vocabulary, counts printed
