@@ -566,8 +566,8 @@ def _fightin_words(ax_sc, ax_bar, wc, cutoff, sys_left, sys_right, n_label=12, n
     "trump" cannot squash the rest of the plot."""
     wc = wc.copy(); wc["total"] = wc.count_left + wc.count_right
     col = {"left": CAT[0], "right": CAT[1], "neither": "#c9c8c3"}
-    # cap: the 6th largest |z| rounded up, so at most five words per plot sit beyond the edge
-    cap = float(max(4 * cutoff, np.ceil(wc.z.abs().nlargest(6).iloc[-1])))
+    # cap: a whole number, the 6th largest |z| rounded up (so at most five words sit beyond the edge), never below 8
+    cap = float(max(8, int(np.ceil(wc.z.abs().nlargest(6).iloc[-1]))))
     wc["zc"] = wc.z.clip(-cap, cap); off = wc[wc.z.abs() > cap].sort_values("z")
     for cls in ("neither", "left", "right"):
         sub = wc[(wc.word_class == cls) & (wc.z.abs() <= cap)]
