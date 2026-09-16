@@ -9,7 +9,7 @@ Everything here is *model-perceived* leaning: how a careful, reader-like model r
 
 ## The finding in one paragraph
 
-Claude Opus reads 55 % of titles as neither, 24 % as left and 20 % as right. Sorted by their scores, 122 channels are left, 110 right and 42 neutral, and the score matches the one thing the channels say about themselves: all 36 channels whose YouTube description declares a leaning land on the declared side. The channel score is reliable: two random halves of a channel's titles rank the 239 channels with 50 titles the same way (split-half Spearman 0.96), and the original 16-title draw ranks them the same way as the 34 titles drawn later from other months (Spearman 0.96). The words behind the labels are stance words rather than subjects: the *right* vocabulary is fraud, women, democrats, woke, left, charlie, california, america; the *left* vocabulary is trump, maga, war, israel, breaking, iran, epstein, donald. Applied to everything the left and right channels published, the same words separate the two groups' whole output, with the year's shared subjects (Trump, Iran, the war) at the top of both.
+Claude Opus reads 55 % of titles as neither, 24 % as left and 20 % as right. Sorted by their scores, 122 channels are left, 110 right and 42 neutral. The score does not depend on which titles were drawn: two random halves of a channel's titles rank the 239 channels with 50 titles the same way (Spearman 0.96), and so do the first 16 titles and the 34 drawn later (0.96). The words behind the labels are stance words rather than subjects: the *right* vocabulary is fraud, women, democrats, woke, left, charlie, california, america; the *left* vocabulary is trump, maga, war, israel, breaking, iran, epstein, donald. Applied to everything the left and right channels published, the same words separate the two groups' whole output, with the year's shared subjects (Trump, Iran, the war) at the top of both.
 
 ## Level 1: titles
 
@@ -156,83 +156,31 @@ A channel's score is the balance of its sampled titles, and the groups follow fr
 ![Group composition.](figures/14_leaning_group_composition.png)
 *Mean composition of a channel's titles in each group.*
 
-The most left-reading and most right-reading channels:
-
-| creator | n_titles | score | group |
-|---|---|---|---|
-| @aaronparnas1 | 50 | -0.92 | left |
-| @TheDailyBeast | 50 | -0.90 | left |
-| @deanwithrs | 50 | -0.90 | left |
-| @LegalAFMTN | 50 | -0.88 | left |
-| @fastpoliticspodcast | 50 | -0.88 | left |
-| @DemocracyDocket | 50 | -0.88 | left |
-| @SecularTalk | 50 | -0.84 | left |
-| @dollemore | 50 | -0.84 | left |
-| @thewarningwithsteveschmidt | 50 | -0.84 | left |
-| @MeidasTouch | 50 | -0.84 | left |
-| @briantylercohen | 50 | -0.82 | left |
-| @FarronBalanced | 50 | -0.82 | left |
-
-
-| creator | n_titles | score | group |
-|---|---|---|---|
-| @X22Report-y5y | 50 | 0.96 | right |
-| @BlackConservativePerspective | 50 | 0.90 | right |
-| @CamHigby | 50 | 0.88 | right |
-| @CashJordan | 50 | 0.88 | right |
-| @RobertGouveiaEsq | 50 | 0.86 | right |
-| @AndWeKnowOfficial-o9b | 50 | 0.84 | right |
-| @OfficialSaharTV | 50 | 0.82 | right |
-| @ActualJusticeWarrior | 50 | 0.78 | right |
-| @nationalreview | 50 | 0.74 | right |
-| @BlaireWhiteX | 11 | 0.73 | right |
-| @DrSteveTurleyTV | 50 | 0.72 | right |
-| @turningpointusa | 50 | 0.72 | right |
-
-
 With 50 titles no channel scores ±1 (5 sit at or beyond ±0.90): even the most one-sided channels title one video in twenty as plain news. The 42 neutral channels, whose sampled titles balance or read mostly as neither: @JacksonHinkleOfficial, @Forbes, @POLITICO, @USATODAY, @NBCNews, @newyorker, @Firstpost, @TimesNowWorld, @destinyhqclips, @BrittanyVenti, @Reuters, @KimIversen, @AssociatedPress, @thejimmydoreshow, @LIVESNEAKO, @markets, @BBCNews, @CaspianReport, @ANINewsIndia, @ABCNews, @SNEAKO, @CBSNews, @FinancialTimes, @TechCrunch, @TimDillonShow, @joerogan, @axios, @bushrakhanum, @chinainsights-r2w, @wsj, @60minutes, @ClubRandomPodcast, @wethefifth, @ZeihanonGeopolitics, @CoreyGilShusterAskProject, @hutch, @Semafor, @PiersMorganUncensored, @NewsNation, @TuckerCarlson, @ClipsCandaceOwens, @thehill.
 
-### How much a channel's score depends on which titles were drawn
+### Would a different draw of titles give a different score?
 
-Two checks, both on the 239 channels with 50 labelled titles. Split-half: a channel's titles are split at random into two halves of 25, each half scored, and the two channel rankings correlated (Spearman; mean and SD over 20 random splits). Base vs top-up: the score from the original 16-title draw against the score from the disjoint top-up titles, which were drawn from other months.
+A channel's score comes from 50 sampled titles out of the hundreds or thousands it published, so the first thing to check is whether the draw matters: had the sample been different, would the channel's score, and its group, be different? Two checks, both on the 239 channels with 50 labelled titles.
 
-| judge | n_channels | median_titles_per_half | split_half_spearman_mean | split_half_spearman_sd |
-|---|---|---|---|---|
-| Claude Opus | 239 | 25 | 0.959 | 0.004 |
+1. **Split-half.** Each channel's 50 titles are split at random into two halves of 25 and each half is scored on its own, so every channel gets two scores from disjoint sets of titles. The two sets of scores rank the channels at Spearman 0.96 (mean of 20 random splits, SD 0.004): whichever half you look at, the channels come out in nearly the same order.
+2. **First draw against second draw.** The sample was drawn in two steps, 16 titles per channel first and 34 more afterwards from other months, so the two draws are independent samples of the same channel. Scored separately they rank the channels at Spearman 0.96. Going from the 16-title score to the 50-title score moves a channel by 0.07 on average; 23 of 239 channels change group, all of them with a final score between −0.10 and +0.10, and none crosses from left to right or back.
 
+![Stability.](figures/14_leaning_stability.png)
+*Each channel's score from its first 16 titles against its score from the 34 drawn later, coloured by its final group. Points on the diagonal would mean identical scores; the labelled points are the channels that moved most.*
 
-| judge | n_channels | spearman_base_vs_topup | spearman_base_vs_all | mean_abs_change | group_changed | sign_flipped |
-|---|---|---|---|---|---|---|
-| Claude Opus | 239 | 0.959 | 0.981 | 0.074 | 23 | 0 |
+The channels that moved most between the two draws, for a sense of what "moved" means:
 
-
-*`group_changed`: channels whose group differs between the 16-title and the 50-title score; `sign_flipped`: the subset that went from left to right or the reverse.*
-
-![Stability of the channel score.](figures/14_leaning_stability.png)
-*Left: every ranked channel's score from the original 16 titles against its score from the 34 top-up titles, coloured by its final group; the labelled points are the largest movers. Right: the two reliability figures.*
-
-The largest movers between the 16-title and the 50-title score:
-
-| creator | group | score_base | score_topup | score_all | group_base | group_all |
-|---|---|---|---|---|---|---|
-| @TheOfficerTatum | right | 0.88 | 0.35 | 0.52 | right | right |
-| @ChadPrather1 | right | 0.19 | 0.62 | 0.48 | right | right |
-| @TheHumanistReport | left | -0.50 | -0.91 | -0.78 | left | left |
-| @TheDonLemonShow | left | -0.88 | -0.47 | -0.60 | left | left |
-| @MarkDice | right | 0.81 | 0.41 | 0.54 | right | right |
-| @TheDamageReport | left | -0.88 | -0.53 | -0.64 | left | left |
-| @winston_marshall | right | 0.62 | 0.29 | 0.40 | right | right |
-| @RufoandLomez | right | 0.56 | 0.24 | 0.34 | right | right |
+| channel | score, first 16 titles | score, next 34 titles | score, all 50 | group at 16 | group at 50 |
+|---|---|---|---|---|---|
+| @TheOfficerTatum | +0.88 | +0.35 | +0.52 | right | right |
+| @ChadPrather1 | +0.19 | +0.62 | +0.48 | right | right |
+| @TheHumanistReport | -0.50 | -0.91 | -0.78 | left | left |
+| @TheDonLemonShow | -0.88 | -0.47 | -0.60 | left | left |
+| @MarkDice | +0.81 | +0.41 | +0.54 | right | right |
+| @TheDamageReport | -0.88 | -0.53 | -0.64 | left | left |
 
 
-### A model-free anchor
-
-Only 36 channels put a leaning word in their own YouTube description (19 right, 17 left; rule and hand corrections in `leaning.py`), nearly all of them channels that were never in doubt, so agreement here rules out one gross failure, a judge that reads self-declared conservatives as left, and says nothing about the rest of the landscape. Claude Opus puts 100 % of them on their declared side.
-
-| judge | n_self_declared | n_right_declared | n_left_declared | agreement_with_self_description |
-|---|---|---|---|---|
-| Claude Opus | 36 | 19 | 17 | 1.000 |
-
+So the score is a property of the channel, not of the draw. With 50 titles it moves in steps of 0.02, and the only channels whose group is in doubt are the ones sitting within a title or two of a threshold.
 
 ### The groups' whole output
 
@@ -265,11 +213,10 @@ It did not move: left channels ranges from -0.50 to -0.43; neutral channels from
 2. **Labelling.** One prompt (in `leaning.py` and the methods appendix): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0; the judge sees the title text only, numbered 1 to 20, never the channel name; titles are sent in a seeded random order so that a batch mixes channels; every response cached. Claude Opus runs through the Claude Code CLI in print mode on a Claude Max subscription (624 calls, 135 minutes; the CLI reported an equivalent API cost of $56.54, not charged).
 3. **Scores and groups.** Per channel: shares of left / right / neither and score = (right − left) / n over its sampled titles; left below −0.05, right above +0.05, neutral between.
 4. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), and the group at 16 titles against the group at 50.
-5. **The anchor.** A channel counts as self-declared right or left when its YouTube description contains leaning words (conservative, MAGA, libertarian, right-wing ... vs progressive, leftist, socialist, liberal ...), with nine hand corrections for phrases like "liberal democracy" or "former liberal"; agreement is the share of those channels whose score has the declared sign.
-6. **Words.** Weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11, for the left-read vs right-read titles and for the left vs right channels' whole output. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
-7. **Log-odds lexicon.** Every word with 3+ occurrences in the two systems together, right against left; right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for the channel groups, and Cohen's kappa of the classes between the two over their shared words. The lexicon check: the labelled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
-8. **Allotaxonographs.** Drawn by allotaxonometer-ui 0.2.2 (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
-9. **Months.** The labels by channel group x month (`leaning_by_group_month.csv`): titles, creators, partisan share, left and right shares, score.
+5. **Words.** Weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11, for the left-read vs right-read titles and for the left vs right channels' whole output. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
+6. **Log-odds lexicon.** Every word with 3+ occurrences in the two systems together, right against left; right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for the channel groups, and Cohen's kappa of the classes between the two over their shared words. The lexicon check: the labelled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
+7. **Allotaxonographs.** Drawn by allotaxonometer-ui 0.2.2 (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
+8. **Months.** The labels by channel group x month (`leaning_by_group_month.csv`): titles, creators, partisan share, left and right shares, score.
 
 ## Limitations
 
@@ -278,7 +225,6 @@ It did not move: left channels ranges from -0.50 to -0.43; neutral channels from
 - **The groups are a cut on a continuous score.** ±0.05 is one title in twenty; a channel at −0.06 and one at −0.04 differ by one label. The score is the measurement, the group is a convenience for comparing bodies of text, and the neutral group mixes channels whose titles balance with channels whose titles are mostly plain news.
 - **Ten words carry little stance.** Six in ten titles are neither, so a channel's score rests on a minority of its titles. At 50 titles the score moves in steps of 0.02 and the split-half reliability is 0.96; the 35 channels with fewer than 50 uploads still sit at 16 titles or fewer and move in steps of 1/16.
 - **Target and stance blur at the margin.** Hostile-to-Trump wording reads left even when it is a wire headline or an anti-war right channel's; the neutral group and the left tail hold both kinds. Prompt v2 (which also asks for the target) exists in `leaning.py` and was not run at scale.
-- **The anchor is small.** Self-descriptions cover 36 channels and say what a channel claims; agreement with them is a sanity check, not accuracy.
 - **Month-level reading is group-level only.** Five titles per channel-month is not a monthly channel score; the base 16 were drawn without regard to month, so the monthly table leans on the top-up.
 
-Files: `leaning_labels.csv.gz`, `leaning_label_shares.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_groups.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_group_month.csv`, `leaning_logodds.csv`, `leaning_logodds_summary.csv`, `leaning_logodds_agreement.csv`, `leaning_lexicon_validation.csv`, `leaning_lexicon_channels.csv`, `leaning_lexicon_titles.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.
+Files: `leaning_labels.csv.gz`, `leaning_label_shares.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_groups.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_group_month.csv`, `leaning_logodds.csv`, `leaning_logodds_summary.csv`, `leaning_logodds_agreement.csv`, `leaning_lexicon_validation.csv`, `leaning_lexicon_channels.csv`, `leaning_lexicon_titles.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.

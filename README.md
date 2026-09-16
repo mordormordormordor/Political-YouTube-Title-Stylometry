@@ -157,7 +157,7 @@ from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
 | `engagement` | within-creator regressions of log views on style with month and topic controls |
 | `hits` | Gini, top-10 % share, Clauset-Shalizi-Newman tail fit vs lognormal |
 | `profiles` | the question documents 9-13: stylistic twins, outrage by lane with confidence intervals, capitalisation profiles and top words, the arousal index, signature keywords |
-| `leaning` | document 14: left / right / neither labels from Claude Opus (title text only, shuffled batches); channel scores and the left / neutral / right groups they define; split-half and base-vs-top-up reliability; the self-description anchor; group x month; weighted log-odds and rank-turbulence words for the titles and for the groups' whole output; the log-odds lexicon and its out-of-fold check |
+| `leaning` | document 14: left / right / neither labels from Claude Opus (title text only, shuffled batches); channel scores and the left / neutral / right groups they define; split-half and base-vs-top-up reliability; group x month; weighted log-odds and rank-turbulence words for the titles and for the groups' whole output; the log-odds lexicon and its out-of-fold check |
 | `allotax` | allotaxonographs for document 14 (needs Node; see above) |
 | `report_data`, `report` | cards JSON, Markdown report, methods appendix, cards, HTML page |
 

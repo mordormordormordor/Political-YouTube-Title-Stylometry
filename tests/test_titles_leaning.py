@@ -3,7 +3,7 @@
 import numpy as np
 import pandas as pd
 
-from pipeline_titles.leaning import N_PER_CREATOR, draw_sample, group_month_check, parse_labels, self_declared_leaning, stability_check
+from pipeline_titles.leaning import N_PER_CREATOR, draw_sample, group_month_check, parse_labels, stability_check
 
 
 def test_parse_labels_reads_plain_and_decorated_lines_and_targets():
@@ -11,13 +11,6 @@ def test_parse_labels_reads_plain_and_decorated_lines_and_targets():
     out = parse_labels(text, 5)
     assert out == {1: "left", 2: "right", 3: "neither", 4: "right|democrats_left"}
     assert parse_labels("7,left", 5) == {}                  # out of range
-
-
-def test_self_declared_leaning_counts_words_on_each_side():
-    assert self_declared_leaning("A conservative commentator") == "right"
-    assert self_declared_leaning("Progressive news from the populist left") == "left"
-    assert self_declared_leaning("Just the news") == "none"
-    assert self_declared_leaning("liberal vs conservative debates") == "none"   # one each
 
 
 def _prepared(n_uploads: dict[str, int]) -> pd.DataFrame:

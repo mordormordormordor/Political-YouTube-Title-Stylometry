@@ -113,7 +113,6 @@ In one line: vocabulary says roughly where a channel sits, not how any single ti
 def doc_leaning() -> str:
     ls = _json("leaning_label_shares.json"); summ = _json("leaning_summary.json")
     bc = rd("leaning_by_creator.csv"); gs = rd("leaning_groups.csv"); words = rd("leaning_words.csv"); labs = rd("leaning_labels.csv.gz")
-    sd = rd("leaning_self_description.csv"); sdc = rd("leaning_self_description_channels.csv")
     shr = _opt("leaning_split_half.csv"); stab = _opt("leaning_stability.csv"); stab_ch = _opt("leaning_stability_channels.csv"); gm = _opt("leaning_by_group_month.csv")
     allo = _opt("allotax_summary.csv"); allo_c = _opt("allotax_contributions.csv")
     lo_s = _opt("leaning_logodds_summary.csv"); lo_ag = _opt("leaning_logodds_agreement.csv"); lex = _opt("leaning_lexicon_validation.csv")
@@ -121,9 +120,6 @@ def doc_leaning() -> str:
     shares = ls["label_shares"]; counts = ls["label_counts"]
     n_l, n_n, n_r = (int(summ["groups"].get(g, 0)) for g in ("left", "neutral", "right"))
     gs2 = gs.copy(); gs2["group"] = gs2.group.map(lambda g: f"{g} channels")
-    sd_row = sd.iloc[0]; sd_dis = sdc[sdc.self_declared != sdc.judge_sign]
-    miss_txt = ("" if len(sd_dis) == 0 else f" (the one miss is {sd_dis.creator.iloc[0]} at {sd_dis.score.iloc[0]:+.2f})" if len(sd_dis) == 1 else f" ({len(sd_dis)} misses: {', '.join(sd_dis.creator)})")
-    ext = bc.sort_values("score")
     neutral = bc[bc.group == "neutral"].sort_values("score")
     wj = words[words.model == judge]
     right_w = wj.sort_values("z", ascending=False).head(20); left_w = wj.sort_values("z").head(20)
@@ -134,11 +130,16 @@ def doc_leaning() -> str:
     n50, nbase = int((bc.n_titles >= 50).sum()), int((bc.n_titles < 50).sum())
     sh_j = shr.iloc[0] if shr is not None and len(shr) else None
     st_j = stab.iloc[0] if stab is not None and len(stab) else None
-    movers = stab_ch.reindex(stab_ch.change.abs().sort_values(ascending=False).index).head(8) if stab_ch is not None and len(stab_ch) else None
+    movers = stab_ch.reindex(stab_ch.change.abs().sort_values(ascending=False).index).head(6) if stab_ch is not None and len(stab_ch) else None
+    near_txt, flip_txt = "", ""
+    if stab_ch is not None and len(stab_ch) and st_j is not None:
+        changed = stab_ch[stab_ch.group_base != stab_ch.group_all]
+        near_txt = f"all of them with a final score between −{changed.score_all.abs().max():.2f} and +{changed.score_all.abs().max():.2f}" if len(changed) else "none"
+        flip_txt = "none crosses from left to right or back" if int(st_j.sign_flipped) == 0 else f"{int(st_j.sign_flipped)} cross from one side to the other"
     rel = ""
     if sh_j is not None and st_j is not None:
-        rel = (f" The channel score is reliable: two random halves of a channel's titles rank the {int(sh_j.n_channels)} channels with 50 titles the same way (split-half Spearman {sh_j.split_half_spearman_mean:.2f}), "
-               f"and the original 16-title draw ranks them the same way as the {int(stab_ch.n_topup.median())} titles drawn later from other months (Spearman {st_j.spearman_base_vs_topup:.2f}).")
+        rel = (f" The score does not depend on which titles were drawn: two random halves of a channel's titles rank the {int(sh_j.n_channels)} channels with 50 titles the same way (Spearman {sh_j.split_half_spearman_mean:.2f}), "
+               f"and so do the first 16 titles and the {int(stab_ch.n_topup.median())} drawn later ({st_j.spearman_base_vs_topup:.2f}).")
     gm_tab = None; gm_txt = ""
     if gm is not None and len(gm):
         piv = gm.pivot(index="group", columns="month", values="score").reindex(["left", "neutral", "right"])
@@ -158,7 +159,7 @@ Everything here is *model-perceived* leaning: how a careful, reader-like model r
 
 ## The finding in one paragraph
 
-{jname} reads {pct(shares.get('neither', 0))} of titles as neither, {pct(shares.get('left', 0))} as left and {pct(shares.get('right', 0))} as right. Sorted by their scores, {n_l} channels are left, {n_r} right and {n_n} neutral, and the score matches the one thing the channels say about themselves: all {int(sd_row.n_self_declared)} channels whose YouTube description declares a leaning land on the declared side{miss_txt}.{rel} The words behind the labels are stance words rather than subjects: the *right* vocabulary is {', '.join(right_w.word.head(8))}; the *left* vocabulary is {', '.join(left_w.word.head(8))}. Applied to everything the left and right channels published, the same words separate the two groups' whole output, with the year's shared subjects (Trump, Iran, the war) at the top of both.
+{jname} reads {pct(shares.get('neither', 0))} of titles as neither, {pct(shares.get('left', 0))} as left and {pct(shares.get('right', 0))} as right. Sorted by their scores, {n_l} channels are left, {n_r} right and {n_n} neutral.{rel} The words behind the labels are stance words rather than subjects: the *right* vocabulary is {', '.join(right_w.word.head(8))}; the *left* vocabulary is {', '.join(left_w.word.head(8))}. Applied to everything the left and right channels published, the same words separate the two groups' whole output, with the year's shared subjects (Trump, Iran, the war) at the top of both.
 
 ## Level 1: titles
 
@@ -214,36 +215,23 @@ A channel's score is the balance of its sampled titles, and the groups follow fr
 ![Group composition.](figures/14_leaning_group_composition.png)
 *Mean composition of a channel's titles in each group.*
 
-The most left-reading and most right-reading channels:
-
-{table(ext.head(12), ['creator', 'n_titles', 'score', 'group'], fmt='{:.2f}')}
-
-{table(ext.tail(12).iloc[::-1], ['creator', 'n_titles', 'score', 'group'], fmt='{:.2f}')}
-
 With 50 titles no channel scores ±1 ({int((bc.score.abs() >= 0.9).sum())} sit at or beyond ±0.90): even the most one-sided channels title one video in twenty as plain news. The {n_n} neutral channels, whose sampled titles balance or read mostly as neither: {', '.join(neutral.creator)}.
 
-### How much a channel's score depends on which titles were drawn
+### Would a different draw of titles give a different score?
 
-Two checks, both on the {int(sh_j.n_channels) if sh_j is not None else n50} channels with 50 labelled titles. Split-half: a channel's titles are split at random into two halves of {int(sh_j.median_titles_per_half) if sh_j is not None else 25}, each half scored, and the two channel rankings correlated (Spearman; mean and SD over 20 random splits). Base vs top-up: the score from the original 16-title draw against the score from the disjoint top-up titles, which were drawn from other months.
+A channel's score comes from 50 sampled titles out of the hundreds or thousands it published, so the first thing to check is whether the draw matters: had the sample been different, would the channel's score, and its group, be different? Two checks, both on the {int(sh_j.n_channels) if sh_j is not None else n50} channels with 50 labelled titles.
 
-{table(shr.assign(judge=jname) if shr is not None else None, ['judge', 'n_channels', 'median_titles_per_half', 'split_half_spearman_mean', 'split_half_spearman_sd'], fmt='{:.3f}')}
+1. **Split-half.** Each channel's 50 titles are split at random into two halves of {int(sh_j.median_titles_per_half) if sh_j is not None else 25} and each half is scored on its own, so every channel gets two scores from disjoint sets of titles. The two sets of scores rank the channels at Spearman {sh_j.split_half_spearman_mean:.2f} (mean of 20 random splits, SD {sh_j.split_half_spearman_sd:.3f}): whichever half you look at, the channels come out in nearly the same order.
+2. **First draw against second draw.** The sample was drawn in two steps, 16 titles per channel first and {int(stab_ch.n_topup.median()) if stab_ch is not None and len(stab_ch) else 34} more afterwards from other months, so the two draws are independent samples of the same channel. Scored separately they rank the channels at Spearman {st_j.spearman_base_vs_topup:.2f}. Going from the 16-title score to the 50-title score moves a channel by {st_j.mean_abs_change:.2f} on average; {int(st_j.group_changed)} of {int(st_j.n_channels)} channels change group, {near_txt}, and {flip_txt}.
 
-{table(stab.assign(judge=jname) if stab is not None else None, ['judge', 'n_channels', 'spearman_base_vs_topup', 'spearman_base_vs_all', 'mean_abs_change', 'group_changed', 'sign_flipped'], fmt='{:.3f}')}
+![Stability.](figures/14_leaning_stability.png)
+*Each channel's score from its first 16 titles against its score from the 34 drawn later, coloured by its final group. Points on the diagonal would mean identical scores; the labelled points are the channels that moved most.*
 
-*`group_changed`: channels whose group differs between the 16-title and the 50-title score; `sign_flipped`: the subset that went from left to right or the reverse.*
+The channels that moved most between the two draws, for a sense of what "moved" means:
 
-![Stability of the channel score.](figures/14_leaning_stability.png)
-*Left: every ranked channel's score from the original 16 titles against its score from the 34 top-up titles, coloured by its final group; the labelled points are the largest movers. Right: the two reliability figures.*
+{table(movers.rename(columns={'creator': 'channel', 'score_base': 'score, first 16 titles', 'score_topup': 'score, next 34 titles', 'score_all': 'score, all 50', 'group_base': 'group at 16', 'group_all': 'group at 50'}), ['channel', 'score, first 16 titles', 'score, next 34 titles', 'score, all 50', 'group at 16', 'group at 50'], fmt='{:+.2f}') if movers is not None else '_(none)_'}
 
-The largest movers between the 16-title and the 50-title score:
-
-{table(movers, ['creator', 'group', 'score_base', 'score_topup', 'score_all', 'group_base', 'group_all'], fmt='{:.2f}') if movers is not None else '_(none)_'}
-
-### A model-free anchor
-
-Only {int(sd_row.n_self_declared)} channels put a leaning word in their own YouTube description ({int(sd_row.n_right_declared)} right, {int(sd_row.n_left_declared)} left; rule and hand corrections in `leaning.py`), nearly all of them channels that were never in doubt, so agreement here rules out one gross failure, a judge that reads self-declared conservatives as left, and says nothing about the rest of the landscape. {jname} puts {pct(float(sd_row.agreement_with_self_description))} of them on their declared side{miss_txt}.
-
-{table(sd.assign(judge=jname), ['judge', 'n_self_declared', 'n_right_declared', 'n_left_declared', 'agreement_with_self_description'], fmt='{:.3f}')}
+So the score is a property of the channel, not of the draw. With 50 titles it moves in steps of 0.02, and the only channels whose group is in doubt are the ones sitting within a title or two of a threshold.
 
 ### The groups' whole output
 
@@ -271,11 +259,10 @@ The top-up titles were spread evenly across months, so the sample supports a gro
 2. **Labelling.** One prompt (in `leaning.py` and the methods appendix): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0; the judge sees the title text only, numbered 1 to 20, never the channel name; titles are sent in a seeded random order so that a batch mixes channels; every response cached. {jname} runs through the Claude Code CLI in print mode on a Claude Max subscription ({cc_calls:,} calls, {cc_min:.0f} minutes; the CLI reported an equivalent API cost of ${cc_cost:.2f}, not charged).
 3. **Scores and groups.** Per channel: shares of left / right / neither and score = (right − left) / n over its sampled titles; left below −{eps:g}, right above +{eps:g}, neutral between.
 4. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), and the group at 16 titles against the group at 50.
-5. **The anchor.** A channel counts as self-declared right or left when its YouTube description contains leaning words (conservative, MAGA, libertarian, right-wing ... vs progressive, leftist, socialist, liberal ...), with nine hand corrections for phrases like "liberal democracy" or "former liberal"; agreement is the share of those channels whose score has the declared sign.
-6. **Words.** Weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11, for the left-read vs right-read titles and for the left vs right channels' whole output. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
-7. **Log-odds lexicon.** Every word with 3+ occurrences in the two systems together, right against left; right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for the channel groups, and Cohen's kappa of the classes between the two over their shared words. The lexicon check: the labelled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
-8. **Allotaxonographs.** Drawn by allotaxonometer-ui {allo.allotaxonometer_ui.iloc[0] if allo is not None else ''} (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
-9. **Months.** The labels by channel group x month (`leaning_by_group_month.csv`): titles, creators, partisan share, left and right shares, score.
+5. **Words.** Weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11, for the left-read vs right-read titles and for the left vs right channels' whole output. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
+6. **Log-odds lexicon.** Every word with 3+ occurrences in the two systems together, right against left; right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for the channel groups, and Cohen's kappa of the classes between the two over their shared words. The lexicon check: the labelled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
+7. **Allotaxonographs.** Drawn by allotaxonometer-ui {allo.allotaxonometer_ui.iloc[0] if allo is not None else ''} (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
+8. **Months.** The labels by channel group x month (`leaning_by_group_month.csv`): titles, creators, partisan share, left and right shares, score.
 
 ## Limitations
 
@@ -284,8 +271,7 @@ The top-up titles were spread evenly across months, so the sample supports a gro
 - **The groups are a cut on a continuous score.** ±{eps:g} is one title in twenty; a channel at −0.06 and one at −0.04 differ by one label. The score is the measurement, the group is a convenience for comparing bodies of text, and the neutral group mixes channels whose titles balance with channels whose titles are mostly plain news.
 - **Ten words carry little stance.** Six in ten titles are neither, so a channel's score rests on a minority of its titles. At 50 titles the score moves in steps of 0.02 and the split-half reliability is {sh_j.split_half_spearman_mean:.2f}; the {nbase} channels with fewer than 50 uploads still sit at 16 titles or fewer and move in steps of 1/16.
 - **Target and stance blur at the margin.** Hostile-to-Trump wording reads left even when it is a wire headline or an anti-war right channel's; the neutral group and the left tail hold both kinds. Prompt v2 (which also asks for the target) exists in `leaning.py` and was not run at scale.
-- **The anchor is small.** Self-descriptions cover {int(sd_row.n_self_declared)} channels and say what a channel claims; agreement with them is a sanity check, not accuracy.
 - **Month-level reading is group-level only.** Five titles per channel-month is not a monthly channel score; the base 16 were drawn without regard to month, so the monthly table leans on the top-up.
 
-Files: `leaning_labels.csv.gz`, `leaning_label_shares.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_groups.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_group_month.csv`, `leaning_logodds.csv`, `leaning_logodds_summary.csv`, `leaning_logodds_agreement.csv`, `leaning_lexicon_validation.csv`, `leaning_lexicon_channels.csv`, `leaning_lexicon_titles.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.
+Files: `leaning_labels.csv.gz`, `leaning_label_shares.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_groups.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_group_month.csv`, `leaning_logodds.csv`, `leaning_logodds_summary.csv`, `leaning_logodds_agreement.csv`, `leaning_lexicon_validation.csv`, `leaning_lexicon_channels.csv`, `leaning_lexicon_titles.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.
 """

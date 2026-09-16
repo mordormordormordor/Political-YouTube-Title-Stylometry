@@ -542,28 +542,19 @@ def fig_leaning_stability():
     if not len(ch) or not len(st):
         return
     st_j, sh_j = st.iloc[0], sh.iloc[0]
-    fig, axes = plt.subplots(1, 2, figsize=(12, 5.2), gridspec_kw={"width_ratios": [1.15, 1]})
-    ax = axes[0]
+    fig, ax = plt.subplots(figsize=(7.2, 6))
     ax.plot([-1, 1], [-1, 1], color=GRID, lw=1); ax.axhline(0, color=GRID, lw=1); ax.axvline(0, color=GRID, lw=1)
     for g in ("neutral", "left", "right"):
         sub = ch[ch.group == g]
-        ax.scatter(sub.score_base, sub.score_topup, s=24, color=GCOL[g], alpha=0.85, edgecolor=SURFACE, linewidth=0.6, label=f"{g} channels")
-    for r in ch.reindex(ch.change.abs().sort_values(ascending=False).index).head(6).itertuples():
-        ax.annotate(r.creator, (r.score_base, r.score_topup), fontsize=6.5, xytext=(3, 3), textcoords="offset points")
+        ax.scatter(sub.score_base, sub.score_topup, s=24, color=GCOL[g], alpha=0.85, edgecolor=SURFACE, linewidth=0.6, label=f"{g} channels (final group)")
+    for i, r in enumerate(ch.reindex(ch.change.abs().sort_values(ascending=False).index).head(6).itertuples()):
+        inward = r.score_base < 0.5     # labels point toward the middle of the plot, never past an edge
+        ax.annotate(r.creator, (r.score_base, r.score_topup), fontsize=6.5, xytext=(5 if inward else -5, 4 if i % 2 else -10), textcoords="offset points", ha="left" if inward else "right")
     nb, nt = int(ch.n_base.median()), int(ch.n_topup.median())
-    ax.set_xlabel(f"score from the original {nb}-title draw ({jname})"); ax.set_ylabel(f"score from the {nt} top-up titles (disjoint, spread across months)")
-    ax.set_title(f"Same channel, two disjoint title sets (Spearman {float(st_j.spearman_base_vs_topup):.2f}, n = {len(ch)})"); ax.legend(fontsize=7.5, loc="upper left")
+    ax.set_xlabel(f"score from the first {nb} titles drawn"); ax.set_ylabel(f"score from the {nt} titles drawn later, from other months")
+    ax.set_title(f"Same channel, two independent draws of titles (Spearman {float(st_j.spearman_base_vs_topup):.2f}, n = {len(ch)})"); ax.legend(fontsize=7.5, loc="upper left")
+    ax.text(0.98, 0.03, f"split-half check: two random halves of {int(sh_j.median_titles_per_half)} titles\nrank the channels at Spearman {float(sh_j.split_half_spearman_mean):.2f} (20 splits)", transform=ax.transAxes, ha="right", va="bottom", fontsize=7.5, color=INK2)
     ax.set_xlim(-1.05, 1.05); ax.set_ylim(-1.05, 1.05)
-    ax = axes[1]
-    vals = [float(sh_j.split_half_spearman_mean), float(st_j.spearman_base_vs_topup)]
-    labels = [f"split-half: two random halves of each channel's titles,\n{int(sh_j.median_titles_per_half)} titles each, mean of 20 splits (n = {int(sh_j.n_channels)})", f"original {nb}-title draw vs the {nt} top-up titles\ndrawn later (n = {len(ch)})"]
-    y = np.arange(2)
-    ax.barh(y, vals, height=0.55, color=[CAT[0], CAT[2]])
-    for yi, v in zip(y, vals):
-        ax.text(v + 0.015, yi, f"{v:.2f}", va="center", fontsize=9, color=INK)
-    ax.set_yticks(y, labels, fontsize=8); ax.set_xlim(0, 1.0); ax.set_ylim(1.6, -0.6); ax.grid(axis="y", visible=False)
-    ax.set_xticks([0, 0.2, 0.4, 0.6, 0.8, 1.0]); ax.set_xlabel("Spearman correlation between the two channel rankings")
-    ax.set_title("Reliability of the channel score")
     fig.tight_layout(); save(fig, "14_leaning_stability.png")
 
 

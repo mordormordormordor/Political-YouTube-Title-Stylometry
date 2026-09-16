@@ -21,8 +21,6 @@ Outputs (data/titles/analysis/):
                                 sampled titles, and the group the score implies (left below
                                 -0.05, right above +0.05, neutral between)
     leaning_groups.csv          the three groups: channels, titles, mean score and composition
-    leaning_self_description*.csv  the model-free anchor: channels whose own YouTube description
-                                carries a leaning word, and whether the score has that sign
     leaning_words.csv           right vs left vocabulary: weighted log-odds (alpha0 = 500) and
                                 rank-turbulence-divergence contributions (alpha = 1/3)
     leaning_split_half.csv      split-half reliability of the channel scores
@@ -324,7 +322,7 @@ def group_month_check(df: pd.DataFrame, judge: str, groups: dict[str, str]) -> p
 def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
     """Two levels. Titles: the judge's labels and their shares. Channels: score = (right - left) / n
     over a channel's sampled titles, the group it implies (left / neutral / right at +-GROUP_EPS),
-    the groups' composition, reliability, the self-description anchor, the group x month table;
+    the groups' composition, reliability, the group x month table;
     then the vocabulary (leaning_words.csv) and the log-odds lexicon (leaning_lexicon.py)."""
     df = df.copy()
     for c in cols:                                   # 'left|democrats_left' -> label column + target column
@@ -380,8 +378,7 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
                       "rtd_contribution": round(c, 5), "rank_right": ra, "rank_left": rb, "n_right_titles": len(r), "n_left_titles": len(l), "rtd_total": round(rtd, 4)})
     pd.DataFrame(wrows).sort_values("z", ascending=False).to_csv(ANALYSIS_DIR / "leaning_words.csv", index=False)
 
-    # the model-free anchor, reliability, months
-    self_description_check(bc)
+    # reliability, months
     shr = split_half_reliability(df, [judge])
     shr.to_csv(ANALYSIS_DIR / "leaning_split_half.csv", index=False)
     if "is_base" in df.columns and "month" in df.columns:
@@ -405,37 +402,6 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
         pick = pd.concat([part.sample(min(140, len(part)), random_state=rng), neu.sample(min(60, len(neu)), random_state=rng)]).sample(frac=1, random_state=rng)
         pick[["row_id", "creator", "title_raw"]].assign(human_label="", human_target="", notes="").to_csv(sheet_path, index=False)
         print(f"blind adjudication sheet written: {sheet_path} ({len(pick)} titles; fill human_label with left / right / neither)", flush=True)
-
-
-SELF_RIGHT = r"\b(conservative|conservatives|republican|maga|right[- ]wing|america first|patriot|patriotic|libertarian|pro[- ]trump)\b"
-SELF_LEFT = r"\b(progressive|progressives|leftist|leftists|socialist|socialists|marxist|left[- ]wing|democratic socialist|liberal|liberals|populist left)\b"
-# hand corrections of the regex on the 2026-09-14 descriptions (read by eye): 'liberal democracy', 'former liberal', a PragerU tagline
-SELF_OVERRIDE = {"@bulwarkmedia": "none", "@UnHerd": "none", "@XAVIAER": "none", "@LiberalHivemind": "right", "@MarkDice": "right", "@RealDanBongino": "right",
-                 "@thejimmydoreshow": "left", "@ponderingpolitics": "left", "@PartOfTheProblem": "right"}
-
-
-def self_declared_leaning(description: str) -> str:
-    """'right' / 'left' / 'none' from leaning words in a channel's own description."""
-    d = str(description).lower()
-    r, l = len(re.findall(SELF_RIGHT, d)), len(re.findall(SELF_LEFT, d))
-    if r == l:
-        return "none"
-    return "right" if r > l else "left"
-
-
-def self_description_check(bc: pd.DataFrame) -> None:
-    """The one model-free anchor: channels whose own YouTube description carries a leaning word,
-    and whether the judge's score has the declared sign."""
-    from pipeline_titles.common import load_channels
-    ch = load_channels().drop_duplicates("creator")[["creator", "description"]].fillna("")
-    ch["self_declared"] = [SELF_OVERRIDE.get(c, self_declared_leaning(d)) for c, d in zip(ch["creator"], ch["description"])]
-    m = bc.merge(ch, on="creator", how="left")
-    m = m[m["self_declared"].isin(["left", "right"])].copy()
-    m["judge_sign"] = np.where(m["score"] > 0, "right", np.where(m["score"] < 0, "left", "tie"))
-    pd.DataFrame([{"n_self_declared": len(m), "n_right_declared": int((m["self_declared"] == "right").sum()), "n_left_declared": int((m["self_declared"] == "left").sum()),
-                   "agreement_with_self_description": round(float((m["judge_sign"] == m["self_declared"]).mean()), 3) if len(m) else np.nan}]).to_csv(ANALYSIS_DIR / "leaning_self_description.csv", index=False)
-    m[["creator", "self_declared", "judge_sign", "score", "group", "description"]].sort_values("score") \
-        .assign(description=lambda d: d.description.str.replace(r"\s+", " ", regex=True).str[:160]).to_csv(ANALYSIS_DIR / "leaning_self_description_channels.csv", index=False)
 
 
 def human_agreement(df: pd.DataFrame, cols: list[str], human_path) -> None:
