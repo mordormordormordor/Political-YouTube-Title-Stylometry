@@ -610,15 +610,20 @@ def _fightin_words(ax_sc, ax_bar, wc, cutoff, sys_left, sys_right, n_label=12, n
             ax_bar.barh(i, sign * length, left=sign * gutter, height=0.64, color=col[side], alpha=0.5 if cut else 0.9, edgecolor="none")
             ax_bar.text(sign * gutter * 0.08, i, r.word, ha="right" if sign < 0 else "left", va="center", fontsize=7.6, color=INK)
             own, other = (r.count_left, r.count_right) if sign < 0 else (r.count_right, r.count_left)
-            ax_bar.text(sign * (gutter + length + 0.025 * cap), i, f"{r.z:+.1f} · {own:,} vs {other:,}", ha="right" if sign < 0 else "left", va="center", fontsize=6.4, color=INK2, fontweight="bold" if cut else "normal")
+            counts = f"{own:,} vs {other:,}"
+            if length >= 0.34 * cap:   # room inside the bar: counts in white at the inner end, z outside at the tip
+                ax_bar.text(sign * (gutter + 0.02 * cap), i, counts, ha="left" if sign > 0 else "right", va="center", fontsize=6.2, color="white")
+                ax_bar.text(sign * (gutter + length + 0.02 * cap), i, f"{r.z:+.1f}", ha="left" if sign > 0 else "right", va="center", fontsize=6.6, color=INK2, fontweight="bold" if cut else "normal")
+            else:
+                ax_bar.text(sign * (gutter + length + 0.02 * cap), i, f"{r.z:+.1f} ({counts})", ha="left" if sign > 0 else "right", va="center", fontsize=6.2, color=INK2)
     ax_bar.axvline(0, color=GRID, lw=1.2)
     ax_bar.text(-gutter, -1.15, f"MORE {sys_left.upper()}", ha="right", va="center", fontsize=8, color=col["left"], fontweight="bold")
     ax_bar.text(gutter, -1.15, f"MORE {sys_right.upper()}", ha="left", va="center", fontsize=8, color=col["right"], fontweight="bold")
-    ax_bar.set_xlim(-(gutter + cap * 1.9), gutter + cap * 1.9); ax_bar.set_ylim(max(len(top_l), len(top_r)) - 0.4, -1.8)
+    ax_bar.set_xlim(-(gutter + cap * 1.32), gutter + cap * 1.32); ax_bar.set_ylim(max(len(top_l), len(top_r)) - 0.4, -1.8)
     ax_bar.set_xticks([]); ax_bar.set_yticks([]); ax_bar.grid(False)
     for sp in ax_bar.spines.values():
         sp.set_visible(False)
-    ax_bar.set_title(f"The {n_bars} words each side over-uses most: z · occurrences on this side vs the other (paler bars are cut at ±{cap:g})")
+    ax_bar.set_title(f"The {n_bars} words each side over-uses most (z at the tip; inside the bar, occurrences on this side vs the other; paler bars are cut at ±{cap:g})")
 
 
 def fig_leaning_logodds():

@@ -113,10 +113,20 @@ Over the labelled titles the two classes are close in size (89 left-class words,
 
 The two lexicons agree: of the 197 words that both the labelled titles and the groups' whole output classify as partisan, 99 % point the same way (kappa 0.12 over three classes, low only because the groups' output, with ten times the titles, classifies many more words). The words that switch sides between the two are rubio, trapped, topic and show-name words rather than stance words.
 
-**What a word list can do on its own.** If the judge's reading were vocabulary, a lexicon built from its own labels should reproduce them. Built out of fold (five folds by channel, so no channel's titles help classify themselves) and applied to titles by majority of classified words, the lexicon agrees with Claude Opus on 53 % of titles (kappa 0.26); it finds a word from the list in 62 % of titles; of the titles the judge called partisan it leaves 32 % as neither, and where both call a title partisan they pick the same side 79 % of the time. The errors are the interesting part: the lexicon calls 31 % of the judge's *neither* titles left and 16 % right, because a plain news headline that mentions MAGA, Epstein or Iran carries left-class words without a left stance; and it recovers the judge's right titles (40 % recall) worse than its left ones (65 %), because the right's stance words are rarer than the left's subject words. At channel level the list does much better, Spearman 0.69 with the judge's channel score and the same group for 62 % of channels: fifty titles average the noise out, and the ordering of channels is largely vocabulary; the title-level call is not.
+**What a word list can do on its own.** The lexicon answers a specific question: how much of the judge's reading is vocabulary? If Claude Opus decided a title's leaning from the words in it, a plain word list built from its own labels should be able to reproduce those labels. So the list is built from the classes above (every word at |z| ≥ 1.96 is a left-class or a right-class word); a title is called left when it holds more left-class than right-class words, right the other way, neither on a tie or with no classified word; and the list is built out of fold, on four fifths of the channels and applied to the remaining fifth, so no channel's titles help classify themselves.
 
 ![Lexicon against the judge.](figures/14_lexicon_vs_judge.png)
-*Left: each channel's score from the out-of-fold lexicon classes against its score from the judge's labels, coloured by the judge's group. Right: the lexicon's class against the judge's label, title by title (row shares).*
+*Left: each channel's score from the word list's labels against its score from Claude Opus's labels, coloured by the judge's group. Right: the word list's class against Claude Opus's label, title by title, with the share of each row.*
+
+Title by title (the right panel; rows are what Claude Opus said, columns what the word list said):
+
+- The list agrees with Claude Opus on 53 % of titles (kappa 0.26), which is weak. Where both call a title partisan they agree on the side 79 % of the time, so the direction is mostly right; the failure is in deciding whether a title is partisan at all.
+- The list finds left-class words in 31 % of the titles Claude Opus called neither and right-class words in another 16 %: a plain headline that mentions MAGA, Epstein or Iran carries left-coded words without a left stance, and a list cannot tell the difference.
+- It also misses partisan titles: it recovers 65 % of the judge's left titles but only 40 % of its right ones, because the right's stance words (woke, fraud, women) are rarer than the left's subject words.
+
+Channel by channel (the left panel; each dot is a channel, its score from the judge's labels across and from the list's labels up), the list does much better: Spearman 0.69, and 62 % of channels land in the same group. Fifty titles average out the noise of single titles, so the ordering of channels is largely a matter of vocabulary even though the title-level call is not.
+
+In one line: vocabulary says roughly where a channel sits, not how any single title reads. The judge reacts to framing, to how the words are put together, and that is the evidence that the labels measure stance rather than subject.
 
 | judge | n_titles | coverage | accuracy | kappa | partisan_titles_lexicon_neither | side_agreement_when_both_partisan | recall_left | recall_right | channel_spearman | channel_group_agreement |
 |---|---|---|---|---|---|---|---|---|---|---|
