@@ -53,7 +53,7 @@ def build() -> dict:
     lanes = load_lanes()
     summ = pd.read_csv(ANALYSIS_DIR / "creator_genre_summary.csv")
     pol = pd.read_csv(ANALYSIS_DIR / "creator_political_share.csv")
-    mix = pd.read_csv(ANALYSIS_DIR / "creator_topic_mix.csv")
+    mix = pd.read_csv(ANALYSIS_DIR / "creator_topic_mix.csv.gz")
     dims = pd.read_csv(DIMENSIONS_CSV)
     fcols = [c[:-4] for c in dims.columns if re.fullmatch(r"F\d+_raw", c)]
     names = json.loads((ANALYSIS_DIR / "factor_names.json").read_text())
@@ -64,7 +64,7 @@ def build() -> dict:
     nn_s = nn_s[nn_s["titles"] == "all"]
     nn_t = pd.read_csv(ANALYSIS_DIR / "neighbours_topic.csv")
     nn_t = nn_t[nn_t["titles"] == "all"]
-    monthly = pd.read_csv(ANALYSIS_DIR / "drift_creator_monthly.csv")
+    monthly = pd.read_csv(ANALYSIS_DIR / "drift_creator_monthly.csv.gz")
     eng = pd.read_csv(ANALYSIS_DIR / "engagement_coefficients.csv")
     hits = pd.read_csv(ANALYSIS_DIR / "hit_concentration.csv")
     fc = pd.read_csv(ANALYSIS_DIR / "features_creator.csv")

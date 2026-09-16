@@ -34,10 +34,11 @@ Six answer a question of their own, each with its method and limitations:
     per channel
 13. [Signature keywords](pipeline_titles/reports/13_signature_keywords.md): the words each
     channel over-uses
-14. [Political leaning from titles](pipeline_titles/reports/14_political_leaning.md): three
-    models (two local, one frontier) label 12,478 titles left / right / neither, 50 per ranked
-    channel; what each model sees, how reliable the channel score is, channel scores against
-    the channels' own descriptions and the lanes, and the words behind each label
+14. [Political leaning from titles](pipeline_titles/reports/14_political_leaning.md): a
+    frontier model labels 12,478 titles left / right / neither from the title text alone, 50
+    per ranked channel; how reliable the channel score is, channel scores against the
+    channels' own descriptions and the lanes, and the words behind each label (allotaxonographs,
+    log-odds, a lexicon check)
 
 - `pipeline_titles/reports/all_tables.md`: the reference dump of every table in one file.
 - `pipeline_titles/reports/methods_appendix.md`: preprocessing, stopwords, feature
@@ -53,20 +54,20 @@ Six answer a question of their own, each with its method and limitations:
 - `data/titles/analysis/`: machine-readable tables. The interface between stages is
   `features.csv` (creator x genre x month), `dimensions.csv` (creator scores, raw and
   topic-controlled), `topics.csv` (title -> topic), `labels.csv` (the 3,000 LLM-rated
-  titles), `leaning_labels.csv` (the 12,478 titles labelled left / right / neither by three
-  judges), `lanes.csv` (lane / organisation / clipper per creator; a proposal to correct).
+  titles), `leaning_labels.csv.gz` (the 12,478 titles labelled left / right / neither by the
+  judge), `lanes.csv` (lane / organisation / clipper per creator; a proposal to correct).
 
 Headline findings from the 2026-09-14 run are in `pipeline_titles/reports/headlines.md`.
 
 ## Data
 
-`data/titles/videos.csv` is the corpus: one row per video with `creator`, `platform`,
+`data/titles/videos.csv.gz` is the corpus (gzipped; pandas reads it as is): one row per video with `creator`, `platform`,
 `tab` (`videos` = edited uploads, `streams` = live-stream VODs), `video_id`, `title`,
 `published` (month-accurate for YouTube, exact for Rumble), `duration`, `view_count`
 (YouTube only, a snapshot at fetch time), `live_status`, `url`, `channel_name`,
 `channel_id`. `data/titles/channels.jsonl` holds subscriber counts, descriptions and tags
 per creator x tab. The creator list is `data/creator_lists/title_stylometry_creators.txt`.
-The raw yt-dlp superset (`videos.jsonl`, 176 MB) is not versioned; the fetcher rebuilds it.
+The raw yt-dlp superset (`videos.jsonl`, 176 MB) is not versioned; the fetcher rebuilds it. The large analysis tables (`topics`, `labels`, `features`, `creator_topic_mix`, `dimensions_monthly`, `drift_creator_monthly`, the leaning labels) are stored as `.csv.gz` for the same reason; every reader takes either form.
 
 Fetching (yt-dlp flat channel listings, no per-video requests):
 
@@ -86,19 +87,22 @@ python -m venv .venv
 .venv/bin/python -m spacy download en_core_web_sm
 ```
 
-LLM steps (title ratings, topic labels, leaning labels) use local Ollama models
-(`qwen3:14b`, `gemma3:12b`); every response is cached under
-`data/titles/analysis/cache/llm*/`, so re-running over an unchanged corpus makes no
-model calls. There is no paid API involved.
+The title ratings and topic labels use local Ollama models (`qwen3:14b`, `gemma3:12b`);
+every response is cached under `data/titles/analysis/cache/llm*/`, so re-running over an
+unchanged corpus makes no model calls. There is no paid API involved.
 
-The leaning stage can also use a frontier model through the Claude Code CLI in print
-mode, which a Claude Pro/Max subscription covers (`npm install -g @anthropic-ai/claude-code`,
+The leaning labels (document 14) come from a frontier model through the Claude Code CLI in
+print mode, which a Claude Pro/Max subscription covers (`npm install -g @anthropic-ai/claude-code`,
 then `claude` once to log in; do not set `ANTHROPIC_API_KEY`, or the CLI bills the API):
 
 ```bash
-.venv/bin/python -m pipeline_titles.leaning --backend claude-code --models opus
+.venv/bin/python -m pipeline_titles.leaning --n-per-creator 50        # Claude Opus, shuffled batches (the default backend)
+.venv/bin/python -m pipeline_titles.leaning --backend ollama --models qwen3:14b gemma3:12b   # local judges instead
 ```
 
+Titles go to the judge in a seeded random order, twenty to a call, so a batch mixes channels
+and a title is never read beside its channel's other titles (`--no-shuffle` restores the
+first pass's sample-order batches; `--relabel` starts afresh and archives the old labels).
 Usage-limit replies are waited out. The sample is a base draw of 16 titles per creator
 plus a top-up to 50, spread evenly across months, for creators with at least 50 edited
 uploads (`--n-per-creator`, `--min-uploads`); the base draw never changes, so earlier
@@ -154,7 +158,7 @@ from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
 | `engagement` | within-creator regressions of log views on style with month and topic controls |
 | `hits` | Gini, top-10 % share, Clauset-Shalizi-Newman tail fit vs lognormal |
 | `profiles` | the question documents 9-13: stylistic twins, outrage by lane with confidence intervals, capitalisation profiles and top words, the arousal index, signature keywords |
-| `leaning` | document 14: left / right / neither labels from three judges (Ollama models; Claude Opus through the Claude Code CLI), channel scores, the self-description and lane yardsticks, split-half and base-vs-top-up reliability, lane x month, weighted log-odds and rank-turbulence words, the log-odds lexicon and its out-of-fold check |
+| `leaning` | document 14: left / right / neither labels from Claude Opus (title text only, shuffled batches), channel scores, the self-description and lane yardsticks, split-half and base-vs-top-up reliability, the shuffled-vs-channel-batched check against the archived first pass, lane x month, weighted log-odds and rank-turbulence words, the log-odds lexicon and its out-of-fold check |
 | `allotax` | allotaxonographs for document 14 (needs Node; see above) |
 | `report_data`, `report` | cards JSON, Markdown report, methods appendix, cards, HTML page |
 

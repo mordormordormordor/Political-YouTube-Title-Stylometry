@@ -41,7 +41,7 @@ def run(info: dict) -> None:
     from scipy.spatial.distance import jensenshannon
     from scipy.stats import spearmanr
     lanes = load_lanes()[["creator", "lane", "organisation", "clipper"]]
-    cells = pd.read_csv(ANALYSIS_DIR / "dimensions_monthly.csv")
+    cells = pd.read_csv(ANALYSIS_DIR / "dimensions_monthly.csv.gz")
     fcols = [c for c in cells.columns if c.startswith("F") and c[1:].isdigit()]
     cells = cells[cells["n_titles"] >= MIN_CELL].drop(columns=["lane"], errors="ignore").merge(lanes, on="creator", how="left")
     prepared = load_prepared()[["row_id", "creator", "genre", "month", "is_dup", "low_n", "n_unique"]]
@@ -52,7 +52,7 @@ def run(info: dict) -> None:
     cm["partial_month"] = cm["month"] == PARTIAL_MONTH
     cm["low_n"] = cm["creator"].map(prepared.groupby("creator")["low_n"].first())
     score_cols = [f + "_controlled" for f in fcols] + fcols + HOOKS + FORMATS
-    cm.to_csv(ANALYSIS_DIR / "drift_creator_monthly.csv", index=False)
+    cm.to_csv(ANALYSIS_DIR / "drift_creator_monthly.csv.gz", index=False)
 
     # lane x genre x month: mean of creator cells (non-low-n)
     ok = cm[~cm["low_n"].fillna(False).astype(bool)]

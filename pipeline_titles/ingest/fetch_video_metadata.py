@@ -34,6 +34,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import gzip
 import json
 import sys
 import time
@@ -304,7 +305,8 @@ def write_csv(jsonl_path: Path, csv_path: Path) -> int:
     """Rebuild videos.csv from videos.jsonl (de-duplicated on platform+tab+id)."""
     seen: set[tuple] = set()
     n = 0
-    with csv_path.open("w", newline="", encoding="utf-8") as fh:
+    opener = (lambda: gzip.open(csv_path, "wt", newline="", encoding="utf-8")) if str(csv_path).endswith(".gz") else (lambda: csv_path.open("w", newline="", encoding="utf-8"))
+    with opener() as fh:
         w = csv.writer(fh)
         w.writerow(CSV_COLUMNS)
         if jsonl_path.is_file():
@@ -372,7 +374,7 @@ def fetch_all(
             print("no such tab" if status == "no_tab" else f"ERROR: {str(e)[:120]}")
         _append(log_path, [rec])
 
-    totals["csv_rows"] = write_csv(videos_path, out_dir / "videos.csv")
+    totals["csv_rows"] = write_csv(videos_path, out_dir / "videos.csv.gz")
     return totals
 
 

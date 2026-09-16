@@ -1,6 +1,3 @@
 score,n_creators,auc_right_vs_left_lane,accuracy_sign_vs_lane,n_nonzero,mean_score_left_lane,mean_score_right_lane
-label_qwen3_14b_score,123,0.6264,0.678,118,0.1135,0.1877
-label_gemma3_12b_score,123,0.976,0.9083,120,-0.2938,0.3551
-label_claude_code_opus_score,123,0.9962,0.9593,123,-0.5774,0.438
-consensus_score,123,0.9847,0.9727,110,-0.331,0.3413
-mean_score,123,0.9962,0.9672,122,-0.2526,0.327
+label_claude_code_opus_score,123,0.9899,0.9512,123,-0.5229,0.4399
+mean_score,123,0.9899,0.9512,123,-0.5229,0.4399

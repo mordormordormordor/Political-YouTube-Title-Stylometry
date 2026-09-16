@@ -48,7 +48,8 @@ plt.rcParams.update({"font.family": "sans-serif", "font.size": 9, "axes.edgecolo
 
 
 def rd(name):
-    return pd.read_csv(A / name)
+    p = A / name
+    return pd.read_csv(p if p.exists() or not (A / (name + ".gz")).exists() else A / (name + ".gz"))
 
 
 SHORT = {"F1": "tone: positive vs outrage", "F2": "clause headline", "F3": "LIVE / labelled", "F4": "stream talk", "F5": "question / explainer",
@@ -464,6 +465,13 @@ def fig_leaning():
     names = {c: _nm(c) for c in cols}
     fig, axes = plt.subplots(1, 2, figsize=(12, 5.4), gridspec_kw={"width_ratios": [1.15, 1]})
     ax = axes[0]
+    if len(cols) < 2:   # one judge: the left panel shows its score against the mean 'neither' share instead
+        for fam in FAMILIES:
+            sub = bc[bc.lane.map(FAMILY_OF) == fam]
+            ax.scatter(sub[f"{summ['judge_of_record']}_neither"], sub[judge], s=26, color=FAM_COLOR[fam], alpha=0.8, edgecolor=SURFACE, linewidth=0.6, label=fam)
+        ax.axhline(0, color=GRID, lw=1); ax.set_xlim(-0.02, 1.02); ax.set_ylim(-1.05, 1.05)
+        ax.set_xlabel("share of the channel's titles labelled neither"); ax.set_ylabel(f"{names[judge]} score (right − left) / n"); ax.legend(fontsize=7.5, loc="upper right")
+        ax.set_title("How partisan a channel's titles read, and which way")
     if len(cols) >= 2:
         ax.plot([-1, 1], [-1, 1], color=GRID, lw=1); ax.axhline(0, color=GRID, lw=1); ax.axvline(0, color=GRID, lw=1)
         for fam in FAMILIES:
@@ -540,7 +548,9 @@ def fig_leaning_channels():
     ax.set_title(f"Mean composition of a channel's titles by lane ({_nm(judge)})")
     fig.tight_layout(); save(fig, "14_leaning_lane_composition.png")
 
-    # three models side by side, per channel
+    # the models side by side, per channel (only when there is more than one)
+    if len(cols) < 2:
+        return
     fig, axes = plt.subplots(1, 2, figsize=(13, 0.135 * half + 1.6))
     mcol = {c: CAT[i] for i, c in enumerate(sorted(cols, key=lambda c: 0 if c == judge else 1))}
     markers = {c: ("o" if c == judge else ("s" if "gemma" in c else "^")) for c in cols}

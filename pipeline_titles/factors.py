@@ -247,7 +247,7 @@ def run(n_factors_forced: Optional[int], info: dict) -> None:
     mres = titles.groupby(["creator", "genre", "month"])[[f + "_resid" for f in fcols]].mean().reset_index()
     mres.columns = ["creator", "genre", "month"] + [f + "_controlled" for f in fcols]
     cells_out = cells_out.merge(mres, on=["creator", "genre", "month"], how="left")
-    cells_out.to_csv(ANALYSIS_DIR / "dimensions_monthly.csv", index=False)
+    cells_out.to_csv(ANALYSIS_DIR / "dimensions_monthly.csv.gz", index=False)
 
     # within the 5 largest shared topics (by number of creators with >= 10 titles in them)
     tl = pd.read_csv(ANALYSIS_DIR / "topic_labels.csv")[["topic_id", "label"]]

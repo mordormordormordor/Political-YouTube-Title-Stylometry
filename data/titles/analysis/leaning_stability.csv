@@ -1,4 +1,2 @@
 model,n_channels,spearman_base_vs_topup,pearson_base_vs_topup,spearman_base_vs_all,lane_auc_base,lane_auc_all,n_commentary,mean_abs_change,median_abs_change,max_abs_change,side_changed,sign_flipped
-label_qwen3_14b,239,0.352,0.327,0.694,0.5286,0.5935,109,0.091,0.068,0.78,65,9
-label_gemma3_12b,239,0.797,0.787,0.909,0.9219,0.9803,109,0.125,0.093,0.685,36,9
-label_claude_code_opus,239,0.958,0.953,0.981,0.9899,0.9967,109,0.075,0.057,0.335,18,2
+label_claude_code_opus,239,0.959,0.954,0.981,0.9855,0.9933,109,0.074,0.057,0.355,23,0

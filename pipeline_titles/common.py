@@ -36,7 +36,7 @@ TITLES_DIR = PROJECT_ROOT / "data" / "titles"
 ANALYSIS_DIR = TITLES_DIR / "analysis"
 CACHE_DIR = ANALYSIS_DIR / "cache"
 REPORTS_DIR = PROJECT_ROOT / "pipeline_titles" / "reports"
-VIDEOS_CSV = TITLES_DIR / "videos.csv"
+VIDEOS_CSV = TITLES_DIR / "videos.csv.gz"          # the large tables are stored gzipped; pandas reads them by extension
 CHANNELS_JSONL = TITLES_DIR / "channels.jsonl"
 CREATOR_LIST = PROJECT_ROOT / "data" / "creator_lists" / "title_stylometry_creators.txt"
 RUNTIMES = ANALYSIS_DIR / "runtimes.jsonl"
@@ -45,14 +45,14 @@ RUNTIMES = ANALYSIS_DIR / "runtimes.jsonl"
 PREPARED = ANALYSIS_DIR / "titles_prepared.parquet"
 LANES_CSV = ANALYSIS_DIR / "lanes.csv"
 ANNOTATIONS = ANALYSIS_DIR / "annotations.parquet"
-TOPICS_CSV = ANALYSIS_DIR / "topics.csv"
+TOPICS_CSV = ANALYSIS_DIR / "topics.csv.gz"
 TOPIC_LABELS_CSV = ANALYSIS_DIR / "topic_labels.csv"
-FEATURES_CSV = ANALYSIS_DIR / "features.csv"
+FEATURES_CSV = ANALYSIS_DIR / "features.csv.gz"
 FEATURES_TITLE = ANALYSIS_DIR / "features_title.parquet"
 FEATURES_CREATOR = ANALYSIS_DIR / "features_creator.csv"
 DIMENSIONS_CSV = ANALYSIS_DIR / "dimensions.csv"
 DIMENSIONS_TITLE = ANALYSIS_DIR / "dimensions_title.parquet"
-LABELS_CSV = ANALYSIS_DIR / "labels.csv"
+LABELS_CSV = ANALYSIS_DIR / "labels.csv.gz"
 FORMATS_PARQUET = ANALYSIS_DIR / "formats.parquet"
 HOOKS_PARQUET = ANALYSIS_DIR / "hooks.parquet"
 
@@ -160,7 +160,7 @@ def top_share(values, frac: float = 0.10) -> float:
 # Loading
 # --------------------------------------------------------------------------- #
 def load_videos(path: Path = VIDEOS_CSV) -> pd.DataFrame:
-    """videos.csv with `genre` (= tab) and `month` added; view_count/duration numeric."""
+    """videos.csv.gz with `genre` (= tab) and `month` added; view_count/duration numeric."""
     df = pd.read_csv(path, dtype=str, keep_default_na=False)
     df["genre"] = df["tab"]
     df["month"] = df["published"].map(month_of)

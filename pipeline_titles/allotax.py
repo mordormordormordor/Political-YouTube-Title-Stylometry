@@ -80,7 +80,7 @@ def comparisons(only: Optional[Sequence[str]] = None) -> list[dict]:
     """The systems to compare: name, titles (long, for the flanks), short names (for the word
     shift header) and the two title lists."""
     out = []
-    labs_path = ANALYSIS_DIR / "leaning_labels.csv"
+    labs_path = ANALYSIS_DIR / "leaning_labels.csv.gz"
     if labs_path.exists():
         labs = pd.read_csv(labs_path)
         cols = [c for c in labs.columns if c.startswith("label_") and c in MODEL_NAMES]

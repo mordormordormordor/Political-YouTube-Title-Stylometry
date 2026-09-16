@@ -292,7 +292,7 @@ def run(fit_size: int, min_cluster_size: int, min_samples: int, max_topics: int,
     mix = u.groupby(["creator", "genre", "topic_id"]).size().rename("n").reset_index()
     mix["share"] = mix["n"] / mix.groupby(["creator", "genre"])["n"].transform("sum")
     mix = mix.merge(labels[["topic_id", "label", "political"]], on="topic_id")
-    mix.to_csv(ANALYSIS_DIR / "creator_topic_mix.csv", index=False)
+    mix.to_csv(ANALYSIS_DIR / "creator_topic_mix.csv.gz", index=False)
     pol = u.groupby(["creator", "genre"]).agg(n_unique=("row_id", "size"), political_share=("political", "mean"),
                                               weak_share=("weak_assignment", "mean")).reset_index()
     pol.merge(lanes, on="creator", how="left").to_csv(ANALYSIS_DIR / "creator_political_share.csv", index=False)

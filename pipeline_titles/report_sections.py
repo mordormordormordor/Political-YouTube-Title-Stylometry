@@ -43,7 +43,8 @@ def lane(l: str) -> str:
 
 
 def rd(name: str) -> pd.DataFrame:
-    return pd.read_csv(A / name)
+    p = A / name
+    return pd.read_csv(p if p.exists() or not (A / (name + ".gz")).exists() else A / (name + ".gz"))   # the large tables are stored gzipped
 
 
 def table(df: pd.DataFrame, cols=None, fmt="{:.2f}", rename=None, max_rows=None) -> str:

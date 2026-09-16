@@ -1,52 +1,25 @@
 {
   "judge_of_record": "label_claude_code_opus",
-  "judge_auc": 0.9962,
-  "judge_accuracy": 0.9593,
+  "judge_auc": 0.9899,
+  "judge_accuracy": 0.9512,
   "per_model": [
-    {
-      "score": "label_qwen3_14b_score",
-      "n_creators": 123,
-      "auc_right_vs_left_lane": 0.6264,
-      "accuracy_sign_vs_lane": 0.678,
-      "n_nonzero": 118,
-      "mean_score_left_lane": 0.1135,
-      "mean_score_right_lane": 0.1877
-    },
-    {
-      "score": "label_gemma3_12b_score",
-      "n_creators": 123,
-      "auc_right_vs_left_lane": 0.976,
-      "accuracy_sign_vs_lane": 0.9083,
-      "n_nonzero": 120,
-      "mean_score_left_lane": -0.2938,
-      "mean_score_right_lane": 0.3551
-    },
     {
       "score": "label_claude_code_opus_score",
       "n_creators": 123,
-      "auc_right_vs_left_lane": 0.9962,
-      "accuracy_sign_vs_lane": 0.9593,
+      "auc_right_vs_left_lane": 0.9899,
+      "accuracy_sign_vs_lane": 0.9512,
       "n_nonzero": 123,
-      "mean_score_left_lane": -0.5774,
-      "mean_score_right_lane": 0.438
-    },
-    {
-      "score": "consensus_score",
-      "n_creators": 123,
-      "auc_right_vs_left_lane": 0.9847,
-      "accuracy_sign_vs_lane": 0.9727,
-      "n_nonzero": 110,
-      "mean_score_left_lane": -0.331,
-      "mean_score_right_lane": 0.3413
+      "mean_score_left_lane": -0.5229,
+      "mean_score_right_lane": 0.4399
     },
     {
       "score": "mean_score",
       "n_creators": 123,
-      "auc_right_vs_left_lane": 0.9962,
-      "accuracy_sign_vs_lane": 0.9672,
-      "n_nonzero": 122,
-      "mean_score_left_lane": -0.2526,
-      "mean_score_right_lane": 0.327
+      "auc_right_vs_left_lane": 0.9899,
+      "accuracy_sign_vs_lane": 0.9512,
+      "n_nonzero": 123,
+      "mean_score_left_lane": -0.5229,
+      "mean_score_right_lane": 0.4399
     }
   ]
 }

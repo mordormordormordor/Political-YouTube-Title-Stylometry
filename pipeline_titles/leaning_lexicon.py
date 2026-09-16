@@ -197,7 +197,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap.add_argument("--cutoff", type=float, default=CUTOFF)
     a = ap.parse_args(argv)
     with stage_timer("leaning_lexicon", cutoff=a.cutoff) as info:
-        df = pd.read_csv(ANALYSIS_DIR / "leaning_labels.csv")
+        df = pd.read_csv(ANALYSIS_DIR / "leaning_labels.csv.gz")
         cols = [c for c in df.columns if c.startswith("label_")]
         judge = json.loads((ANALYSIS_DIR / "leaning_summary.json").read_text())["judge_of_record"]
         run(df, cols, judge, a.cutoff, info)

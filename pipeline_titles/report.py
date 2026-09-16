@@ -55,6 +55,8 @@ def md_table(df: pd.DataFrame, cols: Optional[list] = None, floatfmt: str = "{:.
 
 def read(name: str) -> Optional[pd.DataFrame]:
     p = A / name
+    if not p.exists() and (A / (name + ".gz")).exists():   # the large tables are stored gzipped
+        p = A / (name + ".gz")
     return pd.read_csv(p) if p.exists() else None
 
 
@@ -257,7 +259,7 @@ def methods_appendix() -> str:
     out.append("\n## Validation\n\n" + md_table(read("validation_candidates.csv")) + "\n" + md_table(read("validation_retest.csv")) + "\n" + md_table(read("validation_creator_level.csv"), floatfmt="{:.3f}"))
     out.append("\n## Hook classifier\n\n```\n" + (A / "hook_classifier.json").read_text() + "\n```\n")
     out.append("\n## LLM rating prompt (labels.csv; exact text)\n\n")
-    lab = pd.read_csv(A / "labels.csv", nrows=1)
+    lab = read("labels.csv").head(1)
     out.append(f"Model `{lab['model'].iloc[0]}`, temperature {lab['temperature'].iloc[0]}, prompt id `{lab['prompt_id'].iloc[0]}`, sha256 `{lab['prompt_sha256'].iloc[0]}`, rated {lab['rated_at'].iloc[0]}.\n\n```\n{lab['prompt'].iloc[0]}\n```\n")
     out.append("\n## Topic label prompt\n\n```\n" + topics.LABEL_PROMPT + "\n```\n")
     from pipeline_titles import leaning

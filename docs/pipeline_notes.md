@@ -54,7 +54,7 @@ A failing handle is logged with its error and the run continues.
 
 | File | Tracked | One row per | Contents |
 |------|---------|-------------|----------|
-| `videos.csv` | no (~70 MB) | creator × tab × video | the analysis table (columns below); archive a dated copy off-repo if the snapshot matters |
+| `videos.csv.gz` | yes (16 MB gzipped) | creator × tab × video | the analysis table (columns below); archive a dated copy off-repo if the snapshot matters |
 | `channels.jsonl` | yes | creator × tab | channel name/id, follower count, description, tags, verified flag, videos listed |
 | `videos.jsonl` | no | creator × tab × video | every flat field yt-dlp returned (superset of the CSV), rebuildable |
 | `fetch_log.jsonl` | no | creator × tab | ok/error, listed/kept/undated counts, seconds, timestamp - the resume ledger |

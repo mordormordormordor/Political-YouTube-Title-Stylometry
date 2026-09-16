@@ -1,125 +1,20 @@
 {
-  "n_labelled_by_all": 12437,
+  "n_labelled_by_all": 12478,
   "models": [
-    "label_qwen3_14b",
-    "label_gemma3_12b",
     "label_claude_code_opus"
   ],
   "label_shares": {
-    "label_qwen3_14b": {
-      "neither": 0.7101,
-      "right": 0.2054,
-      "left": 0.0845
-    },
-    "label_gemma3_12b": {
-      "neither": 0.4653,
-      "right": 0.2797,
-      "left": 0.255
-    },
     "label_claude_code_opus": {
-      "neither": 0.5768,
-      "left": 0.2399,
-      "right": 0.1832
+      "neither": 0.5521,
+      "left": 0.2431,
+      "right": 0.2048
     }
   },
-  "pairs": [
-    {
-      "a": "label_qwen3_14b",
-      "b": "label_gemma3_12b",
-      "kappa": 0.3748,
-      "exact_agreement": 0.6308,
-      "kappa_political_only": 0.3213,
-      "confusion": {
-        "left": {
-          "left": 775,
-          "neither": 1464,
-          "right": 932
-        },
-        "neither": {
-          "left": 50,
-          "neither": 5592,
-          "right": 145
-        },
-        "right": {
-          "left": 226,
-          "neither": 1775,
-          "right": 1478
-        }
-      }
-    },
-    {
-      "a": "label_qwen3_14b",
-      "b": "label_claude_code_opus",
-      "kappa": 0.3383,
-      "exact_agreement": 0.6477,
-      "kappa_political_only": 0.1332,
-      "confusion": {
-        "left": {
-          "left": 619,
-          "neither": 1275,
-          "right": 1090
-        },
-        "neither": {
-          "left": 171,
-          "neither": 6487,
-          "right": 516
-        },
-        "right": {
-          "left": 261,
-          "neither": 1069,
-          "right": 949
-        }
-      }
-    },
-    {
-      "a": "label_gemma3_12b",
-      "b": "label_claude_code_opus",
-      "kappa": 0.5095,
-      "exact_agreement": 0.6963,
-      "kappa_political_only": 0.5748,
-      "confusion": {
-        "left": {
-          "left": 1995,
-          "neither": 393,
-          "right": 596
-        },
-        "neither": {
-          "left": 810,
-          "neither": 5073,
-          "right": 1291
-        },
-        "right": {
-          "left": 366,
-          "neither": 321,
-          "right": 1592
-        }
-      }
-    }
-  ],
-  "kappa": 0.3748,
-  "exact_agreement": 0.6308,
-  "confusion": {
-    "left": {
-      "left": 775,
-      "neither": 1464,
-      "right": 932
-    },
-    "neither": {
-      "left": 50,
-      "neither": 5592,
-      "right": 145
-    },
-    "right": {
-      "left": 226,
-      "neither": 1775,
-      "right": 1478
-    }
-  },
-  "kappa_political_only": 0.3213,
-  "all_models_agree_share": 0.5097,
+  "pairs": [],
+  "all_models_agree_share": 1.0,
   "consensus_label_shares": {
-    "neither": 0.7845,
-    "right": 0.1284,
-    "left": 0.0871
+    "neither": 0.5521,
+    "left": 0.2431,
+    "right": 0.2048
   }
 }

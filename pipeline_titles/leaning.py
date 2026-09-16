@@ -1,9 +1,12 @@
-"""Stage 7 - political leaning from titles alone, judged by three models.
+"""Stage 7 - political leaning from titles alone, judged by a frontier model.
 
-A creator-balanced sample is labelled left / right / neither by two local models of
-different families (Qwen3-14B and Gemma-3-12B via Ollama) and, optionally, a frontier
-model through the Claude Code CLI; temperature 0, batches of 20, every response
-cached. The label is the viewpoint the TITLE'S OWN WORDING signals, not the subject.
+A creator-balanced sample is labelled left / right / neither by Claude Opus through the
+Claude Code CLI (temperature 0, batches of 20 titles in a seeded random order, every
+response cached); local Ollama models (Qwen3-14B, Gemma-3-12B) remain available as a
+backend. The label is the viewpoint the TITLE'S OWN WORDING signals, not the subject.
+The first pass (2026-09-15, three judges, batches in sample order) is archived as
+leaning_labels_pass1_channel_batched.csv.gz (its Claude Opus column only) and compared with the current labels by
+batch_context_check().
 
 Sample. Every creator gets a base draw of N_PER_CREATOR (16) unique edited-upload
 titles (seed 20260914; live VODs top up creators with fewer uploads). Creators with at
@@ -88,7 +91,7 @@ LABELS = ("left", "right", "neither")
 TARGETS = ("trump_administration", "democrats_left", "republicans_right", "media", "foreign", "other", "none")
 CLAUDE_BIN = shutil.which("claude") or "/opt/homebrew/bin/claude"
 LIMIT_WAITS = (300, 900, 1800, 3600, 3600, 3600)
-LABELS_CSV = ANALYSIS_DIR / "leaning_labels.csv"
+LABELS_CSV = ANALYSIS_DIR / "leaning_labels.csv.gz"
 LLM_CACHE = CACHE_DIR / "llm_leaning"
 
 PROMPT = """You are classifying YouTube video titles from political-media channels by the political viewpoint the TITLE ITSELF signals.
@@ -198,9 +201,13 @@ def label_batch(titles: Sequence[str], model: str, info: dict, backend: str = "o
     return parse_labels(rec["response"], len(titles))
 
 
-def label_titles(titles: Sequence[str], model: str, info: dict, backend: str = "ollama", prompt_version: str = "v1") -> list[Optional[str]]:
+def label_titles(titles: Sequence[str], model: str, info: dict, backend: str = "ollama", prompt_version: str = "v1", shuffle: bool = True) -> list[Optional[str]]:
+    """Label every title; `shuffle` (default) sends titles to the model in a seeded random
+    order, so a batch of 20 mixes channels and a title is never judged in the company of
+    its own channel's other titles (the first pass, 2026-09-15, batched in sample order,
+    which put one or two channels in every batch)."""
     results: list[Optional[str]] = [None] * len(titles)
-    pending = list(range(len(titles)))
+    pending = list(np.random.RandomState(SEED).permutation(len(titles))) if shuffle else list(range(len(titles)))
     for size in (BATCH, 5, 1):
         if not pending:
             break
@@ -463,6 +470,8 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
 
     # channels' own words as a lane-independent yardstick: leaning words in the channel description
     self_description_check(bc, cols)
+    # the same judge twice: this pass (shuffled batches) against the archived first pass (batches in sample order, one or two channels each)
+    batch_context_check(df, bc, judge.replace("_score", ""))
     # log-odds lexicons (left / right / neither at a z cutoff), their agreement across comparisons, and the out-of-fold lexicon check
     from pipeline_titles.leaning_lexicon import run as lexicon_run
     lexicon_run(df, cols, judge.replace("_score", ""), info=info)
@@ -529,6 +538,46 @@ def self_description_check(bc: pd.DataFrame, cols: list[str]) -> None:
         .assign(description=lambda d: d.description.str.replace(r"\s+", " ", regex=True).str[:160]).to_csv(ANALYSIS_DIR / "leaning_self_description_channels.csv", index=False)
 
 
+PASS1_CSV = ANALYSIS_DIR / "leaning_labels_pass1_channel_batched.csv.gz"
+
+
+def batch_context_check(df: pd.DataFrame, bc: pd.DataFrame, judge: str) -> None:
+    """How much the batch context of the first pass mattered: the judge's labels from this
+    pass (titles in a seeded random order, so a batch mixes channels) against its labels
+    from the archived first pass (batches in sample order, one or two channels each), title
+    by title and channel by channel. Writes leaning_batch_context_check.json and
+    leaning_batch_context_channels.csv; silent when there is no archive or the judge is not in it."""
+    from sklearn.metrics import cohen_kappa_score, roc_auc_score
+    if not PASS1_CSV.exists() or judge not in df.columns:
+        return
+    old = pd.read_csv(PASS1_CSV)
+    if judge not in old.columns:
+        return
+    m = df[["row_id", "creator", "lane", "title_raw", judge]].merge(old[["row_id", judge]].rename(columns={judge: "label_pass1"}), on="row_id").dropna(subset=[judge, "label_pass1"])
+    new, first = m[judge], m["label_pass1"]
+    part_new, part_first = new.isin(["left", "right"]), first.isin(["left", "right"])
+    both = part_new & part_first
+    out = {"judge": judge, "n_titles": int(len(m)), "exact_agreement": round(float((new == first).mean()), 4), "kappa": round(float(cohen_kappa_score(new, first)), 4),
+           "partisan_share_pass1": round(float(part_first.mean()), 4), "partisan_share_shuffled": round(float(part_new.mean()), 4),
+           "side_flipped": int(((new == "left") & (first == "right")).sum() + ((new == "right") & (first == "left")).sum()),
+           "partisan_to_neither": int((part_first & ~part_new).sum()), "neither_to_partisan": int((~part_first & part_new).sum()),
+           "same_side_when_both_partisan": round(float((new[both] == first[both]).mean()), 4) if both.any() else None,
+           "confusion_pass1_rows_shuffled_cols": pd.crosstab(first, new).reindex(index=LABELS, columns=LABELS, fill_value=0).to_dict()}
+    ch = m.groupby("creator").agg(lane=("lane", "first"), n_titles=(judge, "size"), score_shuffled=(judge, lambda s: _score(s)), score_pass1=("label_pass1", lambda s: _score(s))).reset_index()
+    ch["change"] = ch["score_shuffled"] - ch["score_pass1"]
+    ch["side_shuffled"], ch["side_pass1"] = _side(ch["score_shuffled"]), _side(ch["score_pass1"])
+    big = ch[ch["n_titles"] >= 16]
+    out["n_channels"] = int(len(big)); out["channel_spearman"] = round(float(big["score_shuffled"].corr(big["score_pass1"], method="spearman")), 4)
+    out["channel_mean_abs_change"] = round(float(big["change"].abs().mean()), 4); out["channel_side_changed"] = int((big["side_shuffled"] != big["side_pass1"]).sum())
+    two = big[big["lane"].isin(["left_commentary", "right_commentary"])]; y = (two["lane"] == "right_commentary").astype(int)
+    if y.nunique() == 2:
+        out["lane_auc_pass1"] = round(float(roc_auc_score(y, two["score_pass1"])), 4); out["lane_auc_shuffled"] = round(float(roc_auc_score(y, two["score_shuffled"])), 4)
+    (ANALYSIS_DIR / "leaning_batch_context_check.json").write_text(json.dumps(out, indent=2))
+    ch.sort_values("change").to_csv(ANALYSIS_DIR / "leaning_batch_context_channels.csv", index=False)
+    m[new != first][["row_id", "creator", "lane", "title_raw", "label_pass1", judge]].rename(columns={judge: "label_shuffled"}).to_csv(ANALYSIS_DIR / "leaning_batch_context_changed_titles.csv", index=False)
+    print(f"batch-context check: exact agreement {out['exact_agreement']}, kappa {out['kappa']}, channel Spearman {out['channel_spearman']}", flush=True)
+
+
 def human_agreement(df: pd.DataFrame, cols: list[str], human_path) -> None:
     """Every model's agreement with the filled human sheet (kappa, exact agreement, confusion)."""
     from sklearn.metrics import cohen_kappa_score
@@ -548,8 +597,10 @@ def human_agreement(df: pd.DataFrame, cols: list[str], human_path) -> None:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--models", nargs="+", default=MODELS)
-    ap.add_argument("--backend", choices=("ollama", "claude-code"), default="ollama")
+    ap.add_argument("--models", nargs="+", default=["opus"], help="ollama model names, or Claude Code model aliases with --backend claude-code (default: opus)")
+    ap.add_argument("--backend", choices=("ollama", "claude-code"), default="claude-code")
+    ap.add_argument("--relabel", action="store_true", help="start the labels file afresh for the listed models (the old file is archived as leaning_labels_pass1_channel_batched.csv.gz); other models' columns are dropped")
+    ap.add_argument("--no-shuffle", action="store_true", help="batch titles in sample order (one or two channels per batch) instead of a seeded random order")
     ap.add_argument("--prompt-version", choices=tuple(PROMPTS), default="v1")
     ap.add_argument("--human-labels", default=None, help="filled leaning_human_sheet.csv: report every model's agreement with the human labels")
     ap.add_argument("--n-per-creator", type=int, default=N_PER_CREATOR, help="titles per ranked creator (base 16 for everyone; top-up spread across months)")
@@ -557,7 +608,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap.add_argument("--analyse-only", action="store_true")
     ap.add_argument("--limit", type=int, default=None)
     a = ap.parse_args(argv)
-    with stage_timer("stage7_leaning", models=a.models, backend=a.backend, prompt_id=f"leaning-{a.prompt_version}",
+    with stage_timer("stage7_leaning", models=a.models, backend=a.backend, prompt_id=f"leaning-{a.prompt_version}", batch_order="sample order" if a.no_shuffle else "shuffled",
                      api_cost_usd=0.0 if a.backend == "ollama" else "subscription (claude -p); see reported_cost_usd") as info:
         lanes = load_lanes()[["creator", "lane"]]
         keep_cols = ["row_id", "video_id", "creator", "genre", "lane", "month", "is_base", "title_raw", "title_norm"]
@@ -571,20 +622,26 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             df = draw_sample(prepared, a.n_per_creator, min_uploads=a.min_uploads).merge(lanes, on="creator", how="left")
             if a.limit:
                 df = df.head(a.limit)
-            if LABELS_CSV.exists():   # keep labels already on disk for other models
+            if LABELS_CSV.exists() and not a.relabel:   # keep labels already on disk for other models
                 old = pd.read_csv(LABELS_CSV)
                 for c in [c for c in old.columns if c.startswith("label_")]:
                     df = df.merge(old[["row_id", c]], on="row_id", how="left")
+            elif LABELS_CSV.exists():
+                archive = ANALYSIS_DIR / "leaning_labels_pass1_channel_batched.csv.gz"
+                if not archive.exists():
+                    shutil.copy(LABELS_CSV, archive)
+                print(f"--relabel: previous labels archived at {archive.name}; labelling afresh with {a.models}", flush=True)
             print(f"sample: {len(df)} titles from {df['creator'].nunique()} creators", flush=True)
             for model in a.models:
                 col = model_col(model if a.backend == "ollama" else f"claude_code_{model}") + ("" if a.prompt_version == "v1" else f"_{a.prompt_version}")
                 todo = df[col].isna() if col in df.columns else pd.Series(True, index=df.index)
                 if todo.any():
-                    labs = label_titles(df.loc[todo, "title_raw"].tolist(), model, info, a.backend, a.prompt_version)
+                    labs = label_titles(df.loc[todo, "title_raw"].tolist(), model, info, a.backend, a.prompt_version, shuffle=not a.no_shuffle)
                     df.loc[todo, col] = labs
                 print(f"{model}: {df[col].notna().sum()}/{len(df)} labelled", flush=True)
             df["prompt_id"] = f"leaning-{a.prompt_version}"; df["prompt_sha256"] = hashlib.sha256(PROMPTS[a.prompt_version].encode()).hexdigest(); df["temperature"] = 0.0; df["labelled_at"] = utc_now()
-            keep = keep_cols + [c for c in df.columns if c.startswith("label_")] + ["prompt_id", "prompt_sha256", "temperature", "labelled_at"]
+            df["batch_order"] = "sample order" if a.no_shuffle else "shuffled"
+            keep = keep_cols + [c for c in df.columns if c.startswith("label_")] + ["prompt_id", "prompt_sha256", "temperature", "labelled_at", "batch_order"]
             df[keep].to_csv(LABELS_CSV, index=False)
             (CACHE_DIR / "leaning_prompt.txt").write_text(PROMPT, encoding="utf-8")
             (CACHE_DIR / "leaning_prompt_v2.txt").write_text(PROMPT_V2, encoding="utf-8")
