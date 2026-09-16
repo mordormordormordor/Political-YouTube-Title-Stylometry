@@ -9,9 +9,9 @@ titles against the left-side titles and its z-score. A word is `right` when z >=
 `left` when z <= -cutoff, otherwise `neither` (cutoff 1.96 = the two-sided 5 % level; words
 with fewer than 3 occurrences in both sides together are not classified).
 
-Comparisons (left side vs right side): opus / gemma / qwen (titles the model labelled left vs
-right), consensus (all three agree) and lanes (left- vs right-commentary channels, the
-creator-balanced unique uploads), the same systems as the allotaxonographs.
+Comparisons (left side vs right side): opus (titles the judge labelled left vs right) and
+lanes (left- vs right-commentary channels, the creator-balanced unique uploads), the same
+systems as the allotaxonographs.
 
 The lexicon check. For each judge, its labelled titles are split into five folds by channel;
 the lexicon is built on four folds and applied to the fifth, so no channel's titles help

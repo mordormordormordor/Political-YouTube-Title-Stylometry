@@ -15,3 +15,5 @@ pipeline_titles/allotax_js/node_modules/
 # Run logs
 data/titles/fetch.log
 data/titles/analysis/*.log
+# --relabel keeps the previous labels here
+data/titles/analysis/leaning_labels_previous.csv.gz

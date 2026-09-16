@@ -503,8 +503,8 @@ LANE_ABBR = {"left_commentary": "left comm.", "right_commentary": "right comm.",
 
 
 def fig_leaning_channels():
-    """Per-channel breakdowns: stacked left / neither / right shares from the judge of record for every
-    channel (two columns, sorted), the same per lane, and the three models' scores side by side."""
+    """Per-channel breakdowns: stacked left / neither / right shares for every channel (two
+    columns, sorted) and the same per lane."""
     if not (A / "leaning_by_creator.csv").exists():
         return
     bc = rd("leaning_by_creator.csv"); summ = json.loads((A / "leaning_summary.json").read_text())
@@ -547,24 +547,6 @@ def fig_leaning_channels():
     ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0)); ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=3, fontsize=8)
     ax.set_title(f"Mean composition of a channel's titles by lane ({_nm(judge)})")
     fig.tight_layout(); save(fig, "14_leaning_lane_composition.png")
-
-    # the models side by side, per channel (only when there is more than one)
-    if len(cols) < 2:
-        return
-    fig, axes = plt.subplots(1, 2, figsize=(13, 0.135 * half + 1.6))
-    mcol = {c: CAT[i] for i, c in enumerate(sorted(cols, key=lambda c: 0 if c == judge else 1))}
-    markers = {c: ("o" if c == judge else ("s" if "gemma" in c else "^")) for c in cols}
-    for ax, sl in zip(axes, (slice(0, half), slice(half, len(d)))):
-        y = np.arange(sl.stop - sl.start)
-        ax.axvline(0, color=INK, lw=0.8)
-        for yi in y[::2]:
-            ax.axhspan(yi - 0.5, yi + 0.5, color=GRID, alpha=0.35, lw=0)
-        for c in cols:
-            ax.plot(d[f"{c}_score"].iloc[sl], y, markers[c], color=mcol[c], ms=3.6 if c == judge else 3, alpha=0.9 if c == judge else 0.6, label=_nm(c), lw=0)
-        ax.set_yticks(y, labels[sl], fontsize=5.6); ax.set_ylim(len(y) - 0.5, -0.5); ax.set_xlim(-1.05, 1.05); ax.grid(axis="y", visible=False); ax.tick_params(axis="x", labelsize=7, top=True, labeltop=True)
-    fig.legend(*axes[0].get_legend_handles_labels(), loc="upper right", fontsize=8, ncol=3, frameon=False, bbox_to_anchor=(0.99, 0.995))
-    fig.suptitle("Each channel's score from the three models (−1 = every title read left, +1 = every title read right; sorted by the judge of record)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
-    fig.tight_layout(rect=(0, 0, 1, 0.975)); save(fig, "14_leaning_models_by_channel.png")
 
 
 def fig_leaning_stability():

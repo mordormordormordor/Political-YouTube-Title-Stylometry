@@ -26,24 +26,6 @@ def _json(name: str) -> dict | None:
     return json.loads((A / name).read_text()) if (A / name).exists() else None
 
 
-def _batch_context_section(bcc: dict | None, changed: pd.DataFrame | None, labs: pd.DataFrame, jname: str, judge: str) -> str:
-    if bcc is None:
-        return "_(no archived first pass to compare with)_"
-    conf = bcc["confusion_pass1_rows_shuffled_cols"]
-    rows = [{"first pass (channel batches)": r, "shuffled: left": conf["left"][r], "shuffled: neither": conf["neither"][r], "shuffled: right": conf["right"][r]} for r in ("left", "neither", "right")]
-    ex = ""
-    if changed is not None and len(changed):
-        pick = changed[changed.creator.isin(["@MeidasTouch", "@PTLRadioShow", "@Reuters", "@AssociatedPress"])].head(10)
-        if len(pick):
-            ex = "\nTitles whose label changed when their channel's other titles were taken out of the batch (a sample from MeidasTouch, PTL Radio and the wires):\n\n" + table(pick, ["creator", "title_raw", "label_pass1", "label_shuffled"])
-    auc = f" The lane AUC moved from {bcc['lane_auc_pass1']:.3f} to {bcc['lane_auc_shuffled']:.3f}." if "lane_auc_pass1" in bcc else ""
-    return f"""The first pass batched titles in sample order, so each call to the judge held one or two channels' titles and a title could be read by the company it kept. This pass sends the same {bcc['n_titles']:,} titles in a seeded random order, so a batch mixes channels and the judge sees nothing but the title. The two passes of the same judge agree on {pct(bcc['exact_agreement'])} of titles (kappa {bcc['kappa']:.2f}); {pct(bcc['partisan_share_pass1'])} of titles read as partisan with channel context and {pct(bcc['partisan_share_shuffled'])} without it; {bcc['partisan_to_neither']:,} titles went from partisan to neither and {bcc['neither_to_partisan']:,} the other way; {bcc['side_flipped']} switched side. Where both passes call a title partisan they agree on the side {pct(bcc['same_side_when_both_partisan'])} of the time. Channel by channel the two passes rank the {bcc['n_channels']} channels at Spearman {bcc['channel_spearman']:.2f}, with a mean absolute change of {bcc['channel_mean_abs_change']:.2f} in the score and {bcc['channel_side_changed']} channels changing their call.{auc}
-
-{table(pd.DataFrame(rows), fmt='{:.0f}')}
-{ex}
-So the channel context of the first pass {'did lift the partisan share and the within-channel consistency, by the amounts above; the figures in this document are the context-free ones' if bcc['partisan_share_pass1'] - bcc['partisan_share_shuffled'] > 0.03 else 'changed little: the judge reads the title, and the numbers in this document are the context-free ones'}."""
-
-
 def _allotax_reading(allo: pd.DataFrame | None, allo_c: pd.DataFrame | None, jname: str) -> str:
     if allo is None or allo_c is None or not (allo.comparison == "opus").any():
         return "_(allotaxonographs not rendered on this run: see the README for the Node step)_"
@@ -111,7 +93,6 @@ def doc_leaning() -> str:
     shr = _opt("leaning_split_half.csv"); stab = _opt("leaning_stability.csv"); stab_ch = _opt("leaning_stability_channels.csv"); lm = _opt("leaning_by_lane_month.csv")
     allo = _opt("allotax_summary.csv"); allo_c = _opt("allotax_contributions.csv")
     lo_s = _opt("leaning_logodds_summary.csv"); lo_ag = _opt("leaning_logodds_agreement.csv"); lex = _opt("leaning_lexicon_validation.csv")
-    bcc = _json("leaning_batch_context_check.json"); changed = _opt("leaning_batch_context_changed_titles.csv")
     judge = summ["judge_of_record"]; jname = _mname(judge); js = judge + "_score"
     shares = ag["label_shares"][judge]
     vj = val[val.score == js].iloc[0]
@@ -150,7 +131,7 @@ def doc_leaning() -> str:
         month_partisan = lm.groupby("month").apply(lambda g: np.average(g.partisan_share, weights=g.n_titles), include_groups=False)
     return f"""# 14. Political leaning from titles alone
 
-**The question.** Can a channel's political leaning be read off its titles, and what does a reader react to when reading one? A frontier model ({jname}, through the Claude Code CLI) labels each sampled title as left, right or neither from the title text alone; a channel's score is the balance of right over left labels. Everything here is *model-perceived* leaning: how a careful, reader-like model reads the wording of a title. The sample is 16 titles per channel plus a top-up to 50, spread evenly across the months, for every channel with at least 50 edited uploads ({n50} of {len(bc)} channels; the other {nbase} stay at their base draw). This is the third pass: the first labelled 16 titles per channel with three judges, the second topped up to 50, and this one relabels everything with the titles shuffled so that no title is judged next to its channel's other titles (see "The same judge twice" below).
+**The question.** Can a channel's political leaning be read off its titles, and what does a reader react to when reading one? A frontier model ({jname}, through the Claude Code CLI) labels each sampled title as left, right or neither from the title text alone; a channel's score is the balance of right over left labels. Everything here is *model-perceived* leaning: how a careful, reader-like model reads the wording of a title. The sample is 16 titles per channel plus a top-up to 50, spread evenly across the months, for every channel with at least 50 edited uploads ({n50} of {len(bc)} channels; the other {nbase} stay at their base draw).
 
 ## The finding in one paragraph
 
@@ -158,10 +139,6 @@ def doc_leaning() -> str:
 
 ![Scores and lanes.](figures/14_leaning_scores.png)
 *Left: each channel's score against the share of its titles read as neither. Right: the score by lane, dots = channels.*
-
-## The same judge twice: does the batch matter?
-
-{_batch_context_section(bcc, changed, labs, jname, judge)}
 
 ## How much a channel's score depends on which titles were drawn
 
@@ -266,17 +243,13 @@ The allotaxonograph does not need a judge: applied to what the two commentary la
 
 {_allotax_lanes_reading(allo, allo_c)}
 
-## Why one judge
-
-The first pass (2026-09-15) used three judges: Qwen3-14B and Gemma-3-12B locally through Ollama beside {jname}. It settled the question of which to keep. The frontier model read stance, matched the channels' self-descriptions in 35 of 36 cases and separated the commentary lanes at AUC 0.99; Gemma got most channels right but read hostile coverage as the target's side (MeidasTouch +0.04 for Gemma, −0.92 for {jname}); Qwen called seven in ten titles neither and read subject rather than stance, with "trump" on its right. The three agreed on 51 % of titles, almost all of them neither. Those labels are archived in `leaning_labels_pass1_channel_batched.csv.gz`, and the three-judge version of this document is in the repository's history; from here on the project uses the one judge that reads the wording.
-
 ## Method
 
 1. **Sample.** Every creator gets a base draw of 16 unique edited-upload titles (seed 20260914; creators with fewer than 16 uploads topped up from live VODs). Creators with at least 50 unique uploads are then topped up to 50 with further uploads spread evenly across months (round-robin over the months, random within month, its own random stream), so the extra titles never depend on which month a creator posted most in: {len(labs):,} titles, {n50} creators at 50, {nbase} at their base.
-2. **Labelling.** One prompt (in `leaning.py` and the methods appendix): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0; the judge sees the title text only, numbered 1 to 20, never the channel name; titles are sent in a seeded random order so that a batch mixes channels; every response cached. {jname} runs through the Claude Code CLI in print mode on a Claude Max subscription ({cc_calls:,} calls, {cc_min:.0f} minutes for this pass; the CLI reported an equivalent API cost of ${cc_cost:.2f}, not charged).
+2. **Labelling.** One prompt (in `leaning.py` and the methods appendix): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0; the judge sees the title text only, numbered 1 to 20, never the channel name; titles are sent in a seeded random order so that a batch mixes channels; every response cached. {jname} runs through the Claude Code CLI in print mode on a Claude Max subscription ({cc_calls:,} calls, {cc_min:.0f} minutes; the CLI reported an equivalent API cost of ${cc_cost:.2f}, not charged).
 3. **Scores.** Per channel: shares of left / right / neither and score = (right − left) / n; a channel is called right above +0.05, left below −0.05.
 4. **Yardsticks.** Self-description: a channel counts as self-declared right or left when its YouTube description contains leaning words (conservative, MAGA, libertarian, right-wing ... vs progressive, leftist, socialist, liberal ...), with nine hand corrections for phrases like "liberal democracy" or "former liberal"; agreement is the share of those channels whose score has the declared sign. Lanes: AUC and sign accuracy over the two commentary lanes only.
-5. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), plus the lane AUC from each. Batch context: this pass against the archived first pass, title by title (agreement, kappa, confusion) and channel by channel (`leaning_batch_context_check.json`, `leaning_batch_context_channels.csv`, `leaning_batch_context_changed_titles.csv`).
+5. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), plus the lane AUC from each.
 6. **Words.** Weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
 7. **Log-odds lexicon.** Every word with 3+ occurrences in the two systems together, right against left; right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for the two lanes, and Cohen's kappa of the classes between the two over their shared words. The lexicon check: the labelled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
 8. **Allotaxonographs.** Drawn by allotaxonometer-ui {allo.allotaxonometer_ui.iloc[0] if allo is not None else ''} (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
@@ -285,11 +258,11 @@ The first pass (2026-09-15) used three judges: Qwen3-14B and Gemma-3-12B locally
 ## Limitations
 
 - **This is perceived leaning.** A model reads a title the way an attentive reader would, and readers disagree. No human panel was used, by choice: one reader cannot supply political ground truth, and a balanced panel is a study of its own. A blind 200-title sheet exists (`leaning_human_sheet.csv`, still unfilled) for anyone who wants a single-reader reliability check.
-- **One judge.** Every number here is one model's reading. The first pass showed that the reading depends heavily on the model (see "Why one judge"), so a second frontier model of a different family would be the natural robustness check; the pipeline takes one with `--backend claude-code --models <alias>` or any Ollama model.
+- **One judge.** Every number here is one model's reading, and a model reads a title the way it was trained to; a second frontier model of a different family would be the natural robustness check (`--models <alias>` takes any Claude Code model alias).
 - **Ten words carry little stance.** Six in ten titles are neither even for this judge, so a channel's score rests on a minority of its titles. At 50 titles the score moves in steps of 0.02 and the split-half reliability is {sh_j.split_half_spearman_mean:.2f} if computed; the {nbase} channels with fewer than 50 uploads still sit at 16 titles or fewer and move in steps of 1/16.
 - **Target and stance still blur at the margin.** Hostile-to-Trump wording reads left even when it is a wire headline or an anti-war right channel; the news-lane tilt and the Shroyer / Hinkle cases are that residue. Prompt v2 (which also asks for the target) exists in `leaning.py` and was not run at scale.
 - **The yardsticks are weak.** Self-descriptions cover {int(sd.n_self_declared.iloc[0])} channels and say what a channel claims; the lane proposal is a model-made assignment by the same model family. Agreement with either is consistency, not accuracy.
 - **Month-level reading is lane-level only.** Five titles per channel-month is not a monthly channel score; the base 16 were drawn without regard to month, so the monthly table leans on the top-up.
 
-Files: `leaning_labels.csv.gz`, `leaning_labels_pass1_channel_batched.csv.gz`, `leaning_agreement.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_lane_validation.csv`, `leaning_lane_contradictions.csv`, `leaning_by_lane.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_lane_month.csv`, `leaning_batch_context_check.json`, `leaning_batch_context_channels.csv`, `leaning_batch_context_changed_titles.csv`, `leaning_logodds.csv`, `leaning_logodds_summary.csv`, `leaning_logodds_agreement.csv`, `leaning_lexicon_validation.csv`, `leaning_lexicon_channels.csv`, `leaning_lexicon_titles.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.
+Files: `leaning_labels.csv.gz`, `leaning_agreement.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_lane_validation.csv`, `leaning_lane_contradictions.csv`, `leaning_by_lane.csv`, `leaning_self_description.csv`, `leaning_self_description_channels.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_lane_month.csv`, `leaning_logodds.csv`, `leaning_logodds_summary.csv`, `leaning_logodds_agreement.csv`, `leaning_lexicon_validation.csv`, `leaning_lexicon_channels.csv`, `leaning_lexicon_titles.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.
 """

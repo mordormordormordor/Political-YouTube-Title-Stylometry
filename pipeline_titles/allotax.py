@@ -9,10 +9,9 @@ the paper recommends for text.
 
 Comparisons (system 1 on the left flank and the grey bars, system 2 on the right flank and
 the blue bars):
-    opus / gemma / qwen : titles the model labelled left vs titles it labelled right
-    consensus           : titles all three models labelled left vs all three labelled right
-    lanes               : left-commentary vs right-commentary channels, every unique edited
-                          upload in the creator-balanced subset
+    opus  : titles the judge labelled left vs titles it labelled right
+    lanes : left-commentary vs right-commentary channels, every unique edited upload in the
+            creator-balanced subset
 Types are the vocabulary tokens of document 11 (lower-cased words minus stopwords and
 digits, possessives dropped), so the ranks agree with the tables of document 14, whose
 rank-turbulence divergence (textstats.rank_turbulence_divergence) reproduces the
@@ -51,7 +50,7 @@ JS_DIR = Path(__file__).resolve().parent / "allotax_js"
 FIG_DIR = REPORTS_DIR / "figures"
 SPEC_DIR = CACHE_DIR / "allotax"
 ALPHA = 1 / 3
-MODEL_NAMES = {"label_claude_code_opus": ("opus", "Claude Opus"), "label_gemma3_12b": ("gemma", "Gemma-3-12B"), "label_qwen3_14b": ("qwen", "Qwen3-14B")}
+MODEL_NAMES = {"label_claude_code_opus": ("opus", "Claude Opus")}
 UNAVAILABLE_MSG = ("needs `node` on the PATH and `npm install` in pipeline_titles/allotax_js "
                    "(Puppeteer downloads its Chrome once); the tracked figures are left as they are")
 
@@ -88,10 +87,6 @@ def comparisons(only: Optional[Sequence[str]] = None) -> list[dict]:
             name, model = MODEL_NAMES[c]
             out.append({"name": name, "title1": f"Titles {model} read as left", "title2": f"Titles {model} read as right", "short1": "left-read titles", "short2": "right-read titles",
                         "titles1": labs.loc[labs[c] == "left", "title_norm"].tolist(), "titles2": labs.loc[labs[c] == "right", "title_norm"].tolist()})
-        if len(cols) >= 2:
-            ok = labs.dropna(subset=cols); agree = ok[ok[cols].nunique(axis=1) == 1]
-            out.append({"name": "consensus", "title1": "Titles all three models read as left", "title2": "Titles all three models read as right", "short1": "left-read titles", "short2": "right-read titles",
-                        "titles1": agree.loc[agree[cols[0]] == "left", "title_norm"].tolist(), "titles2": agree.loc[agree[cols[0]] == "right", "title_norm"].tolist()})
     prepared = load_prepared()
     lanes = load_lanes()[["creator", "lane"]]
     d = prepared[(~prepared["is_dup"]) & (prepared["genre"] == "videos") & (prepared["in_balanced"])].merge(lanes, on="creator", how="left")

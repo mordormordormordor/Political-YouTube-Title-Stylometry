@@ -1,65 +1,52 @@
 """Stage 7 - political leaning from titles alone, judged by a frontier model.
 
 A creator-balanced sample is labelled left / right / neither by Claude Opus through the
-Claude Code CLI (temperature 0, batches of 20 titles in a seeded random order, every
-response cached); local Ollama models (Qwen3-14B, Gemma-3-12B) remain available as a
-backend. The label is the viewpoint the TITLE'S OWN WORDING signals, not the subject.
-The first pass (2026-09-15, three judges, batches in sample order) is archived as
-leaning_labels_pass1_channel_batched.csv.gz (its Claude Opus column only) and compared with the current labels by
-batch_context_check().
+Claude Code CLI in print mode (a Claude Pro/Max subscription covers it; temperature 0;
+twenty titles per call, sent in a seeded random order so that a call mixes channels and
+the judge sees nothing but the title text; every response cached). The label is the
+viewpoint the TITLE'S OWN WORDING signals, not the subject.
 
 Sample. Every creator gets a base draw of N_PER_CREATOR (16) unique edited-upload
 titles (seed 20260914; live VODs top up creators with fewer uploads). Creators with at
 least --min-uploads (50) unique uploads are then topped up to --n-per-creator (50)
-with further uploads spread evenly across months. The base draw never changes, so the
-labels from the 16-title runs are reused (2026-09-15: 12,478 titles; 239 creators at
-50, 35 at their base).
+with further uploads spread evenly across months (12,478 titles; 239 creators at 50,
+35 at their base).
 
 Outputs (data/titles/analysis/):
-    leaning_labels.csv          one row per sampled title with every model's label,
-                                is_base (base draw vs month-spread top-up) and month
-    leaning_agreement.json      per-title agreement between the models (kappa, confusion)
-    leaning_by_creator.csv      per creator: label shares and a score (right - left) / n
-                                for each model, the consensus score (titles all models
-                                label the same), the judge of record's score and side
-    leaning_lane_validation.csv how well each model's creator score separates the
-                                left-commentary and right-commentary lanes (AUC, accuracy);
+    leaning_labels.csv.gz       one row per sampled title with the label, is_base (base draw vs
+                                month-spread top-up) and month
+    leaning_agreement.json      label shares
+    leaning_by_creator.csv      per creator: label shares, score (right - left) / n, side
+    leaning_lane_validation.csv how well the creator score separates the left-commentary and
+                                right-commentary lanes (AUC, accuracy);
                                 leaning_lane_contradictions.csv lists the creators whose
                                 title-leaning contradicts their lane
-    leaning_by_lane.csv         lane means of the scores and of the 'neither' share
+    leaning_by_lane.csv         lane means of the score and of the 'neither' share
     leaning_self_description*.csv  agreement with the leaning words in the channels' own
                                 YouTube descriptions (a lane-independent yardstick)
-    leaning_words.csv           the words each model treats as right vs left: weighted
-                                log-odds (alpha0 = 500) and rank-turbulence-divergence
-                                contributions (alpha = 1/3), for each model and for the
-                                titles all models agree on
-    leaning_split_half.csv      split-half reliability of the channel scores per model
+    leaning_words.csv           right vs left vocabulary: weighted log-odds (alpha0 = 500) and
+                                rank-turbulence-divergence contributions (alpha = 1/3)
+    leaning_split_half.csv      split-half reliability of the channel scores
                                 (channels with >= 32 labels, 20 random splits)
-    leaning_stability.csv       per model: the base 16-title score against the score from
-                                the disjoint top-up titles and from all titles (Spearman,
-                                lane AUC at 16 vs all, mean absolute change, channels whose
-                                side changed); leaning_stability_channels.csv has the
-                                judge's per-channel values
-    leaning_by_lane_month.csv   the judge's partisan share and score per lane x month
+    leaning_stability.csv       the base 16-title score against the score from the disjoint
+                                top-up titles and from all titles (Spearman, lane AUC at 16 vs
+                                all, mean absolute change, channels whose side changed);
+                                leaning_stability_channels.csv has the per-channel values
+    leaning_by_lane_month.csv   partisan share and score per lane x month
+    plus the log-odds lexicon files of leaning_lexicon.py
 
-Backends. `--backend ollama` (default) calls a local model; `--backend claude-code`
-runs each batch through the Claude Code CLI in print mode (`claude -p`), which is
-covered by a Claude Pro/Max subscription (no API key must be set, or the CLI
-switches to API billing). Usage-limit responses are waited out (5, 15, 30, 60 min).
-Prompt v2 (`--prompt-version v2`) also asks for the title's TARGET (who is attacked
-or featured), which separates "attacks Trump" from "speaks for the left".
+Usage-limit replies from the CLI are waited out (5, 15, 30, 60 min). Prompt v2
+(`--prompt-version v2`) also asks for the title's TARGET (who is attacked or featured),
+which separates "attacks Trump" from "speaks for the left".
 
-Human check. analyse() writes a blind adjudication sheet
-(leaning_human_sheet.csv: 200 titles, mostly ones the models disagree on, model
-labels hidden) with its key (leaning_human_key.csv). Fill `human_label` and re-run
-with `--human-labels data/titles/analysis/leaning_human_sheet.csv` to get every
-model's agreement with a human (leaning_human_agreement.csv). That, not the lane
-proposal, is the accuracy check.
+Human check. analyse() writes a blind adjudication sheet (leaning_human_sheet.csv: 200
+titles, model labels hidden). Fill `human_label` and re-run with `--human-labels
+data/titles/analysis/leaning_human_sheet.csv` to get the judge's agreement with a human
+(leaning_human_agreement.csv). That, not the lane proposal, is the accuracy check.
 
 CLI:
-    python -m pipeline_titles.leaning                       # sample, label with both local models, analyse
-    python -m pipeline_titles.leaning --backend claude-code --models opus   # add a frontier judge (subscription)
-    python -m pipeline_titles.leaning --backend claude-code --models opus --prompt-version v2
+    python -m pipeline_titles.leaning --n-per-creator 50            # sample, label, analyse
+    python -m pipeline_titles.leaning --n-per-creator 50 --prompt-version v2
     python -m pipeline_titles.leaning --analyse-only [--human-labels <filled sheet>]
 """
 
@@ -80,10 +67,8 @@ import numpy as np
 import pandas as pd
 
 from pipeline_titles.common import ANALYSIS_DIR, CACHE_DIR, SEED, load_lanes, load_prepared, stage_timer, utc_now
-from pipeline_titles.llm_rate import OLLAMA_URL
 from pipeline_titles.textstats import rank_turbulence_divergence, vocab_tokens, weighted_log_odds
 
-MODELS = ["qwen3:14b", "gemma3:12b"]
 N_PER_CREATOR = 16
 BATCH = 20
 PROMPT_ID = "leaning-v1"
@@ -140,18 +125,9 @@ def parse_labels(text: str, n: int) -> dict[int, str]:
     return out
 
 
-def ollama_generate(model: str, prompt: str, num_predict: int = 400) -> dict:
-    import urllib.request
-    body = {"model": model, "prompt": prompt, "stream": False, "options": {"temperature": 0.0, "num_predict": num_predict, "num_ctx": 4096, "seed": SEED}}
-    if model.startswith("qwen3"):
-        body["think"] = False
-    req = urllib.request.Request(OLLAMA_URL, data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
-    return json.loads(urllib.request.urlopen(req, timeout=900).read())
-
-
 def claude_code_generate(model: str, prompt: str, timeout: int = 900) -> dict:
-    """One batch through the Claude Code CLI in print mode (subscription billing).
-    Returns a dict shaped like the Ollama one; waits out usage-limit replies."""
+    """One batch through the Claude Code CLI in print mode (subscription billing);
+    waits out usage-limit replies."""
     env = os.environ.copy()
     for k in ("CLAUDECODE", "CLAUDE_CODE_ENTRYPOINT", "ANTHROPIC_API_KEY"):   # no nesting flags, no API billing
         env.pop(k, None)
@@ -177,9 +153,9 @@ def claude_code_generate(model: str, prompt: str, timeout: int = 900) -> dict:
     raise RuntimeError("claude -p: usage limit persisted")
 
 
-def label_batch(titles: Sequence[str], model: str, info: dict, backend: str = "ollama", prompt_version: str = "v1") -> dict[int, str]:
+def label_batch(titles: Sequence[str], model: str, info: dict, prompt_version: str = "v1") -> dict[int, str]:
     prompt = PROMPTS[prompt_version].format(titles="\n".join(f"{i + 1}. {t}" for i, t in enumerate(titles)))
-    model_key = model if backend == "ollama" else f"claude-code:{model}"
+    model_key = f"claude-code:{model}"
     key = hashlib.sha1(f"{model_key}\n0\n{prompt}".encode()).hexdigest()
     path = LLM_CACHE / f"{key}.json"
     if path.exists():
@@ -187,8 +163,8 @@ def label_batch(titles: Sequence[str], model: str, info: dict, backend: str = "o
         info["cache_hits"] = info.get("cache_hits", 0) + 1
     else:
         t0 = time.time()
-        r = ollama_generate(model, prompt) if backend == "ollama" else claude_code_generate(model, prompt)
-        rec = {"model": model_key, "backend": backend, "prompt_version": prompt_version, "prompt": prompt, "response": r.get("response", ""),
+        r = claude_code_generate(model, prompt)
+        rec = {"model": model_key, "backend": "claude-code", "prompt_version": prompt_version, "prompt": prompt, "response": r.get("response", ""),
                "prompt_eval_count": r.get("prompt_eval_count"), "eval_count": r.get("eval_count"), "cost_usd": r.get("cost_usd"),
                "seconds": round(time.time() - t0, 2), "rated_at": utc_now()}
         LLM_CACHE.mkdir(parents=True, exist_ok=True)
@@ -201,11 +177,10 @@ def label_batch(titles: Sequence[str], model: str, info: dict, backend: str = "o
     return parse_labels(rec["response"], len(titles))
 
 
-def label_titles(titles: Sequence[str], model: str, info: dict, backend: str = "ollama", prompt_version: str = "v1", shuffle: bool = True) -> list[Optional[str]]:
+def label_titles(titles: Sequence[str], model: str, info: dict, prompt_version: str = "v1", shuffle: bool = True) -> list[Optional[str]]:
     """Label every title; `shuffle` (default) sends titles to the model in a seeded random
     order, so a batch of 20 mixes channels and a title is never judged in the company of
-    its own channel's other titles (the first pass, 2026-09-15, batched in sample order,
-    which put one or two channels in every batch)."""
+    its own channel's other titles (the sample is grouped by channel)."""
     results: list[Optional[str]] = [None] * len(titles)
     pending = list(np.random.RandomState(SEED).permutation(len(titles))) if shuffle else list(range(len(titles)))
     for size in (BATCH, 5, 1):
@@ -213,7 +188,7 @@ def label_titles(titles: Sequence[str], model: str, info: dict, backend: str = "
             break
         for start in range(0, len(pending), size):
             idx = pending[start:start + size]
-            parsed = label_batch([titles[i] for i in idx], model, info, backend, prompt_version)
+            parsed = label_batch([titles[i] for i in idx], model, info, prompt_version)
             for j, i in enumerate(idx):
                 if (j + 1) in parsed:
                     results[i] = parsed[j + 1]
@@ -470,8 +445,6 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
 
     # channels' own words as a lane-independent yardstick: leaning words in the channel description
     self_description_check(bc, cols)
-    # the same judge twice: this pass (shuffled batches) against the archived first pass (batches in sample order, one or two channels each)
-    batch_context_check(df, bc, judge.replace("_score", ""))
     # log-odds lexicons (left / right / neither at a z cutoff), their agreement across comparisons, and the out-of-fold lexicon check
     from pipeline_titles.leaning_lexicon import run as lexicon_run
     lexicon_run(df, cols, judge.replace("_score", ""), info=info)
@@ -538,46 +511,6 @@ def self_description_check(bc: pd.DataFrame, cols: list[str]) -> None:
         .assign(description=lambda d: d.description.str.replace(r"\s+", " ", regex=True).str[:160]).to_csv(ANALYSIS_DIR / "leaning_self_description_channels.csv", index=False)
 
 
-PASS1_CSV = ANALYSIS_DIR / "leaning_labels_pass1_channel_batched.csv.gz"
-
-
-def batch_context_check(df: pd.DataFrame, bc: pd.DataFrame, judge: str) -> None:
-    """How much the batch context of the first pass mattered: the judge's labels from this
-    pass (titles in a seeded random order, so a batch mixes channels) against its labels
-    from the archived first pass (batches in sample order, one or two channels each), title
-    by title and channel by channel. Writes leaning_batch_context_check.json and
-    leaning_batch_context_channels.csv; silent when there is no archive or the judge is not in it."""
-    from sklearn.metrics import cohen_kappa_score, roc_auc_score
-    if not PASS1_CSV.exists() or judge not in df.columns:
-        return
-    old = pd.read_csv(PASS1_CSV)
-    if judge not in old.columns:
-        return
-    m = df[["row_id", "creator", "lane", "title_raw", judge]].merge(old[["row_id", judge]].rename(columns={judge: "label_pass1"}), on="row_id").dropna(subset=[judge, "label_pass1"])
-    new, first = m[judge], m["label_pass1"]
-    part_new, part_first = new.isin(["left", "right"]), first.isin(["left", "right"])
-    both = part_new & part_first
-    out = {"judge": judge, "n_titles": int(len(m)), "exact_agreement": round(float((new == first).mean()), 4), "kappa": round(float(cohen_kappa_score(new, first)), 4),
-           "partisan_share_pass1": round(float(part_first.mean()), 4), "partisan_share_shuffled": round(float(part_new.mean()), 4),
-           "side_flipped": int(((new == "left") & (first == "right")).sum() + ((new == "right") & (first == "left")).sum()),
-           "partisan_to_neither": int((part_first & ~part_new).sum()), "neither_to_partisan": int((~part_first & part_new).sum()),
-           "same_side_when_both_partisan": round(float((new[both] == first[both]).mean()), 4) if both.any() else None,
-           "confusion_pass1_rows_shuffled_cols": pd.crosstab(first, new).reindex(index=LABELS, columns=LABELS, fill_value=0).to_dict()}
-    ch = m.groupby("creator").agg(lane=("lane", "first"), n_titles=(judge, "size"), score_shuffled=(judge, lambda s: _score(s)), score_pass1=("label_pass1", lambda s: _score(s))).reset_index()
-    ch["change"] = ch["score_shuffled"] - ch["score_pass1"]
-    ch["side_shuffled"], ch["side_pass1"] = _side(ch["score_shuffled"]), _side(ch["score_pass1"])
-    big = ch[ch["n_titles"] >= 16]
-    out["n_channels"] = int(len(big)); out["channel_spearman"] = round(float(big["score_shuffled"].corr(big["score_pass1"], method="spearman")), 4)
-    out["channel_mean_abs_change"] = round(float(big["change"].abs().mean()), 4); out["channel_side_changed"] = int((big["side_shuffled"] != big["side_pass1"]).sum())
-    two = big[big["lane"].isin(["left_commentary", "right_commentary"])]; y = (two["lane"] == "right_commentary").astype(int)
-    if y.nunique() == 2:
-        out["lane_auc_pass1"] = round(float(roc_auc_score(y, two["score_pass1"])), 4); out["lane_auc_shuffled"] = round(float(roc_auc_score(y, two["score_shuffled"])), 4)
-    (ANALYSIS_DIR / "leaning_batch_context_check.json").write_text(json.dumps(out, indent=2))
-    ch.sort_values("change").to_csv(ANALYSIS_DIR / "leaning_batch_context_channels.csv", index=False)
-    m[new != first][["row_id", "creator", "lane", "title_raw", "label_pass1", judge]].rename(columns={judge: "label_shuffled"}).to_csv(ANALYSIS_DIR / "leaning_batch_context_changed_titles.csv", index=False)
-    print(f"batch-context check: exact agreement {out['exact_agreement']}, kappa {out['kappa']}, channel Spearman {out['channel_spearman']}", flush=True)
-
-
 def human_agreement(df: pd.DataFrame, cols: list[str], human_path) -> None:
     """Every model's agreement with the filled human sheet (kappa, exact agreement, confusion)."""
     from sklearn.metrics import cohen_kappa_score
@@ -597,9 +530,8 @@ def human_agreement(df: pd.DataFrame, cols: list[str], human_path) -> None:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--models", nargs="+", default=["opus"], help="ollama model names, or Claude Code model aliases with --backend claude-code (default: opus)")
-    ap.add_argument("--backend", choices=("ollama", "claude-code"), default="claude-code")
-    ap.add_argument("--relabel", action="store_true", help="start the labels file afresh for the listed models (the old file is archived as leaning_labels_pass1_channel_batched.csv.gz); other models' columns are dropped")
+    ap.add_argument("--models", nargs="+", default=["opus"], help="Claude Code model aliases (default: opus)")
+    ap.add_argument("--relabel", action="store_true", help="start the labels file afresh (the old file is kept as leaning_labels_previous.csv.gz, untracked)")
     ap.add_argument("--no-shuffle", action="store_true", help="batch titles in sample order (one or two channels per batch) instead of a seeded random order")
     ap.add_argument("--prompt-version", choices=tuple(PROMPTS), default="v1")
     ap.add_argument("--human-labels", default=None, help="filled leaning_human_sheet.csv: report every model's agreement with the human labels")
@@ -608,8 +540,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap.add_argument("--analyse-only", action="store_true")
     ap.add_argument("--limit", type=int, default=None)
     a = ap.parse_args(argv)
-    with stage_timer("stage7_leaning", models=a.models, backend=a.backend, prompt_id=f"leaning-{a.prompt_version}", batch_order="sample order" if a.no_shuffle else "shuffled",
-                     api_cost_usd=0.0 if a.backend == "ollama" else "subscription (claude -p); see reported_cost_usd") as info:
+    with stage_timer("stage7_leaning", models=a.models, backend="claude-code", prompt_id=f"leaning-{a.prompt_version}", batch_order="sample order" if a.no_shuffle else "shuffled",
+                     api_cost_usd="subscription (claude -p); see reported_cost_usd") as info:
         lanes = load_lanes()[["creator", "lane"]]
         keep_cols = ["row_id", "video_id", "creator", "genre", "lane", "month", "is_base", "title_raw", "title_norm"]
         if a.analyse_only and LABELS_CSV.exists():
@@ -622,21 +554,20 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             df = draw_sample(prepared, a.n_per_creator, min_uploads=a.min_uploads).merge(lanes, on="creator", how="left")
             if a.limit:
                 df = df.head(a.limit)
-            if LABELS_CSV.exists() and not a.relabel:   # keep labels already on disk for other models
+            if LABELS_CSV.exists() and not a.relabel:   # keep labels already on disk
                 old = pd.read_csv(LABELS_CSV)
                 for c in [c for c in old.columns if c.startswith("label_")]:
                     df = df.merge(old[["row_id", c]], on="row_id", how="left")
             elif LABELS_CSV.exists():
-                archive = ANALYSIS_DIR / "leaning_labels_pass1_channel_batched.csv.gz"
-                if not archive.exists():
-                    shutil.copy(LABELS_CSV, archive)
-                print(f"--relabel: previous labels archived at {archive.name}; labelling afresh with {a.models}", flush=True)
+                archive = ANALYSIS_DIR / "leaning_labels_previous.csv.gz"
+                shutil.copy(LABELS_CSV, archive)
+                print(f"--relabel: previous labels kept at {archive.name}; labelling afresh with {a.models}", flush=True)
             print(f"sample: {len(df)} titles from {df['creator'].nunique()} creators", flush=True)
             for model in a.models:
-                col = model_col(model if a.backend == "ollama" else f"claude_code_{model}") + ("" if a.prompt_version == "v1" else f"_{a.prompt_version}")
+                col = model_col(f"claude_code_{model}") + ("" if a.prompt_version == "v1" else f"_{a.prompt_version}")
                 todo = df[col].isna() if col in df.columns else pd.Series(True, index=df.index)
                 if todo.any():
-                    labs = label_titles(df.loc[todo, "title_raw"].tolist(), model, info, a.backend, a.prompt_version, shuffle=not a.no_shuffle)
+                    labs = label_titles(df.loc[todo, "title_raw"].tolist(), model, info, a.prompt_version, shuffle=not a.no_shuffle)
                     df.loc[todo, col] = labs
                 print(f"{model}: {df[col].notna().sum()}/{len(df)} labelled", flush=True)
             df["prompt_id"] = f"leaning-{a.prompt_version}"; df["prompt_sha256"] = hashlib.sha256(PROMPTS[a.prompt_version].encode()).hexdigest(); df["temperature"] = 0.0; df["labelled_at"] = utc_now()

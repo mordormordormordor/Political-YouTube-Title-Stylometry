@@ -96,13 +96,12 @@ print mode, which a Claude Pro/Max subscription covers (`npm install -g @anthrop
 then `claude` once to log in; do not set `ANTHROPIC_API_KEY`, or the CLI bills the API):
 
 ```bash
-.venv/bin/python -m pipeline_titles.leaning --n-per-creator 50        # Claude Opus, shuffled batches (the default backend)
-.venv/bin/python -m pipeline_titles.leaning --backend ollama --models qwen3:14b gemma3:12b   # local judges instead
+.venv/bin/python -m pipeline_titles.leaning --n-per-creator 50
 ```
 
 Titles go to the judge in a seeded random order, twenty to a call, so a batch mixes channels
-and a title is never read beside its channel's other titles (`--no-shuffle` restores the
-first pass's sample-order batches; `--relabel` starts afresh and archives the old labels).
+and a title is never read beside its channel's other titles (`--no-shuffle` batches in sample
+order instead; `--relabel` starts afresh and keeps the old labels in an untracked file).
 Usage-limit replies are waited out. The sample is a base draw of 16 titles per creator
 plus a top-up to 50, spread evenly across months, for creators with at least 50 edited
 uploads (`--n-per-creator`, `--min-uploads`); the base draw never changes, so earlier
@@ -158,7 +157,7 @@ from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
 | `engagement` | within-creator regressions of log views on style with month and topic controls |
 | `hits` | Gini, top-10 % share, Clauset-Shalizi-Newman tail fit vs lognormal |
 | `profiles` | the question documents 9-13: stylistic twins, outrage by lane with confidence intervals, capitalisation profiles and top words, the arousal index, signature keywords |
-| `leaning` | document 14: left / right / neither labels from Claude Opus (title text only, shuffled batches), channel scores, the self-description and lane yardsticks, split-half and base-vs-top-up reliability, the shuffled-vs-channel-batched check against the archived first pass, lane x month, weighted log-odds and rank-turbulence words, the log-odds lexicon and its out-of-fold check |
+| `leaning` | document 14: left / right / neither labels from Claude Opus (title text only, shuffled batches), channel scores, the self-description and lane yardsticks, split-half and base-vs-top-up reliability, lane x month, weighted log-odds and rank-turbulence words, the log-odds lexicon and its out-of-fold check |
 | `allotax` | allotaxonographs for document 14 (needs Node; see above) |
 | `report_data`, `report` | cards JSON, Markdown report, methods appendix, cards, HTML page |
 
