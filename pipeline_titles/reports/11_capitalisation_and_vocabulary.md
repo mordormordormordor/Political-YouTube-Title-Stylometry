@@ -322,6 +322,8 @@ Each unique normalised title (brand suffixes such as "| Fox News" removed, so ch
 
 ![Top words.](figures/11_top_words.png)
 
+(((GRAPH NEEDS TO BE FIXED))))
+
 Trump is in a seventh of the average creator's titles and in 23 % of all titles; the war words (iran, war, israel) and the year's institutions (ice, epstein, maga, democrats) follow. The two columns disagree where the big news channels differ from everyone else: "says" is the 4th most frequent word in the raw pool (wire headlinese: "X says Y") but only 11th when creators count equally; "debate", "black" and "truth" are commentary words that the pooled count buries.
 
 ### Method
