@@ -1,6 +1,6 @@
 # Megyn Kelly (@MegynKelly)
 
-Lane: **right_commentary** · organisation: Megyn Kelly · clipper: no · platform: youtube · subscribers: 4150000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Megyn Kelly · clipper: no · platform: youtube · subscribers: 4150000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 1,651 rows, 1,651 unique (repeat share 0.0%); ranked; political share 82
 Top topics: Nancy Guthrie Disappearance Investigation (8.7%); Megyn Kelly and Political Media (6.4%); Lindsay Clancy Murder Trial (4.5%); Iran War and Strait of Hormuz Tensions (3.0%); Iran Conflict and Political Updates (2.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 46.4 | 42.7 | 0.2 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 36.4 | 36.4 | -0.3 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 36.4 | 36.4 | -0.3 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 82.0 | 79.1 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 75.3 | 60.7 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 77.4 | 72.0 | 0.9 | 0.2 |
-| F6: Person-centred (named people) | 95.4 | 97.1 | 1.1 | -0.3 |
+| F6: Person-centred (named people) | 95.4 | 97.1 | 1.1 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 30.1 | 44.4 | -0.8 | -0.7 |
 | F8: Numeric and dated (digits, years) | 92.1 | 88.7 | 0.4 | -0.2 |
 | F9: ALL-CAPS shouting | 8.4 | 5.9 | -0.8 | -0.3 |
 | F10: Quoted speech | 84.1 | 83.3 | 0.4 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 95.0 | 93.3 | 1.0 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 95.0 | 93.3 | 1.0 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 64.0 | 50.6 | 0.0 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.6% (3.8%); outrage 54.3% (63.4%); humor 0.4% (0.2%); question 15.8% (15.1%); breaking_live 3.3% (1.3%); episode_show 2.1% (7.8%); interview_guest 37.5% (8.2%); reaction 1.3% (2.5%); confrontation 5.9% (7.7%); listicle 0.1% (0.1%); howto_explainer 16.0% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.6% (3.6%); outrage 54.3% (59.6%); humor 0.4% (0.2%); question 15.8% (15.6%); breaking_live 3.3% (2.0%); episode_show 2.1% (7.6%); interview_guest 37.5% (8.5%); reaction 1.3% (2.2%); confrontation 5.9% (7.8%); listicle 0.1% (0.1%); howto_explainer 16.0% (9.5%)
 
 
-Nearest style neighbours: @cafedotcom [legal_institutional]; @VivaFrei [legal_institutional]; @marclamonthillnetwork [left_commentary]; @PragerU [right_commentary]; https://rumble.com/c/GGreenwald [independent_digital_news]
+Nearest style neighbours: @cafedotcom [left]; @VivaFrei [right]; @marclamonthillnetwork [left]; @PragerU [right]; https://rumble.com/c/GGreenwald [left]
 
-Nearest topic neighbours: @NewsNation [us_legacy_tv]; @FoxNewsChannelClips [us_legacy_tv]; @NewsmaxTV [right_tv_network]; @clayandbuck [right_commentary]; @RealAmericasVoice [right_tv_network]
+Nearest topic neighbours: @NewsNation [neutral]; @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @clayandbuck [right]; @RealAmericasVoice [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,23 +86,23 @@ Titles: 13 rows, 13 unique (repeat share 0.0%); LOW-N (not ranked); political sh
 Top topics: Charlie Kirk murder trial (46.2%); Lindsay Clancy Murder Trial (23.1%); Megyn Kelly and Political Media (15.4%); Nancy Guthrie Disappearance Investigation (7.7%); Karmelo Anthony Trial Verdict (7.7%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.0 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.8 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.8 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.6 | -0.2 |
-| F6: Person-centred (named people) | None | None | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | -0.6 | -0.3 |
+| F6: Person-centred (named people) | None | None | -0.2 | 0.0 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.7 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | 0.5 | -0.0 |
 | F9: ALL-CAPS shouting | None | None | -2.4 | -0.4 |
-| F10: Quoted speech | None | None | -0.8 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 0.4 | 0.1 |
+| F10: Quoted speech | None | None | -0.8 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 0.4 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | None | None | -0.6 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 7.7% (4.2%); outrage 7.7% (62.2%); humor 0.0% (0.2%); question 0.0% (16.8%); breaking_live 15.4% (18.6%); episode_show 0.0% (23.4%); interview_guest 30.8% (16.3%); reaction 7.7% (2.8%); confrontation 0.0% (11.1%); listicle 0.0% (0.2%); howto_explainer 7.7% (6.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.7% (3.2%); outrage 7.7% (56.4%); humor 0.0% (0.1%); question 0.0% (13.7%); breaking_live 15.4% (18.8%); episode_show 0.0% (26.3%); interview_guest 30.8% (14.0%); reaction 7.7% (2.1%); confrontation 0.0% (9.4%); listicle 0.0% (0.2%); howto_explainer 7.7% (5.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

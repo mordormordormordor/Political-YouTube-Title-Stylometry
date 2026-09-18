@@ -1,6 +1,6 @@
 # Lovett or Leave It (@lovettorleaveitpodcast)
 
-Lane: **humour_satire** · organisation: Crooked Media · clipper: no · platform: youtube · subscribers: 144000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Crooked Media · clipper: no · platform: youtube · subscribers: 144000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 114 rows, 114 unique (repeat share 0.0%); ranked; political share 95.6%.
 Top topics: Hollywood and Oscars Politics (5.3%); ICE Protests and Shootings (4.4%); JD Vance and Trump Political Conflict (3.5%); Trump's War and Draft (3.5%); Comedy and Cultural Debate (3.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 8.4 | 13.0 | -0.8 | 0.5 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 34.7 | 27.2 | -0.3 | -0.3 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 1.7 | 1.7 | -0.8 | -0.4 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 12.6 | 12.6 | -0.4 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 8.4 | 13.0 | -0.8 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 34.7 | 27.2 | -0.3 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 1.7 | 1.7 | -0.8 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 12.6 | 12.6 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 50.6 | 47.3 | 0.1 | 0.1 |
-| F6: Person-centred (named people) | 97.9 | 98.7 | 1.4 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 30.5 | 23.8 | -0.8 | -0.8 |
-| F8: Numeric and dated (digits, years) | 21.3 | 34.7 | -0.4 | -0.3 |
-| F9: ALL-CAPS shouting | 5.9 | 7.9 | -0.9 | -0.6 |
-| F10: Quoted speech | 26.4 | 34.3 | -0.6 | -0.6 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 73.2 | 70.3 | 0.2 | -0.0 |
-| F12: Modal and future speculation (will, could, we) | 29.3 | 27.6 | -0.4 | -0.2 |
+| F6: Person-centred (named people) | 97.9 | 98.7 | 1.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 30.5 | 23.8 | -0.8 | -0.5 |
+| F8: Numeric and dated (digits, years) | 21.3 | 34.7 | -0.4 | -0.2 |
+| F9: ALL-CAPS shouting | 5.9 | 7.9 | -0.9 | -0.3 |
+| F10: Quoted speech | 26.4 | 34.3 | -0.6 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 73.2 | 70.3 | 0.2 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 29.3 | 27.6 | -0.4 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.8% (2.4%); outrage 49.1% (45.1%); humor 0.9% (0.3%); question 15.8% (15.8%); breaking_live 0.0% (1.5%); episode_show 0.0% (16.7%); interview_guest 16.7% (15.4%); reaction 9.7% (3.0%); confrontation 21.9% (7.4%); listicle 0.0% (0.0%); howto_explainer 11.4% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (2.7%); outrage 49.1% (63.9%); humor 0.9% (0.2%); question 15.8% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 16.7% (9.8%); reaction 9.7% (2.9%); confrontation 21.9% (7.6%); listicle 0.0% (0.1%); howto_explainer 11.4% (8.0%)
 
 
-Nearest style neighbours: @TheAdamCarollaShow1 [interview_podcast]; @PTLRadioShow [left_commentary]; @thejimmydoreshow [left_commentary]; @MyronGainesX [right_commentary]; @marclamonthillnetwork [left_commentary]
+Nearest style neighbours: @TheAdamCarollaShow1 [right]; @PTLRadioShow [left]; @thejimmydoreshow [neutral]; @MyronGainesX [right]; @marclamonthillnetwork [left]
 
-Nearest topic neighbours: @underthedesknews [independent_digital_news]; @podsaveamerica [left_commentary]; @TheAdamCarollaShow1 [interview_podcast]; @SMN [humour_satire]; @jimacosta [left_commentary]
+Nearest topic neighbours: @underthedesknews [left]; @podsaveamerica [left]; @TheAdamCarollaShow1 [right]; @SMN [left]; @jimacosta [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

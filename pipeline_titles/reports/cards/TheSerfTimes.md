@@ -1,6 +1,6 @@
 # The Serf Times (@TheSerfTimes)
 
-Lane: **streamer_reaction** · organisation: Serf Times · clipper: no · platform: youtube · subscribers: 115000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Serf Times · clipper: no · platform: youtube · subscribers: 115000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 247 rows, 247 unique (repeat share 0.0%); ranked; political share 86.2%.
 Top topics: Destiny and Ethan Klein debates (6.1%); Joe Rogan and Trump Political Discussions (4.5%); Candace Owens and Erika Kirk Controversy (4.0%); AI and Political Concerns (3.6%); Hasanabi Reacts to Hasan (3.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 25.1 | 29.3 | -0.3 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 43.1 | 41.4 | -0.2 | -0.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.1 | 3.8 | -0.5 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 25.1 | 29.3 | -0.3 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 43.1 | 41.4 | -0.2 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.1 | 3.8 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 23.4 | 20.1 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 43.5 | 43.5 | 0.0 | -0.1 |
-| F6: Person-centred (named people) | 77.4 | 84.5 | 0.3 | -0.5 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 88.3 | 86.2 | 0.6 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 43.5 | 43.5 | 0.0 | 0.1 |
+| F6: Person-centred (named people) | 77.4 | 84.5 | 0.3 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 88.3 | 86.2 | 0.6 | -0.5 |
 | F8: Numeric and dated (digits, years) | 26.8 | 15.5 | -0.3 | -0.2 |
-| F9: ALL-CAPS shouting | 79.9 | 82.0 | 0.3 | -0.1 |
-| F10: Quoted speech | 47.7 | 38.5 | -0.4 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 30.1 | 22.6 | -0.6 | -0.7 |
-| F12: Modal and future speculation (will, could, we) | 22.6 | 12.6 | -0.5 | -0.5 |
+| F9: ALL-CAPS shouting | 79.9 | 82.0 | 0.3 | -0.3 |
+| F10: Quoted speech | 47.7 | 38.5 | -0.4 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 30.1 | 22.6 | -0.6 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 22.6 | 12.6 | -0.5 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.8% (3.8%); outrage 69.6% (64.8%); humor 0.8% (0.4%); question 19.0% (9.0%); breaking_live 0.0% (0.4%); episode_show 0.0% (4.5%); interview_guest 3.2% (7.8%); reaction 0.8% (10.1%); confrontation 14.2% (14.3%); listicle 0.0% (0.0%); howto_explainer 4.0% (4.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.8% (2.7%); outrage 69.6% (63.9%); humor 0.8% (0.2%); question 19.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 3.2% (9.8%); reaction 0.8% (2.9%); confrontation 14.2% (7.6%); listicle 0.0% (0.1%); howto_explainer 4.0% (8.0%)
 
 
-Nearest style neighbours: @LIVESNEAKO [streamer_reaction]; @HasanReactionsfanTwo [streamer_reaction]; @TheMichaelCohenShow [left_commentary]; @PoliticsJOE [independent_digital_news]; @adammockler [left_commentary]
+Nearest style neighbours: @LIVESNEAKO [neutral]; @HasanReactionsfanTwo [left]; @TheMichaelCohenShow [left]; @PoliticsJOE [left]; @adammockler [left]
 
-Nearest topic neighbours: @DailyDenims [streamer_reaction]; @Xanderhal [streamer_reaction]; @fightbackpodcast [right_commentary]; @DestinyDGGClips [streamer_reaction]; @MichaelKnowles [right_commentary]
+Nearest topic neighbours: @DailyDenims [left]; @Xanderhal [left]; @fightbackpodcast [right]; @DestinyDGGClips [right]; @MichaelKnowles [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 106 rows, 103 unique (repeat share 2.8%); ranked; political share 92.2%.
 Top topics: Epstein Files Political Connections (8.7%); Canada-US Political Tensions (8.7%); Iran Conflict and Political Updates (8.7%); Candace Owens and Erika Kirk Controversy (4.9%); Joe Rogan and Trump Political Discussions (4.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 6.3 | 15.2 | -1.2 | 0.1 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 93.7 | 94.9 | 1.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 16.5 | 6.3 | -0.6 | -0.4 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 27.8 | 32.9 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 53.2 | 57.0 | -0.3 | -0.2 |
-| F6: Person-centred (named people) | 94.9 | 97.5 | 2.5 | 0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 81.0 | 74.7 | 0.6 | 0.0 |
-| F8: Numeric and dated (digits, years) | 63.3 | 44.3 | 0.2 | 0.1 |
-| F9: ALL-CAPS shouting | 6.3 | 21.5 | -1.0 | 0.4 |
-| F10: Quoted speech | 69.6 | 58.2 | -0.3 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 92.4 | 84.8 | 1.1 | -0.0 |
-| F12: Modal and future speculation (will, could, we) | 40.5 | 30.4 | -0.3 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 6.3 | 15.2 | -1.2 | -0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 93.7 | 94.9 | 1.0 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 16.5 | 6.3 | -0.6 | -0.2 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 27.8 | 32.9 | -0.3 | -0.2 |
+| F5: Question and explainer framing (why, what, ?) | 53.2 | 57.0 | -0.3 | -0.3 |
+| F6: Person-centred (named people) | 94.9 | 97.5 | 2.5 | 0.6 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 81.0 | 74.7 | 0.6 | -0.4 |
+| F8: Numeric and dated (digits, years) | 63.3 | 44.3 | 0.2 | -0.0 |
+| F9: ALL-CAPS shouting | 6.3 | 21.5 | -1.0 | -0.5 |
+| F10: Quoted speech | 69.6 | 58.2 | -0.3 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 92.4 | 84.8 | 1.1 | 0.1 |
+| F12: Modal and future speculation (will, could, we) | 40.5 | 30.4 | -0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.0% (2.0%); outrage 80.6% (57.8%); humor 1.0% (0.6%); question 23.3% (19.8%); breaking_live 0.0% (2.6%); episode_show 0.0% (16.6%); interview_guest 4.9% (7.0%); reaction 1.0% (1.6%); confrontation 30.1% (45.1%); listicle 0.0% (0.0%); howto_explainer 1.0% (1.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (1.9%); outrage 80.6% (63.2%); humor 1.0% (0.1%); question 23.3% (11.3%); breaking_live 0.0% (17.5%); episode_show 0.0% (6.4%); interview_guest 4.9% (18.3%); reaction 1.0% (1.5%); confrontation 30.1% (15.4%); listicle 0.0% (0.0%); howto_explainer 1.0% (2.9%)
 
 
-Nearest style neighbours: @thejimmydoreshow [left_commentary]; @NickCruseRBN [left_commentary]; @chicksonright [right_commentary]; @rolandsmartin [independent_digital_news]; @TheDamageReport [left_commentary]
+Nearest style neighbours: @thejimmydoreshow [neutral]; @NickCruseRBN [left]; @chicksonright [right]; @rolandsmartin [left]; @TheDamageReport [left]
 
-Nearest topic neighbours: @chicksonright [right_commentary]; @Xanderhal [streamer_reaction]; @DueDissidence [left_commentary]; @MyronGainesX [right_commentary]; @AfterPartyEmily [right_commentary]
+Nearest topic neighbours: @chicksonright [right]; @Xanderhal [left]; @DueDissidence [left]; @MyronGainesX [right]; @AfterPartyEmily [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

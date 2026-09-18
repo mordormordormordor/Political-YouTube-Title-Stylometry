@@ -1,6 +1,6 @@
 # Isabel Brown (@theisabelbrown)
 
-Lane: **right_commentary** · organisation: Isabel Brown · clipper: no · platform: youtube · subscribers: 181000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Isabel Brown · clipper: no · platform: youtube · subscribers: 181000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 141 rows, 141 unique (repeat share 0.0%); ranked; political share 97.2%.
 Top topics: Abortion and Pregnancy Policies (15.6%); Christian Nationalism and Politics (6.4%); Gen Z and Boomers Political Apathy (6.4%); Modern Women and Feminism Debate (5.0%); Transgender Rights and Politics (3.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 74.1 | 79.5 | 0.6 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 68.6 | 72.8 | 0.4 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 68.6 | 72.8 | 0.4 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 55.2 | 41.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 73.2 | 62.8 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 91.6 | 91.6 | 1.6 | 0.2 |
-| F6: Person-centred (named people) | 20.1 | 16.7 | -0.6 | -0.3 |
+| F6: Person-centred (named people) | 20.1 | 16.7 | -0.6 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 21.8 | 29.7 | -0.9 | -0.7 |
 | F8: Numeric and dated (digits, years) | 15.1 | 15.9 | -0.4 | -0.2 |
 | F9: ALL-CAPS shouting | 64.4 | 50.2 | -0.1 | -0.3 |
 | F10: Quoted speech | 30.1 | 44.4 | -0.6 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 46.4 | 55.6 | -0.3 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 46.4 | 55.6 | -0.3 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 80.8 | 72.0 | 0.3 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 7.1% (3.8%); outrage 51.1% (63.4%); humor 0.0% (0.2%); question 39.7% (15.1%); breaking_live 0.7% (1.3%); episode_show 0.0% (7.8%); interview_guest 13.5% (8.2%); reaction 0.7% (2.5%); confrontation 2.1% (7.7%); listicle 0.0% (0.1%); howto_explainer 12.8% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.1% (3.6%); outrage 51.1% (59.6%); humor 0.0% (0.2%); question 39.7% (15.6%); breaking_live 0.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 13.5% (8.5%); reaction 0.7% (2.2%); confrontation 2.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 12.8% (9.5%)
 
 
-Nearest style neighbours: @thomhartmann [left_commentary]; @LeejaMiller [legal_institutional]; @AndrewKlavan [right_commentary]; @MrTariqNasheed [left_commentary]; @morebridgetphetasy [interview_podcast]
+Nearest style neighbours: @thomhartmann [left]; @LeejaMiller [left]; @AndrewKlavan [right]; @MrTariqNasheed [right]; @morebridgetphetasy [right]
 
-Nearest topic neighbours: @MichaelKnowles [right_commentary]; @MattWalsh [right_commentary]; @RileyGaines [right_commentary]; @ZubyMusic [interview_podcast]; @bbrettcooper [right_commentary]
+Nearest topic neighbours: @MichaelKnowles [right]; @MattWalsh [right]; @RileyGaines [right]; @ZubyMusic [right]; @bbrettcooper [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

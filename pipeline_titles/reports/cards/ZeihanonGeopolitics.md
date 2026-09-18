@@ -1,6 +1,6 @@
 # Zeihan on Geopolitics (@ZeihanonGeopolitics)
 
-Lane: **explainer_geopolitics** · organisation: Peter Zeihan · clipper: no · platform: youtube · subscribers: 969000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: Peter Zeihan · clipper: no · platform: youtube · subscribers: 969000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 217 rows, 217 unique (repeat share 0.0%); ranked; political share 95.9%.
 Top topics: Ukraine-Russia War and Political Figures (13.8%); Iran War and Strait of Hormuz Tensions (10.6%); War and Military Analysis (7.8%); Trump and China political relations (7.4%); Trump and Rising Energy Prices (6.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 97.5 | 82.4 | 1.1 | 1.1 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 4.2 | 7.5 | -1.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 14.2 | 52.3 | -0.5 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 29.7 | 31.4 | -0.3 | -0.3 |
-| F5: Question and explainer framing (why, what, ?) | 51.0 | 53.1 | 0.2 | 2.1 |
-| F6: Person-centred (named people) | 5.4 | 10.5 | -1.0 | -1.0 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 5.0 | 38.1 | -1.2 | -0.3 |
-| F8: Numeric and dated (digits, years) | 10.0 | 36.0 | -0.5 | -0.2 |
-| F9: ALL-CAPS shouting | 44.4 | 30.1 | -0.4 | -0.1 |
-| F10: Quoted speech | 0.8 | 13.4 | -1.2 | -1.0 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 7.1 | 17.2 | -1.1 | -0.4 |
-| F12: Modal and future speculation (will, could, we) | 37.2 | 84.1 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 97.5 | 82.4 | 1.1 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 4.2 | 7.5 | -1.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 14.2 | 52.3 | -0.5 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 29.7 | 31.4 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 51.0 | 53.1 | 0.2 | 0.1 |
+| F6: Person-centred (named people) | 5.4 | 10.5 | -1.0 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 5.0 | 38.1 | -1.2 | -0.1 |
+| F8: Numeric and dated (digits, years) | 10.0 | 36.0 | -0.5 | 0.0 |
+| F9: ALL-CAPS shouting | 44.4 | 30.1 | -0.4 | -0.4 |
+| F10: Quoted speech | 0.8 | 13.4 | -1.2 | -0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 7.1 | 17.2 | -1.1 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 37.2 | 84.1 | -0.3 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.7% (4.0%); outrage 34.6% (26.2%); humor 0.0% (0.0%); question 13.8% (52.5%); breaking_live 0.0% (0.0%); episode_show 0.0% (1.5%); interview_guest 3.7% (4.0%); reaction 0.0% (0.0%); confrontation 1.8% (2.3%); listicle 0.0% (0.0%); howto_explainer 5.5% (10.1%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.7% (2.4%); outrage 34.6% (36.0%); humor 0.0% (0.1%); question 13.8% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 3.7% (11.6%); reaction 0.0% (1.9%); confrontation 1.8% (7.4%); listicle 0.0% (0.1%); howto_explainer 5.5% (6.6%)
 
 
-Nearest style neighbours: @ThePodcastoftheLotusEaters [right_commentary]; @PartOfTheProblem [right_commentary]; @Styxhexenhammer666 [right_commentary]; @DylanBurnsLIVE [streamer_reaction]; @franifio [humour_satire]
+Nearest style neighbours: @ThePodcastoftheLotusEaters [right]; @PartOfTheProblem [right]; @Styxhexenhammer666 [right]; @DylanBurnsLIVE [left]; @franifio [left]
 
-Nearest topic neighbours: @JamarlThomas [left_commentary]; @TimesNowWorld [wire_international]; @timesofindia [wire_international]; @Reuters [wire_international]; @markets [us_press_print_digital]
+Nearest topic neighbours: @JamarlThomas [left]; @TimesNowWorld [neutral]; @timesofindia [left]; @Reuters [neutral]; @markets [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

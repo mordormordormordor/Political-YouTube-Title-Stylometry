@@ -38,7 +38,7 @@ import numpy as np
 import pandas as pd
 
 from pipeline_titles.common import (
-    CACHE_DIR, LABELS_CSV, LOW_N, SEED, load_lanes, load_prepared, stage_timer, utc_now,
+    CACHE_DIR, LABELS_CSV, LOW_N, SEED, load_creators, load_prepared, stage_timer, utc_now,
 )
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
@@ -233,8 +233,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     with stage_timer("stage2c_llm_rate", model=a.model, temperature=TEMPERATURE, prompt_id=PROMPT_ID,
                      api_cost_usd=0.0) as info:
         prepared = load_prepared()
-        lanes = load_lanes()[["creator", "lane", "organisation", "clipper"]]
-        sample = draw_sample(prepared, N_SAMPLE).merge(lanes, on="creator", how="left")
+        creators = load_creators(with_group=False)[["creator", "organisation", "clipper"]]
+        sample = draw_sample(prepared, N_SAMPLE).merge(creators, on="creator", how="left")
         if a.limit:
             sample = sample.head(a.limit)
         print(f"sample: {len(sample)} titles over {sample.groupby(['creator', 'genre']).ngroups} creator x genre groups", flush=True)
@@ -261,7 +261,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         sample["temperature"] = TEMPERATURE
         sample["rated_at"] = utc_now()
         sample["prompt"] = prompt_text
-        cols = ["row_id", "video_id", "creator", "genre", "lane", "organisation", "clipper", "platform", "month",
+        cols = ["row_id", "video_id", "creator", "genre", "organisation", "clipper", "platform", "month",
                 "title_raw", "title_norm"] + list(DIMS + FLAGS) + ["format_llm", "retest"] + \
                [c for c in sample.columns if c.startswith("retest_")] + \
                ["model", "prompt_id", "prompt_sha256", "temperature", "rated_at", "prompt"]

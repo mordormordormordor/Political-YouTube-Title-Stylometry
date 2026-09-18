@@ -1,6 +1,6 @@
 # Candace Clips (@ClipsCandaceOwens)
 
-Lane: **right_commentary** · organisation: Candace Owens · clipper: yes · platform: youtube · subscribers: 161000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: Candace Owens · clipper: yes · platform: youtube · subscribers: 161000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 192 rows, 192 unique (repeat share 0.0%); ranked; political share 94.3%.
 Top topics: Erika Kirk Controversy (13.0%); Charlie Kirk murder trial (9.9%); Candace Owens and Erika Kirk Controversy (9.4%); Israel-Palestine Conflict Media (7.8%); Shocking Events and Reactions (6.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 88.7 | 79.9 | 0.8 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 46.0 | 46.4 | -0.1 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 88.7 | 79.9 | 0.8 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 46.0 | 46.4 | -0.1 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 63.2 | 45.2 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 97.9 | 97.1 | 1.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 70.3 | 66.1 | 0.6 | 0.2 |
-| F6: Person-centred (named people) | 46.9 | 64.9 | -0.3 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 27.6 | 8.4 | -0.8 | -0.7 |
-| F8: Numeric and dated (digits, years) | 78.2 | 69.0 | 0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 66.9 | 74.9 | -0.1 | -0.3 |
-| F10: Quoted speech | 72.4 | 66.1 | -0.0 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 8.4 | 5.0 | -1.1 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 11.3 | 5.4 | -0.7 | -0.2 |
+| F5: Question and explainer framing (why, what, ?) | 70.3 | 66.1 | 0.6 | 0.1 |
+| F6: Person-centred (named people) | 46.9 | 64.9 | -0.3 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 27.6 | 8.4 | -0.8 | -0.1 |
+| F8: Numeric and dated (digits, years) | 78.2 | 69.0 | 0.1 | 0.0 |
+| F9: ALL-CAPS shouting | 66.9 | 74.9 | -0.1 | -0.4 |
+| F10: Quoted speech | 72.4 | 66.1 | -0.0 | -0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 8.4 | 5.0 | -1.1 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 11.3 | 5.4 | -0.7 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 14.1% (3.8%); outrage 40.6% (63.4%); humor 0.0% (0.2%); question 17.7% (15.1%); breaking_live 0.5% (1.3%); episode_show 0.0% (7.8%); interview_guest 3.1% (8.2%); reaction 4.7% (2.5%); confrontation 6.8% (7.7%); listicle 0.0% (0.1%); howto_explainer 7.8% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 14.1% (2.4%); outrage 40.6% (36.0%); humor 0.0% (0.1%); question 17.7% (15.9%); breaking_live 0.5% (1.1%); episode_show 0.0% (7.0%); interview_guest 3.1% (11.6%); reaction 4.7% (1.9%); confrontation 6.8% (7.4%); listicle 0.0% (0.1%); howto_explainer 7.8% (6.6%)
 
 
-Nearest style neighbours: https://rumble.com/c/russellbrand [centrist_heterodox]; @hutch [streamer_reaction]; @XAVIAER [right_commentary]; @BenShapiro [right_commentary]; @MichaelKnowles [right_commentary]
+Nearest style neighbours: https://rumble.com/c/russellbrand [right]; @hutch [neutral]; @XAVIAER [right]; @BenShapiro [right]; @MichaelKnowles [right]
 
-Nearest topic neighbours: @thejimmydoreshow [left_commentary]; @GrahamAllen [right_commentary]; @SabbySabs [left_commentary]; @fightbackpodcast [right_commentary]; @HasanAbi [streamer_reaction]
+Nearest topic neighbours: @thejimmydoreshow [neutral]; @GrahamAllen [right]; @SabbySabs [left]; @fightbackpodcast [right]; @HasanAbi [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

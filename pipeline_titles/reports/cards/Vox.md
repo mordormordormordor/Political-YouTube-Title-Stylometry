@@ -1,6 +1,6 @@
 # Vox (@Vox)
 
-Lane: **us_press_print_digital** · organisation: Vox · clipper: no · platform: youtube · subscribers: 12700000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Vox · clipper: no · platform: youtube · subscribers: 12700000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 133 rows, 133 unique (repeat share 0.0%); ranked; political share 79.0%.
 Top topics: JLP Weekly Series (11.3%); Gen Z and Boomers Political Apathy (5.3%); AI and Political Concerns (3.8%); Modern Women and Feminism Debate (3.8%); 2026 Midterm Election Predictions (3.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 89.5 | 93.7 | 0.8 | 0.7 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 90.8 | 87.4 | 0.9 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 89.5 | 93.7 | 0.8 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 90.8 | 87.4 | 0.9 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.5 | 57.7 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 85.4 | 81.6 | 0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 97.9 | 97.9 | 2.7 | 1.0 |
+| F5: Question and explainer framing (why, what, ?) | 97.9 | 97.9 | 2.7 | 0.1 |
 | F6: Person-centred (named people) | 3.8 | 5.0 | -1.0 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 92.9 | 90.8 | 0.9 | -0.4 |
-| F8: Numeric and dated (digits, years) | 18.4 | 44.4 | -0.4 | -0.1 |
-| F9: ALL-CAPS shouting | 67.4 | 64.9 | -0.1 | -0.4 |
-| F10: Quoted speech | 47.3 | 44.8 | -0.4 | -0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 12.6 | 23.0 | -0.9 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 71.1 | 71.5 | 0.1 | -0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 92.9 | 90.8 | 0.9 | -0.5 |
+| F8: Numeric and dated (digits, years) | 18.4 | 44.4 | -0.4 | -0.2 |
+| F9: ALL-CAPS shouting | 67.4 | 64.9 | -0.1 | -0.3 |
+| F10: Quoted speech | 47.3 | 44.8 | -0.4 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 12.6 | 23.0 | -0.9 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 71.1 | 71.5 | 0.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.0% (1.8%); outrage 24.8% (28.1%); humor 0.0% (0.1%); question 45.9% (26.4%); breaking_live 0.0% (1.0%); episode_show 0.0% (1.9%); interview_guest 5.3% (9.0%); reaction 0.0% (0.7%); confrontation 4.5% (4.1%); listicle 0.0% (0.4%); howto_explainer 31.6% (14.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (2.7%); outrage 24.8% (63.9%); humor 0.0% (0.2%); question 45.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 5.3% (9.8%); reaction 0.0% (2.9%); confrontation 4.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 31.6% (8.0%)
 
 
-Nearest style neighbours: @BBCNews [wire_international]; @POLITICO [us_press_print_digital]; @TechCrunch [us_press_print_digital]; @UnHerd [centrist_heterodox]; @chriscuomo [centrist_heterodox]
+Nearest style neighbours: @BBCNews [neutral]; @POLITICO [neutral]; @TechCrunch [neutral]; @UnHerd [left]; @chriscuomo [left]
 
-Nearest topic neighbours: @NYTPodcasts [us_press_print_digital]; @morebridgetphetasy [interview_podcast]; @TheAtlantic [us_press_print_digital]; @TheVaushPit [streamer_reaction]; @PragerU [right_commentary]
+Nearest topic neighbours: @NYTPodcasts [left]; @morebridgetphetasy [right]; @TheAtlantic [left]; @TheVaushPit [left]; @PragerU [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # TheQuartering (@TheQuartering)
 
-Lane: **right_commentary** · organisation: TheQuartering · clipper: no · platform: youtube · subscribers: 2190000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: TheQuartering · clipper: no · platform: youtube · subscribers: 2190000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 691 rows, 675 unique (repeat share 2.3%); ranked; political share 87.3%.
 Top topics: Shocking Events and Reactions (23.4%); ICE Protests and Shootings (9.8%); Lindsay Clancy Murder Trial (4.3%); Walmart Shoplifting and Police Incidents (3.6%); Fast Food and Political Issues (3.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 18.0 | 25.5 | -0.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 57.3 | 80.8 | 0.1 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 57.3 | 80.8 | 0.1 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 7.5 | 3.3 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 2.9 | 51.0 | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 7.1 | 15.5 | -0.5 | 0.2 |
-| F6: Person-centred (named people) | 38.1 | 15.1 | -0.4 | -0.3 |
+| F6: Person-centred (named people) | 38.1 | 15.1 | -0.4 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 83.3 | 81.2 | 0.1 | -0.7 |
 | F8: Numeric and dated (digits, years) | 20.9 | 7.1 | -0.4 | -0.2 |
 | F9: ALL-CAPS shouting | 97.5 | 97.5 | 2.3 | -0.3 |
 | F10: Quoted speech | 20.1 | 11.3 | -0.7 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 68.2 | 41.0 | 0.1 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 68.2 | 41.0 | 0.1 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 16.3 | 5.0 | -0.6 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.5% (3.8%); outrage 93.6% (63.4%); humor 0.1% (0.2%); question 1.2% (15.1%); breaking_live 0.1% (1.3%); episode_show 0.1% (7.8%); interview_guest 3.1% (8.2%); reaction 1.2% (2.5%); confrontation 7.4% (7.7%); listicle 0.1% (0.1%); howto_explainer 0.7% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.5% (3.6%); outrage 93.6% (59.6%); humor 0.1% (0.2%); question 1.2% (15.6%); breaking_live 0.1% (2.0%); episode_show 0.1% (7.6%); interview_guest 3.1% (8.5%); reaction 1.2% (2.2%); confrontation 7.4% (7.8%); listicle 0.1% (0.1%); howto_explainer 0.7% (9.5%)
 
 
-Nearest style neighbours: @deanwithrs [streamer_reaction]; @TimcastNews [right_commentary]; @TheOfficerTatum [right_commentary]; @JacksonHinkleOfficial [right_commentary]; @LegalAFMTN [legal_institutional]
+Nearest style neighbours: @deanwithrs [left]; @TimcastNews [right]; @TheOfficerTatum [right]; @JacksonHinkleOfficial [neutral]; @LegalAFMTN [left]
 
-Nearest topic neighbours: @TimcastNews [right_commentary]; @TimcastIRL [right_commentary]; @LiberalHivemind [right_commentary]; @HasanAbi [streamer_reaction]; @AsmonTV [streamer_reaction]
+Nearest topic neighbours: @TimcastNews [right]; @TimcastIRL [right]; @LiberalHivemind [right]; @HasanAbi [left]; @AsmonTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

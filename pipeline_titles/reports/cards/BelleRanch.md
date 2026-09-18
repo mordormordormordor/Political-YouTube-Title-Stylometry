@@ -1,6 +1,6 @@
 # Belle of the Ranch (@BelleRanch)
 
-Lane: **left_commentary** · organisation: Belle of the Ranch · clipper: no · platform: youtube · subscribers: 877000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Belle of the Ranch · clipper: no · platform: youtube · subscribers: 877000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 822 rows, 822 unique (repeat share 0.0%); ranked; political share 98.9%.
 Top topics: Iran War and Strait of Hormuz Tensions (9.5%); Trump's Economic Impact (6.0%); Trump's Unwise Actions and Mistakes (5.2%); Trump's War and Draft (4.9%); SAVE Act and Senate Debate (4.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 90.4 | 75.3 | 0.8 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 1.7 | 2.1 | -2.1 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 90.4 | 75.3 | 0.8 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 1.7 | 2.1 | -2.1 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 90.4 | 91.6 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 100.0 | 100.0 | 11.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 41.0 | 35.6 | -0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 41.0 | 35.6 | -0.0 | 0.1 |
 | F6: Person-centred (named people) | 19.2 | 20.1 | -0.7 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 90.4 | 91.2 | 0.7 | -0.5 |
 | F8: Numeric and dated (digits, years) | 43.9 | 57.7 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 23.4 | 18.0 | -0.6 | -0.3 |
-| F10: Quoted speech | 86.6 | 85.4 | 0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 61.5 | 69.9 | 0.0 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 99.2 | 99.6 | 2.3 | -0.3 |
+| F10: Quoted speech | 86.6 | 85.4 | 0.5 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 61.5 | 69.9 | 0.0 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 99.2 | 99.6 | 2.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 8.4% (3.0%); outrage 20.0% (76.0%); humor 0.2% (0.2%); question 0.1% (9.8%); breaking_live 0.4% (5.4%); episode_show 0.0% (2.2%); interview_guest 3.2% (10.4%); reaction 0.5% (1.1%); confrontation 3.2% (8.2%); listicle 0.5% (0.1%); howto_explainer 4.1% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.4% (2.7%); outrage 20.0% (63.9%); humor 0.2% (0.2%); question 0.1% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 3.2% (9.8%); reaction 0.5% (2.9%); confrontation 3.2% (7.6%); listicle 0.5% (0.1%); howto_explainer 4.1% (8.0%)
 
 
-Nearest style neighbours: @AsmonTV [streamer_reaction]; https://rumble.com/c/russellbrand [centrist_heterodox]; @harryjsisson [left_commentary]; @ClipsCandaceOwens [right_commentary]; @TheRealTabithaSpeaks [left_commentary]
+Nearest style neighbours: @AsmonTV [right]; https://rumble.com/c/russellbrand [right]; @harryjsisson [left]; @ClipsCandaceOwens [neutral]; @TheRealTabithaSpeaks [left]
 
-Nearest topic neighbours: @msnow [us_legacy_tv]; @thomhartmann [left_commentary]; @thehill [us_press_print_digital]; @CNN [us_legacy_tv]; @oann [right_tv_network]
+Nearest topic neighbours: @msnow [left]; @thomhartmann [left]; @thehill [neutral]; @CNN [left]; @oann [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Walk-Ins Welcome with Bridget Phetasy (@morebridgetphetasy)
 
-Lane: **interview_podcast** · organisation: Bridget Phetasy · clipper: no · platform: youtube · subscribers: 13100.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Bridget Phetasy · clipper: no · platform: youtube · subscribers: 13100.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 206 rows, 206 unique (repeat share 0.0%); ranked; political share 88.3%.
 Top topics: Left Wing Political Violence (6.3%); JLP Weekly Series (6.3%); AI and Political Concerns (5.3%); Gen Z and Boomers Political Apathy (4.9%); Media and Journalism Critique (4.4%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 78.7 | 90.8 | 0.6 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 90.4 | 86.2 | 0.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 25.5 | 23.0 | -0.4 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 65.3 | 63.6 | -0.0 | -0.2 |
-| F5: Question and explainer framing (why, what, ?) | 77.8 | 84.1 | 0.9 | 0.7 |
-| F6: Person-centred (named people) | 21.8 | 12.1 | -0.6 | 0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 34.3 | 39.7 | -0.7 | -0.8 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 90.4 | 86.2 | 0.9 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 25.5 | 23.0 | -0.4 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 65.3 | 63.6 | -0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 77.8 | 84.1 | 0.9 | 0.2 |
+| F6: Person-centred (named people) | 21.8 | 12.1 | -0.6 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 34.3 | 39.7 | -0.7 | -0.7 |
 | F8: Numeric and dated (digits, years) | 61.1 | 68.2 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 64.0 | 59.4 | -0.1 | -0.3 |
-| F10: Quoted speech | 32.6 | 42.3 | -0.5 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 68.6 | 68.6 | 0.1 | -0.4 |
+| F10: Quoted speech | 32.6 | 42.3 | -0.5 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 68.6 | 68.6 | 0.1 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 59.8 | 50.2 | -0.1 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.0% (1.4%); outrage 43.2% (41.4%); humor 0.5% (0.3%); question 20.4% (19.0%); breaking_live 0.0% (0.5%); episode_show 0.0% (11.4%); interview_guest 2.4% (18.1%); reaction 1.0% (1.4%); confrontation 3.9% (9.2%); listicle 0.0% (0.0%); howto_explainer 12.1% (11.7%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (3.6%); outrage 43.2% (59.6%); humor 0.5% (0.2%); question 20.4% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 2.4% (8.5%); reaction 1.0% (2.2%); confrontation 3.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 12.1% (9.5%)
 
 
-Nearest style neighbours: @thomhartmann [left_commentary]; @theisabelbrown [right_commentary]; @JillianMichaels [interview_podcast]; @glennbeck [right_commentary]; @ChadPrather1 [right_commentary]
+Nearest style neighbours: @thomhartmann [left]; @theisabelbrown [right]; @JillianMichaels [right]; @glennbeck [right]; @ChadPrather1 [right]
 
-Nearest topic neighbours: @PragerU [right_commentary]; @samharrisorg [interview_podcast]; @AndrewKlavan [right_commentary]; @TheAtlantic [us_press_print_digital]; @Styxhexenhammer666 [right_commentary]
+Nearest topic neighbours: @PragerU [right]; @samharrisorg [left]; @AndrewKlavan [right]; @TheAtlantic [left]; @Styxhexenhammer666 [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

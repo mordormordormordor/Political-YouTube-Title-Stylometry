@@ -11,24 +11,25 @@ listing-level metadata that comes with them are the entire dataset.
 ## Results
 
 Start at [`pipeline_titles/reports/README.md`](pipeline_titles/reports/README.md): the
-write-up is split into fourteen documents, one per question, each explaining its finding
-with the tables that carry it and its caveats. Eight follow the pipeline's stages:
+write-up is split into twelve documents, one per question, each explaining its finding
+with the tables that carry it and its caveats. No channel is categorised by hand: the one
+grouping of channels used anywhere is the left / neutral / right channel group of document
+14, how each channel's own titles read to a frontier model. Seven follow the pipeline's stages:
 
-1. [Corpus and lanes](pipeline_titles/reports/01_corpus_and_lanes.md)
+1. [The corpus](pipeline_titles/reports/01_corpus.md): what is analysed, what was stripped, the creator table
 2. [Topics](pipeline_titles/reports/02_topics.md)
-3. [Style dimensions](pipeline_titles/reports/03_style_dimensions.md)
 4. [Formats and hooks](pipeline_titles/reports/04_formats_and_hooks.md)
 5. [The landscape](pipeline_titles/reports/05_landscape.md)
 6. [Drift](pipeline_titles/reports/06_drift.md)
-7. [Views](pipeline_titles/reports/07_views.md)
+7. [Zipf's law and views](pipeline_titles/reports/07_views.md): Zipf's law in title vocabulary
+   and in views, and views over time, each cut by channel group, by title label (left / neither /
+   right) and by capitalisation style (ALL CAPS, selective CAPS, Title Case, Sentence case, mixed, short)
 8. [Null results and caveats](pipeline_titles/reports/08_null_results_and_caveats.md)
 
-Six answer a question of their own, each with its method and limitations:
+Five answer a question of their own, each with its method and limitations:
 
 9. [Stylistic twins](pipeline_titles/reports/09_stylistic_twins.md): which left and right
-   commentary creators title the same way
-10. [Outrage by lane](pipeline_titles/reports/10_outrage_by_lane.md): how much of political
-    YouTube is framed as outrage, with confidence intervals
+   channels title the same way
 11. [Capitalisation and vocabulary](pipeline_titles/reports/11_capitalisation_and_vocabulary.md)
 12. [Arousal index](pipeline_titles/reports/12_arousal_index.md): a 0-1 emotional-charge index
     per channel
@@ -55,7 +56,8 @@ Six answer a question of their own, each with its method and limitations:
   `features.csv` (creator x genre x month), `dimensions.csv` (creator scores, raw and
   topic-controlled), `topics.csv` (title -> topic), `labels.csv` (the 3,000 LLM-rated
   titles), `leaning_labels.csv.gz` (the 12,478 titles labelled left / right / neither by the
-  judge), `lanes.csv` (lane / organisation / clipper per creator; a proposal to correct).
+  judge), `leaning_by_creator.csv` (each channel's score and its left / neutral / right group),
+  `creators.csv` (channel name / organisation / clipper / subscribers per creator).
 
 Headline findings from the 2026-09-14 run are in `pipeline_titles/reports/headlines.md`.
 
@@ -107,7 +109,7 @@ plus a top-up to 50, spread evenly across months, for creators with at least 50 
 uploads (`--n-per-creator`, `--min-uploads`); the base draw never changes, so earlier
 labels are reused and only new titles are sent to a model. `--analyse-only` recomputes
 every table (agreement, channel scores, yardsticks, split-half and base-vs-top-up
-reliability, words, lane x month) from the labels on disk without a model call.
+reliability, words, group x month) from the labels on disk without a model call.
 `--prompt-version v2` also asks for the title's target (who it attacks), which separates
 "attacks Trump" from "speaks for the left".
 The stage writes a blind 200-title adjudication sheet
@@ -143,25 +145,26 @@ from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
 | stage | what it does |
 |---|---|
 | `prepare` | normalise titles (strip show names, episode numbers, dates, brand tags by a per-creator 20 % rule), mark verbatim repeats, low-n groups, the creator-balanced subset; Zipf check |
-| `lanes` | write the lane / organisation / clipper proposal (`lanes.csv`; edit the CSV, not `lane_seed.py`) |
+| `creators` | write the creator table (`creators.csv`: organisation / clipper / subscribers; edit the CSV, not `creator_seed.py`) |
+| `leaning` | document 14 and the channel groups every later stage reports by: left / right / neither labels from Claude Opus (title text only, shuffled batches, cached); channel scores and the left / neutral / right groups they define; split-half and base-vs-top-up reliability; group x month; weighted log-odds and rank-turbulence words for the titles and for the groups' whole output; the log-odds lexicon and its out-of-fold check |
 | `annotate` | spaCy tokens, POS, entities per unique title (ALL-CAPS titles truecased first) |
 | `embed` | sentence embeddings (all-mpnet-base-v2), cached and incremental |
-| `topics` | BERTopic on a ~100k creator-stratified sample, nearest-centroid assignment for all titles, LLM labels and political flag, per-creator mix, lane shares, monthly spikes |
+| `topics` | BERTopic on a ~100k creator-stratified sample, nearest-centroid assignment for all titles, LLM labels and political flag, per-creator mix, channel-group shares, monthly spikes |
 | `llm_rate` | 3,000-title stratified sample rated 1-5 on five candidate dimensions plus hook flags and a format label, with a 300-title retest |
 | `features` | ~75 title-level style features -> creator x genre x month; formulaicity; Heaps' and Zipf lexical diversity with sample-size sensitivity |
 | `factors` | exploratory factor analysis (parallel analysis, minres, oblimin), factor scores per cell, creator and title, topic control |
 | `validate` | LLM ratings vs factor scores, candidate-label mapping, test-retest reliability |
 | `formats` | regex formats on raw titles; hook classifier trained on the LLM labels and applied to every title |
-| `landscape` | style vs topic clusterings vs lanes (ARI), nearest neighbours, who gets named, shared titles and templates |
-| `timeline` | monthly drift per lane and creator; month-to-month topic change |
+| `landscape` | style vs topic clusterings vs the channel groups (ARI), nearest neighbours, who gets named, shared titles and templates |
+| `timeline` | monthly drift per channel group and creator; month-to-month topic change |
 | `engagement` | within-creator regressions of log views on style with month and topic controls |
 | `hits` | Gini, top-10 % share, Clauset-Shalizi-Newman tail fit vs lognormal |
-| `profiles` | the question documents 9-13: stylistic twins, outrage by lane with confidence intervals, capitalisation profiles and top words, the arousal index, signature keywords |
-| `leaning` | document 14: left / right / neither labels from Claude Opus (title text only, shuffled batches); channel scores and the left / neutral / right groups they define; split-half and base-vs-top-up reliability; group x month; weighted log-odds and rank-turbulence words for the titles and for the groups' whole output; the log-odds lexicon and its out-of-fold check |
+| `profiles` | the question documents 9, 11, 12, 13: stylistic twins across the left / right groups, capitalisation profiles and top words, the arousal index, signature keywords |
+| `zipf_views` | document 7: Zipf's law for words (per channel group, title label and capitalisation style, with size-matched exponents) and for views (rank-size slopes), views by publication month, and views relative to each channel's monthly baseline by capitalisation style and title label |
 | `allotax` | allotaxonographs for document 14 (needs Node; see above) |
 | `report_data`, `report` | cards JSON, Markdown report, methods appendix, cards, HTML page |
 
-Hand-edited files that survive re-runs: `data/titles/analysis/lanes.csv`,
+Hand-edited files that survive re-runs: `data/titles/analysis/creators.csv`,
 `data/titles/analysis/factor_names.json`, `pipeline_titles/reports/headlines.md`.
 
 Tests (pure helpers, no data or network): `.venv/bin/python -m pytest -q`.

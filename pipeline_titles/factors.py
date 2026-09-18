@@ -2,7 +2,7 @@
 scores for every cell, creator and title, and topic control.
 
 Reads features.csv (creator x genre x month), features_title.parquet, topics.csv
-and lanes.csv. Writes, under data/titles/analysis/:
+and creators.csv. Writes, under data/titles/analysis/:
 
     efa_summary.json         features used / dropped (and why), n cells, KMO,
                              Bartlett, parallel-analysis result, retained factors,
@@ -16,7 +16,7 @@ and lanes.csv. Writes, under data/titles/analysis/:
                              topic-controlled
     dimensions.csv           creator x genre: raw score, topic-expected component,
                              topic-controlled (residual) score, percentile ranks
-                             within genre (non-low-n creators), lane medians
+                             within genre (non-low-n creators), channel-group medians
     dimensions_title.parquet row_id, topic_id, raw and residual title-level scores
     dimensions_by_topic.csv  creator scores within the 5 largest shared topics
     topic_control_summary.csv  per factor: share of title-level and creator-level
@@ -53,7 +53,7 @@ import pandas as pd
 
 from pipeline_titles.common import (
     ANALYSIS_DIR, DIMENSIONS_CSV, DIMENSIONS_TITLE, FEATURES_CSV, FEATURES_TITLE, LOW_N, SEED, TOPICS_CSV,
-    load_lanes, load_prepared, stage_timer,
+    load_creators, load_prepared, stage_timer,
 )
 from pipeline_titles.features import BINARY_OR_COUNT
 
@@ -192,7 +192,7 @@ def run(n_factors_forced: Optional[int], info: dict) -> None:
     # ---- scores: cells, titles ----
     fcols = list(load.columns)
     cell_scores = pd.DataFrame(fa.transform(X) * sign, columns=fcols)
-    cells_out = pd.concat([cells[["creator", "genre", "month", "n_titles", "lane"]].reset_index(drop=True), cell_scores], axis=1)
+    cells_out = pd.concat([cells[["creator", "genre", "month", "n_titles", "group"]].reset_index(drop=True), cell_scores], axis=1)
 
     tf = pd.read_parquet(FEATURES_TITLE)
     tf = tf[~tf["is_dup"]].reset_index(drop=True)
@@ -217,7 +217,7 @@ def run(n_factors_forced: Optional[int], info: dict) -> None:
         ctrl_rows.append({"factor": f, "n_topics": int(tmean.notna().sum()), "title_level_r2_topic": round(float(1 - titles.loc[titles["in_balanced"], f + "_resid"].var() / bal[f].var()), 4)})
     titles.to_parquet(DIMENSIONS_TITLE, index=False)
 
-    lanes = load_lanes()[["creator", "lane", "organisation", "clipper", "platform"]]
+    creators = load_creators()[["creator", "group", "organisation", "clipper", "platform"]]
     agg = {f: (f, "mean") for f in fcols} | {f + "_resid": (f + "_resid", "mean") for f in fcols}
     cg = titles.groupby(["creator", "genre"]).agg(n_unique=("row_id", "size"), **agg).reset_index()
     cg["low_n"] = cg["n_unique"] < LOW_N
@@ -226,15 +226,15 @@ def run(n_factors_forced: Optional[int], info: dict) -> None:
         cg[f + "_controlled"] = cg[f + "_resid"]
         cg[f + "_topic_component"] = cg[f] - cg[f + "_resid"]
         cg = cg.drop(columns=[f, f + "_resid"])
-    cg = cg.merge(lanes, on="creator", how="left")
+    cg = cg.merge(creators, on="creator", how="left")
     for f in fcols:
         for kind in ("raw", "controlled"):
             col = f"{f}_{kind}"
             cg[f"{f}_pct_{kind}"] = np.nan
             for g, sub in cg[~cg["low_n"]].groupby("genre"):
                 cg.loc[sub.index, f"{f}_pct_{kind}"] = sub[col].rank(pct=True) * 100
-        med = cg[~cg["low_n"]].groupby(["lane", "genre"])[f"{f}_controlled"].median().rename(f"{f}_lane_median")
-        cg = cg.join(med, on=["lane", "genre"])
+        med = cg[~cg["low_n"]].groupby(["group", "genre"])[f"{f}_controlled"].median().rename(f"{f}_group_median")
+        cg = cg.join(med, on=["group", "genre"])
     cg.to_csv(DIMENSIONS_CSV, index=False)
     for r, f in zip(ctrl_rows, fcols):
         ok = cg[~cg["low_n"]]
@@ -254,7 +254,7 @@ def run(n_factors_forced: Optional[int], info: dict) -> None:
     cnt = titles.groupby(["topic_id", "creator", "genre"]).size().reset_index(name="n")
     big = cnt[cnt["n"] >= 10].groupby("topic_id")["creator"].nunique().nlargest(5).index.tolist()
     within = titles[titles["topic_id"].isin(big)].groupby(["topic_id", "creator", "genre"]).agg(n=("row_id", "size"), **{f: (f, "mean") for f in fcols}).reset_index()
-    within = within[within["n"] >= 10].merge(tl, on="topic_id").merge(lanes[["creator", "lane"]], on="creator", how="left")
+    within = within[within["n"] >= 10].merge(tl, on="topic_id").merge(creators[["creator", "group"]], on="creator", how="left")
     within.to_csv(ANALYSIS_DIR / "dimensions_by_topic.csv", index=False)
     print("factors:", {f: names[f]["auto"] for f in fcols})
 

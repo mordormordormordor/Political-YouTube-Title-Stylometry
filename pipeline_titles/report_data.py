@@ -2,9 +2,9 @@
 (pipeline_titles/reports/cards.json) that report.py renders as Markdown cards and
 that the HTML page embeds.
 
-Card layout (fixed): identity (lane, organisation, clipper, platform, subscribers);
-per genre: n titles (rows / unique / repeat share / low-n), political share, top-5
-topics, dimension scores as percentile ranks with the lane median, hook and format
+Card layout (fixed): identity (channel group, organisation, clipper, platform,
+subscribers); per genre: n titles (rows / unique / repeat share / low-n), political
+share, top-5 topics, dimension scores as percentile ranks with the group median, hook and format
 shares, five nearest style neighbours (and topic neighbours), monthly drift
 sparkline data, engagement coefficients (if n >= 100 with views), hit
 concentration, lexical diversity.
@@ -24,7 +24,7 @@ from typing import Optional, Sequence
 import numpy as np
 import pandas as pd
 
-from pipeline_titles.common import ANALYSIS_DIR, DIMENSIONS_CSV, GENRES, MONTHS, REPORTS_DIR, load_lanes, stage_timer, utc_now
+from pipeline_titles.common import ANALYSIS_DIR, DIMENSIONS_CSV, GENRES, GROUPS, MONTHS, REPORTS_DIR, load_creators, stage_timer, utc_now
 
 CARDS_JSON = REPORTS_DIR / "cards.json"
 HOOKS = ["curiosity_gap", "outrage", "humor"]
@@ -50,7 +50,7 @@ def _rec(df: pd.DataFrame, **match) -> Optional[pd.Series]:
 
 
 def build() -> dict:
-    lanes = load_lanes()
+    creators_tbl = load_creators()
     summ = pd.read_csv(ANALYSIS_DIR / "creator_genre_summary.csv")
     pol = pd.read_csv(ANALYSIS_DIR / "creator_political_share.csv")
     mix = pd.read_csv(ANALYSIS_DIR / "creator_topic_mix.csv.gz")
@@ -59,7 +59,7 @@ def build() -> dict:
     names = json.loads((ANALYSIS_DIR / "factor_names.json").read_text())
     shares = pd.read_csv(ANALYSIS_DIR / "format_hook_shares.csv")
     shares_c = shares[shares["level"] == "creator"]
-    shares_l = shares[shares["level"] == "lane_mean_of_creators"]
+    shares_l = shares[shares["level"] == "group_mean_of_creators"]
     nn_s = pd.read_csv(ANALYSIS_DIR / "neighbours_style.csv")
     nn_s = nn_s[nn_s["titles"] == "all"]
     nn_t = pd.read_csv(ANALYSIS_DIR / "neighbours_topic.csv")
@@ -76,13 +76,13 @@ def build() -> dict:
     extra = {}
     for name in ("arousal_index.csv", "caps_profile.csv", "signature_keywords.csv", "leaning_by_creator.csv"):
         extra[name] = pd.read_csv(ANALYSIS_DIR / name) if (ANALYSIS_DIR / name).exists() else None
-    lane_med = {}
-    for (lane, genre), g in dims[~dims["low_n"]].groupby(["lane", "genre"]):
-        lane_med[f"{lane}|{genre}"] = {f: _num(g[f + "_controlled"].median()) for f in fcols}
+    group_med = {}
+    for (group, genre), g in dims[~dims["low_n"]].groupby(["group", "genre"]):
+        group_med[f"{group}|{genre}"] = {f: _num(g[f + "_controlled"].median()) for f in fcols}
 
     creators = {}
-    for r in lanes.itertuples():
-        card = {"creator": r.creator, "channel_name": r.channel_name, "platform": r.platform, "lane": r.lane,
+    for r in creators_tbl.itertuples():
+        card = {"creator": r.creator, "channel_name": r.channel_name, "platform": r.platform, "group": r.group,
                 "organisation": r.organisation, "clipper": bool(r.clipper), "subscribers": _num(r.subscribers), "note": r.note, "genres": {}}
         for genre in GENRES:
             s = _rec(summ, creator=r.creator, genre=genre)
@@ -97,18 +97,18 @@ def build() -> dict:
             d = _rec(dims, creator=r.creator, genre=genre)
             if d is not None:
                 g["dimensions"] = {f: {"raw": _num(d[f + "_raw"]), "controlled": _num(d[f + "_controlled"]), "topic_component": _num(d[f + "_topic_component"]),
-                                       "pct_raw": _num(d[f + "_pct_raw"]), "pct_controlled": _num(d[f + "_pct_controlled"]), "lane_median": _num(d[f + "_lane_median"])} for f in fcols}
+                                       "pct_raw": _num(d[f + "_pct_raw"]), "pct_controlled": _num(d[f + "_pct_controlled"]), "group_median": _num(d[f + "_group_median"])} for f in fcols}
             sh = _rec(shares_c, creator=r.creator, genre=genre)
             if sh is not None:
-                lm = _rec(shares_l, lane=r.lane, genre=genre)
-                g["hooks"] = {h: {"share": _num(sh[h]), "lane_mean": _num(lm[h]) if lm is not None else None} for h in HOOKS}
-                g["formats"] = {f: {"share": _num(sh[f]), "lane_mean": _num(lm[f]) if lm is not None else None} for f in FORMATS}
+                lm = _rec(shares_l, group=r.group, genre=genre)
+                g["hooks"] = {h: {"share": _num(sh[h]), "group_mean": _num(lm[h]) if lm is not None else None} for h in HOOKS}
+                g["formats"] = {f: {"share": _num(sh[f]), "group_mean": _num(lm[f]) if lm is not None else None} for f in FORMATS}
             n = _rec(nn_s, creator=r.creator, genre=genre)
             if n is not None:
-                g["neighbours_style"] = [{"creator": n[f"nn{i}"], "lane": n[f"nn{i}_lane"], "distance": _num(n[f"nn{i}_dist"])} for i in range(1, 6)]
+                g["neighbours_style"] = [{"creator": n[f"nn{i}"], "group": n[f"nn{i}_group"], "distance": _num(n[f"nn{i}_dist"])} for i in range(1, 6)]
             n = _rec(nn_t, creator=r.creator, genre=genre)
             if n is not None:
-                g["neighbours_topic"] = [{"creator": n[f"nn{i}"], "lane": n[f"nn{i}_lane"], "js": _num(n[f"nn{i}_js"])} for i in range(1, 6)]
+                g["neighbours_topic"] = [{"creator": n[f"nn{i}"], "group": n[f"nn{i}_group"], "js": _num(n[f"nn{i}_js"])} for i in range(1, 6)]
             c1 = _rec(sc, creator=r.creator, genre=genre); c2 = _rec(tc, creator=r.creator, genre=genre)
             g["style_cluster"] = int(c1.style_cluster) if c1 is not None else None
             g["topic_cluster"] = int(c2.topic_cluster) if c2 is not None else None
@@ -159,10 +159,10 @@ def build() -> dict:
                                    **{c.replace("label_", "").replace("_score", ""): _num(l_[c]) for c in cols}}
         creators[r.creator] = card
     data = {"generated": utc_now(), "factors": {f: {"name": names[f].get("name") or names[f]["auto"], "auto": names[f]["auto"]} for f in fcols},
-            "lanes": sorted(lanes["lane"].unique()), "lane_medians": lane_med, "hooks": HOOKS, "formats": FORMATS, "months": MONTHS,
+            "groups": [g for g in list(GROUPS) + ["unscored"] if g in set(creators_tbl["group"])], "group_medians": group_med, "hooks": HOOKS, "formats": FORMATS, "months": MONTHS,
             "topic_labels": {int(t.topic_id): {"label": t.label, "political": bool(t.political)} for t in labels.itertuples()},
-            "maps": {"style": {genre: [{"creator": m.creator, "lane": m.lane, "x": _num(m.x), "y": _num(m.y), "cluster": int(m.style_cluster)} for m in map_s[map_s["genre"] == genre].itertuples()] for genre in GENRES},
-                     "topic": {genre: [{"creator": m.creator, "lane": m.lane, "x": _num(m.x), "y": _num(m.y), "cluster": int(m.topic_cluster)} for m in map_t[map_t["genre"] == genre].itertuples()] for genre in GENRES}},
+            "maps": {"style": {genre: [{"creator": m.creator, "group": m.group, "x": _num(m.x), "y": _num(m.y), "cluster": int(m.style_cluster)} for m in map_s[map_s["genre"] == genre].itertuples()] for genre in GENRES},
+                     "topic": {genre: [{"creator": m.creator, "group": m.group, "x": _num(m.x), "y": _num(m.y), "cluster": int(m.topic_cluster)} for m in map_t[map_t["genre"] == genre].itertuples()] for genre in GENRES}},
             "creators": creators}
     return data
 

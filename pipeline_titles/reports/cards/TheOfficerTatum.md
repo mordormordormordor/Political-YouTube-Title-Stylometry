@@ -1,6 +1,6 @@
 # The Officer Tatum (@TheOfficerTatum)
 
-Lane: **right_commentary** · organisation: Officer Tatum · clipper: no · platform: youtube · subscribers: 3840000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Officer Tatum · clipper: no · platform: youtube · subscribers: 3840000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 617 rows, 617 unique (repeat share 0.0%); ranked; political share 82.7%.
 Top topics: Nolan Wells Investigation (9.9%); Race and Politics in Media (5.7%); Karmelo Anthony Trial Verdict (4.9%); Charlie Kirk murder trial (4.7%); Zohran Mamdani and NYC Politics (4.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 5.0 | 6.3 | -1.1 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 48.1 | 46.9 | -0.1 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 48.1 | 46.9 | -0.1 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 57.3 | 43.1 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 60.3 | 52.7 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 15.5 | 15.1 | -0.4 | 0.2 |
-| F6: Person-centred (named people) | 66.1 | 78.2 | -0.0 | -0.3 |
+| F6: Person-centred (named people) | 66.1 | 78.2 | -0.0 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 60.7 | 51.5 | -0.5 | -0.7 |
 | F8: Numeric and dated (digits, years) | 33.9 | 30.5 | -0.3 | -0.2 |
 | F9: ALL-CAPS shouting | 95.8 | 93.7 | 1.8 | -0.3 |
 | F10: Quoted speech | 43.9 | 52.3 | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 84.5 | 84.5 | 0.5 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 84.5 | 84.5 | 0.5 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 12.6 | 10.5 | -0.7 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.9% (3.8%); outrage 87.4% (63.4%); humor 0.5% (0.2%); question 10.2% (15.1%); breaking_live 4.5% (1.3%); episode_show 7.5% (7.8%); interview_guest 9.1% (8.2%); reaction 0.7% (2.5%); confrontation 8.4% (7.7%); listicle 0.0% (0.1%); howto_explainer 5.7% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.9% (3.6%); outrage 87.4% (59.6%); humor 0.5% (0.2%); question 10.2% (15.6%); breaking_live 4.5% (2.0%); episode_show 7.5% (7.6%); interview_guest 9.1% (8.5%); reaction 0.7% (2.2%); confrontation 8.4% (7.8%); listicle 0.0% (0.1%); howto_explainer 5.7% (9.5%)
 
 
-Nearest style neighbours: @LegalAFMTN [legal_institutional]; @deanwithrs [streamer_reaction]; @MeidasTouch [left_commentary]; @dollemore [left_commentary]; @TheQuartering [right_commentary]
+Nearest style neighbours: @LegalAFMTN [left]; @deanwithrs [left]; @MeidasTouch [left]; @dollemore [left]; @TheQuartering [right]
 
-Nearest topic neighbours: @MegynKelly [right_commentary]; @BlackConservativePerspective [right_commentary]; @bennyjohnson [right_commentary]; @MichaelKnowles [right_commentary]; @BlazeTV [right_commentary]
+Nearest topic neighbours: @MegynKelly [right]; @BlackConservativePerspective [right]; @bennyjohnson [right]; @MichaelKnowles [right]; @BlazeTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 194 rows, 194 unique (repeat share 0.0%); ranked; political share 78.9%.
 Top topics: Nolan Wells Investigation (12.4%); Charlie Kirk murder trial (8.2%); Karmelo Anthony Trial Verdict (5.7%); ICE Protests and Shootings (4.1%); Race and Politics in Media (3.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 46.8 | 50.6 | 0.1 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 44.3 | 45.6 | -0.4 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 44.3 | 45.6 | -0.4 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 97.5 | 91.1 | 3.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 70.9 | 68.4 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 45.6 | 59.5 | -0.3 | -0.2 |
-| F6: Person-centred (named people) | 7.6 | 31.6 | -0.6 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 45.6 | 59.5 | -0.3 | -0.3 |
+| F6: Person-centred (named people) | 7.6 | 31.6 | -0.6 | 0.0 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 19.0 | 12.7 | -0.7 | -0.6 |
 | F8: Numeric and dated (digits, years) | 8.9 | 5.1 | -0.5 | -0.0 |
 | F9: ALL-CAPS shouting | 91.1 | 89.9 | 1.9 | -0.4 |
-| F10: Quoted speech | 50.6 | 44.3 | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 51.9 | 48.1 | 0.0 | 0.1 |
+| F10: Quoted speech | 50.6 | 44.3 | -0.5 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 51.9 | 48.1 | 0.0 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | 10.1 | 5.1 | -0.8 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 4.6% (4.2%); outrage 61.3% (62.2%); humor 0.0% (0.2%); question 19.1% (16.8%); breaking_live 85.6% (18.6%); episode_show 78.3% (23.4%); interview_guest 10.8% (16.3%); reaction 1.0% (2.8%); confrontation 3.6% (11.1%); listicle 0.0% (0.2%); howto_explainer 1.6% (6.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.6% (3.2%); outrage 61.3% (56.4%); humor 0.0% (0.1%); question 19.1% (13.7%); breaking_live 85.6% (18.8%); episode_show 78.3% (26.3%); interview_guest 10.8% (14.0%); reaction 1.0% (2.1%); confrontation 3.6% (9.4%); listicle 0.0% (0.2%); howto_explainer 1.6% (5.3%)
 
 
-Nearest style neighbours: @MeidasTouch [left_commentary]; @oann [right_tv_network]; @StatusCoup [independent_digital_news]; @Reuters [wire_international]; @ANINewsIndia [wire_international]
+Nearest style neighbours: @MeidasTouch [left]; @oann [right]; @StatusCoup [left]; @Reuters [neutral]; @ANINewsIndia [neutral]
 
-Nearest topic neighbours: @TimcastIRL [right_commentary]; @marclamonthillnetwork [left_commentary]; @RealAmericasVoice [right_tv_network]; @TheDonLemonShow [left_commentary]; @NewsmaxTV [right_tv_network]
+Nearest topic neighbours: @TimcastIRL [right]; @marclamonthillnetwork [left]; @RealAmericasVoice [right]; @TheDonLemonShow [left]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

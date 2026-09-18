@@ -1,6 +1,6 @@
 # POLITICO (@POLITICO)
 
-Lane: **us_press_print_digital** · organisation: Politico · clipper: no · platform: youtube · subscribers: 225000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: Politico · clipper: no · platform: youtube · subscribers: 225000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 295 rows, 295 unique (repeat share 0.0%); ranked; political share 96.6%.
 Top topics: Trump and Rising Energy Prices (9.8%); 2026 Midterm Election Predictions (6.8%); Iran War and Strait of Hormuz Tensions (6.4%); 2026 US Primary Elections (5.1%); Climate and Weather Politics (3.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 98.7 | 92.5 | 1.2 | 0.7 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 41.8 | 42.3 | -0.2 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 98.7 | 92.5 | 1.2 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 41.8 | 42.3 | -0.2 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 12.1 | 29.7 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 31.8 | 32.6 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 82.0 | 78.7 | 1.1 | 1.0 |
+| F5: Question and explainer framing (why, what, ?) | 82.0 | 78.7 | 1.1 | 0.1 |
 | F6: Person-centred (named people) | 22.2 | 32.6 | -0.6 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 94.6 | 93.7 | 1.0 | -0.4 |
-| F8: Numeric and dated (digits, years) | 52.7 | 69.9 | -0.1 | -0.1 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 94.6 | 93.7 | 1.0 | -0.1 |
+| F8: Numeric and dated (digits, years) | 52.7 | 69.9 | -0.1 | 0.0 |
 | F9: ALL-CAPS shouting | 36.4 | 37.7 | -0.4 | -0.4 |
 | F10: Quoted speech | 43.1 | 52.7 | -0.5 | -0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 24.3 | 35.6 | -0.7 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 24.3 | 35.6 | -0.7 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 57.3 | 76.2 | -0.1 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.0% (1.8%); outrage 30.9% (28.1%); humor 0.0% (0.1%); question 25.8% (26.4%); breaking_live 0.7% (1.0%); episode_show 0.0% (1.9%); interview_guest 6.4% (9.0%); reaction 1.4% (0.7%); confrontation 3.7% (4.1%); listicle 0.3% (0.4%); howto_explainer 8.1% (14.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.0% (2.4%); outrage 30.9% (36.0%); humor 0.0% (0.1%); question 25.8% (15.9%); breaking_live 0.7% (1.1%); episode_show 0.0% (7.0%); interview_guest 6.4% (11.6%); reaction 1.4% (1.9%); confrontation 3.7% (7.4%); listicle 0.3% (0.1%); howto_explainer 8.1% (6.6%)
 
 
-Nearest style neighbours: @ABCNews [us_legacy_tv]; @NBCNews [us_legacy_tv]; @axios [us_press_print_digital]; @BBCNews [wire_international]; @CNN [us_legacy_tv]
+Nearest style neighbours: @ABCNews [neutral]; @NBCNews [neutral]; @axios [neutral]; @BBCNews [neutral]; @CNN [left]
 
-Nearest topic neighbours: @msnow [us_legacy_tv]; @thehill [us_press_print_digital]; @thomhartmann [left_commentary]; @CNN [us_legacy_tv]; @BelleRanch [left_commentary]
+Nearest topic neighbours: @msnow [left]; @thehill [neutral]; @thomhartmann [left]; @CNN [left]; @BelleRanch [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

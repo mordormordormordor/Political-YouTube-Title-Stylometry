@@ -1,131 +1,149 @@
-# 7. Views: does title style predict engagement, and how concentrated are hits?
+# 7. Zipf's law, and views over time
 
-**The question.** Within a channel, do titles with more outrage, more capitals, a question, a name, a longer length get more views once the story and the month are held fixed? And how unequal are a channel's views across its videos?
+**The question.** Does title vocabulary follow Zipf's law, and does the shape of the law differ between left, neutral and right channels, between titles the judge read as left, neither or right, and between capitalisation styles? Do views within a channel follow a Zipf (rank-size) law? And how do views run over the months of 2026, again cut by channel group, by title label and by capitalisation style?
+
+Three groupings run through the whole document. **Channel group**: left / neutral / right channels, each channel's title-leaning score from document 14 (thresholds ±0.05). **Title label**: left / neither / right, the judge's label of each sampled title (document 14; 12,462 of the 12,478 sampled titles are edited uploads and are used here). **Capitalisation style**: ALL CAPS, selective CAPS, Title Case, Sentence case, mixed / other and short / other, one rule per title (document 11).
 
 ## The finding in one paragraph
 
-Within creator, the outrage frame is the only title feature that predicts views with a consistent sign. For each of the 193 channels with at least 100 edited uploads carrying a view count, log views were regressed on the title's twelve factor scores, its hook labels and its length, with publish-month and topic dummies as controls; predictors are standardised within the channel. The outrage coefficient is positive for 73 % of channels, significant and positive for 24 %, significant and negative for 1 %, median +0.042 log views per standard deviation (a few per cent more views for a one-SD more outraged title). Every other predictor has a median effect at or below 0.03 in absolute value with sign agreement between 50 % and 70 % across channels, which is a null result at this sample size. Views are concentrated (median Gini 0.51; the top 10 % of a channel's videos take 38 % of its views) but the tail is not a power law: the Clauset-Shalizi-Newman likelihood-ratio test prefers a lognormal in 193 of 193 video channels. Concentration tracks channel size more than style.
+Title vocabulary is Zipfian in the way short texts usually are: on log-log axes the rank-frequency curve is straight through the head (R² 0.995 over the top 1,000 words) with an exponent that depends on the cut-off (0.78 over the top 1,000 words, 1.01 over the top 5,000), because ten-word titles have a flatter head than running prose. The three ways of cutting the corpus move the curve less than they move the words on it. Left channels have the steepest vocabulary (size-matched exponent 0.82 against 0.79 for the right group): "trump" is their most frequent word, ahead of "the". Among the labelled titles the left-read ones are again the most concentrated (0.85) and the right-read ones the least (0.77). ALL-CAPS titles are the shortest (6.2 tokens against 11.2 for sentence case) and their head is the flattest, with "this", "it" and "they" among the ten most frequent words: the shouted title is a reaction, not a headline. Views within a channel are *not* Zipfian: the rank-size curve bends down in the tail, the power-law fit is never significantly preferred to a lognormal (0 of 193 video channels; the lognormal is significantly preferred in 79 and the test is inconclusive in the rest), and the neutral group is the most hit-driven (median Gini 0.67 against 0.49 and 0.49). Over the months, views per video are a snapshot that favours older uploads, and the left group's channels sit far above the other two in every month (median channel 50k views per video against about 20k for the right group and 20k for the neutral). Against each channel's own monthly baseline, capitals earn views in every month of the year (ALL CAPS +0.04 and selective CAPS +0.05 log points, Title Case -0.03, sentence case -0.03), and right-read titles do a little better than left-read ones, which do a little better than neither (+0.04, +0.01, -0.02).
 
-## Within-creator effects, edited uploads (median over channels)
+## Zipf's law in title vocabulary
 
-![Per-channel coefficients for every title feature; boxes show the spread across channels, the black line the median.](figures/07_engagement_coefficients.png)
-*Per-channel coefficients for every title feature; boxes show the spread across channels, the black line the median.*
+![Rank-frequency curves by channel group, by title label and by capitalisation style.](figures/07_zipf_words.png)
+*Word frequency against rank on log-log axes, three ways of cutting the corpus; the dotted black line is the whole corpus.*
 
-Coefficient = change in log(1 + views) per one within-channel standard deviation of the predictor; `share_positive` = share of channels with a positive coefficient; `share_sig_*` at p < 0.05 (HC3).
+Tokens are lower-cased words from the normalised title, stopwords included (Zipf's law is a statement about the whole vocabulary). Systems differ in size, and the OLS exponent depends on size, so two exponents are given: over the top 1,000 ranks of the whole system, and *size-matched* (the mean over 20 random draws of 2,000 titles, top 200 ranks), which is the one to compare across rows.
 
-| predictor | n_creators | median_coef_per_sd | q25 | q75 | share_positive | share_sig_positive | share_sig_negative | median_r2 |
+| grouping | system | n_titles | n_tokens | n_types | tokens_per_title | zipf_top100 | zipf_top1000 | zipf_top5000 | zipf_r2_top1000 | zipf_size_matched | top1_share | top_10 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| corpus | all edited uploads (balanced) | 155636 | 1612982 | 48959 | 10.360 | 0.859 | 0.785 | 1.014 | 0.995 | 0.813 | 0.025 | the trump to in on of s is iran and |
+| channel_group | left channels | 64947 | 618335 | 26834 | 9.520 | 0.857 | 0.824 | 1.087 | 0.996 | 0.818 | 0.038 | trump the to in as on s is of iran |
+| channel_group | neutral channels | 39161 | 442699 | 28903 | 11.300 | 0.848 | 0.792 | 1.006 | 0.995 | 0.801 | 0.020 | in to the of trump on iran s for us |
+| channel_group | right channels | 51528 | 551948 | 27779 | 10.710 | 0.828 | 0.786 | 1.023 | 0.996 | 0.786 | 0.034 | the to in is of trump on and a s |
+| title_label | left titles | 3031 | 29617 | 6005 | 9.770 | 0.859 | 0.818 | 0.997 | 0.995 | 0.847 | 0.038 | trump the to is s in on of and as |
+| title_label | right titles | 2550 | 26617 | 6104 | 10.440 | 0.769 | 0.775 | 0.965 | 0.996 | 0.773 | 0.041 | the to is on trump in of and for s |
+| title_label | neither titles | 6881 | 62974 | 11081 | 9.150 | 0.864 | 0.811 | 0.964 | 0.996 | 0.815 | 0.040 | the to in is of a on s and trump |
+| caps_style | ALL CAPS | 4163 | 25992 | 4936 | 6.240 | 0.764 | 0.875 | 0.990 | 0.994 | 0.795 | 0.025 | the is trump this to it in they iran s |
+| caps_style | selective CAPS | 56805 | 592182 | 26654 | 10.420 | 0.808 | 0.794 | 1.067 | 0.997 | 0.782 | 0.032 | trump the to in as on s is of iran |
+| caps_style | Title Case | 52644 | 543500 | 30226 | 10.320 | 0.852 | 0.795 | 1.015 | 0.996 | 0.824 | 0.034 | the trump to s in on of is and a |
+| caps_style | Sentence case | 38729 | 431875 | 28270 | 11.150 | 0.863 | 0.796 | 1.012 | 0.995 | 0.812 | 0.022 | to in the of trump on iran and for s |
+| caps_style | mixed / other | 1334 | 14193 | 4133 | 10.640 | 0.831 | 0.832 | 0.817 | 0.988 |  | 0.024 | in a the to s i of u this is |
+| caps_style | short / other | 1961 | 5240 | 1123 | 2.670 | 1.256 | 0.827 | 0.776 | 0.864 |  | 0.117 | tyt hour episode 1 2 bonus 26 full hasanabi 2026 |
+
+
+Three things to read off the table. The corpus exponent over the top 100 words (0.86) is higher than over the top 1,000 (0.78) and lower than over the top 5,000 (1.01): the head of a title vocabulary is flat because titles ration function words, and the tail is steep because a 155k-title corpus has a long list of names used once (the Stage 0 check on the balanced subset with streams included, `zipf_check.csv`, gives the same three figures). The left group is the most concentrated of the three channel groups and the left-read titles the most concentrated of the three labels, and "trump" heads both lists (3.8% of the left group's tokens, 3.8% of the left-read titles'), whereas the neutral group and the neither-read titles start with "the" and "in"; the right-read titles are the flattest system in the corpus, their most frequent words being the function words of a headline ("the", "to", "is", "on") with "trump" fifth. The capitalisation styles differ in length more than in slope; the ALL-CAPS system is the exception, with the lowest top-100 exponent (0.76) and the highest top-1,000 exponent (0.87): a small, repetitive vocabulary of reaction words with a very short tail.
+
+Creator-level exponents (each channel's own vocabulary, top 200 ranks, from the Stage 0 check; and the subsampled Zipf and Heaps exponents of Stage 2, which exist only for the `n_creators_1500` channels with at least 1,500 tokens) averaged per group tell the same story from the channel side, with the ranked channels' dominant capitalisation style as a second cut:
+
+| grouping | group | n_creators | zipf_words_top200_mean | zipf_words_top200_median | n_creators_1500 | zipf_words_1500_mean | heaps_beta_1500_mean | top1_word_share_mean |
 |---|---|---|---|---|---|---|---|---|
-| F1: Positive tone vs outrage | 193.000 | -0.023 | -0.070 | 0.019 | 0.352 | 0.021 | 0.187 | 0.296 |
-| F10: Quoted speech | 193.000 | -0.006 | -0.050 | 0.023 | 0.425 | 0.036 | 0.124 | 0.296 |
-| F11: Long, upbeat, abstract | 193.000 | -0.010 | -0.054 | 0.042 | 0.430 | 0.067 | 0.109 | 0.296 |
-| F12: Modal and future speculation | 193.000 | -0.031 | -0.081 | 0.005 | 0.295 | 0.026 | 0.145 | 0.296 |
-| F2: Clause headline vs noun-phrase | 193.000 | 0.011 | -0.026 | 0.056 | 0.611 | 0.104 | 0.031 | 0.296 |
-| F3: Labelled live/formulaic headline | 193.000 | -0.008 | -0.061 | 0.034 | 0.435 | 0.104 | 0.078 | 0.296 |
-| F4: Conversational stream talk | 193.000 | 0.016 | -0.017 | 0.056 | 0.663 | 0.119 | 0.047 | 0.296 |
-| F5: Question and explainer framing | 193.000 | -0.022 | -0.052 | 0.015 | 0.368 | 0.062 | 0.104 | 0.296 |
-| F6: Person-centred | 193.000 | 0.028 | -0.022 | 0.072 | 0.637 | 0.150 | 0.036 | 0.296 |
-| F7: Descriptive news prose vs title-case | 193.000 | -0.023 | -0.075 | 0.012 | 0.347 | 0.073 | 0.119 | 0.296 |
-| F8: Numeric and dated | 193.000 | -0.011 | -0.058 | 0.034 | 0.425 | 0.073 | 0.093 | 0.296 |
-| F9: ALL-CAPS shouting | 193.000 | 0.014 | -0.020 | 0.055 | 0.596 | 0.088 | 0.036 | 0.296 |
-| curiosity_gap | 185.000 | 0.000 | -0.020 | 0.025 | 0.503 | 0.016 | 0.027 | 0.294 |
-| humor | 92.000 | 0.002 | -0.021 | 0.024 | 0.533 | 0.076 | 0.033 | 0.255 |
-| n_tokens | 193.000 | 0.011 | -0.041 | 0.065 | 0.549 | 0.140 | 0.088 | 0.296 |
-| outrage | 193.000 | 0.042 | -0.003 | 0.082 | 0.731 | 0.238 | 0.010 | 0.296 |
+| channel_group | left channels | 105 | 0.797 | 0.791 | 72 | 0.724 | 0.810 | 0.050 |
+| channel_group | neutral channels | 38 | 0.789 | 0.809 | 25 | 0.712 | 0.843 | 0.043 |
+| channel_group | right channels | 96 | 0.750 | 0.757 | 67 | 0.690 | 0.827 | 0.046 |
+| dominant_caps_style | ALL CAPS | 7 | 0.735 | 0.740 | 5 | 0.692 | 0.814 | 0.036 |
+| dominant_caps_style | selective CAPS | 74 | 0.784 | 0.791 | 63 | 0.701 | 0.809 | 0.046 |
+| dominant_caps_style | Title Case | 126 | 0.763 | 0.761 | 75 | 0.713 | 0.828 | 0.050 |
+| dominant_caps_style | Sentence case | 30 | 0.830 | 0.835 | 21 | 0.718 | 0.843 | 0.042 |
 
 
-Live VODs (n = 59 channels) show the same picture, outrage +0.044 with 75 % positive, everything else near zero.
-
-## The outrage effect by lane (edited uploads)
-
-![Median outrage coefficient per lane with the share of channels where it is positive.](figures/07_outrage_effect_by_lane.png)
-*Median outrage coefficient per lane with the share of channels where it is positive.*
-
-| lane | n_creators | median_coef_per_sd | share_positive | share_sig_positive |
-|---|---|---|---|---|
-| explainers / geopolitics | 2.000 | 0.172 | 1.000 | 0.500 |
-| legal commentary | 6.000 | 0.114 | 0.833 | 0.500 |
-| wires & international | 10.000 | 0.114 | 1.000 | 0.800 |
-| right TV networks | 4.000 | 0.105 | 0.750 | 0.750 |
-| US legacy TV | 9.000 | 0.104 | 1.000 | 0.889 |
-| US press | 15.000 | 0.070 | 0.867 | 0.267 |
-| interview podcasts | 13.000 | 0.062 | 0.846 | 0.154 |
-| independent digital news | 13.000 | 0.041 | 0.769 | 0.154 |
-| left commentary | 39.000 | 0.034 | 0.795 | 0.231 |
-| centrist / heterodox | 7.000 | 0.029 | 0.571 | 0.000 |
-| humour / satire | 2.000 | 0.013 | 0.500 | 0.000 |
-| streamers | 21.000 | 0.011 | 0.571 | 0.048 |
-| right commentary | 52.000 | 0.011 | 0.577 | 0.096 |
-
-
-The effect is largest and most consistent where outrage is *rare*: the wires, legacy TV, the press, legal commentary and interview podcasts. In left commentary, where three quarters of titles already carry the frame, it is smaller; in right commentary and among streamers it is close to nothing. That is what a saturating device looks like: it lifts a title above a neutral baseline, and lifts nothing when every title has it.
-
-## What the model does and does not say
-
-- Views are a snapshot taken at fetch time (2026-09-14): a January video has had eight months to accumulate views, a September one two weeks. The month dummies absorb this within a channel, so the coefficients compare titles published in the same month, but they describe views-to-date, not lifetime views.
-- Subscriber normalisation changes nothing here: log(views / subscribers) is log(views) minus a constant within a channel, so every slope is identical; subscriber counts are reported beside the coefficients instead.
-- Median R2 is 0.30: month and topic explain a fair share of within-channel views; title style, on top of them, explains little.
-- Rumble channels have no view counts and are absent; the platform therefore never enters the engagement or concentration results.
-
-Specification: `engagement_model.json`; per-channel coefficients: `engagement_coefficients.csv`.
-
-## Hit concentration
-
-![Gini coefficient of views per channel, grouped by lane.](figures/07_gini_by_lane.png)
-*Gini coefficient of views per channel, grouped by lane.*
-
-Per channel x genre with at least 100 videos carrying views (all rows, repeats included: a re-uploaded live loop is a separate video with its own views).
-
-| lane | n | median_gini | median_top10_share |
-|---|---|---|---|
-| streamers | 21 | 0.33 | 0.26 |
-| centrist / heterodox | 7 | 0.42 | 0.33 |
-| left commentary | 39 | 0.45 | 0.34 |
-| right commentary | 52 | 0.47 | 0.35 |
-| legal commentary | 6 | 0.49 | 0.36 |
-| interview podcasts | 13 | 0.51 | 0.39 |
-| humour / satire | 2 | 0.56 | 0.46 |
-| explainers / geopolitics | 2 | 0.57 | 0.50 |
-| independent digital news | 13 | 0.58 | 0.43 |
-| US press | 15 | 0.66 | 0.54 |
-| US legacy TV | 9 | 0.69 | 0.54 |
-| right TV networks | 4 | 0.72 | 0.62 |
-| wires & international | 10 | 0.73 | 0.63 |
-
-
-Streamers and daily left commentators spread views most evenly (Gini 0.18-0.33 for Tariq Nasheed, Belle of the Ranch, Vaush, the Hasan VOD channel); the wires, legacy TV, the press and the right TV networks are the most hit-driven (median Gini 0.66-0.73; Real America's Voice, Politicon, Axios and The Fifth Column above 0.81, the top tenth of their videos taking three quarters of their views).
-
-![Lorenz curves and the tail test.](figures/07_lorenz_and_tails.png)
-*Left: Lorenz curves for seven channels. Right: the likelihood-ratio statistic of the power-law fit against a lognormal across all video channels.*
+Channels whose titles are mostly sentence case (the news outlets) have the steepest own vocabularies and the fastest-growing ones (Heaps' β 0.84); channels that shout have the flattest.
 
 ## Zipf's law for views
 
-The rank-size view of the same distributions: within each channel, videos ranked by views, plotted on log-log axes. A straight line would be Zipf's law (views proportional to rank to a negative power); the curves instead bend downwards in the tail, which is what a lognormal looks like on these axes and what the formal test below confirms. The slope of log views on log rank over all of a channel's videos summarises how steeply views fall off down the ranking: the lane pattern follows the Gini ordering, shallow for streamers and daily left commentary, steep for the wires and legacy TV. Per-channel slopes (all videos, and the top decile only) are in `hit_concentration.csv` (`zipf_views_all`, `zipf_views_head`).
+![Rank-size curves of views and the slope by channel group and by dominant capitalisation style.](figures/07_zipf_views.png)
+*Left: rank-size curves for eight channels, each normalised to its own top video. Middle and right: the all-video Zipf slope per channel, by channel group and by the channel's dominant capitalisation style.*
 
-![Zipf rank-size curves of views and the slope by lane.](figures/07_zipf_views.png)
-*Left: rank-size curves for eight channels, each normalised to its own top video. Right: the all-video Zipf slope per channel, grouped by lane.*
+Within each channel, videos ranked by views on log-log axes: a straight line would be Zipf's law for views (views proportional to rank to a negative power). The curves instead bend downwards in the tail, which is what a lognormal looks like on these axes and what the formal test confirms: the `powerlaw` fit (discrete, xmin by KS minimisation) with the likelihood-ratio test against a lognormal supports a power-law tail in 0 of 193 video channels. Hits are heavy-tailed but lognormal-shaped, so no channel here should be described as having a power-law audience. The slope of log views on log rank over all of a channel's videos still summarises how steeply views fall off down the ranking (per channel in `hit_concentration.csv`, `zipf_views_all` and `zipf_views_head`), and it lines up with the Gini coefficient and the top-10 % share:
 
-**Power law or not.** The `powerlaw` fit (discrete, xmin by KS minimisation) with the likelihood-ratio test against a lognormal supports a power-law tail in 0 of 193 video channels and 1 of 59 stream channels; the ratio even points towards the power law in only 6 % of video channels. Hits are heavy-tailed but lognormal-shaped, so no channel here should be described as having a power-law audience.
-
-## Does style go with concentration?
-
-Spearman correlations across channels, lane-demeaned (so a lane's overall level cannot drive them), edited uploads, p < 0.05 only:
-
-| target | predictor | n_creators | spearman_r | p |
-|---|---|---|---|---|
-| gini | log_subscribers | 193 | -0.305 | 0.000 |
-| gini | outrage | 193 | -0.274 | 0.000 |
-| gini | F9: ALL-CAPS shouting | 193 | -0.153 | 0.034 |
-| gini | F8: Numeric and dated | 193 | 0.148 | 0.040 |
-| gini | F6: Person-centred | 193 | 0.182 | 0.011 |
-| gini | F5: Question and explainer framing | 193 | 0.223 | 0.002 |
-| top10_share | log_subscribers | 193 | -0.324 | 0.000 |
-| top10_share | outrage | 193 | -0.281 | 0.000 |
-| top10_share | F9: ALL-CAPS shouting | 193 | -0.159 | 0.027 |
-| top10_share | F1: Positive tone vs outrage | 193 | 0.154 | 0.033 |
-| top10_share | F6: Person-centred | 193 | 0.157 | 0.029 |
-| top10_share | F5: Question and explainer framing | 193 | 0.199 | 0.006 |
+| grouping | group | n_creators_with_views | zipf_views_all_median | zipf_views_head_median | gini_median | top10_share_median | powerlaw_like_share | caps_any_mean |
+|---|---|---|---|---|---|---|---|---|
+| channel_group | left channels | 86 | 0.876 | 0.425 | 0.494 | 0.373 | 0.000 | 0.375 |
+| channel_group | neutral channels | 32 | 1.244 | 0.603 | 0.670 | 0.538 | 0.000 | 0.181 |
+| channel_group | right channels | 75 | 0.898 | 0.419 | 0.495 | 0.361 | 0.000 | 0.403 |
+| dominant_caps_style | ALL CAPS | 5 | 0.583 | 0.312 | 0.347 | 0.263 | 0.000 | 0.774 |
+| dominant_caps_style | selective CAPS | 64 | 0.797 | 0.383 | 0.459 | 0.346 | 0.000 | 0.748 |
+| dominant_caps_style | Title Case | 97 | 0.951 | 0.468 | 0.536 | 0.404 | 0.000 | 0.173 |
+| dominant_caps_style | Sentence case | 25 | 1.236 | 0.634 | 0.681 | 0.557 | 0.000 | 0.070 |
 
 
-The strongest correlate is size: channels with more subscribers are *less* concentrated (rho about -0.3), and channels whose titles are more outrage-framed are less concentrated too, partly because those are the daily commentary channels whose audiences turn up for everything. Question framing and person-centred titles go with slightly more concentration. All of these are weak (|rho| <= 0.32) and observational.
+The neutral group is the hit-driven one: its channels' views fall off fastest down the ranking (median slope 1.24; the top tenth of videos take 54 % of views). Left and right channels are nearly identical to each other (0.88 and 0.90) and much flatter: the daily commentary audience turns up for everything. The same ordering appears by capitalisation: channels that mostly shout spread views most evenly, sentence-case channels live on hits. Both patterns are the same fact seen twice, because the neutral group is where the sentence-case news outlets are.
 
-Files: `engagement_coefficients.csv`, `engagement_summary.csv`, `engagement_model.json`, `hit_concentration.csv`, `hit_concentration_correlations.csv`.
+## Views over time
+
+![Views by publication month by channel group; relative views by capitalisation style and by title label.](figures/07_views_over_time.png)
+*Left: the median over channels of the channel's median views per video, by publication month and channel group. Middle and right: log views relative to the same channel's average in the same month, by capitalisation style and by title label; bands are ±1.96 standard errors.*
+
+Views are a snapshot taken at fetch time (2026-09-14) and months are YouTube's approximate listing dates, so the monthly curve mixes age with season: a January video has had eight months to accumulate views, and the last, half month holds the newest uploads still in their first weeks. That half month also shows the highest medians of the year, which says more about how fast a video collects its first views and about the approximate dating (anything listed as "weeks ago" lands at the start of September) than about September itself. Read the left panel as a comparison *between* groups within a month, not as growth over time. The median channel in the left group draws 1.5 to 2.5 times the views of the median channel in the next group in every month of the year:
+
+| group | 2026-01 | 2026-02 | 2026-03 | 2026-04 | 2026-05 | 2026-06 | 2026-07 | 2026-08 | 2026-09 |
+|---|---|---|---|---|---|---|---|---|---|
+| all channels | 34,000 | 43,000 | 39,000 | 42,000 | 33,000 | 28,750 | 29,000 | 28,750 | 52,000 |
+| left channels | 55,500 | 59,000 | 59,000 | 54,750 | 41,000 | 40,500 | 47,000 | 45,500 | 79,000 |
+| neutral channels | 15,000 | 19,500 | 23,000 | 14,250 | 13,500 | 14,175 | 18,500 | 19,500 | 25,000 |
+| right channels | 26,500 | 28,500 | 29,000 | 35,500 | 22,000 | 20,500 | 17,250 | 19,250 | 39,500 |
+
+
+Within a channel the age effect cancels: **relative log views** is log(1 + views) minus the mean log(1 + views) of the same channel's videos in the same month, so 0 is the channel's average title that month and +0.05 is roughly 5 % more views than that average. By construction the three channel groups average 0 on it; capitalisation styles and title labels do not.
+
+**By capitalisation style.** Capitals beat a channel's own baseline in every month of the year, and the two lower-case styles fall below it in every month:
+
+| group | 2026-01 | 2026-02 | 2026-03 | 2026-04 | 2026-05 | 2026-06 | 2026-07 | 2026-08 | 2026-09 |
+|---|---|---|---|---|---|---|---|---|---|
+| ALL CAPS | +0.101 | +0.029 | +0.030 | +0.025 | +0.045 | +0.038 | +0.079 | +0.020 | +0.017 |
+| selective CAPS | +0.053 | +0.047 | +0.084 | +0.059 | +0.058 | +0.055 | +0.025 | +0.042 | +0.054 |
+| Title Case | -0.017 | -0.028 | -0.055 | -0.039 | -0.023 | -0.032 | -0.001 | -0.018 | -0.020 |
+| Sentence case | -0.037 | -0.022 | -0.027 | -0.022 | -0.041 | -0.029 | -0.029 | -0.033 | -0.035 |
+| mixed / other | +0.031 | +0.157 | -0.008 | -0.065 | +0.010 | +0.035 | +0.008 | +0.107 | -0.052 |
+| short / other | +0.134 | +0.157 | +0.266 | +0.149 | +0.458 | +0.230 | +0.182 | +0.238 | +0.066 |
+
+
+Over the year: ALL CAPS +0.040, selective CAPS +0.052, Title Case -0.026, Sentence case -0.030 (standard errors 0.014 for ALL CAPS and at most 0.005 for the three big styles). The effect is modest (a few per cent) but it is the most consistent title-level signal in the corpus, holding month after month and inside channels rather than between them; the twelve-factor regression with month *and topic* controls (all_tables.md, stage 5) gives the ALL-CAPS factor F9 a median coefficient of +0.014 log views per within-channel SD, positive for 60 % of channels: the same sign, smaller once the subject is held fixed. "Short / other" titles (966 videos, mostly numbered episodes and one-word titles) sit far above baseline, but that is a format effect, not a capitalisation one.
+
+**By title label.** Over the 11,790 sampled titles with view counts, right-read titles outperform their channel's monthly average, left-read titles sit at it and neither-read titles fall just below; the differences are small, only the right-read figure clears two standard errors, and the monthly series is noisy (a few hundred titles per label per month):
+
+| group | 2026-01 | 2026-02 | 2026-03 | 2026-04 | 2026-05 | 2026-06 | 2026-07 | 2026-08 | 2026-09 |
+|---|---|---|---|---|---|---|---|---|---|
+| left titles | +0.035 | -0.047 | +0.031 | -0.084 | -0.018 | +0.063 | +0.056 | +0.014 | +0.041 |
+| neither titles | +0.005 | +0.009 | +0.011 | -0.023 | +0.053 | -0.091 | -0.080 | +0.028 | -0.065 |
+| right titles | +0.050 | -0.024 | -0.021 | +0.131 | -0.001 | +0.110 | +0.018 | +0.019 | +0.064 |
+
+
+Over the year: right +0.038 (SE 0.018), left +0.009, neither -0.016. Partisan wording, in other words, does about what capitals do, and the two overlap: 46 % of left-read and 48 % of right-read titles carry ALL or selective CAPS, against 25 % of neither-read ones.
+
+## How the three cuts overlap
+
+![Capitalisation style by channel group and by title label.](figures/07_caps_by_group.png)
+*Capitalisation style shares by channel group (balanced edited uploads) and by title label (the judge's sample).*
+
+| grouping | group | n_titles | ALL CAPS | selective CAPS | Title Case | Sentence case | mixed / other | short / other | ALL + selective |
+|---|---|---|---|---|---|---|---|---|---|
+| channel_group | left channels | 64947 | 0.02 | 0.46 | 0.32 | 0.17 | 0.01 | 0.02 | 0.48 |
+| channel_group | neutral channels | 39161 | 0.01 | 0.16 | 0.27 | 0.54 | 0.01 | 0.01 | 0.17 |
+| channel_group | right channels | 51528 | 0.05 | 0.40 | 0.41 | 0.12 | 0.00 | 0.01 | 0.45 |
+| title_label | left titles | 3031 | 0.01 | 0.45 | 0.46 | 0.08 | 0.00 | 0.00 | 0.46 |
+| title_label | right titles | 2550 | 0.02 | 0.45 | 0.47 | 0.04 | 0.00 | 0.00 | 0.48 |
+| title_label | neither titles | 6881 | 0.03 | 0.21 | 0.53 | 0.19 | 0.01 | 0.03 | 0.25 |
+
+
+Left and right channels shout at the same rate (48 % and 45 % of titles with capitals); the neutral group is sentence case (54 %). The left group leans to selective CAPS (46 % of titles), the right group splits between Title Case (41 %) and selective CAPS (40 %); sentence case is 17 % and 12 %. Crossing the labelled titles with their style shows where the judge's labels come from: selective CAPS is the partisan style (63 % of its labelled titles read left or right), while ALL CAPS, Title Case and sentence case read as "neither" 71 %, 58 % and 79 % of the time (a fully shouted title is as often a reaction to an event as a stance on it), and within each style the right-read titles are the ones that draw the most views relative to their channel:
+
+| caps_style | n_titles | share_left | share_neither | share_right | relative_log_views_left | relative_log_views_neither | relative_log_views_right |
+|---|---|---|---|---|---|---|---|
+| ALL CAPS | 332 | 0.115 | 0.711 | 0.175 | -0.010 | -0.004 | 0.069 |
+| selective CAPS | 3988 | 0.341 | 0.369 | 0.291 | 0.006 | 0.033 | 0.066 |
+| Title Case | 6227 | 0.223 | 0.584 | 0.194 | 0.002 | -0.038 | 0.006 |
+| Sentence case | 1643 | 0.141 | 0.791 | 0.068 | 0.069 | -0.026 | 0.118 |
+| mixed / other | 80 | 0.138 | 0.787 | 0.075 |  | -0.132 |  |
+| short / other | 192 | 0.031 | 0.927 | 0.042 |  | 0.174 |  |
+
+
+## What the numbers do and do not say
+
+- Views are views-to-date at one fetch, not lifetime views, and Rumble channels have no view counts and are absent. The relative measure compares titles of the same channel in the same month, which removes both the channel's size and the age of its videos; it does not remove the subject of the video, and a shouted title about a shooting may draw views for the shooting.
+- The outrage frame of document 4 is the other title-level signal that predicts views within a channel: in the twelve-factor regression with month and topic controls (all_tables.md, stage 5), the outrage coefficient is positive for 73 % of 193 video channels (median +0.042 log views per within-channel standard deviation); the capitals effect above is measured without topic controls and is of the same order.
+- Title labels are the judge's reading of 12,478 sampled titles (50 per ranked channel, 16 for the smallest channels), so the label series are thin by month; the annual figures are the ones to quote.
+- Zipf exponents from OLS on log-log axes are descriptive; the size-matched column is the only fair comparison across systems of different size, and the curves in the figure are the fuller statement.
+- Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labelled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
+
+Files: `zipf_words.csv`, `zipf_words_curves.csv`, `zipf_by_group.csv`, `views_by_month.csv`, `caps_style_by_group.csv`, `label_by_caps_style.csv`, `hit_concentration.csv`, `zipf_check.csv`, `zipf_check_creators.csv`, `engagement_summary.csv`.

@@ -3,7 +3,8 @@ HDBSCAN + class-based TF-IDF) fitted on a creator-stratified ~100k sample, then
 every title assigned to its nearest topic centroid.
 
 Reads titles_prepared.parquet, cache/embeddings.npy (Stage 1a), annotations.parquet
-(Stage 0c, for the entities per topic) and lanes.csv. Writes, under
+(Stage 0c, for the entities per topic) and creators.csv (with the channel groups of
+the leaning stage). Writes, under
 data/titles/analysis/:
 
     topics.csv                row_id, video_id, creator, genre, topic_id, topic_sim,
@@ -12,7 +13,7 @@ data/titles/analysis/:
     topic_labels.csv          topic_id, label (LLM), political, category, top_terms,
                               n_fit, n_unique_all, example_1..3, top_persons, top_orgs
     creator_topic_mix.csv     creator x genre x topic share (unique titles)
-    topic_by_lane.csv         lane x genre x topic: mean of creator shares (+ raw pooled)
+    topic_by_group.csv        channel group x genre x topic: mean of creator shares (+ raw pooled)
     topic_timeline.csv        month x topic: creator-balanced share and raw count
     topic_spikes.csv          per month, the topics that spike most vs. their own
                               mean, with the entities and example titles of that month
@@ -47,7 +48,7 @@ import pandas as pd
 
 from pipeline_titles.common import (
     ANALYSIS_DIR, ANNOTATIONS, CACHE_DIR, LOW_N, MONTHS, SEED, STOPWORDS, TOPIC_LABELS_CSV, TOPICS_CSV,
-    balanced_mask, load_lanes, load_prepared, stage_timer, utc_now,
+    balanced_mask, load_creators, load_prepared, stage_timer, utc_now,
 )
 from pipeline_titles.embed import load_embeddings
 
@@ -179,7 +180,7 @@ def fit_topic_model(docs: list[str], emb: np.ndarray, min_cluster_size: int, min
 def run(fit_size: int, min_cluster_size: int, min_samples: int, max_topics: int, model_name: str,
         label_only: bool, info: dict) -> None:
     prepared = load_prepared()
-    lanes = load_lanes()[["creator", "lane", "organisation", "clipper"]]
+    creators = load_creators()[["creator", "group", "organisation", "clipper"]]
     uniq = prepared[~prepared["is_dup"]].copy()
     emb_all, emb_index = load_embeddings()
     uniq["emb_row"] = uniq["title_norm"].map(emb_index).astype(int)
@@ -295,18 +296,18 @@ def run(fit_size: int, min_cluster_size: int, min_samples: int, max_topics: int,
     mix.to_csv(ANALYSIS_DIR / "creator_topic_mix.csv.gz", index=False)
     pol = u.groupby(["creator", "genre"]).agg(n_unique=("row_id", "size"), political_share=("political", "mean"),
                                               weak_share=("weak_assignment", "mean")).reset_index()
-    pol.merge(lanes, on="creator", how="left").to_csv(ANALYSIS_DIR / "creator_political_share.csv", index=False)
+    pol.merge(creators, on="creator", how="left").to_csv(ANALYSIS_DIR / "creator_political_share.csv", index=False)
 
-    # --- topic share by lane: mean of creator shares (creator-level), raw pooled beside it ---
-    ml = mix.merge(lanes, on="creator", how="left")
+    # --- topic share by channel group: mean of creator shares (creator-level), raw pooled beside it ---
+    ml = mix.merge(creators, on="creator", how="left")
     ml = ml[ml["n"].groupby([ml["creator"], ml["genre"]]).transform("sum") >= LOW_N]
-    full = (ml.groupby(["lane", "genre", "creator"])["share"].sum().index.to_frame(index=False))
+    full = (ml.groupby(["group", "genre", "creator"])["share"].sum().index.to_frame(index=False))
     grid = full.merge(labels[["topic_id"]], how="cross")
-    grid = grid.merge(ml[["lane", "genre", "creator", "topic_id", "share", "n"]], on=["lane", "genre", "creator", "topic_id"], how="left").fillna({"share": 0.0, "n": 0})
-    by_lane = grid.groupby(["lane", "genre", "topic_id"]).agg(mean_creator_share=("share", "mean"), n_creators=("creator", "nunique"), raw_n=("n", "sum")).reset_index()
-    by_lane["raw_pooled_share"] = by_lane["raw_n"] / by_lane.groupby(["lane", "genre"])["raw_n"].transform("sum")
-    by_lane = by_lane.merge(labels[["topic_id", "label", "political"]], on="topic_id")
-    by_lane.sort_values(["lane", "genre", "mean_creator_share"], ascending=[True, True, False]).to_csv(ANALYSIS_DIR / "topic_by_lane.csv", index=False)
+    grid = grid.merge(ml[["group", "genre", "creator", "topic_id", "share", "n"]], on=["group", "genre", "creator", "topic_id"], how="left").fillna({"share": 0.0, "n": 0})
+    by_group = grid.groupby(["group", "genre", "topic_id"]).agg(mean_creator_share=("share", "mean"), n_creators=("creator", "nunique"), raw_n=("n", "sum")).reset_index()
+    by_group["raw_pooled_share"] = by_group["raw_n"] / by_group.groupby(["group", "genre"])["raw_n"].transform("sum")
+    by_group = by_group.merge(labels[["topic_id", "label", "political"]], on="topic_id")
+    by_group.sort_values(["group", "genre", "mean_creator_share"], ascending=[True, True, False]).to_csv(ANALYSIS_DIR / "topic_by_group.csv", index=False)
 
     # --- monthly timeline (creator-balanced) and spikes ---
     um = u.groupby(["creator", "genre", "month"]).size().rename("n_month").reset_index()

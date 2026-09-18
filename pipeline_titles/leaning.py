@@ -1,4 +1,6 @@
-"""Stage 7 - political leaning from titles alone, judged by a frontier model.
+"""Stage 0d - political leaning from titles alone, judged by a frontier model (the stage
+runs third, after creators, because its channel groups are what every later stage reports
+by; its runtime record keeps the historical name stage7_leaning).
 
 A creator-balanced sample is labelled left / right / neither by Claude Opus through the
 Claude Code CLI in print mode (a Claude Pro/Max subscription covers it; temperature 0;
@@ -7,11 +9,16 @@ the judge sees nothing but the title text; every response cached). The label is 
 viewpoint the TITLE'S OWN WORDING signals, not the subject. Two levels of analysis follow: the
 titles themselves, and the channels grouped as left / neutral / right by their scores.
 
-Sample. Every creator gets a base draw of N_PER_CREATOR (16) unique edited-upload
-titles (seed 20260914; live VODs top up creators with fewer uploads). Creators with at
-least --min-uploads (50) unique uploads are then topped up to --n-per-creator (50)
-with further uploads spread evenly across months (12,478 titles; 239 creators at 50,
-35 at their base).
+Sample. Every creator gets a base draw of N_BASE (16) unique edited-upload titles
+(seed 20260914; live VODs top up creators with fewer uploads). Creators with at least
+--min-uploads (50) unique uploads are then topped up to --n-per-creator (N_PER_CREATOR,
+50) with further uploads spread evenly across months (12,478 titles; 239 creators at
+50, 35 at their base).
+
+The channel groups written here (leaning_by_creator.csv, column `group`) are the only
+between-channel grouping in the pipeline: common.load_creators() joins them to the
+creator table, and every later stage reports by them. The stage therefore runs right
+after prepare / creators in run_all.
 
 Outputs (data/titles/analysis/):
     leaning_labels.csv.gz       one row per sampled title with the label, is_base (base draw vs
@@ -66,7 +73,8 @@ import pandas as pd
 from pipeline_titles.common import ANALYSIS_DIR, CACHE_DIR, SEED, load_prepared, stage_timer, utc_now
 from pipeline_titles.textstats import rank_turbulence_divergence, vocab_tokens, weighted_log_odds
 
-N_PER_CREATOR = 16
+N_BASE = 16              # the base draw every creator gets
+N_PER_CREATOR = 50       # the target after the month-spread top-up
 BATCH = 20
 PROMPT_ID = "leaning-v1"
 LABELS = ("left", "right", "neither")
@@ -195,7 +203,7 @@ def label_titles(titles: Sequence[str], model: str, info: dict, prompt_version: 
     return results
 
 
-def draw_sample(prepared: pd.DataFrame, n_per: int = N_PER_CREATOR, seed: int = SEED, n_base: int = N_PER_CREATOR,
+def draw_sample(prepared: pd.DataFrame, n_per: int = N_PER_CREATOR, seed: int = SEED, n_base: int = N_BASE,
                 min_uploads: int = 50) -> pd.DataFrame:
     """Creator-balanced sample. Every creator gets `n_base` titles by the original
     draw (random, seed 20260914; live VODs top up creators with fewer uploads).
@@ -277,7 +285,7 @@ def ensure_sample_columns(df: pd.DataFrame) -> pd.DataFrame:
     if "month" not in df.columns:
         df = df.merge(prepared[["row_id", "month"]], on="row_id", how="left")
     if "is_base" not in df.columns:
-        base_ids = set(draw_sample(prepared, N_PER_CREATOR)["row_id"])   # n_per == n_base: the base draw alone
+        base_ids = set(draw_sample(prepared, N_BASE)["row_id"])   # n_per == n_base: the base draw alone
         df["is_base"] = df["row_id"].isin(base_ids)
     return df
 
@@ -428,7 +436,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap.add_argument("--no-shuffle", action="store_true", help="batch titles in sample order (one or two channels per batch) instead of a seeded random order")
     ap.add_argument("--prompt-version", choices=tuple(PROMPTS), default="v1")
     ap.add_argument("--human-labels", default=None, help="filled leaning_human_sheet.csv: report every model's agreement with the human labels")
-    ap.add_argument("--n-per-creator", type=int, default=N_PER_CREATOR, help="titles per ranked creator (base 16 for everyone; top-up spread across months)")
+    ap.add_argument("--n-per-creator", type=int, default=N_PER_CREATOR, help=f"titles per ranked creator (base {N_BASE} for everyone; top-up spread across months)")
     ap.add_argument("--min-uploads", type=int, default=50, help="creators with fewer unique edited uploads stay at the base 16")
     ap.add_argument("--analyse-only", action="store_true")
     ap.add_argument("--limit", type=int, default=None)
@@ -438,8 +446,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         keep_cols = ["row_id", "video_id", "creator", "genre", "month", "is_base", "title_raw", "title_norm"]
         if a.analyse_only and LABELS_CSV.exists():
             df = pd.read_csv(LABELS_CSV)
-            if "is_base" not in df.columns or "month" not in df.columns or "lane" in df.columns:   # older layouts of the labels file
-                df = ensure_sample_columns(df).drop(columns=[c for c in ("lane",) if c in df.columns])
+            if "is_base" not in df.columns or "month" not in df.columns:   # older layouts of the labels file
+                df = ensure_sample_columns(df)
                 df[[c for c in keep_cols if c in df.columns] + [c for c in df.columns if c not in keep_cols]].to_csv(LABELS_CSV, index=False)
         else:
             prepared = load_prepared()

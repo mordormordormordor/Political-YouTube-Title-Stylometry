@@ -1,6 +1,6 @@
 # LegalEagle (@LegalEagle)
 
-Lane: **legal_institutional** · organisation: LegalEagle · clipper: no · platform: youtube · subscribers: 3950000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: LegalEagle · clipper: no · platform: youtube · subscribers: 3950000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 105 rows, 105 unique (repeat share 0.0%); ranked; political share 84.8%.
 Top topics: Trump Supreme Court Legal Issues (11.4%); ICE Protests and Shootings (6.7%); Lindsay Clancy Murder Trial (4.8%); Trump slush fund scandal (4.8%); Pam Bondi and Epstein Files Scandal (3.8%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 48.1 | 39.3 | 0.2 | 0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 48.1 | 39.3 | 0.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 37.7 | 38.9 | -0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 3.8 | 2.5 | -0.7 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 6.3 | 5.4 | -0.5 | -0.3 |
-| F5: Question and explainer framing (why, what, ?) | 15.9 | 14.2 | -0.4 | 0.0 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 3.8 | 2.5 | -0.7 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 6.3 | 5.4 | -0.5 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 15.9 | 14.2 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 15.5 | 20.5 | -0.7 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 51.9 | 64.0 | -0.5 | -0.7 |
-| F8: Numeric and dated (digits, years) | 22.6 | 33.1 | -0.3 | -0.0 |
-| F9: ALL-CAPS shouting | 11.7 | 15.5 | -0.8 | -0.6 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 51.9 | 64.0 | -0.5 | -0.5 |
+| F8: Numeric and dated (digits, years) | 22.6 | 33.1 | -0.3 | -0.2 |
+| F9: ALL-CAPS shouting | 11.7 | 15.5 | -0.8 | -0.3 |
 | F10: Quoted speech | 17.6 | 14.6 | -0.7 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 9.2 | 18.0 | -1.1 | 0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 9.2 | 18.0 | -1.1 | -0.3 |
 | F12: Modal and future speculation (will, could, we) | 8.8 | 9.6 | -0.8 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (2.2%); outrage 74.3% (75.8%); humor 0.9% (0.2%); question 2.9% (15.4%); breaking_live 0.0% (2.5%); episode_show 0.0% (0.7%); interview_guest 1.9% (7.5%); reaction 2.9% (0.6%); confrontation 2.9% (5.8%); listicle 0.9% (0.1%); howto_explainer 0.0% (10.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.7%); outrage 74.3% (63.9%); humor 0.9% (0.2%); question 2.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 1.9% (9.8%); reaction 2.9% (2.9%); confrontation 2.9% (7.6%); listicle 0.9% (0.1%); howto_explainer 0.0% (8.0%)
 
 
-Nearest style neighbours: @DylanBurnsLIVE [streamer_reaction]; @BadEmpanadaLive [streamer_reaction]; @FarronBalanced [left_commentary]; @JesseKellyDC [right_commentary]; @destiny [streamer_reaction]
+Nearest style neighbours: @DylanBurnsLIVE [left]; @BadEmpanadaLive [left]; @FarronBalanced [left]; @JesseKellyDC [right]; @destiny [left]
 
-Nearest topic neighbours: @GlennKirschner2 [legal_institutional]; @LegalAFMTN [legal_institutional]; @briantylercohen [left_commentary]; @TheQuartering [right_commentary]; @katiephangnews [left_commentary]
+Nearest topic neighbours: @GlennKirschner2 [left]; @LegalAFMTN [left]; @briantylercohen [left]; @TheQuartering [right]; @katiephangnews [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

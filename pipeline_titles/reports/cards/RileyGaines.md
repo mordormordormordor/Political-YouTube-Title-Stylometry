@@ -1,6 +1,6 @@
 # Riley Gaines (@RileyGaines)
 
-Lane: **right_commentary** · organisation: Riley Gaines · clipper: no · platform: youtube · subscribers: 70300.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Riley Gaines · clipper: no · platform: youtube · subscribers: 70300.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 143 rows, 143 unique (repeat share 0.0%); ranked; political share 89.5%.
 Top topics: WNBA and Sophie Cunningham controversy (9.8%); Transgender Athletes in Women's Sports (7.0%); Abortion and Pregnancy Policies (4.9%); Transgender Rights and Politics (4.2%); Christian Nationalism and Politics (3.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 65.3 | 67.4 | 0.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 80.8 | 81.2 | 0.6 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 80.8 | 81.2 | 0.6 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.3 | 54.8 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 66.1 | 53.6 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 62.3 | 62.8 | 0.4 | 0.2 |
-| F6: Person-centred (named people) | 49.0 | 47.3 | -0.3 | -0.3 |
+| F6: Person-centred (named people) | 49.0 | 47.3 | -0.3 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 15.9 | 13.4 | -1.0 | -0.7 |
 | F8: Numeric and dated (digits, years) | 17.6 | 24.7 | -0.4 | -0.2 |
 | F9: ALL-CAPS shouting | 27.2 | 20.1 | -0.5 | -0.3 |
 | F10: Quoted speech | 69.5 | 67.8 | -0.1 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 23.4 | 40.2 | -0.7 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 23.4 | 40.2 | -0.7 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 52.7 | 35.1 | -0.1 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 4.9% (3.8%); outrage 49.6% (63.4%); humor 0.0% (0.2%); question 14.7% (15.1%); breaking_live 0.0% (1.3%); episode_show 0.0% (7.8%); interview_guest 9.8% (8.2%); reaction 1.4% (2.5%); confrontation 11.2% (7.7%); listicle 0.0% (0.1%); howto_explainer 14.0% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (3.6%); outrage 49.6% (59.6%); humor 0.0% (0.2%); question 14.7% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 9.8% (8.5%); reaction 1.4% (2.2%); confrontation 11.2% (7.8%); listicle 0.0% (0.1%); howto_explainer 14.0% (9.5%)
 
 
-Nearest style neighbours: @KimIversen [centrist_heterodox]; @Xanderhal [streamer_reaction]; @MrTariqNasheed [left_commentary]; @RealDanBongino [right_commentary]; @CamHigby [right_commentary]
+Nearest style neighbours: @KimIversen [neutral]; @Xanderhal [left]; @MrTariqNasheed [right]; @RealDanBongino [right]; @CamHigby [right]
 
-Nearest topic neighbours: @theisabelbrown [right_commentary]; @MichaelKnowles [right_commentary]; @clayandbuck [right_commentary]; @bbrettcooper [right_commentary]; @AfterPartyEmily [right_commentary]
+Nearest topic neighbours: @theisabelbrown [right]; @MichaelKnowles [right]; @clayandbuck [right]; @bbrettcooper [right]; @AfterPartyEmily [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

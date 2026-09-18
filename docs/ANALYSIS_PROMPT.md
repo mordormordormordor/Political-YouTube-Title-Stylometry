@@ -1,4 +1,4 @@
-# Title Stylometry analysis prompt (v3, 2026-09-14)
+# Title Stylometry analysis prompt (v4, 2026-09-17: the hand-made lane assignment is dropped; the only between-channel grouping is the left / neutral / right channel group from the title-leaning labels)
 
 Run once over the whole corpus; per-creator cards come out of the same pass.
 
@@ -47,20 +47,19 @@ vocabulary and two channels with the same style on different beats look differen
 3b. Balance the corpus. Volume is wildly uneven: the median creator × genre has ~150
    titles, but 19 groups exceed 5,000 and four Indian news channels alone (Firstpost,
    ANI, Times Now, Times of India) hold 68k of the 304k titles. So: (a) every
-   corpus-level or lane-level statistic is the mean (or median) of creator-level values,
+   corpus-level or group-level statistic is the mean (or median) of creator-level values,
    never a pool of titles; (b) any step that must pool titles - the topic-model fit,
    n-gram formula mining, corpus Zipf, the LLM-rating sample - uses a creator-balanced
    subset capped at 2,500 titles per creator × genre (random sample, seed reported),
    which trims 29 groups and keeps ~189k titles; (c) where a raw-pooled figure is shown
    anyway, label it as raw and show the balanced figure beside it.
-4. Propose a lane assignment for all 274 creators from the channel names, descriptions
-   and titles, as a CSV for me to correct, and use it for every between-group comparison
-   once confirmed. Lanes should at least separate: left commentary; right commentary;
-   US legacy TV news (CNN, Fox, ABC, CBS, NBC, MSNBC, NewsNation); wire and international
-   news (Reuters, AP, BBC, Sky, Al Jazeera, AJ+, Firstpost, ANI, Times Now, Times of
-   India, Guardian, and similar); independent/digital news; streamer and reaction;
-   interview podcast; legal/institutional commentary; humour/satire. Add two more
-   columns to the same CSV: `organisation`, grouping sister channels that belong to one
+4. Do not categorise channels by hand. The only between-channel grouping is the channel
+   group of the leaning stage: a frontier model labels a sample of each channel's titles
+   left / right / neither from the title text alone, each channel's score is
+   (right − left) / titles, and the score sorts the channels into left (below −0.05),
+   neutral and right (above +0.05); use it for every between-group comparison. Write a
+   creator table (`creators.csv`) for me to correct with two columns beside the channel
+   metadata: `organisation`, grouping sister channels that belong to one
    outlet (Fox News / Fox News Clips; Timcast / TimcastIRL / TimcastNews; NYT / NYT
    Opinion / NYT Podcasts; The Young Turks / The Damage Report, which cross-post 28% of
    their titles verbatim; SNEAKO / LIVESNEAKO; MeidasTouch / Legal AF), and a boolean
@@ -77,7 +76,7 @@ Fit an embedding-based topic model on the normalised titles (sentence embeddings
 UMAP + HDBSCAN + class-based TF-IDF, or an equivalent short-text method; classic LDA is
 not acceptable on 10-token texts). Fit on a stratified sample of ~100k titles if the full
 set is too heavy, then assign all titles. Deliver: topic labels with top terms and three
-example titles each; per-creator topic mix; topic share by lane; a monthly topic timeline
+example titles each; per-creator topic mix; topic share by channel group; a monthly topic timeline
 naming the story behind each month's spike; and the entities most named per topic. Tag
 every topic as political or non-political (sport, entertainment, weather, lifestyle,
 markets-only and similar; these sit mostly in the wire and Indian outlets) and report
@@ -123,30 +122,30 @@ confrontation ("vs", "destroys", "owns"); listicle; how-to/explainer. Semantic h
 LLM on the same 3,000-title sample, then a classifier trained on that sample and applied
 to the rest (report held-out accuracy): curiosity gap (information withheld: forward
 references, "here's why", "what happened next"); outrage/negative frame; and humor/irony.
-Deliver the share of titles per category per creator and per lane, with three examples
+Deliver the share of titles per category per creator and per channel group, with three examples
 each, and the agreement between rule and LLM labels where both apply.
 
 ## Stage 4 - The landscape
 
 1. Cluster creators in style-dimension space (Stage 2, topic-controlled) and separately
-   in topic space (Stage 1). Compare both clusterings to the lane assignment (adjusted
+   in topic space (Stage 1). Compare both clusterings to the channel groups (adjusted
    Rand index) and to each other. The findings are where they disagree: creators who
-   share a lane but not a style, and creators who share a style across lanes.
+   share a group but not a style, and creators who share a style across groups.
 2. For every creator, its five nearest style neighbours and five nearest topic
    neighbours.
-3. Who gets named: the top 25 people and organisations across the corpus, the lanes that
-   name each most, and each entity's share of outrage-frame titles versus its overall
-   share.
+3. Who gets named: the top 25 people and organisations across the corpus, the share of
+   each channel group's titles that names each, and each entity's share of outrage-frame
+   titles versus its overall share.
 4. Convergent formulas: 1,370 distinct titles are used verbatim by two or more different
    creators ("This Is Insane" by seven, "This Is Disgusting" by five, "It Has Begun" by
    four). List the most-shared verbatim titles and the most-shared normalised templates
-   (after replacing names, numbers and entities with placeholders), which lanes use
-   them, and whether sharing runs within or across lanes. This is the cheapest evidence
+   (after replacing names, numbers and entities with placeholders), which channel groups
+   use them, and whether sharing runs within or across groups. This is the cheapest evidence
    of hook conventions spreading through the landscape.
 
 ## Stage 5 - Time and engagement
 
-1. Monthly drift, January to September 2026, per lane and for the 30 largest creators:
+1. Monthly drift, January to September 2026, per channel group and for the 30 largest creators:
    dimension scores, hook shares, and month-to-month topic change. YouTube dates are
    month-accurate, so do not go finer than months; September covers only the 1st to the
    14th, so show it but never compare its volume with a full month.
@@ -162,19 +161,27 @@ each, and the agreement between rule and LLM labels where both apply.
    coefficient of views and the share of views from the top 10% of videos. Fit the tail
    with the Clauset-Shalizi-Newman method and report the likelihood-ratio test against a
    lognormal; do not call a distribution a power law without it. Correlate concentration
-   with the Stage 2 dimension scores and Stage 3 hook shares, within lane.
+   with the Stage 2 dimension scores and Stage 3 hook shares, within channel group.
+4. Zipf's law and views over time (document 7). Rank-frequency curves and exponents of
+   the title vocabulary for the corpus, each channel group, each title label (left /
+   neither / right) and each capitalisation style (ALL CAPS, selective CAPS, Title Case,
+   Sentence case, mixed / other, short / other), with a size-matched exponent so systems of
+   different size can be compared; the rank-size (Zipf) slope of views within each channel
+   summarised by group and by the channel's dominant capitalisation style; views by
+   publication month per group; and, against each channel's own monthly baseline, the
+   relative views of each capitalisation style and each title label.
 
 ## Deliverables
 
 - A corpus report: one plain-language headline finding per stage at the top, then the
   tables. Report null results as results.
-- One profile card per creator with a fixed layout: n titles by genre, lane, topic mix
-  (top 5), dimension scores as percentile ranks with the lane median beside them, hook
+- One profile card per creator with a fixed layout: n titles by genre, channel group, topic mix
+  (top 5), dimension scores as percentile ranks with the group median beside them, hook
   shares, five nearest style neighbours, monthly drift sparkline data, and the
   engagement coefficients if n allows.
 - Machine-readable outputs: `features.csv` (creator × genre × month), `dimensions.csv`
   (creator scores raw and topic-controlled), `topics.csv` (title → topic),
-  `labels.csv` (the 3,000 LLM-rated titles), `lanes.csv`.
+  `labels.csv` (the 3,000 LLM-rated titles), `creators.csv`, `leaning_by_creator.csv`.
 - A methods appendix: every preprocessing step, stopword list, feature definitions,
   the factor loadings, validation numbers, and sample sizes beside every statistic;
   plus the corpus-level Zipf exponent on normalised titles before and after prefix

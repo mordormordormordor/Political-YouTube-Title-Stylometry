@@ -1,0 +1,14 @@
+grouping,system,n_titles,n_tokens,n_types,tokens_per_title,type_token_ratio,zipf_top100,ranks_used_top100,zipf_top1000,ranks_used_top1000,zipf_top5000,ranks_used_top5000,zipf_r2_top1000,zipf_size_matched,zipf_size_matched_sd,top1_share,top_10
+corpus,all edited uploads (balanced),155636,1612982,48959,10.36,0.0304,0.8592,100,0.7847,1000,1.0143,5000,0.9954,0.8129,0.0097,0.0245,the trump to in on of s is iran and
+channel_group,left,64947,618335,26834,9.52,0.0434,0.8572,100,0.8244,1000,1.0867,5000,0.9963,0.818,0.0083,0.0383,trump the to in as on s is of iran
+channel_group,neutral,39161,442699,28903,11.3,0.0653,0.8481,100,0.7922,1000,1.0063,5000,0.9945,0.8009,0.0108,0.0197,in to the of trump on iran s for us
+channel_group,right,51528,551948,27779,10.71,0.0503,0.8282,100,0.7863,1000,1.0233,5000,0.9959,0.7865,0.0079,0.0336,the to in is of trump on and a s
+title_label,left,3031,29617,6005,9.77,0.2028,0.8587,100,0.818,1000,0.9967,5000,0.9954,0.8471,0.007,0.038,trump the to is s in on of and as
+title_label,right,2550,26617,6104,10.44,0.2293,0.7689,100,0.775,1000,0.9654,5000,0.996,0.773,0.0037,0.0408,the to is on trump in of and for s
+title_label,neither,6881,62974,11081,9.15,0.176,0.8643,100,0.8113,1000,0.9644,5000,0.9964,0.8147,0.0058,0.0404,the to in is of a on s and trump
+caps_style,all_caps,4163,25992,4936,6.24,0.1899,0.7642,100,0.8745,1000,0.9904,4936,0.994,0.7951,0.0081,0.0247,the is trump this to it in they iran s
+caps_style,selective_caps,56805,592182,26654,10.42,0.045,0.8079,100,0.7939,1000,1.0675,5000,0.9966,0.7823,0.0079,0.0321,trump the to in as on s is of iran
+caps_style,title_case,52644,543500,30226,10.32,0.0556,0.8517,100,0.795,1000,1.0153,5000,0.9959,0.8243,0.0079,0.0341,the trump to s in on of is and a
+caps_style,sentence_case,38729,431875,28270,11.15,0.0655,0.8634,100,0.7959,1000,1.0123,5000,0.9952,0.8117,0.0082,0.0218,to in the of trump on iran and for s
+caps_style,mixed_other,1334,14193,4133,10.64,0.2912,0.8308,100,0.8321,1000,0.8167,4133,0.9879,,,0.0237,in a the to s i of u this is
+caps_style,short_other,1961,5240,1123,2.67,0.2143,1.2563,100,0.8266,1000,0.7757,1123,0.8644,,,0.1168,tyt hour episode 1 2 bonus 26 full hasanabi 2026

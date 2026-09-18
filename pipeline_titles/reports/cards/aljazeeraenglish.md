@@ -1,6 +1,6 @@
 # Al Jazeera English (@aljazeeraenglish)
 
-Lane: **wire_international** · organisation: Al Jazeera · clipper: no · platform: youtube · subscribers: 18200000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Al Jazeera · clipper: no · platform: youtube · subscribers: 18200000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 7,006 rows, 7,000 unique (repeat share 0.1%); ranked; political share 90
 Top topics: Iran War and Strait of Hormuz Tensions (18.9%); Israel-Lebanon Conflict and Ceasefire Talks (10.7%); Israel-Palestine Conflict Media (10.3%); Sudan Civil War and Africa Politics (6.1%); Iran War and Energy Market Impact (4.8%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 41.4 | 24.7 | 0.0 | 0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 77.4 | 71.1 | 0.5 | 0.5 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 10.5 | 42.7 | -0.6 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 41.4 | 24.7 | 0.0 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 77.4 | 71.1 | 0.5 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 10.5 | 42.7 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 31.0 | 18.8 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 52.3 | 49.8 | 0.2 | 0.1 |
-| F6: Person-centred (named people) | 24.3 | 18.4 | -0.6 | -0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 100.0 | 100.0 | 2.0 | 0.9 |
-| F8: Numeric and dated (digits, years) | 72.0 | 81.2 | -0.0 | 0.0 |
-| F9: ALL-CAPS shouting | 53.1 | 26.8 | -0.3 | 0.0 |
-| F10: Quoted speech | 59.0 | 74.9 | -0.2 | 0.2 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 53.6 | 56.1 | -0.1 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 90.4 | 95.0 | 0.5 | 0.4 |
+| F6: Person-centred (named people) | 24.3 | 18.4 | -0.6 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 100.0 | 100.0 | 2.0 | -0.5 |
+| F8: Numeric and dated (digits, years) | 72.0 | 81.2 | -0.0 | -0.2 |
+| F9: ALL-CAPS shouting | 53.1 | 26.8 | -0.3 | -0.3 |
+| F10: Quoted speech | 59.0 | 74.9 | -0.2 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 53.6 | 56.1 | -0.1 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 90.4 | 95.0 | 0.5 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.1% (3.1%); outrage 35.4% (43.3%); humor 0.0% (0.0%); question 11.9% (22.5%); breaking_live 0.4% (2.4%); episode_show 0.1% (0.1%); interview_guest 4.1% (8.0%); reaction 1.0% (1.3%); confrontation 3.5% (5.8%); listicle 0.0% (0.1%); howto_explainer 5.8% (7.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.1% (2.7%); outrage 35.4% (63.9%); humor 0.0% (0.2%); question 11.9% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.1% (2.8%); interview_guest 4.1% (9.8%); reaction 1.0% (2.9%); confrontation 3.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 5.8% (8.0%)
 
 
-Nearest style neighbours: @Reuters [wire_international]; @CBSNews [us_legacy_tv]; @AssociatedPress [wire_international]; @BBCNews [wire_international]; @CNN [us_legacy_tv]
+Nearest style neighbours: @Reuters [neutral]; @CBSNews [neutral]; @AssociatedPress [neutral]; @BBCNews [neutral]; @CNN [left]
 
-Nearest topic neighbours: @BBCNews [wire_international]; @Reuters [wire_international]; @Firstpost [wire_international]; @AssociatedPress [wire_international]; @timesofindia [wire_international]
+Nearest topic neighbours: @BBCNews [neutral]; @Reuters [neutral]; @Firstpost [neutral]; @AssociatedPress [neutral]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

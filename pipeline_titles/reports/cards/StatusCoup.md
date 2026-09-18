@@ -1,6 +1,6 @@
 # Status Coup News (@StatusCoup)
 
-Lane: **independent_digital_news** · organisation: Status Coup · clipper: no · platform: youtube · subscribers: 737000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Status Coup · clipper: no · platform: youtube · subscribers: 737000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 517 rows, 517 unique (repeat share 0.0%); ranked; political share 95.5%.
 Top topics: ICE Protests and Shootings (32.9%); Trump and Epstein Files Scandal (5.2%); Epstein Files Political Connections (3.5%); AI and Political Concerns (2.7%); Immigration and Deportation Policies (2.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 9.2 | 8.4 | -0.7 | -0.1 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 19.2 | 18.8 | -0.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.3 | 91.2 | 0.1 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 9.2 | 8.4 | -0.7 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 19.2 | 18.8 | -0.6 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.3 | 91.2 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 53.6 | 43.5 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 19.2 | 17.2 | -0.3 | 0.4 |
-| F6: Person-centred (named people) | 43.5 | 34.7 | -0.4 | -0.1 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 43.1 | 62.3 | -0.7 | -0.7 |
-| F8: Numeric and dated (digits, years) | 66.5 | 63.2 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 19.2 | 17.2 | -0.3 | 0.1 |
+| F6: Person-centred (named people) | 43.5 | 34.7 | -0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 43.1 | 62.3 | -0.7 | -0.5 |
+| F8: Numeric and dated (digits, years) | 66.5 | 63.2 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 91.6 | 90.8 | 1.4 | -0.3 |
-| F10: Quoted speech | 96.7 | 96.2 | 1.6 | 0.0 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 50.2 | 59.8 | -0.2 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 43.9 | 38.1 | -0.2 | -0.2 |
+| F10: Quoted speech | 96.7 | 96.2 | 1.6 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 50.2 | 59.8 | -0.2 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 43.9 | 38.1 | -0.2 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.1% (3.0%); outrage 89.6% (61.1%); humor 0.0% (0.1%); question 9.7% (18.1%); breaking_live 7.9% (1.8%); episode_show 0.0% (3.1%); interview_guest 7.2% (8.8%); reaction 0.0% (1.4%); confrontation 6.8% (6.7%); listicle 0.2% (0.1%); howto_explainer 2.5% (9.1%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (2.7%); outrage 89.6% (63.9%); humor 0.0% (0.2%); question 9.7% (15.6%); breaking_live 7.9% (2.9%); episode_show 0.0% (2.8%); interview_guest 7.2% (9.8%); reaction 0.0% (2.9%); confrontation 6.8% (7.6%); listicle 0.2% (0.1%); howto_explainer 2.5% (8.0%)
 
 
-Nearest style neighbours: @SecularTalk [left_commentary]; @RealAmericasVoice [right_tv_network]; https://rumble.com/c/TheAlexJonesShowLive [right_commentary]; @DueDissidence [left_commentary]; @breakingpoints [independent_digital_news]
+Nearest style neighbours: @SecularTalk [left]; @RealAmericasVoice [right]; https://rumble.com/c/TheAlexJonesShowLive [right]; @DueDissidence [left]; @breakingpoints [left]
 
-Nearest topic neighbours: @jimacosta [left_commentary]; @msnow [us_legacy_tv]; @katiephangnews [left_commentary]; @RealAmericasVoice [right_tv_network]; @podsaveamerica [left_commentary]
+Nearest topic neighbours: @jimacosta [left]; @msnow [left]; @katiephangnews [left]; @RealAmericasVoice [right]; @podsaveamerica [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,28 +85,28 @@ Titles: 159 rows, 157 unique (repeat share 1.3%); ranked; political share 99.4%.
 Top topics: ICE Protests and Shootings (49.7%); Anti-Trump Protests and Riots (17.2%); Abdul El-Sayed Senate Primary Victory (3.8%); Trump and Epstein Files Scandal (3.2%); Alex Pretti Shooting and Federal Agents (3.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.1 | 19.0 | -0.6 | -0.4 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 24.1 | 22.8 | -0.9 | -0.7 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.1 | 83.5 | 1.7 | -0.0 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 83.5 | 69.6 | 0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 15.2 | 16.5 | -0.5 | -0.4 |
-| F6: Person-centred (named people) | 26.6 | 15.2 | -0.2 | -0.0 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 43.0 | 65.8 | -0.4 | -0.3 |
-| F8: Numeric and dated (digits, years) | 58.2 | 36.7 | 0.1 | 0.2 |
-| F9: ALL-CAPS shouting | 92.4 | 88.6 | 1.9 | -0.7 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.1 | 19.0 | -0.6 | -0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 24.1 | 22.8 | -0.9 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.1 | 83.5 | 1.7 | -0.2 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 83.5 | 69.6 | 0.2 | -0.2 |
+| F5: Question and explainer framing (why, what, ?) | 15.2 | 16.5 | -0.5 | -0.3 |
+| F6: Person-centred (named people) | 26.6 | 15.2 | -0.2 | 0.6 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 43.0 | 65.8 | -0.4 | -0.4 |
+| F8: Numeric and dated (digits, years) | 58.2 | 36.7 | 0.1 | -0.0 |
+| F9: ALL-CAPS shouting | 92.4 | 88.6 | 1.9 | -0.5 |
 | F10: Quoted speech | 27.8 | 53.2 | -0.7 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 30.4 | 39.2 | -0.4 | 0.3 |
-| F12: Modal and future speculation (will, could, we) | 75.9 | 55.7 | 0.2 | 0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 30.4 | 39.2 | -0.4 | 0.1 |
+| F12: Modal and future speculation (will, could, we) | 75.9 | 55.7 | 0.2 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (2.3%); outrage 82.2% (63.4%); humor 0.0% (0.0%); question 3.2% (8.8%); breaking_live 94.9% (30.8%); episode_show 0.0% (1.0%); interview_guest 9.6% (9.8%); reaction 0.0% (1.1%); confrontation 8.9% (7.3%); listicle 0.0% (0.0%); howto_explainer 0.0% (2.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (1.9%); outrage 82.2% (63.2%); humor 0.0% (0.1%); question 3.2% (11.3%); breaking_live 94.9% (17.5%); episode_show 0.0% (6.4%); interview_guest 9.6% (18.3%); reaction 0.0% (1.5%); confrontation 8.9% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (2.9%)
 
 
-Nearest style neighbours: @MeidasTouch [left_commentary]; @ANINewsIndia [wire_international]; @TheOfficerTatum [right_commentary]; @TimcastIRL [right_commentary]; @deanwithrs [streamer_reaction]
+Nearest style neighbours: @MeidasTouch [left]; @ANINewsIndia [neutral]; @TheOfficerTatum [right]; @TimcastIRL [right]; @deanwithrs [left]
 
-Nearest topic neighbours: @CamHigby [right_commentary]; @TheMajorityReport [left_commentary]; @MeidasTouch [left_commentary]; @BreakThroughNews [independent_digital_news]; @PTLRadioShow [left_commentary]
+Nearest topic neighbours: @CamHigby [right]; @TheMajorityReport [left]; @MeidasTouch [left]; @BreakThroughNews [left]; @PTLRadioShow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

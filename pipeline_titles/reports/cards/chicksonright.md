@@ -1,6 +1,6 @@
 # Chicks on the Right (@chicksonright)
 
-Lane: **right_commentary** · organisation: Chicks on the Right · clipper: no · platform: youtube · subscribers: 191000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Chicks on the Right · clipper: no · platform: youtube · subscribers: 191000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 475 rows, 475 unique (repeat share 0.0%); ranked; political share 96.0%.
 Top topics: Candace Owens and Erika Kirk Controversy (25.3%); Tucker Carlson Political Commentary (6.5%); Megyn Kelly and Political Media (4.6%); JD Vance and Trump Political Conflict (2.9%); ICE Protests and Shootings (2.1%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 16.7 | 22.6 | -0.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 61.5 | 61.1 | 0.2 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 61.5 | 61.1 | 0.2 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.9 | 6.3 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 38.5 | 30.5 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 39.7 | 35.1 | -0.0 | 0.2 |
-| F6: Person-centred (named people) | 61.1 | 87.0 | -0.1 | -0.3 |
+| F6: Person-centred (named people) | 61.1 | 87.0 | -0.1 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 64.0 | 43.9 | -0.4 | -0.7 |
 | F8: Numeric and dated (digits, years) | 51.5 | 36.8 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 19.2 | 31.4 | -0.7 | -0.3 |
 | F10: Quoted speech | 39.7 | 36.8 | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 51.5 | 46.0 | -0.2 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 51.5 | 46.0 | -0.2 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 23.0 | 13.8 | -0.5 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 6.1% (3.8%); outrage 78.3% (63.4%); humor 0.8% (0.2%); question 18.5% (15.1%); breaking_live 0.4% (1.3%); episode_show 0.0% (7.8%); interview_guest 7.0% (8.2%); reaction 1.5% (2.5%); confrontation 18.3% (7.7%); listicle 0.0% (0.1%); howto_explainer 7.6% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.1% (3.6%); outrage 78.3% (59.6%); humor 0.8% (0.2%); question 18.5% (15.6%); breaking_live 0.4% (2.0%); episode_show 0.0% (7.6%); interview_guest 7.0% (8.5%); reaction 1.5% (2.2%); confrontation 18.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 7.6% (9.5%)
 
 
-Nearest style neighbours: @PTLRadioShow [left_commentary]; @Forthepeoplepodcast305 [left_commentary]; @RebelHQ [left_commentary]; @SaltyCracker [streamer_reaction]; @FarronBalanced [left_commentary]
+Nearest style neighbours: @PTLRadioShow [left]; @Forthepeoplepodcast305 [left]; @RebelHQ [left]; @SaltyCracker [right]; @FarronBalanced [left]
 
-Nearest topic neighbours: @GrahamAllen [right_commentary]; @BenShapiro [right_commentary]; @thejimmydoreshow [left_commentary]; @SabbySabs [left_commentary]; @MegynKelly [right_commentary]
+Nearest topic neighbours: @GrahamAllen [right]; @BenShapiro [right]; @thejimmydoreshow [neutral]; @SabbySabs [left]; @MegynKelly [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 179 rows, 179 unique (repeat share 0.0%); ranked; political share 98.3%.
 Top topics: Iran Conflict and Political Updates (22.4%); Candace Owens and Erika Kirk Controversy (11.7%); Megyn Kelly and Political Media (5.6%); Tucker Carlson Political Commentary (5.0%); Hunter Biden and Joe Biden controversies (3.4%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 7.6 | 8.9 | -1.2 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 46.8 | 43.0 | -0.4 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 46.8 | 43.0 | -0.4 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 22.8 | 8.9 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 44.3 | 36.7 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 2.5 | 1.3 | -0.9 | -0.2 |
-| F6: Person-centred (named people) | 82.3 | 87.3 | 1.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 2.5 | 1.3 | -0.9 | -0.3 |
+| F6: Person-centred (named people) | 82.3 | 87.3 | 1.4 | 0.0 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 57.0 | 30.4 | -0.3 | -0.6 |
 | F8: Numeric and dated (digits, years) | 72.2 | 65.8 | 0.3 | -0.0 |
 | F9: ALL-CAPS shouting | 1.3 | 5.1 | -1.4 | -0.4 |
-| F10: Quoted speech | 82.3 | 75.9 | -0.1 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 97.5 | 98.7 | 1.5 | 0.1 |
+| F10: Quoted speech | 82.3 | 75.9 | -0.1 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 97.5 | 98.7 | 1.5 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | 55.7 | 38.0 | -0.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.4% (4.2%); outrage 86.6% (62.2%); humor 0.6% (0.2%); question 10.6% (16.8%); breaking_live 0.6% (18.6%); episode_show 0.0% (23.4%); interview_guest 7.8% (16.3%); reaction 1.7% (2.8%); confrontation 40.8% (11.1%); listicle 0.0% (0.2%); howto_explainer 1.1% (6.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.4% (3.2%); outrage 86.6% (56.4%); humor 0.6% (0.1%); question 10.6% (13.7%); breaking_live 0.6% (18.8%); episode_show 0.0% (26.3%); interview_guest 7.8% (14.0%); reaction 1.7% (2.1%); confrontation 40.8% (9.4%); listicle 0.0% (0.2%); howto_explainer 1.1% (5.3%)
 
 
-Nearest style neighbours: @NickCruseRBN [left_commentary]; @thejimmydoreshow [left_commentary]; @rolandsmartin [independent_digital_news]; @AfterPartyEmily [right_commentary]; @DueDissidence [left_commentary]
+Nearest style neighbours: @NickCruseRBN [left]; @thejimmydoreshow [neutral]; @rolandsmartin [left]; @AfterPartyEmily [right]; @DueDissidence [left]
 
-Nearest topic neighbours: @SabbySabs [left_commentary]; @Xanderhal [streamer_reaction]; @DueDissidence [left_commentary]; @TheSerfTimes [streamer_reaction]; @AfterPartyEmily [right_commentary]
+Nearest topic neighbours: @SabbySabs [left]; @Xanderhal [left]; @DueDissidence [left]; @TheSerfTimes [left]; @AfterPartyEmily [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

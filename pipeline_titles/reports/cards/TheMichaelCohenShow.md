@@ -1,6 +1,6 @@
 # Michael Cohen (@TheMichaelCohenShow)
 
-Lane: **left_commentary** · organisation: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 472000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 472000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 479 rows, 479 unique (repeat share 0.0%); ranked; political share 97.9%.
 Top topics: Trump Meltdowns and Collapses (16.1%); Iran War and Strait of Hormuz Tensions (8.8%); Trump's War and Draft (4.0%); Shocking Events and Reactions (3.5%); Trump Resignation and Leaks (3.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 31.4 | 16.7 | -0.1 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 66.1 | 66.5 | 0.3 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 31.4 | 16.7 | -0.1 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 66.1 | 66.5 | 0.3 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 26.4 | 36.8 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 79.5 | 83.3 | 0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 30.1 | 24.3 | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 30.1 | 24.3 | -0.2 | 0.1 |
 | F6: Person-centred (named people) | 55.6 | 48.5 | -0.1 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 56.9 | 63.6 | -0.5 | -0.5 |
 | F8: Numeric and dated (digits, years) | 65.7 | 47.7 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 82.4 | 83.3 | 0.5 | -0.3 |
-| F10: Quoted speech | 41.0 | 25.5 | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 36.4 | 35.1 | -0.5 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 31.0 | 40.2 | -0.4 | -0.3 |
+| F10: Quoted speech | 41.0 | 25.5 | -0.5 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 36.4 | 35.1 | -0.5 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 31.0 | 40.2 | -0.4 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 4.6% (3.0%); outrage 79.3% (76.0%); humor 0.0% (0.2%); question 11.3% (9.8%); breaking_live 3.8% (5.4%); episode_show 0.2% (2.2%); interview_guest 4.6% (10.4%); reaction 1.2% (1.1%); confrontation 6.9% (8.2%); listicle 0.0% (0.1%); howto_explainer 3.8% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.6% (2.7%); outrage 79.3% (63.9%); humor 0.0% (0.2%); question 11.3% (15.6%); breaking_live 3.8% (2.9%); episode_show 0.2% (2.8%); interview_guest 4.6% (9.8%); reaction 1.2% (2.9%); confrontation 6.9% (7.6%); listicle 0.0% (0.1%); howto_explainer 3.8% (8.0%)
 
 
-Nearest style neighbours: @chicksonright [right_commentary]; @JustPearlyThings [right_commentary]; @adammockler [left_commentary]; @NovaraMedia [independent_digital_news]; @AnthonyBrianLogan [right_commentary]
+Nearest style neighbours: @chicksonright [right]; @JustPearlyThings [right]; @adammockler [left]; @NovaraMedia [left]; @AnthonyBrianLogan [right]
 
-Nearest topic neighbours: @MeidasTouch [left_commentary]; @FarronBalanced [left_commentary]; @aaronparnas1 [left_commentary]; @podsaveamerica [left_commentary]; @thedavidpakmanshow [left_commentary]
+Nearest topic neighbours: @MeidasTouch [left]; @FarronBalanced [left]; @aaronparnas1 [left]; @podsaveamerica [left]; @thedavidpakmanshow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

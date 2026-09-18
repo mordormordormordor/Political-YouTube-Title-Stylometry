@@ -1,6 +1,6 @@
 # Owen Jones (@OwenJonesTalks)
 
-Lane: **left_commentary** · organisation: Owen Jones · clipper: no · platform: youtube · subscribers: 881000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Owen Jones · clipper: no · platform: youtube · subscribers: 881000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 233 rows, 233 unique (repeat share 0.0%); ranked; political share 98.7%.
 Top topics: Israel-Palestine Conflict Media (26.6%); Iran War and Strait of Hormuz Tensions (19.7%); UK politics and Reform UK (10.3%); UK PM Keir Starmer Resignation Calls (5.6%); UK Prime Minister Andy Burnham (3.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 8.8 | 11.3 | -0.7 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 49.0 | 49.0 | -0.1 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 8.8 | 11.3 | -0.7 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 49.0 | 49.0 | -0.1 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 9.6 | 17.6 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 48.5 | 42.7 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 59.0 | 61.1 | 0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 59.0 | 61.1 | 0.3 | 0.1 |
 | F6: Person-centred (named people) | 36.8 | 45.2 | -0.4 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 8.8 | 36.0 | -1.1 | -0.5 |
 | F8: Numeric and dated (digits, years) | 6.7 | 5.4 | -0.6 | -0.2 |
 | F9: ALL-CAPS shouting | 66.5 | 64.4 | -0.1 | -0.3 |
-| F10: Quoted speech | 10.5 | 45.2 | -0.8 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 31.0 | 31.4 | -0.6 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 38.9 | 75.7 | -0.3 | -0.3 |
+| F10: Quoted speech | 10.5 | 45.2 | -0.8 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 31.0 | 31.4 | -0.6 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 38.9 | 75.7 | -0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.0% (3.0%); outrage 84.1% (76.0%); humor 0.0% (0.2%); question 14.6% (9.8%); breaking_live 0.4% (5.4%); episode_show 0.0% (2.2%); interview_guest 19.3% (10.4%); reaction 0.0% (1.1%); confrontation 10.3% (8.2%); listicle 0.0% (0.1%); howto_explainer 9.9% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (2.7%); outrage 84.1% (63.9%); humor 0.0% (0.2%); question 14.6% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 19.3% (9.8%); reaction 0.0% (2.9%); confrontation 10.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 9.9% (8.0%)
 
 
-Nearest style neighbours: @TheYoungTurks [left_commentary]; @NovaraMedia [independent_digital_news]; @laurenchenclips [right_commentary]; @RebelHQ [left_commentary]; @FarronBalanced [left_commentary]
+Nearest style neighbours: @TheYoungTurks [left]; @NovaraMedia [left]; @laurenchenclips [right]; @RebelHQ [left]; @FarronBalanced [left]
 
-Nearest topic neighbours: @NovaraMedia [independent_digital_news]; @DoubleDownNews [independent_digital_news]; @thegrayzone7996 [independent_digital_news]; @PoliticsJOE [independent_digital_news]; @DropSiteNews [independent_digital_news]
+Nearest topic neighbours: @NovaraMedia [left]; @DoubleDownNews [left]; @thegrayzone7996 [left]; @PoliticsJOE [left]; @DropSiteNews [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

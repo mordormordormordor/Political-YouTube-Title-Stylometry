@@ -1,6 +1,6 @@
 # 60 Minutes (@60minutes)
 
-Lane: **us_legacy_tv** · organisation: CBS News · clipper: no · platform: youtube · subscribers: 4170000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: CBS News · clipper: no · platform: youtube · subscribers: 4170000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 325 rows, 325 unique (repeat share 0.0%); ranked; political share 87.1%.
 Top topics: 9/11 Remembered 25 Years Later (8.0%); Members Only Show (7.1%); Iran War and Strait of Hormuz Tensions (4.6%); Hollywood and Oscars Politics (4.3%); Political Podcasts and Influencers (4.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 92.1 | 92.9 | 0.9 | 0.7 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 23.4 | 14.6 | -0.5 | 0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 92.1 | 92.9 | 0.9 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 23.4 | 14.6 | -0.5 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 47.7 | 69.9 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 67.4 | 55.2 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 58.6 | 61.5 | 0.3 | 0.1 |
-| F6: Person-centred (named people) | 41.8 | 41.8 | -0.4 | -0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 91.6 | 90.4 | 0.8 | 1.2 |
-| F8: Numeric and dated (digits, years) | 99.6 | 99.6 | 2.0 | -0.2 |
-| F9: ALL-CAPS shouting | 54.8 | 52.7 | -0.2 | -0.3 |
-| F10: Quoted speech | 75.3 | 74.1 | 0.1 | 0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 25.1 | 22.2 | -0.7 | 0.0 |
+| F6: Person-centred (named people) | 41.8 | 41.8 | -0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 91.6 | 90.4 | 0.8 | -0.1 |
+| F8: Numeric and dated (digits, years) | 99.6 | 99.6 | 2.0 | 0.0 |
+| F9: ALL-CAPS shouting | 54.8 | 52.7 | -0.2 | -0.4 |
+| F10: Quoted speech | 75.3 | 74.1 | 0.1 | -0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 25.1 | 22.2 | -0.7 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 25.1 | 33.5 | -0.4 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.2% (1.6%); outrage 11.7% (33.1%); humor 0.0% (0.1%); question 8.9% (8.0%); breaking_live 0.3% (2.9%); episode_show 0.3% (2.0%); interview_guest 5.9% (7.4%); reaction 0.3% (2.3%); confrontation 1.2% (5.3%); listicle 0.0% (0.1%); howto_explainer 2.5% (3.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (2.4%); outrage 11.7% (36.0%); humor 0.0% (0.1%); question 8.9% (15.9%); breaking_live 0.3% (1.1%); episode_show 0.3% (7.0%); interview_guest 5.9% (11.6%); reaction 0.3% (1.9%); confrontation 1.2% (7.4%); listicle 0.0% (0.1%); howto_explainer 2.5% (6.6%)
 
 
-Nearest style neighbours: @HasanAbiVODs3 [streamer_reaction]; @Forbes [us_press_print_digital]; @PiscoLitty [streamer_reaction]; @Firstpost [wire_international]; @newdiscourses [right_commentary]
+Nearest style neighbours: @HasanAbiVODs3 [left]; @Forbes [neutral]; @PiscoLitty [left]; @Firstpost [neutral]; @newdiscourses [right]
 
-Nearest topic neighbours: @NYTPodcasts [us_press_print_digital]; @ABCNews [us_legacy_tv]; @FoxNewsChannelClips [us_legacy_tv]; @CBSNews [us_legacy_tv]; @CNN [us_legacy_tv]
+Nearest topic neighbours: @NYTPodcasts [left]; @ABCNews [neutral]; @FoxNewsChannelClips [right]; @CBSNews [neutral]; @CNN [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

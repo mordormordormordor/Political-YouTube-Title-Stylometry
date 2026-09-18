@@ -1,0 +1,7 @@
+grouping,group,n_titles,all_caps,selective_caps,title_case,sentence_case,mixed_other,short_other,caps_any
+channel_group,left,64947,0.0201,0.4607,0.3184,0.1729,0.0076,0.0203,0.4808
+channel_group,neutral,39161,0.0081,0.1568,0.2718,0.5415,0.015,0.0067,0.165
+channel_group,right,51528,0.0493,0.4026,0.4138,0.1222,0.0049,0.0073,0.4518
+title_label,left,3031,0.0125,0.448,0.4573,0.0765,0.0036,0.002,0.4606
+title_label,right,2550,0.0227,0.4549,0.4729,0.0439,0.0024,0.0031,0.4776
+title_label,neither,6881,0.0343,0.2136,0.5283,0.1888,0.0092,0.0259,0.2479

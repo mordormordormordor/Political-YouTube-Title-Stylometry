@@ -1,6 +1,6 @@
 # ANI News (@ANINewsIndia)
 
-Lane: **wire_international** · organisation: ANI · clipper: no · platform: youtube · subscribers: 9760000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: ANI · clipper: no · platform: youtube · subscribers: 9760000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 12,296 rows, 12,279 unique (repeat share 0.1%); ranked; political share 
 Top topics: Indian Politics and Parliament (28.7%); PM Modi and BRICS Diplomacy (14.3%); Iran War and Strait of Hormuz Tensions (9.8%); India's Muslims and Political Parties (4.8%); US-Iran Peace Talks in Pakistan (3.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 58.6 | 71.1 | 0.3 | 0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 82.8 | 77.0 | 0.7 | 0.5 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 0.8 | 83.7 | -0.9 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 58.6 | 71.1 | 0.3 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 82.8 | 77.0 | 0.7 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 0.8 | 83.7 | -0.9 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 65.7 | 38.5 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 31.4 | 13.0 | -0.2 | 0.1 |
-| F6: Person-centred (named people) | 73.6 | 84.9 | 0.2 | -0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 92.1 | 96.2 | 0.9 | 0.9 |
+| F6: Person-centred (named people) | 73.6 | 84.9 | 0.2 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 92.1 | 96.2 | 0.9 | -0.1 |
 | F8: Numeric and dated (digits, years) | 79.9 | 90.8 | 0.1 | 0.0 |
-| F9: ALL-CAPS shouting | 66.1 | 34.3 | -0.1 | 0.0 |
-| F10: Quoted speech | 95.0 | 95.8 | 1.2 | 0.2 |
+| F9: ALL-CAPS shouting | 66.1 | 34.3 | -0.1 | -0.4 |
+| F10: Quoted speech | 95.0 | 95.8 | 1.2 | -0.1 |
 | F11: Long, upbeat, abstract (length, positive words, nominalisations) | 90.0 | 95.8 | 0.7 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 77.8 | 88.7 | 0.3 | 0.4 |
+| F12: Modal and future speculation (will, could, we) | 77.8 | 88.7 | 0.3 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.4% (3.1%); outrage 37.4% (43.3%); humor 0.0% (0.0%); question 4.9% (22.5%); breaking_live 7.3% (2.4%); episode_show 0.2% (0.1%); interview_guest 10.1% (8.0%); reaction 2.4% (1.3%); confrontation 5.9% (5.8%); listicle 0.2% (0.1%); howto_explainer 2.3% (7.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.4% (2.4%); outrage 37.4% (36.0%); humor 0.0% (0.1%); question 4.9% (15.9%); breaking_live 7.3% (1.1%); episode_show 0.2% (7.0%); interview_guest 10.1% (11.6%); reaction 2.4% (1.9%); confrontation 5.9% (7.4%); listicle 0.2% (0.1%); howto_explainer 2.3% (6.6%)
 
 
-Nearest style neighbours: @USATODAY [us_press_print_digital]; @AssociatedPress [wire_international]; @CBSNews [us_legacy_tv]; @SkyNews [wire_international]; @thehill [us_press_print_digital]
+Nearest style neighbours: @USATODAY [neutral]; @AssociatedPress [neutral]; @CBSNews [neutral]; @SkyNews [left]; @thehill [neutral]
 
-Nearest topic neighbours: @Firstpost [wire_international]; @AssociatedPress [wire_international]; @aljazeeraenglish [wire_international]; @Reuters [wire_international]; @BBCNews [wire_international]
+Nearest topic neighbours: @Firstpost [neutral]; @AssociatedPress [neutral]; @aljazeeraenglish [left]; @Reuters [neutral]; @BBCNews [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 7,717 rows, 7,579 unique (repeat share 1.8%); ranked; political share 95
 Top topics: Indian Politics and Parliament (54.9%); PM Modi and BRICS Diplomacy (9.8%); G7 Summit and Macron-Trump Bilateral Meetings (3.9%); Trump's speeches and events (2.6%); Trump Iran War Briefings (2.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 45.6 | 69.6 | 0.0 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 65.8 | 62.0 | 0.0 | 0.0 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.8 | 89.9 | 1.6 | 1.5 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 73.4 | 40.5 | 0.0 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 45.6 | 69.6 | 0.0 | 0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 65.8 | 62.0 | 0.0 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.8 | 89.9 | 1.6 | 0.8 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 73.4 | 40.5 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 55.7 | 13.9 | -0.3 | -0.3 |
-| F6: Person-centred (named people) | 67.1 | 81.0 | 0.7 | 0.6 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 77.2 | 83.5 | 0.3 | 0.3 |
-| F8: Numeric and dated (digits, years) | 44.3 | 68.4 | -0.0 | 0.3 |
-| F9: ALL-CAPS shouting | 69.6 | 43.0 | -0.1 | -0.1 |
-| F10: Quoted speech | 55.7 | 62.0 | -0.5 | 0.0 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 49.4 | 79.7 | 0.0 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 74.7 | 79.7 | 0.2 | 0.2 |
+| F6: Person-centred (named people) | 67.1 | 81.0 | 0.7 | 0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 77.2 | 83.5 | 0.3 | 0.4 |
+| F8: Numeric and dated (digits, years) | 44.3 | 68.4 | -0.0 | 0.2 |
+| F9: ALL-CAPS shouting | 69.6 | 43.0 | -0.1 | -0.4 |
+| F10: Quoted speech | 55.7 | 62.0 | -0.5 | -0.7 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 49.4 | 79.7 | 0.0 | -0.6 |
+| F12: Modal and future speculation (will, could, we) | 74.7 | 79.7 | 0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 7.1% (3.6%); outrage 24.8% (36.5%); humor 0.0% (0.0%); question 0.2% (5.1%); breaking_live 73.1% (71.5%); episode_show 0.0% (0.0%); interview_guest 8.0% (9.4%); reaction 2.0% (1.6%); confrontation 4.3% (7.7%); listicle 0.0% (0.0%); howto_explainer 0.2% (1.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.1% (2.2%); outrage 24.8% (29.7%); humor 0.0% (0.1%); question 0.2% (4.6%); breaking_live 73.1% (52.4%); episode_show 0.0% (2.1%); interview_guest 8.0% (13.2%); reaction 2.0% (1.4%); confrontation 4.3% (7.4%); listicle 0.0% (0.0%); howto_explainer 0.2% (1.0%)
 
 
-Nearest style neighbours: @USATODAY [us_press_print_digital]; @NBCNews [us_legacy_tv]; @bulwarkmedia [centrist_heterodox]; @AnthonyBrianLogan [right_commentary]; @SkyNews [wire_international]
+Nearest style neighbours: @USATODAY [neutral]; @NBCNews [neutral]; @bulwarkmedia [left]; @AnthonyBrianLogan [right]; @SkyNews [left]
 
-Nearest topic neighbours: @Firstpost [wire_international]; @Reuters [wire_international]; @TimesNowWorld [wire_international]; @AssociatedPress [wire_international]; @timesofindia [wire_international]
+Nearest topic neighbours: @Firstpost [neutral]; @Reuters [neutral]; @TimesNowWorld [neutral]; @AssociatedPress [neutral]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 """Stage 2a - title-level style features, aggregated to creator x genre x month.
 
-Reads titles_prepared.parquet, annotations.parquet and lanes.csv. Writes:
+Reads titles_prepared.parquet, annotations.parquet and creators.csv. Writes:
 
     features_title.parquet     one row per video (all rows; repeats copy their unique
                                title's values): ~75 title-level features
@@ -41,7 +41,7 @@ import pandas as pd
 from pipeline_titles import lexicons as L
 from pipeline_titles.common import (
     ANALYSIS_DIR, ANNOTATIONS, FEATURES_CREATOR, FEATURES_CSV, FEATURES_TITLE, LOW_N, SEED, STOPWORDS,
-    load_lanes, load_prepared, stage_timer,
+    load_creators, load_prepared, stage_timer,
 )
 
 WORD_RE = re.compile(r"[a-z0-9#@$%]+(?:['’][a-z]+)?")
@@ -344,7 +344,7 @@ def run(do_diversity: bool = True) -> None:
     from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
     vader = SentimentIntensityAnalyzer()
     prepared = load_prepared()
-    lanes = load_lanes()[["creator", "lane", "organisation", "clipper"]]
+    creators = load_creators()[["creator", "group", "organisation", "clipper"]]
     ann_df = pd.read_parquet(ANNOTATIONS).set_index("title_norm")
     uniq = prepared[~prepared["is_dup"]].copy()
     print(f"extracting features for {len(uniq)} unique titles", flush=True)
@@ -391,11 +391,11 @@ def run(do_diversity: bool = True) -> None:
 
     # aggregation over unique titles
     monthly = aggregate(tf, ["creator", "genre", "month"])
-    monthly = monthly.merge(lanes, on="creator", how="left")
+    monthly = monthly.merge(creators, on="creator", how="left")
     monthly.to_csv(FEATURES_CSV, index=False)
     creator = aggregate(tf, ["creator", "genre"])
     summ = pd.read_csv(ANALYSIS_DIR / "creator_genre_summary.csv")[["creator", "genre", "n_rows", "n_unique", "repeat_share", "low_n"]]
-    creator = creator.merge(summ, on=["creator", "genre"], how="left").merge(lanes, on="creator", how="left")
+    creator = creator.merge(summ, on=["creator", "genre"], how="left").merge(creators, on="creator", how="left")
 
     # lexical diversity
     if do_diversity:

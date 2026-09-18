@@ -1,6 +1,6 @@
 # Fast Politics w/ Molly Jong-Fast (@fastpoliticspodcast)
 
-Lane: **left_commentary** · organisation: Fast Politics · clipper: no · platform: youtube · subscribers: 91200.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Fast Politics · clipper: no · platform: youtube · subscribers: 91200.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 145 rows, 145 unique (repeat share 0.0%); ranked; political share 100.0%
 Top topics: Trump Meltdowns and Collapses (6.9%); MAGA Movement Decline (6.2%); Trump Resignation and Leaks (6.2%); 2026 Midterm Election Predictions (5.5%); Trump's Economic Impact (4.8%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 42.7 | 28.5 | 0.1 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 16.3 | 20.9 | -0.7 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 42.7 | 28.5 | 0.1 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 16.3 | 20.9 | -0.7 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 37.7 | 36.0 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 12.1 | 28.5 | -0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 88.3 | 82.8 | 1.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 88.3 | 82.8 | 1.4 | 0.1 |
 | F6: Person-centred (named people) | 98.7 | 96.7 | 1.5 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 33.9 | 27.6 | -0.8 | -0.5 |
 | F8: Numeric and dated (digits, years) | 40.6 | 34.3 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 49.0 | 67.8 | -0.3 | -0.3 |
-| F10: Quoted speech | 35.1 | 20.5 | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 7.5 | 13.8 | -1.1 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 79.1 | 74.1 | 0.3 | -0.3 |
+| F10: Quoted speech | 35.1 | 20.5 | -0.5 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 7.5 | 13.8 | -1.1 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 79.1 | 74.1 | 0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (3.0%); outrage 67.6% (76.0%); humor 0.0% (0.2%); question 31.7% (9.8%); breaking_live 0.0% (5.4%); episode_show 0.0% (2.2%); interview_guest 75.2% (10.4%); reaction 0.0% (1.1%); confrontation 1.4% (8.2%); listicle 0.0% (0.1%); howto_explainer 17.2% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.7%); outrage 67.6% (63.9%); humor 0.0% (0.2%); question 31.7% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 75.2% (9.8%); reaction 0.0% (2.9%); confrontation 1.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 17.2% (8.0%)
 
 
-Nearest style neighbours: @JamarlThomas [left_commentary]; @ClubRandomPodcast [interview_podcast]; @fightbackpodcast [right_commentary]; @TheAdamCarollaShow1 [interview_podcast]; @RufoandLomez [right_commentary]
+Nearest style neighbours: @JamarlThomas [left]; @ClubRandomPodcast [neutral]; @fightbackpodcast [right]; @TheAdamCarollaShow1 [right]; @RufoandLomez [right]
 
-Nearest topic neighbours: @FarronBalanced [left_commentary]; @TheDailyBeast [us_press_print_digital]; @podsaveamerica [left_commentary]; @aaronparnas1 [left_commentary]; @thedavidpakmanshow [left_commentary]
+Nearest topic neighbours: @FarronBalanced [left]; @TheDailyBeast [left]; @podsaveamerica [left]; @aaronparnas1 [left]; @thedavidpakmanshow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

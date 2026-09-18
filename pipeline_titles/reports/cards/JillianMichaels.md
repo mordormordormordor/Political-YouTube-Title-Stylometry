@@ -1,6 +1,6 @@
 # Jillian Michaels (@JillianMichaels)
 
-Lane: **interview_podcast** · organisation: Jillian Michaels · clipper: no · platform: youtube · subscribers: 764000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Jillian Michaels · clipper: no · platform: youtube · subscribers: 764000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 457 rows, 457 unique (repeat share 0.0%); ranked; political share 95.6%.
 Top topics: Iran War and Strait of Hormuz Tensions (7.2%); Left Wing Political Violence (3.5%); Big Pharma and Health Scams (2.8%); 2026 Midterm Election Predictions (2.6%); Islam and Political Discourse (2.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 49.0 | 49.4 | 0.2 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 67.8 | 66.9 | 0.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 69.9 | 66.5 | -0.2 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 63.6 | 63.2 | -0.0 | -0.2 |
-| F5: Question and explainer framing (why, what, ?) | 80.3 | 79.9 | 1.0 | 0.7 |
-| F6: Person-centred (named people) | 34.7 | 36.0 | -0.4 | 0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 9.2 | 10.9 | -1.1 | -0.8 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 67.8 | 66.9 | 0.3 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 69.9 | 66.5 | -0.2 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 63.6 | 63.2 | -0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 80.3 | 79.9 | 1.0 | 0.2 |
+| F6: Person-centred (named people) | 34.7 | 36.0 | -0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 9.2 | 10.9 | -1.1 | -0.7 |
 | F8: Numeric and dated (digits, years) | 33.1 | 42.7 | -0.3 | -0.2 |
 | F9: ALL-CAPS shouting | 76.2 | 73.6 | 0.2 | -0.3 |
-| F10: Quoted speech | 72.8 | 73.6 | -0.0 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 70.7 | 71.1 | 0.1 | -0.4 |
+| F10: Quoted speech | 72.8 | 73.6 | -0.0 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 70.7 | 71.1 | 0.1 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 46.9 | 55.6 | -0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.5% (1.4%); outrage 60.8% (41.4%); humor 0.2% (0.3%); question 26.5% (19.0%); breaking_live 0.4% (0.5%); episode_show 0.0% (11.4%); interview_guest 2.8% (18.1%); reaction 0.4% (1.4%); confrontation 8.5% (9.2%); listicle 0.2% (0.0%); howto_explainer 16.6% (11.7%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.5% (3.6%); outrage 60.8% (59.6%); humor 0.2% (0.2%); question 26.5% (15.6%); breaking_live 0.4% (2.0%); episode_show 0.0% (7.6%); interview_guest 2.8% (8.5%); reaction 0.4% (2.2%); confrontation 8.5% (7.8%); listicle 0.2% (0.1%); howto_explainer 16.6% (9.5%)
 
 
-Nearest style neighbours: @SMN [humour_satire]; @glennbeck [right_commentary]; @ChadPrather1 [right_commentary]; @winston_marshall [interview_podcast]; @morebridgetphetasy [interview_podcast]
+Nearest style neighbours: @SMN [left]; @glennbeck [right]; @ChadPrather1 [right]; @winston_marshall [right]; @morebridgetphetasy [right]
 
-Nearest topic neighbours: @NewsmaxTV [right_tv_network]; @RealAmericasVoice [right_tv_network]; @BlazeTV [right_commentary]; @FoxNewsChannelClips [us_legacy_tv]; @BenShapiro [right_commentary]
+Nearest topic neighbours: @NewsmaxTV [right]; @RealAmericasVoice [right]; @BlazeTV [right]; @FoxNewsChannelClips [right]; @BenShapiro [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

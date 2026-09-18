@@ -1,6 +1,6 @@
 # Mike From PA (@MikeFromPA)
 
-Lane: **streamer_reaction** · organisation: Mike from PA · clipper: no · platform: youtube · subscribers: 31900.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Mike from PA · clipper: no · platform: youtube · subscribers: 31900.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 129 rows, 129 unique (repeat share 0.0%); ranked; political share 87.6%.
 Top topics: Trump and China political relations (13.2%); Hasanabi Reacts to Hasan (12.4%); Destiny and Ethan Klein debates (9.3%); 2026 US Primary Elections (3.9%); Socialism and Democratic Party Conflict (3.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 50.2 | 59.4 | 0.2 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 64.9 | 59.4 | 0.3 | -0.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 29.7 | 22.6 | -0.4 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 50.2 | 59.4 | 0.2 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 64.9 | 59.4 | 0.3 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 29.7 | 22.6 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 38.1 | 42.3 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 84.5 | 81.2 | 1.2 | -0.1 |
-| F6: Person-centred (named people) | 70.7 | 74.5 | 0.1 | -0.5 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 48.5 | 41.8 | -0.6 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 84.5 | 81.2 | 1.2 | 0.1 |
+| F6: Person-centred (named people) | 70.7 | 74.5 | 0.1 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 48.5 | 41.8 | -0.6 | -0.5 |
 | F8: Numeric and dated (digits, years) | 5.4 | 4.2 | -0.6 | -0.2 |
-| F9: ALL-CAPS shouting | 92.9 | 92.9 | 1.5 | -0.1 |
-| F10: Quoted speech | 73.2 | 64.0 | 0.0 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 59.4 | 51.9 | -0.0 | -0.7 |
-| F12: Modal and future speculation (will, could, we) | 24.7 | 22.2 | -0.4 | -0.5 |
+| F9: ALL-CAPS shouting | 92.9 | 92.9 | 1.5 | -0.3 |
+| F10: Quoted speech | 73.2 | 64.0 | 0.0 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 59.4 | 51.9 | -0.0 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 24.7 | 22.2 | -0.4 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.3% (3.8%); outrage 75.2% (64.8%); humor 0.8% (0.4%); question 14.7% (9.0%); breaking_live 0.0% (0.4%); episode_show 0.0% (4.5%); interview_guest 7.8% (7.8%); reaction 3.9% (10.1%); confrontation 5.4% (14.3%); listicle 0.0% (0.0%); howto_explainer 19.4% (4.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.3% (2.7%); outrage 75.2% (63.9%); humor 0.8% (0.2%); question 14.7% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 7.8% (9.8%); reaction 3.9% (2.9%); confrontation 5.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 19.4% (8.0%)
 
 
-Nearest style neighbours: @JillianMichaels [interview_podcast]; @fightbackpodcast [right_commentary]; @deanwithrs [streamer_reaction]; @RestPoliticsUS [centrist_heterodox]; @TheMichaelCohenShow [left_commentary]
+Nearest style neighbours: @JillianMichaels [right]; @fightbackpodcast [right]; @deanwithrs [left]; @RestPoliticsUS [left]; @TheMichaelCohenShow [left]
 
-Nearest topic neighbours: @HasanReactionsfanTwo [streamer_reaction]; @DestinyDGGClips [streamer_reaction]; @hutch [streamer_reaction]; @DailyDenims [streamer_reaction]; @destiny [streamer_reaction]
+Nearest topic neighbours: @HasanReactionsfanTwo [left]; @DestinyDGGClips [right]; @hutch [neutral]; @DailyDenims [left]; @destiny [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

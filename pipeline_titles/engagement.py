@@ -19,7 +19,7 @@ Rumble rows have no view count and are excluded here.
 
 Outputs (data/titles/analysis/):
     engagement_coefficients.csv   creator x genre x predictor: coefficient, HC3 SE, p, n, R2
-    engagement_summary.csv        across creators (per genre, and per lane): median,
+    engagement_summary.csv        across creators (per genre, and per channel group): median,
                                   IQR, share positive, share significant (+/-), n_creators
     engagement_model.json         specification
 
@@ -38,7 +38,7 @@ import numpy as np
 import pandas as pd
 
 from pipeline_titles.common import (
-    ANALYSIS_DIR, DIMENSIONS_TITLE, FEATURES_TITLE, FORMATS_PARQUET, MIN_ENGAGEMENT_N, TOPICS_CSV, load_lanes, load_prepared, stage_timer,
+    ANALYSIS_DIR, DIMENSIONS_TITLE, FEATURES_TITLE, FORMATS_PARQUET, MIN_ENGAGEMENT_N, TOPICS_CSV, load_creators, load_prepared, stage_timer,
 )
 
 HOOKS = ["curiosity_gap", "outrage", "humor"]
@@ -71,7 +71,7 @@ def fit_creator(df: pd.DataFrame, predictors: list[str]) -> Optional[dict]:
 
 def run(info: dict) -> None:
     prepared = load_prepared()
-    lanes = load_lanes()[["creator", "lane", "organisation", "clipper", "subscribers"]]
+    creators = load_creators()[["creator", "group", "organisation", "clipper", "subscribers"]]
     dt = pd.read_parquet(DIMENSIONS_TITLE)
     fcols = [c for c in dt.columns if c.startswith("F") and c[1:].isdigit()]
     fm = pd.read_parquet(FORMATS_PARQUET, columns=["row_id"] + HOOKS)
@@ -91,7 +91,7 @@ def run(info: dict) -> None:
                 coef, se, pv = res[p]
                 rows.append({"creator": c, "genre": g, "predictor": p, "coef_per_sd": coef, "se_hc3": se, "p": pv, "n": res["n"],
                              "r2": res["r2"], "r2_adj": res["r2_adj"], "n_topic_dummies": res["n_topic_dummies"]})
-    coefs = pd.DataFrame(rows).merge(lanes, on="creator", how="left")
+    coefs = pd.DataFrame(rows).merge(creators, on="creator", how="left")
     coefs.to_csv(ANALYSIS_DIR / "engagement_coefficients.csv", index=False)
     info["creator_genre_models"] = int(coefs.groupby(["creator", "genre"]).ngroups)
 
@@ -104,8 +104,8 @@ def run(info: dict) -> None:
                           "share_same_sign_as_median": (np.sign(g["coef_per_sd"]) == sign).mean(),
                           "median_r2": g["r2"].median()})
     s1 = coefs.groupby(["genre", "predictor"]).apply(summarise, include_groups=False).reset_index()
-    s1.insert(0, "lane", "ALL")
-    s2 = coefs.groupby(["lane", "genre", "predictor"]).apply(summarise, include_groups=False).reset_index()
+    s1.insert(0, "group", "ALL")
+    s2 = coefs.groupby(["group", "genre", "predictor"]).apply(summarise, include_groups=False).reset_index()
     pd.concat([s1, s2], ignore_index=True).to_csv(ANALYSIS_DIR / "engagement_summary.csv", index=False)
     (ANALYSIS_DIR / "engagement_model.json").write_text(json.dumps({
         "dependent": "log(1 + view_count) (snapshot at fetch time, 2026-09-14)", "predictors": predictors,

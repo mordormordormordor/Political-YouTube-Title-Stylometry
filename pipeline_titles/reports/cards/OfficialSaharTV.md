@@ -1,6 +1,6 @@
 # SaharTV (@OfficialSaharTV)
 
-Lane: **right_commentary** · organisation: Sahar TV · clipper: no · platform: youtube · subscribers: 785000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Sahar TV · clipper: no · platform: youtube · subscribers: 785000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 893 rows, 893 unique (repeat share 0.0%); ranked; political share 99.1%.
 Top topics: British Islamophobia and Political Tensions (20.7%); Israel-Palestine Conflict Media (18.2%); Islam and Political Discourse (17.5%); Iran War and Strait of Hormuz Tensions (6.0%); Sneako and Political Interviews (2.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 23.0 | 20.1 | -0.3 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 96.7 | 95.4 | 1.1 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 96.7 | 95.4 | 1.1 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.0 | 37.7 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 96.2 | 95.0 | 0.8 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 42.3 | 42.7 | -0.0 | 0.2 |
-| F6: Person-centred (named people) | 63.6 | 59.8 | -0.0 | -0.3 |
+| F6: Person-centred (named people) | 63.6 | 59.8 | -0.0 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 35.6 | 29.3 | -0.7 | -0.7 |
 | F8: Numeric and dated (digits, years) | 54.0 | 40.6 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 22.2 | 10.0 | -0.6 | -0.3 |
 | F10: Quoted speech | 51.0 | 61.5 | -0.4 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 59.8 | 54.0 | -0.0 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 59.8 | 54.0 | -0.0 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 28.9 | 47.7 | -0.4 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 7.2% (3.8%); outrage 89.9% (63.4%); humor 0.1% (0.2%); question 0.0% (15.1%); breaking_live 3.7% (1.3%); episode_show 0.0% (7.8%); interview_guest 7.4% (8.2%); reaction 3.9% (2.5%); confrontation 10.5% (7.7%); listicle 0.0% (0.1%); howto_explainer 2.8% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.2% (3.6%); outrage 89.9% (59.6%); humor 0.1% (0.2%); question 0.0% (15.6%); breaking_live 3.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 7.4% (8.5%); reaction 3.9% (2.2%); confrontation 10.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.8% (9.5%)
 
 
-Nearest style neighbours: @DestinyDGGClips [streamer_reaction]; @CamHigby [right_commentary]; @RubinReport [right_commentary]; @chicksonright [right_commentary]; @Xanderhal [streamer_reaction]
+Nearest style neighbours: @DestinyDGGClips [right]; @CamHigby [right]; @RubinReport [right]; @chicksonright [right]; @Xanderhal [left]
 
-Nearest topic neighbours: @BadEmpanadaLive [streamer_reaction]; @LIVESNEAKO [streamer_reaction]; @TheYoungTurks [left_commentary]; @NovaraMedia [independent_digital_news]; @OwenJonesTalks [left_commentary]
+Nearest topic neighbours: @BadEmpanadaLive [left]; @LIVESNEAKO [neutral]; @TheYoungTurks [left]; @NovaraMedia [left]; @OwenJonesTalks [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,23 +86,23 @@ Titles: 2 rows, 2 unique (repeat share 0.0%); LOW-N (not ranked); political shar
 Top topics: Israel-Palestine Conflict Media (50.0%); Political Media Broadcasters (50.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.8 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.8 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | 0.0 | -0.2 |
-| F6: Person-centred (named people) | None | None | -0.8 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | 0.0 | -0.3 |
+| F6: Person-centred (named people) | None | None | -0.8 | 0.0 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.0 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | -2.4 | -0.0 |
 | F9: ALL-CAPS shouting | None | None | -2.0 | -0.4 |
-| F10: Quoted speech | None | None | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.9 | 0.1 |
+| F10: Quoted speech | None | None | -0.5 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.9 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | None | None | -0.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (4.2%); outrage 0.0% (62.2%); humor 0.0% (0.2%); question 0.0% (16.8%); breaking_live 0.0% (18.6%); episode_show 0.0% (23.4%); interview_guest 0.0% (16.3%); reaction 0.0% (2.8%); confrontation 50.0% (11.1%); listicle 0.0% (0.2%); howto_explainer 0.0% (6.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.2%); outrage 0.0% (56.4%); humor 0.0% (0.1%); question 0.0% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 0.0% (14.0%); reaction 0.0% (2.1%); confrontation 50.0% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

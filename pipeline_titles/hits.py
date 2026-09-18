@@ -9,16 +9,16 @@ discrete, xmin estimated by KS minimisation) with the log-likelihood-ratio test
 against a lognormal (R > 0 favours the power law; p is the significance of R).
 A tail is called power-law-like only when R > 0 and p < 0.05.
 
-Then, within lane: Spearman correlations across creators between concentration
-(Gini, top-10 % share) and the topic-controlled dimension scores and hook shares;
-plus the same correlations with log(number of videos) and log(subscribers) as
-the size-artefact check, and a pooled within-lane estimate (values demeaned by
-lane x genre).
+Then, within channel group (left / neutral / right): Spearman correlations across
+creators between concentration (Gini, top-10 % share) and the topic-controlled
+dimension scores and hook shares; plus the same correlations with log(number of
+videos) and log(subscribers) as the size-artefact check, and a pooled within-group
+estimate (values demeaned by group x genre).
 
 Outputs (data/titles/analysis/):
     hit_concentration.csv               per creator x genre (Gini, top shares, CSN fit, rank-size
                                         Zipf slope of views over all videos and over the top decile)
-    hit_concentration_correlations.csv  within-lane and pooled-within-lane correlations
+    hit_concentration_correlations.csv  within-group and pooled-within-group correlations
 
 CLI:
     python -m pipeline_titles.hits
@@ -37,7 +37,7 @@ import numpy as np
 import pandas as pd
 
 from pipeline_titles.common import (
-    ANALYSIS_DIR, DIMENSIONS_CSV, MIN_ENGAGEMENT_N, gini, load_lanes, load_prepared, stage_timer, top_share,
+    ANALYSIS_DIR, DIMENSIONS_CSV, MIN_ENGAGEMENT_N, gini, load_creators, load_prepared, stage_timer, top_share,
 )
 
 HOOKS = ["curiosity_gap", "outrage", "humor"]
@@ -74,7 +74,7 @@ def csn_fit(values: np.ndarray) -> dict:
 def run(info: dict) -> None:
     from scipy.stats import spearmanr
     prepared = load_prepared()
-    lanes = load_lanes()[["creator", "lane", "organisation", "clipper", "subscribers"]]
+    creators = load_creators()[["creator", "group", "organisation", "clipper", "subscribers"]]
     df = prepared[prepared["has_views"] & (prepared["platform"] == "youtube")]
     rows = []
     for (c, g), grp in df.groupby(["creator", "genre"]):
@@ -86,7 +86,7 @@ def run(info: dict) -> None:
         rec.update(csn_fit(v))
         rec["zipf_views_all"], rec["zipf_views_head"] = views_zipf_slope(v)
         rows.append(rec)
-    hc = pd.DataFrame(rows).merge(lanes, on="creator", how="left")
+    hc = pd.DataFrame(rows).merge(creators, on="creator", how="left")
     hc["subscribers"] = pd.to_numeric(hc["subscribers"], errors="coerce")
     dims = pd.read_csv(DIMENSIONS_CSV)
     fcols = [c[:-11] for c in dims.columns if re.fullmatch(r"F\d+_controlled", c)]
@@ -100,7 +100,7 @@ def run(info: dict) -> None:
     preds = [f + "_controlled" for f in fcols] + HOOKS + ["log_n_videos", "log_subscribers"]
     hc["log_n_videos"] = np.log(hc["n_videos"]); hc["log_subscribers"] = np.log(hc["subscribers"].clip(lower=1))
     crows = []
-    for (lane, g), grp in hc.groupby(["lane", "genre"]):
+    for (group, g), grp in hc.groupby(["group", "genre"]):
         if len(grp) < 6:
             continue
         for target in ("gini", "top10_share"):
@@ -109,18 +109,18 @@ def run(info: dict) -> None:
                 if len(sub) < 6:
                     continue
                 r, pv = spearmanr(sub[target], sub[p])
-                crows.append({"scope": "within_lane", "lane": lane, "genre": g, "target": target, "predictor": p, "n_creators": len(sub), "spearman_r": round(float(r), 3), "p": round(float(pv), 4)})
+                crows.append({"scope": "within_group", "group": group, "genre": g, "target": target, "predictor": p, "n_creators": len(sub), "spearman_r": round(float(r), 3), "p": round(float(pv), 4)})
     for g, grp in hc.groupby("genre"):
         dm = grp.copy()
         for col in ["gini", "top10_share"] + preds:
-            dm[col] = dm[col] - dm.groupby("lane")[col].transform("mean")
+            dm[col] = dm[col] - dm.groupby("group")[col].transform("mean")
         for target in ("gini", "top10_share"):
             for p in preds:
                 sub = dm[[target, p]].dropna()
                 if len(sub) < 10:
                     continue
                 r, pv = spearmanr(sub[target], sub[p])
-                crows.append({"scope": "pooled_within_lane (lane-demeaned)", "lane": "ALL", "genre": g, "target": target, "predictor": p, "n_creators": len(sub), "spearman_r": round(float(r), 3), "p": round(float(pv), 4)})
+                crows.append({"scope": "pooled_within_group (group-demeaned)", "group": "ALL", "genre": g, "target": target, "predictor": p, "n_creators": len(sub), "spearman_r": round(float(r), 3), "p": round(float(pv), 4)})
     pd.DataFrame(crows).to_csv(ANALYSIS_DIR / "hit_concentration_correlations.csv", index=False)
     print(hc.groupby("genre")[["gini", "top10_share", "powerlaw_like"]].agg(["median", "mean"]).round(3).to_string())
 

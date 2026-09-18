@@ -1,6 +1,6 @@
 """Render the deliverables from the analysis tables:
 
-    pipeline_titles/reports/README.md + 01..08_*.md      the sectioned write-up (one document per question)
+    pipeline_titles/reports/README.md + 01..14_*.md      the sectioned write-up (one document per question)
     pipeline_titles/reports/all_tables.md                reference dump of every table in one file
     pipeline_titles/reports/methods_appendix.md          every preprocessing step, lists, loadings, validation, runtimes
     pipeline_titles/reports/cards/<creator>.md           one fixed-layout profile card per creator
@@ -26,7 +26,7 @@ import pandas as pd
 
 from pipeline_titles import lexicons
 from pipeline_titles.common import (
-    ANALYSIS_DIR, GENRES, PROJECT_ROOT, REPORTS_DIR, RUNTIMES, STOPWORDS, creator_slug, read_jsonl, stage_timer, utc_now,
+    ANALYSIS_DIR, GENRES, GROUPS, PROJECT_ROOT, REPORTS_DIR, RUNTIMES, STOPWORDS, creator_slug, load_creators, read_jsonl, stage_timer, utc_now,
 )
 from pipeline_titles.report_data import CARDS_JSON, FORMATS, HOOKS
 from pipeline_titles.report_html import render_html
@@ -92,13 +92,13 @@ def corpus_report(cards: dict) -> str:
     z = read("zipf_check.csv")
     if z is not None:
         out.append("\nZipf check (does stripping remove the show-brand head?):\n\n" + md_table(z, ["level", "text", "max_rank", "zipf_exponent", "n_tokens", "n_types", "top_20"], floatfmt="{:.4f}"))
-    lanes = read("lanes.csv")
-    lc = lanes.groupby("lane").agg(creators=("creator", "size"), clippers=("clipper", lambda s: int(s.astype(str).str.lower().eq("true").sum()))).reset_index()
-    out.append("\nLane assignment (proposed, `lanes.csv`; correct the CSV and re-run from `factors`):\n\n" + md_table(lc, floatfmt="{:.0f}"))
-    orgs = lanes.groupby("organisation")["creator"].agg(list)
+    creators = load_creators()
+    gc = creators.groupby("group").agg(creators=("creator", "size"), clippers=("clipper", lambda s: int(s.astype(str).str.lower().eq("true").sum()))).reindex(list(GROUPS) + ["unscored"]).dropna().reset_index()
+    out.append("\nChannel groups (left / neutral / right from each channel's title-leaning score, `leaning_by_creator.csv`; the only between-channel grouping in the report):\n\n" + md_table(gc, floatfmt="{:.0f}"))
+    orgs = creators.groupby("organisation")["creator"].agg(list)
     orgs = orgs[orgs.map(len) > 1]
-    out.append("\nOrganisations with more than one channel: " + "; ".join(f"**{o}** ({', '.join(c)})" for o, c in orgs.items()) + ".\n")
-    out.append("\nClippers (titles written by fans or an editing team, kept as their own group): " + ", ".join(lanes.loc[lanes["clipper"].astype(str).str.lower().eq("true"), "creator"]) + ".\n")
+    out.append("\nOrganisations with more than one channel (`creators.csv`): " + "; ".join(f"**{o}** ({', '.join(c)})" for o, c in orgs.items()) + ".\n")
+    out.append("\nClippers (titles written by fans or an editing team, kept as their own group): " + ", ".join(creators.loc[creators["clipper"].astype(str).str.lower().eq("true"), "creator"]) + ".\n")
 
     # ---- Stage 1 ----
     out.append("\n## Stage 1: topics\n")
@@ -112,16 +112,16 @@ def corpus_report(cards: dict) -> str:
                f"{t1.get('weak_share', float('nan')):.1%} of titles are weak assignments below the 10th-percentile similarity). {int(tl['political'].sum())} of {len(tl)} topics are political; "
                f"{t1.get('political_share_of_unique_titles', float('nan')):.1%} of unique titles (raw pooled) fall in political topics.\n")
     pol = read("creator_political_share.csv")
-    pl = pol[pol["n_unique"] >= 50].groupby(["lane", "genre"]).agg(n_creators=("creator", "size"), mean_political_share=("political_share", "mean"), median_political_share=("political_share", "median")).reset_index()
-    out.append("\nPolitical share by lane (mean of creators, >= 50 unique titles):\n\n" + md_table(pl))
-    bl = read("topic_by_lane.csv")
+    pl = pol[pol["n_unique"] >= 50].groupby(["group", "genre"]).agg(n_creators=("creator", "size"), mean_political_share=("political_share", "mean"), median_political_share=("political_share", "median")).reset_index()
+    out.append("\nPolitical share by channel group (mean of creators, >= 50 unique titles):\n\n" + md_table(pl))
+    bl = read("topic_by_group.csv"); bl = bl[bl["group"].isin(GROUPS)]
     tl2 = tl.copy()
-    corpus_share = bl.groupby("topic_id")["mean_creator_share"].mean().rename("mean_lane_share")
-    tl2 = tl2.merge(corpus_share, on="topic_id").sort_values("mean_lane_share", ascending=False)
-    out.append("\nLargest topics (mean of lane-level creator shares, i.e. creator-balanced):\n\n" + md_table(tl2.head(25), ["topic_id", "label", "political", "category", "mean_lane_share", "n_unique_all", "n_creators", "top_terms", "example_1"], floatfmt="{:.4f}"))
-    out.append("\nTopic share by lane, top 5 per lane (videos; mean of creator shares):\n\n")
-    top_by_lane = bl[bl["genre"] == "videos"].sort_values("mean_creator_share", ascending=False).groupby("lane").head(5)
-    out.append(md_table(top_by_lane, ["lane", "topic_id", "label", "political", "mean_creator_share", "raw_pooled_share", "n_creators"], floatfmt="{:.3f}"))
+    corpus_share = bl.groupby("topic_id")["mean_creator_share"].mean().rename("mean_group_share")
+    tl2 = tl2.merge(corpus_share, on="topic_id").sort_values("mean_group_share", ascending=False)
+    out.append("\nLargest topics (mean of group-level creator shares, i.e. creator-balanced):\n\n" + md_table(tl2.head(25), ["topic_id", "label", "political", "category", "mean_group_share", "n_unique_all", "n_creators", "top_terms", "example_1"], floatfmt="{:.4f}"))
+    out.append("\nTopic share by channel group, top 5 per group (videos; mean of creator shares):\n\n")
+    top_by_group = bl[bl["genre"] == "videos"].sort_values("mean_creator_share", ascending=False).groupby("group").head(5)
+    out.append(md_table(top_by_group, ["group", "topic_id", "label", "political", "mean_creator_share", "raw_pooled_share", "n_creators"], floatfmt="{:.3f}"))
     spk = read("topic_spikes.csv")
     if spk is not None:
         out.append("\nMonthly spikes (creator-balanced share vs the topic's own nine-month mean; top 3 per month):\n\n")
@@ -164,8 +164,8 @@ def corpus_report(cards: dict) -> str:
     dims = read("dimensions.csv")
     ok = dims[~dims["low_n"]]
     for genre in GENRES:
-        lm = ok[ok["genre"] == genre].groupby("lane").agg(n=("creator", "size"), **{f: (f + "_controlled", "median") for f in fcols}).reset_index()
-        out.append(f"\nLane medians of topic-controlled scores, {genre} (non-low-n creators):\n\n" + md_table(lm, floatfmt="{:.2f}"))
+        lm = ok[ok["genre"] == genre].groupby("group").agg(n=("creator", "size"), **{f: (f + "_controlled", "median") for f in fcols}).reset_index()
+        out.append(f"\nChannel-group medians of topic-controlled scores, {genre} (non-low-n creators):\n\n" + md_table(lm, floatfmt="{:.2f}"))
     rows = []
     for f in fcols:
         sub = ok[ok["genre"] == "videos"].sort_values(f + "_controlled")
@@ -185,8 +185,8 @@ def corpus_report(cards: dict) -> str:
     out.append(f"Hook classifier ({hk['model']}; features: {hk['features']}), trained on the LLM labels:\n\n" + md_table(pd.DataFrame(rows)))
     sh = read("format_hook_shares.csv")
     for genre in GENRES:
-        ln = sh[(sh["level"] == "lane_mean_of_creators") & (sh["genre"] == genre)]
-        out.append(f"\nShare of titles per category, {genre} (mean of creator shares, non-low-n creators):\n\n" + md_table(ln, ["lane", "n_creators"] + FORMATS + HOOKS, floatfmt="{:.2f}"))
+        ln = sh[(sh["level"] == "group_mean_of_creators") & (sh["genre"] == genre)]
+        out.append(f"\nShare of titles per category, {genre} (mean of creator shares, non-low-n creators):\n\n" + md_table(ln, ["group", "n_creators"] + FORMATS + HOOKS, floatfmt="{:.2f}"))
     ag = read("format_agreement.csv")
     out.append("\nRule vs LLM format label on the rated sample (rule = regex on the raw title; LLM = single format label):\n\n" + md_table(ag[ag["category"].isin(FORMATS)], ["category", "n", "rule_positives", "llm_positives", "precision_rule_vs_llm", "recall_rule_vs_llm", "f1", "kappa", "agreement"]))
     ex = read("format_examples.csv")
@@ -195,51 +195,61 @@ def corpus_report(cards: dict) -> str:
     # ---- Stage 4 ----
     out.append("\n## Stage 4: the landscape\n")
     cc = read("cluster_comparison.csv")
-    out.append("Agglomerative clustering of creators in style space (topic-controlled factor scores, Ward) and topic space (Jensen-Shannon distance between topic mixes, average linkage), k by silhouette; adjusted Rand index against the lanes and against each other. Run on all titles and on political titles only:\n\n")
-    out.append(md_table(cc, ["genre", "titles", "n_creators", "n_lanes", "style_k", "style_silhouette", "topic_k", "topic_silhouette", "ari_style_vs_lane", "ari_topic_vs_lane", "ari_style_vs_topic", "ari_style_vs_lane_k_lanes", "ari_topic_vs_lane_k_lanes", "ari_style_vs_topic_k_lanes"]))
-    coh = read("lane_style_cohesion.csv")
-    out.append("\nStyle cohesion per lane (mean within-lane vs between-lane distance in z-scored style space; ratio < 1 = lane-mates are closer than average):\n\n" + md_table(coh[(coh["titles"] == "all")].sort_values(["genre", "cohesion_ratio"]), ["genre", "lane", "n_creators", "within_lane_distance", "between_lane_distance", "cohesion_ratio"]))
-    dis = read("disagreements_lane_style.csv")
-    out.append("\nWhere lane and style disagree (videos, all titles):\n\n" + md_table(dis[(dis["genre"] == "videos") & (dis["titles"] == "all")].sort_values(["kind", "largest_cluster_share"]), ["kind", "group", "n_creators", "n_style_clusters", "largest_cluster_share", "members"]))
+    out.append("Agglomerative clustering of creators in style space (topic-controlled factor scores, Ward) and topic space (Jensen-Shannon distance between topic mixes, average linkage), k by silhouette; adjusted Rand index against the channel groups and against each other. Run on all titles and on political titles only:\n\n")
+    out.append(md_table(cc, ["genre", "titles", "n_creators", "n_groups", "style_k", "style_silhouette", "topic_k", "topic_silhouette", "ari_style_vs_group", "ari_topic_vs_group", "ari_style_vs_topic", "ari_style_vs_group_k_groups", "ari_topic_vs_group_k_groups", "ari_style_vs_topic_k_groups"]))
+    coh = read("group_style_cohesion.csv")
+    out.append("\nStyle cohesion per channel group (mean within-group vs between-group distance in z-scored style space; ratio < 1 = group-mates are closer than average):\n\n" + md_table(coh[(coh["titles"] == "all")].sort_values(["genre", "cohesion_ratio"]), ["genre", "group", "n_creators", "within_group_distance", "between_group_distance", "cohesion_ratio"]))
+    dis = read("disagreements_group_style.csv")
+    out.append("\nWhere channel group and style disagree (videos, all titles):\n\n" + md_table(dis[(dis["genre"] == "videos") & (dis["titles"] == "all")].sort_values(["kind", "largest_cluster_share"]), ["kind", "group", "n_creators", "n_style_clusters", "largest_cluster_share", "members"]))
     ent = read("entities_top.csv")
-    out.append("\nWho gets named (creator-balanced titles; people keyed by surname, so 'Kirk' pools Charlie and Erika Kirk):\n\n" + md_table(ent[ent["kind"] == "person"], ["entity", "n_titles_balanced", "share_of_balanced_titles", "n_creators", "top_lanes_by_share", "outrage_share", "overall_outrage_share", "outrage_ratio"]))
-    out.append("\n" + md_table(ent[ent["kind"] == "organisation"], ["entity", "n_titles_balanced", "share_of_balanced_titles", "n_creators", "top_lanes_by_share", "outrage_share", "overall_outrage_share", "outrage_ratio"]))
+    out.append("\nWho gets named (creator-balanced titles; people keyed by surname, so 'Kirk' pools Charlie and Erika Kirk):\n\n" + md_table(ent[ent["kind"] == "person"], ["entity", "n_titles_balanced", "share_of_balanced_titles", "n_creators", "share_by_group", "outrage_share", "overall_outrage_share", "outrage_ratio"]))
+    out.append("\n" + md_table(ent[ent["kind"] == "organisation"], ["entity", "n_titles_balanced", "share_of_balanced_titles", "n_creators", "share_by_group", "outrage_share", "overall_outrage_share", "outrage_ratio"]))
     st_all = read("shared_titles.csv"); tp = read("shared_templates.csv")
     st = st_all[~st_all["same_organisation_only"]]
     out.append(f"\nConvergent formulas: {len(st_all):,} distinct titles (case-insensitive) are used verbatim by two or more creators, {len(st):,} of them by creators from different organisations "
-               f"(the rest are same-outlet cross-posts such as TYT / The Damage Report); of those {len(st):,}, {st['within_lane'].mean():.1%} stay within one lane. "
-               f"{len(tp):,} masked templates (names and numbers replaced, at least one content word) are shared across organisations; {tp['within_lane'].mean():.1%} within one lane.\n\n")
-    out.append(md_table(st.head(25), ["example", "n_creators", "n_titles", "lanes", "creators"]))
-    out.append("\n" + md_table(tp.head(25), ["template", "n_creators", "n_titles", "lanes", "example"]))
+               f"(the rest are same-outlet cross-posts such as TYT / The Damage Report); of those {len(st):,}, {st['within_group'].mean():.1%} stay within one channel group. "
+               f"{len(tp):,} masked templates (names and numbers replaced, at least one content word) are shared across organisations; {tp['within_group'].mean():.1%} within one channel group.\n\n")
+    out.append(md_table(st.head(25), ["example", "n_creators", "n_titles", "groups", "creators"]))
+    out.append("\n" + md_table(tp.head(25), ["template", "n_creators", "n_titles", "groups", "example"]))
 
     # ---- Stage 5 ----
     out.append("\n## Stage 5: time and engagement\n")
     tr = read("drift_trends.csv")
-    strong = tr[(tr["level"] == "lane") & (tr["p"] < 0.05) & (tr["spearman_trend"].abs() >= 0.6)].sort_values("spearman_trend")
-    out.append(f"Monthly drift, January-September (September is 1-14 and never compared on volume). Lane-level trends with |Spearman| >= 0.6 and p < 0.05 over the nine months ({len(strong)} of {len(tr[tr['level'] == 'lane'])} lane x genre x measure series):\n\n")
+    strong = tr[(tr["level"] == "group") & (tr["p"] < 0.05) & (tr["spearman_trend"].abs() >= 0.6)].sort_values("spearman_trend")
+    out.append(f"Monthly drift, January-September (September is 1-14 and never compared on volume). Channel-group trends with |Spearman| >= 0.6 and p < 0.05 over the nine months ({len(strong)} of {len(tr[tr['level'] == 'group'])} group x genre x measure series):\n\n")
     out.append(md_table(strong, ["group", "genre", "measure", "spearman_trend", "p", "first_month_value", "last_full_month_value"]))
-    tcl = read("topic_change_lane_monthly.csv")
+    tcl = read("topic_change_group_monthly.csv")
     if tcl is not None:
-        piv = tcl[tcl["genre"] == "videos"].pivot(index="lane", columns="month_to", values="mean_js").reset_index()
+        piv = tcl[tcl["genre"] == "videos"].pivot(index="group", columns="month_to", values="mean_js").reset_index()
         out.append("\nMonth-to-month topic change (mean Jensen-Shannon distance between a creator's consecutive monthly topic mixes; videos):\n\n" + md_table(piv, floatfmt="{:.2f}"))
     es = read("engagement_summary.csv")
     out.append("\nEngagement, within creator (OLS of log views on standardised title predictors with month and topic controls, HC3; views are a fetch-time snapshot that favours older videos):\n\n")
-    out.append(md_table(es[es["lane"] == "ALL"], ["genre", "predictor", "n_creators", "median_coef_per_sd", "q25", "q75", "share_positive", "share_sig_positive", "share_sig_negative", "share_same_sign_as_median", "median_r2"]))
+    out.append(md_table(es[es["group"] == "ALL"], ["genre", "predictor", "n_creators", "median_coef_per_sd", "q25", "q75", "share_positive", "share_sig_positive", "share_sig_negative", "share_same_sign_as_median", "median_r2"]))
+    out.append("\nThe outrage effect by channel group (videos):\n\n" + md_table(es[(es["group"] != "ALL") & (es["genre"] == "videos") & (es["predictor"] == "outrage")], ["group", "n_creators", "median_coef_per_sd", "q25", "q75", "share_positive", "share_sig_positive", "share_sig_negative"]))
     hc = read("hit_concentration.csv")
     hs = hc.groupby("genre").agg(n_creators=("creator", "size"), median_gini=("gini", "median"), median_top10_share=("top10_share", "median"), median_top1_share=("top1_share", "median"), powerlaw_like=("powerlaw_like", "mean"), median_alpha=("alpha", "median")).reset_index()
     out.append("\nHit concentration (creator x genre with >= 100 videos carrying views):\n\n" + md_table(hs))
     hcc = read("hit_concentration_correlations.csv")
     pooled = hcc[hcc["scope"].str.startswith("pooled")]
-    out.append("\nConcentration vs style, pooled within lane (lane-demeaned Spearman across creators):\n\n" + md_table(pooled.sort_values(["genre", "target", "predictor"]), ["genre", "target", "predictor", "n_creators", "spearman_r", "p"]))
-    out.append("\n## Files\n\nMachine-readable interface tables: `features.csv`, `dimensions.csv`, `topics.csv`, `labels.csv`, `lanes.csv` (all under `data/titles/analysis/`). Profile cards: `pipeline_titles/reports/cards/`. HTML: `pipeline_titles/reports/title_stylometry.html`. Methods: `methods_appendix.md`.\n")
+    out.append("\nConcentration vs style, pooled within channel group (group-demeaned Spearman across creators):\n\n" + md_table(pooled.sort_values(["genre", "target", "predictor"]), ["genre", "target", "predictor", "n_creators", "spearman_r", "p"]))
+
+    # ---- Stage 6b ----
+    out.append("\n## Stage 6b: Zipf's law and views over time (document 7)\n")
+    out.append("Zipf exponents per system (tokens with stopwords; OLS of log frequency on log rank; size-matched = 20 draws of 2,000 titles, top 200 ranks):\n\n" + md_table(read("zipf_words.csv"), ["grouping", "system", "n_titles", "n_tokens", "n_types", "tokens_per_title", "zipf_top100", "zipf_top1000", "zipf_top5000", "zipf_r2_top1000", "zipf_size_matched", "zipf_size_matched_sd", "top1_share", "top_10"], floatfmt="{:.4f}"))
+    out.append("\nCreator-level Zipf / Heaps and the views rank-size slopes per channel group and per dominant capitalisation style:\n\n" + md_table(read("zipf_by_group.csv"), floatfmt="{:.3f}"))
+    vm = read("views_by_month.csv")
+    out.append("\nViews by publication month (edited uploads, YouTube, unique titles): median views, the median over channels of the channel's median, and log views relative to the same channel's mean that month:\n\n" + md_table(vm, ["grouping", "group", "month", "n_videos", "n_creators", "median_views", "creator_median_views", "mean_log_views", "relative_log_views", "relative_log_views_se"], floatfmt="{:.3f}"))
+    out.append("\nCapitalisation style by channel group and by title label:\n\n" + md_table(read("caps_style_by_group.csv")))
+    out.append("\nTitle label x capitalisation style (label shares within each style; relative log views per cell):\n\n" + md_table(read("label_by_caps_style.csv")))
+    out.append("\n## Files\n\nMachine-readable interface tables: `features.csv`, `dimensions.csv`, `topics.csv`, `labels.csv`, `creators.csv`, `leaning_by_creator.csv` (all under `data/titles/analysis/`). Profile cards: `pipeline_titles/reports/cards/`. HTML: `pipeline_titles/reports/title_stylometry.html`. Methods: `methods_appendix.md`.\n")
     return "\n".join(out)
 
 
 def methods_appendix() -> str:
-    from pipeline_titles import annotate, embed, engagement, factors, features, formats, hits, landscape, llm_rate, prepare, timeline, topics
+    from pipeline_titles import annotate, creators, embed, engagement, factors, features, formats, hits, landscape, leaning, llm_rate, prepare, profiles, timeline, topics, zipf_views
     out = ["# Title Stylometry: methods appendix\n", f"_Generated {utc_now()}._\n"]
     out.append("## Pipeline stages (module docstrings, verbatim)\n")
-    for mod in (prepare, annotate, embed, topics, llm_rate, features, factors, formats, landscape, timeline, engagement, hits):
+    for mod in (prepare, creators, leaning, annotate, embed, topics, llm_rate, features, factors, formats, landscape, timeline, engagement, hits, profiles, zipf_views):
         out.append(f"### `{mod.__name__}`\n\n```\n{mod.__doc__.strip()}\n```\n")
     out.append("## Stopword list\n\n`" + "`, `".join(STOPWORDS) + "`\n")
     out.append("\n## Feature definitions\n\n" + md_table(read("feature_definitions.csv")))
@@ -262,7 +272,6 @@ def methods_appendix() -> str:
     lab = read("labels.csv").head(1)
     out.append(f"Model `{lab['model'].iloc[0]}`, temperature {lab['temperature'].iloc[0]}, prompt id `{lab['prompt_id'].iloc[0]}`, sha256 `{lab['prompt_sha256'].iloc[0]}`, rated {lab['rated_at'].iloc[0]}.\n\n```\n{lab['prompt'].iloc[0]}\n```\n")
     out.append("\n## Topic label prompt\n\n```\n" + topics.LABEL_PROMPT + "\n```\n")
-    from pipeline_titles import leaning
     out.append("\n## Leaning label prompt (leaning_labels.csv; exact text, prompt id leaning-v1, temperature 0, batches of 20; the same prompt for every judge)\n\n```\n" + leaning.PROMPT + "\n```\n")
     out.append("\n## Zipf check\n\n" + md_table(read("zipf_check.csv"), floatfmt="{:.4f}"))
     out.append("\n## Sample sizes\n\n" + md_table(read("creator_genre_summary.csv"), ["creator", "genre", "n_rows", "n_unique", "n_balanced", "n_with_views", "repeat_share", "low_n"], floatfmt="{:.3f}"))
@@ -270,7 +279,7 @@ def methods_appendix() -> str:
     last, longest = {}, {}
     for r in runs:
         last[r["stage"]] = r
-        if r["stage"] not in longest or r["seconds"] > longest[r["stage"]]["seconds"]:
+        if r["stage"] not in longest or r["seconds"] >= longest[r["stage"]]["seconds"]:   # ties go to the newest run
             longest[r["stage"]] = r
     rows = [{"stage": k, "seconds_last_run": v["seconds"], "seconds_longest_run": longest[k]["seconds"], "finished": v["finished"],
              "llm_calls": v.get("calls", v.get("label_calls", "")), "output_tokens": v.get("output_tokens", v.get("label_output_tokens", "")),
@@ -283,20 +292,20 @@ def methods_appendix() -> str:
 
 def card_md(card: dict, factors: dict) -> str:
     o = [f"# {card['channel_name']} ({card['creator']})\n",
-         f"Lane: **{card['lane']}** · organisation: {card['organisation']} · clipper: {'yes' if card['clipper'] else 'no'} · platform: {card['platform']} · subscribers: {card['subscribers'] if card['subscribers'] is not None else 'n/a'}\n"]
+         f"Channel group: **{card['group']}** (title-leaning score, document 14) · organisation: {card['organisation']} · clipper: {'yes' if card['clipper'] else 'no'} · platform: {card['platform']} · subscribers: {card['subscribers'] if card['subscribers'] is not None else 'n/a'}\n"]
     for genre, g in card["genres"].items():
         o.append(f"\n## {genre}\n")
         o.append(f"Titles: {g['n_rows']:,} rows, {g['n_unique']:,} unique (repeat share {pct(g['repeat_share'])}); {'LOW-N (not ranked)' if g['low_n'] else 'ranked'}; political share {pct(g.get('political_share'))}.\n")
         o.append("\nTop topics: " + "; ".join(f"{t['label']} ({pct(t['share'])})" for t in g["topics_top5"]) + "\n")
         if "dimensions" in g:
-            rows = [{"dimension": f"{f}: {factors[f]['name']}", "percentile (topic-controlled)": d["pct_controlled"], "percentile (raw)": d["pct_raw"], "score": d["controlled"], "lane median": d["lane_median"]} for f, d in g["dimensions"].items()]
+            rows = [{"dimension": f"{f}: {factors[f]['name']}", "percentile (topic-controlled)": d["pct_controlled"], "percentile (raw)": d["pct_raw"], "score": d["controlled"], "group median": d["group_median"]} for f, d in g["dimensions"].items()]
             o.append("\n" + md_table(pd.DataFrame(rows), floatfmt="{:.1f}"))
         if "hooks" in g:
-            o.append("\nHooks / formats (share of titles; lane mean in brackets): " + "; ".join(f"{k} {pct(v['share'])} ({pct(v['lane_mean'])})" for k, v in {**g['hooks'], **g['formats']}.items()) + "\n")
+            o.append("\nHooks / formats (share of titles; channel-group mean in brackets): " + "; ".join(f"{k} {pct(v['share'])} ({pct(v['group_mean'])})" for k, v in {**g['hooks'], **g['formats']}.items()) + "\n")
         if g.get("neighbours_style"):
-            o.append("\nNearest style neighbours: " + "; ".join(f"{n['creator']} [{n['lane']}]" for n in g["neighbours_style"]) + "\n")
+            o.append("\nNearest style neighbours: " + "; ".join(f"{n['creator']} [{n['group']}]" for n in g["neighbours_style"]) + "\n")
         if g.get("neighbours_topic"):
-            o.append("Nearest topic neighbours: " + "; ".join(f"{n['creator']} [{n['lane']}]" for n in g["neighbours_topic"]) + "\n")
+            o.append("Nearest topic neighbours: " + "; ".join(f"{n['creator']} [{n['group']}]" for n in g["neighbours_topic"]) + "\n")
         if g.get("monthly"):
             fk = list(factors)
             rows = [{"month": m["month"] + ("*" if m["partial"] else ""), "n": m["n_titles"], **{f: m.get(f) for f in fk}, **{h: m.get(h) for h in HOOKS}} for m in g["monthly"]]

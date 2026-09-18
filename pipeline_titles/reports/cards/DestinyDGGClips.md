@@ -1,6 +1,6 @@
 # Destiny DGG Clips (@DestinyDGGClips)
 
-Lane: **streamer_reaction** · organisation: Destiny · clipper: yes · platform: youtube · subscribers: 11800.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Destiny · clipper: yes · platform: youtube · subscribers: 11800.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 209 rows, 209 unique (repeat share 0.0%); ranked; political share 69.9%.
 Top topics: Destiny and Ethan Klein debates (20.6%); Hasanabi Reacts to Hasan (15.8%); Asmongold controversy and bans (9.1%); Shocking Events and Reactions (6.2%); Nick Fuentes and Political Controversies (3.8%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 32.2 | 38.5 | -0.1 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 92.1 | 92.9 | 1.0 | -0.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 81.6 | 39.7 | -0.1 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 32.2 | 38.5 | -0.1 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 92.1 | 92.9 | 1.0 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 81.6 | 39.7 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 97.5 | 96.7 | 1.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 58.2 | 58.2 | 0.3 | -0.1 |
-| F6: Person-centred (named people) | 25.1 | 38.5 | -0.6 | -0.5 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 16.7 | 5.9 | -1.0 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 58.2 | 58.2 | 0.3 | 0.2 |
+| F6: Person-centred (named people) | 25.1 | 38.5 | -0.6 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 16.7 | 5.9 | -1.0 | -0.7 |
 | F8: Numeric and dated (digits, years) | 35.6 | 10.9 | -0.3 | -0.2 |
-| F9: ALL-CAPS shouting | 65.3 | 77.4 | -0.1 | -0.1 |
-| F10: Quoted speech | 59.8 | 33.5 | -0.2 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 36.0 | 16.7 | -0.5 | -0.7 |
-| F12: Modal and future speculation (will, could, we) | 33.1 | 5.9 | -0.3 | -0.5 |
+| F9: ALL-CAPS shouting | 65.3 | 77.4 | -0.1 | -0.3 |
+| F10: Quoted speech | 59.8 | 33.5 | -0.2 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 36.0 | 16.7 | -0.5 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 33.1 | 5.9 | -0.3 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 8.6% (3.8%); outrage 62.7% (64.8%); humor 0.0% (0.4%); question 14.3% (9.0%); breaking_live 0.5% (0.4%); episode_show 0.0% (4.5%); interview_guest 13.4% (7.8%); reaction 4.8% (10.1%); confrontation 14.8% (14.3%); listicle 0.0% (0.0%); howto_explainer 2.9% (4.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.6% (3.6%); outrage 62.7% (59.6%); humor 0.0% (0.2%); question 14.3% (15.6%); breaking_live 0.5% (2.0%); episode_show 0.0% (7.6%); interview_guest 13.4% (8.5%); reaction 4.8% (2.2%); confrontation 14.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.9% (9.5%)
 
 
-Nearest style neighbours: @CamHigby [right_commentary]; @OfficialSaharTV [right_commentary]; @MattWalsh [right_commentary]; @glennbeck [right_commentary]; @RileyGaines [right_commentary]
+Nearest style neighbours: @CamHigby [right]; @OfficialSaharTV [right]; @MattWalsh [right]; @glennbeck [right]; @RileyGaines [right]
 
-Nearest topic neighbours: @hutch [streamer_reaction]; @DailyDenims [streamer_reaction]; @destiny [streamer_reaction]; @destinyhqclips [streamer_reaction]; @lonerboxlive [streamer_reaction]
+Nearest topic neighbours: @hutch [neutral]; @DailyDenims [left]; @destiny [left]; @destinyhqclips [neutral]; @lonerboxlive [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

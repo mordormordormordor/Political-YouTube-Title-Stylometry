@@ -1,6 +1,6 @@
 # Tomi Lahren Is Fearless (@TomiLahrenIsFearless)
 
-Lane: **right_commentary** · organisation: Tomi Lahren · clipper: no · platform: youtube · subscribers: 105000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Tomi Lahren · clipper: no · platform: youtube · subscribers: 105000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 118 rows, 118 unique (repeat share 0.0%); ranked; political share 91.5%.
 Top topics: Trump UFC White House Event (5.9%); Political Talk Show Drama (5.9%); Hollywood and Oscars Politics (5.1%); Christian Nationalism and Politics (4.2%); Gavin Newsom Political Controversies (4.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 58.2 | 58.6 | 0.3 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 63.6 | 61.9 | 0.2 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 63.6 | 61.9 | 0.2 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 56.9 | 43.9 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 47.7 | 43.9 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 64.0 | 63.2 | 0.4 | 0.2 |
-| F6: Person-centred (named people) | 90.0 | 92.5 | 0.7 | -0.3 |
+| F6: Person-centred (named people) | 90.0 | 92.5 | 0.7 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 16.3 | 10.0 | -1.0 | -0.7 |
 | F8: Numeric and dated (digits, years) | 47.7 | 45.2 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 16.7 | 13.0 | -0.7 | -0.3 |
 | F10: Quoted speech | 87.9 | 87.0 | 0.6 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 52.3 | 61.1 | -0.2 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 52.3 | 61.1 | -0.2 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 41.4 | 33.1 | -0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.9% (3.8%); outrage 56.8% (63.4%); humor 0.0% (0.2%); question 13.6% (15.1%); breaking_live 0.9% (1.3%); episode_show 0.0% (7.8%); interview_guest 12.7% (8.2%); reaction 3.4% (2.5%); confrontation 17.8% (7.7%); listicle 0.0% (0.1%); howto_explainer 18.6% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.9% (3.6%); outrage 56.8% (59.6%); humor 0.0% (0.2%); question 13.6% (15.6%); breaking_live 0.9% (2.0%); episode_show 0.0% (7.6%); interview_guest 12.7% (8.5%); reaction 3.4% (2.2%); confrontation 17.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 18.6% (9.5%)
 
 
-Nearest style neighbours: @HangOutwithSeanHannity [interview_podcast]; @DropSiteNews [independent_digital_news]; @clayandbuck [right_commentary]; @wethefifth [centrist_heterodox]; @rolandsmartin [independent_digital_news]
+Nearest style neighbours: @HangOutwithSeanHannity [right]; @DropSiteNews [left]; @clayandbuck [right]; @wethefifth [neutral]; @rolandsmartin [left]
 
-Nearest topic neighbours: @AfterPartyEmily [right_commentary]; @clayandbuck [right_commentary]; @MegynKelly [right_commentary]; @MichaelKnowles [right_commentary]; @JillianMichaels [interview_podcast]
+Nearest topic neighbours: @AfterPartyEmily [right]; @clayandbuck [right]; @MegynKelly [right]; @MichaelKnowles [right]; @JillianMichaels [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

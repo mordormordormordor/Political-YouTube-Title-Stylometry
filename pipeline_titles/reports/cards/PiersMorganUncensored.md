@@ -1,6 +1,6 @@
 # Piers Morgan Uncensored (@PiersMorganUncensored)
 
-Lane: **interview_podcast** · organisation: Piers Morgan · clipper: no · platform: youtube · subscribers: 4460000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: Piers Morgan · clipper: no · platform: youtube · subscribers: 4460000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 181 rows, 181 unique (repeat share 0.0%); ranked; political share 98.3%.
 Top topics: Piers Morgan and Guests on Political Topics (19.3%); Iran War and Strait of Hormuz Tensions (15.5%); Israel-Palestine Conflict Media (7.2%); UFO Government Disclosure (3.3%); Trump and China political relations (2.8%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 15.1 | 13.8 | -0.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 55.6 | 52.3 | 0.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 87.4 | 85.8 | 0.1 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 90.8 | 88.3 | 0.4 | -0.2 |
-| F5: Question and explainer framing (why, what, ?) | 44.8 | 40.2 | 0.0 | 0.7 |
-| F6: Person-centred (named people) | 94.6 | 95.4 | 1.1 | 0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 2.1 | 2.5 | -1.4 | -0.8 |
-| F8: Numeric and dated (digits, years) | 30.1 | 25.5 | -0.3 | -0.2 |
-| F9: ALL-CAPS shouting | 62.3 | 61.1 | -0.2 | -0.3 |
-| F10: Quoted speech | 100.0 | 100.0 | 5.4 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 69.9 | 66.1 | 0.1 | -0.4 |
-| F12: Modal and future speculation (will, could, we) | 46.4 | 53.1 | -0.2 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 15.1 | 13.8 | -0.4 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 55.6 | 52.3 | 0.1 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 87.4 | 85.8 | 0.1 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 90.8 | 88.3 | 0.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 44.8 | 40.2 | 0.0 | 0.1 |
+| F6: Person-centred (named people) | 94.6 | 95.4 | 1.1 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 2.1 | 2.5 | -1.4 | -0.1 |
+| F8: Numeric and dated (digits, years) | 30.1 | 25.5 | -0.3 | 0.0 |
+| F9: ALL-CAPS shouting | 62.3 | 61.1 | -0.2 | -0.4 |
+| F10: Quoted speech | 100.0 | 100.0 | 5.4 | -0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 69.9 | 66.1 | 0.1 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 46.4 | 53.1 | -0.2 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.1% (1.4%); outrage 68.0% (41.4%); humor 0.0% (0.3%); question 14.4% (19.0%); breaking_live 0.5% (0.5%); episode_show 0.0% (11.4%); interview_guest 29.3% (18.1%); reaction 1.7% (1.4%); confrontation 38.7% (9.2%); listicle 0.0% (0.0%); howto_explainer 1.7% (11.7%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.1% (2.4%); outrage 68.0% (36.0%); humor 0.0% (0.1%); question 14.4% (15.9%); breaking_live 0.5% (1.1%); episode_show 0.0% (7.0%); interview_guest 29.3% (11.6%); reaction 1.7% (1.9%); confrontation 38.7% (7.4%); listicle 0.0% (0.1%); howto_explainer 1.7% (6.6%)
 
 
-Nearest style neighbours: @timesofindia [wire_international]; @DemocracyNow [independent_digital_news]; @jlptalk [right_commentary]; @lonerboxlive [streamer_reaction]; @rolandsmartin [independent_digital_news]
+Nearest style neighbours: @timesofindia [left]; @DemocracyNow [left]; @jlptalk [right]; @lonerboxlive [right]; @rolandsmartin [left]
 
-Nearest topic neighbours: @KimIversen [centrist_heterodox]; @thejimmydoreshow [left_commentary]; @TheYoungTurks [left_commentary]; @DueDissidence [left_commentary]; https://rumble.com/c/nickjfuentes [right_commentary]
+Nearest topic neighbours: @KimIversen [neutral]; @thejimmydoreshow [neutral]; @TheYoungTurks [left]; @DueDissidence [left]; https://rumble.com/c/nickjfuentes [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

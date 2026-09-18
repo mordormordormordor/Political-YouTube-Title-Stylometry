@@ -76,12 +76,14 @@ pipeline_titles/
   ingest/fetch_video_metadata.py   # creator list -> data/titles/ (this README's "Fetching")
   common.py        # paths, seed, genres, low-n / balancing rules, stage timer (runtimes.jsonl)
   prepare.py       # Stage 0: normalise titles (brand/episode/date stripping), repeats, balanced subset
-  lane_seed.py     # Stage 0: proposed lane / organisation / clipper per creator (edit lanes.csv, not this)
-  lanes.py         # Stage 0: writes data/titles/analysis/lanes.csv (refuses to overwrite without --force)
+  creator_seed.py  # Stage 0: organisation / clipper / note per creator (edit creators.csv, not this)
+  creators.py      # Stage 0b: writes data/titles/analysis/creators.csv (refuses to overwrite without --force)
+  leaning.py       # Stage 0d (runtime record stage7_leaning): title-leaning labels (Claude via the CLI, cached) -> each channel's score and its
+                   #          left / neutral / right group, the only between-channel grouping in the pipeline
   annotate.py      # Stage 0c: spaCy tokens / POS / entities per unique title (truecases ALL-CAPS titles)
   embed.py         # Stage 1a: all-mpnet-base-v2 sentence embeddings (cached, incremental)
   topics.py        # Stage 1: BERTopic on a ~100k creator-stratified sample; nearest-centroid assignment;
-                   #          LLM topic labels + political flag; per-creator mix, lane shares, monthly spikes
+                   #          LLM topic labels + political flag; per-creator mix, group shares, monthly spikes
   llm_rate.py      # Stage 2c: 3,000-title stratified sample rated by a local Ollama model (+300 retest)
   lexicons.py      # word lists used by the style features (documented in the methods appendix)
   features.py      # Stage 2a: ~75 title-level style features -> creator x genre x month (features.csv),
@@ -90,10 +92,12 @@ pipeline_titles/
                    #          topic control (dimensions.csv)
   validate.py      # Stage 2d: LLM ratings vs factor scores, candidate-label mapping, test-retest
   formats.py       # Stage 3: regex formats on raw titles; hook classifier trained on the LLM labels
-  landscape.py     # Stage 4: style vs topic clusterings vs lanes (ARI), neighbours, entities, shared titles
-  timeline.py      # Stage 5a: monthly drift per lane and per creator; month-to-month topic change
+  landscape.py     # Stage 4: style vs topic clusterings vs the channel groups (ARI), neighbours, entities, shared titles
+  timeline.py      # Stage 5a: monthly drift per channel group and per creator; month-to-month topic change
   engagement.py    # Stage 5b: within-creator regressions of log views on style (month + topic controls)
   hits.py          # Stage 5c: Gini / top-10 % share / Clauset-Shalizi-Newman tail fit vs lognormal
+  profiles.py      # Stage 6: capitalisation profiles, top words, arousal index, signature keywords, twins
+  zipf_views.py    # Stage 6b: Zipf's law (words, views) and views over time by channel group / title label / caps style
   report_data.py   # profile-card JSON (reports/cards.json)
   report.py, report_html.py   # Markdown report + methods appendix + cards + HTML page
   run_all.py       # runs every stage in order (--from <stage>, --skip <stages>)
@@ -113,7 +117,8 @@ cd "/Users/sanji/Desktop/Visual Studio/Political Quotes Project" && .venv/bin/py
 Every stage is a separate `python -m pipeline_titles.<stage>` that reads the previous
 stage's files under `data/titles/analysis/` and appends its wall-clock time (and LLM
 call / token counts) to `data/titles/analysis/runtimes.jsonl`. The interface tables
-are `features.csv`, `dimensions.csv`, `topics.csv`, `labels.csv` and `lanes.csv`.
+are `features.csv`, `dimensions.csv`, `topics.csv`, `labels.csv`, `creators.csv` and
+`leaning_by_creator.csv` (the channel groups).
 
 LLM work (title ratings, topic labels) uses the local Ollama model `qwen3:14b`
 (no `OPENAI_API_KEY` is configured on this machine); every response is cached under
@@ -121,7 +126,7 @@ LLM work (title ratings, topic labels) uses the local Ollama model `qwen3:14b`
 model calls. Ollama serves requests one at a time: run `llm_rate` before `topics`
 if you re-fit the topic model, or the topic labelling crawls behind the rating batches.
 
-Hand-edited files that survive re-runs: `data/titles/analysis/lanes.csv` (the lane
-proposal; correct it, then re-run from `factors`), `data/titles/analysis/factor_names.json`
+Hand-edited files that survive re-runs: `data/titles/analysis/creators.csv` (organisation /
+clipper per creator; correct it, then re-run from `features`), `data/titles/analysis/factor_names.json`
 (names for the retained factors), `pipeline_titles/reports/headlines.md` (the prose
 headline findings; re-check after a corpus refresh).

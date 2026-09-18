@@ -1,0 +1,13 @@
+genre,titles,group,n_creators,within_group_distance,between_group_distance,cohesion_ratio
+videos,all,left,105,4.608,4.549,1.013
+videos,all,neutral,38,4.751,4.75,1.0
+videos,all,right,96,4.231,4.506,0.939
+videos,political,left,103,4.528,4.548,0.996
+videos,political,neutral,37,4.849,4.802,1.01
+videos,political,right,94,4.293,4.516,0.951
+streams,all,left,33,4.483,4.667,0.961
+streams,all,neutral,16,4.163,4.654,0.895
+streams,all,right,30,5.003,4.789,1.045
+streams,political,left,33,4.438,4.675,0.949
+streams,political,neutral,15,4.33,4.745,0.913
+streams,political,right,29,4.987,4.794,1.04

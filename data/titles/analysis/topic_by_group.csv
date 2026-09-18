@@ -1,0 +1,1417 @@
+group,genre,topic_id,mean_creator_share,n_creators,raw_n,raw_pooled_share,label,political
+left,streams,0,0.09470661644380597,33,1138.0,0.10132668506811504,Iran War and Strait of Hormuz Tensions,True
+left,streams,59,0.06928407197929999,33,316.0,0.028136408155996794,Iran Conflict and Political Updates,True
+left,streams,3,0.036838156851438,33,328.0,0.029204879351794142,ICE Protests and Shootings,True
+left,streams,2,0.030978354442211982,33,314.0,0.027958329623363903,Israel-Palestine Conflict Media,True
+left,streams,24,0.027835053728398167,33,269.0,0.023951562639123854,Trump Meltdowns and Collapses,True
+left,streams,4,0.017567460905929564,33,326.0,0.02902680081916125,Ukraine-Russia War and Political Figures,True
+left,streams,191,0.01698550836693546,33,112.0,0.009972397827441902,Political Commentary and Interviews,True
+left,streams,8,0.015696251018408977,33,134.0,0.011931261686403703,Epstein Files Political Connections,True
+left,streams,21,0.012982610148240502,33,153.0,0.01362300774641617,Trump and Epstein Files Scandal,True
+left,streams,46,0.012262775184256228,33,116.0,0.010328554892707684,MAGA Movement Decline,True
+left,streams,60,0.011933465761051757,33,146.0,0.01299973288220105,Trump's War and Draft,True
+left,streams,42,0.011910423956000393,33,194.0,0.01727361766539044,War and Military Analysis,True
+left,streams,153,0.011125013840306341,33,109.0,0.009705280028492564,Members Only Show,True
+left,streams,22,0.011105935780032298,33,54.0,0.0048081203810880595,Christian Nationalism and Politics,True
+left,streams,7,0.010820082847296261,33,144.0,0.01282165434956816,Trump vs Maduro Venezuela Conflict,True
+left,streams,62,0.010812087127474479,33,114.0,0.010150476360074793,Trump Resignation and Leaks,True
+left,streams,38,0.01021859946020477,33,98.0,0.008725848099011665,Israel-Lebanon Conflict and Ceasefire Talks,True
+left,streams,154,0.010087767486398225,33,97.0,0.00863680883269522,Anti-Trump Protests and Riots,True
+left,streams,51,0.009962822350787074,33,74.0,0.006588905707416971,Minneapolis political unrest and federal response,True
+left,streams,203,0.009689259015037624,33,167.0,0.014869557474846407,Trump Iran War Briefings,True
+left,streams,74,0.009107733915130336,33,63.0,0.00560947377793607,2026 US Primary Elections,True
+left,streams,17,0.008940597793010157,33,79.0,0.007034102038999198,2026 Midterm Election Predictions,True
+left,streams,5,0.008814964437456135,33,117.0,0.01041759415902413,Trump Supreme Court Legal Issues,True
+left,streams,217,0.008383730306473077,33,79.0,0.007034102038999198,Trump's Unwise Actions and Mistakes,True
+left,streams,14,0.0082548103854448,33,127.0,0.011307986822188585,Pete Hegseth and Iran War,True
+left,streams,6,0.008156838750872426,33,116.0,0.010328554892707684,Trump and China political relations,True
+left,streams,80,0.008063558176829171,33,132.0,0.011753183153770812,Black Voting Rights and Political Representation,True
+left,streams,49,0.007999810541768388,33,75.0,0.006677944973733417,Race and Politics in Media,True
+left,streams,1,0.0078105058598962615,33,72.0,0.00641082717478408,Shocking Events and Reactions,True
+left,streams,156,0.007345466294319053,33,41.0,0.0036506099189742677,Kamala Harris 2028 Election Speculation,True
+left,streams,76,0.007137829540370108,33,88.0,0.007835455435847209,Nolan Wells Investigation,False
+left,streams,29,0.006795831981463509,33,36.0,0.00320541358739204,Cuba-US Political Tensions,True
+left,streams,132,0.006673044630239283,33,44.0,0.0039177277179236044,Political Podcasts and Commentary,True
+left,streams,40,0.0066186048652933805,33,119.0,0.01059567269165702,Trump's speeches and events,True
+left,streams,44,0.006475594097476744,33,80.0,0.007123141305315644,Trump State of the Union Address,True
+left,streams,182,0.006275230994758253,33,70.0,0.006232748642151189,MAGA backlash over Iran war,True
+left,streams,43,0.006174580010643387,33,66.0,0.005876591576885406,Trump slush fund scandal,True
+left,streams,32,0.006137334003885647,33,87.0,0.0077464161695307635,Artemis II Moon Mission Updates,False
+left,streams,30,0.006063583172051986,33,71.0,0.006321787908467634,Pam Bondi and Epstein Files Scandal,True
+left,streams,91,0.005907557887672653,33,90.0,0.0080135339684801,Trump and NATO Relations,True
+left,streams,37,0.005472312623318025,33,25.0,0.002225981657911139,Islam and Political Discourse,True
+left,streams,11,0.005415776576586462,33,32.0,0.0028492565221262577,Hollywood and Oscars Politics,True
+left,streams,218,0.0053095879158147515,33,63.0,0.00560947377793607,Epstein Files and Trump DOJ,True
+left,streams,121,0.005293399505223697,33,77.0,0.0068560235063663075,Rev Jesse Jackson and Civil Rights Legacy,True
+left,streams,26,0.005118296223661194,33,62.0,0.0055204345116196245,White House Correspondents Dinner Shooting,True
+left,streams,163,0.005102913674103615,33,44.0,0.0039177277179236044,Trump's Mental Health Decline,True
+left,streams,19,0.005046194381103863,33,52.0,0.004630041848455169,America's 250th Anniversary and Founding History,True
+left,streams,228,0.005032635288473285,33,103.0,0.009171044430593892,Political media responses and announcements,True
+left,streams,98,0.0048342451793457145,33,36.0,0.00320541358739204,JLP Weekly Series,False
+left,streams,67,0.004829465303093536,33,41.0,0.0036506099189742677,Trump's Economic Impact,True
+left,streams,23,0.004793386782330602,33,40.0,0.003561570652657822,Tucker Carlson Political Commentary,True
+left,streams,12,0.004789904424561528,33,51.0,0.004541002582138723,Canada-US Political Tensions,True
+left,streams,33,0.004789884586413314,33,50.0,0.004451963315822278,Elon Musk and Political Influence,True
+left,streams,27,0.004770807228495788,33,116.0,0.010328554892707684,Trump and Greenland politics,True
+left,streams,94,0.004757752642969932,33,38.0,0.003383492120024931,Abdul El-Sayed Senate Primary Victory,True
+left,streams,45,0.004679321554241529,33,61.0,0.005431395245303179,Kristi Noem Firing by Trump,True
+left,streams,16,0.004617211746665232,33,36.0,0.00320541358739204,California Election Fraud Scandal,True
+left,streams,199,0.004493346661553956,33,40.0,0.003561570652657822,Iran War and Energy Market Impact,True
+left,streams,202,0.00446250876485179,33,36.0,0.00320541358739204,Save American Democracy,True
+left,streams,100,0.004437231312439353,33,34.0,0.003027335054759149,Media and Journalism Critique,True
+left,streams,66,0.00439100711390657,33,52.0,0.004630041848455169,Todd Blanche Attorney General Confirmation,True
+left,streams,50,0.004353869595488122,33,42.0,0.003739649185290713,Texas Senate race and political figures,True
+left,streams,35,0.004262614131261954,33,49.0,0.004362924049505832,Lindsey Graham's Funeral and Legacy,True
+left,streams,127,0.004255796310728469,33,42.0,0.003739649185290713,Melania Trump Conspiracy Theories,True
+left,streams,85,0.003999642615737798,33,36.0,0.00320541358739204,Political Media and Trump Controversies,True
+left,streams,224,0.003965183015660748,33,77.0,0.0068560235063663075,Political Media Broadcasters,True
+left,streams,9,0.0037956362866241045,33,33.0,0.002938295788442703,AI and Political Concerns,True
+left,streams,172,0.0036796890935220554,33,66.0,0.005876591576885406,G7 Summit and Macron-Trump Bilateral Meetings,True
+left,streams,25,0.003587275620771214,33,52.0,0.004630041848455169,Immigration and Deportation Policies,True
+left,streams,124,0.0035169944154605595,33,42.0,0.003739649185290713,JD Vance and Iran negotiations,True
+left,streams,137,0.003497488094880654,33,30.0,0.0026711779894933664,Mitch McConnell Health Rumors,True
+left,streams,136,0.0034543795221769866,33,32.0,0.0028492565221262577,Trump Midterm Election Rigging,True
+left,streams,10,0.0034518776534922177,33,53.0,0.004719081114771614,Zohran Mamdani and NYC Politics,True
+left,streams,53,0.0034335412583751737,33,21.0,0.0018698245926453566,Graham Platner Senate Race Allegations,True
+left,streams,47,0.0034305657405664896,33,25.0,0.002225981657911139,UFO Government Disclosure,True
+left,streams,13,0.003380739379220264,33,26.0,0.0023150209242275843,Modern Women and Feminism Debate,True
+left,streams,31,0.003374694568293972,33,17.0,0.0015136675273795745,Candace Owens and Erika Kirk Controversy,True
+left,streams,64,0.003353648211059186,33,18.0,0.00160270679369602,Transgender Rights and Politics,True
+left,streams,99,0.0032674457354449093,33,29.0,0.002582138723176921,Abortion and Pregnancy Policies,True
+left,streams,177,0.0032382189125369706,33,18.0,0.00160270679369602,Alex Jones and InfoWars political controversy,True
+left,streams,232,0.0032366634461468064,33,41.0,0.0036506099189742677,Political Conferences and Festivals 2026,True
+left,streams,222,0.003177879155811298,33,19.0,0.0016917460600124655,Political Podcasts and Influencers,True
+left,streams,71,0.0031280103575560578,33,69.0,0.006143709375834743,Marco Rubio Testifies on Iran War,True
+left,streams,39,0.003093016292704071,33,33.0,0.002938295788442703,Trump and Rising Energy Prices,True
+left,streams,88,0.003063410551835927,33,49.0,0.004362924049505832,DHS Funding Shutdown Debate,True
+left,streams,106,0.002984566601915975,33,12.0,0.0010684711957973465,Hasan Piker and Political Smear Campaigns,True
+left,streams,36,0.002982450190848109,33,36.0,0.00320541358739204,JD Vance and Trump Political Conflict,True
+left,streams,57,0.002956154157102884,33,38.0,0.003383492120024931,Supreme Court and Birthright Citizenship,True
+left,streams,81,0.0029360350719118094,33,53.0,0.004719081114771614,Karoline Leavitt White House Press Briefing,True
+left,streams,83,0.0029284956742843204,33,32.0,0.0028492565221262577,AI Data Centers and Political Debate,True
+left,streams,63,0.002921060995058113,33,29.0,0.002582138723176921,Don Lemon Arrested,True
+left,streams,54,0.002917507247177576,33,12.0,0.0010684711957973465,Destiny and Ethan Klein debates,False
+left,streams,226,0.002860735902999488,33,22.0,0.0019588638589618022,Trump Approval Ratings Hit Lows,True
+left,streams,113,0.002855437093919586,33,26.0,0.0023150209242275843,Trump's Health Concerns,True
+left,streams,206,0.002827064089070916,33,42.0,0.003739649185290713,FBI and Jan 6 Pipe Bomb Case,True
+left,streams,159,0.0028120519689440386,33,23.0,0.0020479031252782476,No Kings Protests Movement,True
+left,streams,73,0.0027996347165006063,33,14.0,0.0012465497284302378,Left Wing Political Violence,True
+left,streams,15,0.0027597452831511996,33,49.0,0.004362924049505832,Charlie Kirk murder trial,True
+left,streams,79,0.002662235441857006,33,19.0,0.0016917460600124655,Brian Shapiro vs MAGA Callers Debate,True
+left,streams,135,0.0026337206913828637,33,34.0,0.003027335054759149,Political War Room and Figures,True
+left,streams,233,0.002608392668586989,33,10.0,0.0008903926631644555,MMA and Combat Sports,False
+left,streams,90,0.0025831463296547424,33,13.0,0.0011575104621137922,Marc Lamont Hill and Joe Budden Podcast Controversy,True
+left,streams,174,0.0025607629564831555,33,21.0,0.0018698245926453566,Knicks NBA Finals and Trump controversies,True
+left,streams,69,0.0025492672389410154,33,38.0,0.003383492120024931,Virginia redistricting and gerrymandering,True
+left,streams,28,0.0025291714174489636,33,148.0,0.013177811414833943,UK PM Keir Starmer Resignation Calls,True
+left,streams,68,0.0024937418142743505,33,35.0,0.0031163743210755944,9/11 Remembered 25 Years Later,True
+left,streams,195,0.0024805150702606475,33,23.0,0.0020479031252782476,Trump and Natalie Harp Connection,True
+left,streams,48,0.0024773036260341864,33,8.0,0.0007123141305315644,Hasanabi Reacts to Hasan,True
+left,streams,102,0.002468933737691248,33,12.0,0.0010684711957973465,Political Media Figures,True
+left,streams,155,0.002421549279122213,33,16.0,0.0014246282610631288,Ben Shapiro and Political Commentary,True
+left,streams,34,0.0024144976813121398,33,19.0,0.0016917460600124655,Fox News and Trump on Air Conflicts,True
+left,streams,103,0.0024103667897035714,33,24.0,0.002136942391594693,Hunter Biden and Joe Biden controversies,True
+left,streams,179,0.002403805547589966,33,29.0,0.002582138723176921,Trump feud with Pope Leo,True
+left,streams,96,0.0023983405673414075,33,33.0,0.002938295788442703,Supreme Court and Trump Tariffs,True
+left,streams,148,0.002369932233442035,33,90.0,0.0080135339684801,2026 World Cup,False
+left,streams,120,0.0023564242340008124,33,39.0,0.0034725313863413765,Hakeem Jeffries News Conferences,True
+left,streams,212,0.0023462534272744653,33,17.0,0.0015136675273795745,Melania Trump and Epstein Scandal,True
+left,streams,165,0.0023402177017720982,33,21.0,0.0018698245926453566,Alex Pretti Shooting and Federal Agents,True
+left,streams,149,0.002324416318266667,33,19.0,0.0016917460600124655,Mexico Cartel Violence,True
+left,streams,134,0.00231714049083019,33,21.0,0.0018698245926453566,Piers Morgan and Guests on Political Topics,True
+left,streams,72,0.0022507065494976825,33,40.0,0.003561570652657822,Trump and FIFA World Cup controversy,True
+left,streams,126,0.002234285436864287,33,11.0,0.0009794319294809011,Erika Kirk Controversy,True
+left,streams,77,0.0022223208129934498,33,9.0,0.00080135339684801,Socialism and Democratic Party Conflict,True
+left,streams,130,0.0021999028271719075,33,41.0,0.0036506099189742677,Hillary Clinton Epstein Testimony,True
+left,streams,108,0.0021836747336758645,33,20.0,0.001780785326328911,Trump Reflecting Pool Scandal,True
+left,streams,187,0.0021659465825393928,33,15.0,0.0013355889947466832,Comedy and Cultural Debate,True
+left,streams,145,0.002163019138933031,33,23.0,0.0020479031252782476,Trump Ballroom Construction Controversy,True
+left,streams,204,0.0021411552079437183,33,16.0,0.0014246282610631288,Political Talk Show Drama,True
+left,streams,92,0.0021256047099152972,33,12.0,0.0010684711957973465,Joe Rogan and Trump Political Discussions,True
+left,streams,223,0.002101526990722781,33,27.0,0.0024040601905440297,Yearly Predictions and Reviews,False
+left,streams,161,0.0020671362496991206,33,29.0,0.002582138723176921,Tulsi Gabbard Resignation and Controversies,True
+left,streams,101,0.0020652981450277417,33,16.0,0.0014246282610631288,Trump UFC White House Event,True
+left,streams,89,0.0019864782170790373,33,34.0,0.003027335054759149,Kash Patel and FBI Controversies,True
+left,streams,75,0.001974409306247272,33,36.0,0.00320541358739204,Brown University Mass Shooting,False
+left,streams,97,0.0019661696834667847,33,34.0,0.003027335054759149,Healthcare Affordability and Policy,True
+left,streams,65,0.0018695476280375099,33,27.0,0.0024040601905440297,Climate and Weather Politics,True
+left,streams,192,0.0018660618605274213,33,28.0,0.0024930994568604756,Christmas and Trump,True
+left,streams,235,0.0018512434373643488,33,22.0,0.0019588638589618022,Kennedy Center and Trump Name Removal,True
+left,streams,55,0.001844255873428518,33,109.0,0.009705280028492564,UK politics and Reform UK,True
+left,streams,166,0.0017639819841930224,33,13.0,0.0011575104621137922,Thomas Massie political defeat,True
+left,streams,125,0.0017288143662986218,33,15.0,0.0013355889947466832,Walmart Shoplifting and Police Incidents,False
+left,streams,208,0.001718996205248671,33,14.0,0.0012465497284302378,Comey Indictment by DOJ,True
+left,streams,176,0.0017059769320295407,33,15.0,0.0013355889947466832,Trump inflation crisis,True
+left,streams,82,0.001673072282235772,33,66.0,0.005876591576885406,Wildfires and Firefighters Response,False
+left,streams,171,0.0016655964464309307,33,13.0,0.0011575104621137922,Andrew Tate Arrest and Legal Issues,True
+left,streams,143,0.0016300044905409525,33,23.0,0.0020479031252782476,RFK Jr. testifies on HHS and Senate,True
+left,streams,123,0.0016041909609326424,33,9.0,0.00080135339684801,Wealth Tax and Billionaires,True
+left,streams,157,0.0015987795231873505,33,23.0,0.0020479031252782476,Melania Trump Events and Participation,True
+left,streams,122,0.0015852184533943247,33,45.0,0.00400676698424005,King Charles III and Trump interactions,True
+left,streams,114,0.0015809682168054602,33,19.0,0.0016917460600124655,Education and Schools in Political Context,True
+left,streams,167,0.001569324744369142,33,13.0,0.0011575104621137922,Stephen Miller and Trump Scandal,True
+left,streams,183,0.0015672081761955233,33,11.0,0.0009794319294809011,Joe Kent Resignation and Iran War Scandal,True
+left,streams,70,0.0015058588433724159,33,25.0,0.002225981657911139,Karmelo Anthony Trial Verdict,True
+left,streams,20,0.0014771155807997286,33,22.0,0.0019588638589618022,Indian Politics and Parliament,True
+left,streams,234,0.0014761732339292814,33,12.0,0.0010684711957973465,Antifa and Political Violence,True
+left,streams,118,0.0014728964861244031,33,24.0,0.002136942391594693,Federal Reserve Chair Kevin Warsh and Interest Rates,True
+left,streams,18,0.0014688756147888935,33,49.0,0.004362924049505832,Lindsay Clancy Murder Trial,False
+left,streams,200,0.0014311519318609383,33,44.0,0.0039177277179236044,Prince Andrew Epstein Arrest,True
+left,streams,78,0.0014283460355062763,33,28.0,0.0024930994568604756,Covid Vaccine Controversy,True
+left,streams,129,0.0014228458763899346,33,10.0,0.0008903926631644555,Megyn Kelly and Political Media,True
+left,streams,186,0.0014197180368186884,33,25.0,0.002225981657911139,Treasury Secretary Scott Bessent testifies,True
+left,streams,84,0.0014066406883572128,33,18.0,0.00160270679369602,Ilhan Omar Criminal Investigation,True
+left,streams,41,0.0013811295364635902,33,18.0,0.00160270679369602,Big Pharma and Health Scams,True
+left,streams,173,0.0013307264008311762,33,26.0,0.0023150209242275843,Hantavirus outbreak on cruise ship,False
+left,streams,198,0.0013064418643547392,33,12.0,0.0010684711957973465,Woke Culture and Political Discourse,True
+left,streams,181,0.0012731506587109617,33,11.0,0.0009794319294809011,Bari Weiss and CBS News Controversy,True
+left,streams,194,0.0012721375941005422,33,26.0,0.0023150209242275843,Medal of Honor Ceremonies,True
+left,streams,193,0.0012420029913517954,33,8.0,0.0007123141305315644,DSA and Democratic Party Conflict,True
+left,streams,190,0.0012166952817387498,33,21.0,0.0018698245926453566,Markwayne Mullin DHS confirmation hearing,True
+left,streams,52,0.0012136119935880342,33,28.0,0.0024930994568604756,Fauci Senate Testimony Controversy,True
+left,streams,58,0.0012064088505127173,33,29.0,0.002582138723176921,Somali fraud scandal in Minnesota,True
+left,streams,184,0.0011927837083742327,33,10.0,0.0008903926631644555,Housing Policy and Politics,True
+left,streams,215,0.00116318169724161,33,7.0,0.0006232748642151189,Dan Bongino's Political Outbursts,True
+left,streams,107,0.0011575259600376993,33,7.0,0.0006232748642151189,AOC on the World Stage,True
+left,streams,142,0.0011389105914183925,33,5.0,0.00044519633158222774,Transgender Athletes in Women's Sports,True
+left,streams,87,0.0011334479888220831,33,20.0,0.001780785326328911,California fraud investigation,True
+left,streams,146,0.001123720732035028,33,10.0,0.0008903926631644555,Sudan Civil War and Africa Politics,True
+left,streams,221,0.0010993467816362565,33,17.0,0.0015136675273795745,Dolly Parton Tribute and Legacy,False
+left,streams,216,0.0010872286826629507,33,22.0,0.0019588638589618022,Tupac Murder Trial,True
+left,streams,147,0.0010645320696530977,33,13.0,0.0011575104621137922,SPLC Indictment and Hate Groups,True
+left,streams,93,0.0010641148824978774,33,12.0,0.0010684711957973465,Olympics and Team USA Politics,True
+left,streams,188,0.0010562391044776614,33,28.0,0.0024930994568604756,NYC Terror Plot Exposures,True
+left,streams,180,0.0010536433965869234,33,9.0,0.00080135339684801,Trump and American Farmers,True
+left,streams,151,0.0010487001313067086,33,24.0,0.002136942391594693,Vice President JD Vance Remarks,True
+left,streams,95,0.001041638503784672,33,13.0,0.0011575104621137922,Tech Business and Startups,False
+left,streams,152,0.0010222467427026625,33,31.0,0.0027602172558098123,LaGuardia Plane Crash Investigation,False
+left,streams,119,0.0010140662161226485,33,66.0,0.005876591576885406,UK Prime Minister Andy Burnham,True
+left,streams,207,0.0009790492660688324,33,24.0,0.002136942391594693,Jack Smith Testifies on Trump Investigations,True
+left,streams,140,0.0009503075424708533,33,10.0,0.0008903926631644555,Crypto and Politics Scandal,True
+left,streams,209,0.0009353879127202095,33,20.0,0.001780785326328911,Social Media and Teen Addiction Lawsuits,True
+left,streams,86,0.0009188507592387154,33,3.0,0.00026711779894933663,Sneako and Political Interviews,True
+left,streams,131,0.0009183491638338177,33,51.0,0.004541002582138723,UK Political Chaos and Government Issues,True
+left,streams,213,0.0009098916739501718,33,17.0,0.0015136675273795745,San Diego Mosque Shooting,True
+left,streams,175,0.0009072601560521053,33,4.0,0.0003561570652657822,Asmongold controversy and bans,False
+left,streams,231,0.0008996875028890234,33,6.0,0.0005342355978986733,College Sports and NIL Controversies,False
+left,streams,112,0.000890123193049918,33,3.0,0.00026711779894933663,WNBA and Sophie Cunningham controversy,True
+left,streams,116,0.0008713996094090896,33,6.0,0.0005342355978986733,TikTok Censorship and Politics,True
+left,streams,185,0.0008704578002123782,33,7.0,0.0006232748642151189,Behind the scenes streaming,False
+left,streams,219,0.0008647499854242021,33,17.0,0.0015136675273795745,Trump signing executive orders,True
+left,streams,117,0.0008203071997352412,33,27.0,0.0024040601905440297,SAVE Act and Senate Debate,True
+left,streams,168,0.0007326573725803507,33,9.0,0.00080135339684801,Spirit Airlines shutdown and airline industry impact,False
+left,streams,56,0.0007245727529466349,33,19.0,0.0016917460600124655,Nancy Guthrie Disappearance Investigation,False
+left,streams,141,0.0007164309801704144,33,7.0,0.0006232748642151189,Homelessness and Socialist Mayors in US Cities,True
+left,streams,128,0.0006520639704562603,33,4.0,0.0003561570652657822,Gen Z and Boomers Political Apathy,True
+left,streams,196,0.0006467110125646711,33,42.0,0.003739649185290713,Belfast riots and anti-migrant unrest,True
+left,streams,169,0.0006312985663110746,33,10.0,0.0008903926631644555,Rob Reiner murder and political backlash,True
+left,streams,170,0.0006168238294574127,33,35.0,0.0031163743210755944,Bondi Beach Terror Attack,True
+left,streams,210,0.0005978106953320281,33,3.0,0.00026711779894933663,U.S. and World Headlines,True
+left,streams,110,0.0005872454334657927,33,16.0,0.0014246282610631288,Tim Walz and Minnesota Fraud Scandal,True
+left,streams,160,0.0005841471428336484,33,13.0,0.0011575104621137922,Ceuta Migration Crisis,True
+left,streams,230,0.0005675752720939418,33,6.0,0.0005342355978986733,Marjorie Taylor Greene Exposes Trump,True
+left,streams,138,0.0005447753355453021,33,27.0,0.0024040601905440297,Venezuela Earthquake Disaster,False
+left,streams,104,0.0005383636091654856,33,5.0,0.00044519633158222774,MAGA Supporters and Arguments,True
+left,streams,227,0.0005175443126303141,33,4.0,0.0003561570652657822,Fast Food and Political Issues,True
+left,streams,164,0.0005060517740267221,33,28.0,0.0024930994568604756,Winter Storm Impact on US,False
+left,streams,105,0.0004869730515486973,33,5.0,0.00044519633158222774,Spencer Pratt LA Mayoral Campaign,True
+left,streams,197,0.0004793408291606894,33,4.0,0.0003561570652657822,Marijuana Policy and Politics,True
+left,streams,139,0.0004645472932457204,33,3.0,0.00026711779894933663,Bill Maher Political Commentary,True
+left,streams,162,0.00045971719996753846,33,6.0,0.0005342355978986733,Eric Swalwell Allegations and Resignation,True
+left,streams,220,0.00044598904373574364,33,11.0,0.0009794319294809011,British Islamophobia and Political Tensions,True
+left,streams,61,0.00040297501820210906,33,10.0,0.0008903926631644555,Gavin Newsom Political Controversies,True
+left,streams,229,0.00039173439243245136,33,13.0,0.0011575104621137922,US-Iran Peace Talks in Pakistan,True
+left,streams,150,0.00036956312807677434,33,5.0,0.00044519633158222774,Super Bowl Halftime Show Controversy,True
+left,streams,111,0.00035736057380515365,33,8.0,0.0007123141305315644,HasanAbi 2026 Schedule,False
+left,streams,214,0.0003027892767403604,33,3.0,0.00026711779894933663,John Fetterman and Democratic Party Issues,True
+left,streams,201,0.00027056277056277056,33,1.0,8.903926631644555e-05,Glenn Beck Political Commentary,True
+left,streams,205,0.0002558807886044776,33,4.0,0.0003561570652657822,Nick Fuentes and Political Controversies,True
+left,streams,225,0.00023096821877309682,33,15.0,0.0013355889947466832,Nepal Floods and Rescue Efforts,False
+left,streams,115,0.0002296673339236706,33,11.0,0.0009794319294809011,PM Modi and BRICS Diplomacy,True
+left,streams,189,0.00022704348527382545,33,3.0,0.00026711779894933663,Trump Leverage and Political Strategy,True
+left,streams,211,0.0001893939393939394,33,1.0,8.903926631644555e-05,Alex Jones and Katie Phang Updates,True
+left,streams,178,0.0001865573614271681,33,4.0,0.0003561570652657822,CNN and Political Conflict,True
+left,streams,133,0.00017024174327545113,33,1.0,8.903926631644555e-05,Gold and Central Banks in Economy,True
+left,streams,158,2.8601816024102012e-05,33,2.0,0.0001780785326328911,India's Muslims and Political Parties,True
+left,streams,109,0.0,33,0.0,0.0,FBA and African Refugee Issues,True
+left,streams,144,0.0,33,0.0,0.0,Myron's Critique of Modern Dating and Feminism,True
+left,videos,0,0.06517346992849457,105,8286.0,0.09440798468690183,Iran War and Strait of Hormuz Tensions,True
+left,videos,2,0.0459214040539075,105,2867.0,0.03266566402333425,Israel-Palestine Conflict Media,True
+left,videos,24,0.02862927968758998,105,3569.0,0.04066402333424483,Trump Meltdowns and Collapses,True
+left,videos,3,0.024422144451531184,105,2048.0,0.023334244827271897,ICE Protests and Shootings,True
+left,videos,1,0.021806808364614228,105,1359.0,0.015484003281378179,Shocking Events and Reactions,True
+left,videos,5,0.021609515245380795,105,2368.0,0.026980220581533133,Trump Supreme Court Legal Issues,True
+left,videos,17,0.018423499297201395,105,1759.0,0.02004147297420472,2026 Midterm Election Predictions,True
+left,videos,217,0.017383725967444627,105,1427.0,0.01625877312915869,Trump's Unwise Actions and Mistakes,True
+left,videos,62,0.016833129478776958,105,2080.0,0.023698842402698022,Trump Resignation and Leaks,True
+left,videos,4,0.014828707127849868,105,2509.0,0.02858672864825449,Ukraine-Russia War and Political Figures,True
+left,videos,46,0.01470538483285782,105,1093.0,0.012453285935648527,MAGA Movement Decline,True
+left,videos,60,0.013724275752960978,105,1551.0,0.01767158873393492,Trump's War and Draft,True
+left,videos,9,0.013645479722226506,105,628.0,0.007155227417737672,AI and Political Concerns,True
+left,videos,43,0.013258778277485925,105,1312.0,0.01494850059247106,Trump slush fund scandal,True
+left,videos,7,0.01305639116192594,105,983.0,0.011199981770121228,Trump vs Maduro Venezuela Conflict,True
+left,videos,8,0.012902889077471625,105,940.0,0.010710053778142376,Epstein Files Political Connections,True
+left,videos,21,0.011638592210935439,105,1121.0,0.012772308814146385,Trump and Epstein Files Scandal,True
+left,videos,6,0.011362585924195036,105,928.0,0.010573329687357578,Trump and China political relations,True
+left,videos,104,0.011091941083045658,105,592.0,0.006745055145383283,MAGA Supporters and Arguments,True
+left,videos,42,0.010744905007147032,105,651.0,0.007417281925075198,War and Military Analysis,True
+left,videos,48,0.01038759122868941,105,415.0,0.004728374806307538,Hasanabi Reacts to Hasan,True
+left,videos,111,0.00908629702832032,105,189.0,0.0021534044298605415,HasanAbi 2026 Schedule,False
+left,videos,73,0.008863343895829141,105,335.0,0.0038168808677422296,Left Wing Political Violence,True
+left,videos,11,0.008335977416359733,105,279.0,0.0031788351107465136,Hollywood and Oscars Politics,True
+left,videos,34,0.008275883233995546,105,1101.0,0.012544435329505058,Fox News and Trump on Air Conflicts,True
+left,videos,19,0.008169169918230718,105,337.0,0.0038396682162063623,America's 250th Anniversary and Founding History,True
+left,videos,98,0.008094142587804344,105,292.0,0.003326952875763376,JLP Weekly Series,False
+left,videos,136,0.007633436488356529,105,624.0,0.007109652720809406,Trump Midterm Election Rigging,True
+left,videos,67,0.007486328647271297,105,573.0,0.0065285753349740225,Trump's Economic Impact,True
+left,videos,29,0.006793328374017003,105,380.0,0.004329596208185215,Cuba-US Political Tensions,True
+left,videos,49,0.006658571060604592,105,321.0,0.0036573694284933005,Race and Politics in Media,True
+left,videos,38,0.006605347656464385,105,1399.0,0.01593975025066083,Israel-Lebanon Conflict and Ceasefire Talks,True
+left,videos,202,0.0064414133174796545,105,281.0,0.0032016224592106464,Save American Democracy,True
+left,videos,100,0.006239143314021152,105,316.0,0.0036004010573329687,Media and Journalism Critique,True
+left,videos,14,0.0061838356262193485,105,875.0,0.009969464953058062,Pete Hegseth and Iran War,True
+left,videos,55,0.006121900133632404,105,501.0,0.005708230790265245,UK politics and Reform UK,True
+left,videos,127,0.005887733376653175,105,544.0,0.006198158782244098,Melania Trump Conspiracy Theories,True
+left,videos,156,0.005822402764939366,105,319.0,0.0036345820800291677,Kamala Harris 2028 Election Speculation,True
+left,videos,36,0.005804121318132425,105,619.0,0.0070526843496490745,JD Vance and Trump Political Conflict,True
+left,videos,54,0.005679444946397952,105,179.0,0.002039467687539878,Destiny and Ethan Klein debates,False
+left,videos,16,0.0055748470792923365,105,397.0,0.004523288670130344,California Election Fraud Scandal,True
+left,videos,79,0.005533075364936546,105,640.0,0.007291951508522469,Brian Shapiro vs MAGA Callers Debate,True
+left,videos,199,0.005447278108044854,105,720.0,0.008203445447087777,Iran War and Energy Market Impact,True
+left,videos,158,0.0054391013656383234,105,229.0,0.0026091513991431956,India's Muslims and Political Parties,True
+left,videos,90,0.005419611280981416,105,223.0,0.0025407893537507976,Marc Lamont Hill and Joe Budden Podcast Controversy,True
+left,videos,123,0.005328285883174666,105,238.0,0.002711694467231793,Wealth Tax and Billionaires,True
+left,videos,132,0.0053026955213848,105,613.0,0.0069843223042566766,Political Podcasts and Commentary,True
+left,videos,74,0.00527248749964928,105,439.0,0.00500182298787713,2026 US Primary Elections,True
+left,videos,153,0.0052677210928163045,105,960.0,0.010937927262783703,Members Only Show,True
+left,videos,206,0.005193509494472987,105,374.0,0.0042612341627928174,FBI and Jan 6 Pipe Bomb Case,True
+left,videos,12,0.0051462274480282445,105,472.0,0.00537781423753532,Canada-US Political Tensions,True
+left,videos,25,0.005129363857554393,105,450.0,0.005127153404429861,Immigration and Deportation Policies,True
+left,videos,30,0.005109537883371955,105,536.0,0.006107009388387567,Pam Bondi and Epstein Files Scandal,True
+left,videos,13,0.005037596024765911,105,169.0,0.0019255309452192143,Modern Women and Feminism Debate,True
+left,videos,28,0.005021802387800143,105,452.0,0.005149940752893993,UK PM Keir Starmer Resignation Calls,True
+left,videos,80,0.0049885778879570795,105,345.0,0.003930817610062893,Black Voting Rights and Political Representation,True
+left,videos,163,0.004977457608685839,105,505.0,0.00575380548719351,Trump's Mental Health Decline,True
+left,videos,33,0.0047308957539414975,105,374.0,0.0042612341627928174,Elon Musk and Political Influence,True
+left,videos,72,0.004636181840739843,105,398.0,0.00453468234436241,Trump and FIFA World Cup controversy,True
+left,videos,23,0.004631280942304728,105,311.0,0.003543432686172637,Tucker Carlson Political Commentary,True
+left,videos,53,0.004594634999073778,105,251.0,0.0028598122322486554,Graham Platner Senate Race Allegations,True
+left,videos,27,0.004540384799510594,105,569.0,0.006483000638045757,Trump and Greenland politics,True
+left,videos,69,0.004504075397668859,105,293.0,0.0033383465499954427,Virginia redistricting and gerrymandering,True
+left,videos,39,0.004496085267530146,105,472.0,0.00537781423753532,Trump and Rising Energy Prices,True
+left,videos,93,0.004471479014871452,105,105.0,0.0011963357943669674,Olympics and Team USA Politics,True
+left,videos,135,0.004438601686724997,105,264.0,0.0030079299972655183,Political War Room and Figures,True
+left,videos,10,0.004427755119331356,105,280.0,0.0031902287849785798,Zohran Mamdani and NYC Politics,True
+left,videos,226,0.0043846202239424354,105,452.0,0.005149940752893993,Trump Approval Ratings Hit Lows,True
+left,videos,113,0.004362719022604663,105,538.0,0.0061297967368517,Trump's Health Concerns,True
+left,videos,94,0.0042392904269678055,105,250.0,0.0028484185580165892,Abdul El-Sayed Senate Primary Victory,True
+left,videos,187,0.004176966684443634,105,168.0,0.0019141372709871479,Comedy and Cultural Debate,True
+left,videos,182,0.004171372676356256,105,515.0,0.005867742229514174,MAGA backlash over Iran war,True
+left,videos,140,0.004142864087600497,105,194.0,0.0022103728010208733,Crypto and Politics Scandal,True
+left,videos,22,0.004124414338801712,105,220.0,0.0025066083310545987,Christian Nationalism and Politics,True
+left,videos,35,0.0041175123230921306,105,344.0,0.003919423935830827,Lindsey Graham's Funeral and Legacy,True
+left,videos,87,0.004024834955668247,105,133.0,0.0015153586728648253,California fraud investigation,True
+left,videos,44,0.003943545529997636,105,351.0,0.003999179655455291,Trump State of the Union Address,True
+left,videos,204,0.003908784994539595,105,279.0,0.0031788351107465136,Political Talk Show Drama,True
+left,videos,95,0.003875493417550649,105,166.0,0.0018913499225230153,Tech Business and Startups,False
+left,videos,77,0.003874001931749133,105,147.0,0.0016748701121137544,Socialism and Democratic Party Conflict,True
+left,videos,45,0.0038242641516149775,105,382.0,0.004352383556649349,Kristi Noem Firing by Trump,True
+left,videos,218,0.0038234568915800162,105,518.0,0.005901923252210373,Epstein Files and Trump DOJ,True
+left,videos,50,0.0037996186577213694,105,430.0,0.004899279919788534,Texas Senate race and political figures,True
+left,videos,106,0.0036736335767341838,105,133.0,0.0015153586728648253,Hasan Piker and Political Smear Campaigns,True
+left,videos,210,0.003595993717303534,105,551.0,0.006277914501868562,U.S. and World Headlines,True
+left,videos,83,0.0035951275212388525,105,171.0,0.001948318293683347,AI Data Centers and Political Debate,True
+left,videos,51,0.003537769562303773,105,337.0,0.0038396682162063623,Minneapolis political unrest and federal response,True
+left,videos,146,0.0034244186477288352,105,554.0,0.006312095524564762,Sudan Civil War and Africa Politics,True
+left,videos,131,0.0034085671580834924,105,279.0,0.0031788351107465136,UK Political Chaos and Government Issues,True
+left,videos,26,0.003399665622578744,105,381.0,0.0043409898824172816,White House Correspondents Dinner Shooting,True
+left,videos,89,0.0033993926778539026,105,350.0,0.003987785981223225,Kash Patel and FBI Controversies,True
+left,videos,134,0.0033072787949068165,105,231.0,0.0026319387476073284,Piers Morgan and Guests on Political Topics,True
+left,videos,64,0.003296137126476212,105,123.0,0.0014014219305441618,Transgender Rights and Politics,True
+left,videos,66,0.0032811944879840263,105,461.0,0.005252483820982591,Todd Blanche Attorney General Confirmation,True
+left,videos,96,0.0032467209672060165,105,361.0,0.0041131163977759545,Supreme Court and Trump Tariffs,True
+left,videos,155,0.0032267993160725746,105,211.0,0.0024040652629660013,Ben Shapiro and Political Commentary,True
+left,videos,117,0.0031653112808561873,105,279.0,0.0031788351107465136,SAVE Act and Senate Debate,True
+left,videos,191,0.0031156493072656112,105,95.0,0.0010823990520463038,Political Commentary and Interviews,True
+left,videos,85,0.0030809299742441637,105,314.0,0.003577613708868836,Political Media and Trump Controversies,True
+left,videos,145,0.002970335045043966,105,330.0,0.003759912496581898,Trump Ballroom Construction Controversy,True
+left,videos,223,0.002895218084014519,105,159.0,0.0018115942028985507,Yearly Predictions and Reviews,False
+left,videos,154,0.0028202789291925825,105,281.0,0.0032016224592106464,Anti-Trump Protests and Riots,True
+left,videos,175,0.0027865046714156895,105,90.0,0.001025430680885972,Asmongold controversy and bans,False
+left,videos,31,0.0027519976046649812,105,183.0,0.002085042384468143,Candace Owens and Erika Kirk Controversy,True
+left,videos,41,0.002736267748058812,105,133.0,0.0015153586728648253,Big Pharma and Health Scams,True
+left,videos,91,0.0027014705919037037,105,467.0,0.0053208458663749885,Trump and NATO Relations,True
+left,videos,193,0.002692378282710865,105,92.0,0.0010482180293501049,DSA and Democratic Party Conflict,True
+left,videos,121,0.0026554008858998327,105,162.0,0.0018457752255947497,Rev Jesse Jackson and Civil Rights Legacy,True
+left,videos,227,0.0026249551277622053,105,117.0,0.0013330598851517637,Fast Food and Political Issues,True
+left,videos,103,0.0025853867479622918,105,188.0,0.002142010755628475,Hunter Biden and Joe Biden controversies,True
+left,videos,92,0.002546447215609001,105,212.0,0.0024154589371980675,Joe Rogan and Trump Political Discussions,True
+left,videos,97,0.002516084445892324,105,238.0,0.002711694467231793,Healthcare Affordability and Policy,True
+left,videos,128,0.002514392887634892,105,108.0,0.0012305168170631665,Gen Z and Boomers Political Apathy,True
+left,videos,137,0.002496922597839211,105,282.0,0.0032130161334427126,Mitch McConnell Health Rumors,True
+left,videos,116,0.0024814327490938234,105,100.0,0.0011393674232066356,TikTok Censorship and Politics,True
+left,videos,57,0.002471428818455068,105,163.0,0.0018571688998268161,Supreme Court and Birthright Citizenship,True
+left,videos,65,0.0024592005029490517,105,214.0,0.0024382462856622003,Climate and Weather Politics,True
+left,videos,102,0.0024526112152767707,105,130.0,0.0014811776501686264,Political Media Figures,True
+left,videos,167,0.0024490227633063243,105,285.0,0.0032471971561389115,Stephen Miller and Trump Scandal,True
+left,videos,222,0.0024454724129001786,105,294.0,0.003349740224227509,Political Podcasts and Influencers,True
+left,videos,114,0.0024295350659668236,105,143.0,0.001629295415185489,Education and Schools in Political Context,True
+left,videos,231,0.002422518303692146,105,86.0,0.0009798559839577067,College Sports and NIL Controversies,False
+left,videos,108,0.002422468301292644,105,266.0,0.0030307173457296507,Trump Reflecting Pool Scandal,True
+left,videos,99,0.002419749199332987,105,149.0,0.0016976574605778872,Abortion and Pregnancy Policies,True
+left,videos,47,0.0024122248664208345,105,126.0,0.001435602953240361,UFO Government Disclosure,True
+left,videos,126,0.0023930200096300095,105,132.0,0.0015039649986327592,Erika Kirk Controversy,True
+left,videos,71,0.0023659090372697257,105,253.0,0.002882599580712788,Marco Rubio Testifies on Iran War,True
+left,videos,101,0.0022890033140915565,105,158.0,0.0018002005286664844,Trump UFC White House Event,True
+left,videos,195,0.0022501181512079977,105,162.0,0.0018457752255947497,Trump and Natalie Harp Connection,True
+left,videos,181,0.002249252067638116,105,215.0,0.002449639959894267,Bari Weiss and CBS News Controversy,True
+left,videos,59,0.0022362429351955224,105,139.0,0.0015837207182572235,Iran Conflict and Political Updates,True
+left,videos,180,0.002222615530607379,105,165.0,0.001879956248290949,Trump and American Farmers,True
+left,videos,152,0.0021969525565146085,105,600.0,0.006836204539239814,LaGuardia Plane Crash Investigation,False
+left,videos,125,0.0021471955394801543,105,142.0,0.0016179017409534227,Walmart Shoplifting and Police Incidents,False
+left,videos,107,0.0021450802179725018,105,138.0,0.0015723270440251573,AOC on the World Stage,True
+left,videos,178,0.0021361276955902163,105,210.0,0.0023926715887339347,CNN and Political Conflict,True
+left,videos,63,0.0020549816486269946,105,142.0,0.0016179017409534227,Don Lemon Arrested,True
+left,videos,88,0.002051843207240654,105,281.0,0.0032016224592106464,DHS Funding Shutdown Debate,True
+left,videos,37,0.0020082813215673142,105,110.0,0.0012533041655272993,Islam and Political Discourse,True
+left,videos,159,0.002006008209126736,105,92.0,0.0010482180293501049,No Kings Protests Movement,True
+left,videos,78,0.001983212985235341,105,218.0,0.002483820982590466,Covid Vaccine Controversy,True
+left,videos,184,0.0019680016508627305,105,137.0,0.001560933369793091,Housing Policy and Politics,True
+left,videos,81,0.0019417421336746954,105,263.0,0.0029965363230334517,Karoline Leavitt White House Press Briefing,True
+left,videos,198,0.001928708594351012,105,66.0,0.0007519824993163796,Woke Culture and Political Discourse,True
+left,videos,209,0.0019075622713875008,105,147.0,0.0016748701121137544,Social Media and Teen Addiction Lawsuits,True
+left,videos,212,0.0018357748255748841,105,144.0,0.0016406890894175555,Melania Trump and Epstein Scandal,True
+left,videos,176,0.0018124432944783104,105,158.0,0.0018002005286664844,Trump inflation crisis,True
+left,videos,149,0.0017838696291545386,105,154.0,0.001754625831738219,Mexico Cartel Violence,True
+left,videos,224,0.0017200368305954944,105,622.0,0.007086865372345274,Political Media Broadcasters,True
+left,videos,143,0.0017193336822381151,105,180.0,0.002050861361771944,RFK Jr. testifies on HHS and Senate,True
+left,videos,119,0.0016972257593696064,105,219.0,0.002495214656822532,UK Prime Minister Andy Burnham,True
+left,videos,234,0.0016764907163825402,105,138.0,0.0015723270440251573,Antifa and Political Violence,True
+left,videos,61,0.0016737392332540873,105,120.0,0.0013672409078479629,Gavin Newsom Political Controversies,True
+left,videos,203,0.0016654392592867341,105,274.0,0.003121866739586182,Trump Iran War Briefings,True
+left,videos,82,0.0016464827232342124,105,294.0,0.003349740224227509,Wildfires and Firefighters Response,False
+left,videos,18,0.0016363302799806548,105,125.0,0.0014242092790082946,Lindsay Clancy Murder Trial,False
+left,videos,130,0.001554656001184725,105,195.0,0.0022217664752529395,Hillary Clinton Epstein Testimony,True
+left,videos,179,0.0015159669151043806,105,170.0,0.0019369246194512807,Trump feud with Pope Leo,True
+left,videos,188,0.0015111577292564048,105,168.0,0.0019141372709871479,NYC Terror Plot Exposures,True
+left,videos,68,0.00148870060127347,105,159.0,0.0018115942028985507,9/11 Remembered 25 Years Later,True
+left,videos,214,0.0014884562952114618,105,99.0,0.0011279737489745694,John Fetterman and Democratic Party Issues,True
+left,videos,20,0.0014741602654998393,105,110.0,0.0012533041655272993,Indian Politics and Parliament,True
+left,videos,129,0.0014708658487386924,105,170.0,0.0019369246194512807,Megyn Kelly and Political Media,True
+left,videos,171,0.001453365542227873,105,84.0,0.0009570686354935739,Andrew Tate Arrest and Legal Issues,True
+left,videos,124,0.0014448797551230464,105,197.0,0.0022445538237170722,JD Vance and Iran negotiations,True
+left,videos,177,0.0014364151172807991,105,100.0,0.0011393674232066356,Alex Jones and InfoWars political controversy,True
+left,videos,76,0.0014181328010116612,105,66.0,0.0007519824993163796,Nolan Wells Investigation,False
+left,videos,165,0.0014165716841502065,105,119.0,0.0013558472336158965,Alex Pretti Shooting and Federal Agents,True
+left,videos,168,0.0013988110043970312,105,113.0,0.0012874851882234983,Spirit Airlines shutdown and airline industry impact,False
+left,videos,230,0.001393864844430741,105,151.0,0.0017204448090420198,Marjorie Taylor Greene Exposes Trump,True
+left,videos,208,0.0013533478310566163,105,141.0,0.0016065080667213563,Comey Indictment by DOJ,True
+left,videos,147,0.0013315051581889868,105,80.0,0.0009114939385653086,SPLC Indictment and Hate Groups,True
+left,videos,120,0.001328773220795493,105,129.0,0.00146978397593656,Hakeem Jeffries News Conferences,True
+left,videos,221,0.0013230799694665288,105,78.0,0.0008887065901011758,Dolly Parton Tribute and Legacy,False
+left,videos,15,0.001288744599362707,105,156.0,0.0017774131802023516,Charlie Kirk murder trial,True
+left,videos,161,0.0012863093234389135,105,152.0,0.0017318384832740862,Tulsi Gabbard Resignation and Controversies,True
+left,videos,174,0.0012846382928049873,105,110.0,0.0012533041655272993,Knicks NBA Finals and Trump controversies,True
+left,videos,196,0.0012818990603553721,105,139.0,0.0015837207182572235,Belfast riots and anti-migrant unrest,True
+left,videos,205,0.0012789052881413243,105,77.0,0.0008773129158691095,Nick Fuentes and Political Controversies,True
+left,videos,229,0.0012692549997448722,105,233.0,0.002654726096071461,US-Iran Peace Talks in Pakistan,True
+left,videos,141,0.001240132935137827,105,76.0,0.0008659192416370431,Homelessness and Socialist Mayors in US Cities,True
+left,videos,235,0.0012364277021975744,105,191.0,0.0021761917783246743,Kennedy Center and Trump Name Removal,True
+left,videos,70,0.001231301556330351,105,73.0,0.000831738218940844,Karmelo Anthony Trial Verdict,True
+left,videos,75,0.0012214680285619782,105,186.0,0.0021192234071643425,Brown University Mass Shooting,False
+left,videos,192,0.0012187027688011125,105,85.0,0.0009684623097256403,Christmas and Trump,True
+left,videos,166,0.0011849311730623795,105,98.0,0.001116580074742503,Thomas Massie political defeat,True
+left,videos,169,0.0011195494322617724,105,83.0,0.0009456749612615076,Rob Reiner murder and political backlash,True
+left,videos,138,0.0011076574868414762,105,189.0,0.0021534044298605415,Venezuela Earthquake Disaster,False
+left,videos,197,0.0010871295955686819,105,55.0,0.0006266520827636497,Marijuana Policy and Politics,True
+left,videos,52,0.0010851342843866596,105,96.0,0.0010937927262783702,Fauci Senate Testimony Controversy,True
+left,videos,233,0.0010578931201641465,105,56.0,0.000638045756995716,MMA and Combat Sports,False
+left,videos,200,0.0010535546115825098,105,126.0,0.001435602953240361,Prince Andrew Epstein Arrest,True
+left,videos,173,0.0010064231788093167,105,121.0,0.0013786345820800293,Hantavirus outbreak on cruise ship,False
+left,videos,207,0.0010038855176745759,105,152.0,0.0017318384832740862,Jack Smith Testifies on Trump Investigations,True
+left,videos,232,0.0009776879822033671,105,53.0,0.0006038647342995169,Political Conferences and Festivals 2026,True
+left,videos,201,0.0009591631824707398,105,30.0,0.0003418102269619907,Glenn Beck Political Commentary,True
+left,videos,150,0.0009553422604269887,105,77.0,0.0008773129158691095,Super Bowl Halftime Show Controversy,True
+left,videos,40,0.0009420470058707063,105,128.0,0.0014583903017044936,Trump's speeches and events,True
+left,videos,139,0.0009322969611269633,105,86.0,0.0009798559839577067,Bill Maher Political Commentary,True
+left,videos,170,0.0009014176773378047,105,127.0,0.0014469966274724274,Bondi Beach Terror Attack,True
+left,videos,133,0.0008982029977685763,105,25.0,0.0002848418558016589,Gold and Central Banks in Economy,True
+left,videos,122,0.0008574487498456329,105,102.0,0.0011621547716707684,King Charles III and Trump interactions,True
+left,videos,160,0.0008553158692616715,105,106.0,0.0012077294685990338,Ceuta Migration Crisis,True
+left,videos,58,0.0008407767074919282,105,79.0,0.0009001002643332422,Somali fraud scandal in Minnesota,True
+left,videos,220,0.00083115716918832,105,64.0,0.0007291951508522468,British Islamophobia and Political Tensions,True
+left,videos,215,0.0007762372403468441,105,66.0,0.0007519824993163796,Dan Bongino's Political Outbursts,True
+left,videos,183,0.0007352308803733635,105,73.0,0.000831738218940844,Joe Kent Resignation and Iran War Scandal,True
+left,videos,112,0.0006817869434046739,105,33.0,0.0003759912496581898,WNBA and Sophie Cunningham controversy,True
+left,videos,225,0.0006799380089153493,105,226.0,0.0025749703764469966,Nepal Floods and Rescue Efforts,False
+left,videos,172,0.0006577210949424826,105,133.0,0.0015153586728648253,G7 Summit and Macron-Trump Bilateral Meetings,True
+left,videos,32,0.0006545047370806418,105,111.0,0.0012646978397593655,Artemis II Moon Mission Updates,False
+left,videos,84,0.0006076087138898518,105,77.0,0.0008773129158691095,Ilhan Omar Criminal Investigation,True
+left,videos,115,0.0005985509235419058,105,92.0,0.0010482180293501049,PM Modi and BRICS Diplomacy,True
+left,videos,162,0.0005591618730353432,105,60.0,0.0006836204539239814,Eric Swalwell Allegations and Resignation,True
+left,videos,110,0.000552014570407461,105,55.0,0.0006266520827636497,Tim Walz and Minnesota Fraud Scandal,True
+left,videos,164,0.0005353722750065524,105,113.0,0.0012874851882234983,Winter Storm Impact on US,False
+left,videos,86,0.0005187569376534704,105,23.0,0.0002620545073375262,Sneako and Political Interviews,True
+left,videos,213,0.00047925074696385684,105,112.0,0.001276091513991432,San Diego Mosque Shooting,True
+left,videos,56,0.00046962666282802235,105,110.0,0.0012533041655272993,Nancy Guthrie Disappearance Investigation,False
+left,videos,105,0.0004455037787308828,105,23.0,0.0002620545073375262,Spencer Pratt LA Mayoral Campaign,True
+left,videos,118,0.00044275716532962814,105,91.0,0.0010368243551180385,Federal Reserve Chair Kevin Warsh and Interest Rates,True
+left,videos,216,0.00043370307352562387,105,42.0,0.00047853431774678697,Tupac Murder Trial,True
+left,videos,186,0.000394643510293833,105,75.0,0.0008545255674049767,Treasury Secretary Scott Bessent testifies,True
+left,videos,148,0.00038496181155769563,105,105.0,0.0011963357943669674,2026 World Cup,False
+left,videos,190,0.000373134041703456,105,72.0,0.0008203445447087777,Markwayne Mullin DHS confirmation hearing,True
+left,videos,142,0.00032447525208057426,105,37.0,0.0004215659465864552,Transgender Athletes in Women's Sports,True
+left,videos,194,0.00031955982250411383,105,58.0,0.0006608331054598486,Medal of Honor Ceremonies,True
+left,videos,211,0.0002977619215906797,105,23.0,0.0002620545073375262,Alex Jones and Katie Phang Updates,True
+left,videos,144,0.000264967137798252,105,7.0,7.97557196244645e-05,Myron's Critique of Modern Dating and Feminism,True
+left,videos,219,0.00025409272223433774,105,31.0,0.00035320390119405705,Trump signing executive orders,True
+left,videos,228,0.0001924460765920249,105,40.0,0.0004557469692826543,Political media responses and announcements,True
+left,videos,189,0.00017478814280438986,105,13.0,0.00014811776501686265,Trump Leverage and Political Strategy,True
+left,videos,185,0.0001636373954043361,105,10.0,0.00011393674232066357,Behind the scenes streaming,False
+left,videos,109,0.00014758017450507553,105,8.0,9.114939385653085e-05,FBA and African Refugee Issues,True
+left,videos,157,0.00011275992291577979,105,36.0,0.00041017227235438887,Melania Trump Events and Participation,True
+left,videos,151,2.000631452725526e-05,105,10.0,0.00011393674232066357,Vice President JD Vance Remarks,True
+neutral,streams,0,0.07901254912735287,16,2839.0,0.11072974765006435,Iran War and Strait of Hormuz Tensions,True
+neutral,streams,40,0.04824116989952762,16,776.0,0.030266391044892548,Trump's speeches and events,True
+neutral,streams,20,0.03957002906164034,16,4670.0,0.18214438940676314,Indian Politics and Parliament,True
+neutral,streams,224,0.035659078039264616,16,344.0,0.013417059947735871,Political Media Broadcasters,True
+neutral,streams,203,0.02370007432966168,16,695.0,0.02710714146417567,Trump Iran War Briefings,True
+neutral,streams,32,0.02290893457277098,16,421.0,0.016420297203479074,Artemis II Moon Mission Updates,False
+neutral,streams,185,0.021693606962828193,16,143.0,0.005577440617808807,Behind the scenes streaming,False
+neutral,streams,4,0.02111680294061861,16,1054.0,0.04110924763056281,Ukraine-Russia War and Political Figures,True
+neutral,streams,172,0.019975391185182052,16,961.0,0.03748196107492492,G7 Summit and Macron-Trump Bilateral Meetings,True
+neutral,streams,148,0.01865741143243032,16,620.0,0.024181910370919303,2026 World Cup,False
+neutral,streams,118,0.0184875816396922,16,114.0,0.004446351261749679,Federal Reserve Chair Kevin Warsh and Interest Rates,True
+neutral,streams,7,0.017694534672406902,16,328.0,0.012793010647841179,Trump vs Maduro Venezuela Conflict,True
+neutral,streams,18,0.017285512873857364,16,218.0,0.008502671711065174,Lindsay Clancy Murder Trial,False
+neutral,streams,2,0.01702807791436125,16,247.0,0.009633761067124302,Israel-Palestine Conflict Media,True
+neutral,streams,54,0.015016492941021243,16,14.0,0.0005460431374078552,Destiny and Ethan Klein debates,False
+neutral,streams,86,0.01380393104541302,16,16.0,0.0006240492998946917,Sneako and Political Interviews,True
+neutral,streams,14,0.012644355465185097,16,196.0,0.007644603923709973,Pete Hegseth and Iran War,True
+neutral,streams,115,0.012566610001285958,16,1401.0,0.05464331682202894,PM Modi and BRICS Diplomacy,True
+neutral,streams,74,0.012136646263883936,16,88.0,0.003432271149420804,2026 US Primary Elections,True
+neutral,streams,31,0.012117552334943639,16,16.0,0.0006240492998946917,Candace Owens and Erika Kirk Controversy,True
+neutral,streams,194,0.01205110142114154,16,216.0,0.008424665548578337,Medal of Honor Ceremonies,True
+neutral,streams,154,0.011063522231232463,16,399.0,0.015562229416123874,Anti-Trump Protests and Riots,True
+neutral,streams,6,0.011033096539654197,16,569.0,0.022192753227504972,Trump and China political relations,True
+neutral,streams,3,0.009763441901496738,16,158.0,0.00616248683646008,ICE Protests and Shootings,True
+neutral,streams,120,0.009507041340891836,16,150.0,0.005850462186512735,Hakeem Jeffries News Conferences,True
+neutral,streams,1,0.009402173913043477,16,10.0,0.0003900308124341823,Shocking Events and Reactions,True
+neutral,streams,75,0.008861172109720358,16,138.0,0.005382425211591716,Brown University Mass Shooting,False
+neutral,streams,44,0.008449614620787999,16,127.0,0.004953391317914115,Trump State of the Union Address,True
+neutral,streams,219,0.00834609549996914,16,119.0,0.00464136666796677,Trump signing executive orders,True
+neutral,streams,88,0.008322400930348292,16,102.0,0.003978314286828659,DHS Funding Shutdown Debate,True
+neutral,streams,157,0.007837639231593736,16,129.0,0.005031397480400952,Melania Trump Events and Participation,True
+neutral,streams,48,0.007520891364902507,16,9.0,0.0003510277311907641,Hasanabi Reacts to Hasan,True
+neutral,streams,15,0.007404908889627214,16,61.0,0.002379187955848512,Charlie Kirk murder trial,True
+neutral,streams,23,0.007347020933977455,16,11.0,0.0004290338936776005,Tucker Carlson Political Commentary,True
+neutral,streams,71,0.007314658297928319,16,226.0,0.00881469636101252,Marco Rubio Testifies on Iran War,True
+neutral,streams,38,0.007272172910696071,16,365.0,0.014236124653847654,Israel-Lebanon Conflict and Ceasefire Talks,True
+neutral,streams,35,0.007227624173163999,16,66.0,0.0025742033620656034,Lindsey Graham's Funeral and Legacy,True
+neutral,streams,151,0.007211810612470194,16,147.0,0.00573345294278248,Vice President JD Vance Remarks,True
+neutral,streams,11,0.007004725223197134,16,90.0,0.003510277311907641,Hollywood and Oscars Politics,True
+neutral,streams,53,0.00692516153531913,16,9.0,0.0003510277311907641,Graham Platner Senate Race Allegations,True
+neutral,streams,91,0.006878594045130294,16,298.0,0.011622918210538633,Trump and NATO Relations,True
+neutral,streams,51,0.006864061887693504,16,117.0,0.004563360505479933,Minneapolis political unrest and federal response,True
+neutral,streams,27,0.006414587597866559,16,166.0,0.006474511486407426,Trump and Greenland politics,True
+neutral,streams,66,0.006236506047804246,16,98.0,0.0038223019618549865,Todd Blanche Attorney General Confirmation,True
+neutral,streams,82,0.0059977329504650005,16,259.0,0.01010179804204532,Wildfires and Firefighters Response,False
+neutral,streams,152,0.005771494715327649,16,159.0,0.006201489917703498,LaGuardia Plane Crash Investigation,False
+neutral,streams,8,0.005601035753981968,16,55.0,0.0021451694683880026,Epstein Files Political Connections,True
+neutral,streams,26,0.005413637837917231,16,142.0,0.005538437536565389,White House Correspondents Dinner Shooting,True
+neutral,streams,45,0.005411943082701553,16,62.0,0.0024181910370919303,Kristi Noem Firing by Trump,True
+neutral,streams,190,0.0054072996057456515,16,73.0,0.0028472249307695307,Markwayne Mullin DHS confirmation hearing,True
+neutral,streams,193,0.005206953642384106,16,5.0,0.00019501540621709115,DSA and Democratic Party Conflict,True
+neutral,streams,164,0.005135860577125175,16,131.0,0.005109403642887788,Winter Storm Impact on US,False
+neutral,streams,10,0.005070408637078773,16,100.0,0.003900308124341823,Zohran Mamdani and NYC Politics,True
+neutral,streams,106,0.005,16,4.0,0.00015601232497367291,Hasan Piker and Political Smear Campaigns,True
+neutral,streams,122,0.004910854623184509,16,108.0,0.004212332774289168,King Charles III and Trump interactions,True
+neutral,streams,56,0.004881130698733506,16,40.0,0.0015601232497367292,Nancy Guthrie Disappearance Investigation,False
+neutral,streams,186,0.004640039482251302,16,95.0,0.0037052927181247318,Treasury Secretary Scott Bessent testifies,True
+neutral,streams,213,0.004561587484695284,16,98.0,0.0038223019618549865,San Diego Mosque Shooting,True
+neutral,streams,232,0.004426429689581199,16,78.0,0.003042240336986622,Political Conferences and Festivals 2026,True
+neutral,streams,17,0.00434085399030412,16,15.0,0.0005850462186512735,2026 Midterm Election Predictions,True
+neutral,streams,28,0.0041651090732091715,16,172.0,0.0067085299738679355,UK PM Keir Starmer Resignation Calls,True
+neutral,streams,73,0.004163907284768212,16,5.0,0.00019501540621709115,Left Wing Political Violence,True
+neutral,streams,179,0.004075997384997466,16,131.0,0.005109403642887788,Trump feud with Pope Leo,True
+neutral,streams,124,0.004044328592988699,16,85.0,0.0033152619056905494,JD Vance and Iran negotiations,True
+neutral,streams,216,0.004003264969918348,16,74.0,0.002886228012012949,Tupac Murder Trial,True
+neutral,streams,126,0.003973104750626853,16,10.0,0.0003900308124341823,Erika Kirk Controversy,True
+neutral,streams,140,0.003933057976470373,16,20.0,0.0007800616248683646,Crypto and Politics Scandal,True
+neutral,streams,225,0.003823343256517218,16,225.0,0.008775693279769101,Nepal Floods and Rescue Efforts,False
+neutral,streams,68,0.003792622821622945,16,59.0,0.0023011817933616756,9/11 Remembered 25 Years Later,True
+neutral,streams,9,0.0036614219768851333,16,152.0,0.005928468348999571,AI and Political Concerns,True
+neutral,streams,52,0.003634616389414335,16,26.0,0.001014080112328874,Fauci Senate Testimony Controversy,True
+neutral,streams,30,0.003626817441392549,16,72.0,0.0028082218495261127,Pam Bondi and Epstein Files Scandal,True
+neutral,streams,29,0.0036234343383220497,16,49.0,0.0019111509809274932,Cuba-US Political Tensions,True
+neutral,streams,138,0.003595116530841491,16,172.0,0.0067085299738679355,Venezuela Earthquake Disaster,False
+neutral,streams,5,0.0034484805691111656,16,47.0,0.001833144818440657,Trump Supreme Court Legal Issues,True
+neutral,streams,174,0.003356054350995177,16,36.0,0.0014041109247630564,Knicks NBA Finals and Trump controversies,True
+neutral,streams,97,0.003332604346389368,16,35.0,0.001365107843519638,Healthcare Affordability and Policy,True
+neutral,streams,222,0.003330849181232015,16,8.0,0.00031202464994734583,Political Podcasts and Influencers,True
+neutral,streams,12,0.003322707747443613,16,112.0,0.004368345099262842,Canada-US Political Tensions,True
+neutral,streams,121,0.0030411518383250805,16,44.0,0.001716135574710402,Rev Jesse Jackson and Civil Rights Legacy,True
+neutral,streams,47,0.0029806209356098346,16,37.0,0.0014431140060064745,UFO Government Disclosure,True
+neutral,streams,143,0.002826867975882016,16,38.0,0.0014821170872498927,RFK Jr. testifies on HHS and Senate,True
+neutral,streams,78,0.002791637656109132,16,43.0,0.0016771324934669839,Covid Vaccine Controversy,True
+neutral,streams,19,0.0027885909257940695,16,41.0,0.0015991263309801473,America's 250th Anniversary and Founding History,True
+neutral,streams,98,0.002784518811000917,16,7.0,0.0002730215687039276,JLP Weekly Series,False
+neutral,streams,177,0.0027643585614600106,16,4.0,0.00015601232497367291,Alex Jones and InfoWars political controversy,True
+neutral,streams,37,0.0027301310429266776,16,33.0,0.0012871016810328017,Islam and Political Discourse,True
+neutral,streams,95,0.0026850539384891685,16,38.0,0.0014821170872498927,Tech Business and Startups,False
+neutral,streams,57,0.0026797296998991504,16,39.0,0.001521120168493311,Supreme Court and Birthright Citizenship,True
+neutral,streams,130,0.002652312679769197,16,58.0,0.0022621787121182573,Hillary Clinton Epstein Testimony,True
+neutral,streams,77,0.002621292830405989,16,6.0,0.00023401848746050938,Socialism and Democratic Party Conflict,True
+neutral,streams,192,0.002620130660194044,16,86.0,0.0033542649869339677,Christmas and Trump,True
+neutral,streams,65,0.0025973492794595767,16,59.0,0.0023011817933616756,Climate and Weather Politics,True
+neutral,streams,223,0.0025942075634055426,16,80.0,0.0031202464994734584,Yearly Predictions and Reviews,False
+neutral,streams,60,0.00255738423310245,16,38.0,0.0014821170872498927,Trump's War and Draft,True
+neutral,streams,229,0.002541305409945321,16,305.0,0.01189593977924256,US-Iran Peace Talks in Pakistan,True
+neutral,streams,169,0.0025310138915582607,16,27.0,0.001053083193572292,Rob Reiner murder and political backlash,True
+neutral,streams,134,0.002375963828670623,16,6.0,0.00023401848746050938,Piers Morgan and Guests on Political Topics,True
+neutral,streams,155,0.002335606564648481,16,4.0,0.00015601232497367291,Ben Shapiro and Political Commentary,True
+neutral,streams,41,0.0022639208443200327,16,21.0,0.0008190647061117829,Big Pharma and Health Scams,True
+neutral,streams,231,0.002220822879327646,16,7.0,0.0002730215687039276,College Sports and NIL Controversies,False
+neutral,streams,33,0.0022187775412735346,16,61.0,0.002379187955848512,Elon Musk and Political Influence,True
+neutral,streams,158,0.0022054751582822165,16,281.0,0.010959865829400523,India's Muslims and Political Parties,True
+neutral,streams,93,0.0021890858694841816,16,57.0,0.0022231756308748393,Olympics and Team USA Politics,True
+neutral,streams,188,0.0021889977883799245,16,48.0,0.001872147899684075,NYC Terror Plot Exposures,True
+neutral,streams,146,0.00218706619251748,16,219.0,0.008541674792308593,Sudan Civil War and Africa Politics,True
+neutral,streams,180,0.0021838890045225295,16,42.0,0.0016381294122235657,Trump and American Farmers,True
+neutral,streams,87,0.002155615853848502,16,30.0,0.001170092437302547,California fraud investigation,True
+neutral,streams,81,0.0021386722264801097,16,53.0,0.0020671633059011663,Karoline Leavitt White House Press Briefing,True
+neutral,streams,67,0.0021384204192667388,16,19.0,0.0007410585436249463,Trump's Economic Impact,True
+neutral,streams,218,0.002090624412501905,16,22.0,0.000858067787355201,Epstein Files and Trump DOJ,True
+neutral,streams,96,0.002076690334107799,16,64.0,0.0024961971995787666,Supreme Court and Trump Tariffs,True
+neutral,streams,173,0.0020727082916657414,16,62.0,0.0024181910370919303,Hantavirus outbreak on cruise ship,False
+neutral,streams,156,0.0020121829267819454,16,28.0,0.0010920862748157105,Kamala Harris 2028 Election Speculation,True
+neutral,streams,42,0.0019648806755047715,16,44.0,0.001716135574710402,War and Military Analysis,True
+neutral,streams,168,0.0018810611086797122,16,46.0,0.0017941417371972385,Spirit Airlines shutdown and airline industry impact,False
+neutral,streams,205,0.0018658948110653621,16,3.0,0.00011700924373025469,Nick Fuentes and Political Controversies,True
+neutral,streams,206,0.0018414127409631215,16,15.0,0.0005850462186512735,FBI and Jan 6 Pipe Bomb Case,True
+neutral,streams,89,0.0018094989789426445,16,57.0,0.0022231756308748393,Kash Patel and FBI Controversies,True
+neutral,streams,101,0.0017704182020001783,16,30.0,0.001170092437302547,Trump UFC White House Event,True
+neutral,streams,176,0.0017650899660256324,16,13.0,0.000507040056164437,Trump inflation crisis,True
+neutral,streams,110,0.0017520865857833241,16,18.0,0.0007020554623815282,Tim Walz and Minnesota Fraud Scandal,True
+neutral,streams,39,0.0016776655902164483,16,64.0,0.0024961971995787666,Trump and Rising Energy Prices,True
+neutral,streams,153,0.0016744281828352113,16,7.0,0.0002730215687039276,Members Only Show,True
+neutral,streams,215,0.0016615602806166637,16,4.0,0.00015601232497367291,Dan Bongino's Political Outbursts,True
+neutral,streams,183,0.001638681253119317,16,4.0,0.00015601232497367291,Joe Kent Resignation and Iran War Scandal,True
+neutral,streams,199,0.001567975777708344,16,163.0,0.006357502242677172,Iran War and Energy Market Impact,True
+neutral,streams,58,0.001554688177917072,16,14.0,0.0005460431374078552,Somali fraud scandal in Minnesota,True
+neutral,streams,43,0.0015511355907291715,16,24.0,0.0009360739498420375,Trump slush fund scandal,True
+neutral,streams,170,0.001544661725082109,16,89.0,0.0034712742306642224,Bondi Beach Terror Attack,True
+neutral,streams,208,0.0015238356660309098,16,19.0,0.0007410585436249463,Comey Indictment by DOJ,True
+neutral,streams,136,0.0014986367571202788,16,6.0,0.00023401848746050938,Trump Midterm Election Rigging,True
+neutral,streams,161,0.001456243824971966,16,17.0,0.0006630523811381099,Tulsi Gabbard Resignation and Controversies,True
+neutral,streams,117,0.0014117061051850254,16,29.0,0.0011310893560591286,SAVE Act and Senate Debate,True
+neutral,streams,163,0.001387689952839295,16,4.0,0.00015601232497367291,Trump's Mental Health Decline,True
+neutral,streams,233,0.0013839733941429474,16,6.0,0.00023401848746050938,MMA and Combat Sports,False
+neutral,streams,160,0.0013597078688207325,16,72.0,0.0028082218495261127,Ceuta Migration Crisis,True
+neutral,streams,171,0.0013234997321733696,16,11.0,0.0004290338936776005,Andrew Tate Arrest and Legal Issues,True
+neutral,streams,55,0.0013166279169192496,16,66.0,0.0025742033620656034,UK politics and Reform UK,True
+neutral,streams,103,0.0013148015290257433,16,6.0,0.00023401848746050938,Hunter Biden and Joe Biden controversies,True
+neutral,streams,149,0.0013140182410352837,16,37.0,0.0014431140060064745,Mexico Cartel Violence,True
+neutral,streams,59,0.0013100090483987154,16,18.0,0.0007020554623815282,Iran Conflict and Political Updates,True
+neutral,streams,21,0.0012658072441633483,16,41.0,0.0015991263309801473,Trump and Epstein Files Scandal,True
+neutral,streams,147,0.0012447595905816266,16,4.0,0.00015601232497367291,SPLC Indictment and Hate Groups,True
+neutral,streams,182,0.001214102195894275,16,30.0,0.001170092437302547,MAGA backlash over Iran war,True
+neutral,streams,142,0.00117287222403119,16,14.0,0.0005460431374078552,Transgender Athletes in Women's Sports,True
+neutral,streams,61,0.0011693709736916894,16,5.0,0.00019501540621709115,Gavin Newsom Political Controversies,True
+neutral,streams,197,0.0011411516896980291,16,12.0,0.00046803697492101877,Marijuana Policy and Politics,True
+neutral,streams,139,0.0010869565217391304,16,2.0,7.800616248683646e-05,Bill Maher Political Commentary,True
+neutral,streams,83,0.0010238423256642144,16,9.0,0.0003510277311907641,AI Data Centers and Political Debate,True
+neutral,streams,207,0.0010100038304880956,16,9.0,0.0003510277311907641,Jack Smith Testifies on Trump Investigations,True
+neutral,streams,166,0.0009615763956445797,16,5.0,0.00019501540621709115,Thomas Massie political defeat,True
+neutral,streams,72,0.0009603993365778073,16,68.0,0.0026522095245524397,Trump and FIFA World Cup controversy,True
+neutral,streams,76,0.000957099712691306,16,11.0,0.0004290338936776005,Nolan Wells Investigation,False
+neutral,streams,119,0.0009343351692616926,16,46.0,0.0017941417371972385,UK Prime Minister Andy Burnham,True
+neutral,streams,70,0.0009130131766528252,16,15.0,0.0005850462186512735,Karmelo Anthony Trial Verdict,True
+neutral,streams,102,0.0009057971014492754,16,1.0,3.900308124341823e-05,Political Media Figures,True
+neutral,streams,25,0.0009029261572399345,16,49.0,0.0019111509809274932,Immigration and Deportation Policies,True
+neutral,streams,108,0.0008969081042536789,16,16.0,0.0006240492998946917,Trump Reflecting Pool Scandal,True
+neutral,streams,209,0.00084383347352297,16,35.0,0.001365107843519638,Social Media and Teen Addiction Lawsuits,True
+neutral,streams,162,0.000802701031275986,16,8.0,0.00031202464994734583,Eric Swalwell Allegations and Resignation,True
+neutral,streams,116,0.0007851512296890085,16,5.0,0.00019501540621709115,TikTok Censorship and Politics,True
+neutral,streams,46,0.0007643594798553425,16,4.0,0.00015601232497367291,MAGA Movement Decline,True
+neutral,streams,212,0.0007558332213626656,16,7.0,0.0002730215687039276,Melania Trump and Epstein Scandal,True
+neutral,streams,16,0.000755401405105738,16,14.0,0.0005460431374078552,California Election Fraud Scandal,True
+neutral,streams,200,0.0007536307343101105,16,20.0,0.0007800616248683646,Prince Andrew Epstein Arrest,True
+neutral,streams,50,0.000738828776807616,16,11.0,0.0004290338936776005,Texas Senate race and political figures,True
+neutral,streams,63,0.000736028848474271,16,7.0,0.0002730215687039276,Don Lemon Arrested,True
+neutral,streams,159,0.0007357032577418448,16,26.0,0.001014080112328874,No Kings Protests Movement,True
+neutral,streams,187,0.0007246024373287141,16,6.0,0.00023401848746050938,Comedy and Cultural Debate,True
+neutral,streams,85,0.0006992426871818883,16,12.0,0.00046803697492101877,Political Media and Trump Controversies,True
+neutral,streams,94,0.0006862583172414037,16,25.0,0.0009750770310854558,Abdul El-Sayed Senate Primary Victory,True
+neutral,streams,129,0.0006771660023938974,16,4.0,0.00015601232497367291,Megyn Kelly and Political Media,True
+neutral,streams,36,0.0006740717220479941,16,20.0,0.0007800616248683646,JD Vance and Trump Political Conflict,True
+neutral,streams,137,0.000667240637107189,16,2.0,7.800616248683646e-05,Mitch McConnell Health Rumors,True
+neutral,streams,69,0.0006609875748429151,16,10.0,0.0003900308124341823,Virginia redistricting and gerrymandering,True
+neutral,streams,145,0.0006356129399158791,16,18.0,0.0007020554623815282,Trump Ballroom Construction Controversy,True
+neutral,streams,221,0.0006181536796413568,16,16.0,0.0006240492998946917,Dolly Parton Tribute and Legacy,False
+neutral,streams,165,0.0006049528397898359,16,10.0,0.0003900308124341823,Alex Pretti Shooting and Federal Agents,True
+neutral,streams,230,0.0005746037588775333,16,2.0,7.800616248683646e-05,Marjorie Taylor Greene Exposes Trump,True
+neutral,streams,34,0.0005434782608695652,16,1.0,3.900308124341823e-05,Fox News and Trump on Air Conflicts,True
+neutral,streams,92,0.0005434782608695652,16,1.0,3.900308124341823e-05,Joe Rogan and Trump Political Discussions,True
+neutral,streams,128,0.0005385780809012591,16,12.0,0.00046803697492101877,Gen Z and Boomers Political Apathy,True
+neutral,streams,235,0.00045842226111211565,16,8.0,0.00031202464994734583,Kennedy Center and Trump Name Removal,True
+neutral,streams,111,0.00044917711328405644,16,35.0,0.001365107843519638,HasanAbi 2026 Schedule,False
+neutral,streams,84,0.00043724032588904864,16,15.0,0.0005850462186512735,Ilhan Omar Criminal Investigation,True
+neutral,streams,217,0.0004347986496707189,16,5.0,0.00019501540621709115,Trump's Unwise Actions and Mistakes,True
+neutral,streams,99,0.00042267174018184995,16,6.0,0.00023401848746050938,Abortion and Pregnancy Policies,True
+neutral,streams,196,0.00040909613833034486,16,28.0,0.0010920862748157105,Belfast riots and anti-migrant unrest,True
+neutral,streams,150,0.00040626233979784086,16,5.0,0.00019501540621709115,Super Bowl Halftime Show Controversy,True
+neutral,streams,22,0.0003418996369734902,16,8.0,0.00031202464994734583,Christian Nationalism and Politics,True
+neutral,streams,100,0.0003386305474871486,16,9.0,0.0003510277311907641,Media and Journalism Critique,True
+neutral,streams,13,0.0003307160186217297,16,2.0,7.800616248683646e-05,Modern Women and Feminism Debate,True
+neutral,streams,141,0.0002867260434290827,16,7.0,0.0002730215687039276,Homelessness and Socialist Mayors in US Cities,True
+neutral,streams,132,0.00027513292192454976,16,9.0,0.0003510277311907641,Political Podcasts and Commentary,True
+neutral,streams,131,0.0002645377264979458,16,15.0,0.0005850462186512735,UK Political Chaos and Government Issues,True
+neutral,streams,202,0.00024167296881944328,16,4.0,0.00015601232497367291,Save American Democracy,True
+neutral,streams,79,0.00021391743068494161,16,2.0,7.800616248683646e-05,Brian Shapiro vs MAGA Callers Debate,True
+neutral,streams,90,0.00021391743068494161,16,2.0,7.800616248683646e-05,Marc Lamont Hill and Joe Budden Podcast Controversy,True
+neutral,streams,105,0.00020695364238410596,16,1.0,3.900308124341823e-05,Spencer Pratt LA Mayoral Campaign,True
+neutral,streams,220,0.00017912608382142766,16,10.0,0.0003900308124341823,British Islamophobia and Political Tensions,True
+neutral,streams,178,0.00016983695652173913,16,1.0,3.900308124341823e-05,CNN and Political Conflict,True
+neutral,streams,133,0.00014623955431754875,16,21.0,0.0008190647061117829,Gold and Central Banks in Economy,True
+neutral,streams,114,0.00013768995283929507,16,3.0,0.00011700924373025469,Education and Schools in Political Context,True
+neutral,streams,62,0.00012485011407083695,16,8.0,0.00031202464994734583,Trump Resignation and Leaks,True
+neutral,streams,211,0.0001059322033898305,16,1.0,3.900308124341823e-05,Alex Jones and Katie Phang Updates,True
+neutral,streams,127,0.00010435720944369385,16,13.0,0.000507040056164437,Melania Trump Conspiracy Theories,True
+neutral,streams,125,0.00010149568597420382,16,10.0,0.0003900308124341823,Walmart Shoplifting and Police Incidents,False
+neutral,streams,234,9.697032245127357e-05,16,5.0,0.00019501540621709115,Antifa and Political Violence,True
+neutral,streams,210,9.367257668540105e-05,16,3.0,0.00011700924373025469,U.S. and World Headlines,True
+neutral,streams,184,6.59444395121464e-05,16,6.0,0.00023401848746050938,Housing Policy and Politics,True
+neutral,streams,113,6.504022898941056e-05,16,5.0,0.00019501540621709115,Trump's Health Concerns,True
+neutral,streams,24,5.5710306406685235e-05,16,8.0,0.00031202464994734583,Trump Meltdowns and Collapses,True
+neutral,streams,112,5.4300608166811465e-05,16,1.0,3.900308124341823e-05,WNBA and Sophie Cunningham controversy,True
+neutral,streams,191,5.4300608166811465e-05,16,1.0,3.900308124341823e-05,Political Commentary and Interviews,True
+neutral,streams,228,5.4300608166811465e-05,16,1.0,3.900308124341823e-05,Political media responses and announcements,True
+neutral,streams,227,4.864690303700862e-05,16,5.0,0.00019501540621709115,Fast Food and Political Issues,True
+neutral,streams,123,2.0891364902506964e-05,16,3.0,0.00011700924373025469,Wealth Tax and Billionaires,True
+neutral,streams,195,2.0891364902506964e-05,16,3.0,0.00011700924373025469,Trump and Natalie Harp Connection,True
+neutral,streams,80,1.3927576601671309e-05,16,2.0,7.800616248683646e-05,Black Voting Rights and Political Representation,True
+neutral,streams,109,1.3927576601671309e-05,16,2.0,7.800616248683646e-05,FBA and African Refugee Issues,True
+neutral,streams,49,6.963788300835654e-06,16,1.0,3.900308124341823e-05,Race and Politics in Media,True
+neutral,streams,135,6.963788300835654e-06,16,1.0,3.900308124341823e-05,Political War Room and Figures,True
+neutral,streams,204,6.963788300835654e-06,16,1.0,3.900308124341823e-05,Political Talk Show Drama,True
+neutral,streams,214,6.963788300835654e-06,16,1.0,3.900308124341823e-05,John Fetterman and Democratic Party Issues,True
+neutral,streams,226,6.963788300835654e-06,16,1.0,3.900308124341823e-05,Trump Approval Ratings Hit Lows,True
+neutral,streams,64,0.0,16,0.0,0.0,Transgender Rights and Politics,True
+neutral,streams,104,0.0,16,0.0,0.0,MAGA Supporters and Arguments,True
+neutral,streams,107,0.0,16,0.0,0.0,AOC on the World Stage,True
+neutral,streams,144,0.0,16,0.0,0.0,Myron's Critique of Modern Dating and Feminism,True
+neutral,streams,167,0.0,16,0.0,0.0,Stephen Miller and Trump Scandal,True
+neutral,streams,175,0.0,16,0.0,0.0,Asmongold controversy and bans,False
+neutral,streams,181,0.0,16,0.0,0.0,Bari Weiss and CBS News Controversy,True
+neutral,streams,189,0.0,16,0.0,0.0,Trump Leverage and Political Strategy,True
+neutral,streams,198,0.0,16,0.0,0.0,Woke Culture and Political Discourse,True
+neutral,streams,201,0.0,16,0.0,0.0,Glenn Beck Political Commentary,True
+neutral,videos,0,0.0687119899618406,38,10223.0,0.10316363085927645,Iran War and Strait of Hormuz Tensions,True
+neutral,videos,2,0.043940264682220266,38,1543.0,0.015570916797012967,Israel-Palestine Conflict Media,True
+neutral,videos,95,0.03752329124011785,38,1307.0,0.013189363741863868,Tech Business and Startups,False
+neutral,videos,9,0.0327707063775839,38,2128.0,0.02147434280236137,AI and Political Concerns,True
+neutral,videos,6,0.031885855208640644,38,2433.0,0.024552197386346435,Trump and China political relations,True
+neutral,videos,102,0.030837478919714622,38,227.0,0.002290731116605278,Political Media Figures,True
+neutral,videos,4,0.02816951066033027,38,5366.0,0.0541500580251274,Ukraine-Russia War and Political Figures,True
+neutral,videos,11,0.01808644106149557,38,800.0,0.008073061203895253,Hollywood and Oscars Politics,True
+neutral,videos,54,0.014587749040558087,38,123.0,0.001241233160098895,Destiny and Ethan Klein debates,False
+neutral,videos,1,0.012636923703642021,38,129.0,0.0013017811191281094,Shocking Events and Reactions,True
+neutral,videos,140,0.011856676224761449,38,999.0,0.010081235178364196,Crypto and Politics Scandal,True
+neutral,videos,42,0.011742570758240346,38,506.0,0.005106211211463747,War and Military Analysis,True
+neutral,videos,199,0.010816798641285444,38,1770.0,0.017861647913618245,Iran War and Energy Market Impact,True
+neutral,videos,7,0.010699897696060025,38,1463.0,0.014763610676623443,Trump vs Maduro Venezuela Conflict,True
+neutral,videos,139,0.010033996096244857,38,129.0,0.0013017811191281094,Bill Maher Political Commentary,True
+neutral,videos,20,0.009903743697142637,38,4042.0,0.040789141732680764,Indian Politics and Parliament,True
+neutral,videos,98,0.009517913361220591,38,174.0,0.0017558908118472172,JLP Weekly Series,False
+neutral,videos,39,0.00921562732955775,38,1012.0,0.010212422422927494,Trump and Rising Energy Prices,True
+neutral,videos,8,0.00897167086678001,38,411.0,0.0041475351935011855,Epstein Files Political Connections,True
+neutral,videos,31,0.008801519758568816,38,185.0,0.0018668954034007771,Candace Owens and Erika Kirk Controversy,True
+neutral,videos,191,0.008776550793293538,38,110.0,0.0011100459155355972,Political Commentary and Interviews,True
+neutral,videos,19,0.00854298688793539,38,407.0,0.00410716988748171,America's 250th Anniversary and Founding History,True
+neutral,videos,3,0.008349292562789308,38,1157.0,0.011675664766133508,ICE Protests and Shootings,True
+neutral,videos,38,0.008270188744917048,38,1170.0,0.011806852010696806,Israel-Lebanon Conflict and Ceasefire Talks,True
+neutral,videos,13,0.007771467463777015,38,138.0,0.0013926030576719309,Modern Women and Feminism Debate,True
+neutral,videos,22,0.0077521184490086355,38,137.0,0.001382511731167062,Christian Nationalism and Politics,True
+neutral,videos,115,0.006934204950201549,38,2545.0,0.02568242595489177,PM Modi and BRICS Diplomacy,True
+neutral,videos,86,0.006844533150904075,38,155.0,0.001564155608254705,Sneako and Political Interviews,True
+neutral,videos,134,0.00663413387865193,38,91.0,0.0009183107119430849,Piers Morgan and Guests on Political Topics,True
+neutral,videos,41,0.006625062594592583,38,499.0,0.005035571925929664,Big Pharma and Health Scams,True
+neutral,videos,222,0.006556043983755209,38,136.0,0.001372420404662193,Political Podcasts and Influencers,True
+neutral,videos,126,0.006439946368246657,38,132.0,0.0013320550986427166,Erika Kirk Controversy,True
+neutral,videos,82,0.006312428166157622,38,1248.0,0.012593975478076593,Wildfires and Firefighters Response,False
+neutral,videos,48,0.006249026234782283,38,62.0,0.000625662243301882,Hasanabi Reacts to Hasan,True
+neutral,videos,23,0.0061946990925626135,38,105.0,0.001059589283011252,Tucker Carlson Political Commentary,True
+neutral,videos,17,0.006098087344588523,38,349.0,0.003521872950199304,2026 Midterm Election Predictions,True
+neutral,videos,33,0.006074922819950385,38,585.0,0.005903426005348403,Elon Musk and Political Influence,True
+neutral,videos,27,0.005888174736718023,38,929.0,0.009374842323023361,Trump and Greenland politics,True
+neutral,videos,100,0.005887858532243502,38,324.0,0.003269589787577577,Media and Journalism Critique,True
+neutral,videos,231,0.0058868458467988705,38,437.0,0.004409909682627782,College Sports and NIL Controversies,False
+neutral,videos,206,0.005781230835937216,38,587.0,0.005923608658358141,FBI and Jan 6 Pipe Bomb Case,True
+neutral,videos,18,0.005780432424168893,38,990.0,0.009990413239820374,Lindsay Clancy Murder Trial,False
+neutral,videos,72,0.005730761312564503,38,874.0,0.008819819365255563,Trump and FIFA World Cup controversy,True
+neutral,videos,56,0.005526198395770884,38,1305.0,0.01316918108885413,Nancy Guthrie Disappearance Investigation,False
+neutral,videos,68,0.005448776570057388,38,396.0,0.0039961652959281495,9/11 Remembered 25 Years Later,True
+neutral,videos,47,0.005442415840231479,38,543.0,0.005479590292143902,UFO Government Disclosure,True
+neutral,videos,15,0.005391127269047089,38,233.0,0.002351279075634492,Charlie Kirk murder trial,True
+neutral,videos,227,0.0053087328975584035,38,321.0,0.00323931580806297,Fast Food and Political Issues,True
+neutral,videos,83,0.005211426159797618,38,264.0,0.002664110197285433,AI Data Centers and Political Debate,True
+neutral,videos,32,0.00511259612861635,38,892.0,0.009001463242343206,Artemis II Moon Mission Updates,False
+neutral,videos,91,0.004938612497135553,38,952.0,0.00960694283263535,Trump and NATO Relations,True
+neutral,videos,65,0.004821024656203437,38,551.0,0.005560320904182855,Climate and Weather Politics,True
+neutral,videos,152,0.004818434591319907,38,976.0,0.009849134668752207,LaGuardia Plane Crash Investigation,False
+neutral,videos,204,0.004731728103044703,38,303.0,0.003057671930975327,Political Talk Show Drama,True
+neutral,videos,96,0.004695573020024904,38,673.0,0.006791462737776881,Supreme Court and Trump Tariffs,True
+neutral,videos,25,0.004665964915499757,38,502.0,0.005065845905444271,Immigration and Deportation Policies,True
+neutral,videos,146,0.004626709547145321,38,1036.0,0.010454614259044351,Sudan Civil War and Africa Politics,True
+neutral,videos,67,0.0045974813602062525,38,666.0,0.006720823452242797,Trump's Economic Impact,True
+neutral,videos,26,0.0045780264830880815,38,559.0,0.005641051516221808,White House Correspondents Dinner Shooting,True
+neutral,videos,174,0.004572359219552161,38,268.0,0.0027044755033049095,Knicks NBA Finals and Trump controversies,True
+neutral,videos,5,0.004433002878743141,38,447.0,0.004510822947676472,Trump Supreme Court Legal Issues,True
+neutral,videos,74,0.004421695478649575,38,596.0,0.006014430596901963,2026 US Primary Elections,True
+neutral,videos,225,0.004359328073093181,38,1056.0,0.010656440789141733,Nepal Floods and Rescue Efforts,False
+neutral,videos,171,0.004357988221017109,38,116.0,0.0011705938745648116,Andrew Tate Arrest and Legal Issues,True
+neutral,videos,217,0.004331896725836178,38,88.0,0.0008880367324284777,Trump's Unwise Actions and Mistakes,True
+neutral,videos,73,0.004325105990964502,38,88.0,0.0008880367324284777,Left Wing Political Violence,True
+neutral,videos,164,0.004324889703042996,38,1041.0,0.010505070891568697,Winter Storm Impact on US,False
+neutral,videos,155,0.0043236886425900576,38,79.0,0.0007972147938846561,Ben Shapiro and Political Commentary,True
+neutral,videos,78,0.004216735644194317,38,473.0,0.0047731974368030675,Covid Vaccine Controversy,True
+neutral,videos,75,0.004193026076658596,38,842.0,0.008496896917099752,Brown University Mass Shooting,False
+neutral,videos,132,0.004096408292355157,38,124.0,0.001251324486603764,Political Podcasts and Commentary,True
+neutral,videos,233,0.004064365082133191,38,97.0,0.0009788586709722994,MMA and Combat Sports,False
+neutral,videos,43,0.0040146136893274295,38,456.0,0.0046016448862202936,Trump slush fund scandal,True
+neutral,videos,209,0.00398514437064084,38,411.0,0.0041475351935011855,Social Media and Teen Addiction Lawsuits,True
+neutral,videos,223,0.0038939723053394077,38,299.0,0.0030173066249558505,Yearly Predictions and Reviews,False
+neutral,videos,187,0.0038498372414560115,38,114.0,0.0011504112215550734,Comedy and Cultural Debate,True
+neutral,videos,29,0.003846832247195467,38,554.0,0.005590594883697462,Cuba-US Political Tensions,True
+neutral,videos,87,0.0038410751826451674,38,229.0,0.0023109137696150158,California fraud investigation,True
+neutral,videos,125,0.0037895786836601077,38,438.0,0.00442000100913265,Walmart Shoplifting and Police Incidents,False
+neutral,videos,203,0.0037332337184164156,38,730.0,0.007366668348554418,Trump Iran War Briefings,True
+neutral,videos,154,0.0036625276749142257,38,858.0,0.008658358141177658,Anti-Trump Protests and Riots,True
+neutral,videos,49,0.0036185946638910525,38,102.0,0.0010293153034966445,Race and Politics in Media,True
+neutral,videos,97,0.0035907368314088335,38,296.0,0.002987032645441243,Healthcare Affordability and Policy,True
+neutral,videos,93,0.0035222631098579546,38,538.0,0.005429133659619557,Olympics and Team USA Politics,True
+neutral,videos,211,0.003479339808658023,38,917.0,0.009253746404964933,Alex Jones and Katie Phang Updates,True
+neutral,videos,138,0.003458379273522402,38,775.0,0.007820778041273525,Venezuela Earthquake Disaster,False
+neutral,videos,224,0.003450560557713367,38,648.0,0.006539179575155154,Political Media Broadcasters,True
+neutral,videos,158,0.0033179522394334005,38,1039.0,0.010484888238558959,India's Muslims and Political Parties,True
+neutral,videos,53,0.0032784460945989528,38,212.0,0.0021393612190322418,Graham Platner Senate Race Allegations,True
+neutral,videos,153,0.0032454053053322302,38,150.0,0.0015136989757303597,Members Only Show,True
+neutral,videos,123,0.003083330167288115,38,213.0,0.0021494525455371108,Wealth Tax and Billionaires,True
+neutral,videos,205,0.003027701461030052,38,41.0,0.00041374438669963164,Nick Fuentes and Political Controversies,True
+neutral,videos,118,0.0029905979780219818,38,675.0,0.006811645390786619,Federal Reserve Chair Kevin Warsh and Interest Rates,True
+neutral,videos,229,0.0029442679957586665,38,982.0,0.009909682627781422,US-Iran Peace Talks in Pakistan,True
+neutral,videos,188,0.0029401246668282997,38,364.0,0.0036732428477723395,NYC Terror Plot Exposures,True
+neutral,videos,116,0.0029243080413269354,38,161.0,0.0016247035672839194,TikTok Censorship and Politics,True
+neutral,videos,88,0.00290847036098933,38,608.0,0.006135526514960392,DHS Funding Shutdown Debate,True
+neutral,videos,12,0.002868373510121641,38,435.0,0.004389727029618044,Canada-US Political Tensions,True
+neutral,videos,173,0.0028473564902028797,38,465.0,0.004692466824764115,Hantavirus outbreak on cruise ship,False
+neutral,videos,60,0.002824936737616032,38,342.0,0.00345123366466522,Trump's War and Draft,True
+neutral,videos,106,0.0027693219059122137,38,51.0,0.0005146576517483223,Hasan Piker and Political Smear Campaigns,True
+neutral,videos,14,0.00276464929154331,38,477.0,0.004813562742822544,Pete Hegseth and Iran War,True
+neutral,videos,124,0.002752899607810208,38,353.0,0.00356223825621878,JD Vance and Iran negotiations,True
+neutral,videos,10,0.002747026440984382,38,312.0,0.003148493869519148,Zohran Mamdani and NYC Politics,True
+neutral,videos,128,0.002735638478338751,38,179.0,0.0018063474443715626,Gen Z and Boomers Political Apathy,True
+neutral,videos,46,0.002677883081876175,38,55.0,0.0005550229577677986,MAGA Movement Decline,True
+neutral,videos,176,0.0026712500753080836,38,700.0,0.007063928553408346,Trump inflation crisis,True
+neutral,videos,64,0.0026691885257275286,38,82.0,0.0008274887733992633,Transgender Rights and Politics,True
+neutral,videos,182,0.0026398872094892463,38,366.0,0.003693425500782078,MAGA backlash over Iran war,True
+neutral,videos,21,0.002630826463442604,38,152.0,0.001533881628740098,Trump and Epstein Files Scandal,True
+neutral,videos,59,0.0026267947968621644,38,417.0,0.0042080831525304,Iran Conflict and Political Updates,True
+neutral,videos,149,0.002624589734775943,38,391.0,0.003945708663403804,Mexico Cartel Violence,True
+neutral,videos,77,0.002587898491912273,38,101.0,0.0010192239769917755,Socialism and Democratic Party Conflict,True
+neutral,videos,51,0.002571833352200526,38,460.0,0.00464201019223977,Minneapolis political unrest and federal response,True
+neutral,videos,44,0.0025593902453123624,38,336.0,0.003390685705636006,Trump State of the Union Address,True
+neutral,videos,156,0.002527379831030382,38,197.0,0.0019879913214592058,Kamala Harris 2028 Election Speculation,True
+neutral,videos,35,0.0025252357228975355,38,309.0,0.003118219890004541,Lindsey Graham's Funeral and Legacy,True
+neutral,videos,37,0.0024497421556966153,38,93.0,0.000938493364952823,Islam and Political Discourse,True
+neutral,videos,168,0.002434216481185022,38,544.0,0.005489681618648772,Spirit Airlines shutdown and airline industry impact,False
+neutral,videos,145,0.0024337262759464486,38,189.0,0.0019072607094202533,Trump Ballroom Construction Controversy,True
+neutral,videos,99,0.00242624596541053,38,201.0,0.002028356627478682,Abortion and Pregnancy Policies,True
+neutral,videos,133,0.0023841687957794583,38,351.0,0.003542055603209042,Gold and Central Banks in Economy,True
+neutral,videos,71,0.002352042253932028,38,406.0,0.00409707856097684,Marco Rubio Testifies on Iran War,True
+neutral,videos,135,0.0022772867834718914,38,84.0,0.0008476714264090015,Political War Room and Figures,True
+neutral,videos,172,0.0021690422858459935,38,538.0,0.005429133659619557,G7 Summit and Macron-Trump Bilateral Meetings,True
+neutral,videos,122,0.002162491804648661,38,376.0,0.0037943387658307686,King Charles III and Trump interactions,True
+neutral,videos,50,0.0021561675204542913,38,260.0,0.0026237448912659568,Texas Senate race and political figures,True
+neutral,videos,197,0.002144401376241079,38,197.0,0.0019879913214592058,Marijuana Policy and Politics,True
+neutral,videos,193,0.0021370224377318127,38,43.0,0.0004339270397093698,DSA and Democratic Party Conflict,True
+neutral,videos,40,0.002092249526291154,38,318.0,0.003209041828548363,Trump's speeches and events,True
+neutral,videos,36,0.0020703343808635612,38,137.0,0.001382511731167062,JD Vance and Trump Political Conflict,True
+neutral,videos,148,0.0020662374701351798,38,546.0,0.00550986427165851,2026 World Cup,False
+neutral,videos,52,0.0020482608363227945,38,174.0,0.0017558908118472172,Fauci Senate Testimony Controversy,True
+neutral,videos,114,0.002033914424081342,38,303.0,0.003057671930975327,Education and Schools in Political Context,True
+neutral,videos,105,0.0020200168577103597,38,79.0,0.0007972147938846561,Spencer Pratt LA Mayoral Campaign,True
+neutral,videos,90,0.0019709336109246926,38,99.0,0.0009990413239820374,Marc Lamont Hill and Joe Budden Podcast Controversy,True
+neutral,videos,184,0.0019613913627538927,38,216.0,0.002179726525051718,Housing Policy and Politics,True
+neutral,videos,180,0.0019404780095760694,38,287.0,0.002896210706897422,Trump and American Farmers,True
+neutral,videos,169,0.0019389838517970789,38,198.0,0.0019980826479640747,Rob Reiner murder and political backlash,True
+neutral,videos,101,0.0019308290694529757,38,145.0,0.0014632423432060144,Trump UFC White House Event,True
+neutral,videos,28,0.0018839943700177163,38,401.0,0.004046621928452495,UK PM Keir Starmer Resignation Calls,True
+neutral,videos,179,0.0018394660405540873,38,318.0,0.003209041828548363,Trump feud with Pope Leo,True
+neutral,videos,127,0.0018228079757055843,38,109.0,0.001099954589030728,Melania Trump Conspiracy Theories,True
+neutral,videos,62,0.0018039627189661237,38,136.0,0.001372420404662193,Trump Resignation and Leaks,True
+neutral,videos,213,0.0017910731716732466,38,417.0,0.0042080831525304,San Diego Mosque Shooting,True
+neutral,videos,89,0.0017752667327228077,38,200.0,0.002018265300973813,Kash Patel and FBI Controversies,True
+neutral,videos,121,0.0017392927037958915,38,210.0,0.002119178566022504,Rev Jesse Jackson and Civil Rights Legacy,True
+neutral,videos,143,0.001734386471130994,38,92.0,0.000928402038447954,RFK Jr. testifies on HHS and Senate,True
+neutral,videos,103,0.0017285516111896775,38,117.0,0.0011806852010696805,Hunter Biden and Joe Biden controversies,True
+neutral,videos,24,0.0017164854008194256,38,79.0,0.0007972147938846561,Trump Meltdowns and Collapses,True
+neutral,videos,166,0.0016532233275895207,38,98.0,0.0009889499974771684,Thomas Massie political defeat,True
+neutral,videos,202,0.0016525847614607962,38,62.0,0.000625662243301882,Save American Democracy,True
+neutral,videos,16,0.0016484303249665571,38,251.0,0.0025329229527221355,California Election Fraud Scandal,True
+neutral,videos,94,0.0016272187255976123,38,132.0,0.0013320550986427166,Abdul El-Sayed Senate Primary Victory,True
+neutral,videos,218,0.0016006037672342934,38,269.0,0.0027145668298097785,Epstein Files and Trump DOJ,True
+neutral,videos,130,0.0015921120380943577,38,300.0,0.0030273979514607195,Hillary Clinton Epstein Testimony,True
+neutral,videos,160,0.0015840530835544763,38,296.0,0.002987032645441243,Ceuta Migration Crisis,True
+neutral,videos,61,0.0015813676056207488,38,81.0,0.0008173974468943943,Gavin Newsom Political Controversies,True
+neutral,videos,131,0.0015768815441032761,38,191.0,0.0019274433624299914,UK Political Chaos and Government Issues,True
+neutral,videos,30,0.0015768206640944765,38,196.0,0.0019778999949543368,Pam Bondi and Epstein Files Scandal,True
+neutral,videos,170,0.001540723194163617,38,247.0,0.002492557646702659,Bondi Beach Terror Attack,True
+neutral,videos,142,0.001524487028263105,38,183.0,0.001846712750391039,Transgender Athletes in Women's Sports,True
+neutral,videos,117,0.0014686599430279836,38,227.0,0.002290731116605278,SAVE Act and Senate Debate,True
+neutral,videos,221,0.0014627807939756442,38,205.0,0.0020687219334981585,Dolly Parton Tribute and Legacy,False
+neutral,videos,210,0.0014571879323245405,38,241.0,0.002432009687673445,U.S. and World Headlines,True
+neutral,videos,112,0.0014152061050739856,38,88.0,0.0008880367324284777,WNBA and Sophie Cunningham controversy,True
+neutral,videos,66,0.0014047223554689771,38,234.0,0.002361370402139361,Todd Blanche Attorney General Confirmation,True
+neutral,videos,69,0.0013820552961378665,38,219.0,0.002210000504566325,Virginia redistricting and gerrymandering,True
+neutral,videos,232,0.0013604250740311189,38,84.0,0.0008476714264090015,Political Conferences and Festivals 2026,True
+neutral,videos,200,0.0013460537242524953,38,209.0,0.0021090872395176344,Prince Andrew Epstein Arrest,True
+neutral,videos,104,0.001329847737771934,38,18.0,0.00018164387708764318,MAGA Supporters and Arguments,True
+neutral,videos,57,0.0013172450618946566,38,214.0,0.0021595438720419797,Supreme Court and Birthright Citizenship,True
+neutral,videos,216,0.0012906647986954019,38,254.0,0.0025631969322367425,Tupac Murder Trial,True
+neutral,videos,183,0.0012783304510950925,38,50.0,0.0005045663252434533,Joe Kent Resignation and Iran War Scandal,True
+neutral,videos,194,0.001275613437098018,38,305.0,0.003077854583985065,Medal of Honor Ceremonies,True
+neutral,videos,192,0.0012648762380346233,38,242.0,0.002442101014178314,Christmas and Trump,True
+neutral,videos,129,0.0012612361274247253,38,70.0,0.0007063928553408345,Megyn Kelly and Political Media,True
+neutral,videos,70,0.0012607414793932852,38,203.0,0.00204853928048842,Karmelo Anthony Trial Verdict,True
+neutral,videos,150,0.0011995628269692896,38,120.0,0.0012109591805842877,Super Bowl Halftime Show Controversy,True
+neutral,videos,196,0.0011930372518358413,38,142.0,0.0014329683636914072,Belfast riots and anti-migrant unrest,True
+neutral,videos,181,0.001192139599467503,38,119.0,0.0012008678540794187,Bari Weiss and CBS News Controversy,True
+neutral,videos,119,0.0011820352145368856,38,154.0,0.001554064281749836,UK Prime Minister Andy Burnham,True
+neutral,videos,55,0.0011627125712061004,38,165.0,0.0016650688733033958,UK politics and Reform UK,True
+neutral,videos,220,0.0011382094361662195,38,64.0,0.0006458448963116202,British Islamophobia and Political Tensions,True
+neutral,videos,165,0.0010670573599802916,38,140.0,0.001412785710681669,Alex Pretti Shooting and Federal Agents,True
+neutral,videos,185,0.0010452539429809606,38,15.0,0.00015136989757303596,Behind the scenes streaming,False
+neutral,videos,85,0.0010123791434042807,38,98.0,0.0009889499974771684,Political Media and Trump Controversies,True
+neutral,videos,92,0.0009952315013378303,38,39.0,0.0003935617336898935,Joe Rogan and Trump Political Discussions,True
+neutral,videos,162,0.0009740354599035084,38,133.0,0.0013421464251475855,Eric Swalwell Allegations and Resignation,True
+neutral,videos,141,0.0009689981348019851,38,120.0,0.0012109591805842877,Homelessness and Socialist Mayors in US Cities,True
+neutral,videos,79,0.0009215298982780591,38,32.0,0.0003229224481558101,Brian Shapiro vs MAGA Callers Debate,True
+neutral,videos,167,0.0009010043939358995,38,37.0,0.0003733790806801554,Stephen Miller and Trump Scandal,True
+neutral,videos,108,0.0008898251202952837,38,122.0,0.0012311418335940259,Trump Reflecting Pool Scandal,True
+neutral,videos,161,0.0008755441299800969,38,106.0,0.0010696806095161209,Tulsi Gabbard Resignation and Controversies,True
+neutral,videos,186,0.0008627388109892383,38,126.0,0.0012715071396135022,Treasury Secretary Scott Bessent testifies,True
+neutral,videos,235,0.0008561336126104605,38,144.0,0.0014531510167011454,Kennedy Center and Trump Name Removal,True
+neutral,videos,190,0.0008503288697441355,38,115.0,0.0011605025480599426,Markwayne Mullin DHS confirmation hearing,True
+neutral,videos,177,0.0008458189049536984,38,27.0,0.00027246581563146477,Alex Jones and InfoWars political controversy,True
+neutral,videos,136,0.0008440531957923138,38,127.0,0.0012815984661183712,Trump Midterm Election Rigging,True
+neutral,videos,226,0.000791880891905744,38,131.0,0.0013219637721378476,Trump Approval Ratings Hit Lows,True
+neutral,videos,198,0.0007758970697000684,38,29.0,0.0002926484686412029,Woke Culture and Political Discourse,True
+neutral,videos,214,0.0007600179025503772,38,56.0,0.0005651142842726676,John Fetterman and Democratic Party Issues,True
+neutral,videos,113,0.0007397470201899334,38,112.0,0.0011302285685453352,Trump's Health Concerns,True
+neutral,videos,234,0.0007328623833557223,38,65.0,0.0006559362228164892,Antifa and Political Violence,True
+neutral,videos,208,0.000732538374101438,38,114.0,0.0011504112215550734,Comey Indictment by DOJ,True
+neutral,videos,157,0.0007321164879667023,38,155.0,0.001564155608254705,Melania Trump Events and Participation,True
+neutral,videos,201,0.0007226430026913876,38,19.0,0.00019173520359251224,Glenn Beck Political Commentary,True
+neutral,videos,147,0.0007122743278276096,38,55.0,0.0005550229577677986,SPLC Indictment and Hate Groups,True
+neutral,videos,175,0.0007085407221160273,38,14.0,0.0001412785710681669,Asmongold controversy and bans,False
+neutral,videos,215,0.0007021132598836827,38,51.0,0.0005146576517483223,Dan Bongino's Political Outbursts,True
+neutral,videos,63,0.0006620404944647152,38,78.0,0.000787123467379787,Don Lemon Arrested,True
+neutral,videos,163,0.0006593227800191934,38,50.0,0.0005045663252434533,Trump's Mental Health Decline,True
+neutral,videos,34,0.0006546899533286753,38,33.0,0.00033301377466067914,Fox News and Trump on Air Conflicts,True
+neutral,videos,58,0.0006208759629782681,38,95.0,0.0009586760179625612,Somali fraud scandal in Minnesota,True
+neutral,videos,178,0.0006111092088586829,38,37.0,0.0003733790806801554,CNN and Political Conflict,True
+neutral,videos,230,0.0006031261557273116,38,46.0,0.000464201019223977,Marjorie Taylor Greene Exposes Trump,True
+neutral,videos,107,0.0005911788429666956,38,32.0,0.0003229224481558101,AOC on the World Stage,True
+neutral,videos,45,0.0005709248398980645,38,126.0,0.0012715071396135022,Kristi Noem Firing by Trump,True
+neutral,videos,207,0.0005662957286878558,38,73.0,0.0007366668348554418,Jack Smith Testifies on Trump Investigations,True
+neutral,videos,81,0.0004535667923989091,38,70.0,0.0007063928553408345,Karoline Leavitt White House Press Briefing,True
+neutral,videos,80,0.0004486139836700255,38,36.0,0.00036328775417528636,Black Voting Rights and Political Representation,True
+neutral,videos,76,0.0004412519425884443,38,108.0,0.001089863262525859,Nolan Wells Investigation,False
+neutral,videos,219,0.00044066552921089155,38,120.0,0.0012109591805842877,Trump signing executive orders,True
+neutral,videos,110,0.0004198416561310982,38,92.0,0.000928402038447954,Tim Walz and Minnesota Fraud Scandal,True
+neutral,videos,120,0.00041235428804880164,38,86.0,0.0008678540794187396,Hakeem Jeffries News Conferences,True
+neutral,videos,84,0.000397050613202213,38,50.0,0.0005045663252434533,Ilhan Omar Criminal Investigation,True
+neutral,videos,212,0.0003672020504825135,38,60.0,0.0006054795902921439,Melania Trump and Epstein Scandal,True
+neutral,videos,151,0.00036308319434182095,38,71.0,0.0007164841818457036,Vice President JD Vance Remarks,True
+neutral,videos,137,0.0003565232633796282,38,60.0,0.0006054795902921439,Mitch McConnell Health Rumors,True
+neutral,videos,111,0.0003303260161038482,38,46.0,0.000464201019223977,HasanAbi 2026 Schedule,False
+neutral,videos,159,0.00032262935604826965,38,55.0,0.0005550229577677986,No Kings Protests Movement,True
+neutral,videos,195,0.00021227379930825594,38,43.0,0.0004339270397093698,Trump and Natalie Harp Connection,True
+neutral,videos,144,8.449071712899039e-05,38,5.0,5.0456632524345326e-05,Myron's Critique of Modern Dating and Feminism,True
+neutral,videos,109,5.854516762063434e-05,38,17.0,0.00017155255058277412,FBA and African Refugee Issues,True
+neutral,videos,189,2.6307841395167034e-05,38,8.0,8.073061203895253e-05,Trump Leverage and Political Strategy,True
+neutral,videos,228,2.1231060533434768e-05,38,6.0,6.054795902921439e-05,Political media responses and announcements,True
+right,streams,59,0.06326766922984318,30,278.0,0.041240172081293575,Iran Conflict and Political Updates,True
+right,streams,0,0.041260537917193134,30,308.0,0.04569055036344756,Iran War and Strait of Hormuz Tensions,True
+right,streams,13,0.031257265527438814,30,108.0,0.01602136181575434,Modern Women and Feminism Debate,True
+right,streams,22,0.029677969190064175,30,183.0,0.027147307521139297,Christian Nationalism and Politics,True
+right,streams,40,0.028179218053680566,30,279.0,0.04138851802403204,Trump's speeches and events,True
+right,streams,12,0.02485890273198187,30,139.0,0.020620086040646787,Canada-US Political Tensions,True
+right,streams,98,0.02438222052874724,30,143.0,0.021213469811600653,JLP Weekly Series,False
+right,streams,49,0.020308770316063197,30,88.0,0.013054442960985017,Race and Politics in Media,True
+right,streams,3,0.018958968947638394,30,102.0,0.015131286159323543,ICE Protests and Shootings,True
+right,streams,18,0.017135435619690047,30,115.0,0.0170597834149236,Lindsay Clancy Murder Trial,False
+right,streams,5,0.01574183926400644,30,121.0,0.0179498590713544,Trump Supreme Court Legal Issues,True
+right,streams,15,0.015730120941376984,30,132.0,0.019581664441477527,Charlie Kirk murder trial,True
+right,streams,16,0.014707736791807313,30,133.0,0.01973001038421599,California Election Fraud Scandal,True
+right,streams,51,0.013399140951452306,30,55.0,0.008159026850615635,Minneapolis political unrest and federal response,True
+right,streams,227,0.011016844572559657,30,56.0,0.008307372793354102,Fast Food and Political Issues,True
+right,streams,222,0.010732086955299765,30,86.0,0.012757751075508085,Political Podcasts and Influencers,True
+right,streams,8,0.009971972300187962,30,35.0,0.005192107995846314,Epstein Files Political Connections,True
+right,streams,31,0.009553991445265596,30,46.0,0.0068239133659694405,Candace Owens and Erika Kirk Controversy,True
+right,streams,153,0.00936644274538081,30,56.0,0.008307372793354102,Members Only Show,True
+right,streams,105,0.008776775132004545,30,36.0,0.0053404539385847796,Spencer Pratt LA Mayoral Campaign,True
+right,streams,206,0.008730581828821743,30,63.0,0.009345794392523364,FBI and Jan 6 Pipe Bomb Case,True
+right,streams,10,0.008717608753560455,30,45.0,0.006675567423230975,Zohran Mamdani and NYC Politics,True
+right,streams,70,0.008199128292984328,30,39.0,0.005785491766800178,Karmelo Anthony Trial Verdict,True
+right,streams,17,0.008138868138557681,30,58.0,0.008604064678831035,2026 Midterm Election Predictions,True
+right,streams,224,0.008068551029716224,30,59.0,0.0087524106215695,Political Media Broadcasters,True
+right,streams,1,0.007765043272323607,30,37.0,0.005488799881323246,Shocking Events and Reactions,True
+right,streams,44,0.007113113814033444,30,51.0,0.0075656430796617715,Trump State of the Union Address,True
+right,streams,4,0.007089178524293653,30,36.0,0.0053404539385847796,Ukraine-Russia War and Political Figures,True
+right,streams,25,0.006973583552683433,30,51.0,0.0075656430796617715,Immigration and Deportation Policies,True
+right,streams,84,0.006848090734204034,30,28.0,0.004153686396677051,Ilhan Omar Criminal Investigation,True
+right,streams,23,0.006564344513669879,30,29.0,0.004302032339415517,Tucker Carlson Political Commentary,True
+right,streams,26,0.006539177004317329,30,38.0,0.005637145824061712,White House Correspondents Dinner Shooting,True
+right,streams,151,0.006519716962849551,30,69.0,0.010235870048954161,Vice President JD Vance Remarks,True
+right,streams,201,0.006475047384532374,30,27.0,0.004005340453938585,Glenn Beck Political Commentary,True
+right,streams,73,0.006418512874617615,30,35.0,0.005192107995846314,Left Wing Political Violence,True
+right,streams,52,0.006351698296680947,30,64.0,0.00949414033526183,Fauci Senate Testimony Controversy,True
+right,streams,204,0.006320816971014035,30,23.0,0.0034119566829847203,Political Talk Show Drama,True
+right,streams,37,0.00611096961940252,30,24.0,0.0035603026257231864,Islam and Political Discourse,True
+right,streams,100,0.0060810300460261675,30,35.0,0.005192107995846314,Media and Journalism Critique,True
+right,streams,71,0.005816192727788141,30,40.0,0.005933837709538644,Marco Rubio Testifies on Iran War,True
+right,streams,188,0.005696670094052442,30,34.0,0.005043762053107847,NYC Terror Plot Exposures,True
+right,streams,203,0.005546476812441989,30,66.0,0.009790832220738763,Trump Iran War Briefings,True
+right,streams,183,0.005314908150466507,30,20.0,0.002966918854769322,Joe Kent Resignation and Iran War Scandal,True
+right,streams,7,0.005239074253188245,30,37.0,0.005488799881323246,Trump vs Maduro Venezuela Conflict,True
+right,streams,57,0.005083022629514983,30,43.0,0.006378875537754043,Supreme Court and Birthright Citizenship,True
+right,streams,157,0.005051740671368211,30,60.0,0.008900756564307966,Melania Trump Events and Participation,True
+right,streams,30,0.004886212748286867,30,27.0,0.004005340453938585,Pam Bondi and Epstein Files Scandal,True
+right,streams,110,0.004845047183179218,30,28.0,0.004153686396677051,Tim Walz and Minnesota Fraud Scandal,True
+right,streams,154,0.00483517434567858,30,23.0,0.0034119566829847203,Anti-Trump Protests and Riots,True
+right,streams,232,0.004790505254459231,30,49.0,0.007268951194184839,Political Conferences and Festivals 2026,True
+right,streams,112,0.004782990050904549,30,29.0,0.004302032339415517,WNBA and Sophie Cunningham controversy,True
+right,streams,6,0.004667833928039172,30,73.0,0.010829253819908026,Trump and China political relations,True
+right,streams,130,0.004594388785547701,30,26.0,0.0038569945112001186,Hillary Clinton Epstein Testimony,True
+right,streams,132,0.004501636989683719,30,56.0,0.008307372793354102,Political Podcasts and Commentary,True
+right,streams,194,0.004428229733510223,30,52.0,0.007713989022400237,Medal of Honor Ceremonies,True
+right,streams,87,0.004386244012181392,30,39.0,0.005785491766800178,California fraud investigation,True
+right,streams,55,0.004383634224807373,30,24.0,0.0035603026257231864,UK politics and Reform UK,True
+right,streams,156,0.004328508765355954,30,19.0,0.002818572912030856,Kamala Harris 2028 Election Speculation,True
+right,streams,35,0.004311380839943378,30,34.0,0.005043762053107847,Lindsey Graham's Funeral and Legacy,True
+right,streams,76,0.004301964459635776,30,25.0,0.0037086485684616525,Nolan Wells Investigation,False
+right,streams,63,0.004265943574214307,30,23.0,0.0034119566829847203,Don Lemon Arrested,True
+right,streams,14,0.004179557354676646,30,37.0,0.005488799881323246,Pete Hegseth and Iran War,True
+right,streams,64,0.004166949725245117,30,23.0,0.0034119566829847203,Transgender Rights and Politics,True
+right,streams,109,0.004139433551198257,30,19.0,0.002818572912030856,FBA and African Refugee Issues,True
+right,streams,2,0.004136796472078436,30,37.0,0.005488799881323246,Israel-Palestine Conflict Media,True
+right,streams,172,0.004102819300444723,30,38.0,0.005637145824061712,G7 Summit and Macron-Trump Bilateral Meetings,True
+right,streams,33,0.004099292461818722,30,22.0,0.003263610740246254,Elon Musk and Political Influence,True
+right,streams,103,0.004098346306489755,30,32.0,0.004747070167630915,Hunter Biden and Joe Biden controversies,True
+right,streams,219,0.0040668659864671495,30,46.0,0.0068239133659694405,Trump signing executive orders,True
+right,streams,19,0.004052998186546716,30,50.0,0.007417297136923305,America's 250th Anniversary and Founding History,True
+right,streams,129,0.004022522327416082,30,17.0,0.0025218810265539237,Megyn Kelly and Political Media,True
+right,streams,28,0.004018135890884816,30,24.0,0.0035603026257231864,UK PM Keir Starmer Resignation Calls,True
+right,streams,85,0.0039523652736452464,30,14.0,0.0020768431983385254,Political Media and Trump Controversies,True
+right,streams,140,0.003936688436429971,30,13.0,0.0019284972556000593,Crypto and Politics Scandal,True
+right,streams,68,0.0039334051364211375,30,36.0,0.0053404539385847796,9/11 Remembered 25 Years Later,True
+right,streams,77,0.0038754522534278205,30,42.0,0.006230529595015576,Socialism and Democratic Party Conflict,True
+right,streams,185,0.003865650386991665,30,30.0,0.004450378282153983,Behind the scenes streaming,False
+right,streams,81,0.003844576078314394,30,35.0,0.005192107995846314,Karoline Leavitt White House Press Briefing,True
+right,streams,58,0.0038005293471067452,30,30.0,0.004450378282153983,Somali fraud scandal in Minnesota,True
+right,streams,192,0.003737699425542655,30,22.0,0.003263610740246254,Christmas and Trump,True
+right,streams,119,0.0037243947858473,30,20.0,0.002966918854769322,UK Prime Minister Andy Burnham,True
+right,streams,74,0.0036757825418126614,30,43.0,0.006378875537754043,2026 US Primary Elections,True
+right,streams,131,0.0036532484724915836,30,20.0,0.002966918854769322,UK Political Chaos and Government Issues,True
+right,streams,80,0.0036462388225395066,30,19.0,0.002818572912030856,Black Voting Rights and Political Representation,True
+right,streams,47,0.003641744332610507,30,26.0,0.0038569945112001186,UFO Government Disclosure,True
+right,streams,216,0.0036015255640109494,30,24.0,0.0035603026257231864,Tupac Murder Trial,True
+right,streams,69,0.0035978184655591516,30,38.0,0.005637145824061712,Virginia redistricting and gerrymandering,True
+right,streams,27,0.003545577858495591,30,17.0,0.0025218810265539237,Trump and Greenland politics,True
+right,streams,234,0.003541753191577522,30,18.0,0.0026702269692923898,Antifa and Political Violence,True
+right,streams,223,0.003537256115135675,30,11.0,0.001631805370123127,Yearly Predictions and Reviews,False
+right,streams,147,0.00343808562156479,30,20.0,0.002966918854769322,SPLC Indictment and Hate Groups,True
+right,streams,199,0.0034297451425163916,30,22.0,0.003263610740246254,Iran War and Energy Market Impact,True
+right,streams,125,0.003348949212251298,30,17.0,0.0025218810265539237,Walmart Shoplifting and Police Incidents,False
+right,streams,42,0.003308276229312233,30,36.0,0.0053404539385847796,War and Military Analysis,True
+right,streams,11,0.003305113183696534,30,24.0,0.0035603026257231864,Hollywood and Oscars Politics,True
+right,streams,162,0.0031872295498234617,30,27.0,0.004005340453938585,Eric Swalwell Allegations and Resignation,True
+right,streams,117,0.0031309140514129935,30,31.0,0.0045987242248924495,SAVE Act and Senate Debate,True
+right,streams,91,0.0031183532416577653,30,24.0,0.0035603026257231864,Trump and NATO Relations,True
+right,streams,78,0.0029570835810169968,30,31.0,0.0045987242248924495,Covid Vaccine Controversy,True
+right,streams,61,0.0029483882867341513,30,14.0,0.0020768431983385254,Gavin Newsom Political Controversies,True
+right,streams,62,0.002939328656802684,30,25.0,0.0037086485684616525,Trump Resignation and Leaks,True
+right,streams,208,0.0029126742078449995,30,35.0,0.005192107995846314,Comey Indictment by DOJ,True
+right,streams,99,0.0028919994859452143,30,15.0,0.0022251891410769915,Abortion and Pregnancy Policies,True
+right,streams,50,0.0028665479542087976,30,36.0,0.0053404539385847796,Texas Senate race and political figures,True
+right,streams,9,0.002765108887025857,30,21.0,0.003115264797507788,AI and Political Concerns,True
+right,streams,191,0.002733931621611926,30,25.0,0.0037086485684616525,Political Commentary and Interviews,True
+right,streams,92,0.0027297022734051398,30,14.0,0.0020768431983385254,Joe Rogan and Trump Political Discussions,True
+right,streams,187,0.0027127084318231335,30,12.0,0.0017801513128615932,Comedy and Cultural Debate,True
+right,streams,75,0.0026857623621070552,30,26.0,0.0038569945112001186,Brown University Mass Shooting,False
+right,streams,32,0.0026825629625049246,30,27.0,0.004005340453938585,Artemis II Moon Mission Updates,False
+right,streams,89,0.002665430561518539,30,11.0,0.001631805370123127,Kash Patel and FBI Controversies,True
+right,streams,143,0.002646470501558909,30,18.0,0.0026702269692923898,RFK Jr. testifies on HHS and Senate,True
+right,streams,135,0.00264321554485726,30,109.0,0.016169707758492805,Political War Room and Figures,True
+right,streams,88,0.0025991559220112227,30,30.0,0.004450378282153983,DHS Funding Shutdown Debate,True
+right,streams,29,0.0025867132051586444,30,15.0,0.0022251891410769915,Cuba-US Political Tensions,True
+right,streams,43,0.0025604212159349585,30,29.0,0.004302032339415517,Trump slush fund scandal,True
+right,streams,102,0.0025467470694298536,30,14.0,0.0020768431983385254,Political Media Figures,True
+right,streams,45,0.0025296304592551315,30,21.0,0.003115264797507788,Kristi Noem Firing by Trump,True
+right,streams,21,0.0025196966788780177,30,13.0,0.0019284972556000593,Trump and Epstein Files Scandal,True
+right,streams,178,0.002509684663682457,30,10.0,0.001483459427384661,CNN and Political Conflict,True
+right,streams,166,0.002450667368859146,30,13.0,0.0019284972556000593,Thomas Massie political defeat,True
+right,streams,164,0.002429964266132263,30,13.0,0.0019284972556000593,Winter Storm Impact on US,False
+right,streams,218,0.002404582222638415,30,16.0,0.0023735350838154576,Epstein Files and Trump DOJ,True
+right,streams,122,0.0023737708009846236,30,19.0,0.002818572912030856,King Charles III and Trump interactions,True
+right,streams,142,0.0023735351550811757,30,14.0,0.0020768431983385254,Transgender Athletes in Women's Sports,True
+right,streams,53,0.0023395264165635855,30,17.0,0.0025218810265539237,Graham Platner Senate Race Allegations,True
+right,streams,90,0.0023193213781508384,30,11.0,0.001631805370123127,Marc Lamont Hill and Joe Budden Podcast Controversy,True
+right,streams,171,0.002305325672085498,30,11.0,0.001631805370123127,Andrew Tate Arrest and Legal Issues,True
+right,streams,120,0.0023005738710311285,30,25.0,0.0037086485684616525,Hakeem Jeffries News Conferences,True
+right,streams,38,0.002292679398364832,30,11.0,0.001631805370123127,Israel-Lebanon Conflict and Ceasefire Talks,True
+right,streams,150,0.002292514504601807,30,14.0,0.0020768431983385254,Super Bowl Halftime Show Controversy,True
+right,streams,217,0.0022307550232238834,30,10.0,0.001483459427384661,Trump's Unwise Actions and Mistakes,True
+right,streams,165,0.002226437054512509,30,9.0,0.0013351134846461949,Alex Pretti Shooting and Federal Agents,True
+right,streams,41,0.0022228382268689906,30,12.0,0.0017801513128615932,Big Pharma and Health Scams,True
+right,streams,196,0.0022182905059311615,30,16.0,0.0023735350838154576,Belfast riots and anti-migrant unrest,True
+right,streams,159,0.002208835992567773,30,13.0,0.0019284972556000593,No Kings Protests Movement,True
+right,streams,127,0.0022030586656162803,30,13.0,0.0019284972556000593,Melania Trump Conspiracy Theories,True
+right,streams,101,0.00219893901957141,30,24.0,0.0035603026257231864,Trump UFC White House Event,True
+right,streams,215,0.0021270904576789823,30,9.0,0.0013351134846461949,Dan Bongino's Political Outbursts,True
+right,streams,202,0.0021167770006700207,30,14.0,0.0020768431983385254,Save American Democracy,True
+right,streams,65,0.002113555222083846,30,15.0,0.0022251891410769915,Climate and Weather Politics,True
+right,streams,54,0.0020557111301154492,30,9.0,0.0013351134846461949,Destiny and Ethan Klein debates,False
+right,streams,56,0.00204676766980195,30,22.0,0.003263610740246254,Nancy Guthrie Disappearance Investigation,False
+right,streams,39,0.0020384665132429348,30,17.0,0.0025218810265539237,Trump and Rising Energy Prices,True
+right,streams,139,0.0020368718406184954,30,7.0,0.0010384215991692627,Bill Maher Political Commentary,True
+right,streams,97,0.001969930941679825,30,25.0,0.0037086485684616525,Healthcare Affordability and Policy,True
+right,streams,233,0.0019611893347642657,30,17.0,0.0025218810265539237,MMA and Combat Sports,False
+right,streams,95,0.00196011656282877,30,11.0,0.001631805370123127,Tech Business and Startups,False
+right,streams,60,0.001934476974652433,30,17.0,0.0025218810265539237,Trump's War and Draft,True
+right,streams,168,0.001930766219663048,30,16.0,0.0023735350838154576,Spirit Airlines shutdown and airline industry impact,False
+right,streams,123,0.0018908573917004762,30,10.0,0.001483459427384661,Wealth Tax and Billionaires,True
+right,streams,36,0.0018757206949022603,30,14.0,0.0020768431983385254,JD Vance and Trump Political Conflict,True
+right,streams,220,0.0018228676085818944,30,7.0,0.0010384215991692627,British Islamophobia and Political Tensions,True
+right,streams,190,0.0017862537565773362,30,19.0,0.002818572912030856,Markwayne Mullin DHS confirmation hearing,True
+right,streams,155,0.0017857943012584323,30,8.0,0.0011867675419077288,Ben Shapiro and Political Commentary,True
+right,streams,114,0.0017840216576336355,30,15.0,0.0022251891410769915,Education and Schools in Political Context,True
+right,streams,124,0.0017756254101964283,30,17.0,0.0025218810265539237,JD Vance and Iran negotiations,True
+right,streams,173,0.0017349474534178737,30,10.0,0.001483459427384661,Hantavirus outbreak on cruise ship,False
+right,streams,200,0.0017142189127015751,30,10.0,0.001483459427384661,Prince Andrew Epstein Arrest,True
+right,streams,174,0.0016577172242411237,30,9.0,0.0013351134846461949,Knicks NBA Finals and Trump controversies,True
+right,streams,180,0.0016535529918635938,30,18.0,0.0026702269692923898,Trump and American Farmers,True
+right,streams,126,0.0016280053044543084,30,10.0,0.001483459427384661,Erika Kirk Controversy,True
+right,streams,66,0.0016152908950745986,30,20.0,0.002966918854769322,Todd Blanche Attorney General Confirmation,True
+right,streams,83,0.001591961411195349,30,7.0,0.0010384215991692627,AI Data Centers and Political Debate,True
+right,streams,170,0.0015908793051466023,30,13.0,0.0019284972556000593,Bondi Beach Terror Attack,True
+right,streams,134,0.0015751086281812537,30,5.0,0.0007417297136923305,Piers Morgan and Guests on Political Topics,True
+right,streams,136,0.0015599434240134407,30,10.0,0.001483459427384661,Trump Midterm Election Rigging,True
+right,streams,82,0.0015375537155848755,30,10.0,0.001483459427384661,Wildfires and Firefighters Response,False
+right,streams,96,0.0014717470887068106,30,14.0,0.0020768431983385254,Supreme Court and Trump Tariffs,True
+right,streams,221,0.001470275707421944,30,8.0,0.0011867675419077288,Dolly Parton Tribute and Legacy,False
+right,streams,106,0.0014648972582888174,30,10.0,0.001483459427384661,Hasan Piker and Political Smear Campaigns,True
+right,streams,169,0.0014509604889482697,30,7.0,0.0010384215991692627,Rob Reiner murder and political backlash,True
+right,streams,213,0.0014329940170295906,30,11.0,0.001631805370123127,San Diego Mosque Shooting,True
+right,streams,149,0.0014158781646643269,30,18.0,0.0026702269692923898,Mexico Cartel Violence,True
+right,streams,205,0.0014004655941731484,30,6.0,0.0008900756564307966,Nick Fuentes and Political Controversies,True
+right,streams,79,0.0013846317921574656,30,8.0,0.0011867675419077288,Brian Shapiro vs MAGA Callers Debate,True
+right,streams,160,0.001360979230312405,30,11.0,0.001631805370123127,Ceuta Migration Crisis,True
+right,streams,121,0.0013214753195229469,30,5.0,0.0007417297136923305,Rev Jesse Jackson and Civil Rights Legacy,True
+right,streams,94,0.0012541861531390564,30,11.0,0.001631805370123127,Abdul El-Sayed Senate Primary Victory,True
+right,streams,141,0.00120956144786416,30,10.0,0.001483459427384661,Homelessness and Socialist Mayors in US Cities,True
+right,streams,207,0.0011028041727106153,30,16.0,0.0023735350838154576,Jack Smith Testifies on Trump Investigations,True
+right,streams,72,0.0010989327813169178,30,9.0,0.0013351134846461949,Trump and FIFA World Cup controversy,True
+right,streams,108,0.0010759927212705888,30,11.0,0.001631805370123127,Trump Reflecting Pool Scandal,True
+right,streams,230,0.00104468051232453,30,5.0,0.0007417297136923305,Marjorie Taylor Greene Exposes Trump,True
+right,streams,182,0.0010390112870511973,30,18.0,0.0026702269692923898,MAGA backlash over Iran war,True
+right,streams,116,0.0010114526755801948,30,7.0,0.0010384215991692627,TikTok Censorship and Politics,True
+right,streams,179,0.0009803098792636167,30,8.0,0.0011867675419077288,Trump feud with Pope Leo,True
+right,streams,118,0.0009423276762034483,30,12.0,0.0017801513128615932,Federal Reserve Chair Kevin Warsh and Interest Rates,True
+right,streams,161,0.000888595909664157,30,9.0,0.0013351134846461949,Tulsi Gabbard Resignation and Controversies,True
+right,streams,46,0.0008879977386913879,30,9.0,0.0013351134846461949,MAGA Movement Decline,True
+right,streams,145,0.0008736374125048962,30,11.0,0.001631805370123127,Trump Ballroom Construction Controversy,True
+right,streams,175,0.0008304988662131519,30,3.0,0.0004450378282153983,Asmongold controversy and bans,False
+right,streams,20,0.0008122588229950756,30,3.0,0.0004450378282153983,Indian Politics and Parliament,True
+right,streams,67,0.0008039713098361576,30,9.0,0.0013351134846461949,Trump's Economic Impact,True
+right,streams,177,0.0007931705214466358,30,8.0,0.0011867675419077288,Alex Jones and InfoWars political controversy,True
+right,streams,128,0.0007911523716015616,30,4.0,0.0005933837709538644,Gen Z and Boomers Political Apathy,True
+right,streams,198,0.000786178329440631,30,5.0,0.0007417297136923305,Woke Culture and Political Discourse,True
+right,streams,137,0.0007575336739303039,30,4.0,0.0005933837709538644,Mitch McConnell Health Rumors,True
+right,streams,186,0.000749909641259815,30,14.0,0.0020768431983385254,Treasury Secretary Scott Bessent testifies,True
+right,streams,93,0.0007144480874579728,30,6.0,0.0008900756564307966,Olympics and Team USA Politics,True
+right,streams,48,0.0006906491410123371,30,4.0,0.0005933837709538644,Hasanabi Reacts to Hasan,True
+right,streams,107,0.0006864400774030113,30,4.0,0.0005933837709538644,AOC on the World Stage,True
+right,streams,24,0.000635041586333976,30,5.0,0.0007417297136923305,Trump Meltdowns and Collapses,True
+right,streams,113,0.0005928051276888486,30,3.0,0.0004450378282153983,Trump's Health Concerns,True
+right,streams,181,0.0005837625269159931,30,4.0,0.0005933837709538644,Bari Weiss and CBS News Controversy,True
+right,streams,184,0.0005767203049964194,30,7.0,0.0010384215991692627,Housing Policy and Politics,True
+right,streams,146,0.000571784269263261,30,3.0,0.0004450378282153983,Sudan Civil War and Africa Politics,True
+right,streams,138,0.0005421840518010207,30,3.0,0.0004450378282153983,Venezuela Earthquake Disaster,False
+right,streams,163,0.0005304928989139514,30,2.0,0.0002966918854769322,Trump's Mental Health Decline,True
+right,streams,235,0.0005048020064996058,30,5.0,0.0007417297136923305,Kennedy Center and Trump Name Removal,True
+right,streams,193,0.0004972884104445997,30,14.0,0.0020768431983385254,DSA and Democratic Party Conflict,True
+right,streams,86,0.0004832766439909297,30,2.0,0.0002966918854769322,Sneako and Political Interviews,True
+right,streams,144,0.00044444444444444447,30,1.0,0.0001483459427384661,Myron's Critique of Modern Dating and Feminism,True
+right,streams,197,0.00043629779013884274,30,7.0,0.0010384215991692627,Marijuana Policy and Politics,True
+right,streams,152,0.0004049629819422883,30,9.0,0.0013351134846461949,LaGuardia Plane Crash Investigation,False
+right,streams,226,0.00035715991023253595,30,2.0,0.0002966918854769322,Trump Approval Ratings Hit Lows,True
+right,streams,231,0.0003201723086459749,30,5.0,0.0007417297136923305,College Sports and NIL Controversies,False
+right,streams,209,0.00031446540880503143,30,1.0,0.0001483459427384661,Social Media and Teen Addiction Lawsuits,True
+right,streams,111,0.00030303030303030303,30,1.0,0.0001483459427384661,HasanAbi 2026 Schedule,False
+right,streams,214,0.00029999240525556317,30,2.0,0.0002966918854769322,John Fetterman and Democratic Party Issues,True
+right,streams,148,0.0002824858757062147,30,1.0,0.0001483459427384661,2026 World Cup,False
+right,streams,229,0.000272108843537415,30,2.0,0.0002966918854769322,US-Iran Peace Talks in Pakistan,True
+right,streams,104,0.0002666666666666667,30,1.0,0.0001483459427384661,MAGA Supporters and Arguments,True
+right,streams,225,0.00018621973929236498,30,1.0,0.0001483459427384661,Nepal Floods and Rescue Efforts,False
+right,streams,210,0.0001658374792703151,30,1.0,0.0001483459427384661,U.S. and World Headlines,True
+right,streams,115,0.00015955445171972603,30,2.0,0.0002966918854769322,PM Modi and BRICS Diplomacy,True
+right,streams,34,0.00012978596257922246,30,3.0,0.0004450378282153983,Fox News and Trump on Air Conflicts,True
+right,streams,212,9.488546256244337e-05,30,3.0,0.0004450378282153983,Melania Trump and Epstein Scandal,True
+right,streams,167,8.354218880534669e-05,30,1.0,0.0001483459427384661,Stephen Miller and Trump Scandal,True
+right,streams,189,8.354218880534669e-05,30,1.0,0.0001483459427384661,Trump Leverage and Political Strategy,True
+right,streams,158,4.3205875999135884e-05,30,2.0,0.0002966918854769322,India's Muslims and Political Parties,True
+right,streams,176,4.3205875999135884e-05,30,2.0,0.0002966918854769322,Trump inflation crisis,True
+right,streams,133,2.1602937999567942e-05,30,1.0,0.0001483459427384661,Gold and Central Banks in Economy,True
+right,streams,195,2.1602937999567942e-05,30,1.0,0.0001483459427384661,Trump and Natalie Harp Connection,True
+right,streams,211,2.1602937999567942e-05,30,1.0,0.0001483459427384661,Alex Jones and Katie Phang Updates,True
+right,streams,228,0.0,30,0.0,0.0,Political media responses and announcements,True
+right,videos,1,0.04375711870449683,96,2315.0,0.03409777149337929,Shocking Events and Reactions,True
+right,videos,0,0.037073747736804254,96,4714.0,0.06943278393943411,Iran War and Strait of Hormuz Tensions,True
+right,videos,13,0.02671782950800687,96,872.0,0.012843739413488871,Modern Women and Feminism Debate,True
+right,videos,22,0.020603371996452364,96,885.0,0.013035217179974372,Christian Nationalism and Politics,True
+right,videos,49,0.020247853260396673,96,695.0,0.010236695977493998,Race and Politics in Media,True
+right,videos,73,0.019192189975180376,96,763.0,0.011238271986802764,Left Wing Political Violence,True
+right,videos,2,0.01745700534022785,96,935.0,0.013771670127995522,Israel-Palestine Conflict Media,True
+right,videos,3,0.016285232874393707,96,1369.0,0.02016408171681911,ICE Protests and Shootings,True
+right,videos,98,0.01621079750425145,96,546.0,0.008042066192390968,JLP Weekly Series,False
+right,videos,11,0.015858073583571105,96,596.0,0.00877851914041212,Hollywood and Oscars Politics,True
+right,videos,19,0.014151959352250552,96,786.0,0.011577040342892492,America's 250th Anniversary and Founding History,True
+right,videos,17,0.014027723797365855,96,1193.0,0.01757176733978466,2026 Midterm Election Predictions,True
+right,videos,25,0.013657280954544361,96,1097.0,0.01615777767958405,Immigration and Deportation Policies,True
+right,videos,37,0.013210281924699146,96,654.0,0.009632804560116654,Islam and Political Discourse,True
+right,videos,41,0.012303548589068236,96,517.0,0.007614923482538701,Big Pharma and Health Scams,True
+right,videos,31,0.012180158466073426,96,416.0,0.006127288527535976,Candace Owens and Erika Kirk Controversy,True
+right,videos,42,0.010998934453601594,96,807.0,0.011886350581061376,War and Military Analysis,True
+right,videos,10,0.010854701379215398,96,762.0,0.01122354292784234,Zohran Mamdani and NYC Politics,True
+right,videos,99,0.010681522132350825,96,310.0,0.004566008277731136,Abortion and Pregnancy Policies,True
+right,videos,125,0.010297204809853326,96,929.0,0.013683295774232985,Walmart Shoplifting and Police Incidents,False
+right,videos,16,0.010196236296558643,96,826.0,0.012166202701309413,California Election Fraud Scandal,True
+right,videos,64,0.010063879069851836,96,417.0,0.006142017586496399,Transgender Rights and Politics,True
+right,videos,15,0.00954115070617513,96,580.0,0.008542854197045351,Charlie Kirk murder trial,True
+right,videos,141,0.009095096237556605,96,480.0,0.007069948301003049,Homelessness and Socialist Mayors in US Cities,True
+right,videos,9,0.009045194840247588,96,547.0,0.008056795251351391,AI and Political Concerns,True
+right,videos,202,0.008940082901099744,96,279.0,0.004109407449958022,Save American Democracy,True
+right,videos,204,0.008684023177438317,96,636.0,0.00936768149882904,Political Talk Show Drama,True
+right,videos,77,0.00865563356202848,96,540.0,0.00795369183862843,Socialism and Democratic Party Conflict,True
+right,videos,5,0.008489891548665487,96,638.0,0.009397139616749886,Trump Supreme Court Legal Issues,True
+right,videos,206,0.008248785987709258,96,711.0,0.010472360920860766,FBI and Jan 6 Pipe Bomb Case,True
+right,videos,18,0.008070460676577391,96,723.0,0.010649109628385842,Lindsay Clancy Murder Trial,False
+right,videos,114,0.008061545549049812,96,407.0,0.005994726996892168,Education and Schools in Political Context,True
+right,videos,8,0.007908966578393517,96,403.0,0.005935810761050477,Epstein Files Political Connections,True
+right,videos,12,0.007851521749340173,96,685.0,0.010089405387889768,Canada-US Political Tensions,True
+right,videos,100,0.0073158964473224695,96,386.0,0.005685416758723285,Media and Journalism Critique,True
+right,videos,47,0.007284354612838687,96,458.0,0.006745909003873743,UFO Government Disclosure,True
+right,videos,87,0.007175993632205194,96,543.0,0.007997879015509699,California fraud investigation,True
+right,videos,70,0.006945175919144331,96,406.0,0.005979997937931745,Karmelo Anthony Trial Verdict,True
+right,videos,112,0.006755687930668144,96,289.0,0.0042566980395622525,WNBA and Sophie Cunningham controversy,True
+right,videos,191,0.006749928375963231,96,191.0,0.0028132502614407967,Political Commentary and Interviews,True
+right,videos,116,0.006632093221997451,96,197.0,0.0029016246152033347,TikTok Censorship and Politics,True
+right,videos,187,0.0065993678520292155,96,250.0,0.0036822647401057547,Comedy and Cultural Debate,True
+right,videos,144,0.006303264372857393,96,203.0,0.0029899989689658726,Myron's Critique of Modern Dating and Feminism,True
+right,videos,131,0.006153724873222668,96,296.0,0.004359801452285214,UK Political Chaos and Government Issues,True
+right,videos,231,0.0060525542546101445,96,232.0,0.0034171416788181404,College Sports and NIL Controversies,False
+right,videos,7,0.005902095066640277,96,581.0,0.008557583256005774,Trump vs Maduro Venezuela Conflict,True
+right,videos,78,0.005836730848107321,96,306.0,0.004507092041889444,Covid Vaccine Controversy,True
+right,videos,54,0.005586026027590638,96,189.0,0.0027837921435199505,Destiny and Ethan Klein debates,False
+right,videos,6,0.005537523801312041,96,654.0,0.009632804560116654,Trump and China political relations,True
+right,videos,128,0.005448960136966854,96,208.0,0.003063644263767988,Gen Z and Boomers Political Apathy,True
+right,videos,23,0.005391726537022412,96,238.0,0.0035055160325806784,Tucker Carlson Political Commentary,True
+right,videos,156,0.005290331537351756,96,384.0,0.005655958640802439,Kamala Harris 2028 Election Speculation,True
+right,videos,217,0.0052740555737305905,96,320.0,0.004713298867335366,Trump's Unwise Actions and Mistakes,True
+right,videos,198,0.00527399897916311,96,144.0,0.0021209844903009147,Woke Culture and Political Discourse,True
+right,videos,102,0.005173971721236516,96,178.0,0.0026217724949552973,Political Media Figures,True
+right,videos,52,0.005148569806886307,96,381.0,0.00561177146392117,Fauci Senate Testimony Controversy,True
+right,videos,67,0.005093835415348851,96,318.0,0.00468384074941452,Trump's Economic Impact,True
+right,videos,227,0.004978330717095619,96,261.0,0.003844284388670408,Fast Food and Political Issues,True
+right,videos,220,0.0049647671861792085,96,329.0,0.0048458603979791735,British Islamophobia and Political Tensions,True
+right,videos,155,0.0049179896940862895,96,202.0,0.00297526991000545,Ben Shapiro and Political Commentary,True
+right,videos,222,0.004883330577123633,96,189.0,0.0027837921435199505,Political Podcasts and Influencers,True
+right,videos,154,0.004774510653969454,96,394.0,0.005803249230406669,Anti-Trump Protests and Riots,True
+right,videos,95,0.004688206602023245,96,216.0,0.003181476735451372,Tech Business and Startups,False
+right,videos,105,0.004678818165677124,96,223.0,0.003284580148174333,Spencer Pratt LA Mayoral Campaign,True
+right,videos,123,0.0046305047294476764,96,200.0,0.0029458117920846036,Wealth Tax and Billionaires,True
+right,videos,61,0.004620116991761387,96,283.0,0.004168323685799715,Gavin Newsom Political Controversies,True
+right,videos,234,0.004569672108938153,96,251.0,0.003696993799066178,Antifa and Political Violence,True
+right,videos,58,0.004532211122021221,96,397.0,0.005847436407287939,Somali fraud scandal in Minnesota,True
+right,videos,133,0.004487626980069809,96,179.0,0.0026365015539157204,Gold and Central Banks in Economy,True
+right,videos,109,0.004437109582226508,96,168.0,0.0024744819053510673,FBA and African Refugee Issues,True
+right,videos,188,0.004386039362199202,96,384.0,0.005655958640802439,NYC Terror Plot Exposures,True
+right,videos,117,0.004385458133139861,96,466.0,0.006863741475557126,SAVE Act and Senate Debate,True
+right,videos,80,0.0043249565511757826,96,263.0,0.003873742506591254,Black Voting Rights and Political Representation,True
+right,videos,51,0.004266242239747431,96,418.0,0.006156746645456822,Minneapolis political unrest and federal response,True
+right,videos,90,0.004260963760445512,96,154.0,0.0022682750799051447,Marc Lamont Hill and Joe Budden Podcast Controversy,True
+right,videos,142,0.004198154659225259,96,191.0,0.0028132502614407967,Transgender Athletes in Women's Sports,True
+right,videos,56,0.003981384729966728,96,781.0,0.011503395048090377,Nancy Guthrie Disappearance Investigation,False
+right,videos,50,0.003899576295578551,96,416.0,0.006127288527535976,Texas Senate race and political figures,True
+right,videos,232,0.003870926039036312,96,261.0,0.003844284388670408,Political Conferences and Festivals 2026,True
+right,videos,57,0.0037825284775123117,96,281.0,0.004138865567878868,Supreme Court and Birthright Citizenship,True
+right,videos,197,0.003750773737099982,96,191.0,0.0028132502614407967,Marijuana Policy and Politics,True
+right,videos,48,0.003732519220457642,96,91.0,0.0013403443653984947,Hasanabi Reacts to Hasan,True
+right,videos,84,0.0037128786515476576,96,281.0,0.004138865567878868,Ilhan Omar Criminal Investigation,True
+right,videos,4,0.0037038026972829115,96,487.0,0.00717305171372601,Ukraine-Russia War and Political Figures,True
+right,videos,178,0.003701774705976275,96,305.0,0.004492362982929021,CNN and Political Conflict,True
+right,videos,147,0.0036821229062041494,96,219.0,0.003225663912332641,SPLC Indictment and Hate Groups,True
+right,videos,223,0.0036626076555102698,96,175.0,0.0025775853180740283,Yearly Predictions and Reviews,False
+right,videos,140,0.003654669115838175,96,162.0,0.002386107551588529,Crypto and Politics Scandal,True
+right,videos,63,0.0036535649522693504,96,217.0,0.003196205794411795,Don Lemon Arrested,True
+right,videos,106,0.003524312473116863,96,131.0,0.0019295067238154155,Hasan Piker and Political Smear Campaigns,True
+right,videos,26,0.00351869574372732,96,359.0,0.005287732166791864,White House Correspondents Dinner Shooting,True
+right,videos,74,0.0035033908140265284,96,413.0,0.006083101350654706,2026 US Primary Elections,True
+right,videos,68,0.0033784011431518476,96,302.0,0.0044481758060477515,9/11 Remembered 25 Years Later,True
+right,videos,126,0.0033424916277654208,96,135.0,0.0019884229596571074,Erika Kirk Controversy,True
+right,videos,150,0.003328857076552259,96,143.0,0.0021062554313404916,Super Bowl Halftime Show Controversy,True
+right,videos,33,0.00325577772607305,96,200.0,0.0029458117920846036,Elon Musk and Political Influence,True
+right,videos,29,0.0032377049869561814,96,274.0,0.004035762155155907,Cuba-US Political Tensions,True
+right,videos,189,0.003214998768049246,96,121.0,0.0017822161342111852,Trump Leverage and Political Strategy,True
+right,videos,129,0.0031736140147851726,96,215.0,0.003166747676490949,Megyn Kelly and Political Media,True
+right,videos,153,0.0031407717396819534,96,209.0,0.003078373322728411,Members Only Show,True
+right,videos,209,0.0031075358814744553,96,183.0,0.0026954177897574125,Social Media and Teen Addiction Lawsuits,True
+right,videos,36,0.0030783066495188964,96,238.0,0.0035055160325806784,JD Vance and Trump Political Conflict,True
+right,videos,201,0.003075445015966813,96,173.0,0.002548127200153182,Glenn Beck Political Commentary,True
+right,videos,69,0.0030440608407274953,96,295.0,0.0043450723933247904,Virginia redistricting and gerrymandering,True
+right,videos,46,0.0030266602839656956,96,126.0,0.0018558614290133002,MAGA Movement Decline,True
+right,videos,44,0.0029931280067201477,96,302.0,0.0044481758060477515,Trump State of the Union Address,True
+right,videos,110,0.0029872108257225113,96,336.0,0.0049489638107021346,Tim Walz and Minnesota Fraud Scandal,True
+right,videos,149,0.002980615590589575,96,365.0,0.005376106520554402,Mexico Cartel Violence,True
+right,videos,233,0.002964954931164023,96,151.0,0.0022240879030238758,MMA and Combat Sports,False
+right,videos,103,0.0029607966023920177,96,306.0,0.004507092041889444,Hunter Biden and Joe Biden controversies,True
+right,videos,101,0.0028629665243758654,96,176.0,0.0025923143770344515,Trump UFC White House Event,True
+right,videos,75,0.002797632426619831,96,396.0,0.005832707348327516,Brown University Mass Shooting,False
+right,videos,107,0.0027904212060485957,96,163.0,0.002400836610548952,AOC on the World Stage,True
+right,videos,85,0.00277661349102443,96,247.0,0.0036380775632244857,Political Media and Trump Controversies,True
+right,videos,59,0.0027387308079723665,96,164.0,0.002415565669509375,Iran Conflict and Political Updates,True
+right,videos,55,0.0027354718454046284,96,196.0,0.0028868955562429115,UK politics and Reform UK,True
+right,videos,97,0.002706635738939873,96,220.0,0.003240392971293064,Healthcare Affordability and Policy,True
+right,videos,43,0.002691532134526135,96,270.0,0.003976845919314215,Trump slush fund scandal,True
+right,videos,205,0.0026389415603157353,96,80.0,0.0011783247168338415,Nick Fuentes and Political Controversies,True
+right,videos,62,0.0026210536345410347,96,220.0,0.003240392971293064,Trump Resignation and Leaks,True
+right,videos,160,0.002580108293744592,96,234.0,0.0034465997967389863,Ceuta Migration Crisis,True
+right,videos,27,0.0025667066882836573,96,260.0,0.0038295553297099847,Trump and Greenland politics,True
+right,videos,121,0.00256434645458324,96,112.0,0.0016496546035673781,Rev Jesse Jackson and Civil Rights Legacy,True
+right,videos,132,0.0025643137332457904,96,242.0,0.0035644322684223705,Political Podcasts and Commentary,True
+right,videos,60,0.00255070607764279,96,261.0,0.003844284388670408,Trump's War and Draft,True
+right,videos,184,0.0025086817924203217,96,142.0,0.0020915263723800684,Housing Policy and Politics,True
+right,videos,127,0.0023553744833086803,96,164.0,0.002415565669509375,Melania Trump Conspiracy Theories,True
+right,videos,39,0.002338388279304174,96,263.0,0.003873742506591254,Trump and Rising Energy Prices,True
+right,videos,24,0.0023227942857088515,96,162.0,0.002386107551588529,Trump Meltdowns and Collapses,True
+right,videos,53,0.002211665073060874,96,207.0,0.0030489152048075647,Graham Platner Senate Race Allegations,True
+right,videos,135,0.002196743397043835,96,553.0,0.008145169605113928,Political War Room and Figures,True
+right,videos,35,0.0021752575163297336,96,277.0,0.004079949332037176,Lindsey Graham's Funeral and Legacy,True
+right,videos,65,0.0021657325592104666,96,120.0,0.0017674870752507623,Climate and Weather Politics,True
+right,videos,168,0.0021565490618614624,96,165.0,0.002430294728469798,Spirit Airlines shutdown and airline industry impact,False
+right,videos,196,0.002152459648084376,96,183.0,0.0026954177897574125,Belfast riots and anti-migrant unrest,True
+right,videos,177,0.002149557991328902,96,93.0,0.0013698024833193408,Alex Jones and InfoWars political controversy,True
+right,videos,199,0.0021298040175303794,96,285.0,0.00419778180372056,Iran War and Energy Market Impact,True
+right,videos,76,0.0021288930533699137,96,132.0,0.0019442357827758384,Nolan Wells Investigation,False
+right,videos,79,0.0021227150814762765,96,93.0,0.0013698024833193408,Brian Shapiro vs MAGA Callers Debate,True
+right,videos,93,0.0021119536637083133,96,178.0,0.0026217724949552973,Olympics and Team USA Politics,True
+right,videos,175,0.0021045441492809004,96,52.0,0.000765911065941997,Asmongold controversy and bans,False
+right,videos,88,0.0020796960875841693,96,390.0,0.005744332994564977,DHS Funding Shutdown Debate,True
+right,videos,215,0.0020414808218140283,96,105.0,0.001546551190844417,Dan Bongino's Political Outbursts,True
+right,videos,192,0.0020215594065125042,96,152.0,0.002238816961984299,Christmas and Trump,True
+right,videos,165,0.0019870241364473612,96,109.0,0.001605467426686109,Alex Pretti Shooting and Federal Agents,True
+right,videos,83,0.001973871622569502,96,125.0,0.0018411323700528773,AI Data Centers and Political Debate,True
+right,videos,159,0.0019652023476239068,96,76.0,0.0011194084809921494,No Kings Protests Movement,True
+right,videos,30,0.0019321649738739861,96,149.0,0.00219462978510303,Pam Bondi and Epstein Files Scandal,True
+right,videos,216,0.00193166250363654,96,108.0,0.001590738367725686,Tupac Murder Trial,True
+right,videos,211,0.001914484360590266,96,95.0,0.0013992606012401868,Alex Jones and Katie Phang Updates,True
+right,videos,221,0.001857421924826151,96,99.0,0.001458176837081879,Dolly Parton Tribute and Legacy,False
+right,videos,82,0.0018536244644770208,96,376.0,0.005538126169119055,Wildfires and Firefighters Response,False
+right,videos,71,0.0018312687356378126,96,227.0,0.003343496384016025,Marco Rubio Testifies on Iran War,True
+right,videos,40,0.0018017861098523975,96,318.0,0.00468384074941452,Trump's speeches and events,True
+right,videos,92,0.0017706053523222024,96,101.0,0.001487634955002725,Joe Rogan and Trump Political Discussions,True
+right,videos,162,0.0017456303306908718,96,152.0,0.002238816961984299,Eric Swalwell Allegations and Resignation,True
+right,videos,104,0.0017035120228553087,96,54.0,0.000795369183862843,MAGA Supporters and Arguments,True
+right,videos,134,0.0017011907457749177,96,103.0,0.001517093072923571,Piers Morgan and Guests on Political Topics,True
+right,videos,136,0.001687198173759105,96,146.0,0.0021504426082217605,Trump Midterm Election Rigging,True
+right,videos,38,0.0016583600082697902,96,277.0,0.004079949332037176,Israel-Lebanon Conflict and Ceasefire Talks,True
+right,videos,163,0.0016549959193359958,96,62.0,0.0009132016555462271,Trump's Mental Health Decline,True
+right,videos,183,0.0016286064418924988,96,69.0,0.0010163050682691884,Joe Kent Resignation and Iran War Scandal,True
+right,videos,179,0.001623378663264696,96,156.0,0.002297733197825991,Trump feud with Pope Leo,True
+right,videos,166,0.0015926320804723036,96,74.0,0.0010899503630713034,Thomas Massie political defeat,True
+right,videos,139,0.0015459929789141472,96,104.0,0.001531822131883994,Bill Maher Political Commentary,True
+right,videos,152,0.0014999980094702202,96,367.0,0.005405564638475248,LaGuardia Plane Crash Investigation,False
+right,videos,72,0.001495813678484375,96,157.0,0.002312462256786414,Trump and FIFA World Cup controversy,True
+right,videos,171,0.001486712293578033,96,69.0,0.0010163050682691884,Andrew Tate Arrest and Legal Issues,True
+right,videos,170,0.0014631590134257418,96,116.0,0.0017085708394090702,Bondi Beach Terror Attack,True
+right,videos,193,0.0014453226417458585,96,104.0,0.001531822131883994,DSA and Democratic Party Conflict,True
+right,videos,146,0.0014200536267490774,96,88.0,0.0012961571885172257,Sudan Civil War and Africa Politics,True
+right,videos,130,0.0013992083537430653,96,211.0,0.003107831440649257,Hillary Clinton Epstein Testimony,True
+right,videos,194,0.001395571351074965,96,296.0,0.004359801452285214,Medal of Honor Ceremonies,True
+right,videos,96,0.0013271393066792727,96,163.0,0.002400836610548952,Supreme Court and Trump Tariffs,True
+right,videos,208,0.001326843917888115,96,119.0,0.0017527580162903392,Comey Indictment by DOJ,True
+right,videos,180,0.001307198524454567,96,118.0,0.0017380289573299163,Trump and American Farmers,True
+right,videos,124,0.0012971406273983089,96,137.0,0.0020178810775779536,JD Vance and Iran negotiations,True
+right,videos,173,0.0012651647256562686,96,113.0,0.001664383662527801,Hantavirus outbreak on cruise ship,False
+right,videos,32,0.0012025680386928723,96,212.0,0.00312256049960968,Artemis II Moon Mission Updates,False
+right,videos,203,0.0011966311479334683,96,247.0,0.0036380775632244857,Trump Iran War Briefings,True
+right,videos,34,0.0011959150363438727,96,297.0,0.004374530511245637,Fox News and Trump on Air Conflicts,True
+right,videos,91,0.0011906396304572323,96,213.0,0.003137289558570103,Trump and NATO Relations,True
+right,videos,21,0.001184353040940715,96,103.0,0.001517093072923571,Trump and Epstein Files Scandal,True
+right,videos,181,0.0011808605439730501,96,83.0,0.0012225118937151105,Bari Weiss and CBS News Controversy,True
+right,videos,28,0.0011797308823669988,96,90.0,0.0013256153064380716,UK PM Keir Starmer Resignation Calls,True
+right,videos,94,0.0011679235262762222,96,103.0,0.001517093072923571,Abdul El-Sayed Senate Primary Victory,True
+right,videos,45,0.001161959568037997,96,107.0,0.0015760093087652629,Kristi Noem Firing by Trump,True
+right,videos,169,0.001159362720875514,96,103.0,0.001517093072923571,Rob Reiner murder and political backlash,True
+right,videos,143,0.0011422079426957087,96,96.0,0.0014139896602006097,RFK Jr. testifies on HHS and Senate,True
+right,videos,174,0.0010975362319083604,96,119.0,0.0017527580162903392,Knicks NBA Finals and Trump controversies,True
+right,videos,182,0.0010882890345255334,96,176.0,0.0025923143770344515,MAGA backlash over Iran war,True
+right,videos,176,0.0010377967763170132,96,80.0,0.0011783247168338415,Trump inflation crisis,True
+right,videos,185,0.0010149718872395227,96,26.0,0.0003829555329709985,Behind the scenes streaming,False
+right,videos,207,0.0009342239999372381,96,119.0,0.0017527580162903392,Jack Smith Testifies on Trump Investigations,True
+right,videos,14,0.000897527583566421,96,195.0,0.0028721664972824884,Pete Hegseth and Iran War,True
+right,videos,213,0.0008957878003444485,96,151.0,0.0022240879030238758,San Diego Mosque Shooting,True
+right,videos,158,0.0008669160298295802,96,44.0,0.0006480785942586129,India's Muslims and Political Parties,True
+right,videos,161,0.0008344803296826864,96,88.0,0.0012961571885172257,Tulsi Gabbard Resignation and Controversies,True
+right,videos,89,0.0008176887869715202,96,61.0,0.0008984725965858042,Kash Patel and FBI Controversies,True
+right,videos,108,0.0008037875512787515,96,94.0,0.0013845315422797637,Trump Reflecting Pool Scandal,True
+right,videos,113,0.0008021546883637582,96,74.0,0.0010899503630713034,Trump's Health Concerns,True
+right,videos,20,0.0007924205485692054,96,35.0,0.0005155170636148056,Indian Politics and Parliament,True
+right,videos,157,0.0007924044929045715,96,127.0,0.0018705904879737234,Melania Trump Events and Participation,True
+right,videos,164,0.0007799175665761113,96,224.0,0.0032993092071347562,Winter Storm Impact on US,False
+right,videos,214,0.0007566655477289366,96,131.0,0.0019295067238154155,John Fetterman and Democratic Party Issues,True
+right,videos,81,0.0007530679724401862,96,119.0,0.0017527580162903392,Karoline Leavitt White House Press Briefing,True
+right,videos,186,0.0007343233358829204,96,94.0,0.0013845315422797637,Treasury Secretary Scott Bessent testifies,True
+right,videos,66,0.0007027653027566767,96,101.0,0.001487634955002725,Todd Blanche Attorney General Confirmation,True
+right,videos,138,0.0006722246580873585,96,196.0,0.0028868955562429115,Venezuela Earthquake Disaster,False
+right,videos,218,0.0006636826367691662,96,85.0,0.0012519700116359566,Epstein Files and Trump DOJ,True
+right,videos,226,0.0006428085812795474,96,35.0,0.0005155170636148056,Trump Approval Ratings Hit Lows,True
+right,videos,137,0.0006421182244168496,96,84.0,0.0012372409526755336,Mitch McConnell Health Rumors,True
+right,videos,235,0.0006389271189285729,96,64.0,0.0009426597734670731,Kennedy Center and Trump Name Removal,True
+right,videos,224,0.0006381138554081417,96,25.0,0.00036822647401057545,Political Media Broadcasters,True
+right,videos,118,0.0006257963803385738,96,69.0,0.0010163050682691884,Federal Reserve Chair Kevin Warsh and Interest Rates,True
+right,videos,86,0.0006128104345697552,96,38.0,0.0005597042404960747,Sneako and Political Interviews,True
+right,videos,200,0.0006047802702969495,96,67.0,0.0009868469503483423,Prince Andrew Epstein Arrest,True
+right,videos,122,0.0005990433768130458,96,91.0,0.0013403443653984947,King Charles III and Trump interactions,True
+right,videos,120,0.0005982570309520189,96,88.0,0.0012961571885172257,Hakeem Jeffries News Conferences,True
+right,videos,151,0.0005973796142056418,96,94.0,0.0013845315422797637,Vice President JD Vance Remarks,True
+right,videos,225,0.0005809563185021028,96,173.0,0.002548127200153182,Nepal Floods and Rescue Efforts,False
+right,videos,119,0.0005103486910723062,96,23.0,0.0003387683560897294,UK Prime Minister Andy Burnham,True
+right,videos,145,0.0004995948198206101,96,90.0,0.0013256153064380716,Trump Ballroom Construction Controversy,True
+right,videos,219,0.0004770528886173119,96,82.0,0.0012077828347546876,Trump signing executive orders,True
+right,videos,172,0.00047131993693075845,96,109.0,0.001605467426686109,G7 Summit and Macron-Trump Bilateral Meetings,True
+right,videos,190,0.00044983885539118354,96,104.0,0.001531822131883994,Markwayne Mullin DHS confirmation hearing,True
+right,videos,230,0.0004264889565575699,96,30.0,0.0004418717688126906,Marjorie Taylor Greene Exposes Trump,True
+right,videos,212,0.0004150958767527742,96,44.0,0.0006480785942586129,Melania Trump and Epstein Scandal,True
+right,videos,195,0.000399066735020096,96,22.0,0.00032403929712930643,Trump and Natalie Harp Connection,True
+right,videos,228,0.00033460114932391404,96,7.0,0.00010310341272296113,Political media responses and announcements,True
+right,videos,167,0.00032063666963554136,96,50.0,0.0007364529480211509,Stephen Miller and Trump Scandal,True
+right,videos,210,0.00027588794801693296,96,17.0,0.0002503940023271913,U.S. and World Headlines,True
+right,videos,229,0.00023323554028496706,96,61.0,0.0008984725965858042,US-Iran Peace Talks in Pakistan,True
+right,videos,148,0.00017721553016493622,96,25.0,0.00036822647401057545,2026 World Cup,False
+right,videos,111,0.0001748614314463705,96,8.0,0.00011783247168338414,HasanAbi 2026 Schedule,False
+right,videos,115,4.6266060666589835e-05,96,8.0,0.00011783247168338414,PM Modi and BRICS Diplomacy,True

@@ -1,6 +1,6 @@
 # Phillip Scott Podcast (@PhillipScottPodcast)
 
-Lane: **left_commentary** · organisation: Phillip Scott · clipper: no · platform: youtube · subscribers: 202000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Phillip Scott · clipper: no · platform: youtube · subscribers: 202000.0
 
 
 ## videos
@@ -11,23 +11,23 @@ Titles: 7 rows, 7 unique (repeat share 0.0%); LOW-N (not ranked); political shar
 Top topics: Black Voting Rights and Political Representation (28.6%); Christian Nationalism and Politics (14.3%); Race and Politics in Media (14.3%); Trump's War and Draft (14.3%); No Kings Protests Movement (14.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -1.1 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.5 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -1.1 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.5 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 2.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | 1.5 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | 1.5 | 0.2 |
 | F6: Person-centred (named people) | None | None | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.0 | -0.5 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.0 | -0.7 |
 | F8: Numeric and dated (digits, years) | None | None | -0.5 | -0.2 |
 | F9: ALL-CAPS shouting | None | None | -1.0 | -0.3 |
 | F10: Quoted speech | None | None | -0.7 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 0.6 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | None | None | 3.1 | -0.3 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 0.6 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | None | None | 3.1 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (3.0%); outrage 85.7% (76.0%); humor 0.0% (0.2%); question 14.3% (9.8%); breaking_live 0.0% (5.4%); episode_show 0.0% (2.2%); interview_guest 14.3% (10.4%); reaction 0.0% (1.1%); confrontation 14.3% (8.2%); listicle 0.0% (0.1%); howto_explainer 28.6% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 85.7% (59.6%); humor 0.0% (0.2%); question 14.3% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 14.3% (8.5%); reaction 0.0% (2.2%); confrontation 14.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 28.6% (9.5%)
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -44,28 +44,28 @@ Titles: 153 rows, 153 unique (repeat share 0.0%); ranked; political share 96.1%.
 Top topics: Race and Politics in Media (37.2%); FBA and African Refugee Issues (12.4%); Black Voting Rights and Political Representation (5.2%); Immigration and Deportation Policies (3.3%); ICE Protests and Shootings (2.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 97.5 | 75.9 | 0.9 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 97.5 | 75.9 | 0.9 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 92.4 | 98.7 | 0.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 17.7 | 3.8 | -0.5 | -0.4 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 98.7 | 98.7 | 0.8 | -0.2 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 17.7 | 3.8 | -0.5 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 98.7 | 98.7 | 0.8 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 87.3 | 89.9 | 0.2 | -0.3 |
-| F6: Person-centred (named people) | 21.5 | 11.4 | -0.3 | 0.8 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 22.8 | 8.9 | -0.7 | -0.4 |
-| F8: Numeric and dated (digits, years) | 53.2 | 24.1 | 0.0 | 0.0 |
+| F6: Person-centred (named people) | 21.5 | 11.4 | -0.3 | 0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 22.8 | 8.9 | -0.7 | -0.6 |
+| F8: Numeric and dated (digits, years) | 53.2 | 24.1 | 0.0 | -0.0 |
 | F9: ALL-CAPS shouting | 64.6 | 45.6 | -0.2 | -0.4 |
-| F10: Quoted speech | 63.3 | 68.4 | -0.4 | -0.5 |
+| F10: Quoted speech | 63.3 | 68.4 | -0.4 | -0.4 |
 | F11: Long, upbeat, abstract (length, positive words, nominalisations) | 89.9 | 87.3 | 1.0 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | 100.0 | 100.0 | 2.1 | 0.0 |
+| F12: Modal and future speculation (will, could, we) | 100.0 | 100.0 | 2.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.9% (2.3%); outrage 76.5% (77.1%); humor 0.0% (0.1%); question 7.8% (9.5%); breaking_live 0.0% (13.1%); episode_show 0.0% (4.2%); interview_guest 8.5% (21.3%); reaction 0.0% (1.9%); confrontation 11.8% (12.1%); listicle 0.0% (0.1%); howto_explainer 14.4% (3.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.9% (3.2%); outrage 76.5% (56.4%); humor 0.0% (0.1%); question 7.8% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 8.5% (14.0%); reaction 0.0% (2.1%); confrontation 11.8% (9.4%); listicle 0.0% (0.2%); howto_explainer 14.4% (5.3%)
 
 
-Nearest style neighbours: @FreshFitMiami [right_commentary]; @RedactedNews [independent_digital_news]; @RekietaLaw [legal_institutional]; @JustPearlyThings [right_commentary]; @OwenReport [right_commentary]
+Nearest style neighbours: @FreshFitMiami [right]; @RedactedNews [right]; @RekietaLaw [right]; @JustPearlyThings [right]; @OwenReport [left]
 
-Nearest topic neighbours: @rolandsmartin [independent_digital_news]; @marclamonthillnetwork [left_commentary]; @JustPearlyThings [right_commentary]; @FreshFitMiami [right_commentary]; @TheOfficerTatum [right_commentary]
+Nearest topic neighbours: @rolandsmartin [left]; @marclamonthillnetwork [left]; @JustPearlyThings [right]; @FreshFitMiami [right]; @TheOfficerTatum [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

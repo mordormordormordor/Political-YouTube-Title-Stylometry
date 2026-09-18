@@ -1,6 +1,6 @@
 # Black Conservative Perspective (@BlackConservativePerspective)
 
-Lane: **right_commentary** · organisation: Black Conservative Perspective · clipper: no · platform: youtube · subscribers: 1000000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Black Conservative Perspective · clipper: no · platform: youtube · subscribers: 1000000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 1,271 rows, 1,271 unique (repeat share 0.0%); ranked; political share 97
 Top topics: CNN and Political Conflict (9.8%); Race and Politics in Media (7.7%); Black Voting Rights and Political Representation (7.7%); 2026 Midterm Election Predictions (5.7%); Homelessness and Socialist Mayors in US Cities (4.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 0.8 | 0.8 | -2.2 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 70.3 | 73.6 | 0.4 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 70.3 | 73.6 | 0.4 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.9 | 37.2 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 19.2 | 12.1 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 1.3 | 1.3 | -0.8 | 0.2 |
-| F6: Person-centred (named people) | 69.0 | 69.5 | 0.1 | -0.3 |
+| F6: Person-centred (named people) | 69.0 | 69.5 | 0.1 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 82.8 | 82.4 | 0.1 | -0.7 |
 | F8: Numeric and dated (digits, years) | 36.8 | 31.4 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 94.1 | 91.6 | 1.6 | -0.3 |
 | F10: Quoted speech | 30.5 | 42.7 | -0.6 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 99.2 | 99.2 | 1.8 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 99.2 | 99.2 | 1.8 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 28.5 | 24.3 | -0.4 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.2% (3.8%); outrage 99.3% (63.4%); humor 0.2% (0.2%); question 0.1% (15.1%); breaking_live 0.3% (1.3%); episode_show 0.0% (7.8%); interview_guest 11.9% (8.2%); reaction 0.5% (2.5%); confrontation 18.7% (7.7%); listicle 0.0% (0.1%); howto_explainer 2.4% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (3.6%); outrage 99.3% (59.6%); humor 0.2% (0.2%); question 0.1% (15.6%); breaking_live 0.3% (2.0%); episode_show 0.0% (7.6%); interview_guest 11.9% (8.5%); reaction 0.5% (2.2%); confrontation 18.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.4% (9.5%)
 
 
-Nearest style neighbours: @katiephangnews [left_commentary]; @TheOfficerTatum [right_commentary]; @MeidasTouch [left_commentary]; @LegalAFMTN [legal_institutional]; @dollemore [left_commentary]
+Nearest style neighbours: @katiephangnews [left]; @TheOfficerTatum [right]; @MeidasTouch [left]; @LegalAFMTN [left]; @dollemore [left]
 
-Nearest topic neighbours: @RubinReport [right_commentary]; @TheOfficerTatum [right_commentary]; @bennyjohnson [right_commentary]; @ActualJusticeWarrior [right_commentary]; @BlazeTV [right_commentary]
+Nearest topic neighbours: @RubinReport [right]; @TheOfficerTatum [right]; @bennyjohnson [right]; @ActualJusticeWarrior [right]; @BlazeTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,23 +86,23 @@ Titles: 1 rows, 1 unique (repeat share 0.0%); LOW-N (not ranked); political shar
 Top topics: Trump State of the Union Address (100.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.0 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.0 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.0 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.8 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.9 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.7 | -0.2 |
-| F6: Person-centred (named people) | None | None | 2.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | -0.7 | -0.3 |
+| F6: Person-centred (named people) | None | None | 2.0 | 0.0 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.7 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | -1.3 | -0.0 |
 | F9: ALL-CAPS shouting | None | None | -0.9 | -0.4 |
-| F10: Quoted speech | None | None | -1.2 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.7 | 0.1 |
+| F10: Quoted speech | None | None | -1.2 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.7 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | None | None | -1.6 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (4.2%); outrage 0.0% (62.2%); humor 0.0% (0.2%); question 0.0% (16.8%); breaking_live 0.0% (18.6%); episode_show 0.0% (23.4%); interview_guest 0.0% (16.3%); reaction 100.0% (2.8%); confrontation 0.0% (11.1%); listicle 0.0% (0.2%); howto_explainer 0.0% (6.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.2%); outrage 0.0% (56.4%); humor 0.0% (0.1%); question 0.0% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 0.0% (14.0%); reaction 100.0% (2.1%); confrontation 0.0% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

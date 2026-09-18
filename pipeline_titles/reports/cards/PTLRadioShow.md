@@ -1,6 +1,6 @@
 # Pushing The Limits (@PTLRadioShow)
 
-Lane: **left_commentary** · organisation: Pushing the Limits · clipper: no · platform: youtube · subscribers: 212000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Pushing the Limits · clipper: no · platform: youtube · subscribers: 212000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 1,685 rows, 1,684 unique (repeat share 0.1%); ranked; political share 98
 Top topics: Brian Shapiro vs MAGA Callers Debate (28.7%); MAGA Supporters and Arguments (8.7%); MAGA Movement Decline (5.3%); ICE Protests and Shootings (4.4%); Trump Meltdowns and Collapses (2.4%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 26.8 | 15.5 | -0.2 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 57.7 | 57.3 | 0.1 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 26.8 | 15.5 | -0.2 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 57.7 | 57.3 | 0.1 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 24.3 | 9.2 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 54.4 | 46.0 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 35.6 | 20.5 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 35.6 | 20.5 | -0.1 | 0.1 |
 | F6: Person-centred (named people) | 81.2 | 91.6 | 0.4 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 68.2 | 49.0 | -0.4 | -0.5 |
 | F8: Numeric and dated (digits, years) | 67.8 | 42.3 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 11.3 | 18.8 | -0.8 | -0.3 |
-| F10: Quoted speech | 48.1 | 30.5 | -0.4 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 48.5 | 45.2 | -0.2 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 34.7 | 15.9 | -0.3 | -0.3 |
+| F10: Quoted speech | 48.1 | 30.5 | -0.4 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 48.5 | 45.2 | -0.2 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 34.7 | 15.9 | -0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.2% (3.0%); outrage 80.2% (76.0%); humor 0.5% (0.2%); question 2.8% (9.8%); breaking_live 0.4% (5.4%); episode_show 0.1% (2.2%); interview_guest 7.7% (10.4%); reaction 4.0% (1.1%); confrontation 27.0% (8.2%); listicle 0.0% (0.1%); howto_explainer 5.1% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (2.7%); outrage 80.2% (63.9%); humor 0.5% (0.2%); question 2.8% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.1% (2.8%); interview_guest 7.7% (9.8%); reaction 4.0% (2.9%); confrontation 27.0% (7.6%); listicle 0.0% (0.1%); howto_explainer 5.1% (8.0%)
 
 
-Nearest style neighbours: @chicksonright [right_commentary]; @Forthepeoplepodcast305 [left_commentary]; @SaltyCracker [streamer_reaction]; @HasanReactionsfanTwo [streamer_reaction]; @JackCocchiarellaShow [left_commentary]
+Nearest style neighbours: @chicksonright [right]; @Forthepeoplepodcast305 [left]; @SaltyCracker [right]; @HasanReactionsfanTwo [left]; @JackCocchiarellaShow [left]
 
-Nearest topic neighbours: @SecularTalk [left_commentary]; @RebelHQ [left_commentary]; @dollemore [left_commentary]; @TheDonLemonShow [left_commentary]; @TheDamageReport [left_commentary]
+Nearest topic neighbours: @SecularTalk [left]; @RebelHQ [left]; @dollemore [left]; @TheDonLemonShow [left]; @TheDamageReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 202 rows, 201 unique (repeat share 0.5%); ranked; political share 97.5%.
 Top topics: Iran War and Strait of Hormuz Tensions (17.4%); Brian Shapiro vs MAGA Callers Debate (5.5%); ICE Protests and Shootings (5.0%); Minneapolis political unrest and federal response (3.0%); Trump Meltdowns and Collapses (2.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 87.3 | 55.7 | 0.6 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 87.3 | 55.7 | 0.6 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 64.6 | 63.3 | 0.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.3 | 7.6 | -0.7 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.3 | 7.6 | -0.7 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 50.6 | 57.0 | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 70.9 | 62.0 | -0.2 | -0.3 |
-| F6: Person-centred (named people) | 17.7 | 22.8 | -0.4 | 0.8 |
+| F6: Person-centred (named people) | 17.7 | 22.8 | -0.4 | 0.6 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 86.1 | 81.0 | 0.9 | -0.4 |
-| F8: Numeric and dated (digits, years) | 68.4 | 51.9 | 0.3 | 0.0 |
-| F9: ALL-CAPS shouting | 54.4 | 55.7 | -0.4 | -0.4 |
+| F8: Numeric and dated (digits, years) | 68.4 | 51.9 | 0.3 | -0.0 |
+| F9: ALL-CAPS shouting | 54.4 | 55.7 | -0.4 | -0.5 |
 | F10: Quoted speech | 72.2 | 78.5 | -0.3 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 26.6 | 21.5 | -0.5 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | 31.6 | 44.3 | -0.4 | 0.0 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 26.6 | 21.5 | -0.5 | 0.1 |
+| F12: Modal and future speculation (will, could, we) | 31.6 | 44.3 | -0.4 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.5% (2.3%); outrage 62.2% (77.1%); humor 0.0% (0.1%); question 4.0% (9.5%); breaking_live 1.0% (13.1%); episode_show 0.0% (4.2%); interview_guest 10.4% (21.3%); reaction 1.5% (1.9%); confrontation 9.4% (12.1%); listicle 0.0% (0.1%); howto_explainer 1.5% (3.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (1.9%); outrage 62.2% (63.2%); humor 0.0% (0.1%); question 4.0% (11.3%); breaking_live 1.0% (17.5%); episode_show 0.0% (6.4%); interview_guest 10.4% (18.3%); reaction 1.5% (1.5%); confrontation 9.4% (15.4%); listicle 0.0% (0.0%); howto_explainer 1.5% (2.9%)
 
 
-Nearest style neighbours: @SkyNews [wire_international]; @FoxNews [us_legacy_tv]; @thehill [us_press_print_digital]; @USATODAY [us_press_print_digital]; @CNN [us_legacy_tv]
+Nearest style neighbours: @SkyNews [left]; @FoxNews [right]; @thehill [neutral]; @USATODAY [neutral]; @CNN [left]
 
-Nearest topic neighbours: @timesofindia [wire_international]; @bulwarkmedia [centrist_heterodox]; @TheDonLemonShow [left_commentary]; @FoxNews [us_legacy_tv]; @TheYoungTurks [left_commentary]
+Nearest topic neighbours: @timesofindia [left]; @bulwarkmedia [left]; @TheDonLemonShow [left]; @FoxNews [right]; @TheYoungTurks [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

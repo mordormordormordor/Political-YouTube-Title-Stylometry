@@ -1,6 +1,6 @@
 # Legal AF (@LegalAFMTN)
 
-Lane: **legal_institutional** · organisation: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 1230000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 1230000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 2,740 rows, 2,735 unique (repeat share 0.2%); ranked; political share 99
 Top topics: Trump Supreme Court Legal Issues (33.2%); Trump Meltdowns and Collapses (10.1%); Trump Resignation and Leaks (6.9%); Trump slush fund scandal (4.0%); Todd Blanche Attorney General Confirmation (3.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 7.9 | 7.1 | -0.8 | 0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 7.9 | 7.1 | -0.8 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 20.9 | 15.9 | -0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 76.6 | 79.5 | -0.1 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 80.3 | 75.7 | 0.1 | -0.3 |
-| F5: Question and explainer framing (why, what, ?) | 17.2 | 4.2 | -0.4 | 0.0 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 76.6 | 79.5 | -0.1 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 80.3 | 75.7 | 0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 17.2 | 4.2 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 55.2 | 49.8 | -0.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 74.1 | 77.0 | -0.3 | -0.7 |
-| F8: Numeric and dated (digits, years) | 66.9 | 55.2 | -0.1 | -0.0 |
-| F9: ALL-CAPS shouting | 95.0 | 95.4 | 1.7 | -0.6 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 74.1 | 77.0 | -0.3 | -0.5 |
+| F8: Numeric and dated (digits, years) | 66.9 | 55.2 | -0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 95.0 | 95.4 | 1.7 | -0.3 |
 | F10: Quoted speech | 11.3 | 2.9 | -0.8 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 83.7 | 89.1 | 0.5 | 0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 83.7 | 89.1 | 0.5 | -0.3 |
 | F12: Modal and future speculation (will, could, we) | 39.3 | 26.8 | -0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.1% (2.2%); outrage 92.9% (75.8%); humor 0.1% (0.2%); question 13.2% (15.4%); breaking_live 1.5% (2.5%); episode_show 5.4% (0.7%); interview_guest 11.8% (7.5%); reaction 0.1% (0.6%); confrontation 8.6% (5.8%); listicle 0.0% (0.1%); howto_explainer 0.5% (10.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (2.7%); outrage 92.9% (63.9%); humor 0.1% (0.2%); question 13.2% (15.6%); breaking_live 1.5% (2.9%); episode_show 5.4% (2.8%); interview_guest 11.8% (9.8%); reaction 0.1% (2.9%); confrontation 8.6% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.5% (8.0%)
 
 
-Nearest style neighbours: @TheOfficerTatum [right_commentary]; @dollemore [left_commentary]; @MeidasTouch [left_commentary]; @DueDissidence [left_commentary]; @deanwithrs [streamer_reaction]
+Nearest style neighbours: @TheOfficerTatum [right]; @dollemore [left]; @MeidasTouch [left]; @DueDissidence [left]; @deanwithrs [left]
 
-Nearest topic neighbours: @katiephangnews [left_commentary]; @GlennKirschner2 [legal_institutional]; @briantylercohen [left_commentary]; @MeidasTouch [left_commentary]; @aaronparnas1 [left_commentary]
+Nearest topic neighbours: @katiephangnews [left]; @GlennKirschner2 [left]; @briantylercohen [left]; @MeidasTouch [left]; @aaronparnas1 [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,23 +86,23 @@ Titles: 46 rows, 45 unique (repeat share 2.2%); LOW-N (not ranked); political sh
 Top topics: Trump Supreme Court Legal Issues (35.6%); Todd Blanche Attorney General Confirmation (13.3%); Jack Smith Testifies on Trump Investigations (6.7%); ICE Protests and Shootings (4.4%); Supreme Court and Birthright Citizenship (4.4%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.3 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.6 | -0.3 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.8 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.0 | 0.2 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.2 |
-| F6: Person-centred (named people) | None | None | -0.8 | 1.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.3 | -0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.6 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.8 | -0.2 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.0 | -0.2 |
+| F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
+| F6: Person-centred (named people) | None | None | -0.8 | 0.6 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.2 | -0.4 |
-| F8: Numeric and dated (digits, years) | None | None | 0.2 | -0.2 |
-| F9: ALL-CAPS shouting | None | None | 1.4 | 0.2 |
-| F10: Quoted speech | None | None | -0.6 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.9 | 1.5 |
-| F12: Modal and future speculation (will, could, we) | None | None | -1.0 | -0.6 |
+| F8: Numeric and dated (digits, years) | None | None | 0.2 | -0.0 |
+| F9: ALL-CAPS shouting | None | None | 1.4 | -0.5 |
+| F10: Quoted speech | None | None | -0.6 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.9 | 0.1 |
+| F12: Modal and future speculation (will, could, we) | None | None | -1.0 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.2% (0.8%); outrage 66.7% (64.0%); humor 0.0% (0.0%); question 0.0% (21.1%); breaking_live 95.6% (6.7%); episode_show 0.0% (25.3%); interview_guest 13.3% (11.5%); reaction 2.2% (0.8%); confrontation 11.1% (8.7%); listicle 0.0% (0.0%); howto_explainer 0.0% (4.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.2% (1.9%); outrage 66.7% (63.2%); humor 0.0% (0.1%); question 0.0% (11.3%); breaking_live 95.6% (17.5%); episode_show 0.0% (6.4%); interview_guest 13.3% (18.3%); reaction 2.2% (1.5%); confrontation 11.1% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (2.9%)
 
 
 Engagement: n < 100 titles with views, not estimated.

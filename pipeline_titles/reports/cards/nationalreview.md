@@ -1,6 +1,6 @@
 # National Review (@nationalreview)
 
-Lane: **us_press_print_digital** · organisation: National Review · clipper: no · platform: youtube · subscribers: 116000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: National Review · clipper: no · platform: youtube · subscribers: 116000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 191 rows, 191 unique (repeat share 0.0%); ranked; political share 97.4%.
 Top topics: Israel-Palestine Conflict Media (5.8%); Zohran Mamdani and NYC Politics (5.2%); Race and Politics in Media (5.2%); Tucker Carlson Political Commentary (4.7%); ICE Protests and Shootings (3.1%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 60.3 | 52.3 | 0.4 | 0.7 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 62.3 | 60.7 | 0.2 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 60.3 | 52.3 | 0.4 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 62.3 | 60.7 | 0.2 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 70.7 | 54.4 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 56.1 | 48.5 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 99.2 | 99.2 | 3.9 | 1.0 |
+| F5: Question and explainer framing (why, what, ?) | 99.2 | 99.2 | 3.9 | 0.2 |
 | F6: Person-centred (named people) | 47.3 | 56.9 | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 61.9 | 58.6 | -0.4 | -0.4 |
-| F8: Numeric and dated (digits, years) | 26.4 | 25.9 | -0.3 | -0.1 |
-| F9: ALL-CAPS shouting | 26.4 | 30.5 | -0.5 | -0.4 |
-| F10: Quoted speech | 28.9 | 41.4 | -0.6 | -0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 37.7 | 39.3 | -0.5 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 49.8 | 43.9 | -0.1 | -0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 61.9 | 58.6 | -0.4 | -0.7 |
+| F8: Numeric and dated (digits, years) | 26.4 | 25.9 | -0.3 | -0.2 |
+| F9: ALL-CAPS shouting | 26.4 | 30.5 | -0.5 | -0.3 |
+| F10: Quoted speech | 28.9 | 41.4 | -0.6 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 37.7 | 39.3 | -0.5 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 49.8 | 43.9 | -0.1 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 4.7% (1.8%); outrage 53.4% (28.1%); humor 0.5% (0.1%); question 60.2% (26.4%); breaking_live 0.0% (1.0%); episode_show 0.0% (1.9%); interview_guest 3.7% (9.0%); reaction 0.0% (0.7%); confrontation 1.6% (4.1%); listicle 0.0% (0.4%); howto_explainer 46.6% (14.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.7% (3.6%); outrage 53.4% (59.6%); humor 0.5% (0.2%); question 60.2% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 3.7% (8.5%); reaction 0.0% (2.2%); confrontation 1.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 46.6% (9.5%)
 
 
-Nearest style neighbours: @TheDailyBeast [us_press_print_digital]; @ColemanHughesOfficial [interview_podcast]; @nytimes [us_press_print_digital]; @chriscuomo [centrist_heterodox]; @nousnetwork [explainer_geopolitics]
+Nearest style neighbours: @TheDailyBeast [left]; @ColemanHughesOfficial [right]; @nytimes [left]; @chriscuomo [left]; @nousnetwork [left]
 
-Nearest topic neighbours: @MichaelKnowles [right_commentary]; @BenShapiro [right_commentary]; @BlazeTV [right_commentary]; @AfterPartyEmily [right_commentary]; @RubinReport [right_commentary]
+Nearest topic neighbours: @MichaelKnowles [right]; @BenShapiro [right]; @BlazeTV [right]; @AfterPartyEmily [right]; @RubinReport [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,23 +85,23 @@ Titles: 2 rows, 2 unique (repeat share 0.0%); LOW-N (not ranked); political shar
 Top topics: Israel-Palestine Conflict Media (50.0%); America's 250th Anniversary and Founding History (50.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.2 | 0.4 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.4 | -1.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.1 | 0.5 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.0 | -0.2 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.9 | -0.4 |
-| F6: Person-centred (named people) | None | None | -1.2 | 0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | 3.2 | 0.2 |
-| F8: Numeric and dated (digits, years) | None | None | -0.4 | 0.2 |
-| F9: ALL-CAPS shouting | None | None | -1.2 | -0.7 |
-| F10: Quoted speech | None | None | -1.2 | -0.7 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.2 | -0.7 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.2 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.4 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.1 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | -0.9 | -0.3 |
+| F6: Person-centred (named people) | None | None | -1.2 | 0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | 3.2 | -0.6 |
+| F8: Numeric and dated (digits, years) | None | None | -0.4 | -0.0 |
+| F9: ALL-CAPS shouting | None | None | -1.2 | -0.4 |
+| F10: Quoted speech | None | None | -1.2 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.2 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | None | None | -2.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (1.4%); outrage 0.0% (9.0%); humor 0.0% (0.0%); question 0.0% (0.2%); breaking_live 0.0% (39.1%); episode_show 0.0% (8.5%); interview_guest 0.0% (9.5%); reaction 0.0% (1.1%); confrontation 0.0% (1.9%); listicle 0.0% (0.1%); howto_explainer 0.0% (0.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.2%); outrage 0.0% (56.4%); humor 0.0% (0.1%); question 0.0% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 0.0% (14.0%); reaction 0.0% (2.1%); confrontation 0.0% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

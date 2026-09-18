@@ -3,7 +3,7 @@
 import numpy as np
 import pandas as pd
 
-from pipeline_titles.leaning import N_PER_CREATOR, draw_sample, group_month_check, parse_labels, stability_check
+from pipeline_titles.leaning import N_BASE, draw_sample, group_month_check, parse_labels, stability_check
 
 
 def test_parse_labels_reads_plain_and_decorated_lines_and_targets():
@@ -24,7 +24,7 @@ def _prepared(n_uploads: dict[str, int]) -> pd.DataFrame:
 
 def test_draw_sample_marks_base_rows_and_spreads_topup_across_months():
     prep = _prepared({"@big": 200, "@small": 20})
-    base_only = draw_sample(prep, N_PER_CREATOR)
+    base_only = draw_sample(prep, N_BASE)
     assert base_only.is_base.all() and base_only.groupby("creator").size().to_dict() == {"@big": 16, "@small": 16}
     full = draw_sample(prep, 50, min_uploads=50)
     assert full.groupby("creator").size().to_dict() == {"@big": 50, "@small": 16}       # @small has < 50 uploads: base only

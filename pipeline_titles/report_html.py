@@ -37,17 +37,17 @@ table.all tr.sel td{background:var(--hl)}
 
 JS = r"""
 const D = JSON.parse(document.getElementById('data').textContent);
-const LANE_COLORS = {};
-const PALETTE = ['#b5462b','#2b6cb0','#2f855a','#805ad5','#d69e2e','#c53030','#319795','#dd6b20','#3182ce','#718096','#b83280','#38a169','#975a16','#4a5568'];
-D.lanes.forEach((l,i)=>LANE_COLORS[l]=PALETTE[i%PALETTE.length]);
+// channel groups (left / neutral / right from the leaning stage): left blue, neutral grey, right orange
+const GROUP_COLORS = {left:'#2a78d6', neutral:'#8a8983', right:'#eb6834', unscored:'#c9c8c3'};
+const GROUP_LABEL = {left:'left channels', neutral:'neutral channels', right:'right channels', unscored:'unscored'};
 const $ = s=>document.querySelector(s);
 const creators = Object.keys(D.creators).sort((a,b)=>a.toLowerCase().localeCompare(b.toLowerCase()));
 const fmtPct = v => v==null?'':(100*v).toFixed(1)+'%';
 const fmt = (v,d=2) => v==null?'':(+v).toFixed(d);
 let genre = 'videos', current = creators[0];
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
-function laneChip(l){return `<span class="chip" style="border-color:${LANE_COLORS[l]||'#999'}">${esc(l||'?')}</span>`;}
-function bar(pct, lane){ const p=Math.max(0,Math.min(100,pct||0)); return `<div class="bar"><i style="width:${p}%"></i>${lane!=null?`<b style="left:${Math.max(0,Math.min(100,lane))}%" title="lane median percentile"></b>`:''}</div>`; }
+function groupChip(g){return `<span class="chip" style="border-color:${GROUP_COLORS[g]||'#999'}" title="channel group from the title-leaning score (document 14)">${esc(GROUP_LABEL[g]||g||'?')}</span>`;}
+function bar(pct, grp){ const p=Math.max(0,Math.min(100,pct||0)); return `<div class="bar"><i style="width:${p}%"></i>${grp!=null?`<b style="left:${Math.max(0,Math.min(100,grp))}%" title="group median percentile"></b>`:''}</div>`; }
 function spark(vals, months, color){
   const w=300,h=40,xs=vals.map((_,i)=>i*(w-6)/(Math.max(vals.length-1,1))+3);
   const good=vals.filter(v=>v!=null); if(!good.length) return '';
@@ -60,30 +60,29 @@ function renderCard(){
   const c = D.creators[current]; const g = c.genres[genre];
   const other = Object.keys(c.genres).filter(k=>k!==genre);
   let h = `<h2>${esc(c.channel_name)} <span class="muted">${esc(c.creator)}</span></h2>
-  <div>${laneChip(c.lane)} organisation: <b>${esc(c.organisation)}</b> · clipper: <b>${c.clipper?'yes':'no'}</b> · ${esc(c.platform)} · subscribers: <b>${c.subscribers!=null?c.subscribers.toLocaleString():'n/a'}</b>${c.note?` · <span class="muted">${esc(c.note)}</span>`:''}</div>`;
+  <div>${groupChip(c.group)} organisation: <b>${esc(c.organisation)}</b> · clipper: <b>${c.clipper?'yes':'no'}</b> · ${esc(c.platform)} · subscribers: <b>${c.subscribers!=null?c.subscribers.toLocaleString():'n/a'}</b>${c.note?` · <span class="muted">${esc(c.note)}</span>`:''}</div>`;
   if(!g){ h += `<p class="muted">No ${genre} titles for this creator${other.length?` (has ${other.join(', ')})`:''}.</p>`; $('#card').innerHTML=h; return; }
   h += `<h3>${genre}</h3><p>${g.n_rows.toLocaleString()} titles, ${g.n_unique.toLocaleString()} unique (repeat share ${fmtPct(g.repeat_share)}) · ${g.low_n?'<b>low-n: reported, not ranked</b>':'ranked'} · political share ${fmtPct(g.political_share)} · ${g.first_month} to ${g.last_month}</p>`;
   h += `<h3>Topic mix (top 5)</h3><table>${g.topics_top5.map(t=>`<tr><td>${esc(t.label)}${t.political?'':' <span class="muted">(non-political)</span>'}</td><td class="num">${fmtPct(t.share)}</td><td style="width:40%">${bar(100*t.share/Math.max(...g.topics_top5.map(x=>x.share)))}</td></tr>`).join('')}</table>`;
   if(g.dimensions){
-    h += `<h3>Style dimensions (percentile rank within ${genre}, topic-controlled; tick = lane median)</h3><table><tr><th>dimension</th><th class="num">pct</th><th style="width:40%"></th><th class="num">raw pct</th><th class="num">score</th><th class="num">lane median</th></tr>`;
-    const lm = D.lane_medians[c.lane+'|'+genre]||{};
+    h += `<h3>Style dimensions (percentile rank within ${genre}, topic-controlled; tick = median of the channel's group)</h3><table><tr><th>dimension</th><th class="num">pct</th><th style="width:40%"></th><th class="num">raw pct</th><th class="num">score</th><th class="num">group median</th></tr>`;
     for(const [f,d] of Object.entries(g.dimensions)){
-      const lanePct = laneMedianPct(f, c.lane);
-      h += `<tr><td><b>${f}</b> ${esc(D.factors[f].name)}</td><td class="num">${fmt(d.pct_controlled,0)}</td><td>${bar(d.pct_controlled, lanePct)}</td><td class="num">${fmt(d.pct_raw,0)}</td><td class="num">${fmt(d.controlled)}</td><td class="num">${fmt(d.lane_median)}</td></tr>`;
+      const grpPct = groupMedianPct(f, c.group);
+      h += `<tr><td><b>${f}</b> ${esc(D.factors[f].name)}</td><td class="num">${fmt(d.pct_controlled,0)}</td><td>${bar(d.pct_controlled, grpPct)}</td><td class="num">${fmt(d.pct_raw,0)}</td><td class="num">${fmt(d.controlled)}</td><td class="num">${fmt(d.group_median)}</td></tr>`;
     }
     h += `</table>`;
   }
   if(g.hooks){
-    h += `<h3>Hooks and formats (share of titles; lane mean in brackets)</h3><table>`;
-    for(const [k,v] of Object.entries({...g.hooks, ...g.formats})) h += `<tr><td>${k}</td><td class="num">${fmtPct(v.share)}</td><td style="width:40%">${bar(100*v.share)}</td><td class="num muted">(${fmtPct(v.lane_mean)})</td></tr>`;
+    h += `<h3>Hooks and formats (share of titles; group mean in brackets)</h3><table>`;
+    for(const [k,v] of Object.entries({...g.hooks, ...g.formats})) h += `<tr><td>${k}</td><td class="num">${fmtPct(v.share)}</td><td style="width:40%">${bar(100*v.share)}</td><td class="num muted">(${fmtPct(v.group_mean)})</td></tr>`;
     h += `</table>`;
   }
-  if(g.neighbours_style) h += `<h3>Nearest style neighbours</h3><div>${g.neighbours_style.map(n=>`<span class="chip" data-c="${esc(n.creator)}" style="border-color:${LANE_COLORS[n.lane]||'#999'}">${esc(n.creator)} <span class="muted">${esc(n.lane)} · ${fmt(n.distance)}</span></span>`).join('')}</div>`;
-  if(g.neighbours_topic) h += `<h3>Nearest topic neighbours</h3><div>${g.neighbours_topic.map(n=>`<span class="chip" data-c="${esc(n.creator)}" style="border-color:${LANE_COLORS[n.lane]||'#999'}">${esc(n.creator)} <span class="muted">${esc(n.lane)} · JS ${fmt(n.js)}</span></span>`).join('')}</div>`;
+  if(g.neighbours_style) h += `<h3>Nearest style neighbours</h3><div>${g.neighbours_style.map(n=>`<span class="chip" data-c="${esc(n.creator)}" style="border-color:${GROUP_COLORS[n.group]||'#999'}">${esc(n.creator)} <span class="muted">${esc(n.group)} · ${fmt(n.distance)}</span></span>`).join('')}</div>`;
+  if(g.neighbours_topic) h += `<h3>Nearest topic neighbours</h3><div>${g.neighbours_topic.map(n=>`<span class="chip" data-c="${esc(n.creator)}" style="border-color:${GROUP_COLORS[n.group]||'#999'}">${esc(n.creator)} <span class="muted">${esc(n.group)} · JS ${fmt(n.js)}</span></span>`).join('')}</div>`;
   if(g.monthly && g.monthly.length){
     const months = g.monthly.map(m=>m.month+(m.partial?'*':''));
     h += `<h3>Monthly drift (${months[0]} to ${months[months.length-1]}; * = 1-14 Sept only)</h3><div class="small muted">titles per month: ${g.monthly.map(m=>m.n_titles).join(' · ')}</div>`;
-    for(const f of Object.keys(D.factors)) h += `<div class="sparkrow"><span><b>${f}</b> <span class="muted small">${esc(D.factors[f].name)}</span></span>${spark(g.monthly.map(m=>m[f]),months,LANE_COLORS[c.lane]||'#999')}<span class="num small">${fmt(g.monthly[g.monthly.length-1][f])}</span></div>`;
+    for(const f of Object.keys(D.factors)) h += `<div class="sparkrow"><span><b>${f}</b> <span class="muted small">${esc(D.factors[f].name)}</span></span>${spark(g.monthly.map(m=>m[f]),months,GROUP_COLORS[c.group]||'#999')}<span class="num small">${fmt(g.monthly[g.monthly.length-1][f])}</span></div>`;
     for(const k of D.hooks) h += `<div class="sparkrow"><span>${k}</span>${spark(g.monthly.map(m=>m[k]),months,'#718096')}<span class="num small">${fmtPct(g.monthly[g.monthly.length-1][k])}</span></div>`;
   }
   if(g.engagement){
@@ -99,10 +98,10 @@ function renderCard(){
   $('#card').innerHTML = h;
   document.querySelectorAll('#card .chip[data-c]').forEach(el=>el.onclick=()=>select(el.dataset.c));
 }
-function laneMedianPct(f, lane){
-  // percentile of the lane median among ranked creators of this genre
+function groupMedianPct(f, grp){
+  // percentile of the channel group's median among ranked creators of this genre
   const vals = creators.map(c=>D.creators[c].genres[genre]).filter(g=>g&&g.dimensions&&!g.low_n).map(g=>g.dimensions[f].controlled).filter(v=>v!=null).sort((a,b)=>a-b);
-  const med = (D.lane_medians[lane+'|'+genre]||{})[f]; if(med==null||!vals.length) return null;
+  const med = (D.group_medians[grp+'|'+genre]||{})[f]; if(med==null||!vals.length) return null;
   let k=0; while(k<vals.length&&vals[k]<=med)k++; return 100*k/vals.length;
 }
 function renderMap(kind){
@@ -116,50 +115,50 @@ function renderMap(kind){
   let s = `<rect width="${W}" height="${H}" fill="transparent"/>`;
   const mine = pts.find(p=>p.creator===current);
   if(mine) pts.filter(p=>nn.has(p.creator)).forEach(p=>{ s+=`<line x1="${sx(mine.x)}" y1="${sy(mine.y)}" x2="${sx(p.x)}" y2="${sy(p.y)}" stroke="var(--fg)" stroke-opacity=".35"/>`; });
-  pts.forEach(p=>{ const sel=p.creator===current; s+=`<circle cx="${sx(p.x).toFixed(1)}" cy="${sy(p.y).toFixed(1)}" r="${sel?7:(nn.has(p.creator)?5:3.5)}" fill="${LANE_COLORS[p.lane]||'#999'}" fill-opacity="${sel||nn.has(p.creator)?1:.6}" stroke="${sel?'var(--fg)':'none'}" stroke-width="2" data-c="${esc(p.creator)}" data-l="${esc(p.lane)}"/>`; });
+  pts.forEach(p=>{ const sel=p.creator===current; s+=`<circle cx="${sx(p.x).toFixed(1)}" cy="${sy(p.y).toFixed(1)}" r="${sel?7:(nn.has(p.creator)?5:3.5)}" fill="${GROUP_COLORS[p.group]||'#999'}" fill-opacity="${sel||nn.has(p.creator)?1:.6}" stroke="${sel?'var(--fg)':'none'}" stroke-width="2" data-c="${esc(p.creator)}" data-l="${esc(GROUP_LABEL[p.group]||p.group)}"/>`; });
   if(mine) s+=`<text class="lbl" x="${sx(mine.x)+9}" y="${sy(mine.y)+4}">${esc(current)}</text>`;
   pts.filter(p=>nn.has(p.creator)).forEach(p=>{ s+=`<text class="lbl" x="${sx(p.x)+7}" y="${sy(p.y)+3}" opacity=".8">${esc(p.creator)}</text>`; });
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`); svg.innerHTML=s;
   svg.querySelectorAll('circle').forEach(el=>{ el.onclick=()=>select(el.dataset.c); el.onmousemove=e=>{const t=$('#tip'); t.style.display='block'; t.style.left=(e.clientX+12)+'px'; t.style.top=(e.clientY+12)+'px'; t.textContent=el.dataset.c+' · '+el.dataset.l;}; el.onmouseleave=()=>$('#tip').style.display='none'; });
 }
 function select(c){ if(!D.creators[c]) return; current=c; $('#creator').value=c; renderAll(); }
-let sortKey='creator', sortDir=1, laneFilter='', textFilter='';
+let sortKey='creator', sortDir=1, groupFilter='', textFilter='';
 function pcColor(p){ // percentile 0-100 -> blue (low) .. grey .. red (high), text stays ink
   if(p==null) return 'transparent'; const t=(p-50)/50; const a=Math.min(1,Math.abs(t))*0.55;
   return t<0?`rgba(42,120,214,${a})`:`rgba(230,103,103,${a})`; }
 function rowsAll(){
   const F=Object.keys(D.factors);
   return creators.map(c=>{ const k=D.creators[c], g=k.genres[genre]; if(!g) return null;
-    const r={creator:c, name:k.channel_name, lane:k.lane, organisation:k.organisation, clipper:k.clipper, n_unique:g.n_unique, low_n:g.low_n, political:g.political_share,
+    const r={creator:c, name:k.channel_name, group:k.group, organisation:k.organisation, clipper:k.clipper, n_unique:g.n_unique, low_n:g.low_n, political:g.political_share,
       outrage:g.hooks?g.hooks.outrage.share:null, question:g.formats?g.formats.question.share:null, gini:g.hits?g.hits.gini:null, top10:g.hits?g.hits.top10_share:null, cluster:g.style_cluster,
       arousal:g.arousal?g.arousal.index:null, caps:g.caps_profile?(g.caps_profile.all_caps+g.caps_profile.selective_caps):null, leaning:k.leaning?(k.leaning.judge_score!=null?k.leaning.judge_score:k.leaning.mean_score):null};
     F.forEach(f=>r[f]=g.dimensions?g.dimensions[f].pct_controlled:null); return r; }).filter(Boolean);
 }
 function renderAllTable(){
   const F=Object.keys(D.factors); let rows=rowsAll();
-  if(laneFilter) rows=rows.filter(r=>r.lane===laneFilter);
+  if(groupFilter) rows=rows.filter(r=>r.group===groupFilter);
   if(textFilter) rows=rows.filter(r=>(r.creator+' '+r.name+' '+r.organisation).toLowerCase().includes(textFilter));
   rows.sort((a,b)=>{ const x=a[sortKey],y=b[sortKey]; if(x==null&&y==null)return 0; if(x==null)return 1; if(y==null)return -1; return (typeof x==='string'? x.localeCompare(y) : x-y)*sortDir; });
-  const cols=[['creator','creator'],['lane','lane'],['n_unique','titles'],['political','political'],['outrage','outrage'],['arousal','arousal'],['caps','CAPS'],['leaning','leaning'],['question','question'],['gini','Gini'],['top10','top 10%'],['cluster','style cl.']].concat(F.map(f=>[f,f]));
+  const cols=[['creator','creator'],['group','group'],['n_unique','titles'],['political','political'],['outrage','outrage'],['arousal','arousal'],['caps','CAPS'],['leaning','leaning'],['question','question'],['gini','Gini'],['top10','top 10%'],['cluster','style cl.']].concat(F.map(f=>[f,f]));
   let h=`<tr>${cols.map(([k,l])=>`<th data-k="${k}" class="${k===sortKey?'sorted':''}" title="${D.factors[k]?esc(D.factors[k].name):''}">${esc(l)}${k===sortKey?(sortDir>0?' ▲':' ▼'):''}</th>`).join('')}</tr>`;
   for(const r of rows){
     h+=`<tr class="${r.creator===current?'sel':''}"><td class="name" data-c="${esc(r.creator)}" title="${esc(r.name)}${r.clipper?' (clipper)':''}">${esc(r.creator)}${r.low_n?' <span class="muted" title="low-n: fewer than 50 titles, not ranked">·</span>':''}</td>`;
-    h+=`<td><span style="color:${LANE_COLORS[r.lane]||'#999'}">●</span> ${esc(r.lane)}</td><td class="num">${r.n_unique.toLocaleString()}</td><td class="num">${fmtPct(r.political)}</td><td class="num">${fmtPct(r.outrage)}</td><td class="num">${fmt(r.arousal)}</td><td class="num">${fmtPct(r.caps)}</td><td class="num">${r.leaning==null?'':(r.leaning>0?'+':'')+fmt(r.leaning)}</td><td class="num">${fmtPct(r.question)}</td><td class="num">${fmt(r.gini)}</td><td class="num">${fmtPct(r.top10)}</td><td class="num">${r.cluster==null?'':'S'+r.cluster}</td>`;
+    h+=`<td><span style="color:${GROUP_COLORS[r.group]||'#999'}">●</span> ${esc(r.group)}</td><td class="num">${r.n_unique.toLocaleString()}</td><td class="num">${fmtPct(r.political)}</td><td class="num">${fmtPct(r.outrage)}</td><td class="num">${fmt(r.arousal)}</td><td class="num">${fmtPct(r.caps)}</td><td class="num">${r.leaning==null?'':(r.leaning>0?'+':'')+fmt(r.leaning)}</td><td class="num">${fmtPct(r.question)}</td><td class="num">${fmt(r.gini)}</td><td class="num">${fmtPct(r.top10)}</td><td class="num">${r.cluster==null?'':'S'+r.cluster}</td>`;
     h+=F.map(f=>`<td class="pc" style="background:${pcColor(r[f])}">${r[f]==null?'':Math.round(r[f])}</td>`).join('')+'</tr>';
   }
   $('#alltable').innerHTML=h; $('#allcount').textContent=`${rows.length} creators with ${genre} titles`;
-  $('#alltable').querySelectorAll('th').forEach(th=>th.onclick=()=>{ const k=th.dataset.k; if(sortKey===k) sortDir=-sortDir; else { sortKey=k; sortDir=(k==='creator'||k==='lane')?1:-1; } renderAllTable(); });
+  $('#alltable').querySelectorAll('th').forEach(th=>th.onclick=()=>{ const k=th.dataset.k; if(sortKey===k) sortDir=-sortDir; else { sortKey=k; sortDir=(k==='creator'||k==='group')?1:-1; } renderAllTable(); });
   $('#alltable').querySelectorAll('td.name').forEach(td=>td.onclick=()=>{ select(td.dataset.c); window.scrollTo({top:0,behavior:'smooth'}); });
 }
 function renderAll(){ renderCard(); renderMap('style'); renderMap('topic'); renderAllTable(); }
 function init(){
-  const sel=$('#creator'); creators.forEach(c=>{const o=document.createElement('option'); o.value=c; o.textContent=`${c} — ${D.creators[c].channel_name} [${D.creators[c].lane}]`; sel.appendChild(o);});
+  const sel=$('#creator'); creators.forEach(c=>{const o=document.createElement('option'); o.value=c; o.textContent=`${c} — ${D.creators[c].channel_name} [${D.creators[c].group}]`; sel.appendChild(o);});
   sel.value=current; sel.onchange=()=>select(sel.value);
   $('#search').oninput=e=>{ const q=e.target.value.toLowerCase(); const hit=creators.find(c=>c.toLowerCase().includes(q)||D.creators[c].channel_name.toLowerCase().includes(q)); if(hit) select(hit); };
   $('#genre').onchange=e=>{genre=e.target.value; renderAll();};
-  $('#legend').innerHTML = D.lanes.map(l=>`<span><i style="background:${LANE_COLORS[l]}"></i>${esc(l)}</span>`).join('');
-  const lf=$('#lanefilter'); D.lanes.forEach(l=>{const o=document.createElement('option'); o.value=l; o.textContent=l; lf.appendChild(o);});
-  lf.onchange=e=>{laneFilter=e.target.value; renderAllTable();}; $('#allsearch').oninput=e=>{textFilter=e.target.value.toLowerCase(); renderAllTable();};
+  $('#legend').innerHTML = D.groups.map(g=>`<span><i style="background:${GROUP_COLORS[g]}"></i>${esc(GROUP_LABEL[g]||g)}</span>`).join('') + ' <span class="muted small">(channel groups from the title-leaning score, document 14)</span>';
+  const gf=$('#groupfilter'); D.groups.forEach(g=>{const o=document.createElement('option'); o.value=g; o.textContent=GROUP_LABEL[g]||g; gf.appendChild(o);});
+  gf.onchange=e=>{groupFilter=e.target.value; renderAllTable();}; $('#allsearch').oninput=e=>{textFilter=e.target.value.toLowerCase(); renderAllTable();};
   $('#factors').innerHTML = Object.entries(D.factors).map(([f,v])=>`<tr><td><b>${f}</b></td><td>${esc(v.name)}</td><td class="muted small">${esc(v.auto)}</td></tr>`).join('');
   renderAll();
 }
@@ -183,8 +182,8 @@ def _table_html(df: pd.DataFrame, cols: list, floatfmt: str = "{:.3f}") -> str:
 def render_html(cards: dict, comparison: pd.DataFrame, entities: pd.DataFrame, candidates: pd.DataFrame) -> str:
     data = json.dumps(cards, ensure_ascii=False).replace("</", "<\\/")
     n = len(cards["creators"])
-    comp = _table_html(comparison, ["genre", "titles", "n_creators", "style_k", "style_silhouette", "topic_k", "topic_silhouette", "ari_style_vs_lane", "ari_topic_vs_lane", "ari_style_vs_topic"]) if comparison is not None else ""
-    ents = _table_html(entities[entities["kind"] == "person"].head(15), ["entity", "n_titles_balanced", "n_creators", "top_lanes_by_share", "outrage_ratio"], "{:.2f}") if entities is not None else ""
+    comp = _table_html(comparison, ["genre", "titles", "n_creators", "style_k", "style_silhouette", "topic_k", "topic_silhouette", "ari_style_vs_group", "ari_topic_vs_group", "ari_style_vs_topic"]) if comparison is not None else ""
+    ents = _table_html(entities[entities["kind"] == "person"].head(15), ["entity", "n_titles_balanced", "n_creators", "share_by_group", "outrage_ratio"], "{:.2f}") if entities is not None else ""
     cand = _table_html(candidates, ["candidate", "best_factor", "creator_level_r", "verdict"]) if candidates is not None else ""
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Title Stylometry</title><style>{CSS}</style></head><body>
@@ -196,10 +195,10 @@ def render_html(cards: dict, comparison: pd.DataFrame, entities: pd.DataFrame, c
 <div class="col"><div class="card"><h2>Style space</h2><div class="muted small">PCA of topic-controlled factor scores (z-scored across ranked creators of the genre). Lines join the selected creator to its five nearest style neighbours; click a point to select it.</div><svg class="map" id="map-style"></svg></div>
 <div class="card"><h2>Topic space</h2><div class="muted small">MDS of Jensen-Shannon distances between creators' topic mixes; lines join the selected creator to its five nearest topic neighbours.</div><svg class="map" id="map-topic"></svg></div></div></div>
 <div class="card"><h2>All creators</h2><div class="muted small">One row per creator for the selected genre. arousal = 0-1 arousal index; CAPS = share of titles in ALL CAPS or with selective CAPS; leaning = title-leaning score of the judge-of-record model (−1 left … +1 right; document 14). Dimension columns are percentile ranks of the topic-controlled score among ranked creators (blue = low, red = high; hover a column header for the factor's name). Click a header to sort, a creator to open its card. A dot after the handle marks a low-n group (under 50 titles, shown but not ranked).</div>
-<div class="controls"><label>Lane <select id="lanefilter"><option value="">all lanes</option></select></label><input id="allsearch" placeholder="filter by handle, name or organisation" size="34"><span class="muted small" id="allcount"></span></div>
+<div class="controls"><label>Group <select id="groupfilter"><option value="">all groups</option></select></label><input id="allsearch" placeholder="filter by handle, name or organisation" size="34"><span class="muted small" id="allcount"></span></div>
 <div class="allwrap"><table class="all" id="alltable"></table></div></div>
 <div class="row"><div class="col card"><h2>Dimensions</h2><table><tr><th>factor</th><th>name</th><th>from loadings</th></tr><tbody id="factors"></tbody></table><h3>Candidate labels</h3>{cand}</div>
-<div class="col card"><h2>Clusterings vs lanes (adjusted Rand index)</h2>{comp}<h3>Most-named people (creator-balanced)</h3>{ents}</div></div>
+<div class="col card"><h2>Clusterings vs the channel groups (adjusted Rand index)</h2>{comp}<h3>Most-named people (creator-balanced)</h3>{ents}</div></div>
 <div class="tip" id="tip"></div>
 <script id="data" type="application/json">{data}</script>
 <script>{JS}</script></body></html>"""

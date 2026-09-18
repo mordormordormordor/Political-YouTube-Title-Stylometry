@@ -1,6 +1,6 @@
 # The Humanist Report (@TheHumanistReport)
 
-Lane: **left_commentary** · organisation: Humanist Report · clipper: no · platform: youtube · subscribers: 790000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Humanist Report · clipper: no · platform: youtube · subscribers: 790000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 154 rows, 154 unique (repeat share 0.0%); ranked; political share 96.8%.
 Top topics: 2026 Midterm Election Predictions (4.5%); Socialism and Democratic Party Conflict (4.5%); ICE Protests and Shootings (3.9%); Left Wing Political Violence (3.9%); Iran War and Strait of Hormuz Tensions (3.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 56.1 | 48.5 | 0.3 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 87.4 | 82.8 | 0.8 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 56.1 | 48.5 | 0.3 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 87.4 | 82.8 | 0.8 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.1 | 47.7 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 69.5 | 67.8 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 51.9 | 50.2 | 0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 51.9 | 50.2 | 0.2 | 0.1 |
 | F6: Person-centred (named people) | 37.7 | 44.4 | -0.4 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 66.1 | 66.1 | -0.4 | -0.5 |
 | F8: Numeric and dated (digits, years) | 43.1 | 37.2 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 1.3 | 2.5 | -1.1 | -0.3 |
-| F10: Quoted speech | 64.4 | 63.2 | -0.1 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 91.6 | 88.3 | 0.8 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 14.2 | 20.1 | -0.6 | -0.3 |
+| F10: Quoted speech | 64.4 | 63.2 | -0.1 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 91.6 | 88.3 | 0.8 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 14.2 | 20.1 | -0.6 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.7% (3.0%); outrage 85.1% (76.0%); humor 0.0% (0.2%); question 7.8% (9.8%); breaking_live 9.1% (5.4%); episode_show 0.0% (2.2%); interview_guest 11.0% (10.4%); reaction 0.7% (1.1%); confrontation 7.1% (8.2%); listicle 0.0% (0.1%); howto_explainer 9.1% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.7% (2.7%); outrage 85.1% (63.9%); humor 0.0% (0.2%); question 7.8% (15.6%); breaking_live 9.1% (2.9%); episode_show 0.0% (2.8%); interview_guest 11.0% (9.8%); reaction 0.7% (2.9%); confrontation 7.1% (7.6%); listicle 0.0% (0.1%); howto_explainer 9.1% (8.0%)
 
 
-Nearest style neighbours: @ChadPrather1 [right_commentary]; @FreshFitMiami [right_commentary]; @RubinReport [right_commentary]; @OfficialSaharTV [right_commentary]; @GrahamAllen [right_commentary]
+Nearest style neighbours: @ChadPrather1 [right]; @FreshFitMiami [right]; @RubinReport [right]; @OfficialSaharTV [right]; @GrahamAllen [right]
 
-Nearest topic neighbours: @TheMajorityReport [left_commentary]; @SecularTalk [left_commentary]; @thomhartmann [left_commentary]; @chriscuomo [centrist_heterodox]; @franifio [humour_satire]
+Nearest topic neighbours: @TheMajorityReport [left]; @SecularTalk [left]; @thomhartmann [left]; @chriscuomo [left]; @franifio [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -84,23 +84,23 @@ Titles: 35 rows, 35 unique (repeat share 0.0%); LOW-N (not ranked); political sh
 Top topics: Left Wing Political Violence (8.6%); Candace Owens and Erika Kirk Controversy (5.7%); Socialism and Democratic Party Conflict (5.7%); Kamala Harris 2028 Election Speculation (5.7%); Political Podcasts and Influencers (5.7%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.2 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.2 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.7 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.7 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |
-| F6: Person-centred (named people) | None | None | 0.7 | 0.8 |
+| F6: Person-centred (named people) | None | None | 0.7 | 0.6 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.5 | -0.4 |
-| F8: Numeric and dated (digits, years) | None | None | 0.5 | 0.0 |
-| F9: ALL-CAPS shouting | None | None | -1.2 | -0.4 |
+| F8: Numeric and dated (digits, years) | None | None | 0.5 | -0.0 |
+| F9: ALL-CAPS shouting | None | None | -1.2 | -0.5 |
 | F10: Quoted speech | None | None | -0.3 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.2 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | None | None | -0.3 | 0.0 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.2 | 0.1 |
+| F12: Modal and future speculation (will, could, we) | None | None | -0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (2.3%); outrage 54.3% (77.1%); humor 0.0% (0.1%); question 2.9% (9.5%); breaking_live 0.0% (13.1%); episode_show 100.0% (4.2%); interview_guest 37.1% (21.3%); reaction 2.9% (1.9%); confrontation 5.7% (12.1%); listicle 0.0% (0.1%); howto_explainer 0.0% (3.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (1.9%); outrage 54.3% (63.2%); humor 0.0% (0.1%); question 2.9% (11.3%); breaking_live 0.0% (17.5%); episode_show 100.0% (6.4%); interview_guest 37.1% (18.3%); reaction 2.9% (1.5%); confrontation 5.7% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (2.9%)
 
 
 Engagement: n < 100 titles with views, not estimated.

@@ -1,6 +1,6 @@
 # Bloomberg Television (@markets)
 
-Lane: **us_press_print_digital** · organisation: Bloomberg · clipper: no · platform: youtube · subscribers: 3270000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: Bloomberg · clipper: no · platform: youtube · subscribers: 3270000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 8,008 rows, 7,974 unique (repeat share 0.4%); ranked; political share 91
 Top topics: Iran War and Strait of Hormuz Tensions (12.3%); Iran War and Energy Market Impact (7.1%); Crypto and Politics Scandal (7.1%); AI and Political Concerns (6.9%); Tech Business and Startups (4.8%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 72.8 | 73.6 | 0.5 | 0.7 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 7.9 | 10.9 | -1.1 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 72.8 | 73.6 | 0.5 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 7.9 | 10.9 | -1.1 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 32.6 | 63.2 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 27.2 | 20.9 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 6.7 | 19.2 | -0.5 | 1.0 |
+| F5: Question and explainer framing (why, what, ?) | 6.7 | 19.2 | -0.5 | 0.1 |
 | F6: Person-centred (named people) | 74.1 | 60.3 | 0.2 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 72.4 | 82.8 | -0.3 | -0.4 |
-| F8: Numeric and dated (digits, years) | 89.1 | 91.6 | 0.3 | -0.1 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 72.4 | 82.8 | -0.3 | -0.1 |
+| F8: Numeric and dated (digits, years) | 89.1 | 91.6 | 0.3 | 0.0 |
 | F9: ALL-CAPS shouting | 41.8 | 25.9 | -0.4 | -0.4 |
 | F10: Quoted speech | 28.5 | 46.0 | -0.6 | -0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 39.7 | 49.0 | -0.4 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 39.7 | 49.0 | -0.4 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 87.9 | 93.3 | 0.4 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.5% (1.8%); outrage 19.7% (28.1%); humor 0.0% (0.1%); question 7.2% (26.4%); breaking_live 0.3% (1.0%); episode_show 31.6% (1.9%); interview_guest 7.7% (9.0%); reaction 0.5% (0.7%); confrontation 1.7% (4.1%); listicle 0.0% (0.4%); howto_explainer 2.1% (14.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (2.4%); outrage 19.7% (36.0%); humor 0.0% (0.1%); question 7.2% (15.9%); breaking_live 0.3% (1.1%); episode_show 31.6% (7.0%); interview_guest 7.7% (11.6%); reaction 0.5% (1.9%); confrontation 1.7% (7.4%); listicle 0.0% (0.1%); howto_explainer 2.1% (6.6%)
 
 
-Nearest style neighbours: @oann [right_tv_network]; @ClubRandomPodcast [interview_podcast]; @TheJoyReidShow [left_commentary]; @nypost [us_press_print_digital]; @OwenReport [right_commentary]
+Nearest style neighbours: @oann [right]; @ClubRandomPodcast [neutral]; @TheJoyReidShow [left]; @nypost [right]; @OwenReport [left]
 
-Nearest topic neighbours: @Reuters [wire_international]; @TheEconomist [wire_international]; @CNN [us_legacy_tv]; @CBSNews [us_legacy_tv]; @Firstpost [wire_international]
+Nearest topic neighbours: @Reuters [neutral]; @TheEconomist [left]; @CNN [left]; @CBSNews [neutral]; @Firstpost [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 56 rows, 56 unique (repeat share 0.0%); ranked; political share 91.1%.
 Top topics: Federal Reserve Chair Kevin Warsh and Interest Rates (19.6%); Iran War and Strait of Hormuz Tensions (10.7%); Trump's speeches and events (5.4%); 2026 US Primary Elections (5.4%); Crypto and Politics Scandal (5.4%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 65.8 | 73.4 | 0.3 | 0.4 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 1.3 | 1.3 | -2.2 | -1.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.8 | 68.4 | 0.1 | 0.5 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 32.9 | 31.6 | -0.2 | -0.2 |
-| F5: Question and explainer framing (why, what, ?) | 6.3 | 5.1 | -0.9 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 65.8 | 73.4 | 0.3 | 0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 1.3 | 1.3 | -2.2 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.8 | 68.4 | 0.1 | 0.8 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 32.9 | 31.6 | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 6.3 | 5.1 | -0.9 | -0.3 |
 | F6: Person-centred (named people) | 64.6 | 60.8 | 0.6 | 0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 41.8 | 67.1 | -0.4 | 0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 41.8 | 67.1 | -0.4 | 0.4 |
 | F8: Numeric and dated (digits, years) | 65.8 | 69.6 | 0.2 | 0.2 |
-| F9: ALL-CAPS shouting | 53.2 | 39.2 | -0.4 | -0.7 |
+| F9: ALL-CAPS shouting | 53.2 | 39.2 | -0.4 | -0.4 |
 | F10: Quoted speech | 43.0 | 49.4 | -0.6 | -0.7 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 10.1 | 20.3 | -0.9 | -0.7 |
-| F12: Modal and future speculation (will, could, we) | 43.0 | 77.2 | -0.2 | -0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 10.1 | 20.3 | -0.9 | -0.6 |
+| F12: Modal and future speculation (will, could, we) | 43.0 | 77.2 | -0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (1.4%); outrage 12.5% (9.0%); humor 0.0% (0.0%); question 0.0% (0.2%); breaking_live 23.2% (39.1%); episode_show 33.9% (8.5%); interview_guest 8.9% (9.5%); reaction 1.8% (1.1%); confrontation 3.6% (1.9%); listicle 0.0% (0.1%); howto_explainer 0.0% (0.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.2%); outrage 12.5% (29.7%); humor 0.0% (0.1%); question 0.0% (4.6%); breaking_live 23.2% (52.4%); episode_show 33.9% (2.1%); interview_guest 8.9% (13.2%); reaction 1.8% (1.4%); confrontation 3.6% (7.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (1.0%)
 
 
-Nearest style neighbours: @nypost [us_press_print_digital]; @franifio [humour_satire]; @PBDPodcast [interview_podcast]; @hutch [streamer_reaction]; @ThePodcastoftheLotusEaters [right_commentary]
+Nearest style neighbours: @nypost [right]; @franifio [left]; @PBDPodcast [right]; @hutch [neutral]; @ThePodcastoftheLotusEaters [right]
 
-Nearest topic neighbours: @JamarlThomas [left_commentary]; @TimesNowWorld [wire_international]; @Firstpost [wire_international]; @timesofindia [wire_international]; @DannyHaiphongYT [left_commentary]
+Nearest topic neighbours: @JamarlThomas [left]; @TimesNowWorld [neutral]; @Firstpost [neutral]; @timesofindia [left]; @DannyHaiphongYT [left]
 
 
 Engagement: n < 100 titles with views, not estimated.

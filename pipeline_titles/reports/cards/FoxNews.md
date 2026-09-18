@@ -1,6 +1,6 @@
 # Fox News (@FoxNews)
 
-Lane: **us_legacy_tv** · organisation: Fox News · clipper: no · platform: youtube · subscribers: 15500000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Fox News · clipper: no · platform: youtube · subscribers: 15500000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 8,213 rows, 8,210 unique (repeat share 0.0%); ranked; political share 89
 Top topics: Iran War and Strait of Hormuz Tensions (19.9%); Nancy Guthrie Disappearance Investigation (3.0%); Fox News and Trump on Air Conflicts (2.2%); ICE Protests and Shootings (2.2%); 2026 Midterm Election Predictions (2.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 66.1 | 47.3 | 0.5 | 0.7 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 69.9 | 68.6 | 0.4 | 0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 66.1 | 47.3 | 0.5 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 69.9 | 68.6 | 0.4 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 97.1 | 97.1 | 0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 82.4 | 80.3 | 0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 25.5 | 26.4 | -0.2 | 0.1 |
-| F6: Person-centred (named people) | 13.4 | 25.1 | -0.7 | -0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 93.3 | 92.9 | 0.9 | 1.2 |
+| F5: Question and explainer framing (why, what, ?) | 25.5 | 26.4 | -0.2 | 0.2 |
+| F6: Person-centred (named people) | 13.4 | 25.1 | -0.7 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 93.3 | 92.9 | 0.9 | -0.7 |
 | F8: Numeric and dated (digits, years) | 32.6 | 43.9 | -0.3 | -0.2 |
 | F9: ALL-CAPS shouting | 78.7 | 76.2 | 0.2 | -0.3 |
-| F10: Quoted speech | 92.5 | 93.3 | 0.9 | 0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 47.7 | 47.7 | -0.2 | 0.0 |
-| F12: Modal and future speculation (will, could, we) | 44.8 | 69.9 | -0.2 | -0.0 |
+| F10: Quoted speech | 92.5 | 93.3 | 0.9 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 47.7 | 47.7 | -0.2 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 44.8 | 69.9 | -0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.2% (1.6%); outrage 55.0% (33.1%); humor 0.5% (0.1%); question 3.3% (8.0%); breaking_live 12.2% (2.9%); episode_show 1.8% (2.0%); interview_guest 4.8% (7.4%); reaction 1.6% (2.3%); confrontation 6.2% (5.3%); listicle 0.0% (0.1%); howto_explainer 1.6% (3.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (3.6%); outrage 55.0% (59.6%); humor 0.5% (0.2%); question 3.3% (15.6%); breaking_live 12.2% (2.0%); episode_show 1.8% (7.6%); interview_guest 4.8% (8.5%); reaction 1.6% (2.2%); confrontation 6.2% (7.8%); listicle 0.0% (0.1%); howto_explainer 1.6% (9.5%)
 
 
-Nearest style neighbours: @FoxNewsChannelClips [us_legacy_tv]; @msnow [us_legacy_tv]; @NBCNews [us_legacy_tv]; @thedavidpakmanshow [left_commentary]; @RebelNewsOnline [independent_digital_news]
+Nearest style neighbours: @FoxNewsChannelClips [right]; @msnow [left]; @NBCNews [neutral]; @thedavidpakmanshow [left]; @RebelNewsOnline [right]
 
-Nearest topic neighbours: @FoxNewsChannelClips [us_legacy_tv]; @NewsmaxTV [right_tv_network]; @NewsNation [us_legacy_tv]; @thehill [us_press_print_digital]; @RealAmericasVoice [right_tv_network]
+Nearest topic neighbours: @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @NewsNation [neutral]; @thehill [neutral]; @RealAmericasVoice [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 655 rows, 645 unique (repeat share 1.5%); ranked; political share 86.8%.
 Top topics: Trump's speeches and events (8.7%); Vice President JD Vance Remarks (4.0%); Lindsay Clancy Murder Trial (3.9%); Iran War and Strait of Hormuz Tensions (3.4%); Melania Trump Events and Participation (3.4%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 73.4 | 68.4 | 0.4 | 0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 79.7 | 75.9 | 0.4 | 0.5 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 21.5 | 58.2 | -0.5 | 0.9 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 10.1 | 5.1 | -0.5 | -0.3 |
-| F5: Question and explainer framing (why, what, ?) | 35.4 | 22.8 | -0.4 | -0.4 |
-| F6: Person-centred (named people) | 32.9 | 43.0 | -0.1 | -0.1 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 96.2 | 96.2 | 1.6 | 1.0 |
-| F8: Numeric and dated (digits, years) | 35.4 | 34.2 | -0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 41.8 | 32.9 | -0.5 | -0.5 |
-| F10: Quoted speech | 58.2 | 54.4 | -0.4 | -0.7 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 34.2 | 43.0 | -0.3 | -0.6 |
-| F12: Modal and future speculation (will, could, we) | 39.2 | 43.0 | -0.3 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 73.4 | 68.4 | 0.4 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 79.7 | 75.9 | 0.4 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 21.5 | 58.2 | -0.5 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 10.1 | 5.1 | -0.5 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 35.4 | 22.8 | -0.4 | -0.3 |
+| F6: Person-centred (named people) | 32.9 | 43.0 | -0.1 | 0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 96.2 | 96.2 | 1.6 | -0.6 |
+| F8: Numeric and dated (digits, years) | 35.4 | 34.2 | -0.1 | -0.0 |
+| F9: ALL-CAPS shouting | 41.8 | 32.9 | -0.5 | -0.4 |
+| F10: Quoted speech | 58.2 | 54.4 | -0.4 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 34.2 | 43.0 | -0.3 | 0.2 |
+| F12: Modal and future speculation (will, could, we) | 39.2 | 43.0 | -0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.9% (0.9%); outrage 20.3% (12.0%); humor 0.0% (0.0%); question 0.9% (3.9%); breaking_live 11.9% (39.2%); episode_show 0.0% (0.1%); interview_guest 7.3% (11.1%); reaction 1.1% (0.8%); confrontation 4.5% (4.4%); listicle 0.0% (0.0%); howto_explainer 0.2% (1.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.9% (3.2%); outrage 20.3% (56.4%); humor 0.0% (0.1%); question 0.9% (13.7%); breaking_live 11.9% (18.8%); episode_show 0.0% (26.3%); interview_guest 7.3% (14.0%); reaction 1.1% (2.1%); confrontation 4.5% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.2% (5.3%)
 
 
-Nearest style neighbours: @USATODAY [us_press_print_digital]; @PTLRadioShow [left_commentary]; @SkyNews [wire_international]; @thehill [us_press_print_digital]; @CNN [us_legacy_tv]
+Nearest style neighbours: @USATODAY [neutral]; @PTLRadioShow [left]; @SkyNews [left]; @thehill [neutral]; @CNN [left]
 
-Nearest topic neighbours: @USATODAY [us_press_print_digital]; @msnow [us_legacy_tv]; @thehill [us_press_print_digital]; @CBSNews [us_legacy_tv]; @NewsNation [us_legacy_tv]
+Nearest topic neighbours: @USATODAY [neutral]; @msnow [left]; @thehill [neutral]; @CBSNews [neutral]; @NewsNation [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

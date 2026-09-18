@@ -1,6 +1,6 @@
 # TechCrunch (@TechCrunch)
 
-Lane: **us_press_print_digital** · organisation: TechCrunch · clipper: no · platform: youtube · subscribers: 675000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: TechCrunch · clipper: no · platform: youtube · subscribers: 675000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 146 rows, 145 unique (repeat share 0.7%); ranked; political share 51.7%.
 Top topics: Tech Business and Startups (46.9%); AI and Political Concerns (27.6%); Crypto and Politics Scandal (5.5%); Elon Musk and Political Influence (3.5%); Big Pharma and Health Scams (3.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 95.0 | 99.6 | 1.0 | 0.7 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 87.9 | 79.5 | 0.8 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 95.0 | 99.6 | 1.0 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 87.9 | 79.5 | 0.8 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.4 | 74.9 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 84.1 | 67.4 | 0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 91.2 | 93.3 | 1.5 | 1.0 |
+| F5: Question and explainer framing (why, what, ?) | 91.2 | 93.3 | 1.5 | 0.1 |
 | F6: Person-centred (named people) | 47.7 | 28.0 | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 87.0 | 87.4 | 0.5 | -0.4 |
-| F8: Numeric and dated (digits, years) | 36.0 | 81.6 | -0.3 | -0.1 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 87.0 | 87.4 | 0.5 | -0.1 |
+| F8: Numeric and dated (digits, years) | 36.0 | 81.6 | -0.3 | 0.0 |
 | F9: ALL-CAPS shouting | 71.1 | 69.5 | -0.0 | -0.4 |
 | F10: Quoted speech | 74.5 | 64.4 | 0.0 | -0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 89.1 | 92.5 | 0.6 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 89.1 | 92.5 | 0.6 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 57.7 | 64.4 | -0.1 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.7% (1.8%); outrage 8.3% (28.1%); humor 0.0% (0.1%); question 35.2% (26.4%); breaking_live 0.0% (1.0%); episode_show 0.7% (1.9%); interview_guest 19.3% (9.0%); reaction 0.0% (0.7%); confrontation 4.1% (4.1%); listicle 0.7% (0.4%); howto_explainer 17.9% (14.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.7% (2.4%); outrage 8.3% (36.0%); humor 0.0% (0.1%); question 35.2% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.7% (7.0%); interview_guest 19.3% (11.6%); reaction 0.0% (1.9%); confrontation 4.1% (7.4%); listicle 0.7% (0.1%); howto_explainer 17.9% (6.6%)
 
 
-Nearest style neighbours: @RebelNewsOnline [independent_digital_news]; @SkyNews [wire_international]; @axios [us_press_print_digital]; @morebridgetphetasy [interview_podcast]; @CBSNews [us_legacy_tv]
+Nearest style neighbours: @RebelNewsOnline [right]; @SkyNews [left]; @axios [neutral]; @morebridgetphetasy [right]; @CBSNews [neutral]
 
-Nearest topic neighbours: @Semafor [us_press_print_digital]; @Forbes [us_press_print_digital]; @axios [us_press_print_digital]; @wsj [us_press_print_digital]; @markets [us_press_print_digital]
+Nearest topic neighbours: @Semafor [neutral]; @Forbes [neutral]; @axios [neutral]; @wsj [neutral]; @markets [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

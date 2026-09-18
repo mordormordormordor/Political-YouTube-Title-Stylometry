@@ -1,6 +1,6 @@
 # Zuby (@ZubyMusic)
 
-Lane: **interview_podcast** · organisation: Zuby · clipper: no · platform: youtube · subscribers: 282000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Zuby · clipper: no · platform: youtube · subscribers: 282000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 139 rows, 139 unique (repeat share 0.0%); ranked; political share 91.4%.
 Top topics: Modern Women and Feminism Debate (14.4%); America's 250th Anniversary and Founding History (5.0%); Christian Nationalism and Politics (5.0%); Left Wing Political Violence (5.0%); UK Political Chaos and Government Issues (5.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 32.6 | 58.2 | -0.1 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 86.6 | 85.4 | 0.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 34.7 | 31.4 | -0.4 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 19.7 | 24.7 | -0.3 | -0.2 |
-| F5: Question and explainer framing (why, what, ?) | 85.4 | 90.0 | 1.2 | 0.7 |
-| F6: Person-centred (named people) | 15.9 | 9.2 | -0.7 | 0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 19.7 | 20.1 | -0.9 | -0.8 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 86.6 | 85.4 | 0.8 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 34.7 | 31.4 | -0.4 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 19.7 | 24.7 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 85.4 | 90.0 | 1.2 | 0.2 |
+| F6: Person-centred (named people) | 15.9 | 9.2 | -0.7 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 19.7 | 20.1 | -0.9 | -0.7 |
 | F8: Numeric and dated (digits, years) | 59.8 | 60.7 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 58.6 | 46.9 | -0.2 | -0.3 |
-| F10: Quoted speech | 24.7 | 35.6 | -0.6 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 20.9 | 31.8 | -0.8 | -0.4 |
+| F10: Quoted speech | 24.7 | 35.6 | -0.6 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 20.9 | 31.8 | -0.8 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 36.4 | 40.6 | -0.3 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (1.4%); outrage 55.4% (41.4%); humor 0.0% (0.3%); question 24.5% (19.0%); breaking_live 0.0% (0.5%); episode_show 0.0% (11.4%); interview_guest 3.6% (18.1%); reaction 0.0% (1.4%); confrontation 10.1% (9.2%); listicle 0.0% (0.0%); howto_explainer 18.0% (11.7%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 55.4% (59.6%); humor 0.0% (0.2%); question 24.5% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 3.6% (8.5%); reaction 0.0% (2.2%); confrontation 10.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 18.0% (9.5%)
 
 
-Nearest style neighbours: @thomhartmann [left_commentary]; @BenShapiro [right_commentary]; @MrTariqNasheed [left_commentary]; @CamHigby [right_commentary]; @StevenCrowder [right_commentary]
+Nearest style neighbours: @thomhartmann [left]; @BenShapiro [right]; @MrTariqNasheed [right]; @CamHigby [right]; @StevenCrowder [right]
 
-Nearest topic neighbours: @PragerU [right_commentary]; @DarkHorsePod [centrist_heterodox]; @morebridgetphetasy [interview_podcast]; @JustPearlyThings [right_commentary]; @TheAtlantic [us_press_print_digital]
+Nearest topic neighbours: @PragerU [right]; @DarkHorsePod [right]; @morebridgetphetasy [right]; @JustPearlyThings [right]; @TheAtlantic [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Thom Hartmann Program (@thomhartmann)
 
-Lane: **left_commentary** · organisation: Thom Hartmann · clipper: no · platform: youtube · subscribers: 547000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Thom Hartmann · clipper: no · platform: youtube · subscribers: 547000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 784 rows, 784 unique (repeat share 0.0%); ranked; political share 97.6%.
 Top topics: Iran War and Strait of Hormuz Tensions (6.1%); Ukraine-Russia War and Political Figures (4.5%); Trump slush fund scandal (3.6%); Trump's Unwise Actions and Mistakes (3.6%); Save American Democracy (3.4%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 49.4 | 40.2 | 0.2 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 80.3 | 79.9 | 0.6 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 49.4 | 40.2 | 0.2 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 80.3 | 79.9 | 0.6 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 28.9 | 40.2 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 63.2 | 70.7 | -0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 89.1 | 87.0 | 1.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 89.1 | 87.0 | 1.4 | 0.1 |
 | F6: Person-centred (named people) | 29.7 | 18.8 | -0.5 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 36.0 | 51.0 | -0.7 | -0.5 |
 | F8: Numeric and dated (digits, years) | 44.4 | 54.0 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 38.1 | 40.2 | -0.4 | -0.3 |
-| F10: Quoted speech | 35.6 | 43.5 | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 33.5 | 43.5 | -0.5 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 78.2 | 82.8 | 0.3 | -0.3 |
+| F10: Quoted speech | 35.6 | 43.5 | -0.5 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 33.5 | 43.5 | -0.5 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 78.2 | 82.8 | 0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 5.4% (3.0%); outrage 70.5% (76.0%); humor 0.1% (0.2%); question 32.9% (9.8%); breaking_live 0.8% (5.4%); episode_show 0.4% (2.2%); interview_guest 4.5% (10.4%); reaction 0.6% (1.1%); confrontation 3.4% (8.2%); listicle 0.1% (0.1%); howto_explainer 11.2% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.4% (2.7%); outrage 70.5% (63.9%); humor 0.1% (0.2%); question 32.9% (15.6%); breaking_live 0.8% (2.9%); episode_show 0.4% (2.8%); interview_guest 4.5% (9.8%); reaction 0.6% (2.9%); confrontation 3.4% (7.6%); listicle 0.1% (0.1%); howto_explainer 11.2% (8.0%)
 
 
-Nearest style neighbours: @theisabelbrown [right_commentary]; @ZubyMusic [interview_podcast]; @MrTariqNasheed [left_commentary]; @morebridgetphetasy [interview_podcast]; @KimIversen [centrist_heterodox]
+Nearest style neighbours: @theisabelbrown [right]; @ZubyMusic [right]; @MrTariqNasheed [right]; @morebridgetphetasy [right]; @KimIversen [neutral]
 
-Nearest topic neighbours: @msnow [us_legacy_tv]; @CNN [us_legacy_tv]; @TheMajorityReport [left_commentary]; @BelleRanch [left_commentary]; @bulwarkmedia [centrist_heterodox]
+Nearest topic neighbours: @msnow [left]; @CNN [left]; @TheMajorityReport [left]; @BelleRanch [left]; @bulwarkmedia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

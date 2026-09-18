@@ -1,6 +1,6 @@
 # The Podcast of the Lotus Eaters (@ThePodcastoftheLotusEaters)
 
-Lane: **right_commentary** · organisation: Lotus Eaters · clipper: no · platform: youtube · subscribers: 600000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Lotus Eaters · clipper: no · platform: youtube · subscribers: 600000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 622 rows, 622 unique (repeat share 0.0%); ranked; political share 90.0%.
 Top topics: Shocking Events and Reactions (14.0%); UK Political Chaos and Government Issues (10.9%); UK politics and Reform UK (3.5%); Hollywood and Oscars Politics (3.2%); Race and Politics in Media (2.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 82.0 | 90.4 | 0.7 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 11.7 | 24.7 | -0.9 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 11.7 | 24.7 | -0.9 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 28.0 | 28.0 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 15.5 | 60.3 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 48.1 | 59.8 | 0.1 | 0.2 |
-| F6: Person-centred (named people) | 6.7 | 4.2 | -0.9 | -0.3 |
+| F6: Person-centred (named people) | 6.7 | 4.2 | -0.9 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 31.4 | 30.1 | -0.8 | -0.7 |
 | F8: Numeric and dated (digits, years) | 8.4 | 7.9 | -0.5 | -0.2 |
 | F9: ALL-CAPS shouting | 43.9 | 60.3 | -0.4 | -0.3 |
 | F10: Quoted speech | 2.1 | 6.3 | -1.0 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 5.0 | 3.8 | -1.2 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 5.0 | 3.8 | -1.2 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 58.6 | 48.5 | -0.1 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.5% (3.8%); outrage 47.9% (63.4%); humor 0.2% (0.2%); question 12.5% (15.1%); breaking_live 0.0% (1.3%); episode_show 0.0% (7.8%); interview_guest 1.5% (8.2%); reaction 0.6% (2.5%); confrontation 3.0% (7.7%); listicle 0.2% (0.1%); howto_explainer 3.5% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.5% (3.6%); outrage 47.9% (59.6%); humor 0.2% (0.2%); question 12.5% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.5% (8.5%); reaction 0.6% (2.2%); confrontation 3.0% (7.8%); listicle 0.2% (0.1%); howto_explainer 3.5% (9.5%)
 
 
-Nearest style neighbours: @ZeihanonGeopolitics [explainer_geopolitics]; @Styxhexenhammer666 [right_commentary]; @franifio [humour_satire]; @AlexStein99 [humour_satire]; @BenShapiro [right_commentary]
+Nearest style neighbours: @ZeihanonGeopolitics [neutral]; @Styxhexenhammer666 [right]; @franifio [left]; @AlexStein99 [right]; @BenShapiro [right]
 
-Nearest topic neighbours: https://rumble.com/c/russellbrand [centrist_heterodox]; @AsmonTV [streamer_reaction]; @winston_marshall [interview_podcast]; @TimcastIRL [right_commentary]; @NovaraMedia [independent_digital_news]
+Nearest topic neighbours: https://rumble.com/c/russellbrand [right]; @AsmonTV [right]; @winston_marshall [right]; @TimcastIRL [right]; @NovaraMedia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 179 rows, 179 unique (repeat share 0.0%); ranked; political share 97.2%.
 Top topics: Fast Food and Political Issues (25.1%); UK Prime Minister Andy Burnham (11.2%); UK politics and Reform UK (10.6%); UK PM Keir Starmer Resignation Calls (8.9%); UK Political Chaos and Government Issues (7.8%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 63.3 | 77.2 | 0.3 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 21.5 | 29.1 | -1.0 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 21.5 | 29.1 | -1.0 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.3 | 45.6 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 38.0 | 50.6 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 54.4 | 79.7 | -0.3 | -0.2 |
-| F6: Person-centred (named people) | 38.0 | 26.6 | -0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 54.4 | 79.7 | -0.3 | -0.3 |
+| F6: Person-centred (named people) | 38.0 | 26.6 | -0.0 | 0.0 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 75.9 | 77.2 | 0.2 | -0.6 |
 | F8: Numeric and dated (digits, years) | 30.4 | 21.5 | -0.2 | -0.0 |
 | F9: ALL-CAPS shouting | 63.3 | 67.1 | -0.2 | -0.4 |
-| F10: Quoted speech | 3.8 | 6.3 | -1.1 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 1.3 | 2.5 | -1.4 | 0.1 |
+| F10: Quoted speech | 3.8 | 6.3 | -1.1 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 1.3 | 2.5 | -1.4 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | 26.6 | 40.5 | -0.5 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 6.7% (4.2%); outrage 42.5% (62.2%); humor 0.0% (0.2%); question 11.7% (16.8%); breaking_live 3.4% (18.6%); episode_show 0.6% (23.4%); interview_guest 36.3% (16.3%); reaction 0.6% (2.8%); confrontation 2.2% (11.1%); listicle 0.0% (0.2%); howto_explainer 1.7% (6.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.7% (3.2%); outrage 42.5% (56.4%); humor 0.0% (0.1%); question 11.7% (13.7%); breaking_live 3.4% (18.8%); episode_show 0.6% (26.3%); interview_guest 36.3% (14.0%); reaction 0.6% (2.1%); confrontation 2.2% (9.4%); listicle 0.0% (0.2%); howto_explainer 1.7% (5.3%)
 
 
-Nearest style neighbours: @CamHigby [right_commentary]; @hutch [streamer_reaction]; @thehill [us_press_print_digital]; @FarronBalanced [left_commentary]; @nypost [us_press_print_digital]
+Nearest style neighbours: @CamHigby [right]; @hutch [neutral]; @thehill [neutral]; @FarronBalanced [left]; @nypost [right]
 
-Nearest topic neighbours: @SkyNews [wire_international]; @TimesNowWorld [wire_international]; @Reuters [wire_international]; @Firstpost [wire_international]; @RedactedNews [independent_digital_news]
+Nearest topic neighbours: @SkyNews [left]; @TimesNowWorld [neutral]; @Reuters [neutral]; @Firstpost [neutral]; @RedactedNews [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

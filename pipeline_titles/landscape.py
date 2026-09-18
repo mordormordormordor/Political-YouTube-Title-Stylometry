@@ -1,10 +1,10 @@
 """Stage 4 - the landscape: creators clustered in style space and in topic space,
-compared with the lane assignment; nearest neighbours; who gets named; convergent
-formulas.
+compared with the channel groups (left / neutral / right, from the leaning stage);
+nearest neighbours; who gets named; convergent formulas.
 
 Reads dimensions.csv / dimensions_title.parquet (Stage 2), topics.csv +
 topic_labels.csv + creator_topic_mix.csv (Stage 1), formats.parquet (Stage 3),
-annotations.parquet, titles_prepared.parquet and lanes.csv.
+annotations.parquet, titles_prepared.parquet and creators.csv (with the groups).
 
 Every similarity is computed per genre over non-low-n creators, with cross-posted
 titles removed (a title whose case-insensitive key also appears under another
@@ -13,13 +13,13 @@ clustering block runs twice: on all titles and on political titles only.
 
 Outputs (data/titles/analysis/):
     style_clusters.csv, topic_clusters.csv     cluster id per creator x genre (all / political)
-    cluster_comparison.csv                     adjusted Rand index: style vs lane, topic vs lane, style vs topic
-    lane_style_cohesion.csv                    within-lane vs between-lane style distance per lane
-    disagreements_lane_style.csv               lane-mates in different style clusters, and style-mates across lanes
+    cluster_comparison.csv                     adjusted Rand index: style vs group, topic vs group, style vs topic
+    group_style_cohesion.csv                   within-group vs between-group style distance per channel group
+    disagreements_group_style.csv              group-mates in different style clusters, and style-mates across groups
     neighbours_style.csv, neighbours_topic.csv five nearest neighbours per creator x genre
     map_style.csv, map_topic.csv               2-D coordinates (PCA of style z-scores; MDS of topic JS distance)
-    entities_top.csv                           top 25 people and organisations (creator-balanced counts), lanes
-                                               naming them most, outrage-frame share vs overall
+    entities_top.csv                           top 25 people and organisations (creator-balanced counts), the
+                                               channel groups naming them most, outrage-frame share vs overall
     shared_titles.csv, shared_templates.csv    verbatim titles / masked templates used by >= 2 creators
     org_style.csv                              organisation-level style scores (title-weighted mean of members)
 
@@ -40,7 +40,7 @@ import pandas as pd
 
 from pipeline_titles.common import (
     ANALYSIS_DIR, STOPWORDS, ANNOTATIONS, DIMENSIONS_CSV, DIMENSIONS_TITLE, FORMATS_PARQUET, LOW_N, SEED, TOPICS_CSV,
-    load_lanes, load_prepared, stage_timer,
+    load_creators, load_prepared, stage_timer,
 )
 from pipeline_titles.features import mask_tokens
 from pipeline_titles.topics import normalise_entity
@@ -99,8 +99,8 @@ def surname_key(name: str) -> str:
 
 
 # --------------------------------------------------------------------------- #
-def cluster_block(vec_style: pd.DataFrame, mix: pd.DataFrame, lanes: pd.DataFrame, tag: str, genre: str, out: dict) -> None:
-    """One (genre, all/political) run: cluster in style and topic space, compare with lanes."""
+def cluster_block(vec_style: pd.DataFrame, mix: pd.DataFrame, creators_tbl: pd.DataFrame, tag: str, genre: str, out: dict) -> None:
+    """One (genre, all/political) run: cluster in style and topic space, compare with the channel groups."""
     from sklearn.decomposition import PCA
     from sklearn.manifold import MDS
     from sklearn.metrics import adjusted_rand_score
@@ -114,79 +114,79 @@ def cluster_block(vec_style: pd.DataFrame, mix: pd.DataFrame, lanes: pd.DataFram
     P = P / P.sum(axis=1, keepdims=True)
     D = js_distance_matrix(P)
     k_t, sil_t, lab_t, scores_t = best_k_agglomerative(D, "precomputed", "average", precomputed=True)
-    lane_of = lanes.set_index("creator")["lane"]
-    lane_lab = pd.Series(creators).map(lane_of).fillna("?").to_numpy()
-    n_lanes = len(set(lane_lab))
-    # also a lane-count solution for a like-for-like ARI
+    group_of = creators_tbl.set_index("creator")["group"]
+    group_lab = pd.Series(creators).map(group_of).fillna("unscored").to_numpy()
+    n_groups = len(set(group_lab))
+    # also a group-count solution for a like-for-like ARI
     from sklearn.cluster import AgglomerativeClustering
-    lab_s_L = AgglomerativeClustering(n_clusters=min(n_lanes, len(creators) - 1), linkage="ward").fit_predict(Z.to_numpy())
-    lab_t_L = AgglomerativeClustering(n_clusters=min(n_lanes, len(creators) - 1), metric="precomputed", linkage="average").fit_predict(D)
-    out["comparison"].append({"genre": genre, "titles": tag, "n_creators": len(creators), "n_lanes": n_lanes,
+    lab_s_G = AgglomerativeClustering(n_clusters=min(n_groups, len(creators) - 1), linkage="ward").fit_predict(Z.to_numpy())
+    lab_t_G = AgglomerativeClustering(n_clusters=min(n_groups, len(creators) - 1), metric="precomputed", linkage="average").fit_predict(D)
+    out["comparison"].append({"genre": genre, "titles": tag, "n_creators": len(creators), "n_groups": n_groups,
                               "style_k": k_s, "style_silhouette": round(sil_s, 3), "topic_k": k_t, "topic_silhouette": round(sil_t, 3),
-                              "ari_style_vs_lane": round(adjusted_rand_score(lane_lab, lab_s), 3),
-                              "ari_topic_vs_lane": round(adjusted_rand_score(lane_lab, lab_t), 3),
+                              "ari_style_vs_group": round(adjusted_rand_score(group_lab, lab_s), 3),
+                              "ari_topic_vs_group": round(adjusted_rand_score(group_lab, lab_t), 3),
                               "ari_style_vs_topic": round(adjusted_rand_score(lab_s, lab_t), 3),
-                              "ari_style_vs_lane_k_lanes": round(adjusted_rand_score(lane_lab, lab_s_L), 3),
-                              "ari_topic_vs_lane_k_lanes": round(adjusted_rand_score(lane_lab, lab_t_L), 3),
-                              "ari_style_vs_topic_k_lanes": round(adjusted_rand_score(lab_s_L, lab_t_L), 3),
+                              "ari_style_vs_group_k_groups": round(adjusted_rand_score(group_lab, lab_s_G), 3),
+                              "ari_topic_vs_group_k_groups": round(adjusted_rand_score(group_lab, lab_t_G), 3),
+                              "ari_style_vs_topic_k_groups": round(adjusted_rand_score(lab_s_G, lab_t_G), 3),
                               "style_silhouette_by_k": json.dumps(scores_s), "topic_silhouette_by_k": json.dumps(scores_t)})
-    for c, ls, lt, ll in zip(creators, lab_s, lab_t, lane_lab):
-        out["style_clusters"].append({"genre": genre, "titles": tag, "creator": c, "lane": ll, "style_cluster": int(ls), "style_cluster_k_lanes": int(lab_s_L[creators.index(c)])})
-        out["topic_clusters"].append({"genre": genre, "titles": tag, "creator": c, "lane": ll, "topic_cluster": int(lt), "topic_cluster_k_lanes": int(lab_t_L[creators.index(c)])})
-    # style cohesion per lane (z-space euclidean)
+    for c, ls, lt, gl in zip(creators, lab_s, lab_t, group_lab):
+        out["style_clusters"].append({"genre": genre, "titles": tag, "creator": c, "group": gl, "style_cluster": int(ls), "style_cluster_k_groups": int(lab_s_G[creators.index(c)])})
+        out["topic_clusters"].append({"genre": genre, "titles": tag, "creator": c, "group": gl, "topic_cluster": int(lt), "topic_cluster_k_groups": int(lab_t_G[creators.index(c)])})
+    # style cohesion per channel group (z-space euclidean)
     from scipy.spatial.distance import cdist
     DS = cdist(Z.to_numpy(), Z.to_numpy())
-    for lane in sorted(set(lane_lab)):
-        idx = np.where(lane_lab == lane)[0]
-        oth = np.where(lane_lab != lane)[0]
+    for group in sorted(set(group_lab)):
+        idx = np.where(group_lab == group)[0]
+        oth = np.where(group_lab != group)[0]
         if len(idx) < 2:
             continue
         within = DS[np.ix_(idx, idx)][np.triu_indices(len(idx), 1)].mean()
         between = DS[np.ix_(idx, oth)].mean()
-        out["cohesion"].append({"genre": genre, "titles": tag, "lane": lane, "n_creators": len(idx), "within_lane_distance": round(float(within), 3),
-                                "between_lane_distance": round(float(between), 3), "cohesion_ratio": round(float(within / between), 3)})
-    # disagreements: lane-mates split across style clusters; style-mates across lanes
-    df = pd.DataFrame({"creator": creators, "lane": lane_lab, "style_cluster": lab_s, "topic_cluster": lab_t})
-    for lane, g in df.groupby("lane"):
+        out["cohesion"].append({"genre": genre, "titles": tag, "group": group, "n_creators": len(idx), "within_group_distance": round(float(within), 3),
+                                "between_group_distance": round(float(between), 3), "cohesion_ratio": round(float(within / between), 3)})
+    # disagreements: group-mates split across style clusters; style-mates across groups
+    df = pd.DataFrame({"creator": creators, "group": group_lab, "style_cluster": lab_s, "topic_cluster": lab_t})
+    for group, g in df.groupby("group"):
         if len(g) >= 3:
             vc = g["style_cluster"].value_counts()
-            out["disagree"].append({"genre": genre, "titles": tag, "kind": "lane split across style clusters", "group": lane, "n_creators": len(g),
+            out["disagree"].append({"genre": genre, "titles": tag, "kind": "channel group split across style clusters", "group": group, "n_creators": len(g),
                                     "n_style_clusters": int(len(vc)), "largest_cluster_share": round(float(vc.iloc[0] / len(g)), 3),
                                     "members": "; ".join(f"{r.creator} (S{r.style_cluster})" for r in g.sort_values("style_cluster").itertuples())})
     for cl, g in df.groupby("style_cluster"):
-        if g["lane"].nunique() >= 2:
-            out["disagree"].append({"genre": genre, "titles": tag, "kind": "style cluster spanning lanes", "group": f"S{cl}", "n_creators": len(g),
-                                    "n_style_clusters": int(g["lane"].nunique()), "largest_cluster_share": round(float(g["lane"].value_counts().iloc[0] / len(g)), 3),
-                                    "members": "; ".join(f"{r.creator} ({r.lane})" for r in g.sort_values("lane").itertuples())})
+        if g["group"].nunique() >= 2:
+            out["disagree"].append({"genre": genre, "titles": tag, "kind": "style cluster spanning channel groups", "group": f"S{cl}", "n_creators": len(g),
+                                    "n_style_clusters": int(g["group"].nunique()), "largest_cluster_share": round(float(g["group"].value_counts().iloc[0] / len(g)), 3),
+                                    "members": "; ".join(f"{r.creator} ({r.group})" for r in g.sort_values("group").itertuples())})
     # neighbours
     for i, c in enumerate(creators):
         ds = DS[i].copy(); ds[i] = np.inf
         nn = np.argsort(ds)[:5]
-        out["nn_style"].append({"genre": genre, "titles": tag, "creator": c, "lane": lane_lab[i],
-                                **{f"nn{j + 1}": creators[n] for j, n in enumerate(nn)}, **{f"nn{j + 1}_lane": lane_lab[n] for j, n in enumerate(nn)},
+        out["nn_style"].append({"genre": genre, "titles": tag, "creator": c, "group": group_lab[i],
+                                **{f"nn{j + 1}": creators[n] for j, n in enumerate(nn)}, **{f"nn{j + 1}_group": group_lab[n] for j, n in enumerate(nn)},
                                 **{f"nn{j + 1}_dist": round(float(ds[n]), 3) for j, n in enumerate(nn)}})
         dt = D[i].copy(); dt[i] = np.inf
         nn = np.argsort(dt)[:5]
-        out["nn_topic"].append({"genre": genre, "titles": tag, "creator": c, "lane": lane_lab[i],
-                                **{f"nn{j + 1}": creators[n] for j, n in enumerate(nn)}, **{f"nn{j + 1}_lane": lane_lab[n] for j, n in enumerate(nn)},
+        out["nn_topic"].append({"genre": genre, "titles": tag, "creator": c, "group": group_lab[i],
+                                **{f"nn{j + 1}": creators[n] for j, n in enumerate(nn)}, **{f"nn{j + 1}_group": group_lab[n] for j, n in enumerate(nn)},
                                 **{f"nn{j + 1}_js": round(float(dt[n]), 3) for j, n in enumerate(nn)}})
     # maps
     if tag == "all":
         pca = PCA(n_components=2, random_state=SEED).fit(Z.to_numpy())
         xy = pca.transform(Z.to_numpy())
         for i, c in enumerate(creators):
-            out["map_style"].append({"genre": genre, "creator": c, "lane": lane_lab[i], "x": round(float(xy[i, 0]), 4), "y": round(float(xy[i, 1]), 4),
+            out["map_style"].append({"genre": genre, "creator": c, "group": group_lab[i], "x": round(float(xy[i, 0]), 4), "y": round(float(xy[i, 1]), 4),
                                      "style_cluster": int(lab_s[i]), "pc1_var": round(float(pca.explained_variance_ratio_[0]), 3), "pc2_var": round(float(pca.explained_variance_ratio_[1]), 3)})
         mds = MDS(n_components=2, dissimilarity="precomputed", random_state=SEED, n_init=4, normalized_stress="auto")
         xy = mds.fit_transform(D)
         for i, c in enumerate(creators):
-            out["map_topic"].append({"genre": genre, "creator": c, "lane": lane_lab[i], "x": round(float(xy[i, 0]), 4), "y": round(float(xy[i, 1]), 4), "topic_cluster": int(lab_t[i])})
+            out["map_topic"].append({"genre": genre, "creator": c, "group": group_lab[i], "x": round(float(xy[i, 0]), 4), "y": round(float(xy[i, 1]), 4), "topic_cluster": int(lab_t[i])})
 
 
 def run(info: dict) -> None:
-    lanes = load_lanes()
+    creators_tbl = load_creators()
     prepared = load_prepared()
-    org_of = lanes.set_index("creator")["organisation"]
+    org_of = creators_tbl.set_index("creator")["organisation"]
     uniq = prepared[~prepared["is_dup"]].copy()
     uniq["organisation"] = uniq["creator"].map(org_of)
     # cross-posted titles: same organisation, another creator, same key
@@ -211,9 +211,9 @@ def run(info: dict) -> None:
             vec = sub.groupby("creator")[[f + "_resid" for f in fcols]].mean()
             vec.columns = fcols
             tmix = sub.groupby(["creator", "topic_id"]).size().unstack(fill_value=0).reindex(columns=all_topics, fill_value=0)
-            cluster_block(vec, tmix, lanes, tag, genre, out)
+            cluster_block(vec, tmix, creators_tbl, tag, genre, out)
     for name in ("style_clusters", "topic_clusters", "comparison", "cohesion", "disagree", "nn_style", "nn_topic", "map_style", "map_topic"):
-        fname = {"comparison": "cluster_comparison", "cohesion": "lane_style_cohesion", "disagree": "disagreements_lane_style",
+        fname = {"comparison": "cluster_comparison", "cohesion": "group_style_cohesion", "disagree": "disagreements_group_style",
                  "nn_style": "neighbours_style", "nn_topic": "neighbours_topic"}.get(name, name)
         pd.DataFrame(out[name]).to_csv(ANALYSIS_DIR / f"{fname}.csv", index=False)
     info["cluster_runs"] = len(out["comparison"])
@@ -234,7 +234,7 @@ def run(info: dict) -> None:
     # ---- who gets named (creator-balanced: in_balanced unique titles) ----
     ann = pd.read_parquet(ANNOTATIONS, columns=["title_norm", "ents"]).set_index("title_norm")["ents"]
     fm = pd.read_parquet(FORMATS_PARQUET, columns=["row_id", "outrage", "p_outrage"])
-    bal = uniq[uniq["in_balanced"] & ~uniq["low_n"]].merge(fm, on="row_id").merge(lanes[["creator", "lane"]], on="creator")
+    bal = uniq[uniq["in_balanced"] & ~uniq["low_n"]].merge(fm, on="row_id").merge(creators_tbl[["creator", "group"]], on="creator")
     bal["ents"] = bal["title_norm"].map(ann)
     person_count, org_count = Counter(), Counter()
     person_forms, org_forms = defaultdict(Counter), defaultdict(Counter)
@@ -259,36 +259,35 @@ def run(info: dict) -> None:
                     continue
                 seen_o.add(k); org_count[k] += 1; org_forms[k][norm] += 1; org_rows[k].append(r.Index)
     overall_outrage = float(bal["outrage"].mean())
-    lane_n = bal.groupby("lane").size()
+    group_n = bal.groupby("group").size()
     ent_rows = []
     for kind, counts, forms, rows_of in (("person", person_count, person_forms, person_rows), ("organisation", org_count, org_forms, org_rows)):
         for k, n in counts.most_common(25):
             sub = bal.loc[rows_of[k]]
-            by_lane = (sub.groupby("lane").size() / lane_n).dropna().sort_values(ascending=False)
-            creator_share = sub.groupby("creator").size() / bal.groupby("creator").size()
-            top_lanes = "; ".join(f"{l} ({v:.1%})" for l, v in by_lane.head(3).items())
+            by_group = (sub.groupby("group").size() / group_n).dropna().sort_values(ascending=False)
+            top_groups = "; ".join(f"{g_} ({v:.1%})" for g_, v in by_group.items())
             ent_rows.append({"kind": kind, "entity": forms[k].most_common(1)[0][0], "key": k, "n_titles_balanced": n,
                              "share_of_balanced_titles": round(n / len(bal), 4), "n_creators": sub["creator"].nunique(),
-                             "top_lanes_by_share": top_lanes, "outrage_share": round(float(sub["outrage"].mean()), 3),
+                             "share_by_group": top_groups, "outrage_share": round(float(sub["outrage"].mean()), 3),
                              "overall_outrage_share": round(overall_outrage, 3), "outrage_ratio": round(float(sub["outrage"].mean() / overall_outrage), 2) if overall_outrage else np.nan,
                              "surface_forms": "; ".join(f"{f} ({c})" for f, c in forms[k].most_common(4))})
     pd.DataFrame(ent_rows).to_csv(ANALYSIS_DIR / "entities_top.csv", index=False)
 
     # ---- convergent formulas ----
-    lane_of = lanes.set_index("creator")["lane"]
+    group_of = creators_tbl.set_index("creator")["group"]
     u2 = uniq[["creator", "genre", "title_raw", "title_norm", "title_key_raw", "organisation"]].copy()
-    u2["lane"] = u2["creator"].map(lane_of)
+    u2["group"] = u2["creator"].map(group_of)
     grp = u2.groupby("title_key_raw")
     shared = grp.agg(n_creators=("creator", "nunique"), n_organisations=("organisation", "nunique"), n_titles=("creator", "size"),
                      example=("title_raw", "first"), creators=("creator", lambda s: "; ".join(sorted(set(s)))),
-                     lanes=("lane", lambda s: "; ".join(sorted(set(s)))), n_lanes=("lane", "nunique")).reset_index()
+                     groups=("group", lambda s: "; ".join(sorted(set(s)))), n_groups=("group", "nunique")).reset_index()
     shared = shared[shared["n_creators"] >= 2].sort_values(["n_creators", "n_titles"], ascending=False)
-    shared["within_lane"] = shared["n_lanes"] == 1
+    shared["within_group"] = shared["n_groups"] == 1
     shared["same_organisation_only"] = shared["n_organisations"] == 1     # e.g. TYT / Damage Report cross-posts
     shared.to_csv(ANALYSIS_DIR / "shared_titles.csv", index=False)
     info["shared_titles_any"] = int(len(shared))
     conv = shared[~shared["same_organisation_only"]]
-    info["shared_titles_cross_org"] = int(len(conv)); info["shared_titles_within_lane_share"] = round(float(conv["within_lane"].mean()), 3)
+    info["shared_titles_cross_org"] = int(len(conv)); info["shared_titles_within_group_share"] = round(float(conv["within_group"].mean()), 3)
     ann_tok = pd.read_parquet(ANNOTATIONS, columns=["title_norm", "tokens", "ent_iob"]).set_index("title_norm")
     masked = {}
     for t, row in ann_tok.iterrows():
@@ -300,13 +299,13 @@ def run(info: dict) -> None:
     _skip = set(STOPWORDS) | {"<ENT>", "#"}
     u2 = u2[u2["template"].map(lambda t: any(w not in _skip for w in t.split()))]   # at least one content word
     tg = u2.groupby("template").agg(n_creators=("creator", "nunique"), n_titles=("creator", "size"), example=("title_raw", "first"),
-                                   creators=("creator", lambda s: "; ".join(sorted(set(s))[:12])), lanes=("lane", lambda s: "; ".join(sorted(set(s)))),
-                                   n_lanes=("lane", "nunique")).reset_index()
+                                   creators=("creator", lambda s: "; ".join(sorted(set(s))[:12])), groups=("group", lambda s: "; ".join(sorted(set(s)))),
+                                   n_groups=("group", "nunique")).reset_index()
     tg = tg.merge(u2.groupby("template")["organisation"].nunique().rename("n_organisations"), on="template")
     tg = tg[(tg["n_organisations"] >= 2) & tg["template"].str.contains("<ENT>|#")].sort_values(["n_creators", "n_titles"], ascending=False)
-    tg["within_lane"] = tg["n_lanes"] == 1
+    tg["within_group"] = tg["n_groups"] == 1
     tg.head(500).to_csv(ANALYSIS_DIR / "shared_templates.csv", index=False)
-    info["shared_templates"] = int(len(tg)); info["shared_templates_within_lane_share"] = round(float(tg["within_lane"].mean()), 3) if len(tg) else None
+    info["shared_templates"] = int(len(tg)); info["shared_templates_within_group_share"] = round(float(tg["within_group"].mean()), 3) if len(tg) else None
 
 
 def main(argv: Optional[Sequence[str]] = None) -> int:

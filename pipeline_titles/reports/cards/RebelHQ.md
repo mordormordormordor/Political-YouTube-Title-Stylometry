@@ -1,6 +1,6 @@
 # Rebel HQ (@RebelHQ)
 
-Lane: **left_commentary** · organisation: TYT Network · clipper: no · platform: youtube · subscribers: 1530000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: TYT Network · clipper: no · platform: youtube · subscribers: 1530000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 1,293 rows, 1,292 unique (repeat share 0.1%); ranked; political share 97
 Top topics: Fox News and Trump on Air Conflicts (9.8%); ICE Protests and Shootings (5.5%); Trump Meltdowns and Collapses (5.1%); 2026 Midterm Election Predictions (4.4%); MAGA Movement Decline (3.7%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 6.7 | 4.6 | -0.9 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 52.7 | 51.9 | 0.1 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 6.7 | 4.6 | -0.9 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 52.7 | 51.9 | 0.1 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 7.9 | 7.9 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 33.1 | 38.1 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 9.6 | 4.6 | -0.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 9.6 | 4.6 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 60.7 | 69.0 | -0.1 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 63.2 | 59.8 | -0.4 | -0.5 |
 | F8: Numeric and dated (digits, years) | 27.2 | 17.6 | -0.3 | -0.2 |
 | F9: ALL-CAPS shouting | 24.3 | 41.4 | -0.6 | -0.3 |
-| F10: Quoted speech | 16.3 | 9.2 | -0.7 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 51.9 | 50.2 | -0.2 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 20.5 | 19.2 | -0.5 | -0.3 |
+| F10: Quoted speech | 16.3 | 9.2 | -0.7 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 51.9 | 50.2 | -0.2 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 20.5 | 19.2 | -0.5 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.4% (3.0%); outrage 94.3% (76.0%); humor 1.9% (0.2%); question 0.5% (9.8%); breaking_live 0.4% (5.4%); episode_show 0.0% (2.2%); interview_guest 9.8% (10.4%); reaction 0.8% (1.1%); confrontation 21.8% (8.2%); listicle 0.0% (0.1%); howto_explainer 0.8% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (2.7%); outrage 94.3% (63.9%); humor 1.9% (0.2%); question 0.5% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 9.8% (9.8%); reaction 0.8% (2.9%); confrontation 21.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.8% (8.0%)
 
 
-Nearest style neighbours: @chicksonright [right_commentary]; @FarronBalanced [left_commentary]; @JackCocchiarellaShow [left_commentary]; @Forthepeoplepodcast305 [left_commentary]; @PTLRadioShow [left_commentary]
+Nearest style neighbours: @chicksonright [right]; @FarronBalanced [left]; @JackCocchiarellaShow [left]; @Forthepeoplepodcast305 [left]; @PTLRadioShow [left]
 
-Nearest topic neighbours: @TheDamageReport [left_commentary]; @dollemore [left_commentary]; @FarronBalanced [left_commentary]; @SecularTalk [left_commentary]; @TheMajorityReport [left_commentary]
+Nearest topic neighbours: @TheDamageReport [left]; @dollemore [left]; @FarronBalanced [left]; @SecularTalk [left]; @TheMajorityReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

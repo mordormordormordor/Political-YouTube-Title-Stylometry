@@ -1,6 +1,6 @@
 # Liberal Hivemind (@LiberalHivemind)
 
-Lane: **right_commentary** · organisation: Liberal Hivemind · clipper: no · platform: youtube · subscribers: 1750000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Liberal Hivemind · clipper: no · platform: youtube · subscribers: 1750000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 855 rows, 846 unique (repeat share 1.1%); ranked; political share 95.2%.
 Top topics: Shocking Events and Reactions (33.6%); 2026 Midterm Election Predictions (3.2%); Trump's Unwise Actions and Mistakes (2.6%); Iran War and Strait of Hormuz Tensions (2.2%); Political Talk Show Drama (2.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 85.8 | 87.9 | 0.7 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 93.7 | 99.2 | 1.1 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 93.7 | 99.2 | 1.1 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 82.4 | 65.3 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 97.1 | 98.3 | 0.9 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 26.4 | 32.2 | -0.2 | 0.2 |
-| F6: Person-centred (named people) | 7.1 | 3.8 | -0.9 | -0.3 |
+| F6: Person-centred (named people) | 7.1 | 3.8 | -0.9 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 58.2 | 20.5 | -0.5 | -0.7 |
 | F8: Numeric and dated (digits, years) | 64.9 | 24.3 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 85.4 | 89.5 | 0.6 | -0.3 |
 | F10: Quoted speech | 52.3 | 23.4 | -0.4 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 60.3 | 30.1 | -0.0 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 60.3 | 30.1 | -0.0 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 15.1 | 8.8 | -0.6 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 12.7% (3.8%); outrage 81.8% (63.4%); humor 0.0% (0.2%); question 1.5% (15.1%); breaking_live 0.7% (1.3%); episode_show 0.0% (7.8%); interview_guest 1.4% (8.2%); reaction 0.7% (2.5%); confrontation 1.5% (7.7%); listicle 0.0% (0.1%); howto_explainer 2.0% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 12.7% (3.6%); outrage 81.8% (59.6%); humor 0.0% (0.2%); question 1.5% (15.6%); breaking_live 0.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.4% (8.5%); reaction 0.7% (2.2%); confrontation 1.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.0% (9.5%)
 
 
-Nearest style neighbours: @DestinyDGGClips [streamer_reaction]; https://rumble.com/c/russellbrand [centrist_heterodox]; @TheVaushPit [streamer_reaction]; @CamHigby [right_commentary]; @morebridgetphetasy [interview_podcast]
+Nearest style neighbours: @DestinyDGGClips [right]; https://rumble.com/c/russellbrand [right]; @TheVaushPit [left]; @CamHigby [right]; @morebridgetphetasy [right]
 
-Nearest topic neighbours: @TimcastNews [right_commentary]; @TimcastIRL [right_commentary]; @HasanAbi [streamer_reaction]; @AsmonTV [streamer_reaction]; @TheQuartering [right_commentary]
+Nearest topic neighbours: @TimcastNews [right]; @TimcastIRL [right]; @HasanAbi [left]; @AsmonTV [right]; @TheQuartering [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

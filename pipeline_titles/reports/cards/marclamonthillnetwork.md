@@ -1,6 +1,6 @@
 # Marc Lamont Hill Network (@marclamonthillnetwork)
 
-Lane: **left_commentary** · organisation: Marc Lamont Hill · clipper: no · platform: youtube · subscribers: 275000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Marc Lamont Hill · clipper: no · platform: youtube · subscribers: 275000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 321 rows, 321 unique (repeat share 0.0%); ranked; political share 95.0%.
 Top topics: Marc Lamont Hill and Joe Budden Podcast Controversy (41.7%); Israel-Palestine Conflict Media (6.5%); Race and Politics in Media (4.0%); Iran War and Strait of Hormuz Tensions (3.1%); Nolan Wells Investigation (2.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 34.3 | 43.1 | -0.1 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 15.9 | 18.4 | -0.8 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 34.3 | 43.1 | -0.1 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 15.9 | 18.4 | -0.8 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 48.1 | 30.5 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 25.5 | 23.0 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 12.1 | 23.0 | -0.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 12.1 | 23.0 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 97.1 | 99.2 | 1.3 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 63.6 | 47.3 | -0.4 | -0.5 |
 | F8: Numeric and dated (digits, years) | 85.8 | 76.2 | 0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 2.5 | 0.8 | -1.0 | -0.3 |
-| F10: Quoted speech | 80.8 | 79.9 | 0.2 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 88.7 | 87.9 | 0.6 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 70.7 | 49.4 | 0.1 | -0.3 |
+| F10: Quoted speech | 80.8 | 79.9 | 0.2 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 88.7 | 87.9 | 0.6 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 70.7 | 49.4 | 0.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.6% (3.0%); outrage 33.3% (76.0%); humor 0.6% (0.2%); question 14.0% (9.8%); breaking_live 0.0% (5.4%); episode_show 0.3% (2.2%); interview_guest 9.7% (10.4%); reaction 8.7% (1.1%); confrontation 20.2% (8.2%); listicle 0.0% (0.1%); howto_explainer 10.6% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.6% (2.7%); outrage 33.3% (63.9%); humor 0.6% (0.2%); question 14.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.3% (2.8%); interview_guest 9.7% (9.8%); reaction 8.7% (2.9%); confrontation 20.2% (7.6%); listicle 0.0% (0.1%); howto_explainer 10.6% (8.0%)
 
 
-Nearest style neighbours: @TheAdamCarollaShow1 [interview_podcast]; @Semafor [us_press_print_digital]; @oann [right_tv_network]; @MegynKelly [right_commentary]; @nypost [us_press_print_digital]
+Nearest style neighbours: @TheAdamCarollaShow1 [right]; @Semafor [neutral]; @oann [right]; @MegynKelly [right]; @nypost [right]
 
-Nearest topic neighbours: @SabbySabs [left_commentary]; @Tim_Black [left_commentary]; @TheJoyReidShow [left_commentary]; @DueDissidence [left_commentary]; @zeteo [independent_digital_news]
+Nearest topic neighbours: @SabbySabs [left]; @Tim_Black [right]; @TheJoyReidShow [left]; @DueDissidence [left]; @zeteo [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,28 +85,28 @@ Titles: 151 rows, 151 unique (repeat share 0.0%); ranked; political share 89.4%.
 Top topics: Race and Politics in Media (13.2%); Iran Conflict and Political Updates (10.6%); Israel-Palestine Conflict Media (6.0%); Marc Lamont Hill and Joe Budden Podcast Controversy (6.0%); Rev Jesse Jackson and Civil Rights Legacy (4.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 41.8 | 48.1 | -0.1 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 41.8 | 48.1 | -0.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 20.3 | 19.0 | -1.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.2 | 72.2 | 0.8 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.2 | 72.2 | 0.8 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 19.0 | 12.7 | -0.4 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 19.0 | 49.4 | -0.5 | -0.3 |
-| F6: Person-centred (named people) | 62.0 | 63.3 | 0.6 | 0.8 |
+| F6: Person-centred (named people) | 62.0 | 63.3 | 0.6 | 0.6 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 49.4 | 32.9 | -0.4 | -0.4 |
-| F8: Numeric and dated (digits, years) | 94.9 | 86.1 | 0.6 | 0.0 |
-| F9: ALL-CAPS shouting | 22.8 | 17.7 | -0.8 | -0.4 |
+| F8: Numeric and dated (digits, years) | 94.9 | 86.1 | 0.6 | -0.0 |
+| F9: ALL-CAPS shouting | 22.8 | 17.7 | -0.8 | -0.5 |
 | F10: Quoted speech | 68.4 | 70.9 | -0.4 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 86.1 | 83.5 | 0.8 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | 68.4 | 48.1 | 0.1 | 0.0 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 86.1 | 83.5 | 0.8 | 0.1 |
+| F12: Modal and future speculation (will, could, we) | 68.4 | 48.1 | 0.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.6% (2.3%); outrage 49.0% (77.1%); humor 0.7% (0.1%); question 10.6% (9.5%); breaking_live 0.7% (13.1%); episode_show 0.7% (4.2%); interview_guest 20.5% (21.3%); reaction 2.6% (1.9%); confrontation 51.0% (12.1%); listicle 0.0% (0.1%); howto_explainer 4.6% (3.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.6% (1.9%); outrage 49.0% (63.2%); humor 0.7% (0.1%); question 10.6% (11.3%); breaking_live 0.7% (17.5%); episode_show 0.7% (6.4%); interview_guest 20.5% (18.3%); reaction 2.6% (1.5%); confrontation 51.0% (15.4%); listicle 0.0% (0.0%); howto_explainer 4.6% (2.9%)
 
 
-Nearest style neighbours: @rolandsmartin [independent_digital_news]; @franifio [humour_satire]; @bulwarkmedia [centrist_heterodox]; @MLChristiansen [right_commentary]; @NewsmaxTV [right_tv_network]
+Nearest style neighbours: @rolandsmartin [left]; @franifio [left]; @bulwarkmedia [left]; @MLChristiansen [right]; @NewsmaxTV [right]
 
-Nearest topic neighbours: @rolandsmartin [independent_digital_news]; @DueDissidence [left_commentary]; @TheOfficerTatum [right_commentary]; @TheMajorityReport [left_commentary]; @underthedesknews [independent_digital_news]
+Nearest topic neighbours: @rolandsmartin [left]; @DueDissidence [left]; @TheOfficerTatum [right]; @TheMajorityReport [left]; @underthedesknews [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

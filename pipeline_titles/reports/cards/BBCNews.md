@@ -1,6 +1,6 @@
 # BBC News (@BBCNews)
 
-Lane: **wire_international** · organisation: BBC · clipper: no · platform: youtube · subscribers: 20100000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: BBC · clipper: no · platform: youtube · subscribers: 20100000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 2,445 rows, 2,440 unique (repeat share 0.2%); ranked; political share 87
 Top topics: Iran War and Strait of Hormuz Tensions (17.2%); Ukraine-Russia War and Political Figures (7.0%); UK PM Keir Starmer Resignation Calls (2.8%); UK politics and Reform UK (2.7%); Israel-Lebanon Conflict and Ceasefire Talks (2.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 62.8 | 50.2 | 0.4 | 0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 78.2 | 77.4 | 0.5 | 0.5 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 13.4 | 49.0 | -0.5 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 62.8 | 50.2 | 0.4 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 78.2 | 77.4 | 0.5 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 13.4 | 49.0 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 56.5 | 48.1 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 87.0 | 84.9 | 1.3 | 0.1 |
-| F6: Person-centred (named people) | 38.9 | 39.3 | -0.4 | -0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 95.0 | 97.1 | 1.1 | 0.9 |
+| F6: Person-centred (named people) | 38.9 | 39.3 | -0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 95.0 | 97.1 | 1.1 | -0.1 |
 | F8: Numeric and dated (digits, years) | 72.8 | 78.2 | 0.0 | 0.0 |
-| F9: ALL-CAPS shouting | 67.8 | 55.6 | -0.1 | 0.0 |
-| F10: Quoted speech | 66.5 | 78.7 | -0.1 | 0.2 |
+| F9: ALL-CAPS shouting | 67.8 | 55.6 | -0.1 | -0.4 |
+| F10: Quoted speech | 66.5 | 78.7 | -0.1 | -0.1 |
 | F11: Long, upbeat, abstract (length, positive words, nominalisations) | 41.0 | 44.8 | -0.4 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 92.5 | 93.7 | 0.6 | 0.4 |
+| F12: Modal and future speculation (will, could, we) | 92.5 | 93.7 | 0.6 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 5.7% (3.1%); outrage 31.4% (43.3%); humor 0.0% (0.0%); question 29.1% (22.5%); breaking_live 0.2% (2.4%); episode_show 0.0% (0.1%); interview_guest 7.5% (8.0%); reaction 1.0% (1.3%); confrontation 1.9% (5.8%); listicle 0.0% (0.1%); howto_explainer 9.8% (7.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.7% (2.4%); outrage 31.4% (36.0%); humor 0.0% (0.1%); question 29.1% (15.9%); breaking_live 0.2% (1.1%); episode_show 0.0% (7.0%); interview_guest 7.5% (11.6%); reaction 1.0% (1.9%); confrontation 1.9% (7.4%); listicle 0.0% (0.1%); howto_explainer 9.8% (6.6%)
 
 
-Nearest style neighbours: @SkyNews [wire_international]; @CNN [us_legacy_tv]; @aljazeeraenglish [wire_international]; @CBSNews [us_legacy_tv]; @AssociatedPress [wire_international]
+Nearest style neighbours: @SkyNews [left]; @CNN [left]; @aljazeeraenglish [left]; @CBSNews [neutral]; @AssociatedPress [neutral]
 
-Nearest topic neighbours: @SkyNews [wire_international]; @AssociatedPress [wire_international]; @Reuters [wire_international]; @aljazeeraenglish [wire_international]; @Firstpost [wire_international]
+Nearest topic neighbours: @SkyNews [left]; @AssociatedPress [neutral]; @Reuters [neutral]; @aljazeeraenglish [left]; @Firstpost [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

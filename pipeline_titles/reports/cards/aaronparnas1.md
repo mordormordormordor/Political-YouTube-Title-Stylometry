@@ -1,6 +1,6 @@
 # Aaron Parnas (@aaronparnas1)
 
-Lane: **left_commentary** · organisation: Aaron Parnas · clipper: no · platform: youtube · subscribers: 826000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Aaron Parnas · clipper: no · platform: youtube · subscribers: 826000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 819 rows, 819 unique (repeat share 0.0%); ranked; political share 99.5%.
 Top topics: Trump and Epstein Files Scandal (13.8%); Trump Meltdowns and Collapses (11.6%); Trump Resignation and Leaks (7.2%); Iran War and Strait of Hormuz Tensions (4.9%); 2026 Midterm Election Predictions (4.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 3.8 | 2.5 | -1.1 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 38.9 | 34.7 | -0.2 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 3.8 | 2.5 | -1.1 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 38.9 | 34.7 | -0.2 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 99.6 | 99.6 | 2.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 5.4 | 10.5 | -0.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 23.4 | 11.3 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 23.4 | 11.3 | -0.3 | 0.1 |
 | F6: Person-centred (named people) | 50.2 | 51.9 | -0.2 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 77.8 | 80.3 | -0.2 | -0.5 |
 | F8: Numeric and dated (digits, years) | 31.0 | 23.4 | -0.3 | -0.2 |
 | F9: ALL-CAPS shouting | 55.2 | 70.3 | -0.2 | -0.3 |
-| F10: Quoted speech | 45.6 | 28.9 | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 94.6 | 94.1 | 1.0 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 35.6 | 38.5 | -0.3 | -0.3 |
+| F10: Quoted speech | 45.6 | 28.9 | -0.5 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 94.6 | 94.1 | 1.0 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 35.6 | 38.5 | -0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.2% (3.0%); outrage 98.7% (76.0%); humor 0.0% (0.2%); question 0.1% (9.8%); breaking_live 82.8% (5.4%); episode_show 0.0% (2.2%); interview_guest 4.8% (10.4%); reaction 0.1% (1.1%); confrontation 6.3% (8.2%); listicle 0.0% (0.1%); howto_explainer 5.2% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.2% (2.7%); outrage 98.7% (63.9%); humor 0.0% (0.2%); question 0.1% (15.6%); breaking_live 82.8% (2.9%); episode_show 0.0% (2.8%); interview_guest 4.8% (9.8%); reaction 0.1% (2.9%); confrontation 6.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 5.2% (8.0%)
 
 
-Nearest style neighbours: @TimesNowWorld [wire_international]; @RSBN [right_tv_network]; @DailyDenims [streamer_reaction]; @LukeBeasley [left_commentary]; @briantylercohen [left_commentary]
+Nearest style neighbours: @TimesNowWorld [neutral]; @RSBN [right]; @DailyDenims [left]; @LukeBeasley [left]; @briantylercohen [left]
 
-Nearest topic neighbours: @MeidasTouch [left_commentary]; @briantylercohen [left_commentary]; @katiephangnews [left_commentary]; @FarronBalanced [left_commentary]; @TheMichaelCohenShow [left_commentary]
+Nearest topic neighbours: @MeidasTouch [left]; @briantylercohen [left]; @katiephangnews [left]; @FarronBalanced [left]; @TheMichaelCohenShow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,23 +85,23 @@ Titles: 13 rows, 10 unique (repeat share 23.1%); LOW-N (not ranked); political s
 Top topics: Political Podcasts and Influencers (20.0%); Epstein Files Political Connections (10.0%); California Election Fraud Scandal (10.0%); Lindsay Clancy Murder Trial (10.0%); Trump Meltdowns and Collapses (10.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.1 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.3 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.3 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
-| F6: Person-centred (named people) | None | None | -0.8 | 0.8 |
+| F6: Person-centred (named people) | None | None | -0.8 | 0.6 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.0 | -0.4 |
-| F8: Numeric and dated (digits, years) | None | None | -1.0 | 0.0 |
-| F9: ALL-CAPS shouting | None | None | -0.3 | -0.4 |
+| F8: Numeric and dated (digits, years) | None | None | -1.0 | -0.0 |
+| F9: ALL-CAPS shouting | None | None | -0.3 | -0.5 |
 | F10: Quoted speech | None | None | -0.8 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.9 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | None | None | -1.5 | 0.0 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.9 | 0.1 |
+| F12: Modal and future speculation (will, could, we) | None | None | -1.5 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (2.3%); outrage 40.0% (77.1%); humor 0.0% (0.1%); question 0.0% (9.5%); breaking_live 90.0% (13.1%); episode_show 0.0% (4.2%); interview_guest 20.0% (21.3%); reaction 0.0% (1.9%); confrontation 0.0% (12.1%); listicle 0.0% (0.1%); howto_explainer 0.0% (3.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (1.9%); outrage 40.0% (63.2%); humor 0.0% (0.1%); question 0.0% (11.3%); breaking_live 90.0% (17.5%); episode_show 0.0% (6.4%); interview_guest 20.0% (18.3%); reaction 0.0% (1.5%); confrontation 0.0% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (2.9%)
 
 
 Engagement: n < 100 titles with views, not estimated.

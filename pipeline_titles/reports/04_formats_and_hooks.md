@@ -4,71 +4,42 @@
 
 ## The finding in one paragraph
 
-The outrage frame is the landscape's default hook, not a niche device. The rating model flagged 57 % of a 3,000-title creator-stratified sample as framing their subject as outrageous, scandalous or threatening, and a classifier trained on those labels reproduces the judgement well on held-out titles (accuracy 0.76, AUC 0.84, kappa 0.52). Applied to every title, it runs from three quarters of left-commentary and legal-commentary titles down to a quarter of US-press titles. The two other hooks could not be measured: the rater found a curiosity gap in 2.1 % of titles and humour in 0.4 %, far too few positives to learn from (held-out F1 0.18 and 0.00). Treat both as *unmeasured*, not absent (see document 8).
+The outrage frame is the landscape's default hook, not a niche device. The rating model flagged 57 % of a 3,000-title creator-stratified sample as framing their subject as outrageous, scandalous or threatening, and a classifier trained on those labels reproduces the judgement well on held-out titles (accuracy 0.76, AUC 0.84, kappa 0.52). Applied to every title, it covers 64 % of the average left channel's edited uploads, 60 % of the average right channel's and 36 % of the average neutral channel's: the frame belongs to partisan titling on both sides, and the neutral group, which is mostly news outlets, uses it least. The two other hooks could not be measured: the rater found a curiosity gap in 2.1 % of titles and humour in 0.4 %, far too few positives to learn from (held-out F1 0.18 and 0.00). Treat both as *unmeasured*, not absent (see document 8).
 
-## Formats by lane (share of a creator's titles, mean over creators; edited uploads)
+## Formats by channel group (share of a creator's titles, mean over creators; edited uploads)
 
-![Structural formats by lane, edited uploads.](figures/04_formats_heatmap.png)
-*Structural formats by lane, edited uploads.*
+![Structural formats by channel group, edited uploads.](figures/04_formats_heatmap.png)
+*Structural formats by channel group, edited uploads.*
 
-| lane | n_creators | question | breaking_live | episode_show | interview_guest | reaction | confrontation | listicle | howto_explainer |
+| group | n_creators | question | breaking_live | episode_show | interview_guest | reaction | confrontation | listicle | howto_explainer |
 |---|---|---|---|---|---|---|---|---|---|
-| centrist / heterodox | 10.00 | 0.19 | 0.01 | 0.02 | 0.09 | 0.01 | 0.04 | 0.00 | 0.12 |
-| explainers / geopolitics | 3.00 | 0.53 | 0.00 | 0.01 | 0.04 | 0.00 | 0.02 | 0.00 | 0.10 |
-| humour / satire | 6.00 | 0.16 | 0.02 | 0.17 | 0.15 | 0.03 | 0.07 | 0.00 | 0.05 |
-| independent digital news | 19.00 | 0.18 | 0.02 | 0.03 | 0.09 | 0.01 | 0.07 | 0.00 | 0.09 |
-| interview podcasts | 19.00 | 0.19 | 0.01 | 0.11 | 0.18 | 0.01 | 0.09 | 0.00 | 0.12 |
-| left commentary | 40.00 | 0.10 | 0.05 | 0.02 | 0.10 | 0.01 | 0.08 | 0.00 | 0.05 |
-| legal commentary | 8.00 | 0.15 | 0.03 | 0.01 | 0.08 | 0.01 | 0.06 | 0.00 | 0.10 |
-| right commentary | 69.00 | 0.15 | 0.01 | 0.08 | 0.08 | 0.03 | 0.08 | 0.00 | 0.09 |
-| right TV networks | 4.00 | 0.06 | 0.18 | 0.26 | 0.10 | 0.02 | 0.07 | 0.00 | 0.05 |
-| streamers | 23.00 | 0.09 | 0.00 | 0.05 | 0.08 | 0.10 | 0.14 | 0.00 | 0.04 |
-| US legacy TV | 9.00 | 0.08 | 0.03 | 0.02 | 0.07 | 0.02 | 0.05 | 0.00 | 0.04 |
-| US press | 18.00 | 0.26 | 0.01 | 0.02 | 0.09 | 0.01 | 0.04 | 0.00 | 0.15 |
-| wires & international | 11.00 | 0.22 | 0.02 | 0.00 | 0.08 | 0.01 | 0.06 | 0.00 | 0.08 |
+| left channels | 105.00 | 0.16 | 0.03 | 0.03 | 0.10 | 0.03 | 0.08 | 0.00 | 0.08 |
+| neutral channels | 38.00 | 0.16 | 0.01 | 0.07 | 0.12 | 0.02 | 0.07 | 0.00 | 0.07 |
+| right channels | 96.00 | 0.16 | 0.02 | 0.08 | 0.08 | 0.02 | 0.08 | 0.00 | 0.09 |
 
 
-Questions are a press and explainer habit; episode numbering belongs to the talk shows (interview podcasts, humour) and to the right TV networks, whose stream titles are date-stamped replays; the reaction format is the streamers' own; confrontation wording ("vs", "destroys", "slams") is spread thinly across commentary and streamers and rare in news. Live VODs look different again, with LIVE/BREAKING labels on 71 % of wire streams and confrontation on 45 % of streamer streams (debates):
+Questions run at the same rate in all three groups; episode numbering and how-to / explainer wording are a little more common on the right, guest formats a little more in the neutral and left groups (12 %, 10 %, 8 % on the right), and none of the structural formats separates the groups the way the outrage hook does. Live VODs look different again: LIVE/BREAKING labels sit on 52 % of the neutral group's stream titles (the wires' rolling broadcasts), confrontation on 15 % of the left group's (the debate streamers):
 
-| lane | n_creators | question | breaking_live | episode_show | interview_guest | confrontation | outrage |
+| group | n_creators | question | breaking_live | episode_show | interview_guest | confrontation | outrage |
 |---|---|---|---|---|---|---|---|
-| centrist / heterodox | 2.00 | 0.08 | 0.23 | 0.00 | 0.41 | 0.04 | 0.40 |
-| humour / satire | 1.00 | 0.06 | 0.00 | 0.31 | 0.79 | 0.02 | 0.42 |
-| independent digital news | 6.00 | 0.09 | 0.31 | 0.01 | 0.10 | 0.07 | 0.63 |
-| interview podcasts | 2.00 | 0.20 | 0.02 | 0.42 | 0.08 | 0.11 | 0.54 |
-| left commentary | 18.00 | 0.10 | 0.13 | 0.04 | 0.21 | 0.12 | 0.77 |
-| legal commentary | 3.00 | 0.21 | 0.07 | 0.25 | 0.11 | 0.09 | 0.64 |
-| right commentary | 19.00 | 0.17 | 0.19 | 0.23 | 0.16 | 0.11 | 0.62 |
-| right TV networks | 4.00 | 0.02 | 0.48 | 0.46 | 0.12 | 0.04 | 0.39 |
-| streamers | 6.00 | 0.20 | 0.03 | 0.17 | 0.07 | 0.45 | 0.58 |
-| US legacy TV | 7.00 | 0.04 | 0.39 | 0.00 | 0.11 | 0.04 | 0.12 |
-| US press | 4.00 | 0.00 | 0.39 | 0.08 | 0.10 | 0.02 | 0.09 |
-| wires & international | 7.00 | 0.05 | 0.71 | 0.00 | 0.09 | 0.08 | 0.36 |
+| left channels | 33.00 | 0.11 | 0.17 | 0.06 | 0.18 | 0.15 | 0.63 |
+| neutral channels | 16.00 | 0.05 | 0.52 | 0.02 | 0.13 | 0.07 | 0.30 |
+| right channels | 30.00 | 0.14 | 0.19 | 0.26 | 0.14 | 0.09 | 0.56 |
 
 
-## The outrage hook by lane (edited uploads)
+## The outrage hook by channel group (edited uploads)
 
-![Outrage-frame share by lane, edited uploads (left) and live VODs (right).](figures/04_outrage_by_lane.png)
-*Outrage-frame share by lane, edited uploads (left) and live VODs (right).*
+![Outrage-frame share by channel group, edited uploads (left) and live VODs (right).](figures/04_outrage_by_group.png)
+*Outrage-frame share by channel group, edited uploads (left) and live VODs (right); dots are creators, the bar is the group median.*
 
-| lane | n_creators | outrage | curiosity_gap | humor |
-|---|---|---|---|---|
-| left commentary | 40.00 | 0.76 | 0.03 | 0.00 |
-| legal commentary | 8.00 | 0.76 | 0.02 | 0.00 |
-| streamers | 23.00 | 0.65 | 0.04 | 0.00 |
-| right commentary | 69.00 | 0.63 | 0.04 | 0.00 |
-| independent digital news | 19.00 | 0.61 | 0.03 | 0.00 |
-| centrist / heterodox | 10.00 | 0.54 | 0.04 | 0.00 |
-| humour / satire | 6.00 | 0.45 | 0.02 | 0.00 |
-| wires & international | 11.00 | 0.43 | 0.03 | 0.00 |
-| right TV networks | 4.00 | 0.42 | 0.01 | 0.00 |
-| interview podcasts | 19.00 | 0.41 | 0.01 | 0.00 |
-| US legacy TV | 9.00 | 0.33 | 0.02 | 0.00 |
-| US press | 18.00 | 0.28 | 0.02 | 0.00 |
-| explainers / geopolitics | 3.00 | 0.26 | 0.04 | 0.00 |
+| group | n_creators | median | q25 | q75 | min | max |
+|---|---|---|---|---|---|---|
+| left channels | 105 | 0.68 | 0.47 | 0.82 | 0.06 | 0.99 |
+| neutral channels | 38 | 0.30 | 0.20 | 0.48 | 0.05 | 0.89 |
+| right channels | 96 | 0.58 | 0.48 | 0.76 | 0.07 | 0.99 |
 
 
-The gradient is the same one the tone factor found in document 3, measured a second way: commentary lanes on the left and right, legal commentary and streamers above 60 %, the wires and the US press and TV below 45 %. The two measures are not independent (the classifier sees the same words the lexicon counts), but they were built from different sources: the tone factor from word lists and sentiment, the hook from a model reading whole titles.
+Within every group the creator-to-creator spread is wide (the quartiles above): the group is a weak predictor of any one channel. The gradient across groups is the same one the tone factor of the style model finds, measured a second way; the two measures are not independent (the classifier sees the same words the lexicon counts), but they were built from different sources, the tone factor from word lists and sentiment, the hook from a model reading whole titles.
 
 ## Examples (corpus-wide, three per category)
 
@@ -126,5 +97,7 @@ Formats are regexes on the raw title (the exact patterns are in `format_rules.cs
 
 
 The rules fire far more often than the model's single label for interview_guest and howto_explainer (the rules count "with a name" and "why"; the model picks one dominant format per title), so the rule shares above are upper bounds for those two categories. Question, breaking/live and episode formats agree well.
+
+Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labelled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
 
 Files: `formats.parquet` (per title), `format_hook_shares.csv`, `format_examples.csv`, `format_rules.csv`, `format_agreement.csv`, `hook_classifier.json`.

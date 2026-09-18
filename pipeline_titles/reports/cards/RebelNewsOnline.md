@@ -1,6 +1,6 @@
 # Rebel News (@RebelNewsOnline)
 
-Lane: **independent_digital_news** · organisation: Rebel News · clipper: no · platform: youtube · subscribers: 1970000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Rebel News · clipper: no · platform: youtube · subscribers: 1970000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 1,368 rows, 1,358 unique (repeat share 0.7%); ranked; political share 95
 Top topics: Canada-US Political Tensions (32.8%); Shocking Events and Reactions (7.4%); UK politics and Reform UK (2.4%); Anti-Trump Protests and Riots (2.2%); Israel-Palestine Conflict Media (2.1%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 69.9 | 61.5 | 0.5 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 69.9 | 61.5 | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 94.6 | 95.0 | 1.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.8 | 40.6 | -0.3 | -0.2 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.8 | 40.6 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 90.0 | 92.5 | 0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 49.0 | 48.5 | 0.1 | 0.4 |
-| F6: Person-centred (named people) | 23.0 | 13.0 | -0.6 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 49.0 | 48.5 | 0.1 | 0.2 |
+| F6: Person-centred (named people) | 23.0 | 13.0 | -0.6 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 90.0 | 92.1 | 0.7 | -0.7 |
-| F8: Numeric and dated (digits, years) | 46.0 | 49.4 | -0.2 | -0.1 |
+| F8: Numeric and dated (digits, years) | 46.0 | 49.4 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 57.7 | 50.6 | -0.2 | -0.3 |
-| F10: Quoted speech | 74.1 | 77.0 | 0.0 | 0.0 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 62.3 | 60.3 | 0.0 | -0.2 |
+| F10: Quoted speech | 74.1 | 77.0 | 0.0 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 62.3 | 60.3 | 0.0 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 43.1 | 62.8 | -0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 8.7% (3.0%); outrage 63.2% (61.1%); humor 0.3% (0.1%); question 11.3% (18.1%); breaking_live 0.7% (1.8%); episode_show 0.0% (3.1%); interview_guest 4.2% (8.8%); reaction 1.2% (1.4%); confrontation 5.6% (6.7%); listicle 0.1% (0.1%); howto_explainer 6.8% (9.1%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.7% (3.6%); outrage 63.2% (59.6%); humor 0.3% (0.2%); question 11.3% (15.6%); breaking_live 0.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 4.2% (8.5%); reaction 1.2% (2.2%); confrontation 5.6% (7.8%); listicle 0.1% (0.1%); howto_explainer 6.8% (9.5%)
 
 
-Nearest style neighbours: @NBCNews [us_legacy_tv]; @CBSNews [us_legacy_tv]; @SkyNews [wire_international]; @thedavidpakmanshow [left_commentary]; @ABCNews [us_legacy_tv]
+Nearest style neighbours: @NBCNews [neutral]; @CBSNews [neutral]; @SkyNews [left]; @thedavidpakmanshow [left]; @ABCNews [neutral]
 
-Nearest topic neighbours: @therationalnational [left_commentary]; @ThePodcastoftheLotusEaters [right_commentary]; @TimcastIRL [right_commentary]; @RealAmericasVoice [right_tv_network]; @JillianMichaels [interview_podcast]
+Nearest topic neighbours: @therationalnational [left]; @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @RealAmericasVoice [right]; @JillianMichaels [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 197 rows, 195 unique (repeat share 1.0%); ranked; political share 98.0%.
 Top topics: Canada-US Political Tensions (63.6%); Covid Vaccine Controversy (3.6%); Left Wing Political Violence (3.1%); Immigration and Deportation Policies (2.6%); Bondi Beach Terror Attack (2.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.5 | 39.2 | -0.2 | -0.4 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 40.5 | 51.9 | -0.5 | -0.7 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 45.6 | 36.7 | -0.3 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.5 | 39.2 | -0.2 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 40.5 | 51.9 | -0.5 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 45.6 | 36.7 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 5.1 | 21.5 | -0.6 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 5.1 | 3.8 | -0.9 | -0.4 |
-| F6: Person-centred (named people) | 35.4 | 16.5 | -0.1 | -0.0 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 98.7 | 98.7 | 2.0 | -0.3 |
-| F8: Numeric and dated (digits, years) | 83.5 | 72.2 | 0.4 | 0.2 |
-| F9: ALL-CAPS shouting | 19.0 | 7.6 | -0.9 | -0.7 |
-| F10: Quoted speech | 92.4 | 98.7 | 0.3 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 83.5 | 78.5 | 0.7 | 0.3 |
-| F12: Modal and future speculation (will, could, we) | 62.0 | 83.5 | -0.0 | 0.1 |
+| F5: Question and explainer framing (why, what, ?) | 5.1 | 3.8 | -0.9 | -0.3 |
+| F6: Person-centred (named people) | 35.4 | 16.5 | -0.1 | 0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 98.7 | 98.7 | 2.0 | -0.6 |
+| F8: Numeric and dated (digits, years) | 83.5 | 72.2 | 0.4 | -0.0 |
+| F9: ALL-CAPS shouting | 19.0 | 7.6 | -0.9 | -0.4 |
+| F10: Quoted speech | 92.4 | 98.7 | 0.3 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 83.5 | 78.5 | 0.7 | 0.2 |
+| F12: Modal and future speculation (will, could, we) | 62.0 | 83.5 | -0.0 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.1% (2.3%); outrage 67.7% (63.4%); humor 0.0% (0.0%); question 2.1% (8.8%); breaking_live 6.7% (30.8%); episode_show 0.0% (1.0%); interview_guest 4.1% (9.8%); reaction 4.1% (1.1%); confrontation 9.2% (7.3%); listicle 0.0% (0.0%); howto_explainer 0.5% (2.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (3.2%); outrage 67.7% (56.4%); humor 0.0% (0.1%); question 2.1% (13.7%); breaking_live 6.7% (18.8%); episode_show 0.0% (26.3%); interview_guest 4.1% (14.0%); reaction 4.1% (2.1%); confrontation 9.2% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.5% (5.3%)
 
 
-Nearest style neighbours: @FoxNews [us_legacy_tv]; @SkyNews [wire_international]; @CNN [us_legacy_tv]; @thehill [us_press_print_digital]; @rolandsmartin [independent_digital_news]
+Nearest style neighbours: @FoxNews [right]; @SkyNews [left]; @CNN [left]; @thehill [neutral]; @rolandsmartin [left]
 
-Nearest topic neighbours: @VivaFrei [legal_institutional]; @TheSerfTimes [streamer_reaction]; @NewsmaxTV [right_tv_network]; @RealAmericasVoice [right_tv_network]; @SkyNews [wire_international]
+Nearest topic neighbours: @VivaFrei [right]; @TheSerfTimes [left]; @NewsmaxTV [right]; @RealAmericasVoice [right]; @SkyNews [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Graham Allen (@GrahamAllen)
 
-Lane: **right_commentary** · organisation: Graham Allen · clipper: no · platform: youtube · subscribers: 192000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Graham Allen · clipper: no · platform: youtube · subscribers: 192000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 247 rows, 247 unique (repeat share 0.0%); ranked; political share 97.6%.
 Top topics: Candace Owens and Erika Kirk Controversy (24.7%); Charlie Kirk murder trial (4.0%); Iran War and Strait of Hormuz Tensions (3.6%); Tucker Carlson Political Commentary (3.6%); Erika Kirk Controversy (3.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 38.1 | 33.9 | -0.0 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 55.2 | 56.1 | 0.1 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 55.2 | 56.1 | 0.1 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 16.3 | 11.7 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 55.2 | 54.8 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 40.2 | 36.0 | -0.0 | 0.2 |
-| F6: Person-centred (named people) | 10.9 | 53.6 | -0.8 | -0.3 |
+| F6: Person-centred (named people) | 10.9 | 53.6 | -0.8 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 56.1 | 34.7 | -0.5 | -0.7 |
 | F8: Numeric and dated (digits, years) | 64.0 | 49.0 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 8.8 | 20.9 | -0.8 | -0.3 |
 | F10: Quoted speech | 48.5 | 40.6 | -0.4 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 49.0 | 44.4 | -0.2 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 49.0 | 44.4 | -0.2 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 40.6 | 28.9 | -0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 7.7% (3.8%); outrage 74.5% (63.4%); humor 0.0% (0.2%); question 10.9% (15.1%); breaking_live 1.2% (1.3%); episode_show 0.4% (7.8%); interview_guest 4.9% (8.2%); reaction 0.8% (2.5%); confrontation 7.7% (7.7%); listicle 0.4% (0.1%); howto_explainer 8.9% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.7% (3.6%); outrage 74.5% (59.6%); humor 0.0% (0.2%); question 10.9% (15.6%); breaking_live 1.2% (2.0%); episode_show 0.4% (7.6%); interview_guest 4.9% (8.5%); reaction 0.8% (2.2%); confrontation 7.7% (7.8%); listicle 0.4% (0.1%); howto_explainer 8.9% (9.5%)
 
 
-Nearest style neighbours: @SaltyCracker [streamer_reaction]; @chicksonright [right_commentary]; @Forthepeoplepodcast305 [left_commentary]; @GlennKirschner2 [legal_institutional]; @JesseKellyDC [right_commentary]
+Nearest style neighbours: @SaltyCracker [right]; @chicksonright [right]; @Forthepeoplepodcast305 [left]; @GlennKirschner2 [left]; @JesseKellyDC [right]
 
-Nearest topic neighbours: @chicksonright [right_commentary]; @thejimmydoreshow [left_commentary]; @SabbySabs [left_commentary]; @RealAmericasVoice [right_tv_network]; @bennyjohnson [right_commentary]
+Nearest topic neighbours: @chicksonright [right]; @thejimmydoreshow [neutral]; @SabbySabs [left]; @RealAmericasVoice [right]; @bennyjohnson [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

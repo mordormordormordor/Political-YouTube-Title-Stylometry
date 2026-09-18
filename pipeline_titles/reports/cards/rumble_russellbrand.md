@@ -1,6 +1,6 @@
 # russellbrand (https://rumble.com/c/russellbrand)
 
-Lane: **centrist_heterodox** · organisation: Russell Brand · clipper: no · platform: rumble · subscribers: 
+Channel group: **right** (title-leaning score, document 14) · organisation: Russell Brand · clipper: no · platform: rumble · subscribers: 
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 262 rows, 259 unique (repeat share 1.1%); ranked; political share 91.1%.
 Top topics: Shocking Events and Reactions (33.2%); JLP Weekly Series (7.7%); Christian Nationalism and Politics (4.2%); UK Political Chaos and Government Issues (4.2%); UK PM Keir Starmer Resignation Calls (2.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 54.4 | 82.0 | 0.3 | 0.4 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 72.8 | 92.5 | 0.4 | 0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 68.6 | 57.3 | -0.2 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 54.4 | 82.0 | 0.3 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 72.8 | 92.5 | 0.4 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 68.6 | 57.3 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 98.7 | 99.2 | 1.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 68.2 | 74.1 | 0.6 | 0.6 |
-| F6: Person-centred (named people) | 12.6 | 2.1 | -0.8 | -0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 74.5 | 53.1 | -0.3 | -0.9 |
-| F8: Numeric and dated (digits, years) | 64.4 | 38.5 | -0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 53.6 | 79.5 | -0.3 | -0.4 |
+| F5: Question and explainer framing (why, what, ?) | 68.2 | 74.1 | 0.6 | 0.2 |
+| F6: Person-centred (named people) | 12.6 | 2.1 | -0.8 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 74.5 | 53.1 | -0.3 | -0.7 |
+| F8: Numeric and dated (digits, years) | 64.4 | 38.5 | -0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 53.6 | 79.5 | -0.3 | -0.3 |
 | F10: Quoted speech | 36.8 | 17.6 | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 23.8 | 7.1 | -0.7 | -0.8 |
-| F12: Modal and future speculation (will, could, we) | 4.6 | 4.2 | -0.9 | -0.0 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 23.8 | 7.1 | -0.7 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 4.6 | 4.2 | -0.9 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 15.4% (3.8%); outrage 54.0% (53.9%); humor 0.0% (0.1%); question 16.2% (19.1%); breaking_live 1.2% (0.9%); episode_show 0.0% (1.9%); interview_guest 2.3% (9.0%); reaction 1.2% (1.0%); confrontation 1.2% (3.5%); listicle 0.0% (0.1%); howto_explainer 8.5% (12.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 15.4% (3.6%); outrage 54.0% (59.6%); humor 0.0% (0.2%); question 16.2% (15.6%); breaking_live 1.2% (2.0%); episode_show 0.0% (7.6%); interview_guest 2.3% (8.5%); reaction 1.2% (2.2%); confrontation 1.2% (7.8%); listicle 0.0% (0.1%); howto_explainer 8.5% (9.5%)
 
 
-Nearest style neighbours: @ClipsCandaceOwens [right_commentary]; @DestinyDGGClips [streamer_reaction]; @The_Crucible [streamer_reaction]; @CamHigby [right_commentary]; @LiberalHivemind [right_commentary]
+Nearest style neighbours: @ClipsCandaceOwens [neutral]; @DestinyDGGClips [right]; @The_Crucible [right]; @CamHigby [right]; @LiberalHivemind [right]
 
-Nearest topic neighbours: @AsmonTV [streamer_reaction]; @ThePodcastoftheLotusEaters [right_commentary]; @TimcastIRL [right_commentary]; @TimcastNews [right_commentary]; @RealDanBongino [right_commentary]
+Nearest topic neighbours: @AsmonTV [right]; @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @TimcastNews [right]; @RealDanBongino [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

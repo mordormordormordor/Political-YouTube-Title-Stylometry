@@ -1,6 +1,6 @@
 # Lauren Chen Clips (@laurenchenclips)
 
-Lane: **right_commentary** · organisation: Lauren Chen · clipper: yes · platform: youtube · subscribers: 11400.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Lauren Chen · clipper: yes · platform: youtube · subscribers: 11400.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 109 rows, 109 unique (repeat share 0.0%); ranked; political share 89.9%.
 Top topics: Hollywood and Oscars Politics (18.4%); Modern Women and Feminism Debate (4.6%); Lindsay Clancy Murder Trial (4.6%); Karmelo Anthony Trial Verdict (4.6%); Hasan Piker and Political Smear Campaigns (3.7%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 15.9 | 26.8 | -0.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 65.7 | 64.9 | 0.3 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 65.7 | 64.9 | 0.3 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 18.8 | 12.6 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 17.6 | 14.2 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 72.4 | 70.7 | 0.6 | 0.2 |
-| F6: Person-centred (named people) | 64.4 | 70.3 | -0.0 | -0.3 |
+| F6: Person-centred (named people) | 64.4 | 70.3 | -0.0 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 50.6 | 49.8 | -0.6 | -0.7 |
 | F8: Numeric and dated (digits, years) | 38.9 | 45.6 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 18.0 | 11.3 | -0.7 | -0.3 |
 | F10: Quoted speech | 10.0 | 29.3 | -0.8 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 33.9 | 36.4 | -0.5 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 33.9 | 36.4 | -0.5 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 64.9 | 42.7 | 0.0 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.7% (3.8%); outrage 51.4% (63.4%); humor 0.0% (0.2%); question 29.4% (15.1%); breaking_live 0.0% (1.3%); episode_show 0.0% (7.8%); interview_guest 1.8% (8.2%); reaction 3.7% (2.5%); confrontation 11.0% (7.7%); listicle 0.0% (0.1%); howto_explainer 21.1% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.7% (3.6%); outrage 51.4% (59.6%); humor 0.0% (0.2%); question 29.4% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.8% (8.5%); reaction 3.7% (2.2%); confrontation 11.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 21.1% (9.5%)
 
 
-Nearest style neighbours: @chicksonright [right_commentary]; @PTLRadioShow [left_commentary]; @SaltyCracker [streamer_reaction]; @NovaraMedia [independent_digital_news]; @JackCocchiarellaShow [left_commentary]
+Nearest style neighbours: @chicksonright [right]; @PTLRadioShow [left]; @SaltyCracker [right]; @NovaraMedia [left]; @JackCocchiarellaShow [left]
 
-Nearest topic neighbours: @AfterPartyEmily [right_commentary]; @bbrettcooper [right_commentary]; @MichaelKnowles [right_commentary]; @jlptalk [right_commentary]; @TheAmalaEkpunobi [right_commentary]
+Nearest topic neighbours: @AfterPartyEmily [right]; @bbrettcooper [right]; @MichaelKnowles [right]; @jlptalk [right]; @TheAmalaEkpunobi [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

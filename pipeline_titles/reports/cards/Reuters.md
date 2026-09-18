@@ -1,6 +1,6 @@
 # Reuters (@Reuters)
 
-Lane: **wire_international** · organisation: Reuters · clipper: no · platform: youtube · subscribers: 4310000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: Reuters · clipper: no · platform: youtube · subscribers: 4310000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 8,092 rows, 8,076 unique (repeat share 0.2%); ranked; political share 83
 Top topics: Iran War and Strait of Hormuz Tensions (5.9%); Ukraine-Russia War and Political Figures (4.1%); Iran War and Energy Market Impact (3.7%); AI and Political Concerns (3.5%); Trump and China political relations (2.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 69.5 | 62.8 | 0.5 | 0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 76.2 | 73.2 | 0.5 | 0.5 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.3 | 27.6 | -0.6 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 69.5 | 62.8 | 0.5 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 76.2 | 73.2 | 0.5 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.3 | 27.6 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 22.6 | 10.9 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 22.2 | 25.5 | -0.3 | 0.1 |
-| F6: Person-centred (named people) | 13.8 | 14.6 | -0.7 | -0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 99.6 | 99.6 | 1.9 | 0.9 |
+| F6: Person-centred (named people) | 13.8 | 14.6 | -0.7 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 99.6 | 99.6 | 1.9 | -0.1 |
 | F8: Numeric and dated (digits, years) | 61.5 | 78.7 | -0.1 | 0.0 |
-| F9: ALL-CAPS shouting | 39.3 | 20.5 | -0.4 | 0.0 |
-| F10: Quoted speech | 66.1 | 70.3 | -0.1 | 0.2 |
+| F9: ALL-CAPS shouting | 39.3 | 20.5 | -0.4 | -0.4 |
+| F10: Quoted speech | 66.1 | 70.3 | -0.1 | -0.1 |
 | F11: Long, upbeat, abstract (length, positive words, nominalisations) | 42.3 | 49.8 | -0.4 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 80.3 | 87.9 | 0.3 | 0.4 |
+| F12: Modal and future speculation (will, could, we) | 80.3 | 87.9 | 0.3 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.6% (3.1%); outrage 25.3% (43.3%); humor 0.0% (0.0%); question 7.3% (22.5%); breaking_live 0.1% (2.4%); episode_show 0.1% (0.1%); interview_guest 5.0% (8.0%); reaction 0.6% (1.3%); confrontation 2.9% (5.8%); listicle 0.0% (0.1%); howto_explainer 2.0% (7.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.6% (2.4%); outrage 25.3% (36.0%); humor 0.0% (0.1%); question 7.3% (15.9%); breaking_live 0.1% (1.1%); episode_show 0.1% (7.0%); interview_guest 5.0% (11.6%); reaction 0.6% (1.9%); confrontation 2.9% (7.4%); listicle 0.0% (0.1%); howto_explainer 2.0% (6.6%)
 
 
-Nearest style neighbours: @aljazeeraenglish [wire_international]; @CBSNews [us_legacy_tv]; @AssociatedPress [wire_international]; @ABCNews [us_legacy_tv]; @NBCNews [us_legacy_tv]
+Nearest style neighbours: @aljazeeraenglish [left]; @CBSNews [neutral]; @AssociatedPress [neutral]; @ABCNews [neutral]; @NBCNews [neutral]
 
-Nearest topic neighbours: @AssociatedPress [wire_international]; @BBCNews [wire_international]; @CBSNews [us_legacy_tv]; @aljazeeraenglish [wire_international]; @Firstpost [wire_international]
+Nearest topic neighbours: @AssociatedPress [neutral]; @BBCNews [neutral]; @CBSNews [neutral]; @aljazeeraenglish [left]; @Firstpost [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 2,294 rows, 2,008 unique (repeat share 12.5%); ranked; political share 7
 Top topics: G7 Summit and Macron-Trump Bilateral Meetings (7.7%); 2026 World Cup (6.4%); Anti-Trump Protests and Riots (4.6%); Trump's speeches and events (3.7%); Artemis II Moon Mission Updates (3.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 86.1 | 83.5 | 0.6 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 74.7 | 77.2 | 0.3 | 0.0 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 98.7 | 100.0 | 3.5 | 1.5 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 64.6 | 48.1 | -0.0 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 86.1 | 83.5 | 0.6 | 0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 74.7 | 77.2 | 0.3 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 98.7 | 100.0 | 3.5 | 0.8 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 64.6 | 48.1 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 27.8 | 29.1 | -0.4 | -0.3 |
-| F6: Person-centred (named people) | 12.7 | 17.7 | -0.5 | 0.6 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 83.5 | 91.1 | 0.8 | 0.3 |
-| F8: Numeric and dated (digits, years) | 6.3 | 22.8 | -0.6 | 0.3 |
-| F9: ALL-CAPS shouting | 59.5 | 46.8 | -0.3 | -0.1 |
-| F10: Quoted speech | 10.1 | 21.5 | -0.9 | 0.0 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 19.0 | 24.1 | -0.7 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 7.6 | 21.5 | -0.9 | 0.2 |
+| F6: Person-centred (named people) | 12.7 | 17.7 | -0.5 | 0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 83.5 | 91.1 | 0.8 | 0.4 |
+| F8: Numeric and dated (digits, years) | 6.3 | 22.8 | -0.6 | 0.2 |
+| F9: ALL-CAPS shouting | 59.5 | 46.8 | -0.3 | -0.4 |
+| F10: Quoted speech | 10.1 | 21.5 | -0.9 | -0.7 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 19.0 | 24.1 | -0.7 | -0.6 |
+| F12: Modal and future speculation (will, could, we) | 7.6 | 21.5 | -0.9 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.0% (3.6%); outrage 9.1% (36.5%); humor 0.1% (0.0%); question 0.0% (5.1%); breaking_live 99.5% (71.5%); episode_show 0.0% (0.0%); interview_guest 4.9% (9.4%); reaction 0.6% (1.6%); confrontation 1.6% (7.7%); listicle 0.0% (0.0%); howto_explainer 0.1% (1.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (2.2%); outrage 9.1% (29.7%); humor 0.1% (0.1%); question 0.0% (4.6%); breaking_live 99.5% (52.4%); episode_show 0.0% (2.1%); interview_guest 4.9% (13.2%); reaction 0.6% (1.4%); confrontation 1.6% (7.4%); listicle 0.0% (0.0%); howto_explainer 0.1% (1.0%)
 
 
-Nearest style neighbours: @AssociatedPress [wire_international]; @NBCNews [us_legacy_tv]; @msnow [us_legacy_tv]; @MeidasTouch [left_commentary]; @ABCNews [us_legacy_tv]
+Nearest style neighbours: @AssociatedPress [neutral]; @NBCNews [neutral]; @msnow [left]; @MeidasTouch [left]; @ABCNews [neutral]
 
-Nearest topic neighbours: @AssociatedPress [wire_international]; @TimesNowWorld [wire_international]; @SkyNews [wire_international]; @Firstpost [wire_international]; @USATODAY [us_press_print_digital]
+Nearest topic neighbours: @AssociatedPress [neutral]; @TimesNowWorld [neutral]; @SkyNews [left]; @Firstpost [neutral]; @USATODAY [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

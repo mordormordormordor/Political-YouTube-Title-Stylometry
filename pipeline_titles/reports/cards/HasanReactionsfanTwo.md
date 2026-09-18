@@ -1,6 +1,6 @@
 # Hasan Reactions (@HasanReactionsfanTwo)
 
-Lane: **streamer_reaction** · organisation: HasanAbi · clipper: yes · platform: youtube · subscribers: 254000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: HasanAbi · clipper: yes · platform: youtube · subscribers: 254000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 340 rows, 340 unique (repeat share 0.0%); ranked; political share 97.1%.
 Top topics: Hasanabi Reacts to Hasan (16.2%); Trump Meltdowns and Collapses (5.0%); 2026 Midterm Election Predictions (3.2%); Trump's War and Draft (3.2%); Trump and China political relations (2.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.2 | 33.1 | 0.0 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 24.7 | 28.0 | -0.5 | -0.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 21.3 | 15.5 | -0.5 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.2 | 33.1 | 0.0 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 24.7 | 28.0 | -0.5 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 21.3 | 15.5 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 28.5 | 29.7 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 21.3 | 20.9 | -0.3 | -0.1 |
-| F6: Person-centred (named people) | 89.5 | 90.8 | 0.7 | -0.5 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 74.9 | 71.5 | -0.3 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 21.3 | 20.9 | -0.3 | 0.1 |
+| F6: Person-centred (named people) | 89.5 | 90.8 | 0.7 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 74.9 | 71.5 | -0.3 | -0.5 |
 | F8: Numeric and dated (digits, years) | 81.2 | 64.9 | 0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 50.2 | 69.0 | -0.3 | -0.1 |
-| F10: Quoted speech | 28.0 | 15.5 | -0.6 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 33.1 | 33.5 | -0.5 | -0.7 |
-| F12: Modal and future speculation (will, could, we) | 20.9 | 16.3 | -0.5 | -0.5 |
+| F9: ALL-CAPS shouting | 50.2 | 69.0 | -0.3 | -0.3 |
+| F10: Quoted speech | 28.0 | 15.5 | -0.6 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 33.1 | 33.5 | -0.5 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 20.9 | 16.3 | -0.5 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.5% (3.8%); outrage 72.7% (64.8%); humor 0.0% (0.4%); question 5.0% (9.0%); breaking_live 0.0% (0.4%); episode_show 0.0% (4.5%); interview_guest 8.2% (7.8%); reaction 100.0% (10.1%); confrontation 9.7% (14.3%); listicle 0.0% (0.0%); howto_explainer 2.9% (4.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.5% (2.7%); outrage 72.7% (63.9%); humor 0.0% (0.2%); question 5.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 8.2% (9.8%); reaction 100.0% (2.9%); confrontation 9.7% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.9% (8.0%)
 
 
-Nearest style neighbours: @PTLRadioShow [left_commentary]; @Forthepeoplepodcast305 [left_commentary]; @TheMajorityReport [left_commentary]; @oann [right_tv_network]; @TheAdamCarollaShow1 [interview_podcast]
+Nearest style neighbours: @PTLRadioShow [left]; @Forthepeoplepodcast305 [left]; @TheMajorityReport [left]; @oann [right]; @TheAdamCarollaShow1 [right]
 
-Nearest topic neighbours: @SecularTalk [left_commentary]; @TheMajorityReport [left_commentary]; @podsaveamerica [left_commentary]; @Vaush [streamer_reaction]; @TheYoungTurks [left_commentary]
+Nearest topic neighbours: @SecularTalk [left]; @TheMajorityReport [left]; @podsaveamerica [left]; @Vaush [left]; @TheYoungTurks [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

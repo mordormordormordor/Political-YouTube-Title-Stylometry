@@ -1,6 +1,6 @@
 # nickjfuentes (https://rumble.com/c/nickjfuentes)
 
-Lane: **right_commentary** · organisation: Nick Fuentes · clipper: no · platform: rumble · subscribers: 
+Channel group: **right** (title-leaning score, document 14) · organisation: Nick Fuentes · clipper: no · platform: rumble · subscribers: 
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 309 rows, 305 unique (repeat share 1.3%); ranked; political share 98.4%.
 Top topics: Iran War and Strait of Hormuz Tensions (22.9%); Israel-Palestine Conflict Media (6.6%); Shocking Events and Reactions (4.9%); Nick Fuentes and Political Controversies (3.9%); Tucker Carlson Political Commentary (3.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 15.5 | 18.4 | -0.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 13.0 | 18.0 | -0.8 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 13.0 | 18.0 | -0.8 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 56.5 | 53.6 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 61.9 | 71.5 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 42.7 | 41.4 | -0.0 | 0.2 |
-| F6: Person-centred (named people) | 24.7 | 38.9 | -0.6 | -0.3 |
+| F6: Person-centred (named people) | 24.7 | 38.9 | -0.6 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 75.3 | 74.9 | -0.3 | -0.7 |
 | F8: Numeric and dated (digits, years) | 88.3 | 79.9 | 0.3 | -0.2 |
 | F9: ALL-CAPS shouting | 88.3 | 86.6 | 0.9 | -0.3 |
 | F10: Quoted speech | 12.6 | 35.1 | -0.8 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 49.4 | 42.7 | -0.2 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 49.4 | 42.7 | -0.2 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 10.5 | 34.7 | -0.7 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 7.9% (3.8%); outrage 74.8% (63.4%); humor 0.0% (0.2%); question 46.2% (15.1%); breaking_live 0.0% (1.3%); episode_show 41.6% (7.8%); interview_guest 6.2% (8.2%); reaction 0.3% (2.5%); confrontation 4.6% (7.7%); listicle 0.0% (0.1%); howto_explainer 4.6% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.9% (3.6%); outrage 74.8% (59.6%); humor 0.0% (0.2%); question 46.2% (15.6%); breaking_live 0.0% (2.0%); episode_show 41.6% (7.6%); interview_guest 6.2% (8.5%); reaction 0.3% (2.2%); confrontation 4.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 4.6% (9.5%)
 
 
-Nearest style neighbours: @DueDissidence [left_commentary]; @LegalAFMTN [legal_institutional]; @PiscoLitty [streamer_reaction]; @destinyhqclips [streamer_reaction]; @TheMichaelCohenShow [left_commentary]
+Nearest style neighbours: @DueDissidence [left]; @LegalAFMTN [left]; @PiscoLitty [left]; @destinyhqclips [neutral]; @TheMichaelCohenShow [left]
 
-Nearest topic neighbours: @TheYoungTurks [left_commentary]; @DueDissidence [left_commentary]; @BenShapiro [right_commentary]; @KimIversen [centrist_heterodox]; @FoxNews [us_legacy_tv]
+Nearest topic neighbours: @TheYoungTurks [left]; @DueDissidence [left]; @BenShapiro [right]; @KimIversen [neutral]; @FoxNews [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # The Mark Levin Show (@marklevinshow)
 
-Lane: **right_commentary** · organisation: Mark Levin · clipper: no · platform: youtube · subscribers: 103000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Mark Levin · clipper: no · platform: youtube · subscribers: 103000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 505 rows, 505 unique (repeat share 0.0%); ranked; political share 97.2%.
 Top topics: Iran War and Strait of Hormuz Tensions (13.7%); Ben Shapiro and Political Commentary (9.5%); Left Wing Political Violence (6.9%); Israel-Palestine Conflict Media (5.5%); War and Military Analysis (4.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 93.3 | 81.2 | 0.9 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 5.9 | 7.9 | -1.2 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 5.9 | 7.9 | -1.2 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 77.0 | 74.5 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 27.6 | 25.1 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 62.8 | 64.9 | 0.4 | 0.2 |
-| F6: Person-centred (named people) | 44.4 | 51.0 | -0.3 | -0.3 |
+| F6: Person-centred (named people) | 44.4 | 51.0 | -0.3 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 25.9 | 25.9 | -0.8 | -0.7 |
 | F8: Numeric and dated (digits, years) | 12.6 | 17.2 | -0.5 | -0.2 |
 | F9: ALL-CAPS shouting | 40.2 | 42.3 | -0.4 | -0.3 |
 | F10: Quoted speech | 15.9 | 39.3 | -0.7 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 80.3 | 81.6 | 0.4 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 80.3 | 81.6 | 0.4 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 9.2 | 25.9 | -0.8 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.8% (3.8%); outrage 45.7% (63.4%); humor 0.0% (0.2%); question 9.3% (15.1%); breaking_live 0.4% (1.3%); episode_show 7.3% (7.8%); interview_guest 3.0% (8.2%); reaction 0.0% (2.5%); confrontation 10.9% (7.7%); listicle 0.0% (0.1%); howto_explainer 16.4% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.8% (3.6%); outrage 45.7% (59.6%); humor 0.0% (0.2%); question 9.3% (15.6%); breaking_live 0.4% (2.0%); episode_show 7.3% (7.6%); interview_guest 3.0% (8.5%); reaction 0.0% (2.2%); confrontation 10.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 16.4% (9.5%)
 
 
-Nearest style neighbours: @underthedesknews [independent_digital_news]; @lizwheeler [right_commentary]; @TheJoyReidShow [left_commentary]; @therationalnational [left_commentary]; @StosselTV [right_commentary]
+Nearest style neighbours: @underthedesknews [left]; @lizwheeler [right]; @TheJoyReidShow [left]; @therationalnational [left]; @StosselTV [right]
 
-Nearest topic neighbours: @NewsmaxTV [right_tv_network]; @TheBrianKilmeadeShow [right_commentary]; https://rumble.com/c/BannonsWarRoom [right_commentary]; @BenShapiro [right_commentary]; @FoxNewsChannelClips [us_legacy_tv]
+Nearest topic neighbours: @NewsmaxTV [right]; @TheBrianKilmeadeShow [right]; https://rumble.com/c/BannonsWarRoom [right]; @BenShapiro [right]; @FoxNewsChannelClips [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

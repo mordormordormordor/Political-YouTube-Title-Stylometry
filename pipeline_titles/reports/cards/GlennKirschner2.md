@@ -1,6 +1,6 @@
 # Glenn Kirschner (@GlennKirschner2)
 
-Lane: **legal_institutional** · organisation: Glenn Kirschner · clipper: no · platform: youtube · subscribers: 1260000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Glenn Kirschner · clipper: no · platform: youtube · subscribers: 1260000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 264 rows, 262 unique (repeat share 0.8%); ranked; political share 97.7%.
 Top topics: Trump Supreme Court Legal Issues (32.1%); Epstein Files and Trump DOJ (6.5%); Todd Blanche Attorney General Confirmation (4.2%); ICE Protests and Shootings (3.8%); Pam Bondi and Epstein Files Scandal (3.8%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 44.8 | 30.1 | 0.1 | 0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 44.8 | 30.1 | 0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 13.4 | 12.1 | -0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 12.6 | 26.4 | -0.5 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 25.9 | 19.2 | -0.3 | -0.3 |
-| F5: Question and explainer framing (why, what, ?) | 30.5 | 15.9 | -0.2 | 0.0 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 12.6 | 26.4 | -0.5 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 25.9 | 19.2 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 30.5 | 15.9 | -0.2 | 0.1 |
 | F6: Person-centred (named people) | 31.4 | 34.3 | -0.5 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 42.7 | 54.4 | -0.7 | -0.7 |
-| F8: Numeric and dated (digits, years) | 58.6 | 50.6 | -0.1 | -0.0 |
-| F9: ALL-CAPS shouting | 3.8 | 11.7 | -1.0 | -0.6 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 42.7 | 54.4 | -0.7 | -0.5 |
+| F8: Numeric and dated (digits, years) | 58.6 | 50.6 | -0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 3.8 | 11.7 | -1.0 | -0.3 |
 | F10: Quoted speech | 66.9 | 55.2 | -0.1 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 62.8 | 79.5 | 0.0 | 0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 62.8 | 79.5 | 0.0 | -0.3 |
 | F12: Modal and future speculation (will, could, we) | 61.5 | 46.0 | -0.0 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.4% (2.2%); outrage 82.4% (75.8%); humor 0.0% (0.2%); question 4.6% (15.4%); breaking_live 0.4% (2.5%); episode_show 0.0% (0.7%); interview_guest 2.7% (7.5%); reaction 0.0% (0.6%); confrontation 4.6% (5.8%); listicle 0.0% (0.1%); howto_explainer 1.9% (10.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.4% (2.7%); outrage 82.4% (63.9%); humor 0.0% (0.2%); question 4.6% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 2.7% (9.8%); reaction 0.0% (2.9%); confrontation 4.6% (7.6%); listicle 0.0% (0.1%); howto_explainer 1.9% (8.0%)
 
 
-Nearest style neighbours: @JesseKellyDC [right_commentary]; @OwenReport [right_commentary]; @nypost [us_press_print_digital]; @Forthepeoplepodcast305 [left_commentary]; @GrahamAllen [right_commentary]
+Nearest style neighbours: @JesseKellyDC [right]; @OwenReport [left]; @nypost [right]; @Forthepeoplepodcast305 [left]; @GrahamAllen [right]
 
-Nearest topic neighbours: @LegalAFMTN [legal_institutional]; @katiephangnews [left_commentary]; @briantylercohen [left_commentary]; @DemocracyDocket [legal_institutional]; @RobertGouveiaEsq [legal_institutional]
+Nearest topic neighbours: @LegalAFMTN [left]; @katiephangnews [left]; @briantylercohen [left]; @DemocracyDocket [left]; @RobertGouveiaEsq [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

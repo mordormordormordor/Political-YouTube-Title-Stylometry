@@ -1,6 +1,6 @@
 # Jake Shields' Fight Back Podcast (@fightbackpodcast)
 
-Lane: **right_commentary** · organisation: Jake Shields · clipper: no · platform: youtube · subscribers: 206000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Jake Shields · clipper: no · platform: youtube · subscribers: 206000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 632 rows, 627 unique (repeat share 0.8%); ranked; political share 85.2%.
 Top topics: Israel-Palestine Conflict Media (15.3%); MMA and Combat Sports (8.1%); Epstein Files Political Connections (6.5%); Christian Nationalism and Politics (5.3%); UFO Government Disclosure (4.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 27.2 | 36.8 | -0.2 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 41.0 | 33.1 | -0.2 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 41.0 | 33.1 | -0.2 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 57.7 | 49.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 47.3 | 38.9 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 66.1 | 67.4 | 0.5 | 0.2 |
-| F6: Person-centred (named people) | 85.8 | 87.4 | 0.6 | -0.3 |
+| F6: Person-centred (named people) | 85.8 | 87.4 | 0.6 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 40.2 | 33.1 | -0.7 | -0.7 |
 | F8: Numeric and dated (digits, years) | 18.0 | 37.7 | -0.4 | -0.2 |
 | F9: ALL-CAPS shouting | 77.8 | 78.2 | 0.2 | -0.3 |
 | F10: Quoted speech | 25.5 | 32.6 | -0.6 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 51.0 | 48.1 | -0.2 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 51.0 | 48.1 | -0.2 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 31.4 | 28.5 | -0.4 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 3.2% (3.8%); outrage 56.1% (63.4%); humor 0.0% (0.2%); question 22.7% (15.1%); breaking_live 0.0% (1.3%); episode_show 13.4% (7.8%); interview_guest 6.1% (8.2%); reaction 8.0% (2.5%); confrontation 7.0% (7.7%); listicle 0.2% (0.1%); howto_explainer 10.2% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.2% (3.6%); outrage 56.1% (59.6%); humor 0.0% (0.2%); question 22.7% (15.6%); breaking_live 0.0% (2.0%); episode_show 13.4% (7.6%); interview_guest 6.1% (8.5%); reaction 8.0% (2.2%); confrontation 7.0% (7.8%); listicle 0.2% (0.1%); howto_explainer 10.2% (9.5%)
 
 
-Nearest style neighbours: @thejimmydoreshow [left_commentary]; @NovaraMedia [independent_digital_news]; @judgingfreedom [interview_podcast]; @TheDonLemonShow [left_commentary]; @MyronGainesX [right_commentary]
+Nearest style neighbours: @thejimmydoreshow [neutral]; @NovaraMedia [left]; @judgingfreedom [left]; @TheDonLemonShow [left]; @MyronGainesX [right]
 
-Nearest topic neighbours: @KimIversen [centrist_heterodox]; @TuckerCarlson [interview_podcast]; @thejimmydoreshow [left_commentary]; @BadEmpanadaLive [streamer_reaction]; @JillianMichaels [interview_podcast]
+Nearest topic neighbours: @KimIversen [neutral]; @TuckerCarlson [neutral]; @thejimmydoreshow [neutral]; @BadEmpanadaLive [left]; @JillianMichaels [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,23 +85,23 @@ Titles: 24 rows, 24 unique (repeat share 0.0%); LOW-N (not ranked); political sh
 Top topics: MMA and Combat Sports (58.3%); Epstein Files Political Connections (8.3%); Islam and Political Discourse (4.2%); Race and Politics in Media (4.2%); Iran Conflict and Political Updates (4.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.3 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.3 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.3 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.2 |
-| F6: Person-centred (named people) | None | None | 2.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
+| F6: Person-centred (named people) | None | None | 2.3 | 0.0 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.8 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | -0.7 | -0.0 |
 | F9: ALL-CAPS shouting | None | None | 0.0 | -0.4 |
-| F10: Quoted speech | None | None | -0.7 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.6 | 0.1 |
+| F10: Quoted speech | None | None | -0.7 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.6 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | None | None | -0.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (4.2%); outrage 29.2% (62.2%); humor 0.0% (0.2%); question 0.0% (16.8%); breaking_live 16.7% (18.6%); episode_show 20.8% (23.4%); interview_guest 16.7% (16.3%); reaction 8.3% (2.8%); confrontation 16.7% (11.1%); listicle 0.0% (0.2%); howto_explainer 0.0% (6.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.2%); outrage 29.2% (56.4%); humor 0.0% (0.1%); question 0.0% (13.7%); breaking_live 16.7% (18.8%); episode_show 20.8% (26.3%); interview_guest 16.7% (14.0%); reaction 8.3% (2.1%); confrontation 16.7% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

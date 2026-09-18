@@ -1,6 +1,6 @@
 # nous (@nousnetwork)
 
-Lane: **explainer_geopolitics** · organisation: nous · clipper: no · platform: youtube · subscribers: 88500.0
+Channel group: **left** (title-leaning score, document 14) · organisation: nous · clipper: no · platform: youtube · subscribers: 88500.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 156 rows, 156 unique (repeat share 0.0%); ranked; political share 98.1%.
 Top topics: India's Muslims and Political Parties (51.3%); Iran War and Strait of Hormuz Tensions (12.8%); Islam and Political Discourse (9.0%); Indian Politics and Parliament (5.1%); Israel-Palestine Conflict Media (3.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 56.9 | 53.1 | 0.3 | 1.1 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 32.2 | 24.3 | -0.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 71.5 | 90.0 | -0.2 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 13.4 | 5.0 | -0.4 | -0.3 |
-| F5: Question and explainer framing (why, what, ?) | 95.0 | 95.0 | 2.1 | 2.1 |
-| F6: Person-centred (named people) | 73.2 | 74.1 | 0.2 | -1.0 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 71.1 | 83.7 | -0.3 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 56.9 | 53.1 | 0.3 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 32.2 | 24.3 | -0.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 71.5 | 90.0 | -0.2 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 13.4 | 5.0 | -0.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 95.0 | 95.0 | 2.1 | 0.1 |
+| F6: Person-centred (named people) | 73.2 | 74.1 | 0.2 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 71.1 | 83.7 | -0.3 | -0.5 |
 | F8: Numeric and dated (digits, years) | 50.6 | 74.1 | -0.2 | -0.2 |
-| F9: ALL-CAPS shouting | 68.6 | 21.3 | -0.1 | -0.1 |
-| F10: Quoted speech | 3.8 | 53.6 | -1.0 | -1.0 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 43.1 | 58.6 | -0.4 | -0.4 |
+| F9: ALL-CAPS shouting | 68.6 | 21.3 | -0.1 | -0.3 |
+| F10: Quoted speech | 3.8 | 53.6 | -1.0 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 43.1 | 58.6 | -0.4 | -0.3 |
 | F12: Modal and future speculation (will, could, we) | 59.4 | 80.3 | -0.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 4.5% (4.0%); outrage 32.7% (26.2%); humor 0.0% (0.0%); question 49.4% (52.5%); breaking_live 0.0% (0.0%); episode_show 0.6% (1.5%); interview_guest 2.6% (4.0%); reaction 0.0% (0.0%); confrontation 1.3% (2.3%); listicle 0.0% (0.0%); howto_explainer 19.2% (10.1%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.5% (2.7%); outrage 32.7% (63.9%); humor 0.0% (0.2%); question 49.4% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.6% (2.8%); interview_guest 2.6% (9.8%); reaction 0.0% (2.9%); confrontation 1.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 19.2% (8.0%)
 
 
-Nearest style neighbours: @AndrewKlavan [right_commentary]; @RufoandLomez [right_commentary]; @MrTariqNasheed [left_commentary]; @judgingfreedom [interview_podcast]; @ColemanHughesOfficial [interview_podcast]
+Nearest style neighbours: @AndrewKlavan [right]; @RufoandLomez [right]; @MrTariqNasheed [right]; @judgingfreedom [left]; @ColemanHughesOfficial [right]
 
-Nearest topic neighbours: @ANINewsIndia [wire_international]; @Firstpost [wire_international]; @aljazeeraenglish [wire_international]; @DropSiteNews [independent_digital_news]; @OfficialSaharTV [right_commentary]
+Nearest topic neighbours: @ANINewsIndia [neutral]; @Firstpost [neutral]; @aljazeeraenglish [left]; @DropSiteNews [left]; @OfficialSaharTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

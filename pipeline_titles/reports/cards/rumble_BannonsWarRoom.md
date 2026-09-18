@@ -1,6 +1,6 @@
 # BannonsWarRoom (https://rumble.com/c/BannonsWarRoom)
 
-Lane: **right_commentary** · organisation: War Room · clipper: no · platform: rumble · subscribers: 
+Channel group: **right** (title-leaning score, document 14) · organisation: War Room · clipper: no · platform: rumble · subscribers: 
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 4,619 rows, 4,506 unique (repeat share 2.5%); ranked; political share 97
 Top topics: Political War Room and Figures (6.3%); Iran War and Strait of Hormuz Tensions (5.7%); Immigration and Deportation Policies (4.0%); California Election Fraud Scandal (3.8%); Trump and China political relations (3.7%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 91.2 | 86.2 | 0.8 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 96.2 | 89.1 | 1.1 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 96.2 | 89.1 | 1.1 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 97.9 | 98.7 | 0.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 92.5 | 90.4 | 0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 41.8 | 43.9 | -0.0 | 0.2 |
-| F6: Person-centred (named people) | 92.9 | 90.4 | 0.9 | -0.3 |
+| F6: Person-centred (named people) | 92.9 | 90.4 | 0.9 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 20.1 | 25.1 | -0.9 | -0.7 |
 | F8: Numeric and dated (digits, years) | 93.3 | 92.9 | 0.5 | -0.2 |
 | F9: ALL-CAPS shouting | 50.6 | 49.4 | -0.3 | -0.3 |
 | F10: Quoted speech | 90.0 | 90.0 | 0.8 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 99.6 | 99.6 | 2.7 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 99.6 | 99.6 | 2.7 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 97.9 | 97.1 | 1.4 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.8% (3.8%); outrage 42.3% (63.4%); humor 0.0% (0.2%); question 3.7% (15.1%); breaking_live 1.5% (1.3%); episode_show 20.1% (7.8%); interview_guest 9.5% (8.2%); reaction 0.7% (2.5%); confrontation 5.6% (7.7%); listicle 0.0% (0.1%); howto_explainer 4.8% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (3.6%); outrage 42.3% (59.6%); humor 0.0% (0.2%); question 3.7% (15.6%); breaking_live 1.5% (2.0%); episode_show 20.1% (7.6%); interview_guest 9.5% (8.5%); reaction 0.7% (2.2%); confrontation 5.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 4.8% (9.5%)
 
 
-Nearest style neighbours: @cafedotcom [legal_institutional]; @NewsmaxTV [right_tv_network]; @RealAlexClark [right_commentary]; @MegynKelly [right_commentary]; https://rumble.com/c/GGreenwald [independent_digital_news]
+Nearest style neighbours: @cafedotcom [left]; @NewsmaxTV [right]; @RealAlexClark [right]; @MegynKelly [right]; https://rumble.com/c/GGreenwald [left]
 
-Nearest topic neighbours: @oann [right_tv_network]; @RealAmericasVoice [right_tv_network]; @NewsmaxTV [right_tv_network]; @FoxNewsChannelClips [us_legacy_tv]; @BlazeTV [right_commentary]
+Nearest topic neighbours: @oann [right]; @RealAmericasVoice [right]; @NewsmaxTV [right]; @FoxNewsChannelClips [right]; @BlazeTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

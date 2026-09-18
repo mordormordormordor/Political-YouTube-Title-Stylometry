@@ -1,6 +1,6 @@
 # PoliticsGirl (@PoliticsGirl)
 
-Lane: **left_commentary** · organisation: PoliticsGirl · clipper: no · platform: youtube · subscribers: 505000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: PoliticsGirl · clipper: no · platform: youtube · subscribers: 505000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 116 rows, 116 unique (repeat share 0.0%); ranked; political share 93.1%.
 Top topics: Shocking Events and Reactions (16.4%); America's 250th Anniversary and Founding History (7.8%); Save American Democracy (6.9%); War and Military Analysis (4.3%); Modern Women and Feminism Debate (3.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 93.7 | 95.0 | 0.9 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 23.8 | 40.6 | -0.5 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 93.7 | 95.0 | 0.9 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 23.8 | 40.6 | -0.5 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 67.8 | 63.6 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 86.6 | 92.9 | 0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 76.2 | 78.2 | 0.8 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 76.2 | 78.2 | 0.8 | 0.1 |
 | F6: Person-centred (named people) | 5.9 | 2.9 | -0.9 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 37.2 | 14.6 | -0.7 | -0.5 |
 | F8: Numeric and dated (digits, years) | 0.4 | 1.7 | -1.0 | -0.2 |
 | F9: ALL-CAPS shouting | 85.8 | 86.2 | 0.7 | -0.3 |
-| F10: Quoted speech | 6.3 | 5.9 | -0.9 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 15.5 | 14.2 | -0.9 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 92.9 | 79.9 | 0.7 | -0.3 |
+| F10: Quoted speech | 6.3 | 5.9 | -0.9 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 15.5 | 14.2 | -0.9 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 92.9 | 79.9 | 0.7 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 5.2% (3.0%); outrage 43.1% (76.0%); humor 0.0% (0.2%); question 26.7% (9.8%); breaking_live 0.9% (5.4%); episode_show 0.0% (2.2%); interview_guest 19.0% (10.4%); reaction 0.0% (1.1%); confrontation 0.9% (8.2%); listicle 0.0% (0.1%); howto_explainer 6.9% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.2% (2.7%); outrage 43.1% (63.9%); humor 0.0% (0.2%); question 26.7% (15.6%); breaking_live 0.9% (2.9%); episode_show 0.0% (2.8%); interview_guest 19.0% (9.8%); reaction 0.0% (2.9%); confrontation 0.9% (7.6%); listicle 0.0% (0.1%); howto_explainer 6.9% (8.0%)
 
 
-Nearest style neighbours: @franifio [humour_satire]; @LeejaMiller [legal_institutional]; @ThePodcastoftheLotusEaters [right_commentary]; @dineshdsouza [right_commentary]; @TheAtlantic [us_press_print_digital]
+Nearest style neighbours: @franifio [left]; @LeejaMiller [left]; @ThePodcastoftheLotusEaters [right]; @dineshdsouza [right]; @TheAtlantic [left]
 
-Nearest topic neighbours: @ThePodcastoftheLotusEaters [right_commentary]; @TimcastIRL [right_commentary]; @TheLincolnProject [centrist_heterodox]; @Timcast [right_commentary]; @RealDanBongino [right_commentary]
+Nearest topic neighbours: @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @TheLincolnProject [left]; @Timcast [right]; @RealDanBongino [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

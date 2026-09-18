@@ -1,6 +1,6 @@
 # Tucker Carlson (@TuckerCarlson)
 
-Lane: **interview_podcast** · organisation: Tucker Carlson Network · clipper: no · platform: youtube · subscribers: 5750000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: Tucker Carlson Network · clipper: no · platform: youtube · subscribers: 5750000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 119 rows, 119 unique (repeat share 0.0%); ranked; political share 95.8%.
 Top topics: Israel-Palestine Conflict Media (15.1%); Christian Nationalism and Politics (9.2%); Tucker Carlson Political Commentary (6.7%); Iran War and Strait of Hormuz Tensions (5.0%); FBI and Jan 6 Pipe Bomb Case (4.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 5.4 | 9.6 | -1.0 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 47.7 | 43.5 | -0.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.1 | 72.8 | -0.1 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 84.5 | 79.5 | 0.2 | -0.2 |
-| F5: Question and explainer framing (why, what, ?) | 48.5 | 56.5 | 0.1 | 0.7 |
-| F6: Person-centred (named people) | 91.6 | 87.9 | 0.8 | 0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 29.3 | 37.7 | -0.8 | -0.8 |
-| F8: Numeric and dated (digits, years) | 71.5 | 71.5 | -0.0 | -0.2 |
-| F9: ALL-CAPS shouting | 10.9 | 8.4 | -0.8 | -0.3 |
-| F10: Quoted speech | 15.1 | 33.9 | -0.7 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 96.7 | 95.0 | 1.2 | -0.4 |
-| F12: Modal and future speculation (will, could, we) | 81.6 | 77.0 | 0.3 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 5.4 | 9.6 | -1.0 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 47.7 | 43.5 | -0.1 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.1 | 72.8 | -0.1 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 84.5 | 79.5 | 0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 48.5 | 56.5 | 0.1 | 0.1 |
+| F6: Person-centred (named people) | 91.6 | 87.9 | 0.8 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 29.3 | 37.7 | -0.8 | -0.1 |
+| F8: Numeric and dated (digits, years) | 71.5 | 71.5 | -0.0 | 0.0 |
+| F9: ALL-CAPS shouting | 10.9 | 8.4 | -0.8 | -0.4 |
+| F10: Quoted speech | 15.1 | 33.9 | -0.7 | -0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 96.7 | 95.0 | 1.2 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 81.6 | 77.0 | 0.3 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.7% (1.4%); outrage 70.6% (41.4%); humor 0.0% (0.3%); question 2.5% (19.0%); breaking_live 3.4% (0.5%); episode_show 0.0% (11.4%); interview_guest 7.6% (18.1%); reaction 8.4% (1.4%); confrontation 8.4% (9.2%); listicle 0.0% (0.0%); howto_explainer 14.3% (11.7%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.7% (2.4%); outrage 70.6% (36.0%); humor 0.0% (0.1%); question 2.5% (15.9%); breaking_live 3.4% (1.1%); episode_show 0.0% (7.0%); interview_guest 7.6% (11.6%); reaction 8.4% (1.9%); confrontation 8.4% (7.4%); listicle 0.0% (0.1%); howto_explainer 14.3% (6.6%)
 
 
-Nearest style neighbours: @MyronGainesX [right_commentary]; @RubinReport [right_commentary]; @TheAdamCarollaShow1 [interview_podcast]; @thejimmydoreshow [left_commentary]; https://rumble.com/c/GGreenwald [independent_digital_news]
+Nearest style neighbours: @MyronGainesX [right]; @RubinReport [right]; @TheAdamCarollaShow1 [right]; @thejimmydoreshow [neutral]; https://rumble.com/c/GGreenwald [left]
 
-Nearest topic neighbours: @KimIversen [centrist_heterodox]; @fightbackpodcast [right_commentary]; @RedactedNews [independent_digital_news]; @TheYoungTurks [left_commentary]; @thejimmydoreshow [left_commentary]
+Nearest topic neighbours: @KimIversen [neutral]; @fightbackpodcast [right]; @RedactedNews [right]; @TheYoungTurks [left]; @thejimmydoreshow [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

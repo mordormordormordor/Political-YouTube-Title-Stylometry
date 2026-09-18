@@ -1,6 +1,6 @@
 # Brett Cooper (@bbrettcooper)
 
-Lane: **right_commentary** · organisation: Brett Cooper · clipper: no · platform: youtube · subscribers: 1700000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Brett Cooper · clipper: no · platform: youtube · subscribers: 1700000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 143 rows, 143 unique (repeat share 0.0%); ranked; political share 91.6%.
 Top topics: Hollywood and Oscars Politics (7.7%); TikTok Censorship and Politics (5.6%); Modern Women and Feminism Debate (4.9%); Shocking Events and Reactions (4.2%); Candace Owens and Erika Kirk Controversy (4.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 64.0 | 75.7 | 0.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 98.3 | 96.7 | 1.2 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 98.3 | 96.7 | 1.2 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 35.6 | 18.8 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 66.5 | 70.3 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 73.6 | 75.3 | 0.7 | 0.2 |
-| F6: Person-centred (named people) | 22.6 | 22.6 | -0.6 | -0.3 |
+| F6: Person-centred (named people) | 22.6 | 22.6 | -0.6 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 36.8 | 24.7 | -0.7 | -0.7 |
 | F8: Numeric and dated (digits, years) | 9.6 | 8.4 | -0.5 | -0.2 |
 | F9: ALL-CAPS shouting | 44.8 | 43.9 | -0.4 | -0.3 |
 | F10: Quoted speech | 19.2 | 27.2 | -0.7 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 6.3 | 11.7 | -1.1 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 6.3 | 11.7 | -1.1 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 79.9 | 53.6 | 0.3 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 4.2% (3.8%); outrage 58.7% (63.4%); humor 0.7% (0.2%); question 18.2% (15.1%); breaking_live 0.0% (1.3%); episode_show 30.1% (7.8%); interview_guest 5.6% (8.2%); reaction 5.6% (2.5%); confrontation 4.9% (7.7%); listicle 0.0% (0.1%); howto_explainer 8.4% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.2% (3.6%); outrage 58.7% (59.6%); humor 0.7% (0.2%); question 18.2% (15.6%); breaking_live 0.0% (2.0%); episode_show 30.1% (7.6%); interview_guest 5.6% (8.5%); reaction 5.6% (2.2%); confrontation 4.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 8.4% (9.5%)
 
 
-Nearest style neighbours: @KimIversen [centrist_heterodox]; @StevenCrowder [right_commentary]; @TheVaushPit [streamer_reaction]; @thomhartmann [left_commentary]; @RileyGaines [right_commentary]
+Nearest style neighbours: @KimIversen [neutral]; @StevenCrowder [right]; @TheVaushPit [left]; @thomhartmann [left]; @RileyGaines [right]
 
-Nearest topic neighbours: @MichaelKnowles [right_commentary]; @BenShapiro [right_commentary]; @MattWalsh [right_commentary]; @AfterPartyEmily [right_commentary]; @TheAdamCarollaShow1 [interview_podcast]
+Nearest topic neighbours: @MichaelKnowles [right]; @BenShapiro [right]; @MattWalsh [right]; @AfterPartyEmily [right]; @TheAdamCarollaShow1 [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

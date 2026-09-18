@@ -1,6 +1,6 @@
 # Andrew Klavan (@AndrewKlavan)
 
-Lane: **right_commentary** · organisation: Daily Wire · clipper: no · platform: youtube · subscribers: 813000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Daily Wire · clipper: no · platform: youtube · subscribers: 813000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 196 rows, 196 unique (repeat share 0.0%); ranked; political share 89.3%.
 Top topics: Hollywood and Oscars Politics (8.7%); Christian Nationalism and Politics (8.7%); Modern Women and Feminism Debate (5.6%); Left Wing Political Violence (5.1%); JLP Weekly Series (5.1%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 68.2 | 88.7 | 0.5 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 36.8 | 34.3 | -0.3 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 36.8 | 34.3 | -0.3 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 38.9 | 33.9 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 26.8 | 31.8 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 93.3 | 95.4 | 2.0 | 0.2 |
-| F6: Person-centred (named people) | 26.8 | 19.7 | -0.6 | -0.3 |
+| F6: Person-centred (named people) | 26.8 | 19.7 | -0.6 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 39.7 | 21.3 | -0.7 | -0.7 |
 | F8: Numeric and dated (digits, years) | 37.7 | 58.6 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 54.4 | 53.6 | -0.3 | -0.3 |
 | F10: Quoted speech | 11.7 | 24.3 | -0.8 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 57.3 | 63.2 | -0.1 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 57.3 | 63.2 | -0.1 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 76.6 | 60.3 | 0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.5% (3.8%); outrage 31.6% (63.4%); humor 4.1% (0.2%); question 31.6% (15.1%); breaking_live 0.5% (1.3%); episode_show 21.9% (7.8%); interview_guest 19.9% (8.2%); reaction 5.1% (2.5%); confrontation 4.6% (7.7%); listicle 0.0% (0.1%); howto_explainer 18.9% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.5% (3.6%); outrage 31.6% (59.6%); humor 4.1% (0.2%); question 31.6% (15.6%); breaking_live 0.5% (2.0%); episode_show 21.9% (7.6%); interview_guest 19.9% (8.5%); reaction 5.1% (2.2%); confrontation 4.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 18.9% (9.5%)
 
 
-Nearest style neighbours: @theisabelbrown [right_commentary]; @nousnetwork [explainer_geopolitics]; @thomhartmann [left_commentary]; @TheAtlantic [us_press_print_digital]; @samharrisorg [interview_podcast]
+Nearest style neighbours: @theisabelbrown [right]; @nousnetwork [left]; @thomhartmann [left]; @TheAtlantic [left]; @samharrisorg [left]
 
-Nearest topic neighbours: @PragerU [right_commentary]; @BenShapiro [right_commentary]; @MichaelKnowles [right_commentary]; @morebridgetphetasy [interview_podcast]; @JillianMichaels [interview_podcast]
+Nearest topic neighbours: @PragerU [right]; @BenShapiro [right]; @MichaelKnowles [right]; @morebridgetphetasy [right]; @JillianMichaels [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,23 +86,23 @@ Titles: 3 rows, 3 unique (repeat share 0.0%); LOW-N (not ranked); political shar
 Top topics: Trump and Greenland politics (33.3%); Islam and Political Discourse (33.3%); Trump State of the Union Address (33.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.0 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.0 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 1.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.2 |
-| F6: Person-centred (named people) | None | None | -2.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
+| F6: Person-centred (named people) | None | None | -2.2 | 0.0 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.8 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | -1.2 | -0.0 |
 | F9: ALL-CAPS shouting | None | None | -1.6 | -0.4 |
-| F10: Quoted speech | None | None | -1.2 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 1.3 | 0.1 |
+| F10: Quoted speech | None | None | -1.2 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 1.3 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | None | None | -0.4 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (4.2%); outrage 33.3% (62.2%); humor 33.3% (0.2%); question 0.0% (16.8%); breaking_live 0.0% (18.6%); episode_show 0.0% (23.4%); interview_guest 0.0% (16.3%); reaction 0.0% (2.8%); confrontation 0.0% (11.1%); listicle 0.0% (0.2%); howto_explainer 0.0% (6.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.2%); outrage 33.3% (56.4%); humor 33.3% (0.1%); question 0.0% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 0.0% (14.0%); reaction 0.0% (2.1%); confrontation 0.0% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

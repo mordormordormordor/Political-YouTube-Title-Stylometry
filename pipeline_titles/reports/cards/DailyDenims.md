@@ -1,6 +1,6 @@
 # Daily Denims (@DailyDenims)
 
-Lane: **streamer_reaction** · organisation: Denims · clipper: yes · platform: youtube · subscribers: 11400.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Denims · clipper: yes · platform: youtube · subscribers: 11400.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 215 rows, 215 unique (repeat share 0.0%); ranked; political share 78.1%.
 Top topics: Destiny and Ethan Klein debates (11.6%); Hasanabi Reacts to Hasan (8.4%); Asmongold controversy and bans (7.9%); AI and Political Concerns (3.7%); TikTok Censorship and Politics (3.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 22.2 | 27.2 | -0.3 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 63.2 | 64.4 | 0.2 | -0.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 98.7 | 97.9 | 0.9 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 22.2 | 27.2 | -0.3 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 63.2 | 64.4 | 0.2 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 98.7 | 97.9 | 0.9 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 10.0 | 16.7 | -0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 47.7 | 49.0 | 0.1 | -0.1 |
-| F6: Person-centred (named people) | 50.6 | 58.6 | -0.2 | -0.5 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 41.4 | 23.0 | -0.7 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 47.7 | 49.0 | 0.1 | 0.1 |
+| F6: Person-centred (named people) | 50.6 | 58.6 | -0.2 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 41.4 | 23.0 | -0.7 | -0.5 |
 | F8: Numeric and dated (digits, years) | 48.1 | 32.6 | -0.2 | -0.2 |
-| F9: ALL-CAPS shouting | 61.5 | 73.2 | -0.2 | -0.1 |
-| F10: Quoted speech | 86.2 | 78.2 | 0.5 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 25.9 | 16.3 | -0.7 | -0.7 |
-| F12: Modal and future speculation (will, could, we) | 7.9 | 3.3 | -0.8 | -0.5 |
+| F9: ALL-CAPS shouting | 61.5 | 73.2 | -0.2 | -0.3 |
+| F10: Quoted speech | 86.2 | 78.2 | 0.5 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 25.9 | 16.3 | -0.7 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 7.9 | 3.3 | -0.8 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.5% (3.8%); outrage 68.4% (64.8%); humor 0.0% (0.4%); question 3.3% (9.0%); breaking_live 0.0% (0.4%); episode_show 1.9% (4.5%); interview_guest 4.2% (7.8%); reaction 7.9% (10.1%); confrontation 9.3% (14.3%); listicle 0.0% (0.0%); howto_explainer 9.3% (4.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (2.7%); outrage 68.4% (63.9%); humor 0.0% (0.2%); question 3.3% (15.6%); breaking_live 0.0% (2.9%); episode_show 1.9% (2.8%); interview_guest 4.2% (9.8%); reaction 7.9% (2.9%); confrontation 9.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 9.3% (8.0%)
 
 
-Nearest style neighbours: https://rumble.com/c/TheAlexJonesShowLive [right_commentary]; @MichaelKnowles [right_commentary]; @SMN [humour_satire]; @FoxNews [us_legacy_tv]; @BlazeTV [right_commentary]
+Nearest style neighbours: https://rumble.com/c/TheAlexJonesShowLive [right]; @MichaelKnowles [right]; @SMN [left]; @FoxNews [right]; @BlazeTV [right]
 
-Nearest topic neighbours: @destiny [streamer_reaction]; @DestinyDGGClips [streamer_reaction]; @TheSerfTimes [streamer_reaction]; @destinyhqclips [streamer_reaction]; @TheMajorityReport [left_commentary]
+Nearest topic neighbours: @destiny [left]; @DestinyDGGClips [right]; @TheSerfTimes [left]; @destinyhqclips [neutral]; @TheMajorityReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

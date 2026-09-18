@@ -1,6 +1,6 @@
 # Dan Bongino (@RealDanBongino)
 
-Lane: **right_commentary** · organisation: Dan Bongino · clipper: no · platform: youtube · subscribers: 1010000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Dan Bongino · clipper: no · platform: youtube · subscribers: 1010000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 266 rows, 266 unique (repeat share 0.0%); ranked; political share 94.4%.
 Top topics: Shocking Events and Reactions (22.9%); 2026 Midterm Election Predictions (3.4%); Big Pharma and Health Scams (3.4%); Left Wing Political Violence (3.4%); Socialism and Democratic Party Conflict (3.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 84.5 | 87.0 | 0.7 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 50.2 | 72.4 | -0.0 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 50.2 | 72.4 | -0.0 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 62.3 | 44.4 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 57.3 | 88.7 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 67.8 | 68.2 | 0.5 | 0.2 |
-| F6: Person-centred (named people) | 6.3 | 4.6 | -0.9 | -0.3 |
+| F6: Person-centred (named people) | 6.3 | 4.6 | -0.9 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 43.5 | 17.6 | -0.7 | -0.7 |
 | F8: Numeric and dated (digits, years) | 15.9 | 11.7 | -0.4 | -0.2 |
 | F9: ALL-CAPS shouting | 20.1 | 54.4 | -0.7 | -0.3 |
 | F10: Quoted speech | 40.6 | 21.3 | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 34.7 | 19.2 | -0.5 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 34.7 | 19.2 | -0.5 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 44.4 | 26.4 | -0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 9.8% (3.8%); outrage 57.5% (63.4%); humor 0.4% (0.2%); question 17.3% (15.1%); breaking_live 0.8% (1.3%); episode_show 56.4% (7.8%); interview_guest 5.3% (8.2%); reaction 0.8% (2.5%); confrontation 3.8% (7.7%); listicle 0.4% (0.1%); howto_explainer 7.1% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 9.8% (3.6%); outrage 57.5% (59.6%); humor 0.4% (0.2%); question 17.3% (15.6%); breaking_live 0.8% (2.0%); episode_show 56.4% (7.6%); interview_guest 5.3% (8.5%); reaction 0.8% (2.2%); confrontation 3.8% (7.8%); listicle 0.4% (0.1%); howto_explainer 7.1% (9.5%)
 
 
-Nearest style neighbours: @hutch [streamer_reaction]; @BenShapiro [right_commentary]; @StevenCrowder [right_commentary]; @KimIversen [centrist_heterodox]; @RileyGaines [right_commentary]
+Nearest style neighbours: @hutch [neutral]; @BenShapiro [right]; @StevenCrowder [right]; @KimIversen [neutral]; @RileyGaines [right]
 
-Nearest topic neighbours: @TimcastIRL [right_commentary]; @LiberalHivemind [right_commentary]; @TimcastNews [right_commentary]; @Timcast [right_commentary]; @AsmonTV [streamer_reaction]
+Nearest topic neighbours: @TimcastIRL [right]; @LiberalHivemind [right]; @TimcastNews [right]; @Timcast [right]; @AsmonTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

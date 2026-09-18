@@ -1,6 +1,6 @@
 # Robert Gouveia Esq. (@RobertGouveiaEsq)
 
-Lane: **legal_institutional** · organisation: Robert Gouveia · clipper: no · platform: youtube · subscribers: 610000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Robert Gouveia · clipper: no · platform: youtube · subscribers: 610000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 696 rows, 696 unique (repeat share 0.0%); ranked; political share 97.1%.
 Top topics: Trump Supreme Court Legal Issues (17.7%); California Election Fraud Scandal (15.7%); FBI and Jan 6 Pipe Bomb Case (5.2%); Virginia redistricting and gerrymandering (3.3%); Supreme Court and Birthright Citizenship (3.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 6.3 | 5.9 | -0.9 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 2.9 | 3.3 | -1.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.7 | 6.7 | -0.6 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 6.7 | 2.5 | -0.5 | -0.3 |
-| F5: Question and explainer framing (why, what, ?) | 4.6 | 2.1 | -0.7 | 0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 2.9 | 3.3 | -1.8 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.7 | 6.7 | -0.6 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 6.7 | 2.5 | -0.5 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 4.6 | 2.1 | -0.7 | 0.2 |
 | F6: Person-centred (named people) | 46.4 | 54.0 | -0.3 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 55.6 | 67.8 | -0.5 | -0.7 |
-| F8: Numeric and dated (digits, years) | 79.1 | 70.3 | 0.1 | -0.0 |
-| F9: ALL-CAPS shouting | 75.3 | 75.7 | 0.1 | -0.6 |
-| F10: Quoted speech | 43.5 | 49.8 | -0.5 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 66.9 | 77.8 | 0.1 | 0.1 |
-| F12: Modal and future speculation (will, could, we) | 2.9 | 3.8 | -1.1 | -0.1 |
+| F8: Numeric and dated (digits, years) | 79.1 | 70.3 | 0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 75.3 | 75.7 | 0.1 | -0.3 |
+| F10: Quoted speech | 43.5 | 49.8 | -0.5 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 66.9 | 77.8 | 0.1 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 2.9 | 3.8 | -1.1 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.4% (2.2%); outrage 96.1% (75.8%); humor 0.0% (0.2%); question 0.3% (15.4%); breaking_live 0.0% (2.5%); episode_show 0.0% (0.7%); interview_guest 6.2% (7.5%); reaction 0.4% (0.6%); confrontation 12.1% (5.8%); listicle 0.0% (0.1%); howto_explainer 0.1% (10.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.4% (3.6%); outrage 96.1% (59.6%); humor 0.0% (0.2%); question 0.3% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 6.2% (8.5%); reaction 0.4% (2.2%); confrontation 12.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 0.1% (9.5%)
 
 
-Nearest style neighbours: @breakingpoints [independent_digital_news]; @DueDissidence [left_commentary]; @destinyhqclips [streamer_reaction]; https://rumble.com/c/nickjfuentes [right_commentary]; @ActualJusticeWarrior [right_commentary]
+Nearest style neighbours: @breakingpoints [left]; @DueDissidence [left]; @destinyhqclips [neutral]; https://rumble.com/c/nickjfuentes [right]; @ActualJusticeWarrior [right]
 
-Nearest topic neighbours: @JesseKellyDC [right_commentary]; @NewsmaxTV [right_tv_network]; @RealAmericasVoice [right_tv_network]; @BlazeTV [right_commentary]; @GlennKirschner2 [legal_institutional]
+Nearest topic neighbours: @JesseKellyDC [right]; @NewsmaxTV [right]; @RealAmericasVoice [right]; @BlazeTV [right]; @GlennKirschner2 [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,28 +85,28 @@ Titles: 396 rows, 385 unique (repeat share 2.8%); ranked; political share 97.7%.
 Top topics: California Election Fraud Scandal (17.1%); Trump Supreme Court Legal Issues (13.2%); Iran Conflict and Political Updates (5.7%); FBI and Jan 6 Pipe Bomb Case (5.2%); Supreme Court and Birthright Citizenship (3.1%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 5.1 | 7.6 | -1.2 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 7.6 | 10.1 | -1.6 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 7.6 | 10.1 | -1.6 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.4 | 10.1 | -0.6 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 22.8 | 10.1 | -0.3 | 0.2 |
-| F5: Question and explainer framing (why, what, ?) | 10.1 | 11.4 | -0.6 | -0.2 |
-| F6: Person-centred (named people) | 78.5 | 74.7 | 1.1 | 1.1 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 46.8 | 50.6 | -0.4 | -0.4 |
-| F8: Numeric and dated (digits, years) | 27.8 | 25.3 | -0.2 | -0.2 |
-| F9: ALL-CAPS shouting | 83.5 | 83.5 | 1.1 | 0.2 |
-| F10: Quoted speech | 70.9 | 72.2 | -0.3 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 91.1 | 94.9 | 1.1 | 1.5 |
-| F12: Modal and future speculation (will, could, we) | 2.5 | 2.5 | -1.2 | -0.6 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 22.8 | 10.1 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 10.1 | 11.4 | -0.6 | -0.3 |
+| F6: Person-centred (named people) | 78.5 | 74.7 | 1.1 | 0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 46.8 | 50.6 | -0.4 | -0.6 |
+| F8: Numeric and dated (digits, years) | 27.8 | 25.3 | -0.2 | -0.0 |
+| F9: ALL-CAPS shouting | 83.5 | 83.5 | 1.1 | -0.4 |
+| F10: Quoted speech | 70.9 | 72.2 | -0.3 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 91.1 | 94.9 | 1.1 | 0.2 |
+| F12: Modal and future speculation (will, could, we) | 2.5 | 2.5 | -1.2 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.5% (0.8%); outrage 92.7% (64.0%); humor 0.0% (0.0%); question 6.8% (21.1%); breaking_live 1.0% (6.7%); episode_show 0.0% (25.3%); interview_guest 2.9% (11.5%); reaction 1.3% (0.8%); confrontation 11.7% (8.7%); listicle 0.0% (0.0%); howto_explainer 0.8% (4.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (3.2%); outrage 92.7% (56.4%); humor 0.0% (0.1%); question 6.8% (13.7%); breaking_live 1.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 2.9% (14.0%); reaction 1.3% (2.1%); confrontation 11.7% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.8% (5.3%)
 
 
-Nearest style neighbours: @TheYoungTurks [left_commentary]; @PBDPodcast [interview_podcast]; @rolandsmartin [independent_digital_news]; @thejimmydoreshow [left_commentary]; @NickCruseRBN [left_commentary]
+Nearest style neighbours: @TheYoungTurks [left]; @PBDPodcast [right]; @rolandsmartin [left]; @thejimmydoreshow [neutral]; @NickCruseRBN [left]
 
-Nearest topic neighbours: @TimcastIRL [right_commentary]; @RealAmericasVoice [right_tv_network]; @bennyjohnson [right_commentary]; @jimacosta [left_commentary]; @NewsmaxTV [right_tv_network]
+Nearest topic neighbours: @TimcastIRL [right]; @RealAmericasVoice [right]; @bennyjohnson [right]; @jimacosta [left]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

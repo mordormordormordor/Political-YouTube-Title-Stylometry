@@ -1,0 +1,7 @@
+caps_style,n_titles,share_left,share_right,share_neither,relative_log_views_left,n_left,relative_log_views_right,n_right,relative_log_views_neither,n_neither
+all_caps,332,0.1145,0.1747,0.7108,-0.01,32,0.0686,49,-0.0039,185
+selective_caps,3988,0.3405,0.2909,0.3686,0.0063,1296,0.0655,1096,0.0333,1397
+title_case,6227,0.2226,0.1937,0.5837,0.0023,1303,0.0059,1168,-0.038,3422
+sentence_case,1643,0.1412,0.0682,0.7906,0.0692,232,0.1181,105,-0.0265,1268
+mixed_other,80,0.1375,0.075,0.7875,,11,,6,-0.1317,62
+short_other,192,0.0312,0.0417,0.9271,,6,,8,0.1737,144

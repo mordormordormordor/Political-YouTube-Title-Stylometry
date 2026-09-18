@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-16T13:46:24+00:00._
+_Generated 2026-09-17T20:49:23+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -40,6 +40,85 @@ frequency (patterns in EPISODE_RES / DATE_RES).
 CLI:
     python -m pipeline_titles.prepare
     python -m pipeline_titles.prepare --min-share 0.2 --min-count 10
+```
+
+### `pipeline_titles.creators`
+
+```
+Stage 0b - write the creator table (data/titles/analysis/creators.csv).
+
+Columns: creator, channel_name, platform, organisation, clipper, subscribers,
+n_videos, n_streams, low_n_videos, low_n_streams, note.
+
+The seed lives in pipeline_titles/creator_seed.py. This script refuses to overwrite an
+existing creators.csv (which may carry hand corrections) unless --force is given;
+every later stage reads creators.csv, so correct the CSV, not the seed. The channel
+grouping used in every between-group comparison (left / neutral / right) is not in
+this file: it is each channel's leaning group from the leaning stage, joined at load
+time by common.load_creators().
+
+CLI:
+    python -m pipeline_titles.creators            # write if missing
+    python -m pipeline_titles.creators --force    # rebuild from the seed
+```
+
+### `pipeline_titles.leaning`
+
+```
+Stage 0d - political leaning from titles alone, judged by a frontier model (the stage
+runs third, after creators, because its channel groups are what every later stage reports
+by; its runtime record keeps the historical name stage7_leaning).
+
+A creator-balanced sample is labelled left / right / neither by Claude Opus through the
+Claude Code CLI in print mode (a Claude Pro/Max subscription covers it; temperature 0;
+twenty titles per call, sent in a seeded random order so that a call mixes channels and
+the judge sees nothing but the title text; every response cached). The label is the
+viewpoint the TITLE'S OWN WORDING signals, not the subject. Two levels of analysis follow: the
+titles themselves, and the channels grouped as left / neutral / right by their scores.
+
+Sample. Every creator gets a base draw of N_BASE (16) unique edited-upload titles
+(seed 20260914; live VODs top up creators with fewer uploads). Creators with at least
+--min-uploads (50) unique uploads are then topped up to --n-per-creator (N_PER_CREATOR,
+50) with further uploads spread evenly across months (12,478 titles; 239 creators at
+50, 35 at their base).
+
+The channel groups written here (leaning_by_creator.csv, column `group`) are the only
+between-channel grouping in the pipeline: common.load_creators() joins them to the
+creator table, and every later stage reports by them. The stage therefore runs right
+after prepare / creators in run_all.
+
+Outputs (data/titles/analysis/):
+    leaning_labels.csv.gz       one row per sampled title with the label, is_base (base draw vs
+                                month-spread top-up) and month
+    leaning_label_shares.json   the labels' counts and shares
+    leaning_by_creator.csv      per channel: label shares, score = (right - left) / n over its
+                                sampled titles, and the group the score implies (left below
+                                -0.05, right above +0.05, neutral between)
+    leaning_groups.csv          the three groups: channels, titles, mean score and composition
+    leaning_words.csv           right vs left vocabulary: weighted log-odds (alpha0 = 500) and
+                                rank-turbulence-divergence contributions (alpha = 1/3)
+    leaning_split_half.csv      split-half reliability of the channel scores
+                                (channels with >= 32 labels, 20 random splits)
+    leaning_stability.csv       the base 16-title score against the score from the disjoint
+                                top-up titles and from all titles (Spearman, mean absolute
+                                change, channels whose group changed);
+                                leaning_stability_channels.csv has the per-channel values
+    leaning_by_group_month.csv  partisan share and score per channel group x month
+    plus the log-odds lexicon files of leaning_lexicon.py
+
+Usage-limit replies from the CLI are waited out (5, 15, 30, 60 min). Prompt v2
+(`--prompt-version v2`) also asks for the title's TARGET (who is attacked or featured),
+which separates "attacks Trump" from "speaks for the left".
+
+Human check. analyse() writes a blind adjudication sheet (leaning_human_sheet.csv: 200
+titles, model labels hidden). Fill `human_label` and re-run with `--human-labels
+data/titles/analysis/leaning_human_sheet.csv` to get the judge's agreement with a human
+(leaning_human_agreement.csv). That is the accuracy check.
+
+CLI:
+    python -m pipeline_titles.leaning --n-per-creator 50            # sample, label, analyse
+    python -m pipeline_titles.leaning --n-per-creator 50 --prompt-version v2
+    python -m pipeline_titles.leaning --analyse-only [--human-labels <filled sheet>]
 ```
 
 ### `pipeline_titles.annotate`
@@ -96,7 +175,8 @@ HDBSCAN + class-based TF-IDF) fitted on a creator-stratified ~100k sample, then
 every title assigned to its nearest topic centroid.
 
 Reads titles_prepared.parquet, cache/embeddings.npy (Stage 1a), annotations.parquet
-(Stage 0c, for the entities per topic) and lanes.csv. Writes, under
+(Stage 0c, for the entities per topic) and creators.csv (with the channel groups of
+the leaning stage). Writes, under
 data/titles/analysis/:
 
     topics.csv                row_id, video_id, creator, genre, topic_id, topic_sim,
@@ -105,7 +185,7 @@ data/titles/analysis/:
     topic_labels.csv          topic_id, label (LLM), political, category, top_terms,
                               n_fit, n_unique_all, example_1..3, top_persons, top_orgs
     creator_topic_mix.csv     creator x genre x topic share (unique titles)
-    topic_by_lane.csv         lane x genre x topic: mean of creator shares (+ raw pooled)
+    topic_by_group.csv        channel group x genre x topic: mean of creator shares (+ raw pooled)
     topic_timeline.csv        month x topic: creator-balanced share and raw count
     topic_spikes.csv          per month, the topics that spike most vs. their own
                               mean, with the entities and example titles of that month
@@ -160,7 +240,7 @@ CLI:
 ```
 Stage 2a - title-level style features, aggregated to creator x genre x month.
 
-Reads titles_prepared.parquet, annotations.parquet and lanes.csv. Writes:
+Reads titles_prepared.parquet, annotations.parquet and creators.csv. Writes:
 
     features_title.parquet     one row per video (all rows; repeats copy their unique
                                title's values): ~75 title-level features
@@ -194,7 +274,7 @@ Stage 2b - exploratory factor analysis of the aggregated style features, factor
 scores for every cell, creator and title, and topic control.
 
 Reads features.csv (creator x genre x month), features_title.parquet, topics.csv
-and lanes.csv. Writes, under data/titles/analysis/:
+and creators.csv. Writes, under data/titles/analysis/:
 
     efa_summary.json         features used / dropped (and why), n cells, KMO,
                              Bartlett, parallel-analysis result, retained factors,
@@ -208,7 +288,7 @@ and lanes.csv. Writes, under data/titles/analysis/:
                              topic-controlled
     dimensions.csv           creator x genre: raw score, topic-expected component,
                              topic-controlled (residual) score, percentile ranks
-                             within genre (non-low-n creators), lane medians
+                             within genre (non-low-n creators), channel-group medians
     dimensions_title.parquet row_id, topic_id, raw and residual title-level scores
     dimensions_by_topic.csv  creator scores within the 5 largest shared topics
     topic_control_summary.csv  per factor: share of title-level and creator-level
@@ -252,9 +332,9 @@ model refitted on the whole sample is applied to every unique title.
 Outputs (data/titles/analysis/):
     formats.parquet          row_id + format flags + hook probabilities and labels
     format_rules.csv         the regexes
-    format_hook_shares.csv   creator x genre shares (unique titles) and lane x genre
-                             means of creator shares (non-low-n creators)
-    format_examples.csv      three examples per category per lane and corpus-wide
+    format_hook_shares.csv   creator x genre shares (unique titles) and channel group x
+                             genre means of creator shares (non-low-n creators)
+    format_examples.csv      three examples per category per channel group and corpus-wide
     hook_classifier.json     CV and hold-out metrics per hook
     format_agreement.csv     rule vs LLM format label on the rated sample
                              (precision / recall / F1 / Cohen's kappa per category)
@@ -267,12 +347,12 @@ CLI:
 
 ```
 Stage 4 - the landscape: creators clustered in style space and in topic space,
-compared with the lane assignment; nearest neighbours; who gets named; convergent
-formulas.
+compared with the channel groups (left / neutral / right, from the leaning stage);
+nearest neighbours; who gets named; convergent formulas.
 
 Reads dimensions.csv / dimensions_title.parquet (Stage 2), topics.csv +
 topic_labels.csv + creator_topic_mix.csv (Stage 1), formats.parquet (Stage 3),
-annotations.parquet, titles_prepared.parquet and lanes.csv.
+annotations.parquet, titles_prepared.parquet and creators.csv (with the groups).
 
 Every similarity is computed per genre over non-low-n creators, with cross-posted
 titles removed (a title whose case-insensitive key also appears under another
@@ -281,13 +361,13 @@ clustering block runs twice: on all titles and on political titles only.
 
 Outputs (data/titles/analysis/):
     style_clusters.csv, topic_clusters.csv     cluster id per creator x genre (all / political)
-    cluster_comparison.csv                     adjusted Rand index: style vs lane, topic vs lane, style vs topic
-    lane_style_cohesion.csv                    within-lane vs between-lane style distance per lane
-    disagreements_lane_style.csv               lane-mates in different style clusters, and style-mates across lanes
+    cluster_comparison.csv                     adjusted Rand index: style vs group, topic vs group, style vs topic
+    group_style_cohesion.csv                   within-group vs between-group style distance per channel group
+    disagreements_group_style.csv              group-mates in different style clusters, and style-mates across groups
     neighbours_style.csv, neighbours_topic.csv five nearest neighbours per creator x genre
     map_style.csv, map_topic.csv               2-D coordinates (PCA of style z-scores; MDS of topic JS distance)
-    entities_top.csv                           top 25 people and organisations (creator-balanced counts), lanes
-                                               naming them most, outrage-frame share vs overall
+    entities_top.csv                           top 25 people and organisations (creator-balanced counts), the
+                                               channel groups naming them most, outrage-frame share vs overall
     shared_titles.csv, shared_templates.csv    verbatim titles / masked templates used by >= 2 creators
     org_style.csv                              organisation-level style scores (title-weighted mean of members)
 
@@ -301,20 +381,22 @@ CLI:
 Stage 5a - monthly drift, January to September 2026.
 
 Reads dimensions_monthly.csv (Stage 2 cell scores), formats.parquet (Stage 3),
-topics.csv, titles_prepared.parquet and lanes.csv. Months are the only safe time
+topics.csv, titles_prepared.parquet and creators.csv (with the channel groups). Months
+are the only safe time
 unit (YouTube listing dates are month-accurate); September is 1-14 only and is
 flagged partial_month = True everywhere - it is shown but its volume is never
 compared with a full month.
 
 Outputs (data/titles/analysis/):
-    drift_lane_monthly.csv     lane x genre x month: mean of creator cell scores
+    drift_group_monthly.csv    channel group x genre x month: mean of creator cell scores
                                (raw and topic-controlled), hook shares, n_creators
     drift_top30_monthly.csv    the 30 largest creators (unique titles): the same per
                                creator x genre x month (sparkline data for the cards)
     drift_creator_monthly.csv  every creator x genre x month (cards)
     topic_change_monthly.csv   month-to-month Jensen-Shannon distance between a
-                               creator's consecutive monthly topic mixes; lane means
-    drift_trends.csv           per lane x genre and per top-30 creator x genre: the
+                               creator's consecutive monthly topic mixes
+    topic_change_group_monthly.csv   the same per channel group x genre x month (mean, median)
+    drift_trends.csv           per channel group x genre and per top-30 creator x genre: the
                                Spearman trend of each controlled score and hook share
                                over the nine months
 
@@ -346,7 +428,7 @@ Rumble rows have no view count and are excluded here.
 
 Outputs (data/titles/analysis/):
     engagement_coefficients.csv   creator x genre x predictor: coefficient, HC3 SE, p, n, R2
-    engagement_summary.csv        across creators (per genre, and per lane): median,
+    engagement_summary.csv        across creators (per genre, and per channel group): median,
                                   IQR, share positive, share significant (+/-), n_creators
     engagement_model.json         specification
 
@@ -368,19 +450,110 @@ discrete, xmin estimated by KS minimisation) with the log-likelihood-ratio test
 against a lognormal (R > 0 favours the power law; p is the significance of R).
 A tail is called power-law-like only when R > 0 and p < 0.05.
 
-Then, within lane: Spearman correlations across creators between concentration
-(Gini, top-10 % share) and the topic-controlled dimension scores and hook shares;
-plus the same correlations with log(number of videos) and log(subscribers) as
-the size-artefact check, and a pooled within-lane estimate (values demeaned by
-lane x genre).
+Then, within channel group (left / neutral / right): Spearman correlations across
+creators between concentration (Gini, top-10 % share) and the topic-controlled
+dimension scores and hook shares; plus the same correlations with log(number of
+videos) and log(subscribers) as the size-artefact check, and a pooled within-group
+estimate (values demeaned by group x genre).
 
 Outputs (data/titles/analysis/):
     hit_concentration.csv               per creator x genre (Gini, top shares, CSN fit, rank-size
                                         Zipf slope of views over all videos and over the top decile)
-    hit_concentration_correlations.csv  within-lane and pooled-within-lane correlations
+    hit_concentration_correlations.csv  within-group and pooled-within-group correlations
 
 CLI:
     python -m pipeline_titles.hits
+```
+
+### `pipeline_titles.profiles`
+
+```
+Stage 6 - channel profiles behind the question documents (9, 11, 12, 13):
+
+    caps_profile.csv        share of each creator x genre's unique titles by capitalisation
+                            style (all_caps, selective_caps, title_case, sentence_case,
+                            mixed_other, short_other; rules in textstats.caps_style);
+                            caps_style_title.parquet carries the style of every unique
+                            title (row_id, caps_style) for the Zipf / views stage
+    top_words.csv           the most frequent non-stopwords: creator-balanced (mean over
+                            ranked creators of the share of titles containing the word)
+                            beside the raw pooled share
+    arousal_index.csv       0-1 composite per creator x genre of five components: ALL-CAPS
+                            word share, exclamation marks per title, power words per title
+                            (shock words + violence verbs + intensifiers), emoji per title,
+                            VADER intensity (positive + negative); each component winsorised
+                            at the 2nd/98th percentile across ranked creators of the genre,
+                            min-max scaled to 0-1, and averaged
+    signature_keywords.csv  top 10 words per creator by weighted log-odds (informative
+                            Dirichlet prior, alpha0 = 500) against all other creators' titles
+    style_twins.csv         every (left channel, right channel) pair (the channel groups of
+                            the leaning stage) with its distance in z-scored topic-controlled
+                            style space; style_twins_nearest.csv gives each creator's nearest
+                            cross-divide twin and how that distance ranks among all its
+                            neighbours
+
+CLI:
+    python -m pipeline_titles.profiles
+```
+
+### `pipeline_titles.zipf_views`
+
+```
+Stage 6b - Zipf's law and views over time, for document 7.
+
+Three ways of cutting the corpus run through the whole stage:
+    channel group   left / neutral / right channels (each channel's leaning group, Stage 0d)
+    title label     left / neither / right titles (the judge's label of the sampled titles)
+    caps style      ALL CAPS / selective CAPS / Title Case / Sentence case / mixed / short
+                    (textstats.caps_style, written per title by the profiles stage)
+
+Zipf's law for words. For every system (the corpus, each channel group, each title
+label, each caps style) the rank-frequency table of its tokens and the OLS exponent of
+log frequency on log rank over the top 100 / 1,000 / 5,000 types (prepare.zipf_slope,
+the same tokeniser as the Stage 0 Zipf check, stopwords kept: Zipf's law is about the
+whole vocabulary). Systems differ in size and the exponent depends on size, so a
+size-matched exponent is reported beside it: SIZE_MATCH_N titles drawn SIZE_MATCH_REPEATS
+times from the system, exponent over the top 200 ranks, averaged. Creator-level Zipf
+exponents (Stage 0 check, Stage 2 subsampled Zipf / Heaps) are averaged per channel
+group.
+
+Zipf's law for views. Within a channel, videos ranked by views (hits.views_zipf_slope,
+Stage 5c) give a rank-size slope; those slopes, the Gini and the top-10 % share are
+summarised per channel group and per channel's dominant caps style.
+
+Views over time. Views are a fetch-time snapshot (2026-09-14), so a January video has
+had eight months to collect them and a September one two weeks: the raw curve falls
+with publication month for everyone. Two measures per month:
+    median views          over the videos of the group (and the median over channels of
+                          each channel's median, so four Indian news channels cannot
+                          carry a group)
+    relative log views    mean over titles of log(1 + views) minus the mean log(1 + views)
+                          of the same channel's videos in the same month: how a title
+                          did against its own channel's average that month (0 = the
+                          channel's average title; +0.1 = about 10 % more views); the
+                          measure that makes caps styles and title labels comparable
+
+Edited uploads and unique titles throughout. The word systems and the caps-style shares use
+the creator-balanced subset on both platforms; the views block is YouTube only (Rumble has no
+view counts); the views rank-size slopes, Gini and top-10 % share come from the hits stage,
+which counts every video (repeats included).
+
+Outputs (data/titles/analysis/):
+    zipf_words.csv               one row per system: tokens, types, Zipf exponents, top words
+    zipf_words_curves.csv        rank-frequency curves (ranks 1..5000) per system
+    zipf_by_group.csv            creator-level Zipf / Heaps and the views rank-size slopes,
+                                 Gini and top-10 % share, per channel group and per dominant
+                                 caps style (n_creators_1500 = channels with enough tokens
+                                 for the subsampled Zipf / Heaps exponents)
+    views_by_month.csv           per grouping x group x month (and "all"): n videos, median
+                                 views, creator-median views, relative log views
+    caps_style_by_group.csv      caps-style shares per channel group and per title label
+    label_by_caps_style.csv      title labels x caps style: share of each label within the
+                                 style, and relative log views of the labelled titles per
+                                 label x style
+
+CLI:
+    python -m pipeline_titles.zipf_views
 ```
 
 ## Stopword list
@@ -1472,24 +1645,25 @@ Titles:
 |---|---|---|---|---|---|---|---|
 | stage0_prepare | 34.4 | 34.4 | 2026-09-14T21:03:57+00:00 |  |  |  | min_share=0.2, min_count=10, rows=309596, unique=300420, balanced=189240, low_n_groups=124 |
 | stage0c_annotate | 10.4 | 108.8 | 2026-09-14T21:05:00+00:00 |  |  |  | model=en_core_web_sm, titles=292688, all_caps=11192, proper_lexicon=11667, acronyms=956 |
-| stage0b_lanes | 0.4 | 0.4 | 2026-09-14T20:41:31+00:00 |  |  |  |  |
 | stage1a_embed | 5.3 | 289.2 | 2026-09-14T21:05:09+00:00 |  |  |  | model=sentence-transformers/all-mpnet-base-v2, device=mps, n=292688, dim=768 |
 | stage2c_llm_rate | 6265.5 | 6265.5 | 2026-09-14T22:35:38+00:00 | 172 | 69430 | 0.0 | model=qwen3:14b, temperature=0.0, prompt_id=title-style-v3, cache_hits=2, llm_seconds=6264.3, n_rated=3000,... |
-| stage2a_features | 68.9 | 69.6 | 2026-09-14T21:06:19+00:00 |  |  |  |  |
-| stage1_topics | 11.5 | 6343.9 | 2026-09-14T23:08:54+00:00 | 3 | 72 | 0.0 | fit_size=100000, min_cluster_size=80, min_samples=15, max_topics=250, label_model=qwen3:14b, fit_n=100041, ... |
-| stage2b_factors | 2.3 | 2.3 | 2026-09-14T23:10:34+00:00 |  |  |  | n_factors_forced=None, n_cells=2029, n_features=74, retained=12, parallel=16, kmo=0.725 |
-| stage2d_validate | 0.7 | 0.7 | 2026-09-14T23:10:35+00:00 |  |  |  | n_rated_matched=3000, n_creator_groups=318, n_retest=300 |
-| stage3_formats | 11.0 | 11.3 | 2026-09-14T23:10:16+00:00 |  |  |  | curiosity_gap_holdout_f1=0.1765, outrage_holdout_f1=0.7869, humor_holdout_f1=0.0 |
-| stage4_landscape | 24.0 | 24.0 | 2026-09-14T23:15:32+00:00 |  |  |  | crossposted_titles=2237, cluster_runs=4, shared_titles_any=1575, shared_titles_cross_org=474, shared_titles... |
-| stage5a_timeline | 1.4 | 1.4 | 2026-09-14T23:10:37+00:00 |  |  |  | lane_month_rows=215, top30=30, topic_change_rows=1667 |
-| stage5b_engagement | 9.4 | 9.4 | 2026-09-14T23:10:47+00:00 |  |  |  | creator_genre_models=252 |
-| stage5c_hits | 28.9 | 28.9 | 2026-09-15T01:01:53+00:00 |  |  |  | groups=252, powerlaw_like=1 |
-| report_data | 2.9 | 3.1 | 2026-09-16T12:59:24+00:00 |  |  |  | creators=274 |
-| report | 17.4 | 24.6 | 2026-09-16T12:59:41+00:00 |  |  |  | cards=274 |
-| stage6_profiles | 21.1 | 22.3 | 2026-09-15T12:45:34+00:00 |  |  |  | acronyms=956, twin_pairs=2680 |
-| allotax | 6.7 | 11.9 | 2026-09-16T13:46:23+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
+| stage2a_features | 353.2 | 353.2 | 2026-09-17T19:17:44+00:00 |  |  |  |  |
+| stage1_topics | 4.3 | 6343.9 | 2026-09-17T19:11:50+00:00 |  |  | 0.0 | fit_size=100000, min_cluster_size=80, min_samples=15, max_topics=250, label_model=qwen3:14b, fit_n=100041, ... |
+| stage2b_factors | 2.5 | 2.5 | 2026-09-17T19:17:47+00:00 |  |  |  | n_factors_forced=None, n_cells=2029, n_features=74, retained=12, parallel=16, kmo=0.725 |
+| stage2d_validate | 0.7 | 0.7 | 2026-09-17T19:17:48+00:00 |  |  |  | n_rated_matched=3000, n_creator_groups=318, n_retest=300 |
+| stage3_formats | 12.2 | 12.2 | 2026-09-17T19:18:01+00:00 |  |  |  | curiosity_gap_holdout_f1=0.1765, outrage_holdout_f1=0.7869, humor_holdout_f1=0.0 |
+| stage4_landscape | 26.2 | 26.2 | 2026-09-17T19:18:27+00:00 |  |  |  | crossposted_titles=2237, cluster_runs=4, shared_titles_any=1575, shared_titles_cross_org=474, shared_titles... |
+| stage5a_timeline | 1.4 | 1.4 | 2026-09-17T19:18:29+00:00 |  |  |  | group_month_rows=54, top30=30, topic_change_rows=1667 |
+| stage5b_engagement | 9.4 | 9.4 | 2026-09-17T19:18:39+00:00 |  |  |  | creator_genre_models=252 |
+| stage5c_hits | 25.3 | 28.9 | 2026-09-17T19:19:04+00:00 |  |  |  | groups=252, powerlaw_like=1 |
+| report_data | 2.8 | 3.1 | 2026-09-17T19:32:40+00:00 |  |  |  | creators=274 |
+| report | 15.9 | 24.6 | 2026-09-17T20:28:53+00:00 |  |  |  | cards=274 |
+| stage6_profiles | 20.7 | 22.3 | 2026-09-17T19:19:26+00:00 |  |  |  | acronyms=956, twin_pairs=2680 |
+| allotax | 6.2 | 11.9 | 2026-09-17T20:49:23+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
 | leaning_lexicon | 1.7 | 1.7 | 2026-09-15T18:52:59+00:00 |  |  |  | cutoff=1.96 |
-| stage7_leaning | 5.4 | 8120.7 | 2026-09-16T13:46:06+00:00 |  |  | subscription (claude -p); see reported_cost_usd | backend=claude-code, prompt_id=leaning-v1, batch_order=shuffled, llm_seconds=8111.8, reported_cost_usd=56.5... |
+| stage7_leaning | 8.9 | 8120.7 | 2026-09-17T19:11:39+00:00 |  |  | subscription (claude -p); see reported_cost_usd | backend=claude-code, prompt_id=leaning-v1, batch_order=shuffled, llm_seconds=8111.8, reported_cost_usd=56.5... |
+| stage0b_creators | 0.3 | 0.3 | 2026-09-17T19:05:21+00:00 |  |  |  |  |
+| stage6b_zipf_views | 2.3 | 2.4 | 2026-09-17T20:49:08+00:00 |  |  |  | zipf_systems=13, views_rows=244079 |
 
 
 ## Environment

@@ -1,6 +1,6 @@
 # New York Times Podcasts (@NYTPodcasts)
 
-Lane: **us_press_print_digital** · organisation: New York Times · clipper: no · platform: youtube · subscribers: 523000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: New York Times · clipper: no · platform: youtube · subscribers: 523000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 481 rows, 481 unique (repeat share 0.0%); ranked; political share 86.9%.
 Top topics: Iran War and Strait of Hormuz Tensions (9.2%); ICE Protests and Shootings (3.5%); JLP Weekly Series (3.3%); AI and Political Concerns (2.5%); Modern Women and Feminism Debate (2.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 94.1 | 89.5 | 0.9 | 0.7 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 21.8 | 21.3 | -0.6 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 94.1 | 89.5 | 0.9 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 21.8 | 21.3 | -0.6 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 45.2 | 62.3 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 58.2 | 56.5 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 80.8 | 79.5 | 1.0 | 1.0 |
+| F5: Question and explainer framing (why, what, ?) | 80.8 | 79.5 | 1.0 | 0.1 |
 | F6: Person-centred (named people) | 14.2 | 15.5 | -0.7 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 14.2 | 33.9 | -1.0 | -0.4 |
-| F8: Numeric and dated (digits, years) | 82.0 | 87.4 | 0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 37.2 | 32.6 | -0.4 | -0.4 |
-| F10: Quoted speech | 56.5 | 60.3 | -0.3 | -0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 56.1 | 60.7 | -0.1 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 55.6 | 67.4 | -0.1 | -0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 14.2 | 33.9 | -1.0 | -0.5 |
+| F8: Numeric and dated (digits, years) | 82.0 | 87.4 | 0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 37.2 | 32.6 | -0.4 | -0.3 |
+| F10: Quoted speech | 56.5 | 60.3 | -0.3 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 56.1 | 60.7 | -0.1 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 55.6 | 67.4 | -0.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.9% (1.8%); outrage 32.0% (28.1%); humor 0.0% (0.1%); question 19.1% (26.4%); breaking_live 0.0% (1.0%); episode_show 1.0% (1.9%); interview_guest 5.2% (9.0%); reaction 0.0% (0.7%); confrontation 4.2% (4.1%); listicle 0.2% (0.4%); howto_explainer 9.2% (14.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.9% (2.7%); outrage 32.0% (63.9%); humor 0.0% (0.2%); question 19.1% (15.6%); breaking_live 0.0% (2.9%); episode_show 1.0% (2.8%); interview_guest 5.2% (9.8%); reaction 0.0% (2.9%); confrontation 4.2% (7.6%); listicle 0.2% (0.1%); howto_explainer 9.2% (8.0%)
 
 
-Nearest style neighbours: @TheJoyReidShow [left_commentary]; @lizwheeler [right_commentary]; @hutch [streamer_reaction]; @samharrisorg [interview_podcast]; @RealDanBongino [right_commentary]
+Nearest style neighbours: @TheJoyReidShow [left]; @lizwheeler [right]; @hutch [neutral]; @samharrisorg [left]; @RealDanBongino [right]
 
-Nearest topic neighbours: @CNN [us_legacy_tv]; @RealAmericasVoice [right_tv_network]; @CBSNews [us_legacy_tv]; @oann [right_tv_network]; @NewsNation [us_legacy_tv]
+Nearest topic neighbours: @CNN [left]; @RealAmericasVoice [right]; @CBSNews [neutral]; @oann [right]; @NewsNation [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

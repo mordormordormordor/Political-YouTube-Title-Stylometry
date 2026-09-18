@@ -1,6 +1,6 @@
 # Asmongold TV (@AsmonTV)
 
-Lane: **streamer_reaction** · organisation: Asmongold · clipper: yes · platform: youtube · subscribers: 4690000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Asmongold · clipper: yes · platform: youtube · subscribers: 4690000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 947 rows, 875 unique (repeat share 7.6%); ranked; political share 89.8%.
 Top topics: Shocking Events and Reactions (54.1%); Walmart Shoplifting and Police Incidents (3.7%); Iran War and Strait of Hormuz Tensions (2.3%); Hollywood and Oscars Politics (2.1%); UK Political Chaos and Government Issues (1.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 54.8 | 87.4 | 0.3 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 95.0 | 100.0 | 1.1 | -0.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 68.2 | 38.5 | -0.2 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 54.8 | 87.4 | 0.3 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 95.0 | 100.0 | 1.1 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 68.2 | 38.5 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 99.6 | 99.6 | 2.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 45.6 | 54.8 | 0.1 | -0.1 |
-| F6: Person-centred (named people) | 19.7 | 1.3 | -0.6 | -0.5 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 86.6 | 81.6 | 0.5 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 45.6 | 54.8 | 0.1 | 0.2 |
+| F6: Person-centred (named people) | 19.7 | 1.3 | -0.6 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 86.6 | 81.6 | 0.5 | -0.7 |
 | F8: Numeric and dated (digits, years) | 85.4 | 52.7 | 0.2 | -0.2 |
-| F9: ALL-CAPS shouting | 15.9 | 76.6 | -0.7 | -0.1 |
-| F10: Quoted speech | 61.5 | 28.0 | -0.2 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 2.9 | 1.3 | -1.3 | -0.7 |
-| F12: Modal and future speculation (will, could, we) | 0.4 | 0.4 | -1.6 | -0.5 |
+| F9: ALL-CAPS shouting | 15.9 | 76.6 | -0.7 | -0.3 |
+| F10: Quoted speech | 61.5 | 28.0 | -0.2 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 2.9 | 1.3 | -1.3 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 0.4 | 0.4 | -1.6 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 14.4% (3.8%); outrage 49.3% (64.8%); humor 0.7% (0.4%); question 6.3% (9.0%); breaking_live 0.0% (0.4%); episode_show 0.0% (4.5%); interview_guest 1.6% (7.8%); reaction 0.6% (10.1%); confrontation 1.3% (14.3%); listicle 0.0% (0.0%); howto_explainer 2.1% (4.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 14.4% (3.6%); outrage 49.3% (59.6%); humor 0.7% (0.2%); question 6.3% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.6% (8.5%); reaction 0.6% (2.2%); confrontation 1.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.1% (9.5%)
 
 
-Nearest style neighbours: https://rumble.com/c/russellbrand [centrist_heterodox]; @SydneyWatson [right_commentary]; @ClipsCandaceOwens [right_commentary]; @The_Crucible [streamer_reaction]; @DestinyDGGClips [streamer_reaction]
+Nearest style neighbours: https://rumble.com/c/russellbrand [right]; @SydneyWatson [right]; @ClipsCandaceOwens [neutral]; @The_Crucible [right]; @DestinyDGGClips [right]
 
-Nearest topic neighbours: @TimcastNews [right_commentary]; @TimcastIRL [right_commentary]; @LiberalHivemind [right_commentary]; https://rumble.com/c/russellbrand [centrist_heterodox]; @HasanAbi [streamer_reaction]
+Nearest topic neighbours: @TimcastNews [right]; @TimcastIRL [right]; @LiberalHivemind [right]; https://rumble.com/c/russellbrand [right]; @HasanAbi [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

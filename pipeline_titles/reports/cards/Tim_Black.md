@@ -1,6 +1,6 @@
 # Tim Black TV (@Tim_Black)
 
-Lane: **left_commentary** · organisation: Tim Black · clipper: no · platform: youtube · subscribers: 218000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Tim Black · clipper: no · platform: youtube · subscribers: 218000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 329 rows, 329 unique (repeat share 0.0%); ranked; political share 93.9%.
 Top topics: Race and Politics in Media (20.7%); Black Voting Rights and Political Representation (10.6%); Karmelo Anthony Trial Verdict (4.6%); Marc Lamont Hill and Joe Budden Podcast Controversy (4.6%); Kamala Harris 2028 Election Speculation (4.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 61.5 | 50.6 | 0.4 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 99.6 | 97.9 | 1.4 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 61.5 | 50.6 | 0.4 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 99.6 | 97.9 | 1.4 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 42.7 | 16.3 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 91.2 | 89.1 | 0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 74.5 | 71.5 | 0.8 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 74.5 | 71.5 | 0.8 | 0.2 |
 | F6: Person-centred (named people) | 72.0 | 74.9 | 0.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 3.8 | 1.3 | -1.3 | -0.5 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 3.8 | 1.3 | -1.3 | -0.7 |
 | F8: Numeric and dated (digits, years) | 86.2 | 72.4 | 0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 29.3 | 17.6 | -0.5 | -0.3 |
 | F10: Quoted speech | 75.7 | 76.6 | 0.1 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 55.2 | 61.5 | -0.1 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 75.3 | 58.2 | 0.2 | -0.3 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 55.2 | 61.5 | -0.1 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 75.3 | 58.2 | 0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.7% (3.0%); outrage 68.7% (76.0%); humor 0.6% (0.2%); question 20.7% (9.8%); breaking_live 0.0% (5.4%); episode_show 0.0% (2.2%); interview_guest 1.8% (10.4%); reaction 2.4% (1.1%); confrontation 8.2% (8.2%); listicle 0.9% (0.1%); howto_explainer 16.4% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.7% (3.6%); outrage 68.7% (59.6%); humor 0.6% (0.2%); question 20.7% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.8% (8.5%); reaction 2.4% (2.2%); confrontation 8.2% (7.8%); listicle 0.9% (0.1%); howto_explainer 16.4% (9.5%)
 
 
-Nearest style neighbours: @jimacosta [left_commentary]; @MarkDice [right_commentary]; @glennbeck [right_commentary]; @morebridgetphetasy [interview_podcast]; @OfficialSaharTV [right_commentary]
+Nearest style neighbours: @jimacosta [left]; @MarkDice [right]; @glennbeck [right]; @morebridgetphetasy [right]; @OfficialSaharTV [right]
 
-Nearest topic neighbours: @rolandsmartin [independent_digital_news]; @BlackConservativePerspective [right_commentary]; @TheRealTabithaSpeaks [left_commentary]; @TheOfficerTatum [right_commentary]; @ActualJusticeWarrior [right_commentary]
+Nearest topic neighbours: @rolandsmartin [left]; @BlackConservativePerspective [right]; @TheRealTabithaSpeaks [left]; @TheOfficerTatum [right]; @ActualJusticeWarrior [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,23 +86,23 @@ Titles: 16 rows, 16 unique (repeat share 0.0%); LOW-N (not ranked); political sh
 Top topics: Karmelo Anthony Trial Verdict (18.8%); Race and Politics in Media (12.5%); Black Voting Rights and Political Representation (12.5%); Trump Supreme Court Legal Issues (6.2%); Hollywood and Oscars Politics (6.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.6 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.4 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.2 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.1 | -0.3 |
-| F6: Person-centred (named people) | None | None | 1.0 | 0.8 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.1 | -0.4 |
-| F8: Numeric and dated (digits, years) | None | None | -0.9 | 0.0 |
+| F6: Person-centred (named people) | None | None | 1.0 | 0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.1 | -0.6 |
+| F8: Numeric and dated (digits, years) | None | None | -0.9 | -0.0 |
 | F9: ALL-CAPS shouting | None | None | -0.9 | -0.4 |
-| F10: Quoted speech | None | None | -0.1 | -0.5 |
+| F10: Quoted speech | None | None | -0.1 | -0.4 |
 | F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.5 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | None | None | -0.4 | 0.0 |
+| F12: Modal and future speculation (will, could, we) | None | None | -0.4 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (2.3%); outrage 62.5% (77.1%); humor 0.0% (0.1%); question 18.8% (9.5%); breaking_live 0.0% (13.1%); episode_show 0.0% (4.2%); interview_guest 6.2% (21.3%); reaction 12.5% (1.9%); confrontation 12.5% (12.1%); listicle 0.0% (0.1%); howto_explainer 6.2% (3.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.2%); outrage 62.5% (56.4%); humor 0.0% (0.1%); question 18.8% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 6.2% (14.0%); reaction 12.5% (2.1%); confrontation 12.5% (9.4%); listicle 0.0% (0.2%); howto_explainer 6.2% (5.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

@@ -1,0 +1,275 @@
+creator,channel_name,platform,organisation,clipper,subscribers,n_videos,n_streams,low_n_videos,low_n_streams,note
+@60minutes,60 Minutes,youtube,CBS News,False,4170000.0,325,0,False,True,
+@ABCNews,ABC News,youtube,ABC News,False,19800000.0,7971,590,False,False,
+@ANINewsIndia,ANI News,youtube,ANI,False,9760000.0,12279,7579,False,False,India
+@ActualJusticeWarrior,Actual Justice Warrior,youtube,Actual Justice Warrior,False,517000.0,392,1,False,True,
+@AfterPartyEmily,After Party with Emily Jashinsky,youtube,Emily Jashinsky,False,145000.0,410,74,False,False,formerly Breaking Points
+@AlexStein99,Alex Stein,youtube,Alex Stein,False,369000.0,87,41,False,True,prank comedian
+@AnaEscobarShow,Ana Escobar,youtube,Ana Escobar,False,9440.0,32,31,True,True,
+@AndWeKnowOfficial-o9b,And We Know Official,youtube,And We Know,False,16100.0,185,0,False,True,
+@AndrewKlavan,Andrew Klavan,youtube,Daily Wire,False,813000.0,196,3,False,True,
+@AnthonyBrianLogan,Anthony Brian Logan,youtube,Anthony Brian Logan,False,1080000.0,248,52,False,False,
+@AsmonTV,Asmongold TV,youtube,Asmongold,True,4690000.0,875,0,False,True,run by Daily Dose of Asmongold / CatDany per description; gaming + politics reaction
+@AssociatedPress,Associated Press,youtube,Associated Press,False,4650000.0,5572,1151,False,False,
+@BBCNews,BBC News,youtube,BBC,False,20100000.0,2440,0,False,True,
+@BadEmpanadaLive,BadEmpanada Live,youtube,BadEmpanada,False,100000.0,298,1,False,True,
+@BadFaithPodcast,Bad Faith,youtube,Bad Faith,False,187000.0,81,1,False,True,
+@BelleRanch,Belle of the Ranch,youtube,Belle of the Ranch,False,877000.0,822,0,False,True,
+@BenShapiro,Ben Shapiro,youtube,Daily Wire,False,6980000.0,525,17,False,True,
+@BlackConservativePerspective,Black Conservative Perspective,youtube,Black Conservative Perspective,False,1000000.0,1271,1,False,True,
+@BlaireWhiteX,Blaire White,youtube,Blaire White,False,1540000.0,11,0,True,True,culture commentary
+@BlazeTV,BlazeTV,youtube,Blaze Media,False,2230000.0,868,14,False,True,
+@BreakThroughNews,BreakThrough News,youtube,BreakThrough News,False,1080000.0,242,57,False,False,
+@BrittanyVenti,Brittany Venti,youtube,Brittany Venti,False,241000.0,55,19,False,True,culture commentary
+@CBSNews,CBS News,youtube,CBS News,False,7080000.0,8322,368,False,False,
+@CNN,CNN,youtube,CNN,False,19800000.0,1757,94,False,False,
+@CamHigby,Cam Higby,youtube,Cam Higby,False,280000.0,186,59,False,False,debates
+@CashJordan,Cash Jordan,youtube,Cash Jordan,False,1750000.0,299,0,False,True,
+@CaspianReport,CaspianReport,youtube,CaspianReport,False,1850000.0,25,0,True,True,
+@ChadPrather1,Chad Prather,youtube,Chad Prather,False,496000.0,160,201,False,False,faith + humour
+@Channel5YouTube,Channel 5 with Andrew Callaghan,youtube,Channel 5,False,3700000.0,43,0,True,True,documentary journalism
+@ClipsCandaceOwens,Candace Clips,youtube,Candace Owens,True,161000.0,192,0,False,True,official clips channel
+@ClubRandomPodcast,Club Random Podcast,youtube,Bill Maher,False,890000.0,197,0,False,True,
+@ColeHastings,Cole Hastings,youtube,Cole Hastings,False,879000.0,32,0,True,True,
+@ColemanHughesOfficial,Coleman Hughes,youtube,Coleman Hughes,False,265000.0,54,0,False,True,
+@CoreyGilShusterAskProject,Corey Gil-Shuster,youtube,Ask Project,False,374000.0,53,2,False,True,vox-pop interviews Israel/Palestine
+@DailyDenims,Daily Denims,youtube,Denims,True,11400.0,215,0,False,True,unofficial fan-run channel per description
+@DannyHaiphongYT,Danny Haiphong,youtube,Danny Haiphong,False,683000.0,64,227,False,False,geopolitics streams
+@DarkHorsePod,Bret Weinstein,youtube,DarkHorse,False,551000.0,70,38,False,True,
+@DemocracyDocket,Democracy Docket,youtube,Democracy Docket,False,793000.0,129,4,False,True,
+@DemocracyNow,Democracy Now!,youtube,Democracy Now!,False,3390000.0,814,1,False,True,
+@DestinyDGGClips,Destiny DGG Clips,youtube,Destiny,True,11800.0,209,0,False,True,fan channel
+@DoubleDownNews,Double Down News,youtube,Double Down News,False,1200000.0,66,0,False,True,UK
+@DrSteveTurleyTV,Dr. Steve Turley,youtube,Steve Turley,False,1670000.0,442,31,False,True,
+@DropSiteNews,Drop Site News,youtube,Drop Site,False,219000.0,204,43,False,True,
+@DueDissidence,Due Dissidence,youtube,Due Dissidence,False,134000.0,643,112,False,False,
+@DylanBurnsLIVE,DylanBurnsLIVE,youtube,Dylan Burns,False,45200.0,190,3,False,True,Ukraine coverage
+@EzraKleinShow,The Ezra Klein Show,youtube,New York Times,False,560000.0,65,1,False,True,NYT Opinion podcast
+@FarronBalanced,Farron Balanced,youtube,Farron Balanced,False,1160000.0,1780,188,False,False,
+@FinancialTimes,Financial Times,youtube,Financial Times,False,1450000.0,40,0,True,True,UK press
+@Firstpost,Firstpost,youtube,Network18,False,9720000.0,10126,8975,False,False,India
+@FleccasTalks,Fleccas Talks,youtube,Fleccas Talks,False,922000.0,290,0,False,True,
+@Forbes,Forbes,youtube,Forbes,False,2180000.0,1256,3,False,True,business
+@Forthepeoplepodcast305,Niko House,youtube,Niko House,False,54600.0,115,45,False,True,
+@FoxNews,Fox News,youtube,Fox News,False,15500000.0,8210,645,False,False,
+@FoxNewsChannelClips,Fox News Clips,youtube,Fox News,True,846000.0,5748,0,False,True,clips channel
+@FreshFitMiami,FreshandFit,youtube,Fresh & Fit,False,1590000.0,111,75,False,False,
+@GeopoliticalEconomyReport,Geopolitical Economy Report,youtube,Geopolitical Economy Report,False,760000.0,72,0,False,True,geopolitics analysis
+@GlennKirschner2,Glenn Kirschner,youtube,Glenn Kirschner,False,1260000.0,262,0,False,True,
+@GrahamAllen,Graham Allen,youtube,Graham Allen,False,192000.0,247,0,False,True,
+@HangOutwithSeanHannity,Hang Out with Sean Hannity,youtube,Sean Hannity,False,178000.0,154,0,False,True,
+@HasanAbi,HasanAbi,youtube,HasanAbi,False,1950000.0,628,7,False,True,
+@HasanAbiVODs3,HasanAbi VODs,youtube,HasanAbi,True,10900.0,181,0,False,True,official VOD channel; date-stamped titles written by the VOD team
+@HasanReactionsfanTwo,Hasan Reactions,youtube,HasanAbi,True,254000.0,340,0,False,True,fan channel
+@HasanabiClips,Hasanabi Clips,youtube,HasanAbi,True,112000.0,474,32,False,True,fan channel
+@JackCocchiarellaShow,Jack Cocchiarella,youtube,Jack Cocchiarella,False,1610000.0,1524,21,False,True,
+@JacksonHinkleOfficial,Jackson Hinkle Official,youtube,Jackson Hinkle,False,171000.0,388,81,False,False,streams + uploads
+@JamarlThomas,Jamarl Thomas,youtube,Jamarl Thomas,False,77900.0,274,223,False,False,
+@JesseKellyDC,Jesse Kelly,youtube,Jesse Kelly,False,122000.0,504,1,False,True,
+@JillianMichaels,Jillian Michaels,youtube,Jillian Michaels,False,764000.0,457,0,False,True,
+@JustPearlyThings,Pearl,youtube,Pearl,False,2060000.0,669,96,False,False,gender
+@KimIversen,Kim Iversen,youtube,Kim Iversen,False,806000.0,534,1,False,True,
+@LIVESNEAKO,LIVE SNEAKO,youtube,SNEAKO,False,1010000.0,479,69,False,False,
+@LastWeekTonight,LastWeekTonight,youtube,HBO,False,10200000.0,35,0,True,True,
+@LeejaMiller,Leeja Miller,youtube,Leeja Miller,False,708000.0,60,1,False,True,lawyer explainer
+@LegalAFMTN,Legal AF,youtube,MeidasTouch Network,False,1230000.0,2735,45,False,True,
+@LegalEagle,LegalEagle,youtube,LegalEagle,False,3950000.0,105,0,False,True,
+@LeverNews,The Lever,youtube,The Lever,False,74700.0,73,9,False,True,
+@LiberalHivemind,Liberal Hivemind,youtube,Liberal Hivemind,False,1750000.0,846,0,False,True,
+@LukeBeasley,Luke Beasley,youtube,Luke Beasley,False,1580000.0,1162,246,False,False,
+@Lunaoi,Luna oi!,youtube,Luna Oi,False,140000.0,9,0,True,True,
+@MLChristiansen,Matt Christiansen,youtube,Matt Christiansen,False,251000.0,118,77,False,False,
+@MarkDice,Mark Dice,youtube,Mark Dice,False,1900000.0,92,0,False,True,
+@MattBernstein1,matt bernstein,youtube,Matt Bernstein,False,451000.0,21,0,True,True,culture commentary
+@MattWalsh,Matt Walsh,youtube,Daily Wire,False,3460000.0,297,2,False,True,
+@MegynKelly,Megyn Kelly,youtube,Megyn Kelly,False,4150000.0,1651,13,False,True,interview-heavy show; titles are news commentary
+@MeidasTouch,MeidasTouch,youtube,MeidasTouch Network,False,6470000.0,3532,627,False,False,self-described news network; titles are commentary
+@MichaelKnowles,Michael Knowles,youtube,Daily Wire,False,2610000.0,472,4,False,True,
+@MichaelMaliceofficial,Michael Malice,youtube,Michael Malice,False,241000.0,55,3,False,True,
+@MikeFromPA,Mike From PA,youtube,Mike from PA,False,31900.0,129,0,False,True,Twitch
+@ModernDayDebate,Modern-Day Debate,youtube,Modern-Day Debate,False,282000.0,46,109,True,False,debate platform
+@MrReaganUSA,Mr Reagan,youtube,Mr Reagan,False,440000.0,26,2,True,True,satire series MAGA-MAN
+@MrTariqNasheed,Tariq Radio,youtube,Tariq Nasheed,False,281000.0,403,19,False,True,FBA
+@MyronGainesX,MyronGainesX,youtube,Myron Gaines,False,569000.0,389,245,False,False,streams
+@NBCNews,NBC News,youtube,NBC News,False,12100000.0,6499,367,False,False,
+@NPR,NPR,youtube,NPR,False,874000.0,70,1,False,True,
+@NYTOpinion,New York Times Opinion,youtube,New York Times,False,184000.0,29,0,True,True,
+@NYTPodcasts,New York Times Podcasts,youtube,New York Times,False,523000.0,481,0,False,True,
+@NewsNation,NewsNation,youtube,NewsNation,False,2760000.0,7372,302,False,False,
+@NewsmaxTV,Newsmax,youtube,Newsmax,False,2590000.0,3944,399,False,False,
+@NickCruseRBN,Nick Cruse,youtube,Revolutionary Blackout Network,False,10400.0,23,103,True,False,
+@NickShirley,Nick Shirley,youtube,Nick Shirley,False,2000000.0,32,13,True,True,IRL confrontation videos
+@NovaraMedia,Novara Media,youtube,Novara Media,False,1320000.0,585,4,False,True,UK
+@OfficialFlagrant,FLAGRANT,youtube,Flagrant,False,1990000.0,35,0,True,True,comedy podcast
+@OfficialSaharTV,SaharTV,youtube,Sahar TV,False,785000.0,893,2,False,True,"religion debates, UK"
+@OutKick,OutKick,youtube,Fox Corporation,False,1740000.0,51,0,False,True,sports & culture (Fox-owned)
+@OwenJonesTalks,Owen Jones,youtube,Owen Jones,False,881000.0,233,0,False,True,UK
+@OwenReport,Owen Report,youtube,Owen Shroyer,False,72100.0,388,178,False,False,
+@PBDPodcast,PBD Podcast,youtube,Valuetainment,False,2970000.0,38,118,True,False,
+@POLITICO,POLITICO,youtube,Politico,False,225000.0,295,0,False,True,
+@PTLRadioShow,Pushing The Limits,youtube,Pushing the Limits,False,212000.0,1684,201,False,False,streams
+@PartOfTheProblem,Dave Smith,youtube,Dave Smith,False,521000.0,103,0,False,True,anti-war
+@PerunAU,Perun,youtube,Perun,False,641000.0,37,0,True,True,defence economics
+@PhillipScottPodcast,Phillip Scott Podcast,youtube,Phillip Scott,False,202000.0,7,153,True,False,streams only
+@PiersMorganUncensored,Piers Morgan Uncensored,youtube,Piers Morgan,False,4460000.0,181,0,False,True,debate / interview show
+@PiscoLitty,Pisco,youtube,Pisco,False,30100.0,56,0,False,True,lawyer / debate streamer
+@Politicon,Politicon,youtube,Politicon,False,485000.0,496,1,False,True,
+@PoliticsGirl,PoliticsGirl,youtube,PoliticsGirl,False,505000.0,116,0,False,True,
+@PoliticsJOE,PoliticsJOE,youtube,PoliticsJOE,False,772000.0,339,0,False,True,UK
+@PragerU,PragerU,youtube,PragerU,False,3470000.0,385,31,False,True,educational format
+@PrisonPlanetLive,Paul Joseph Watson,youtube,Paul Joseph Watson,False,2090000.0,46,0,True,True,
+@RSBN,Right Side Broadcasting Network,youtube,RSBN,False,2080000.0,1640,337,False,False,
+@RealAlexClark,Real Alex Clark,youtube,Turning Point USA,False,822000.0,79,0,False,True,Culture Apothecary (TPUSA); wellness / culture
+@RealAmericasVoice,Real America's Voice,youtube,Real America's Voice,False,323000.0,2653,1543,False,False,
+@RealDanBongino,Dan Bongino,youtube,Dan Bongino,False,1010000.0,266,0,False,True,
+@RebelHQ,Rebel HQ,youtube,TYT Network,False,1530000.0,1292,0,False,True,TYT Network channel
+@RebelNewsOnline,Rebel News,youtube,Rebel News,False,1970000.0,1358,195,False,False,Canadian
+@RedactedNews,Redacted,youtube,Redacted,False,2880000.0,452,140,False,False,
+@RekietaLaw,Rekieta Law,youtube,Rekieta Law,False,402000.0,18,106,True,False,
+@RestPoliticsUS,The Rest Is Politics US,youtube,The Rest Is Politics US,False,409000.0,220,5,False,True,
+@Reuters,Reuters,youtube,Reuters,False,4310000.0,8076,2008,False,False,
+@RileyGaines,Riley Gaines,youtube,Riley Gaines,False,70300.0,143,0,False,True,
+@RobertGouveiaEsq,Robert Gouveia Esq.,youtube,Robert Gouveia,False,610000.0,696,385,False,False,
+@RonPlacone,Ron Placone,youtube,Ron Placone,False,25900.0,66,28,False,True,comedian
+@RubinReport,The Rubin Report,youtube,Rubin Report,False,3230000.0,1047,114,False,False,
+@RufoandLomez,Rufo & Lomez,youtube,Rufo & Lomez,False,16300.0,80,0,False,True,
+@SMN,Some More News,youtube,Some More News,False,943000.0,197,8,False,True,
+@SNEAKO,SNEAKO,youtube,SNEAKO,False,1330000.0,5,0,True,True,"main channel, 5 uploads"
+@SabbySabs,Sabby Sabs,youtube,Sabby Sabs,False,424000.0,626,103,False,False,
+@SaltyCracker,Salty Cracker,youtube,Salty Cracker,False,906000.0,387,0,False,True,reaction livestreams
+@SavSays,Sav Says,youtube,Sav Says,False,144000.0,16,1,True,True,
+@SecondThought,Second Thought,youtube,Second Thought,False,1920000.0,20,0,True,True,explainer videos
+@SecularTalk,Secular Talk,youtube,Kyle Kulinski,False,2290000.0,1458,1,False,True,
+@Semafor,Semafor,youtube,Semafor,False,33300.0,153,30,False,True,
+@Shoe0nHead,Shoe0nHead,youtube,Shoe0nHead,False,2520000.0,10,0,True,True,
+@SkyNews,Sky News,youtube,Sky News,False,9360000.0,3677,1968,False,False,UK
+@StatusCoup,Status Coup News,youtube,Status Coup,False,737000.0,517,157,False,False,
+@StevenCrowder,StevenCrowder,youtube,Louder with Crowder,False,5910000.0,169,8,False,True,
+@StosselTV,John Stossel,youtube,John Stossel,False,1170000.0,50,0,False,True,
+@Styxhexenhammer666,Styxhexenhammer666,youtube,Styxhexenhammer,False,484000.0,446,27,False,True,
+@SydneyWatson,Sydney Watson,youtube,Sydney Watson,False,1170000.0,61,0,False,True,culture commentary
+@TechCrunch,TechCrunch,youtube,TechCrunch,False,675000.0,145,0,False,True,tech
+@TheAdamCarollaShow1,Adam Carolla,youtube,Adam Carolla,False,685000.0,395,0,False,True,comedy
+@TheAmalaEkpunobi,Amala Ekpunobi,youtube,Amala Ekpunobi,False,2500000.0,211,12,False,True,culture; formerly PragerU
+@TheAtlantic,The Atlantic,youtube,The Atlantic,False,969000.0,166,5,False,True,
+@TheBrianKilmeadeShow,Brian Kilmeade,youtube,Fox News,False,17100.0,352,2,False,True,Fox News Radio show
+@TheDailyBeast,The Daily Beast,youtube,Daily Beast,False,727000.0,322,34,False,True,
+@TheDamageReport,The Damage Report,youtube,TYT Network,False,1370000.0,3204,271,False,False,cross-posts with TYT
+@TheDonLemonShow,Don Lemon,youtube,Don Lemon,False,1450000.0,366,400,False,False,
+@TheEconomist,The Economist,youtube,The Economist,False,4150000.0,137,0,False,True,UK press
+@TheHumanistReport,The Humanist Report,youtube,Humanist Report,False,790000.0,154,35,False,True,
+@TheJoyReidShow,The Joy Reid Show,youtube,Joy Reid,False,503000.0,238,140,False,False,
+@TheLincolnProject,The Lincoln Project,youtube,Lincoln Project,False,1620000.0,123,28,False,True,
+@TheMajorityReport,The Majority Report w/ Sam Seder,youtube,Majority Report,False,2090000.0,1657,195,False,False,
+@TheMichaelCohenShow,Michael Cohen,youtube,MeidasTouch Network,False,472000.0,479,0,False,True,Mea Culpa / Michael Cohen Show (MeidasTouch network)
+@TheOfficerTatum,The Officer Tatum,youtube,Officer Tatum,False,3840000.0,617,194,False,False,
+@ThePodcastoftheLotusEaters,The Podcast of the Lotus Eaters,youtube,Lotus Eaters,False,600000.0,622,179,False,False,UK
+@TheQuartering,TheQuartering,youtube,TheQuartering,False,2190000.0,675,0,False,True,
+@TheRealTabithaSpeaks,TabithaSpeaksPolitics,youtube,Tabitha Speaks,False,458000.0,452,4,False,True,
+@TheSerfTimes,The Serf Times,youtube,Serf Times,False,115000.0,247,103,False,False,internet-culture commentary
+@TheVaushPit,The Vaush Pit,youtube,Vaush,True,222000.0,403,0,False,True,"second channel, editor-titled"
+@TheYoungTurks,The Young Turks,youtube,TYT Network,False,6720000.0,2868,428,False,False,cross-posts with The Damage Report
+@The_Crucible,The Crucible,youtube,The Crucible,False,383000.0,226,5,False,True,debate streamer
+@TimDillonShow,The Tim Dillon Show,youtube,Tim Dillon,False,1280000.0,68,0,False,True,comedian podcast
+@Tim_Black,Tim Black TV,youtube,Tim Black,False,218000.0,329,16,False,True,
+@Timcast,Tim Pool,youtube,Timcast,False,1460000.0,183,6,False,True,
+@TimcastIRL,Timcast IRL,youtube,Timcast,False,2780000.0,855,154,False,False,
+@TimcastNews,Timcast,youtube,Timcast,False,2120000.0,534,8,False,True,
+@TimesNowWorld,Times Now World,youtube,Times Group,False,1290000.0,8994,3006,False,False,India
+@TomiLahrenIsFearless,Tomi Lahren Is Fearless,youtube,Tomi Lahren,False,105000.0,118,0,False,True,
+@TuckerCarlson,Tucker Carlson,youtube,Tucker Carlson Network,False,5750000.0,119,0,False,True,mostly long-form interviews
+@USATODAY,USA TODAY,youtube,USA Today,False,7560000.0,2221,417,False,False,
+@UnHerd,UnHerd,youtube,UnHerd,False,544000.0,83,17,False,True,UK; interviews
+@Unpacked,Unpacked,youtube,Unpacked,False,536000.0,41,0,True,True,Israel-focused explainers
+@Vaush,Vaush,youtube,Vaush,False,603000.0,453,1,False,True,
+@VivaFrei,Viva Frei,youtube,Viva Frei,False,653000.0,331,52,False,False,
+@Vox,Vox,youtube,Vox,False,12700000.0,133,0,False,True,
+@X22Report-y5y,X22Report,youtube,X22 Report,False,887000.0,395,0,False,True,
+@XAVIAER,"Respectfully, Xaviaer",youtube,PragerU,False,195000.0,71,3,False,True,'a series from PragerU' per description
+@Xanderhal,Xanderhal,youtube,Xanderhal,False,114000.0,316,108,False,False,
+@YaBoiHakim,Hakim,youtube,Hakim,False,377000.0,16,0,True,True,explainer videos
+@ZeihanonGeopolitics,Zeihan on Geopolitics,youtube,Peter Zeihan,False,969000.0,217,0,False,True,
+@ZubyMusic,Zuby,youtube,Zuby,False,282000.0,139,0,False,True,
+@aaronparnas1,Aaron Parnas,youtube,Aaron Parnas,False,826000.0,819,10,False,True,
+@adammockler,Adam Mockler,youtube,Adam Mockler,False,2220000.0,1117,2,False,True,
+@ajplus,AJ+,youtube,Al Jazeera,False,2530000.0,50,0,False,True,
+@aljazeeraenglish,Al Jazeera English,youtube,Al Jazeera,False,18200000.0,7000,0,False,True,
+@axios,Axios,youtube,Axios,False,114000.0,137,7,False,True,
+@bbrettcooper,Brett Cooper,youtube,Brett Cooper,False,1700000.0,143,0,False,True,culture commentary
+@bennyjohnson,Benny Johnson,youtube,Benny Johnson,False,6100000.0,1508,168,False,False,TPUSA contributor
+@breakingpoints,Breaking Points,youtube,Breaking Points,False,2100000.0,1037,4,False,True,
+@briantylercohen,Brian Tyler Cohen,youtube,Brian Tyler Cohen,False,5260000.0,1081,10,False,True,
+@bulwarkmedia,The Bulwark,youtube,The Bulwark,False,1760000.0,1826,228,False,False,
+@bushrakhanum,Bushra Khanum,youtube,Network18,False,59700.0,22,0,True,True,Network18 anchor's own channel
+@cafedotcom,Stay Tuned with Preet Bharara,youtube,CAFE,False,61400.0,54,0,False,True,Preet Bharara
+@chicksonright,Chicks on the Right,youtube,Chicks on the Right,False,191000.0,475,179,False,False,
+@chinainsights-r2w,China Insights,youtube,China Insights,False,350000.0,278,0,False,True,China news
+@chriscuomo,The Chris Cuomo Project,youtube,Chris Cuomo,False,652000.0,208,8,False,True,"NewsNation host, own channel"
+@clayandbuck,The Clay Travis & Buck Sexton Show,youtube,Clay & Buck,False,150000.0,581,42,False,True,radio
+@deanwithrs,Dean Withers,youtube,Dean Withers,False,938000.0,265,266,False,False,debate streamer
+@destiny,Destiny,youtube,Destiny,False,878000.0,267,0,False,True,
+@destinyhqclips,destinyhqclips,youtube,Destiny,True,10500.0,197,0,False,True,fan channel
+@dineshdsouza,Dinesh D'Souza,youtube,Dinesh D'Souza,False,810000.0,92,2,False,True,
+@dollemore,Jesse Dollemore,youtube,Jesse Dollemore,False,1300000.0,1439,4,False,True,
+@doomscrollpodcast,Joshua Citarella,youtube,Doomscroll,False,146000.0,17,0,True,True,
+@evanjmez,Evan James,youtube,Evan James,False,3240.0,22,0,True,True,
+@fastpoliticspodcast,Fast Politics w/ Molly Jong-Fast,youtube,Fast Politics,False,91200.0,145,0,False,True,interview podcast format
+@fightbackpodcast,Jake Shields' Fight Back Podcast,youtube,Jake Shields,False,206000.0,627,24,False,True,
+@franifio,The Bitchuation Room (with Francesca Fiorentini),youtube,Bitchuation Room,False,286000.0,282,62,False,False,comedians + organisers
+@glennbeck,Glenn Beck,youtube,Blaze Media,False,1790000.0,460,125,False,False,
+@harryjsisson,Harry Sisson,youtube,Harry Sisson,False,605000.0,681,3,False,True,
+@hutch,Hutch,youtube,Hutch,False,841000.0,162,50,False,False,
+@jimacosta,Jim Acosta,youtube,Jim Acosta,False,336000.0,313,160,False,False,
+@jlptalk,Jesse Lee Peterson,youtube,Jesse Lee Peterson,False,625000.0,304,187,False,False,call-in show
+@joerogan,PowerfulJRE,youtube,Joe Rogan,False,21100000.0,141,1,False,True,
+@johnnyharris,Johnny Harris,youtube,Johnny Harris,False,7950000.0,13,0,True,True,
+@judgingfreedom,Judge Napolitano - Judging Freedom,youtube,Judging Freedom,False,786000.0,355,697,False,False,Napolitano; interviews
+@katiephangnews,Katie Phang,youtube,MeidasTouch Network,False,812000.0,403,44,False,True,powered by MeidasTouch per description
+@katmabu,Kat Abughazaleh,youtube,Kat Abughazaleh,False,170000.0,34,0,True,True,
+@laurenchenclips,Lauren Chen Clips,youtube,Lauren Chen,True,11400.0,109,0,False,True,clips channel
+@lizwheeler,Liz Wheeler,youtube,Liz Wheeler,False,445000.0,86,70,False,False,
+@lonerboxlive,LonerBox Live,youtube,LonerBox,False,59700.0,88,0,False,True,
+@lovettorleaveitpodcast,Lovett or Leave It,youtube,Crooked Media,False,144000.0,114,0,False,True,comedy panel
+@marclamonthillnetwork,Marc Lamont Hill Network,youtube,Marc Lamont Hill,False,275000.0,321,151,False,False,
+@markets,Bloomberg Television,youtube,Bloomberg,False,3270000.0,7974,56,False,False,Bloomberg Television; markets
+@marklevinshow,The Mark Levin Show,youtube,Mark Levin,False,103000.0,505,0,False,True,
+@mikhaila,Mikhaila Peterson,youtube,Mikhaila Peterson,False,1380000.0,27,0,True,True,
+@morebridgetphetasy,Walk-Ins Welcome with Bridget Phetasy,youtube,Bridget Phetasy,False,13100.0,206,0,False,True,
+@moreperfectunion,More Perfect Union,youtube,More Perfect Union,False,3940000.0,71,4,False,True,nonprofit newsroom
+@msnow,MS NOW,youtube,MS NOW,False,9980000.0,9879,325,False,False,formerly MSNBC
+@nationalreview,National Review,youtube,National Review,False,116000.0,191,2,False,True,magazine
+@newdiscourses,New Discourses,youtube,New Discourses,False,177000.0,98,0,False,True,James Lindsay
+@newyorker,The New Yorker,youtube,The New Yorker,False,1200000.0,51,0,False,True,
+@notsoErudite,notsoErudite,youtube,notsoErudite,False,125000.0,43,20,True,True,debate / call-in
+@nousnetwork,nous,youtube,nous,False,88500.0,156,0,False,True,Indian Muslims research
+@nypost,New York Post,youtube,New York Post,False,2560000.0,6304,110,False,False,tabloid
+@nytimes,The New York Times,youtube,New York Times,False,5260000.0,71,0,False,True,
+@oann,One America News Network,youtube,OAN,False,1420000.0,1803,309,False,False,
+@podsaveamerica,Pod Save America,youtube,Crooked Media,False,1280000.0,667,0,False,True,
+@ponderingpolitics,Pondering Politics,youtube,Pondering Politics,False,861000.0,1467,2,False,True,
+@revleftradio,Rev Left Radio,youtube,Rev Left Radio,False,31900.0,38,3,True,True,
+@rolandsmartin,Roland S. Martin,youtube,Black Star Network,False,1960000.0,742,584,False,False,daily news show
+@samharrisorg,Sam Harris,youtube,Sam Harris,False,869000.0,116,0,False,True,
+@theGuardian,The Guardian,youtube,The Guardian,False,2620000.0,39,0,True,True,UK press
+@thedavidpakmanshow,David Pakman Show,youtube,David Pakman,False,3660000.0,1641,5,False,True,
+@thegrayzone7996,The Grayzone,youtube,The Grayzone,False,575000.0,155,36,False,True,
+@thehill,The Hill,youtube,The Hill,False,2150000.0,4249,505,False,False,mostly 'Rising' commentary show
+@theisabelbrown,Isabel Brown,youtube,Isabel Brown,False,181000.0,141,0,False,True,culture commentary
+@thejimmydoreshow,The Jimmy Dore Show,youtube,Jimmy Dore,False,1870000.0,1146,115,False,False,anti-establishment
+@therationalnational,The Rational National,youtube,Rational National,False,779000.0,142,7,False,True,Canadian
+@thewarningwithsteveschmidt,The Warning with Steve Schmidt,youtube,Steve Schmidt,False,528000.0,289,110,False,False,
+@thomhartmann,Thom Hartmann Program,youtube,Thom Hartmann,False,547000.0,784,0,False,True,
+@timesofindia,Times Of India,youtube,Times Group,False,6000000.0,9926,2295,False,False,India
+@triggerpod,Triggernometry,youtube,Triggernometry,False,1920000.0,151,6,False,True,
+@turningpointusa,Turning Point USA,youtube,Turning Point USA,False,7680000.0,183,13,False,True,
+@underthedesknews,Under The Desk News,youtube,Under the Desk News,False,249000.0,79,115,False,False,
+@usefulidiots,Useful Idiots,youtube,Useful Idiots,False,192000.0,186,12,False,True,
+@wethefifth,The Fifth Column - A Podcast,youtube,The Fifth Column,False,75300.0,112,2,False,True,
+@winston_marshall,Winston Marshall,youtube,Winston Marshall,False,494000.0,109,0,False,True,
+@wsj,The Wall Street Journal,youtube,Wall Street Journal,False,6690000.0,119,11,False,True,
+@zeteo,Zeteo,youtube,Zeteo,False,2240000.0,206,25,False,True,
+https://rumble.com/c/BannonsWarRoom,BannonsWarRoom,rumble,War Room,False,,4506,0,False,True,
+https://rumble.com/c/GGreenwald,GGreenwald,rumble,Glenn Greenwald,False,,76,0,False,True,System Update
+https://rumble.com/c/TheAlexJonesShowLive,TheAlexJonesShowLive,rumble,InfoWars,False,,513,0,False,True,
+https://rumble.com/c/nickjfuentes,nickjfuentes,rumble,Nick Fuentes,False,,305,0,False,True,
+https://rumble.com/c/russellbrand,russellbrand,rumble,Russell Brand,False,,259,0,False,True,

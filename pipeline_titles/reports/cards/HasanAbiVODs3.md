@@ -1,6 +1,6 @@
 # HasanAbi VODs (@HasanAbiVODs3)
 
-Lane: **streamer_reaction** · organisation: HasanAbi · clipper: yes · platform: youtube · subscribers: 10900.0
+Channel group: **left** (title-leaning score, document 14) · organisation: HasanAbi · clipper: yes · platform: youtube · subscribers: 10900.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 181 rows, 181 unique (repeat share 0.0%); ranked; political share 6.6%.
 Top topics: HasanAbi 2026 Schedule (92.8%); ICE Protests and Shootings (1.1%); Epstein Files Political Connections (1.1%); Hasanabi Reacts to Hasan (1.1%); Trump and China political relations (0.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.7 | 76.6 | -0.2 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 18.4 | 1.3 | -0.7 | -0.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.7 | 1.3 | -0.4 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.7 | 76.6 | -0.2 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 18.4 | 1.3 | -0.7 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.7 | 1.3 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 49.0 | 7.1 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 7.5 | 0.4 | -0.5 | -0.1 |
-| F6: Person-centred (named people) | 56.5 | 48.1 | -0.1 | -0.5 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 70.7 | 26.8 | -0.3 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 7.5 | 0.4 | -0.5 | 0.1 |
+| F6: Person-centred (named people) | 56.5 | 48.1 | -0.1 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 70.7 | 26.8 | -0.3 | -0.5 |
 | F8: Numeric and dated (digits, years) | 100.0 | 100.0 | 3.0 | -0.2 |
-| F9: ALL-CAPS shouting | 71.5 | 63.6 | -0.0 | -0.1 |
-| F10: Quoted speech | 49.4 | 0.4 | -0.4 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 54.4 | 23.8 | -0.1 | -0.7 |
-| F12: Modal and future speculation (will, could, we) | 72.4 | 66.5 | 0.2 | -0.5 |
+| F9: ALL-CAPS shouting | 71.5 | 63.6 | -0.0 | -0.3 |
+| F10: Quoted speech | 49.4 | 0.4 | -0.4 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 54.4 | 23.8 | -0.1 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 72.4 | 66.5 | 0.2 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.5% (3.8%); outrage 6.1% (64.8%); humor 0.0% (0.4%); question 1.1% (9.0%); breaking_live 0.0% (0.4%); episode_show 100.0% (4.5%); interview_guest 11.1% (7.8%); reaction 0.5% (10.1%); confrontation 3.3% (14.3%); listicle 0.0% (0.0%); howto_explainer 0.5% (4.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (2.7%); outrage 6.1% (63.9%); humor 0.0% (0.2%); question 1.1% (15.6%); breaking_live 0.0% (2.9%); episode_show 100.0% (2.8%); interview_guest 11.1% (9.8%); reaction 0.5% (2.9%); confrontation 3.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.5% (8.0%)
 
 
-Nearest style neighbours: @60minutes [us_legacy_tv]; @Firstpost [wire_international]; @Forbes [us_press_print_digital]; @chinainsights-r2w [independent_digital_news]; @PiscoLitty [streamer_reaction]
+Nearest style neighbours: @60minutes [neutral]; @Firstpost [neutral]; @Forbes [neutral]; @chinainsights-r2w [neutral]; @PiscoLitty [left]
 
-Nearest topic neighbours: @PoliticsGirl [left_commentary]; @HasanReactionsfanTwo [streamer_reaction]; @MikeFromPA [streamer_reaction]; @Vaush [streamer_reaction]; @zeteo [independent_digital_news]
+Nearest topic neighbours: @PoliticsGirl [left]; @HasanReactionsfanTwo [left]; @MikeFromPA [left]; @Vaush [left]; @zeteo [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

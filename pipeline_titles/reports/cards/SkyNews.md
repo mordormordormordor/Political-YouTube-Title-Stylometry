@@ -1,6 +1,6 @@
 # Sky News (@SkyNews)
 
-Lane: **wire_international** · organisation: Sky News · clipper: no · platform: youtube · subscribers: 9360000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Sky News · clipper: no · platform: youtube · subscribers: 9360000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 3,681 rows, 3,677 unique (repeat share 0.1%); ranked; political share 86
 Top topics: Iran War and Strait of Hormuz Tensions (9.8%); UK politics and Reform UK (7.1%); UK PM Keir Starmer Resignation Calls (6.6%); UK Political Chaos and Government Issues (4.1%); Ukraine-Russia War and Political Figures (4.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 59.8 | 54.0 | 0.3 | 0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 85.8 | 83.7 | 0.8 | 0.5 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 25.1 | 56.5 | -0.4 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 59.8 | 54.0 | 0.3 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 85.8 | 83.7 | 0.8 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 25.1 | 56.5 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 69.9 | 54.4 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 78.2 | 77.8 | 0.9 | 0.1 |
-| F6: Person-centred (named people) | 27.2 | 28.5 | -0.6 | -0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 94.1 | 95.4 | 1.0 | 0.9 |
-| F8: Numeric and dated (digits, years) | 60.3 | 66.9 | -0.1 | 0.0 |
-| F9: ALL-CAPS shouting | 73.6 | 64.0 | 0.0 | 0.0 |
-| F10: Quoted speech | 89.1 | 91.2 | 0.8 | 0.2 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 45.2 | 46.9 | -0.3 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 82.8 | 89.1 | 0.3 | 0.4 |
+| F6: Person-centred (named people) | 27.2 | 28.5 | -0.6 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 94.1 | 95.4 | 1.0 | -0.5 |
+| F8: Numeric and dated (digits, years) | 60.3 | 66.9 | -0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 73.6 | 64.0 | 0.0 | -0.3 |
+| F10: Quoted speech | 89.1 | 91.2 | 0.8 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 45.2 | 46.9 | -0.3 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 82.8 | 89.1 | 0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 4.9% (3.1%); outrage 34.4% (43.3%); humor 0.0% (0.0%); question 21.6% (22.5%); breaking_live 1.2% (2.4%); episode_show 0.0% (0.1%); interview_guest 7.7% (8.0%); reaction 1.8% (1.3%); confrontation 2.8% (5.8%); listicle 0.0% (0.1%); howto_explainer 12.2% (7.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (2.7%); outrage 34.4% (63.9%); humor 0.0% (0.2%); question 21.6% (15.6%); breaking_live 1.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 7.7% (9.8%); reaction 1.8% (2.9%); confrontation 2.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 12.2% (8.0%)
 
 
-Nearest style neighbours: @CNN [us_legacy_tv]; @BBCNews [wire_international]; @RebelNewsOnline [independent_digital_news]; @CBSNews [us_legacy_tv]; @NBCNews [us_legacy_tv]
+Nearest style neighbours: @CNN [left]; @BBCNews [neutral]; @RebelNewsOnline [right]; @CBSNews [neutral]; @NBCNews [neutral]
 
-Nearest topic neighbours: @BBCNews [wire_international]; @AssociatedPress [wire_international]; @NovaraMedia [independent_digital_news]; @Reuters [wire_international]; @aljazeeraenglish [wire_international]
+Nearest topic neighbours: @BBCNews [neutral]; @AssociatedPress [neutral]; @NovaraMedia [left]; @Reuters [neutral]; @aljazeeraenglish [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,28 +85,28 @@ Titles: 1,976 rows, 1,968 unique (repeat share 0.4%); ranked; political share 85
 Top topics: Iran War and Strait of Hormuz Tensions (10.5%); UK PM Keir Starmer Resignation Calls (6.8%); UK politics and Reform UK (5.4%); Ukraine-Russia War and Political Figures (3.9%); UK Prime Minister Andy Burnham (3.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 72.2 | 63.3 | 0.4 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 68.4 | 67.1 | 0.2 | 0.0 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 19.0 | 48.1 | -0.5 | 1.5 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 55.7 | 49.4 | -0.1 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 72.2 | 63.3 | 0.4 | -0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 68.4 | 67.1 | 0.2 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 19.0 | 48.1 | -0.5 | -0.2 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 55.7 | 49.4 | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 44.3 | 63.3 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 55.7 | 48.1 | 0.4 | 0.6 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 89.9 | 93.7 | 1.1 | 0.3 |
-| F8: Numeric and dated (digits, years) | 31.6 | 49.4 | -0.2 | 0.3 |
-| F9: ALL-CAPS shouting | 68.4 | 68.4 | -0.1 | -0.1 |
-| F10: Quoted speech | 86.1 | 86.1 | 0.0 | 0.0 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 38.0 | 31.6 | -0.3 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 70.9 | 81.0 | 0.1 | 0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 89.9 | 93.7 | 1.1 | -0.4 |
+| F8: Numeric and dated (digits, years) | 31.6 | 49.4 | -0.2 | -0.0 |
+| F9: ALL-CAPS shouting | 68.4 | 68.4 | -0.1 | -0.5 |
+| F10: Quoted speech | 86.1 | 86.1 | 0.0 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 38.0 | 31.6 | -0.3 | 0.1 |
+| F12: Modal and future speculation (will, could, we) | 70.9 | 81.0 | 0.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 4.8% (3.6%); outrage 25.9% (36.5%); humor 0.0% (0.0%); question 4.4% (5.1%); breaking_live 1.8% (71.5%); episode_show 0.0% (0.0%); interview_guest 25.4% (9.4%); reaction 3.1% (1.6%); confrontation 3.1% (7.7%); listicle 0.0% (0.0%); howto_explainer 3.4% (1.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.8% (1.9%); outrage 25.9% (63.2%); humor 0.0% (0.1%); question 4.4% (11.3%); breaking_live 1.8% (17.5%); episode_show 0.0% (6.4%); interview_guest 25.4% (18.3%); reaction 3.1% (1.5%); confrontation 3.1% (15.4%); listicle 0.0% (0.0%); howto_explainer 3.4% (2.9%)
 
 
-Nearest style neighbours: @PTLRadioShow [left_commentary]; @FoxNews [us_legacy_tv]; @USATODAY [us_press_print_digital]; @thehill [us_press_print_digital]; @ANINewsIndia [wire_international]
+Nearest style neighbours: @PTLRadioShow [left]; @FoxNews [right]; @USATODAY [neutral]; @thehill [neutral]; @ANINewsIndia [neutral]
 
-Nearest topic neighbours: @Reuters [wire_international]; @TimesNowWorld [wire_international]; @Firstpost [wire_international]; @AssociatedPress [wire_international]; @timesofindia [wire_international]
+Nearest topic neighbours: @Reuters [neutral]; @TimesNowWorld [neutral]; @Firstpost [neutral]; @AssociatedPress [neutral]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

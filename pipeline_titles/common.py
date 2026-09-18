@@ -2,12 +2,14 @@
 
 Every stage script (pipeline_titles/prepare.py, topics.py, features.py, ...)
 imports from here so that file locations, the random seed, the genre names, the
-low-n rule and the creator-balancing rule are defined exactly once.
+low-n rule, the creator-balancing rule and the channel grouping (the left / neutral /
+right groups of the leaning stage) are defined exactly once.
 
 Stage interface (all under data/titles/analysis/):
 
     titles_prepared.parquet   Stage 0  one row per video, raw + normalised title, flags
-    lanes.csv                 Stage 0  creator -> lane / organisation / clipper
+    creators.csv              Stage 0  creator -> channel name / organisation / clipper / subscribers
+    leaning_by_creator.csv    Stage 0d each channel's title-leaning score and its group (left / neutral / right)
     annotations.parquet       Stage 0c spaCy tokens, POS and entities per unique title
     topics.csv                Stage 1  row_id -> topic
     features.csv              Stage 2  creator x genre x month style features
@@ -43,7 +45,8 @@ RUNTIMES = ANALYSIS_DIR / "runtimes.jsonl"
 
 # Stage outputs (the interface between stages).
 PREPARED = ANALYSIS_DIR / "titles_prepared.parquet"
-LANES_CSV = ANALYSIS_DIR / "lanes.csv"
+CREATORS_CSV = ANALYSIS_DIR / "creators.csv"
+LEANING_BY_CREATOR = ANALYSIS_DIR / "leaning_by_creator.csv"
 ANNOTATIONS = ANALYSIS_DIR / "annotations.parquet"
 TOPICS_CSV = ANALYSIS_DIR / "topics.csv.gz"
 TOPIC_LABELS_CSV = ANALYSIS_DIR / "topic_labels.csv"
@@ -55,6 +58,7 @@ DIMENSIONS_TITLE = ANALYSIS_DIR / "dimensions_title.parquet"
 LABELS_CSV = ANALYSIS_DIR / "labels.csv.gz"
 FORMATS_PARQUET = ANALYSIS_DIR / "formats.parquet"
 HOOKS_PARQUET = ANALYSIS_DIR / "hooks.parquet"
+CAPS_STYLE_TITLE = ANALYSIS_DIR / "caps_style_title.parquet"
 
 SEED = 20260914
 GENRES = ("videos", "streams")          # never pooled
@@ -63,11 +67,11 @@ LOW_N = 50                              # creator x genre below this is reported
 MIN_ENGAGEMENT_N = 100
 MONTHS = [f"2026-{m:02d}" for m in range(1, 10)]
 PARTIAL_MONTH = "2026-09"               # 1st-14th only: shown, never compared on volume
-LANE_ORDER = [
-    "left_commentary", "right_commentary", "centrist_heterodox", "us_legacy_tv",
-    "wire_international", "independent_digital_news", "streamer_reaction",
-    "interview_podcast", "legal_institutional", "humour_satire", "explainer_geopolitics",
-]
+# The only between-channel grouping in the analysis: the left / neutral / right channel
+# groups of the leaning stage (each channel's score from the title labels, thresholds
+# +-0.05; see pipeline_titles/leaning.py). Channels without a score are "unscored".
+GROUPS = ("left", "neutral", "right")
+GROUP_LABEL = {"left": "left channels", "neutral": "neutral channels", "right": "right channels", "unscored": "unscored channels"}
 
 # Tokens dropped from topic term lists and from lexical-diversity counts.  Kept
 # deliberately short: titles are ~10 tokens and function words carry style.
@@ -182,10 +186,18 @@ def load_prepared(path: Path = PREPARED) -> pd.DataFrame:
     return pd.read_parquet(path)
 
 
-def load_lanes(path: Path = LANES_CSV) -> pd.DataFrame:
-    lanes = pd.read_csv(path, dtype=str, keep_default_na=False)
-    lanes["clipper"] = lanes["clipper"].str.lower().isin(["true", "1", "yes"])
-    return lanes
+def load_creators(path: Path = CREATORS_CSV, with_group: bool = True, leaning_path: Path = LEANING_BY_CREATOR) -> pd.DataFrame:
+    """creators.csv (one row per creator: channel_name, platform, organisation, clipper,
+    subscribers, counts) with `group` = the channel's leaning group (left / neutral /
+    right from leaning_by_creator.csv; "unscored" when the leaning stage has not run)."""
+    cr = pd.read_csv(path, dtype=str, keep_default_na=False)
+    cr["clipper"] = cr["clipper"].str.lower().isin(["true", "1", "yes"])
+    if with_group:
+        cr["group"] = "unscored"
+        if Path(leaning_path).exists():
+            lb = pd.read_csv(leaning_path, usecols=["creator", "group"], dtype=str)
+            cr["group"] = cr["creator"].map(lb.set_index("creator")["group"]).fillna("unscored")
+    return cr
 
 
 def read_jsonl(path: Path) -> list[dict]:

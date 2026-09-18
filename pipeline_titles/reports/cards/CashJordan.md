@@ -1,6 +1,6 @@
 # Cash Jordan (@CashJordan)
 
-Lane: **right_commentary** · organisation: Cash Jordan · clipper: no · platform: youtube · subscribers: 1750000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Cash Jordan · clipper: no · platform: youtube · subscribers: 1750000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 301 rows, 299 unique (repeat share 0.7%); ranked; political share 97.7%.
 Top topics: Iran War and Strait of Hormuz Tensions (28.4%); Zohran Mamdani and NYC Politics (26.4%); Homelessness and Socialist Mayors in US Cities (6.0%); Mexico Cartel Violence (4.3%); Immigration and Deportation Policies (3.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 24.7 | 15.1 | -0.3 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 52.3 | 57.7 | 0.0 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 52.3 | 57.7 | 0.0 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.4 | 62.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 95.0 | 93.7 | 0.7 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 0.8 | 0.8 | -0.9 | 0.2 |
-| F6: Person-centred (named people) | 57.3 | 63.6 | -0.1 | -0.3 |
+| F6: Person-centred (named people) | 57.3 | 63.6 | -0.1 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 57.3 | 72.4 | -0.5 | -0.7 |
 | F8: Numeric and dated (digits, years) | 97.9 | 97.1 | 1.0 | -0.2 |
 | F9: ALL-CAPS shouting | 94.6 | 93.3 | 1.6 | -0.3 |
 | F10: Quoted speech | 98.7 | 98.7 | 2.6 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 8.8 | 10.0 | -1.1 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 8.8 | 10.0 | -1.1 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 3.3 | 30.1 | -1.0 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 6.3% (3.8%); outrage 98.3% (63.4%); humor 0.0% (0.2%); question 0.0% (15.1%); breaking_live 1.7% (1.3%); episode_show 0.0% (7.8%); interview_guest 1.0% (8.2%); reaction 0.7% (2.5%); confrontation 2.0% (7.7%); listicle 0.0% (0.1%); howto_explainer 0.0% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.3% (3.6%); outrage 98.3% (59.6%); humor 0.0% (0.2%); question 0.0% (15.6%); breaking_live 1.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.0% (8.5%); reaction 0.7% (2.2%); confrontation 2.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 0.0% (9.5%)
 
 
-Nearest style neighbours: @StatusCoup [independent_digital_news]; @lonerboxlive [streamer_reaction]; @PiscoLitty [streamer_reaction]; @RealAmericasVoice [right_tv_network]; @ponderingpolitics [left_commentary]
+Nearest style neighbours: @StatusCoup [left]; @lonerboxlive [right]; @PiscoLitty [left]; @RealAmericasVoice [right]; @ponderingpolitics [left]
 
-Nearest topic neighbours: @DrSteveTurleyTV [right_commentary]; @FoxNews [us_legacy_tv]; @timesofindia [wire_international]; @NewsmaxTV [right_tv_network]; @TheBrianKilmeadeShow [right_commentary]
+Nearest topic neighbours: @DrSteveTurleyTV [right]; @FoxNews [right]; @timesofindia [left]; @NewsmaxTV [right]; @TheBrianKilmeadeShow [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # The Bulwark (@bulwarkmedia)
 
-Lane: **centrist_heterodox** · organisation: The Bulwark · clipper: no · platform: youtube · subscribers: 1760000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: The Bulwark · clipper: no · platform: youtube · subscribers: 1760000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 2,137 rows, 1,826 unique (repeat share 14.5%); ranked; political share 9
 Top topics: Political Podcasts and Commentary (16.6%); Iran War and Strait of Hormuz Tensions (4.2%); 2026 Midterm Election Predictions (3.7%); Trump's War and Draft (2.5%); Stephen Miller and Trump Scandal (2.5%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 49.8 | 45.6 | 0.2 | 0.4 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 87.0 | 78.7 | 0.8 | 0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 78.7 | 81.6 | -0.1 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 49.8 | 45.6 | 0.2 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 87.0 | 78.7 | 0.8 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 78.7 | 81.6 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 40.6 | 47.7 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 57.7 | 53.6 | 0.3 | 0.6 |
-| F6: Person-centred (named people) | 94.1 | 94.6 | 1.0 | -0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 23.8 | 14.2 | -0.8 | -0.9 |
-| F8: Numeric and dated (digits, years) | 78.7 | 76.6 | 0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 13.4 | 17.2 | -0.8 | -0.4 |
-| F10: Quoted speech | 39.3 | 31.0 | -0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 35.6 | 41.4 | -0.5 | -0.8 |
-| F12: Modal and future speculation (will, could, we) | 92.1 | 87.4 | 0.6 | -0.0 |
+| F5: Question and explainer framing (why, what, ?) | 57.7 | 53.6 | 0.3 | 0.1 |
+| F6: Person-centred (named people) | 94.1 | 94.6 | 1.0 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 23.8 | 14.2 | -0.8 | -0.5 |
+| F8: Numeric and dated (digits, years) | 78.7 | 76.6 | 0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 13.4 | 17.2 | -0.8 | -0.3 |
+| F10: Quoted speech | 39.3 | 31.0 | -0.5 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 35.6 | 41.4 | -0.5 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 92.1 | 87.4 | 0.6 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.4% (3.8%); outrage 53.1% (53.9%); humor 0.2% (0.1%); question 11.7% (19.1%); breaking_live 6.0% (0.9%); episode_show 0.0% (1.9%); interview_guest 32.4% (9.0%); reaction 0.8% (1.0%); confrontation 5.1% (3.5%); listicle 0.1% (0.1%); howto_explainer 7.2% (12.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.4% (2.7%); outrage 53.1% (63.9%); humor 0.2% (0.2%); question 11.7% (15.6%); breaking_live 6.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 32.4% (9.8%); reaction 0.8% (2.9%); confrontation 5.1% (7.6%); listicle 0.1% (0.1%); howto_explainer 7.2% (8.0%)
 
 
-Nearest style neighbours: @DemocracyDocket [legal_institutional]; @JamarlThomas [left_commentary]; @RubinReport [right_commentary]; @clayandbuck [right_commentary]; @X22Report-y5y [right_commentary]
+Nearest style neighbours: @DemocracyDocket [left]; @JamarlThomas [left]; @RubinReport [right]; @clayandbuck [right]; @X22Report-y5y [right]
 
-Nearest topic neighbours: @msnow [us_legacy_tv]; @dollemore [left_commentary]; @podsaveamerica [left_commentary]; @TheMajorityReport [left_commentary]; @Politicon [interview_podcast]
+Nearest topic neighbours: @msnow [left]; @dollemore [left]; @podsaveamerica [left]; @TheMajorityReport [left]; @Politicon [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,28 +86,28 @@ Titles: 228 rows, 228 unique (repeat share 0.0%); ranked; political share 98.7%.
 Top topics: Iran War and Strait of Hormuz Tensions (8.3%); Pete Hegseth and Iran War (3.1%); Trump Supreme Court Legal Issues (2.6%); 2026 Midterm Election Predictions (2.6%); MAGA Movement Decline (2.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 49.4 | 41.8 | 0.1 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 48.1 | 49.4 | -0.3 | -0.8 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 70.9 | 69.6 | 0.5 | 0.4 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 12.7 | 13.9 | -0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 79.7 | 73.4 | 0.0 | -0.1 |
-| F6: Person-centred (named people) | 72.2 | 67.1 | 0.9 | 1.6 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 32.9 | 39.2 | -0.6 | -0.6 |
-| F8: Numeric and dated (digits, years) | 51.9 | 46.8 | 0.0 | -0.2 |
-| F9: ALL-CAPS shouting | 3.8 | 2.5 | -1.3 | -0.6 |
-| F10: Quoted speech | 48.1 | 43.0 | -0.5 | -0.6 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 35.4 | 34.2 | -0.3 | -0.3 |
-| F12: Modal and future speculation (will, could, we) | 60.8 | 68.4 | -0.0 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 49.4 | 41.8 | 0.1 | -0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 48.1 | 49.4 | -0.3 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 70.9 | 69.6 | 0.5 | -0.2 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 12.7 | 13.9 | -0.4 | -0.2 |
+| F5: Question and explainer framing (why, what, ?) | 79.7 | 73.4 | 0.0 | -0.3 |
+| F6: Person-centred (named people) | 72.2 | 67.1 | 0.9 | 0.6 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 32.9 | 39.2 | -0.6 | -0.4 |
+| F8: Numeric and dated (digits, years) | 51.9 | 46.8 | 0.0 | -0.0 |
+| F9: ALL-CAPS shouting | 3.8 | 2.5 | -1.3 | -0.5 |
+| F10: Quoted speech | 48.1 | 43.0 | -0.5 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 35.4 | 34.2 | -0.3 | 0.1 |
+| F12: Modal and future speculation (will, could, we) | 60.8 | 68.4 | -0.0 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (0.0%); outrage 61.0% (40.5%); humor 0.0% (0.0%); question 12.3% (8.0%); breaking_live 31.6% (22.6%); episode_show 0.0% (0.0%); interview_guest 20.6% (40.8%); reaction 1.3% (1.1%); confrontation 6.1% (4.0%); listicle 0.0% (0.0%); howto_explainer 3.1% (2.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (1.9%); outrage 61.0% (63.2%); humor 0.0% (0.1%); question 12.3% (11.3%); breaking_live 31.6% (17.5%); episode_show 0.0% (6.4%); interview_guest 20.6% (18.3%); reaction 1.3% (1.5%); confrontation 6.1% (15.4%); listicle 0.0% (0.0%); howto_explainer 3.1% (2.9%)
 
 
-Nearest style neighbours: @NewsmaxTV [right_tv_network]; @TheDonLemonShow [left_commentary]; @franifio [humour_satire]; @ModernDayDebate [streamer_reaction]; @FarronBalanced [left_commentary]
+Nearest style neighbours: @NewsmaxTV [right]; @TheDonLemonShow [left]; @franifio [left]; @ModernDayDebate [left]; @FarronBalanced [left]
 
-Nearest topic neighbours: @jimacosta [left_commentary]; @PTLRadioShow [left_commentary]; @timesofindia [wire_international]; @TheDonLemonShow [left_commentary]; @RealAmericasVoice [right_tv_network]
+Nearest topic neighbours: @jimacosta [left]; @PTLRadioShow [left]; @timesofindia [left]; @TheDonLemonShow [left]; @RealAmericasVoice [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # LIVE SNEAKO (@LIVESNEAKO)
 
-Lane: **streamer_reaction** · organisation: SNEAKO · clipper: no · platform: youtube · subscribers: 1010000.0
+Channel group: **neutral** (title-leaning score, document 14) · organisation: SNEAKO · clipper: no · platform: youtube · subscribers: 1010000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 481 rows, 479 unique (repeat share 0.4%); ranked; political share 92.7%.
 Top topics: Sneako and Political Interviews (24.4%); Andrew Tate Arrest and Legal Issues (7.7%); Islam and Political Discourse (6.7%); Israel-Palestine Conflict Media (5.9%); Shocking Events and Reactions (4.6%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 56.5 | 61.9 | 0.3 | 0.0 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 30.1 | 22.6 | -0.4 | -0.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 56.1 | 38.1 | -0.3 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 56.5 | 61.9 | 0.3 | 0.5 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 30.1 | 22.6 | -0.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 56.1 | 38.1 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 51.0 | 62.3 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 35.1 | 34.3 | -0.1 | -0.1 |
-| F6: Person-centred (named people) | 54.4 | 64.4 | -0.2 | -0.5 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 79.1 | 72.8 | -0.1 | -0.3 |
-| F8: Numeric and dated (digits, years) | 14.6 | 12.1 | -0.4 | -0.2 |
-| F9: ALL-CAPS shouting | 39.7 | 51.9 | -0.4 | -0.1 |
-| F10: Quoted speech | 24.3 | 13.0 | -0.6 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 14.2 | 7.9 | -0.9 | -0.7 |
-| F12: Modal and future speculation (will, could, we) | 18.8 | 11.3 | -0.5 | -0.5 |
+| F5: Question and explainer framing (why, what, ?) | 35.1 | 34.3 | -0.1 | 0.1 |
+| F6: Person-centred (named people) | 54.4 | 64.4 | -0.2 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 79.1 | 72.8 | -0.1 | -0.1 |
+| F8: Numeric and dated (digits, years) | 14.6 | 12.1 | -0.4 | 0.0 |
+| F9: ALL-CAPS shouting | 39.7 | 51.9 | -0.4 | -0.4 |
+| F10: Quoted speech | 24.3 | 13.0 | -0.6 | -0.1 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 14.2 | 7.9 | -0.9 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 18.8 | 11.3 | -0.5 | -0.0 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.0% (3.8%); outrage 46.4% (64.8%); humor 0.0% (0.4%); question 7.1% (9.0%); breaking_live 0.0% (0.4%); episode_show 0.0% (4.5%); interview_guest 15.0% (7.8%); reaction 4.0% (10.1%); confrontation 15.2% (14.3%); listicle 0.2% (0.0%); howto_explainer 5.4% (4.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (2.4%); outrage 46.4% (36.0%); humor 0.0% (0.1%); question 7.1% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 15.0% (11.6%); reaction 4.0% (1.9%); confrontation 15.2% (7.4%); listicle 0.2% (0.1%); howto_explainer 5.4% (6.6%)
 
 
-Nearest style neighbours: @TheMajorityReport [left_commentary]; @NovaraMedia [independent_digital_news]; @destiny [streamer_reaction]; @XAVIAER [right_commentary]; @TheLincolnProject [centrist_heterodox]
+Nearest style neighbours: @TheMajorityReport [left]; @NovaraMedia [left]; @destiny [left]; @XAVIAER [right]; @TheLincolnProject [left]
 
-Nearest topic neighbours: @fightbackpodcast [right_commentary]; @OfficialSaharTV [right_commentary]; https://rumble.com/c/nickjfuentes [right_commentary]; @HasanAbi [streamer_reaction]; @BadEmpanadaLive [streamer_reaction]
+Nearest topic neighbours: @fightbackpodcast [right]; @OfficialSaharTV [right]; https://rumble.com/c/nickjfuentes [right]; @HasanAbi [left]; @BadEmpanadaLive [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,28 +85,28 @@ Titles: 69 rows, 69 unique (repeat share 0.0%); ranked; political share 82.6%.
 Top topics: Sneako and Political Interviews (18.8%); Shocking Events and Reactions (13.0%); 2026 World Cup (10.1%); Political Media Broadcasters (8.7%); Iran War and Strait of Hormuz Tensions (4.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 78.5 | 89.9 | 0.5 | 0.1 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 16.5 | 17.7 | -1.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 31.6 | 54.4 | -0.4 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 78.5 | 89.9 | 0.5 | 0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 16.5 | 17.7 | -1.1 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 31.6 | 54.4 | -0.4 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 20.3 | 45.6 | -0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 59.5 | 55.7 | -0.2 | -0.2 |
-| F6: Person-centred (named people) | 29.1 | 19.0 | -0.2 | 0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 73.4 | 63.3 | 0.1 | 0.0 |
-| F8: Numeric and dated (digits, years) | 96.2 | 98.7 | 0.8 | 0.1 |
-| F9: ALL-CAPS shouting | 87.3 | 87.3 | 1.4 | 0.4 |
-| F10: Quoted speech | 79.7 | 50.6 | -0.2 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 12.7 | 3.8 | -0.9 | -0.0 |
-| F12: Modal and future speculation (will, could, we) | 34.2 | 15.2 | -0.4 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 59.5 | 55.7 | -0.2 | -0.3 |
+| F6: Person-centred (named people) | 29.1 | 19.0 | -0.2 | 0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 73.4 | 63.3 | 0.1 | 0.4 |
+| F8: Numeric and dated (digits, years) | 96.2 | 98.7 | 0.8 | 0.2 |
+| F9: ALL-CAPS shouting | 87.3 | 87.3 | 1.4 | -0.4 |
+| F10: Quoted speech | 79.7 | 50.6 | -0.2 | -0.7 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 12.7 | 3.8 | -0.9 | -0.6 |
+| F12: Modal and future speculation (will, could, we) | 34.2 | 15.2 | -0.4 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.5% (2.0%); outrage 23.2% (57.8%); humor 0.0% (0.6%); question 7.2% (19.8%); breaking_live 7.2% (2.6%); episode_show 0.0% (16.6%); interview_guest 11.6% (7.0%); reaction 1.5% (1.6%); confrontation 4.3% (45.1%); listicle 0.0% (0.0%); howto_explainer 2.9% (1.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.5% (2.2%); outrage 23.2% (29.7%); humor 0.0% (0.1%); question 7.2% (4.6%); breaking_live 7.2% (52.4%); episode_show 0.0% (2.1%); interview_guest 11.6% (13.2%); reaction 1.5% (1.4%); confrontation 4.3% (7.4%); listicle 0.0% (0.0%); howto_explainer 2.9% (1.0%)
 
 
-Nearest style neighbours: @PTLRadioShow [left_commentary]; @NewsmaxTV [right_tv_network]; @ThePodcastoftheLotusEaters [right_commentary]; @markets [us_press_print_digital]; @thehill [us_press_print_digital]
+Nearest style neighbours: @PTLRadioShow [left]; @NewsmaxTV [right]; @ThePodcastoftheLotusEaters [right]; @markets [neutral]; @thehill [neutral]
 
-Nearest topic neighbours: @TheJoyReidShow [left_commentary]; @Reuters [wire_international]; @franifio [humour_satire]; @AssociatedPress [wire_international]; @TheYoungTurks [left_commentary]
+Nearest topic neighbours: @TheJoyReidShow [left]; @Reuters [neutral]; @franifio [left]; @AssociatedPress [neutral]; @TheYoungTurks [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

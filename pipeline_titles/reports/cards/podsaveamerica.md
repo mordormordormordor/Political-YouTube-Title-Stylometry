@@ -1,6 +1,6 @@
 # Pod Save America (@podsaveamerica)
 
-Lane: **left_commentary** · organisation: Crooked Media · clipper: no · platform: youtube · subscribers: 1280000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Crooked Media · clipper: no · platform: youtube · subscribers: 1280000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 731 rows, 667 unique (repeat share 8.8%); ranked; political share 97.2%.
 Top topics: Trump Meltdowns and Collapses (6.6%); 2026 Midterm Election Predictions (5.0%); Iran War and Strait of Hormuz Tensions (4.8%); ICE Protests and Shootings (4.2%); Trump Resignation and Leaks (3.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 14.6 | 14.2 | -0.5 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 11.3 | 13.4 | -0.9 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 14.6 | 14.2 | -0.5 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 11.3 | 13.4 | -0.9 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 66.1 | 72.4 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 17.2 | 29.3 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 49.8 | 40.6 | 0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 49.8 | 40.6 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 67.4 | 59.4 | 0.0 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 49.8 | 55.6 | -0.6 | -0.5 |
 | F8: Numeric and dated (digits, years) | 49.8 | 46.0 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 24.7 | 43.5 | -0.6 | -0.3 |
-| F10: Quoted speech | 26.8 | 20.1 | -0.6 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 64.4 | 63.6 | 0.0 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 32.2 | 41.4 | -0.3 | -0.3 |
+| F10: Quoted speech | 26.8 | 20.1 | -0.6 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 64.4 | 63.6 | 0.0 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 32.2 | 41.4 | -0.3 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.8% (3.0%); outrage 70.0% (76.0%); humor 0.1% (0.2%); question 10.5% (9.8%); breaking_live 4.2% (5.4%); episode_show 0.0% (2.2%); interview_guest 12.1% (10.4%); reaction 1.7% (1.1%); confrontation 8.6% (8.2%); listicle 0.0% (0.1%); howto_explainer 4.5% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.8% (2.7%); outrage 70.0% (63.9%); humor 0.1% (0.2%); question 10.5% (15.6%); breaking_live 4.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 12.1% (9.8%); reaction 1.7% (2.9%); confrontation 8.6% (7.6%); listicle 0.0% (0.1%); howto_explainer 4.5% (8.0%)
 
 
-Nearest style neighbours: @Forthepeoplepodcast305 [left_commentary]; @NovaraMedia [independent_digital_news]; @DropSiteNews [independent_digital_news]; @thejimmydoreshow [left_commentary]; @MichaelKnowles [right_commentary]
+Nearest style neighbours: @Forthepeoplepodcast305 [left]; @NovaraMedia [left]; @DropSiteNews [left]; @thejimmydoreshow [neutral]; @MichaelKnowles [right]
 
-Nearest topic neighbours: @FarronBalanced [left_commentary]; @SecularTalk [left_commentary]; @TheDamageReport [left_commentary]; @msnow [us_legacy_tv]; @TheMichaelCohenShow [left_commentary]
+Nearest topic neighbours: @FarronBalanced [left]; @SecularTalk [left]; @TheDamageReport [left]; @msnow [left]; @TheMichaelCohenShow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

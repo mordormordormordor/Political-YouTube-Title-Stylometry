@@ -4,7 +4,7 @@
 
 ## The finding in one paragraph
 
-A BERTopic model fitted on a 100,041-title creator-stratified sample found 236 topics; every title was then assigned to its nearest topic centroid (85% agreement with HDBSCAN's own labels on cluster members, 13% weak assignments). One story dominates 2026: the Iran war and the Strait of Hormuz, 27,609 unique titles across 227 of 274 creators, with a second energy-markets topic on the same war. The twelve largest topics are each shared by 130 or more creators. That is the central fact for everything after this document: the whole landscape covered the same stories, so raw vocabulary similarity between two channels mostly measures the news cycle, not their style. It also shows in the clustering: creators grouped by topic mix do not line up with lanes at all (adjusted Rand index 0.004 for edited uploads).
+A BERTopic model fitted on a 100,041-title creator-stratified sample found 236 topics; every title was then assigned to its nearest topic centroid (85% agreement with HDBSCAN's own labels on cluster members, 13% weak assignments). One story dominates 2026: the Iran war and the Strait of Hormuz, 27,609 unique titles across 227 of 274 creators, with a second energy-markets topic on the same war. 11 of the twelve largest topics are each shared by 100 or more of the 274 creators. That is the central fact for everything after this document: the whole landscape covered the same stories, so raw vocabulary similarity between two channels mostly measures the news cycle, not their style. It also shows in the clustering: creators grouped by topic mix do not line up with the left / neutral / right channel groups (adjusted Rand index 0.010 for edited uploads).
 
 ## The largest topics (creator-balanced share)
 
@@ -13,94 +13,57 @@ A BERTopic model fitted on a 100,041-title creator-stratified sample found 236 t
 
 | topic_id | label | political | balanced_share | n_unique_all | n_creators | top_terms |
 |---|---|---|---|---|---|---|
-| 0 | Iran War and Strait of Hormuz Tensions | yes | 0.062 | 27609 | 227 | strait hormuz, strait, hormuz, irans, iranian, iran iran, tehran, war iran, bases, iran strikes |
-| 2 | Israel-Palestine Conflict Media | yes | 0.032 | 6035 | 195 | gaza, palestine, palestinian, israeli, netanyahu, israels, west bank, jews, palestinians, jewish |
-| 3 | ICE Protests and Shootings | yes | 0.021 | 5189 | 210 | ice shooting, ice, ice agent, antiice, ice agents, minneapolis ice, minneapolis, agents, agent, protesters |
-| 59 | Iran Conflict and Political Updates | yes | 0.020 | 1358 | 124 | joins, renner, ac, fail, reveal, iran hits, sus, durk, jamm, larry johnson |
-| 5 | Trump Supreme Court Legal Issues | yes | 0.017 | 3769 | 166 | supreme court, supreme, trump doj, court, scotus, doj, judges, ruling, judge, legal af |
-| 40 | Trump's speeches and events | yes | 0.016 | 1944 | 84 | trump delivers, delivers remarks, trump speaks, davos, remarks, world economic, economic forum, delivers, las vegas, ... |
-| 4 | Ukraine-Russia War and Political Figures | yes | 0.016 | 9808 | 134 | ukraine, russia, putin, putins, zelensky, russian, ukraine war, zelenskyy, russias, moscow |
-| 191 | Political Commentary and Interviews | yes | 0.014 | 548 | 124 | dean, schmidt, steve schmidt, michael malice, malice, kump, ray kump, steve, ft ray, welcome |
-| 42 | War and Military Analysis | yes | 0.014 | 2269 | 193 | hoh, matt hoh, col, macgregor, douglas macgregor, col douglas, douglas, world war, col lawrence, lawrence wilkerson |
-| 1 | Shocking Events and Reactions | yes | 0.012 | 3996 | 171 | fing, holy, happening, theyre, holy sht, fck, im, fking, genuinely, fcked |
-| 7 | Trump vs Maduro Venezuela Conflict | yes | 0.012 | 3556 | 179 | maduro, venezuela, venezuelas, venezuelan, capture, trumps venezuela, nicolas, venezuela oil, captured, venezuelan oil |
-| 6 | Trump and China political relations | yes | 0.011 | 4790 | 165 | xi, china, chinas, taiwan, jiang, jinping, xi jinping, chinese, beijing, professor jiang |
+| 0 | Iran War and Strait of Hormuz Tensions | yes | 0.064 | 27609 | 227 | strait hormuz, strait, hormuz, irans, iranian, iran iran, tehran, war iran, bases, iran strikes |
+| 2 | Israel-Palestine Conflict Media | yes | 0.027 | 6035 | 195 | gaza, palestine, palestinian, israeli, netanyahu, israels, west bank, jews, palestinians, jewish |
+| 59 | Iran Conflict and Political Updates | yes | 0.024 | 1358 | 124 | joins, renner, ac, fail, reveal, iran hits, sus, durk, jamm, larry johnson |
+| 3 | ICE Protests and Shootings | yes | 0.019 | 5189 | 210 | ice shooting, ice, ice agent, antiice, ice agents, minneapolis ice, minneapolis, agents, agent, protesters |
+| 1 | Shocking Events and Reactions | yes | 0.017 | 3996 | 171 | fing, holy, happening, theyre, holy sht, fck, im, fking, genuinely, fcked |
+| 4 | Ukraine-Russia War and Political Figures | yes | 0.015 | 9808 | 134 | ukraine, russia, putin, putins, zelensky, russian, ukraine war, zelenskyy, russias, moscow |
+| 40 | Trump's speeches and events | yes | 0.015 | 1944 | 84 | trump delivers, delivers remarks, trump speaks, davos, remarks, world economic, economic forum, delivers, las vegas, ... |
+| 13 | Modern Women and Feminism Debate | yes | 0.012 | 1346 | 170 | dating, women, feminism, modern women, men, modern, marriage, men women, divorce, pill |
+| 22 | Christian Nationalism and Politics | yes | 0.012 | 1518 | 171 | jesus, christian, god, nationalism, christ, christianity, faith, bible, pastor, gospel |
+| 6 | Trump and China political relations | yes | 0.012 | 4790 | 165 | xi, china, chinas, taiwan, jiang, jinping, xi jinping, chinese, beijing, professor jiang |
+| 98 | JLP Weekly Series | no | 0.011 | 1243 | 182 | jlp wed, jlp, wed, jlp thu, thu, jlp mon, mon, jlp tue, tue, jlp fri |
+| 9 | AI and Political Concerns | yes | 0.011 | 3547 | 187 | ai, anthropic, bubble, artificial, researcher, models, humans, ai slop, sanders, bernie sanders |
 
 
-`balanced_share` is the mean over lanes of the mean creator share, so a topic that four Indian channels post 8,000 times does not outrank one that 200 channels each post a few times. The "Shocking Events and Reactions" topic is not a story: it is the cluster of content-free exclamations ("HOLY SH*T", "THIS IS INSANE..") that streamers and commentators use as titles, and it is the seed of the shared-title finding in document 5.
+`balanced_share` is the mean over the six channel group x genre cells of the mean creator share, so a topic that four Indian channels post 8,000 times does not outrank one that 200 channels each post a few times (a topic that is large in the thin stream cells can rank above its upload count, as topic 59 does). The "Shocking Events and Reactions" topic is not a story: it is the cluster of content-free exclamations ("HOLY SH*T", "THIS IS INSANE..") that streamers and commentators use as titles, and it is the seed of the shared-title finding in document 5.
 
 ## Political or not
 
-![Mean political share of a creator's titles, by lane.](figures/02_political_share_by_lane.png)
-*Mean political share of a creator's titles, by lane.*
+![Political share of a creator's titles, by channel group.](figures/02_political_share_by_group.png)
+*Political share of a creator's titles, by channel group (dots = creators, bar = median).*
 
-212 of 236 topics were tagged political by the labelling model (politics, government, elections, war, courts, political figures, the culture war); the 24 non-political topics are crime trials (Nancy Guthrie, Lindsay Clancy, the Brown University shooting), weather and disasters, sport (World Cup, MMA), tech and business, and a few channel-specific series. The tagging is generous, and the political share of a creator's unique titles is therefore high everywhere; it separates the lanes only at the bottom:
+212 of 236 topics were tagged political by the labelling model (politics, government, elections, war, courts, political figures, the culture war); the 24 non-political topics are crime trials (Nancy Guthrie, Lindsay Clancy, the Brown University shooting), weather and disasters, sport (World Cup, MMA), tech and business, and a few channel-specific series. The tagging is generous, and the political share of a creator's unique titles is therefore high everywhere. The neutral channels, whose titles the judge mostly read as "neither", are also the ones with the most non-political subjects (crime, weather, sport, tech: the news outlets); the left and right groups are political almost throughout:
 
-| lane | mean political share |
-|---|---|
-| US legacy TV | 0.83 |
-| US press | 0.85 |
-| streamers | 0.86 |
-| wires & international | 0.89 |
-| right commentary | 0.93 |
-| legal commentary | 0.93 |
-| interview podcasts | 0.94 |
-| humour / satire | 0.94 |
-| right TV networks | 0.95 |
-| centrist / heterodox | 0.96 |
-| independent digital news | 0.96 |
-| explainers / geopolitics | 0.97 |
-| left commentary | 0.97 |
+| group | mean political share | median political share | n_creators |
+|---|---|---|---|
+| left channels | 0.95 | 0.97 | 105 |
+| neutral channels | 0.87 | 0.91 | 38 |
+| right channels | 0.92 | 0.94 | 96 |
 
 
 Document 5 repeats the whole landscape analysis on political titles only; the conclusions do not change.
 
-## Topic share by lane (top 3 per lane, edited uploads)
+## Topic share by channel group (top 4 per group, edited uploads)
 
-| lane | label | mean_creator_share | n_creators |
+| group | label | mean_creator_share | n_creators |
 |---|---|---|---|
-| explainers / geopolitics | Israel-Palestine Conflict Media | 0.211 | 3 |
-| explainers / geopolitics | India's Muslims and Political Parties | 0.171 | 3 |
-| legal commentary | Trump Supreme Court Legal Issues | 0.165 | 8 |
-| wires & international | Iran War and Strait of Hormuz Tensions | 0.139 | 11 |
-| independent digital news | Israel-Palestine Conflict Media | 0.096 | 19 |
-| US legacy TV | Iran War and Strait of Hormuz Tensions | 0.095 | 9 |
-| independent digital news | Iran War and Strait of Hormuz Tensions | 0.091 | 19 |
-| explainers / geopolitics | Iran War and Strait of Hormuz Tensions | 0.078 | 3 |
-| US press | Tech Business and Startups | 0.077 | 18 |
-| wires & international | Ukraine-Russia War and Political Figures | 0.077 | 11 |
-| streamers | Shocking Events and Reactions | 0.075 | 23 |
-| streamers | Hasanabi Reacts to Hasan | 0.066 | 23 |
-| centrist / heterodox | Iran War and Strait of Hormuz Tensions | 0.063 | 10 |
-| wires & international | Israel-Palestine Conflict Media | 0.062 | 11 |
-| US press | AI and Political Concerns | 0.061 | 18 |
-| interview podcasts | Political Media Figures | 0.060 | 19 |
-| left commentary | Iran War and Strait of Hormuz Tensions | 0.060 | 40 |
-| streamers | Destiny and Ethan Klein debates | 0.059 | 23 |
-| left commentary | Trump Meltdowns and Collapses | 0.055 | 40 |
-| right TV networks | Iran War and Strait of Hormuz Tensions | 0.055 | 4 |
-| interview podcasts | Israel-Palestine Conflict Media | 0.054 | 19 |
-| independent digital news | Trump and China political relations | 0.050 | 19 |
-| centrist / heterodox | Shocking Events and Reactions | 0.050 | 10 |
-| interview podcasts | Iran War and Strait of Hormuz Tensions | 0.048 | 19 |
-| right commentary | Shocking Events and Reactions | 0.046 | 69 |
-| US press | Iran War and Strait of Hormuz Tensions | 0.045 | 18 |
-| humour / satire | Political Commentary and Interviews | 0.041 | 6 |
-| right commentary | Iran War and Strait of Hormuz Tensions | 0.041 | 69 |
-| humour / satire | Hollywood and Oscars Politics | 0.036 | 6 |
-| legal commentary | ICE Protests and Shootings | 0.035 | 8 |
-| centrist / heterodox | Trump's Unwise Actions and Mistakes | 0.035 | 10 |
-| legal commentary | California Election Fraud Scandal | 0.034 | 8 |
-| right commentary | Modern Women and Feminism Debate | 0.032 | 69 |
-| left commentary | Trump Resignation and Leaks | 0.032 | 40 |
-| humour / satire | ICE Protests and Shootings | 0.031 | 6 |
-| right TV networks | Trump's speeches and events | 0.030 | 4 |
-| US legacy TV | Nancy Guthrie Disappearance Investigation | 0.025 | 9 |
-| right TV networks | Immigration and Deportation Policies | 0.022 | 4 |
-| US legacy TV | ICE Protests and Shootings | 0.021 | 9 |
+| left channels | Iran War and Strait of Hormuz Tensions | 0.065 | 105 |
+| left channels | Israel-Palestine Conflict Media | 0.046 | 105 |
+| left channels | Trump Meltdowns and Collapses | 0.029 | 105 |
+| left channels | ICE Protests and Shootings | 0.024 | 105 |
+| neutral channels | Iran War and Strait of Hormuz Tensions | 0.069 | 38 |
+| neutral channels | Israel-Palestine Conflict Media | 0.044 | 38 |
+| neutral channels | Tech Business and Startups | 0.038 | 38 |
+| neutral channels | AI and Political Concerns | 0.033 | 38 |
+| right channels | Shocking Events and Reactions | 0.044 | 96 |
+| right channels | Iran War and Strait of Hormuz Tensions | 0.037 | 96 |
+| right channels | Modern Women and Feminism Debate | 0.027 | 96 |
+| right channels | Christian Nationalism and Politics | 0.021 | 96 |
 
 
-Read this as "where each lane's attention goes beyond the shared war story": legal commentary on the Supreme Court and DOJ topic, streamers on reactions and streamer drama, the US press on tech and AI, explainers on Israel-Palestine, right commentary on the "modern women and feminism" culture-war topic.
+The war story leads in the left channels and neutral channels; the right channels put "Shocking Events and Reactions" first, with the war second. Beyond it the groups' attention differs at the margin rather than in kind: what separates them in document 14 is the wording about the shared subjects, not the subjects.
 
 ## The month-by-month story
 
@@ -137,5 +100,6 @@ Read left to right and 2026 tells itself: the Bondi Beach attack and a Trump Chr
 
 - The topic labels and the political flag come from a local 14B model reading the top terms and eight example titles; the labels are readable but a few are odd ("Hasanabi Reacts to Hasan" is a fan-channel formula, not a subject) and the political flag errs towards "political". Both live in `topic_labels.csv` and can be edited; the political-only analyses re-run from `landscape`.
 - 32% of the fit sample were HDBSCAN outliers; nearest-centroid assignment gives them a topic anyway, and 13% of all titles sit below the 10th-percentile similarity of genuine members. Those weak assignments are flagged per title in `topics.csv`.
+- Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labelled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
 
-Files: `topics.csv` (title -> topic), `topic_labels.csv`, `creator_topic_mix.csv`, `topic_by_lane.csv`, `topic_timeline.csv`, `topic_spikes.csv`, `creator_political_share.csv`.
+Files: `topics.csv` (title -> topic), `topic_labels.csv`, `creator_topic_mix.csv`, `topic_by_group.csv`, `topic_timeline.csv`, `topic_spikes.csv`, `creator_political_share.csv`.

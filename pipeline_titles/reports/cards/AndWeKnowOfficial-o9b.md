@@ -1,6 +1,6 @@
 # And We Know Official (@AndWeKnowOfficial-o9b)
 
-Lane: **right_commentary** · organisation: And We Know · clipper: no · platform: youtube · subscribers: 16100.0
+Channel group: **right** (title-leaning score, document 14) · organisation: And We Know · clipper: no · platform: youtube · subscribers: 16100.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 185 rows, 185 unique (repeat share 0.0%); ranked; political share 97.3%.
 Top topics: Save American Democracy (36.8%); Gold and Central Banks in Economy (16.2%); Iran Conflict and Political Updates (3.8%); Iran War and Strait of Hormuz Tensions (3.2%); California Election Fraud Scandal (2.7%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 95.8 | 95.8 | 1.0 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 40.6 | 50.2 | -0.2 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 40.6 | 50.2 | -0.2 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 64.4 | 68.2 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 64.9 | 73.2 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 0.4 | 5.0 | -1.0 | 0.2 |
-| F6: Person-centred (named people) | 58.6 | 31.4 | -0.1 | -0.3 |
+| F6: Person-centred (named people) | 58.6 | 31.4 | -0.1 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 82.4 | 82.0 | 0.1 | -0.7 |
 | F8: Numeric and dated (digits, years) | 95.4 | 94.6 | 0.6 | -0.2 |
 | F9: ALL-CAPS shouting | 99.2 | 97.1 | 2.5 | -0.3 |
 | F10: Quoted speech | 31.0 | 18.4 | -0.6 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 100.0 | 100.0 | 4.5 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 100.0 | 100.0 | 4.5 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 84.5 | 90.4 | 0.3 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 4.9% (3.8%); outrage 79.5% (63.4%); humor 0.0% (0.2%); question 17.3% (15.1%); breaking_live 0.0% (1.3%); episode_show 100.0% (7.8%); interview_guest 3.2% (8.2%); reaction 0.5% (2.5%); confrontation 6.5% (7.7%); listicle 0.0% (0.1%); howto_explainer 3.8% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (3.6%); outrage 79.5% (59.6%); humor 0.0% (0.2%); question 17.3% (15.6%); breaking_live 0.0% (2.0%); episode_show 100.0% (7.6%); interview_guest 3.2% (8.5%); reaction 0.5% (2.2%); confrontation 6.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.8% (9.5%)
 
 
-Nearest style neighbours: https://rumble.com/c/BannonsWarRoom [right_commentary]; @dollemore [left_commentary]; @LegalAFMTN [legal_institutional]; @RonPlacone [humour_satire]; @DrSteveTurleyTV [right_commentary]
+Nearest style neighbours: https://rumble.com/c/BannonsWarRoom [right]; @dollemore [left]; @LegalAFMTN [left]; @RonPlacone [left]; @DrSteveTurleyTV [right]
 
-Nearest topic neighbours: @X22Report-y5y [right_commentary]; @thomhartmann [left_commentary]; @LeejaMiller [legal_institutional]; https://rumble.com/c/BannonsWarRoom [right_commentary]; @DrSteveTurleyTV [right_commentary]
+Nearest topic neighbours: @X22Report-y5y [right]; @thomhartmann [left]; @LeejaMiller [left]; https://rumble.com/c/BannonsWarRoom [right]; @DrSteveTurleyTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

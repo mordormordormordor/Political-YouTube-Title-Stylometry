@@ -1,6 +1,6 @@
 # Right Side Broadcasting Network (@RSBN)
 
-Lane: **right_tv_network** · organisation: RSBN · clipper: no · platform: youtube · subscribers: 2080000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: RSBN · clipper: no · platform: youtube · subscribers: 2080000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 1,642 rows, 1,640 unique (repeat share 0.1%); ranked; political share 96
 Top topics: Trump's speeches and events (10.3%); Political Conferences and Festivals 2026 (6.7%); Medal of Honor Ceremonies (6.3%); Trump State of the Union Address (4.8%); Political Podcasts and Influencers (3.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 95.4 | 97.9 | 1.0 | 0.6 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 4.6 | 4.6 | -1.3 | -0.5 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 100.0 | 100.0 | 2.7 | 0.0 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 72.4 | 58.2 | 0.0 | -0.3 |
-| F5: Question and explainer framing (why, what, ?) | 33.1 | 22.6 | -0.1 | -0.2 |
-| F6: Person-centred (named people) | 88.3 | 91.2 | 0.6 | 0.5 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 12.1 | 35.1 | -1.0 | -0.4 |
-| F8: Numeric and dated (digits, years) | 40.2 | 75.7 | -0.2 | -0.1 |
-| F9: ALL-CAPS shouting | 69.0 | 59.8 | -0.1 | -0.1 |
-| F10: Quoted speech | 21.8 | 15.9 | -0.7 | 0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 96.2 | 97.9 | 1.1 | 0.1 |
-| F12: Modal and future speculation (will, could, we) | 25.5 | 34.3 | -0.4 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 95.4 | 97.9 | 1.0 | 0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 4.6 | 4.6 | -1.3 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 100.0 | 100.0 | 2.7 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 72.4 | 58.2 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 33.1 | 22.6 | -0.1 | 0.2 |
+| F6: Person-centred (named people) | 88.3 | 91.2 | 0.6 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 12.1 | 35.1 | -1.0 | -0.7 |
+| F8: Numeric and dated (digits, years) | 40.2 | 75.7 | -0.2 | -0.2 |
+| F9: ALL-CAPS shouting | 69.0 | 59.8 | -0.1 | -0.3 |
+| F10: Quoted speech | 21.8 | 15.9 | -0.7 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 96.2 | 97.9 | 1.1 | -0.1 |
+| F12: Modal and future speculation (will, could, we) | 25.5 | 34.3 | -0.4 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.9% (1.4%); outrage 14.1% (41.6%); humor 0.0% (0.1%); question 0.1% (6.5%); breaking_live 63.8% (17.6%); episode_show 99.3% (26.2%); interview_guest 21.6% (9.5%); reaction 0.7% (1.9%); confrontation 2.5% (7.3%); listicle 0.0% (0.0%); howto_explainer 3.0% (4.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.9% (3.6%); outrage 14.1% (59.6%); humor 0.0% (0.2%); question 0.1% (15.6%); breaking_live 63.8% (2.0%); episode_show 99.3% (7.6%); interview_guest 21.6% (8.5%); reaction 0.7% (2.2%); confrontation 2.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.0% (9.5%)
 
 
-Nearest style neighbours: @aaronparnas1 [left_commentary]; @TimesNowWorld [wire_international]; @DailyDenims [streamer_reaction]; https://rumble.com/c/TheAlexJonesShowLive [right_commentary]; @DarkHorsePod [centrist_heterodox]
+Nearest style neighbours: @aaronparnas1 [left]; @TimesNowWorld [neutral]; @DailyDenims [left]; https://rumble.com/c/TheAlexJonesShowLive [right]; @DarkHorsePod [right]
 
-Nearest topic neighbours: @oann [right_tv_network]; @USATODAY [us_press_print_digital]; https://rumble.com/c/BannonsWarRoom [right_commentary]; @FoxNewsChannelClips [us_legacy_tv]; @NewsmaxTV [right_tv_network]
+Nearest topic neighbours: @oann [right]; @USATODAY [neutral]; https://rumble.com/c/BannonsWarRoom [right]; @FoxNewsChannelClips [right]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,28 +85,28 @@ Titles: 337 rows, 337 unique (repeat share 0.0%); ranked; political share 93.2%.
 Top topics: Trump's speeches and events (22.3%); Political Media Broadcasters (11.6%); Behind the scenes streaming (5.3%); Trump signing executive orders (5.3%); Karoline Leavitt White House Press Briefing (4.8%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 100.0 | 100.0 | 1.1 | 0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 100.0 | 100.0 | 1.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 8.9 | 2.5 | -1.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 93.7 | 98.7 | 2.7 | 1.0 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 46.8 | 35.4 | -0.2 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 93.7 | 98.7 | 2.7 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 46.8 | 35.4 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 51.9 | 17.7 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 48.1 | 53.2 | 0.1 | 0.0 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 53.2 | 58.2 | -0.4 | -0.1 |
-| F8: Numeric and dated (digits, years) | 7.6 | 41.8 | -0.5 | 0.0 |
-| F9: ALL-CAPS shouting | 75.9 | 78.5 | 0.2 | 1.4 |
-| F10: Quoted speech | 64.6 | 16.5 | -0.4 | -0.6 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 94.9 | 93.7 | 1.4 | 0.0 |
-| F12: Modal and future speculation (will, could, we) | 27.8 | 27.8 | -0.5 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 53.2 | 58.2 | -0.4 | -0.6 |
+| F8: Numeric and dated (digits, years) | 7.6 | 41.8 | -0.5 | -0.0 |
+| F9: ALL-CAPS shouting | 75.9 | 78.5 | 0.2 | -0.4 |
+| F10: Quoted speech | 64.6 | 16.5 | -0.4 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 94.9 | 93.7 | 1.4 | 0.2 |
+| F12: Modal and future speculation (will, could, we) | 27.8 | 27.8 | -0.5 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.1% (1.2%); outrage 6.2% (39.1%); humor 0.0% (0.1%); question 0.0% (2.4%); breaking_live 99.4% (48.2%); episode_show 98.5% (46.3%); interview_guest 12.5% (11.7%); reaction 0.0% (0.2%); confrontation 0.0% (4.2%); listicle 0.0% (0.4%); howto_explainer 0.6% (1.1%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (3.2%); outrage 6.2% (56.4%); humor 0.0% (0.1%); question 0.0% (13.7%); breaking_live 99.4% (18.8%); episode_show 98.5% (26.3%); interview_guest 12.5% (14.0%); reaction 0.0% (2.1%); confrontation 0.0% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.6% (5.3%)
 
 
-Nearest style neighbours: @TheJoyReidShow [left_commentary]; @TheOfficerTatum [right_commentary]; @underthedesknews [independent_digital_news]; @marclamonthillnetwork [left_commentary]; @franifio [humour_satire]
+Nearest style neighbours: @TheJoyReidShow [left]; @TheOfficerTatum [right]; @underthedesknews [left]; @marclamonthillnetwork [left]; @franifio [left]
 
-Nearest topic neighbours: @oann [right_tv_network]; @ABCNews [us_legacy_tv]; @NBCNews [us_legacy_tv]; @thehill [us_press_print_digital]; @USATODAY [us_press_print_digital]
+Nearest topic neighbours: @oann [right]; @ABCNews [neutral]; @NBCNews [neutral]; @thehill [neutral]; @USATODAY [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # The Daily Beast (@TheDailyBeast)
 
-Lane: **us_press_print_digital** · organisation: Daily Beast · clipper: no · platform: youtube · subscribers: 727000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Daily Beast · clipper: no · platform: youtube · subscribers: 727000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 322 rows, 322 unique (repeat share 0.0%); ranked; political share 99.7%.
 Top topics: Trump Meltdowns and Collapses (12.4%); Trump Resignation and Leaks (10.6%); Melania Trump Conspiracy Theories (10.6%); Trump's Unwise Actions and Mistakes (10.2%); Trump's Mental Health Decline (7.4%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 45.2 | 25.1 | 0.1 | 0.7 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 69.0 | 69.9 | 0.4 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 45.2 | 25.1 | 0.1 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 69.0 | 69.9 | 0.4 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.7 | 87.4 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 7.5 | 33.1 | -0.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 98.7 | 98.3 | 3.6 | 1.0 |
+| F5: Question and explainer framing (why, what, ?) | 98.7 | 98.3 | 3.6 | 0.1 |
 | F6: Person-centred (named people) | 23.4 | 23.0 | -0.6 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 61.1 | 58.2 | -0.4 | -0.4 |
-| F8: Numeric and dated (digits, years) | 57.7 | 29.3 | -0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 1.7 | 19.2 | -1.1 | -0.4 |
-| F10: Quoted speech | 67.4 | 40.2 | -0.1 | -0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 18.0 | 19.7 | -0.8 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 85.4 | 63.2 | 0.4 | -0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 61.1 | 58.2 | -0.4 | -0.5 |
+| F8: Numeric and dated (digits, years) | 57.7 | 29.3 | -0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 1.7 | 19.2 | -1.1 | -0.3 |
+| F10: Quoted speech | 67.4 | 40.2 | -0.1 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 18.0 | 19.7 | -0.8 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 85.4 | 63.2 | 0.4 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.3% (1.8%); outrage 81.1% (28.1%); humor 0.0% (0.1%); question 39.4% (26.4%); breaking_live 0.0% (1.0%); episode_show 0.0% (1.9%); interview_guest 3.1% (9.0%); reaction 0.0% (0.7%); confrontation 3.7% (4.1%); listicle 0.0% (0.4%); howto_explainer 36.6% (14.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.3% (2.7%); outrage 81.1% (63.9%); humor 0.0% (0.2%); question 39.4% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 3.1% (9.8%); reaction 0.0% (2.9%); confrontation 3.7% (7.6%); listicle 0.0% (0.1%); howto_explainer 36.6% (8.0%)
 
 
-Nearest style neighbours: @nationalreview [us_press_print_digital]; @nytimes [us_press_print_digital]; @wsj [us_press_print_digital]; @chriscuomo [centrist_heterodox]; @RufoandLomez [right_commentary]
+Nearest style neighbours: @nationalreview [right]; @nytimes [left]; @wsj [neutral]; @chriscuomo [left]; @RufoandLomez [right]
 
-Nearest topic neighbours: @harryjsisson [left_commentary]; @JackCocchiarellaShow [left_commentary]; @thedavidpakmanshow [left_commentary]; @MeidasTouch [left_commentary]; @fastpoliticspodcast [left_commentary]
+Nearest topic neighbours: @harryjsisson [left]; @JackCocchiarellaShow [left]; @thedavidpakmanshow [left]; @MeidasTouch [left]; @fastpoliticspodcast [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,23 +85,23 @@ Titles: 34 rows, 34 unique (repeat share 0.0%); LOW-N (not ranked); political sh
 Top topics: Ukraine-Russia War and Political Figures (11.8%); Political Podcasts and Commentary (11.8%); Trump and Epstein Files Scandal (5.9%); Trump Resignation and Leaks (5.9%); Mitch McConnell Health Rumors (5.9%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.6 | 0.4 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.5 | -1.2 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.0 | 0.5 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.6 | -0.2 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.5 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.0 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.4 | -0.2 |
-| F5: Question and explainer framing (why, what, ?) | None | None | 1.7 | -0.4 |
-| F6: Person-centred (named people) | None | None | -0.3 | 0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.4 | 0.2 |
-| F8: Numeric and dated (digits, years) | None | None | -0.4 | 0.2 |
-| F9: ALL-CAPS shouting | None | None | -1.5 | -0.7 |
-| F10: Quoted speech | None | None | -0.8 | -0.7 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.7 | -0.7 |
+| F5: Question and explainer framing (why, what, ?) | None | None | 1.7 | -0.3 |
+| F6: Person-centred (named people) | None | None | -0.3 | 0.6 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.4 | -0.4 |
+| F8: Numeric and dated (digits, years) | None | None | -0.4 | -0.0 |
+| F9: ALL-CAPS shouting | None | None | -1.5 | -0.5 |
+| F10: Quoted speech | None | None | -0.8 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.7 | 0.1 |
 | F12: Modal and future speculation (will, could, we) | None | None | -0.5 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 5.9% (1.4%); outrage 70.6% (9.0%); humor 0.0% (0.0%); question 23.5% (0.2%); breaking_live 35.3% (39.1%); episode_show 0.0% (8.5%); interview_guest 17.6% (9.5%); reaction 0.0% (1.1%); confrontation 8.8% (1.9%); listicle 0.0% (0.1%); howto_explainer 20.6% (0.2%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.9% (1.9%); outrage 70.6% (63.2%); humor 0.0% (0.1%); question 23.5% (11.3%); breaking_live 35.3% (17.5%); episode_show 0.0% (6.4%); interview_guest 17.6% (18.3%); reaction 0.0% (1.5%); confrontation 8.8% (15.4%); listicle 0.0% (0.0%); howto_explainer 20.6% (2.9%)
 
 
 Engagement: n < 100 titles with views, not estimated.

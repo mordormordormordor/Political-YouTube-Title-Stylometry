@@ -1,6 +1,6 @@
 # Dr. Steve Turley (@DrSteveTurleyTV)
 
-Lane: **right_commentary** · organisation: Steve Turley · clipper: no · platform: youtube · subscribers: 1670000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Steve Turley · clipper: no · platform: youtube · subscribers: 1670000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 444 rows, 442 unique (repeat share 0.4%); ranked; political share 99.1%.
 Top topics: Iran War and Strait of Hormuz Tensions (15.6%); 2026 Midterm Election Predictions (10.0%); Zohran Mamdani and NYC Politics (4.8%); British Islamophobia and Political Tensions (4.1%); ICE Protests and Shootings (3.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 9.6 | 10.0 | -0.7 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 82.0 | 82.0 | 0.6 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 82.0 | 82.0 | 0.6 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.6 | 85.4 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 92.9 | 93.3 | 0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 64.4 | 58.6 | 0.4 | 0.2 |
-| F6: Person-centred (named people) | 20.9 | 24.3 | -0.6 | -0.3 |
+| F6: Person-centred (named people) | 20.9 | 24.3 | -0.6 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 0.8 | 1.7 | -1.6 | -0.7 |
 | F8: Numeric and dated (digits, years) | 42.7 | 44.8 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 87.4 | 84.9 | 0.8 | -0.3 |
 | F10: Quoted speech | 0.4 | 5.4 | -1.3 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 98.7 | 98.7 | 1.6 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 98.7 | 98.7 | 1.6 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 68.2 | 79.5 | 0.1 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 11.5% (3.8%); outrage 97.5% (63.4%); humor 0.0% (0.2%); question 0.9% (15.1%); breaking_live 6.1% (1.3%); episode_show 0.0% (7.8%); interview_guest 3.6% (8.2%); reaction 0.2% (2.5%); confrontation 7.2% (7.7%); listicle 0.2% (0.1%); howto_explainer 2.3% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 11.5% (3.6%); outrage 97.5% (59.6%); humor 0.0% (0.2%); question 0.9% (15.6%); breaking_live 6.1% (2.0%); episode_show 0.0% (7.6%); interview_guest 3.6% (8.5%); reaction 0.2% (2.2%); confrontation 7.2% (7.8%); listicle 0.2% (0.1%); howto_explainer 2.3% (9.5%)
 
 
-Nearest style neighbours: @DoubleDownNews [independent_digital_news]; @ChadPrather1 [right_commentary]; @JillianMichaels [interview_podcast]; @RubinReport [right_commentary]; @glennbeck [right_commentary]
+Nearest style neighbours: @DoubleDownNews [left]; @ChadPrather1 [right]; @JillianMichaels [right]; @RubinReport [right]; @glennbeck [right]
 
-Nearest topic neighbours: @bennyjohnson [right_commentary]; @NewsmaxTV [right_tv_network]; @FoxNews [us_legacy_tv]; @RealAmericasVoice [right_tv_network]; @BlazeTV [right_commentary]
+Nearest topic neighbours: @bennyjohnson [right]; @NewsmaxTV [right]; @FoxNews [right]; @RealAmericasVoice [right]; @BlazeTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,23 +85,23 @@ Titles: 31 rows, 31 unique (repeat share 0.0%); LOW-N (not ranked); political sh
 Top topics: Iran War and Strait of Hormuz Tensions (25.8%); 2026 Midterm Election Predictions (9.7%); Trump's Unwise Actions and Mistakes (9.7%); MAGA Movement Decline (6.5%); Shocking Events and Reactions (3.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.6 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.6 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.6 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.0 | -0.2 |
-| F6: Person-centred (named people) | None | None | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | -0.0 | -0.3 |
+| F6: Person-centred (named people) | None | None | -0.3 | 0.0 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.2 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | -0.2 | -0.0 |
 | F9: ALL-CAPS shouting | None | None | 1.0 | -0.4 |
-| F10: Quoted speech | None | None | -0.7 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 1.8 | 0.1 |
+| F10: Quoted speech | None | None | -0.7 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 1.8 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | None | None | -0.8 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 9.7% (4.2%); outrage 90.3% (62.2%); humor 0.0% (0.2%); question 0.0% (16.8%); breaking_live 0.0% (18.6%); episode_show 0.0% (23.4%); interview_guest 3.2% (16.3%); reaction 0.0% (2.8%); confrontation 19.4% (11.1%); listicle 0.0% (0.2%); howto_explainer 0.0% (6.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 9.7% (3.2%); outrage 90.3% (56.4%); humor 0.0% (0.1%); question 0.0% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 3.2% (14.0%); reaction 0.0% (2.1%); confrontation 19.4% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

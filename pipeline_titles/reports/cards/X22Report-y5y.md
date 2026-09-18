@@ -1,6 +1,6 @@
 # X22Report (@X22Report-y5y)
 
-Lane: **right_commentary** · organisation: X22 Report · clipper: no · platform: youtube · subscribers: 887000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: X22 Report · clipper: no · platform: youtube · subscribers: 887000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 396 rows, 395 unique (repeat share 0.2%); ranked; political share 99.8%.
 Top topics: Trump Leverage and Political Strategy (26.8%); Gold and Central Banks in Economy (19.5%); Trump's Economic Impact (9.9%); Trump and Rising Energy Prices (4.6%); Trump's War and Draft (3.3%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 54.0 | 67.8 | 0.3 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 97.5 | 98.7 | 1.2 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 97.5 | 98.7 | 1.2 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 28.5 | 31.0 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 32.6 | 46.9 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 27.6 | 31.0 | -0.2 | 0.2 |
-| F6: Person-centred (named people) | 78.2 | 66.1 | 0.3 | -0.3 |
+| F6: Person-centred (named people) | 78.2 | 66.1 | 0.3 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 7.1 | 3.8 | -1.1 | -0.7 |
 | F8: Numeric and dated (digits, years) | 67.4 | 79.1 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 69.9 | 69.9 | -0.1 | -0.3 |
 | F10: Quoted speech | 18.0 | 7.5 | -0.7 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 83.3 | 91.2 | 0.5 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 83.3 | 91.2 | 0.5 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 97.1 | 97.5 | 1.0 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.3% (3.8%); outrage 79.5% (63.4%); humor 0.0% (0.2%); question 12.9% (15.1%); breaking_live 0.0% (1.3%); episode_show 0.0% (7.8%); interview_guest 3.3% (8.2%); reaction 0.8% (2.5%); confrontation 7.8% (7.7%); listicle 0.0% (0.1%); howto_explainer 2.0% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.3% (3.6%); outrage 79.5% (59.6%); humor 0.0% (0.2%); question 12.9% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 3.3% (8.5%); reaction 0.8% (2.2%); confrontation 7.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.0% (9.5%)
 
 
-Nearest style neighbours: @OutKick [right_commentary]; @bulwarkmedia [centrist_heterodox]; @RubinReport [right_commentary]; @Tim_Black [left_commentary]; @clayandbuck [right_commentary]
+Nearest style neighbours: @OutKick [right]; @bulwarkmedia [left]; @RubinReport [right]; @Tim_Black [right]; @clayandbuck [right]
 
-Nearest topic neighbours: @BelleRanch [left_commentary]; @AndWeKnowOfficial-o9b [right_commentary]; @thomhartmann [left_commentary]; @markets [us_press_print_digital]; @msnow [us_legacy_tv]
+Nearest topic neighbours: @BelleRanch [left]; @AndWeKnowOfficial-o9b [right]; @thomhartmann [left]; @markets [neutral]; @msnow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Hang Out with Sean Hannity (@HangOutwithSeanHannity)
 
-Lane: **interview_podcast** · organisation: Sean Hannity · clipper: no · platform: youtube · subscribers: 178000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Sean Hannity · clipper: no · platform: youtube · subscribers: 178000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 154 rows, 154 unique (repeat share 0.0%); ranked; political share 83.8%.
 Top topics: FBI and Jan 6 Pipe Bomb Case (5.2%); JLP Weekly Series (4.5%); Christian Nationalism and Politics (3.9%); War and Military Analysis (3.9%); Dan Bongino's Political Outbursts (3.2%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 45.6 | 56.5 | 0.2 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 66.5 | 64.0 | 0.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 51.0 | 50.2 | -0.3 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 28.0 | 23.4 | -0.3 | -0.2 |
-| F5: Question and explainer framing (why, what, ?) | 74.1 | 73.2 | 0.7 | 0.7 |
-| F6: Person-centred (named people) | 82.0 | 80.3 | 0.4 | 0.4 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 12.6 | 13.0 | -1.0 | -0.8 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 66.5 | 64.0 | 0.3 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 51.0 | 50.2 | -0.3 | -0.3 |
+| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 28.0 | 23.4 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 74.1 | 73.2 | 0.7 | 0.2 |
+| F6: Person-centred (named people) | 82.0 | 80.3 | 0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 12.6 | 13.0 | -1.0 | -0.7 |
 | F8: Numeric and dated (digits, years) | 41.0 | 59.8 | -0.2 | -0.2 |
 | F9: ALL-CAPS shouting | 25.5 | 28.5 | -0.6 | -0.3 |
-| F10: Quoted speech | 85.8 | 82.0 | 0.5 | -0.3 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 16.3 | 28.0 | -0.9 | -0.4 |
+| F10: Quoted speech | 85.8 | 82.0 | 0.5 | -0.5 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 16.3 | 28.0 | -0.9 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 27.6 | 24.7 | -0.4 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 1.9% (1.4%); outrage 33.8% (41.4%); humor 0.0% (0.3%); question 11.7% (19.0%); breaking_live 0.0% (0.5%); episode_show 0.0% (11.4%); interview_guest 36.4% (18.1%); reaction 0.0% (1.4%); confrontation 2.6% (9.2%); listicle 0.0% (0.0%); howto_explainer 18.8% (11.7%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.9% (3.6%); outrage 33.8% (59.6%); humor 0.0% (0.2%); question 11.7% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 36.4% (8.5%); reaction 0.0% (2.2%); confrontation 2.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 18.8% (9.5%)
 
 
-Nearest style neighbours: @TomiLahrenIsFearless [right_commentary]; @DropSiteNews [independent_digital_news]; @RileyGaines [right_commentary]; @MichaelKnowles [right_commentary]; @BreakThroughNews [independent_digital_news]
+Nearest style neighbours: @TomiLahrenIsFearless [right]; @DropSiteNews [left]; @RileyGaines [right]; @MichaelKnowles [right]; @BreakThroughNews [left]
 
-Nearest topic neighbours: @FoxNewsChannelClips [us_legacy_tv]; @MegynKelly [right_commentary]; @AndrewKlavan [right_commentary]; @fightbackpodcast [right_commentary]; @clayandbuck [right_commentary]
+Nearest topic neighbours: @FoxNewsChannelClips [right]; @MegynKelly [right]; @AndrewKlavan [right]; @fightbackpodcast [right]; @clayandbuck [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

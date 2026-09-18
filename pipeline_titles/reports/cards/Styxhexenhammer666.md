@@ -1,6 +1,6 @@
 # Styxhexenhammer666 (@Styxhexenhammer666)
 
-Lane: **right_commentary** · organisation: Styxhexenhammer · clipper: no · platform: youtube · subscribers: 484000.0
+Channel group: **right** (title-leaning score, document 14) · organisation: Styxhexenhammer · clipper: no · platform: youtube · subscribers: 484000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 449 rows, 446 unique (repeat share 0.7%); ranked; political share 91.3%.
 Top topics: Iran War and Strait of Hormuz Tensions (6.3%); JLP Weekly Series (4.0%); Fast Food and Political Issues (3.8%); Big Pharma and Health Scams (3.6%); Trump vs Maduro Venezuela Conflict (2.7%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 88.3 | 85.4 | 0.8 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 22.6 | 25.5 | -0.5 | -0.0 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 22.6 | 25.5 | -0.5 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.5 | 27.2 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 45.6 | 49.8 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 21.8 | 33.5 | -0.3 | 0.2 |
-| F6: Person-centred (named people) | 33.1 | 31.8 | -0.5 | -0.3 |
+| F6: Person-centred (named people) | 33.1 | 31.8 | -0.5 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 18.0 | 28.0 | -0.9 | -0.7 |
 | F8: Numeric and dated (digits, years) | 17.2 | 40.2 | -0.4 | -0.2 |
 | F9: ALL-CAPS shouting | 26.8 | 25.1 | -0.5 | -0.3 |
 | F10: Quoted speech | 13.4 | 30.1 | -0.8 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 21.3 | 28.5 | -0.8 | -0.2 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 21.3 | 28.5 | -0.8 | -0.1 |
 | F12: Modal and future speculation (will, could, we) | 54.8 | 61.1 | -0.1 | -0.2 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 2.2% (3.8%); outrage 52.5% (63.4%); humor 0.4% (0.2%); question 8.3% (15.1%); breaking_live 0.9% (1.3%); episode_show 0.0% (7.8%); interview_guest 4.3% (8.2%); reaction 0.2% (2.5%); confrontation 3.1% (7.7%); listicle 0.0% (0.1%); howto_explainer 2.7% (9.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.2% (3.6%); outrage 52.5% (59.6%); humor 0.4% (0.2%); question 8.3% (15.6%); breaking_live 0.9% (2.0%); episode_show 0.0% (7.6%); interview_guest 4.3% (8.5%); reaction 0.2% (2.2%); confrontation 3.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.7% (9.5%)
 
 
-Nearest style neighbours: @ThePodcastoftheLotusEaters [right_commentary]; @AlexStein99 [humour_satire]; @franifio [humour_satire]; @OwenReport [right_commentary]; @hutch [streamer_reaction]
+Nearest style neighbours: @ThePodcastoftheLotusEaters [right]; @AlexStein99 [right]; @franifio [left]; @OwenReport [left]; @hutch [neutral]
 
-Nearest topic neighbours: @RealAmericasVoice [right_tv_network]; @FoxNewsChannelClips [us_legacy_tv]; @NewsmaxTV [right_tv_network]; @NYTPodcasts [us_press_print_digital]; @MichaelKnowles [right_commentary]
+Nearest topic neighbours: @RealAmericasVoice [right]; @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @NYTPodcasts [left]; @MichaelKnowles [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -84,23 +84,23 @@ Titles: 27 rows, 27 unique (repeat share 0.0%); LOW-N (not ranked); political sh
 Top topics: Iran Conflict and Political Updates (33.3%); Trump vs Maduro Venezuela Conflict (7.4%); Minneapolis political unrest and federal response (7.4%); Covid Vaccine Controversy (7.4%); Political Podcasts and Influencers (7.4%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.1 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.2 | -0.3 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.2 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.2 |
-| F6: Person-centred (named people) | None | None | 1.6 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
+| F6: Person-centred (named people) | None | None | 1.6 | 0.0 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.5 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | -0.6 | -0.0 |
 | F9: ALL-CAPS shouting | None | None | -1.4 | -0.4 |
-| F10: Quoted speech | None | None | -0.7 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 0.3 | 0.1 |
+| F10: Quoted speech | None | None | -0.7 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 0.3 | 0.2 |
 | F12: Modal and future speculation (will, could, we) | None | None | 0.2 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.0% (4.2%); outrage 25.9% (62.2%); humor 0.0% (0.2%); question 0.0% (16.8%); breaking_live 100.0% (18.6%); episode_show 0.0% (23.4%); interview_guest 0.0% (16.3%); reaction 0.0% (2.8%); confrontation 7.4% (11.1%); listicle 0.0% (0.2%); howto_explainer 0.0% (6.8%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.2%); outrage 25.9% (56.4%); humor 0.0% (0.1%); question 0.0% (13.7%); breaking_live 100.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 0.0% (14.0%); reaction 0.0% (2.1%); confrontation 7.4% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

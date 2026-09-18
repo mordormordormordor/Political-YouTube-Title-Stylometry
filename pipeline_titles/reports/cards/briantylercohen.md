@@ -1,6 +1,6 @@
 # Brian Tyler Cohen (@briantylercohen)
 
-Lane: **left_commentary** · organisation: Brian Tyler Cohen · clipper: no · platform: youtube · subscribers: 5260000.0
+Channel group: **left** (title-leaning score, document 14) · organisation: Brian Tyler Cohen · clipper: no · platform: youtube · subscribers: 5260000.0
 
 
 ## videos
@@ -11,28 +11,28 @@ Titles: 1,082 rows, 1,081 unique (repeat share 0.1%); ranked; political share 99
 Top topics: Trump Supreme Court Legal Issues (13.6%); Trump Resignation and Leaks (11.5%); Trump Meltdowns and Collapses (8.6%); Trump and Epstein Files Scandal (5.6%); Pam Bondi and Epstein Files Scandal (4.7%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 12.1 | 9.2 | -0.5 | -0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 28.9 | 23.8 | -0.4 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 12.1 | 9.2 | -0.5 | 0.1 |
+| F2: Clause headline vs noun-phrase (finite verbs, tense) | 28.9 | 23.8 | -0.4 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 97.5 | 97.5 | 0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 26.4 | 36.0 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 24.3 | 9.6 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 24.3 | 9.6 | -0.3 | 0.1 |
 | F6: Person-centred (named people) | 11.7 | 21.3 | -0.8 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 97.5 | 94.6 | 1.5 | -0.5 |
 | F8: Numeric and dated (digits, years) | 23.0 | 14.6 | -0.3 | -0.2 |
 | F9: ALL-CAPS shouting | 83.7 | 85.8 | 0.5 | -0.3 |
-| F10: Quoted speech | 53.1 | 25.9 | -0.4 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 77.8 | 82.0 | 0.3 | -0.2 |
-| F12: Modal and future speculation (will, could, we) | 13.0 | 12.1 | -0.7 | -0.3 |
+| F10: Quoted speech | 53.1 | 25.9 | -0.4 | -0.4 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 77.8 | 82.0 | 0.3 | -0.3 |
+| F12: Modal and future speculation (will, could, we) | 13.0 | 12.1 | -0.7 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 0.7% (3.0%); outrage 93.1% (76.0%); humor 0.3% (0.2%); question 0.8% (9.8%); breaking_live 20.3% (5.4%); episode_show 0.0% (2.2%); interview_guest 11.0% (10.4%); reaction 1.3% (1.1%); confrontation 8.8% (8.2%); listicle 0.0% (0.1%); howto_explainer 0.2% (5.4%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.7% (2.7%); outrage 93.1% (63.9%); humor 0.3% (0.2%); question 0.8% (15.6%); breaking_live 20.3% (2.9%); episode_show 0.0% (2.8%); interview_guest 11.0% (9.8%); reaction 1.3% (2.9%); confrontation 8.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.2% (8.0%)
 
 
-Nearest style neighbours: @FoxNews [us_legacy_tv]; @MeidasTouch [left_commentary]; @deanwithrs [streamer_reaction]; https://rumble.com/c/TheAlexJonesShowLive [right_commentary]; @FoxNewsChannelClips [us_legacy_tv]
+Nearest style neighbours: @FoxNews [right]; @MeidasTouch [left]; @deanwithrs [left]; https://rumble.com/c/TheAlexJonesShowLive [right]; @FoxNewsChannelClips [right]
 
-Nearest topic neighbours: @LegalAFMTN [legal_institutional]; @katiephangnews [left_commentary]; @aaronparnas1 [left_commentary]; @MeidasTouch [left_commentary]; @FarronBalanced [left_commentary]
+Nearest topic neighbours: @LegalAFMTN [left]; @katiephangnews [left]; @aaronparnas1 [left]; @MeidasTouch [left]; @FarronBalanced [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,23 +86,23 @@ Titles: 10 rows, 10 unique (repeat share 0.0%); LOW-N (not ranked); political sh
 Top topics: Kennedy Center and Trump Name Removal (20.0%); Trump Supreme Court Legal Issues (10.0%); Epstein Files Political Connections (10.0%); Pam Bondi and Epstein Files Scandal (10.0%); Trump State of the Union Address (10.0%)
 
 
-| dimension | percentile (topic-controlled) | percentile (raw) | score | lane median |
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.7 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.7 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 2.6 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 2.6 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |
-| F6: Person-centred (named people) | None | None | -1.4 | 0.8 |
+| F6: Person-centred (named people) | None | None | -1.4 | 0.6 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | 0.5 | -0.4 |
-| F8: Numeric and dated (digits, years) | None | None | 0.4 | 0.0 |
-| F9: ALL-CAPS shouting | None | None | 3.1 | -0.4 |
+| F8: Numeric and dated (digits, years) | None | None | 0.4 | -0.0 |
+| F9: ALL-CAPS shouting | None | None | 3.1 | -0.5 |
 | F10: Quoted speech | None | None | 0.3 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.2 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | None | None | -1.1 | 0.0 |
+| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.2 | 0.1 |
+| F12: Modal and future speculation (will, could, we) | None | None | -1.1 | -0.1 |
 
 
-Hooks / formats (share of titles; lane mean in brackets): curiosity_gap 20.0% (2.3%); outrage 50.0% (77.1%); humor 0.0% (0.1%); question 0.0% (9.5%); breaking_live 70.0% (13.1%); episode_show 0.0% (4.2%); interview_guest 0.0% (21.3%); reaction 0.0% (1.9%); confrontation 0.0% (12.1%); listicle 0.0% (0.1%); howto_explainer 0.0% (3.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 20.0% (1.9%); outrage 50.0% (63.2%); humor 0.0% (0.1%); question 0.0% (11.3%); breaking_live 70.0% (17.5%); episode_show 0.0% (6.4%); interview_guest 0.0% (18.3%); reaction 0.0% (1.5%); confrontation 0.0% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (2.9%)
 
 
 Engagement: n < 100 titles with views, not estimated.

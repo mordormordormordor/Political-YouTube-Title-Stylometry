@@ -13,9 +13,9 @@ model refitted on the whole sample is applied to every unique title.
 Outputs (data/titles/analysis/):
     formats.parquet          row_id + format flags + hook probabilities and labels
     format_rules.csv         the regexes
-    format_hook_shares.csv   creator x genre shares (unique titles) and lane x genre
-                             means of creator shares (non-low-n creators)
-    format_examples.csv      three examples per category per lane and corpus-wide
+    format_hook_shares.csv   creator x genre shares (unique titles) and channel group x
+                             genre means of creator shares (non-low-n creators)
+    format_examples.csv      three examples per category per channel group and corpus-wide
     hook_classifier.json     CV and hold-out metrics per hook
     format_agreement.csv     rule vs LLM format label on the rated sample
                              (precision / recall / F1 / Cohen's kappa per category)
@@ -35,7 +35,7 @@ import numpy as np
 import pandas as pd
 
 from pipeline_titles.common import (
-    ANALYSIS_DIR, FEATURES_TITLE, FORMATS_PARQUET, LABELS_CSV, LOW_N, SEED, load_lanes, load_prepared, stage_timer,
+    ANALYSIS_DIR, FEATURES_TITLE, FORMATS_PARQUET, LABELS_CSV, LOW_N, SEED, load_creators, load_prepared, stage_timer,
 )
 from pipeline_titles.embed import load_embeddings
 
@@ -112,7 +112,7 @@ def train_hook_classifier(X: np.ndarray, y: np.ndarray, seed: int = SEED) -> tup
 
 def run(info: dict) -> None:
     prepared = load_prepared()
-    lanes = load_lanes()[["creator", "lane", "organisation", "clipper"]]
+    creators = load_creators()[["creator", "group", "organisation", "clipper"]]
     uniq = prepared[~prepared["is_dup"]].reset_index(drop=True)
     # ---- rule formats on raw titles (unique rows; repeats copy) ----
     fm = pd.DataFrame([rule_formats(t) for t in uniq["title_raw"]])
@@ -156,31 +156,31 @@ def run(info: dict) -> None:
         key.drop(columns=["row_id"]).drop_duplicates(["creator", "genre", "title_raw"]), on=["creator", "genre", "title_raw"], how="left")
     all_rows.to_parquet(FORMATS_PARQUET, index=False)
 
-    # ---- shares per creator x genre and per lane x genre ----
+    # ---- shares per creator x genre and per channel group x genre ----
     cats = FORMATS + HOOKS
     u = all_rows[~all_rows["is_dup"]]
     cg = u.groupby(["creator", "genre"]).agg(n_unique=("row_id", "size"), **{c: (c, "mean") for c in cats}).reset_index()
     cg["low_n"] = cg["n_unique"] < LOW_N
-    cg = cg.merge(lanes, on="creator", how="left")
+    cg = cg.merge(creators, on="creator", how="left")
     cg["level"] = "creator"
-    ln = cg[~cg["low_n"]].groupby(["lane", "genre"]).agg(n_creators=("creator", "size"), **{c: (c, "mean") for c in cats}).reset_index()
-    ln["level"] = "lane_mean_of_creators"
-    raw = u.merge(lanes, on="creator", how="left").groupby(["lane", "genre"]).agg(n_unique=("row_id", "size"), **{c: (c, "mean") for c in cats}).reset_index()
-    raw["level"] = "lane_raw_pooled"
+    ln = cg[~cg["low_n"]].groupby(["group", "genre"]).agg(n_creators=("creator", "size"), **{c: (c, "mean") for c in cats}).reset_index()
+    ln["level"] = "group_mean_of_creators"
+    raw = u.merge(creators, on="creator", how="left").groupby(["group", "genre"]).agg(n_unique=("row_id", "size"), **{c: (c, "mean") for c in cats}).reset_index()
+    raw["level"] = "group_raw_pooled"
     pd.concat([cg, ln, raw], ignore_index=True).to_csv(ANALYSIS_DIR / "format_hook_shares.csv", index=False)
 
-    # ---- examples: per category, corpus-wide and per lane ----
+    # ---- examples: per category, corpus-wide and per channel group ----
     ex_rows = []
     rng = np.random.RandomState(SEED)
-    ul = u.merge(lanes, on="creator", how="left")
+    ul = u.merge(creators, on="creator", how="left")
     for c in cats:
         pool = ul[ul[c] == 1]
         pick = pool.sort_values(f"p_{c}", ascending=False) if c in HOOKS else pool.iloc[rng.permutation(len(pool))]
         for t in pick.drop_duplicates("creator").head(3).itertuples():
             ex_rows.append({"category": c, "scope": "corpus", "creator": t.creator, "title": t.title_raw})
-        for lane, sub in pick.groupby("lane"):
+        for group, sub in pick.groupby("group"):
             for t in sub.drop_duplicates("creator").head(3).itertuples():
-                ex_rows.append({"category": c, "scope": lane, "creator": t.creator, "title": t.title_raw})
+                ex_rows.append({"category": c, "scope": group, "creator": t.creator, "title": t.title_raw})
     pd.DataFrame(ex_rows).to_csv(ANALYSIS_DIR / "format_examples.csv", index=False)
 
     # ---- rule vs LLM format agreement on the rated sample ----
