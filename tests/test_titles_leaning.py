@@ -3,7 +3,10 @@
 import numpy as np
 import pandas as pd
 
-from pipeline_titles.leaning import N_BASE, draw_sample, group_month_check, parse_labels, stability_check
+import json
+
+from pipeline_titles import leaning
+from pipeline_titles.leaning import N_BASE, draw_sample, group_month_check, parse_labels, repeat_check, runs_table, stability_check, two_readings
 
 
 def test_parse_labels_reads_plain_and_decorated_lines_and_targets():
@@ -49,3 +52,66 @@ def test_stability_and_group_month_checks_on_a_synthetic_sample():
     gm = group_month_check(df, "label_m", groups)
     assert set(gm.group) == {"right", "left"} and gm.n_titles.sum() == 300
     assert (gm.partisan_share >= gm.left_share).all() and gm.score.between(-1, 1).all()
+
+
+def test_two_readings_compares_the_first_reading_with_the_labels_of_record():
+    rows, first = [], []
+    for creator, labels in (("@r", ["right"] * 14 + ["neither"] * 6), ("@l", ["left"] * 12 + ["neither"] * 8), ("@n", ["neither"] * 20)):
+        for i, lab in enumerate(labels):
+            rid = len(rows)
+            rows.append({"row_id": rid, "creator": creator, "title_raw": f"t{rid}", "label_m": lab})
+            first.append({"row_id": rid, "run": 1 if i < 16 else 2, "label_m": lab})
+    df, fr = pd.DataFrame(rows), pd.DataFrame(first)
+    fr.loc[0, "label_m"] = "neither"          # @r: one right title read as neither the first time (neither -> partisan in the second reading)
+    fr.loc[20, "label_m"] = "right"           # @l: one left title read as right the first time (a side flip)
+    fr.loc[59, "label_m"] = "left"            # @n: one neither title read as left the first time
+    summ, ch, changed = two_readings(df, fr, "label_m", min_titles=16)
+    assert summ["n_titles"] == 60 and summ["exact_agreement"] == round(57 / 60, 4) and 0 < summ["kappa"] < 1
+    assert summ["side_flipped"] == 1 and summ["neither_to_partisan"] == 1 and summ["partisan_to_neither"] == 1
+    assert summ["confusion_first_then_shuffled"]["right"]["left"] == 1 and summ["confusion_first_then_shuffled"]["neither"]["neither"] == 33
+    assert summ["by_run"][1] == {"n_titles": 48, "exact_agreement": round(46 / 48, 4), "kappa": summ["by_run"][1]["kappa"]} and summ["by_run"][2]["exact_agreement"] == round(11 / 12, 4)
+    assert summ["n_channels"] == 3 and summ["channel_group_changed"] == 0 and summ["channel_sign_flipped"] == 0
+    assert len(changed) == 3 and set(changed.columns) == {"row_id", "creator", "run", "title_raw", "label_first", "label_shuffled"}
+    assert ch.loc[ch.creator == "@r", "score_first"].iloc[0] == 0.65 and ch.loc[ch.creator == "@r", "score_shuffled"].iloc[0] == 0.7
+
+
+def test_runs_table_numbers_the_runs_and_counts_the_titles_each_sent(tmp_path, monkeypatch):
+    log = tmp_path / "runtimes.jsonl"
+    recs = [{"stage": "stage7_leaning", "started": "2026-09-15T23:53:57+00:00", "finished": "2026-09-16T02:09:17+00:00", "seconds": 8120.7, "calls": 624, "batch_order": "shuffled", "reported_cost_usd": 56.5},
+            {"stage": "stage7_leaning", "started": "2026-09-15T14:13:56+00:00", "finished": "2026-09-15T15:05:29+00:00", "seconds": 3093.1, "calls": 218, "batch_order": "sample order", "reported_cost_usd": 18.9},
+            {"stage": "stage7_leaning", "started": "2026-09-16T12:11:30+00:00", "finished": "2026-09-16T12:11:35+00:00", "seconds": 5.7},          # analyse-only: no calls
+            {"stage": "report", "started": "2026-09-15T15:09:23+00:00", "finished": "2026-09-15T15:10:00+00:00", "seconds": 37.0},
+            {"stage": "stage7_leaning", "started": "2026-09-15T16:32:42+00:00", "finished": "2026-09-15T17:54:05+00:00", "seconds": 4883.0, "calls": 407, "batch_order": "sample order", "reported_cost_usd": 36.4}]
+    log.write_text("\n".join(json.dumps(r) for r in recs) + "\n")
+    monkeypatch.setattr(leaning, "RUNTIMES", log)
+    df = pd.DataFrame({"row_id": range(60)})
+    first = pd.DataFrame({"row_id": range(60), "run": [1] * 48 + [2] * 12})
+    runs = runs_table(df, first)
+    assert [(r["run"], r["what"], r["titles"], r["calls"], r["labels"]) for r in runs] == [
+        (1, "the base draw", 48, 218, "first reading"), (2, "the top-up", 12, 407, "first reading"), (3, "every title again", 60, 624, "of record")]
+    assert runs[0]["minutes"] == 51.6 and runs[2]["reported_cost_usd"] == 56.5
+    assert [r["titles"] for r in runs_table(df, None)] == [None, None, 60]
+
+
+def test_repeat_check_gives_all_three_pairs_and_the_three_way_agreement():
+    rows, first, rep = [], [], []
+    for creator, labels in (("@r", ["right"] * 14 + ["neither"] * 6), ("@l", ["left"] * 12 + ["neither"] * 8), ("@n", ["neither"] * 20)):
+        for i, lab in enumerate(labels):
+            rid = len(rows)
+            rows.append({"row_id": rid, "creator": creator, "title_raw": f"t{rid}", "label_m": lab})
+            first.append({"row_id": rid, "run": 1 if i < 16 else 2, "label_m": lab})
+            rep.append({"row_id": rid, "label_m": lab})
+    df, fr, rp = pd.DataFrame(rows), pd.DataFrame(first), pd.DataFrame(rep)
+    fr.loc[0, "label_m"] = "neither"; fr.loc[20, "label_m"] = "right"      # the first reading differs on two titles
+    rp.loc[0, "label_m"] = "neither"; rp.loc[41, "label_m"] = "left"       # the repeat differs on two: one shared with the first reading, one of its own
+    summ, ch, changed = repeat_check(df, fr, rp, "label_m", min_titles=16)
+    rr = summ["record_vs_repeat"]
+    assert rr["n_titles"] == 60 and rr["exact_agreement"] == round(58 / 60, 4) and rr["partisan_to_neither"] == 1 and rr["neither_to_partisan"] == 1
+    assert "confusion_record_then_repeat" in rr and rr["confusion_record_then_repeat"]["right"]["neither"] == 1
+    assert rr["n_channels"] == 3 and rr["channel_group_changed"] == 0 and len(changed) == 2 and set(changed.columns) == {"row_id", "creator", "title_raw", "label_record", "label_repeat"}
+    assert set(ch.columns) >= {"creator", "score_record", "score_repeat", "change", "group_record", "group_repeat"}
+    assert summ["first_vs_record"]["exact_agreement"] == round(58 / 60, 4) and summ["first_vs_repeat"]["exact_agreement"] == round(58 / 60, 4)   # title 0 agrees between first and repeat; 20 and 41 differ
+    t = summ["three_readings"]
+    assert t["n_titles"] == 60 and t["all_three_agree"] == round(57 / 60, 4) and t["record_and_repeat_agree"] == round(58 / 60, 4) and t["no_majority"] == 0
+    # without a first reading only the pair of record and repeat is given
+    assert set(repeat_check(df, None, rp, "label_m", min_titles=16)[0]) == {"judge", "reading_of_record", "repeat", "record_vs_repeat"}

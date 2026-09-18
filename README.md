@@ -107,9 +107,18 @@ order instead; `--relabel` starts afresh and keeps the old labels in an untracke
 Usage-limit replies are waited out. The sample is a base draw of 16 titles per creator
 plus a top-up to 50, spread evenly across months, for creators with at least 50 edited
 uploads (`--n-per-creator`, `--min-uploads`); the base draw never changes, so earlier
-labels are reused and only new titles are sent to a model. `--analyse-only` recomputes
-every table (agreement, channel scores, yardsticks, split-half and base-vs-top-up
-reliability, words, group x month) from the labels on disk without a model call.
+labels are reused and only new titles are sent to a model. The labels of record come from
+three runs (`leaning_runs.json`): the base draw and then the top-up were labelled in sample
+order, then every title again in shuffled batches, which is the labelling used; the first
+reading is kept (`leaning_labels_channel_batched.csv.gz`) and compared with it title by title
+and channel by channel (`leaning_two_readings.json`: 88 % agreement, channels at Spearman
+0.98). `--repeat` reads every title once more with a fresh shuffle seed into its own file
+(`leaning_labels_repeat.csv.gz`, run 4; the labels of record are untouched) and compares the
+three readings (`leaning_repeat.json`: the two shuffled readings agree on 91 % of titles,
+channels at 0.99, so the judge's own noise is about one label in eleven and the channel
+batching cost about two points more). `--analyse-only` recomputes every table (channel
+scores, the split-half, base-vs-top-up and readings checks, words, group x month) from the
+labels on disk without a model call.
 `--prompt-version v2` also asks for the title's target (who it attacks), which separates
 "attacks Trump" from "speaks for the left".
 The stage writes a blind 200-title adjudication sheet
@@ -146,7 +155,7 @@ from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
 |---|---|
 | `prepare` | normalise titles (strip show names, episode numbers, dates, brand tags by a per-creator 20 % rule), mark verbatim repeats, low-n groups, the creator-balanced subset; Zipf check |
 | `creators` | write the creator table (`creators.csv`: organisation / clipper / subscribers; edit the CSV, not `creator_seed.py`) |
-| `leaning` | document 14 and the channel groups every later stage reports by: left / right / neither labels from Claude Opus (title text only, shuffled batches, cached); channel scores and the left / neutral / right groups they define; split-half and base-vs-top-up reliability; group x month; weighted log-odds and rank-turbulence words for the titles and for the groups' whole output; the log-odds lexicon and its out-of-fold check |
+| `leaning` | document 14 and the channel groups every later stage reports by: left / right / neither labels from Claude Opus (title text only, shuffled batches, cached; every title was also read in channel-batched order and once more with a fresh shuffle, and the three readings are compared); channel scores and the left / neutral / right groups they define; split-half, base-vs-top-up and re-reading reliability; group x month; weighted log-odds and rank-turbulence words for the titles and for the groups' whole output; the log-odds lexicon and its out-of-fold check |
 | `annotate` | spaCy tokens, POS, entities per unique title (ALL-CAPS titles truecased first) |
 | `embed` | sentence embeddings (all-mpnet-base-v2), cached and incremental |
 | `topics` | BERTopic on a ~100k creator-stratified sample, nearest-centroid assignment for all titles, LLM labels and political flag, per-creator mix, channel-group shares, monthly spikes |

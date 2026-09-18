@@ -1,0 +1,64 @@
+[
+  {
+    "run": 1,
+    "what": "the base draw",
+    "batch_order": "sample order",
+    "titles": 4352,
+    "calls": 218,
+    "minutes": 51.6,
+    "output_tokens": 198068,
+    "reported_cost_usd": 18.8607,
+    "model_ids": null,
+    "shuffle_seed": null,
+    "started": "2026-09-15T14:13:56+00:00",
+    "finished": "2026-09-15T15:05:29+00:00",
+    "labels": "first reading"
+  },
+  {
+    "run": 2,
+    "what": "the top-up",
+    "batch_order": "sample order",
+    "titles": 8126,
+    "calls": 407,
+    "minutes": 81.4,
+    "output_tokens": 303663,
+    "reported_cost_usd": 36.4107,
+    "model_ids": null,
+    "shuffle_seed": null,
+    "started": "2026-09-15T16:32:42+00:00",
+    "finished": "2026-09-15T17:54:05+00:00",
+    "labels": "first reading"
+  },
+  {
+    "run": 3,
+    "what": "every title again",
+    "batch_order": "shuffled",
+    "titles": 12478,
+    "calls": 624,
+    "minutes": 135.3,
+    "output_tokens": 387933,
+    "reported_cost_usd": 56.5442,
+    "model_ids": null,
+    "shuffle_seed": null,
+    "started": "2026-09-15T23:53:57+00:00",
+    "finished": "2026-09-16T02:09:17+00:00",
+    "labels": "of record"
+  },
+  {
+    "run": 4,
+    "what": "every title again, a fresh shuffle",
+    "batch_order": "shuffled",
+    "titles": 12478,
+    "calls": 624,
+    "minutes": 132.7,
+    "output_tokens": 456161,
+    "reported_cost_usd": 75.0104,
+    "model_ids": [
+      "claude-opus-5"
+    ],
+    "shuffle_seed": 20260915,
+    "started": "2026-09-18T13:44:18+00:00",
+    "finished": "2026-09-18T15:57:03+00:00",
+    "labels": "repeat"
+  }
+]

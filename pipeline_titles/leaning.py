@@ -9,6 +9,20 @@ the judge sees nothing but the title text; every response cached). The label is 
 viewpoint the TITLE'S OWN WORDING signals, not the subject. Two levels of analysis follow: the
 titles themselves, and the channels grouped as left / neutral / right by their scores.
 
+Runs. The sample was labelled in three runs, all with the same prompt at temperature 0. Runs
+1 and 2 (the base draw, then the top-up) sent the titles in sample order, so a call held one
+or two channels' titles and a title was read beside its channel's other titles; run 3 sent
+every title again in shuffled batches. Run 3 is the labelling of record
+(leaning_labels.csv.gz). Runs 1 and 2 are kept as the first reading
+(leaning_labels_channel_batched.csv.gz, column `run`), and two_readings() compares the two
+readings title by title and channel by channel. The readings differ in their batches by
+design, so their disagreement is the judge's own inconsistency and the effect of a title's
+company together; neither is measured alone. `--repeat` reads every title of the sample a
+third time with a fresh shuffle (run 4, leaning_labels_repeat.csv.gz): a clean repeat of the
+method, whose disagreement with the labels of record is the judge's own inconsistency (plus
+the luck of different batch-mates), so with three readings the batch-context effect and the
+judge's noise can be told apart (repeat_check()).
+
 Sample. Every creator gets a base draw of N_BASE (16) unique edited-upload titles
 (seed 20260914; live VODs top up creators with fewer uploads). Creators with at least
 --min-uploads (50) unique uploads are then topped up to --n-per-creator (N_PER_CREATOR,
@@ -22,7 +36,24 @@ after prepare / creators in run_all.
 
 Outputs (data/titles/analysis/):
     leaning_labels.csv.gz       one row per sampled title with the label, is_base (base draw vs
-                                month-spread top-up) and month
+                                month-spread top-up) and month: the labels of record (run 3)
+    leaning_labels_channel_batched.csv.gz
+                                the first reading: the same titles labelled in runs 1 and 2, batched
+                                by channel (column `run`); Claude Opus only
+    leaning_runs.json           the three labelling runs from the run log: titles sent, batch order,
+                                calls, minutes, output tokens, the CLI's reported cost
+    leaning_two_readings.json   the first reading against the labels of record: agreement and kappa
+                                (overall and per run), the confusion table, partisan shares, the
+                                titles that changed side; the channel scores under the two readings
+                                (Spearman, mean change, groups changed);
+                                leaning_two_readings_channels.csv has the per-channel values and
+                                leaning_two_readings_changed_titles.csv the titles whose label changed
+    leaning_labels_repeat.csv.gz
+                                the repeat: every title read again with a fresh shuffle (run 4)
+    leaning_repeat.json         the repeat against the labels of record (a clean repeat: agreement, kappa,
+                                the confusion table, channel scores) and against the first reading, plus the
+                                three readings together (how many titles all three agree on);
+                                leaning_repeat_channels.csv and leaning_repeat_changed_titles.csv as above
     leaning_label_shares.json   the labels' counts and shares
     leaning_by_creator.csv      per channel: label shares, score = (right - left) / n over its
                                 sampled titles, and the group the score implies (left below
@@ -52,6 +83,7 @@ CLI:
     python -m pipeline_titles.leaning --n-per-creator 50            # sample, label, analyse
     python -m pipeline_titles.leaning --n-per-creator 50 --prompt-version v2
     python -m pipeline_titles.leaning --analyse-only [--human-labels <filled sheet>]
+    python -m pipeline_titles.leaning --repeat [--shuffle-seed N]   # read every title again, fresh shuffle
 """
 
 from __future__ import annotations
@@ -70,7 +102,7 @@ from typing import Optional, Sequence
 import numpy as np
 import pandas as pd
 
-from pipeline_titles.common import ANALYSIS_DIR, CACHE_DIR, SEED, load_prepared, stage_timer, utc_now
+from pipeline_titles.common import ANALYSIS_DIR, CACHE_DIR, RUNTIMES, SEED, load_prepared, read_jsonl, stage_timer, utc_now
 from pipeline_titles.textstats import rank_turbulence_divergence, vocab_tokens, weighted_log_odds
 
 N_BASE = 16              # the base draw every creator gets
@@ -82,6 +114,9 @@ TARGETS = ("trump_administration", "democrats_left", "republicans_right", "media
 CLAUDE_BIN = shutil.which("claude") or "/opt/homebrew/bin/claude"
 LIMIT_WAITS = (300, 900, 1800, 3600, 3600, 3600)
 LABELS_CSV = ANALYSIS_DIR / "leaning_labels.csv.gz"
+FIRST_READING_CSV = ANALYSIS_DIR / "leaning_labels_channel_batched.csv.gz"   # runs 1 and 2: the same titles, batched by channel
+RUNS_JSON = ANALYSIS_DIR / "leaning_runs.json"
+REPEAT_CSV = ANALYSIS_DIR / "leaning_labels_repeat.csv.gz"                    # run 4: every title again, a fresh shuffle
 LLM_CACHE = CACHE_DIR / "llm_leaning"
 
 PROMPT = """You are classifying YouTube video titles from political-media channels by the political viewpoint the TITLE ITSELF signals.
@@ -149,7 +184,8 @@ def claude_code_generate(model: str, prompt: str, timeout: int = 900) -> dict:
         if proc.returncode == 0 and text and not data.get("is_error"):
             usage = data.get("usage", {}) or {}
             return {"response": text, "prompt_eval_count": usage.get("input_tokens"), "eval_count": usage.get("output_tokens"),
-                    "cost_usd": data.get("total_cost_usd"), "duration_ms": data.get("duration_ms"), "session_id": data.get("session_id")}
+                    "cost_usd": data.get("total_cost_usd"), "duration_ms": data.get("duration_ms"), "session_id": data.get("session_id"),
+                    "model_id": next((k for k in sorted((data.get("modelUsage") or {}).keys()) if model in k), None)}   # what the alias resolved to (the CLI also lists its own helper model)
         if "limit" in err_text.lower() and wait:
             print(f"  usage limit reported; waiting {wait // 60} min (attempt {attempt + 1})", flush=True)
             time.sleep(wait)
@@ -171,7 +207,7 @@ def label_batch(titles: Sequence[str], model: str, info: dict, prompt_version: s
         r = claude_code_generate(model, prompt)
         rec = {"model": model_key, "backend": "claude-code", "prompt_version": prompt_version, "prompt": prompt, "response": r.get("response", ""),
                "prompt_eval_count": r.get("prompt_eval_count"), "eval_count": r.get("eval_count"), "cost_usd": r.get("cost_usd"),
-               "seconds": round(time.time() - t0, 2), "rated_at": utc_now()}
+               "model_id": r.get("model_id"), "seconds": round(time.time() - t0, 2), "rated_at": utc_now()}
         LLM_CACHE.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(rec, ensure_ascii=False), encoding="utf-8")
         info["calls"] = info.get("calls", 0) + 1
@@ -179,15 +215,19 @@ def label_batch(titles: Sequence[str], model: str, info: dict, prompt_version: s
         info["llm_seconds"] = round(info.get("llm_seconds", 0) + rec["seconds"], 1)
         if rec.get("cost_usd") is not None:
             info["reported_cost_usd"] = round(info.get("reported_cost_usd", 0) + (rec["cost_usd"] or 0), 4)
+    if rec.get("model_id"):
+        info.setdefault("model_ids", [])
+        if rec["model_id"] not in info["model_ids"]:
+            info["model_ids"].append(rec["model_id"])
     return parse_labels(rec["response"], len(titles))
 
 
-def label_titles(titles: Sequence[str], model: str, info: dict, prompt_version: str = "v1", shuffle: bool = True) -> list[Optional[str]]:
+def label_titles(titles: Sequence[str], model: str, info: dict, prompt_version: str = "v1", shuffle: bool = True, seed: int = SEED) -> list[Optional[str]]:
     """Label every title; `shuffle` (default) sends titles to the model in a seeded random
     order, so a batch of 20 mixes channels and a title is never judged in the company of
     its own channel's other titles (the sample is grouped by channel)."""
     results: list[Optional[str]] = [None] * len(titles)
-    pending = list(np.random.RandomState(SEED).permutation(len(titles))) if shuffle else list(range(len(titles)))
+    pending = list(np.random.RandomState(seed).permutation(len(titles))) if shuffle else list(range(len(titles)))
     for size in (BATCH, 5, 1):
         if not pending:
             break
@@ -327,6 +367,113 @@ def group_month_check(df: pd.DataFrame, judge: str, groups: dict[str, str]) -> p
     return out.round(4)
 
 
+def _agree(a: pd.Series, b: pd.Series) -> dict:
+    """Exact agreement and Cohen's kappa of two label series (kappa None when it is undefined: no titles, or one label only)."""
+    from sklearn.metrics import cohen_kappa_score
+    defined = len(a) > 0 and (a.nunique() > 1 or b.nunique() > 1)
+    return {"n_titles": int(len(a)), "exact_agreement": round(float((a == b).mean()), 4) if len(a) else None,
+            "kappa": round(float(cohen_kappa_score(a, b, labels=list(LABELS))), 4) if defined else None}
+
+
+def compare_readings(m: pd.DataFrame, col_a: str, col_b: str, name_a: str, name_b: str, min_titles: int = N_BASE) -> tuple[dict, pd.DataFrame, pd.DataFrame]:
+    """Two readings of the same titles, `col_a` (the earlier) against `col_b` (the later), title
+    by title and channel by channel. `m` has row_id, creator, title_raw, the two label columns
+    and, optionally, `run` (which run made reading A: agreement is then also given per run).
+    Names the two readings `name_a` / `name_b` in the summary's keys ("first", "shuffled",
+    "record", "repeat"). Returns (summary, per-channel frame, the titles whose label changed)."""
+    m = m.dropna(subset=[col_a, col_b])
+    a, b = m[col_a], m[col_b]
+    part_a, part_b = a.isin(("left", "right")), b.isin(("left", "right"))
+    both = part_a & part_b
+    out = {**_agree(a, b),
+           f"label_counts_{name_a}": {k: int(v) for k, v in a.value_counts().reindex(LABELS, fill_value=0).items()},
+           f"label_counts_{name_b}": {k: int(v) for k, v in b.value_counts().reindex(LABELS, fill_value=0).items()},
+           f"partisan_share_{name_a}": round(float(part_a.mean()), 4), f"partisan_share_{name_b}": round(float(part_b.mean()), 4),
+           "partisan_to_neither": int((part_a & ~part_b).sum()), "neither_to_partisan": int((~part_a & part_b).sum()),
+           "side_flipped": int(((b == "left") & (a == "right")).sum() + ((b == "right") & (a == "left")).sum()),
+           "same_side_when_both_partisan": round(float((a[both] == b[both]).mean()), 4) if both.any() else None,
+           f"confusion_{name_a}_then_{name_b}": {x: {y: int(((a == x) & (b == y)).sum()) for y in LABELS} for x in LABELS}}
+    if "run" in m.columns:
+        out["by_run"] = {int(r): _agree(g[col_a], g[col_b]) for r, g in m.groupby("run")}
+    sa, sb = f"score_{name_a}", f"score_{name_b}"
+    ch = m.groupby("creator").agg(n_titles=(col_b, "size"), **{sa: (col_a, _score), sb: (col_b, _score)}).reset_index()
+    ch["change"] = ch[sb] - ch[sa]
+    ch[f"group_{name_a}"], ch[f"group_{name_b}"] = _side(ch[sa]), _side(ch[sb])
+    big = ch[ch["n_titles"] >= min_titles]
+    ga, gb = big[f"group_{name_a}"], big[f"group_{name_b}"]
+    flipped = ((ga == "left") & (gb == "right")) | ((ga == "right") & (gb == "left"))
+    out.update({"n_channels": int(len(big)), "min_titles_per_channel": min_titles,
+                "channel_spearman": round(float(big[sa].corr(big[sb], method="spearman")), 4) if len(big) > 2 else None,
+                "channel_mean_abs_change": round(float(big["change"].abs().mean()), 4) if len(big) else None,
+                "channel_max_abs_change": round(float(big["change"].abs().max()), 4) if len(big) else None,
+                "channel_group_changed": int((ga != gb).sum()), "channel_sign_flipped": int(flipped.sum())})
+    cols = ["row_id", "creator"] + (["run"] if "run" in m.columns else []) + ["title_raw", col_a, col_b]
+    changed = m[a != b][cols].rename(columns={col_a: f"label_{name_a}", col_b: f"label_{name_b}"})
+    return out, ch.sort_values("change").reset_index(drop=True), changed.reset_index(drop=True)
+
+
+def two_readings(df: pd.DataFrame, first: pd.DataFrame, judge: str, min_titles: int = N_BASE) -> tuple[dict, pd.DataFrame, pd.DataFrame]:
+    """The judge's two readings of the same titles: the labels of record (`df`, shuffled batches)
+    against the first reading (`first`, batches in sample order, so a title was read beside its
+    channel's other titles; column `run` says which run labelled it), title by title and channel
+    by channel. The readings differ in their batches by design, so the disagreement is the judge's
+    own inconsistency and the effect of a title's company together; neither is measured alone.
+    Returns (summary, per-channel frame, the titles whose label changed)."""
+    m = df[["row_id", "creator", "title_raw", judge]].merge(first[["row_id", "run", judge]].rename(columns={judge: "label_first"}), on="row_id")
+    out, ch, changed = compare_readings(m, "label_first", judge, "first", "shuffled", min_titles)
+    return {"judge": judge, "first_reading": "runs 1 and 2, batches in sample order", "reading_of_record": "run 3, shuffled batches", **out}, ch, changed
+
+
+def repeat_check(df: pd.DataFrame, first: Optional[pd.DataFrame], repeat: pd.DataFrame, judge: str, min_titles: int = N_BASE) -> tuple[dict, pd.DataFrame, pd.DataFrame]:
+    """The clean repeat (run 4: every title again, a fresh shuffle) against the labels of record,
+    title by title and channel by channel: the same method twice, so the disagreement is the
+    judge's own inconsistency (with the luck of different batch-mates). With the first reading
+    too, all three pairs are given, so the batch-context effect can be read against the judge's
+    noise: what the first reading loses beyond what the repeat loses is the company a title was
+    read in. Returns (summary, per-channel frame, the titles the repeat changed)."""
+    m = df[["row_id", "creator", "title_raw", judge]].merge(repeat[["row_id", judge]].rename(columns={judge: "label_repeat"}), on="row_id")
+    out, ch, changed = compare_readings(m, judge, "label_repeat", "record", "repeat", min_titles)
+    summ = {"judge": judge, "reading_of_record": "run 3, shuffled batches", "repeat": "run 4, shuffled batches, a fresh seed", "record_vs_repeat": out}
+    if first is not None and judge in first.columns:
+        m3 = m.merge(first[["row_id", "run", judge]].rename(columns={judge: "label_first"}), on="row_id").dropna(subset=[judge, "label_first", "label_repeat"])
+        f_vs_rep, _, _ = compare_readings(m3, "label_first", "label_repeat", "first", "repeat", min_titles)
+        f_vs_rec, _, _ = compare_readings(m3, "label_first", judge, "first", "record", min_titles)
+        pair = lambda d: {k: d[k] for k in ("n_titles", "exact_agreement", "kappa", "channel_spearman")}
+        rec, rep = m3[judge], m3["label_repeat"]
+        all_three = (rec == rep) & (rec == m3["label_first"])
+        summ["first_vs_repeat"] = pair(f_vs_rep)
+        summ["first_vs_record"] = pair(f_vs_rec)
+        summ["three_readings"] = {"n_titles": int(len(m3)), "all_three_agree": round(float(all_three.mean()), 4),
+                                  "record_and_repeat_agree": round(float((rec == rep).mean()), 4),
+                                  "first_agrees_with_both": round(float(all_three.sum() / max(1, int((rec == rep).sum()))), 4),
+                                  "no_majority": int(((rec != rep) & (rec != m3["label_first"]) & (rep != m3["label_first"])).sum())}
+    return summ, ch, changed
+
+
+def runs_table(df: pd.DataFrame, first: Optional[pd.DataFrame], repeat: Optional[pd.DataFrame] = None) -> list[dict]:
+    """The labelling runs, oldest first, from the run log (this stage's records that made calls)
+    with the titles each sent: the sample-order runs are the first reading's runs in order; the
+    first shuffled run is the labelling of record and sent every title; a later shuffled run is
+    the repeat (every title again, a fresh seed). `titles` is None when the log and the label
+    files disagree."""
+    recs = sorted((r for r in read_jsonl(RUNTIMES) if r.get("stage") == "stage7_leaning" and r.get("calls")), key=lambda r: r["started"])
+    sample_order = [int((first["run"] == r).sum()) for r in sorted(first["run"].unique())] if first is not None and "run" in first.columns else []
+    out, k, shuffled_seen = [], 0, 0
+    for i, r in enumerate(recs, 1):
+        order = r.get("batch_order", "sample order")
+        if order == "sample order":
+            titles = sample_order[k] if k < len(sample_order) else None; k += 1
+            what, labels = ("the base draw" if i == 1 else "the top-up"), "first reading"
+        elif shuffled_seen == 0:
+            titles, what, labels = len(df), "every title again", "of record"; shuffled_seen += 1
+        else:
+            titles, what, labels = (len(repeat) if repeat is not None else None), "every title again, a fresh shuffle", "repeat"; shuffled_seen += 1
+        out.append({"run": i, "what": what, "batch_order": order, "titles": titles, "calls": int(r["calls"]), "minutes": round(float(r["seconds"]) / 60, 1),
+                    "output_tokens": r.get("output_tokens"), "reported_cost_usd": r.get("reported_cost_usd"), "model_ids": r.get("model_ids"),
+                    "shuffle_seed": r.get("shuffle_seed"), "started": r["started"], "finished": r["finished"], "labels": labels})
+    return out
+
+
 def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
     """Two levels. Titles: the judge's labels and their shares. Channels: score = (right - left) / n
     over a channel's sampled titles, the group it implies (left / neutral / right at +-GROUP_EPS),
@@ -397,6 +544,28 @@ def analyse(df: pd.DataFrame, cols: list[str], info: dict) -> None:
         group_month_check(df, judge, groups).to_csv(ANALYSIS_DIR / "leaning_by_group_month.csv", index=False)
         if len(stab):
             print(stab[["n_channels", "spearman_base_vs_topup", "group_changed", "sign_flipped"]].to_string(index=False), flush=True)
+    # the same titles read twice: the first reading (runs 1 and 2, batched by channel) against the labels of record
+    first = pd.read_csv(FIRST_READING_CSV) if FIRST_READING_CSV.exists() else None
+    if first is not None and judge in first.columns:
+        two, two_ch, changed = two_readings(df, first, judge)
+        two_ch["group"] = two_ch["creator"].map(groups)
+        (ANALYSIS_DIR / "leaning_two_readings.json").write_text(json.dumps(two, indent=2))
+        two_ch.to_csv(ANALYSIS_DIR / "leaning_two_readings_channels.csv", index=False)
+        changed.to_csv(ANALYSIS_DIR / "leaning_two_readings_changed_titles.csv", index=False)
+        info["two_readings"] = {k: two[k] for k in ("exact_agreement", "kappa", "channel_spearman")}
+        print(f"two readings: exact agreement {two['exact_agreement']}, kappa {two['kappa']}, channel Spearman {two['channel_spearman']}, {len(changed)} titles changed label", flush=True)
+    # the clean repeat (run 4), against the labels of record and the first reading
+    repeat = pd.read_csv(REPEAT_CSV) if REPEAT_CSV.exists() else None
+    if repeat is not None and judge in repeat.columns and repeat[judge].notna().sum() == len(repeat):
+        rep, rep_ch, rep_changed = repeat_check(df, first, repeat, judge)
+        rep_ch["group"] = rep_ch["creator"].map(groups)
+        (ANALYSIS_DIR / "leaning_repeat.json").write_text(json.dumps(rep, indent=2))
+        rep_ch.to_csv(ANALYSIS_DIR / "leaning_repeat_channels.csv", index=False)
+        rep_changed.to_csv(ANALYSIS_DIR / "leaning_repeat_changed_titles.csv", index=False)
+        r = rep["record_vs_repeat"]
+        info["repeat"] = {k: r[k] for k in ("exact_agreement", "kappa", "channel_spearman")}
+        print(f"repeat: exact agreement {r['exact_agreement']}, kappa {r['kappa']}, channel Spearman {r['channel_spearman']}, {len(rep_changed)} titles changed label", flush=True)
+    RUNS_JSON.write_text(json.dumps(runs_table(df, first, repeat), indent=2))
     print(f"channels: {info['groups']}; split-half {shr.split_half_spearman_mean.iloc[0] if len(shr) else float('nan')}", flush=True)
     # log-odds lexicons (left / right / neither at a z cutoff) and the out-of-fold lexicon check
     from pipeline_titles.leaning_lexicon import run as lexicon_run
@@ -432,19 +601,41 @@ def human_agreement(df: pd.DataFrame, cols: list[str], human_path) -> None:
 def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--models", nargs="+", default=["opus"], help="Claude Code model aliases (default: opus)")
-    ap.add_argument("--relabel", action="store_true", help="start the labels file afresh (the old file is kept as leaning_labels_previous.csv.gz, untracked)")
+    ap.add_argument("--relabel", action="store_true", help="start the labels file afresh (the old file is kept as leaning_labels_previous.csv.gz, untracked; the committed first reading is leaning_labels_channel_batched.csv.gz)")
     ap.add_argument("--no-shuffle", action="store_true", help="batch titles in sample order (one or two channels per batch) instead of a seeded random order")
     ap.add_argument("--prompt-version", choices=tuple(PROMPTS), default="v1")
     ap.add_argument("--human-labels", default=None, help="filled leaning_human_sheet.csv: report every model's agreement with the human labels")
     ap.add_argument("--n-per-creator", type=int, default=N_PER_CREATOR, help=f"titles per ranked creator (base {N_BASE} for everyone; top-up spread across months)")
     ap.add_argument("--min-uploads", type=int, default=50, help="creators with fewer unique edited uploads stay at the base 16")
+    ap.add_argument("--repeat", action="store_true", help="read every title of the sample of record again with a fresh shuffle (run 4) into leaning_labels_repeat.csv.gz, then analyse; the labels of record are untouched")
+    ap.add_argument("--shuffle-seed", type=int, default=None, help=f"seed of the batch order (default {SEED}; --repeat defaults to {SEED + 1})")
     ap.add_argument("--analyse-only", action="store_true")
     ap.add_argument("--limit", type=int, default=None)
     a = ap.parse_args(argv)
+    seed = a.shuffle_seed if a.shuffle_seed is not None else (SEED + 1 if a.repeat else SEED)
     with stage_timer("stage7_leaning", models=a.models, backend="claude-code", prompt_id=f"leaning-{a.prompt_version}", batch_order="sample order" if a.no_shuffle else "shuffled",
-                     api_cost_usd="subscription (claude -p); see reported_cost_usd") as info:
+                     shuffle_seed=seed, repeat=bool(a.repeat), api_cost_usd="subscription (claude -p); see reported_cost_usd") as info:
         keep_cols = ["row_id", "video_id", "creator", "genre", "month", "is_base", "title_raw", "title_norm"]
-        if a.analyse_only and LABELS_CSV.exists():
+        if a.repeat:
+            # run 4: the sample of record, every title again, a fresh batch order; its own file, the record untouched
+            df = pd.read_csv(LABELS_CSV)
+            rep = df[[c for c in keep_cols if c in df.columns]].copy()
+            if REPEAT_CSV.exists():   # resume: keep the labels already on disk
+                old = pd.read_csv(REPEAT_CSV)
+                for c in [c for c in old.columns if c.startswith("label_")]:
+                    rep = rep.merge(old[["row_id", c]], on="row_id", how="left")
+            print(f"repeat: {len(rep)} titles from {rep['creator'].nunique()} creators, shuffle seed {seed}", flush=True)
+            for model in a.models:
+                col = model_col(f"claude_code_{model}") + ("" if a.prompt_version == "v1" else f"_{a.prompt_version}")
+                todo = rep[col].isna() if col in rep.columns else pd.Series(True, index=rep.index)
+                if todo.any():
+                    rep.loc[todo, col] = label_titles(rep.loc[todo, "title_raw"].tolist(), model, info, a.prompt_version, shuffle=True, seed=seed)
+                print(f"{model}: {rep[col].notna().sum()}/{len(rep)} labelled", flush=True)
+            rep["run"] = 4; rep["prompt_id"] = f"leaning-{a.prompt_version}"; rep["prompt_sha256"] = hashlib.sha256(PROMPTS[a.prompt_version].encode()).hexdigest()
+            rep["temperature"] = 0.0; rep["labelled_at"] = utc_now(); rep["batch_order"] = "shuffled"; rep["shuffle_seed"] = seed; rep["model_id"] = ", ".join(info.get("model_ids", [])) or None
+            rep.to_csv(REPEAT_CSV, index=False)
+            df = pd.read_csv(LABELS_CSV)
+        elif a.analyse_only and LABELS_CSV.exists():
             df = pd.read_csv(LABELS_CSV)
             if "is_base" not in df.columns or "month" not in df.columns:   # older layouts of the labels file
                 df = ensure_sample_columns(df)
@@ -467,7 +658,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                 col = model_col(f"claude_code_{model}") + ("" if a.prompt_version == "v1" else f"_{a.prompt_version}")
                 todo = df[col].isna() if col in df.columns else pd.Series(True, index=df.index)
                 if todo.any():
-                    labs = label_titles(df.loc[todo, "title_raw"].tolist(), model, info, a.prompt_version, shuffle=not a.no_shuffle)
+                    labs = label_titles(df.loc[todo, "title_raw"].tolist(), model, info, a.prompt_version, shuffle=not a.no_shuffle, seed=seed)
                     df.loc[todo, col] = labs
                 print(f"{model}: {df[col].notna().sum()}/{len(df)} labelled", flush=True)
             df["prompt_id"] = f"leaning-{a.prompt_version}"; df["prompt_sha256"] = hashlib.sha256(PROMPTS[a.prompt_version].encode()).hexdigest(); df["temperature"] = 0.0; df["labelled_at"] = utc_now()

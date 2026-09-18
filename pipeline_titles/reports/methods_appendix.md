@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-17T20:49:23+00:00._
+_Generated 2026-09-18T15:59:59+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -76,6 +76,20 @@ the judge sees nothing but the title text; every response cached). The label is 
 viewpoint the TITLE'S OWN WORDING signals, not the subject. Two levels of analysis follow: the
 titles themselves, and the channels grouped as left / neutral / right by their scores.
 
+Runs. The sample was labelled in three runs, all with the same prompt at temperature 0. Runs
+1 and 2 (the base draw, then the top-up) sent the titles in sample order, so a call held one
+or two channels' titles and a title was read beside its channel's other titles; run 3 sent
+every title again in shuffled batches. Run 3 is the labelling of record
+(leaning_labels.csv.gz). Runs 1 and 2 are kept as the first reading
+(leaning_labels_channel_batched.csv.gz, column `run`), and two_readings() compares the two
+readings title by title and channel by channel. The readings differ in their batches by
+design, so their disagreement is the judge's own inconsistency and the effect of a title's
+company together; neither is measured alone. `--repeat` reads every title of the sample a
+third time with a fresh shuffle (run 4, leaning_labels_repeat.csv.gz): a clean repeat of the
+method, whose disagreement with the labels of record is the judge's own inconsistency (plus
+the luck of different batch-mates), so with three readings the batch-context effect and the
+judge's noise can be told apart (repeat_check()).
+
 Sample. Every creator gets a base draw of N_BASE (16) unique edited-upload titles
 (seed 20260914; live VODs top up creators with fewer uploads). Creators with at least
 --min-uploads (50) unique uploads are then topped up to --n-per-creator (N_PER_CREATOR,
@@ -89,7 +103,24 @@ after prepare / creators in run_all.
 
 Outputs (data/titles/analysis/):
     leaning_labels.csv.gz       one row per sampled title with the label, is_base (base draw vs
-                                month-spread top-up) and month
+                                month-spread top-up) and month: the labels of record (run 3)
+    leaning_labels_channel_batched.csv.gz
+                                the first reading: the same titles labelled in runs 1 and 2, batched
+                                by channel (column `run`); Claude Opus only
+    leaning_runs.json           the three labelling runs from the run log: titles sent, batch order,
+                                calls, minutes, output tokens, the CLI's reported cost
+    leaning_two_readings.json   the first reading against the labels of record: agreement and kappa
+                                (overall and per run), the confusion table, partisan shares, the
+                                titles that changed side; the channel scores under the two readings
+                                (Spearman, mean change, groups changed);
+                                leaning_two_readings_channels.csv has the per-channel values and
+                                leaning_two_readings_changed_titles.csv the titles whose label changed
+    leaning_labels_repeat.csv.gz
+                                the repeat: every title read again with a fresh shuffle (run 4)
+    leaning_repeat.json         the repeat against the labels of record (a clean repeat: agreement, kappa,
+                                the confusion table, channel scores) and against the first reading, plus the
+                                three readings together (how many titles all three agree on);
+                                leaning_repeat_channels.csv and leaning_repeat_changed_titles.csv as above
     leaning_label_shares.json   the labels' counts and shares
     leaning_by_creator.csv      per channel: label shares, score = (right - left) / n over its
                                 sampled titles, and the group the score implies (left below
@@ -119,6 +150,7 @@ CLI:
     python -m pipeline_titles.leaning --n-per-creator 50            # sample, label, analyse
     python -m pipeline_titles.leaning --n-per-creator 50 --prompt-version v2
     python -m pipeline_titles.leaning --analyse-only [--human-labels <filled sheet>]
+    python -m pipeline_titles.leaning --repeat [--shuffle-seed N]   # read every title again, fresh shuffle
 ```
 
 ### `pipeline_titles.annotate`
@@ -1161,7 +1193,7 @@ Answer with one JSON object and nothing else:
 ```
 
 
-## Leaning label prompt (leaning_labels.csv; exact text, prompt id leaning-v1, temperature 0, batches of 20; the same prompt for every judge)
+## Leaning label prompt (leaning_labels.csv; exact text, prompt id leaning-v1, temperature 0, batches of 20; the same prompt in all three runs)
 
 ```
 You are classifying YouTube video titles from political-media channels by the political viewpoint the TITLE ITSELF signals.
@@ -1657,11 +1689,11 @@ Titles:
 | stage5b_engagement | 9.4 | 9.4 | 2026-09-17T19:18:39+00:00 |  |  |  | creator_genre_models=252 |
 | stage5c_hits | 25.3 | 28.9 | 2026-09-17T19:19:04+00:00 |  |  |  | groups=252, powerlaw_like=1 |
 | report_data | 2.8 | 3.1 | 2026-09-17T19:32:40+00:00 |  |  |  | creators=274 |
-| report | 15.9 | 24.6 | 2026-09-17T20:28:53+00:00 |  |  |  | cards=274 |
+| report | 15.0 | 24.6 | 2026-09-17T20:49:23+00:00 |  |  |  | cards=274 |
 | stage6_profiles | 20.7 | 22.3 | 2026-09-17T19:19:26+00:00 |  |  |  | acronyms=956, twin_pairs=2680 |
+| stage7_leaning | 5.8 | 8120.7 | 2026-09-18T15:58:07+00:00 |  |  | subscription (claude -p); see reported_cost_usd | backend=claude-code, prompt_id=leaning-v1, batch_order=shuffled, llm_seconds=8111.8, reported_cost_usd=56.5... |
 | allotax | 6.2 | 11.9 | 2026-09-17T20:49:23+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
 | leaning_lexicon | 1.7 | 1.7 | 2026-09-15T18:52:59+00:00 |  |  |  | cutoff=1.96 |
-| stage7_leaning | 8.9 | 8120.7 | 2026-09-17T19:11:39+00:00 |  |  | subscription (claude -p); see reported_cost_usd | backend=claude-code, prompt_id=leaning-v1, batch_order=shuffled, llm_seconds=8111.8, reported_cost_usd=56.5... |
 | stage0b_creators | 0.3 | 0.3 | 2026-09-17T19:05:21+00:00 |  |  |  |  |
 | stage6b_zipf_views | 2.3 | 2.4 | 2026-09-17T20:49:08+00:00 |  |  |  | zipf_systems=13, views_rows=244079 |
 

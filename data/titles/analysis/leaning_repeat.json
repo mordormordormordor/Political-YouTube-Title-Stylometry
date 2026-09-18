@@ -1,0 +1,69 @@
+{
+  "judge": "label_claude_code_opus",
+  "reading_of_record": "run 3, shuffled batches",
+  "repeat": "run 4, shuffled batches, a fresh seed",
+  "record_vs_repeat": {
+    "n_titles": 12478,
+    "exact_agreement": 0.907,
+    "kappa": 0.8431,
+    "label_counts_record": {
+      "left": 3033,
+      "right": 2556,
+      "neither": 6889
+    },
+    "label_counts_repeat": {
+      "left": 3025,
+      "right": 2510,
+      "neither": 6943
+    },
+    "partisan_share_record": 0.4479,
+    "partisan_share_repeat": 0.4436,
+    "partisan_to_neither": 583,
+    "neither_to_partisan": 529,
+    "side_flipped": 48,
+    "same_side_when_both_partisan": 0.9904,
+    "confusion_record_then_repeat": {
+      "left": {
+        "left": 2714,
+        "right": 29,
+        "neither": 290
+      },
+      "right": {
+        "left": 19,
+        "right": 2244,
+        "neither": 293
+      },
+      "neither": {
+        "left": 292,
+        "right": 237,
+        "neither": 6360
+      }
+    },
+    "n_channels": 269,
+    "min_titles_per_channel": 16,
+    "channel_spearman": 0.9903,
+    "channel_mean_abs_change": 0.037,
+    "channel_max_abs_change": 0.3125,
+    "channel_group_changed": 15,
+    "channel_sign_flipped": 2
+  },
+  "first_vs_repeat": {
+    "n_titles": 12478,
+    "exact_agreement": 0.8926,
+    "kappa": 0.8162,
+    "channel_spearman": 0.9833
+  },
+  "first_vs_record": {
+    "n_titles": 12478,
+    "exact_agreement": 0.885,
+    "kappa": 0.8037,
+    "channel_spearman": 0.9828
+  },
+  "three_readings": {
+    "n_titles": 12478,
+    "all_three_agree": 0.8442,
+    "record_and_repeat_agree": 0.907,
+    "first_agrees_with_both": 0.9307,
+    "no_majority": 47
+  }
+}

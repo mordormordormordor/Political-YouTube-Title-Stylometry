@@ -116,6 +116,8 @@ def doc_leaning() -> str:
     shr = _opt("leaning_split_half.csv"); stab = _opt("leaning_stability.csv"); stab_ch = _opt("leaning_stability_channels.csv"); gm = _opt("leaning_by_group_month.csv")
     allo = _opt("allotax_summary.csv"); allo_c = _opt("allotax_contributions.csv")
     lo_s = _opt("leaning_logodds_summary.csv"); lo_ag = _opt("leaning_logodds_agreement.csv"); lex = _opt("leaning_lexicon_validation.csv")
+    two = _json("leaning_two_readings.json"); two_ch = _opt("leaning_two_readings_channels.csv"); changed_t = _opt("leaning_two_readings_changed_titles.csv"); runs_t = _json("leaning_runs.json")
+    rep = _json("leaning_repeat.json"); rep_ch = _opt("leaning_repeat_channels.csv")
     judge = summ["judge_of_record"]; jname = _mname(judge); eps = float(summ.get("threshold", 0.05))
     shares = ls["label_shares"]; counts = ls["label_counts"]
     n_l, n_n, n_r = (int(summ["groups"].get(g, 0)) for g in ("left", "neutral", "right"))
@@ -148,6 +150,90 @@ def doc_leaning() -> str:
         rng_txt = "; ".join(f"{g} {'ranges ' if i == 0 else ''}from {piv.loc[g].iloc[1:].astype(float).min():+.2f} to {piv.loc[g].iloc[1:].astype(float).max():+.2f}" for i, g in enumerate(piv.index))
         mp = gm.groupby("month").apply(lambda g: np.average(g.partisan_share, weights=g.n_titles), include_groups=False)
         gm_txt = f"It did not move: {rng_txt}; the share of all sampled titles read as partisan stays between {pct(mp.min())} and {pct(mp.max())} every month. Whatever the news did over the year, a channel's title stance is a fixed property of the channel, which is also what document 6 found for style."
+    # the same titles read twice (Level 1: labels; Level 2: channel scores)
+    two_intro, two_finding, two_l1, two_l2, two_lim, two_method = "", "", "", "", "", ""
+    if two is not None:
+        rr = rep["record_vs_repeat"] if rep else None
+        if rr:
+            two_intro = (" Every title was read three times by the judge: once in a batch of its channel's other titles, then twice in shuffled batches with different seeds. The first shuffled reading is the one used; "
+                         "the other two are kept for comparison (Level 1, \"The same title read three times\"; Level 2, check 3).")
+            two_finding = (f" Read again by the same judge in fresh shuffled batches, {pct(rr['exact_agreement'])} of titles kept their label (kappa {rr['kappa']:.2f}) and the channels came out in the same order (Spearman {rr['channel_spearman']:.2f}); "
+                           f"an earlier reading with the titles batched by channel agreed at {pct(two['exact_agreement'])}.")
+        else:
+            two_intro = (" Every title was read twice by the judge, once in a batch of its channel's other titles and once in a shuffled batch; the shuffled reading is the one used, and the first is kept "
+                         "for comparison (Level 1, \"The same title read twice\"; Level 2, check 3).")
+            two_finding = f" Read a second time by the same judge, in shuffled batches, {pct(two['exact_agreement'])} of titles kept their label (kappa {two['kappa']:.2f}) and the channels came out in nearly the same order (Spearman {two['channel_spearman']:.2f})."
+        conf = two["confusion_first_then_shuffled"]
+        conf_tab = pd.DataFrame([{"first reading": a, "shuffled: left": conf[a]["left"], "shuffled: neither": conf[a]["neither"], "shuffled: right": conf[a]["right"]} for a in ("left", "neither", "right")])
+        by_run = two.get("by_run", {})
+        run_txt = f"; on the base draw {pct(by_run['1']['exact_agreement'])} (run 1 against run 3), on the top-up {pct(by_run['2']['exact_agreement'])} (run 2 against run 3)" if {"1", "2"} <= set(by_run) else ""
+        ex_changed = ""
+        if changed_t is not None and len(changed_t):
+            pick = changed_t.sample(min(6, len(changed_t)), random_state=np.random.RandomState(SEED + 1))[["creator", "title_raw", "label_first", "label_shuffled"]]
+            ex_changed = f"Titles whose label changed, six drawn at random from the {len(changed_t):,}:\n\n" + table(pick, rename={"creator": "channel", "title_raw": "title", "label_first": "first reading", "label_shuffled": "shuffled"})
+        rep_l1, closing = "", ""
+        if rr:
+            three = rep["three_readings"]; fr = rep["first_vs_repeat"]
+            conf2 = rr["confusion_record_then_repeat"]
+            conf2_tab = pd.DataFrame([{"reading of record": a, "repeat: left": conf2[a]["left"], "repeat: neither": conf2[a]["neither"], "repeat: right": conf2[a]["right"]} for a in ("left", "neither", "right")])
+            model_txt = ""
+            if runs_t and any(r.get("model_ids") for r in runs_t):
+                ids = sorted({m for r in runs_t for m in (r.get("model_ids") or [])})
+                model_txt = f" The repeat, three days after the others, recorded the model the CLI's alias resolved to ({', '.join(ids)}); the earlier runs did not record it."
+            rep_l1 = f"""
+A clean repeat then settles how much of that is the judge. Run 4 sent every title again in shuffled batches with a fresh seed: the same method run twice.{model_txt} The two shuffled readings agree on {pct(rr['exact_agreement'], 1)} of titles (kappa {rr['kappa']:.2f}), so the judge on its own changes about one label in {round(1 / (1 - rr['exact_agreement']))} between two runs, nearly all between partisan and neither ({rr['side_flipped']} titles switched side; where both readings call a title partisan they agree on the side {pct(rr['same_side_when_both_partisan'])} of the time), and with no drift in the balance ({pct(rr['partisan_share_record'], 1)} of titles partisan in the reading of record, {pct(rr['partisan_share_repeat'], 1)} in the repeat). The channel-batched reading agrees with either shuffled reading at {pct(two['exact_agreement'], 1)} and {pct(fr['exact_agreement'], 1)}, so a title's company cost about {round(100 * (rr['exact_agreement'] - (two['exact_agreement'] + fr['exact_agreement']) / 2))} points more, and its effect had a direction that noise does not: {pct(two['partisan_share_first'], 1)} of titles read as partisan in company against {pct(rr['partisan_share_record'], 1)} and {pct(rr['partisan_share_repeat'], 1)} alone. All three readings agree on {pct(three['all_three_agree'], 1)} of titles; {three['no_majority']} titles got three different labels.
+
+{table(conf2_tab)}"""
+            closing = (f"So a single title's label is about one in {round(1 / (1 - rr['exact_agreement']))} fragile on the judge's own account, one in {round(1 / (1 - two['exact_agreement']))} once its batch-mates are allowed to vary too. "
+                       "The channel scores, which average fifty of them, are steadier (Level 2, check 3).")
+        else:
+            closing = (f"The two readings differ in their batches by design, so the {pct(1 - two['exact_agreement'])} of labels that changed is the judge's own inconsistency and the effect of a title's company together; neither is measured on its own. "
+                       "A single title's label is, to that extent, one reading among possible readings. The channel scores, which average fifty of them, are steadier (Level 2, check 3).")
+        two_l1 = f"""### The same title read {'three times' if rr else 'twice'}
+
+Every title went to the judge {'three times' if rr else 'twice'}, with the same prompt at temperature 0. The first reading (runs 1 and 2: the base draw, then the top-up) sent the titles in sample order, so a call held one or two channels' titles and a title was read in the company of its channel's other titles. The second reading (run 3) sent every title again in a seeded random order, so a call mixes channels and the judge sees nothing but the title. The second is the reading of record; the first is kept in `leaning_labels_channel_batched.csv.gz`.
+
+The two readings agree on {pct(two['exact_agreement'])} of the {two['n_titles']:,} titles (kappa {two['kappa']:.2f}){run_txt}. Where both call a title partisan they agree on the side {pct(two['same_side_when_both_partisan'])} of the time: {two['side_flipped']} titles switched from left to right or back. The disagreement is almost all a title moving between partisan and neither, and it has a direction: {two['partisan_to_neither']} titles read as partisan in company and as neither alone, {two['neither_to_partisan']} the other way, so the shuffled reading calls {pct(two['partisan_share_shuffled'])} of titles partisan against {pct(two['partisan_share_first'])} the first time.
+
+{table(conf_tab)}
+{ex_changed}{rep_l1}
+{closing}
+"""
+        flips = two_ch[(two_ch.n_titles >= two["min_titles_per_channel"]) & (((two_ch.group_first == "left") & (two_ch.group_shuffled == "right")) | ((two_ch.group_first == "right") & (two_ch.group_shuffled == "left")))] if two_ch is not None else None
+        if flips is None or not len(flips):
+            flip2 = "none crosses from left to right or back"
+        else:
+            flip2 = "; ".join(f"{r.creator} crosses from {r.group_first} to {r.group_shuffled} ({r.score_first:+.2f} to {r.score_shuffled:+.2f})".replace("-", "−") for r in flips.itertuples())
+        two_l2 = (f"\n3. **Second reading.** The first reading of every title (Level 1) scores the channels too. The two readings rank the {two['n_channels']} channels with at least {two['min_titles_per_channel']} labelled titles at Spearman {two['channel_spearman']:.2f} "
+                  f"and move a channel's score by {two['channel_mean_abs_change']:.2f} on average; {two['channel_group_changed']} channels change group, and {flip2}.")
+        if rr:
+            rflips = rep_ch[(rep_ch.n_titles >= rr["min_titles_per_channel"]) & (((rep_ch.group_record == "left") & (rep_ch.group_repeat == "right")) | ((rep_ch.group_record == "right") & (rep_ch.group_repeat == "left")))] if rep_ch is not None else None
+            if rflips is None or not len(rflips):
+                flip3 = "none crosses from left to right or back"
+            else:
+                flip3 = "; ".join(f"{r.creator} crosses from {r.group_record} to {r.group_repeat} ({r.score_record:+.2f} to {r.score_repeat:+.2f}, {int(r.n_titles)} titles)" for r in rflips.itertuples()).replace("-", "−")
+            two_l2 = (f"\n3. **Second and third readings.** The other two readings of every title (Level 1) score the channels too. The clean repeat ranks the {rr['n_channels']} channels with at least {rr['min_titles_per_channel']} labelled titles at Spearman {rr['channel_spearman']:.2f} "
+                      f"and moves a channel's score by {rr['channel_mean_abs_change']:.2f} on average; {rr['channel_group_changed']} channels change group, and {flip3}. The channel-batched reading ranks them at {two['channel_spearman']:.2f}, "
+                      f"moves a score by {two['channel_mean_abs_change']:.2f} and changes {two['channel_group_changed']} groups, and {flip2}.")
+        if rr:
+            two_lim = (f" Its repeatability is measured: a clean repeat of the method agrees with the labels of record on {pct(rr['exact_agreement'])} of titles (kappa {rr['kappa']:.2f}) and ranks the channels at {rr['channel_spearman']:.2f}, "
+                       f"so about one title label in {round(1 / (1 - rr['exact_agreement']))} is the judge's own noise, which the channel scores absorb.")
+            two_method = (" Readings: the labels of record against the first reading (channel-batched) and against the repeat (the same method, a fresh shuffle seed, `--repeat`), title by title (exact agreement, Cohen's kappa, the confusion table) and channel by channel "
+                          f"(channels with at least {rr['min_titles_per_channel']} labelled titles: Spearman between the two scores, mean absolute change, groups changed), and the three readings together (`leaning_repeat.json`).")
+        else:
+            two_lim = (f" The same model did read every title twice, but the second reading also changed the batches from channel-grouped to shuffled, so its {pct(two['exact_agreement'])} agreement mixes the judge's inconsistency with the effect of a title's company "
+                       "and cannot be split into the two; a repeat with a fresh shuffle seed (`--repeat`) would put a number on the judge alone.")
+            two_method = (" Two readings: the first reading's labels against the labels of record, title by title (exact agreement, Cohen's kappa, the confusion table, per run) and channel by channel "
+                          f"(channels with at least {two['min_titles_per_channel']} labelled titles: Spearman between the two scores, mean absolute change, groups changed).")
+    rel += two_finding
+    runs_tab = ""
+    if runs_t:
+        rt = pd.DataFrame(runs_t)
+        rt["batches"] = rt.batch_order.map({"sample order": "sample order (one or two channels a call)", "shuffled": "shuffled (a call mixes channels)"}).fillna(rt.batch_order)
+        rt["titles"] = rt.titles.map(lambda v: f"{int(v):,}" if pd.notna(v) else "")
+        rt["minutes"] = rt.minutes.round(0).astype(int); rt["reported cost"] = rt.reported_cost_usd.map(lambda v: f"${v:.2f}" if pd.notna(v) else "")
+        rt["date (UTC)"] = rt.started.str.slice(0, 16).str.replace("T", " ")
+        runs_tab = "\n\n" + "\n".join("   " + l for l in table(rt, ["run", "what", "titles", "batches", "calls", "minutes", "reported cost", "date (UTC)"]).strip().splitlines()) + "\n"
     return f"""# 14. Political leaning from titles alone
 
 **The question and the design.** Can a channel's political leaning be read off its titles? The analysis has two levels, and everything in this document belongs to one of them.
@@ -155,7 +241,7 @@ def doc_leaning() -> str:
 1. **Titles.** A frontier model ({jname}, through the Claude Code CLI) reads each sampled title on its own, never the channel name, and labels it *left*, *right* or *neither* by the viewpoint the wording signals. Level 1 analyses those labels: how many titles read each way, and which words carry each reading.
 2. **Channels.** Each channel's sampled titles give it a score, (titles read right − titles read left) / titles sampled, from −1 (every title read left) to +1 (every title read right). The score sorts the channels into three groups: **left** below −{eps:g}, **right** above +{eps:g}, **neutral** between. Level 2 analyses the groups: how many channels land in each, how reliable the score is, and what the groups' whole output looks like when their titles are compared as bodies of text.
 
-Everything here is *model-perceived* leaning: how a careful, reader-like model reads the wording of a title. The sample is 16 titles per channel plus a top-up to 50, spread evenly across the months, for every channel with at least 50 edited uploads ({n50} of {len(bc)} channels; the other {nbase} stay at their base draw): {len(labs):,} titles in all.
+Everything here is *model-perceived* leaning: how a careful, reader-like model reads the wording of a title. The sample is 16 titles per channel plus a top-up to 50, spread evenly across the months, for every channel with at least 50 edited uploads ({n50} of {len(bc)} channels; the other {nbase} stay at their base draw): {len(labs):,} titles in all.{two_intro}
 
 ## The finding in one paragraph
 
@@ -175,6 +261,7 @@ Four titles of each label, drawn at random:
 
 Six in ten titles carry no readable stance: plain news headlines, non-political titles, or political titles whose wording does not tip either way. The labels live on the other four in ten, and the rest of this level asks what those titles have in their words.
 
+{two_l1}
 ### The vocabulary of left-read and right-read titles
 
 Titles {jname} labelled left ({int(wj.n_left_titles.iloc[0]):,}) vs right ({int(wj.n_right_titles.iloc[0]):,}), compared two ways: weighted log-odds (which words are over-used on one side, given how often they appear at all) and rank-turbulence divergence, read off an allotaxonograph (Dodds et al. 2023), the instrument built for exactly this comparison of two Zipfian systems.
@@ -217,12 +304,12 @@ A channel's score is the balance of its sampled titles, and the groups follow fr
 
 With 50 titles no channel scores ±1 ({int((bc.score.abs() >= 0.9).sum())} sit at or beyond ±0.90): even the most one-sided channels title one video in twenty as plain news. The {n_n} neutral channels, whose sampled titles balance or read mostly as neither: {', '.join(neutral.creator)}.
 
-### Would a different draw of titles give a different score?
+### Would a different draw of titles, or a second reading, give a different score?
 
-A channel's score comes from 50 sampled titles out of the hundreds or thousands it published, so the first thing to check is whether the draw matters: had the sample been different, would the channel's score, and its group, be different? Two checks, both on the {int(sh_j.n_channels) if sh_j is not None else n50} channels with 50 labelled titles.
+A channel's score comes from 50 sampled titles out of the hundreds or thousands it published, so the first thing to check is whether the draw matters: had the sample been different, would the channel's score, and its group, be different? Two checks, both on the {int(sh_j.n_channels) if sh_j is not None else n50} channels with 50 labelled titles; then the second reading.
 
 1. **Split-half.** Each channel's 50 titles are split at random into two halves of {int(sh_j.median_titles_per_half) if sh_j is not None else 25} and each half is scored on its own, so every channel gets two scores from disjoint sets of titles. The two sets of scores rank the channels at Spearman {sh_j.split_half_spearman_mean:.2f} (mean of 20 random splits, SD {sh_j.split_half_spearman_sd:.3f}): whichever half you look at, the channels come out in nearly the same order.
-2. **First draw against second draw.** The sample was drawn in two steps, 16 titles per channel first and {int(stab_ch.n_topup.median()) if stab_ch is not None and len(stab_ch) else 34} more afterwards from other months, so the two draws are independent samples of the same channel. Scored separately they rank the channels at Spearman {st_j.spearman_base_vs_topup:.2f}. Going from the 16-title score to the 50-title score moves a channel by {st_j.mean_abs_change:.2f} on average; {int(st_j.group_changed)} of {int(st_j.n_channels)} channels change group, {near_txt}, and {flip_txt}.
+2. **First draw against second draw.** The sample was drawn in two steps, 16 titles per channel first and {int(stab_ch.n_topup.median()) if stab_ch is not None and len(stab_ch) else 34} more afterwards from other months, so the two draws are independent samples of the same channel. Scored separately they rank the channels at Spearman {st_j.spearman_base_vs_topup:.2f}. Going from the 16-title score to the 50-title score moves a channel by {st_j.mean_abs_change:.2f} on average; {int(st_j.group_changed)} of {int(st_j.n_channels)} channels change group, {near_txt}, and {flip_txt}.{two_l2}
 
 ![Stability.](figures/14_leaning_stability.png)
 *Each channel's score from its first 16 titles against its score from the 34 drawn later, coloured by its final group. Points on the diagonal would mean identical scores; the labelled points are the channels that moved most.*
@@ -231,7 +318,7 @@ The channels that moved most between the two draws, for a sense of what "moved" 
 
 {table(movers.rename(columns={'creator': 'channel', 'score_base': 'score, first 16 titles', 'score_topup': 'score, next 34 titles', 'score_all': 'score, all 50', 'group_base': 'group at 16', 'group_all': 'group at 50'}), ['channel', 'score, first 16 titles', 'score, next 34 titles', 'score, all 50', 'group at 16', 'group at 50'], fmt='{:+.2f}') if movers is not None else '_(none)_'}
 
-So the score is a property of the channel, not of the draw. With 50 titles it moves in steps of 0.02, and the only channels whose group is in doubt are the ones sitting within a title or two of a threshold.
+So the score is a property of the channel, not of the draw, and not of the reading either. With 50 titles it moves in steps of 0.02, and the only channels whose group is in doubt are the ones sitting within a few titles of a threshold.
 
 ### The groups' whole output
 
@@ -256,9 +343,10 @@ The top-up titles were spread evenly across months, so the sample supports a gro
 ## Method
 
 1. **Sample.** Every creator gets a base draw of 16 unique edited-upload titles (seed 20260914; creators with fewer than 16 uploads topped up from live VODs). Creators with at least 50 unique uploads are then topped up to 50 with further uploads spread evenly across months (round-robin over the months, random within month, its own random stream), so the extra titles never depend on which month a creator posted most in: {len(labs):,} titles, {n50} creators at 50, {nbase} at their base.
-2. **Labelling.** One prompt (in `leaning.py` and the methods appendix): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0; the judge sees the title text only, numbered 1 to 20, never the channel name; titles are sent in a seeded random order so that a batch mixes channels; every response cached. {jname} runs through the Claude Code CLI in print mode on a Claude Max subscription ({cc_calls:,} calls, {cc_min:.0f} minutes; the CLI reported an equivalent API cost of ${cc_cost:.2f}, not charged).
+2. **Labelling.** One prompt (in `leaning.py` and the methods appendix): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0; the judge sees the title text only, numbered 1 to 20, never the channel name; every response cached. {jname} runs through the Claude Code CLI in print mode on a Claude Max subscription, in {'four' if rep else 'three'} runs: the base draw and the top-up with the titles in sample order (a call held one or two channels' titles), then every title again in a seeded random order (a call mixes channels), which is the labelling of record{', and once more with a fresh seed, the repeat kept for the reliability check' if rep else ''}.{runs_tab}
+   {cc_calls:,} calls and {cc_min:.0f} minutes in all; the CLI reported an equivalent API cost of ${cc_cost:.2f}, not charged.
 3. **Scores and groups.** Per channel: shares of left / right / neither and score = (right − left) / n over its sampled titles; left below −{eps:g}, right above +{eps:g}, neutral between.
-4. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), and the group at 16 titles against the group at 50.
+4. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), and the group at 16 titles against the group at 50.{two_method}
 5. **Words.** Weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11, for the left-read vs right-read titles and for the left vs right channels' whole output. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
 6. **Log-odds lexicon.** Every word with 3+ occurrences in the two systems together, right against left; right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for the channel groups, and Cohen's kappa of the classes between the two over their shared words. The lexicon check: the labelled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
 7. **Allotaxonographs.** Drawn by allotaxonometer-ui {allo.allotaxonometer_ui.iloc[0] if allo is not None else ''} (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
@@ -267,11 +355,11 @@ The top-up titles were spread evenly across months, so the sample supports a gro
 ## Limitations
 
 - **This is perceived leaning.** A model reads a title the way an attentive reader would, and readers disagree. No human panel was used, by choice: one reader cannot supply political ground truth, and a balanced panel is a study of its own. A blind 200-title sheet exists (`leaning_human_sheet.csv`, still unfilled) for anyone who wants a single-reader reliability check.
-- **One judge.** Every number here is one model's reading, and a model reads a title the way it was trained to; a second frontier model of a different family would be the natural robustness check (`--models <alias>` takes any Claude Code model alias).
+- **One judge{', and its second reading is not a clean repeat' if two is not None and rep is None else ''}.** Every number here is one model's reading, and a model reads a title the way it was trained to; a second frontier model of a different family would be the natural robustness check (`--models <alias>` takes any Claude Code model alias).{two_lim}
 - **The groups are a cut on a continuous score.** ±{eps:g} is one title in twenty; a channel at −0.06 and one at −0.04 differ by one label. The score is the measurement, the group is a convenience for comparing bodies of text, and the neutral group mixes channels whose titles balance with channels whose titles are mostly plain news.
 - **Ten words carry little stance.** Six in ten titles are neither, so a channel's score rests on a minority of its titles. At 50 titles the score moves in steps of 0.02 and the split-half reliability is {sh_j.split_half_spearman_mean:.2f}; the {nbase} channels with fewer than 50 uploads still sit at 16 titles or fewer and move in steps of 1/16.
 - **Target and stance blur at the margin.** Hostile-to-Trump wording reads left even when it is a wire headline or an anti-war right channel's; the neutral group and the left tail hold both kinds. Prompt v2 (which also asks for the target) exists in `leaning.py` and was not run at scale.
 - **Month-level reading is group-level only.** Five titles per channel-month is not a monthly channel score; the base 16 were drawn without regard to month, so the monthly table leans on the top-up.
 
-Files: `leaning_labels.csv.gz`, `leaning_label_shares.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_groups.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_group_month.csv`, `leaning_logodds.csv`, `leaning_logodds_summary.csv`, `leaning_logodds_agreement.csv`, `leaning_lexicon_validation.csv`, `leaning_lexicon_channels.csv`, `leaning_lexicon_titles.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.
+Files: `leaning_labels.csv.gz`, `leaning_labels_channel_batched.csv.gz`, `leaning_runs.json`, `leaning_two_readings.json`, `leaning_two_readings_channels.csv`, `leaning_two_readings_changed_titles.csv`, `leaning_labels_repeat.csv.gz`, `leaning_repeat.json`, `leaning_repeat_channels.csv`, `leaning_repeat_changed_titles.csv`, `leaning_label_shares.json`, `leaning_summary.json`, `leaning_by_creator.csv`, `leaning_groups.csv`, `leaning_words.csv`, `leaning_split_half.csv`, `leaning_stability.csv`, `leaning_stability_channels.csv`, `leaning_by_group_month.csv`, `leaning_logodds.csv`, `leaning_logodds_summary.csv`, `leaning_logodds_agreement.csv`, `leaning_lexicon_validation.csv`, `leaning_lexicon_channels.csv`, `leaning_lexicon_titles.csv`, `allotax_summary.csv`, `allotax_contributions.csv`.
 """
