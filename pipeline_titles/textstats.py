@@ -47,10 +47,13 @@ def caps_style(title: str, acronyms: Iterable[str] = ()) -> str:
     short_other: fewer than three 2+-letter words. all_caps: >= 90 % of words
     ALL CAPS. selective_caps: at least one ALL-CAPS word of 3+ letters that is
     neither a known acronym nor a generic label (LIVE, BREAKING, ...): emphasis
-    capitals. title_case: first word capitalised and >= 80 % of the remaining
-    content words (function words excluded) capitalised. sentence_case: first word
-    capitalised and fewer than 80 % of the remaining content words capitalised.
-    mixed_other: everything else (lower-case start, odd mixes)."""
+    capitals. mixed_other: the title's first letter or digit is a lower-case
+    letter ("this is getting too crazy", "iPhone Duo"); a title that opens with
+    a number, a quote, "U.S." or "I" is judged on what follows, since the word
+    pattern skips those tokens and the old test on the first matched word
+    filed "8 dead after ..." and "U.S. strikes ..." here. title_case: >= 80 %
+    of the remaining content words (function words excluded) capitalised.
+    sentence_case: fewer than 80 % of the remaining content words capitalised."""
     words = _WORD_RE.findall(title)
     if len(words) < 3:
         return "short_other"
@@ -60,7 +63,8 @@ def caps_style(title: str, acronyms: Iterable[str] = ()) -> str:
     acr = set(acronyms)
     if any(len(w) >= 3 and w.lower() not in acr and w.lower() not in CAPS_LABELS for w in upper):
         return "selective_caps"
-    if not words[0][0].isupper():
+    first = next((ch for ch in title if ch.isalnum()), "")
+    if first.isalpha() and first.islower():
         return "mixed_other"
     content = [w for w in words[1:] if w.lower() not in FUNCTION_WORDS]
     if not content:

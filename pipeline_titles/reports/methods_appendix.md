@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-21T15:47:20+00:00._
+_Generated 2026-09-21T15:56:08+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -1695,13 +1695,13 @@ Titles:
 | stage5b_engagement | 9.4 | 9.4 | 2026-09-17T19:18:39+00:00 |  |  |  | creator_genre_models=252 |
 | stage5c_hits | 25.3 | 28.9 | 2026-09-17T19:19:04+00:00 |  |  |  | groups=252, powerlaw_like=1 |
 | report_data | 2.8 | 3.1 | 2026-09-17T19:32:40+00:00 |  |  |  | creators=274 |
-| report | 15.0 | 24.6 | 2026-09-17T20:49:23+00:00 |  |  |  | cards=274 |
-| stage6_profiles | 23.8 | 23.8 | 2026-09-21T15:46:24+00:00 |  |  |  | acronyms=961, twin_pairs=9200 |
+| report | 17.1 | 24.6 | 2026-09-21T15:47:21+00:00 |  |  |  | cards=274 |
+| stage6_profiles | 22.9 | 23.8 | 2026-09-21T15:55:16+00:00 |  |  |  | acronyms=961, twin_pairs=9200 |
 | stage7_leaning | 5.8 | 8120.7 | 2026-09-18T15:58:07+00:00 |  |  | subscription (claude -p); see reported_cost_usd | backend=claude-code, prompt_id=leaning-v1, batch_order=shuffled, llm_seconds=8111.8, reported_cost_usd=56.5... |
-| allotax | 6.4 | 11.9 | 2026-09-21T15:47:20+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
+| allotax | 6.4 | 11.9 | 2026-09-21T15:56:08+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
 | leaning_lexicon | 1.7 | 1.7 | 2026-09-15T18:52:59+00:00 |  |  |  | cutoff=1.96 |
 | stage0b_creators | 0.3 | 0.3 | 2026-09-17T19:05:21+00:00 |  |  |  |  |
-| stage6b_zipf_views | 2.7 | 2.7 | 2026-09-21T15:46:45+00:00 |  |  |  | zipf_systems=13, views_rows=244079 |
+| stage6b_zipf_views | 2.6 | 2.7 | 2026-09-21T15:55:35+00:00 |  |  |  | zipf_systems=13, views_rows=244079 |
 
 
 ## Environment

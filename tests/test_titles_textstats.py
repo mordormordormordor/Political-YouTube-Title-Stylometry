@@ -20,6 +20,10 @@ def test_caps_style_rules():
     assert caps_style("The Truth About Tariffs And Trade", acr) == "title_case"
     assert caps_style("Why the Fed can't cut rates", acr) == "sentence_case"
     assert caps_style("chat, we are so back", acr) == "mixed_other"
+    assert caps_style("iPhone Duo: Apple's First Foldable Costs More", acr) == "mixed_other"  # a lower-case first letter, whatever follows
+    assert caps_style("8 dead after Air Force bomber crashes", acr) == "sentence_case"      # a number opens it: judged on what follows
+    assert caps_style("U.S. strikes targets on Kharg Island", acr) == "sentence_case"      # "U.S." is skipped by the word pattern, not a lower-case start
+    assert caps_style("'I was away': Trump justifies voting by mail", acr) == "sentence_case"
     assert caps_style("It's over.", acr) == "short_other"
 
 

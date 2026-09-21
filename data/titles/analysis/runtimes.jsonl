@@ -133,3 +133,8 @@
 {"stage": "allotax", "seconds": 8.4, "started": "2026-09-21T15:46:55+00:00", "finished": "2026-09-21T15:47:03+00:00", "alpha": 0.3333, "top_n": 40, "versions": {"allotaxonometer-ui": "0.2.2", "puppeteer": "24.43.1", "node": "v25.5.0"}, "figures": 2}
 {"stage": "allotax", "seconds": 6.4, "started": "2026-09-21T15:47:13+00:00", "finished": "2026-09-21T15:47:20+00:00", "alpha": 0.3333, "top_n": 40, "versions": {"allotaxonometer-ui": "0.2.2", "puppeteer": "24.43.1", "node": "v25.5.0"}, "figures": 2}
 {"stage": "report", "seconds": 17.1, "started": "2026-09-21T15:47:04+00:00", "finished": "2026-09-21T15:47:21+00:00", "cards": 274}
+{"stage": "stage6_profiles", "seconds": 22.9, "started": "2026-09-21T15:54:54+00:00", "finished": "2026-09-21T15:55:16+00:00", "acronyms": 961, "twin_pairs": 9200}
+{"stage": "stage6b_zipf_views", "seconds": 2.6, "started": "2026-09-21T15:55:33+00:00", "finished": "2026-09-21T15:55:35+00:00", "zipf_systems": 13, "views_rows": 244079}
+{"stage": "allotax", "seconds": 6.9, "started": "2026-09-21T15:55:45+00:00", "finished": "2026-09-21T15:55:52+00:00", "alpha": 0.3333, "top_n": 40, "versions": {"allotaxonometer-ui": "0.2.2", "puppeteer": "24.43.1", "node": "v25.5.0"}, "figures": 2}
+{"stage": "allotax", "seconds": 6.4, "started": "2026-09-21T15:56:02+00:00", "finished": "2026-09-21T15:56:08+00:00", "alpha": 0.3333, "top_n": 40, "versions": {"allotaxonometer-ui": "0.2.2", "puppeteer": "24.43.1", "node": "v25.5.0"}, "figures": 2}
+{"stage": "report", "seconds": 16.5, "started": "2026-09-21T15:55:52+00:00", "finished": "2026-09-21T15:56:09+00:00", "cards": 274}
