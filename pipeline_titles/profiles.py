@@ -2,7 +2,13 @@
 
     caps_profile.csv        share of each creator x genre's unique titles by capitalisation
                             style (all_caps, selective_caps, title_case, sentence_case,
-                            mixed_other, short_other; rules in textstats.caps_style);
+                            mixed_other, short_other; rules in textstats.caps_style), read
+                            off the raw title as published: the normalised title strips a
+                            channel's fixed show name and episode number along with its
+                            brand tag, which left "Joe Rogan Experience #2551 - Daniel
+                            Kokotajlo" as two words and "short / other"; a brand tag adds
+                            capitalised words a Title Case rule does not mind, and one
+                            always written in capitals is learned as an acronym;
                             caps_style_title.parquet carries the style of every unique
                             title (row_id, caps_style) for the Zipf / views stage
     top_words.csv           the most frequent non-stopwords: creator-balanced (mean over
@@ -67,9 +73,9 @@ def run(info: dict) -> None:
     ranked = (~uniq.groupby(["creator", "genre"])["low_n"].first())
     uniq = uniq.merge(creators, on="creator", how="left")
 
-    # ---- capitalisation profile ----
-    _, acronyms = build_case_lexicon(uniq["title_norm"].drop_duplicates())
-    uniq["caps_style"] = [caps_style(t, acronyms) for t in uniq["title_norm"]]
+    # ---- capitalisation profile (on the raw title: the normalisation strips show names and episode numbers, not just brand tags) ----
+    _, acronyms = build_case_lexicon(uniq["title_raw"].drop_duplicates())
+    uniq["caps_style"] = [caps_style(t, acronyms) for t in uniq["title_raw"]]
     uniq[["row_id", "caps_style"]].to_parquet(CAPS_STYLE_TITLE, index=False)
     cp = uniq.groupby(["creator", "genre"])["caps_style"].value_counts(normalize=True).unstack(fill_value=0.0).reindex(columns=CAPS_STYLES, fill_value=0.0).reset_index()
     cp["n_titles"] = uniq.groupby(["creator", "genre"]).size().to_numpy()

@@ -6,9 +6,9 @@ channel_group,right,51528,551948,27779,10.71,0.0503,0.8282,100,0.7863,1000,1.023
 title_label,left,3031,29617,6005,9.77,0.2028,0.8587,100,0.818,1000,0.9967,5000,0.9954,0.8471,0.007,0.038,trump the to is s in on of and as
 title_label,right,2550,26617,6104,10.44,0.2293,0.7689,100,0.775,1000,0.9654,5000,0.996,0.773,0.0037,0.0408,the to is on trump in of and for s
 title_label,neither,6881,62974,11081,9.15,0.176,0.8643,100,0.8113,1000,0.9644,5000,0.9964,0.8147,0.0058,0.0404,the to in is of a on s and trump
-caps_style,all_caps,4163,25992,4936,6.24,0.1899,0.7642,100,0.8745,1000,0.9904,4936,0.994,0.7951,0.0081,0.0247,the is trump this to it in they iran s
-caps_style,selective_caps,56805,592182,26654,10.42,0.045,0.8079,100,0.7939,1000,1.0675,5000,0.9966,0.7823,0.0079,0.0321,trump the to in as on s is of iran
-caps_style,title_case,52644,543500,30226,10.32,0.0556,0.8517,100,0.795,1000,1.0153,5000,0.9959,0.8243,0.0079,0.0341,the trump to s in on of is and a
-caps_style,sentence_case,38729,431875,28270,11.15,0.0655,0.8634,100,0.7959,1000,1.0123,5000,0.9952,0.8117,0.0082,0.0218,to in the of trump on iran and for s
-caps_style,mixed_other,1334,14193,4133,10.64,0.2912,0.8308,100,0.8321,1000,0.8167,4133,0.9879,,,0.0237,in a the to s i of u this is
-caps_style,short_other,1961,5240,1123,2.67,0.2143,1.2563,100,0.8266,1000,0.7757,1123,0.8644,,,0.1168,tyt hour episode 1 2 bonus 26 full hasanabi 2026
+caps_style,all_caps,3980,24648,4808,6.19,0.1951,0.7581,100,0.8765,1000,0.9801,4808,0.9939,0.7935,0.0088,0.0247,the is trump this to it they in iran on
+caps_style,selective_caps,57793,600713,26847,10.39,0.0447,0.81,100,0.7934,1000,1.0669,5000,0.9966,0.7837,0.0074,0.0321,trump the to in as on s is of iran
+caps_style,title_case,53114,541403,30215,10.19,0.0558,0.8431,100,0.7971,1000,1.0165,5000,0.9963,0.8157,0.0078,0.034,the trump to s in on of is and a
+caps_style,sentence_case,38575,429713,28173,11.14,0.0656,0.8629,100,0.7962,1000,1.0134,5000,0.9953,0.8128,0.0087,0.0217,to in the of trump on iran and for s
+caps_style,mixed_other,1329,14136,4114,10.64,0.291,0.8312,100,0.832,1000,0.8171,4114,0.9878,,,0.0238,in a the to s i of u this is
+caps_style,short_other,845,2369,794,2.8,0.3352,0.9581,100,0.7639,794,0.7639,794,0.873,,,0.0595,26 episode full hasanabi 2026 bloomberg surveillance 4 5 a

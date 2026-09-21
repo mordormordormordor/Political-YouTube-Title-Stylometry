@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-18T15:59:59+00:00._
+_Generated 2026-09-21T15:47:20+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -504,7 +504,13 @@ Stage 6 - channel profiles behind the question documents (9, 11, 12, 13):
 
     caps_profile.csv        share of each creator x genre's unique titles by capitalisation
                             style (all_caps, selective_caps, title_case, sentence_case,
-                            mixed_other, short_other; rules in textstats.caps_style);
+                            mixed_other, short_other; rules in textstats.caps_style), read
+                            off the raw title as published: the normalised title strips a
+                            channel's fixed show name and episode number along with its
+                            brand tag, which left "Joe Rogan Experience #2551 - Daniel
+                            Kokotajlo" as two words and "short / other"; a brand tag adds
+                            capitalised words a Title Case rule does not mind, and one
+                            always written in capitals is learned as an acronym;
                             caps_style_title.parquet carries the style of every unique
                             title (row_id, caps_style) for the Zipf / views stage
     top_words.csv           the most frequent non-stopwords: creator-balanced (mean over
@@ -1690,12 +1696,12 @@ Titles:
 | stage5c_hits | 25.3 | 28.9 | 2026-09-17T19:19:04+00:00 |  |  |  | groups=252, powerlaw_like=1 |
 | report_data | 2.8 | 3.1 | 2026-09-17T19:32:40+00:00 |  |  |  | creators=274 |
 | report | 15.0 | 24.6 | 2026-09-17T20:49:23+00:00 |  |  |  | cards=274 |
-| stage6_profiles | 20.7 | 22.3 | 2026-09-17T19:19:26+00:00 |  |  |  | acronyms=956, twin_pairs=2680 |
+| stage6_profiles | 23.8 | 23.8 | 2026-09-21T15:46:24+00:00 |  |  |  | acronyms=961, twin_pairs=9200 |
 | stage7_leaning | 5.8 | 8120.7 | 2026-09-18T15:58:07+00:00 |  |  | subscription (claude -p); see reported_cost_usd | backend=claude-code, prompt_id=leaning-v1, batch_order=shuffled, llm_seconds=8111.8, reported_cost_usd=56.5... |
-| allotax | 6.2 | 11.9 | 2026-09-17T20:49:23+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
+| allotax | 6.4 | 11.9 | 2026-09-21T15:47:20+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
 | leaning_lexicon | 1.7 | 1.7 | 2026-09-15T18:52:59+00:00 |  |  |  | cutoff=1.96 |
 | stage0b_creators | 0.3 | 0.3 | 2026-09-17T19:05:21+00:00 |  |  |  |  |
-| stage6b_zipf_views | 2.3 | 2.4 | 2026-09-17T20:49:08+00:00 |  |  |  | zipf_systems=13, views_rows=244079 |
+| stage6b_zipf_views | 2.7 | 2.7 | 2026-09-21T15:46:45+00:00 |  |  |  | zipf_systems=13, views_rows=244079 |
 
 
 ## Environment

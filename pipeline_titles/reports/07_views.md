@@ -6,7 +6,7 @@ Three groupings run through the whole document. **Channel group**: left / neutra
 
 ## The finding in one paragraph
 
-Title vocabulary is Zipfian in the way short texts usually are: on log-log axes the rank-frequency curve is straight through the head (R² 0.995 over the top 1,000 words) with an exponent that depends on the cut-off (0.78 over the top 1,000 words, 1.01 over the top 5,000), because ten-word titles have a flatter head than running prose. The three ways of cutting the corpus move the curve less than they move the words on it. Left channels have the steepest vocabulary (size-matched exponent 0.82 against 0.79 for the right group): "trump" is their most frequent word, ahead of "the". Among the labelled titles the left-read ones are again the most concentrated (0.85) and the right-read ones the least (0.77). ALL-CAPS titles are the shortest (6.2 tokens against 11.2 for sentence case) and their head is the flattest, with "this", "it" and "they" among the ten most frequent words: the shouted title is a reaction, not a headline. Views within a channel are *not* Zipfian: the rank-size curve bends down in the tail, the power-law fit is never significantly preferred to a lognormal (0 of 193 video channels; the lognormal is significantly preferred in 79 and the test is inconclusive in the rest), and the neutral group is the most hit-driven (median Gini 0.67 against 0.49 and 0.49). Over the months, views per video are a snapshot that favours older uploads, and the left group's channels sit far above the other two in every month (median channel 50k views per video against about 20k for the right group and 20k for the neutral). Against each channel's own monthly baseline, capitals earn views in every month of the year (ALL CAPS +0.04 and selective CAPS +0.05 log points, Title Case -0.03, sentence case -0.03), and right-read titles do a little better than left-read ones, which do a little better than neither (+0.04, +0.01, -0.02).
+Title vocabulary is Zipfian in the way short texts usually are: on log-log axes the rank-frequency curve is straight through the head (R² 0.995 over the top 1,000 words) with an exponent that depends on the cut-off (0.78 over the top 1,000 words, 1.01 over the top 5,000), because ten-word titles have a flatter head than running prose. The three ways of cutting the corpus move the curve less than they move the words on it. Left channels have the steepest vocabulary (size-matched exponent 0.82 against 0.79 for the right group): "trump" is their most frequent word, ahead of "the". Among the labelled titles the left-read ones are again the most concentrated (0.85) and the right-read ones the least (0.77). ALL-CAPS titles are the shortest (6.2 tokens against 11.1 for sentence case) and their head is the flattest, with "this", "it" and "they" among the ten most frequent words: the shouted title is a reaction, not a headline. Views within a channel are *not* Zipfian: the rank-size curve bends down in the tail, the power-law fit is never significantly preferred to a lognormal (0 of 193 video channels; the lognormal is significantly preferred in 79 and the test is inconclusive in the rest), and the neutral group is the most hit-driven (median Gini 0.67 against 0.49 and 0.49). Over the months, views per video are a snapshot that favours older uploads, and the left group's channels sit far above the other two in every month (median channel 50k views per video against about 20k for the right group and 20k for the neutral). Against each channel's own monthly baseline, capitals earn views in every month of the year (ALL CAPS +0.04 and selective CAPS +0.05 log points, Title Case -0.03, sentence case -0.03), and right-read titles do a little better than left-read ones, which do a little better than neither (+0.04, +0.01, -0.02).
 
 ## Zipf's law in title vocabulary
 
@@ -24,15 +24,15 @@ Tokens are lower-cased words from the normalised title, stopwords included (Zipf
 | title_label | left titles | 3031 | 29617 | 6005 | 9.770 | 0.859 | 0.818 | 0.997 | 0.995 | 0.847 | 0.038 | trump the to is s in on of and as |
 | title_label | right titles | 2550 | 26617 | 6104 | 10.440 | 0.769 | 0.775 | 0.965 | 0.996 | 0.773 | 0.041 | the to is on trump in of and for s |
 | title_label | neither titles | 6881 | 62974 | 11081 | 9.150 | 0.864 | 0.811 | 0.964 | 0.996 | 0.815 | 0.040 | the to in is of a on s and trump |
-| caps_style | ALL CAPS | 4163 | 25992 | 4936 | 6.240 | 0.764 | 0.875 | 0.990 | 0.994 | 0.795 | 0.025 | the is trump this to it in they iran s |
-| caps_style | selective CAPS | 56805 | 592182 | 26654 | 10.420 | 0.808 | 0.794 | 1.067 | 0.997 | 0.782 | 0.032 | trump the to in as on s is of iran |
-| caps_style | Title Case | 52644 | 543500 | 30226 | 10.320 | 0.852 | 0.795 | 1.015 | 0.996 | 0.824 | 0.034 | the trump to s in on of is and a |
-| caps_style | Sentence case | 38729 | 431875 | 28270 | 11.150 | 0.863 | 0.796 | 1.012 | 0.995 | 0.812 | 0.022 | to in the of trump on iran and for s |
-| caps_style | mixed / other | 1334 | 14193 | 4133 | 10.640 | 0.831 | 0.832 | 0.817 | 0.988 |  | 0.024 | in a the to s i of u this is |
-| caps_style | short / other | 1961 | 5240 | 1123 | 2.670 | 1.256 | 0.827 | 0.776 | 0.864 |  | 0.117 | tyt hour episode 1 2 bonus 26 full hasanabi 2026 |
+| caps_style | ALL CAPS | 3980 | 24648 | 4808 | 6.190 | 0.758 | 0.876 | 0.980 | 0.994 | 0.793 | 0.025 | the is trump this to it they in iran on |
+| caps_style | selective CAPS | 57793 | 600713 | 26847 | 10.390 | 0.810 | 0.793 | 1.067 | 0.997 | 0.784 | 0.032 | trump the to in as on s is of iran |
+| caps_style | Title Case | 53114 | 541403 | 30215 | 10.190 | 0.843 | 0.797 | 1.016 | 0.996 | 0.816 | 0.034 | the trump to s in on of is and a |
+| caps_style | Sentence case | 38575 | 429713 | 28173 | 11.140 | 0.863 | 0.796 | 1.013 | 0.995 | 0.813 | 0.022 | to in the of trump on iran and for s |
+| caps_style | mixed / other | 1329 | 14136 | 4114 | 10.640 | 0.831 | 0.832 | 0.817 | 0.988 |  | 0.024 | in a the to s i of u this is |
+| caps_style | short / other | 845 | 2369 | 794 | 2.800 | 0.958 | 0.764 | 0.764 | 0.873 |  | 0.059 | 26 episode full hasanabi 2026 bloomberg surveillance 4 5 a |
 
 
-Three things to read off the table. The corpus exponent over the top 100 words (0.86) is higher than over the top 1,000 (0.78) and lower than over the top 5,000 (1.01): the head of a title vocabulary is flat because titles ration function words, and the tail is steep because a 155k-title corpus has a long list of names used once (the Stage 0 check on the balanced subset with streams included, `zipf_check.csv`, gives the same three figures). The left group is the most concentrated of the three channel groups and the left-read titles the most concentrated of the three labels, and "trump" heads both lists (3.8% of the left group's tokens, 3.8% of the left-read titles'), whereas the neutral group and the neither-read titles start with "the" and "in"; the right-read titles are the flattest system in the corpus, their most frequent words being the function words of a headline ("the", "to", "is", "on") with "trump" fifth. The capitalisation styles differ in length more than in slope; the ALL-CAPS system is the exception, with the lowest top-100 exponent (0.76) and the highest top-1,000 exponent (0.87): a small, repetitive vocabulary of reaction words with a very short tail.
+Three things to read off the table. The corpus exponent over the top 100 words (0.86) is higher than over the top 1,000 (0.78) and lower than over the top 5,000 (1.01): the head of a title vocabulary is flat because titles ration function words, and the tail is steep because a 155k-title corpus has a long list of names used once (the Stage 0 check on the balanced subset with streams included, `zipf_check.csv`, gives the same three figures). The left group is the most concentrated of the three channel groups and the left-read titles the most concentrated of the three labels, and "trump" heads both lists (3.8% of the left group's tokens, 3.8% of the left-read titles'), whereas the neutral group and the neither-read titles start with "the" and "in"; the right-read titles are the flattest system in the corpus, their most frequent words being the function words of a headline ("the", "to", "is", "on") with "trump" fifth. The capitalisation styles differ in length more than in slope; the ALL-CAPS system is the exception, with the lowest top-100 exponent (0.76) and the highest top-1,000 exponent (0.88): a small, repetitive vocabulary of reaction words with a very short tail.
 
 Creator-level exponents (each channel's own vocabulary, top 200 ranks, from the Stage 0 check; and the subsampled Zipf and Heaps exponents of Stage 2, which exist only for the `n_creators_1500` channels with at least 1,500 tokens) averaged per group tell the same story from the channel side, with the ranked channels' dominant capitalisation style as a second cut:
 
@@ -42,8 +42,8 @@ Creator-level exponents (each channel's own vocabulary, top 200 ranks, from the 
 | channel_group | neutral channels | 38 | 0.789 | 0.809 | 25 | 0.712 | 0.843 | 0.043 |
 | channel_group | right channels | 96 | 0.750 | 0.757 | 67 | 0.690 | 0.827 | 0.046 |
 | dominant_caps_style | ALL CAPS | 7 | 0.735 | 0.740 | 5 | 0.692 | 0.814 | 0.036 |
-| dominant_caps_style | selective CAPS | 74 | 0.784 | 0.791 | 63 | 0.701 | 0.809 | 0.046 |
-| dominant_caps_style | Title Case | 126 | 0.763 | 0.761 | 75 | 0.713 | 0.828 | 0.050 |
+| dominant_caps_style | selective CAPS | 78 | 0.781 | 0.784 | 66 | 0.700 | 0.809 | 0.045 |
+| dominant_caps_style | Title Case | 123 | 0.762 | 0.762 | 72 | 0.715 | 0.829 | 0.050 |
 | dominant_caps_style | Sentence case | 30 | 0.830 | 0.835 | 21 | 0.718 | 0.843 | 0.042 |
 
 
@@ -58,12 +58,12 @@ Within each channel, videos ranked by views on log-log axes: a straight line wou
 
 | grouping | group | n_creators_with_views | zipf_views_all_median | zipf_views_head_median | gini_median | top10_share_median | powerlaw_like_share | caps_any_mean |
 |---|---|---|---|---|---|---|---|---|
-| channel_group | left channels | 86 | 0.876 | 0.425 | 0.494 | 0.373 | 0.000 | 0.375 |
-| channel_group | neutral channels | 32 | 1.244 | 0.603 | 0.670 | 0.538 | 0.000 | 0.181 |
-| channel_group | right channels | 75 | 0.898 | 0.419 | 0.495 | 0.361 | 0.000 | 0.403 |
-| dominant_caps_style | ALL CAPS | 5 | 0.583 | 0.312 | 0.347 | 0.263 | 0.000 | 0.774 |
-| dominant_caps_style | selective CAPS | 64 | 0.797 | 0.383 | 0.459 | 0.346 | 0.000 | 0.748 |
-| dominant_caps_style | Title Case | 97 | 0.951 | 0.468 | 0.536 | 0.404 | 0.000 | 0.173 |
+| channel_group | left channels | 86 | 0.876 | 0.425 | 0.494 | 0.373 | 0.000 | 0.396 |
+| channel_group | neutral channels | 32 | 1.244 | 0.603 | 0.670 | 0.538 | 0.000 | 0.183 |
+| channel_group | right channels | 75 | 0.898 | 0.419 | 0.495 | 0.361 | 0.000 | 0.406 |
+| dominant_caps_style | ALL CAPS | 5 | 0.583 | 0.312 | 0.347 | 0.263 | 0.000 | 0.778 |
+| dominant_caps_style | selective CAPS | 66 | 0.833 | 0.385 | 0.472 | 0.349 | 0.000 | 0.758 |
+| dominant_caps_style | Title Case | 96 | 0.924 | 0.463 | 0.516 | 0.392 | 0.000 | 0.168 |
 | dominant_caps_style | Sentence case | 25 | 1.236 | 0.634 | 0.681 | 0.557 | 0.000 | 0.070 |
 
 
@@ -90,15 +90,15 @@ Within a channel the age effect cancels: **relative log views** is log(1 + views
 
 | group | 2026-01 | 2026-02 | 2026-03 | 2026-04 | 2026-05 | 2026-06 | 2026-07 | 2026-08 | 2026-09 |
 |---|---|---|---|---|---|---|---|---|---|
-| ALL CAPS | +0.101 | +0.029 | +0.030 | +0.025 | +0.045 | +0.038 | +0.079 | +0.020 | +0.017 |
-| selective CAPS | +0.053 | +0.047 | +0.084 | +0.059 | +0.058 | +0.055 | +0.025 | +0.042 | +0.054 |
-| Title Case | -0.017 | -0.028 | -0.055 | -0.039 | -0.023 | -0.032 | -0.001 | -0.018 | -0.020 |
-| Sentence case | -0.037 | -0.022 | -0.027 | -0.022 | -0.041 | -0.029 | -0.029 | -0.033 | -0.035 |
-| mixed / other | +0.031 | +0.157 | -0.008 | -0.065 | +0.010 | +0.035 | +0.008 | +0.107 | -0.052 |
-| short / other | +0.134 | +0.157 | +0.266 | +0.149 | +0.458 | +0.230 | +0.182 | +0.238 | +0.066 |
+| ALL CAPS | +0.116 | +0.026 | +0.045 | +0.023 | +0.050 | +0.033 | +0.087 | +0.023 | +0.024 |
+| selective CAPS | +0.052 | +0.045 | +0.084 | +0.065 | +0.062 | +0.056 | +0.025 | +0.043 | +0.052 |
+| Title Case | -0.017 | -0.026 | -0.054 | -0.040 | -0.024 | -0.033 | +0.002 | -0.017 | -0.020 |
+| Sentence case | -0.037 | -0.023 | -0.028 | -0.027 | -0.045 | -0.029 | -0.030 | -0.034 | -0.034 |
+| mixed / other | +0.020 | +0.157 | -0.008 | -0.065 | +0.009 | +0.038 | +0.009 | +0.106 | -0.052 |
+| short / other | +0.153 | +0.211 | +0.238 | +0.137 | +0.559 | +0.189 | +0.142 | +0.195 | +0.054 |
 
 
-Over the year: ALL CAPS +0.040, selective CAPS +0.052, Title Case -0.026, Sentence case -0.030 (standard errors 0.014 for ALL CAPS and at most 0.005 for the three big styles). The effect is modest (a few per cent) but it is the most consistent title-level signal in the corpus, holding month after month and inside channels rather than between them; the twelve-factor regression with month *and topic* controls (all_tables.md, stage 5) gives the ALL-CAPS factor F9 a median coefficient of +0.014 log views per within-channel SD, positive for 60 % of channels: the same sign, smaller once the subject is held fixed. "Short / other" titles (966 videos, mostly numbered episodes and one-word titles) sit far above baseline, but that is a format effect, not a capitalisation one.
+Over the year: ALL CAPS +0.044, selective CAPS +0.053, Title Case -0.025, Sentence case -0.032 (standard errors 0.015 for ALL CAPS and at most 0.005 for the three big styles). The effect is modest (a few per cent) but it is the most consistent title-level signal in the corpus, holding month after month and inside channels rather than between them; the twelve-factor regression with month *and topic* controls (all_tables.md, stage 5) gives the ALL-CAPS factor F9 a median coefficient of +0.014 log views per within-channel SD, positive for 60 % of channels: the same sign, smaller once the subject is held fixed. "Short / other" titles (763 videos, mostly numbered episodes and one-word titles) sit far above baseline, but that is a format effect, not a capitalisation one.
 
 **By title label.** Over the 11,790 sampled titles with view counts, right-read titles outperform their channel's monthly average, left-read titles sit at it and neither-read titles fall just below; the differences are small, only the right-read figure clears two standard errors, and the monthly series is noisy (a few hundred titles per label per month):
 
@@ -109,7 +109,7 @@ Over the year: ALL CAPS +0.040, selective CAPS +0.052, Title Case -0.026, Senten
 | right titles | +0.050 | -0.024 | -0.021 | +0.131 | -0.001 | +0.110 | +0.018 | +0.019 | +0.064 |
 
 
-Over the year: right +0.038 (SE 0.018), left +0.009, neither -0.016. Partisan wording, in other words, does about what capitals do, and the two overlap: 46 % of left-read and 48 % of right-read titles carry ALL or selective CAPS, against 25 % of neither-read ones.
+Over the year: right +0.038 (SE 0.018), left +0.009, neither -0.016. Partisan wording, in other words, does about what capitals do, and the two overlap: 48 % of left-read and 48 % of right-read titles carry ALL or selective CAPS, against 26 % of neither-read ones.
 
 ## How the three cuts overlap
 
@@ -118,24 +118,24 @@ Over the year: right +0.038 (SE 0.018), left +0.009, neither -0.016. Partisan wo
 
 | grouping | group | n_titles | ALL CAPS | selective CAPS | Title Case | Sentence case | mixed / other | short / other | ALL + selective |
 |---|---|---|---|---|---|---|---|---|---|
-| channel_group | left channels | 64947 | 0.02 | 0.46 | 0.32 | 0.17 | 0.01 | 0.02 | 0.48 |
-| channel_group | neutral channels | 39161 | 0.01 | 0.16 | 0.27 | 0.54 | 0.01 | 0.01 | 0.17 |
+| channel_group | left channels | 64947 | 0.02 | 0.47 | 0.32 | 0.17 | 0.01 | 0.01 | 0.49 |
+| channel_group | neutral channels | 39161 | 0.01 | 0.16 | 0.28 | 0.54 | 0.01 | 0.00 | 0.17 |
 | channel_group | right channels | 51528 | 0.05 | 0.40 | 0.41 | 0.12 | 0.00 | 0.01 | 0.45 |
-| title_label | left titles | 3031 | 0.01 | 0.45 | 0.46 | 0.08 | 0.00 | 0.00 | 0.46 |
-| title_label | right titles | 2550 | 0.02 | 0.45 | 0.47 | 0.04 | 0.00 | 0.00 | 0.48 |
-| title_label | neither titles | 6881 | 0.03 | 0.21 | 0.53 | 0.19 | 0.01 | 0.03 | 0.25 |
+| title_label | left titles | 3031 | 0.01 | 0.47 | 0.44 | 0.08 | 0.00 | 0.00 | 0.48 |
+| title_label | right titles | 2550 | 0.02 | 0.46 | 0.47 | 0.04 | 0.00 | 0.00 | 0.48 |
+| title_label | neither titles | 6881 | 0.03 | 0.22 | 0.53 | 0.19 | 0.01 | 0.01 | 0.26 |
 
 
-Left and right channels shout at the same rate (48 % and 45 % of titles with capitals); the neutral group is sentence case (54 %). The left group leans to selective CAPS (46 % of titles), the right group splits between Title Case (41 %) and selective CAPS (40 %); sentence case is 17 % and 12 %. Crossing the labelled titles with their style shows where the judge's labels come from: selective CAPS is the partisan style (63 % of its labelled titles read left or right), while ALL CAPS, Title Case and sentence case read as "neither" 71 %, 58 % and 79 % of the time (a fully shouted title is as often a reaction to an event as a stance on it), and within each style the right-read titles are the ones that draw the most views relative to their channel:
+Left and right channels shout at the same rate (49 % and 45 % of titles with capitals); the neutral group is sentence case (54 %). The left group leans to selective CAPS (47 % of titles), the right group splits between Title Case (41 %) and selective CAPS (40 %); sentence case is 17 % and 12 %. Crossing the labelled titles with their style shows where the judge's labels come from: selective CAPS is the partisan style (63 % of its labelled titles read left or right), while ALL CAPS, Title Case and sentence case read as "neither" 72 %, 59 % and 79 % of the time (a fully shouted title is as often a reaction to an event as a stance on it), and within each style the right-read titles are the ones that draw the most views relative to their channel:
 
 | caps_style | n_titles | share_left | share_neither | share_right | relative_log_views_left | relative_log_views_neither | relative_log_views_right |
 |---|---|---|---|---|---|---|---|
-| ALL CAPS | 332 | 0.115 | 0.711 | 0.175 | -0.010 | -0.004 | 0.069 |
-| selective CAPS | 3988 | 0.341 | 0.369 | 0.291 | 0.006 | 0.033 | 0.066 |
-| Title Case | 6227 | 0.223 | 0.584 | 0.194 | 0.002 | -0.038 | 0.006 |
-| Sentence case | 1643 | 0.141 | 0.791 | 0.068 | 0.069 | -0.026 | 0.118 |
-| mixed / other | 80 | 0.138 | 0.787 | 0.075 |  | -0.132 |  |
-| short / other | 192 | 0.031 | 0.927 | 0.042 |  | 0.174 |  |
+| ALL CAPS | 324 | 0.108 | 0.719 | 0.173 | -0.060 | 0.000 | 0.069 |
+| selective CAPS | 4123 | 0.345 | 0.370 | 0.284 | -0.005 | 0.039 | 0.070 |
+| Title Case | 6199 | 0.214 | 0.592 | 0.194 | 0.012 | -0.033 | -0.000 |
+| Sentence case | 1632 | 0.141 | 0.792 | 0.067 | 0.086 | -0.029 | 0.113 |
+| mixed / other | 79 | 0.139 | 0.785 | 0.076 |  | -0.133 |  |
+| short / other | 105 | 0.048 | 0.895 | 0.057 |  | 0.017 |  |
 
 
 ## What the numbers do and do not say

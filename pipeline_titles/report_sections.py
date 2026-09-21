@@ -711,14 +711,14 @@ Averaged over the {len(v)} ranked channels (edited uploads), {pct(means['title_c
 
 ### Method
 
-Each unique normalised title (brand suffixes such as "| Fox News" removed, so channel tags do not count) is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if it starts lower-case; **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself ({len(acr)} words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like. Shares are over a channel's unique titles per genre.
+Each unique title, as published (the raw title: the normalised one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if it starts lower-case; **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself ({len(acr)} words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like. Shares are over a channel's unique titles per genre.
 
 ### Limitations
 
 - Any single emphasised word makes a title "selective CAPS", so the category mixes light emphasis ("This Is INSANE") with heavy ("MAGA MELTDOWN as Trump LOSES IT").
 - The acronym exemption is corpus-learned: a word that is usually shouted (e.g. a name a channel always capitalises) can be learned as an acronym and stop counting, and a genuine acronym rarely written in mixed case can count as emphasis.
 - Title Case vs sentence case is a threshold (80 % of content words capitalised); headlines dense with proper nouns can tip over it.
-- Computed on normalised titles; a channel whose only capitals were in a stripped show-name suffix scores lower than its raw titles look.
+- Computed on raw titles, so a brand tag counts: "| Fox News" adds capitalised words (harmless under the Title Case rule, and a sentence-case title stays sentence case with two more capitals among its content words), and a tag always written in capitals ("| REUTERS") is learned as an acronym and exempt; a tag in capitals on too few titles to be learned would count as a shout.
 - {GROUP_NOTE}
 
 ## The twenty most frequent non-stopwords

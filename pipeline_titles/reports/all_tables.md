@@ -1,6 +1,6 @@
 # Title Stylometry: all tables (reference dump), 2026-01-01 to 2026-09-14
 
-_Generated 2026-09-17T20:49:09+00:00 by `python -m pipeline_titles.report`. Every table below is read from `data/titles/analysis/`; the code is `pipeline_titles/`._
+_Generated 2026-09-21T15:47:04+00:00 by `python -m pipeline_titles.report`. Every table below is read from `data/titles/analysis/`; the code is `pipeline_titles/`._
 
 Corpus: 309,596 titles from 274 creators (300,420 unique within creator x genre; 256,897 edited uploads, 52,699 live-stream VODs; 5,783 on Rumble). Genres are never pooled; a creator x genre with fewer than 50 unique titles is low-n and never ranked.
 
@@ -15,7 +15,7 @@ _One plain-language finding per stage, written from the tables below (2026-09-14
 - **Stage 4, landscape.** The channel groups predict style almost not at all: style clusters vs groups ARI 0.036 (videos, all titles) and 0.054 (political titles only); no group coheres in style space (cohesion ratios 1.01, 1.00 and 0.94 for left, neutral and right), and the largest style cluster holds 69 creators from all three groups. So the useful units are the style neighbours on each card, not the groups. Of 1,575 titles used verbatim by two or more creators, 474 cross organisations (the rest are TYT/Damage Report-type cross-posts) and 38 % of those are used in more than one channel group (a random pair of channels shares a group 38 % of the time, so verbatim sharing runs a little more within the camps than chance, the masked templates across them): "THIS IS INSANE.." is used by 12 creators across all three groups, "IT HAPPENED AGAIN??" by 7, and the shared templates are outrage frames ("<ENT> exposes <ENT>", "<ENT> destroys <ENT>", "<ENT> under the bus"). Trump is named in 3-5 % of balanced titles by 199 creators, most by the left group; the entities that carry the most outrage framing relative to baseline are MAGA (1.6x), Pam Bondi (1.5x), Kash Patel and Candace Owens (1.3x), the least are the crime-story names (Nancy Guthrie 0.3x, Lindsay Clancy 0.3x).
 - **Stage 5, time and engagement.** Drift is small: 9 of 90 group-month series show a monotone trend; the left group's outrage share eased from 70 % to 65 % over the year and the right group's question framing fell, while the corpus mean stayed flat. Within creator, the outrage frame is the only title feature that predicts views with a consistent sign in the topic-controlled regression (median +0.04 log views per SD; positive for 73 % of 193 video channels, significant-positive for 24 %, significant-negative for 1 %); every dimension score and length has a median effect at or below 0.03 with 50-70 % sign agreement, which is a null result. Views are concentrated (median Gini 0.51; the top 10 % of a channel's videos take 38 % of its views) but not power-law: the Clauset-Shalizi-Newman test never significantly prefers the power law (0 of 193 video channels; the lognormal wins significantly in 79, the rest are inconclusive); within groups, concentration falls with the outrage share (rho -0.44), and every other correlate (quoted speech, modal / future wording, question framing, tone, the number of videos) is weak (|rho| <= 0.26).
 - **Stage 6b, Zipf's law and views over time.** Title vocabulary is Zipfian with a flat head (exponent 0.86 over the top 100 words, 0.78 over the top 1,000, 1.01 over the top 5,000; R² 0.995). The three cuts move the words more than the curve: the left group (size-matched exponent 0.82) and the left-read titles (0.85) are the most concentrated systems, with "trump" ahead of "the"; the right-read titles are the flattest (0.77); ALL-CAPS titles are 6 tokens long against 11 for sentence case, with "this", "it" and "they" among their ten most frequent words. Views within a channel are not Zipfian (lognormal tails), and the neutral group is the hit-driven one (median Gini 0.67 vs 0.49 for left and right). Over the months the median left channel draws one and a half to two and a half times the views per video of the median right or neutral channel. Against each channel's own monthly baseline, capitals earn views in every month of the year (ALL CAPS +0.04 and selective CAPS +0.05 log points; Title Case -0.03, sentence case -0.03), and right-read titles do a little better than left-read ones, which do a little better than neither-read ones (+0.04, +0.01, -0.02); left and right channels shout at the same rate (48 % and 45 % of titles with capitals), the neutral group is sentence case (54 %).
-- **Stage 0d, political leaning (2026-09-15; runs third in the pipeline, recorded as stage7_leaning).** Two levels. Titles: Claude Opus, through the Claude Code CLI, labelled 12,478 titles (50 per ranked channel, 16 for the 35 channels with fewer than 50 uploads) as left, right or neither from the title text alone, twenty titles to a call in a random order so that no title was judged beside its channel's other titles; it reads 55 % of titles as neither, 24 % as left and 20 % as right, and the words behind the labels are stance words (fraud, women, Democrats, woke, Kirk, California on the right; Trump, MAGA, war, Israel, breaking, Iran, Epstein on the left). Channels: each channel's score, (right − left) / titles sampled, sorts the 274 channels into 122 left, 110 right and 42 neutral (thresholds ±0.05); the score is reliable (split-half Spearman 0.96; the original 16-title draw and the 34 month-spread top-up titles rank the 239 ranked channels at 0.96). Everything the left channels published against everything the right channels published separates on the same words as the labelled titles, with the year's shared subjects at the apex; nothing moved month to month. A left / right / neither lexicon cut from the judge's own labels at |z| ≥ 1.96 recovers the ordering of channels (Spearman 0.69, out of fold) but not the title-level call (agreement 53 %, kappa 0.26): the judge reads framing, and a word list reads subjects.
+- **Stage 0d, political leaning (2026-09-15; runs third in the pipeline, recorded as stage7_leaning).** Two levels. Titles: Claude Opus, through the Claude Code CLI, labelled 12,478 titles (50 per ranked channel, 16 for the 35 channels with fewer than 50 uploads) as left, right or neither from the title text alone, twenty titles to a call in a random order so that no title was judged beside its channel's other titles; it reads 55 % of titles as neither, 24 % as left and 20 % as right, and the words behind the labels are stance words (fraud, women, Democrats, woke, Kirk, California on the right; Trump, MAGA, war, Israel, breaking, Iran, Epstein on the left). Channels: each channel's score, (right − left) / titles sampled, sorts the 274 channels into 122 left, 110 right and 42 neutral (thresholds ±0.05); the score is reliable (split-half Spearman 0.96; the original 16-title draw and the 34 month-spread top-up titles rank the 239 ranked channels at 0.96), and it survives a re-reading: every title was labelled three times, first in channel-batched calls, then twice in shuffled ones with different seeds (the first shuffled reading is the one used). The two shuffled readings agree on 91 % of titles (kappa 0.84) and rank the channels at 0.99, so the judge's own noise is about one title label in eleven; the channel-batched reading agrees with either at 88–89 %, so a title's batch-mates cost about two points more and pushed labels toward neither. Everything the left channels published against everything the right channels published separates on the same words as the labelled titles, with the year's shared subjects at the apex; nothing moved month to month. A left / right / neither lexicon cut from the judge's own labels at |z| ≥ 1.96 recovers the ordering of channels (Spearman 0.69, out of fold) but not the title-level call (agreement 53 %, kappa 0.26): the judge reads framing, and a word list reads subjects.
 
 
 ## Stage 0: corpus, normalisation, balance
@@ -802,24 +802,24 @@ Zipf exponents per system (tokens with stopwords; OLS of log frequency on log ra
 | title_label | left | 3031 | 29617 | 6005 | 9.7700 | 0.8587 | 0.8180 | 0.9967 | 0.9954 | 0.8471 | 0.0070 | 0.0380 | trump the to is s in on of and as |
 | title_label | right | 2550 | 26617 | 6104 | 10.4400 | 0.7689 | 0.7750 | 0.9654 | 0.9960 | 0.7730 | 0.0037 | 0.0408 | the to is on trump in of and for s |
 | title_label | neither | 6881 | 62974 | 11081 | 9.1500 | 0.8643 | 0.8113 | 0.9644 | 0.9964 | 0.8147 | 0.0058 | 0.0404 | the to in is of a on s and trump |
-| caps_style | all_caps | 4163 | 25992 | 4936 | 6.2400 | 0.7642 | 0.8745 | 0.9904 | 0.9940 | 0.7951 | 0.0081 | 0.0247 | the is trump this to it in they iran s |
-| caps_style | selective_caps | 56805 | 592182 | 26654 | 10.4200 | 0.8079 | 0.7939 | 1.0675 | 0.9966 | 0.7823 | 0.0079 | 0.0321 | trump the to in as on s is of iran |
-| caps_style | title_case | 52644 | 543500 | 30226 | 10.3200 | 0.8517 | 0.7950 | 1.0153 | 0.9959 | 0.8243 | 0.0079 | 0.0341 | the trump to s in on of is and a |
-| caps_style | sentence_case | 38729 | 431875 | 28270 | 11.1500 | 0.8634 | 0.7959 | 1.0123 | 0.9952 | 0.8117 | 0.0082 | 0.0218 | to in the of trump on iran and for s |
-| caps_style | mixed_other | 1334 | 14193 | 4133 | 10.6400 | 0.8308 | 0.8321 | 0.8167 | 0.9879 |  |  | 0.0237 | in a the to s i of u this is |
-| caps_style | short_other | 1961 | 5240 | 1123 | 2.6700 | 1.2563 | 0.8266 | 0.7757 | 0.8644 |  |  | 0.1168 | tyt hour episode 1 2 bonus 26 full hasanabi 2026 |
+| caps_style | all_caps | 3980 | 24648 | 4808 | 6.1900 | 0.7581 | 0.8765 | 0.9801 | 0.9939 | 0.7935 | 0.0088 | 0.0247 | the is trump this to it they in iran on |
+| caps_style | selective_caps | 57793 | 600713 | 26847 | 10.3900 | 0.8100 | 0.7934 | 1.0669 | 0.9966 | 0.7837 | 0.0074 | 0.0321 | trump the to in as on s is of iran |
+| caps_style | title_case | 53114 | 541403 | 30215 | 10.1900 | 0.8431 | 0.7971 | 1.0165 | 0.9963 | 0.8157 | 0.0078 | 0.0340 | the trump to s in on of is and a |
+| caps_style | sentence_case | 38575 | 429713 | 28173 | 11.1400 | 0.8629 | 0.7962 | 1.0134 | 0.9953 | 0.8128 | 0.0087 | 0.0217 | to in the of trump on iran and for s |
+| caps_style | mixed_other | 1329 | 14136 | 4114 | 10.6400 | 0.8312 | 0.8320 | 0.8171 | 0.9878 |  |  | 0.0238 | in a the to s i of u this is |
+| caps_style | short_other | 845 | 2369 | 794 | 2.8000 | 0.9581 | 0.7639 | 0.7639 | 0.8730 |  |  | 0.0595 | 26 episode full hasanabi 2026 bloomberg surveillance 4 5 a |
 
 
 Creator-level Zipf / Heaps and the views rank-size slopes per channel group and per dominant capitalisation style:
 
 | grouping | group | n_creators | zipf_words_top200_mean | zipf_words_top200_median | n_creators_1500 | zipf_words_1500_mean | heaps_beta_1500_mean | top1_word_share_mean | n_creators_with_views | zipf_views_all_median | zipf_views_head_median | gini_median | top10_share_median | powerlaw_like_share | caps_any_mean |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| channel_group | left | 105 | 0.797 | 0.791 | 72 | 0.724 | 0.810 | 0.050 | 86 | 0.876 | 0.425 | 0.494 | 0.373 | 0.000 | 0.375 |
-| channel_group | neutral | 38 | 0.789 | 0.809 | 25 | 0.712 | 0.843 | 0.043 | 32 | 1.244 | 0.603 | 0.670 | 0.538 | 0.000 | 0.181 |
-| channel_group | right | 96 | 0.750 | 0.757 | 67 | 0.690 | 0.827 | 0.046 | 75 | 0.898 | 0.419 | 0.495 | 0.361 | 0.000 | 0.403 |
-| dominant_caps_style | all_caps | 7 | 0.735 | 0.740 | 5 | 0.692 | 0.814 | 0.036 | 5 | 0.583 | 0.312 | 0.347 | 0.263 | 0.000 | 0.774 |
-| dominant_caps_style | selective_caps | 74 | 0.784 | 0.791 | 63 | 0.701 | 0.809 | 0.046 | 64 | 0.797 | 0.383 | 0.459 | 0.346 | 0.000 | 0.748 |
-| dominant_caps_style | title_case | 126 | 0.763 | 0.761 | 75 | 0.713 | 0.828 | 0.050 | 97 | 0.951 | 0.468 | 0.536 | 0.404 | 0.000 | 0.173 |
+| channel_group | left | 105 | 0.797 | 0.791 | 72 | 0.724 | 0.810 | 0.050 | 86 | 0.876 | 0.425 | 0.494 | 0.373 | 0.000 | 0.396 |
+| channel_group | neutral | 38 | 0.789 | 0.809 | 25 | 0.712 | 0.843 | 0.043 | 32 | 1.244 | 0.603 | 0.670 | 0.538 | 0.000 | 0.183 |
+| channel_group | right | 96 | 0.750 | 0.757 | 67 | 0.690 | 0.827 | 0.046 | 75 | 0.898 | 0.419 | 0.495 | 0.361 | 0.000 | 0.406 |
+| dominant_caps_style | all_caps | 7 | 0.735 | 0.740 | 5 | 0.692 | 0.814 | 0.036 | 5 | 0.583 | 0.312 | 0.347 | 0.263 | 0.000 | 0.778 |
+| dominant_caps_style | selective_caps | 78 | 0.781 | 0.784 | 66 | 0.700 | 0.809 | 0.045 | 66 | 0.833 | 0.385 | 0.472 | 0.349 | 0.000 | 0.758 |
+| dominant_caps_style | title_case | 123 | 0.762 | 0.762 | 72 | 0.715 | 0.829 | 0.050 | 96 | 0.924 | 0.463 | 0.516 | 0.392 | 0.000 | 0.168 |
 | dominant_caps_style | sentence_case | 30 | 0.830 | 0.835 | 21 | 0.718 | 0.843 | 0.042 | 25 | 1.236 | 0.634 | 0.681 | 0.557 | 0.000 | 0.070 |
 
 
@@ -887,66 +887,66 @@ Views by publication month (edited uploads, YouTube, unique titles): median view
 | title_label | neither | 2026-08 | 728 | 227 | 28500.000 | 37000.000 | 10.146 | 0.028 | 0.038 |
 | title_label | neither | 2026-09 | 577 | 211 | 39000.000 | 41000.000 | 10.521 | -0.065 | 0.039 |
 | title_label | neither | all | 6478 | 267 | 30000.000 | 34000.000 | 10.217 | -0.016 | 0.013 |
-| caps_style | all_caps | 2026-01 | 284 | 33 | 97500.000 | 100000.000 | 10.268 | 0.101 | 0.052 |
-| caps_style | all_caps | 2026-02 | 411 | 38 | 113000.000 | 62500.000 | 10.749 | 0.029 | 0.042 |
-| caps_style | all_caps | 2026-03 | 366 | 41 | 101000.000 | 114500.000 | 11.201 | 0.030 | 0.037 |
-| caps_style | all_caps | 2026-04 | 598 | 39 | 36500.000 | 70000.000 | 9.227 | 0.025 | 0.039 |
-| caps_style | all_caps | 2026-05 | 429 | 33 | 62000.000 | 90000.000 | 10.081 | 0.045 | 0.048 |
-| caps_style | all_caps | 2026-06 | 412 | 34 | 43000.000 | 78750.000 | 9.928 | 0.038 | 0.048 |
-| caps_style | all_caps | 2026-07 | 329 | 34 | 87000.000 | 86500.000 | 11.039 | 0.079 | 0.037 |
-| caps_style | all_caps | 2026-08 | 473 | 34 | 76000.000 | 82000.000 | 10.937 | 0.020 | 0.028 |
-| caps_style | all_caps | 2026-09 | 192 | 30 | 153500.000 | 114000.000 | 11.471 | 0.017 | 0.050 |
-| caps_style | all_caps | all | 3494 | 76 | 76000.000 | 51000.000 | 10.410 | 0.040 | 0.014 |
-| caps_style | selective_caps | 2026-01 | 7631 | 181 | 54000.000 | 41000.000 | 10.651 | 0.053 | 0.012 |
-| caps_style | selective_caps | 2026-02 | 8660 | 192 | 54000.000 | 49000.000 | 10.640 | 0.047 | 0.011 |
-| caps_style | selective_caps | 2026-03 | 7934 | 184 | 61000.000 | 44750.000 | 10.713 | 0.084 | 0.013 |
-| caps_style | selective_caps | 2026-04 | 8930 | 195 | 56000.000 | 45800.000 | 10.734 | 0.059 | 0.011 |
-| caps_style | selective_caps | 2026-05 | 8777 | 194 | 44000.000 | 33250.000 | 10.529 | 0.058 | 0.012 |
-| caps_style | selective_caps | 2026-06 | 8845 | 197 | 39000.000 | 32000.000 | 10.353 | 0.055 | 0.012 |
-| caps_style | selective_caps | 2026-07 | 8448 | 191 | 37000.000 | 33000.000 | 10.292 | 0.025 | 0.012 |
-| caps_style | selective_caps | 2026-08 | 11997 | 207 | 39000.000 | 33000.000 | 10.327 | 0.042 | 0.010 |
-| caps_style | selective_caps | 2026-09 | 6305 | 177 | 60000.000 | 59000.000 | 10.755 | 0.054 | 0.013 |
-| caps_style | selective_caps | all | 77527 | 244 | 48000.000 | 37000.000 | 10.537 | 0.052 | 0.004 |
-| caps_style | title_case | 2026-01 | 6841 | 224 | 19000.000 | 39000.000 | 9.760 | -0.017 | 0.016 |
-| caps_style | title_case | 2026-02 | 8201 | 227 | 18000.000 | 40000.000 | 9.704 | -0.028 | 0.014 |
-| caps_style | title_case | 2026-03 | 7764 | 226 | 18000.000 | 38750.000 | 9.699 | -0.055 | 0.015 |
-| caps_style | title_case | 2026-04 | 7891 | 234 | 20000.000 | 36500.000 | 9.904 | -0.039 | 0.015 |
-| caps_style | title_case | 2026-05 | 8150 | 230 | 15000.000 | 33250.000 | 9.656 | -0.023 | 0.014 |
-| caps_style | title_case | 2026-06 | 8634 | 230 | 12000.000 | 28750.000 | 9.511 | -0.032 | 0.014 |
-| caps_style | title_case | 2026-07 | 8460 | 233 | 12000.000 | 27000.000 | 9.514 | -0.001 | 0.014 |
-| caps_style | title_case | 2026-08 | 11403 | 240 | 12000.000 | 28000.000 | 9.537 | -0.018 | 0.011 |
-| caps_style | title_case | 2026-09 | 5998 | 218 | 23000.000 | 52500.000 | 10.082 | -0.020 | 0.016 |
-| caps_style | title_case | all | 73342 | 259 | 16000.000 | 34500.000 | 9.685 | -0.026 | 0.005 |
-| caps_style | sentence_case | 2026-01 | 9135 | 92 | 16000.000 | 23500.000 | 9.723 | -0.037 | 0.014 |
-| caps_style | sentence_case | 2026-02 | 10856 | 91 | 16000.000 | 35000.000 | 9.726 | -0.022 | 0.013 |
-| caps_style | sentence_case | 2026-03 | 10013 | 89 | 19000.000 | 29000.000 | 9.893 | -0.027 | 0.014 |
-| caps_style | sentence_case | 2026-04 | 10408 | 100 | 18000.000 | 40750.000 | 9.882 | -0.022 | 0.014 |
-| caps_style | sentence_case | 2026-05 | 9669 | 93 | 13000.000 | 23500.000 | 9.554 | -0.041 | 0.014 |
-| caps_style | sentence_case | 2026-06 | 9215 | 92 | 12000.000 | 25500.000 | 9.512 | -0.029 | 0.014 |
-| caps_style | sentence_case | 2026-07 | 8976 | 90 | 12000.000 | 27750.000 | 9.498 | -0.029 | 0.014 |
-| caps_style | sentence_case | 2026-08 | 11662 | 98 | 12000.000 | 27000.000 | 9.534 | -0.033 | 0.012 |
-| caps_style | sentence_case | 2026-09 | 6230 | 85 | 19000.000 | 62000.000 | 10.056 | -0.035 | 0.017 |
-| caps_style | sentence_case | all | 86164 | 181 | 15000.000 | 26000.000 | 9.696 | -0.030 | 0.005 |
-| caps_style | mixed_other | 2026-01 | 271 | 29 | 23000.000 | 28000.000 | 10.030 | 0.031 | 0.084 |
+| caps_style | all_caps | 2026-01 | 262 | 30 | 94000.000 | 123000.000 | 10.161 | 0.116 | 0.054 |
+| caps_style | all_caps | 2026-02 | 392 | 36 | 109000.000 | 71500.000 | 10.692 | 0.026 | 0.043 |
+| caps_style | all_caps | 2026-03 | 348 | 40 | 101000.000 | 114750.000 | 11.174 | 0.045 | 0.037 |
+| caps_style | all_caps | 2026-04 | 576 | 38 | 31500.000 | 69000.000 | 9.112 | 0.023 | 0.039 |
+| caps_style | all_caps | 2026-05 | 417 | 32 | 59000.000 | 92500.000 | 10.032 | 0.050 | 0.049 |
+| caps_style | all_caps | 2026-06 | 388 | 34 | 36500.000 | 78750.000 | 9.797 | 0.033 | 0.051 |
+| caps_style | all_caps | 2026-07 | 309 | 33 | 83000.000 | 90000.000 | 10.988 | 0.087 | 0.039 |
+| caps_style | all_caps | 2026-08 | 445 | 33 | 71000.000 | 90000.000 | 10.877 | 0.023 | 0.029 |
+| caps_style | all_caps | 2026-09 | 174 | 30 | 139500.000 | 114000.000 | 11.378 | 0.024 | 0.053 |
+| caps_style | all_caps | all | 3311 | 74 | 71000.000 | 53500.000 | 10.326 | 0.044 | 0.015 |
+| caps_style | selective_caps | 2026-01 | 7686 | 181 | 54000.000 | 41000.000 | 10.654 | 0.052 | 0.012 |
+| caps_style | selective_caps | 2026-02 | 8736 | 193 | 54000.000 | 49000.000 | 10.641 | 0.045 | 0.011 |
+| caps_style | selective_caps | 2026-03 | 7997 | 184 | 61000.000 | 45000.000 | 10.716 | 0.084 | 0.012 |
+| caps_style | selective_caps | 2026-04 | 9110 | 196 | 55000.000 | 45900.000 | 10.711 | 0.065 | 0.011 |
+| caps_style | selective_caps | 2026-05 | 8946 | 195 | 43000.000 | 33500.000 | 10.507 | 0.062 | 0.011 |
+| caps_style | selective_caps | 2026-06 | 8961 | 197 | 38000.000 | 32000.000 | 10.348 | 0.056 | 0.012 |
+| caps_style | selective_caps | 2026-07 | 8558 | 190 | 36000.000 | 33500.000 | 10.284 | 0.025 | 0.012 |
+| caps_style | selective_caps | 2026-08 | 12157 | 207 | 38000.000 | 33000.000 | 10.317 | 0.043 | 0.010 |
+| caps_style | selective_caps | 2026-09 | 6378 | 177 | 59000.000 | 61000.000 | 10.747 | 0.052 | 0.013 |
+| caps_style | selective_caps | all | 78529 | 245 | 47000.000 | 37000.000 | 10.529 | 0.053 | 0.004 |
+| caps_style | title_case | 2026-01 | 6801 | 223 | 19000.000 | 39000.000 | 9.764 | -0.017 | 0.016 |
+| caps_style | title_case | 2026-02 | 8137 | 226 | 18000.000 | 38250.000 | 9.710 | -0.026 | 0.014 |
+| caps_style | title_case | 2026-03 | 7727 | 224 | 18000.000 | 38750.000 | 9.698 | -0.054 | 0.015 |
+| caps_style | title_case | 2026-04 | 7845 | 234 | 20000.000 | 39000.000 | 9.907 | -0.040 | 0.015 |
+| caps_style | title_case | 2026-05 | 8092 | 229 | 15000.000 | 33000.000 | 9.659 | -0.024 | 0.014 |
+| caps_style | title_case | 2026-06 | 8576 | 230 | 12000.000 | 29000.000 | 9.515 | -0.033 | 0.014 |
+| caps_style | title_case | 2026-07 | 8419 | 234 | 12000.000 | 28000.000 | 9.518 | 0.002 | 0.014 |
+| caps_style | title_case | 2026-08 | 11353 | 239 | 12000.000 | 28000.000 | 9.550 | -0.017 | 0.012 |
+| caps_style | title_case | 2026-09 | 5975 | 217 | 23000.000 | 52000.000 | 10.092 | -0.020 | 0.016 |
+| caps_style | title_case | all | 72925 | 259 | 16000.000 | 35000.000 | 9.691 | -0.025 | 0.005 |
+| caps_style | sentence_case | 2026-01 | 9164 | 92 | 16000.000 | 23500.000 | 9.723 | -0.037 | 0.014 |
+| caps_style | sentence_case | 2026-02 | 10885 | 92 | 16000.000 | 35000.000 | 9.725 | -0.023 | 0.013 |
+| caps_style | sentence_case | 2026-03 | 10028 | 88 | 19000.000 | 28000.000 | 9.893 | -0.028 | 0.014 |
+| caps_style | sentence_case | 2026-04 | 10316 | 101 | 18000.000 | 40500.000 | 9.896 | -0.027 | 0.014 |
+| caps_style | sentence_case | 2026-05 | 9596 | 91 | 13000.000 | 23500.000 | 9.566 | -0.045 | 0.014 |
+| caps_style | sentence_case | 2026-06 | 9209 | 89 | 13000.000 | 25000.000 | 9.519 | -0.029 | 0.014 |
+| caps_style | sentence_case | 2026-07 | 8945 | 88 | 12000.000 | 23000.000 | 9.503 | -0.030 | 0.014 |
+| caps_style | sentence_case | 2026-08 | 11615 | 95 | 12000.000 | 28000.000 | 9.535 | -0.034 | 0.012 |
+| caps_style | sentence_case | 2026-09 | 6212 | 84 | 20000.000 | 66500.000 | 10.058 | -0.034 | 0.017 |
+| caps_style | sentence_case | all | 85970 | 176 | 15000.000 | 26000.000 | 9.701 | -0.032 | 0.005 |
+| caps_style | mixed_other | 2026-01 | 269 | 28 | 23000.000 | 26250.000 | 10.019 | 0.020 | 0.084 |
 | caps_style | mixed_other | 2026-02 | 245 | 43 | 40000.000 | 37000.000 | 10.292 | 0.157 | 0.091 |
 | caps_style | mixed_other | 2026-03 | 274 | 42 | 30000.000 | 30500.000 | 10.252 | -0.008 | 0.082 |
 | caps_style | mixed_other | 2026-04 | 322 | 49 | 42500.000 | 36500.000 | 10.363 | -0.065 | 0.065 |
-| caps_style | mixed_other | 2026-05 | 273 | 36 | 22000.000 | 22250.000 | 9.887 | 0.010 | 0.080 |
-| caps_style | mixed_other | 2026-06 | 320 | 47 | 23500.000 | 29000.000 | 10.020 | 0.035 | 0.074 |
-| caps_style | mixed_other | 2026-07 | 296 | 49 | 23000.000 | 19500.000 | 9.953 | 0.008 | 0.074 |
-| caps_style | mixed_other | 2026-08 | 359 | 52 | 23000.000 | 36500.000 | 9.944 | 0.107 | 0.066 |
+| caps_style | mixed_other | 2026-05 | 272 | 36 | 22000.000 | 22250.000 | 9.892 | 0.009 | 0.080 |
+| caps_style | mixed_other | 2026-06 | 321 | 47 | 24000.000 | 34000.000 | 10.022 | 0.038 | 0.074 |
+| caps_style | mixed_other | 2026-07 | 295 | 48 | 23000.000 | 19425.000 | 9.949 | 0.009 | 0.074 |
+| caps_style | mixed_other | 2026-08 | 357 | 52 | 23000.000 | 36500.000 | 9.950 | 0.106 | 0.066 |
 | caps_style | mixed_other | 2026-09 | 226 | 33 | 25500.000 | 39000.000 | 10.139 | -0.052 | 0.098 |
-| caps_style | mixed_other | all | 2586 | 108 | 26500.000 | 33250.000 | 10.092 | 0.026 | 0.026 |
-| caps_style | short_other | 2026-01 | 101 | 32 | 31000.000 | 56500.000 | 10.443 | 0.134 | 0.098 |
-| caps_style | short_other | 2026-02 | 101 | 32 | 88000.000 | 107250.000 | 11.127 | 0.157 | 0.082 |
-| caps_style | short_other | 2026-03 | 97 | 28 | 78000.000 | 101775.000 | 11.196 | 0.266 | 0.083 |
-| caps_style | short_other | 2026-04 | 103 | 31 | 64000.000 | 85500.000 | 10.758 | 0.149 | 0.092 |
-| caps_style | short_other | 2026-05 | 102 | 30 | 94500.000 | 112000.000 | 11.267 | 0.458 | 0.075 |
-| caps_style | short_other | 2026-06 | 130 | 23 | 55500.000 | 60000.000 | 10.602 | 0.230 | 0.064 |
-| caps_style | short_other | 2026-07 | 111 | 22 | 24000.000 | 88500.000 | 10.107 | 0.182 | 0.074 |
-| caps_style | short_other | 2026-08 | 157 | 34 | 25000.000 | 48750.000 | 10.248 | 0.238 | 0.063 |
-| caps_style | short_other | 2026-09 | 64 | 23 | 25500.000 | 88000.000 | 10.564 | 0.066 | 0.090 |
-| caps_style | short_other | all | 966 | 75 | 44000.000 | 47500.000 | 10.670 | 0.216 | 0.026 |
+| caps_style | mixed_other | all | 2581 | 106 | 27000.000 | 34000.000 | 10.093 | 0.025 | 0.026 |
+| caps_style | short_other | 2026-01 | 81 | 27 | 17000.000 | 56000.000 | 9.856 | 0.153 | 0.102 |
+| caps_style | short_other | 2026-02 | 79 | 27 | 41000.000 | 101500.000 | 10.633 | 0.211 | 0.092 |
+| caps_style | short_other | 2026-03 | 74 | 21 | 43500.000 | 89000.000 | 10.821 | 0.238 | 0.071 |
+| caps_style | short_other | 2026-04 | 83 | 26 | 32000.000 | 60500.000 | 10.250 | 0.137 | 0.103 |
+| caps_style | short_other | 2026-05 | 77 | 25 | 47000.000 | 128000.000 | 10.860 | 0.559 | 0.088 |
+| caps_style | short_other | 2026-06 | 101 | 20 | 36000.000 | 55000.000 | 9.972 | 0.189 | 0.065 |
+| caps_style | short_other | 2026-07 | 94 | 19 | 17500.000 | 79000.000 | 9.605 | 0.142 | 0.075 |
+| caps_style | short_other | 2026-08 | 124 | 28 | 18000.000 | 41500.000 | 9.556 | 0.195 | 0.068 |
+| caps_style | short_other | 2026-09 | 50 | 20 | 20500.000 | 48750.000 | 10.076 | 0.054 | 0.097 |
+| caps_style | short_other | all | 763 | 67 | 25000.000 | 47000.000 | 10.124 | 0.210 | 0.028 |
 | all | all channels | 2026-01 | 24180 | 226 | 25000.000 | 34000.000 | 10.033 |  |  |
 | all | all channels | 2026-02 | 28361 | 227 | 25000.000 | 43000.000 | 10.019 |  |  |
 | all | all channels | 2026-03 | 26349 | 225 | 27000.000 | 39000.000 | 10.103 |  |  |
@@ -962,24 +962,24 @@ Capitalisation style by channel group and by title label:
 
 | grouping | group | n_titles | all_caps | selective_caps | title_case | sentence_case | mixed_other | short_other | caps_any |
 |---|---|---|---|---|---|---|---|---|---|
-| channel_group | left | 64947 | 0.020 | 0.461 | 0.318 | 0.173 | 0.008 | 0.020 | 0.481 |
-| channel_group | neutral | 39161 | 0.008 | 0.157 | 0.272 | 0.541 | 0.015 | 0.007 | 0.165 |
-| channel_group | right | 51528 | 0.049 | 0.403 | 0.414 | 0.122 | 0.005 | 0.007 | 0.452 |
-| title_label | left | 3031 | 0.013 | 0.448 | 0.457 | 0.076 | 0.004 | 0.002 | 0.461 |
-| title_label | right | 2550 | 0.023 | 0.455 | 0.473 | 0.044 | 0.002 | 0.003 | 0.478 |
-| title_label | neither | 6881 | 0.034 | 0.214 | 0.528 | 0.189 | 0.009 | 0.026 | 0.248 |
+| channel_group | left | 64947 | 0.018 | 0.472 | 0.323 | 0.173 | 0.008 | 0.006 | 0.490 |
+| channel_group | neutral | 39161 | 0.008 | 0.162 | 0.276 | 0.536 | 0.015 | 0.003 | 0.170 |
+| channel_group | right | 51528 | 0.049 | 0.403 | 0.414 | 0.123 | 0.005 | 0.006 | 0.452 |
+| title_label | left | 3031 | 0.011 | 0.469 | 0.438 | 0.076 | 0.004 | 0.002 | 0.481 |
+| title_label | right | 2550 | 0.022 | 0.460 | 0.471 | 0.043 | 0.002 | 0.002 | 0.482 |
+| title_label | neither | 6881 | 0.034 | 0.222 | 0.534 | 0.188 | 0.009 | 0.014 | 0.256 |
 
 
 Title label x capitalisation style (label shares within each style; relative log views per cell):
 
 | caps_style | n_titles | share_left | share_right | share_neither | relative_log_views_left | n_left | relative_log_views_right | n_right | relative_log_views_neither | n_neither |
 |---|---|---|---|---|---|---|---|---|---|---|
-| all_caps | 332 | 0.115 | 0.175 | 0.711 | -0.010 | 32 | 0.069 | 49 | -0.004 | 185 |
-| selective_caps | 3988 | 0.341 | 0.291 | 0.369 | 0.006 | 1296 | 0.066 | 1096 | 0.033 | 1397 |
-| title_case | 6227 | 0.223 | 0.194 | 0.584 | 0.002 | 1303 | 0.006 | 1168 | -0.038 | 3422 |
-| sentence_case | 1643 | 0.141 | 0.068 | 0.791 | 0.069 | 232 | 0.118 | 105 | -0.026 | 1268 |
-| mixed_other | 80 | 0.138 | 0.075 | 0.787 |  | 11 |  | 6 | -0.132 | 62 |
-| short_other | 192 | 0.031 | 0.042 | 0.927 |  | 6 |  | 8 | 0.174 | 144 |
+| all_caps | 324 | 0.108 | 0.173 | 0.719 | -0.060 | 29 | 0.069 | 49 | 0.000 | 179 |
+| selective_caps | 4123 | 0.345 | 0.284 | 0.370 | -0.005 | 1347 | 0.070 | 1105 | 0.039 | 1445 |
+| title_case | 6199 | 0.214 | 0.194 | 0.592 | 0.012 | 1258 | -0.000 | 1164 | -0.033 | 3448 |
+| sentence_case | 1632 | 0.141 | 0.067 | 0.792 | 0.086 | 230 | 0.113 | 102 | -0.029 | 1264 |
+| mixed_other | 79 | 0.139 | 0.076 | 0.785 |  | 11 |  | 6 | -0.133 | 61 |
+| short_other | 105 | 0.048 | 0.057 | 0.895 |  | 5 |  | 6 | 0.017 | 81 |
 
 
 ## Files

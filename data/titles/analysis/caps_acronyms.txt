@@ -3,12 +3,14 @@ aap
 aapi
 aback
 abc
+abl
 abvp
 ac
 aca
 aclu
 adhd
 adl
+adp
 aes
 af
 afc
@@ -258,7 +260,6 @@ enters’
 eo
 eod
 eos
-ep
 epa
 epc
 epl
@@ -319,6 +320,7 @@ fomo
 fp
 fpv
 fries
+frothing
 fsb
 fssai
 fsu
@@ -731,6 +733,7 @@ rm
 rml
 rmu
 rnc
+robs
 rotc
 rpt
 rr
@@ -765,6 +768,7 @@ sf
 sfi
 sk
 skewer
+slays
 slc
 slgbtqqia
 sls
@@ -810,6 +814,7 @@ s’
 tailspin
 tbh
 tcs
+tdr
 tds
 tds'
 tegmark
@@ -822,8 +827,8 @@ tmr
 tmz
 tn
 toi
-toitm
 topgun
+topics
 torches’
 tplf
 tps
