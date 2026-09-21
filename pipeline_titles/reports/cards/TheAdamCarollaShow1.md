@@ -1,6 +1,6 @@
 # Adam Carolla (@TheAdamCarollaShow1)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Adam Carolla · clipper: no · platform: youtube · subscribers: 685000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Adam Carolla · clipper: no · platform: youtube · subscribers: 685000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Comedy and Cultural Debate (8.3%); Hollywood and Oscars Politics (7.
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 34.7 | 51.0 | -0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 31.8 | 22.2 | -0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 22.6 | 20.1 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 22.6 | 20.1 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 42.3 | 27.2 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 38.5 | 38.1 | -0.0 | 0.2 |
 | F6: Person-centred (named people) | 96.2 | 96.2 | 1.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Comedy and Cultural Debate (8.3%); Hollywood and Oscars Politics (7.
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.3% (3.6%); outrage 41.8% (59.6%); humor 0.2% (0.2%); question 10.4% (15.6%); breaking_live 2.0% (2.0%); episode_show 7.8% (7.6%); interview_guest 13.4% (8.5%); reaction 6.1% (2.2%); confrontation 10.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 8.1% (9.5%)
 
 
-Nearest style neighbours: @lovettorleaveitpodcast [left]; @thejimmydoreshow [neutral]; @fightbackpodcast [right]; @clayandbuck [right]; @PTLRadioShow [left]
+Nearest style neighbors: @lovettorleaveitpodcast [left]; @thejimmydoreshow [neutral]; @fightbackpodcast [right]; @clayandbuck [right]; @PTLRadioShow [left]
 
-Nearest topic neighbours: @MichaelKnowles [right]; @AfterPartyEmily [right]; @bbrettcooper [right]; @jlptalk [right]; @ActualJusticeWarrior [right]
+Nearest topic neighbors: @MichaelKnowles [right]; @AfterPartyEmily [right]; @bbrettcooper [right]; @jlptalk [right]; @ActualJusticeWarrior [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

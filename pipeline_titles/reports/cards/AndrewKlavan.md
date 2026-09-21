@@ -1,6 +1,6 @@
 # Andrew Klavan (@AndrewKlavan)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Daily Wire · clipper: no · platform: youtube · subscribers: 813000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Daily Wire · clipper: no · platform: youtube · subscribers: 813000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Hollywood and Oscars Politics (8.7%); Christian Nationalism and Poli
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 68.2 | 88.7 | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 36.8 | 34.3 | -0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 38.9 | 33.9 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 38.9 | 33.9 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 26.8 | 31.8 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 93.3 | 95.4 | 2.0 | 0.2 |
 | F6: Person-centred (named people) | 26.8 | 19.7 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Hollywood and Oscars Politics (8.7%); Christian Nationalism and Poli
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.5% (3.6%); outrage 31.6% (59.6%); humor 4.1% (0.2%); question 31.6% (15.6%); breaking_live 0.5% (2.0%); episode_show 21.9% (7.6%); interview_guest 19.9% (8.5%); reaction 5.1% (2.2%); confrontation 4.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 18.9% (9.5%)
 
 
-Nearest style neighbours: @theisabelbrown [right]; @nousnetwork [left]; @thomhartmann [left]; @TheAtlantic [left]; @samharrisorg [left]
+Nearest style neighbors: @theisabelbrown [right]; @nousnetwork [left]; @thomhartmann [left]; @TheAtlantic [left]; @samharrisorg [left]
 
-Nearest topic neighbours: @PragerU [right]; @BenShapiro [right]; @MichaelKnowles [right]; @morebridgetphetasy [right]; @JillianMichaels [right]
+Nearest topic neighbors: @PragerU [right]; @BenShapiro [right]; @MichaelKnowles [right]; @morebridgetphetasy [right]; @JillianMichaels [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump and Greenland politics (33.3%); Islam and Political Discourse 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 1.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | -2.2 | 0.0 |

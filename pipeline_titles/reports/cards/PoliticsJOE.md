@@ -1,6 +1,6 @@
 # PoliticsJOE (@PoliticsJOE)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: PoliticsJOE · clipper: no · platform: youtube · subscribers: 772000.0
+Channel group: **left** (title-leaning score, document 14) · organization: PoliticsJOE · clipper: no · platform: youtube · subscribers: 772000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: UK politics and Reform UK (20.6%); UK PM Keir Starmer Resignation Ca
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 31.0 | 49.0 | -0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 56.1 | 62.8 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 87.0 | 89.5 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 87.0 | 89.5 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 49.8 | 33.9 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 67.4 | 70.3 | 0.5 | 0.1 |
 | F6: Person-centred (named people) | 82.8 | 82.4 | 0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: UK politics and Reform UK (20.6%); UK PM Keir Starmer Resignation Ca
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.1% (2.7%); outrage 49.6% (63.9%); humor 0.0% (0.2%); question 16.2% (15.6%); breaking_live 5.9% (2.9%); episode_show 0.0% (2.8%); interview_guest 17.4% (9.8%); reaction 3.8% (2.9%); confrontation 12.1% (7.6%); listicle 0.0% (0.1%); howto_explainer 7.7% (8.0%)
 
 
-Nearest style neighbours: @XAVIAER [right]; @fightbackpodcast [right]; @MrTariqNasheed [right]; @PTLRadioShow [left]; @axios [neutral]
+Nearest style neighbors: @XAVIAER [right]; @fightbackpodcast [right]; @MrTariqNasheed [right]; @PTLRadioShow [left]; @axios [neutral]
 
-Nearest topic neighbours: @NovaraMedia [left]; @SkyNews [left]; @OwenJonesTalks [left]; @BBCNews [neutral]; @ThePodcastoftheLotusEaters [right]
+Nearest topic neighbors: @NovaraMedia [left]; @SkyNews [left]; @OwenJonesTalks [left]; @BBCNews [neutral]; @ThePodcastoftheLotusEaters [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

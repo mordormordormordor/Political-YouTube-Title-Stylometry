@@ -1,6 +1,6 @@
 # Liberal Hivemind (@LiberalHivemind)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Liberal Hivemind · clipper: no · platform: youtube · subscribers: 1750000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Liberal Hivemind · clipper: no · platform: youtube · subscribers: 1750000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (33.6%); 2026 Midterm Election Predict
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 85.8 | 87.9 | 0.7 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 93.7 | 99.2 | 1.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 82.4 | 65.3 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 82.4 | 65.3 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 97.1 | 98.3 | 0.9 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 26.4 | 32.2 | -0.2 | 0.2 |
 | F6: Person-centred (named people) | 7.1 | 3.8 | -0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (33.6%); 2026 Midterm Election Predict
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 12.7% (3.6%); outrage 81.8% (59.6%); humor 0.0% (0.2%); question 1.5% (15.6%); breaking_live 0.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.4% (8.5%); reaction 0.7% (2.2%); confrontation 1.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.0% (9.5%)
 
 
-Nearest style neighbours: @DestinyDGGClips [right]; https://rumble.com/c/russellbrand [right]; @TheVaushPit [left]; @CamHigby [right]; @morebridgetphetasy [right]
+Nearest style neighbors: @DestinyDGGClips [right]; https://rumble.com/c/russellbrand [right]; @TheVaushPit [left]; @CamHigby [right]; @morebridgetphetasy [right]
 
-Nearest topic neighbours: @TimcastNews [right]; @TimcastIRL [right]; @HasanAbi [left]; @AsmonTV [right]; @TheQuartering [right]
+Nearest topic neighbors: @TimcastNews [right]; @TimcastIRL [right]; @HasanAbi [left]; @AsmonTV [right]; @TheQuartering [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

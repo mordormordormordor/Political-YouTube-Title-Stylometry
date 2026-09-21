@@ -1,6 +1,6 @@
 # Sam Harris (@samharrisorg)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Sam Harris · clipper: no · platform: youtube · subscribers: 869000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Sam Harris · clipper: no · platform: youtube · subscribers: 869000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: AI and Political Concerns (16.4%); JLP Weekly Series (6.9%); Christi
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 81.6 | 88.3 | 0.7 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 29.7 | 26.4 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 90.0 | 86.6 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 90.0 | 86.6 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 72.8 | 69.9 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 89.5 | 90.4 | 1.4 | 0.1 |
 | F6: Person-centred (named people) | 38.5 | 26.4 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: AI and Political Concerns (16.4%); JLP Weekly Series (6.9%); Christi
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.7%); outrage 25.9% (63.9%); humor 0.0% (0.2%); question 25.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 37.9% (2.8%); interview_guest 24.1% (9.8%); reaction 0.0% (2.9%); confrontation 0.9% (7.6%); listicle 0.0% (0.1%); howto_explainer 10.3% (8.0%)
 
 
-Nearest style neighbours: @Politicon [left]; @SMN [left]; @AndrewKlavan [right]; @theisabelbrown [right]; @TheAtlantic [left]
+Nearest style neighbors: @Politicon [left]; @SMN [left]; @AndrewKlavan [right]; @theisabelbrown [right]; @TheAtlantic [left]
 
-Nearest topic neighbours: @morebridgetphetasy [right]; @EzraKleinShow [left]; @TheAtlantic [left]; @AndrewKlavan [right]; @wethefifth [neutral]
+Nearest topic neighbors: @morebridgetphetasy [right]; @EzraKleinShow [left]; @TheAtlantic [left]; @AndrewKlavan [right]; @wethefifth [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

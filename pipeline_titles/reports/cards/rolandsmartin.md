@@ -1,6 +1,6 @@
 # Roland S. Martin (@rolandsmartin)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Black Star Network · clipper: no · platform: youtube · subscribers: 1960000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Black Star Network · clipper: no · platform: youtube · subscribers: 1960000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Black Voting Rights and Political Representation (20.6%); Race and P
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 14.2 | 18.0 | -0.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 65.3 | 61.5 | 0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 33.9 | 24.7 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 33.9 | 24.7 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 61.5 | 53.1 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 10.0 | 12.1 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 86.2 | 84.1 | 0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Black Voting Rights and Political Representation (20.6%); Race and P
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.3% (2.7%); outrage 78.0% (63.9%); humor 0.0% (0.2%); question 8.5% (15.6%); breaking_live 0.1% (2.9%); episode_show 0.5% (2.8%); interview_guest 3.2% (9.8%); reaction 0.7% (2.9%); confrontation 19.1% (7.6%); listicle 0.0% (0.1%); howto_explainer 3.4% (8.0%)
 
 
-Nearest style neighbours: @MLChristiansen [right]; @TomiLahrenIsFearless [right]; @nypost [right]; @RealAmericasVoice [right]; @VivaFrei [right]
+Nearest style neighbors: @MLChristiansen [right]; @TomiLahrenIsFearless [right]; @nypost [right]; @RealAmericasVoice [right]; @VivaFrei [right]
 
-Nearest topic neighbours: @Tim_Black [right]; @TheJoyReidShow [left]; @TheRealTabithaSpeaks [left]; @BlackConservativePerspective [right]; @TheDonLemonShow [left]
+Nearest topic neighbors: @Tim_Black [right]; @TheJoyReidShow [left]; @TheRealTabithaSpeaks [left]; @BlackConservativePerspective [right]; @TheDonLemonShow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Black Voting Rights and Political Representation (20.4%); Rev Jesse 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 39.2 | 43.0 | -0.2 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 26.6 | 25.3 | -0.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 43.0 | 38.0 | -0.3 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 43.0 | 38.0 | -0.3 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 25.3 | 17.7 | -0.3 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 13.9 | 27.8 | -0.6 | -0.3 |
 | F6: Person-centred (named people) | 73.4 | 69.6 | 0.9 | 0.6 |
@@ -104,9 +104,9 @@ Top topics: Black Voting Rights and Political Representation (20.4%); Rev Jesse 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (1.9%); outrage 52.7% (63.2%); humor 0.0% (0.1%); question 2.7% (11.3%); breaking_live 6.5% (17.5%); episode_show 1.5% (6.4%); interview_guest 3.4% (18.3%); reaction 0.2% (1.5%); confrontation 11.5% (15.4%); listicle 0.0% (0.0%); howto_explainer 1.9% (2.9%)
 
 
-Nearest style neighbours: @marclamonthillnetwork [left]; @franifio [left]; @AnthonyBrianLogan [right]; @thejimmydoreshow [neutral]; @NickCruseRBN [left]
+Nearest style neighbors: @marclamonthillnetwork [left]; @franifio [left]; @AnthonyBrianLogan [right]; @thejimmydoreshow [neutral]; @NickCruseRBN [left]
 
-Nearest topic neighbours: @marclamonthillnetwork [left]; @TheJoyReidShow [left]; @RealAmericasVoice [right]; @PhillipScottPodcast [right]; @TheOfficerTatum [right]
+Nearest topic neighbors: @marclamonthillnetwork [left]; @TheJoyReidShow [left]; @RealAmericasVoice [right]; @PhillipScottPodcast [right]; @TheOfficerTatum [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

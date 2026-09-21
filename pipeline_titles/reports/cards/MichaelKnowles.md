@@ -1,6 +1,6 @@
 # Michael Knowles (@MichaelKnowles)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Daily Wire · clipper: no · platform: youtube · subscribers: 2610000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Daily Wire · clipper: no · platform: youtube · subscribers: 2610000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Christian Nationalism and Politics (4.7%); Transgender Rights and Po
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 36.4 | 42.3 | -0.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 31.4 | 35.6 | -0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 82.8 | 78.7 | -0.0 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 82.8 | 78.7 | -0.0 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 20.9 | 18.0 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 52.7 | 56.1 | 0.2 | 0.2 |
 | F6: Person-centred (named people) | 61.9 | 61.1 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Christian Nationalism and Politics (4.7%); Transgender Rights and Po
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (3.6%); outrage 59.3% (59.6%); humor 0.4% (0.2%); question 14.6% (15.6%); breaking_live 5.9% (2.0%); episode_show 0.0% (7.6%); interview_guest 7.0% (8.5%); reaction 10.0% (2.2%); confrontation 8.1% (7.8%); listicle 0.6% (0.1%); howto_explainer 7.4% (9.5%)
 
 
-Nearest style neighbours: @DropSiteNews [left]; @NovaraMedia [left]; @XAVIAER [right]; @podsaveamerica [left]; @TheMajorityReport [left]
+Nearest style neighbors: @DropSiteNews [left]; @NovaraMedia [left]; @XAVIAER [right]; @podsaveamerica [left]; @TheMajorityReport [left]
 
-Nearest topic neighbours: @BenShapiro [right]; @RealAmericasVoice [right]; @AfterPartyEmily [right]; @NewsmaxTV [right]; @FoxNewsChannelClips [right]
+Nearest topic neighbors: @BenShapiro [right]; @RealAmericasVoice [right]; @AfterPartyEmily [right]; @NewsmaxTV [right]; @FoxNewsChannelClips [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump and Greenland politics (25.0%); Artemis II Moon Mission Update
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 1.8 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.0 | 0.0 |

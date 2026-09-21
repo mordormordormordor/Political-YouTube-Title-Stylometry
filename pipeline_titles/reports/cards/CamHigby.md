@@ -1,6 +1,6 @@
 # Cam Higby (@CamHigby)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Cam Higby · clipper: no · platform: youtube · subscribers: 280000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Cam Higby · clipper: no · platform: youtube · subscribers: 280000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Islam and Political Discourse (21.5%); ICE Protests and Shootings (1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 37.2 | 26.4 | -0.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 95.8 | 94.1 | 1.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 37.2 | 29.3 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 37.2 | 29.3 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 87.4 | 82.8 | 0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 46.0 | 46.4 | 0.1 | 0.2 |
 | F6: Person-centred (named people) | 18.8 | 18.0 | -0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Islam and Political Discourse (21.5%); ICE Protests and Shootings (1
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.7% (3.6%); outrage 81.2% (59.6%); humor 0.0% (0.2%); question 1.1% (15.6%); breaking_live 3.8% (2.0%); episode_show 0.0% (7.6%); interview_guest 4.8% (8.5%); reaction 0.5% (2.2%); confrontation 17.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 7.5% (9.5%)
 
 
-Nearest style neighbours: @Xanderhal [left]; @DestinyDGGClips [right]; @OfficialSaharTV [right]; @RileyGaines [right]; @ZubyMusic [right]
+Nearest style neighbors: @Xanderhal [left]; @DestinyDGGClips [right]; @OfficialSaharTV [right]; @RileyGaines [right]; @ZubyMusic [right]
 
-Nearest topic neighbours: @SaltyCracker [right]; @MichaelKnowles [right]; @XAVIAER [right]; @OfficialSaharTV [right]; @BlackConservativePerspective [right]
+Nearest topic neighbors: @SaltyCracker [right]; @MichaelKnowles [right]; @XAVIAER [right]; @OfficialSaharTV [right]; @BlackConservativePerspective [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,7 +86,7 @@ Top topics: Minneapolis political unrest and federal response (25.4%); ICE Prote
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 55.7 | 46.8 | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 13.9 | 15.2 | -1.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 60.8 | 63.3 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 60.8 | 63.3 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 39.2 | 27.8 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 50.6 | 53.2 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 5.1 | 7.6 | -0.7 | 0.0 |
@@ -101,9 +101,9 @@ Top topics: Minneapolis political unrest and federal response (25.4%); ICE Prote
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.7% (3.2%); outrage 67.8% (56.4%); humor 0.0% (0.1%); question 1.7% (13.7%); breaking_live 37.3% (18.8%); episode_show 1.7% (26.3%); interview_guest 15.2% (14.0%); reaction 0.0% (2.1%); confrontation 27.1% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
-Nearest style neighbours: @ThePodcastoftheLotusEaters [right]; @underthedesknews [left]; @hutch [neutral]; @TheJoyReidShow [left]; @franifio [left]
+Nearest style neighbors: @ThePodcastoftheLotusEaters [right]; @underthedesknews [left]; @hutch [neutral]; @TheJoyReidShow [left]; @franifio [left]
 
-Nearest topic neighbours: @StatusCoup [left]; @BreakThroughNews [left]; @MLChristiansen [right]; @TheMajorityReport [left]; @LIVESNEAKO [neutral]
+Nearest topic neighbors: @StatusCoup [left]; @BreakThroughNews [left]; @MLChristiansen [right]; @TheMajorityReport [left]; @LIVESNEAKO [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

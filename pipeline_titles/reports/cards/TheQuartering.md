@@ -1,6 +1,6 @@
 # TheQuartering (@TheQuartering)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: TheQuartering · clipper: no · platform: youtube · subscribers: 2190000.0
+Channel group: **right** (title-leaning score, document 14) · organization: TheQuartering · clipper: no · platform: youtube · subscribers: 2190000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (23.4%); ICE Protests and Shootings (9
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 18.0 | 25.5 | -0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 57.3 | 80.8 | 0.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 7.5 | 3.3 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 7.5 | 3.3 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 2.9 | 51.0 | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 7.1 | 15.5 | -0.5 | 0.2 |
 | F6: Person-centred (named people) | 38.1 | 15.1 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (23.4%); ICE Protests and Shootings (9
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.5% (3.6%); outrage 93.6% (59.6%); humor 0.1% (0.2%); question 1.2% (15.6%); breaking_live 0.1% (2.0%); episode_show 0.1% (7.6%); interview_guest 3.1% (8.5%); reaction 1.2% (2.2%); confrontation 7.4% (7.8%); listicle 0.1% (0.1%); howto_explainer 0.7% (9.5%)
 
 
-Nearest style neighbours: @deanwithrs [left]; @TimcastNews [right]; @TheOfficerTatum [right]; @JacksonHinkleOfficial [neutral]; @LegalAFMTN [left]
+Nearest style neighbors: @deanwithrs [left]; @TimcastNews [right]; @TheOfficerTatum [right]; @JacksonHinkleOfficial [neutral]; @LegalAFMTN [left]
 
-Nearest topic neighbours: @TimcastNews [right]; @TimcastIRL [right]; @LiberalHivemind [right]; @HasanAbi [left]; @AsmonTV [right]
+Nearest topic neighbors: @TimcastNews [right]; @TimcastIRL [right]; @LiberalHivemind [right]; @HasanAbi [left]; @AsmonTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

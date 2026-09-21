@@ -1,6 +1,6 @@
 # MeidasTouch (@MeidasTouch)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 6470000.0
+Channel group: **left** (title-leaning score, document 14) · organization: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 6470000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Meltdowns and Collapses (19.4%); Trump's War and Draft (10.8%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 3.3 | 1.7 | -1.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 58.2 | 52.7 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 73.6 | 77.4 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 73.6 | 77.4 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 84.9 | 87.4 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 23.0 | 10.9 | -0.3 | 0.1 |
 | F6: Person-centred (named people) | 32.6 | 21.8 | -0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Meltdowns and Collapses (19.4%); Trump's War and Draft (10.8%)
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.5% (2.7%); outrage 96.0% (63.9%); humor 0.0% (0.2%); question 4.0% (15.6%); breaking_live 0.4% (2.9%); episode_show 2.9% (2.8%); interview_guest 5.3% (9.8%); reaction 1.4% (2.9%); confrontation 7.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.1% (8.0%)
 
 
-Nearest style neighbours: @TheOfficerTatum [right]; @LegalAFMTN [left]; @deanwithrs [left]; @adammockler [left]; https://rumble.com/c/nickjfuentes [right]
+Nearest style neighbors: @TheOfficerTatum [right]; @LegalAFMTN [left]; @deanwithrs [left]; @adammockler [left]; https://rumble.com/c/nickjfuentes [right]
 
-Nearest topic neighbours: @TheMichaelCohenShow [left]; @aaronparnas1 [left]; @FarronBalanced [left]; @JackCocchiarellaShow [left]; @briantylercohen [left]
+Nearest topic neighbors: @TheMichaelCohenShow [left]; @aaronparnas1 [left]; @FarronBalanced [left]; @JackCocchiarellaShow [left]; @briantylercohen [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Political media responses and announcements (16.1%); Trump Meltdowns
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 35.4 | 36.7 | -0.4 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 69.6 | 79.7 | 0.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 94.9 | 93.7 | 3.0 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 94.9 | 93.7 | 3.0 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 79.7 | 81.0 | 0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 63.3 | 51.9 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 8.9 | 6.3 | -0.6 | 0.6 |
@@ -104,9 +104,9 @@ Top topics: Political media responses and announcements (16.1%); Trump Meltdowns
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.3% (1.9%); outrage 90.6% (63.2%); humor 0.0% (0.1%); question 2.9% (11.3%); breaking_live 90.0% (17.5%); episode_show 27.0% (6.4%); interview_guest 3.5% (18.3%); reaction 13.7% (1.5%); confrontation 5.4% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.6% (2.9%)
 
 
-Nearest style neighbours: @TheOfficerTatum [right]; @StatusCoup [left]; @NBCNews [neutral]; @ANINewsIndia [neutral]; @Reuters [neutral]
+Nearest style neighbors: @TheOfficerTatum [right]; @StatusCoup [left]; @NBCNews [neutral]; @ANINewsIndia [neutral]; @Reuters [neutral]
 
-Nearest topic neighbours: @deanwithrs [left]; @jimacosta [left]; @bulwarkmedia [left]; @FarronBalanced [left]; @TheDonLemonShow [left]
+Nearest topic neighbors: @deanwithrs [left]; @jimacosta [left]; @bulwarkmedia [left]; @FarronBalanced [left]; @TheDonLemonShow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

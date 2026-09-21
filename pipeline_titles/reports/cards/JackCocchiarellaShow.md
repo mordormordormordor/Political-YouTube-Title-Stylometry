@@ -1,6 +1,6 @@
 # Jack Cocchiarella (@JackCocchiarellaShow)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Jack Cocchiarella · clipper: no · platform: youtube · subscribers: 1610000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Jack Cocchiarella · clipper: no · platform: youtube · subscribers: 1610000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Meltdowns and Collapses (19.0%); Trump Resignation and Leaks (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 12.6 | 7.9 | -0.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 50.6 | 53.1 | -0.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 13.0 | 14.2 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 13.0 | 14.2 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 80.8 | 86.6 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 22.6 | 10.5 | -0.3 | 0.1 |
 | F6: Person-centred (named people) | 66.5 | 61.5 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Meltdowns and Collapses (19.0%); Trump Resignation and Leaks (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.5% (2.7%); outrage 93.7% (63.9%); humor 0.1% (0.2%); question 1.1% (15.6%); breaking_live 1.9% (2.9%); episode_show 0.0% (2.8%); interview_guest 2.2% (9.8%); reaction 0.1% (2.9%); confrontation 7.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.4% (8.0%)
 
 
-Nearest style neighbours: @SaltyCracker [right]; @FarronBalanced [left]; @chicksonright [right]; @RebelHQ [left]; @PTLRadioShow [left]
+Nearest style neighbors: @SaltyCracker [right]; @FarronBalanced [left]; @chicksonright [right]; @RebelHQ [left]; @PTLRadioShow [left]
 
-Nearest topic neighbours: @adammockler [left]; @harryjsisson [left]; @FarronBalanced [left]; @thedavidpakmanshow [left]; @LukeBeasley [left]
+Nearest topic neighbors: @adammockler [left]; @harryjsisson [left]; @FarronBalanced [left]; @thedavidpakmanshow [left]; @LukeBeasley [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump Meltdowns and Collapses (47.6%); Shocking Events and Reactions
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.2 | 0.6 |

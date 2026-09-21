@@ -1,6 +1,6 @@
 # Bad Faith (@BadFaithPodcast)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Bad Faith · clipper: no · platform: youtube · subscribers: 187000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Bad Faith · clipper: no · platform: youtube · subscribers: 187000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (17.3%); Left Wing Political Violenc
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 83.3 | 77.8 | 0.7 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 32.6 | 30.1 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 81.2 | 67.4 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 81.2 | 67.4 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 35.6 | 21.3 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 55.2 | 59.0 | 0.2 | 0.1 |
 | F6: Person-centred (named people) | 100.0 | 100.0 | 2.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (17.3%); Left Wing Political Violenc
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.5% (2.7%); outrage 51.8% (63.9%); humor 0.0% (0.2%); question 32.1% (15.6%); breaking_live 2.5% (2.9%); episode_show 0.0% (2.8%); interview_guest 90.1% (9.8%); reaction 0.0% (2.9%); confrontation 12.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 6.2% (8.0%)
 
 
-Nearest style neighbours: @MegynKelly [right]; @marclamonthillnetwork [left]; @cafedotcom [left]; @Semafor [neutral]; @MichaelMaliceofficial [right]
+Nearest style neighbors: @MegynKelly [right]; @marclamonthillnetwork [left]; @cafedotcom [left]; @Semafor [neutral]; @MichaelMaliceofficial [right]
 
-Nearest topic neighbours: @ColemanHughesOfficial [right]; @BadEmpanadaLive [left]; @DueDissidence [left]; @nationalreview [right]; @franifio [left]
+Nearest topic neighbors: @ColemanHughesOfficial [right]; @BadEmpanadaLive [left]; @DueDissidence [left]; @nationalreview [right]; @franifio [left]
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -53,7 +53,7 @@ Top topics: India's Muslims and Political Parties (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -1.6 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -6.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.4 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.4 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.9 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -2.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.1 | 0.6 |

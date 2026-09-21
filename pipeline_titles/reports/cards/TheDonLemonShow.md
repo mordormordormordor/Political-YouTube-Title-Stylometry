@@ -1,6 +1,6 @@
 # Don Lemon (@TheDonLemonShow)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Don Lemon · clipper: no · platform: youtube · subscribers: 1450000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Don Lemon · clipper: no · platform: youtube · subscribers: 1450000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: MAGA Movement Decline (7.1%); Don Lemon Arrested (6.6%); ICE Protest
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 52.7 | 38.9 | 0.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 28.0 | 29.7 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 36.4 | 34.3 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 36.4 | 34.3 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 33.5 | 36.4 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 65.3 | 59.4 | 0.5 | 0.1 |
 | F6: Person-centred (named people) | 69.5 | 72.8 | 0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: MAGA Movement Decline (7.1%); Don Lemon Arrested (6.6%); ICE Protest
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (2.7%); outrage 66.4% (63.9%); humor 0.5% (0.2%); question 16.7% (15.6%); breaking_live 1.9% (2.9%); episode_show 0.0% (2.8%); interview_guest 7.6% (9.8%); reaction 1.6% (2.9%); confrontation 7.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 6.0% (8.0%)
 
 
-Nearest style neighbours: @OwenReport [left]; @NovaraMedia [left]; @TheJoyReidShow [left]; @clayandbuck [right]; @judgingfreedom [left]
+Nearest style neighbors: @OwenReport [left]; @NovaraMedia [left]; @TheJoyReidShow [left]; @clayandbuck [right]; @judgingfreedom [left]
 
-Nearest topic neighbours: @jimacosta [left]; @dollemore [left]; @podsaveamerica [left]; @SecularTalk [left]; @TheMajorityReport [left]
+Nearest topic neighbors: @jimacosta [left]; @dollemore [left]; @podsaveamerica [left]; @SecularTalk [left]; @TheMajorityReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Nolan Wells Investigation (15.0%); Members Only Show (8.0%); Iran Wa
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 43.0 | 40.5 | -0.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 45.6 | 39.2 | -0.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 58.2 | 51.9 | -0.1 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 58.2 | 51.9 | -0.1 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 36.7 | 41.8 | -0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 88.6 | 83.5 | 0.2 | -0.3 |
 | F6: Person-centred (named people) | 41.8 | 34.2 | 0.0 | 0.6 |
@@ -105,9 +105,9 @@ Top topics: Nolan Wells Investigation (15.0%); Members Only Show (8.0%); Iran Wa
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.8% (1.9%); outrage 73.0% (63.2%); humor 0.2% (0.1%); question 17.8% (11.3%); breaking_live 2.0% (17.5%); episode_show 12.5% (6.4%); interview_guest 13.5% (18.3%); reaction 0.8% (1.5%); confrontation 5.0% (15.4%); listicle 0.2% (0.0%); howto_explainer 2.2% (2.9%)
 
 
-Nearest style neighbours: @bulwarkmedia [left]; @NewsmaxTV [right]; @TheYoungTurks [left]; @franifio [left]; @OwenReport [left]
+Nearest style neighbors: @bulwarkmedia [left]; @NewsmaxTV [right]; @TheYoungTurks [left]; @franifio [left]; @OwenReport [left]
 
-Nearest topic neighbours: @TheJoyReidShow [left]; @PTLRadioShow [left]; @bulwarkmedia [left]; @deanwithrs [left]; @jimacosta [left]
+Nearest topic neighbors: @TheJoyReidShow [left]; @PTLRadioShow [left]; @bulwarkmedia [left]; @deanwithrs [left]; @jimacosta [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

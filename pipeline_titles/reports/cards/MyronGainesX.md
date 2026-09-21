@@ -1,6 +1,6 @@
 # MyronGainesX (@MyronGainesX)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Myron Gaines · clipper: no · platform: youtube · subscribers: 569000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Myron Gaines · clipper: no · platform: youtube · subscribers: 569000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Myron's Critique of Modern Dating and Feminism (36.5%); Modern Women
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 10.5 | 11.7 | -0.7 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 46.9 | 58.6 | -0.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 38.5 | 2.1 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 38.5 | 2.1 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 75.7 | 74.5 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 69.9 | 74.9 | 0.6 | 0.2 |
 | F6: Person-centred (named people) | 79.1 | 81.6 | 0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Myron's Critique of Modern Dating and Feminism (36.5%); Modern Women
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.6% (3.6%); outrage 82.5% (59.6%); humor 0.0% (0.2%); question 6.9% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 11.6% (8.5%); reaction 7.7% (2.2%); confrontation 15.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 25.2% (9.5%)
 
 
-Nearest style neighbours: @thejimmydoreshow [neutral]; @chicksonright [right]; @Forthepeoplepodcast305 [left]; @PTLRadioShow [left]; @fightbackpodcast [right]
+Nearest style neighbors: @thejimmydoreshow [neutral]; @chicksonright [right]; @Forthepeoplepodcast305 [left]; @PTLRadioShow [left]; @fightbackpodcast [right]
 
-Nearest topic neighbours: @FreshFitMiami [right]; @JustPearlyThings [right]; https://rumble.com/c/nickjfuentes [right]; @jlptalk [right]; @BenShapiro [right]
+Nearest topic neighbors: @FreshFitMiami [right]; @JustPearlyThings [right]; https://rumble.com/c/nickjfuentes [right]; @jlptalk [right]; @BenShapiro [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Iran Conflict and Political Updates (16.3%); Modern Women and Femini
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 32.9 | 35.4 | -0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 25.3 | 24.1 | -0.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 30.4 | 24.1 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 30.4 | 24.1 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 92.4 | 91.1 | 0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 84.8 | 86.1 | 0.1 | -0.3 |
 | F6: Person-centred (named people) | 70.9 | 72.2 | 0.9 | 0.0 |
@@ -104,9 +104,9 @@ Top topics: Iran Conflict and Political Updates (16.3%); Modern Women and Femini
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.3% (3.2%); outrage 77.5% (56.4%); humor 0.0% (0.1%); question 19.2% (13.7%); breaking_live 4.1% (18.8%); episode_show 0.0% (26.3%); interview_guest 18.8% (14.0%); reaction 13.1% (2.1%); confrontation 14.3% (9.4%); listicle 0.0% (0.2%); howto_explainer 17.5% (5.3%)
 
 
-Nearest style neighbours: @RedactedNews [right]; @franifio [left]; @AnthonyBrianLogan [right]; @FreshFitMiami [right]; @NewsmaxTV [right]
+Nearest style neighbors: @RedactedNews [right]; @franifio [left]; @AnthonyBrianLogan [right]; @FreshFitMiami [right]; @NewsmaxTV [right]
 
-Nearest topic neighbours: @DueDissidence [left]; @RealAmericasVoice [right]; @FreshFitMiami [right]; @NickCruseRBN [left]; @VivaFrei [right]
+Nearest topic neighbors: @DueDissidence [left]; @RealAmericasVoice [right]; @FreshFitMiami [right]; @NickCruseRBN [left]; @VivaFrei [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

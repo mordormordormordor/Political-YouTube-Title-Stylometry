@@ -16,7 +16,7 @@ Reads data/titles/videos.csv and writes, under data/titles/analysis/:
     creator_genre_summary.csv rows, unique titles, repeat share, low-n flag,
                               balanced n, subscribers, months active
     zipf_check.csv            corpus Zipf exponent (creator-balanced subset) on raw
-                              vs normalised titles, plus the head of each rank list
+                              vs normalized titles, plus the head of each rank list
 
 Brand detection rule (per creator x genre, on unique titles): a delimited leading
 or trailing segment (split on ' | ', ' - ', ' – ', ' — ', ' • ', ' ~ ', a 'LABEL: '
@@ -178,7 +178,7 @@ def _clean_edges(segs: list, removed: list) -> list:
 
 
 def _candidates(title: str) -> dict[str, list[str]]:
-    """Candidate brand segments of one title, by kind (un-normalised text), taken
+    """Candidate brand segments of one title, by kind (un-normalized text), taken
     from the same date/episode-cleaned segments that strip_title works on.
     Prefix candidates are the first segment (and the second when there are three
     or more); suffix candidates the last (and second-last when three or more)."""
@@ -289,7 +289,7 @@ def _all_brand(norm: str, brand: BrandPatterns) -> bool:
 
 
 def strip_title(title: str, brand: Optional[BrandPatterns] = None) -> tuple[str, list[str], bool]:
-    """Normalise one title. Returns (title_norm, removed strings, brand_only).
+    """Normalize one title. Returns (title_norm, removed strings, brand_only).
 
     If removing the brand patterns leaves nothing, or leaves only other brand
     segments (the title *was* the show name plus a date), the brand text is kept
@@ -387,8 +387,8 @@ def run(min_share: float = MIN_SHARE, min_count: int = MIN_COUNT) -> pd.DataFram
                       on=["creator", "genre"], how="left")
     summ.to_csv(ANALYSIS_DIR / "creator_genre_summary.csv", index=False)
 
-    # Zipf check: (a) pooled over the balanced subset (labelled raw-pooled figure) and
-    # (b) the mean / median of creator x genre exponents, raw vs normalised titles
+    # Zipf check: (a) pooled over the balanced subset (labeled raw-pooled figure) and
+    # (b) the mean / median of creator x genre exponents, raw vs normalized titles
     bal = out[out["in_balanced"]]
     zrows, crows = [], []
     for name, col in (("raw", "title_raw"), ("normalised", "title_norm")):

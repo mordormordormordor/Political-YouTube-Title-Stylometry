@@ -1,6 +1,6 @@
 # Zeteo (@zeteo)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Zeteo · clipper: no · platform: youtube · subscribers: 2240000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Zeteo · clipper: no · platform: youtube · subscribers: 2240000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (21.4%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 72.0 | 56.9 | 0.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 72.0 | 67.4 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 66.5 | 58.6 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 66.5 | 58.6 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 43.9 | 43.1 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 90.0 | 87.4 | 1.4 | 0.1 |
 | F6: Person-centred (named people) | 39.3 | 46.4 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (21.4%); Iran War and Strait of Horm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (2.7%); outrage 57.8% (63.9%); humor 0.5% (0.2%); question 28.2% (15.6%); breaking_live 1.0% (2.9%); episode_show 1.5% (2.8%); interview_guest 4.9% (9.8%); reaction 2.4% (2.9%); confrontation 6.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 17.5% (8.0%)
 
 
-Nearest style neighbours: @TheBrianKilmeadeShow [right]; @BreakThroughNews [left]; @JillianMichaels [right]; @nytimes [left]; @jimacosta [left]
+Nearest style neighbors: @TheBrianKilmeadeShow [right]; @BreakThroughNews [left]; @JillianMichaels [right]; @nytimes [left]; @jimacosta [left]
 
-Nearest topic neighbours: @TheYoungTurks [left]; @KimIversen [neutral]; @TheMajorityReport [left]; @breakingpoints [left]; @OwenJonesTalks [left]
+Nearest topic neighbors: @TheYoungTurks [left]; @KimIversen [neutral]; @TheMajorityReport [left]; @breakingpoints [left]; @OwenJonesTalks [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -88,7 +88,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (24.0%); Israel-Palestine Con
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.5 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.5 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.5 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.6 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.0 | 0.6 |

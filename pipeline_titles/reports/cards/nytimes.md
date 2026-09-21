@@ -1,6 +1,6 @@
 # The New York Times (@nytimes)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: New York Times · clipper: no · platform: youtube · subscribers: 5260000.0
+Channel group: **left** (title-leaning score, document 14) · organization: New York Times · clipper: no · platform: youtube · subscribers: 5260000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Hollywood and Oscars Politics (18.3%); Wildfires and Firefighters Re
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 82.8 | 84.9 | 0.7 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 49.8 | 49.4 | -0.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 91.6 | 90.4 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 91.6 | 90.4 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 66.9 | 61.1 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 97.5 | 97.1 | 2.7 | 0.1 |
 | F6: Person-centred (named people) | 33.5 | 31.0 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Hollywood and Oscars Politics (18.3%); Wildfires and Firefighters Re
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.2% (2.7%); outrage 9.9% (63.9%); humor 0.0% (0.2%); question 42.2% (15.6%); breaking_live 8.5% (2.9%); episode_show 0.0% (2.8%); interview_guest 4.2% (9.8%); reaction 1.4% (2.9%); confrontation 4.2% (7.6%); listicle 0.0% (0.1%); howto_explainer 15.5% (8.0%)
 
 
-Nearest style neighbours: @samharrisorg [left]; @zeteo [left]; @nationalreview [right]; @TheDailyBeast [left]; @AndrewKlavan [right]
+Nearest style neighbors: @samharrisorg [left]; @zeteo [left]; @nationalreview [right]; @TheDailyBeast [left]; @AndrewKlavan [right]
 
-Nearest topic neighbours: @NYTPodcasts [left]; @AssociatedPress [neutral]; @Reuters [neutral]; @wsj [neutral]; @60minutes [neutral]
+Nearest topic neighbors: @NYTPodcasts [left]; @AssociatedPress [neutral]; @Reuters [neutral]; @wsj [neutral]; @60minutes [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

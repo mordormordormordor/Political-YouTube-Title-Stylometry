@@ -1,6 +1,6 @@
 # Fox News Clips (@FoxNewsChannelClips)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Fox News · clipper: yes · platform: youtube · subscribers: 846000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Fox News · clipper: yes · platform: youtube · subscribers: 846000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (7.4%); 2026 Midterm Election
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 76.6 | 72.0 | 0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 77.0 | 75.3 | 0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 91.2 | 92.5 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 91.2 | 92.5 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 51.9 | 45.2 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 18.8 | 24.7 | -0.3 | 0.2 |
 | F6: Person-centred (named people) | 16.3 | 25.5 | -0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (7.4%); 2026 Midterm Election
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.9% (3.6%); outrage 43.8% (59.6%); humor 0.2% (0.2%); question 3.2% (15.6%); breaking_live 1.6% (2.0%); episode_show 0.0% (7.6%); interview_guest 4.2% (8.5%); reaction 1.0% (2.2%); confrontation 8.4% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.2% (9.5%)
 
 
-Nearest style neighbours: @FoxNews [right]; @msnow [left]; @NBCNews [neutral]; @SkyNews [left]; @CNN [left]
+Nearest style neighbors: @FoxNews [right]; @msnow [left]; @NBCNews [neutral]; @SkyNews [left]; @CNN [left]
 
-Nearest topic neighbours: @NewsmaxTV [right]; @NewsNation [neutral]; @FoxNews [right]; @oann [right]; @CBSNews [neutral]
+Nearest topic neighbors: @NewsmaxTV [right]; @NewsNation [neutral]; @FoxNews [right]; @oann [right]; @CBSNews [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

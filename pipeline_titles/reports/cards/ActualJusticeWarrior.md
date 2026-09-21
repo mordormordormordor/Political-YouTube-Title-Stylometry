@@ -1,6 +1,6 @@
 # Actual Justice Warrior (@ActualJusticeWarrior)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Actual Justice Warrior · clipper: no · platform: youtube · subscribers: 517000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Actual Justice Warrior · clipper: no · platform: youtube · subscribers: 517000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Zohran Mamdani and NYC Politics (8.7%); Homelessness and Socialist M
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 4.2 | 5.0 | -1.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 6.7 | 11.7 | -1.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 2.9 | 0.8 | -0.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 2.9 | 0.8 | -0.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 0.8 | 0.8 | -0.7 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 1.7 | 2.5 | -0.8 | 0.2 |
 | F6: Person-centred (named people) | 35.1 | 37.7 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Zohran Mamdani and NYC Politics (8.7%); Homelessness and Socialist M
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (3.6%); outrage 88.0% (59.6%); humor 0.0% (0.2%); question 0.8% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 2.3% (8.5%); reaction 0.0% (2.2%); confrontation 14.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 1.3% (9.5%)
 
 
-Nearest style neighbours: @SabbySabs [left]; @TheYoungTurks [left]; @RebelHQ [left]; @FarronBalanced [left]; @usefulidiots [left]
+Nearest style neighbors: @SabbySabs [left]; @TheYoungTurks [left]; @RebelHQ [left]; @FarronBalanced [left]; @usefulidiots [left]
 
-Nearest topic neighbours: @SaltyCracker [right]; @MattWalsh [right]; @BlackConservativePerspective [right]; @TheOfficerTatum [right]; @MichaelKnowles [right]
+Nearest topic neighbors: @SaltyCracker [right]; @MattWalsh [right]; @BlackConservativePerspective [right]; @TheOfficerTatum [right]; @MichaelKnowles [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -88,7 +88,7 @@ Top topics: Artemis II Moon Mission Updates (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -4.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.3 | 0.0 |

@@ -1,6 +1,6 @@
 # The Young Turks (@TheYoungTurks)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: TYT Network · clipper: no · platform: youtube · subscribers: 6720000.0
+Channel group: **left** (title-leaning score, document 14) · organization: TYT Network · clipper: no · platform: youtube · subscribers: 6720000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Members Only Show (11.3%); Israel-Palestine Conflict Media (10.5%); 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 27.6 | 29.7 | -0.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 10.5 | 4.2 | -0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 30.5 | 61.5 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 30.5 | 61.5 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 16.3 | 9.6 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 34.3 | 27.6 | -0.1 | 0.1 |
 | F6: Person-centred (named people) | 36.0 | 36.4 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Members Only Show (11.3%); Israel-Palestine Conflict Media (10.5%); 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (2.7%); outrage 55.5% (63.9%); humor 0.1% (0.2%); question 4.1% (15.6%); breaking_live 1.1% (2.9%); episode_show 31.8% (2.8%); interview_guest 10.6% (9.8%); reaction 1.2% (2.9%); confrontation 6.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 3.2% (8.0%)
 
 
-Nearest style neighbours: @NovaraMedia [left]; @BadEmpanadaLive [left]; @OwenJonesTalks [left]; @LIVESNEAKO [neutral]; @FarronBalanced [left]
+Nearest style neighbors: @NovaraMedia [left]; @BadEmpanadaLive [left]; @OwenJonesTalks [left]; @LIVESNEAKO [neutral]; @FarronBalanced [left]
 
-Nearest topic neighbours: @DueDissidence [left]; @breakingpoints [left]; @thejimmydoreshow [neutral]; @SabbySabs [left]; @SecularTalk [left]
+Nearest topic neighbors: @DueDissidence [left]; @breakingpoints [left]; @thejimmydoreshow [neutral]; @SabbySabs [left]; @SecularTalk [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Israel-Palestine Conflict Media (16.1%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 21.5 | 25.3 | -0.8 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 51.9 | 50.6 | -0.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 54.4 | 46.8 | -0.2 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 54.4 | 46.8 | -0.2 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 41.8 | 44.3 | -0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 77.2 | 74.7 | -0.1 | -0.3 |
 | F6: Person-centred (named people) | 51.9 | 51.9 | 0.3 | 0.6 |
@@ -105,9 +105,9 @@ Top topics: Israel-Palestine Conflict Media (16.1%); Iran War and Strait of Horm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.6% (1.9%); outrage 77.8% (63.2%); humor 0.0% (0.1%); question 13.6% (11.3%); breaking_live 14.0% (17.5%); episode_show 0.0% (6.4%); interview_guest 16.8% (18.3%); reaction 2.1% (1.5%); confrontation 11.9% (15.4%); listicle 0.0% (0.0%); howto_explainer 4.0% (2.9%)
 
 
-Nearest style neighbours: @TheDonLemonShow [left]; @franifio [left]; @NewsmaxTV [right]; @rolandsmartin [left]; @thejimmydoreshow [neutral]
+Nearest style neighbors: @TheDonLemonShow [left]; @franifio [left]; @NewsmaxTV [right]; @rolandsmartin [left]; @thejimmydoreshow [neutral]
 
-Nearest topic neighbours: @thejimmydoreshow [neutral]; @TheMajorityReport [left]; @OwenReport [left]; @judgingfreedom [left]; @DueDissidence [left]
+Nearest topic neighbors: @thejimmydoreshow [neutral]; @TheMajorityReport [left]; @OwenReport [left]; @judgingfreedom [left]; @DueDissidence [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

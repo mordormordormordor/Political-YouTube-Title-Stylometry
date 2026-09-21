@@ -1,6 +1,6 @@
 # Modern-Day Debate (@ModernDayDebate)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Modern-Day Debate · clipper: no · platform: youtube · subscribers: 282000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Modern-Day Debate · clipper: no · platform: youtube · subscribers: 282000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Islam and Political Discourse (45.6%); Christian Nationalism and Pol
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | 0.1 |
 | F6: Person-centred (named people) | None | None | 0.8 | -0.2 |
@@ -55,7 +55,7 @@ Top topics: Christian Nationalism and Politics (27.5%); Islam and Political Disc
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 77.2 | 84.8 | 0.5 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 53.2 | 59.5 | -0.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 83.5 | 79.7 | 1.5 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 83.5 | 79.7 | 1.5 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 1.3 | 1.3 | -0.9 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 81.0 | 91.1 | 0.1 | -0.3 |
 | F6: Person-centred (named people) | 81.0 | 75.9 | 1.3 | 0.6 |
@@ -70,9 +70,9 @@ Top topics: Christian Nationalism and Politics (27.5%); Islam and Political Disc
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (1.9%); outrage 12.8% (63.2%); humor 0.0% (0.1%); question 67.0% (11.3%); breaking_live 0.9% (17.5%); episode_show 0.0% (6.4%); interview_guest 4.6% (18.3%); reaction 0.0% (1.5%); confrontation 98.2% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (2.9%)
 
 
-Nearest style neighbours: @bulwarkmedia [left]; @marclamonthillnetwork [left]; @ANINewsIndia [neutral]; @NewsmaxTV [right]; @rolandsmartin [left]
+Nearest style neighbors: @bulwarkmedia [left]; @marclamonthillnetwork [left]; @ANINewsIndia [neutral]; @NewsmaxTV [right]; @rolandsmartin [left]
 
-Nearest topic neighbours: @ChadPrather1 [right]; @JustPearlyThings [right]; @jlptalk [right]; @MyronGainesX [right]; @FreshFitMiami [right]
+Nearest topic neighbors: @ChadPrather1 [right]; @JustPearlyThings [right]; @jlptalk [right]; @MyronGainesX [right]; @FreshFitMiami [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

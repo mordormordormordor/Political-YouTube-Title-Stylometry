@@ -4,7 +4,7 @@
 
 ## The finding in one paragraph
 
-Style ignores the divide. Measured in the twelve-dimensional, topic-controlled style space of the style model, the nearest neighbour of a left channel is on the right side of the divide about as often as on its own side: for 46% of the 192 left and right channels the closest channel across the divide is closer than *any* channel in their own group, and the distributions of nearest-twin distance and nearest-group-mate distance sit almost on top of each other. The closest pairs are not the big names but the mid-sized daily channels on both sides: @FarronBalanced and @SaltyCracker, @PTLRadioShow and @chicksonright, @Forthepeoplepodcast305 and @chicksonright. What they share is form: emphasis capitals on one or two words, a named target, a verb of attack or collapse, no question, no label, no numbers.
+Style ignores the divide. Measured in the twelve-dimensional, topic-controlled style space of the style model, the nearest neighbor of a left channel is on the right side of the divide about as often as on its own side: for 46% of the 192 left and right channels the closest channel across the divide is closer than *any* channel in their own group, and the distributions of nearest-twin distance and nearest-group-mate distance sit almost on top of each other. The closest pairs are not the big names but the mid-sized daily channels on both sides: @FarronBalanced and @SaltyCracker, @PTLRadioShow and @chicksonright, @Forthepeoplepodcast305 and @chicksonright. What they share is form: emphasis capitals on one or two words, a named target, a verb of attack or collapse, no question, no label, no numbers.
 
 ![The twenty closest pairs and the distance comparison.](figures/09_twins.png)
 *Left: the twenty closest left-right pairs. Right: for every left and right channel, the distance to its nearest channel across the divide against the distance to its nearest group-mate.*
@@ -37,7 +37,7 @@ Style ignores the divide. Measured in the twelve-dimensional, topic-controlled s
 | @Forthepeoplepodcast305 | @GrahamAllen | 1.41 | 0.27 |
 
 
-A few right-side channels recur as everybody's twin in the table above (@chicksonright x5, @SaltyCracker x3, @JesseKellyDC x2): they sit near the centre of the commentary cloud, so they are close to many left channels at once. Hubness like this is a property of the space, not evidence of imitation.
+A few right-side channels recur as everybody's twin in the table above (@chicksonright x5, @SaltyCracker x3, @JesseKellyDC x2): they sit near the center of the commentary cloud, so they are close to many left channels at once. Hubness like this is a property of the space, not evidence of imitation.
 
 ## Every channel's twin across the divide
 
@@ -75,7 +75,7 @@ The full table is `style_twins_nearest.csv`; the twelve left and twelve right ch
 | @GrahamAllen | @Forthepeoplepodcast305 | 1.41 | 3 | @SaltyCracker | 1.26 | no |
 
 
-`twin_rank_among_all_neighbours` = 1 means the twin is the creator's single nearest neighbour in the whole landscape (any group).
+`twin_rank_among_all_neighbours` = 1 means the twin is the creator's single nearest neighbor in the whole landscape (any group).
 
 ## Method
 
@@ -89,7 +89,7 @@ The full table is `style_twins_nearest.csv`; the twelve left and twelve right ch
 - The divide is the judge's reading of each channel's titles, so a channel whose titles read neutral although its host is partisan is left out, and a channel near a threshold can sit on either side; document 14 gives the reliability of the score.
 - The space weights all twelve factors equally after z-scoring; two creators can be twins on capitals, questions and quotes while differing in tone, or the reverse. `dimensions.csv` has the per-factor scores if a narrower definition is wanted.
 - Topic control removes the average effect of a topic on each score, not everything a subject does to a title.
-- Distances shrink for creators near the centre of the cloud (hubness above) and grow for eccentric ones; the percentile column is the fairer comparison.
+- Distances shrink for creators near the center of the cloud (hubness above) and grow for eccentric ones; the percentile column is the fairer comparison.
 - Only edited uploads; live VODs are too thin for both groups.
 
 Files: `style_twins.csv`, `style_twins_nearest.csv`, `dimensions.csv`, `neighbours_style.csv`.

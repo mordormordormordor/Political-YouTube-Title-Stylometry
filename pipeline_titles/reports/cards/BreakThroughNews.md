@@ -1,6 +1,6 @@
 # BreakThrough News (@BreakThroughNews)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: BreakThrough News · clipper: no · platform: youtube · subscribers: 1080000.0
+Channel group: **left** (title-leaning score, document 14) · organization: BreakThrough News · clipper: no · platform: youtube · subscribers: 1080000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (17.8%); Israel-Palestine Con
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 33.1 | 24.3 | -0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 54.0 | 51.5 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.8 | 77.8 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.8 | 77.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 53.1 | 50.6 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 79.9 | 77.4 | 1.0 | 0.1 |
 | F6: Person-centred (named people) | 75.7 | 67.4 | 0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (17.8%); Israel-Palestine Con
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (2.7%); outrage 60.7% (63.9%); humor 0.0% (0.2%); question 25.6% (15.6%); breaking_live 0.0% (2.9%); episode_show 2.1% (2.8%); interview_guest 30.6% (9.8%); reaction 1.2% (2.9%); confrontation 6.2% (7.6%); listicle 0.0% (0.1%); howto_explainer 15.7% (8.0%)
 
 
-Nearest style neighbours: @jimacosta [left]; @zeteo [left]; @HangOutwithSeanHannity [right]; @DropSiteNews [left]; @TomiLahrenIsFearless [right]
+Nearest style neighbors: @jimacosta [left]; @zeteo [left]; @HangOutwithSeanHannity [right]; @DropSiteNews [left]; @TomiLahrenIsFearless [right]
 
-Nearest topic neighbours: @aljazeeraenglish [left]; @DropSiteNews [left]; @thegrayzone7996 [left]; @timesofindia [left]; @breakingpoints [left]
+Nearest topic neighbors: @aljazeeraenglish [left]; @DropSiteNews [left]; @thegrayzone7996 [left]; @timesofindia [left]; @breakingpoints [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (19.3%); Israel-Lebanon Confl
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 19.0 | 12.7 | -0.9 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 38.0 | 40.5 | -0.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.6 | 86.1 | 1.9 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.6 | 86.1 | 1.9 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 26.6 | 26.6 | -0.3 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 69.6 | 64.6 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 45.6 | 27.8 | 0.1 | 0.6 |
@@ -104,9 +104,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (19.3%); Israel-Lebanon Confl
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (1.9%); outrage 63.2% (63.2%); humor 0.0% (0.1%); question 21.1% (11.3%); breaking_live 59.7% (17.5%); episode_show 0.0% (6.4%); interview_guest 12.3% (18.3%); reaction 0.0% (1.5%); confrontation 7.0% (15.4%); listicle 0.0% (0.0%); howto_explainer 5.3% (2.9%)
 
 
-Nearest style neighbours: @Firstpost [neutral]; @bulwarkmedia [left]; @TheDonLemonShow [left]; @judgingfreedom [left]; @StatusCoup [left]
+Nearest style neighbors: @Firstpost [neutral]; @bulwarkmedia [left]; @TheDonLemonShow [left]; @judgingfreedom [left]; @StatusCoup [left]
 
-Nearest topic neighbours: @NickCruseRBN [left]; @Firstpost [neutral]; @JamarlThomas [left]; @DannyHaiphongYT [left]; @RedactedNews [right]
+Nearest topic neighbors: @NickCruseRBN [left]; @Firstpost [neutral]; @JamarlThomas [left]; @DannyHaiphongYT [left]; @RedactedNews [right]
 
 
 Engagement: n < 100 titles with views, not estimated.

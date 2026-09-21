@@ -1,6 +1,6 @@
 # The Bitchuation Room (with Francesca Fiorentini) (@franifio)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Bitchuation Room · clipper: no · platform: youtube · subscribers: 286000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Bitchuation Room · clipper: no · platform: youtube · subscribers: 286000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (6.4%); Iran War and Strait of Hormu
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 75.3 | 66.1 | 0.6 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 38.1 | 37.7 | -0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 13.8 | 15.1 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 13.8 | 15.1 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 37.2 | 35.1 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 73.2 | 66.9 | 0.7 | 0.1 |
 | F6: Person-centred (named people) | 36.4 | 50.6 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (6.4%); Iran War and Strait of Hormu
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.6% (2.7%); outrage 60.3% (63.9%); humor 0.7% (0.2%); question 27.0% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.4% (2.8%); interview_guest 14.5% (9.8%); reaction 0.4% (2.9%); confrontation 2.1% (7.6%); listicle 0.0% (0.1%); howto_explainer 6.0% (8.0%)
 
 
-Nearest style neighbours: @BenShapiro [right]; @ThePodcastoftheLotusEaters [right]; @Styxhexenhammer666 [right]; @StevenCrowder [right]; @AlexStein99 [right]
+Nearest style neighbors: @BenShapiro [right]; @ThePodcastoftheLotusEaters [right]; @Styxhexenhammer666 [right]; @StevenCrowder [right]; @AlexStein99 [right]
 
-Nearest topic neighbours: @TheMajorityReport [left]; @DueDissidence [left]; @TheYoungTurks [left]; @RealAmericasVoice [right]; @thehill [neutral]
+Nearest topic neighbors: @TheMajorityReport [left]; @DueDissidence [left]; @TheYoungTurks [left]; @RealAmericasVoice [right]; @thehill [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Kamala Harris 2028 Election Speculation (11.3%); Hollywood and Oscar
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 62.0 | 60.8 | 0.3 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 15.2 | 16.5 | -1.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 48.1 | 39.2 | -0.2 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 48.1 | 39.2 | -0.2 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 57.0 | 55.7 | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 49.4 | 60.8 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 69.6 | 68.4 | 0.7 | 0.6 |
@@ -105,9 +105,9 @@ Top topics: Kamala Harris 2028 Election Speculation (11.3%); Hollywood and Oscar
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (1.9%); outrage 41.9% (63.2%); humor 1.6% (0.1%); question 6.5% (11.3%); breaking_live 0.0% (17.5%); episode_show 30.6% (6.4%); interview_guest 79.0% (18.3%); reaction 0.0% (1.5%); confrontation 1.6% (15.4%); listicle 0.0% (0.0%); howto_explainer 1.6% (2.9%)
 
 
-Nearest style neighbours: @AnthonyBrianLogan [right]; @rolandsmartin [left]; @NewsmaxTV [right]; @hutch [neutral]; @bulwarkmedia [left]
+Nearest style neighbors: @AnthonyBrianLogan [right]; @rolandsmartin [left]; @NewsmaxTV [right]; @hutch [neutral]; @bulwarkmedia [left]
 
-Nearest topic neighbours: @TheYoungTurks [left]; @PTLRadioShow [left]; @TheMajorityReport [left]; @RealAmericasVoice [right]; @NewsmaxTV [right]
+Nearest topic neighbors: @TheYoungTurks [left]; @PTLRadioShow [left]; @TheMajorityReport [left]; @RealAmericasVoice [right]; @NewsmaxTV [right]
 
 
 Engagement: n < 100 titles with views, not estimated.

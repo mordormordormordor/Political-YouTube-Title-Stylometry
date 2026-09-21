@@ -1,6 +1,6 @@
 # The Economist (@TheEconomist)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: The Economist · clipper: no · platform: youtube · subscribers: 4150000.0
+Channel group: **left** (title-leaning score, document 14) · organization: The Economist · clipper: no · platform: youtube · subscribers: 4150000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: AI and Political Concerns (12.4%); Iran War and Strait of Hormuz Ten
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 87.0 | 80.8 | 0.8 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 92.9 | 89.5 | 1.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 27.6 | 41.4 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 27.6 | 41.4 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 9.2 | 7.5 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 100.0 | 100.0 | 4.4 | 0.1 |
 | F6: Person-centred (named people) | 4.6 | 8.8 | -1.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: AI and Political Concerns (12.4%); Iran War and Strait of Hormuz Ten
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.1% (2.7%); outrage 30.7% (63.9%); humor 0.0% (0.2%); question 75.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 6.6% (9.8%); reaction 0.7% (2.9%); confrontation 0.0% (7.6%); listicle 0.0% (0.1%); howto_explainer 22.6% (8.0%)
 
 
-Nearest style neighbours: @Vox [left]; @CoreyGilShusterAskProject [neutral]; @TheDailyBeast [left]; @nationalreview [right]; @UnHerd [left]
+Nearest style neighbors: @Vox [left]; @CoreyGilShusterAskProject [neutral]; @TheDailyBeast [left]; @nationalreview [right]; @UnHerd [left]
 
-Nearest topic neighbours: @markets [neutral]; @Reuters [neutral]; @RedactedNews [right]; @ZeihanonGeopolitics [neutral]; @wsj [neutral]
+Nearest topic neighbors: @markets [neutral]; @Reuters [neutral]; @RedactedNews [right]; @ZeihanonGeopolitics [neutral]; @wsj [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

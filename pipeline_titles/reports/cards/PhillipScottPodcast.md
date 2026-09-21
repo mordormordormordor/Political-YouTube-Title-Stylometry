@@ -1,6 +1,6 @@
 # Phillip Scott Podcast (@PhillipScottPodcast)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Phillip Scott · clipper: no · platform: youtube · subscribers: 202000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Phillip Scott · clipper: no · platform: youtube · subscribers: 202000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Black Voting Rights and Political Representation (28.6%); Christian 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -1.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 2.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.5 | 0.2 |
 | F6: Person-centred (named people) | None | None | -0.3 | -0.2 |
@@ -48,7 +48,7 @@ Top topics: Race and Politics in Media (37.2%); FBA and African Refugee Issues (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 97.5 | 75.9 | 0.9 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 92.4 | 98.7 | 0.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 17.7 | 3.8 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 17.7 | 3.8 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 98.7 | 98.7 | 0.8 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 87.3 | 89.9 | 0.2 | -0.3 |
 | F6: Person-centred (named people) | 21.5 | 11.4 | -0.3 | 0.0 |
@@ -63,9 +63,9 @@ Top topics: Race and Politics in Media (37.2%); FBA and African Refugee Issues (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.9% (3.2%); outrage 76.5% (56.4%); humor 0.0% (0.1%); question 7.8% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 8.5% (14.0%); reaction 0.0% (2.1%); confrontation 11.8% (9.4%); listicle 0.0% (0.2%); howto_explainer 14.4% (5.3%)
 
 
-Nearest style neighbours: @FreshFitMiami [right]; @RedactedNews [right]; @RekietaLaw [right]; @JustPearlyThings [right]; @OwenReport [left]
+Nearest style neighbors: @FreshFitMiami [right]; @RedactedNews [right]; @RekietaLaw [right]; @JustPearlyThings [right]; @OwenReport [left]
 
-Nearest topic neighbours: @rolandsmartin [left]; @marclamonthillnetwork [left]; @JustPearlyThings [right]; @FreshFitMiami [right]; @TheOfficerTatum [right]
+Nearest topic neighbors: @rolandsmartin [left]; @marclamonthillnetwork [left]; @JustPearlyThings [right]; @FreshFitMiami [right]; @TheOfficerTatum [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

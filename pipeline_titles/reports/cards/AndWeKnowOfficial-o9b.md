@@ -1,6 +1,6 @@
 # And We Know Official (@AndWeKnowOfficial-o9b)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: And We Know · clipper: no · platform: youtube · subscribers: 16100.0
+Channel group: **right** (title-leaning score, document 14) · organization: And We Know · clipper: no · platform: youtube · subscribers: 16100.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Save American Democracy (36.8%); Gold and Central Banks in Economy (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 95.8 | 95.8 | 1.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 40.6 | 50.2 | -0.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 64.4 | 68.2 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 64.4 | 68.2 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 64.9 | 73.2 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 0.4 | 5.0 | -1.0 | 0.2 |
 | F6: Person-centred (named people) | 58.6 | 31.4 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Save American Democracy (36.8%); Gold and Central Banks in Economy (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (3.6%); outrage 79.5% (59.6%); humor 0.0% (0.2%); question 17.3% (15.6%); breaking_live 0.0% (2.0%); episode_show 100.0% (7.6%); interview_guest 3.2% (8.5%); reaction 0.5% (2.2%); confrontation 6.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.8% (9.5%)
 
 
-Nearest style neighbours: https://rumble.com/c/BannonsWarRoom [right]; @dollemore [left]; @LegalAFMTN [left]; @RonPlacone [left]; @DrSteveTurleyTV [right]
+Nearest style neighbors: https://rumble.com/c/BannonsWarRoom [right]; @dollemore [left]; @LegalAFMTN [left]; @RonPlacone [left]; @DrSteveTurleyTV [right]
 
-Nearest topic neighbours: @X22Report-y5y [right]; @thomhartmann [left]; @LeejaMiller [left]; https://rumble.com/c/BannonsWarRoom [right]; @DrSteveTurleyTV [right]
+Nearest topic neighbors: @X22Report-y5y [right]; @thomhartmann [left]; @LeejaMiller [left]; https://rumble.com/c/BannonsWarRoom [right]; @DrSteveTurleyTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

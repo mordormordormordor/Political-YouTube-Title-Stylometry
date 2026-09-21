@@ -1,6 +1,6 @@
 # Rekieta Law (@RekietaLaw)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Rekieta Law · clipper: no · platform: youtube · subscribers: 402000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Rekieta Law · clipper: no · platform: youtube · subscribers: 402000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Lindsay Clancy Murder Trial (55.6%); Marc Lamont Hill and Joe Budden
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.1 | 0.2 |
 | F6: Person-centred (named people) | None | None | -0.3 | -0.2 |
@@ -48,7 +48,7 @@ Top topics: Members Only Show (16.0%); Lindsay Clancy Murder Trial (15.1%); Char
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 75.9 | 67.1 | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 60.8 | 44.3 | -0.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 36.7 | 43.0 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 36.7 | 43.0 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 89.9 | 82.3 | 0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 86.1 | 82.3 | 0.2 | -0.3 |
 | F6: Person-centred (named people) | 58.2 | 55.7 | 0.5 | 0.0 |
@@ -63,9 +63,9 @@ Top topics: Members Only Show (16.0%); Lindsay Clancy Murder Trial (15.1%); Char
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.9% (3.2%); outrage 37.7% (56.4%); humor 0.0% (0.1%); question 17.9% (13.7%); breaking_live 7.5% (18.8%); episode_show 2.8% (26.3%); interview_guest 12.3% (14.0%); reaction 0.9% (2.1%); confrontation 6.6% (9.4%); listicle 0.0% (0.2%); howto_explainer 9.4% (5.3%)
 
 
-Nearest style neighbours: @VivaFrei [right]; @FreshFitMiami [right]; @OwenReport [left]; @AnthonyBrianLogan [right]; @MyronGainesX [right]
+Nearest style neighbors: @VivaFrei [right]; @FreshFitMiami [right]; @OwenReport [left]; @AnthonyBrianLogan [right]; @MyronGainesX [right]
 
-Nearest topic neighbours: @TheOfficerTatum [right]; @MyronGainesX [right]; @RealAmericasVoice [right]; @TimcastIRL [right]; @underthedesknews [left]
+Nearest topic neighbors: @TheOfficerTatum [right]; @MyronGainesX [right]; @RealAmericasVoice [right]; @TimcastIRL [right]; @underthedesknews [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Axios (@axios)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Axios · clipper: no · platform: youtube · subscribers: 114000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Axios · clipper: no · platform: youtube · subscribers: 114000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: AI and Political Concerns (21.9%); Tech Business and Startups (12.4%
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 76.2 | 92.1 | 0.6 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 43.5 | 26.8 | -0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.4 | 71.1 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.4 | 71.1 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 73.6 | 66.5 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 59.8 | 65.7 | 0.3 | 0.1 |
 | F6: Person-centred (named people) | 56.9 | 49.4 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: AI and Political Concerns (21.9%); Tech Business and Startups (12.4%
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.6% (2.4%); outrage 12.4% (36.0%); humor 0.0% (0.1%); question 13.1% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 24.8% (11.6%); reaction 0.0% (1.9%); confrontation 2.2% (7.4%); listicle 0.7% (0.1%); howto_explainer 9.5% (6.6%)
 
 
-Nearest style neighbours: @hutch [neutral]; @LIVESNEAKO [neutral]; @TheJoyReidShow [left]; @OwenReport [left]; @XAVIAER [right]
+Nearest style neighbors: @hutch [neutral]; @LIVESNEAKO [neutral]; @TheJoyReidShow [left]; @OwenReport [left]; @XAVIAER [right]
 
-Nearest topic neighbours: @Semafor [neutral]; @TechCrunch [neutral]; @Forbes [neutral]; @TheAtlantic [left]; @samharrisorg [left]
+Nearest topic neighbors: @Semafor [neutral]; @TechCrunch [neutral]; @Forbes [neutral]; @TheAtlantic [left]; @samharrisorg [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -83,7 +83,7 @@ Top topics: Tech Business and Startups (42.9%); Climate and Weather Politics (28
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.6 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.9 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.3 | 0.2 |

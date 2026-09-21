@@ -1,6 +1,6 @@
 # Benny Johnson (@bennyjohnson)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Benny Johnson · clipper: no · platform: youtube · subscribers: 6100000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Benny Johnson · clipper: no · platform: youtube · subscribers: 6100000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.4%); UFO Government Disclo
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 2.1 | 3.3 | -1.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 81.2 | 80.3 | 0.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 95.0 | 94.1 | 0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 95.0 | 94.1 | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 99.2 | 97.9 | 1.7 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 12.6 | 13.8 | -0.4 | 0.2 |
 | F6: Person-centred (named people) | 81.6 | 83.3 | 0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.4%); UFO Government Disclo
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.2% (3.6%); outrage 88.9% (59.6%); humor 0.7% (0.2%); question 10.4% (15.6%); breaking_live 3.6% (2.0%); episode_show 0.0% (7.6%); interview_guest 7.2% (8.5%); reaction 2.8% (2.2%); confrontation 7.3% (7.8%); listicle 0.1% (0.1%); howto_explainer 3.8% (9.5%)
 
 
-Nearest style neighbours: @OfficialSaharTV [right]; @BlazeTV [right]; @rolandsmartin [left]; @DestinyDGGClips [right]; @MyronGainesX [right]
+Nearest style neighbors: @OfficialSaharTV [right]; @BlazeTV [right]; @rolandsmartin [left]; @DestinyDGGClips [right]; @MyronGainesX [right]
 
-Nearest topic neighbours: @NewsmaxTV [right]; @BlazeTV [right]; @RealAmericasVoice [right]; @FoxNews [right]; @thehill [neutral]
+Nearest topic neighbors: @NewsmaxTV [right]; @BlazeTV [right]; @RealAmericasVoice [right]; @FoxNews [right]; @thehill [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: California Election Fraud Scandal (6.6%); Iran War and Strait of Hor
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 2.5 | 2.5 | -1.8 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 86.1 | 88.6 | 0.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 69.6 | 70.9 | 0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 69.6 | 70.9 | 0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 100.0 | 100.0 | 1.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 65.8 | 54.4 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 59.5 | 65.8 | 0.6 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: California Election Fraud Scandal (6.6%); Iran War and Strait of Hor
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 10.1% (3.2%); outrage 86.3% (56.4%); humor 0.0% (0.1%); question 14.3% (13.7%); breaking_live 5.9% (18.8%); episode_show 0.0% (26.3%); interview_guest 12.5% (14.0%); reaction 3.0% (2.1%); confrontation 4.8% (9.4%); listicle 0.0% (0.2%); howto_explainer 2.4% (5.3%)
 
 
-Nearest style neighbours: @deanwithrs [left]; @MyronGainesX [right]; @RubinReport [right]; @RedactedNews [right]; @VivaFrei [right]
+Nearest style neighbors: @deanwithrs [left]; @MyronGainesX [right]; @RubinReport [right]; @RedactedNews [right]; @VivaFrei [right]
 
-Nearest topic neighbours: @TimcastIRL [right]; @timesofindia [left]; @RealAmericasVoice [right]; @RobertGouveiaEsq [right]; @NewsNation [neutral]
+Nearest topic neighbors: @TimcastIRL [right]; @timesofindia [left]; @RealAmericasVoice [right]; @RobertGouveiaEsq [right]; @NewsNation [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

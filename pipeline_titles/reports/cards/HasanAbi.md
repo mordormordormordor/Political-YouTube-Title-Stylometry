@@ -1,6 +1,6 @@
 # HasanAbi (@HasanAbi)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: HasanAbi · clipper: no · platform: youtube · subscribers: 1950000.0
+Channel group: **left** (title-leaning score, document 14) · organization: HasanAbi · clipper: no · platform: youtube · subscribers: 1950000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (26.9%); Israel-Palestine Conflict Med
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 79.1 | 81.6 | 0.6 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 72.4 | 87.9 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 32.2 | 21.3 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 32.2 | 21.3 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 89.1 | 95.4 | 0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 53.1 | 54.4 | 0.2 | 0.1 |
 | F6: Person-centred (named people) | 23.8 | 11.3 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (26.9%); Israel-Palestine Conflict Med
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.2% (2.7%); outrage 69.3% (63.9%); humor 0.5% (0.2%); question 13.1% (15.6%); breaking_live 0.5% (2.9%); episode_show 0.0% (2.8%); interview_guest 5.2% (9.8%); reaction 0.3% (2.9%); confrontation 3.7% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.1% (8.0%)
 
 
-Nearest style neighbours: @Vaush [left]; @TheVaushPit [left]; @TimcastNews [right]; @JustPearlyThings [right]; @dineshdsouza [right]
+Nearest style neighbors: @Vaush [left]; @TheVaushPit [left]; @TimcastNews [right]; @JustPearlyThings [right]; @dineshdsouza [right]
 
-Nearest topic neighbours: @TimcastIRL [right]; @TimcastNews [right]; @LiberalHivemind [right]; @Vaush [left]; @TheMajorityReport [left]
+Nearest topic neighbors: @TimcastIRL [right]; @TimcastNews [right]; @LiberalHivemind [right]; @Vaush [left]; @TheMajorityReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Israel-Palestine Conflict Media (14.3%); ICE Protests and Shootings 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.5 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.5 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.6 | -0.3 |
 | F6: Person-centred (named people) | None | None | 3.1 | 0.6 |

@@ -1,6 +1,6 @@
 # Amala Ekpunobi (@TheAmalaEkpunobi)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Amala Ekpunobi · clipper: no · platform: youtube · subscribers: 2500000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Amala Ekpunobi · clipper: no · platform: youtube · subscribers: 2500000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Race and Politics in Media (14.2%); Transgender Rights and Politics 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 63.2 | 65.7 | 0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 84.9 | 88.3 | 0.7 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 42.3 | 16.7 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 42.3 | 16.7 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 87.0 | 84.9 | 0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 18.4 | 33.1 | -0.3 | 0.2 |
 | F6: Person-centred (named people) | 2.9 | 5.9 | -1.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Race and Politics in Media (14.2%); Transgender Rights and Politics 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.7% (3.6%); outrage 70.1% (59.6%); humor 0.9% (0.2%); question 15.6% (15.6%); breaking_live 0.5% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.4% (8.5%); reaction 4.7% (2.2%); confrontation 5.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.8% (9.5%)
 
 
-Nearest style neighbours: @KimIversen [neutral]; @TheVaushPit [left]; @StevenCrowder [right]; @RileyGaines [right]; @CamHigby [right]
+Nearest style neighbors: @KimIversen [neutral]; @TheVaushPit [left]; @StevenCrowder [right]; @RileyGaines [right]; @CamHigby [right]
 
-Nearest topic neighbours: @MichaelKnowles [right]; @TheQuartering [right]; @Xanderhal [left]; @MattWalsh [right]; @jlptalk [right]
+Nearest topic neighbors: @MichaelKnowles [right]; @TheQuartering [right]; @Xanderhal [left]; @MattWalsh [right]; @jlptalk [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Transgender Rights and Politics (25.0%); Modern Women and Feminism D
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.7 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.2 | 0.0 |

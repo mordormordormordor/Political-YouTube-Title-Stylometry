@@ -17,7 +17,7 @@ Reads titles_prepared.parquet, annotations.parquet and creators.csv. Writes:
     feature_definitions.csv    name, family, text it is computed on, definition, aggregation
 
 Text used: lexical, pronoun, punctuation, syntax and entity features are computed on
-the NORMALISED title (brand prefixes/suffixes, episode numbers and dates removed);
+the NORMALIZED title (brand prefixes/suffixes, episode numbers and dates removed);
 the raw-structure family (lead_colon_label, lead_live, pipe_segments_raw, ...) on
 the RAW title, because a 'LIVE:' label or a '| Show Name' suffix is itself a style
 choice. Humor is never lexicon-scored.

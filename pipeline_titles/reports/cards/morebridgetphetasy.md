@@ -1,6 +1,6 @@
 # Walk-Ins Welcome with Bridget Phetasy (@morebridgetphetasy)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Bridget Phetasy · clipper: no · platform: youtube · subscribers: 13100.0
+Channel group: **right** (title-leaning score, document 14) · organization: Bridget Phetasy · clipper: no · platform: youtube · subscribers: 13100.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Left Wing Political Violence (6.3%); JLP Weekly Series (6.3%); AI an
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 78.7 | 90.8 | 0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 90.4 | 86.2 | 0.9 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 25.5 | 23.0 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 25.5 | 23.0 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 65.3 | 63.6 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 77.8 | 84.1 | 0.9 | 0.2 |
 | F6: Person-centred (named people) | 21.8 | 12.1 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Left Wing Political Violence (6.3%); JLP Weekly Series (6.3%); AI an
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (3.6%); outrage 43.2% (59.6%); humor 0.5% (0.2%); question 20.4% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 2.4% (8.5%); reaction 1.0% (2.2%); confrontation 3.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 12.1% (9.5%)
 
 
-Nearest style neighbours: @thomhartmann [left]; @theisabelbrown [right]; @JillianMichaels [right]; @glennbeck [right]; @ChadPrather1 [right]
+Nearest style neighbors: @thomhartmann [left]; @theisabelbrown [right]; @JillianMichaels [right]; @glennbeck [right]; @ChadPrather1 [right]
 
-Nearest topic neighbours: @PragerU [right]; @samharrisorg [left]; @AndrewKlavan [right]; @TheAtlantic [left]; @Styxhexenhammer666 [right]
+Nearest topic neighbors: @PragerU [right]; @samharrisorg [left]; @AndrewKlavan [right]; @TheAtlantic [left]; @Styxhexenhammer666 [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

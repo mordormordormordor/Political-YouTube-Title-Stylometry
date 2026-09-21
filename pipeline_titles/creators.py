@@ -1,6 +1,6 @@
 """Stage 0b - write the creator table (data/titles/analysis/creators.csv).
 
-Columns: creator, channel_name, platform, organisation, clipper, subscribers,
+Columns: creator, channel_name, platform, organization, clipper, subscribers,
 n_videos, n_streams, low_n_videos, low_n_streams, note.
 
 The seed lives in pipeline_titles/creator_seed.py. This script refuses to overwrite an
@@ -59,7 +59,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
         cr.to_csv(CREATORS_CSV, index=False)
         missing = cr[cr["note"] == "not in seed"]
-        print(f"creators: {len(cr)}   clippers: {int(cr['clipper'].sum())}   organisations: {cr['organisation'].nunique()}   not in seed: {len(missing)}")
+        print(f"creators: {len(cr)}   clippers: {int(cr['clipper'].sum())}   organizations: {cr['organisation'].nunique()}   not in seed: {len(missing)}")
         if len(missing):
             print(missing["creator"].tolist())
     return 0

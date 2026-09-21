@@ -1,6 +1,6 @@
 # Respectfully, Xaviaer (@XAVIAER)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: PragerU · clipper: no · platform: youtube · subscribers: 195000.0
+Channel group: **right** (title-leaning score, document 14) · organization: PragerU · clipper: no · platform: youtube · subscribers: 195000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Race and Politics in Media (8.5%); Iran War and Strait of Hormuz Ten
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 53.1 | 44.8 | 0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 44.8 | 46.0 | -0.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 71.1 | 55.2 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 71.1 | 55.2 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 36.4 | 27.6 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 72.8 | 69.9 | 0.7 | 0.2 |
 | F6: Person-centred (named people) | 63.2 | 60.7 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Race and Politics in Media (8.5%); Iran War and Strait of Hormuz Ten
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 56.3% (59.6%); humor 0.0% (0.2%); question 25.4% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 9.9% (8.5%); reaction 19.7% (2.2%); confrontation 2.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 7.0% (9.5%)
 
 
-Nearest style neighbours: @MichaelKnowles [right]; @LIVESNEAKO [neutral]; @TheJoyReidShow [left]; @MrTariqNasheed [right]; @NovaraMedia [left]
+Nearest style neighbors: @MichaelKnowles [right]; @LIVESNEAKO [neutral]; @TheJoyReidShow [left]; @MrTariqNasheed [right]; @NovaraMedia [left]
 
-Nearest topic neighbours: @MichaelKnowles [right]; @ActualJusticeWarrior [right]; @TheAmalaEkpunobi [right]; @BenShapiro [right]; @SaltyCracker [right]
+Nearest topic neighbors: @MichaelKnowles [right]; @ActualJusticeWarrior [right]; @TheAmalaEkpunobi [right]; @BenShapiro [right]; @SaltyCracker [right]
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -53,7 +53,7 @@ Top topics: MAGA Movement Decline (33.3%); Rev Jesse Jackson and Civil Rights Le
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.7 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.8 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.1 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.3 | 0.0 |

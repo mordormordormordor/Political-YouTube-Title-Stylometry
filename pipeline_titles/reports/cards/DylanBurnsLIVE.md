@@ -1,6 +1,6 @@
 # DylanBurnsLIVE (@DylanBurnsLIVE)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Dylan Burns · clipper: no · platform: youtube · subscribers: 45200.0
+Channel group: **left** (title-leaning score, document 14) · organization: Dylan Burns · clipper: no · platform: youtube · subscribers: 45200.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Ukraine-Russia War and Political Figures (28.9%); Iran War and Strai
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 77.8 | 43.9 | 0.6 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 9.2 | 12.6 | -1.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 0.4 | 2.9 | -0.9 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 0.4 | 2.9 | -0.9 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 13.0 | 10.0 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 36.8 | 31.8 | -0.1 | 0.1 |
 | F6: Person-centred (named people) | 15.1 | 36.8 | -0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Ukraine-Russia War and Political Figures (28.9%); Iran War and Strai
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.2% (2.7%); outrage 59.0% (63.9%); humor 0.0% (0.2%); question 8.9% (15.6%); breaking_live 1.1% (2.9%); episode_show 0.0% (2.8%); interview_guest 10.0% (9.8%); reaction 2.1% (2.9%); confrontation 10.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 3.2% (8.0%)
 
 
-Nearest style neighbours: @LegalEagle [left]; @PartOfTheProblem [right]; @Styxhexenhammer666 [right]; @ThePodcastoftheLotusEaters [right]; @TheLincolnProject [left]
+Nearest style neighbors: @LegalEagle [left]; @PartOfTheProblem [right]; @Styxhexenhammer666 [right]; @ThePodcastoftheLotusEaters [right]; @TheLincolnProject [left]
 
-Nearest topic neighbours: @TimesNowWorld [neutral]; @timesofindia [left]; @JamarlThomas [left]; @judgingfreedom [left]; @ZeihanonGeopolitics [neutral]
+Nearest topic neighbors: @TimesNowWorld [neutral]; @timesofindia [left]; @JamarlThomas [left]; @judgingfreedom [left]; @ZeihanonGeopolitics [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -87,7 +87,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (33.3%); Ukraine-Russia War a
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.6 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.8 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.8 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.0 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.9 | 0.6 |

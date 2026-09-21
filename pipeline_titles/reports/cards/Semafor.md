@@ -1,6 +1,6 @@
 # Semafor (@Semafor)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Semafor · clipper: no · platform: youtube · subscribers: 33300.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Semafor · clipper: no · platform: youtube · subscribers: 33300.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Tech Business and Startups (36.6%); AI and Political Concerns (9.8%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 80.3 | 94.6 | 0.6 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 5.0 | 5.9 | -1.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 64.9 | 73.2 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 64.9 | 73.2 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 74.1 | 56.9 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 6.3 | 38.9 | -0.5 | 0.1 |
 | F6: Person-centred (named people) | 98.3 | 95.0 | 1.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Tech Business and Startups (36.6%); AI and Political Concerns (9.8%)
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.4%); outrage 6.5% (36.0%); humor 0.0% (0.1%); question 13.1% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 7.8% (11.6%); reaction 0.0% (1.9%); confrontation 2.0% (7.4%); listicle 0.0% (0.1%); howto_explainer 7.2% (6.6%)
 
 
-Nearest style neighbours: @RonPlacone [left]; @marclamonthillnetwork [left]; @TheAdamCarollaShow1 [right]; @clayandbuck [right]; @oann [right]
+Nearest style neighbors: @RonPlacone [left]; @marclamonthillnetwork [left]; @TheAdamCarollaShow1 [right]; @clayandbuck [right]; @oann [right]
 
-Nearest topic neighbours: @TechCrunch [neutral]; @Forbes [neutral]; @axios [neutral]; @wsj [neutral]; @markets [neutral]
+Nearest topic neighbors: @TechCrunch [neutral]; @Forbes [neutral]; @axios [neutral]; @wsj [neutral]; @markets [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -82,7 +82,7 @@ Top topics: Tech Business and Startups (40.0%); Yearly Predictions and Reviews (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.5 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -1.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.9 | 0.2 |

@@ -77,7 +77,7 @@ def corpus_report(cards: dict) -> str:
     out.append(hl.read_text(encoding="utf-8") if hl.exists() else "_headlines.md not written yet._\n")
 
     # ---- Stage 0 ----
-    out.append("\n## Stage 0: corpus, normalisation, balance\n")
+    out.append("\n## Stage 0: corpus, normalization, balance\n")
     g = summ.groupby("genre").agg(groups=("creator", "size"), rows=("n_rows", "sum"), unique=("n_unique", "sum"), balanced=("n_balanced", "sum"),
                                   low_n_groups=("low_n", "sum"), median_group_size=("n_unique", "median"), max_group_size=("n_unique", "max")).reset_index()
     out.append(md_table(g, floatfmt="{:.0f}"))
@@ -206,9 +206,9 @@ def corpus_report(cards: dict) -> str:
     out.append("\n" + md_table(ent[ent["kind"] == "organisation"], ["entity", "n_titles_balanced", "share_of_balanced_titles", "n_creators", "share_by_group", "outrage_share", "overall_outrage_share", "outrage_ratio"]))
     st_all = read("shared_titles.csv"); tp = read("shared_templates.csv")
     st = st_all[~st_all["same_organisation_only"]]
-    out.append(f"\nConvergent formulas: {len(st_all):,} distinct titles (case-insensitive) are used verbatim by two or more creators, {len(st):,} of them by creators from different organisations "
+    out.append(f"\nConvergent formulas: {len(st_all):,} distinct titles (case-insensitive) are used verbatim by two or more creators, {len(st):,} of them by creators from different organizations "
                f"(the rest are same-outlet cross-posts such as TYT / The Damage Report); of those {len(st):,}, {st['within_group'].mean():.1%} stay within one channel group. "
-               f"{len(tp):,} masked templates (names and numbers replaced, at least one content word) are shared across organisations; {tp['within_group'].mean():.1%} within one channel group.\n\n")
+               f"{len(tp):,} masked templates (names and numbers replaced, at least one content word) are shared across organizations; {tp['within_group'].mean():.1%} within one channel group.\n\n")
     out.append(md_table(st.head(25), ["example", "n_creators", "n_titles", "groups", "creators"]))
     out.append("\n" + md_table(tp.head(25), ["template", "n_creators", "n_titles", "groups", "example"]))
 
@@ -223,7 +223,7 @@ def corpus_report(cards: dict) -> str:
         piv = tcl[tcl["genre"] == "videos"].pivot(index="group", columns="month_to", values="mean_js").reset_index()
         out.append("\nMonth-to-month topic change (mean Jensen-Shannon distance between a creator's consecutive monthly topic mixes; videos):\n\n" + md_table(piv, floatfmt="{:.2f}"))
     es = read("engagement_summary.csv")
-    out.append("\nEngagement, within creator (OLS of log views on standardised title predictors with month and topic controls, HC3; views are a fetch-time snapshot that favours older videos):\n\n")
+    out.append("\nEngagement, within creator (OLS of log views on standardized title predictors with month and topic controls, HC3; views are a fetch-time snapshot that favors older videos):\n\n")
     out.append(md_table(es[es["group"] == "ALL"], ["genre", "predictor", "n_creators", "median_coef_per_sd", "q25", "q75", "share_positive", "share_sig_positive", "share_sig_negative", "share_same_sign_as_median", "median_r2"]))
     out.append("\nThe outrage effect by channel group (videos):\n\n" + md_table(es[(es["group"] != "ALL") & (es["genre"] == "videos") & (es["predictor"] == "outrage")], ["group", "n_creators", "median_coef_per_sd", "q25", "q75", "share_positive", "share_sig_positive", "share_sig_negative"]))
     hc = read("hit_concentration.csv")
@@ -236,11 +236,11 @@ def corpus_report(cards: dict) -> str:
     # ---- Stage 6b ----
     out.append("\n## Stage 6b: Zipf's law and views over time (document 7)\n")
     out.append("Zipf exponents per system (tokens with stopwords; OLS of log frequency on log rank; size-matched = 20 draws of 2,000 titles, top 200 ranks):\n\n" + md_table(read("zipf_words.csv"), ["grouping", "system", "n_titles", "n_tokens", "n_types", "tokens_per_title", "zipf_top100", "zipf_top1000", "zipf_top5000", "zipf_r2_top1000", "zipf_size_matched", "zipf_size_matched_sd", "top1_share", "top_10"], floatfmt="{:.4f}"))
-    out.append("\nCreator-level Zipf / Heaps and the views rank-size slopes per channel group and per dominant capitalisation style:\n\n" + md_table(read("zipf_by_group.csv"), floatfmt="{:.3f}"))
+    out.append("\nCreator-level Zipf / Heaps and the views rank-size slopes per channel group and per dominant capitalization style:\n\n" + md_table(read("zipf_by_group.csv"), floatfmt="{:.3f}"))
     vm = read("views_by_month.csv")
     out.append("\nViews by publication month (edited uploads, YouTube, unique titles): median views, the median over channels of the channel's median, and log views relative to the same channel's mean that month:\n\n" + md_table(vm, ["grouping", "group", "month", "n_videos", "n_creators", "median_views", "creator_median_views", "mean_log_views", "relative_log_views", "relative_log_views_se"], floatfmt="{:.3f}"))
     out.append("\nCapitalisation style by channel group and by title label:\n\n" + md_table(read("caps_style_by_group.csv")))
-    out.append("\nTitle label x capitalisation style (label shares within each style; relative log views per cell):\n\n" + md_table(read("label_by_caps_style.csv")))
+    out.append("\nTitle label x capitalization style (label shares within each style; relative log views per cell):\n\n" + md_table(read("label_by_caps_style.csv")))
     out.append("\n## Files\n\nMachine-readable interface tables: `features.csv`, `dimensions.csv`, `topics.csv`, `labels.csv`, `creators.csv`, `leaning_by_creator.csv` (all under `data/titles/analysis/`). Profile cards: `pipeline_titles/reports/cards/`. HTML: `pipeline_titles/reports/title_stylometry.html`. Methods: `methods_appendix.md`.\n")
     return "\n".join(out)
 
@@ -292,7 +292,7 @@ def methods_appendix() -> str:
 
 def card_md(card: dict, factors: dict) -> str:
     o = [f"# {card['channel_name']} ({card['creator']})\n",
-         f"Channel group: **{card['group']}** (title-leaning score, document 14) · organisation: {card['organisation']} · clipper: {'yes' if card['clipper'] else 'no'} · platform: {card['platform']} · subscribers: {card['subscribers'] if card['subscribers'] is not None else 'n/a'}\n"]
+         f"Channel group: **{card['group']}** (title-leaning score, document 14) · organization: {card['organisation']} · clipper: {'yes' if card['clipper'] else 'no'} · platform: {card['platform']} · subscribers: {card['subscribers'] if card['subscribers'] is not None else 'n/a'}\n"]
     for genre, g in card["genres"].items():
         o.append(f"\n## {genre}\n")
         o.append(f"Titles: {g['n_rows']:,} rows, {g['n_unique']:,} unique (repeat share {pct(g['repeat_share'])}); {'LOW-N (not ranked)' if g['low_n'] else 'ranked'}; political share {pct(g.get('political_share'))}.\n")
@@ -303,9 +303,9 @@ def card_md(card: dict, factors: dict) -> str:
         if "hooks" in g:
             o.append("\nHooks / formats (share of titles; channel-group mean in brackets): " + "; ".join(f"{k} {pct(v['share'])} ({pct(v['group_mean'])})" for k, v in {**g['hooks'], **g['formats']}.items()) + "\n")
         if g.get("neighbours_style"):
-            o.append("\nNearest style neighbours: " + "; ".join(f"{n['creator']} [{n['group']}]" for n in g["neighbours_style"]) + "\n")
+            o.append("\nNearest style neighbors: " + "; ".join(f"{n['creator']} [{n['group']}]" for n in g["neighbours_style"]) + "\n")
         if g.get("neighbours_topic"):
-            o.append("Nearest topic neighbours: " + "; ".join(f"{n['creator']} [{n['group']}]" for n in g["neighbours_topic"]) + "\n")
+            o.append("Nearest topic neighbors: " + "; ".join(f"{n['creator']} [{n['group']}]" for n in g["neighbours_topic"]) + "\n")
         if g.get("monthly"):
             fk = list(factors)
             rows = [{"month": m["month"] + ("*" if m["partial"] else ""), "n": m["n_titles"], **{f: m.get(f) for f in fk}, **{h: m.get(h) for h in HOOKS}} for m in g["monthly"]]

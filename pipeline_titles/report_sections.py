@@ -3,20 +3,20 @@ in prose, the few tables that carry it, and its caveats. Written by
 pipeline_titles.report alongside the reference dump (all_tables.md).
 
     reports/README.md                    index and how to read the set
-    reports/01_corpus.md                 what the corpus is, what was normalised, the creator table
+    reports/01_corpus.md                 what the corpus is, what was normalized, the creator table
     reports/02_topics.md                 what they talk about
-    reports/04_formats_and_hooks.md      question / LIVE / episode formats; outrage, curiosity, humour
+    reports/04_formats_and_hooks.md      question / LIVE / episode formats; outrage, curiosity, humor
     reports/05_landscape.md              who titles like whom; channel groups vs style; who gets named; shared titles
     reports/06_drift.md                  month-by-month change
     reports/07_views.md         Zipf's law (words and views) and views over time, by channel group,
-                                         title label and capitalisation style
+                                         title label and capitalization style
     reports/08_null_results_and_caveats.md   what did not show up, and what to distrust
     reports/09..14                       the question documents (report_leaning.py renders 14)
 
 The only grouping of channels anywhere in the set is the left / neutral / right channel
 group from the leaning stage (document 14): each channel's score over its sampled
 titles, thresholds +-0.05. Titles are grouped two ways: by the judge's left / neither /
-right label (the sampled titles) and by capitalisation style (every title).
+right label (the sampled titles) and by capitalization style (every title).
 
 The interpretive prose reflects the 2026-09-14 run; every number in it is read from
 the tables at render time, so a re-run keeps the numbers current but the wording
@@ -96,7 +96,7 @@ def _lg(df: pd.DataFrame, col: str = "group") -> pd.DataFrame:
 
 
 GROUP_NOTE = ("Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its "
-              "sampled titles as labelled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.")
+              "sampled titles as labeled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.")
 
 
 # --------------------------------------------------------------------------- #
@@ -112,9 +112,9 @@ def doc_corpus() -> str:
     gc = summ.merge(cr[["creator", "group"]], on="creator").groupby("group").agg(channels=("creator", "nunique"), unique_titles=("n_unique", "sum")).reindex(list(GROUPS)).reset_index()
     gc["group"] = gc.group.map(group)
     n_orgs = int((cr.groupby("organisation").size() > 1).sum()); n_clip = int(cr.clipper.astype(str).str.lower().eq("true").sum())
-    out = f"""# 1. The corpus, what was normalised, and the creator table
+    out = f"""# 1. The corpus, what was normalized, and the creator table
 
-**The question.** What exactly is being analysed, and what had to be done to it before any style measure means anything?
+**The question.** What exactly is being analyzed, and what had to be done to it before any style measure means anything?
 
 ## The finding in one paragraph
 
@@ -135,20 +135,20 @@ Titles carry brand furniture that would otherwise dominate any vocabulary-based 
 
 {table(sp.sort_values('count', ascending=False).head(15), ['creator', 'genre', 'kind', 'pattern', 'count', 'share', 'example'], fmt='{:.2f}')}
 
-**Check that it worked.** If stripping removed the show-brand head of each creator's vocabulary, the creator-level Zipf exponent should fall (the most frequent tokens were the brand) and the top-token share should drop most for show-branded channels. Both happened: the mean creator-level Zipf exponent went from {zc['raw']:.3f} (raw) to {zc['normalised']:.3f} (normalised), and the share of the single most frequent token fell most for Joe Rogan (from 14 % to 4 %: "Joe Rogan Experience #"), Denims, The Economist and the Hasan fan channels. The pooled corpus exponent barely moves (the brand tokens are a small share of a 189k-title pool), which is exactly why the report uses creator-level figures. Document 7 takes Zipf's law further.
+**Check that it worked.** If stripping removed the show-brand head of each creator's vocabulary, the creator-level Zipf exponent should fall (the most frequent tokens were the brand) and the top-token share should drop most for show-branded channels. Both happened: the mean creator-level Zipf exponent went from {zc['raw']:.3f} (raw) to {zc['normalised']:.3f} (normalized), and the share of the single most frequent token fell most for Joe Rogan (from 14 % to 4 %: "Joe Rogan Experience #"), Denims, The Economist and the Hasan fan channels. The pooled corpus exponent barely moves (the brand tokens are a small share of a 189k-title pool), which is exactly why the report uses creator-level figures. Document 7 takes Zipf's law further.
 
 ## The creator table, and the one grouping used everywhere
 
-`creators.csv` holds one row per creator: channel name, platform, `organisation` and `clipper`, subscribers, title counts and a short note. `organisation` groups sister channels of one outlet (Fox News / Fox News Clips, Timcast x3, NYT x4 incl. Ezra Klein, TYT / The Damage Report / Rebel HQ, MeidasTouch / Legal AF / Katie Phang / Michael Cohen, Daily Wire x4, Blaze Media x2, and so on: {n_orgs} organisations with more than one channel); same-organisation cross-posts (TYT and The Damage Report share 913 titles verbatim) are removed from every similarity calculation. `clipper` marks the {n_clip} channels whose titles are written by fans or an editing team (the Hasan, Destiny and Vaush clip channels, Fox News Clips, Lauren Chen Clips, Candace Clips, Denims, Asmongold TV, the Hasan VOD channel); they are kept as their own group so a fan editor's style is never attributed to the creator.
+`creators.csv` holds one row per creator: channel name, platform, `organisation` and `clipper`, subscribers, title counts and a short note. `organisation` groups sister channels of one outlet (Fox News / Fox News Clips, Timcast x3, NYT x4 incl. Ezra Klein, TYT / The Damage Report / Rebel HQ, MeidasTouch / Legal AF / Katie Phang / Michael Cohen, Daily Wire x4, Blaze Media x2, and so on: {n_orgs} organizations with more than one channel); same-organization cross-posts (TYT and The Damage Report share 913 titles verbatim) are removed from every similarity calculation. `clipper` marks the {n_clip} channels whose titles are written by fans or an editing team (the Hasan, Destiny and Vaush clip channels, Fox News Clips, Lauren Chen Clips, Candace Clips, Denims, Asmongold TV, the Hasan VOD channel); they are kept as their own group so a fan editor's style is never attributed to the creator.
 
-No channel is assigned a category by hand. The one between-channel grouping in this report is the **channel group** of document 14: a frontier model labelled a sample of each channel's titles left / right / neither from the title text alone, each channel's score is (right − left) / titles, and the score sorts the channels into left (below −0.05), neutral and right (above +0.05):
+No channel is assigned a category by hand. The one between-channel grouping in this report is the **channel group** of document 14: a frontier model labeled a sample of each channel's titles left / right / neither from the title text alone, each channel's score is (right − left) / titles, and the score sorts the channels into left (below −0.05), neutral and right (above +0.05):
 
 ![Unique titles and channels per channel group.](figures/01_corpus_by_group.png)
 *Unique titles and channels per channel group.*
 
 {table(gc, fmt='{:.0f}')}
 
-The group is a description of how a channel's titles read, produced by the same measurement as everything else here; it is not an editorial judgement about the channel, and document 14 gives its reliability (split-half Spearman of the score {float(rd('leaning_split_half.csv').split_half_spearman_mean.iloc[0]):.2f}) and its limits. Every "by group" table in documents 2-13 is a mean or median over the ranked channels of a group, never a pool of their titles.
+The group is a description of how a channel's titles read, produced by the same measurement as everything else here; it is not an editorial judgment about the channel, and document 14 gives its reliability (split-half Spearman of the score {float(rd('leaning_split_half.csv').split_half_spearman_mean.iloc[0]):.2f}) and its limits. Every "by group" table in documents 2-13 is a mean or median over the ranked channels of a group, never a pool of their titles.
 
 Files: `creator_genre_summary.csv`, `stripped_patterns.csv`, `zipf_check.csv`, `zipf_check_creators.csv`, `creators.csv`, `leaning_by_creator.csv`.
 """
@@ -198,7 +198,7 @@ A BERTopic model fitted on a {t1.get('fit_n', 0):,}-title creator-stratified sam
 ![Political share of a creator's titles, by channel group.](figures/02_political_share_by_group.png)
 *Political share of a creator's titles, by channel group (dots = creators, bar = median).*
 
-{int(tl.political.sum())} of {len(tl)} topics were tagged political by the labelling model (politics, government, elections, war, courts, political figures, the culture war); the {int((~tl.political).sum())} non-political topics are crime trials (Nancy Guthrie, Lindsay Clancy, the Brown University shooting), weather and disasters, sport (World Cup, MMA), tech and business, and a few channel-specific series. The tagging is generous, and the political share of a creator's unique titles is therefore high everywhere. The neutral channels, whose titles the judge mostly read as "neither", are also the ones with the most non-political subjects (crime, weather, sport, tech: the news outlets); the left and right groups are political almost throughout:
+{int(tl.political.sum())} of {len(tl)} topics were tagged political by the labeling model (politics, government, elections, war, courts, political figures, the culture war); the {int((~tl.political).sum())} non-political topics are crime trials (Nancy Guthrie, Lindsay Clancy, the Brown University shooting), weather and disasters, sport (World Cup, MMA), tech and business, and a few channel-specific series. The tagging is generous, and the political share of a creator's unique titles is therefore high everywhere. The neutral channels, whose titles the judge mostly read as "neither", are also the ones with the most non-political subjects (crime, weather, sport, tech: the news outlets); the left and right groups are political almost throughout:
 
 {table(pl, fmt='{:.2f}', rename={'size': 'n_creators', 'mean': 'mean political share', 'median': 'median political share'})}
 
@@ -244,11 +244,11 @@ def doc_formats() -> str:
     o = lv.set_index("group").outrage
     out = f"""# 4. Formats and hooks
 
-**The question.** Which structural formats do creators use (questions, LIVE labels, episode numbering, guests, reactions, confrontations, listicles, explainers), and which semantic hooks (curiosity gap, outrage frame, humour)?
+**The question.** Which structural formats do creators use (questions, LIVE labels, episode numbering, guests, reactions, confrontations, listicles, explainers), and which semantic hooks (curiosity gap, outrage frame, humor)?
 
 ## The finding in one paragraph
 
-The outrage frame is the landscape's default hook, not a niche device. The rating model flagged {pct(lab.outrage.mean())} of a 3,000-title creator-stratified sample as framing their subject as outrageous, scandalous or threatening, and a classifier trained on those labels reproduces the judgement well on held-out titles (accuracy {m['outrage']['holdout_accuracy']:.2f}, AUC {m['outrage']['holdout_auc']:.2f}, kappa {m['outrage']['holdout_kappa']:.2f}). Applied to every title, it covers {pct(o['left channels'])} of the average left channel's edited uploads, {pct(o['right channels'])} of the average right channel's and {pct(o['neutral channels'])} of the average neutral channel's: the frame belongs to partisan titling on both sides, and the neutral group, which is mostly news outlets, uses it least. The two other hooks could not be measured: the rater found a curiosity gap in {pct(lab.curiosity_gap.mean(), 1)} of titles and humour in {pct(lab.humor.mean(), 1)}, far too few positives to learn from (held-out F1 {m['curiosity_gap']['holdout_f1']:.2f} and {m['humor']['holdout_f1']:.2f}). Treat both as *unmeasured*, not absent (see document 8).
+The outrage frame is the landscape's default hook, not a niche device. The rating model flagged {pct(lab.outrage.mean())} of a 3,000-title creator-stratified sample as framing their subject as outrageous, scandalous or threatening, and a classifier trained on those labels reproduces the judgment well on held-out titles (accuracy {m['outrage']['holdout_accuracy']:.2f}, AUC {m['outrage']['holdout_auc']:.2f}, kappa {m['outrage']['holdout_kappa']:.2f}). Applied to every title, it covers {pct(o['left channels'])} of the average left channel's edited uploads, {pct(o['right channels'])} of the average right channel's and {pct(o['neutral channels'])} of the average neutral channel's: the frame belongs to partisan titling on both sides, and the neutral group, which is mostly news outlets, uses it least. The two other hooks could not be measured: the rater found a curiosity gap in {pct(lab.curiosity_gap.mean(), 1)} of titles and humor in {pct(lab.humor.mean(), 1)}, far too few positives to learn from (held-out F1 {m['curiosity_gap']['holdout_f1']:.2f} and {m['humor']['holdout_f1']:.2f}). Treat both as *unmeasured*, not absent (see document 8).
 
 ## Formats by channel group (share of a creator's titles, mean over creators; edited uploads)
 
@@ -316,16 +316,16 @@ def doc_landscape() -> str:
     examples = "; ".join(_ex(c) for c in ("@HasanAbi", "@MeidasTouch", "@FoxNews") if c in nnv.index)
     out = f"""# 5. The landscape: who titles like whom
 
-**The question.** Do channels whose titles read the same way politically (the left / neutral / right groups) share a *style*? Who are each creator's real neighbours in style, as opposed to in subject matter? Who gets named, and does the landscape converge on the same hooks?
+**The question.** Do channels whose titles read the same way politically (the left / neutral / right groups) share a *style*? Who are each creator's real neighbors in style, as opposed to in subject matter? Who gets named, and does the landscape converge on the same hooks?
 
 ## The finding in one paragraph
 
-Political grouping predicts style almost not at all. Clustering creators in the twelve-dimensional, topic-controlled style space and comparing the clusters with the three channel groups gives an adjusted Rand index of {a_all:.3f} for edited uploads ({a_pol:.3f} on political titles only), and topic clusters do no better ({a_top:.3f}). No group holds together in style space: the tightest is {tight.group} at a cohesion ratio of {float(tight.cohesion_ratio):.2f} (members {1 - float(tight.cohesion_ratio):.0%} closer to each other than to everyone else), and the largest style cluster holds {int(spans.iloc[0].n_creators)} creators from all three groups. So the useful unit is not the group but the five nearest style neighbours on each creator's card, and those cut across politics: for {pct(cross_nn1)} of the left and right channels the single nearest neighbour is in another group, and {pct(cross_opp)} have a channel from the opposite side among their five ({examples}). The hooks converge too: {len(cross)} titles are used verbatim by creators from different organisations ("THIS IS INSANE.." by {int(cross.iloc[0].n_creators)} creators across {int(cross.iloc[0].n_groups)} groups), {pct(1 - cross.within_group.mean())} of them by channels in more than one group.
+Political grouping predicts style almost not at all. Clustering creators in the twelve-dimensional, topic-controlled style space and comparing the clusters with the three channel groups gives an adjusted Rand index of {a_all:.3f} for edited uploads ({a_pol:.3f} on political titles only), and topic clusters do no better ({a_top:.3f}). No group holds together in style space: the tightest is {tight.group} at a cohesion ratio of {float(tight.cohesion_ratio):.2f} (members {1 - float(tight.cohesion_ratio):.0%} closer to each other than to everyone else), and the largest style cluster holds {int(spans.iloc[0].n_creators)} creators from all three groups. So the useful unit is not the group but the five nearest style neighbors on each creator's card, and those cut across politics: for {pct(cross_nn1)} of the left and right channels the single nearest neighbor is in another group, and {pct(cross_opp)} have a channel from the opposite side among their five ({examples}). The hooks converge too: {len(cross)} titles are used verbatim by creators from different organizations ("THIS IS INSANE.." by {int(cross.iloc[0].n_creators)} creators across {int(cross.iloc[0].n_groups)} groups), {pct(1 - cross.within_group.mean())} of them by channels in more than one group.
 
 ## Clusterings against the channel groups
 
-![Style space: every ranked creator, coloured by channel group. The interactive version, with names on hover and each creator's five neighbours, is on the HTML page.](figures/05_style_map.png)
-*Style space: every ranked creator, coloured by channel group. The interactive version, with names on hover and each creator's five neighbours, is on the HTML page.*
+![Style space: every ranked creator, colored by channel group. The interactive version, with names on hover and each creator's five neighbors, is on the HTML page.](figures/05_style_map.png)
+*Style space: every ranked creator, colored by channel group. The interactive version, with names on hover and each creator's five neighbors, is on the HTML page.*
 
 Style space: agglomerative (Ward) on z-scored topic-controlled factor scores. Topic space: average linkage on the Jensen-Shannon distance between creators' topic mixes. k chosen by silhouette; ARI = adjusted Rand index (1 = identical partitions, 0 = chance).
 
@@ -353,15 +353,15 @@ Every group is split across style clusters; the share of a group in its own larg
 
 Conversely, style clusters span groups: the two largest ({int(spans.iloc[0].n_creators)} and {int(spans.iloc[1].n_creators)} creators) each mix left, neutral and right channels. Full membership lists: `disagreements_group_style.csv`, `style_clusters.csv`, `topic_clusters.csv`.
 
-## Nearest style neighbours, a sample
+## Nearest style neighbors, a sample
 
 {table(pd.DataFrame(nrows))}
 
-Neighbours are computed on titles with same-organisation cross-posts removed and low-n creators excluded; every creator's five style and five topic neighbours are on its card and in `neighbours_style.csv` / `neighbours_topic.csv`. The maps on the HTML page (PCA of the style space, MDS of the topic space) show the same picture: the group colours are scattered through both.
+Neighbors are computed on titles with same-organization cross-posts removed and low-n creators excluded; every creator's five style and five topic neighbors are on its card and in `neighbours_style.csv` / `neighbours_topic.csv`. The maps on the HTML page (PCA of the style space, MDS of the topic space) show the same picture: the group colors are scattered through both.
 
-## Organisations
+## Organizations
 
-Sister channels do share a house style: the four MeidasTouch Network channels sit together at the outrage end of the tone factor (organisation score {float(orgs.loc[(orgs.organisation == 'MeidasTouch Network') & (orgs.genre == 'videos'), 'F1_controlled'].iloc[0]):.2f}) and high on capitals; the three Timcast channels are the most capitalised organisation ({float(orgs.loc[(orgs.organisation == 'Timcast') & (orgs.genre == 'videos'), 'F9_controlled'].iloc[0]):.2f} on F9); the four NYT channels and CBS sit at the positive/neutral end. Title-weighted organisation scores (clippers excluded) are in `org_style.csv`.
+Sister channels do share a house style: the four MeidasTouch Network channels sit together at the outrage end of the tone factor (organization score {float(orgs.loc[(orgs.organisation == 'MeidasTouch Network') & (orgs.genre == 'videos'), 'F1_controlled'].iloc[0]):.2f}) and high on capitals; the three Timcast channels are the most capitalized organization ({float(orgs.loc[(orgs.organisation == 'Timcast') & (orgs.genre == 'videos'), 'F9_controlled'].iloc[0]):.2f} on F9); the four NYT channels and CBS sit at the positive/neutral end. Title-weighted organization scores (clippers excluded) are in `org_style.csv`.
 
 ## Who gets named
 
@@ -378,10 +378,10 @@ Trump is in {pct(float(ent.loc[(ent.kind == 'organisation') & (ent.entity == 'Tr
 
 ## Convergent formulas
 
-![The most shared verbatim titles across organisations.](figures/05_shared_titles.png)
-*The most shared verbatim titles across organisations.*
+![The most shared verbatim titles across organizations.](figures/05_shared_titles.png)
+*The most shared verbatim titles across organizations.*
 
-Of {len(st):,} distinct titles (case-insensitive) used by two or more creators, {len(cross):,} cross organisations; the rest are same-outlet cross-posts (TYT / The Damage Report alone account for hundreds). The most shared:
+Of {len(st):,} distinct titles (case-insensitive) used by two or more creators, {len(cross):,} cross organizations; the rest are same-outlet cross-posts (TYT / The Damage Report alone account for hundreds). The most shared:
 
 {table(cross.head(15), ['example', 'n_creators', 'n_titles', 'n_groups', 'groups'], fmt='{:.0f}')}
 
@@ -422,8 +422,8 @@ Not much, and not in one direction. Of {n_series} group x genre x measure series
 
 ## Outrage share by month (edited uploads; mean of creators)
 
-![Outrage-frame share by month, one panel per channel group, against the all-creator mean (grey dashed).](figures/06_drift_outrage.png)
-*Outrage-frame share by month, one panel per channel group, against the all-creator mean (grey dashed).*
+![Outrage-frame share by month, one panel per channel group, against the all-creator mean (gray dashed).](figures/06_drift_outrage.png)
+*Outrage-frame share by month, one panel per channel group, against the all-creator mean (gray dashed).*
 
 {table(po, fmt='{:.2f}')}
 
@@ -497,26 +497,26 @@ def doc_views() -> str:
     tight = va[va.grouping == "channel_group"].set_index("group")
     out = f"""# 7. Zipf's law, and views over time
 
-**The question.** Does title vocabulary follow Zipf's law, and does the shape of the law differ between left, neutral and right channels, between titles the judge read as left, neither or right, and between capitalisation styles? Do views within a channel follow a Zipf (rank-size) law? And how do views run over the months of 2026, again cut by channel group, by title label and by capitalisation style?
+**The question.** Does title vocabulary follow Zipf's law, and does the shape of the law differ between left, neutral and right channels, between titles the judge read as left, neither or right, and between capitalization styles? Do views within a channel follow a Zipf (rank-size) law? And how do views run over the months of 2026, again cut by channel group, by title label and by capitalization style?
 
-Three groupings run through the whole document. **Channel group**: left / neutral / right channels, each channel's title-leaning score from document 14 (thresholds ±0.05). **Title label**: left / neither / right, the judge's label of each sampled title (document 14; {n_lab:,} of the {n_lab_all:,} sampled titles are edited uploads and are used here). **Capitalisation style**: ALL CAPS, selective CAPS, Title Case, Sentence case, mixed / other and short / other, one rule per title (document 11).
+Three groupings run through the whole document. **Channel group**: left / neutral / right channels, each channel's title-leaning score from document 14 (thresholds ±0.05). **Title label**: left / neither / right, the judge's label of each sampled title (document 14; {n_lab:,} of the {n_lab_all:,} sampled titles are edited uploads and are used here). **Capitalization style**: ALL CAPS, selective CAPS, Title Case, Sentence case, mixed / other and short / other, one rule per title (document 11).
 
 ## The finding in one paragraph
 
-Title vocabulary is Zipfian in the way short texts usually are: on log-log axes the rank-frequency curve is straight through the head (R² {float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_r2_top1000']):.3f} over the top 1,000 words) with an exponent that depends on the cut-off ({float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_top1000']):.2f} over the top 1,000 words, {float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_top5000']):.2f} over the top 5,000), because ten-word titles have a flatter head than running prose. The three ways of cutting the corpus move the curve less than they move the words on it. Left channels have the steepest vocabulary (size-matched exponent {float(zs.loc[('channel_group', 'left'), 'zipf_size_matched']):.2f} against {float(zs.loc[('channel_group', 'right'), 'zipf_size_matched']):.2f} for the right group): "trump" is their most frequent word, ahead of "the". Among the labelled titles the left-read ones are again the most concentrated ({float(zs.loc[('title_label', 'left'), 'zipf_size_matched']):.2f}) and the right-read ones the least ({float(zs.loc[('title_label', 'right'), 'zipf_size_matched']):.2f}). ALL-CAPS titles are the shortest ({float(zs.loc[('caps_style', 'all_caps'), 'tokens_per_title']):.1f} tokens against {float(zs.loc[('caps_style', 'sentence_case'), 'tokens_per_title']):.1f} for sentence case) and their head is the flattest, with "this", "it" and "they" among the ten most frequent words: the shouted title is a reaction, not a headline. Views within a channel are *not* Zipfian: the rank-size curve bends down in the tail, the power-law fit is never significantly preferred to a lognormal ({int(hv.powerlaw_like.astype(bool).sum())} of {len(hv)} video channels; the lognormal is significantly preferred in {int(((hv.lr_vs_lognormal < 0) & (hv.lr_p < 0.05)).sum())} and the test is inconclusive in the rest), and the neutral group is the most hit-driven (median Gini {float(cg_z.loc[('channel_group', 'neutral'), 'gini_median']):.2f} against {float(cg_z.loc[('channel_group', 'left'), 'gini_median']):.2f} and {float(cg_z.loc[('channel_group', 'right'), 'gini_median']):.2f}). Over the months, views per video are a snapshot that favours older uploads, and the left group's channels sit far above the other two in every month (median channel {med['left channels'] / 1000:.0f}k views per video against about {med['right channels'] / 1000:.0f}k for the right group and {med['neutral channels'] / 1000:.0f}k for the neutral). Against each channel's own monthly baseline, capitals earn views in every month of the year (ALL CAPS {rel['ALL CAPS']:+.2f} and selective CAPS {rel['selective CAPS']:+.2f} log points, Title Case {rel['Title Case']:+.2f}, sentence case {rel['Sentence case']:+.2f}), and right-read titles do a little better than left-read ones, which do a little better than neither ({rel['right titles']:+.2f}, {rel['left titles']:+.2f}, {rel['neither titles']:+.2f}).
+Title vocabulary is Zipfian in the way short texts usually are: on log-log axes the rank-frequency curve is straight through the head (R² {float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_r2_top1000']):.3f} over the top 1,000 words) with an exponent that depends on the cut-off ({float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_top1000']):.2f} over the top 1,000 words, {float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_top5000']):.2f} over the top 5,000), because ten-word titles have a flatter head than running prose. The three ways of cutting the corpus move the curve less than they move the words on it. Left channels have the steepest vocabulary (size-matched exponent {float(zs.loc[('channel_group', 'left'), 'zipf_size_matched']):.2f} against {float(zs.loc[('channel_group', 'right'), 'zipf_size_matched']):.2f} for the right group): "trump" is their most frequent word, ahead of "the". Among the labeled titles the left-read ones are again the most concentrated ({float(zs.loc[('title_label', 'left'), 'zipf_size_matched']):.2f}) and the right-read ones the least ({float(zs.loc[('title_label', 'right'), 'zipf_size_matched']):.2f}). ALL-CAPS titles are the shortest ({float(zs.loc[('caps_style', 'all_caps'), 'tokens_per_title']):.1f} tokens against {float(zs.loc[('caps_style', 'sentence_case'), 'tokens_per_title']):.1f} for sentence case) and their head is the flattest, with "this", "it" and "they" among the ten most frequent words: the shouted title is a reaction, not a headline. Views within a channel are *not* Zipfian: the rank-size curve bends down in the tail, the power-law fit is never significantly preferred to a lognormal ({int(hv.powerlaw_like.astype(bool).sum())} of {len(hv)} video channels; the lognormal is significantly preferred in {int(((hv.lr_vs_lognormal < 0) & (hv.lr_p < 0.05)).sum())} and the test is inconclusive in the rest), and the neutral group is the most hit-driven (median Gini {float(cg_z.loc[('channel_group', 'neutral'), 'gini_median']):.2f} against {float(cg_z.loc[('channel_group', 'left'), 'gini_median']):.2f} and {float(cg_z.loc[('channel_group', 'right'), 'gini_median']):.2f}). Over the months, views per video are a snapshot that favors older uploads, and the left group's channels sit far above the other two in every month (median channel {med['left channels'] / 1000:.0f}k views per video against about {med['right channels'] / 1000:.0f}k for the right group and {med['neutral channels'] / 1000:.0f}k for the neutral). Against each channel's own monthly baseline, capitals earn views in every month of the year (ALL CAPS {rel['ALL CAPS']:+.2f} and selective CAPS {rel['selective CAPS']:+.2f} log points, Title Case {rel['Title Case']:+.2f}, sentence case {rel['Sentence case']:+.2f}), and right-read titles do a little better than left-read ones, which do a little better than neither ({rel['right titles']:+.2f}, {rel['left titles']:+.2f}, {rel['neither titles']:+.2f}).
 
 ## Zipf's law in title vocabulary
 
-![Rank-frequency curves by channel group, by title label and by capitalisation style.](figures/07_zipf_words.png)
+![Rank-frequency curves by channel group, by title label and by capitalization style.](figures/07_zipf_words.png)
 *Word frequency against rank on log-log axes, three ways of cutting the corpus; the dotted black line is the whole corpus.*
 
-Tokens are lower-cased words from the normalised title, stopwords included (Zipf's law is a statement about the whole vocabulary). Systems differ in size, and the OLS exponent depends on size, so two exponents are given: over the top 1,000 ranks of the whole system, and *size-matched* (the mean over 20 random draws of 2,000 titles, top 200 ranks), which is the one to compare across rows.
+Tokens are lower-cased words from the normalized title, stopwords included (Zipf's law is a statement about the whole vocabulary). Systems differ in size, and the OLS exponent depends on size, so two exponents are given: over the top 1,000 ranks of the whole system, and *size-matched* (the mean over 20 random draws of 2,000 titles, top 200 ranks), which is the one to compare across rows.
 
 {table(zw, zw_cols, fmt='{:.3f}')}
 
-Three things to read off the table. The corpus exponent over the top 100 words ({float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_top100']):.2f}) is higher than over the top 1,000 ({float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_top1000']):.2f}) and lower than over the top 5,000 ({float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_top5000']):.2f}): the head of a title vocabulary is flat because titles ration function words, and the tail is steep because a {int(zs.loc[('corpus', 'all edited uploads (balanced)'), 'n_titles']) // 1000}k-title corpus has a long list of names used once (the Stage 0 check on the balanced subset with streams included, `zipf_check.csv`, gives the same three figures). The left group is the most concentrated of the three channel groups and the left-read titles the most concentrated of the three labels, and "trump" heads both lists ({float(zs.loc[('channel_group', 'left'), 'top1_share']):.1%} of the left group's tokens, {float(zs.loc[('title_label', 'left'), 'top1_share']):.1%} of the left-read titles'), whereas the neutral group and the neither-read titles start with "the" and "in"; the right-read titles are the flattest system in the corpus, their most frequent words being the function words of a headline ("the", "to", "is", "on") with "trump" fifth. The capitalisation styles differ in length more than in slope; the ALL-CAPS system is the exception, with the lowest top-100 exponent ({float(zs.loc[('caps_style', 'all_caps'), 'zipf_top100']):.2f}) and the highest top-1,000 exponent ({float(zs.loc[('caps_style', 'all_caps'), 'zipf_top1000']):.2f}): a small, repetitive vocabulary of reaction words with a very short tail.
+Three things to read off the table. The corpus exponent over the top 100 words ({float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_top100']):.2f}) is higher than over the top 1,000 ({float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_top1000']):.2f}) and lower than over the top 5,000 ({float(zs.loc[('corpus', 'all edited uploads (balanced)'), 'zipf_top5000']):.2f}): the head of a title vocabulary is flat because titles ration function words, and the tail is steep because a {int(zs.loc[('corpus', 'all edited uploads (balanced)'), 'n_titles']) // 1000}k-title corpus has a long list of names used once (the Stage 0 check on the balanced subset with streams included, `zipf_check.csv`, gives the same three figures). The left group is the most concentrated of the three channel groups and the left-read titles the most concentrated of the three labels, and "trump" heads both lists ({float(zs.loc[('channel_group', 'left'), 'top1_share']):.1%} of the left group's tokens, {float(zs.loc[('title_label', 'left'), 'top1_share']):.1%} of the left-read titles'), whereas the neutral group and the neither-read titles start with "the" and "in"; the right-read titles are the flattest system in the corpus, their most frequent words being the function words of a headline ("the", "to", "is", "on") with "trump" fifth. The capitalization styles differ in length more than in slope; the ALL-CAPS system is the exception, with the lowest top-100 exponent ({float(zs.loc[('caps_style', 'all_caps'), 'zipf_top100']):.2f}) and the highest top-1,000 exponent ({float(zs.loc[('caps_style', 'all_caps'), 'zipf_top1000']):.2f}): a small, repetitive vocabulary of reaction words with a very short tail.
 
-Creator-level exponents (each channel's own vocabulary, top 200 ranks, from the Stage 0 check; and the subsampled Zipf and Heaps exponents of Stage 2, which exist only for the `n_creators_1500` channels with at least 1,500 tokens) averaged per group tell the same story from the channel side, with the ranked channels' dominant capitalisation style as a second cut:
+Creator-level exponents (each channel's own vocabulary, top 200 ranks, from the Stage 0 check; and the subsampled Zipf and Heaps exponents of Stage 2, which exist only for the `n_creators_1500` channels with at least 1,500 tokens) averaged per group tell the same story from the channel side, with the ranked channels' dominant capitalization style as a second cut:
 
 {table(zg_words, fmt='{:.3f}')}
 
@@ -524,31 +524,31 @@ Channels whose titles are mostly sentence case (the news outlets) have the steep
 
 ## Zipf's law for views
 
-![Rank-size curves of views and the slope by channel group and by dominant capitalisation style.](figures/07_zipf_views.png)
-*Left: rank-size curves for eight channels, each normalised to its own top video. Middle and right: the all-video Zipf slope per channel, by channel group and by the channel's dominant capitalisation style.*
+![Rank-size curves of views and the slope by channel group and by dominant capitalization style.](figures/07_zipf_views.png)
+*Left: rank-size curves for eight channels, each normalized to its own top video. Middle and right: the all-video Zipf slope per channel, by channel group and by the channel's dominant capitalization style.*
 
-Within each channel, videos ranked by views on log-log axes: a straight line would be Zipf's law for views (views proportional to rank to a negative power). The curves instead bend downwards in the tail, which is what a lognormal looks like on these axes and what the formal test confirms: the `powerlaw` fit (discrete, xmin by KS minimisation) with the likelihood-ratio test against a lognormal supports a power-law tail in {int(hv.powerlaw_like.astype(bool).sum())} of {len(hv)} video channels. Hits are heavy-tailed but lognormal-shaped, so no channel here should be described as having a power-law audience. The slope of log views on log rank over all of a channel's videos still summarises how steeply views fall off down the ranking (per channel in `hit_concentration.csv`, `zipf_views_all` and `zipf_views_head`), and it lines up with the Gini coefficient and the top-10 % share:
+Within each channel, videos ranked by views on log-log axes: a straight line would be Zipf's law for views (views proportional to rank to a negative power). The curves instead bend downwards in the tail, which is what a lognormal looks like on these axes and what the formal test confirms: the `powerlaw` fit (discrete, xmin by KS minimization) with the likelihood-ratio test against a lognormal supports a power-law tail in {int(hv.powerlaw_like.astype(bool).sum())} of {len(hv)} video channels. Hits are heavy-tailed but lognormal-shaped, so no channel here should be described as having a power-law audience. The slope of log views on log rank over all of a channel's videos still summarizes how steeply views fall off down the ranking (per channel in `hit_concentration.csv`, `zipf_views_all` and `zipf_views_head`), and it lines up with the Gini coefficient and the top-10 % share:
 
 {table(zg_views, fmt='{:.3f}')}
 
-The neutral group is the hit-driven one: its channels' views fall off fastest down the ranking (median slope {float(cg_z.loc[('channel_group', 'neutral'), 'zipf_views_all_median']):.2f}; the top tenth of videos take {pct(float(cg_z.loc[('channel_group', 'neutral'), 'top10_share_median']))} of views). Left and right channels are nearly identical to each other ({float(cg_z.loc[('channel_group', 'left'), 'zipf_views_all_median']):.2f} and {float(cg_z.loc[('channel_group', 'right'), 'zipf_views_all_median']):.2f}) and much flatter: the daily commentary audience turns up for everything. The same ordering appears by capitalisation: channels that mostly shout spread views most evenly, sentence-case channels live on hits. Both patterns are the same fact seen twice, because the neutral group is where the sentence-case news outlets are.
+The neutral group is the hit-driven one: its channels' views fall off fastest down the ranking (median slope {float(cg_z.loc[('channel_group', 'neutral'), 'zipf_views_all_median']):.2f}; the top tenth of videos take {pct(float(cg_z.loc[('channel_group', 'neutral'), 'top10_share_median']))} of views). Left and right channels are nearly identical to each other ({float(cg_z.loc[('channel_group', 'left'), 'zipf_views_all_median']):.2f} and {float(cg_z.loc[('channel_group', 'right'), 'zipf_views_all_median']):.2f}) and much flatter: the daily commentary audience turns up for everything. The same ordering appears by capitalization: channels that mostly shout spread views most evenly, sentence-case channels live on hits. Both patterns are the same fact seen twice, because the neutral group is where the sentence-case news outlets are.
 
 ## Views over time
 
-![Views by publication month by channel group; relative views by capitalisation style and by title label.](figures/07_views_over_time.png)
-*Left: the median over channels of the channel's median views per video, by publication month and channel group. Middle and right: log views relative to the same channel's average in the same month, by capitalisation style and by title label; bands are ±1.96 standard errors.*
+![Views by publication month by channel group; relative views by capitalization style and by title label.](figures/07_views_over_time.png)
+*Left: the median over channels of the channel's median views per video, by publication month and channel group. Middle and right: log views relative to the same channel's average in the same month, by capitalization style and by title label; bands are ±1.96 standard errors.*
 
 Views are a snapshot taken at fetch time (2026-09-14) and months are YouTube's approximate listing dates, so the monthly curve mixes age with season: a January video has had eight months to accumulate views, and the last, half month holds the newest uploads still in their first weeks. That half month also shows the highest medians of the year, which says more about how fast a video collects its first views and about the approximate dating (anything listed as "weeks ago" lands at the start of September) than about September itself. Read the left panel as a comparison *between* groups within a month, not as growth over time. The median channel in the left group draws {ratio.min():.1f} to {ratio.max():.1f} times the views of the median channel in the next group in every month of the year:
 
 {table(p_cg, fmt='{:,.0f}')}
 
-Within a channel the age effect cancels: **relative log views** is log(1 + views) minus the mean log(1 + views) of the same channel's videos in the same month, so 0 is the channel's average title that month and +0.05 is roughly 5 % more views than that average. By construction the three channel groups average 0 on it; capitalisation styles and title labels do not.
+Within a channel the age effect cancels: **relative log views** is log(1 + views) minus the mean log(1 + views) of the same channel's videos in the same month, so 0 is the channel's average title that month and +0.05 is roughly 5 % more views than that average. By construction the three channel groups average 0 on it; capitalization styles and title labels do not.
 
-**By capitalisation style.** Capitals beat a channel's own baseline in every month of the year, and the two lower-case styles fall below it in every month:
+**By capitalization style.** Capitals beat a channel's own baseline in every month of the year, and the two lower-case styles fall below it in every month:
 
 {table(p_cs, fmt='{:+.3f}')}
 
-Over the year: ALL CAPS {rel['ALL CAPS']:+.3f}, selective CAPS {rel['selective CAPS']:+.3f}, Title Case {rel['Title Case']:+.3f}, Sentence case {rel['Sentence case']:+.3f} (standard errors {float(va.loc[va.group == 'ALL CAPS', 'relative_log_views_se'].iloc[0]):.3f} for ALL CAPS and at most {float(va.loc[va.group.isin(['selective CAPS', 'Title Case', 'Sentence case']), 'relative_log_views_se'].max()):.3f} for the three big styles). The effect is modest (a few per cent) but it is the most consistent title-level signal in the corpus, holding month after month and inside channels rather than between them; the twelve-factor regression with month *and topic* controls (all_tables.md, stage 5) gives the ALL-CAPS factor F9 a median coefficient of {f9.median_coef_per_sd:+.3f} log views per within-channel SD, positive for {pct(f9.share_positive)} of channels: the same sign, smaller once the subject is held fixed. "Short / other" titles ({int(va.loc[va.group == 'short / other', 'n_videos'].iloc[0]):,} videos, mostly numbered episodes and one-word titles) sit far above baseline, but that is a format effect, not a capitalisation one.
+Over the year: ALL CAPS {rel['ALL CAPS']:+.3f}, selective CAPS {rel['selective CAPS']:+.3f}, Title Case {rel['Title Case']:+.3f}, Sentence case {rel['Sentence case']:+.3f} (standard errors {float(va.loc[va.group == 'ALL CAPS', 'relative_log_views_se'].iloc[0]):.3f} for ALL CAPS and at most {float(va.loc[va.group.isin(['selective CAPS', 'Title Case', 'Sentence case']), 'relative_log_views_se'].max()):.3f} for the three big styles). The effect is modest (a few per cent) but it is the most consistent title-level signal in the corpus, holding month after month and inside channels rather than between them; the twelve-factor regression with month *and topic* controls (all_tables.md, stage 5) gives the ALL-CAPS factor F9 a median coefficient of {f9.median_coef_per_sd:+.3f} log views per within-channel SD, positive for {pct(f9.share_positive)} of channels: the same sign, smaller once the subject is held fixed. "Short / other" titles ({int(va.loc[va.group == 'short / other', 'n_videos'].iloc[0]):,} videos, mostly numbered episodes and one-word titles) sit far above baseline, but that is a format effect, not a capitalization one.
 
 **By title label.** Over the {int(va.loc[va.grouping == 'title_label', 'n_videos'].sum()):,} sampled titles with view counts, right-read titles outperform their channel's monthly average, left-read titles sit at it and neither-read titles fall just below; the differences are small, only the right-read figure clears two standard errors, and the monthly series is noisy (a few hundred titles per label per month):
 
@@ -558,12 +558,12 @@ Over the year: right {rel['right titles']:+.3f} (SE {float(va.loc[va.group == 'r
 
 ## How the three cuts overlap
 
-![Capitalisation style by channel group and by title label.](figures/07_caps_by_group.png)
-*Capitalisation style shares by channel group (balanced edited uploads) and by title label (the judge's sample).*
+![Capitalization style by channel group and by title label.](figures/07_caps_by_group.png)
+*Capitalization style shares by channel group (balanced edited uploads) and by title label (the judge's sample).*
 
 {table(cs2, ['grouping', 'group', 'n_titles'] + CAPS_ORDER + ['caps_any'], fmt='{:.2f}', rename=CAPS_LABEL)}
 
-Left and right channels shout at the same rate ({pct(ca[('channel_group', 'left')])} and {pct(ca[('channel_group', 'right')])} of titles with capitals); the neutral group is sentence case ({pct(float(csg.loc[('channel_group', 'neutral'), 'sentence_case']))}). The left group leans to selective CAPS ({pct(float(csg.loc[('channel_group', 'left'), 'selective_caps']))} of titles), the right group splits between Title Case ({pct(float(csg.loc[('channel_group', 'right'), 'title_case']))}) and selective CAPS ({pct(float(csg.loc[('channel_group', 'right'), 'selective_caps']))}); sentence case is {pct(float(csg.loc[('channel_group', 'left'), 'sentence_case']))} and {pct(float(csg.loc[('channel_group', 'right'), 'sentence_case']))}. Crossing the labelled titles with their style shows where the judge's labels come from: selective CAPS is the partisan style ({pct(1 - float(lc.loc[lc.caps_style == 'selective_caps', 'share_neither'].iloc[0]))} of its labelled titles read left or right), while ALL CAPS, Title Case and sentence case read as "neither" {pct(float(lc.loc[lc.caps_style == 'all_caps', 'share_neither'].iloc[0]))}, {pct(float(lc.loc[lc.caps_style == 'title_case', 'share_neither'].iloc[0]))} and {pct(float(lc.loc[lc.caps_style == 'sentence_case', 'share_neither'].iloc[0]))} of the time (a fully shouted title is as often a reaction to an event as a stance on it), and within each style the right-read titles are the ones that draw the most views relative to their channel:
+Left and right channels shout at the same rate ({pct(ca[('channel_group', 'left')])} and {pct(ca[('channel_group', 'right')])} of titles with capitals); the neutral group is sentence case ({pct(float(csg.loc[('channel_group', 'neutral'), 'sentence_case']))}). The left group leans to selective CAPS ({pct(float(csg.loc[('channel_group', 'left'), 'selective_caps']))} of titles), the right group splits between Title Case ({pct(float(csg.loc[('channel_group', 'right'), 'title_case']))}) and selective CAPS ({pct(float(csg.loc[('channel_group', 'right'), 'selective_caps']))}); sentence case is {pct(float(csg.loc[('channel_group', 'left'), 'sentence_case']))} and {pct(float(csg.loc[('channel_group', 'right'), 'sentence_case']))}. Crossing the labeled titles with their style shows where the judge's labels come from: selective CAPS is the partisan style ({pct(1 - float(lc.loc[lc.caps_style == 'selective_caps', 'share_neither'].iloc[0]))} of its labeled titles read left or right), while ALL CAPS, Title Case and sentence case read as "neither" {pct(float(lc.loc[lc.caps_style == 'all_caps', 'share_neither'].iloc[0]))}, {pct(float(lc.loc[lc.caps_style == 'title_case', 'share_neither'].iloc[0]))} and {pct(float(lc.loc[lc.caps_style == 'sentence_case', 'share_neither'].iloc[0]))} of the time (a fully shouted title is as often a reaction to an event as a stance on it), and within each style the right-read titles are the ones that draw the most views relative to their channel:
 
 {table(lc2, ['caps_style', 'n_titles', 'share_left', 'share_neither', 'share_right', 'relative_log_views_left', 'relative_log_views_neither', 'relative_log_views_right'], fmt='{:.3f}')}
 
@@ -592,7 +592,7 @@ Results that came out empty are results; and several numbers in this set should 
 ## What did not show up
 
 - **A Conversational dimension.** The LLM's conversational rating correlates with the factor closest to it (stream talk: chat, ellipsis, contractions) at only r = {float(cand.loc[cand.candidate == 'Conversational', 'creator_level_r'].iloc[0]):.2f} at the creator level. The structural markers exist (factor F4 of the style model, `factor_loadings.csv`) but they do not track what a reader calls conversational.
-- **A Humour dimension, and a humour hook.** The rater flagged {int(lab.humor.sum())} of {len(lab)} sampled titles as humorous; its test-retest kappa on the flag is {float(rt.loc[rt.dimension == 'humor', 'kappa'].iloc[0]):.2f}; the classifier's held-out F1 is {hk['humor']['holdout_f1']:.2f}. Humour in titles is either genuinely rare in this landscape or invisible to a 14B model reading ten words. Nothing in the results should be cited as a measure of humour.
+- **A Humor dimension, and a humor hook.** The rater flagged {int(lab.humor.sum())} of {len(lab)} sampled titles as humorous; its test-retest kappa on the flag is {float(rt.loc[rt.dimension == 'humor', 'kappa'].iloc[0]):.2f}; the classifier's held-out F1 is {hk['humor']['holdout_f1']:.2f}. Humor in titles is either genuinely rare in this landscape or invisible to a 14B model reading ten words. Nothing in the results should be cited as a measure of humor.
 - **A curiosity-gap hook.** {int(lab.curiosity_gap.sum())} positives of {len(lab)} ({pct(lab.curiosity_gap.mean(), 1)}), classifier F1 {hk['curiosity_gap']['holdout_f1']:.2f}. The lexicon feature that approximates it (`curiosity_lex`: "here's why", "you won't believe", "this is insane") loads on the outrage pole of the tone factor, which suggests the device mostly *is* outrage in this corpus, but the hook as defined was not measured.
 - **Style as a predictor of views** (beyond outrage and capitals). In the within-channel regression of log views on the twelve dimensions, the hooks and length (month and topic controls; `engagement_summary.csv`), every predictor other than the outrage frame has a median effect at or below {float(other.median_coef_per_sd.abs().max()):.2f} log views per SD and between {pct(float(other.share_same_sign_as_median.min()))} and {pct(float(other.share_same_sign_as_median.max()))} of channels on the median's side of zero. The capitals effect of document 7 is measured on the same titles without topic controls and is of the same small order.
 - **Power-law audiences.** {int(hv.powerlaw_like.astype(bool).sum())} of {len(hv)} video channels (document 7).
@@ -602,7 +602,7 @@ Results that came out empty are results; and several numbers in this set should 
 ## What to distrust, and how much
 
 - **The rater.** All ratings and labels behind the style model, the hooks and the formats come from a local Qwen3-14B model at temperature 0. Weighted kappa on a 300-title retest: sensational {float(rt.loc[rt.dimension == 'sensational', 'weighted_kappa'].iloc[0]):.2f}, critical {float(rt.loc[rt.dimension == 'critical', 'weighted_kappa'].iloc[0]):.2f}, analytical {float(rt.loc[rt.dimension == 'analytical', 'weighted_kappa'].iloc[0]):.2f}, conversational {float(rt.loc[rt.dimension == 'conversational', 'weighted_kappa'].iloc[0]):.2f}, educational {float(rt.loc[rt.dimension == 'educational', 'weighted_kappa'].iloc[0]):.2f}; kappa on the outrage flag {float(rt.loc[rt.dimension == 'outrage', 'kappa'].iloc[0]):.2f}, on the format label {float(rt.loc[rt.dimension == 'format_llm', 'kappa'].iloc[0]):.2f}. The validation of the tone factor stands on the reliable ratings; the rest is indicative. Re-rating with a stronger model is one cached command (`llm_rate --model ...`).
-- **The channel groups** come from a second model's reading of 50 sampled titles per channel (document 14). The score is reliable as a ranking (split-half Spearman {float(rd('leaning_split_half.csv').split_half_spearman_mean.iloc[0]):.2f}), but the ±0.05 thresholds are a choice, {int(rd('leaning_stability.csv').group_changed.iloc[0])} channels changed group between the first 16-title draw and the full sample, and a group says how a channel's titles *read*, not what it is. Every group-level table changes if the thresholds or the judge change; the creator-level tables, neighbours and clusters do not.
+- **The channel groups** come from a second model's reading of 50 sampled titles per channel (document 14). The score is reliable as a ranking (split-half Spearman {float(rd('leaning_split_half.csv').split_half_spearman_mean.iloc[0]):.2f}), but the ±0.05 thresholds are a choice, {int(rd('leaning_stability.csv').group_changed.iloc[0])} channels changed group between the first 16-title draw and the full sample, and a group says how a channel's titles *read*, not what it is. Every group-level table changes if the thresholds or the judge change; the creator-level tables, neighbors and clusters do not.
 - **The political flag** is broad (212 of 236 topics). The political-only landscape run reaches the same conclusions as the all-titles run, which limits how much this matters, but per-creator political shares should not be quoted without that caveat.
 - **Entity counts** come from spaCy's small English model on truecased headline text; "Hormuz" as a person and fan-channel formulas as people show the noise. The top-25 lists are robust, the tail is not.
 - **Views** are a fetch-time snapshot; Rumble has none; verbatim repeats are kept for view and concentration statistics and removed for everything else; months are approximate listing dates.
@@ -632,7 +632,7 @@ def doc_twins() -> str:
 
 ## The finding in one paragraph
 
-Style ignores the divide. Measured in the twelve-dimensional, topic-controlled style space of the style model, the nearest neighbour of a left channel is on the right side of the divide about as often as on its own side: for {closer:.0%} of the {len(near)} left and right channels the closest channel across the divide is closer than *any* channel in their own group, and the distributions of nearest-twin distance and nearest-group-mate distance sit almost on top of each other. The closest pairs are not the big names but the mid-sized daily channels on both sides: {top.iloc[0].left_creator} and {top.iloc[0].right_creator}, {top.iloc[1].left_creator} and {top.iloc[1].right_creator}, {top.iloc[2].left_creator} and {top.iloc[2].right_creator}. What they share is form: emphasis capitals on one or two words, a named target, a verb of attack or collapse, no question, no label, no numbers.
+Style ignores the divide. Measured in the twelve-dimensional, topic-controlled style space of the style model, the nearest neighbor of a left channel is on the right side of the divide about as often as on its own side: for {closer:.0%} of the {len(near)} left and right channels the closest channel across the divide is closer than *any* channel in their own group, and the distributions of nearest-twin distance and nearest-group-mate distance sit almost on top of each other. The closest pairs are not the big names but the mid-sized daily channels on both sides: {top.iloc[0].left_creator} and {top.iloc[0].right_creator}, {top.iloc[1].left_creator} and {top.iloc[1].right_creator}, {top.iloc[2].left_creator} and {top.iloc[2].right_creator}. What they share is form: emphasis capitals on one or two words, a named target, a verb of attack or collapse, no question, no label, no numbers.
 
 ![The twenty closest pairs and the distance comparison.](figures/09_twins.png)
 *Left: the twenty closest left-right pairs. Right: for every left and right channel, the distance to its nearest channel across the divide against the distance to its nearest group-mate.*
@@ -643,7 +643,7 @@ Style ignores the divide. Measured in the twelve-dimensional, topic-controlled s
 
 {table(top, ['left_creator', 'right_creator', 'distance', 'distance_percentile_all_pairs'], fmt='{:.2f}')}
 
-A few right-side channels recur as everybody's twin in the table above ({', '.join(f'{k} x{v}' for k, v in hub.items())}): they sit near the centre of the commentary cloud, so they are close to many left channels at once. Hubness like this is a property of the space, not evidence of imitation.
+A few right-side channels recur as everybody's twin in the table above ({', '.join(f'{k} x{v}' for k, v in hub.items())}): they sit near the center of the commentary cloud, so they are close to many left channels at once. Hubness like this is a property of the space, not evidence of imitation.
 
 ## Every channel's twin across the divide
 
@@ -653,7 +653,7 @@ The full table is `style_twins_nearest.csv`; the twelve left and twelve right ch
 
 {table(nr, ['creator', 'twin_across_divide', 'twin_distance', 'twin_rank_among_all_neighbours', 'nearest_same_group', 'nearest_same_group_distance', 'twin_closer_than_any_same_group'], fmt='{:.2f}')}
 
-`twin_rank_among_all_neighbours` = 1 means the twin is the creator's single nearest neighbour in the whole landscape (any group).
+`twin_rank_among_all_neighbours` = 1 means the twin is the creator's single nearest neighbor in the whole landscape (any group).
 
 ## Method
 
@@ -667,7 +667,7 @@ The full table is `style_twins_nearest.csv`; the twelve left and twelve right ch
 - The divide is the judge's reading of each channel's titles, so a channel whose titles read neutral although its host is partisan is left out, and a channel near a threshold can sit on either side; document 14 gives the reliability of the score.
 - The space weights all twelve factors equally after z-scoring; two creators can be twins on capitals, questions and quotes while differing in tone, or the reverse. `dimensions.csv` has the per-factor scores if a narrower definition is wanted.
 - Topic control removes the average effect of a topic on each score, not everything a subject does to a title.
-- Distances shrink for creators near the centre of the cloud (hubness above) and grow for eccentric ones; the percentile column is the fairer comparison.
+- Distances shrink for creators near the center of the cloud (hubness above) and grow for eccentric ones; the percentile column is the fairer comparison.
 - Only edited uploads; live VODs are too thin for both groups.
 
 Files: `style_twins.csv`, `style_twins_nearest.csv`, `dimensions.csv`, `neighbours_style.csv`.
@@ -682,11 +682,11 @@ def doc_caps_words() -> str:
     gm = _lg(v[v.group.isin(GROUPS)].groupby("group")[CAPS_STYLES + ["caps_any"]].mean().reset_index())
     full = v[["creator", "group", "n_titles", "caps_any"] + CAPS_STYLES].copy()
     t20 = tw.head(20).copy()
-    return f"""# 11. Capitalisation profile, and the words titles are made of
+    return f"""# 11. Capitalization profile, and the words titles are made of
 
-## Capitalisation profile
+## Capitalization profile
 
-**The question.** How does each channel capitalise its titles: shouting in ALL CAPS, emphasising single words, Title Case, or sentence case?
+**The question.** How does each channel capitalize its titles: shouting in ALL CAPS, emphasising single words, Title Case, or sentence case?
 
 ### The finding in one paragraph
 
@@ -711,14 +711,14 @@ Averaged over the {len(v)} ranked channels (edited uploads), {pct(means['title_c
 
 ### Method
 
-Each unique title, as published (the raw title: the normalised one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if its first letter or digit is a lower-case letter (a title opening with a number, a quote, "U.S." or "I" is judged on what follows); **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself ({len(acr)} words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like. Shares are over a channel's unique titles per genre.
+Each unique title, as published (the raw title: the normalized one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if its first letter or digit is a lower-case letter (a title opening with a number, a quote, "U.S." or "I" is judged on what follows); **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself ({len(acr)} words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like. Shares are over a channel's unique titles per genre.
 
 ### Limitations
 
 - Any single emphasised word makes a title "selective CAPS", so the category mixes light emphasis ("This Is INSANE") with heavy ("MAGA MELTDOWN as Trump LOSES IT").
-- The acronym exemption is corpus-learned: a word that is usually shouted (e.g. a name a channel always capitalises) can be learned as an acronym and stop counting, and a genuine acronym rarely written in mixed case can count as emphasis.
-- Title Case vs sentence case is a threshold (80 % of content words capitalised); headlines dense with proper nouns can tip over it.
-- Computed on raw titles, so a brand tag counts: "| Fox News" adds capitalised words (harmless under the Title Case rule, and a sentence-case title stays sentence case with two more capitals among its content words), and a tag always written in capitals ("| REUTERS") is learned as an acronym and exempt; a tag in capitals on too few titles to be learned would count as a shout.
+- The acronym exemption is corpus-learned: a word that is usually shouted (e.g. a name a channel always capitalizes) can be learned as an acronym and stop counting, and a genuine acronym rarely written in mixed case can count as emphasis.
+- Title Case vs sentence case is a threshold (80 % of content words capitalized); headlines dense with proper nouns can tip over it.
+- Computed on raw titles, so a brand tag counts: "| Fox News" adds capitalized words (harmless under the Title Case rule, and a sentence-case title stays sentence case with two more capitals among its content words), and a tag always written in capitals ("| REUTERS") is learned as an acronym and exempt; a tag in capitals on too few titles to be learned would count as a shout.
 - {GROUP_NOTE}
 
 ## The twenty most frequent non-stopwords
@@ -733,11 +733,11 @@ Trump is in one title in {round(1 / float(tw.loc[tw.word == 'trump', 'balanced_s
 
 ### Method
 
-Tokens are lower-cased words from the normalised title with curly apostrophes normalised and possessive "'s" removed (so "Trump's" counts as "trump"); stopwords are the pipeline list plus scikit-learn's English list plus a few title-furniture words (live, new, news, video, full, show, watch, podcast, vs, ft, ep). The creator-balanced share is, for each ranked creator with edited uploads, the share of its unique titles containing the word, averaged over creators; the raw share pools all unique edited-upload titles. The top 400 words by raw count were scored; `top_words.csv` has all of them.
+Tokens are lower-cased words from the normalized title with curly apostrophes normalized and possessive "'s" removed (so "Trump's" counts as "trump"); stopwords are the pipeline list plus scikit-learn's English list plus a few title-furniture words (live, new, news, video, full, show, watch, podcast, vs, ft, ep). The creator-balanced share is, for each ranked creator with edited uploads, the share of its unique titles containing the word, averaged over creators; the raw share pools all unique edited-upload titles. The top 400 words by raw count were scored; `top_words.csv` has all of them.
 
 ### Limitations
 
-Unigrams only, so "white house" is "white" and "house"; hyphenated and censored words ("f***ing") are split by the tokeniser; the stopword list is a choice (it removes "says"-type words only when they are in the list, which "says" is not).
+Unigrams only, so "white house" is "white" and "house"; hyphenated and censored words ("f***ing") are split by the tokenizer; the stopword list is a choice (it removes "says"-type words only when they are in the list, which "says" is not).
 
 Files: `caps_profile.csv`, `caps_acronyms.txt`, `top_words.csv`.
 """
@@ -764,7 +764,7 @@ def doc_arousal() -> str:
 The index runs from {v.iloc[0].creator} ({v.iloc[0].arousal_index:.2f}) at the top, followed by {', '.join(v.iloc[1:5].creator)}, to {', '.join(v.tail(4).creator[::-1])} at the bottom (all under 0.02). The top of the ranking is the daily outrage channels of both sides plus the MeidasTouch network; the bottom is magazines, wires and interview podcasts. By channel group, the left group has the highest median ({float(gm.loc[gm.group == 'left channels', 'median'].iloc[0]):.2f}), the right group is close behind ({float(gm.loc[gm.group == 'right channels', 'median'].iloc[0]):.2f}) and the neutral group sits far below ({float(gm.loc[gm.group == 'neutral channels', 'median'].iloc[0]):.2f}). The index agrees with the independent measures it should agree with: Spearman {r_sens:+.2f} with the LLM rater's *sensational* score aggregated per channel, {r_f1:+.2f} with the tone factor (positive = calm) and {r_f9:+.2f} with the ALL-CAPS factor of the style model.
 
 ![Arousal index, every ranked channel.](figures/12_arousal_ranked.png)
-*All ranked channels with edited uploads, highest first; colour = channel group.*
+*All ranked channels with edited uploads, highest first; color = channel group.*
 
 ![Arousal by channel group.](figures/12_arousal_by_group.png)
 
@@ -780,15 +780,15 @@ Live VODs and low-n channels are in `arousal_index.csv` (column `genre`, flag `l
 
 ## Method
 
-For each unique title: (1) the share of 2+-letter words in ALL CAPS; (2) the number of exclamation marks, capped at three; (3) power words, the count of shock words, violence/outrage verbs and intensifiers from the pipeline lexicons ("insane", "slams", "exposed", "absolutely"); (4) emoji characters; (5) VADER intensity, the positive plus negative sentiment shares (arousal, not valence: "AMAZING" counts as much as "DISGUSTING"). Each component is averaged per channel x genre; across the ranked channels of a genre it is winsorised at the 2nd and 98th percentile and min-max scaled to 0-1; the index is the mean of the five scaled components. Ranks and percentiles are within genre.
+For each unique title: (1) the share of 2+-letter words in ALL CAPS; (2) the number of exclamation marks, capped at three; (3) power words, the count of shock words, violence/outrage verbs and intensifiers from the pipeline lexicons ("insane", "slams", "exposed", "absolutely"); (4) emoji characters; (5) VADER intensity, the positive plus negative sentiment shares (arousal, not valence: "AMAZING" counts as much as "DISGUSTING"). Each component is averaged per channel x genre; across the ranked channels of a genre it is winsorized at the 2nd and 98th percentile and min-max scaled to 0-1; the index is the mean of the five scaled components. Ranks and percentiles are within genre.
 
 ## Limitations
 
 - Equal weights are a choice; a channel that only shouts and a channel that only exclaims can tie.
 - Emoji are rare (most channels average zero per title), so that component mostly separates a few emoji users (MeidasTouch, Benny Johnson, Pondering Politics) from everyone else.
-- Min-max scaling depends on the extremes even after winsorising; the ranking is stable, the spacing between values is not meaningful beyond ordering.
+- Min-max scaling depends on the extremes even after winsorizing; the ranking is stable, the spacing between values is not meaningful beyond ordering.
 - VADER is a general-purpose sentiment lexicon on ten-word texts; "war" or "shooting" raise intensity in a wire headline as they do in a rant.
-- Computed on normalised titles (brand suffixes removed).
+- Computed on normalized titles (brand suffixes removed).
 - {GROUP_NOTE}
 
 Files: `arousal_index.csv`.
@@ -816,7 +816,7 @@ Each channel's signature is scored by weighted log-odds against all other channe
 
 ## Method
 
-Tokens are lower-cased words from the normalised title (curly apostrophes normalised, possessive "'s" removed, the vocabulary stopword list of document 11 removed), pooled over a channel's unique titles in both genres. For each channel the weighted log-odds ratio of every word against all other channels' titles is computed with an informative Dirichlet prior proportional to the pooled corpus frequencies (Monroe, Colaresi and Quinn 2008, "Fightin' Words"), alpha0 = 500, and ranked by the z-score (log-odds divided by its approximate standard error). The top ten with at least three uses by the channel are kept.
+Tokens are lower-cased words from the normalized title (curly apostrophes normalized, possessive "'s" removed, the vocabulary stopword list of document 11 removed), pooled over a channel's unique titles in both genres. For each channel the weighted log-odds ratio of every word against all other channels' titles is computed with an informative Dirichlet prior proportional to the pooled corpus frequencies (Monroe, Colaresi and Quinn 2008, "Fightin' Words"), alpha0 = 500, and ranked by the z-score (log-odds divided by its approximate standard error). The top ten with at least three uses by the channel are kept.
 
 ## Limitations
 
@@ -835,16 +835,16 @@ def doc_index() -> str:
 
 Every video title that 274 political-media creators published between 2026-01-01 and 2026-09-14 (309,596 titles), described along data-driven style dimensions, controlled for topic, clustered into a landscape, tracked month by month and tested against views. The write-up is split by question; each document explains one finding, shows the tables that carry it and lists its caveats.
 
-The one grouping of channels used throughout is the **channel group** of document 14: a frontier model labelled a sample of each channel's titles left / right / neither from the title text alone, and each channel's score over its titles sorts the channels into left, neutral and right. No channel is categorised by hand. Titles are grouped two further ways where a title-level cut is wanted: by that same **title label**, and by **capitalisation style** (document 11).
+The one grouping of channels used throughout is the **channel group** of document 14: a frontier model labeled a sample of each channel's titles left / right / neither from the title text alone, and each channel's score over its titles sorts the channels into left, neutral and right. No channel is categorized by hand. Titles are grouped two further ways where a title-level cut is wanted: by that same **title label**, and by **capitalization style** (document 11).
 
 | document | the question it answers |
 |---|---|
-| [1. The corpus](01_corpus.md) | what is being analysed, what was stripped from titles, how the corpus was balanced, and the creator table |
+| [1. The corpus](01_corpus.md) | what is being analyzed, what was stripped from titles, how the corpus was balanced, and the creator table |
 | [2. Topics](02_topics.md) | what they talk about, month by month, and why topic has to be controlled |
-| [4. Formats and hooks](04_formats_and_hooks.md) | questions, LIVE labels, episodes, guests, reactions, confrontations; the outrage frame; why curiosity and humour could not be measured |
-| [5. The landscape](05_landscape.md) | who titles like whom, the channel groups vs style, nearest neighbours, organisations, who gets named, shared titles and templates |
+| [4. Formats and hooks](04_formats_and_hooks.md) | questions, LIVE labels, episodes, guests, reactions, confrontations; the outrage frame; why curiosity and humor could not be measured |
+| [5. The landscape](05_landscape.md) | who titles like whom, the channel groups vs style, nearest neighbors, organizations, who gets named, shared titles and templates |
 | [6. Drift](06_drift.md) | how titles changed from January to September |
-| [7. Zipf's law and views](07_views.md) | Zipf's law in title vocabulary and in views; views over time; all three cut by channel group, title label and capitalisation style |
+| [7. Zipf's law and views](07_views.md) | Zipf's law in title vocabulary and in views; views over time; all three cut by channel group, title label and capitalization style |
 | [8. Null results and caveats](08_null_results_and_caveats.md) | what did not show up, and what to distrust |
 
 Question documents, each with its method and limitations:
@@ -852,14 +852,14 @@ Question documents, each with its method and limitations:
 | document | the question |
 |---|---|
 | [9. Stylistic twins](09_stylistic_twins.md) | which left and right channels title the same way |
-| [11. Capitalisation and vocabulary](11_capitalisation_and_vocabulary.md) | each channel's capitalisation profile; the twenty most frequent words |
+| [11. Capitalization and vocabulary](11_capitalization_and_vocabulary.md) | each channel's capitalization profile; the twenty most frequent words |
 | [12. Arousal index](12_arousal_index.md) | a 0-1 emotional-charge index for every channel, with its components |
 | [13. Signature keywords](13_signature_keywords.md) | the words each channel over-uses relative to all others |
-| [14. Political leaning from titles](14_political_leaning.md) | two levels: a frontier model labels titles left / right / neither from the title text alone, and the vocabulary of each label is analysed; each channel's score then sorts the channels into left, neutral and right groups, whose whole output is compared |
+| [14. Political leaning from titles](14_political_leaning.md) | two levels: a frontier model labels titles left / right / neither from the title text alone, and the vocabulary of each label is analyzed; each channel's score then sorts the channels into left, neutral and right groups, whose whole output is compared |
 
 The style model itself (twelve factors from an exploratory factor analysis of title features, their loadings, the validation against the rater's candidate labels and the topic control) is documented in [`methods_appendix.md`](methods_appendix.md) and its tables in [`all_tables.md`](all_tables.md); the documents above use its factor scores (`F1` tone ... `F12`) by name.
 
-Alongside: [`title_stylometry.html`](title_stylometry.html) (the interactive page: creator selector, profile cards, and the two landscape maps with names on hover and each creator's neighbours drawn in; open it directly in a browser), [`figures/`](figures/) (the static figures used in the documents), [`cards/`](cards/) (one Markdown card per creator), [`methods_appendix.md`](methods_appendix.md) (every preprocessing step, lexicon, loading, validation number, prompt and runtime), and [`all_tables.md`](all_tables.md) (the reference dump of every table in one file).
+Alongside: [`title_stylometry.html`](title_stylometry.html) (the interactive page: creator selector, profile cards, and the two landscape maps with names on hover and each creator's neighbors drawn in; open it directly in a browser), [`figures/`](figures/) (the static figures used in the documents), [`cards/`](cards/) (one Markdown card per creator), [`methods_appendix.md`](methods_appendix.md) (every preprocessing step, lexicon, loading, validation number, prompt and runtime), and [`all_tables.md`](all_tables.md) (the reference dump of every table in one file).
 
 ## The findings, one paragraph per stage
 
@@ -872,7 +872,7 @@ def write_all() -> None:
     docs = {"01_corpus.md": doc_corpus, "02_topics.md": doc_topics,
             "04_formats_and_hooks.md": doc_formats, "05_landscape.md": doc_landscape, "06_drift.md": doc_drift,
             "07_views.md": doc_views, "08_null_results_and_caveats.md": doc_nulls, "09_stylistic_twins.md": doc_twins,
-            "11_capitalisation_and_vocabulary.md": doc_caps_words, "12_arousal_index.md": doc_arousal,
+            "11_capitalization_and_vocabulary.md": doc_caps_words, "12_arousal_index.md": doc_arousal,
             "13_signature_keywords.md": doc_keywords, "README.md": doc_index}
     if (A / "leaning_by_creator.csv").exists():
         from pipeline_titles.report_leaning import doc_leaning

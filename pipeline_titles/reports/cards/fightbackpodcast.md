@@ -1,6 +1,6 @@
 # Jake Shields' Fight Back Podcast (@fightbackpodcast)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Jake Shields · clipper: no · platform: youtube · subscribers: 206000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Jake Shields · clipper: no · platform: youtube · subscribers: 206000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (15.3%); MMA and Combat Sports (8.1%
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 27.2 | 36.8 | -0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 41.0 | 33.1 | -0.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 57.7 | 49.8 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 57.7 | 49.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 47.3 | 38.9 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 66.1 | 67.4 | 0.5 | 0.2 |
 | F6: Person-centred (named people) | 85.8 | 87.4 | 0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (15.3%); MMA and Combat Sports (8.1%
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.2% (3.6%); outrage 56.1% (59.6%); humor 0.0% (0.2%); question 22.7% (15.6%); breaking_live 0.0% (2.0%); episode_show 13.4% (7.6%); interview_guest 6.1% (8.5%); reaction 8.0% (2.2%); confrontation 7.0% (7.8%); listicle 0.2% (0.1%); howto_explainer 10.2% (9.5%)
 
 
-Nearest style neighbours: @thejimmydoreshow [neutral]; @NovaraMedia [left]; @judgingfreedom [left]; @TheDonLemonShow [left]; @MyronGainesX [right]
+Nearest style neighbors: @thejimmydoreshow [neutral]; @NovaraMedia [left]; @judgingfreedom [left]; @TheDonLemonShow [left]; @MyronGainesX [right]
 
-Nearest topic neighbours: @KimIversen [neutral]; @TuckerCarlson [neutral]; @thejimmydoreshow [neutral]; @BadEmpanadaLive [left]; @JillianMichaels [right]
+Nearest topic neighbors: @KimIversen [neutral]; @TuckerCarlson [neutral]; @thejimmydoreshow [neutral]; @BadEmpanadaLive [left]; @JillianMichaels [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: MMA and Combat Sports (58.3%); Epstein Files Political Connections (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 2.3 | 0.0 |

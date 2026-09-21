@@ -1,6 +1,6 @@
 # UnHerd (@UnHerd)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: UnHerd · clipper: no · platform: youtube · subscribers: 544000.0
+Channel group: **left** (title-leaning score, document 14) · organization: UnHerd · clipper: no · platform: youtube · subscribers: 544000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.6%); Trump's Economic Impa
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 63.6 | 64.0 | 0.4 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 97.9 | 94.6 | 1.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 19.7 | 50.6 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 19.7 | 50.6 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 30.1 | 40.6 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 83.3 | 82.4 | 1.1 | 0.1 |
 | F6: Person-centred (named people) | 25.9 | 29.7 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.6%); Trump's Economic Impa
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.6% (2.7%); outrage 44.6% (63.9%); humor 0.0% (0.2%); question 22.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 2.4% (9.8%); reaction 0.0% (2.9%); confrontation 2.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 19.3% (8.0%)
 
 
-Nearest style neighbours: @bbrettcooper [right]; @franifio [left]; @thomhartmann [left]; @StevenCrowder [right]; @TheVaushPit [left]
+Nearest style neighbors: @bbrettcooper [right]; @franifio [left]; @thomhartmann [left]; @StevenCrowder [right]; @TheVaushPit [left]
 
-Nearest topic neighbours: @NovaraMedia [left]; @BBCNews [neutral]; @TheEconomist [left]; @SkyNews [left]; @Styxhexenhammer666 [right]
+Nearest topic neighbors: @NovaraMedia [left]; @BBCNews [neutral]; @TheEconomist [left]; @SkyNews [left]; @Styxhexenhammer666 [right]
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -53,7 +53,7 @@ Top topics: JLP Weekly Series (23.5%); Political Commentary and Interviews (17.6
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.2 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.4 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.4 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.9 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.7 | 0.6 |

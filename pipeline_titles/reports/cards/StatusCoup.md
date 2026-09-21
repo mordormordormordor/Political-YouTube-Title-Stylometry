@@ -1,6 +1,6 @@
 # Status Coup News (@StatusCoup)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Status Coup · clipper: no · platform: youtube · subscribers: 737000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Status Coup · clipper: no · platform: youtube · subscribers: 737000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: ICE Protests and Shootings (32.9%); Trump and Epstein Files Scandal 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 9.2 | 8.4 | -0.7 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 19.2 | 18.8 | -0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.3 | 91.2 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.3 | 91.2 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 53.6 | 43.5 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 19.2 | 17.2 | -0.3 | 0.1 |
 | F6: Person-centred (named people) | 43.5 | 34.7 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: ICE Protests and Shootings (32.9%); Trump and Epstein Files Scandal 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (2.7%); outrage 89.6% (63.9%); humor 0.0% (0.2%); question 9.7% (15.6%); breaking_live 7.9% (2.9%); episode_show 0.0% (2.8%); interview_guest 7.2% (9.8%); reaction 0.0% (2.9%); confrontation 6.8% (7.6%); listicle 0.2% (0.1%); howto_explainer 2.5% (8.0%)
 
 
-Nearest style neighbours: @SecularTalk [left]; @RealAmericasVoice [right]; https://rumble.com/c/TheAlexJonesShowLive [right]; @DueDissidence [left]; @breakingpoints [left]
+Nearest style neighbors: @SecularTalk [left]; @RealAmericasVoice [right]; https://rumble.com/c/TheAlexJonesShowLive [right]; @DueDissidence [left]; @breakingpoints [left]
 
-Nearest topic neighbours: @jimacosta [left]; @msnow [left]; @katiephangnews [left]; @RealAmericasVoice [right]; @podsaveamerica [left]
+Nearest topic neighbors: @jimacosta [left]; @msnow [left]; @katiephangnews [left]; @RealAmericasVoice [right]; @podsaveamerica [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: ICE Protests and Shootings (49.7%); Anti-Trump Protests and Riots (1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.1 | 19.0 | -0.6 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 24.1 | 22.8 | -0.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.1 | 83.5 | 1.7 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.1 | 83.5 | 1.7 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 83.5 | 69.6 | 0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 15.2 | 16.5 | -0.5 | -0.3 |
 | F6: Person-centred (named people) | 26.6 | 15.2 | -0.2 | 0.6 |
@@ -104,9 +104,9 @@ Top topics: ICE Protests and Shootings (49.7%); Anti-Trump Protests and Riots (1
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (1.9%); outrage 82.2% (63.2%); humor 0.0% (0.1%); question 3.2% (11.3%); breaking_live 94.9% (17.5%); episode_show 0.0% (6.4%); interview_guest 9.6% (18.3%); reaction 0.0% (1.5%); confrontation 8.9% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (2.9%)
 
 
-Nearest style neighbours: @MeidasTouch [left]; @ANINewsIndia [neutral]; @TheOfficerTatum [right]; @TimcastIRL [right]; @deanwithrs [left]
+Nearest style neighbors: @MeidasTouch [left]; @ANINewsIndia [neutral]; @TheOfficerTatum [right]; @TimcastIRL [right]; @deanwithrs [left]
 
-Nearest topic neighbours: @CamHigby [right]; @TheMajorityReport [left]; @MeidasTouch [left]; @BreakThroughNews [left]; @PTLRadioShow [left]
+Nearest topic neighbors: @CamHigby [right]; @TheMajorityReport [left]; @MeidasTouch [left]; @BreakThroughNews [left]; @PTLRadioShow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

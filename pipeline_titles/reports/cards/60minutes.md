@@ -1,6 +1,6 @@
 # 60 Minutes (@60minutes)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: CBS News · clipper: no · platform: youtube · subscribers: 4170000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: CBS News · clipper: no · platform: youtube · subscribers: 4170000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: 9/11 Remembered 25 Years Later (8.0%); Members Only Show (7.1%); Ira
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 92.1 | 92.9 | 0.9 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 23.4 | 14.6 | -0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 47.7 | 69.9 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 47.7 | 69.9 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 67.4 | 55.2 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 58.6 | 61.5 | 0.3 | 0.1 |
 | F6: Person-centred (named people) | 41.8 | 41.8 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: 9/11 Remembered 25 Years Later (8.0%); Members Only Show (7.1%); Ira
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (2.4%); outrage 11.7% (36.0%); humor 0.0% (0.1%); question 8.9% (15.9%); breaking_live 0.3% (1.1%); episode_show 0.3% (7.0%); interview_guest 5.9% (11.6%); reaction 0.3% (1.9%); confrontation 1.2% (7.4%); listicle 0.0% (0.1%); howto_explainer 2.5% (6.6%)
 
 
-Nearest style neighbours: @HasanAbiVODs3 [left]; @Forbes [neutral]; @PiscoLitty [left]; @Firstpost [neutral]; @newdiscourses [right]
+Nearest style neighbors: @HasanAbiVODs3 [left]; @Forbes [neutral]; @PiscoLitty [left]; @Firstpost [neutral]; @newdiscourses [right]
 
-Nearest topic neighbours: @NYTPodcasts [left]; @ABCNews [neutral]; @FoxNewsChannelClips [right]; @CBSNews [neutral]; @CNN [left]
+Nearest topic neighbors: @NYTPodcasts [left]; @ABCNews [neutral]; @FoxNewsChannelClips [right]; @CBSNews [neutral]; @CNN [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

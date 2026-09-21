@@ -1,6 +1,6 @@
 # BannonsWarRoom (https://rumble.com/c/BannonsWarRoom)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: War Room · clipper: no · platform: rumble · subscribers: 
+Channel group: **right** (title-leaning score, document 14) · organization: War Room · clipper: no · platform: rumble · subscribers: 
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Political War Room and Figures (6.3%); Iran War and Strait of Hormuz
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 91.2 | 86.2 | 0.8 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 96.2 | 89.1 | 1.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 97.9 | 98.7 | 0.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 97.9 | 98.7 | 0.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 92.5 | 90.4 | 0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 41.8 | 43.9 | -0.0 | 0.2 |
 | F6: Person-centred (named people) | 92.9 | 90.4 | 0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Political War Room and Figures (6.3%); Iran War and Strait of Hormuz
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (3.6%); outrage 42.3% (59.6%); humor 0.0% (0.2%); question 3.7% (15.6%); breaking_live 1.5% (2.0%); episode_show 20.1% (7.6%); interview_guest 9.5% (8.5%); reaction 0.7% (2.2%); confrontation 5.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 4.8% (9.5%)
 
 
-Nearest style neighbours: @cafedotcom [left]; @NewsmaxTV [right]; @RealAlexClark [right]; @MegynKelly [right]; https://rumble.com/c/GGreenwald [left]
+Nearest style neighbors: @cafedotcom [left]; @NewsmaxTV [right]; @RealAlexClark [right]; @MegynKelly [right]; https://rumble.com/c/GGreenwald [left]
 
-Nearest topic neighbours: @oann [right]; @RealAmericasVoice [right]; @NewsmaxTV [right]; @FoxNewsChannelClips [right]; @BlazeTV [right]
+Nearest topic neighbors: @oann [right]; @RealAmericasVoice [right]; @NewsmaxTV [right]; @FoxNewsChannelClips [right]; @BlazeTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

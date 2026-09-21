@@ -39,7 +39,7 @@ def test_rank_turbulence_divergence_follows_the_allotaxonometer_conventions():
     a = Counter({"x": 10, "y": 5, "z": 1}); b = Counter({"x": 10, "y": 5, "z": 1})
     d, contribs = rank_turbulence_divergence(a, b)
     assert d == 0.0
-    a = Counter({"x": 10, "y": 5}); b = Counter({"q": 10, "p": 5})          # disjoint systems: D is normalised to about 1
+    a = Counter({"x": 10, "y": 5}); b = Counter({"q": 10, "p": 5})          # disjoint systems: D is normalized to about 1
     d, _ = rank_turbulence_divergence(a, b, alpha=1 / 3)
     assert d > 0.9
     a = Counter({"x": 10, "y": 5}); b = Counter({"y": 10, "q": 5})

@@ -1,6 +1,6 @@
 # Ana Escobar (@AnaEscobarShow)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Ana Escobar · clipper: no · platform: youtube · subscribers: 9440.0
+Channel group: **right** (title-leaning score, document 14) · organization: Ana Escobar · clipper: no · platform: youtube · subscribers: 9440.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Charlie Kirk murder trial (37.5%); Candace Owens and Erika Kirk Cont
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 1.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.9 | 0.2 |
 | F6: Person-centred (named people) | None | None | -0.1 | -0.2 |
@@ -55,7 +55,7 @@ Top topics: Charlie Kirk murder trial (22.6%); Spirit Airlines shutdown and airl
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.8 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.5 | 0.0 |

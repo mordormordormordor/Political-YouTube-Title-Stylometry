@@ -1,6 +1,6 @@
 # Anthony Brian Logan (@AnthonyBrianLogan)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Anthony Brian Logan · clipper: no · platform: youtube · subscribers: 1080000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Anthony Brian Logan · clipper: no · platform: youtube · subscribers: 1080000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Behind the scenes streaming (6.9%); Walmart Shoplifting and Police I
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 33.5 | 31.4 | -0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 33.5 | 25.1 | -0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 10.0 | 25.9 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 10.0 | 25.9 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 20.1 | 20.5 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 18.0 | 16.3 | -0.3 | 0.2 |
 | F6: Person-centred (named people) | 62.8 | 61.9 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Behind the scenes streaming (6.9%); Walmart Shoplifting and Police I
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.4% (3.6%); outrage 76.2% (59.6%); humor 0.0% (0.2%); question 13.7% (15.6%); breaking_live 6.9% (2.0%); episode_show 6.9% (7.6%); interview_guest 5.2% (8.5%); reaction 0.4% (2.2%); confrontation 5.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.8% (9.5%)
 
 
-Nearest style neighbours: @Forthepeoplepodcast305 [left]; @oann [right]; @nypost [right]; @thejimmydoreshow [neutral]; @TheMichaelCohenShow [left]
+Nearest style neighbors: @Forthepeoplepodcast305 [left]; @oann [right]; @nypost [right]; @thejimmydoreshow [neutral]; @TheMichaelCohenShow [left]
 
-Nearest topic neighbours: @NewsmaxTV [right]; @NewsNation [neutral]; @bennyjohnson [right]; @FoxNewsChannelClips [right]; @nypost [right]
+Nearest topic neighbors: @NewsmaxTV [right]; @NewsNation [neutral]; @bennyjohnson [right]; @FoxNewsChannelClips [right]; @nypost [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -88,7 +88,7 @@ Top topics: Iran Conflict and Political Updates (61.5%); Christmas and Trump (3.
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 57.0 | 54.4 | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 27.8 | 13.9 | -0.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 26.6 | 19.0 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 26.6 | 19.0 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 78.5 | 74.7 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 17.7 | 10.1 | -0.5 | -0.3 |
 | F6: Person-centred (named people) | 79.7 | 84.8 | 1.1 | 0.0 |
@@ -103,9 +103,9 @@ Top topics: Iran Conflict and Political Updates (61.5%); Christmas and Trump (3.
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.9% (3.2%); outrage 50.0% (56.4%); humor 0.0% (0.1%); question 9.6% (13.7%); breaking_live 100.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 0.0% (14.0%); reaction 3.9% (2.1%); confrontation 21.1% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
-Nearest style neighbours: @franifio [left]; @rolandsmartin [left]; @VivaFrei [right]; @thewarningwithsteveschmidt [left]; @NickCruseRBN [left]
+Nearest style neighbors: @franifio [left]; @rolandsmartin [left]; @VivaFrei [right]; @thewarningwithsteveschmidt [left]; @NickCruseRBN [left]
 
-Nearest topic neighbours: @SabbySabs [left]; @Xanderhal [left]; @MLChristiansen [right]; @DueDissidence [left]; @VivaFrei [right]
+Nearest topic neighbors: @SabbySabs [left]; @Xanderhal [left]; @MLChristiansen [right]; @DueDissidence [left]; @VivaFrei [right]
 
 
 Engagement: n < 100 titles with views, not estimated.

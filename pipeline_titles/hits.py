@@ -5,14 +5,14 @@ For every creator x genre with >= 100 YouTube videos carrying a view count (all
 rows, repeats included: a re-uploaded live loop is a separate video with its own
 views): the Gini coefficient of views, the share of views held by the top 10 % of
 videos, and a Clauset-Shalizi-Newman power-law fit of the tail (powerlaw.Fit,
-discrete, xmin estimated by KS minimisation) with the log-likelihood-ratio test
-against a lognormal (R > 0 favours the power law; p is the significance of R).
+discrete, xmin estimated by KS minimization) with the log-likelihood-ratio test
+against a lognormal (R > 0 favors the power law; p is the significance of R).
 A tail is called power-law-like only when R > 0 and p < 0.05.
 
 Then, within channel group (left / neutral / right): Spearman correlations across
 creators between concentration (Gini, top-10 % share) and the topic-controlled
 dimension scores and hook shares; plus the same correlations with log(number of
-videos) and log(subscribers) as the size-artefact check, and a pooled within-group
+videos) and log(subscribers) as the size-artifact check, and a pooled within-group
 estimate (values demeaned by group x genre).
 
 Outputs (data/titles/analysis/):

@@ -1,6 +1,6 @@
 # BlazeTV (@BlazeTV)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Blaze Media · clipper: no · platform: youtube · subscribers: 2230000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Blaze Media · clipper: no · platform: youtube · subscribers: 2230000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Glenn Beck Political Commentary (6.6%); Immigration and Deportation 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 13.8 | 22.2 | -0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 76.6 | 76.2 | 0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.2 | 84.1 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.2 | 84.1 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 83.3 | 78.2 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 87.4 | 85.4 | 1.3 | 0.2 |
 | F6: Person-centred (named people) | 61.5 | 68.6 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Glenn Beck Political Commentary (6.6%); Immigration and Deportation 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.7% (3.6%); outrage 73.5% (59.6%); humor 0.0% (0.2%); question 21.7% (15.6%); breaking_live 2.0% (2.0%); episode_show 0.5% (7.6%); interview_guest 9.3% (8.5%); reaction 2.9% (2.2%); confrontation 8.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 15.9% (9.5%)
 
 
-Nearest style neighbours: @winston_marshall [right]; @TheBrianKilmeadeShow [right]; @JillianMichaels [right]; @VivaFrei [right]; @TomiLahrenIsFearless [right]
+Nearest style neighbors: @winston_marshall [right]; @TheBrianKilmeadeShow [right]; @JillianMichaels [right]; @VivaFrei [right]; @TomiLahrenIsFearless [right]
 
-Nearest topic neighbours: @NewsmaxTV [right]; @glennbeck [right]; @RealAmericasVoice [right]; @FoxNewsChannelClips [right]; @bennyjohnson [right]
+Nearest topic neighbors: @NewsmaxTV [right]; @glennbeck [right]; @RealAmericasVoice [right]; @FoxNewsChannelClips [right]; @bennyjohnson [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: 2026 US Primary Elections (28.6%); Charlie Kirk murder trial (21.4%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.8 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.8 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.2 | 0.0 |

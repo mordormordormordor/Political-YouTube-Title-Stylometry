@@ -1,7 +1,7 @@
-"""Stage 1a - sentence embeddings of every unique normalised title.
+"""Stage 1a - sentence embeddings of every unique normalized title.
 
 Encodes the unique `title_norm` strings of titles_prepared.parquet with a
-sentence-transformers model (all-mpnet-base-v2, 768-d, L2-normalised) on the Mac
+sentence-transformers model (all-mpnet-base-v2, 768-d, L2-normalized) on the Mac
 GPU and caches them, so the topic model (Stage 1), the hook classifier (Stage 3)
 and the template analysis never re-encode.
 

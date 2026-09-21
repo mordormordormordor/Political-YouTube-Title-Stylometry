@@ -1,6 +1,6 @@
 # Dan Bongino (@RealDanBongino)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Dan Bongino · clipper: no · platform: youtube · subscribers: 1010000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Dan Bongino · clipper: no · platform: youtube · subscribers: 1010000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (22.9%); 2026 Midterm Election Predict
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 84.5 | 87.0 | 0.7 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 50.2 | 72.4 | -0.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 62.3 | 44.4 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 62.3 | 44.4 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 57.3 | 88.7 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 67.8 | 68.2 | 0.5 | 0.2 |
 | F6: Person-centred (named people) | 6.3 | 4.6 | -0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (22.9%); 2026 Midterm Election Predict
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 9.8% (3.6%); outrage 57.5% (59.6%); humor 0.4% (0.2%); question 17.3% (15.6%); breaking_live 0.8% (2.0%); episode_show 56.4% (7.6%); interview_guest 5.3% (8.5%); reaction 0.8% (2.2%); confrontation 3.8% (7.8%); listicle 0.4% (0.1%); howto_explainer 7.1% (9.5%)
 
 
-Nearest style neighbours: @hutch [neutral]; @BenShapiro [right]; @StevenCrowder [right]; @KimIversen [neutral]; @RileyGaines [right]
+Nearest style neighbors: @hutch [neutral]; @BenShapiro [right]; @StevenCrowder [right]; @KimIversen [neutral]; @RileyGaines [right]
 
-Nearest topic neighbours: @TimcastIRL [right]; @LiberalHivemind [right]; @TimcastNews [right]; @Timcast [right]; @AsmonTV [right]
+Nearest topic neighbors: @TimcastIRL [right]; @LiberalHivemind [right]; @TimcastNews [right]; @Timcast [right]; @AsmonTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

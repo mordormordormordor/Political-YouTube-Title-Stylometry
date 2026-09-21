@@ -1,6 +1,6 @@
 # SaharTV (@OfficialSaharTV)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Sahar TV · clipper: no · platform: youtube · subscribers: 785000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Sahar TV · clipper: no · platform: youtube · subscribers: 785000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: British Islamophobia and Political Tensions (20.7%); Israel-Palestin
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 23.0 | 20.1 | -0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 96.7 | 95.4 | 1.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.0 | 37.7 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.0 | 37.7 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 96.2 | 95.0 | 0.8 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 42.3 | 42.7 | -0.0 | 0.2 |
 | F6: Person-centred (named people) | 63.6 | 59.8 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: British Islamophobia and Political Tensions (20.7%); Israel-Palestin
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.2% (3.6%); outrage 89.9% (59.6%); humor 0.1% (0.2%); question 0.0% (15.6%); breaking_live 3.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 7.4% (8.5%); reaction 3.9% (2.2%); confrontation 10.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.8% (9.5%)
 
 
-Nearest style neighbours: @DestinyDGGClips [right]; @CamHigby [right]; @RubinReport [right]; @chicksonright [right]; @Xanderhal [left]
+Nearest style neighbors: @DestinyDGGClips [right]; @CamHigby [right]; @RubinReport [right]; @chicksonright [right]; @Xanderhal [left]
 
-Nearest topic neighbours: @BadEmpanadaLive [left]; @LIVESNEAKO [neutral]; @TheYoungTurks [left]; @NovaraMedia [left]; @OwenJonesTalks [left]
+Nearest topic neighbors: @BadEmpanadaLive [left]; @LIVESNEAKO [neutral]; @TheYoungTurks [left]; @NovaraMedia [left]; @OwenJonesTalks [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Israel-Palestine Conflict Media (50.0%); Political Media Broadcaster
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.0 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.8 | 0.0 |

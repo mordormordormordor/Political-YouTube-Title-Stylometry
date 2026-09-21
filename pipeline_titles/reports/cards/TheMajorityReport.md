@@ -1,6 +1,6 @@
 # The Majority Report w/ Sam Seder (@TheMajorityReport)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Majority Report · clipper: no · platform: youtube · subscribers: 2090000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Majority Report · clipper: no · platform: youtube · subscribers: 2090000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: 2026 Midterm Election Predictions (6.6%); Shocking Events and Reacti
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 43.1 | 39.7 | 0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 18.0 | 23.0 | -0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 23.8 | 19.2 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 23.8 | 19.2 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 42.7 | 57.7 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 49.4 | 46.9 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 65.3 | 59.0 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: 2026 Midterm Election Predictions (6.6%); Shocking Events and Reacti
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.6% (2.7%); outrage 70.4% (63.9%); humor 0.1% (0.2%); question 11.5% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 5.4% (9.8%); reaction 0.7% (2.9%); confrontation 5.5% (7.6%); listicle 0.1% (0.1%); howto_explainer 3.2% (8.0%)
 
 
-Nearest style neighbours: @LIVESNEAKO [neutral]; @NovaraMedia [left]; @OwenReport [left]; @TheLincolnProject [left]; @destiny [left]
+Nearest style neighbors: @LIVESNEAKO [neutral]; @NovaraMedia [left]; @OwenReport [left]; @TheLincolnProject [left]; @destiny [left]
 
-Nearest topic neighbours: @SecularTalk [left]; @TheYoungTurks [left]; @Vaush [left]; @HasanAbi [left]; @TheVaushPit [left]
+Nearest topic neighbors: @SecularTalk [left]; @TheYoungTurks [left]; @Vaush [left]; @HasanAbi [left]; @TheVaushPit [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Israel-Palestine Conflict Media (11.3%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 48.1 | 45.6 | 0.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 3.8 | 3.8 | -2.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 35.4 | 35.4 | -0.3 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 35.4 | 35.4 | -0.3 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 43.0 | 39.2 | -0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 41.8 | 58.2 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 97.5 | 91.1 | 2.8 | 0.6 |
@@ -105,9 +105,9 @@ Top topics: Israel-Palestine Conflict Media (11.3%); Iran War and Strait of Horm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (1.9%); outrage 48.2% (63.2%); humor 0.0% (0.1%); question 10.3% (11.3%); breaking_live 0.0% (17.5%); episode_show 0.0% (6.4%); interview_guest 91.3% (18.3%); reaction 1.0% (1.5%); confrontation 4.6% (15.4%); listicle 0.5% (0.0%); howto_explainer 3.1% (2.9%)
 
 
-Nearest style neighbours: @thewarningwithsteveschmidt [left]; @franifio [left]; @MLChristiansen [right]; @NickCruseRBN [left]; @AnthonyBrianLogan [right]
+Nearest style neighbors: @thewarningwithsteveschmidt [left]; @franifio [left]; @MLChristiansen [right]; @NickCruseRBN [left]; @AnthonyBrianLogan [right]
 
-Nearest topic neighbours: @TheYoungTurks [left]; @DueDissidence [left]; @RealAmericasVoice [right]; @NickCruseRBN [left]; @OwenReport [left]
+Nearest topic neighbors: @TheYoungTurks [left]; @DueDissidence [left]; @RealAmericasVoice [right]; @NickCruseRBN [left]; @OwenReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

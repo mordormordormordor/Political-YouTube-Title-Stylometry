@@ -2,10 +2,10 @@
 (pipeline_titles/reports/cards.json) that report.py renders as Markdown cards and
 that the HTML page embeds.
 
-Card layout (fixed): identity (channel group, organisation, clipper, platform,
+Card layout (fixed): identity (channel group, organization, clipper, platform,
 subscribers); per genre: n titles (rows / unique / repeat share / low-n), political
 share, top-5 topics, dimension scores as percentile ranks with the group median, hook and format
-shares, five nearest style neighbours (and topic neighbours), monthly drift
+shares, five nearest style neighbors (and topic neighbors), monthly drift
 sparkline data, engagement coefficients (if n >= 100 with views), hit
 concentration, lexical diversity.
 

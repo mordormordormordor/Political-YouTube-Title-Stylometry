@@ -1,6 +1,6 @@
 # Viva Frei (@VivaFrei)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Viva Frei · clipper: no · platform: youtube · subscribers: 653000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Viva Frei · clipper: no · platform: youtube · subscribers: 653000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Canada-US Political Tensions (9.7%); FBI and Jan 6 Pipe Bomb Case (9
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 21.3 | 18.8 | -0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 66.9 | 62.3 | 0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 69.0 | 61.9 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 69.0 | 61.9 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 23.0 | 17.2 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 60.3 | 54.0 | 0.3 | 0.2 |
 | F6: Person-centred (named people) | 92.1 | 93.7 | 0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Canada-US Political Tensions (9.7%); FBI and Jan 6 Pipe Bomb Case (9
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.6% (3.6%); outrage 81.3% (59.6%); humor 0.3% (0.2%); question 37.2% (15.6%); breaking_live 2.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 19.6% (8.5%); reaction 1.2% (2.2%); confrontation 7.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 17.5% (9.5%)
 
 
-Nearest style neighbours: @MegynKelly [right]; @rolandsmartin [left]; https://rumble.com/c/GGreenwald [left]; @TomiLahrenIsFearless [right]; @BlazeTV [right]
+Nearest style neighbors: @MegynKelly [right]; @rolandsmartin [left]; https://rumble.com/c/GGreenwald [left]; @TomiLahrenIsFearless [right]; @BlazeTV [right]
 
-Nearest topic neighbours: @MegynKelly [right]; @RealAmericasVoice [right]; @NewsmaxTV [right]; @bennyjohnson [right]; @RobertGouveiaEsq [right]
+Nearest topic neighbors: @MegynKelly [right]; @RealAmericasVoice [right]; @NewsmaxTV [right]; @bennyjohnson [right]; @RobertGouveiaEsq [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran Conflict and Political Updates (26.9%); Trump Supreme Court Leg
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 58.2 | 53.2 | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 49.4 | 34.2 | -0.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 50.6 | 40.5 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 50.6 | 40.5 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 87.3 | 86.1 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 60.8 | 50.6 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 84.8 | 83.5 | 1.5 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Iran Conflict and Political Updates (26.9%); Trump Supreme Court Leg
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.2%); outrage 61.5% (56.4%); humor 0.0% (0.1%); question 38.5% (13.7%); breaking_live 11.5% (18.8%); episode_show 73.1% (26.3%); interview_guest 19.2% (14.0%); reaction 0.0% (2.1%); confrontation 7.7% (9.4%); listicle 0.0% (0.2%); howto_explainer 1.9% (5.3%)
 
 
-Nearest style neighbours: @RekietaLaw [right]; @AnthonyBrianLogan [right]; @NickCruseRBN [left]; @franifio [left]; @thejimmydoreshow [neutral]
+Nearest style neighbors: @RekietaLaw [right]; @AnthonyBrianLogan [right]; @NickCruseRBN [left]; @franifio [left]; @thejimmydoreshow [neutral]
 
-Nearest topic neighbours: @SabbySabs [left]; @MLChristiansen [right]; @AnthonyBrianLogan [right]; @MyronGainesX [right]; @RobertGouveiaEsq [right]
+Nearest topic neighbors: @SabbySabs [left]; @MLChristiansen [right]; @AnthonyBrianLogan [right]; @MyronGainesX [right]; @RobertGouveiaEsq [right]
 
 
 Engagement: n < 100 titles with views, not estimated.

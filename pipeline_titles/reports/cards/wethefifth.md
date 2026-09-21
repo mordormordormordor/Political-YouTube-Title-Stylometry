@@ -1,6 +1,6 @@
 # The Fifth Column - A Podcast (@wethefifth)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: The Fifth Column · clipper: no · platform: youtube · subscribers: 75300.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: The Fifth Column · clipper: no · platform: youtube · subscribers: 75300.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: AI and Political Concerns (8.0%); Iran War and Strait of Hormuz Tens
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 96.2 | 91.2 | 1.0 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 42.3 | 33.9 | -0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 40.2 | 46.0 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 40.2 | 46.0 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 43.5 | 41.0 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 75.3 | 74.5 | 0.8 | 0.1 |
 | F6: Person-centred (named people) | 83.7 | 83.7 | 0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: AI and Political Concerns (8.0%); Iran War and Strait of Hormuz Tens
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (2.4%); outrage 33.0% (36.0%); humor 0.0% (0.1%); question 20.5% (15.9%); breaking_live 0.0% (1.1%); episode_show 15.2% (7.0%); interview_guest 14.3% (11.6%); reaction 2.7% (1.9%); confrontation 0.9% (7.4%); listicle 0.0% (0.1%); howto_explainer 9.8% (6.6%)
 
 
-Nearest style neighbours: @TheJoyReidShow [left]; @clayandbuck [right]; @DemocracyDocket [left]; @TomiLahrenIsFearless [right]; @NYTPodcasts [left]
+Nearest style neighbors: @TheJoyReidShow [left]; @clayandbuck [right]; @DemocracyDocket [left]; @TomiLahrenIsFearless [right]; @NYTPodcasts [left]
 
-Nearest topic neighbours: @samharrisorg [left]; @DueDissidence [left]; @breakingpoints [left]; @TheMajorityReport [left]; @bulwarkmedia [left]
+Nearest topic neighbors: @samharrisorg [left]; @DueDissidence [left]; @breakingpoints [left]; @TheMajorityReport [left]; @bulwarkmedia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -83,7 +83,7 @@ Top topics: Members Only Show (50.0%); Political Media Broadcasters (50.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.9 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.9 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.9 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.1 | 0.2 |

@@ -1,6 +1,6 @@
 # LIVE SNEAKO (@LIVESNEAKO)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: SNEAKO · clipper: no · platform: youtube · subscribers: 1010000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: SNEAKO · clipper: no · platform: youtube · subscribers: 1010000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Sneako and Political Interviews (24.4%); Andrew Tate Arrest and Lega
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 56.5 | 61.9 | 0.3 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 30.1 | 22.6 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 56.1 | 38.1 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 56.1 | 38.1 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 51.0 | 62.3 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 35.1 | 34.3 | -0.1 | 0.1 |
 | F6: Person-centred (named people) | 54.4 | 64.4 | -0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Sneako and Political Interviews (24.4%); Andrew Tate Arrest and Lega
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (2.4%); outrage 46.4% (36.0%); humor 0.0% (0.1%); question 7.1% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 15.0% (11.6%); reaction 4.0% (1.9%); confrontation 15.2% (7.4%); listicle 0.2% (0.1%); howto_explainer 5.4% (6.6%)
 
 
-Nearest style neighbours: @TheMajorityReport [left]; @NovaraMedia [left]; @destiny [left]; @XAVIAER [right]; @TheLincolnProject [left]
+Nearest style neighbors: @TheMajorityReport [left]; @NovaraMedia [left]; @destiny [left]; @XAVIAER [right]; @TheLincolnProject [left]
 
-Nearest topic neighbours: @fightbackpodcast [right]; @OfficialSaharTV [right]; https://rumble.com/c/nickjfuentes [right]; @HasanAbi [left]; @BadEmpanadaLive [left]
+Nearest topic neighbors: @fightbackpodcast [right]; @OfficialSaharTV [right]; https://rumble.com/c/nickjfuentes [right]; @HasanAbi [left]; @BadEmpanadaLive [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Sneako and Political Interviews (18.8%); Shocking Events and Reactio
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 78.5 | 89.9 | 0.5 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 16.5 | 17.7 | -1.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 31.6 | 54.4 | -0.4 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 31.6 | 54.4 | -0.4 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 20.3 | 45.6 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 59.5 | 55.7 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 29.1 | 19.0 | -0.2 | 0.2 |
@@ -104,9 +104,9 @@ Top topics: Sneako and Political Interviews (18.8%); Shocking Events and Reactio
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.5% (2.2%); outrage 23.2% (29.7%); humor 0.0% (0.1%); question 7.2% (4.6%); breaking_live 7.2% (52.4%); episode_show 0.0% (2.1%); interview_guest 11.6% (13.2%); reaction 1.5% (1.4%); confrontation 4.3% (7.4%); listicle 0.0% (0.0%); howto_explainer 2.9% (1.0%)
 
 
-Nearest style neighbours: @PTLRadioShow [left]; @NewsmaxTV [right]; @ThePodcastoftheLotusEaters [right]; @markets [neutral]; @thehill [neutral]
+Nearest style neighbors: @PTLRadioShow [left]; @NewsmaxTV [right]; @ThePodcastoftheLotusEaters [right]; @markets [neutral]; @thehill [neutral]
 
-Nearest topic neighbours: @TheJoyReidShow [left]; @Reuters [neutral]; @franifio [left]; @AssociatedPress [neutral]; @TheYoungTurks [left]
+Nearest topic neighbors: @TheJoyReidShow [left]; @Reuters [neutral]; @franifio [left]; @AssociatedPress [neutral]; @TheYoungTurks [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

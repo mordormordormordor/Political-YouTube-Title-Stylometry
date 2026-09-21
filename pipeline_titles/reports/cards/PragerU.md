@@ -1,6 +1,6 @@
 # PragerU (@PragerU)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: PragerU · clipper: no · platform: youtube · subscribers: 3470000.0
+Channel group: **right** (title-leaning score, document 14) · organization: PragerU · clipper: no · platform: youtube · subscribers: 3470000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: America's 250th Anniversary and Founding History (11.2%); Christian 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 66.9 | 84.1 | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 19.7 | 20.5 | -0.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 92.5 | 92.9 | 0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 92.5 | 92.9 | 0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 46.0 | 40.2 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 77.0 | 80.8 | 0.8 | 0.2 |
 | F6: Person-centred (named people) | 90.8 | 79.1 | 0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: America's 250th Anniversary and Founding History (11.2%); Christian 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (3.6%); outrage 22.6% (59.6%); humor 0.0% (0.2%); question 27.3% (15.6%); breaking_live 0.3% (2.0%); episode_show 3.1% (7.6%); interview_guest 8.1% (8.5%); reaction 1.3% (2.2%); confrontation 4.9% (7.8%); listicle 0.3% (0.1%); howto_explainer 18.7% (9.5%)
 
 
-Nearest style neighbours: @DarkHorsePod [right]; @MegynKelly [right]; @oann [right]; https://rumble.com/c/GGreenwald [left]; @DemocracyDocket [left]
+Nearest style neighbors: @DarkHorsePod [right]; @MegynKelly [right]; @oann [right]; https://rumble.com/c/GGreenwald [left]; @DemocracyDocket [left]
 
-Nearest topic neighbours: @AndrewKlavan [right]; @morebridgetphetasy [right]; https://rumble.com/c/BannonsWarRoom [right]; @JillianMichaels [right]; @RealAmericasVoice [right]
+Nearest topic neighbors: @AndrewKlavan [right]; @morebridgetphetasy [right]; https://rumble.com/c/BannonsWarRoom [right]; @JillianMichaels [right]; @RealAmericasVoice [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Education and Schools in Political Context (58.1%); America's 250th 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.7 | -0.3 |
 | F6: Person-centred (named people) | None | None | 1.9 | 0.0 |

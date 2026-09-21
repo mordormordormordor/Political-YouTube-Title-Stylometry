@@ -1,6 +1,6 @@
 # Right Side Broadcasting Network (@RSBN)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: RSBN · clipper: no · platform: youtube · subscribers: 2080000.0
+Channel group: **right** (title-leaning score, document 14) · organization: RSBN · clipper: no · platform: youtube · subscribers: 2080000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump's speeches and events (10.3%); Political Conferences and Festi
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 95.4 | 97.9 | 1.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 4.6 | 4.6 | -1.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 100.0 | 100.0 | 2.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 100.0 | 100.0 | 2.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 72.4 | 58.2 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 33.1 | 22.6 | -0.1 | 0.2 |
 | F6: Person-centred (named people) | 88.3 | 91.2 | 0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump's speeches and events (10.3%); Political Conferences and Festi
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.9% (3.6%); outrage 14.1% (59.6%); humor 0.0% (0.2%); question 0.1% (15.6%); breaking_live 63.8% (2.0%); episode_show 99.3% (7.6%); interview_guest 21.6% (8.5%); reaction 0.7% (2.2%); confrontation 2.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.0% (9.5%)
 
 
-Nearest style neighbours: @aaronparnas1 [left]; @TimesNowWorld [neutral]; @DailyDenims [left]; https://rumble.com/c/TheAlexJonesShowLive [right]; @DarkHorsePod [right]
+Nearest style neighbors: @aaronparnas1 [left]; @TimesNowWorld [neutral]; @DailyDenims [left]; https://rumble.com/c/TheAlexJonesShowLive [right]; @DarkHorsePod [right]
 
-Nearest topic neighbours: @oann [right]; @USATODAY [neutral]; https://rumble.com/c/BannonsWarRoom [right]; @FoxNewsChannelClips [right]; @NewsmaxTV [right]
+Nearest topic neighbors: @oann [right]; @USATODAY [neutral]; https://rumble.com/c/BannonsWarRoom [right]; @FoxNewsChannelClips [right]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Trump's speeches and events (22.3%); Political Media Broadcasters (1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 100.0 | 100.0 | 1.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 8.9 | 2.5 | -1.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 93.7 | 98.7 | 2.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 93.7 | 98.7 | 2.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 46.8 | 35.4 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 51.9 | 17.7 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 48.1 | 53.2 | 0.1 | 0.0 |
@@ -104,9 +104,9 @@ Top topics: Trump's speeches and events (22.3%); Political Media Broadcasters (1
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (3.2%); outrage 6.2% (56.4%); humor 0.0% (0.1%); question 0.0% (13.7%); breaking_live 99.4% (18.8%); episode_show 98.5% (26.3%); interview_guest 12.5% (14.0%); reaction 0.0% (2.1%); confrontation 0.0% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.6% (5.3%)
 
 
-Nearest style neighbours: @TheJoyReidShow [left]; @TheOfficerTatum [right]; @underthedesknews [left]; @marclamonthillnetwork [left]; @franifio [left]
+Nearest style neighbors: @TheJoyReidShow [left]; @TheOfficerTatum [right]; @underthedesknews [left]; @marclamonthillnetwork [left]; @franifio [left]
 
-Nearest topic neighbours: @oann [right]; @ABCNews [neutral]; @NBCNews [neutral]; @thehill [neutral]; @USATODAY [neutral]
+Nearest topic neighbors: @oann [right]; @ABCNews [neutral]; @NBCNews [neutral]; @thehill [neutral]; @USATODAY [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

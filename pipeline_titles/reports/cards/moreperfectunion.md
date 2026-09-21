@@ -1,6 +1,6 @@
 # More Perfect Union (@moreperfectunion)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: More Perfect Union · clipper: no · platform: youtube · subscribers: 3940000.0
+Channel group: **left** (title-leaning score, document 14) · organization: More Perfect Union · clipper: no · platform: youtube · subscribers: 3940000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: California fraud investigation (18.3%); College Sports and NIL Contr
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 73.2 | 74.1 | 0.6 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 100.0 | 99.6 | 2.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.8 | 58.2 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.8 | 58.2 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 93.7 | 90.0 | 0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 90.4 | 89.5 | 1.5 | 0.1 |
 | F6: Person-centred (named people) | 1.3 | 0.8 | -1.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: California fraud investigation (18.3%); College Sports and NIL Contr
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (2.7%); outrage 45.1% (63.9%); humor 0.0% (0.2%); question 23.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 5.6% (9.8%); reaction 0.0% (2.9%); confrontation 1.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 12.7% (8.0%)
 
 
-Nearest style neighbours: @CoreyGilShusterAskProject [neutral]; @X22Report-y5y [right]; @glennbeck [right]; @theisabelbrown [right]; @thewarningwithsteveschmidt [left]
+Nearest style neighbors: @CoreyGilShusterAskProject [neutral]; @X22Report-y5y [right]; @glennbeck [right]; @theisabelbrown [right]; @thewarningwithsteveschmidt [left]
 
-Nearest topic neighbours: @Forbes [neutral]; @StosselTV [right]; @LeverNews [left]; @Vox [left]; @Semafor [neutral]
+Nearest topic neighbors: @Forbes [neutral]; @StosselTV [right]; @LeverNews [left]; @Vox [left]; @Semafor [neutral]
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -53,7 +53,7 @@ Top topics: Political Conferences and Festivals 2026 (50.0%); Tech Business and 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 2.8 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.0 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | 1.7 | 0.6 |

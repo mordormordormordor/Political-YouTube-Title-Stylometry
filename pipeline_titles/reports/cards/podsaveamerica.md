@@ -1,6 +1,6 @@
 # Pod Save America (@podsaveamerica)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Crooked Media · clipper: no · platform: youtube · subscribers: 1280000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Crooked Media · clipper: no · platform: youtube · subscribers: 1280000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Meltdowns and Collapses (6.6%); 2026 Midterm Election Predicti
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 14.6 | 14.2 | -0.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 11.3 | 13.4 | -0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 66.1 | 72.4 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 66.1 | 72.4 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 17.2 | 29.3 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 49.8 | 40.6 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 67.4 | 59.4 | 0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Meltdowns and Collapses (6.6%); 2026 Midterm Election Predicti
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.8% (2.7%); outrage 70.0% (63.9%); humor 0.1% (0.2%); question 10.5% (15.6%); breaking_live 4.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 12.1% (9.8%); reaction 1.7% (2.9%); confrontation 8.6% (7.6%); listicle 0.0% (0.1%); howto_explainer 4.5% (8.0%)
 
 
-Nearest style neighbours: @Forthepeoplepodcast305 [left]; @NovaraMedia [left]; @DropSiteNews [left]; @thejimmydoreshow [neutral]; @MichaelKnowles [right]
+Nearest style neighbors: @Forthepeoplepodcast305 [left]; @NovaraMedia [left]; @DropSiteNews [left]; @thejimmydoreshow [neutral]; @MichaelKnowles [right]
 
-Nearest topic neighbours: @FarronBalanced [left]; @SecularTalk [left]; @TheDamageReport [left]; @msnow [left]; @TheMichaelCohenShow [left]
+Nearest topic neighbors: @FarronBalanced [left]; @SecularTalk [left]; @TheDamageReport [left]; @msnow [left]; @TheMichaelCohenShow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

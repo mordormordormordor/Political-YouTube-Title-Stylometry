@@ -1,6 +1,6 @@
 # Sky News (@SkyNews)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Sky News · clipper: no · platform: youtube · subscribers: 9360000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Sky News · clipper: no · platform: youtube · subscribers: 9360000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.8%); UK politics and Refor
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 59.8 | 54.0 | 0.3 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 85.8 | 83.7 | 0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 25.1 | 56.5 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 25.1 | 56.5 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 69.9 | 54.4 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 78.2 | 77.8 | 0.9 | 0.1 |
 | F6: Person-centred (named people) | 27.2 | 28.5 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.8%); UK politics and Refor
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (2.7%); outrage 34.4% (63.9%); humor 0.0% (0.2%); question 21.6% (15.6%); breaking_live 1.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 7.7% (9.8%); reaction 1.8% (2.9%); confrontation 2.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 12.2% (8.0%)
 
 
-Nearest style neighbours: @CNN [left]; @BBCNews [neutral]; @RebelNewsOnline [right]; @CBSNews [neutral]; @NBCNews [neutral]
+Nearest style neighbors: @CNN [left]; @BBCNews [neutral]; @RebelNewsOnline [right]; @CBSNews [neutral]; @NBCNews [neutral]
 
-Nearest topic neighbours: @BBCNews [neutral]; @AssociatedPress [neutral]; @NovaraMedia [left]; @Reuters [neutral]; @aljazeeraenglish [left]
+Nearest topic neighbors: @BBCNews [neutral]; @AssociatedPress [neutral]; @NovaraMedia [left]; @Reuters [neutral]; @aljazeeraenglish [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (10.5%); UK PM Keir Starmer R
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 72.2 | 63.3 | 0.4 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 68.4 | 67.1 | 0.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 19.0 | 48.1 | -0.5 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 19.0 | 48.1 | -0.5 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 55.7 | 49.4 | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 44.3 | 63.3 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 55.7 | 48.1 | 0.4 | 0.6 |
@@ -104,9 +104,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (10.5%); UK PM Keir Starmer R
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.8% (1.9%); outrage 25.9% (63.2%); humor 0.0% (0.1%); question 4.4% (11.3%); breaking_live 1.8% (17.5%); episode_show 0.0% (6.4%); interview_guest 25.4% (18.3%); reaction 3.1% (1.5%); confrontation 3.1% (15.4%); listicle 0.0% (0.0%); howto_explainer 3.4% (2.9%)
 
 
-Nearest style neighbours: @PTLRadioShow [left]; @FoxNews [right]; @USATODAY [neutral]; @thehill [neutral]; @ANINewsIndia [neutral]
+Nearest style neighbors: @PTLRadioShow [left]; @FoxNews [right]; @USATODAY [neutral]; @thehill [neutral]; @ANINewsIndia [neutral]
 
-Nearest topic neighbours: @Reuters [neutral]; @TimesNowWorld [neutral]; @Firstpost [neutral]; @AssociatedPress [neutral]; @timesofindia [left]
+Nearest topic neighbors: @Reuters [neutral]; @TimesNowWorld [neutral]; @Firstpost [neutral]; @AssociatedPress [neutral]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

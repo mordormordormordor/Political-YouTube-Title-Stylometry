@@ -1,6 +1,6 @@
 # Brittany Venti (@BrittanyVenti)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Brittany Venti · clipper: no · platform: youtube · subscribers: 241000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Brittany Venti · clipper: no · platform: youtube · subscribers: 241000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Modern Women and Feminism Debate (16.4%); Shocking Events and Reacti
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 39.7 | 57.3 | 0.0 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 45.6 | 59.8 | -0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 41.0 | 23.4 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 41.0 | 23.4 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 49.4 | 71.1 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 75.7 | 80.3 | 0.8 | 0.1 |
 | F6: Person-centred (named people) | 7.9 | 9.6 | -0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Modern Women and Feminism Debate (16.4%); Shocking Events and Reacti
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (2.4%); outrage 45.5% (36.0%); humor 0.0% (0.1%); question 20.0% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 7.3% (11.6%); reaction 3.6% (1.9%); confrontation 10.9% (7.4%); listicle 0.0% (0.1%); howto_explainer 12.7% (6.6%)
 
 
-Nearest style neighbours: @XAVIAER [right]; @The_Crucible [right]; @GrahamAllen [right]; @RealDanBongino [right]; @LIVESNEAKO [neutral]
+Nearest style neighbors: @XAVIAER [right]; @The_Crucible [right]; @GrahamAllen [right]; @RealDanBongino [right]; @LIVESNEAKO [neutral]
 
-Nearest topic neighbours: @JustPearlyThings [right]; @SydneyWatson [right]; @TheAmalaEkpunobi [right]; @bbrettcooper [right]; @The_Crucible [right]
+Nearest topic neighbors: @JustPearlyThings [right]; @SydneyWatson [right]; @TheAmalaEkpunobi [right]; @bbrettcooper [right]; @The_Crucible [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -60,7 +60,7 @@ Top topics: Shocking Events and Reactions (15.8%); Modern Women and Feminism Deb
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.3 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.7 | 0.2 |

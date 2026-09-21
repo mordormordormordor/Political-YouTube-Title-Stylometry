@@ -1,6 +1,6 @@
 # New Discourses (@newdiscourses)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: New Discourses · clipper: no · platform: youtube · subscribers: 177000.0
+Channel group: **right** (title-leaning score, document 14) · organization: New Discourses · clipper: no · platform: youtube · subscribers: 177000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Christian Nationalism and Politics (14.3%); JLP Weekly Series (14.3%
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 97.1 | 97.5 | 1.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 2.1 | 2.9 | -2.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 77.8 | 70.7 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 77.8 | 70.7 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 9.6 | 14.6 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 76.6 | 86.6 | 0.8 | 0.2 |
 | F6: Person-centred (named people) | 45.6 | 17.2 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Christian Nationalism and Politics (14.3%); JLP Weekly Series (14.3%
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (3.6%); outrage 23.5% (59.6%); humor 0.0% (0.2%); question 24.5% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 0.0% (8.5%); reaction 0.0% (2.2%); confrontation 3.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 11.2% (9.5%)
 
 
-Nearest style neighbours: @TheLincolnProject [left]; @TimDillonShow [neutral]; @NYTPodcasts [left]; @TheJoyReidShow [left]; @lizwheeler [right]
+Nearest style neighbors: @TheLincolnProject [left]; @TimDillonShow [neutral]; @NYTPodcasts [left]; @TheJoyReidShow [left]; @lizwheeler [right]
 
-Nearest topic neighbours: @morebridgetphetasy [right]; @AndrewKlavan [right]; @PragerU [right]; @ChadPrather1 [right]; @samharrisorg [left]
+Nearest topic neighbors: @morebridgetphetasy [right]; @AndrewKlavan [right]; @PragerU [right]; @ChadPrather1 [right]; @samharrisorg [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

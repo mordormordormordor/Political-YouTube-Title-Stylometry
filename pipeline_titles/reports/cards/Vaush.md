@@ -1,6 +1,6 @@
 # Vaush (@Vaush)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Vaush · clipper: no · platform: youtube · subscribers: 603000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Vaush · clipper: no · platform: youtube · subscribers: 603000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (14.8%); Iran War and Strait of Hormuz
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 69.0 | 69.5 | 0.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 84.5 | 92.1 | 0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 20.5 | 17.2 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 20.5 | 17.2 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 59.0 | 83.7 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 41.4 | 43.1 | -0.0 | 0.1 |
 | F6: Person-centred (named people) | 9.2 | 8.4 | -0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (14.8%); Iran War and Strait of Hormuz
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.3% (2.7%); outrage 80.1% (63.9%); humor 0.0% (0.2%); question 7.5% (15.6%); breaking_live 3.1% (2.9%); episode_show 0.0% (2.8%); interview_guest 4.0% (9.8%); reaction 0.0% (2.9%); confrontation 1.6% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.4% (8.0%)
 
 
-Nearest style neighbours: @TheVaushPit [left]; @HasanAbi [left]; @JustPearlyThings [right]; @thedavidpakmanshow [left]; @KimIversen [neutral]
+Nearest style neighbors: @TheVaushPit [left]; @HasanAbi [left]; @JustPearlyThings [right]; @thedavidpakmanshow [left]; @KimIversen [neutral]
 
-Nearest topic neighbours: @TheMajorityReport [left]; @HasanAbi [left]; @TheVaushPit [left]; @TimcastIRL [right]; @thomhartmann [left]
+Nearest topic neighbors: @TheMajorityReport [left]; @HasanAbi [left]; @TheVaushPit [left]; @TimcastIRL [right]; @thomhartmann [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -2.7 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.1 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.5 | 0.6 |

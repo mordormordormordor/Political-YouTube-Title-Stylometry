@@ -1,6 +1,6 @@
 # Marc Lamont Hill Network (@marclamonthillnetwork)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Marc Lamont Hill · clipper: no · platform: youtube · subscribers: 275000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Marc Lamont Hill · clipper: no · platform: youtube · subscribers: 275000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Marc Lamont Hill and Joe Budden Podcast Controversy (41.7%); Israel-
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 34.3 | 43.1 | -0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 15.9 | 18.4 | -0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 48.1 | 30.5 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 48.1 | 30.5 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 25.5 | 23.0 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 12.1 | 23.0 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 97.1 | 99.2 | 1.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Marc Lamont Hill and Joe Budden Podcast Controversy (41.7%); Israel-
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.6% (2.7%); outrage 33.3% (63.9%); humor 0.6% (0.2%); question 14.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.3% (2.8%); interview_guest 9.7% (9.8%); reaction 8.7% (2.9%); confrontation 20.2% (7.6%); listicle 0.0% (0.1%); howto_explainer 10.6% (8.0%)
 
 
-Nearest style neighbours: @TheAdamCarollaShow1 [right]; @Semafor [neutral]; @oann [right]; @MegynKelly [right]; @nypost [right]
+Nearest style neighbors: @TheAdamCarollaShow1 [right]; @Semafor [neutral]; @oann [right]; @MegynKelly [right]; @nypost [right]
 
-Nearest topic neighbours: @SabbySabs [left]; @Tim_Black [right]; @TheJoyReidShow [left]; @DueDissidence [left]; @zeteo [left]
+Nearest topic neighbors: @SabbySabs [left]; @Tim_Black [right]; @TheJoyReidShow [left]; @DueDissidence [left]; @zeteo [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Race and Politics in Media (13.2%); Iran Conflict and Political Upda
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 41.8 | 48.1 | -0.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 20.3 | 19.0 | -1.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.2 | 72.2 | 0.8 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.2 | 72.2 | 0.8 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 19.0 | 12.7 | -0.4 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 19.0 | 49.4 | -0.5 | -0.3 |
 | F6: Person-centred (named people) | 62.0 | 63.3 | 0.6 | 0.6 |
@@ -104,9 +104,9 @@ Top topics: Race and Politics in Media (13.2%); Iran Conflict and Political Upda
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.6% (1.9%); outrage 49.0% (63.2%); humor 0.7% (0.1%); question 10.6% (11.3%); breaking_live 0.7% (17.5%); episode_show 0.7% (6.4%); interview_guest 20.5% (18.3%); reaction 2.6% (1.5%); confrontation 51.0% (15.4%); listicle 0.0% (0.0%); howto_explainer 4.6% (2.9%)
 
 
-Nearest style neighbours: @rolandsmartin [left]; @franifio [left]; @bulwarkmedia [left]; @MLChristiansen [right]; @NewsmaxTV [right]
+Nearest style neighbors: @rolandsmartin [left]; @franifio [left]; @bulwarkmedia [left]; @MLChristiansen [right]; @NewsmaxTV [right]
 
-Nearest topic neighbours: @rolandsmartin [left]; @DueDissidence [left]; @TheOfficerTatum [right]; @TheMajorityReport [left]; @underthedesknews [left]
+Nearest topic neighbors: @rolandsmartin [left]; @DueDissidence [left]; @TheOfficerTatum [right]; @TheMajorityReport [left]; @underthedesknews [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Belle of the Ranch (@BelleRanch)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Belle of the Ranch · clipper: no · platform: youtube · subscribers: 877000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Belle of the Ranch · clipper: no · platform: youtube · subscribers: 877000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.5%); Trump's Economic Impa
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 90.4 | 75.3 | 0.8 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 1.7 | 2.1 | -2.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 90.4 | 91.6 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 90.4 | 91.6 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 100.0 | 100.0 | 11.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 41.0 | 35.6 | -0.0 | 0.1 |
 | F6: Person-centred (named people) | 19.2 | 20.1 | -0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.5%); Trump's Economic Impa
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.4% (2.7%); outrage 20.0% (63.9%); humor 0.2% (0.2%); question 0.1% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 3.2% (9.8%); reaction 0.5% (2.9%); confrontation 3.2% (7.6%); listicle 0.5% (0.1%); howto_explainer 4.1% (8.0%)
 
 
-Nearest style neighbours: @AsmonTV [right]; https://rumble.com/c/russellbrand [right]; @harryjsisson [left]; @ClipsCandaceOwens [neutral]; @TheRealTabithaSpeaks [left]
+Nearest style neighbors: @AsmonTV [right]; https://rumble.com/c/russellbrand [right]; @harryjsisson [left]; @ClipsCandaceOwens [neutral]; @TheRealTabithaSpeaks [left]
 
-Nearest topic neighbours: @msnow [left]; @thomhartmann [left]; @thehill [neutral]; @CNN [left]; @oann [right]
+Nearest topic neighbors: @msnow [left]; @thomhartmann [left]; @thehill [neutral]; @CNN [left]; @oann [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

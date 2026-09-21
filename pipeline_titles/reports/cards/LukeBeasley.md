@@ -1,6 +1,6 @@
 # Luke Beasley (@LukeBeasley)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Luke Beasley · clipper: no · platform: youtube · subscribers: 1580000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Luke Beasley · clipper: no · platform: youtube · subscribers: 1580000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Meltdowns and Collapses (11.5%); Trump Resignation and Leaks (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 11.7 | 10.9 | -0.6 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 60.3 | 55.2 | 0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 98.3 | 98.3 | 0.9 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 98.3 | 98.3 | 0.9 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 95.8 | 95.8 | 0.8 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 53.6 | 37.7 | 0.2 | 0.1 |
 | F6: Person-centred (named people) | 28.5 | 38.1 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Meltdowns and Collapses (11.5%); Trump Resignation and Leaks (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 9.7% (2.7%); outrage 90.0% (63.9%); humor 0.3% (0.2%); question 11.4% (15.6%); breaking_live 16.4% (2.9%); episode_show 8.7% (2.8%); interview_guest 9.5% (9.8%); reaction 0.1% (2.9%); confrontation 7.1% (7.6%); listicle 0.0% (0.1%); howto_explainer 1.6% (8.0%)
 
 
-Nearest style neighbours: @SecularTalk [left]; https://rumble.com/c/TheAlexJonesShowLive [right]; @LegalAFMTN [left]; @harryjsisson [left]; @deanwithrs [left]
+Nearest style neighbors: @SecularTalk [left]; https://rumble.com/c/TheAlexJonesShowLive [right]; @LegalAFMTN [left]; @harryjsisson [left]; @deanwithrs [left]
 
-Nearest topic neighbours: @ponderingpolitics [left]; @adammockler [left]; @JackCocchiarellaShow [left]; @harryjsisson [left]; @thedavidpakmanshow [left]
+Nearest topic neighbors: @ponderingpolitics [left]; @adammockler [left]; @JackCocchiarellaShow [left]; @harryjsisson [left]; @thedavidpakmanshow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump Meltdowns and Collapses (27.2%); Trump Resignation and Leaks (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 11.4 | 5.1 | -1.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 70.9 | 86.1 | 0.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 79.7 | 75.9 | 1.4 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 79.7 | 75.9 | 1.4 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 8.9 | 60.8 | -0.5 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 89.9 | 81.0 | 0.2 | -0.3 |
 | F6: Person-centred (named people) | 3.8 | 5.1 | -0.8 | 0.6 |
@@ -105,9 +105,9 @@ Top topics: Trump Meltdowns and Collapses (27.2%); Trump Resignation and Leaks (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.1% (1.9%); outrage 94.7% (63.2%); humor 0.0% (0.1%); question 11.8% (11.3%); breaking_live 46.3% (17.5%); episode_show 32.1% (6.4%); interview_guest 5.7% (18.3%); reaction 1.2% (1.5%); confrontation 2.0% (15.4%); listicle 0.0% (0.0%); howto_explainer 2.4% (2.9%)
 
 
-Nearest style neighbours: @MeidasTouch [left]; @TheYoungTurks [left]; @ANINewsIndia [neutral]; @StatusCoup [left]; @TheDonLemonShow [left]
+Nearest style neighbors: @MeidasTouch [left]; @TheYoungTurks [left]; @ANINewsIndia [neutral]; @StatusCoup [left]; @TheDonLemonShow [left]
 
-Nearest topic neighbours: @deanwithrs [left]; @FarronBalanced [left]; @TheDamageReport [left]; @MeidasTouch [left]; @TheDonLemonShow [left]
+Nearest topic neighbors: @deanwithrs [left]; @FarronBalanced [left]; @TheDamageReport [left]; @MeidasTouch [left]; @TheDonLemonShow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

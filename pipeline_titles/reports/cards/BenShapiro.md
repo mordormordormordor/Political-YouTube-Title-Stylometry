@@ -1,6 +1,6 @@
 # Ben Shapiro (@BenShapiro)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Daily Wire · clipper: no · platform: youtube · subscribers: 6980000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Daily Wire · clipper: no · platform: youtube · subscribers: 6980000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (7.6%); Ben Shapiro and Polit
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 55.2 | 55.2 | 0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 46.4 | 48.5 | -0.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 43.9 | 35.1 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 43.9 | 35.1 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 57.7 | 61.5 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 71.5 | 68.6 | 0.6 | 0.2 |
 | F6: Person-centred (named people) | 13.0 | 25.9 | -0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (7.6%); Ben Shapiro and Polit
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.8% (3.6%); outrage 61.3% (59.6%); humor 0.6% (0.2%); question 16.0% (15.6%); breaking_live 1.3% (2.0%); episode_show 0.4% (7.6%); interview_guest 2.1% (8.5%); reaction 5.3% (2.2%); confrontation 5.9% (7.8%); listicle 0.4% (0.1%); howto_explainer 10.9% (9.5%)
 
 
-Nearest style neighbours: @StevenCrowder [right]; @KimIversen [neutral]; @RealDanBongino [right]; @hutch [neutral]; @AlexStein99 [right]
+Nearest style neighbors: @StevenCrowder [right]; @KimIversen [neutral]; @RealDanBongino [right]; @hutch [neutral]; @AlexStein99 [right]
 
-Nearest topic neighbours: @NewsmaxTV [right]; @MichaelKnowles [right]; @FoxNewsChannelClips [right]; @clayandbuck [right]; @FoxNews [right]
+Nearest topic neighbors: @NewsmaxTV [right]; @MichaelKnowles [right]; @FoxNewsChannelClips [right]; @clayandbuck [right]; @FoxNews [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (11.8%); Lindsay Clancy Murde
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.7 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.0 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.1 | 0.0 |

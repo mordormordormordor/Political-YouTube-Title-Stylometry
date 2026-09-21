@@ -1,6 +1,6 @@
 # Al Jazeera English (@aljazeeraenglish)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Al Jazeera · clipper: no · platform: youtube · subscribers: 18200000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Al Jazeera · clipper: no · platform: youtube · subscribers: 18200000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (18.9%); Israel-Lebanon Confl
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 41.4 | 24.7 | 0.0 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 77.4 | 71.1 | 0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 10.5 | 42.7 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 10.5 | 42.7 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 31.0 | 18.8 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 52.3 | 49.8 | 0.2 | 0.1 |
 | F6: Person-centred (named people) | 24.3 | 18.4 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (18.9%); Israel-Lebanon Confl
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.1% (2.7%); outrage 35.4% (63.9%); humor 0.0% (0.2%); question 11.9% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.1% (2.8%); interview_guest 4.1% (9.8%); reaction 1.0% (2.9%); confrontation 3.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 5.8% (8.0%)
 
 
-Nearest style neighbours: @Reuters [neutral]; @CBSNews [neutral]; @AssociatedPress [neutral]; @BBCNews [neutral]; @CNN [left]
+Nearest style neighbors: @Reuters [neutral]; @CBSNews [neutral]; @AssociatedPress [neutral]; @BBCNews [neutral]; @CNN [left]
 
-Nearest topic neighbours: @BBCNews [neutral]; @Reuters [neutral]; @Firstpost [neutral]; @AssociatedPress [neutral]; @timesofindia [left]
+Nearest topic neighbors: @BBCNews [neutral]; @Reuters [neutral]; @Firstpost [neutral]; @AssociatedPress [neutral]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

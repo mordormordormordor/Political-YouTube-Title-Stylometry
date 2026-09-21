@@ -1,6 +1,6 @@
 # Timcast IRL (@TimcastIRL)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Timcast · clipper: no · platform: youtube · subscribers: 2780000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Timcast · clipper: no · platform: youtube · subscribers: 2780000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (31.4%); ICE Protests and Shootings (3
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 26.4 | 41.4 | -0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 81.6 | 96.2 | 0.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 9.2 | 8.4 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 9.2 | 8.4 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 4.6 | 77.0 | -0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 3.3 | 9.2 | -0.7 | 0.2 |
 | F6: Person-centred (named people) | 21.3 | 7.9 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (31.4%); ICE Protests and Shootings (3
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (3.6%); outrage 85.5% (59.6%); humor 0.6% (0.2%); question 0.1% (15.6%); breaking_live 0.4% (2.0%); episode_show 0.1% (7.6%); interview_guest 2.1% (8.5%); reaction 0.6% (2.2%); confrontation 6.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 1.2% (9.5%)
 
 
-Nearest style neighbours: @Timcast [right]; @TimcastNews [right]; @Vaush [left]; @TheQuartering [right]; @HasanAbi [left]
+Nearest style neighbors: @Timcast [right]; @TimcastNews [right]; @Vaush [left]; @TheQuartering [right]; @HasanAbi [left]
 
-Nearest topic neighbours: @TimcastNews [right]; @HasanAbi [left]; @LiberalHivemind [right]; @Timcast [right]; @AsmonTV [right]
+Nearest topic neighbors: @TimcastNews [right]; @HasanAbi [left]; @LiberalHivemind [right]; @Timcast [right]; @AsmonTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (7.1%); ICE Protests and Shoo
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 10.1 | 11.4 | -1.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 50.6 | 53.2 | -0.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 27.8 | 32.9 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 27.8 | 32.9 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 21.5 | 30.4 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 12.7 | 25.3 | -0.6 | -0.3 |
 | F6: Person-centred (named people) | 46.8 | 39.2 | 0.1 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (7.1%); ICE Protests and Shoo
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.7% (3.2%); outrage 90.3% (56.4%); humor 0.0% (0.1%); question 0.7% (13.7%); breaking_live 2.6% (18.8%); episode_show 20.1% (26.3%); interview_guest 24.0% (14.0%); reaction 0.0% (2.1%); confrontation 1.9% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
-Nearest style neighbours: @JamarlThomas [left]; @StatusCoup [left]; @RealAmericasVoice [right]; @LIVESNEAKO [neutral]; @NewsmaxTV [right]
+Nearest style neighbors: @JamarlThomas [left]; @StatusCoup [left]; @RealAmericasVoice [right]; @LIVESNEAKO [neutral]; @NewsmaxTV [right]
 
-Nearest topic neighbours: @bennyjohnson [right]; @PBDPodcast [right]; @RealAmericasVoice [right]; @RobertGouveiaEsq [right]; @NewsmaxTV [right]
+Nearest topic neighbors: @bennyjohnson [right]; @PBDPodcast [right]; @RealAmericasVoice [right]; @RobertGouveiaEsq [right]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

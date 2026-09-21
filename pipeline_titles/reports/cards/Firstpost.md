@@ -1,6 +1,6 @@
 # Firstpost (@Firstpost)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Network18 · clipper: no · platform: youtube · subscribers: 9720000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Network18 · clipper: no · platform: youtube · subscribers: 9720000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (17.9%); Sudan Civil War and 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 20.1 | 23.4 | -0.4 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 17.2 | 17.6 | -0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 79.1 | 93.7 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 79.1 | 93.7 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 52.3 | 39.7 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 47.3 | 42.3 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 85.4 | 79.5 | 0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (17.9%); Sudan Civil War and 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (2.4%); outrage 43.7% (36.0%); humor 0.1% (0.1%); question 21.1% (15.9%); breaking_live 0.9% (1.1%); episode_show 0.2% (7.0%); interview_guest 21.9% (11.6%); reaction 1.3% (1.9%); confrontation 6.3% (7.4%); listicle 0.3% (0.1%); howto_explainer 9.5% (6.6%)
 
 
-Nearest style neighbours: @PragerU [right]; @thehill [neutral]; @MegynKelly [right]; @marclamonthillnetwork [left]; @markets [neutral]
+Nearest style neighbors: @PragerU [right]; @thehill [neutral]; @MegynKelly [right]; @marclamonthillnetwork [left]; @markets [neutral]
 
-Nearest topic neighbours: @aljazeeraenglish [left]; @Reuters [neutral]; @ANINewsIndia [neutral]; @BBCNews [neutral]; @timesofindia [left]
+Nearest topic neighbors: @aljazeeraenglish [left]; @Reuters [neutral]; @ANINewsIndia [neutral]; @BBCNews [neutral]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (23.6%); PM Modi and BRICS Di
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 22.8 | 29.1 | -0.8 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 29.1 | 31.6 | -0.7 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 82.3 | 84.8 | 1.5 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 82.3 | 84.8 | 1.5 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 69.6 | 65.8 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 43.0 | 48.1 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 68.4 | 59.5 | 0.7 | 0.2 |
@@ -105,9 +105,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (23.6%); PM Modi and BRICS Di
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (2.2%); outrage 51.1% (29.7%); humor 0.0% (0.1%); question 9.1% (4.6%); breaking_live 88.9% (52.4%); episode_show 0.0% (2.1%); interview_guest 10.4% (13.2%); reaction 1.8% (1.4%); confrontation 9.8% (7.4%); listicle 0.1% (0.0%); howto_explainer 2.4% (1.0%)
 
 
-Nearest style neighbours: @TimesNowWorld [neutral]; @RedactedNews [right]; @marclamonthillnetwork [left]; @ANINewsIndia [neutral]; @MyronGainesX [right]
+Nearest style neighbors: @TimesNowWorld [neutral]; @RedactedNews [right]; @marclamonthillnetwork [left]; @ANINewsIndia [neutral]; @MyronGainesX [right]
 
-Nearest topic neighbours: @TimesNowWorld [neutral]; @timesofindia [left]; @Reuters [neutral]; @SkyNews [left]; @AssociatedPress [neutral]
+Nearest topic neighbors: @TimesNowWorld [neutral]; @timesofindia [left]; @Reuters [neutral]; @SkyNews [left]; @AssociatedPress [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

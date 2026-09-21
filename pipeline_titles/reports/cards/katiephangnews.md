@@ -1,6 +1,6 @@
 # Katie Phang (@katiephangnews)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 812000.0
+Channel group: **left** (title-leaning score, document 14) · organization: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 812000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Supreme Court Legal Issues (13.7%); Trump Meltdowns and Collap
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 1.3 | 1.3 | -1.8 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 25.1 | 23.4 | -0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 47.3 | 56.1 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 47.3 | 56.1 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 62.8 | 64.9 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 10.5 | 3.3 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 45.2 | 39.7 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Supreme Court Legal Issues (13.7%); Trump Meltdowns and Collap
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.5% (2.7%); outrage 98.5% (63.9%); humor 0.0% (0.2%); question 7.2% (15.6%); breaking_live 2.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 7.4% (9.8%); reaction 1.0% (2.9%); confrontation 10.2% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.5% (8.0%)
 
 
-Nearest style neighbours: @TheOfficerTatum [right]; @LegalAFMTN [left]; @BlackConservativePerspective [right]; @MeidasTouch [left]; @TheQuartering [right]
+Nearest style neighbors: @TheOfficerTatum [right]; @LegalAFMTN [left]; @BlackConservativePerspective [right]; @MeidasTouch [left]; @TheQuartering [right]
 
-Nearest topic neighbours: @LegalAFMTN [left]; @briantylercohen [left]; @aaronparnas1 [left]; @GlennKirschner2 [left]; @MeidasTouch [left]
+Nearest topic neighbors: @LegalAFMTN [left]; @briantylercohen [left]; @aaronparnas1 [left]; @GlennKirschner2 [left]; @MeidasTouch [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Alex Jones and Katie Phang Updates (59.1%); Epstein Files Political 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.7 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 2.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 4.0 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 4.0 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.5 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.9 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.4 | 0.6 |

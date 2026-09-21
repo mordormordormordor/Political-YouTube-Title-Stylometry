@@ -1,6 +1,6 @@
 # Jesse Kelly (@JesseKellyDC)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Jesse Kelly · clipper: no · platform: youtube · subscribers: 122000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Jesse Kelly · clipper: no · platform: youtube · subscribers: 122000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: 2026 Midterm Election Predictions (18.2%); Trump Supreme Court Legal
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 38.9 | 35.6 | 0.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 26.8 | 28.9 | -0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 4.2 | 5.0 | -0.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 4.2 | 5.0 | -0.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 3.3 | 2.1 | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 17.6 | 18.4 | -0.4 | 0.2 |
 | F6: Person-centred (named people) | 43.9 | 46.0 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: 2026 Midterm Election Predictions (18.2%); Trump Supreme Court Legal
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.8% (3.6%); outrage 78.0% (59.6%); humor 0.0% (0.2%); question 9.5% (15.6%); breaking_live 0.2% (2.0%); episode_show 0.0% (7.6%); interview_guest 2.4% (8.5%); reaction 0.8% (2.2%); confrontation 2.8% (7.8%); listicle 0.6% (0.1%); howto_explainer 1.6% (9.5%)
 
 
-Nearest style neighbours: @FarronBalanced [left]; @OwenReport [left]; @NovaraMedia [left]; @GlennKirschner2 [left]; @TheMajorityReport [left]
+Nearest style neighbors: @FarronBalanced [left]; @OwenReport [left]; @NovaraMedia [left]; @GlennKirschner2 [left]; @TheMajorityReport [left]
 
-Nearest topic neighbours: @BlazeTV [right]; @NewsmaxTV [right]; @RobertGouveiaEsq [right]; @oann [right]; @RealAmericasVoice [right]
+Nearest topic neighbors: @BlazeTV [right]; @NewsmaxTV [right]; @RobertGouveiaEsq [right]; @oann [right]; @RealAmericasVoice [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: 2026 US Primary Elections (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 1.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.9 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -1.0 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.0 | 0.0 |

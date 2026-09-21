@@ -2,17 +2,17 @@
 runs third, after creators, because its channel groups are what every later stage reports
 by; its runtime record keeps the historical name stage7_leaning).
 
-A creator-balanced sample is labelled left / right / neither by Claude Opus through the
+A creator-balanced sample is labeled left / right / neither by Claude Opus through the
 Claude Code CLI in print mode (a Claude Pro/Max subscription covers it; temperature 0;
 twenty titles per call, sent in a seeded random order so that a call mixes channels and
 the judge sees nothing but the title text; every response cached). The label is the
 viewpoint the TITLE'S OWN WORDING signals, not the subject. Two levels of analysis follow: the
 titles themselves, and the channels grouped as left / neutral / right by their scores.
 
-Runs. The sample was labelled in three runs, all with the same prompt at temperature 0. Runs
+Runs. The sample was labeled in three runs, all with the same prompt at temperature 0. Runs
 1 and 2 (the base draw, then the top-up) sent the titles in sample order, so a call held one
 or two channels' titles and a title was read beside its channel's other titles; run 3 sent
-every title again in shuffled batches. Run 3 is the labelling of record
+every title again in shuffled batches. Run 3 is the labeling of record
 (leaning_labels.csv.gz). Runs 1 and 2 are kept as the first reading
 (leaning_labels_channel_batched.csv.gz, column `run`), and two_readings() compares the two
 readings title by title and channel by channel. The readings differ in their batches by
@@ -38,9 +38,9 @@ Outputs (data/titles/analysis/):
     leaning_labels.csv.gz       one row per sampled title with the label, is_base (base draw vs
                                 month-spread top-up) and month: the labels of record (run 3)
     leaning_labels_channel_batched.csv.gz
-                                the first reading: the same titles labelled in runs 1 and 2, batched
+                                the first reading: the same titles labeled in runs 1 and 2, batched
                                 by channel (column `run`); Claude Opus only
-    leaning_runs.json           the three labelling runs from the run log: titles sent, batch order,
+    leaning_runs.json           the three labeling runs from the run log: titles sent, batch order,
                                 calls, minutes, output tokens, the CLI's reported cost
     leaning_two_readings.json   the first reading against the labels of record: agreement and kappa
                                 (overall and per run), the confusion table, partisan shares, the
@@ -80,9 +80,9 @@ data/titles/analysis/leaning_human_sheet.csv` to get the judge's agreement with 
 (leaning_human_agreement.csv). That is the accuracy check.
 
 CLI:
-    python -m pipeline_titles.leaning --n-per-creator 50            # sample, label, analyse
+    python -m pipeline_titles.leaning --n-per-creator 50            # sample, label, analyze
     python -m pipeline_titles.leaning --n-per-creator 50 --prompt-version v2
-    python -m pipeline_titles.leaning --analyse-only [--human-labels <filled sheet>]
+    python -m pipeline_titles.leaning --analyze-only [--human-labels <filled sheet>]
     python -m pipeline_titles.leaning --repeat [--shuffle-seed N]   # read every title again, fresh shuffle
 """
 
@@ -135,8 +135,8 @@ STANCE = the political viewpoint the TITLE'S OWN WORDING signals:
 - left = the framing, word choice or target of criticism signals a left-leaning / progressive stance.
 - right = signals a right-leaning / conservative stance.
 - neither = a neutral news headline, a non-political title, or a political title whose stance cannot be told from its wording.
-TARGET = who the title attacks, mocks or centres on: trump_administration | democrats_left | republicans_right | media | foreign | other | none.
-Judge the wording, not the subject. A title that attacks Trump is left only if its wording is hostile from the left; a title that attacks Democrats is right only if its wording is hostile from the right; a title that attacks Republicans from the right (a libertarian criticising a Republican) is right with target republicans_right.
+TARGET = who the title attacks, mocks or centers on: trump_administration | democrats_left | republicans_right | media | foreign | other | none.
+Judge the wording, not the subject. A title that attacks Trump is left only if its wording is hostile from the left; a title that attacks Democrats is right only if its wording is hostile from the right; a title that attacks Republicans from the right (a libertarian criticizing a Republican) is right with target republicans_right.
 Examples: 'Trump signs order' -> neither,none. 'Trump SLAMS radical left' -> right,democrats_left. 'Trump's fascist crackdown on protesters' -> left,trump_administration. 'MAGA caller CAN'T defend ICE shooting' -> left,republicans_right. 'Kash Patel is pathetic' (from a libertarian) -> neither,trump_administration if the wording alone cannot tell.
 Output exactly one line per title, in order, as id,stance,target with no other text.
 
@@ -238,7 +238,7 @@ def label_titles(titles: Sequence[str], model: str, info: dict, prompt_version: 
                 if (j + 1) in parsed:
                     results[i] = parsed[j + 1]
             if size == BATCH and (start // size) % 10 == 0:
-                print(f"  [{model}] {sum(r is not None for r in results)}/{len(titles)} labelled, calls {info.get('calls', 0)}, cache hits {info.get('cache_hits', 0)}", flush=True)
+                print(f"  [{model}] {sum(r is not None for r in results)}/{len(titles)} labeled, calls {info.get('calls', 0)}, cache hits {info.get('cache_hits', 0)}", flush=True)
         pending = [i for i in pending if results[i] is None]
     return results
 
@@ -415,7 +415,7 @@ def compare_readings(m: pd.DataFrame, col_a: str, col_b: str, name_a: str, name_
 def two_readings(df: pd.DataFrame, first: pd.DataFrame, judge: str, min_titles: int = N_BASE) -> tuple[dict, pd.DataFrame, pd.DataFrame]:
     """The judge's two readings of the same titles: the labels of record (`df`, shuffled batches)
     against the first reading (`first`, batches in sample order, so a title was read beside its
-    channel's other titles; column `run` says which run labelled it), title by title and channel
+    channel's other titles; column `run` says which run labeled it), title by title and channel
     by channel. The readings differ in their batches by design, so the disagreement is the judge's
     own inconsistency and the effect of a title's company together; neither is measured alone.
     Returns (summary, per-channel frame, the titles whose label changed)."""
@@ -451,9 +451,9 @@ def repeat_check(df: pd.DataFrame, first: Optional[pd.DataFrame], repeat: pd.Dat
 
 
 def runs_table(df: pd.DataFrame, first: Optional[pd.DataFrame], repeat: Optional[pd.DataFrame] = None) -> list[dict]:
-    """The labelling runs, oldest first, from the run log (this stage's records that made calls)
+    """The labeling runs, oldest first, from the run log (this stage's records that made calls)
     with the titles each sent: the sample-order runs are the first reading's runs in order; the
-    first shuffled run is the labelling of record and sent every title; a later shuffled run is
+    first shuffled run is the labeling of record and sent every title; a later shuffled run is
     the repeat (every title again, a fresh seed). `titles` is None when the log and the label
     files disagree."""
     recs = sorted((r for r in read_jsonl(RUNTIMES) if r.get("stage") == "stage7_leaning" and r.get("calls")), key=lambda r: r["started"])
@@ -607,9 +607,9 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap.add_argument("--human-labels", default=None, help="filled leaning_human_sheet.csv: report every model's agreement with the human labels")
     ap.add_argument("--n-per-creator", type=int, default=N_PER_CREATOR, help=f"titles per ranked creator (base {N_BASE} for everyone; top-up spread across months)")
     ap.add_argument("--min-uploads", type=int, default=50, help="creators with fewer unique edited uploads stay at the base 16")
-    ap.add_argument("--repeat", action="store_true", help="read every title of the sample of record again with a fresh shuffle (run 4) into leaning_labels_repeat.csv.gz, then analyse; the labels of record are untouched")
+    ap.add_argument("--repeat", action="store_true", help="read every title of the sample of record again with a fresh shuffle (run 4) into leaning_labels_repeat.csv.gz, then analyze; the labels of record are untouched")
     ap.add_argument("--shuffle-seed", type=int, default=None, help=f"seed of the batch order (default {SEED}; --repeat defaults to {SEED + 1})")
-    ap.add_argument("--analyse-only", action="store_true")
+    ap.add_argument("--analyze-only", action="store_true")
     ap.add_argument("--limit", type=int, default=None)
     a = ap.parse_args(argv)
     seed = a.shuffle_seed if a.shuffle_seed is not None else (SEED + 1 if a.repeat else SEED)
@@ -630,12 +630,12 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                 todo = rep[col].isna() if col in rep.columns else pd.Series(True, index=rep.index)
                 if todo.any():
                     rep.loc[todo, col] = label_titles(rep.loc[todo, "title_raw"].tolist(), model, info, a.prompt_version, shuffle=True, seed=seed)
-                print(f"{model}: {rep[col].notna().sum()}/{len(rep)} labelled", flush=True)
+                print(f"{model}: {rep[col].notna().sum()}/{len(rep)} labeled", flush=True)
             rep["run"] = 4; rep["prompt_id"] = f"leaning-{a.prompt_version}"; rep["prompt_sha256"] = hashlib.sha256(PROMPTS[a.prompt_version].encode()).hexdigest()
             rep["temperature"] = 0.0; rep["labelled_at"] = utc_now(); rep["batch_order"] = "shuffled"; rep["shuffle_seed"] = seed; rep["model_id"] = ", ".join(info.get("model_ids", [])) or None
             rep.to_csv(REPEAT_CSV, index=False)
             df = pd.read_csv(LABELS_CSV)
-        elif a.analyse_only and LABELS_CSV.exists():
+        elif a.analyze_only and LABELS_CSV.exists():
             df = pd.read_csv(LABELS_CSV)
             if "is_base" not in df.columns or "month" not in df.columns:   # older layouts of the labels file
                 df = ensure_sample_columns(df)
@@ -652,7 +652,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             elif LABELS_CSV.exists():
                 archive = ANALYSIS_DIR / "leaning_labels_previous.csv.gz"
                 shutil.copy(LABELS_CSV, archive)
-                print(f"--relabel: previous labels kept at {archive.name}; labelling afresh with {a.models}", flush=True)
+                print(f"--relabel: previous labels kept at {archive.name}; labeling afresh with {a.models}", flush=True)
             print(f"sample: {len(df)} titles from {df['creator'].nunique()} creators", flush=True)
             for model in a.models:
                 col = model_col(f"claude_code_{model}") + ("" if a.prompt_version == "v1" else f"_{a.prompt_version}")
@@ -660,7 +660,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                 if todo.any():
                     labs = label_titles(df.loc[todo, "title_raw"].tolist(), model, info, a.prompt_version, shuffle=not a.no_shuffle, seed=seed)
                     df.loc[todo, col] = labs
-                print(f"{model}: {df[col].notna().sum()}/{len(df)} labelled", flush=True)
+                print(f"{model}: {df[col].notna().sum()}/{len(df)} labeled", flush=True)
             df["prompt_id"] = f"leaning-{a.prompt_version}"; df["prompt_sha256"] = hashlib.sha256(PROMPTS[a.prompt_version].encode()).hexdigest(); df["temperature"] = 0.0; df["labelled_at"] = utc_now()
             df["batch_order"] = "sample order" if a.no_shuffle else "shuffled"
             keep = keep_cols + [c for c in df.columns if c.startswith("label_")] + ["prompt_id", "prompt_sha256", "temperature", "labelled_at", "batch_order"]

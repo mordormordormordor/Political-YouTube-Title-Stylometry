@@ -33,7 +33,7 @@ vocabulary and two channels with the same style on different beats look differen
 
 ## Stage 0 - Preparation
 
-1. Normalise titles: strip recurring show-name prefixes/suffixes, episode numbers, date
+1. Normalize titles: strip recurring show-name prefixes/suffixes, episode numbers, date
    stamps and channel-brand tags (detect them per creator as strings occurring in more
    than 20% of that creator's titles; list what was stripped). Keep the raw title too.
 1b. Collapse exact-duplicate titles within a creator × genre to one row for every style
@@ -53,7 +53,7 @@ vocabulary and two channels with the same style on different beats look differen
    subset capped at 2,500 titles per creator × genre (random sample, seed reported),
    which trims 29 groups and keeps ~189k titles; (c) where a raw-pooled figure is shown
    anyway, label it as raw and show the balanced figure beside it.
-4. Do not categorise channels by hand. The only between-channel grouping is the channel
+4. Do not categorize channels by hand. The only between-channel grouping is the channel
    group of the leaning stage: a frontier model labels a sample of each channel's titles
    left / right / neither from the title text alone, each channel's score is
    (right − left) / titles, and the score sorts the channels into left (below −0.05),
@@ -66,13 +66,13 @@ vocabulary and two channels with the same style on different beats look differen
    `clipper` for channels whose titles are written by fans or an editing team rather
    than the creator (HasanAbi Clips, HasanReactionsfanTwo, DestinyDGGClips,
    destinyhqclips, TheVaushPit, Fox News Clips, Lauren Chen Clips, and any others you
-   detect). Report Stage 4 results at both creator and organisation level, exclude
+   detect). Report Stage 4 results at both creator and organization level, exclude
    cross-posted duplicates from similarity calculations, and keep clippers visible as
    their own group so a fan editor's style is never attributed to the creator.
 
 ## Stage 1 - Topics (what they talk about)
 
-Fit an embedding-based topic model on the normalised titles (sentence embeddings +
+Fit an embedding-based topic model on the normalized titles (sentence embeddings +
 UMAP + HDBSCAN + class-based TF-IDF, or an equivalent short-text method; classic LDA is
 not acceptable on 10-token texts). Fit on a stratified sample of ~100k titles if the full
 set is too heavy, then assign all titles. Deliver: topic labels with top terms and three
@@ -87,12 +87,12 @@ and on political titles only, reporting where the two disagree.
 ## Stage 2 - Style dimensions (how they title), via multi-dimensional analysis
 
 1. Extract 40-60 title-level style features, chosen for 10-word texts: length in
-   characters and tokens; capitalised-token share, all-caps words, full-caps titles;
+   characters and tokens; capitalized-token share, all-caps words, full-caps titles;
    per-100-title rates of `?`, `!`, `:`, `|`, quotes, brackets, ellipses, emoji, digits,
    dollar signs, percentages; first-person and second-person pronouns; contractions;
    imperatives; question words; intensifiers and superlatives; evaluative adjectives;
    negation; violence/outrage verbs (slams, destroys, exposed); hedges; nominalisations;
-   named-person count and organisation count; "how to"/"explained"/"why" markers;
+   named-person count and organization count; "how to"/"explained"/"why" markers;
    discourse markers (let's, chat, okay); leading colon-label (BREAKING:, LIVE:);
    pipe-segmented structure; a formulaicity score (share of a creator's titles that
    repeat an n-gram template used by that creator elsewhere); and lexical diversity
@@ -131,14 +131,14 @@ each, and the agreement between rule and LLM labels where both apply.
    in topic space (Stage 1). Compare both clusterings to the channel groups (adjusted
    Rand index) and to each other. The findings are where they disagree: creators who
    share a group but not a style, and creators who share a style across groups.
-2. For every creator, its five nearest style neighbours and five nearest topic
-   neighbours.
-3. Who gets named: the top 25 people and organisations across the corpus, the share of
+2. For every creator, its five nearest style neighbors and five nearest topic
+   neighbors.
+3. Who gets named: the top 25 people and organizations across the corpus, the share of
    each channel group's titles that names each, and each entity's share of outrage-frame
    titles versus its overall share.
 4. Convergent formulas: 1,370 distinct titles are used verbatim by two or more different
    creators ("This Is Insane" by seven, "This Is Disgusting" by five, "It Has Begun" by
-   four). List the most-shared verbatim titles and the most-shared normalised templates
+   four). List the most-shared verbatim titles and the most-shared normalized templates
    (after replacing names, numbers and entities with placeholders), which channel groups
    use them, and whether sharing runs within or across groups. This is the cheapest evidence
    of hook conventions spreading through the landscape.
@@ -151,10 +151,10 @@ each, and the agreement between rule and LLM labels where both apply.
    14th, so show it but never compare its volume with a full month.
 2. Engagement, within creator only: for each creator with 100+ titles in a genre,
    regress log views on the dimension scores, hook categories and length, with
-   publish-month and topic as controls, and normalise by subscriber count when comparing
+   publish-month and topic as controls, and normalize by subscriber count when comparing
    coefficients across creators. Report medians and robust effect sizes across creators,
    and the share of creators for which each feature has a consistent sign. Treat
-   `view_count` as a snapshot that favours older videos, and say so. Rumble rows have no
+   `view_count` as a snapshot that favors older videos, and say so. Rumble rows have no
    view count: exclude them from items 2 and 3 and treat `platform` as a covariate
    everywhere else rather than comparing platforms directly on five channels.
 3. Hit concentration. For each creator × genre with 100+ videos, report the Gini
@@ -164,12 +164,12 @@ each, and the agreement between rule and LLM labels where both apply.
    with the Stage 2 dimension scores and Stage 3 hook shares, within channel group.
 4. Zipf's law and views over time (document 7). Rank-frequency curves and exponents of
    the title vocabulary for the corpus, each channel group, each title label (left /
-   neither / right) and each capitalisation style (ALL CAPS, selective CAPS, Title Case,
+   neither / right) and each capitalization style (ALL CAPS, selective CAPS, Title Case,
    Sentence case, mixed / other, short / other), with a size-matched exponent so systems of
    different size can be compared; the rank-size (Zipf) slope of views within each channel
-   summarised by group and by the channel's dominant capitalisation style; views by
+   summarized by group and by the channel's dominant capitalization style; views by
    publication month per group; and, against each channel's own monthly baseline, the
-   relative views of each capitalisation style and each title label.
+   relative views of each capitalization style and each title label.
 
 ## Deliverables
 
@@ -177,14 +177,14 @@ each, and the agreement between rule and LLM labels where both apply.
   tables. Report null results as results.
 - One profile card per creator with a fixed layout: n titles by genre, channel group, topic mix
   (top 5), dimension scores as percentile ranks with the group median beside them, hook
-  shares, five nearest style neighbours, monthly drift sparkline data, and the
+  shares, five nearest style neighbors, monthly drift sparkline data, and the
   engagement coefficients if n allows.
 - Machine-readable outputs: `features.csv` (creator × genre × month), `dimensions.csv`
   (creator scores raw and topic-controlled), `topics.csv` (title → topic),
   `labels.csv` (the 3,000 LLM-rated titles), `creators.csv`, `leaning_by_creator.csv`.
 - A methods appendix: every preprocessing step, stopword list, feature definitions,
   the factor loadings, validation numbers, and sample sizes beside every statistic;
-  plus the corpus-level Zipf exponent on normalised titles before and after prefix
+  plus the corpus-level Zipf exponent on normalized titles before and after prefix
   stripping, as a check that stripping removed the show-brand head; plus the runtime
   and any API cost of each stage, so the whole pipeline can be re-run when the corpus
   is refreshed.
@@ -210,7 +210,7 @@ each, and the agreement between rule and LLM labels where both apply.
   the model id, the exact rating prompt, temperature and date in `labels.csv`, and cache
   every response so a re-run costs nothing.
 
-Where a result could be an artefact of channel size, posting volume, video age, live-loop
+Where a result could be an artifact of channel size, posting volume, video age, live-loop
 duplicates or cross-posting, test that explanation before reporting the result. Prefer
 fewer validated findings over many unvalidated ones; when two methods disagree, report
 both.

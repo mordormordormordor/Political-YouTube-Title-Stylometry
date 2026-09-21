@@ -1,6 +1,6 @@
 # Democracy Now! (@DemocracyNow)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Democracy Now! · clipper: no · platform: youtube · subscribers: 3390000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Democracy Now! · clipper: no · platform: youtube · subscribers: 3390000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: U.S. and World Headlines (22.9%); Israel-Palestine Conflict Media (7
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 31.8 | 46.0 | -0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 22.2 | 6.7 | -0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.9 | 88.3 | 0.0 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.9 | 88.3 | 0.0 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 25.1 | 9.2 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 31.0 | 28.0 | -0.2 | 0.1 |
 | F6: Person-centred (named people) | 67.8 | 52.3 | 0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: U.S. and World Headlines (22.9%); Israel-Palestine Conflict Media (7
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.6% (2.7%); outrage 37.5% (63.9%); humor 0.0% (0.2%); question 6.9% (15.6%); breaking_live 0.2% (2.9%); episode_show 22.9% (2.8%); interview_guest 2.6% (9.8%); reaction 0.1% (2.9%); confrontation 4.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.1% (8.0%)
 
 
-Nearest style neighbours: @MLChristiansen [right]; @rolandsmartin [left]; @lonerboxlive [right]; @timesofindia [left]; @nypost [right]
+Nearest style neighbors: @MLChristiansen [right]; @rolandsmartin [left]; @lonerboxlive [right]; @timesofindia [left]; @nypost [right]
 
-Nearest topic neighbours: @AssociatedPress [neutral]; @BreakThroughNews [left]; @aljazeeraenglish [left]; @breakingpoints [left]; @CBSNews [neutral]
+Nearest topic neighbors: @AssociatedPress [neutral]; @BreakThroughNews [left]; @aljazeeraenglish [left]; @breakingpoints [left]; @CBSNews [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Political Conferences and Festivals 2026 (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.0 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.8 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.8 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.5 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.7 | 0.6 |

@@ -1,6 +1,6 @@
 # HasanAbi VODs (@HasanAbiVODs3)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: HasanAbi · clipper: yes · platform: youtube · subscribers: 10900.0
+Channel group: **left** (title-leaning score, document 14) · organization: HasanAbi · clipper: yes · platform: youtube · subscribers: 10900.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: HasanAbi 2026 Schedule (92.8%); ICE Protests and Shootings (1.1%); E
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.7 | 76.6 | -0.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 18.4 | 1.3 | -0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.7 | 1.3 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.7 | 1.3 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 49.0 | 7.1 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 7.5 | 0.4 | -0.5 | 0.1 |
 | F6: Person-centred (named people) | 56.5 | 48.1 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: HasanAbi 2026 Schedule (92.8%); ICE Protests and Shootings (1.1%); E
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (2.7%); outrage 6.1% (63.9%); humor 0.0% (0.2%); question 1.1% (15.6%); breaking_live 0.0% (2.9%); episode_show 100.0% (2.8%); interview_guest 11.1% (9.8%); reaction 0.5% (2.9%); confrontation 3.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.5% (8.0%)
 
 
-Nearest style neighbours: @60minutes [neutral]; @Firstpost [neutral]; @Forbes [neutral]; @chinainsights-r2w [neutral]; @PiscoLitty [left]
+Nearest style neighbors: @60minutes [neutral]; @Firstpost [neutral]; @Forbes [neutral]; @chinainsights-r2w [neutral]; @PiscoLitty [left]
 
-Nearest topic neighbours: @PoliticsGirl [left]; @HasanReactionsfanTwo [left]; @MikeFromPA [left]; @Vaush [left]; @zeteo [left]
+Nearest topic neighbors: @PoliticsGirl [left]; @HasanReactionsfanTwo [left]; @MikeFromPA [left]; @Vaush [left]; @zeteo [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

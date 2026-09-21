@@ -1,6 +1,6 @@
 # After Party with Emily Jashinsky (@AfterPartyEmily)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Emily Jashinsky · clipper: no · platform: youtube · subscribers: 145000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Emily Jashinsky · clipper: no · platform: youtube · subscribers: 145000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Media and Journalism Critique (6.1%); Hollywood and Oscars Politics 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 28.0 | 32.2 | -0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 75.3 | 74.1 | 0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.9 | 68.6 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.9 | 68.6 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 70.7 | 61.9 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 95.4 | 93.7 | 2.2 | 0.2 |
 | F6: Person-centred (named people) | 95.8 | 95.8 | 1.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Media and Journalism Critique (6.1%); Hollywood and Oscars Politics 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.7% (3.6%); outrage 50.7% (59.6%); humor 0.2% (0.2%); question 29.0% (15.6%); breaking_live 1.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 51.0% (8.5%); reaction 1.5% (2.2%); confrontation 10.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 31.0% (9.5%)
 
 
-Nearest style neighbours: @MegynKelly [right]; https://rumble.com/c/GGreenwald [left]; @cafedotcom [left]; @FreshFitMiami [right]; @VivaFrei [right]
+Nearest style neighbors: @MegynKelly [right]; https://rumble.com/c/GGreenwald [left]; @cafedotcom [left]; @FreshFitMiami [right]; @VivaFrei [right]
 
-Nearest topic neighbours: @NewsmaxTV [right]; @clayandbuck [right]; @MichaelKnowles [right]; @BlazeTV [right]; @bennyjohnson [right]
+Nearest topic neighbors: @NewsmaxTV [right]; @clayandbuck [right]; @MichaelKnowles [right]; @BlazeTV [right]; @bennyjohnson [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran Conflict and Political Updates (10.8%); Media and Journalism Cr
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 30.4 | 38.0 | -0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 35.4 | 41.8 | -0.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 24.1 | 16.5 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 24.1 | 16.5 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 82.3 | 79.7 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 24.1 | 46.8 | -0.5 | -0.3 |
 | F6: Person-centred (named people) | 96.2 | 98.7 | 2.6 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Iran Conflict and Political Updates (10.8%); Media and Journalism Cr
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (3.2%); outrage 41.9% (56.4%); humor 0.0% (0.1%); question 10.8% (13.7%); breaking_live 1.4% (18.8%); episode_show 0.0% (26.3%); interview_guest 59.5% (14.0%); reaction 1.4% (2.1%); confrontation 23.0% (9.4%); listicle 0.0% (0.2%); howto_explainer 8.1% (5.3%)
 
 
-Nearest style neighbours: @chicksonright [right]; @NickCruseRBN [left]; @DueDissidence [left]; @VivaFrei [right]; @MLChristiansen [right]
+Nearest style neighbors: @chicksonright [right]; @NickCruseRBN [left]; @DueDissidence [left]; @VivaFrei [right]; @MLChristiansen [right]
 
-Nearest topic neighbours: @chicksonright [right]; @DueDissidence [left]; @MLChristiansen [right]; @underthedesknews [left]; @Xanderhal [left]
+Nearest topic neighbors: @chicksonright [right]; @DueDissidence [left]; @MLChristiansen [right]; @underthedesknews [left]; @Xanderhal [left]
 
 
 Engagement: n < 100 titles with views, not estimated.

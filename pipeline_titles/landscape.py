@@ -1,6 +1,6 @@
 """Stage 4 - the landscape: creators clustered in style space and in topic space,
 compared with the channel groups (left / neutral / right, from the leaning stage);
-nearest neighbours; who gets named; convergent formulas.
+nearest neighbors; who gets named; convergent formulas.
 
 Reads dimensions.csv / dimensions_title.parquet (Stage 2), topics.csv +
 topic_labels.csv + creator_topic_mix.csv (Stage 1), formats.parquet (Stage 3),
@@ -8,7 +8,7 @@ annotations.parquet, titles_prepared.parquet and creators.csv (with the groups).
 
 Every similarity is computed per genre over non-low-n creators, with cross-posted
 titles removed (a title whose case-insensitive key also appears under another
-creator of the same organisation, e.g. TYT / The Damage Report). The whole
+creator of the same organization, e.g. TYT / The Damage Report). The whole
 clustering block runs twice: on all titles and on political titles only.
 
 Outputs (data/titles/analysis/):
@@ -16,12 +16,12 @@ Outputs (data/titles/analysis/):
     cluster_comparison.csv                     adjusted Rand index: style vs group, topic vs group, style vs topic
     group_style_cohesion.csv                   within-group vs between-group style distance per channel group
     disagreements_group_style.csv              group-mates in different style clusters, and style-mates across groups
-    neighbours_style.csv, neighbours_topic.csv five nearest neighbours per creator x genre
+    neighbours_style.csv, neighbours_topic.csv five nearest neighbors per creator x genre
     map_style.csv, map_topic.csv               2-D coordinates (PCA of style z-scores; MDS of topic JS distance)
-    entities_top.csv                           top 25 people and organisations (creator-balanced counts), the
+    entities_top.csv                           top 25 people and organizations (creator-balanced counts), the
                                                channel groups naming them most, outrage-frame share vs overall
     shared_titles.csv, shared_templates.csv    verbatim titles / masked templates used by >= 2 creators
-    org_style.csv                              organisation-level style scores (title-weighted mean of members)
+    org_style.csv                              organization-level style scores (title-weighted mean of members)
 
 CLI:
     python -m pipeline_titles.landscape
@@ -158,7 +158,7 @@ def cluster_block(vec_style: pd.DataFrame, mix: pd.DataFrame, creators_tbl: pd.D
             out["disagree"].append({"genre": genre, "titles": tag, "kind": "style cluster spanning channel groups", "group": f"S{cl}", "n_creators": len(g),
                                     "n_style_clusters": int(g["group"].nunique()), "largest_cluster_share": round(float(g["group"].value_counts().iloc[0] / len(g)), 3),
                                     "members": "; ".join(f"{r.creator} ({r.group})" for r in g.sort_values("group").itertuples())})
-    # neighbours
+    # neighbors
     for i, c in enumerate(creators):
         ds = DS[i].copy(); ds[i] = np.inf
         nn = np.argsort(ds)[:5]
@@ -189,7 +189,7 @@ def run(info: dict) -> None:
     org_of = creators_tbl.set_index("creator")["organisation"]
     uniq = prepared[~prepared["is_dup"]].copy()
     uniq["organisation"] = uniq["creator"].map(org_of)
-    # cross-posted titles: same organisation, another creator, same key
+    # cross-posted titles: same organization, another creator, same key
     key_cre = uniq.groupby(["organisation", "title_key_raw"])["creator"].nunique()
     uniq["crosspost"] = uniq.set_index(["organisation", "title_key_raw"]).index.map(key_cre).to_numpy() > 1
     info["crossposted_titles"] = int(uniq["crosspost"].sum())
@@ -218,7 +218,7 @@ def run(info: dict) -> None:
         pd.DataFrame(out[name]).to_csv(ANALYSIS_DIR / f"{fname}.csv", index=False)
     info["cluster_runs"] = len(out["comparison"])
 
-    # organisation-level style (title-weighted mean of members' controlled scores, non-clipper members)
+    # organization-level style (title-weighted mean of members' controlled scores, non-clipper members)
     dims = pd.read_csv(DIMENSIONS_CSV)
     d2 = dims[~dims["clipper"].astype(str).str.lower().eq("true")] if "clipper" in dims else dims
     rows = []

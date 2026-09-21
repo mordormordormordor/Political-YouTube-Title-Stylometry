@@ -1,6 +1,6 @@
 # Chicks on the Right (@chicksonright)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Chicks on the Right · clipper: no · platform: youtube · subscribers: 191000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Chicks on the Right · clipper: no · platform: youtube · subscribers: 191000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Candace Owens and Erika Kirk Controversy (25.3%); Tucker Carlson Pol
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 16.7 | 22.6 | -0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 61.5 | 61.1 | 0.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.9 | 6.3 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.9 | 6.3 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 38.5 | 30.5 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 39.7 | 35.1 | -0.0 | 0.2 |
 | F6: Person-centred (named people) | 61.1 | 87.0 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Candace Owens and Erika Kirk Controversy (25.3%); Tucker Carlson Pol
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.1% (3.6%); outrage 78.3% (59.6%); humor 0.8% (0.2%); question 18.5% (15.6%); breaking_live 0.4% (2.0%); episode_show 0.0% (7.6%); interview_guest 7.0% (8.5%); reaction 1.5% (2.2%); confrontation 18.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 7.6% (9.5%)
 
 
-Nearest style neighbours: @PTLRadioShow [left]; @Forthepeoplepodcast305 [left]; @RebelHQ [left]; @SaltyCracker [right]; @FarronBalanced [left]
+Nearest style neighbors: @PTLRadioShow [left]; @Forthepeoplepodcast305 [left]; @RebelHQ [left]; @SaltyCracker [right]; @FarronBalanced [left]
 
-Nearest topic neighbours: @GrahamAllen [right]; @BenShapiro [right]; @thejimmydoreshow [neutral]; @SabbySabs [left]; @MegynKelly [right]
+Nearest topic neighbors: @GrahamAllen [right]; @BenShapiro [right]; @thejimmydoreshow [neutral]; @SabbySabs [left]; @MegynKelly [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran Conflict and Political Updates (22.4%); Candace Owens and Erika
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 7.6 | 8.9 | -1.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 46.8 | 43.0 | -0.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 22.8 | 8.9 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 22.8 | 8.9 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 44.3 | 36.7 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 2.5 | 1.3 | -0.9 | -0.3 |
 | F6: Person-centred (named people) | 82.3 | 87.3 | 1.4 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Iran Conflict and Political Updates (22.4%); Candace Owens and Erika
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.4% (3.2%); outrage 86.6% (56.4%); humor 0.6% (0.1%); question 10.6% (13.7%); breaking_live 0.6% (18.8%); episode_show 0.0% (26.3%); interview_guest 7.8% (14.0%); reaction 1.7% (2.1%); confrontation 40.8% (9.4%); listicle 0.0% (0.2%); howto_explainer 1.1% (5.3%)
 
 
-Nearest style neighbours: @NickCruseRBN [left]; @thejimmydoreshow [neutral]; @rolandsmartin [left]; @AfterPartyEmily [right]; @DueDissidence [left]
+Nearest style neighbors: @NickCruseRBN [left]; @thejimmydoreshow [neutral]; @rolandsmartin [left]; @AfterPartyEmily [right]; @DueDissidence [left]
 
-Nearest topic neighbours: @SabbySabs [left]; @Xanderhal [left]; @DueDissidence [left]; @TheSerfTimes [left]; @AfterPartyEmily [right]
+Nearest topic neighbors: @SabbySabs [left]; @Xanderhal [left]; @DueDissidence [left]; @TheSerfTimes [left]; @AfterPartyEmily [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

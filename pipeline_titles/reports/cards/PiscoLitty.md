@@ -1,6 +1,6 @@
 # Pisco (@PiscoLitty)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Pisco · clipper: no · platform: youtube · subscribers: 30100.0
+Channel group: **left** (title-leaning score, document 14) · organization: Pisco · clipper: no · platform: youtube · subscribers: 30100.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: MAGA Supporters and Arguments (10.7%); Brian Shapiro vs MAGA Callers
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 37.7 | 27.6 | -0.0 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 44.4 | 44.4 | -0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 38.1 | 18.4 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 38.1 | 18.4 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 35.1 | 30.1 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 32.2 | 26.8 | -0.1 | 0.1 |
 | F6: Person-centred (named people) | 11.3 | 33.1 | -0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: MAGA Supporters and Arguments (10.7%); Brian Shapiro vs MAGA Callers
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.7%); outrage 69.6% (63.9%); humor 0.0% (0.2%); question 12.5% (15.6%); breaking_live 1.8% (2.9%); episode_show 0.0% (2.8%); interview_guest 12.5% (9.8%); reaction 0.0% (2.9%); confrontation 50.0% (7.6%); listicle 0.0% (0.1%); howto_explainer 8.9% (8.0%)
 
 
-Nearest style neighbours: https://rumble.com/c/nickjfuentes [right]; @chinainsights-r2w [neutral]; @ponderingpolitics [left]; @AnthonyBrianLogan [right]; @HasanabiClips [left]
+Nearest style neighbors: https://rumble.com/c/nickjfuentes [right]; @chinainsights-r2w [neutral]; @ponderingpolitics [left]; @AnthonyBrianLogan [right]; @HasanabiClips [left]
 
-Nearest topic neighbours: @PTLRadioShow [left]; @destiny [left]; @SecularTalk [left]; @TheHumanistReport [left]; @deanwithrs [left]
+Nearest topic neighbors: @PTLRadioShow [left]; @destiny [left]; @SecularTalk [left]; @TheHumanistReport [left]; @deanwithrs [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

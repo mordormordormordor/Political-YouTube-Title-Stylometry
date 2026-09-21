@@ -1,6 +1,6 @@
 # Rufo & Lomez (@RufoandLomez)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Rufo & Lomez · clipper: no · platform: youtube · subscribers: 16300.0
+Channel group: **right** (title-leaning score, document 14) · organization: Rufo & Lomez · clipper: no · platform: youtube · subscribers: 16300.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Left Wing Political Violence (11.2%); MAGA Movement Decline (5.0%); 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.6 | 40.6 | 0.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 25.5 | 27.6 | -0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 76.2 | 70.3 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 76.2 | 70.3 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 56.9 | 51.9 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 92.9 | 92.1 | 1.9 | 0.2 |
 | F6: Person-centred (named people) | 70.3 | 68.2 | 0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Left Wing Political Violence (11.2%); MAGA Movement Decline (5.0%); 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (3.6%); outrage 51.2% (59.6%); humor 0.0% (0.2%); question 30.0% (15.6%); breaking_live 2.5% (2.0%); episode_show 61.3% (7.6%); interview_guest 13.8% (8.5%); reaction 0.0% (2.2%); confrontation 3.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 16.2% (9.5%)
 
 
-Nearest style neighbours: @Politicon [left]; @nousnetwork [left]; @XAVIAER [right]; @samharrisorg [left]; @MrTariqNasheed [right]
+Nearest style neighbors: @Politicon [left]; @nousnetwork [left]; @XAVIAER [right]; @samharrisorg [left]; @MrTariqNasheed [right]
 
-Nearest topic neighbours: @JillianMichaels [right]; @ColemanHughesOfficial [right]; @BenShapiro [right]; @AfterPartyEmily [right]; @morebridgetphetasy [right]
+Nearest topic neighbors: @JillianMichaels [right]; @ColemanHughesOfficial [right]; @BenShapiro [right]; @AfterPartyEmily [right]; @morebridgetphetasy [right]
 
 
 Engagement: n < 100 titles with views, not estimated.

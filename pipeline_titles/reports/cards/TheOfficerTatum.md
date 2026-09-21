@@ -1,6 +1,6 @@
 # The Officer Tatum (@TheOfficerTatum)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Officer Tatum · clipper: no · platform: youtube · subscribers: 3840000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Officer Tatum · clipper: no · platform: youtube · subscribers: 3840000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Nolan Wells Investigation (9.9%); Race and Politics in Media (5.7%);
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 5.0 | 6.3 | -1.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 48.1 | 46.9 | -0.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 57.3 | 43.1 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 57.3 | 43.1 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 60.3 | 52.7 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 15.5 | 15.1 | -0.4 | 0.2 |
 | F6: Person-centred (named people) | 66.1 | 78.2 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Nolan Wells Investigation (9.9%); Race and Politics in Media (5.7%);
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.9% (3.6%); outrage 87.4% (59.6%); humor 0.5% (0.2%); question 10.2% (15.6%); breaking_live 4.5% (2.0%); episode_show 7.5% (7.6%); interview_guest 9.1% (8.5%); reaction 0.7% (2.2%); confrontation 8.4% (7.8%); listicle 0.0% (0.1%); howto_explainer 5.7% (9.5%)
 
 
-Nearest style neighbours: @LegalAFMTN [left]; @deanwithrs [left]; @MeidasTouch [left]; @dollemore [left]; @TheQuartering [right]
+Nearest style neighbors: @LegalAFMTN [left]; @deanwithrs [left]; @MeidasTouch [left]; @dollemore [left]; @TheQuartering [right]
 
-Nearest topic neighbours: @MegynKelly [right]; @BlackConservativePerspective [right]; @bennyjohnson [right]; @MichaelKnowles [right]; @BlazeTV [right]
+Nearest topic neighbors: @MegynKelly [right]; @BlackConservativePerspective [right]; @bennyjohnson [right]; @MichaelKnowles [right]; @BlazeTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Nolan Wells Investigation (12.4%); Charlie Kirk murder trial (8.2%);
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 46.8 | 50.6 | 0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 44.3 | 45.6 | -0.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 97.5 | 91.1 | 3.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 97.5 | 91.1 | 3.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 70.9 | 68.4 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 45.6 | 59.5 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 7.6 | 31.6 | -0.6 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Nolan Wells Investigation (12.4%); Charlie Kirk murder trial (8.2%);
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.6% (3.2%); outrage 61.3% (56.4%); humor 0.0% (0.1%); question 19.1% (13.7%); breaking_live 85.6% (18.8%); episode_show 78.3% (26.3%); interview_guest 10.8% (14.0%); reaction 1.0% (2.1%); confrontation 3.6% (9.4%); listicle 0.0% (0.2%); howto_explainer 1.6% (5.3%)
 
 
-Nearest style neighbours: @MeidasTouch [left]; @oann [right]; @StatusCoup [left]; @Reuters [neutral]; @ANINewsIndia [neutral]
+Nearest style neighbors: @MeidasTouch [left]; @oann [right]; @StatusCoup [left]; @Reuters [neutral]; @ANINewsIndia [neutral]
 
-Nearest topic neighbours: @TimcastIRL [right]; @marclamonthillnetwork [left]; @RealAmericasVoice [right]; @TheDonLemonShow [left]; @NewsmaxTV [right]
+Nearest topic neighbors: @TimcastIRL [right]; @marclamonthillnetwork [left]; @RealAmericasVoice [right]; @TheDonLemonShow [left]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

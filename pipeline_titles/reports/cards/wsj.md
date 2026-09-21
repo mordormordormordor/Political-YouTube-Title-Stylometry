@@ -1,6 +1,6 @@
 # The Wall Street Journal (@wsj)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Wall Street Journal · clipper: no · platform: youtube · subscribers: 6690000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Wall Street Journal · clipper: no · platform: youtube · subscribers: 6690000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Tech Business and Startups (10.9%); Iran War and Strait of Hormuz Te
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 51.0 | 57.7 | 0.2 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 58.6 | 54.0 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 51.5 | 69.0 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 51.5 | 69.0 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 54.8 | 45.6 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 99.6 | 99.6 | 4.1 | 0.1 |
 | F6: Person-centred (named people) | 9.6 | 11.7 | -0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Tech Business and Startups (10.9%); Iran War and Strait of Hormuz Te
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.5% (2.4%); outrage 20.2% (36.0%); humor 0.0% (0.1%); question 63.0% (15.9%); breaking_live 0.8% (1.1%); episode_show 0.0% (7.0%); interview_guest 5.9% (11.6%); reaction 0.0% (1.9%); confrontation 2.5% (7.4%); listicle 0.8% (0.1%); howto_explainer 33.6% (6.6%)
 
 
-Nearest style neighbours: @nationalreview [right]; @TheDailyBeast [left]; @chriscuomo [left]; @nytimes [left]; @RufoandLomez [right]
+Nearest style neighbors: @nationalreview [right]; @TheDailyBeast [left]; @chriscuomo [left]; @nytimes [left]; @RufoandLomez [right]
 
-Nearest topic neighbours: @markets [neutral]; @Reuters [neutral]; @Forbes [neutral]; @TheEconomist [left]; @ZeihanonGeopolitics [neutral]
+Nearest topic neighbors: @markets [neutral]; @Reuters [neutral]; @Forbes [neutral]; @TheEconomist [left]; @ZeihanonGeopolitics [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -84,7 +84,7 @@ Top topics: Trump State of the Union Address (27.3%); Tech Business and Startups
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.0 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.2 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.2 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.8 | 0.2 |

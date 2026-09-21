@@ -1,6 +1,6 @@
 # The Crucible (@The_Crucible)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: The Crucible · clipper: no · platform: youtube · subscribers: 383000.0
+Channel group: **right** (title-leaning score, document 14) · organization: The Crucible · clipper: no · platform: youtube · subscribers: 383000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Christian Nationalism and Politics (10.2%); Candace Owens and Erika 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 21.8 | 35.1 | -0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 31.0 | 39.7 | -0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 33.5 | 13.8 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 33.5 | 13.8 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 94.6 | 94.1 | 0.7 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 28.9 | 44.8 | -0.2 | 0.2 |
 | F6: Person-centred (named people) | 5.0 | 14.2 | -1.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Christian Nationalism and Politics (10.2%); Candace Owens and Erika 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.5% (3.6%); outrage 59.7% (59.6%); humor 0.4% (0.2%); question 9.7% (15.6%); breaking_live 0.9% (2.0%); episode_show 1.3% (7.6%); interview_guest 14.2% (8.5%); reaction 3.1% (2.2%); confrontation 32.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 4.0% (9.5%)
 
 
-Nearest style neighbours: @BrittanyVenti [neutral]; @destinyhqclips [neutral]; @TheYoungTurks [left]; @adammockler [left]; https://rumble.com/c/russellbrand [right]
+Nearest style neighbors: @BrittanyVenti [neutral]; @destinyhqclips [neutral]; @TheYoungTurks [left]; @adammockler [left]; https://rumble.com/c/russellbrand [right]
 
-Nearest topic neighbours: @bbrettcooper [right]; @destiny [left]; @JustPearlyThings [right]; @AndrewKlavan [right]; @ClipsCandaceOwens [neutral]
+Nearest topic neighbors: @bbrettcooper [right]; @destiny [left]; @JustPearlyThings [right]; @AndrewKlavan [right]; @ClipsCandaceOwens [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Christian Nationalism and Politics (40.0%); Candace Owens and Erika 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | 2.0 | 0.0 |

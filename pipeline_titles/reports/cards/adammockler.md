@@ -1,6 +1,6 @@
 # Adam Mockler (@adammockler)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Adam Mockler · clipper: no · platform: youtube · subscribers: 2220000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Adam Mockler · clipper: no · platform: youtube · subscribers: 2220000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Meltdowns and Collapses (16.4%); Shocking Events and Reactions
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 24.3 | 14.6 | -0.3 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 41.4 | 56.9 | -0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.0 | 31.8 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.0 | 31.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 96.7 | 97.5 | 0.9 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 9.2 | 6.7 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 44.8 | 33.5 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Meltdowns and Collapses (16.4%); Shocking Events and Reactions
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.3% (2.7%); outrage 91.0% (63.9%); humor 0.0% (0.2%); question 1.4% (15.6%); breaking_live 4.8% (2.9%); episode_show 0.0% (2.8%); interview_guest 2.4% (9.8%); reaction 0.2% (2.9%); confrontation 6.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.5% (8.0%)
 
 
-Nearest style neighbours: @TheMichaelCohenShow [left]; @TheYoungTurks [left]; @The_Crucible [right]; @harryjsisson [left]; @deanwithrs [left]
+Nearest style neighbors: @TheMichaelCohenShow [left]; @TheYoungTurks [left]; @The_Crucible [right]; @harryjsisson [left]; @deanwithrs [left]
 
-Nearest topic neighbours: @JackCocchiarellaShow [left]; @harryjsisson [left]; @LukeBeasley [left]; @thedavidpakmanshow [left]; @FarronBalanced [left]
+Nearest topic neighbors: @JackCocchiarellaShow [left]; @harryjsisson [left]; @LukeBeasley [left]; @thedavidpakmanshow [left]; @FarronBalanced [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (50.0%); Zohran Mamdani and N
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.5 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.3 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.3 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.7 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.5 | 0.6 |

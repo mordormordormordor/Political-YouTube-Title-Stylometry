@@ -1,6 +1,6 @@
 # The Lincoln Project (@TheLincolnProject)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Lincoln Project · clipper: no · platform: youtube · subscribers: 1620000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Lincoln Project · clipper: no · platform: youtube · subscribers: 1620000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (8.9%); America's 250th Anniversary an
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 64.9 | 70.7 | 0.4 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 9.6 | 16.3 | -0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 41.4 | 51.9 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 41.4 | 51.9 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 24.7 | 59.0 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 50.2 | 51.9 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 28.9 | 20.9 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (8.9%); America's 250th Anniversary an
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.4% (2.7%); outrage 53.7% (63.9%); humor 0.0% (0.2%); question 10.6% (15.6%); breaking_live 0.8% (2.9%); episode_show 0.0% (2.8%); interview_guest 4.9% (9.8%); reaction 0.0% (2.9%); confrontation 7.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 1.6% (8.0%)
 
 
-Nearest style neighbours: @destiny [left]; @TheMajorityReport [left]; @hutch [neutral]; @LIVESNEAKO [neutral]; @GlennKirschner2 [left]
+Nearest style neighbors: @destiny [left]; @TheMajorityReport [left]; @hutch [neutral]; @LIVESNEAKO [neutral]; @GlennKirschner2 [left]
 
-Nearest topic neighbours: @Politicon [left]; @podsaveamerica [left]; @PoliticsGirl [left]; @TheMichaelCohenShow [left]; @TheVaushPit [left]
+Nearest topic neighbors: @Politicon [left]; @podsaveamerica [left]; @PoliticsGirl [left]; @TheMichaelCohenShow [left]; @TheVaushPit [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -83,7 +83,7 @@ Top topics: ICE Protests and Shootings (14.3%); Trump State of the Union Address
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.3 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.4 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.0 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.3 | 0.6 |

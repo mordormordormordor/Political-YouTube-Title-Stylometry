@@ -1,6 +1,6 @@
 # Pushing The Limits (@PTLRadioShow)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Pushing the Limits · clipper: no · platform: youtube · subscribers: 212000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Pushing the Limits · clipper: no · platform: youtube · subscribers: 212000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Brian Shapiro vs MAGA Callers Debate (28.7%); MAGA Supporters and Ar
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 26.8 | 15.5 | -0.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 57.7 | 57.3 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 24.3 | 9.2 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 24.3 | 9.2 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 54.4 | 46.0 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 35.6 | 20.5 | -0.1 | 0.1 |
 | F6: Person-centred (named people) | 81.2 | 91.6 | 0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Brian Shapiro vs MAGA Callers Debate (28.7%); MAGA Supporters and Ar
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (2.7%); outrage 80.2% (63.9%); humor 0.5% (0.2%); question 2.8% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.1% (2.8%); interview_guest 7.7% (9.8%); reaction 4.0% (2.9%); confrontation 27.0% (7.6%); listicle 0.0% (0.1%); howto_explainer 5.1% (8.0%)
 
 
-Nearest style neighbours: @chicksonright [right]; @Forthepeoplepodcast305 [left]; @SaltyCracker [right]; @HasanReactionsfanTwo [left]; @JackCocchiarellaShow [left]
+Nearest style neighbors: @chicksonright [right]; @Forthepeoplepodcast305 [left]; @SaltyCracker [right]; @HasanReactionsfanTwo [left]; @JackCocchiarellaShow [left]
 
-Nearest topic neighbours: @SecularTalk [left]; @RebelHQ [left]; @dollemore [left]; @TheDonLemonShow [left]; @TheDamageReport [left]
+Nearest topic neighbors: @SecularTalk [left]; @RebelHQ [left]; @dollemore [left]; @TheDonLemonShow [left]; @TheDamageReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (17.4%); Brian Shapiro vs MAG
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 87.3 | 55.7 | 0.6 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 64.6 | 63.3 | 0.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.3 | 7.6 | -0.7 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.3 | 7.6 | -0.7 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 50.6 | 57.0 | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 70.9 | 62.0 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 17.7 | 22.8 | -0.4 | 0.6 |
@@ -105,9 +105,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (17.4%); Brian Shapiro vs MAG
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (1.9%); outrage 62.2% (63.2%); humor 0.0% (0.1%); question 4.0% (11.3%); breaking_live 1.0% (17.5%); episode_show 0.0% (6.4%); interview_guest 10.4% (18.3%); reaction 1.5% (1.5%); confrontation 9.4% (15.4%); listicle 0.0% (0.0%); howto_explainer 1.5% (2.9%)
 
 
-Nearest style neighbours: @SkyNews [left]; @FoxNews [right]; @thehill [neutral]; @USATODAY [neutral]; @CNN [left]
+Nearest style neighbors: @SkyNews [left]; @FoxNews [right]; @thehill [neutral]; @USATODAY [neutral]; @CNN [left]
 
-Nearest topic neighbours: @timesofindia [left]; @bulwarkmedia [left]; @TheDonLemonShow [left]; @FoxNews [right]; @TheYoungTurks [left]
+Nearest topic neighbors: @timesofindia [left]; @bulwarkmedia [left]; @TheDonLemonShow [left]; @FoxNews [right]; @TheYoungTurks [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

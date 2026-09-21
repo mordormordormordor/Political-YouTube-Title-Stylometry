@@ -37,7 +37,7 @@ table.all tr.sel td{background:var(--hl)}
 
 JS = r"""
 const D = JSON.parse(document.getElementById('data').textContent);
-// channel groups (left / neutral / right from the leaning stage): left blue, neutral grey, right orange
+// channel groups (left / neutral / right from the leaning stage): left blue, neutral gray, right orange
 const GROUP_COLORS = {left:'#2a78d6', neutral:'#8a8983', right:'#eb6834', unscored:'#c9c8c3'};
 const GROUP_LABEL = {left:'left channels', neutral:'neutral channels', right:'right channels', unscored:'unscored'};
 const $ = s=>document.querySelector(s);
@@ -60,7 +60,7 @@ function renderCard(){
   const c = D.creators[current]; const g = c.genres[genre];
   const other = Object.keys(c.genres).filter(k=>k!==genre);
   let h = `<h2>${esc(c.channel_name)} <span class="muted">${esc(c.creator)}</span></h2>
-  <div>${groupChip(c.group)} organisation: <b>${esc(c.organisation)}</b> · clipper: <b>${c.clipper?'yes':'no'}</b> · ${esc(c.platform)} · subscribers: <b>${c.subscribers!=null?c.subscribers.toLocaleString():'n/a'}</b>${c.note?` · <span class="muted">${esc(c.note)}</span>`:''}</div>`;
+  <div>${groupChip(c.group)} organization: <b>${esc(c.organisation)}</b> · clipper: <b>${c.clipper?'yes':'no'}</b> · ${esc(c.platform)} · subscribers: <b>${c.subscribers!=null?c.subscribers.toLocaleString():'n/a'}</b>${c.note?` · <span class="muted">${esc(c.note)}</span>`:''}</div>`;
   if(!g){ h += `<p class="muted">No ${genre} titles for this creator${other.length?` (has ${other.join(', ')})`:''}.</p>`; $('#card').innerHTML=h; return; }
   h += `<h3>${genre}</h3><p>${g.n_rows.toLocaleString()} titles, ${g.n_unique.toLocaleString()} unique (repeat share ${fmtPct(g.repeat_share)}) · ${g.low_n?'<b>low-n: reported, not ranked</b>':'ranked'} · political share ${fmtPct(g.political_share)} · ${g.first_month} to ${g.last_month}</p>`;
   h += `<h3>Topic mix (top 5)</h3><table>${g.topics_top5.map(t=>`<tr><td>${esc(t.label)}${t.political?'':' <span class="muted">(non-political)</span>'}</td><td class="num">${fmtPct(t.share)}</td><td style="width:40%">${bar(100*t.share/Math.max(...g.topics_top5.map(x=>x.share)))}</td></tr>`).join('')}</table>`;
@@ -77,8 +77,8 @@ function renderCard(){
     for(const [k,v] of Object.entries({...g.hooks, ...g.formats})) h += `<tr><td>${k}</td><td class="num">${fmtPct(v.share)}</td><td style="width:40%">${bar(100*v.share)}</td><td class="num muted">(${fmtPct(v.group_mean)})</td></tr>`;
     h += `</table>`;
   }
-  if(g.neighbours_style) h += `<h3>Nearest style neighbours</h3><div>${g.neighbours_style.map(n=>`<span class="chip" data-c="${esc(n.creator)}" style="border-color:${GROUP_COLORS[n.group]||'#999'}">${esc(n.creator)} <span class="muted">${esc(n.group)} · ${fmt(n.distance)}</span></span>`).join('')}</div>`;
-  if(g.neighbours_topic) h += `<h3>Nearest topic neighbours</h3><div>${g.neighbours_topic.map(n=>`<span class="chip" data-c="${esc(n.creator)}" style="border-color:${GROUP_COLORS[n.group]||'#999'}">${esc(n.creator)} <span class="muted">${esc(n.group)} · JS ${fmt(n.js)}</span></span>`).join('')}</div>`;
+  if(g.neighbours_style) h += `<h3>Nearest style neighbors</h3><div>${g.neighbours_style.map(n=>`<span class="chip" data-c="${esc(n.creator)}" style="border-color:${GROUP_COLORS[n.group]||'#999'}">${esc(n.creator)} <span class="muted">${esc(n.group)} · ${fmt(n.distance)}</span></span>`).join('')}</div>`;
+  if(g.neighbours_topic) h += `<h3>Nearest topic neighbors</h3><div>${g.neighbours_topic.map(n=>`<span class="chip" data-c="${esc(n.creator)}" style="border-color:${GROUP_COLORS[n.group]||'#999'}">${esc(n.creator)} <span class="muted">${esc(n.group)} · JS ${fmt(n.js)}</span></span>`).join('')}</div>`;
   if(g.monthly && g.monthly.length){
     const months = g.monthly.map(m=>m.month+(m.partial?'*':''));
     h += `<h3>Monthly drift (${months[0]} to ${months[months.length-1]}; * = 1-14 Sept only)</h3><div class="small muted">titles per month: ${g.monthly.map(m=>m.n_titles).join(' · ')}</div>`;
@@ -90,7 +90,7 @@ function renderCard(){
   } else h += `<h3>Engagement</h3><p class="muted">fewer than 100 titles with view counts: not estimated (Rumble has no view counts).</p>`;
   if(g.hits) h += `<h3>Hit concentration</h3><p>Gini ${fmt(g.hits.gini)} · top-10% share ${fmtPct(g.hits.top10_share)} · top-1% share ${fmtPct(g.hits.top1_share)} · power-law tail ${g.hits.powerlaw_like?'<b>supported</b>':'not supported'} vs lognormal (LR ${fmt(g.hits.lr_vs_lognormal)}, p ${fmt(g.hits.lr_p,3)}; alpha ${fmt(g.hits.alpha)}, xmin ${g.hits.xmin})</p>`;
   if(g.arousal) h += `<h3>Arousal index</h3><p><b>${fmt(g.arousal.index)}</b> (rank ${g.arousal.rank!=null?Math.round(g.arousal.rank):'n/a'} in ${genre}; percentile ${fmt(g.arousal.percentile,0)}) · ALL-CAPS word share ${fmtPct(g.arousal.caps_share)} · ${fmt(g.arousal.exclamations)} ! per title · ${fmt(g.arousal.power_words)} power words per title · ${fmt(g.arousal.emoji)} emoji per title · VADER intensity ${fmt(g.arousal.vader_intensity)}</p>`;
-  if(g.caps_profile) h += `<h3>Capitalisation profile</h3><table>${Object.entries({'ALL CAPS':g.caps_profile.all_caps,'selective CAPS':g.caps_profile.selective_caps,'Title Case':g.caps_profile.title_case,'Sentence case':g.caps_profile.sentence_case,'mixed / other':g.caps_profile.mixed_other,'short / other':g.caps_profile.short_other}).map(([k,v])=>`<tr><td>${k}</td><td class="num">${fmtPct(v)}</td><td style="width:40%">${bar(100*v)}</td></tr>`).join('')}</table>`;
+  if(g.caps_profile) h += `<h3>Capitalization profile</h3><table>${Object.entries({'ALL CAPS':g.caps_profile.all_caps,'selective CAPS':g.caps_profile.selective_caps,'Title Case':g.caps_profile.title_case,'Sentence case':g.caps_profile.sentence_case,'mixed / other':g.caps_profile.mixed_other,'short / other':g.caps_profile.short_other}).map(([k,v])=>`<tr><td>${k}</td><td class="num">${fmtPct(v)}</td><td style="width:40%">${bar(100*v)}</td></tr>`).join('')}</table>`;
   if(c.signature_keywords&&c.signature_keywords.length) h += `<h3>Signature keywords (weighted log-odds vs all other channels; both genres)</h3><div>${c.signature_keywords.map(k=>`<span class="chip" title="z ${fmt(k.z,1)}, used ${k.count} times">${esc(k.word)} <span class="muted">${fmt(k.z,0)}</span></span>`).join('')}</div>`;
   if(c.leaning&&c.leaning.composition) h += `<h3>Political leaning from titles (${c.leaning.n_titles} sampled titles)</h3><table>${Object.entries(c.leaning.composition).map(([m,v])=>`<tr><td>${esc(m)}${m===c.leaning.judge?' <span class="muted">(judge of record)</span>':''}</td><td style="width:55%"><div class="bar" style="background:transparent;display:flex;overflow:hidden;border-radius:5px"><i style="position:static;width:${100*v.left}%;background:#2a78d6;height:10px"></i><i style="position:static;width:${100*v.neither}%;background:#d6d5d0;height:10px"></i><i style="position:static;width:${100*v.right}%;background:#eb6834;height:10px"></i></div></td><td class="num small">${fmtPct(v.left)} L · ${fmtPct(v.neither)} N · ${fmtPct(v.right)} R · score ${v.score>0?'+':''}${fmt(v.score)}</td></tr>`).join('')}</table>`;
   else if(c.leaning) h += `<h3>Political leaning from titles (${c.leaning.n_titles} sampled titles, two models)</h3><p>judge of record ${esc(c.leaning.judge)}: score <b>${c.leaning.judge_score>0?'+':''}${fmt(c.leaning.judge_score)}</b> (−1 = every title reads left, +1 = every title reads right) → <b>${esc(c.leaning.judge_side)}</b> · ${Object.entries(c.leaning).filter(([k])=>!['mean_score','implied_side','n_titles','consensus_neither','judge','judge_score','judge_side'].includes(k)).map(([k,v])=>`${esc(k)} ${fmt(v)}`).join(' · ')} · mean of models ${fmt(c.leaning.mean_score)} · both say 'neither' on ${fmtPct(c.leaning.consensus_neither)} of agreed titles</p>`;
@@ -123,7 +123,7 @@ function renderMap(kind){
 }
 function select(c){ if(!D.creators[c]) return; current=c; $('#creator').value=c; renderAll(); }
 let sortKey='creator', sortDir=1, groupFilter='', textFilter='';
-function pcColor(p){ // percentile 0-100 -> blue (low) .. grey .. red (high), text stays ink
+function pcColor(p){ // percentile 0-100 -> blue (low) .. gray .. red (high), text stays ink
   if(p==null) return 'transparent'; const t=(p-50)/50; const a=Math.min(1,Math.abs(t))*0.55;
   return t<0?`rgba(42,120,214,${a})`:`rgba(230,103,103,${a})`; }
 function rowsAll(){
@@ -192,10 +192,10 @@ def render_html(cards: dict, comparison: pd.DataFrame, entities: pd.DataFrame, c
 <div class="controls"><label>Creator <select id="creator"></select></label><input id="search" placeholder="search handle or channel name" size="28"><label>Genre <select id="genre"><option value="videos">videos (edited uploads)</option><option value="streams">streams (live VODs)</option></select></label></div>
 <div class="legend" id="legend"></div>
 <div class="row"><div class="col card" id="card"></div>
-<div class="col"><div class="card"><h2>Style space</h2><div class="muted small">PCA of topic-controlled factor scores (z-scored across ranked creators of the genre). Lines join the selected creator to its five nearest style neighbours; click a point to select it.</div><svg class="map" id="map-style"></svg></div>
-<div class="card"><h2>Topic space</h2><div class="muted small">MDS of Jensen-Shannon distances between creators' topic mixes; lines join the selected creator to its five nearest topic neighbours.</div><svg class="map" id="map-topic"></svg></div></div></div>
+<div class="col"><div class="card"><h2>Style space</h2><div class="muted small">PCA of topic-controlled factor scores (z-scored across ranked creators of the genre). Lines join the selected creator to its five nearest style neighbors; click a point to select it.</div><svg class="map" id="map-style"></svg></div>
+<div class="card"><h2>Topic space</h2><div class="muted small">MDS of Jensen-Shannon distances between creators' topic mixes; lines join the selected creator to its five nearest topic neighbors.</div><svg class="map" id="map-topic"></svg></div></div></div>
 <div class="card"><h2>All creators</h2><div class="muted small">One row per creator for the selected genre. arousal = 0-1 arousal index; CAPS = share of titles in ALL CAPS or with selective CAPS; leaning = title-leaning score of the judge-of-record model (−1 left … +1 right; document 14). Dimension columns are percentile ranks of the topic-controlled score among ranked creators (blue = low, red = high; hover a column header for the factor's name). Click a header to sort, a creator to open its card. A dot after the handle marks a low-n group (under 50 titles, shown but not ranked).</div>
-<div class="controls"><label>Group <select id="groupfilter"><option value="">all groups</option></select></label><input id="allsearch" placeholder="filter by handle, name or organisation" size="34"><span class="muted small" id="allcount"></span></div>
+<div class="controls"><label>Group <select id="groupfilter"><option value="">all groups</option></select></label><input id="allsearch" placeholder="filter by handle, name or organization" size="34"><span class="muted small" id="allcount"></span></div>
 <div class="allwrap"><table class="all" id="alltable"></table></div></div>
 <div class="row"><div class="col card"><h2>Dimensions</h2><table><tr><th>factor</th><th>name</th><th>from loadings</th></tr><tbody id="factors"></tbody></table><h3>Candidate labels</h3>{cand}</div>
 <div class="col card"><h2>Clusterings vs the channel groups (adjusted Rand index)</h2>{comp}<h3>Most-named people (creator-balanced)</h3>{ents}</div></div>

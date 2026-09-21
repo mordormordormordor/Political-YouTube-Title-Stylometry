@@ -10,7 +10,7 @@ features, factors, validate, formats, landscape, timeline, engagement, hits,
 profiles, zipf_views, report_data, report.
 The leaning stage runs early because its left / neutral / right channel groups are
 the grouping every later stage reports by. The LLM stages (leaning, llm_rate,
-topics' labelling) are fully cached, so a re-run with an unchanged corpus makes no
+topics' labeling) are fully cached, so a re-run with an unchanged corpus makes no
 model calls.
 """
 

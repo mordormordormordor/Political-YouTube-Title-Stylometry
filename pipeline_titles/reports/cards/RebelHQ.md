@@ -1,6 +1,6 @@
 # Rebel HQ (@RebelHQ)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: TYT Network · clipper: no · platform: youtube · subscribers: 1530000.0
+Channel group: **left** (title-leaning score, document 14) · organization: TYT Network · clipper: no · platform: youtube · subscribers: 1530000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Fox News and Trump on Air Conflicts (9.8%); ICE Protests and Shootin
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 6.7 | 4.6 | -0.9 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 52.7 | 51.9 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 7.9 | 7.9 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 7.9 | 7.9 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 33.1 | 38.1 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 9.6 | 4.6 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 60.7 | 69.0 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Fox News and Trump on Air Conflicts (9.8%); ICE Protests and Shootin
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (2.7%); outrage 94.3% (63.9%); humor 1.9% (0.2%); question 0.5% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 9.8% (9.8%); reaction 0.8% (2.9%); confrontation 21.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.8% (8.0%)
 
 
-Nearest style neighbours: @chicksonright [right]; @FarronBalanced [left]; @JackCocchiarellaShow [left]; @Forthepeoplepodcast305 [left]; @PTLRadioShow [left]
+Nearest style neighbors: @chicksonright [right]; @FarronBalanced [left]; @JackCocchiarellaShow [left]; @Forthepeoplepodcast305 [left]; @PTLRadioShow [left]
 
-Nearest topic neighbours: @TheDamageReport [left]; @dollemore [left]; @FarronBalanced [left]; @SecularTalk [left]; @TheMajorityReport [left]
+Nearest topic neighbors: @TheDamageReport [left]; @dollemore [left]; @FarronBalanced [left]; @SecularTalk [left]; @TheMajorityReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

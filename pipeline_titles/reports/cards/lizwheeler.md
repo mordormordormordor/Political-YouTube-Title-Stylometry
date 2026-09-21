@@ -1,6 +1,6 @@
 # Liz Wheeler (@lizwheeler)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Liz Wheeler · clipper: no · platform: youtube · subscribers: 445000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Liz Wheeler · clipper: no · platform: youtube · subscribers: 445000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Charlie Kirk murder trial (7.0%); Spencer Pratt LA Mayoral Campaign 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 72.4 | 60.3 | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 12.6 | 15.5 | -0.8 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 16.7 | 20.5 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 16.7 | 20.5 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 21.3 | 13.0 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 74.9 | 69.0 | 0.8 | 0.2 |
 | F6: Person-centred (named people) | 33.9 | 71.1 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Charlie Kirk murder trial (7.0%); Spencer Pratt LA Mayoral Campaign 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 12.8% (3.6%); outrage 62.8% (59.6%); humor 0.0% (0.2%); question 31.4% (15.6%); breaking_live 0.0% (2.0%); episode_show 25.6% (7.6%); interview_guest 5.8% (8.5%); reaction 2.3% (2.2%); confrontation 3.5% (7.8%); listicle 2.3% (0.1%); howto_explainer 16.3% (9.5%)
 
 
-Nearest style neighbours: @marklevinshow [right]; @NYTPodcasts [left]; @TheJoyReidShow [left]; @TheDonLemonShow [left]; @hutch [neutral]
+Nearest style neighbors: @marklevinshow [right]; @NYTPodcasts [left]; @TheJoyReidShow [left]; @TheDonLemonShow [left]; @hutch [neutral]
 
-Nearest topic neighbours: @VivaFrei [right]; @BlazeTV [right]; @bennyjohnson [right]; @RealAmericasVoice [right]; @thejimmydoreshow [neutral]
+Nearest topic neighbors: @VivaFrei [right]; @BlazeTV [right]; @bennyjohnson [right]; @RealAmericasVoice [right]; @thejimmydoreshow [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -60,7 +60,7 @@ Top topics: Ilhan Omar Criminal Investigation (7.1%); Charlie Kirk murder trial 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 96.2 | 65.8 | 0.8 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 22.8 | 30.4 | -0.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 38.0 | 30.4 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 38.0 | 30.4 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 62.0 | 67.1 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 97.5 | 97.5 | 1.1 | -0.3 |
 | F6: Person-centred (named people) | 19.0 | 41.8 | -0.4 | 0.0 |
@@ -75,9 +75,9 @@ Top topics: Ilhan Omar Criminal Investigation (7.1%); Charlie Kirk murder trial 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 11.4% (3.2%); outrage 71.4% (56.4%); humor 0.0% (0.1%); question 32.9% (13.7%); breaking_live 1.4% (18.8%); episode_show 100.0% (26.3%); interview_guest 2.9% (14.0%); reaction 1.4% (2.1%); confrontation 1.4% (9.4%); listicle 1.4% (0.2%); howto_explainer 20.0% (5.3%)
 
 
-Nearest style neighbours: @TheJoyReidShow [left]; @glennbeck [right]; @TheDonLemonShow [left]; @franifio [left]; @underthedesknews [left]
+Nearest style neighbors: @TheJoyReidShow [left]; @glennbeck [right]; @TheDonLemonShow [left]; @franifio [left]; @underthedesknews [left]
 
-Nearest topic neighbours: @bennyjohnson [right]; @TimcastIRL [right]; @TheOfficerTatum [right]; @PBDPodcast [right]; @timesofindia [left]
+Nearest topic neighbors: @bennyjohnson [right]; @TimcastIRL [right]; @TheOfficerTatum [right]; @PBDPodcast [right]; @timesofindia [left]
 
 
 Engagement: n < 100 titles with views, not estimated.

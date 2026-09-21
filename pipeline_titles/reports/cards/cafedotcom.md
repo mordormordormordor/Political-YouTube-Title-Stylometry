@@ -1,6 +1,6 @@
 # Stay Tuned with Preet Bharara (@cafedotcom)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: CAFE · clipper: no · platform: youtube · subscribers: 61400.0
+Channel group: **left** (title-leaning score, document 14) · organization: CAFE · clipper: no · platform: youtube · subscribers: 61400.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: 2026 Midterm Election Predictions (9.3%); Iran War and Strait of Hor
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 53.6 | 46.9 | 0.3 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 68.2 | 65.7 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 85.4 | 84.9 | 0.0 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 85.4 | 84.9 | 0.0 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 69.0 | 65.3 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 88.7 | 85.8 | 1.4 | 0.1 |
 | F6: Person-centred (named people) | 96.7 | 92.9 | 1.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: 2026 Midterm Election Predictions (9.3%); Iran War and Strait of Hor
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.7%); outrage 57.4% (63.9%); humor 0.0% (0.2%); question 24.1% (15.6%); breaking_live 1.8% (2.9%); episode_show 0.0% (2.8%); interview_guest 9.3% (9.8%); reaction 0.0% (2.9%); confrontation 7.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 25.9% (8.0%)
 
 
-Nearest style neighbours: @MegynKelly [right]; https://rumble.com/c/GGreenwald [left]; @jimacosta [left]; @RealAlexClark [right]; @bulwarkmedia [left]
+Nearest style neighbors: @MegynKelly [right]; https://rumble.com/c/GGreenwald [left]; @jimacosta [left]; @RealAlexClark [right]; @bulwarkmedia [left]
 
-Nearest topic neighbours: @thomhartmann [left]; @msnow [left]; @RestPoliticsUS [left]; @JesseKellyDC [right]; @chriscuomo [left]
+Nearest topic neighbors: @thomhartmann [left]; @msnow [left]; @RestPoliticsUS [left]; @JesseKellyDC [right]; @chriscuomo [left]
 
 
 Engagement: n < 100 titles with views, not estimated.

@@ -1,6 +1,6 @@
 # Triggernometry (@triggerpod)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Triggernometry · clipper: no · platform: youtube · subscribers: 1920000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Triggernometry · clipper: no · platform: youtube · subscribers: 1920000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Members Only Show (8.6%); UK Political Chaos and Government Issues (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 33.9 | 63.6 | -0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 3.3 | 2.5 | -1.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 33.1 | 51.5 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 33.1 | 51.5 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 7.9 | 4.6 | -0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 70.7 | 72.4 | 0.6 | 0.2 |
 | F6: Person-centred (named people) | 91.2 | 85.4 | 0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Members Only Show (8.6%); UK Political Chaos and Government Issues (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.7% (3.6%); outrage 21.9% (59.6%); humor 0.0% (0.2%); question 17.2% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 10.6% (8.5%); reaction 0.7% (2.2%); confrontation 7.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 10.6% (9.5%)
 
 
-Nearest style neighbours: @TheMajorityReport [left]; @podsaveamerica [left]; @NovaraMedia [left]; @fightbackpodcast [right]; @DropSiteNews [left]
+Nearest style neighbors: @TheMajorityReport [left]; @podsaveamerica [left]; @NovaraMedia [left]; @fightbackpodcast [right]; @DropSiteNews [left]
 
-Nearest topic neighbours: @ThePodcastoftheLotusEaters [right]; @AndrewKlavan [right]; @60minutes [neutral]; @winston_marshall [right]; @PragerU [right]
+Nearest topic neighbors: @ThePodcastoftheLotusEaters [right]; @AndrewKlavan [right]; @60minutes [neutral]; @winston_marshall [right]; @PragerU [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,7 +85,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (33.3%); Trump vs Maduro Vene
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 1.7 | 0.0 |

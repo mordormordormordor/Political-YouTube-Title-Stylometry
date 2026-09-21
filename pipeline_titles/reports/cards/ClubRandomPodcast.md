@@ -1,6 +1,6 @@
 # Club Random Podcast (@ClubRandomPodcast)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Bill Maher · clipper: no · platform: youtube · subscribers: 890000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Bill Maher · clipper: no · platform: youtube · subscribers: 890000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Bill Maher Political Commentary (36.5%); Political Media Figures (18
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 65.7 | 80.3 | 0.4 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 15.5 | 8.4 | -0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 67.4 | 13.4 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 67.4 | 13.4 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 39.3 | 22.2 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 61.1 | 56.9 | 0.4 | 0.1 |
 | F6: Person-centred (named people) | 82.4 | 98.3 | 0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Bill Maher Political Commentary (36.5%); Political Media Figures (18
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.5% (2.4%); outrage 17.3% (36.0%); humor 1.5% (0.1%); question 11.7% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 26.4% (11.6%); reaction 3.0% (1.9%); confrontation 10.7% (7.4%); listicle 0.0% (0.1%); howto_explainer 13.7% (6.6%)
 
 
-Nearest style neighbours: @TheDonLemonShow [left]; @OwenReport [left]; @TheJoyReidShow [left]; @TheMajorityReport [left]; @DropSiteNews [left]
+Nearest style neighbors: @TheDonLemonShow [left]; @OwenReport [left]; @TheJoyReidShow [left]; @TheMajorityReport [left]; @DropSiteNews [left]
 
-Nearest topic neighbours: @TheAdamCarollaShow1 [right]; @joerogan [neutral]; @bbrettcooper [right]; @triggerpod [right]; @SydneyWatson [right]
+Nearest topic neighbors: @TheAdamCarollaShow1 [right]; @joerogan [neutral]; @bbrettcooper [right]; @triggerpod [right]; @SydneyWatson [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

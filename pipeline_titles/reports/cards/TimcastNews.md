@@ -1,6 +1,6 @@
 # Timcast (@TimcastNews)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Timcast · clipper: no · platform: youtube · subscribers: 2120000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Timcast · clipper: no · platform: youtube · subscribers: 2120000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (43.1%); 2026 Midterm Election Predict
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 28.5 | 48.1 | -0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 79.9 | 98.3 | 0.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 41.8 | 21.8 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 41.8 | 21.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 2.5 | 85.4 | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 13.4 | 25.1 | -0.4 | 0.2 |
 | F6: Person-centred (named people) | 18.4 | 2.5 | -0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (43.1%); 2026 Midterm Election Predict
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.8% (3.6%); outrage 90.5% (59.6%); humor 0.6% (0.2%); question 2.4% (15.6%); breaking_live 0.6% (2.0%); episode_show 0.0% (7.6%); interview_guest 0.9% (8.5%); reaction 0.2% (2.2%); confrontation 4.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 1.1% (9.5%)
 
 
-Nearest style neighbours: @Timcast [right]; @TheQuartering [right]; @TimcastIRL [right]; @HasanAbi [left]; @deanwithrs [left]
+Nearest style neighbors: @Timcast [right]; @TheQuartering [right]; @TimcastIRL [right]; @HasanAbi [left]; @deanwithrs [left]
 
-Nearest topic neighbours: @TimcastIRL [right]; @LiberalHivemind [right]; @HasanAbi [left]; @AsmonTV [right]; @TheQuartering [right]
+Nearest topic neighbors: @TimcastIRL [right]; @LiberalHivemind [right]; @HasanAbi [left]; @AsmonTV [right]; @TheQuartering [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: DHS Funding Shutdown Debate (25.0%); AI and Political Concerns (12.5
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.7 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | 2.1 | 0.0 |

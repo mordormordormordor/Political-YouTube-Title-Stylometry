@@ -1,6 +1,6 @@
 # OutKick (@OutKick)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Fox Corporation · clipper: no · platform: youtube · subscribers: 1740000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Fox Corporation · clipper: no · platform: youtube · subscribers: 1740000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: College Sports and NIL Controversies (25.5%); WNBA and Sophie Cunnin
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 38.5 | 59.0 | -0.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 78.7 | 75.7 | 0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 23.4 | 25.1 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 23.4 | 25.1 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 1.7 | 1.3 | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 51.5 | 55.6 | 0.2 | 0.2 |
 | F6: Person-centred (named people) | 75.3 | 73.6 | 0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: College Sports and NIL Controversies (25.5%); WNBA and Sophie Cunnin
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 43.1% (59.6%); humor 0.0% (0.2%); question 23.5% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 66.7% (8.5%); reaction 2.0% (2.2%); confrontation 7.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.9% (9.5%)
 
 
-Nearest style neighbours: @RubinReport [right]; @clayandbuck [right]; @TheDonLemonShow [left]; @OwenReport [left]; @X22Report-y5y [right]
+Nearest style neighbors: @RubinReport [right]; @clayandbuck [right]; @TheDonLemonShow [left]; @OwenReport [left]; @X22Report-y5y [right]
 
-Nearest topic neighbours: @RileyGaines [right]; @clayandbuck [right]; @ABCNews [neutral]; @MarkDice [right]; @NewsNation [neutral]
+Nearest topic neighbors: @RileyGaines [right]; @clayandbuck [right]; @ABCNews [neutral]; @MarkDice [right]; @NewsNation [neutral]
 
 
 Engagement: n < 100 titles with views, not estimated.

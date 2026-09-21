@@ -1,6 +1,6 @@
 # BadEmpanada Live (@BadEmpanadaLive)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: BadEmpanada · clipper: no · platform: youtube · subscribers: 100000.0
+Channel group: **left** (title-leaning score, document 14) · organization: BadEmpanada · clipper: no · platform: youtube · subscribers: 100000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (24.2%); Cuba-US Political Tensions 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 47.3 | 43.5 | 0.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 27.2 | 25.9 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 8.8 | 12.1 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 8.8 | 12.1 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 33.9 | 28.0 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 28.0 | 36.4 | -0.2 | 0.1 |
 | F6: Person-centred (named people) | 10.5 | 17.6 | -0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (24.2%); Cuba-US Political Tensions 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.0% (2.7%); outrage 69.8% (63.9%); humor 0.3% (0.2%); question 16.8% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 3.0% (9.8%); reaction 1.0% (2.9%); confrontation 3.7% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.4% (8.0%)
 
 
-Nearest style neighbours: @TheYoungTurks [left]; @destiny [left]; @LegalEagle [left]; @AlexStein99 [right]; @BenShapiro [right]
+Nearest style neighbors: @TheYoungTurks [left]; @destiny [left]; @LegalEagle [left]; @AlexStein99 [right]; @BenShapiro [right]
 
-Nearest topic neighbours: @KimIversen [neutral]; @BreakThroughNews [left]; @DueDissidence [left]; @Forthepeoplepodcast305 [left]; @ajplus [left]
+Nearest topic neighbors: @KimIversen [neutral]; @BreakThroughNews [left]; @DueDissidence [left]; @Forthepeoplepodcast305 [left]; @ajplus [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Political Media Broadcasters (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 3.9 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -3.6 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -3.6 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 2.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | -2.5 | 0.6 |

@@ -1,6 +1,6 @@
 # Robert Gouveia Esq. (@RobertGouveiaEsq)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Robert Gouveia · clipper: no · platform: youtube · subscribers: 610000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Robert Gouveia · clipper: no · platform: youtube · subscribers: 610000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Supreme Court Legal Issues (17.7%); California Election Fraud 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 6.3 | 5.9 | -0.9 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 2.9 | 3.3 | -1.8 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.7 | 6.7 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.7 | 6.7 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 6.7 | 2.5 | -0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 4.6 | 2.1 | -0.7 | 0.2 |
 | F6: Person-centred (named people) | 46.4 | 54.0 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Supreme Court Legal Issues (17.7%); California Election Fraud 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.4% (3.6%); outrage 96.1% (59.6%); humor 0.0% (0.2%); question 0.3% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 6.2% (8.5%); reaction 0.4% (2.2%); confrontation 12.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 0.1% (9.5%)
 
 
-Nearest style neighbours: @breakingpoints [left]; @DueDissidence [left]; @destinyhqclips [neutral]; https://rumble.com/c/nickjfuentes [right]; @ActualJusticeWarrior [right]
+Nearest style neighbors: @breakingpoints [left]; @DueDissidence [left]; @destinyhqclips [neutral]; https://rumble.com/c/nickjfuentes [right]; @ActualJusticeWarrior [right]
 
-Nearest topic neighbours: @JesseKellyDC [right]; @NewsmaxTV [right]; @RealAmericasVoice [right]; @BlazeTV [right]; @GlennKirschner2 [left]
+Nearest topic neighbors: @JesseKellyDC [right]; @NewsmaxTV [right]; @RealAmericasVoice [right]; @BlazeTV [right]; @GlennKirschner2 [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: California Election Fraud Scandal (17.1%); Trump Supreme Court Legal
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 5.1 | 7.6 | -1.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 7.6 | 10.1 | -1.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.4 | 10.1 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.4 | 10.1 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 22.8 | 10.1 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 10.1 | 11.4 | -0.6 | -0.3 |
 | F6: Person-centred (named people) | 78.5 | 74.7 | 1.1 | 0.0 |
@@ -104,9 +104,9 @@ Top topics: California Election Fraud Scandal (17.1%); Trump Supreme Court Legal
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (3.2%); outrage 92.7% (56.4%); humor 0.0% (0.1%); question 6.8% (13.7%); breaking_live 1.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 2.9% (14.0%); reaction 1.3% (2.1%); confrontation 11.7% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.8% (5.3%)
 
 
-Nearest style neighbours: @TheYoungTurks [left]; @PBDPodcast [right]; @rolandsmartin [left]; @thejimmydoreshow [neutral]; @NickCruseRBN [left]
+Nearest style neighbors: @TheYoungTurks [left]; @PBDPodcast [right]; @rolandsmartin [left]; @thejimmydoreshow [neutral]; @NickCruseRBN [left]
 
-Nearest topic neighbours: @TimcastIRL [right]; @RealAmericasVoice [right]; @bennyjohnson [right]; @jimacosta [left]; @NewsmaxTV [right]
+Nearest topic neighbors: @TimcastIRL [right]; @RealAmericasVoice [right]; @bennyjohnson [right]; @jimacosta [left]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

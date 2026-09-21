@@ -3,7 +3,7 @@
 A second corpus, separate from the caption pipeline: **video titles** (plus the
 light metadata that comes free with them) for a much wider set of creators, so
 title style can be compared across the political-media landscape - lexicon,
-capitalisation, punctuation, framing, length, clickbait devices, how titles
+capitalization, punctuation, framing, length, clickbait devices, how titles
 drift over time, and how a channel's titles relate to its transcripts where we
 have them.
 
@@ -75,8 +75,8 @@ needs them, fetch that subset per video rather than the whole corpus.
 pipeline_titles/
   ingest/fetch_video_metadata.py   # creator list -> data/titles/ (this README's "Fetching")
   common.py        # paths, seed, genres, low-n / balancing rules, stage timer (runtimes.jsonl)
-  prepare.py       # Stage 0: normalise titles (brand/episode/date stripping), repeats, balanced subset
-  creator_seed.py  # Stage 0: organisation / clipper / note per creator (edit creators.csv, not this)
+  prepare.py       # Stage 0: normalize titles (brand/episode/date stripping), repeats, balanced subset
+  creator_seed.py  # Stage 0: organization / clipper / note per creator (edit creators.csv, not this)
   creators.py      # Stage 0b: writes data/titles/analysis/creators.csv (refuses to overwrite without --force)
   leaning.py       # Stage 0d (runtime record stage7_leaning): title-leaning labels (Claude via the CLI, cached) -> each channel's score and its
                    #          left / neutral / right group, the only between-channel grouping in the pipeline
@@ -92,11 +92,11 @@ pipeline_titles/
                    #          topic control (dimensions.csv)
   validate.py      # Stage 2d: LLM ratings vs factor scores, candidate-label mapping, test-retest
   formats.py       # Stage 3: regex formats on raw titles; hook classifier trained on the LLM labels
-  landscape.py     # Stage 4: style vs topic clusterings vs the channel groups (ARI), neighbours, entities, shared titles
+  landscape.py     # Stage 4: style vs topic clusterings vs the channel groups (ARI), neighbors, entities, shared titles
   timeline.py      # Stage 5a: monthly drift per channel group and per creator; month-to-month topic change
   engagement.py    # Stage 5b: within-creator regressions of log views on style (month + topic controls)
   hits.py          # Stage 5c: Gini / top-10 % share / Clauset-Shalizi-Newman tail fit vs lognormal
-  profiles.py      # Stage 6: capitalisation profiles, top words, arousal index, signature keywords, twins
+  profiles.py      # Stage 6: capitalization profiles, top words, arousal index, signature keywords, twins
   zipf_views.py    # Stage 6b: Zipf's law (words, views) and views over time by channel group / title label / caps style
   report_data.py   # profile-card JSON (reports/cards.json)
   report.py, report_html.py   # Markdown report + methods appendix + cards + HTML page
@@ -124,9 +124,9 @@ LLM work (title ratings, topic labels) uses the local Ollama model `qwen3:14b`
 (no `OPENAI_API_KEY` is configured on this machine); every response is cached under
 `data/titles/analysis/cache/llm*/`, so a re-run over an unchanged corpus makes no
 model calls. Ollama serves requests one at a time: run `llm_rate` before `topics`
-if you re-fit the topic model, or the topic labelling crawls behind the rating batches.
+if you re-fit the topic model, or the topic labeling crawls behind the rating batches.
 
-Hand-edited files that survive re-runs: `data/titles/analysis/creators.csv` (organisation /
+Hand-edited files that survive re-runs: `data/titles/analysis/creators.csv` (organization /
 clipper per creator; correct it, then re-run from `features`), `data/titles/analysis/factor_names.json`
 (names for the retained factors), `pipeline_titles/reports/headlines.md` (the prose
 headline findings; re-check after a corpus refresh).

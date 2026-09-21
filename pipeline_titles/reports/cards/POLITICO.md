@@ -1,6 +1,6 @@
 # POLITICO (@POLITICO)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Politico · clipper: no · platform: youtube · subscribers: 225000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Politico · clipper: no · platform: youtube · subscribers: 225000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump and Rising Energy Prices (9.8%); 2026 Midterm Election Predict
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 98.7 | 92.5 | 1.2 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 41.8 | 42.3 | -0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 12.1 | 29.7 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 12.1 | 29.7 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 31.8 | 32.6 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 82.0 | 78.7 | 1.1 | 0.1 |
 | F6: Person-centred (named people) | 22.2 | 32.6 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump and Rising Energy Prices (9.8%); 2026 Midterm Election Predict
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.0% (2.4%); outrage 30.9% (36.0%); humor 0.0% (0.1%); question 25.8% (15.9%); breaking_live 0.7% (1.1%); episode_show 0.0% (7.0%); interview_guest 6.4% (11.6%); reaction 1.4% (1.9%); confrontation 3.7% (7.4%); listicle 0.3% (0.1%); howto_explainer 8.1% (6.6%)
 
 
-Nearest style neighbours: @ABCNews [neutral]; @NBCNews [neutral]; @axios [neutral]; @BBCNews [neutral]; @CNN [left]
+Nearest style neighbors: @ABCNews [neutral]; @NBCNews [neutral]; @axios [neutral]; @BBCNews [neutral]; @CNN [left]
 
-Nearest topic neighbours: @msnow [left]; @thehill [neutral]; @thomhartmann [left]; @CNN [left]; @BelleRanch [left]
+Nearest topic neighbors: @msnow [left]; @thehill [neutral]; @thomhartmann [left]; @CNN [left]; @BelleRanch [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

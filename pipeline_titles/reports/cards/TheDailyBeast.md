@@ -1,6 +1,6 @@
 # The Daily Beast (@TheDailyBeast)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Daily Beast · clipper: no · platform: youtube · subscribers: 727000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Daily Beast · clipper: no · platform: youtube · subscribers: 727000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Meltdowns and Collapses (12.4%); Trump Resignation and Leaks (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 45.2 | 25.1 | 0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 69.0 | 69.9 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.7 | 87.4 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.7 | 87.4 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 7.5 | 33.1 | -0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 98.7 | 98.3 | 3.6 | 0.1 |
 | F6: Person-centred (named people) | 23.4 | 23.0 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Meltdowns and Collapses (12.4%); Trump Resignation and Leaks (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.3% (2.7%); outrage 81.1% (63.9%); humor 0.0% (0.2%); question 39.4% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 3.1% (9.8%); reaction 0.0% (2.9%); confrontation 3.7% (7.6%); listicle 0.0% (0.1%); howto_explainer 36.6% (8.0%)
 
 
-Nearest style neighbours: @nationalreview [right]; @nytimes [left]; @wsj [neutral]; @chriscuomo [left]; @RufoandLomez [right]
+Nearest style neighbors: @nationalreview [right]; @nytimes [left]; @wsj [neutral]; @chriscuomo [left]; @RufoandLomez [right]
 
-Nearest topic neighbours: @harryjsisson [left]; @JackCocchiarellaShow [left]; @thedavidpakmanshow [left]; @MeidasTouch [left]; @fastpoliticspodcast [left]
+Nearest topic neighbors: @harryjsisson [left]; @JackCocchiarellaShow [left]; @thedavidpakmanshow [left]; @MeidasTouch [left]; @fastpoliticspodcast [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Ukraine-Russia War and Political Figures (11.8%); Political Podcasts
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.6 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.0 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.0 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.4 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.7 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.3 | 0.6 |

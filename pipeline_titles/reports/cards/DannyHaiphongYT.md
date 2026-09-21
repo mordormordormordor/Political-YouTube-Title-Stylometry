@@ -1,6 +1,6 @@
 # Danny Haiphong (@DannyHaiphongYT)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Danny Haiphong · clipper: no · platform: youtube · subscribers: 683000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Danny Haiphong · clipper: no · platform: youtube · subscribers: 683000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (71.9%); Ukraine-Russia War a
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 0.4 | 0.4 | -2.8 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 77.8 | 70.3 | 0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 36.0 | 78.2 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 36.0 | 78.2 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 36.0 | 52.3 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 2.9 | 2.9 | -0.7 | 0.1 |
 | F6: Person-centred (named people) | 99.6 | 99.6 | 2.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (71.9%); Ukraine-Russia War a
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.7%); outrage 98.4% (63.9%); humor 0.0% (0.2%); question 10.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 0.0% (9.8%); reaction 0.0% (2.9%); confrontation 23.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.0% (8.0%)
 
 
-Nearest style neighbours: @TuckerCarlson [neutral]; @JamarlThomas [left]; @lovettorleaveitpodcast [left]; @TheAdamCarollaShow1 [right]; @bulwarkmedia [left]
+Nearest style neighbors: @TuckerCarlson [neutral]; @JamarlThomas [left]; @lovettorleaveitpodcast [left]; @TheAdamCarollaShow1 [right]; @bulwarkmedia [left]
 
-Nearest topic neighbours: @timesofindia [left]; @JamarlThomas [left]; @JacksonHinkleOfficial [neutral]; @judgingfreedom [left]; @TimesNowWorld [neutral]
+Nearest topic neighbors: @timesofindia [left]; @JamarlThomas [left]; @JacksonHinkleOfficial [neutral]; @judgingfreedom [left]; @TimesNowWorld [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -60,7 +60,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (83.3%); Ukraine-Russia War a
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 1.3 | 1.3 | -2.0 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 43.0 | 48.1 | -0.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.2 | 55.7 | -0.3 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.2 | 55.7 | -0.3 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 65.8 | 77.2 | -0.0 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 3.8 | 6.3 | -0.9 | -0.3 |
 | F6: Person-centred (named people) | 98.7 | 96.2 | 3.1 | 0.6 |
@@ -75,9 +75,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (83.3%); Ukraine-Russia War a
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.9% (1.9%); outrage 99.1% (63.2%); humor 0.0% (0.1%); question 5.7% (11.3%); breaking_live 1.8% (17.5%); episode_show 0.0% (6.4%); interview_guest 2.2% (18.3%); reaction 0.4% (1.5%); confrontation 19.4% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.9% (2.9%)
 
 
-Nearest style neighbours: @JamarlThomas [left]; @thejimmydoreshow [neutral]; @NickCruseRBN [left]; @TimcastIRL [right]; @TimesNowWorld [neutral]
+Nearest style neighbors: @JamarlThomas [left]; @thejimmydoreshow [neutral]; @NickCruseRBN [left]; @TimcastIRL [right]; @TimesNowWorld [neutral]
 
-Nearest topic neighbours: @JamarlThomas [left]; @JacksonHinkleOfficial [neutral]; @RedactedNews [right]; @Firstpost [neutral]; @judgingfreedom [left]
+Nearest topic neighbors: @JamarlThomas [left]; @JacksonHinkleOfficial [neutral]; @RedactedNews [right]; @Firstpost [neutral]; @judgingfreedom [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

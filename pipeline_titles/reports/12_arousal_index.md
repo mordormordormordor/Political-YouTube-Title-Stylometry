@@ -7,7 +7,7 @@
 The index runs from @MeidasTouch (0.97) at the top, followed by @katiephangnews, @ponderingpolitics, @LegalAFMTN, @LukeBeasley, to @newyorker, @joerogan, @Semafor, @CoreyGilShusterAskProject at the bottom (all under 0.02). The top of the ranking is the daily outrage channels of both sides plus the MeidasTouch network; the bottom is magazines, wires and interview podcasts. By channel group, the left group has the highest median (0.22), the right group is close behind (0.20) and the neutral group sits far below (0.09). The index agrees with the independent measures it should agree with: Spearman +0.77 with the LLM rater's *sensational* score aggregated per channel, -0.72 with the tone factor (positive = calm) and +0.30 with the ALL-CAPS factor of the style model.
 
 ![Arousal index, every ranked channel.](figures/12_arousal_ranked.png)
-*All ranked channels with edited uploads, highest first; colour = channel group.*
+*All ranked channels with edited uploads, highest first; color = channel group.*
 
 ![Arousal by channel group.](figures/12_arousal_by_group.png)
 
@@ -269,15 +269,15 @@ Live VODs and low-n channels are in `arousal_index.csv` (column `genre`, flag `l
 
 ## Method
 
-For each unique title: (1) the share of 2+-letter words in ALL CAPS; (2) the number of exclamation marks, capped at three; (3) power words, the count of shock words, violence/outrage verbs and intensifiers from the pipeline lexicons ("insane", "slams", "exposed", "absolutely"); (4) emoji characters; (5) VADER intensity, the positive plus negative sentiment shares (arousal, not valence: "AMAZING" counts as much as "DISGUSTING"). Each component is averaged per channel x genre; across the ranked channels of a genre it is winsorised at the 2nd and 98th percentile and min-max scaled to 0-1; the index is the mean of the five scaled components. Ranks and percentiles are within genre.
+For each unique title: (1) the share of 2+-letter words in ALL CAPS; (2) the number of exclamation marks, capped at three; (3) power words, the count of shock words, violence/outrage verbs and intensifiers from the pipeline lexicons ("insane", "slams", "exposed", "absolutely"); (4) emoji characters; (5) VADER intensity, the positive plus negative sentiment shares (arousal, not valence: "AMAZING" counts as much as "DISGUSTING"). Each component is averaged per channel x genre; across the ranked channels of a genre it is winsorized at the 2nd and 98th percentile and min-max scaled to 0-1; the index is the mean of the five scaled components. Ranks and percentiles are within genre.
 
 ## Limitations
 
 - Equal weights are a choice; a channel that only shouts and a channel that only exclaims can tie.
 - Emoji are rare (most channels average zero per title), so that component mostly separates a few emoji users (MeidasTouch, Benny Johnson, Pondering Politics) from everyone else.
-- Min-max scaling depends on the extremes even after winsorising; the ranking is stable, the spacing between values is not meaningful beyond ordering.
+- Min-max scaling depends on the extremes even after winsorizing; the ranking is stable, the spacing between values is not meaningful beyond ordering.
 - VADER is a general-purpose sentiment lexicon on ten-word texts; "war" or "shooting" raise intensity in a wire headline as they do in a rant.
-- Computed on normalised titles (brand suffixes removed).
-- Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labelled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
+- Computed on normalized titles (brand suffixes removed).
+- Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labeled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
 
 Files: `arousal_index.csv`.

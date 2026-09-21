@@ -1,6 +1,6 @@
 # Bloomberg Television (@markets)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Bloomberg · clipper: no · platform: youtube · subscribers: 3270000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Bloomberg · clipper: no · platform: youtube · subscribers: 3270000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (12.3%); Iran War and Energy 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 72.8 | 73.6 | 0.5 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 7.9 | 10.9 | -1.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 32.6 | 63.2 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 32.6 | 63.2 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 27.2 | 20.9 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 6.7 | 19.2 | -0.5 | 0.1 |
 | F6: Person-centred (named people) | 74.1 | 60.3 | 0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (12.3%); Iran War and Energy 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (2.4%); outrage 19.7% (36.0%); humor 0.0% (0.1%); question 7.2% (15.9%); breaking_live 0.3% (1.1%); episode_show 31.6% (7.0%); interview_guest 7.7% (11.6%); reaction 0.5% (1.9%); confrontation 1.7% (7.4%); listicle 0.0% (0.1%); howto_explainer 2.1% (6.6%)
 
 
-Nearest style neighbours: @oann [right]; @ClubRandomPodcast [neutral]; @TheJoyReidShow [left]; @nypost [right]; @OwenReport [left]
+Nearest style neighbors: @oann [right]; @ClubRandomPodcast [neutral]; @TheJoyReidShow [left]; @nypost [right]; @OwenReport [left]
 
-Nearest topic neighbours: @Reuters [neutral]; @TheEconomist [left]; @CNN [left]; @CBSNews [neutral]; @Firstpost [neutral]
+Nearest topic neighbors: @Reuters [neutral]; @TheEconomist [left]; @CNN [left]; @CBSNews [neutral]; @Firstpost [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Federal Reserve Chair Kevin Warsh and Interest Rates (19.6%); Iran W
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 65.8 | 73.4 | 0.3 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 1.3 | 1.3 | -2.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.8 | 68.4 | 0.1 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.8 | 68.4 | 0.1 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 32.9 | 31.6 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 6.3 | 5.1 | -0.9 | -0.3 |
 | F6: Person-centred (named people) | 64.6 | 60.8 | 0.6 | 0.2 |
@@ -105,9 +105,9 @@ Top topics: Federal Reserve Chair Kevin Warsh and Interest Rates (19.6%); Iran W
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.2%); outrage 12.5% (29.7%); humor 0.0% (0.1%); question 0.0% (4.6%); breaking_live 23.2% (52.4%); episode_show 33.9% (2.1%); interview_guest 8.9% (13.2%); reaction 1.8% (1.4%); confrontation 3.6% (7.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (1.0%)
 
 
-Nearest style neighbours: @nypost [right]; @franifio [left]; @PBDPodcast [right]; @hutch [neutral]; @ThePodcastoftheLotusEaters [right]
+Nearest style neighbors: @nypost [right]; @franifio [left]; @PBDPodcast [right]; @hutch [neutral]; @ThePodcastoftheLotusEaters [right]
 
-Nearest topic neighbours: @JamarlThomas [left]; @TimesNowWorld [neutral]; @Firstpost [neutral]; @timesofindia [left]; @DannyHaiphongYT [left]
+Nearest topic neighbors: @JamarlThomas [left]; @TimesNowWorld [neutral]; @Firstpost [neutral]; @timesofindia [left]; @DannyHaiphongYT [left]
 
 
 Engagement: n < 100 titles with views, not estimated.

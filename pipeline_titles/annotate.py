@@ -1,16 +1,16 @@
-"""Stage 0c - spaCy annotation of every unique normalised title.
+"""Stage 0c - spaCy annotation of every unique normalized title.
 
 Runs en_core_web_sm (tagger, parser, NER) once over the unique `title_norm`
 strings of titles_prepared.parquet and caches the result, so Stage 1 (entities per
-topic), Stage 2 (POS-based style features, named-person / organisation counts) and
+topic), Stage 2 (POS-based style features, named-person / organization counts) and
 Stage 4 (who gets named) never re-run the model.
 
 ALL-CAPS titles ("TRUMP DESTROYS CNN") defeat the NER, so they are truecased first
 with a lexicon learned from the corpus itself: a word is a proper noun if it is
-capitalised in >= 80 % of its non-initial occurrences in mixed-case titles (>= 3
+capitalized in >= 80 % of its non-initial occurrences in mixed-case titles (>= 3
 occurrences), and an acronym if it is ALL-CAPS in >= 80 % of them. The truecased
 text is stored beside the annotations (`text_tc`); every feature that depends on
-capitalisation is computed from the original text, not from `text_tc`.
+capitalization is computed from the original text, not from `text_tc`.
 
 Output: data/titles/analysis/annotations.parquet, one row per unique title_norm:
     title_norm, text_tc, all_caps, tokens, lemmas (\\x1f-joined), pos, tag, dep,
@@ -70,7 +70,7 @@ def build_case_lexicon(titles: Iterable[str], min_count: int = 3, min_share: flo
 
 def truecase(title: str, proper: set, acronyms: set) -> str:
     """Lower-case an ALL-CAPS title, restoring learned proper nouns and acronyms
-    and capitalising the first word. Mixed-case titles are returned unchanged."""
+    and capitalizing the first word. Mixed-case titles are returned unchanged."""
     if not is_all_caps(title):
         return title
 

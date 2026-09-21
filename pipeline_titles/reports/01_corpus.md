@@ -1,6 +1,6 @@
-# 1. The corpus, what was normalised, and the creator table
+# 1. The corpus, what was normalized, and the creator table
 
-**The question.** What exactly is being analysed, and what had to be done to it before any style measure means anything?
+**The question.** What exactly is being analyzed, and what had to be done to it before any style measure means anything?
 
 ## The finding in one paragraph
 
@@ -42,13 +42,13 @@ Titles carry brand furniture that would otherwise dominate any vocabulary-based 
 | @TheDonLemonShow | videos | prefix | lemon drop | 220 | 0.60 | LEMON DROP |
 
 
-**Check that it worked.** If stripping removed the show-brand head of each creator's vocabulary, the creator-level Zipf exponent should fall (the most frequent tokens were the brand) and the top-token share should drop most for show-branded channels. Both happened: the mean creator-level Zipf exponent went from 0.799 (raw) to 0.781 (normalised), and the share of the single most frequent token fell most for Joe Rogan (from 14 % to 4 %: "Joe Rogan Experience #"), Denims, The Economist and the Hasan fan channels. The pooled corpus exponent barely moves (the brand tokens are a small share of a 189k-title pool), which is exactly why the report uses creator-level figures. Document 7 takes Zipf's law further.
+**Check that it worked.** If stripping removed the show-brand head of each creator's vocabulary, the creator-level Zipf exponent should fall (the most frequent tokens were the brand) and the top-token share should drop most for show-branded channels. Both happened: the mean creator-level Zipf exponent went from 0.799 (raw) to 0.781 (normalized), and the share of the single most frequent token fell most for Joe Rogan (from 14 % to 4 %: "Joe Rogan Experience #"), Denims, The Economist and the Hasan fan channels. The pooled corpus exponent barely moves (the brand tokens are a small share of a 189k-title pool), which is exactly why the report uses creator-level figures. Document 7 takes Zipf's law further.
 
 ## The creator table, and the one grouping used everywhere
 
-`creators.csv` holds one row per creator: channel name, platform, `organisation` and `clipper`, subscribers, title counts and a short note. `organisation` groups sister channels of one outlet (Fox News / Fox News Clips, Timcast x3, NYT x4 incl. Ezra Klein, TYT / The Damage Report / Rebel HQ, MeidasTouch / Legal AF / Katie Phang / Michael Cohen, Daily Wire x4, Blaze Media x2, and so on: 18 organisations with more than one channel); same-organisation cross-posts (TYT and The Damage Report share 913 titles verbatim) are removed from every similarity calculation. `clipper` marks the 11 channels whose titles are written by fans or an editing team (the Hasan, Destiny and Vaush clip channels, Fox News Clips, Lauren Chen Clips, Candace Clips, Denims, Asmongold TV, the Hasan VOD channel); they are kept as their own group so a fan editor's style is never attributed to the creator.
+`creators.csv` holds one row per creator: channel name, platform, `organisation` and `clipper`, subscribers, title counts and a short note. `organisation` groups sister channels of one outlet (Fox News / Fox News Clips, Timcast x3, NYT x4 incl. Ezra Klein, TYT / The Damage Report / Rebel HQ, MeidasTouch / Legal AF / Katie Phang / Michael Cohen, Daily Wire x4, Blaze Media x2, and so on: 18 organizations with more than one channel); same-organization cross-posts (TYT and The Damage Report share 913 titles verbatim) are removed from every similarity calculation. `clipper` marks the 11 channels whose titles are written by fans or an editing team (the Hasan, Destiny and Vaush clip channels, Fox News Clips, Lauren Chen Clips, Candace Clips, Denims, Asmongold TV, the Hasan VOD channel); they are kept as their own group so a fan editor's style is never attributed to the creator.
 
-No channel is assigned a category by hand. The one between-channel grouping in this report is the **channel group** of document 14: a frontier model labelled a sample of each channel's titles left / right / neither from the title text alone, each channel's score is (right − left) / titles, and the score sorts the channels into left (below −0.05), neutral and right (above +0.05):
+No channel is assigned a category by hand. The one between-channel grouping in this report is the **channel group** of document 14: a frontier model labeled a sample of each channel's titles left / right / neither from the title text alone, each channel's score is (right − left) / titles, and the score sorts the channels into left (below −0.05), neutral and right (above +0.05):
 
 ![Unique titles and channels per channel group.](figures/01_corpus_by_group.png)
 *Unique titles and channels per channel group.*
@@ -60,6 +60,6 @@ No channel is assigned a category by hand. The one between-channel grouping in t
 | right channels | 110 | 75449 |
 
 
-The group is a description of how a channel's titles read, produced by the same measurement as everything else here; it is not an editorial judgement about the channel, and document 14 gives its reliability (split-half Spearman of the score 0.96) and its limits. Every "by group" table in documents 2-13 is a mean or median over the ranked channels of a group, never a pool of their titles.
+The group is a description of how a channel's titles read, produced by the same measurement as everything else here; it is not an editorial judgment about the channel, and document 14 gives its reliability (split-half Spearman of the score 0.96) and its limits. Every "by group" table in documents 2-13 is a mean or median over the ranked channels of a group, never a pool of their titles.
 
 Files: `creator_genre_summary.csv`, `stripped_patterns.csv`, `zipf_check.csv`, `zipf_check_creators.csv`, `creators.csv`, `leaning_by_creator.csv`.

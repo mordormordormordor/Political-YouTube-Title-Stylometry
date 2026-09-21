@@ -1,6 +1,6 @@
 # Brian Tyler Cohen (@briantylercohen)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Brian Tyler Cohen · clipper: no · platform: youtube · subscribers: 5260000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Brian Tyler Cohen · clipper: no · platform: youtube · subscribers: 5260000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Supreme Court Legal Issues (13.6%); Trump Resignation and Leak
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 12.1 | 9.2 | -0.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 28.9 | 23.8 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 97.5 | 97.5 | 0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 97.5 | 97.5 | 0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 26.4 | 36.0 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 24.3 | 9.6 | -0.3 | 0.1 |
 | F6: Person-centred (named people) | 11.7 | 21.3 | -0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Supreme Court Legal Issues (13.6%); Trump Resignation and Leak
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.7% (2.7%); outrage 93.1% (63.9%); humor 0.3% (0.2%); question 0.8% (15.6%); breaking_live 20.3% (2.9%); episode_show 0.0% (2.8%); interview_guest 11.0% (9.8%); reaction 1.3% (2.9%); confrontation 8.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.2% (8.0%)
 
 
-Nearest style neighbours: @FoxNews [right]; @MeidasTouch [left]; @deanwithrs [left]; https://rumble.com/c/TheAlexJonesShowLive [right]; @FoxNewsChannelClips [right]
+Nearest style neighbors: @FoxNews [right]; @MeidasTouch [left]; @deanwithrs [left]; https://rumble.com/c/TheAlexJonesShowLive [right]; @FoxNewsChannelClips [right]
 
-Nearest topic neighbours: @LegalAFMTN [left]; @katiephangnews [left]; @aaronparnas1 [left]; @MeidasTouch [left]; @FarronBalanced [left]
+Nearest topic neighbors: @LegalAFMTN [left]; @katiephangnews [left]; @aaronparnas1 [left]; @MeidasTouch [left]; @FarronBalanced [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Kennedy Center and Trump Name Removal (20.0%); Trump Supreme Court L
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.7 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 2.6 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 2.6 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.4 | 0.6 |

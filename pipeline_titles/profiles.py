@@ -1,13 +1,13 @@
 """Stage 6 - channel profiles behind the question documents (9, 11, 12, 13):
 
-    caps_profile.csv        share of each creator x genre's unique titles by capitalisation
+    caps_profile.csv        share of each creator x genre's unique titles by capitalization
                             style (all_caps, selective_caps, title_case, sentence_case,
                             mixed_other, short_other; rules in textstats.caps_style), read
-                            off the raw title as published: the normalised title strips a
+                            off the raw title as published: the normalized title strips a
                             channel's fixed show name and episode number along with its
                             brand tag, which left "Joe Rogan Experience #2551 - Daniel
                             Kokotajlo" as two words and "short / other"; a brand tag adds
-                            capitalised words a Title Case rule does not mind, and one
+                            capitalized words a Title Case rule does not mind, and one
                             always written in capitals is learned as an acronym;
                             caps_style_title.parquet carries the style of every unique
                             title (row_id, caps_style) for the Zipf / views stage
@@ -17,7 +17,7 @@
     arousal_index.csv       0-1 composite per creator x genre of five components: ALL-CAPS
                             word share, exclamation marks per title, power words per title
                             (shock words + violence verbs + intensifiers), emoji per title,
-                            VADER intensity (positive + negative); each component winsorised
+                            VADER intensity (positive + negative); each component winsorized
                             at the 2nd/98th percentile across ranked creators of the genre,
                             min-max scaled to 0-1, and averaged
     signature_keywords.csv  top 10 words per creator by weighted log-odds (informative
@@ -26,7 +26,7 @@
                             the leaning stage) with its distance in z-scored topic-controlled
                             style space; style_twins_nearest.csv gives each creator's nearest
                             cross-divide twin and how that distance ranks among all its
-                            neighbours
+                            neighbors
 
 CLI:
     python -m pipeline_titles.profiles
@@ -50,7 +50,7 @@ AROUSAL_COMPONENTS = ["caps_share", "exclamations", "power_words", "emoji", "vad
 
 
 def arousal_index(df: pd.DataFrame, group_cols=("creator", "genre"), ranked: Optional[pd.Series] = None) -> pd.DataFrame:
-    """Creator x genre means of the five components, winsorised (2nd/98th pct over the
+    """Creator x genre means of the five components, winsorized (2nd/98th pct over the
     ranked creators of each genre), min-max scaled to 0-1 and averaged."""
     g = df.groupby(list(group_cols))[AROUSAL_COMPONENTS].mean().reset_index()
     g["n_titles"] = df.groupby(list(group_cols)).size().to_numpy()
@@ -73,7 +73,7 @@ def run(info: dict) -> None:
     ranked = (~uniq.groupby(["creator", "genre"])["low_n"].first())
     uniq = uniq.merge(creators, on="creator", how="left")
 
-    # ---- capitalisation profile (on the raw title: the normalisation strips show names and episode numbers, not just brand tags) ----
+    # ---- capitalization profile (on the raw title: the normalization strips show names and episode numbers, not just brand tags) ----
     _, acronyms = build_case_lexicon(uniq["title_raw"].drop_duplicates())
     uniq["caps_style"] = [caps_style(t, acronyms) for t in uniq["title_raw"]]
     uniq[["row_id", "caps_style"]].to_parquet(CAPS_STYLE_TITLE, index=False)

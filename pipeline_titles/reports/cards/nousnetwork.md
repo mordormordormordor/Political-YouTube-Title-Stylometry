@@ -1,6 +1,6 @@
 # nous (@nousnetwork)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: nous · clipper: no · platform: youtube · subscribers: 88500.0
+Channel group: **left** (title-leaning score, document 14) · organization: nous · clipper: no · platform: youtube · subscribers: 88500.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: India's Muslims and Political Parties (51.3%); Iran War and Strait o
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 56.9 | 53.1 | 0.3 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 32.2 | 24.3 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 71.5 | 90.0 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 71.5 | 90.0 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 13.4 | 5.0 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 95.0 | 95.0 | 2.1 | 0.1 |
 | F6: Person-centred (named people) | 73.2 | 74.1 | 0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: India's Muslims and Political Parties (51.3%); Iran War and Strait o
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.5% (2.7%); outrage 32.7% (63.9%); humor 0.0% (0.2%); question 49.4% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.6% (2.8%); interview_guest 2.6% (9.8%); reaction 0.0% (2.9%); confrontation 1.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 19.2% (8.0%)
 
 
-Nearest style neighbours: @AndrewKlavan [right]; @RufoandLomez [right]; @MrTariqNasheed [right]; @judgingfreedom [left]; @ColemanHughesOfficial [right]
+Nearest style neighbors: @AndrewKlavan [right]; @RufoandLomez [right]; @MrTariqNasheed [right]; @judgingfreedom [left]; @ColemanHughesOfficial [right]
 
-Nearest topic neighbours: @ANINewsIndia [neutral]; @Firstpost [neutral]; @aljazeeraenglish [left]; @DropSiteNews [left]; @OfficialSaharTV [right]
+Nearest topic neighbors: @ANINewsIndia [neutral]; @Firstpost [neutral]; @aljazeeraenglish [left]; @DropSiteNews [left]; @OfficialSaharTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

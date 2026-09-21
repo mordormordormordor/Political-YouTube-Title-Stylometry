@@ -1,6 +1,6 @@
 # Turning Point USA (@turningpointusa)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Turning Point USA · clipper: no · platform: youtube · subscribers: 7680000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Turning Point USA · clipper: no · platform: youtube · subscribers: 7680000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Abortion and Pregnancy Policies (15.8%); Political Conferences and F
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 99.2 | 99.2 | 1.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 20.1 | 19.7 | -0.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 14.6 | 41.0 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 14.6 | 41.0 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 8.8 | 4.2 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 81.2 | 83.3 | 1.0 | 0.2 |
 | F6: Person-centred (named people) | 95.0 | 92.1 | 1.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Abortion and Pregnancy Policies (15.8%); Political Conferences and F
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (3.6%); outrage 7.1% (59.6%); humor 0.0% (0.2%); question 26.8% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 4.4% (8.5%); reaction 1.6% (2.2%); confrontation 19.1% (7.8%); listicle 0.5% (0.1%); howto_explainer 10.4% (9.5%)
 
 
-Nearest style neighbours: @wethefifth [neutral]; @PragerU [right]; @oann [right]; @newyorker [neutral]; @markets [neutral]
+Nearest style neighbors: @wethefifth [neutral]; @PragerU [right]; @oann [right]; @newyorker [neutral]; @markets [neutral]
 
-Nearest topic neighbours: @PragerU [right]; @theisabelbrown [right]; @jlptalk [right]; @ChadPrather1 [right]; @RealAlexClark [right]
+Nearest topic neighbors: @PragerU [right]; @theisabelbrown [right]; @jlptalk [right]; @ChadPrather1 [right]; @RealAlexClark [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -88,7 +88,7 @@ Top topics: Charlie Kirk murder trial (46.2%); Tech Business and Startups (15.4%
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 2.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 2.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.6 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.4 | 0.0 |

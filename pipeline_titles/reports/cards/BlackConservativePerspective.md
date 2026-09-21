@@ -1,6 +1,6 @@
 # Black Conservative Perspective (@BlackConservativePerspective)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Black Conservative Perspective · clipper: no · platform: youtube · subscribers: 1000000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Black Conservative Perspective · clipper: no · platform: youtube · subscribers: 1000000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: CNN and Political Conflict (9.8%); Race and Politics in Media (7.7%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 0.8 | 0.8 | -2.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 70.3 | 73.6 | 0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.9 | 37.2 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.9 | 37.2 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 19.2 | 12.1 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 1.3 | 1.3 | -0.8 | 0.2 |
 | F6: Person-centred (named people) | 69.0 | 69.5 | 0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: CNN and Political Conflict (9.8%); Race and Politics in Media (7.7%)
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (3.6%); outrage 99.3% (59.6%); humor 0.2% (0.2%); question 0.1% (15.6%); breaking_live 0.3% (2.0%); episode_show 0.0% (7.6%); interview_guest 11.9% (8.5%); reaction 0.5% (2.2%); confrontation 18.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.4% (9.5%)
 
 
-Nearest style neighbours: @katiephangnews [left]; @TheOfficerTatum [right]; @MeidasTouch [left]; @LegalAFMTN [left]; @dollemore [left]
+Nearest style neighbors: @katiephangnews [left]; @TheOfficerTatum [right]; @MeidasTouch [left]; @LegalAFMTN [left]; @dollemore [left]
 
-Nearest topic neighbours: @RubinReport [right]; @TheOfficerTatum [right]; @bennyjohnson [right]; @ActualJusticeWarrior [right]; @BlazeTV [right]
+Nearest topic neighbors: @RubinReport [right]; @TheOfficerTatum [right]; @bennyjohnson [right]; @ActualJusticeWarrior [right]; @BlazeTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump State of the Union Address (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.8 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.8 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.9 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.7 | -0.3 |
 | F6: Person-centred (named people) | None | None | 2.0 | 0.0 |

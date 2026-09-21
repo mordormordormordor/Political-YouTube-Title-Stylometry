@@ -1,6 +1,6 @@
 # Redacted (@RedactedNews)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Redacted · clipper: no · platform: youtube · subscribers: 2880000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Redacted · clipper: no · platform: youtube · subscribers: 2880000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (10.0%); Ukraine-Russia War a
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 10.9 | 15.9 | -0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 93.3 | 90.8 | 1.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 80.8 | 80.8 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 80.8 | 80.8 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 91.6 | 90.8 | 0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 61.5 | 63.6 | 0.4 | 0.2 |
 | F6: Person-centred (named people) | 40.6 | 41.4 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (10.0%); Ukraine-Russia War a
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.0% (3.6%); outrage 74.8% (59.6%); humor 0.0% (0.2%); question 13.1% (15.6%); breaking_live 2.6% (2.0%); episode_show 0.0% (7.6%); interview_guest 5.1% (8.5%); reaction 1.1% (2.2%); confrontation 4.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 7.3% (9.5%)
 
 
-Nearest style neighbours: @BreakThroughNews [left]; @glennbeck [right]; @DestinyDGGClips [right]; @RubinReport [right]; @Tim_Black [right]
+Nearest style neighbors: @BreakThroughNews [left]; @glennbeck [right]; @DestinyDGGClips [right]; @RubinReport [right]; @Tim_Black [right]
 
-Nearest topic neighbours: @KimIversen [neutral]; @thejimmydoreshow [neutral]; @breakingpoints [left]; @CNN [left]; https://rumble.com/c/TheAlexJonesShowLive [right]
+Nearest topic neighbors: @KimIversen [neutral]; @thejimmydoreshow [neutral]; @breakingpoints [left]; @CNN [left]; https://rumble.com/c/TheAlexJonesShowLive [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (22.9%); Ukraine-Russia War a
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 26.6 | 24.1 | -0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 78.5 | 83.5 | 0.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.5 | 57.0 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.5 | 57.0 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 88.6 | 88.6 | 0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 72.2 | 72.2 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 49.4 | 38.0 | 0.2 | 0.0 |
@@ -104,9 +104,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (22.9%); Ukraine-Russia War a
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.6% (3.2%); outrage 84.3% (56.4%); humor 0.0% (0.1%); question 13.6% (13.7%); breaking_live 12.9% (18.8%); episode_show 0.0% (26.3%); interview_guest 12.9% (14.0%); reaction 1.4% (2.1%); confrontation 5.7% (9.4%); listicle 0.0% (0.2%); howto_explainer 2.1% (5.3%)
 
 
-Nearest style neighbours: @TimesNowWorld [neutral]; @Firstpost [neutral]; @MyronGainesX [right]; @TheDamageReport [left]; @ANINewsIndia [neutral]
+Nearest style neighbors: @TimesNowWorld [neutral]; @Firstpost [neutral]; @MyronGainesX [right]; @TheDamageReport [left]; @ANINewsIndia [neutral]
 
-Nearest topic neighbours: @JamarlThomas [left]; @judgingfreedom [left]; @TimesNowWorld [neutral]; @DannyHaiphongYT [left]; @NickCruseRBN [left]
+Nearest topic neighbors: @JamarlThomas [left]; @judgingfreedom [left]; @TimesNowWorld [neutral]; @DannyHaiphongYT [left]; @NickCruseRBN [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

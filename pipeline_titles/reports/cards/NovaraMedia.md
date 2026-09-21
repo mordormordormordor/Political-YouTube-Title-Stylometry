@@ -1,6 +1,6 @@
 # Novara Media (@NovaraMedia)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Novara Media · clipper: no · platform: youtube · subscribers: 1320000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Novara Media · clipper: no · platform: youtube · subscribers: 1320000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (8.7%); Iran War and Strait of Hormu
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 25.9 | 33.5 | -0.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 29.3 | 36.8 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 49.0 | 59.8 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 49.0 | 59.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 15.9 | 15.5 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 40.6 | 51.0 | -0.0 | 0.1 |
 | F6: Person-centred (named people) | 59.0 | 56.5 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (8.7%); Iran War and Strait of Hormu
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.1% (2.7%); outrage 63.8% (63.9%); humor 0.0% (0.2%); question 12.1% (15.6%); breaking_live 1.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 8.2% (9.8%); reaction 1.0% (2.9%); confrontation 6.7% (7.6%); listicle 0.0% (0.1%); howto_explainer 5.3% (8.0%)
 
 
-Nearest style neighbours: @TheMajorityReport [left]; @TheYoungTurks [left]; @FarronBalanced [left]; @OwenReport [left]; @LIVESNEAKO [neutral]
+Nearest style neighbors: @TheMajorityReport [left]; @TheYoungTurks [left]; @FarronBalanced [left]; @OwenReport [left]; @LIVESNEAKO [neutral]
 
-Nearest topic neighbours: @SkyNews [left]; @PoliticsJOE [left]; @BBCNews [neutral]; @OwenJonesTalks [left]; @ThePodcastoftheLotusEaters [right]
+Nearest topic neighbors: @SkyNews [left]; @PoliticsJOE [left]; @BBCNews [neutral]; @OwenJonesTalks [left]; @ThePodcastoftheLotusEaters [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: UK politics and Reform UK (75.0%); Israel-Palestine Conflict Media (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -1.3 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.7 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.5 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.0 | 0.6 |

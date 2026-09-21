@@ -1,6 +1,6 @@
 # Useful Idiots (@usefulidiots)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Useful Idiots · clipper: no · platform: youtube · subscribers: 192000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Useful Idiots · clipper: no · platform: youtube · subscribers: 192000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (21.5%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 4.6 | 4.2 | -1.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 14.6 | 13.8 | -0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 5.0 | 10.5 | -0.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 5.0 | 10.5 | -0.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 24.3 | 19.7 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 29.3 | 27.2 | -0.2 | 0.1 |
 | F6: Person-centred (named people) | 68.6 | 75.7 | 0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (21.5%); Iran War and Strait of Horm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.1% (2.7%); outrage 85.5% (63.9%); humor 0.5% (0.2%); question 5.4% (15.6%); breaking_live 1.1% (2.9%); episode_show 0.0% (2.8%); interview_guest 8.6% (9.8%); reaction 3.2% (2.9%); confrontation 21.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 3.2% (8.0%)
 
 
-Nearest style neighbours: @RebelHQ [left]; @Forthepeoplepodcast305 [left]; @FarronBalanced [left]; @JackCocchiarellaShow [left]; @chicksonright [right]
+Nearest style neighbors: @RebelHQ [left]; @Forthepeoplepodcast305 [left]; @FarronBalanced [left]; @JackCocchiarellaShow [left]; @chicksonright [right]
 
-Nearest topic neighbours: @TheYoungTurks [left]; @breakingpoints [left]; @DueDissidence [left]; @thegrayzone7996 [left]; @timesofindia [left]
+Nearest topic neighbors: @TheYoungTurks [left]; @breakingpoints [left]; @DueDissidence [left]; @thegrayzone7996 [left]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Members Only Show (25.0%); Iran War and Strait of Hormuz Tensions (1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.0 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.7 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |
 | F6: Person-centred (named people) | None | None | 3.4 | 0.6 |

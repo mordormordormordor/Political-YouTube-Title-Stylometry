@@ -7,8 +7,8 @@ right groups of the leaning stage) are defined exactly once.
 
 Stage interface (all under data/titles/analysis/):
 
-    titles_prepared.parquet   Stage 0  one row per video, raw + normalised title, flags
-    creators.csv              Stage 0  creator -> channel name / organisation / clipper / subscribers
+    titles_prepared.parquet   Stage 0  one row per video, raw + normalized title, flags
+    creators.csv              Stage 0  creator -> channel name / organization / clipper / subscribers
     leaning_by_creator.csv    Stage 0d each channel's title-leaning score and its group (left / neutral / right)
     annotations.parquet       Stage 0c spaCy tokens, POS and entities per unique title
     topics.csv                Stage 1  row_id -> topic
@@ -104,7 +104,7 @@ def month_of(published: str) -> str:
 
 
 def nfkc(text: str) -> str:
-    """Unicode NFKC + whitespace collapse (used for the normalised title only)."""
+    """Unicode NFKC + whitespace collapse (used for the normalized title only)."""
     return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", str(text))).strip()
 
 
@@ -187,7 +187,7 @@ def load_prepared(path: Path = PREPARED) -> pd.DataFrame:
 
 
 def load_creators(path: Path = CREATORS_CSV, with_group: bool = True, leaning_path: Path = LEANING_BY_CREATOR) -> pd.DataFrame:
-    """creators.csv (one row per creator: channel_name, platform, organisation, clipper,
+    """creators.csv (one row per creator: channel_name, platform, organization, clipper,
     subscribers, counts) with `group` = the channel's leaning group (left / neutral /
     right from leaning_by_creator.csv; "unscored" when the leaning stage has not run)."""
     cr = pd.read_csv(path, dtype=str, keep_default_na=False)

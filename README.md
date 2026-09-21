@@ -12,32 +12,32 @@ listing-level metadata that comes with them are the entire dataset.
 
 Start at [`pipeline_titles/reports/README.md`](pipeline_titles/reports/README.md): the
 write-up is split into twelve documents, one per question, each explaining its finding
-with the tables that carry it and its caveats. No channel is categorised by hand: the one
+with the tables that carry it and its caveats. No channel is categorized by hand: the one
 grouping of channels used anywhere is the left / neutral / right channel group of document
 14, how each channel's own titles read to a frontier model. Seven follow the pipeline's stages:
 
-1. [The corpus](pipeline_titles/reports/01_corpus.md): what is analysed, what was stripped, the creator table
+1. [The corpus](pipeline_titles/reports/01_corpus.md): what is analyzed, what was stripped, the creator table
 2. [Topics](pipeline_titles/reports/02_topics.md)
 4. [Formats and hooks](pipeline_titles/reports/04_formats_and_hooks.md)
 5. [The landscape](pipeline_titles/reports/05_landscape.md)
 6. [Drift](pipeline_titles/reports/06_drift.md)
 7. [Zipf's law and views](pipeline_titles/reports/07_views.md): Zipf's law in title vocabulary
    and in views, and views over time, each cut by channel group, by title label (left / neither /
-   right) and by capitalisation style (ALL CAPS, selective CAPS, Title Case, Sentence case, mixed, short)
+   right) and by capitalization style (ALL CAPS, selective CAPS, Title Case, Sentence case, mixed, short)
 8. [Null results and caveats](pipeline_titles/reports/08_null_results_and_caveats.md)
 
 Five answer a question of their own, each with its method and limitations:
 
 9. [Stylistic twins](pipeline_titles/reports/09_stylistic_twins.md): which left and right
    channels title the same way
-11. [Capitalisation and vocabulary](pipeline_titles/reports/11_capitalisation_and_vocabulary.md)
+11. [Capitalization and vocabulary](pipeline_titles/reports/11_capitalization_and_vocabulary.md)
 12. [Arousal index](pipeline_titles/reports/12_arousal_index.md): a 0-1 emotional-charge index
     per channel
 13. [Signature keywords](pipeline_titles/reports/13_signature_keywords.md): the words each
     channel over-uses
 14. [Political leaning from titles](pipeline_titles/reports/14_political_leaning.md): two
     levels. Titles: a frontier model labels 12,478 titles left / right / neither from the title
-    text alone, and the vocabulary of each label is analysed (allotaxonographs, log-odds, a
+    text alone, and the vocabulary of each label is analyzed (allotaxonographs, log-odds, a
     lexicon check). Channels: each channel's score from its sampled titles sorts the 274
     channels into left, neutral and right groups, whose whole output is then compared
 
@@ -47,7 +47,7 @@ Five answer a question of their own, each with its method and limitations:
   runtimes.
 - `pipeline_titles/reports/title_stylometry.html`: the interactive page. A creator selector
   renders each profile card, and the two landscape maps (style space, topic space) show
-  every creator with names on hover and the selected creator's neighbours drawn in. It is
+  every creator with names on hover and the selected creator's neighbors drawn in. It is
   self-contained; open it directly in a browser.
 - `pipeline_titles/reports/figures/`: the static figures embedded in the documents
   (`python -m pipeline_titles.figures` redraws them from the tables).
@@ -55,9 +55,9 @@ Five answer a question of their own, each with its method and limitations:
 - `data/titles/analysis/`: machine-readable tables. The interface between stages is
   `features.csv` (creator x genre x month), `dimensions.csv` (creator scores, raw and
   topic-controlled), `topics.csv` (title -> topic), `labels.csv` (the 3,000 LLM-rated
-  titles), `leaning_labels.csv.gz` (the 12,478 titles labelled left / right / neither by the
+  titles), `leaning_labels.csv.gz` (the 12,478 titles labeled left / right / neither by the
   judge), `leaning_by_creator.csv` (each channel's score and its left / neutral / right group),
-  `creators.csv` (channel name / organisation / clipper / subscribers per creator).
+  `creators.csv` (channel name / organization / clipper / subscribers per creator).
 
 Headline findings from the 2026-09-14 run are in `pipeline_titles/reports/headlines.md`.
 
@@ -77,7 +77,7 @@ Fetching (yt-dlp flat channel listings, no per-video requests):
 .venv/bin/python -m pipeline_titles.ingest.fetch_video_metadata --since 2026-01-01 --tabs videos streams
 ```
 
-See `docs/pipeline_notes.md` for the fetch notes (Rumble rate limits, resume behaviour).
+See `docs/pipeline_notes.md` for the fetch notes (Rumble rate limits, resume behavior).
 
 ## Setup
 
@@ -108,22 +108,22 @@ Usage-limit replies are waited out. The sample is a base draw of 16 titles per c
 plus a top-up to 50, spread evenly across months, for creators with at least 50 edited
 uploads (`--n-per-creator`, `--min-uploads`); the base draw never changes, so earlier
 labels are reused and only new titles are sent to a model. The labels of record come from
-three runs (`leaning_runs.json`): the base draw and then the top-up were labelled in sample
-order, then every title again in shuffled batches, which is the labelling used; the first
+three runs (`leaning_runs.json`): the base draw and then the top-up were labeled in sample
+order, then every title again in shuffled batches, which is the labeling used; the first
 reading is kept (`leaning_labels_channel_batched.csv.gz`) and compared with it title by title
 and channel by channel (`leaning_two_readings.json`: 88 % agreement, channels at Spearman
 0.98). `--repeat` reads every title once more with a fresh shuffle seed into its own file
 (`leaning_labels_repeat.csv.gz`, run 4; the labels of record are untouched) and compares the
 three readings (`leaning_repeat.json`: the two shuffled readings agree on 91 % of titles,
 channels at 0.99, so the judge's own noise is about one label in eleven and the channel
-batching cost about two points more). `--analyse-only` recomputes every table (channel
+batching cost about two points more). `--analyze-only` recomputes every table (channel
 scores, the split-half, base-vs-top-up and readings checks, words, group x month) from the
 labels on disk without a model call.
 `--prompt-version v2` also asks for the title's target (who it attacks), which separates
 "attacks Trump" from "speaks for the left".
 The stage writes a blind 200-title adjudication sheet
 (`data/titles/analysis/leaning_human_sheet.csv`); fill `human_label` and re-run with
-`--analyse-only --human-labels <that file>` to score every model against a human.
+`--analyze-only --human-labels <that file>` to score every model against a human.
 
 The allotaxonographs of document 14 (rank-turbulence divergence, Dodds et al. 2023) are
 drawn by [allotaxonometer-ui](https://github.com/Vermont-Complex-Systems/allotaxonometer-ui),
@@ -153,8 +153,8 @@ from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
 
 | stage | what it does |
 |---|---|
-| `prepare` | normalise titles (strip show names, episode numbers, dates, brand tags by a per-creator 20 % rule), mark verbatim repeats, low-n groups, the creator-balanced subset; Zipf check |
-| `creators` | write the creator table (`creators.csv`: organisation / clipper / subscribers; edit the CSV, not `creator_seed.py`) |
+| `prepare` | normalize titles (strip show names, episode numbers, dates, brand tags by a per-creator 20 % rule), mark verbatim repeats, low-n groups, the creator-balanced subset; Zipf check |
+| `creators` | write the creator table (`creators.csv`: organization / clipper / subscribers; edit the CSV, not `creator_seed.py`) |
 | `leaning` | document 14 and the channel groups every later stage reports by: left / right / neither labels from Claude Opus (title text only, shuffled batches, cached; every title was also read in channel-batched order and once more with a fresh shuffle, and the three readings are compared); channel scores and the left / neutral / right groups they define; split-half, base-vs-top-up and re-reading reliability; group x month; weighted log-odds and rank-turbulence words for the titles and for the groups' whole output; the log-odds lexicon and its out-of-fold check |
 | `annotate` | spaCy tokens, POS, entities per unique title (ALL-CAPS titles truecased first) |
 | `embed` | sentence embeddings (all-mpnet-base-v2), cached and incremental |
@@ -164,12 +164,12 @@ from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
 | `factors` | exploratory factor analysis (parallel analysis, minres, oblimin), factor scores per cell, creator and title, topic control |
 | `validate` | LLM ratings vs factor scores, candidate-label mapping, test-retest reliability |
 | `formats` | regex formats on raw titles; hook classifier trained on the LLM labels and applied to every title |
-| `landscape` | style vs topic clusterings vs the channel groups (ARI), nearest neighbours, who gets named, shared titles and templates |
+| `landscape` | style vs topic clusterings vs the channel groups (ARI), nearest neighbors, who gets named, shared titles and templates |
 | `timeline` | monthly drift per channel group and creator; month-to-month topic change |
 | `engagement` | within-creator regressions of log views on style with month and topic controls |
 | `hits` | Gini, top-10 % share, Clauset-Shalizi-Newman tail fit vs lognormal |
-| `profiles` | the question documents 9, 11, 12, 13: stylistic twins across the left / right groups, capitalisation profiles and top words, the arousal index, signature keywords |
-| `zipf_views` | document 7: Zipf's law for words (per channel group, title label and capitalisation style, with size-matched exponents) and for views (rank-size slopes), views by publication month, and views relative to each channel's monthly baseline by capitalisation style and title label |
+| `profiles` | the question documents 9, 11, 12, 13: stylistic twins across the left / right groups, capitalization profiles and top words, the arousal index, signature keywords |
+| `zipf_views` | document 7: Zipf's law for words (per channel group, title label and capitalization style, with size-matched exponents) and for views (rank-size slopes), views by publication month, and views relative to each channel's monthly baseline by capitalization style and title label |
 | `allotax` | allotaxonographs for document 14 (needs Node; see above) |
 | `report_data`, `report` | cards JSON, Markdown report, methods appendix, cards, HTML page |
 

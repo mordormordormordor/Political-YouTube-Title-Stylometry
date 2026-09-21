@@ -1,6 +1,6 @@
 # The Vaush Pit (@TheVaushPit)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Vaush · clipper: yes · platform: youtube · subscribers: 222000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Vaush · clipper: yes · platform: youtube · subscribers: 222000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (13.7%); Zohran Mamdani and NYC Politi
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 75.7 | 78.2 | 0.6 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 90.0 | 93.3 | 0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 43.5 | 30.1 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 43.5 | 30.1 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 86.2 | 91.6 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 43.9 | 48.1 | 0.0 | 0.1 |
 | F6: Person-centred (named people) | 3.3 | 5.4 | -1.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (13.7%); Zohran Mamdani and NYC Politi
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.7% (2.7%); outrage 60.1% (63.9%); humor 0.0% (0.2%); question 11.2% (15.6%); breaking_live 0.7% (2.9%); episode_show 0.2% (2.8%); interview_guest 4.0% (9.8%); reaction 0.2% (2.9%); confrontation 4.2% (7.6%); listicle 0.0% (0.1%); howto_explainer 4.0% (8.0%)
 
 
-Nearest style neighbours: @Vaush [left]; @JustPearlyThings [right]; @KimIversen [neutral]; @TheAmalaEkpunobi [right]; @bbrettcooper [right]
+Nearest style neighbors: @Vaush [left]; @JustPearlyThings [right]; @KimIversen [neutral]; @TheAmalaEkpunobi [right]; @bbrettcooper [right]
 
-Nearest topic neighbours: @Vaush [left]; @TheMajorityReport [left]; @HasanAbi [left]; @TimcastIRL [right]; @destiny [left]
+Nearest topic neighbors: @Vaush [left]; @TheMajorityReport [left]; @HasanAbi [left]; @TimcastIRL [right]; @destiny [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

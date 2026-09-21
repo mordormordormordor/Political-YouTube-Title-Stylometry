@@ -1,6 +1,6 @@
 # The Hill (@thehill)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: The Hill · clipper: no · platform: youtube · subscribers: 2150000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: The Hill · clipper: no · platform: youtube · subscribers: 2150000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.2%); 2026 US Primary Elect
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 51.5 | 41.8 | 0.2 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 51.9 | 49.8 | 0.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 78.2 | 81.2 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 78.2 | 81.2 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 30.5 | 23.8 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 20.9 | 18.0 | -0.3 | 0.1 |
 | F6: Person-centred (named people) | 87.9 | 90.0 | 0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.2%); 2026 US Primary Elect
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (2.4%); outrage 48.5% (36.0%); humor 0.1% (0.1%); question 9.7% (15.9%); breaking_live 2.4% (1.1%); episode_show 0.0% (7.0%); interview_guest 9.6% (11.6%); reaction 1.5% (1.9%); confrontation 9.9% (7.4%); listicle 0.1% (0.1%); howto_explainer 2.5% (6.6%)
 
 
-Nearest style neighbours: @NewsNation [neutral]; @oann [right]; @HasanabiClips [left]; @RealAmericasVoice [right]; @USATODAY [neutral]
+Nearest style neighbors: @NewsNation [neutral]; @oann [right]; @HasanabiClips [left]; @RealAmericasVoice [right]; @USATODAY [neutral]
 
-Nearest topic neighbours: @msnow [left]; @CBSNews [neutral]; @NewsmaxTV [right]; @oann [right]; @FoxNewsChannelClips [right]
+Nearest topic neighbors: @msnow [left]; @CBSNews [neutral]; @NewsmaxTV [right]; @oann [right]; @FoxNewsChannelClips [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump's speeches and events (10.1%); Hakeem Jeffries News Conference
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 64.6 | 74.7 | 0.3 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 41.8 | 32.9 | -0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 3.8 | 44.3 | -1.0 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 3.8 | 44.3 | -1.0 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 15.2 | 7.6 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 20.3 | 8.9 | -0.5 | -0.3 |
 | F6: Person-centred (named people) | 24.1 | 40.5 | -0.2 | 0.2 |
@@ -105,9 +105,9 @@ Top topics: Trump's speeches and events (10.1%); Hakeem Jeffries News Conference
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.4% (2.2%); outrage 4.5% (29.7%); humor 0.0% (0.1%); question 0.0% (4.6%); breaking_live 6.5% (52.4%); episode_show 0.0% (2.1%); interview_guest 6.1% (13.2%); reaction 0.2% (1.4%); confrontation 1.4% (7.4%); listicle 0.0% (0.0%); howto_explainer 1.0% (1.0%)
 
 
-Nearest style neighbours: @PTLRadioShow [left]; @FoxNews [right]; @CNN [left]; @ThePodcastoftheLotusEaters [right]; @FarronBalanced [left]
+Nearest style neighbors: @PTLRadioShow [left]; @FoxNews [right]; @CNN [left]; @ThePodcastoftheLotusEaters [right]; @FarronBalanced [left]
 
-Nearest topic neighbours: @FoxNews [right]; @msnow [left]; @oann [right]; @USATODAY [neutral]; @CBSNews [neutral]
+Nearest topic neighbors: @FoxNews [right]; @msnow [left]; @oann [right]; @USATODAY [neutral]; @CBSNews [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

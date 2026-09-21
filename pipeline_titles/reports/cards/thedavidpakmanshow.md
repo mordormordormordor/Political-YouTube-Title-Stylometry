@@ -1,6 +1,6 @@
 # David Pakman Show (@thedavidpakmanshow)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: David Pakman · clipper: no · platform: youtube · subscribers: 3660000.0
+Channel group: **left** (title-leaning score, document 14) · organization: David Pakman · clipper: no · platform: youtube · subscribers: 3660000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Meltdowns and Collapses (15.0%); Trump's Unwise Actions and Mi
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 60.7 | 41.0 | 0.4 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 88.7 | 91.6 | 0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 75.7 | 64.4 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 75.7 | 64.4 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 61.1 | 86.2 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 46.4 | 39.3 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 2.1 | 3.3 | -1.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Meltdowns and Collapses (15.0%); Trump's Unwise Actions and Mi
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.5% (2.7%); outrage 87.0% (63.9%); humor 0.0% (0.2%); question 10.7% (15.6%); breaking_live 1.8% (2.9%); episode_show 0.1% (2.8%); interview_guest 6.0% (9.8%); reaction 0.2% (2.9%); confrontation 4.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.2% (8.0%)
 
 
-Nearest style neighbours: @TheVaushPit [left]; @Vaush [left]; @RebelNewsOnline [right]; @JustPearlyThings [right]; @NBCNews [neutral]
+Nearest style neighbors: @TheVaushPit [left]; @Vaush [left]; @RebelNewsOnline [right]; @JustPearlyThings [right]; @NBCNews [neutral]
 
-Nearest topic neighbours: @FarronBalanced [left]; @adammockler [left]; @harryjsisson [left]; @JackCocchiarellaShow [left]; @thewarningwithsteveschmidt [left]
+Nearest topic neighbors: @FarronBalanced [left]; @adammockler [left]; @harryjsisson [left]; @JackCocchiarellaShow [left]; @thewarningwithsteveschmidt [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Trump State of the Union Address (20.0%); Trump Resignation and Leak
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 1.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.0 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.0 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.4 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.1 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.0 | 0.6 |

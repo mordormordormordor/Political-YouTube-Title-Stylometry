@@ -1,6 +1,6 @@
 # Matt Christiansen (@MLChristiansen)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Matt Christiansen · clipper: no · platform: youtube · subscribers: 251000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Matt Christiansen · clipper: no · platform: youtube · subscribers: 251000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: ICE Protests and Shootings (6.8%); Abortion and Pregnancy Policies (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 43.9 | 31.8 | 0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 26.4 | 29.3 | -0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.4 | 35.6 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.4 | 35.6 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 28.9 | 15.1 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 5.4 | 8.4 | -0.6 | 0.2 |
 | F6: Person-centred (named people) | 76.6 | 66.9 | 0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: ICE Protests and Shootings (6.8%); Abortion and Pregnancy Policies (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 56.8% (59.6%); humor 0.0% (0.2%); question 8.5% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.7% (8.5%); reaction 0.0% (2.2%); confrontation 9.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.4% (9.5%)
 
 
-Nearest style neighbours: @nypost [right]; @oann [right]; @rolandsmartin [left]; @clayandbuck [right]; @RealAmericasVoice [right]
+Nearest style neighbors: @nypost [right]; @oann [right]; @rolandsmartin [left]; @clayandbuck [right]; @RealAmericasVoice [right]
 
-Nearest topic neighbours: @SaltyCracker [right]; @AnthonyBrianLogan [right]; @MichaelKnowles [right]; @ActualJusticeWarrior [right]; @NewsmaxTV [right]
+Nearest topic neighbors: @SaltyCracker [right]; @AnthonyBrianLogan [right]; @MichaelKnowles [right]; @ActualJusticeWarrior [right]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -82,7 +82,7 @@ Top topics: Iran Conflict and Political Updates (22.1%); Iran War and Strait of 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 69.6 | 44.3 | 0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 11.4 | 12.7 | -1.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 10.1 | 11.4 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 10.1 | 11.4 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 54.4 | 54.4 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 8.9 | 7.6 | -0.7 | -0.3 |
 | F6: Person-centred (named people) | 87.3 | 86.1 | 1.9 | 0.0 |
@@ -97,9 +97,9 @@ Top topics: Iran Conflict and Political Updates (22.1%); Iran War and Strait of 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.2%); outrage 57.1% (56.4%); humor 0.0% (0.1%); question 2.6% (13.7%); breaking_live 0.0% (18.8%); episode_show 97.4% (26.3%); interview_guest 41.6% (14.0%); reaction 0.0% (2.1%); confrontation 7.8% (9.4%); listicle 0.0% (0.2%); howto_explainer 1.3% (5.3%)
 
 
-Nearest style neighbours: @rolandsmartin [left]; @marclamonthillnetwork [left]; @AnthonyBrianLogan [right]; @TheMajorityReport [left]; @franifio [left]
+Nearest style neighbors: @rolandsmartin [left]; @marclamonthillnetwork [left]; @AnthonyBrianLogan [right]; @TheMajorityReport [left]; @franifio [left]
 
-Nearest topic neighbours: @AnthonyBrianLogan [right]; @DueDissidence [left]; @SabbySabs [left]; @VivaFrei [right]; @MyronGainesX [right]
+Nearest topic neighbors: @AnthonyBrianLogan [right]; @DueDissidence [left]; @SabbySabs [left]; @VivaFrei [right]; @MyronGainesX [right]
 
 
 Engagement: n < 100 titles with views, not estimated.

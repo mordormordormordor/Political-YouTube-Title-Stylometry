@@ -1,6 +1,6 @@
 # nickjfuentes (https://rumble.com/c/nickjfuentes)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Nick Fuentes · clipper: no · platform: rumble · subscribers: 
+Channel group: **right** (title-leaning score, document 14) · organization: Nick Fuentes · clipper: no · platform: rumble · subscribers: 
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (22.9%); Israel-Palestine Con
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 15.5 | 18.4 | -0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 13.0 | 18.0 | -0.8 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 56.5 | 53.6 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 56.5 | 53.6 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 61.9 | 71.5 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 42.7 | 41.4 | -0.0 | 0.2 |
 | F6: Person-centred (named people) | 24.7 | 38.9 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (22.9%); Israel-Palestine Con
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.9% (3.6%); outrage 74.8% (59.6%); humor 0.0% (0.2%); question 46.2% (15.6%); breaking_live 0.0% (2.0%); episode_show 41.6% (7.6%); interview_guest 6.2% (8.5%); reaction 0.3% (2.2%); confrontation 4.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 4.6% (9.5%)
 
 
-Nearest style neighbours: @DueDissidence [left]; @LegalAFMTN [left]; @PiscoLitty [left]; @destinyhqclips [neutral]; @TheMichaelCohenShow [left]
+Nearest style neighbors: @DueDissidence [left]; @LegalAFMTN [left]; @PiscoLitty [left]; @destinyhqclips [neutral]; @TheMichaelCohenShow [left]
 
-Nearest topic neighbours: @TheYoungTurks [left]; @DueDissidence [left]; @BenShapiro [right]; @KimIversen [neutral]; @FoxNews [right]
+Nearest topic neighbors: @TheYoungTurks [left]; @DueDissidence [left]; @BenShapiro [right]; @KimIversen [neutral]; @FoxNews [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

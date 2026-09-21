@@ -1,6 +1,6 @@
 # China Insights (@chinainsights-r2w)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: China Insights · clipper: no · platform: youtube · subscribers: 350000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: China Insights · clipper: no · platform: youtube · subscribers: 350000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump and China political relations (60.4%); Crypto and Politics Sca
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 13.4 | 25.9 | -0.5 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 51.5 | 44.8 | 0.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 23.0 | 65.7 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 23.0 | 65.7 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 34.7 | 33.5 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 72.0 | 71.1 | 0.6 | 0.1 |
 | F6: Person-centred (named people) | 51.0 | 55.6 | -0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump and China political relations (60.4%); Crypto and Politics Sca
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.7% (2.4%); outrage 52.2% (36.0%); humor 0.0% (0.1%); question 30.9% (15.9%); breaking_live 0.4% (1.1%); episode_show 0.0% (7.0%); interview_guest 1.1% (11.6%); reaction 0.7% (1.9%); confrontation 5.4% (7.4%); listicle 0.7% (0.1%); howto_explainer 10.4% (6.6%)
 
 
-Nearest style neighbours: @PiscoLitty [left]; @Forthepeoplepodcast305 [left]; @AnthonyBrianLogan [right]; @Forbes [neutral]; @MyronGainesX [right]
+Nearest style neighbors: @PiscoLitty [left]; @Forthepeoplepodcast305 [left]; @AnthonyBrianLogan [right]; @Forbes [neutral]; @MyronGainesX [right]
 
-Nearest topic neighbours: @GeopoliticalEconomyReport [left]; @markets [neutral]; @TheEconomist [left]; @Reuters [neutral]; @oann [right]
+Nearest topic neighbors: @GeopoliticalEconomyReport [left]; @markets [neutral]; @TheEconomist [left]; @Reuters [neutral]; @oann [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

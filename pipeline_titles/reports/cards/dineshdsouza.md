@@ -1,6 +1,6 @@
 # Dinesh D'Souza (@dineshdsouza)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Dinesh D'Souza · clipper: no · platform: youtube · subscribers: 810000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Dinesh D'Souza · clipper: no · platform: youtube · subscribers: 810000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Political Podcasts and Influencers (13.0%); Christian Nationalism an
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 74.9 | 91.6 | 0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 10.9 | 11.3 | -0.9 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 49.8 | 64.0 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 49.8 | 64.0 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 48.1 | 50.2 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 61.9 | 67.8 | 0.4 | 0.2 |
 | F6: Person-centred (named people) | 1.7 | 6.3 | -1.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Political Podcasts and Influencers (13.0%); Christian Nationalism an
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.3% (3.6%); outrage 34.8% (59.6%); humor 0.0% (0.2%); question 20.6% (15.6%); breaking_live 1.1% (2.0%); episode_show 10.9% (7.6%); interview_guest 3.3% (8.5%); reaction 0.0% (2.2%); confrontation 0.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 6.5% (9.5%)
 
 
-Nearest style neighbours: @BadEmpanadaLive [left]; @HasanAbi [left]; @JustPearlyThings [right]; @hutch [neutral]; @PoliticsGirl [left]
+Nearest style neighbors: @BadEmpanadaLive [left]; @HasanAbi [left]; @JustPearlyThings [right]; @hutch [neutral]; @PoliticsGirl [left]
 
-Nearest topic neighbours: @PragerU [right]; @JillianMichaels [right]; @TuckerCarlson [neutral]; @ZubyMusic [right]; @fightbackpodcast [right]
+Nearest topic neighbors: @PragerU [right]; @JillianMichaels [right]; @TuckerCarlson [neutral]; @ZubyMusic [right]; @fightbackpodcast [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -61,7 +61,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (50.0%); Christian Nationalis
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.9 | -0.3 |
 | F6: Person-centred (named people) | None | None | 1.2 | 0.0 |

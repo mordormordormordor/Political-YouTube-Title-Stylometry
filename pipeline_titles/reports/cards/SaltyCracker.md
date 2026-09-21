@@ -1,6 +1,6 @@
 # Salty Cracker (@SaltyCracker)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Salty Cracker · clipper: no · platform: youtube · subscribers: 906000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Salty Cracker · clipper: no · platform: youtube · subscribers: 906000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Walmart Shoplifting and Police Incidents (12.7%); ICE Protests and S
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 25.5 | 21.8 | -0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 54.8 | 59.0 | 0.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.3 | 7.5 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.3 | 7.5 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 55.6 | 49.4 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 13.8 | 19.7 | -0.4 | 0.2 |
 | F6: Person-centred (named people) | 52.3 | 44.8 | -0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Walmart Shoplifting and Police Incidents (12.7%); ICE Protests and S
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (3.6%); outrage 83.2% (59.6%); humor 0.3% (0.2%); question 0.8% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 5.9% (8.5%); reaction 0.0% (2.2%); confrontation 5.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 1.0% (9.5%)
 
 
-Nearest style neighbours: @FarronBalanced [left]; @JackCocchiarellaShow [left]; @chicksonright [right]; @GrahamAllen [right]; @PTLRadioShow [left]
+Nearest style neighbors: @FarronBalanced [left]; @JackCocchiarellaShow [left]; @chicksonright [right]; @GrahamAllen [right]; @PTLRadioShow [left]
 
-Nearest topic neighbours: @ActualJusticeWarrior [right]; @MichaelKnowles [right]; @MattWalsh [right]; @TheQuartering [right]; @TheOfficerTatum [right]
+Nearest topic neighbors: @ActualJusticeWarrior [right]; @MichaelKnowles [right]; @MattWalsh [right]; @TheQuartering [right]; @TheOfficerTatum [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

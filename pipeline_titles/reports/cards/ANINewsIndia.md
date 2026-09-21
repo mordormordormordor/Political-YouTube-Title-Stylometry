@@ -1,6 +1,6 @@
 # ANI News (@ANINewsIndia)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: ANI · clipper: no · platform: youtube · subscribers: 9760000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: ANI · clipper: no · platform: youtube · subscribers: 9760000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Indian Politics and Parliament (28.7%); PM Modi and BRICS Diplomacy 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 58.6 | 71.1 | 0.3 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 82.8 | 77.0 | 0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 0.8 | 83.7 | -0.9 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 0.8 | 83.7 | -0.9 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 65.7 | 38.5 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 31.4 | 13.0 | -0.2 | 0.1 |
 | F6: Person-centred (named people) | 73.6 | 84.9 | 0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Indian Politics and Parliament (28.7%); PM Modi and BRICS Diplomacy 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.4% (2.4%); outrage 37.4% (36.0%); humor 0.0% (0.1%); question 4.9% (15.9%); breaking_live 7.3% (1.1%); episode_show 0.2% (7.0%); interview_guest 10.1% (11.6%); reaction 2.4% (1.9%); confrontation 5.9% (7.4%); listicle 0.2% (0.1%); howto_explainer 2.3% (6.6%)
 
 
-Nearest style neighbours: @USATODAY [neutral]; @AssociatedPress [neutral]; @CBSNews [neutral]; @SkyNews [left]; @thehill [neutral]
+Nearest style neighbors: @USATODAY [neutral]; @AssociatedPress [neutral]; @CBSNews [neutral]; @SkyNews [left]; @thehill [neutral]
 
-Nearest topic neighbours: @Firstpost [neutral]; @AssociatedPress [neutral]; @aljazeeraenglish [left]; @Reuters [neutral]; @BBCNews [neutral]
+Nearest topic neighbors: @Firstpost [neutral]; @AssociatedPress [neutral]; @aljazeeraenglish [left]; @Reuters [neutral]; @BBCNews [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Indian Politics and Parliament (54.9%); PM Modi and BRICS Diplomacy 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 45.6 | 69.6 | 0.0 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 65.8 | 62.0 | 0.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.8 | 89.9 | 1.6 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.8 | 89.9 | 1.6 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 73.4 | 40.5 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 55.7 | 13.9 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 67.1 | 81.0 | 0.7 | 0.2 |
@@ -105,9 +105,9 @@ Top topics: Indian Politics and Parliament (54.9%); PM Modi and BRICS Diplomacy 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.1% (2.2%); outrage 24.8% (29.7%); humor 0.0% (0.1%); question 0.2% (4.6%); breaking_live 73.1% (52.4%); episode_show 0.0% (2.1%); interview_guest 8.0% (13.2%); reaction 2.0% (1.4%); confrontation 4.3% (7.4%); listicle 0.0% (0.0%); howto_explainer 0.2% (1.0%)
 
 
-Nearest style neighbours: @USATODAY [neutral]; @NBCNews [neutral]; @bulwarkmedia [left]; @AnthonyBrianLogan [right]; @SkyNews [left]
+Nearest style neighbors: @USATODAY [neutral]; @NBCNews [neutral]; @bulwarkmedia [left]; @AnthonyBrianLogan [right]; @SkyNews [left]
 
-Nearest topic neighbours: @Firstpost [neutral]; @Reuters [neutral]; @TimesNowWorld [neutral]; @AssociatedPress [neutral]; @timesofindia [left]
+Nearest topic neighbors: @Firstpost [neutral]; @Reuters [neutral]; @TimesNowWorld [neutral]; @AssociatedPress [neutral]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Legal AF (@LegalAFMTN)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 1230000.0
+Channel group: **left** (title-leaning score, document 14) · organization: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 1230000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Supreme Court Legal Issues (33.2%); Trump Meltdowns and Collap
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 7.9 | 7.1 | -0.8 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 20.9 | 15.9 | -0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 76.6 | 79.5 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 76.6 | 79.5 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 80.3 | 75.7 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 17.2 | 4.2 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 55.2 | 49.8 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Supreme Court Legal Issues (33.2%); Trump Meltdowns and Collap
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (2.7%); outrage 92.9% (63.9%); humor 0.1% (0.2%); question 13.2% (15.6%); breaking_live 1.5% (2.9%); episode_show 5.4% (2.8%); interview_guest 11.8% (9.8%); reaction 0.1% (2.9%); confrontation 8.6% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.5% (8.0%)
 
 
-Nearest style neighbours: @TheOfficerTatum [right]; @dollemore [left]; @MeidasTouch [left]; @DueDissidence [left]; @deanwithrs [left]
+Nearest style neighbors: @TheOfficerTatum [right]; @dollemore [left]; @MeidasTouch [left]; @DueDissidence [left]; @deanwithrs [left]
 
-Nearest topic neighbours: @katiephangnews [left]; @GlennKirschner2 [left]; @briantylercohen [left]; @MeidasTouch [left]; @aaronparnas1 [left]
+Nearest topic neighbors: @katiephangnews [left]; @GlennKirschner2 [left]; @briantylercohen [left]; @MeidasTouch [left]; @aaronparnas1 [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump Supreme Court Legal Issues (35.6%); Todd Blanche Attorney Gene
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.3 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.8 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.8 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.0 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.8 | 0.6 |

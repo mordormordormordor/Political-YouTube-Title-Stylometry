@@ -9,7 +9,7 @@ Three ways of cutting the corpus run through the whole stage:
 Zipf's law for words. For every system (the corpus, each channel group, each title
 label, each caps style) the rank-frequency table of its tokens and the OLS exponent of
 log frequency on log rank over the top 100 / 1,000 / 5,000 types (prepare.zipf_slope,
-the same tokeniser as the Stage 0 Zipf check, stopwords kept: Zipf's law is about the
+the same tokenizer as the Stage 0 Zipf check, stopwords kept: Zipf's law is about the
 whole vocabulary). Systems differ in size and the exponent depends on size, so a
 size-matched exponent is reported beside it: SIZE_MATCH_N titles drawn SIZE_MATCH_REPEATS
 times from the system, exponent over the top 200 ranks, averaged. Creator-level Zipf
@@ -18,7 +18,7 @@ group.
 
 Zipf's law for views. Within a channel, videos ranked by views (hits.views_zipf_slope,
 Stage 5c) give a rank-size slope; those slopes, the Gini and the top-10 % share are
-summarised per channel group and per channel's dominant caps style.
+summarized per channel group and per channel's dominant caps style.
 
 Views over time. Views are a fetch-time snapshot (2026-09-14), so a January video has
 had eight months to collect them and a September one two weeks: the raw curve falls
@@ -48,7 +48,7 @@ Outputs (data/titles/analysis/):
                                  views, creator-median views, relative log views
     caps_style_by_group.csv      caps-style shares per channel group and per title label
     label_by_caps_style.csv      title labels x caps style: share of each label within the
-                                 style, and relative log views of the labelled titles per
+                                 style, and relative log views of the labeled titles per
                                  label x style
 
 CLI:

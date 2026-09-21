@@ -1,6 +1,6 @@
 # Chad Prather (@ChadPrather1)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Chad Prather · clipper: no · platform: youtube · subscribers: 496000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Chad Prather · clipper: no · platform: youtube · subscribers: 496000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Christian Nationalism and Politics (21.2%); JLP Weekly Series (10.6%
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 52.3 | 71.5 | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 75.7 | 71.5 | 0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 60.3 | 59.0 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 60.3 | 59.0 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 36.8 | 36.8 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 66.9 | 72.8 | 0.5 | 0.2 |
 | F6: Person-centred (named people) | 30.1 | 30.1 | -0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Christian Nationalism and Politics (21.2%); JLP Weekly Series (10.6%
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.8% (3.6%); outrage 51.2% (59.6%); humor 0.0% (0.2%); question 30.6% (15.6%); breaking_live 1.2% (2.0%); episode_show 0.0% (7.6%); interview_guest 7.5% (8.5%); reaction 2.5% (2.2%); confrontation 4.4% (7.8%); listicle 0.0% (0.1%); howto_explainer 11.9% (9.5%)
 
 
-Nearest style neighbours: @JillianMichaels [right]; @TheHumanistReport [left]; @FreshFitMiami [right]; @MarkDice [right]; @morebridgetphetasy [right]
+Nearest style neighbors: @JillianMichaels [right]; @TheHumanistReport [left]; @FreshFitMiami [right]; @MarkDice [right]; @morebridgetphetasy [right]
 
-Nearest topic neighbours: @MichaelKnowles [right]; @PragerU [right]; @jlptalk [right]; @AndrewKlavan [right]; @TuckerCarlson [neutral]
+Nearest topic neighbors: @MichaelKnowles [right]; @PragerU [right]; @jlptalk [right]; @AndrewKlavan [right]; @TuckerCarlson [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -87,7 +87,7 @@ Top topics: Christian Nationalism and Politics (60.2%); JLP Weekly Series (16.9%
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 82.3 | 98.7 | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 81.0 | 84.8 | 0.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 57.0 | 49.4 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 57.0 | 49.4 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 67.1 | 78.5 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 100.0 | 100.0 | 2.2 | -0.3 |
 | F6: Person-centred (named people) | 1.3 | 1.3 | -1.1 | 0.0 |
@@ -102,9 +102,9 @@ Top topics: Christian Nationalism and Politics (60.2%); JLP Weekly Series (16.9%
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (3.2%); outrage 20.9% (56.4%); humor 0.0% (0.1%); question 40.3% (13.7%); breaking_live 0.5% (18.8%); episode_show 0.0% (26.3%); interview_guest 4.0% (14.0%); reaction 1.0% (2.1%); confrontation 4.0% (9.4%); listicle 0.0% (0.2%); howto_explainer 16.9% (5.3%)
 
 
-Nearest style neighbours: @glennbeck [right]; @lizwheeler [right]; @JustPearlyThings [right]; @NewsNation [neutral]; @TheDonLemonShow [left]
+Nearest style neighbors: @glennbeck [right]; @lizwheeler [right]; @JustPearlyThings [right]; @NewsNation [neutral]; @TheDonLemonShow [left]
 
-Nearest topic neighbours: @jlptalk [right]; @ModernDayDebate [left]; @underthedesknews [left]; @TheJoyReidShow [left]; @rolandsmartin [left]
+Nearest topic neighbors: @jlptalk [right]; @ModernDayDebate [left]; @underthedesknews [left]; @TheJoyReidShow [left]; @rolandsmartin [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

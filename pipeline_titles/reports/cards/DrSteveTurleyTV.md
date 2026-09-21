@@ -1,6 +1,6 @@
 # Dr. Steve Turley (@DrSteveTurleyTV)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Steve Turley · clipper: no · platform: youtube · subscribers: 1670000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Steve Turley · clipper: no · platform: youtube · subscribers: 1670000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (15.6%); 2026 Midterm Electio
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 9.6 | 10.0 | -0.7 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 82.0 | 82.0 | 0.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.6 | 85.4 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.6 | 85.4 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 92.9 | 93.3 | 0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 64.4 | 58.6 | 0.4 | 0.2 |
 | F6: Person-centred (named people) | 20.9 | 24.3 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (15.6%); 2026 Midterm Electio
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 11.5% (3.6%); outrage 97.5% (59.6%); humor 0.0% (0.2%); question 0.9% (15.6%); breaking_live 6.1% (2.0%); episode_show 0.0% (7.6%); interview_guest 3.6% (8.5%); reaction 0.2% (2.2%); confrontation 7.2% (7.8%); listicle 0.2% (0.1%); howto_explainer 2.3% (9.5%)
 
 
-Nearest style neighbours: @DoubleDownNews [left]; @ChadPrather1 [right]; @JillianMichaels [right]; @RubinReport [right]; @glennbeck [right]
+Nearest style neighbors: @DoubleDownNews [left]; @ChadPrather1 [right]; @JillianMichaels [right]; @RubinReport [right]; @glennbeck [right]
 
-Nearest topic neighbours: @bennyjohnson [right]; @NewsmaxTV [right]; @FoxNews [right]; @RealAmericasVoice [right]; @BlazeTV [right]
+Nearest topic neighbors: @bennyjohnson [right]; @NewsmaxTV [right]; @FoxNews [right]; @RealAmericasVoice [right]; @BlazeTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (25.8%); 2026 Midterm Electio
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.0 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.3 | 0.0 |

@@ -1,6 +1,6 @@
 # One America News Network (@oann)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: OAN · clipper: no · platform: youtube · subscribers: 1420000.0
+Channel group: **right** (title-leaning score, document 14) · organization: OAN · clipper: no · platform: youtube · subscribers: 1420000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.2%); California Election F
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 59.4 | 54.8 | 0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 17.6 | 17.2 | -0.7 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.3 | 66.9 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.3 | 66.9 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 3.8 | 1.7 | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 19.7 | 21.8 | -0.3 | 0.2 |
 | F6: Person-centred (named people) | 80.3 | 75.3 | 0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.2%); California Election F
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (3.6%); outrage 39.2% (59.6%); humor 0.2% (0.2%); question 11.4% (15.6%); breaking_live 0.8% (2.0%); episode_show 0.0% (7.6%); interview_guest 7.5% (8.5%); reaction 2.1% (2.2%); confrontation 7.5% (7.8%); listicle 0.1% (0.1%); howto_explainer 4.8% (9.5%)
 
 
-Nearest style neighbours: @nypost [right]; @RealAmericasVoice [right]; @MLChristiansen [right]; @AnthonyBrianLogan [right]; @clayandbuck [right]
+Nearest style neighbors: @nypost [right]; @RealAmericasVoice [right]; @MLChristiansen [right]; @AnthonyBrianLogan [right]; @clayandbuck [right]
 
-Nearest topic neighbours: @NewsmaxTV [right]; @FoxNewsChannelClips [right]; @RealAmericasVoice [right]; @thehill [neutral]; @CBSNews [neutral]
+Nearest topic neighbors: @NewsmaxTV [right]; @FoxNewsChannelClips [right]; @RealAmericasVoice [right]; @thehill [neutral]; @CBSNews [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump's speeches and events (28.5%); Vice President JD Vance Remarks
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 81.0 | 93.7 | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 36.7 | 27.8 | -0.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 89.9 | 92.4 | 2.0 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 89.9 | 92.4 | 2.0 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 6.3 | 3.8 | -0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 36.7 | 15.2 | -0.4 | -0.3 |
 | F6: Person-centred (named people) | 20.3 | 36.7 | -0.4 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Trump's speeches and events (28.5%); Vice President JD Vance Remarks
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.7% (3.2%); outrage 19.4% (56.4%); humor 0.3% (0.1%); question 0.0% (13.7%); breaking_live 79.9% (18.8%); episode_show 0.0% (26.3%); interview_guest 11.3% (14.0%); reaction 0.0% (2.1%); confrontation 0.7% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
-Nearest style neighbours: @TheOfficerTatum [right]; @MeidasTouch [left]; @LIVESNEAKO [neutral]; @Reuters [neutral]; @JacksonHinkleOfficial [neutral]
+Nearest style neighbors: @TheOfficerTatum [right]; @MeidasTouch [left]; @LIVESNEAKO [neutral]; @Reuters [neutral]; @JacksonHinkleOfficial [neutral]
 
-Nearest topic neighbours: @thehill [neutral]; @RSBN [right]; @FoxNews [right]; @msnow [left]; @USATODAY [neutral]
+Nearest topic neighbors: @thehill [neutral]; @RSBN [right]; @FoxNews [right]; @msnow [left]; @USATODAY [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

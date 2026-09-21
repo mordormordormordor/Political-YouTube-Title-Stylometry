@@ -1,6 +1,6 @@
 # New York Post (@nypost)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: New York Post · clipper: no · platform: youtube · subscribers: 2560000.0
+Channel group: **right** (title-leaning score, document 14) · organization: New York Post · clipper: no · platform: youtube · subscribers: 2560000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.0%); Walmart Shoplifting a
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 44.4 | 28.0 | 0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 13.8 | 14.2 | -0.8 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 19.2 | 53.1 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 19.2 | 53.1 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 45.2 | 28.9 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 20.1 | 16.7 | -0.3 | 0.2 |
 | F6: Person-centred (named people) | 74.9 | 64.0 | 0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.0%); Walmart Shoplifting a
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.5% (3.6%); outrage 55.5% (59.6%); humor 0.5% (0.2%); question 3.5% (15.6%); breaking_live 3.8% (2.0%); episode_show 0.0% (7.6%); interview_guest 7.8% (8.5%); reaction 1.2% (2.2%); confrontation 9.0% (7.8%); listicle 0.3% (0.1%); howto_explainer 1.7% (9.5%)
 
 
-Nearest style neighbours: @oann [right]; @MLChristiansen [right]; @GlennKirschner2 [left]; @DropSiteNews [left]; @clayandbuck [right]
+Nearest style neighbors: @oann [right]; @MLChristiansen [right]; @GlennKirschner2 [left]; @DropSiteNews [left]; @clayandbuck [right]
 
-Nearest topic neighbours: @AssociatedPress [neutral]; @CBSNews [neutral]; @USATODAY [neutral]; @NewsNation [neutral]; @ABCNews [neutral]
+Nearest topic neighbors: @AssociatedPress [neutral]; @CBSNews [neutral]; @USATODAY [neutral]; @NewsNation [neutral]; @ABCNews [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump's speeches and events (15.4%); Trump State of the Union Addres
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 88.6 | 92.4 | 0.7 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 5.1 | 7.6 | -2.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 78.5 | 82.3 | 1.0 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 78.5 | 82.3 | 1.0 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 51.9 | 43.0 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 40.5 | 35.4 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 31.6 | 44.3 | -0.1 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Trump's speeches and events (15.4%); Trump State of the Union Addres
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.7% (3.2%); outrage 10.0% (56.4%); humor 0.0% (0.1%); question 0.9% (13.7%); breaking_live 65.5% (18.8%); episode_show 0.0% (26.3%); interview_guest 9.1% (14.0%); reaction 0.9% (2.1%); confrontation 0.9% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
 
 
-Nearest style neighbours: @markets [neutral]; @hutch [neutral]; @ThePodcastoftheLotusEaters [right]; @CamHigby [right]; @franifio [left]
+Nearest style neighbors: @markets [neutral]; @hutch [neutral]; @ThePodcastoftheLotusEaters [right]; @CamHigby [right]; @franifio [left]
 
-Nearest topic neighbours: @USATODAY [neutral]; @msnow [left]; @FoxNews [right]; @oann [right]; @AssociatedPress [neutral]
+Nearest topic neighbors: @USATODAY [neutral]; @msnow [left]; @FoxNews [right]; @oann [right]; @AssociatedPress [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

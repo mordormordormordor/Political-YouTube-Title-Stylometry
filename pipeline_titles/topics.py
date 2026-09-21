@@ -21,7 +21,7 @@ data/titles/analysis/:
     cache/topic_centroids.npy, cache/topic_fit_sample.parquet
 
 Fit sample: from the creator-balanced subset, per creator x genre capped so that
-the total is ~100,000 (cap found by bisection, seed 20260914). UMAP(15 neighbours,
+the total is ~100,000 (cap found by bisection, seed 20260914). UMAP(15 neighbors,
 5 dims, cosine, min_dist 0) -> HDBSCAN(min_cluster_size 80, min_samples 15, eom).
 If HDBSCAN yields more than --max-topics topics they are merged to that number by
 c-TF-IDF similarity. Outliers and all non-fit titles are assigned to the nearest
@@ -31,7 +31,7 @@ percentile of the similarities of HDBSCAN's own members.
 CLI:
     python -m pipeline_titles.topics
     python -m pipeline_titles.topics --fit-size 100000 --min-cluster-size 80 --max-topics 250
-    python -m pipeline_titles.topics --label-only        # re-run only the LLM labelling
+    python -m pipeline_titles.topics --label-only        # re-run only the LLM labeling
 """
 
 from __future__ import annotations
@@ -65,7 +65,7 @@ TOPIC_CATEGORIES = ["us_politics", "world_politics", "war_conflict", "crime_just
 POLITICAL_CATEGORIES = {"us_politics", "world_politics", "war_conflict", "crime_justice", "economy_policy",
                         "media_culture_war"}
 
-LABEL_PROMPT = """You are labelling a topic found by clustering YouTube video titles from political-media channels.
+LABEL_PROMPT = """You are labeling a topic found by clustering YouTube video titles from political-media channels.
 Top terms (by class TF-IDF): {terms}
 Example titles:
 {examples}
@@ -94,7 +94,7 @@ def cap_for_target(sizes: Sequence[int], target: int) -> int:
 
 
 def nearest_centroid(emb: np.ndarray, centroids: np.ndarray, chunk: int = 20000) -> tuple[np.ndarray, np.ndarray]:
-    """(argmax cosine, max cosine) of L2-normalised rows against L2-normalised centroids."""
+    """(argmax cosine, max cosine) of L2-normalized rows against L2-normalized centroids."""
     best, sim = np.empty(len(emb), dtype=np.int32), np.empty(len(emb), dtype=np.float32)
     for i in range(0, len(emb), chunk):
         s = emb[i:i + chunk] @ centroids.T
@@ -197,7 +197,7 @@ def run(fit_size: int, min_cluster_size: int, min_samples: int, max_topics: int,
         emb_fit = emb_all[fit["emb_row"].to_numpy()]
         model, hdb_topics = fit_topic_model(docs, emb_fit, min_cluster_size, min_samples, max_topics, SEED)
         topic_ids = sorted(t for t in set(hdb_topics) if t != -1)
-        # centroids = mean embedding of HDBSCAN members, L2-normalised
+        # centroids = mean embedding of HDBSCAN members, L2-normalized
         centroids = np.vstack([emb_fit[hdb_topics == t].mean(axis=0) for t in topic_ids])
         centroids /= np.linalg.norm(centroids, axis=1, keepdims=True)
         np.save(CENTROIDS_NPY, centroids.astype(np.float32))
@@ -279,7 +279,7 @@ def run(fit_size: int, min_cluster_size: int, min_samples: int, max_topics: int,
             "top_orgs": "; ".join(f"{k} ({v})" for k, v in orgs.most_common(8)),
         })
         if len(rows) % 25 == 0:
-            print(f"  labelled {len(rows)}/{len(topic_ids)} topics", flush=True)
+            print(f"  labeled {len(rows)}/{len(topic_ids)} topics", flush=True)
     labels = pd.DataFrame(rows)
     labels.to_csv(TOPIC_LABELS_CSV, index=False)
     political = set(labels.loc[labels["political"], "topic_id"])

@@ -1,6 +1,6 @@
 # AJ+ (@ajplus)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Al Jazeera · clipper: no · platform: youtube · subscribers: 2530000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Al Jazeera · clipper: no · platform: youtube · subscribers: 2530000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (34.0%); Sudan Civil War and Africa 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 79.5 | 64.9 | 0.6 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 79.5 | 76.6 | 0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.5 | 75.3 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.5 | 75.3 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 85.8 | 80.8 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 96.7 | 96.2 | 2.4 | 0.1 |
 | F6: Person-centred (named people) | 2.5 | 6.7 | -1.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (34.0%); Sudan Civil War and Africa 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.0% (2.7%); outrage 40.0% (63.9%); humor 0.0% (0.2%); question 34.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 4.0% (9.8%); reaction 0.0% (2.9%); confrontation 2.0% (7.6%); listicle 0.0% (0.1%); howto_explainer 16.0% (8.0%)
 
 
-Nearest style neighbours: @LeejaMiller [left]; @theisabelbrown [right]; @TheAtlantic [left]; @chriscuomo [left]; @thomhartmann [left]
+Nearest style neighbors: @LeejaMiller [left]; @theisabelbrown [right]; @TheAtlantic [left]; @chriscuomo [left]; @thomhartmann [left]
 
-Nearest topic neighbours: @BadEmpanadaLive [left]; @BreakThroughNews [left]; @CoreyGilShusterAskProject [neutral]; @DropSiteNews [left]; @zeteo [left]
+Nearest topic neighbors: @BadEmpanadaLive [left]; @BreakThroughNews [left]; @CoreyGilShusterAskProject [neutral]; @DropSiteNews [left]; @zeteo [left]
 
 
 Engagement: n < 100 titles with views, not estimated.

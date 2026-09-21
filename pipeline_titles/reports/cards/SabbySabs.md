@@ -1,6 +1,6 @@
 # Sabby Sabs (@SabbySabs)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Sabby Sabs · clipper: no · platform: youtube · subscribers: 424000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Sabby Sabs · clipper: no · platform: youtube · subscribers: 424000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (12.3%); Israel-Palestine Con
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 17.6 | 16.3 | -0.4 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 5.4 | 7.1 | -1.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.7 | 15.9 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.7 | 15.9 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 7.1 | 6.7 | -0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 10.9 | 13.4 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 53.1 | 69.9 | -0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (12.3%); Israel-Palestine Con
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.0% (2.7%); outrage 84.5% (63.9%); humor 0.0% (0.2%); question 9.3% (15.6%); breaking_live 12.1% (2.9%); episode_show 0.0% (2.8%); interview_guest 11.7% (9.8%); reaction 0.3% (2.9%); confrontation 5.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 3.2% (8.0%)
 
 
-Nearest style neighbours: @TheYoungTurks [left]; @ActualJusticeWarrior [right]; @breakingpoints [left]; @DueDissidence [left]; @BadEmpanadaLive [left]
+Nearest style neighbors: @TheYoungTurks [left]; @ActualJusticeWarrior [right]; @breakingpoints [left]; @DueDissidence [left]; @BadEmpanadaLive [left]
 
-Nearest topic neighbours: @TheYoungTurks [left]; @thejimmydoreshow [neutral]; @DueDissidence [left]; @breakingpoints [left]; @thehill [neutral]
+Nearest topic neighbors: @TheYoungTurks [left]; @thejimmydoreshow [neutral]; @DueDissidence [left]; @breakingpoints [left]; @thehill [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Iran Conflict and Political Updates (84.5%); Iran War and Strait of 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 3.8 | 3.8 | -1.4 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 98.7 | 89.9 | 1.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 2.5 | 1.3 | -1.0 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 2.5 | 1.3 | -1.0 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 11.4 | 15.2 | -0.5 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 32.9 | 12.7 | -0.4 | -0.3 |
 | F6: Person-centred (named people) | 100.0 | 100.0 | 3.6 | 0.6 |
@@ -104,9 +104,9 @@ Top topics: Iran Conflict and Political Updates (84.5%); Iran War and Strait of 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (1.9%); outrage 99.0% (63.2%); humor 0.0% (0.1%); question 0.0% (11.3%); breaking_live 2.9% (17.5%); episode_show 0.0% (6.4%); interview_guest 39.8% (18.3%); reaction 1.9% (1.5%); confrontation 24.3% (15.4%); listicle 0.0% (0.0%); howto_explainer 1.0% (2.9%)
 
 
-Nearest style neighbours: @RealAmericasVoice [right]; @Xanderhal [left]; @DueDissidence [left]; @TheSerfTimes [left]; @TimesNowWorld [neutral]
+Nearest style neighbors: @RealAmericasVoice [right]; @Xanderhal [left]; @DueDissidence [left]; @TheSerfTimes [left]; @TimesNowWorld [neutral]
 
-Nearest topic neighbours: @AnthonyBrianLogan [right]; @Xanderhal [left]; @DueDissidence [left]; @chicksonright [right]; @VivaFrei [right]
+Nearest topic neighbors: @AnthonyBrianLogan [right]; @Xanderhal [left]; @DueDissidence [left]; @chicksonright [right]; @VivaFrei [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

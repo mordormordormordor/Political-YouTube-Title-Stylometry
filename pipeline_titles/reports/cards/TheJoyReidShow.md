@@ -1,6 +1,6 @@
 # The Joy Reid Show (@TheJoyReidShow)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Joy Reid · clipper: no · platform: youtube · subscribers: 503000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Joy Reid · clipper: no · platform: youtube · subscribers: 503000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Race and Politics in Media (6.3%); Christian Nationalism and Politic
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 90.8 | 89.1 | 0.8 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 21.3 | 21.8 | -0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 75.3 | 74.1 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 75.3 | 74.1 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 18.8 | 18.4 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 56.1 | 55.2 | 0.3 | 0.1 |
 | F6: Person-centred (named people) | 64.9 | 72.4 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Race and Politics in Media (6.3%); Christian Nationalism and Politic
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.3% (2.7%); outrage 46.6% (63.9%); humor 0.0% (0.2%); question 12.2% (15.6%); breaking_live 2.1% (2.9%); episode_show 0.0% (2.8%); interview_guest 14.3% (9.8%); reaction 1.3% (2.9%); confrontation 6.3% (7.6%); listicle 0.4% (0.1%); howto_explainer 6.7% (8.0%)
 
 
-Nearest style neighbours: @underthedesknews [left]; @TheDonLemonShow [left]; @hutch [neutral]; @ClubRandomPodcast [neutral]; @XAVIAER [right]
+Nearest style neighbors: @underthedesknews [left]; @TheDonLemonShow [left]; @hutch [neutral]; @ClubRandomPodcast [neutral]; @XAVIAER [right]
 
-Nearest topic neighbours: @rolandsmartin [left]; @TheRealTabithaSpeaks [left]; @Tim_Black [right]; @AfterPartyEmily [right]; @TheDonLemonShow [left]
+Nearest topic neighbors: @rolandsmartin [left]; @TheRealTabithaSpeaks [left]; @Tim_Black [right]; @AfterPartyEmily [right]; @TheDonLemonShow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -84,7 +84,7 @@ Top topics: Members Only Show (7.9%); America's 250th Anniversary and Founding H
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 98.7 | 96.2 | 1.0 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 10.1 | 11.4 | -1.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 53.2 | 53.2 | -0.2 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 53.2 | 53.2 | -0.2 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 29.1 | 53.2 | -0.3 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 78.5 | 78.5 | -0.0 | -0.3 |
 | F6: Person-centred (named people) | 2.5 | 3.8 | -0.9 | 0.6 |
@@ -99,9 +99,9 @@ Top topics: Members Only Show (7.9%); America's 250th Anniversary and Founding H
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (1.9%); outrage 44.3% (63.2%); humor 0.0% (0.1%); question 5.7% (11.3%); breaking_live 6.4% (17.5%); episode_show 0.0% (6.4%); interview_guest 10.0% (18.3%); reaction 0.7% (1.5%); confrontation 3.6% (15.4%); listicle 0.7% (0.0%); howto_explainer 2.1% (2.9%)
 
 
-Nearest style neighbours: @underthedesknews [left]; @franifio [left]; @CamHigby [right]; @hutch [neutral]; @TheDonLemonShow [left]
+Nearest style neighbors: @underthedesknews [left]; @franifio [left]; @CamHigby [right]; @hutch [neutral]; @TheDonLemonShow [left]
 
-Nearest topic neighbours: @TheDonLemonShow [left]; @rolandsmartin [left]; @jimacosta [left]; @underthedesknews [left]; @NewsmaxTV [right]
+Nearest topic neighbors: @TheDonLemonShow [left]; @rolandsmartin [left]; @jimacosta [left]; @underthedesknews [left]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

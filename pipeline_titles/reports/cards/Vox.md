@@ -1,6 +1,6 @@
 # Vox (@Vox)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Vox · clipper: no · platform: youtube · subscribers: 12700000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Vox · clipper: no · platform: youtube · subscribers: 12700000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: JLP Weekly Series (11.3%); Gen Z and Boomers Political Apathy (5.3%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 89.5 | 93.7 | 0.8 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 90.8 | 87.4 | 0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.5 | 57.7 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.5 | 57.7 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 85.4 | 81.6 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 97.9 | 97.9 | 2.7 | 0.1 |
 | F6: Person-centred (named people) | 3.8 | 5.0 | -1.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: JLP Weekly Series (11.3%); Gen Z and Boomers Political Apathy (5.3%)
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (2.7%); outrage 24.8% (63.9%); humor 0.0% (0.2%); question 45.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 5.3% (9.8%); reaction 0.0% (2.9%); confrontation 4.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 31.6% (8.0%)
 
 
-Nearest style neighbours: @BBCNews [neutral]; @POLITICO [neutral]; @TechCrunch [neutral]; @UnHerd [left]; @chriscuomo [left]
+Nearest style neighbors: @BBCNews [neutral]; @POLITICO [neutral]; @TechCrunch [neutral]; @UnHerd [left]; @chriscuomo [left]
 
-Nearest topic neighbours: @NYTPodcasts [left]; @morebridgetphetasy [right]; @TheAtlantic [left]; @TheVaushPit [left]; @PragerU [right]
+Nearest topic neighbors: @NYTPodcasts [left]; @morebridgetphetasy [right]; @TheAtlantic [left]; @TheVaushPit [left]; @PragerU [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

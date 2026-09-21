@@ -1,6 +1,6 @@
 # The Damage Report (@TheDamageReport)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: TYT Network · clipper: no · platform: youtube · subscribers: 1370000.0
+Channel group: **left** (title-leaning score, document 14) · organization: TYT Network · clipper: no · platform: youtube · subscribers: 1370000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Members Only Show (10.1%); Political Media Broadcasters (5.8%); LaGu
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 2.9 | 5.4 | -1.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 16.7 | 6.3 | -0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 24.7 | 49.4 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 24.7 | 49.4 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 11.3 | 6.3 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 14.2 | 5.4 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 65.7 | 56.1 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Members Only Show (10.1%); Political Media Broadcasters (5.8%); LaGu
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (2.7%); outrage 68.6% (63.9%); humor 0.3% (0.2%); question 0.3% (15.6%); breaking_live 0.2% (2.9%); episode_show 28.3% (2.8%); interview_guest 15.4% (9.8%); reaction 0.4% (2.9%); confrontation 10.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.3% (8.0%)
 
 
-Nearest style neighbours: @RebelHQ [left]; @usefulidiots [left]; @JackCocchiarellaShow [left]; @chicksonright [right]; @MyronGainesX [right]
+Nearest style neighbors: @RebelHQ [left]; @usefulidiots [left]; @JackCocchiarellaShow [left]; @chicksonright [right]; @MyronGainesX [right]
 
-Nearest topic neighbours: @RebelHQ [left]; @FarronBalanced [left]; @dollemore [left]; @podsaveamerica [left]; @SecularTalk [left]
+Nearest topic neighbors: @RebelHQ [left]; @FarronBalanced [left]; @dollemore [left]; @podsaveamerica [left]; @SecularTalk [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran Conflict and Political Updates (8.5%); Elon Musk and Political 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 34.2 | 32.9 | -0.4 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 87.3 | 82.3 | 0.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 34.2 | 34.2 | -0.4 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 34.2 | 34.2 | -0.4 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 74.7 | 75.9 | 0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 29.1 | 34.2 | -0.4 | -0.3 |
 | F6: Person-centred (named people) | 93.7 | 93.7 | 2.3 | 0.6 |
@@ -105,9 +105,9 @@ Top topics: Iran Conflict and Political Updates (8.5%); Elon Musk and Political 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.5% (1.9%); outrage 81.9% (63.2%); humor 0.4% (0.1%); question 26.9% (11.3%); breaking_live 0.0% (17.5%); episode_show 0.0% (6.4%); interview_guest 8.1% (18.3%); reaction 1.5% (1.5%); confrontation 12.2% (15.4%); listicle 0.0% (0.0%); howto_explainer 1.8% (2.9%)
 
 
-Nearest style neighbours: @RedactedNews [right]; @TimesNowWorld [neutral]; @AfterPartyEmily [right]; @MLChristiansen [right]; @thejimmydoreshow [neutral]
+Nearest style neighbors: @RedactedNews [right]; @TimesNowWorld [neutral]; @AfterPartyEmily [right]; @MLChristiansen [right]; @thejimmydoreshow [neutral]
 
-Nearest topic neighbours: @bulwarkmedia [left]; @TheDonLemonShow [left]; @deanwithrs [left]; @jimacosta [left]; @FarronBalanced [left]
+Nearest topic neighbors: @bulwarkmedia [left]; @TheDonLemonShow [left]; @deanwithrs [left]; @jimacosta [left]; @FarronBalanced [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

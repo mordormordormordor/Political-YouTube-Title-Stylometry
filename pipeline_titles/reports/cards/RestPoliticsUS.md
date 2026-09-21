@@ -1,6 +1,6 @@
 # The Rest Is Politics US (@RestPoliticsUS)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: The Rest Is Politics US · clipper: no · platform: youtube · subscribers: 409000.0
+Channel group: **left** (title-leaning score, document 14) · organization: The Rest Is Politics US · clipper: no · platform: youtube · subscribers: 409000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (16.4%); Trump Meltdowns and 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 30.1 | 20.5 | -0.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 48.5 | 45.2 | -0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 60.7 | 72.0 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 60.7 | 72.0 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 67.8 | 72.0 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 96.2 | 94.1 | 2.4 | 0.1 |
 | F6: Person-centred (named people) | 31.0 | 42.7 | -0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (16.4%); Trump Meltdowns and 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (2.7%); outrage 80.0% (63.9%); humor 0.0% (0.2%); question 26.4% (15.6%); breaking_live 0.0% (2.9%); episode_show 2.3% (2.8%); interview_guest 7.3% (9.8%); reaction 0.0% (2.9%); confrontation 6.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 22.7% (8.0%)
 
 
-Nearest style neighbours: @AndrewKlavan [right]; @theisabelbrown [right]; @LeejaMiller [left]; @nousnetwork [left]; @TheAtlantic [left]
+Nearest style neighbors: @AndrewKlavan [right]; @theisabelbrown [right]; @LeejaMiller [left]; @nousnetwork [left]; @TheAtlantic [left]
 
-Nearest topic neighbours: @podsaveamerica [left]; @msnow [left]; @FarronBalanced [left]; @TheMichaelCohenShow [left]; @dollemore [left]
+Nearest topic neighbors: @podsaveamerica [left]; @msnow [left]; @FarronBalanced [left]; @TheMichaelCohenShow [left]; @dollemore [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (40.0%); Trump vs Maduro Vene
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.8 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.1 | 0.6 |

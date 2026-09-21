@@ -1,6 +1,6 @@
 # Dean Withers (@deanwithrs)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Dean Withers · clipper: no · platform: youtube · subscribers: 938000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Dean Withers · clipper: no · platform: youtube · subscribers: 938000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: MAGA Supporters and Arguments (71.7%); MAGA Movement Decline (5.7%);
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 23.8 | 17.2 | -0.3 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 64.4 | 67.8 | 0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.7 | 9.6 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.7 | 9.6 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 46.9 | 54.0 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 11.7 | 7.9 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 40.2 | 23.4 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: MAGA Supporters and Arguments (71.7%); MAGA Movement Decline (5.7%);
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.4% (2.7%); outrage 94.3% (63.9%); humor 0.4% (0.2%); question 0.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 4.5% (9.8%); reaction 0.8% (2.9%); confrontation 27.6% (7.6%); listicle 0.0% (0.1%); howto_explainer 1.5% (8.0%)
 
 
-Nearest style neighbours: @TheQuartering [right]; @TheOfficerTatum [right]; @LegalAFMTN [left]; @adammockler [left]; @MeidasTouch [left]
+Nearest style neighbors: @TheQuartering [right]; @TheOfficerTatum [right]; @LegalAFMTN [left]; @adammockler [left]; @MeidasTouch [left]
 
-Nearest topic neighbours: @PTLRadioShow [left]; @PiscoLitty [left]; @CamHigby [right]; @The_Crucible [right]; @RebelHQ [left]
+Nearest topic neighbors: @PTLRadioShow [left]; @PiscoLitty [left]; @CamHigby [right]; @The_Crucible [right]; @RebelHQ [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump Meltdowns and Collapses (12.0%); Trump Resignation and Leaks (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 36.7 | 31.6 | -0.3 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 62.0 | 69.6 | -0.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 29.1 | 27.8 | -0.4 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 29.1 | 27.8 | -0.4 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 93.7 | 97.5 | 0.4 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 74.7 | 67.1 | -0.1 | -0.3 |
 | F6: Person-centred (named people) | 16.5 | 8.9 | -0.5 | 0.6 |
@@ -105,9 +105,9 @@ Top topics: Trump Meltdowns and Collapses (12.0%); Trump Resignation and Leaks (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.5% (1.9%); outrage 94.4% (63.2%); humor 0.4% (0.1%); question 10.5% (11.3%); breaking_live 7.5% (17.5%); episode_show 99.6% (6.4%); interview_guest 4.9% (18.3%); reaction 1.1% (1.5%); confrontation 99.2% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.4% (2.9%)
 
 
-Nearest style neighbours: @TheYoungTurks [left]; @RubinReport [right]; @franifio [left]; @hutch [neutral]; @NBCNews [neutral]
+Nearest style neighbors: @TheYoungTurks [left]; @RubinReport [right]; @franifio [left]; @hutch [neutral]; @NBCNews [neutral]
 
-Nearest topic neighbours: @FarronBalanced [left]; @LukeBeasley [left]; @MeidasTouch [left]; @TheDonLemonShow [left]; @bulwarkmedia [left]
+Nearest topic neighbors: @FarronBalanced [left]; @LukeBeasley [left]; @MeidasTouch [left]; @TheDonLemonShow [left]; @bulwarkmedia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

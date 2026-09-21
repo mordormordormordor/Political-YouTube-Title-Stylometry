@@ -1,6 +1,6 @@
 # The Atlantic (@TheAtlantic)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: The Atlantic · clipper: no · platform: youtube · subscribers: 969000.0
+Channel group: **left** (title-leaning score, document 14) · organization: The Atlantic · clipper: no · platform: youtube · subscribers: 969000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: AI and Political Concerns (10.2%); Modern Women and Feminism Debate 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 86.6 | 86.6 | 0.7 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 25.9 | 31.4 | -0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 58.6 | 66.1 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 58.6 | 66.1 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 41.0 | 44.4 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 94.6 | 95.8 | 2.1 | 0.1 |
 | F6: Person-centred (named people) | 29.3 | 16.3 | -0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: AI and Political Concerns (10.2%); Modern Women and Feminism Debate 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.6% (2.7%); outrage 34.3% (63.9%); humor 0.0% (0.2%); question 40.4% (15.6%); breaking_live 0.6% (2.9%); episode_show 0.6% (2.8%); interview_guest 10.8% (9.8%); reaction 1.2% (2.9%); confrontation 1.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 13.2% (8.0%)
 
 
-Nearest style neighbours: @LeejaMiller [left]; @EzraKleinShow [left]; @AndrewKlavan [right]; @chriscuomo [left]; @samharrisorg [left]
+Nearest style neighbors: @LeejaMiller [left]; @EzraKleinShow [left]; @AndrewKlavan [right]; @chriscuomo [left]; @samharrisorg [left]
 
-Nearest topic neighbours: @NYTPodcasts [left]; @thomhartmann [left]; @morebridgetphetasy [right]; @TheEconomist [left]; @CNN [left]
+Nearest topic neighbors: @NYTPodcasts [left]; @thomhartmann [left]; @morebridgetphetasy [right]; @TheEconomist [left]; @CNN [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -86,7 +86,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (20.0%); Hollywood and Oscars
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.3 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.6 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.6 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | -2.2 | 0.6 |

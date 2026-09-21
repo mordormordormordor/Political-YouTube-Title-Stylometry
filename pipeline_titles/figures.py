@@ -2,10 +2,10 @@
 
 Every figure is drawn from the analysis tables at render time. The only grouping of
 channels is the left / neutral / right channel group of the leaning stage (blue /
-grey / orange everywhere); title labels (left / neither / right) use the same hues;
-capitalisation styles have their own fixed palette. Palette: the validated reference
+gray / orange everywhere); title labels (left / neither / right) use the same hues;
+capitalization styles have their own fixed palette. Palette: the validated reference
 palette of the dataviz method (blue, orange, aqua, yellow, magenta, green; sequential
-blue; diverging blue <-> red with a grey midpoint).
+blue; diverging blue <-> red with a gray midpoint).
 
     python -m pipeline_titles.figures
 """
@@ -51,8 +51,8 @@ def glabel(g: str) -> str:
     return GROUP_LABEL.get(g, g)
 
 
-SHORT = {"F1": "tone: positive vs outrage", "F2": "clause headline", "F3": "LIVE / labelled", "F4": "stream talk", "F5": "question / explainer",
-         "F6": "person-centred", "F7": "news prose", "F8": "numbers / dates", "F9": "ALL CAPS", "F10": "quoted speech", "F11": "long, upbeat", "F12": "modal / future"}
+SHORT = {"F1": "tone: positive vs outrage", "F2": "clause headline", "F3": "LIVE / labeled", "F4": "stream talk", "F5": "question / explainer",
+         "F6": "person-centered", "F7": "news prose", "F8": "numbers / dates", "F9": "ALL CAPS", "F10": "quoted speech", "F11": "long, upbeat", "F12": "modal / future"}
 
 
 def names_of():
@@ -175,7 +175,7 @@ def fig_landscape():
     ms = rd("map_style.csv"); mt = rd("map_topic.csv"); cc = rd("cluster_comparison.csv"); coh = rd("group_style_cohesion.csv"); ent = rd("entities_top.csv"); st = rd("shared_titles.csv")
     label_set = {"@HasanAbi", "@BenShapiro", "@FoxNews", "@CNN", "@MeidasTouch", "@TuckerCarlson", "@joerogan", "@Reuters", "@destiny", "@TimcastIRL",
                  "@BBCNews", "@TheYoungTurks", "@LastWeekTonight", "@nytimes", "@RSBN", "@LegalEagle", "@CaspianReport", "@bennyjohnson", "@briantylercohen", "@PBDPodcast"}
-    for df, name, title, note in ((ms, "05_style_map.png", "Style space: PCA of topic-controlled factor scores (edited uploads)", "Each point is a creator; colour is its channel group. The groups are scattered through the space."),
+    for df, name, title, note in ((ms, "05_style_map.png", "Style space: PCA of topic-controlled factor scores (edited uploads)", "Each point is a creator; color is its channel group. The groups are scattered through the space."),
                                   (mt, "05_topic_map.png", "Topic space: MDS of Jensen-Shannon distances between topic mixes (edited uploads)", "Distance = how different two creators' topic mixes are.")):
         d = df[df.genre == "videos"].copy()
         fig, ax = plt.subplots(figsize=(9, 7))
@@ -211,7 +211,7 @@ def fig_landscape():
     cross = st[~st.same_organisation_only].head(20)
     fig, ax = plt.subplots(figsize=(8, 5.5))
     hbar(ax, cross.example, cross.n_creators, CAT[0], fmt="{:.0f}")
-    ax.set_xlabel("creators from different organisations using the title verbatim"); ax.set_title("The most shared verbatim titles")
+    ax.set_xlabel("creators from different organizations using the title verbatim"); ax.set_title("The most shared verbatim titles")
     fig.tight_layout(); save(fig, "05_shared_titles.png")
 
 
@@ -229,7 +229,7 @@ def fig_drift():
             ax.plot(range(9), s.to_numpy(), color=GCOL[g], lw=2, label=glabel(g)); ax.plot(8, s.iloc[-1], "o", color=SURFACE, mec=GCOL[g], mew=1.5, ms=7)
             ax.set_title(f"{glabel(g)} (n={int(n) if pd.notna(n) else '?'})", fontsize=9); ax.set_xticks(range(9), [m[5:] for m in MONTHS], fontsize=7)
         axes[0].legend(loc="lower left", fontsize=7)
-        fig.suptitle(title + "; grey dashed = all creators; hollow = Sept 1-14", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
+        fig.suptitle(title + "; gray dashed = all creators; hollow = Sept 1-14", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
         fig.tight_layout(rect=(0, 0, 1, 0.92)); save(fig, name)
 
 
@@ -241,7 +241,7 @@ def fig_zipf_words():
     fig, axes = plt.subplots(1, 3, figsize=(13, 4.2), sharey=True)
     panels = (("channel_group", list(GROUPS), GCOL, glabel, "by channel group (balanced edited uploads)"),
               ("title_label", ["left", "neither", "right"], GCOL, lambda l: f"{l} titles", "by title label (the judge's sample)"),
-              ("caps_style", CAPS_ORDER, CAPS_COL, lambda c: CAPS_LABEL[c], "by capitalisation style"))
+              ("caps_style", CAPS_ORDER, CAPS_COL, lambda c: CAPS_LABEL[c], "by capitalization style"))
     ref = cv[cv.grouping == "corpus"]
     for ax, (kind, order, colors, lab, title) in zip(axes, panels):
         ax.plot(ref["rank"], ref["share"], color=INK, lw=1, ls=":", label="whole corpus")
@@ -277,10 +277,10 @@ def fig_zipf_views():
     ax.set_xscale("log"); ax.set_yscale("log"); ax.set_xlabel("rank of the video within the channel (1 = most viewed)"); ax.set_ylabel("views / views of the channel's top video")
     ax.legend(fontsize=7.5); ax.set_title("Rank-size (Zipf) curves of views, eight channels")
     strip_by_group(axes[1], hv[hv.group.isin(GROUPS)], "zipf_views_all", "group", list(GROUPS), "Zipf slope of views (log views vs log rank, all videos)", "Slope by channel group", seed=2)
-    strip_by_group(axes[2], hv[hv.dominant_caps_style.isin(CAPS_ORDER)], "zipf_views_all", "dominant_caps_style", CAPS_ORDER, "Zipf slope of views", "Slope by the channel's dominant capitalisation style", color_of=CAPS_COL, seed=3)
+    strip_by_group(axes[2], hv[hv.dominant_caps_style.isin(CAPS_ORDER)], "zipf_views_all", "dominant_caps_style", CAPS_ORDER, "Zipf slope of views", "Slope by the channel's dominant capitalization style", color_of=CAPS_COL, seed=3)
     for ax in axes[1:]:
         ax.set_xlim(0, 3.2)
-    fig.tight_layout(); save(fig, "07_zipf_views.png", "Curves bend down at the tail on log-log axes: lognormal rather than straight-line power-law behaviour. Steeper slope = views fall off faster down the ranking; the black bar is the median.")
+    fig.tight_layout(); save(fig, "07_zipf_views.png", "Curves bend down at the tail on log-log axes: lognormal rather than straight-line power-law behavior. Steeper slope = views fall off faster down the ranking; the black bar is the median.")
 
 
 def fig_views_over_time():
@@ -294,7 +294,7 @@ def fig_views_over_time():
         ax.plot(range(9), s.creator_median_views / 1000, color=GCOL[g], lw=2, label=f"{glabel(g)} (n={int(s.n_creators.max())})"); ax.plot(8, s.creator_median_views.iloc[-1] / 1000, "o", color=SURFACE, mec=GCOL[g], mew=1.5, ms=7)
     ax.set_xticks(range(9), [m[5:] for m in MONTHS], fontsize=7.5); ax.set_ylabel("median channel's median views per video (thousands)"); ax.legend(fontsize=7.5)
     ax.set_title("Views per video by publication month and channel group", fontsize=9.5); ax.set_ylim(0, None)
-    for ax, kind, order, colors, lab, title in ((axes[1], "caps_style", CAPS_ORDER[:4], CAPS_COL, lambda c: CAPS_LABEL[c], "Relative views by capitalisation style"),
+    for ax, kind, order, colors, lab, title in ((axes[1], "caps_style", CAPS_ORDER[:4], CAPS_COL, lambda c: CAPS_LABEL[c], "Relative views by capitalization style"),
                                                 (axes[2], "title_label", ["left", "neither", "right"], GCOL, lambda l: f"{l} titles", "Relative views by title label (sampled titles)")):
         ax.axhline(0, color=INK, lw=0.8)
         for g in order:
@@ -326,7 +326,7 @@ def fig_caps_by_group():
     ax.set_yticks(np.arange(len(d)), [f"{l} (n={int(n):,})" for l, n in zip(d.label, d.n_titles)], fontsize=8); ax.invert_yaxis(); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
     ax.axhline(2.5, color=INK, lw=0.8)
     ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0)); ax.legend(ncol=6, loc="upper center", bbox_to_anchor=(0.5, -0.1), fontsize=7.5)
-    ax.set_title("Capitalisation style by channel group (top; balanced edited uploads) and by title label (bottom; the judge's sample)")
+    ax.set_title("Capitalization style by channel group (top; balanced edited uploads) and by title label (bottom; the judge's sample)")
     fig.tight_layout(); save(fig, "07_caps_by_group.png")
 
 
@@ -345,7 +345,7 @@ def fig_profiles():
         axes[0].plot([], [], "o", color=GCOL[g], label=glabel(g))
     axes[0].legend(loc="lower right", fontsize=7)
     fig.suptitle(f"Arousal index, all {len(a)} ranked channels (edited uploads), highest first", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
-    fig.tight_layout(rect=(0, 0, 1, 0.97)); save(fig, "12_arousal_ranked.png", "0-1 composite of ALL-CAPS share, exclamation marks, power words, emoji and VADER intensity; colour = channel group.")
+    fig.tight_layout(rect=(0, 0, 1, 0.97)); save(fig, "12_arousal_ranked.png", "0-1 composite of ALL-CAPS share, exclamation marks, power words, emoji and VADER intensity; color = channel group.")
 
     fig, ax = plt.subplots(figsize=(9, 3))
     strip_by_group(ax, a[a.group.isin(GROUPS)], "arousal_index", "group", list(GROUPS), "arousal index (black bar = group median)", "Arousal index by channel group", seed=3)
@@ -355,8 +355,8 @@ def fig_profiles():
     cp = rd("caps_profile.csv"); c = cp[(cp.genre == "videos") & (~cp.low_n)].sort_values("caps_any", ascending=False)
     labels = [CAPS_LABEL[s] for s in CAPS_STYLES]
     cols = [CAPS_COL[s] for s in CAPS_STYLES]
-    for name, sub, title in (("11_caps_profile_top.png", c.head(45), "Capitalisation profile: the 45 channels using most ALL-CAPS or selective CAPS (edited uploads)"),
-                             ("11_caps_profile_bottom.png", c.tail(30), "Capitalisation profile: the 30 channels using least capitals")):
+    for name, sub, title in (("11_caps_profile_top.png", c.head(45), "Capitalization profile: the 45 channels using most ALL-CAPS or selective CAPS (edited uploads)"),
+                             ("11_caps_profile_bottom.png", c.tail(30), "Capitalization profile: the 30 channels using least capitals")):
         fig, ax = plt.subplots(figsize=(10, 0.2 * len(sub) + 1.5))
         left = np.zeros(len(sub))
         for lab, col_, style in zip(labels, cols, CAPS_STYLES):
@@ -374,7 +374,7 @@ def fig_profiles():
         left += gm[style].to_numpy()
     ax.set_yticks(np.arange(len(gm)), gm.index, fontsize=8); ax.invert_yaxis(); ax.set_xlim(0, 1); ax.grid(axis="y", visible=False)
     ax.xaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0)); ax.legend(ncol=6, loc="upper center", bbox_to_anchor=(0.5, -0.12), fontsize=7.5)
-    ax.set_title("Capitalisation profile by channel group (mean of creators, edited uploads)")
+    ax.set_title("Capitalization profile by channel group (mean of creators, edited uploads)")
     fig.tight_layout(); save(fig, "11_caps_profile_by_group.png")
 
     tw = rd("top_words.csv").head(20)
@@ -394,12 +394,12 @@ def fig_profiles():
         ax.text(0.02, yi, r.left_creator, va="center", ha="left", fontsize=7.5, color=CAT[0], fontweight="bold")
         ax.text(r.distance + 0.03, yi, r.right_creator, va="center", ha="left", fontsize=7.5, color=CAT[1], fontweight="bold")
     ax.set_yticks([]); ax.invert_yaxis(); ax.set_xlim(0, pairs.distance.max() + 1.6); ax.grid(axis="y", visible=False)
-    ax.set_xlabel(f"distance in z-scored 12-factor style space (median nearest-neighbour distance {np.nanmedian(near.nearest_same_group_distance):.1f})"); ax.set_title("The twenty closest left (blue) - right (orange) pairs")
+    ax.set_xlabel(f"distance in z-scored 12-factor style space (median nearest-neighbor distance {np.nanmedian(near.nearest_same_group_distance):.1f})"); ax.set_title("The twenty closest left (blue) - right (orange) pairs")
     ax = axes[1]
     a_ = np.sort(near.twin_distance.to_numpy()); b_ = np.sort(near.nearest_same_group_distance.dropna().to_numpy())
     ax.plot(a_, np.arange(1, len(a_) + 1) / len(a_), color=CAT[2], lw=2, label="nearest creator across the divide")
     ax.plot(b_, np.arange(1, len(b_) + 1) / len(b_), color=INK, lw=2, ls="--", label="nearest creator in the same group")
-    ax.set_xlabel("distance to nearest neighbour"); ax.set_ylabel("share of left and right channels"); ax.legend(loc="lower right")
+    ax.set_xlabel("distance to nearest neighbor"); ax.set_ylabel("share of left and right channels"); ax.legend(loc="lower right")
     ax.set_title(f"For {near.twin_closer_than_any_same_group.mean():.0%} of channels the twin across the divide is closer than any group-mate")
     fig.tight_layout(); save(fig, "09_twins.png", "Left and right channel groups (the leaning score), edited uploads, clip channels excluded.")
 
@@ -430,7 +430,7 @@ def fig_leaning():
     for i, r in enumerate(pd.concat([bc.nsmallest(4, "score"), bc.nlargest(4, "score")]).itertuples()):
         ax.annotate(r.creator, (getattr(r, f"{judge}_neither"), r.score), fontsize=6.5, xytext=offsets[i % 4], textcoords="offset points")
     ax.set_xlim(-0.02, 1.02); ax.set_ylim(-1.05, 1.05)
-    ax.set_xlabel("share of the channel's sampled titles labelled neither"); ax.set_ylabel(f"score = (right − left) / titles  ({jname})")
+    ax.set_xlabel("share of the channel's sampled titles labeled neither"); ax.set_ylabel(f"score = (right − left) / titles  ({jname})")
     ax.set_title("Every channel: how partisan its titles read, and which way"); ax.legend(fontsize=7.5, loc="upper right", title=f"group at ±{eps:g}", title_fontsize=7.5)
     ax = axes[1]
     bins = np.arange(-1, 1.0001, 0.1)
@@ -464,7 +464,7 @@ def fig_leaning_channels():
             ax.text(1.005, yi, f"{sc:+.2f}", va="center", ha="left", fontsize=5.2, color=GCOL[g], fontweight="bold" if g != "neutral" else "normal")
     fig.legend(*axes[0].get_legend_handles_labels(), loc="upper right", fontsize=8, ncol=3, frameon=False, bbox_to_anchor=(0.99, 0.995))
     n50, nbase = int((bc.n_titles >= 50).sum()), int((bc.n_titles < 50).sum())
-    fig.suptitle(f"Every channel's sampled titles as labelled by {jname}: share left / neither / right ({n50} channels at 50 titles, {nbase} at 16 or fewer; sorted by score, most left first; score at right, coloured by group)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
+    fig.suptitle(f"Every channel's sampled titles as labeled by {jname}: share left / neither / right ({n50} channels at 50 titles, {nbase} at 16 or fewer; sorted by score, most left first; score at right, colored by group)", x=0.01, ha="left", fontsize=11, fontweight="bold", color=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.975)); save(fig, "14_leaning_channels.png")
 
     comp = bc.groupby("group")[[f"{judge}_left", f"{judge}_neither", f"{judge}_right"]].mean().reindex(["right", "neutral", "left"])
@@ -511,7 +511,7 @@ def fig_leaning_stability():
 
 
 def _fightin_words(ax_sc, ax_bar, wc, cutoff, sys_left, sys_right, n_label=12, n_bars=25):
-    """Monroe et al.'s plot: z of the weighted log-odds against total frequency, classes coloured,
+    """Monroe et al.'s plot: z of the weighted log-odds against total frequency, classes colored,
     the most one-sided words named; beside it the top words each side as diverging bars. The
     axes are capped at the 99.5th percentile of |z| (at least four cutoffs) and the few words
     beyond the cap are drawn at the edge and listed with their z, so that one word like
@@ -588,7 +588,7 @@ def fig_leaning_logodds():
         r = summ[summ.comparison == name].iloc[0]
         groups = json.loads((A / "leaning_summary.json").read_text()).get("groups", {})
         jn = _judge_name(json.loads((A / "leaning_summary.json").read_text())["judge_of_record"])
-        title = (f"Which words each side over-uses: titles labelled left vs right by {jn}" if name == "titles"
+        title = (f"Which words each side over-uses: titles labeled left vs right by {jn}" if name == "titles"
                  else f"Which words each side over-uses: left channels ({groups.get('left', '?')}) vs right channels ({groups.get('right', '?')}), every title they published")
         fig.suptitle(title, x=0.01, ha="left", fontsize=12, fontweight="bold", color=INK)
         fig.tight_layout(rect=(0, 0.035, 1, 0.965))

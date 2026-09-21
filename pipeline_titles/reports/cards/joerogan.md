@@ -1,6 +1,6 @@
 # PowerfulJRE (@joerogan)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Joe Rogan · clipper: no · platform: youtube · subscribers: 21100000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Joe Rogan · clipper: no · platform: youtube · subscribers: 21100000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Political Media Figures (84.4%); MMA and Combat Sports (9.9%); Ameri
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 18.4 | 59.8 | -0.4 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 0.4 | 0.4 | -2.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.1 | 39.3 | -0.0 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.1 | 39.3 | -0.0 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 2.1 | 0.4 | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 3.8 | 1.7 | -0.7 | 0.1 |
 | F6: Person-centred (named people) | 88.7 | 97.5 | 0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Political Media Figures (84.4%); MMA and Combat Sports (9.9%); Ameri
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.4%); outrage 5.0% (36.0%); humor 0.0% (0.1%); question 0.0% (15.9%); breaking_live 0.0% (1.1%); episode_show 99.3% (7.0%); interview_guest 8.5% (11.6%); reaction 0.0% (1.9%); confrontation 0.0% (7.4%); listicle 0.0% (0.1%); howto_explainer 0.0% (6.6%)
 
 
-Nearest style neighbours: @markets [neutral]; @ClubRandomPodcast [neutral]; @breakingpoints [left]; @podsaveamerica [left]; @TheMajorityReport [left]
+Nearest style neighbors: @markets [neutral]; @ClubRandomPodcast [neutral]; @breakingpoints [left]; @podsaveamerica [left]; @TheMajorityReport [left]
 
-Nearest topic neighbours: @ClubRandomPodcast [neutral]; @FleccasTalks [right]; @fightbackpodcast [right]; @triggerpod [right]; @axios [neutral]
+Nearest topic neighbors: @ClubRandomPodcast [neutral]; @FleccasTalks [right]; @fightbackpodcast [right]; @triggerpod [right]; @axios [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -85,7 +85,7 @@ Top topics: MMA and Combat Sports (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -1.1 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -5.7 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.2 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.2 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.7 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -1.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | -2.2 | 0.2 |

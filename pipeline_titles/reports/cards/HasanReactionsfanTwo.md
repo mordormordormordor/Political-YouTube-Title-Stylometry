@@ -1,6 +1,6 @@
 # Hasan Reactions (@HasanReactionsfanTwo)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: HasanAbi · clipper: yes · platform: youtube · subscribers: 254000.0
+Channel group: **left** (title-leaning score, document 14) · organization: HasanAbi · clipper: yes · platform: youtube · subscribers: 254000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Hasanabi Reacts to Hasan (16.2%); Trump Meltdowns and Collapses (5.0
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.2 | 33.1 | 0.0 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 24.7 | 28.0 | -0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 21.3 | 15.5 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 21.3 | 15.5 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 28.5 | 29.7 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 21.3 | 20.9 | -0.3 | 0.1 |
 | F6: Person-centred (named people) | 89.5 | 90.8 | 0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Hasanabi Reacts to Hasan (16.2%); Trump Meltdowns and Collapses (5.0
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.5% (2.7%); outrage 72.7% (63.9%); humor 0.0% (0.2%); question 5.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 8.2% (9.8%); reaction 100.0% (2.9%); confrontation 9.7% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.9% (8.0%)
 
 
-Nearest style neighbours: @PTLRadioShow [left]; @Forthepeoplepodcast305 [left]; @TheMajorityReport [left]; @oann [right]; @TheAdamCarollaShow1 [right]
+Nearest style neighbors: @PTLRadioShow [left]; @Forthepeoplepodcast305 [left]; @TheMajorityReport [left]; @oann [right]; @TheAdamCarollaShow1 [right]
 
-Nearest topic neighbours: @SecularTalk [left]; @TheMajorityReport [left]; @podsaveamerica [left]; @Vaush [left]; @TheYoungTurks [left]
+Nearest topic neighbors: @SecularTalk [left]; @TheMajorityReport [left]; @podsaveamerica [left]; @Vaush [left]; @TheYoungTurks [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

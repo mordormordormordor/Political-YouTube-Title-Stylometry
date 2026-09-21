@@ -1,6 +1,6 @@
 # Ron Placone (@RonPlacone)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Ron Placone · clipper: no · platform: youtube · subscribers: 25900.0
+Channel group: **left** (title-leaning score, document 14) · organization: Ron Placone · clipper: no · platform: youtube · subscribers: 25900.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Hollywood and Oscars Politics (10.6%); Comedy and Cultural Debate (7
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 98.3 | 96.7 | 1.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 8.4 | 9.2 | -1.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 70.3 | 73.6 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 70.3 | 73.6 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 93.3 | 91.2 | 0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 23.8 | 33.9 | -0.3 | 0.1 |
 | F6: Person-centred (named people) | 90.4 | 86.2 | 0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Hollywood and Oscars Politics (10.6%); Comedy and Cultural Debate (7
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.5% (2.7%); outrage 30.3% (63.9%); humor 0.0% (0.2%); question 21.2% (15.6%); breaking_live 7.6% (2.9%); episode_show 0.0% (2.8%); interview_guest 12.1% (9.8%); reaction 0.0% (2.9%); confrontation 9.1% (7.6%); listicle 0.0% (0.1%); howto_explainer 4.5% (8.0%)
 
 
-Nearest style neighbours: @Semafor [neutral]; @underthedesknews [left]; @clayandbuck [right]; @marklevinshow [right]; @oann [right]
+Nearest style neighbors: @Semafor [neutral]; @underthedesknews [left]; @clayandbuck [right]; @marklevinshow [right]; @oann [right]
 
-Nearest topic neighbours: @TheAdamCarollaShow1 [right]; @underthedesknews [left]; @morebridgetphetasy [right]; @nytimes [left]; @franifio [left]
+Nearest topic neighbors: @TheAdamCarollaShow1 [right]; @underthedesknews [left]; @morebridgetphetasy [right]; @nytimes [left]; @franifio [left]
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -53,7 +53,7 @@ Top topics: AI and Political Concerns (10.7%); Trump and American Farmers (10.7%
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.4 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.1 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.2 | 0.6 |

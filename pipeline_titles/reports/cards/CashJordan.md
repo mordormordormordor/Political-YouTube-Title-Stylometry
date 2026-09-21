@@ -1,6 +1,6 @@
 # Cash Jordan (@CashJordan)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Cash Jordan · clipper: no · platform: youtube · subscribers: 1750000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Cash Jordan · clipper: no · platform: youtube · subscribers: 1750000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (28.4%); Zohran Mamdani and N
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 24.7 | 15.1 | -0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 52.3 | 57.7 | 0.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.4 | 62.8 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.4 | 62.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 95.0 | 93.7 | 0.7 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 0.8 | 0.8 | -0.9 | 0.2 |
 | F6: Person-centred (named people) | 57.3 | 63.6 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (28.4%); Zohran Mamdani and N
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.3% (3.6%); outrage 98.3% (59.6%); humor 0.0% (0.2%); question 0.0% (15.6%); breaking_live 1.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.0% (8.5%); reaction 0.7% (2.2%); confrontation 2.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 0.0% (9.5%)
 
 
-Nearest style neighbours: @StatusCoup [left]; @lonerboxlive [right]; @PiscoLitty [left]; @RealAmericasVoice [right]; @ponderingpolitics [left]
+Nearest style neighbors: @StatusCoup [left]; @lonerboxlive [right]; @PiscoLitty [left]; @RealAmericasVoice [right]; @ponderingpolitics [left]
 
-Nearest topic neighbours: @DrSteveTurleyTV [right]; @FoxNews [right]; @timesofindia [left]; @NewsmaxTV [right]; @TheBrianKilmeadeShow [right]
+Nearest topic neighbors: @DrSteveTurleyTV [right]; @FoxNews [right]; @timesofindia [left]; @NewsmaxTV [right]; @TheBrianKilmeadeShow [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

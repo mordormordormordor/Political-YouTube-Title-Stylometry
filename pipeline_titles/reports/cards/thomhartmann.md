@@ -1,6 +1,6 @@
 # Thom Hartmann Program (@thomhartmann)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Thom Hartmann · clipper: no · platform: youtube · subscribers: 547000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Thom Hartmann · clipper: no · platform: youtube · subscribers: 547000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.1%); Ukraine-Russia War an
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 49.4 | 40.2 | 0.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 80.3 | 79.9 | 0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 28.9 | 40.2 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 28.9 | 40.2 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 63.2 | 70.7 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 89.1 | 87.0 | 1.4 | 0.1 |
 | F6: Person-centred (named people) | 29.7 | 18.8 | -0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.1%); Ukraine-Russia War an
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.4% (2.7%); outrage 70.5% (63.9%); humor 0.1% (0.2%); question 32.9% (15.6%); breaking_live 0.8% (2.9%); episode_show 0.4% (2.8%); interview_guest 4.5% (9.8%); reaction 0.6% (2.9%); confrontation 3.4% (7.6%); listicle 0.1% (0.1%); howto_explainer 11.2% (8.0%)
 
 
-Nearest style neighbours: @theisabelbrown [right]; @ZubyMusic [right]; @MrTariqNasheed [right]; @morebridgetphetasy [right]; @KimIversen [neutral]
+Nearest style neighbors: @theisabelbrown [right]; @ZubyMusic [right]; @MrTariqNasheed [right]; @morebridgetphetasy [right]; @KimIversen [neutral]
 
-Nearest topic neighbours: @msnow [left]; @CNN [left]; @TheMajorityReport [left]; @BelleRanch [left]; @bulwarkmedia [left]
+Nearest topic neighbors: @msnow [left]; @CNN [left]; @TheMajorityReport [left]; @BelleRanch [left]; @bulwarkmedia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

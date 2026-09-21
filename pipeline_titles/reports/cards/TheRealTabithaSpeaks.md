@@ -1,6 +1,6 @@
 # TabithaSpeaksPolitics (@TheRealTabithaSpeaks)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Tabitha Speaks · clipper: no · platform: youtube · subscribers: 458000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Tabitha Speaks · clipper: no · platform: youtube · subscribers: 458000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Race and Politics in Media (8.2%); Shocking Events and Reactions (6.
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 91.6 | 85.8 | 0.9 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 61.1 | 63.6 | 0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 58.2 | 44.8 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 58.2 | 44.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 94.1 | 94.6 | 0.7 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 54.0 | 52.7 | 0.2 | 0.1 |
 | F6: Person-centred (named people) | 51.9 | 54.8 | -0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Race and Politics in Media (8.2%); Shocking Events and Reactions (6.
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.4% (2.7%); outrage 65.7% (63.9%); humor 0.0% (0.2%); question 8.4% (15.6%); breaking_live 0.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 5.1% (9.8%); reaction 2.2% (2.9%); confrontation 2.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 3.5% (8.0%)
 
 
-Nearest style neighbours: @DemocracyDocket [left]; @TheDonLemonShow [left]; @wethefifth [neutral]; @clayandbuck [right]; @morebridgetphetasy [right]
+Nearest style neighbors: @DemocracyDocket [left]; @TheDonLemonShow [left]; @wethefifth [neutral]; @clayandbuck [right]; @morebridgetphetasy [right]
 
-Nearest topic neighbours: @TheMajorityReport [left]; @rolandsmartin [left]; @TheVaushPit [left]; @Tim_Black [right]; @TimcastIRL [right]
+Nearest topic neighbors: @TheMajorityReport [left]; @rolandsmartin [left]; @TheVaushPit [left]; @Tim_Black [right]; @TimcastIRL [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Members Only Show (25.0%); Melania Trump Events and Participation (2
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.8 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.9 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 2.5 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 1.9 | 0.6 |

@@ -1,6 +1,6 @@
 # Jim Acosta (@jimacosta)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Jim Acosta · clipper: no · platform: youtube · subscribers: 336000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Jim Acosta · clipper: no · platform: youtube · subscribers: 336000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (4.8%); ICE Protests and Shoo
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 68.6 | 49.8 | 0.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 89.5 | 83.3 | 0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 62.8 | 71.5 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 62.8 | 71.5 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 77.8 | 77.4 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 81.6 | 76.2 | 1.0 | 0.1 |
 | F6: Person-centred (named people) | 86.6 | 88.3 | 0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (4.8%); ICE Protests and Shoo
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.8% (2.7%); outrage 64.5% (63.9%); humor 0.0% (0.2%); question 18.2% (15.6%); breaking_live 7.3% (2.9%); episode_show 0.0% (2.8%); interview_guest 5.8% (9.8%); reaction 2.9% (2.9%); confrontation 6.7% (7.6%); listicle 0.6% (0.1%); howto_explainer 14.4% (8.0%)
 
 
-Nearest style neighbours: @BreakThroughNews [left]; @Tim_Black [right]; @zeteo [left]; @bulwarkmedia [left]; @cafedotcom [left]
+Nearest style neighbors: @BreakThroughNews [left]; @Tim_Black [right]; @zeteo [left]; @bulwarkmedia [left]; @cafedotcom [left]
 
-Nearest topic neighbours: @dollemore [left]; @msnow [left]; @FarronBalanced [left]; @thomhartmann [left]; @bulwarkmedia [left]
+Nearest topic neighbors: @dollemore [left]; @msnow [left]; @FarronBalanced [left]; @thomhartmann [left]; @bulwarkmedia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Epstein Files Political Connections (5.6%); Iran War and Strait of H
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 92.4 | 72.2 | 0.7 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 89.9 | 87.3 | 0.7 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 81.0 | 81.0 | 1.4 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 81.0 | 81.0 | 1.4 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 91.1 | 89.9 | 0.4 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 94.9 | 88.6 | 0.6 | -0.3 |
 | F6: Person-centred (named people) | 74.7 | 70.9 | 1.0 | 0.6 |
@@ -104,9 +104,9 @@ Top topics: Epstein Files Political Connections (5.6%); Iran War and Strait of H
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.9% (1.9%); outrage 55.0% (63.2%); humor 0.0% (0.1%); question 16.2% (11.3%); breaking_live 60.6% (17.5%); episode_show 0.0% (6.4%); interview_guest 5.6% (18.3%); reaction 1.2% (1.5%); confrontation 1.9% (15.4%); listicle 0.0% (0.0%); howto_explainer 10.0% (2.9%)
 
 
-Nearest style neighbours: @FreshFitMiami [right]; @RedactedNews [right]; @ANINewsIndia [neutral]; @RekietaLaw [right]; @TheDamageReport [left]
+Nearest style neighbors: @FreshFitMiami [right]; @RedactedNews [right]; @ANINewsIndia [neutral]; @RekietaLaw [right]; @TheDamageReport [left]
 
-Nearest topic neighbours: @bulwarkmedia [left]; @MeidasTouch [left]; @RealAmericasVoice [right]; @TheDonLemonShow [left]; @NewsmaxTV [right]
+Nearest topic neighbors: @bulwarkmedia [left]; @MeidasTouch [left]; @RealAmericasVoice [right]; @TheDonLemonShow [left]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

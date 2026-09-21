@@ -1,6 +1,6 @@
 # Lovett or Leave It (@lovettorleaveitpodcast)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Crooked Media · clipper: no · platform: youtube · subscribers: 144000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Crooked Media · clipper: no · platform: youtube · subscribers: 144000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Hollywood and Oscars Politics (5.3%); ICE Protests and Shootings (4.
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 8.4 | 13.0 | -0.8 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 34.7 | 27.2 | -0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 1.7 | 1.7 | -0.8 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 1.7 | 1.7 | -0.8 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 12.6 | 12.6 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 50.6 | 47.3 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 97.9 | 98.7 | 1.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Hollywood and Oscars Politics (5.3%); ICE Protests and Shootings (4.
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (2.7%); outrage 49.1% (63.9%); humor 0.9% (0.2%); question 15.8% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 16.7% (9.8%); reaction 9.7% (2.9%); confrontation 21.9% (7.6%); listicle 0.0% (0.1%); howto_explainer 11.4% (8.0%)
 
 
-Nearest style neighbours: @TheAdamCarollaShow1 [right]; @PTLRadioShow [left]; @thejimmydoreshow [neutral]; @MyronGainesX [right]; @marclamonthillnetwork [left]
+Nearest style neighbors: @TheAdamCarollaShow1 [right]; @PTLRadioShow [left]; @thejimmydoreshow [neutral]; @MyronGainesX [right]; @marclamonthillnetwork [left]
 
-Nearest topic neighbours: @underthedesknews [left]; @podsaveamerica [left]; @TheAdamCarollaShow1 [right]; @SMN [left]; @jimacosta [left]
+Nearest topic neighbors: @underthedesknews [left]; @podsaveamerica [left]; @TheAdamCarollaShow1 [right]; @SMN [left]; @jimacosta [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

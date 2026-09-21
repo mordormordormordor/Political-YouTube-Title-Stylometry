@@ -1,6 +1,6 @@
 # Jesse Lee Peterson (@jlptalk)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Jesse Lee Peterson · clipper: no · platform: youtube · subscribers: 625000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Jesse Lee Peterson · clipper: no · platform: youtube · subscribers: 625000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Race and Politics in Media (12.5%); Modern Women and Feminism Debate
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 64.4 | 66.9 | 0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 70.7 | 72.0 | 0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 89.5 | 82.4 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 89.5 | 82.4 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 83.7 | 79.1 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 38.1 | 50.6 | -0.1 | 0.2 |
 | F6: Person-centred (named people) | 62.3 | 57.7 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Race and Politics in Media (12.5%); Modern Women and Feminism Debate
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.0% (3.6%); outrage 63.5% (59.6%); humor 0.0% (0.2%); question 15.8% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 11.2% (8.5%); reaction 29.9% (2.2%); confrontation 16.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 9.9% (9.5%)
 
 
-Nearest style neighbours: @timesofindia [left]; @DemocracyNow [left]; @lonerboxlive [right]; @VivaFrei [right]; @TheBrianKilmeadeShow [right]
+Nearest style neighbors: @timesofindia [left]; @DemocracyNow [left]; @lonerboxlive [right]; @VivaFrei [right]; @TheBrianKilmeadeShow [right]
 
-Nearest topic neighbours: @MattWalsh [right]; @MichaelKnowles [right]; @JustPearlyThings [right]; @TheAmalaEkpunobi [right]; @ActualJusticeWarrior [right]
+Nearest topic neighbors: @MattWalsh [right]; @MichaelKnowles [right]; @JustPearlyThings [right]; @TheAmalaEkpunobi [right]; @ActualJusticeWarrior [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: JLP Weekly Series (51.3%); Christian Nationalism and Politics (10.7%
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 54.4 | 91.1 | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 83.5 | 68.4 | 0.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 68.4 | 65.8 | 0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 68.4 | 65.8 | 0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 94.9 | 94.9 | 0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 91.1 | 94.9 | 0.3 | -0.3 |
 | F6: Person-centred (named people) | 54.4 | 25.3 | 0.4 | 0.0 |
@@ -104,9 +104,9 @@ Top topics: JLP Weekly Series (51.3%); Christian Nationalism and Politics (10.7%
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (3.2%); outrage 23.0% (56.4%); humor 0.0% (0.1%); question 35.3% (13.7%); breaking_live 0.5% (18.8%); episode_show 47.6% (26.3%); interview_guest 2.1% (14.0%); reaction 0.0% (2.1%); confrontation 5.3% (9.4%); listicle 0.0% (0.2%); howto_explainer 5.3% (5.3%)
 
 
-Nearest style neighbours: @MyronGainesX [right]; @FreshFitMiami [right]; @TimesNowWorld [neutral]; @RedactedNews [right]; @Firstpost [neutral]
+Nearest style neighbors: @MyronGainesX [right]; @FreshFitMiami [right]; @TimesNowWorld [neutral]; @RedactedNews [right]; @Firstpost [neutral]
 
-Nearest topic neighbours: @ChadPrather1 [right]; @underthedesknews [left]; @rolandsmartin [left]; @marclamonthillnetwork [left]; @TheJoyReidShow [left]
+Nearest topic neighbors: @ChadPrather1 [right]; @underthedesknews [left]; @rolandsmartin [left]; @marclamonthillnetwork [left]; @TheJoyReidShow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

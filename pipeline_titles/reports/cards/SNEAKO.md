@@ -1,6 +1,6 @@
 # SNEAKO (@SNEAKO)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: SNEAKO · clipper: no · platform: youtube · subscribers: 1330000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: SNEAKO · clipper: no · platform: youtube · subscribers: 1330000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (20.0%); Shocking Events and 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.0 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.9 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 2.7 | 0.1 |
 | F6: Person-centred (named people) | None | None | -0.9 | -0.2 |

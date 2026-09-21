@@ -1,6 +1,6 @@
 # Tariq Radio (@MrTariqNasheed)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Tariq Nasheed · clipper: no · platform: youtube · subscribers: 281000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Tariq Nasheed · clipper: no · platform: youtube · subscribers: 281000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: FBA and African Refugee Issues (38.0%); Race and Politics in Media (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 47.7 | 46.4 | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 71.5 | 84.5 | 0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 77.4 | 36.4 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 77.4 | 36.4 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 40.2 | 31.0 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 86.6 | 89.1 | 1.3 | 0.2 |
 | F6: Person-centred (named people) | 54.0 | 35.1 | -0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: FBA and African Refugee Issues (38.0%); Race and Politics in Media (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.9% (3.6%); outrage 46.4% (59.6%); humor 0.0% (0.2%); question 42.2% (15.6%); breaking_live 0.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.7% (8.5%); reaction 0.2% (2.2%); confrontation 5.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 18.9% (9.5%)
 
 
-Nearest style neighbours: @thomhartmann [left]; @theisabelbrown [right]; @RileyGaines [right]; @ZubyMusic [right]; @XAVIAER [right]
+Nearest style neighbors: @thomhartmann [left]; @theisabelbrown [right]; @RileyGaines [right]; @ZubyMusic [right]; @XAVIAER [right]
 
-Nearest topic neighbours: @Tim_Black [right]; @rolandsmartin [left]; @jlptalk [right]; @TheRealTabithaSpeaks [left]; @ActualJusticeWarrior [right]
+Nearest topic neighbors: @Tim_Black [right]; @rolandsmartin [left]; @jlptalk [right]; @TheRealTabithaSpeaks [left]; @ActualJusticeWarrior [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -87,7 +87,7 @@ Top topics: FBA and African Refugee Issues (26.3%); Race and Politics in Media (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 2.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.0 | 0.0 |

@@ -1,6 +1,6 @@
 # Daily Denims (@DailyDenims)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Denims · clipper: yes · platform: youtube · subscribers: 11400.0
+Channel group: **left** (title-leaning score, document 14) · organization: Denims · clipper: yes · platform: youtube · subscribers: 11400.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Destiny and Ethan Klein debates (11.6%); Hasanabi Reacts to Hasan (8
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 22.2 | 27.2 | -0.3 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 63.2 | 64.4 | 0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 98.7 | 97.9 | 0.9 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 98.7 | 97.9 | 0.9 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 10.0 | 16.7 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 47.7 | 49.0 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 50.6 | 58.6 | -0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Destiny and Ethan Klein debates (11.6%); Hasanabi Reacts to Hasan (8
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.5% (2.7%); outrage 68.4% (63.9%); humor 0.0% (0.2%); question 3.3% (15.6%); breaking_live 0.0% (2.9%); episode_show 1.9% (2.8%); interview_guest 4.2% (9.8%); reaction 7.9% (2.9%); confrontation 9.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 9.3% (8.0%)
 
 
-Nearest style neighbours: https://rumble.com/c/TheAlexJonesShowLive [right]; @MichaelKnowles [right]; @SMN [left]; @FoxNews [right]; @BlazeTV [right]
+Nearest style neighbors: https://rumble.com/c/TheAlexJonesShowLive [right]; @MichaelKnowles [right]; @SMN [left]; @FoxNews [right]; @BlazeTV [right]
 
-Nearest topic neighbours: @destiny [left]; @DestinyDGGClips [right]; @TheSerfTimes [left]; @destinyhqclips [neutral]; @TheMajorityReport [left]
+Nearest topic neighbors: @destiny [left]; @DestinyDGGClips [right]; @TheSerfTimes [left]; @destinyhqclips [neutral]; @TheMajorityReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

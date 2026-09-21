@@ -79,7 +79,7 @@ def test_runs_table_numbers_the_runs_and_counts_the_titles_each_sent(tmp_path, m
     log = tmp_path / "runtimes.jsonl"
     recs = [{"stage": "stage7_leaning", "started": "2026-09-15T23:53:57+00:00", "finished": "2026-09-16T02:09:17+00:00", "seconds": 8120.7, "calls": 624, "batch_order": "shuffled", "reported_cost_usd": 56.5},
             {"stage": "stage7_leaning", "started": "2026-09-15T14:13:56+00:00", "finished": "2026-09-15T15:05:29+00:00", "seconds": 3093.1, "calls": 218, "batch_order": "sample order", "reported_cost_usd": 18.9},
-            {"stage": "stage7_leaning", "started": "2026-09-16T12:11:30+00:00", "finished": "2026-09-16T12:11:35+00:00", "seconds": 5.7},          # analyse-only: no calls
+            {"stage": "stage7_leaning", "started": "2026-09-16T12:11:30+00:00", "finished": "2026-09-16T12:11:35+00:00", "seconds": 5.7},          # analyze-only: no calls
             {"stage": "report", "started": "2026-09-15T15:09:23+00:00", "finished": "2026-09-15T15:10:00+00:00", "seconds": 37.0},
             {"stage": "stage7_leaning", "started": "2026-09-15T16:32:42+00:00", "finished": "2026-09-15T17:54:05+00:00", "seconds": 4883.0, "calls": 407, "batch_order": "sample order", "reported_cost_usd": 36.4}]
     log.write_text("\n".join(json.dumps(r) for r in recs) + "\n")

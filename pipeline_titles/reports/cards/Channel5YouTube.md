@@ -1,6 +1,6 @@
 # Channel 5 with Andrew Callaghan (@Channel5YouTube)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Channel 5 · clipper: no · platform: youtube · subscribers: 3700000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Channel 5 · clipper: no · platform: youtube · subscribers: 3700000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (9.3%); Political Podcasts and Influ
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.4 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.1 | 0.1 |
 | F6: Person-centred (named people) | None | None | 0.1 | -0.2 |

@@ -24,7 +24,7 @@ and creators.csv. Writes, under data/titles/analysis/:
 
 Method. Cells with >= 15 unique titles enter the EFA (each creator x genre
 contributes at most 9 monthly rows, so the matrix is creator-balanced by
-construction). Features are the _p100 / _mean columns minus artefacts (see
+construction). Features are the _p100 / _mean columns minus artifacts (see
 EXCLUDE) and minus features below 0.5 per 100 titles or with |r| > 0.95 to an
 earlier feature. Number of factors: Horn's parallel analysis (100 random matrices,
 95th percentile), capped at MAX_FACTORS. Extraction: minres, oblimin rotation

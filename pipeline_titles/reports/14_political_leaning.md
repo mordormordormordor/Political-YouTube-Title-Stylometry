@@ -13,9 +13,9 @@ Claude Opus reads 55 % of titles as neither, 24 % as left and 20 % as right. Sor
 
 ## Level 1: titles
 
-### What the judge labelled
+### What the judge labeled
 
-Over the 12,478 labelled titles:
+Over the 12,478 labeled titles:
 
 | label | titles | share |
 |---|---|---|
@@ -79,12 +79,12 @@ So a single title's label is about one in 11 fragile on the judge's own account,
 
 ### The vocabulary of left-read and right-read titles
 
-Titles Claude Opus labelled left (3,033) vs right (2,556), compared two ways: weighted log-odds (which words are over-used on one side, given how often they appear at all) and rank-turbulence divergence, read off an allotaxonograph (Dodds et al. 2023), the instrument built for exactly this comparison of two Zipfian systems.
+Titles Claude Opus labeled left (3,033) vs right (2,556), compared two ways: weighted log-odds (which words are over-used on one side, given how often they appear at all) and rank-turbulence divergence, read off an allotaxonograph (Dodds et al. 2023), the instrument built for exactly this comparison of two Zipfian systems.
 
 ![Allotaxonograph, titles.](figures/14_allotax_titles.png)
-*Allotaxonograph of the titles Claude Opus read as left (system 1, left flank) against the titles it read as right (system 2, right flank); drawn by the Computational Story Lab's own renderer (allotaxonometer-ui), rank-turbulence divergence with α = 1/3. Diamond: every word placed by its rank in each system on log axes, the rank-rank plane rotated so that words used equally sit on the vertical centre line; colour = how many words share a cell; the words named along the flanks are the furthest from the centre line at each frequency, i.e. the most one-sided. Contour lines join equal contributions to the divergence. Right: the 40 largest contributions, each with its two ranks (system 1 ⇋ system 2), grey bars pulling left, blue bars pulling right. Below the diamond: the balance of tokens, types and exclusive types between the two systems.*
+*Allotaxonograph of the titles Claude Opus read as left (system 1, left flank) against the titles it read as right (system 2, right flank); drawn by the Computational Story Lab's own renderer (allotaxonometer-ui), rank-turbulence divergence with α = 1/3. Diamond: every word placed by its rank in each system on log axes, the rank-rank plane rotated so that words used equally sit on the vertical center line; color = how many words share a cell; the words named along the flanks are the furthest from the center line at each frequency, i.e. the most one-sided. Contour lines join equal contributions to the divergence. Right: the 40 largest contributions, each with its two ranks (system 1 ⇋ system 2), gray bars pulling left, blue bars pulling right. Below the diamond: the balance of tokens, types and exclusive types between the two systems.*
 
-How to read it. The two vocabularies overlap less than the label shares suggest: D<sup>R</sup><sub>1/3</sub> = 0.492, with 50 % of the left-read words never appearing in a right-read title and 51 % the other way. The apex is shared (the year's subjects), and the divergence is carried by the flanks: on the left maga, breaking, fox, donald, republicans, gaza, hasanabi, panics; on the right fraud, democrats, america, woke, women, left, jlp, pray. The bottom edges of the diamond, where the dark cells run, are the words used once on one side and never on the other, which is where the labelled sample's smallness shows (5,545 and 5,622 word types from 3,033 and 2,556 titles).
+How to read it. The two vocabularies overlap less than the label shares suggest: D<sup>R</sup><sub>1/3</sub> = 0.492, with 50 % of the left-read words never appearing in a right-read title and 51 % the other way. The apex is shared (the year's subjects), and the divergence is carried by the flanks: on the left maga, breaking, fox, donald, republicans, gaza, hasanabi, panics; on the right fraud, democrats, america, woke, women, left, jlp, pray. The bottom edges of the diamond, where the dark cells run, are the words used once on one side and never on the other, which is where the labeled sample's smallness shows (5,545 and 5,622 word types from 3,033 and 2,556 titles).
 
 The two instruments disagree about one word, and the disagreement is instructive: "trump" is the most over-used word on the left by log-odds (1,344 occurrences in left-read titles against 298 in right-read ones), but it sits at the apex of the diamond, because it is the top-ranked word on both sides; rank turbulence measures who *changes* the ordering, not who wins the count.
 
@@ -135,21 +135,21 @@ Read as a map of the two grammars of attack: the right's titles are about Democr
 The allotaxonograph ranks words by how far they move between the two rankings; weighted log-odds asks a different question, whether a word is over-used on one side *given how common it is overall*, and gives every word a z-score, so a cutoff turns the vocabulary into a three-way lexicon: right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise (the two-sided 5 % level; words with fewer than 3 occurrences are not classified).
 
 ![Log-odds, titles.](figures/14_logodds_titles.png)
-*Weighted log-odds (Monroe, Colaresi and Quinn 2008). Left: every word by its z (vertical) and its frequency (horizontal, log scale) for the titles Claude Opus read as left against those it read as right; blue = left-class, orange = right-class, grey = neither. Right: the 25 words each side over-uses most, mirrored about the spine, the word beside the spine and its z at the bar's end; bars beyond the axis cap are cut, drawn paler, and keep their value.*
+*Weighted log-odds (Monroe, Colaresi and Quinn 2008). Left: every word by its z (vertical) and its frequency (horizontal, log scale) for the titles Claude Opus read as left against those it read as right; blue = left-class, orange = right-class, gray = neither. Right: the 25 words each side over-uses most, mirrored about the spine, the word beside the spine and its z at the bar's end; bars beyond the axis cap are cut, drawn paler, and keep their value.*
 
-How many words clear the cutoff, for the labelled titles and for the channel groups' whole output (level 2):
+How many words clear the cutoff, for the labeled titles and for the channel groups' whole output (level 2):
 
 ![Words that clear the cutoff.](figures/14_logodds_classes.png)
 *Left-class and right-class words as shares of each vocabulary, counts printed; the rest are neither.*
 
-Over the labelled titles the two classes are close in size (89 left-class words, 120 right-class, of 2,803 words with three or more occurrences). Over the channels' whole output, with ten times the titles, 22 % of the vocabulary clears the cutoff and the right classifies far more words (2,176 against 1,309 of 15,845): the right channels' vocabulary is the more varied one, and its stance words are spread over more distinct terms.
+Over the labeled titles the two classes are close in size (89 left-class words, 120 right-class, of 2,803 words with three or more occurrences). Over the channels' whole output, with ten times the titles, 22 % of the vocabulary clears the cutoff and the right classifies far more words (2,176 against 1,309 of 15,845): the right channels' vocabulary is the more varied one, and its stance words are spread over more distinct terms.
 
-The two lexicons agree: of the 197 words that both the labelled titles and the groups' whole output classify as partisan, 99 % point the same way (kappa 0.12 over three classes, low only because the groups' output, with ten times the titles, classifies many more words). The words that switch sides between the two are rubio, trapped, topic and show-name words rather than stance words.
+The two lexicons agree: of the 197 words that both the labeled titles and the groups' whole output classify as partisan, 99 % point the same way (kappa 0.12 over three classes, low only because the groups' output, with ten times the titles, classifies many more words). The words that switch sides between the two are rubio, trapped, topic and show-name words rather than stance words.
 
 **What a word list can do on its own.** The lexicon answers a specific question: how much of the judge's reading is vocabulary? If Claude Opus decided a title's leaning from the words in it, a plain word list built from its own labels should be able to reproduce those labels. So the list is built from the classes above (every word at |z| ≥ 1.96 is a left-class or a right-class word); a title is called left when it holds more left-class than right-class words, right the other way, neither on a tie or with no classified word; and the list is built out of fold, on four fifths of the channels and applied to the remaining fifth, so no channel's titles help classify themselves.
 
 ![Lexicon against the judge.](figures/14_lexicon_vs_judge.png)
-*Left: each channel's score from the word list's labels against its score from Claude Opus's labels, coloured by the judge's group. Right: the word list's class against Claude Opus's label, title by title, with the share of each row.*
+*Left: each channel's score from the word list's labels against its score from Claude Opus's labels, colored by the judge's group. Right: the word list's class against Claude Opus's label, title by title, with the share of each row.*
 
 Title by title (the right panel; rows are what Claude Opus said, columns what the word list said):
 
@@ -181,10 +181,10 @@ A channel's score is the balance of its sampled titles, and the groups follow fr
 
 
 ![Scores.](figures/14_leaning_scores.png)
-*Left: each channel's score against the share of its titles read as neither; the dashed lines are the group thresholds at ±0.05. Right: the distribution of scores, coloured by group.*
+*Left: each channel's score against the share of its titles read as neither; the dashed lines are the group thresholds at ±0.05. Right: the distribution of scores, colored by group.*
 
 ![Every channel.](figures/14_leaning_channels.png)
-*Every channel's sampled titles: the share labelled left (blue), neither (grey) and right (orange), sorted by score, most left-reading first; the score at the right is coloured by group.*
+*Every channel's sampled titles: the share labeled left (blue), neither (gray) and right (orange), sorted by score, most left-reading first; the score at the right is colored by group.*
 
 ![Group composition.](figures/14_leaning_group_composition.png)
 *Mean composition of a channel's titles in each group.*
@@ -193,14 +193,14 @@ With 50 titles no channel scores ±1 (5 sit at or beyond ±0.90): even the most 
 
 ### Would a different draw of titles, or a second reading, give a different score?
 
-A channel's score comes from 50 sampled titles out of the hundreds or thousands it published, so the first thing to check is whether the draw matters: had the sample been different, would the channel's score, and its group, be different? Two checks, both on the 239 channels with 50 labelled titles; then the second reading.
+A channel's score comes from 50 sampled titles out of the hundreds or thousands it published, so the first thing to check is whether the draw matters: had the sample been different, would the channel's score, and its group, be different? Two checks, both on the 239 channels with 50 labeled titles; then the second reading.
 
 1. **Split-half.** Each channel's 50 titles are split at random into two halves of 25 and each half is scored on its own, so every channel gets two scores from disjoint sets of titles. The two sets of scores rank the channels at Spearman 0.96 (mean of 20 random splits, SD 0.004): whichever half you look at, the channels come out in nearly the same order.
 2. **First draw against second draw.** The sample was drawn in two steps, 16 titles per channel first and 34 more afterwards from other months, so the two draws are independent samples of the same channel. Scored separately they rank the channels at Spearman 0.96. Going from the 16-title score to the 50-title score moves a channel by 0.07 on average; 23 of 239 channels change group, all of them with a final score between −0.10 and +0.10, and none crosses from left to right or back.
-3. **Second and third readings.** The other two readings of every title (Level 1) score the channels too. The clean repeat ranks the 269 channels with at least 16 labelled titles at Spearman 0.99 and moves a channel's score by 0.04 on average; 15 channels change group, and @Unpacked crosses from right to left (+0.06 to −0.06, 16 titles); @NYTOpinion crosses from left to right (−0.19 to +0.06, 16 titles). The channel-batched reading ranks them at 0.98, moves a score by 0.06 and changes 19 groups, and @lonerboxlive crosses from left to right (−0.06 to +0.06).
+3. **Second and third readings.** The other two readings of every title (Level 1) score the channels too. The clean repeat ranks the 269 channels with at least 16 labeled titles at Spearman 0.99 and moves a channel's score by 0.04 on average; 15 channels change group, and @Unpacked crosses from right to left (+0.06 to −0.06, 16 titles); @NYTOpinion crosses from left to right (−0.19 to +0.06, 16 titles). The channel-batched reading ranks them at 0.98, moves a score by 0.06 and changes 19 groups, and @lonerboxlive crosses from left to right (−0.06 to +0.06).
 
 ![Stability.](figures/14_leaning_stability.png)
-*Each channel's score from its first 16 titles against its score from the 34 drawn later, coloured by its final group. Points on the diagonal would mean identical scores; the labelled points are the channels that moved most.*
+*Each channel's score from its first 16 titles against its score from the 34 drawn later, colored by its final group. Points on the diagonal would mean identical scores; the labeled points are the channels that moved most.*
 
 The channels that moved most between the two draws, for a sense of what "moved" means:
 
@@ -218,12 +218,12 @@ So the score is a property of the channel, not of the draw, and not of the readi
 
 ### The groups' whole output
 
-The groups were defined from 50 sampled titles per channel; the channels published far more. Comparing everything the 122 left channels published with everything the 110 right channels published (every unique edited upload in the creator-balanced subset, 65,432 vs 51,899 titles) asks whether the vocabulary that separated the labelled titles separates the groups' bodies of work, with no label on any individual title.
+The groups were defined from 50 sampled titles per channel; the channels published far more. Comparing everything the 122 left channels published with everything the 110 right channels published (every unique edited upload in the creator-balanced subset, 65,432 vs 51,899 titles) asks whether the vocabulary that separated the labeled titles separates the groups' bodies of work, with no label on any individual title.
 
 ![Allotaxonograph, channels.](figures/14_allotax_channels.png)
 *Left channels (system 1) against right channels (system 2), every title; same instrument and α as above.*
 
-D<sup>R</sup><sub>1/3</sub> = 0.369: the groups' whole outputs are closer to each other than the left-read and right-read titles are, as they should be, since most of what either group publishes is the shared news of the year. The words that separate them are the words the labels found, now over every title the channels published rather than the labelled sample: the left channels' flank is maga, fox, hasanabi, republicans, let, panics, talk, breaking, tyt, epstein; the right channels' is president, fraud, democrat, democrats, america, women, woke, black, mamdani, kirk. Show furniture shows up here too (segment names, hosts' first names, the words of a title template), which is the price of comparing channels rather than labelled titles; 42 % of the right channels' words never appear in a left channel's title, against 39 % the other way.
+D<sup>R</sup><sub>1/3</sub> = 0.369: the groups' whole outputs are closer to each other than the left-read and right-read titles are, as they should be, since most of what either group publishes is the shared news of the year. The words that separate them are the words the labels found, now over every title the channels published rather than the labeled sample: the left channels' flank is maga, fox, hasanabi, republicans, let, panics, talk, breaking, tyt, epstein; the right channels' is president, fraud, democrat, democrats, america, women, woke, black, mamdani, kirk. Show furniture shows up here too (segment names, hosts' first names, the words of a title template), which is the price of comparing channels rather than labeled titles; 42 % of the right channels' words never appear in a left channel's title, against 39 % the other way.
 
 ![Log-odds, channels.](figures/14_logodds_channels.png)
 *Weighted log-odds of every word in the left channels' titles against the right channels', same construction as the titles figure.*
@@ -244,7 +244,7 @@ It did not move: left channels ranges from -0.50 to -0.43; neutral channels from
 ## Method
 
 1. **Sample.** Every creator gets a base draw of 16 unique edited-upload titles (seed 20260914; creators with fewer than 16 uploads topped up from live VODs). Creators with at least 50 unique uploads are then topped up to 50 with further uploads spread evenly across months (round-robin over the months, random within month, its own random stream), so the extra titles never depend on which month a creator posted most in: 12,478 titles, 239 creators at 50, 35 at their base.
-2. **Labelling.** One prompt (in `leaning.py` and the methods appendix): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0; the judge sees the title text only, numbered 1 to 20, never the channel name; every response cached. Claude Opus runs through the Claude Code CLI in print mode on a Claude Max subscription, in four runs: the base draw and the top-up with the titles in sample order (a call held one or two channels' titles), then every title again in a seeded random order (a call mixes channels), which is the labelling of record, and once more with a fresh seed, the repeat kept for the reliability check.
+2. **Labeling.** One prompt (in `leaning.py` and the methods appendix): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0; the judge sees the title text only, numbered 1 to 20, never the channel name; every response cached. Claude Opus runs through the Claude Code CLI in print mode on a Claude Max subscription, in four runs: the base draw and the top-up with the titles in sample order (a call held one or two channels' titles), then every title again in a seeded random order (a call mixes channels), which is the labeling of record, and once more with a fresh seed, the repeat kept for the reliability check.
 
    | run | what | titles | batches | calls | minutes | reported cost | date (UTC) |
    |---|---|---|---|---|---|---|---|
@@ -255,9 +255,9 @@ It did not move: left channels ranges from -0.50 to -0.43; neutral channels from
 
    1,873 calls and 401 minutes in all; the CLI reported an equivalent API cost of $186.83, not charged.
 3. **Scores and groups.** Per channel: shares of left / right / neither and score = (right − left) / n over its sampled titles; left below −0.05, right above +0.05, neutral between.
-4. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), and the group at 16 titles against the group at 50. Readings: the labels of record against the first reading (channel-batched) and against the repeat (the same method, a fresh shuffle seed, `--repeat`), title by title (exact agreement, Cohen's kappa, the confusion table) and channel by channel (channels with at least 16 labelled titles: Spearman between the two scores, mean absolute change, groups changed), and the three readings together (`leaning_repeat.json`).
-5. **Words.** Weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11, for the left-read vs right-read titles and for the left vs right channels' whole output. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
-6. **Log-odds lexicon.** Every word with 3+ occurrences in the two systems together, right against left; right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for the channel groups, and Cohen's kappa of the classes between the two over their shared words. The lexicon check: the labelled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
+4. **Reliability.** Split-half: channels with at least 32 labeled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), and the group at 16 titles against the group at 50. Readings: the labels of record against the first reading (channel-batched) and against the repeat (the same method, a fresh shuffle seed, `--repeat`), title by title (exact agreement, Cohen's kappa, the confusion table) and channel by channel (channels with at least 16 labeled titles: Spearman between the two scores, mean absolute change, groups changed), and the three readings together (`leaning_repeat.json`).
+5. **Words.** Weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11, for the left-read vs right-read titles and for the left vs right channels' whole output. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalized so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
+6. **Log-odds lexicon.** Every word with 3+ occurrences in the two systems together, right against left; right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for the channel groups, and Cohen's kappa of the classes between the two over their shared words. The lexicon check: the labeled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
 7. **Allotaxonographs.** Drawn by allotaxonometer-ui 0.2.2 (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
 8. **Months.** The labels by channel group x month (`leaning_by_group_month.csv`): titles, creators, partisan share, left and right shares, score.
 

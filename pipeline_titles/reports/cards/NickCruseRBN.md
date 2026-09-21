@@ -1,6 +1,6 @@
 # Nick Cruse (@NickCruseRBN)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Revolutionary Blackout Network · clipper: no · platform: youtube · subscribers: 10400.0
+Channel group: **left** (title-leaning score, document 14) · organization: Revolutionary Blackout Network · clipper: no · platform: youtube · subscribers: 10400.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (26.1%); Trump and NATO Relations (1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.8 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.8 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | 0.1 |
 | F6: Person-centred (named people) | None | None | 0.7 | -0.2 |
@@ -48,7 +48,7 @@ Top topics: Israel-Palestine Conflict Media (12.6%); Iran Conflict and Political
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 20.3 | 21.5 | -0.8 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 39.2 | 35.4 | -0.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 7.6 | 12.7 | -0.7 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 7.6 | 12.7 | -0.7 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 49.4 | 51.9 | -0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 62.0 | 65.8 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 89.9 | 88.6 | 2.2 | 0.6 |
@@ -63,9 +63,9 @@ Top topics: Israel-Palestine Conflict Media (12.6%); Iran Conflict and Political
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.9% (1.9%); outrage 85.4% (63.2%); humor 0.0% (0.1%); question 16.5% (11.3%); breaking_live 2.9% (17.5%); episode_show 2.9% (6.4%); interview_guest 38.8% (18.3%); reaction 0.0% (1.5%); confrontation 9.7% (15.4%); listicle 0.0% (0.0%); howto_explainer 9.7% (2.9%)
 
 
-Nearest style neighbours: @thejimmydoreshow [neutral]; @rolandsmartin [left]; @chicksonright [right]; @AnthonyBrianLogan [right]; @TheSerfTimes [left]
+Nearest style neighbors: @thejimmydoreshow [neutral]; @rolandsmartin [left]; @chicksonright [right]; @AnthonyBrianLogan [right]; @TheSerfTimes [left]
 
-Nearest topic neighbours: @JamarlThomas [left]; @DueDissidence [left]; @RedactedNews [right]; @judgingfreedom [left]; @TheMajorityReport [left]
+Nearest topic neighbors: @JamarlThomas [left]; @DueDissidence [left]; @RedactedNews [right]; @judgingfreedom [left]; @TheMajorityReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

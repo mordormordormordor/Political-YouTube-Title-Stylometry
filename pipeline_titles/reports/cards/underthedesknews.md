@@ -1,6 +1,6 @@
 # Under The Desk News (@underthedesknews)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Under the Desk News · clipper: no · platform: youtube · subscribers: 249000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Under the Desk News · clipper: no · platform: youtube · subscribers: 249000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: JLP Weekly Series (5.1%); California Election Fraud Scandal (3.8%); 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 92.9 | 90.0 | 0.9 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 8.8 | 10.0 | -1.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 80.3 | 79.9 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 80.3 | 79.9 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 81.6 | 75.3 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 59.4 | 60.3 | 0.3 | 0.1 |
 | F6: Person-centred (named people) | 64.0 | 63.2 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: JLP Weekly Series (5.1%); California Election Fraud Scandal (3.8%); 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.8% (2.7%); outrage 30.4% (63.9%); humor 0.0% (0.2%); question 24.1% (15.6%); breaking_live 5.1% (2.9%); episode_show 0.0% (2.8%); interview_guest 24.1% (9.8%); reaction 0.0% (2.9%); confrontation 5.1% (7.6%); listicle 0.0% (0.1%); howto_explainer 15.2% (8.0%)
 
 
-Nearest style neighbours: @TheJoyReidShow [left]; @marklevinshow [right]; @therationalnational [left]; @DarkHorsePod [right]; @axios [neutral]
+Nearest style neighbors: @TheJoyReidShow [left]; @marklevinshow [right]; @therationalnational [left]; @DarkHorsePod [right]; @axios [neutral]
 
-Nearest topic neighbours: @franifio [left]; @NYTPodcasts [left]; @lovettorleaveitpodcast [left]; @Vox [left]; @TheAtlantic [left]
+Nearest topic neighbors: @franifio [left]; @NYTPodcasts [left]; @lovettorleaveitpodcast [left]; @Vox [left]; @TheAtlantic [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -60,7 +60,7 @@ Top topics: Iran Conflict and Political Updates (12.2%); Iran War and Strait of 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 44.3 | 59.5 | -0.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 6.3 | 5.1 | -1.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 63.3 | 60.8 | 0.1 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 63.3 | 60.8 | 0.1 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 68.4 | 70.9 | 0.0 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 68.4 | 70.9 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 15.2 | 20.3 | -0.5 | 0.6 |
@@ -75,9 +75,9 @@ Top topics: Iran Conflict and Political Updates (12.2%); Iran War and Strait of 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.1% (1.9%); outrage 30.4% (63.2%); humor 0.0% (0.1%); question 10.4% (11.3%); breaking_live 4.3% (17.5%); episode_show 4.3% (6.4%); interview_guest 16.5% (18.3%); reaction 0.9% (1.5%); confrontation 1.7% (15.4%); listicle 0.0% (0.0%); howto_explainer 7.0% (2.9%)
 
 
-Nearest style neighbours: @franifio [left]; @TheJoyReidShow [left]; @CamHigby [right]; @AnthonyBrianLogan [right]; @TheYoungTurks [left]
+Nearest style neighbors: @franifio [left]; @TheJoyReidShow [left]; @CamHigby [right]; @AnthonyBrianLogan [right]; @TheYoungTurks [left]
 
-Nearest topic neighbours: @RealAmericasVoice [right]; @TheJoyReidShow [left]; @NewsmaxTV [right]; @DueDissidence [left]; @marclamonthillnetwork [left]
+Nearest topic neighbors: @RealAmericasVoice [right]; @TheJoyReidShow [left]; @NewsmaxTV [right]; @DueDissidence [left]; @marclamonthillnetwork [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -7,11 +7,11 @@ dummies and topic dummies (topics with >= 5 titles for that creator, the rest
 pooled) as controls; HC3 standard errors. Predictors are z-scored within the
 creator, so a coefficient is the change in log views per one within-creator
 standard deviation. Views are a snapshot taken at fetch time (2026-09-14), which
-favours older videos; the month dummies absorb that within a creator, but
+favors older videos; the month dummies absorb that within a creator, but
 coefficients still describe views-to-date, not lifetime views.
 
-Subscriber normalisation: log(views / subscribers) = log(views) - log(subscribers),
-a constant within creator, so it leaves every slope unchanged; the standardised
+Subscriber normalization: log(views / subscribers) = log(views) - log(subscribers),
+a constant within creator, so it leaves every slope unchanged; the standardized
 coefficients are therefore already comparable across creators, and subscriber
 count is reported beside them.
 
@@ -103,9 +103,9 @@ def run(info: dict) -> None:
                           "share_sig_negative": ((g["coef_per_sd"] < 0) & (g["p"] < .05)).mean(),
                           "share_same_sign_as_median": (np.sign(g["coef_per_sd"]) == sign).mean(),
                           "median_r2": g["r2"].median()})
-    s1 = coefs.groupby(["genre", "predictor"]).apply(summarise, include_groups=False).reset_index()
+    s1 = coefs.groupby(["genre", "predictor"]).apply(summarize, include_groups=False).reset_index()
     s1.insert(0, "group", "ALL")
-    s2 = coefs.groupby(["group", "genre", "predictor"]).apply(summarise, include_groups=False).reset_index()
+    s2 = coefs.groupby(["group", "genre", "predictor"]).apply(summarize, include_groups=False).reset_index()
     pd.concat([s1, s2], ignore_index=True).to_csv(ANALYSIS_DIR / "engagement_summary.csv", index=False)
     (ANALYSIS_DIR / "engagement_model.json").write_text(json.dumps({
         "dependent": "log(1 + view_count) (snapshot at fetch time, 2026-09-14)", "predictors": predictors,

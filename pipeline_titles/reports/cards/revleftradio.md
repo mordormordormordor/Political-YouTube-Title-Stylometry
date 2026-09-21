@@ -1,6 +1,6 @@
 # Rev Left Radio (@revleftradio)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Rev Left Radio · clipper: no · platform: youtube · subscribers: 31900.0
+Channel group: **left** (title-leaning score, document 14) · organization: Rev Left Radio · clipper: no · platform: youtube · subscribers: 31900.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: JLP Weekly Series (13.2%); Socialism and Democratic Party Conflict (
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.4 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | 0.1 |
 | F6: Person-centred (named people) | None | None | -0.3 | -0.2 |
@@ -48,7 +48,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (33.3%); Iran Conflict and Po
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.8 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.3 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.1 | -0.3 |
 | F6: Person-centred (named people) | None | None | -3.0 | 0.6 |

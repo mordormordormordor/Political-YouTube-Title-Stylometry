@@ -1,6 +1,6 @@
 # Breaking Points (@breakingpoints)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Breaking Points · clipper: no · platform: youtube · subscribers: 2100000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Breaking Points · clipper: no · platform: youtube · subscribers: 2100000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (15.2%); Israel-Palestine Con
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 7.5 | 8.8 | -0.8 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 3.8 | 5.4 | -1.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.0 | 75.7 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.0 | 75.7 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 4.2 | 3.3 | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 2.5 | 3.8 | -0.7 | 0.1 |
 | F6: Person-centred (named people) | 68.2 | 65.7 | 0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (15.2%); Israel-Palestine Con
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.1% (2.7%); outrage 85.9% (63.9%); humor 0.4% (0.2%); question 4.0% (15.6%); breaking_live 2.9% (2.9%); episode_show 0.0% (2.8%); interview_guest 4.2% (9.8%); reaction 2.5% (2.9%); confrontation 8.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 1.5% (8.0%)
 
 
-Nearest style neighbours: @DueDissidence [left]; @SabbySabs [left]; @RobertGouveiaEsq [right]; https://rumble.com/c/nickjfuentes [right]; @podsaveamerica [left]
+Nearest style neighbors: @DueDissidence [left]; @SabbySabs [left]; @RobertGouveiaEsq [right]; https://rumble.com/c/nickjfuentes [right]; @podsaveamerica [left]
 
-Nearest topic neighbours: @TheYoungTurks [left]; @thehill [neutral]; @DueDissidence [left]; @CNN [left]; @thejimmydoreshow [neutral]
+Nearest topic neighbors: @TheYoungTurks [left]; @thehill [neutral]; @DueDissidence [left]; @CNN [left]; @thejimmydoreshow [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (25.0%); Trump State of the U
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.3 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.5 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.5 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.7 | 0.6 |

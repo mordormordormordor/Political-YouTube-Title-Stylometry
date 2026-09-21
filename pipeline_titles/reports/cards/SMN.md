@@ -1,6 +1,6 @@
 # Some More News (@SMN)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Some More News · clipper: no · platform: youtube · subscribers: 943000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Some More News · clipper: no · platform: youtube · subscribers: 943000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (5.1%); Trump's Unwise Action
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 71.5 | 56.1 | 0.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 56.5 | 55.6 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 89.1 | 87.9 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 89.1 | 87.9 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 72.0 | 74.9 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 69.0 | 65.3 | 0.6 | 0.1 |
 | F6: Person-centred (named people) | 31.8 | 47.7 | -0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (5.1%); Trump's Unwise Action
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.0% (2.7%); outrage 59.4% (63.9%); humor 0.0% (0.2%); question 20.8% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 10.2% (9.8%); reaction 1.0% (2.9%); confrontation 1.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 6.1% (8.0%)
 
 
-Nearest style neighbours: @JillianMichaels [right]; @samharrisorg [left]; @JustPearlyThings [right]; @RileyGaines [right]; @theisabelbrown [right]
+Nearest style neighbors: @JillianMichaels [right]; @samharrisorg [left]; @JustPearlyThings [right]; @RileyGaines [right]; @theisabelbrown [right]
 
-Nearest topic neighbours: @podsaveamerica [left]; @bulwarkmedia [left]; @SecularTalk [left]; @FarronBalanced [left]; @thomhartmann [left]
+Nearest topic neighbors: @podsaveamerica [left]; @bulwarkmedia [left]; @SecularTalk [left]; @FarronBalanced [left]; @thomhartmann [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -67,7 +67,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (12.5%); Tucker Carlson Polit
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.3 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.6 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 1.3 | 0.6 |

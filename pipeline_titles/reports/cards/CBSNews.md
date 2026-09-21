@@ -1,6 +1,6 @@
 # CBS News (@CBSNews)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: CBS News · clipper: no · platform: youtube · subscribers: 7080000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: CBS News · clipper: no · platform: youtube · subscribers: 7080000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (10.7%); Artemis II Moon Miss
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 89.1 | 74.9 | 0.8 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 82.4 | 77.8 | 0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 18.0 | 54.0 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 18.0 | 54.0 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 50.2 | 37.7 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 54.8 | 49.4 | 0.2 | 0.1 |
 | F6: Person-centred (named people) | 34.3 | 42.3 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (10.7%); Artemis II Moon Miss
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.3% (2.4%); outrage 25.0% (36.0%); humor 0.0% (0.1%); question 8.9% (15.9%); breaking_live 4.3% (1.1%); episode_show 0.0% (7.0%); interview_guest 7.8% (11.6%); reaction 3.6% (1.9%); confrontation 3.8% (7.4%); listicle 0.0% (0.1%); howto_explainer 4.8% (6.6%)
 
 
-Nearest style neighbours: @CNN [left]; @ABCNews [neutral]; @AssociatedPress [neutral]; @NBCNews [neutral]; @Reuters [neutral]
+Nearest style neighbors: @CNN [left]; @ABCNews [neutral]; @AssociatedPress [neutral]; @NBCNews [neutral]; @Reuters [neutral]
 
-Nearest topic neighbours: @USATODAY [neutral]; @NewsNation [neutral]; @ABCNews [neutral]; @CNN [left]; @thehill [neutral]
+Nearest topic neighbors: @USATODAY [neutral]; @NewsNation [neutral]; @ABCNews [neutral]; @CNN [left]; @thehill [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Lindsay Clancy Murder Trial (8.7%); Trump Iran War Briefings (7.6%);
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 83.5 | 64.6 | 0.6 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 97.5 | 100.0 | 1.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 40.5 | 59.5 | -0.3 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 40.5 | 59.5 | -0.3 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 31.6 | 16.5 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 34.2 | 31.6 | -0.4 | -0.3 |
 | F6: Person-centred (named people) | 25.3 | 32.9 | -0.2 | 0.2 |
@@ -104,9 +104,9 @@ Top topics: Lindsay Clancy Murder Trial (8.7%); Trump Iran War Briefings (7.6%);
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.8% (2.2%); outrage 14.1% (29.7%); humor 0.0% (0.1%); question 0.0% (4.6%); breaking_live 1.1% (52.4%); episode_show 0.0% (2.1%); interview_guest 8.7% (13.2%); reaction 0.8% (1.4%); confrontation 1.1% (7.4%); listicle 0.0% (0.0%); howto_explainer 0.8% (1.0%)
 
 
-Nearest style neighbours: @FoxNews [right]; @USATODAY [neutral]; @SkyNews [left]; @PTLRadioShow [left]; @thehill [neutral]
+Nearest style neighbors: @FoxNews [right]; @USATODAY [neutral]; @SkyNews [left]; @PTLRadioShow [left]; @thehill [neutral]
 
-Nearest topic neighbours: @FoxNews [right]; @USATODAY [neutral]; @msnow [left]; @NewsNation [neutral]; @thehill [neutral]
+Nearest topic neighbors: @FoxNews [right]; @USATODAY [neutral]; @msnow [left]; @NewsNation [neutral]; @thehill [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

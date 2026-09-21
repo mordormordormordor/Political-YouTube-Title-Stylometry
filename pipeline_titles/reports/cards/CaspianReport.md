@@ -1,6 +1,6 @@
 # CaspianReport (@CaspianReport)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: CaspianReport · clipper: no · platform: youtube · subscribers: 1850000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: CaspianReport · clipper: no · platform: youtube · subscribers: 1850000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (40.0%); War and Military Ana
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.6 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 2.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.8 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.8 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 4.2 | 0.1 |
 | F6: Person-centred (named people) | None | None | -1.6 | -0.2 |

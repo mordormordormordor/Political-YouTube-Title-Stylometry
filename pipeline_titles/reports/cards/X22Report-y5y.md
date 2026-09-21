@@ -1,6 +1,6 @@
 # X22Report (@X22Report-y5y)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: X22 Report · clipper: no · platform: youtube · subscribers: 887000.0
+Channel group: **right** (title-leaning score, document 14) · organization: X22 Report · clipper: no · platform: youtube · subscribers: 887000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Leverage and Political Strategy (26.8%); Gold and Central Bank
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 54.0 | 67.8 | 0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 97.5 | 98.7 | 1.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 28.5 | 31.0 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 28.5 | 31.0 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 32.6 | 46.9 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 27.6 | 31.0 | -0.2 | 0.2 |
 | F6: Person-centred (named people) | 78.2 | 66.1 | 0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Leverage and Political Strategy (26.8%); Gold and Central Bank
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.3% (3.6%); outrage 79.5% (59.6%); humor 0.0% (0.2%); question 12.9% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 3.3% (8.5%); reaction 0.8% (2.2%); confrontation 7.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.0% (9.5%)
 
 
-Nearest style neighbours: @OutKick [right]; @bulwarkmedia [left]; @RubinReport [right]; @Tim_Black [right]; @clayandbuck [right]
+Nearest style neighbors: @OutKick [right]; @bulwarkmedia [left]; @RubinReport [right]; @Tim_Black [right]; @clayandbuck [right]
 
-Nearest topic neighbours: @BelleRanch [left]; @AndWeKnowOfficial-o9b [right]; @thomhartmann [left]; @markets [neutral]; @msnow [left]
+Nearest topic neighbors: @BelleRanch [left]; @AndWeKnowOfficial-o9b [right]; @thomhartmann [left]; @markets [neutral]; @msnow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

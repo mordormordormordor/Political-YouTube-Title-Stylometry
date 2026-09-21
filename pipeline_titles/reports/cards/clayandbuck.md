@@ -1,6 +1,6 @@
 # The Clay Travis & Buck Sexton Show (@clayandbuck)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Clay & Buck · clipper: no · platform: youtube · subscribers: 150000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Clay & Buck · clipper: no · platform: youtube · subscribers: 150000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (4.7%); 2026 US Primary Elect
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 61.1 | 61.1 | 0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 34.3 | 36.0 | -0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 55.6 | 60.3 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 55.6 | 60.3 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 23.8 | 17.6 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 45.2 | 45.6 | 0.1 | 0.2 |
 | F6: Person-centred (named people) | 83.3 | 82.0 | 0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (4.7%); 2026 US Primary Elect
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.2% (3.6%); outrage 43.2% (59.6%); humor 0.2% (0.2%); question 17.2% (15.6%); breaking_live 1.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 4.3% (8.5%); reaction 1.2% (2.2%); confrontation 9.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 9.6% (9.5%)
 
 
-Nearest style neighbours: @TheDonLemonShow [left]; @nypost [right]; @DemocracyDocket [left]; @oann [right]; https://rumble.com/c/GGreenwald [left]
+Nearest style neighbors: @TheDonLemonShow [left]; @nypost [right]; @DemocracyDocket [left]; @oann [right]; https://rumble.com/c/GGreenwald [left]
 
-Nearest topic neighbours: @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @thehill [neutral]; @oann [right]; @BlazeTV [right]
+Nearest topic neighbors: @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @thehill [neutral]; @oann [right]; @BlazeTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Political Media Broadcasters (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.8 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.5 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.6 | 0.0 |

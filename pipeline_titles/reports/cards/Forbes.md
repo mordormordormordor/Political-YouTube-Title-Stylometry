@@ -1,6 +1,6 @@
 # Forbes (@Forbes)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Forbes · clipper: no · platform: youtube · subscribers: 2180000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Forbes · clipper: no · platform: youtube · subscribers: 2180000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Tech Business and Startups (18.3%); AI and Political Concerns (12.7%
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 90.0 | 95.4 | 0.8 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 54.4 | 54.8 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 43.1 | 38.9 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 43.1 | 38.9 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 22.2 | 11.7 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 86.2 | 88.7 | 1.3 | 0.1 |
 | F6: Person-centred (named people) | 52.7 | 35.6 | -0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Tech Business and Startups (18.3%); AI and Political Concerns (12.7%
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.8% (2.4%); outrage 19.5% (36.0%); humor 0.1% (0.1%); question 24.1% (15.9%); breaking_live 0.6% (1.1%); episode_show 0.0% (7.0%); interview_guest 4.7% (11.6%); reaction 0.2% (1.9%); confrontation 2.7% (7.4%); listicle 1.1% (0.1%); howto_explainer 10.0% (6.6%)
 
 
-Nearest style neighbours: @chinainsights-r2w [neutral]; @NYTPodcasts [left]; @wethefifth [neutral]; @PragerU [right]; @FreshFitMiami [right]
+Nearest style neighbors: @chinainsights-r2w [neutral]; @NYTPodcasts [left]; @wethefifth [neutral]; @PragerU [right]; @FreshFitMiami [right]
 
-Nearest topic neighbours: @markets [neutral]; @Semafor [neutral]; @TechCrunch [neutral]; @wsj [neutral]; @NYTPodcasts [left]
+Nearest topic neighbors: @markets [neutral]; @Semafor [neutral]; @TechCrunch [neutral]; @wsj [neutral]; @NYTPodcasts [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Tech Business and Startups (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 2.4 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -5.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.6 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.6 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -1.0 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.9 | 0.2 |

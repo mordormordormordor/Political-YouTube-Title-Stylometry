@@ -1,7 +1,7 @@
 """Pure text-statistics helpers shared by profiles.py and leaning.py (unit-tested):
-tokenisation for vocabulary work, weighted log-odds with an informative Dirichlet
+tokenization for vocabulary work, weighted log-odds with an informative Dirichlet
 prior (Monroe, Colaresi & Quinn 2008), rank-turbulence divergence (Dodds et al.
-2020), and the capitalisation-style classifier."""
+2020), and the capitalization-style classifier."""
 
 from __future__ import annotations
 
@@ -31,7 +31,7 @@ CAPS_STYLES = ["all_caps", "selective_caps", "title_case", "sentence_case", "mix
 
 def vocab_tokens(text: str, min_len: int = 2) -> list[str]:
     """Lower-cased word tokens minus stopwords and digits (for vocabulary tables);
-    curly apostrophes normalised and possessive 's dropped ("Trump’s" -> "trump")."""
+    curly apostrophes normalized and possessive 's dropped ("Trump’s" -> "trump")."""
     out = []
     for t in _TOKEN_RE.findall(str(text).lower().replace("’", "'")):
         if t.endswith("'s"):
@@ -42,7 +42,7 @@ def vocab_tokens(text: str, min_len: int = 2) -> list[str]:
 
 
 def caps_style(title: str, acronyms: Iterable[str] = ()) -> str:
-    """Capitalisation style of one title.
+    """Capitalization style of one title.
 
     short_other: fewer than three 2+-letter words. all_caps: >= 90 % of words
     ALL CAPS. selective_caps: at least one ALL-CAPS word of 3+ letters that is
@@ -52,8 +52,8 @@ def caps_style(title: str, acronyms: Iterable[str] = ()) -> str:
     a number, a quote, "U.S." or "I" is judged on what follows, since the word
     pattern skips those tokens and the old test on the first matched word
     filed "8 dead after ..." and "U.S. strikes ..." here. title_case: >= 80 %
-    of the remaining content words (function words excluded) capitalised.
-    sentence_case: fewer than 80 % of the remaining content words capitalised."""
+    of the remaining content words (function words excluded) capitalized.
+    sentence_case: fewer than 80 % of the remaining content words capitalized."""
     words = _WORD_RE.findall(title)
     if len(words) < 3:
         return "short_other"
@@ -116,10 +116,10 @@ def rank_turbulence_divergence(counts_a: Counter, counts_b: Counter, alpha: floa
     allotaxonometer computes it (Dodds et al. 2023, EPJ Data Science; allotaxonometer-ui):
     ranks are tied ranks over the union of types with absent types counted as zero,
     the per-type term is (alpha + 1) / alpha * |r_a^-alpha - r_b^-alpha|^(1 / (alpha + 1)),
-    and the sum is normalised by the value two disjoint systems of the same sizes would
+    and the sum is normalized by the value two disjoint systems of the same sizes would
     give, so D = 0 for identical rankings and 1 for systems with no type in common.
     Returns (D, [(type, contribution, rank_a, rank_b)]) sorted by |contribution|, with
-    contribution = the type's normalised term, signed positive when the type is more
+    contribution = the type's normalized term, signed positive when the type is more
     prominent (lower rank) in A. Contributions sum to D in absolute value."""
     types = set(counts_a) | set(counts_b)
     ra, rb = tied_ranks(counts_a, types), tied_ranks(counts_b, types)

@@ -1,6 +1,6 @@
 # The Lever (@LeverNews)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: The Lever · clipper: no · platform: youtube · subscribers: 74700.0
+Channel group: **left** (title-leaning score, document 14) · organization: The Lever · clipper: no · platform: youtube · subscribers: 74700.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: No Kings Protests Movement (9.6%); Iran War and Strait of Hormuz Ten
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 51.9 | 69.0 | 0.2 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 73.6 | 63.2 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 45.6 | 46.4 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 45.6 | 46.4 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 76.6 | 69.5 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 93.7 | 92.9 | 2.0 | 0.1 |
 | F6: Person-centred (named people) | 92.5 | 89.5 | 0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: No Kings Protests Movement (9.6%); Iran War and Strait of Hormuz Ten
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.1% (2.7%); outrage 32.9% (63.9%); humor 0.0% (0.2%); question 35.6% (15.6%); breaking_live 0.0% (2.9%); episode_show 12.3% (2.8%); interview_guest 12.3% (9.8%); reaction 1.4% (2.9%); confrontation 4.1% (7.6%); listicle 0.0% (0.1%); howto_explainer 11.0% (8.0%)
 
 
-Nearest style neighbours: @BreakThroughNews [left]; @jimacosta [left]; @bulwarkmedia [left]; @JamarlThomas [left]; @fastpoliticspodcast [left]
+Nearest style neighbors: @BreakThroughNews [left]; @jimacosta [left]; @bulwarkmedia [left]; @JamarlThomas [left]; @fastpoliticspodcast [left]
 
-Nearest topic neighbours: @breakingpoints [left]; @TheMajorityReport [left]; @thomhartmann [left]; @FoxNewsChannelClips [right]; @marklevinshow [right]
+Nearest topic neighbors: @breakingpoints [left]; @TheMajorityReport [left]; @thomhartmann [left]; @FoxNewsChannelClips [right]; @marklevinshow [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -60,7 +60,7 @@ Top topics: Political Podcasts and Commentary (22.2%); AI and Political Concerns
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.3 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 1.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.9 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.9 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | 1.0 | 0.6 |

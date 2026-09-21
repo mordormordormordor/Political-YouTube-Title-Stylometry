@@ -1,9 +1,9 @@
 """Document 14: political leaning from titles, in two levels (rendered by report_sections.write_all).
 
 Level 1, titles: a frontier judge labels each sampled title left / right / neither from the
-title text alone; the labels and the vocabulary behind them are analysed.
+title text alone; the labels and the vocabulary behind them are analyzed.
 Level 2, channels: each channel's score over its sampled titles sorts the channels into
-left, neutral and right groups; the groups' reliability and whole output are analysed."""
+left, neutral and right groups; the groups' reliability and whole output are analyzed."""
 
 from __future__ import annotations
 
@@ -38,7 +38,7 @@ def _allotax_titles(allo, allo_c, jname: str) -> str:
     left = c[c.side == "system_1"].head(8).type.tolist(); right = c[c.side == "system_2"].head(8).type.tolist()
     return (f"How to read it. The two vocabularies overlap less than the label shares suggest: D<sup>R</sup><sub>1/3</sub> = {r.divergence:.3f}, with {pct(r.exclusive_share_1)} of the left-read words never appearing in a right-read title and {pct(r.exclusive_share_2)} the other way. "
             f"The apex is shared (the year's subjects), and the divergence is carried by the flanks: on the left {', '.join(left)}; on the right {', '.join(right)}. "
-            f"The bottom edges of the diamond, where the dark cells run, are the words used once on one side and never on the other, which is where the labelled sample's smallness shows ({int(r.n_types_1):,} and {int(r.n_types_2):,} word types from {int(r.n_titles_1):,} and {int(r.n_titles_2):,} titles).")
+            f"The bottom edges of the diamond, where the dark cells run, are the words used once on one side and never on the other, which is where the labeled sample's smallness shows ({int(r.n_types_1):,} and {int(r.n_types_2):,} word types from {int(r.n_titles_1):,} and {int(r.n_titles_2):,} titles).")
 
 
 def _allotax_channels(allo, allo_c) -> str:
@@ -47,8 +47,8 @@ def _allotax_channels(allo, allo_c) -> str:
     r = allo[allo.comparison == "channels"].iloc[0]; c = allo_c[allo_c.comparison == "channels"]
     left = c[c.side == "system_1"].head(10).type.tolist(); right = c[c.side == "system_2"].head(10).type.tolist()
     return (f"D<sup>R</sup><sub>1/3</sub> = {r.divergence:.3f}: the groups' whole outputs are closer to each other than the left-read and right-read titles are, as they should be, since most of what either group publishes is the shared news of the year. "
-            f"The words that separate them are the words the labels found, now over every title the channels published rather than the labelled sample: the left channels' flank is {', '.join(left)}; the right channels' is {', '.join(right)}. "
-            f"Show furniture shows up here too (segment names, hosts' first names, the words of a title template), which is the price of comparing channels rather than labelled titles; "
+            f"The words that separate them are the words the labels found, now over every title the channels published rather than the labeled sample: the left channels' flank is {', '.join(left)}; the right channels' is {', '.join(right)}. "
+            f"Show furniture shows up here too (segment names, hosts' first names, the words of a title template), which is the price of comparing channels rather than labeled titles; "
             f"{pct(r.exclusive_share_2)} of the right channels' words never appear in a left channel's title, against {pct(r.exclusive_share_1)} the other way.")
 
 
@@ -57,7 +57,7 @@ def _classes_sentence(t: pd.DataFrame) -> str:
     a = rows.get("left-read vs right-read titles"); b = rows.get("left vs right channels, every title")
     if a is None or b is None:
         return ""
-    return (f"Over the labelled titles the two classes are close in size ({int(a.n_left)} left-class words, {int(a.n_right)} right-class, of {int(a.n_words):,} words with three or more occurrences). "
+    return (f"Over the labeled titles the two classes are close in size ({int(a.n_left)} left-class words, {int(a.n_right)} right-class, of {int(a.n_words):,} words with three or more occurrences). "
             f"Over the channels' whole output, with ten times the titles, {pct(b.share_classified)} of the vocabulary clears the cutoff and the right classifies far more words ({int(b.n_right):,} against {int(b.n_left):,} of {int(b.n_words):,}): "
             f"the right channels' vocabulary is the more varied one, and its stance words are spread over more distinct terms.")
 
@@ -75,14 +75,14 @@ def _logodds_section(lo_s, lo_ag, lex, judge: str, jname: str) -> str:
     sw = [w.split(" (")[0] for w in str(ag.side_switchers).split(", ") if w and w != "nan"] if ag is not None else []
     lj = lex[lex.judge == judge].iloc[0]
     conf = json.loads(lj.confusion); n_neither = sum(conf["neither"].values())
-    ag_txt = (f"The two lexicons agree: of the {int(ag.both_partisan)} words that both the labelled titles and the groups' whole output classify as partisan, {pct(ag.same_side_when_both_partisan)} point the same way (kappa {ag.kappa:.2f} over three classes, low only because the groups' output, with ten times the titles, classifies many more words). "
+    ag_txt = (f"The two lexicons agree: of the {int(ag.both_partisan)} words that both the labeled titles and the groups' whole output classify as partisan, {pct(ag.same_side_when_both_partisan)} point the same way (kappa {ag.kappa:.2f} over three classes, low only because the groups' output, with ten times the titles, classifies many more words). "
               f"The words that switch sides between the two are {', '.join(sw) if sw else 'none'}, topic and show-name words rather than stance words.") if ag is not None else ""
     return f"""The allotaxonograph ranks words by how far they move between the two rankings; weighted log-odds asks a different question, whether a word is over-used on one side *given how common it is overall*, and gives every word a z-score, so a cutoff turns the vocabulary into a three-way lexicon: right at z ≥ {cut:g}, left at z ≤ −{cut:g}, neither otherwise (the two-sided 5 % level; words with fewer than 3 occurrences are not classified).
 
 ![Log-odds, titles.](figures/14_logodds_titles.png)
-*Weighted log-odds (Monroe, Colaresi and Quinn 2008). Left: every word by its z (vertical) and its frequency (horizontal, log scale) for the titles {jname} read as left against those it read as right; blue = left-class, orange = right-class, grey = neither. Right: the 25 words each side over-uses most, mirrored about the spine, the word beside the spine and its z at the bar's end; bars beyond the axis cap are cut, drawn paler, and keep their value.*
+*Weighted log-odds (Monroe, Colaresi and Quinn 2008). Left: every word by its z (vertical) and its frequency (horizontal, log scale) for the titles {jname} read as left against those it read as right; blue = left-class, orange = right-class, gray = neither. Right: the 25 words each side over-uses most, mirrored about the spine, the word beside the spine and its z at the bar's end; bars beyond the axis cap are cut, drawn paler, and keep their value.*
 
-How many words clear the cutoff, for the labelled titles and for the channel groups' whole output (level 2):
+How many words clear the cutoff, for the labeled titles and for the channel groups' whole output (level 2):
 
 ![Words that clear the cutoff.](figures/14_logodds_classes.png)
 *Left-class and right-class words as shares of each vocabulary, counts printed; the rest are neither.*
@@ -94,7 +94,7 @@ How many words clear the cutoff, for the labelled titles and for the channel gro
 **What a word list can do on its own.** The lexicon answers a specific question: how much of the judge's reading is vocabulary? If {jname} decided a title's leaning from the words in it, a plain word list built from its own labels should be able to reproduce those labels. So the list is built from the classes above (every word at |z| ≥ {cut:g} is a left-class or a right-class word); a title is called left when it holds more left-class than right-class words, right the other way, neither on a tie or with no classified word; and the list is built out of fold, on four fifths of the channels and applied to the remaining fifth, so no channel's titles help classify themselves.
 
 ![Lexicon against the judge.](figures/14_lexicon_vs_judge.png)
-*Left: each channel's score from the word list's labels against its score from {jname}'s labels, coloured by the judge's group. Right: the word list's class against {jname}'s label, title by title, with the share of each row.*
+*Left: each channel's score from the word list's labels against its score from {jname}'s labels, colored by the judge's group. Right: the word list's class against {jname}'s label, title by title, with the share of each row.*
 
 Title by title (the right panel; rows are what {jname} said, columns what the word list said):
 
@@ -204,7 +204,7 @@ The two readings agree on {pct(two['exact_agreement'])} of the {two['n_titles']:
             flip2 = "none crosses from left to right or back"
         else:
             flip2 = "; ".join(f"{r.creator} crosses from {r.group_first} to {r.group_shuffled} ({r.score_first:+.2f} to {r.score_shuffled:+.2f})".replace("-", "−") for r in flips.itertuples())
-        two_l2 = (f"\n3. **Second reading.** The first reading of every title (Level 1) scores the channels too. The two readings rank the {two['n_channels']} channels with at least {two['min_titles_per_channel']} labelled titles at Spearman {two['channel_spearman']:.2f} "
+        two_l2 = (f"\n3. **Second reading.** The first reading of every title (Level 1) scores the channels too. The two readings rank the {two['n_channels']} channels with at least {two['min_titles_per_channel']} labeled titles at Spearman {two['channel_spearman']:.2f} "
                   f"and move a channel's score by {two['channel_mean_abs_change']:.2f} on average; {two['channel_group_changed']} channels change group, and {flip2}.")
         if rr:
             rflips = rep_ch[(rep_ch.n_titles >= rr["min_titles_per_channel"]) & (((rep_ch.group_record == "left") & (rep_ch.group_repeat == "right")) | ((rep_ch.group_record == "right") & (rep_ch.group_repeat == "left")))] if rep_ch is not None else None
@@ -212,19 +212,19 @@ The two readings agree on {pct(two['exact_agreement'])} of the {two['n_titles']:
                 flip3 = "none crosses from left to right or back"
             else:
                 flip3 = "; ".join(f"{r.creator} crosses from {r.group_record} to {r.group_repeat} ({r.score_record:+.2f} to {r.score_repeat:+.2f}, {int(r.n_titles)} titles)" for r in rflips.itertuples()).replace("-", "−")
-            two_l2 = (f"\n3. **Second and third readings.** The other two readings of every title (Level 1) score the channels too. The clean repeat ranks the {rr['n_channels']} channels with at least {rr['min_titles_per_channel']} labelled titles at Spearman {rr['channel_spearman']:.2f} "
+            two_l2 = (f"\n3. **Second and third readings.** The other two readings of every title (Level 1) score the channels too. The clean repeat ranks the {rr['n_channels']} channels with at least {rr['min_titles_per_channel']} labeled titles at Spearman {rr['channel_spearman']:.2f} "
                       f"and moves a channel's score by {rr['channel_mean_abs_change']:.2f} on average; {rr['channel_group_changed']} channels change group, and {flip3}. The channel-batched reading ranks them at {two['channel_spearman']:.2f}, "
                       f"moves a score by {two['channel_mean_abs_change']:.2f} and changes {two['channel_group_changed']} groups, and {flip2}.")
         if rr:
             two_lim = (f" Its repeatability is measured: a clean repeat of the method agrees with the labels of record on {pct(rr['exact_agreement'])} of titles (kappa {rr['kappa']:.2f}) and ranks the channels at {rr['channel_spearman']:.2f}, "
                        f"so about one title label in {round(1 / (1 - rr['exact_agreement']))} is the judge's own noise, which the channel scores absorb.")
             two_method = (" Readings: the labels of record against the first reading (channel-batched) and against the repeat (the same method, a fresh shuffle seed, `--repeat`), title by title (exact agreement, Cohen's kappa, the confusion table) and channel by channel "
-                          f"(channels with at least {rr['min_titles_per_channel']} labelled titles: Spearman between the two scores, mean absolute change, groups changed), and the three readings together (`leaning_repeat.json`).")
+                          f"(channels with at least {rr['min_titles_per_channel']} labeled titles: Spearman between the two scores, mean absolute change, groups changed), and the three readings together (`leaning_repeat.json`).")
         else:
             two_lim = (f" The same model did read every title twice, but the second reading also changed the batches from channel-grouped to shuffled, so its {pct(two['exact_agreement'])} agreement mixes the judge's inconsistency with the effect of a title's company "
                        "and cannot be split into the two; a repeat with a fresh shuffle seed (`--repeat`) would put a number on the judge alone.")
             two_method = (" Two readings: the first reading's labels against the labels of record, title by title (exact agreement, Cohen's kappa, the confusion table, per run) and channel by channel "
-                          f"(channels with at least {two['min_titles_per_channel']} labelled titles: Spearman between the two scores, mean absolute change, groups changed).")
+                          f"(channels with at least {two['min_titles_per_channel']} labeled titles: Spearman between the two scores, mean absolute change, groups changed).")
     rel += two_finding
     runs_tab = ""
     if runs_t:
@@ -249,9 +249,9 @@ Everything here is *model-perceived* leaning: how a careful, reader-like model r
 
 ## Level 1: titles
 
-### What the judge labelled
+### What the judge labeled
 
-Over the {ls['n_labelled']:,} labelled titles:
+Over the {ls['n_labelled']:,} labeled titles:
 
 {table(pd.DataFrame([{'label': k, 'titles': counts[k], 'share': shares[k]} for k in ('left', 'neither', 'right')]), fmt='{:.3f}')}
 
@@ -264,10 +264,10 @@ Six in ten titles carry no readable stance: plain news headlines, non-political 
 {two_l1}
 ### The vocabulary of left-read and right-read titles
 
-Titles {jname} labelled left ({int(wj.n_left_titles.iloc[0]):,}) vs right ({int(wj.n_right_titles.iloc[0]):,}), compared two ways: weighted log-odds (which words are over-used on one side, given how often they appear at all) and rank-turbulence divergence, read off an allotaxonograph (Dodds et al. 2023), the instrument built for exactly this comparison of two Zipfian systems.
+Titles {jname} labeled left ({int(wj.n_left_titles.iloc[0]):,}) vs right ({int(wj.n_right_titles.iloc[0]):,}), compared two ways: weighted log-odds (which words are over-used on one side, given how often they appear at all) and rank-turbulence divergence, read off an allotaxonograph (Dodds et al. 2023), the instrument built for exactly this comparison of two Zipfian systems.
 
 ![Allotaxonograph, titles.](figures/14_allotax_titles.png)
-*Allotaxonograph of the titles {jname} read as left (system 1, left flank) against the titles it read as right (system 2, right flank); drawn by the Computational Story Lab's own renderer (allotaxonometer-ui), rank-turbulence divergence with α = 1/3. Diamond: every word placed by its rank in each system on log axes, the rank-rank plane rotated so that words used equally sit on the vertical centre line; colour = how many words share a cell; the words named along the flanks are the furthest from the centre line at each frequency, i.e. the most one-sided. Contour lines join equal contributions to the divergence. Right: the {int(allo.loc[allo.comparison == 'titles', 'bars'].iloc[0]) if allo is not None and 'bars' in allo.columns and (allo.comparison == 'titles').any() else 40} largest contributions, each with its two ranks (system 1 ⇋ system 2), grey bars pulling left, blue bars pulling right. Below the diamond: the balance of tokens, types and exclusive types between the two systems.*
+*Allotaxonograph of the titles {jname} read as left (system 1, left flank) against the titles it read as right (system 2, right flank); drawn by the Computational Story Lab's own renderer (allotaxonometer-ui), rank-turbulence divergence with α = 1/3. Diamond: every word placed by its rank in each system on log axes, the rank-rank plane rotated so that words used equally sit on the vertical center line; color = how many words share a cell; the words named along the flanks are the furthest from the center line at each frequency, i.e. the most one-sided. Contour lines join equal contributions to the divergence. Right: the {int(allo.loc[allo.comparison == 'titles', 'bars'].iloc[0]) if allo is not None and 'bars' in allo.columns and (allo.comparison == 'titles').any() else 40} largest contributions, each with its two ranks (system 1 ⇋ system 2), gray bars pulling left, blue bars pulling right. Below the diamond: the balance of tokens, types and exclusive types between the two systems.*
 
 {_allotax_titles(allo, allo_c, jname)}
 
@@ -294,10 +294,10 @@ A channel's score is the balance of its sampled titles, and the groups follow fr
 {table(gs2, ['group', 'n_channels', 'n_titles', 'mean_score', 'min_score', 'max_score', 'mean_left', 'mean_neither', 'mean_right'], fmt='{:.2f}')}
 
 ![Scores.](figures/14_leaning_scores.png)
-*Left: each channel's score against the share of its titles read as neither; the dashed lines are the group thresholds at ±{eps:g}. Right: the distribution of scores, coloured by group.*
+*Left: each channel's score against the share of its titles read as neither; the dashed lines are the group thresholds at ±{eps:g}. Right: the distribution of scores, colored by group.*
 
 ![Every channel.](figures/14_leaning_channels.png)
-*Every channel's sampled titles: the share labelled left (blue), neither (grey) and right (orange), sorted by score, most left-reading first; the score at the right is coloured by group.*
+*Every channel's sampled titles: the share labeled left (blue), neither (gray) and right (orange), sorted by score, most left-reading first; the score at the right is colored by group.*
 
 ![Group composition.](figures/14_leaning_group_composition.png)
 *Mean composition of a channel's titles in each group.*
@@ -306,13 +306,13 @@ With 50 titles no channel scores ±1 ({int((bc.score.abs() >= 0.9).sum())} sit a
 
 ### Would a different draw of titles, or a second reading, give a different score?
 
-A channel's score comes from 50 sampled titles out of the hundreds or thousands it published, so the first thing to check is whether the draw matters: had the sample been different, would the channel's score, and its group, be different? Two checks, both on the {int(sh_j.n_channels) if sh_j is not None else n50} channels with 50 labelled titles; then the second reading.
+A channel's score comes from 50 sampled titles out of the hundreds or thousands it published, so the first thing to check is whether the draw matters: had the sample been different, would the channel's score, and its group, be different? Two checks, both on the {int(sh_j.n_channels) if sh_j is not None else n50} channels with 50 labeled titles; then the second reading.
 
 1. **Split-half.** Each channel's 50 titles are split at random into two halves of {int(sh_j.median_titles_per_half) if sh_j is not None else 25} and each half is scored on its own, so every channel gets two scores from disjoint sets of titles. The two sets of scores rank the channels at Spearman {sh_j.split_half_spearman_mean:.2f} (mean of 20 random splits, SD {sh_j.split_half_spearman_sd:.3f}): whichever half you look at, the channels come out in nearly the same order.
 2. **First draw against second draw.** The sample was drawn in two steps, 16 titles per channel first and {int(stab_ch.n_topup.median()) if stab_ch is not None and len(stab_ch) else 34} more afterwards from other months, so the two draws are independent samples of the same channel. Scored separately they rank the channels at Spearman {st_j.spearman_base_vs_topup:.2f}. Going from the 16-title score to the 50-title score moves a channel by {st_j.mean_abs_change:.2f} on average; {int(st_j.group_changed)} of {int(st_j.n_channels)} channels change group, {near_txt}, and {flip_txt}.{two_l2}
 
 ![Stability.](figures/14_leaning_stability.png)
-*Each channel's score from its first 16 titles against its score from the 34 drawn later, coloured by its final group. Points on the diagonal would mean identical scores; the labelled points are the channels that moved most.*
+*Each channel's score from its first 16 titles against its score from the 34 drawn later, colored by its final group. Points on the diagonal would mean identical scores; the labeled points are the channels that moved most.*
 
 The channels that moved most between the two draws, for a sense of what "moved" means:
 
@@ -322,7 +322,7 @@ So the score is a property of the channel, not of the draw, and not of the readi
 
 ### The groups' whole output
 
-The groups were defined from 50 sampled titles per channel; the channels published far more. Comparing everything the {n_l} left channels published with everything the {n_r} right channels published (every unique edited upload in the creator-balanced subset{f", {int(allo.loc[allo.comparison == 'channels', 'n_titles_1'].iloc[0]):,} vs {int(allo.loc[allo.comparison == 'channels', 'n_titles_2'].iloc[0]):,} titles" if allo is not None and (allo.comparison == 'channels').any() else ''}) asks whether the vocabulary that separated the labelled titles separates the groups' bodies of work, with no label on any individual title.
+The groups were defined from 50 sampled titles per channel; the channels published far more. Comparing everything the {n_l} left channels published with everything the {n_r} right channels published (every unique edited upload in the creator-balanced subset{f", {int(allo.loc[allo.comparison == 'channels', 'n_titles_1'].iloc[0]):,} vs {int(allo.loc[allo.comparison == 'channels', 'n_titles_2'].iloc[0]):,} titles" if allo is not None and (allo.comparison == 'channels').any() else ''}) asks whether the vocabulary that separated the labeled titles separates the groups' bodies of work, with no label on any individual title.
 
 ![Allotaxonograph, channels.](figures/14_allotax_channels.png)
 *Left channels (system 1) against right channels (system 2), every title; same instrument and α as above.*
@@ -343,12 +343,12 @@ The top-up titles were spread evenly across months, so the sample supports a gro
 ## Method
 
 1. **Sample.** Every creator gets a base draw of 16 unique edited-upload titles (seed 20260914; creators with fewer than 16 uploads topped up from live VODs). Creators with at least 50 unique uploads are then topped up to 50 with further uploads spread evenly across months (round-robin over the months, random within month, its own random stream), so the extra titles never depend on which month a creator posted most in: {len(labs):,} titles, {n50} creators at 50, {nbase} at their base.
-2. **Labelling.** One prompt (in `leaning.py` and the methods appendix): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0; the judge sees the title text only, numbered 1 to 20, never the channel name; every response cached. {jname} runs through the Claude Code CLI in print mode on a Claude Max subscription, in {'four' if rep else 'three'} runs: the base draw and the top-up with the titles in sample order (a call held one or two channels' titles), then every title again in a seeded random order (a call mixes channels), which is the labelling of record{', and once more with a fresh seed, the repeat kept for the reliability check' if rep else ''}.{runs_tab}
+2. **Labeling.** One prompt (in `leaning.py` and the methods appendix): label the viewpoint the title's own wording signals as left, right or neither, with three anchoring examples; temperature 0; the judge sees the title text only, numbered 1 to 20, never the channel name; every response cached. {jname} runs through the Claude Code CLI in print mode on a Claude Max subscription, in {'four' if rep else 'three'} runs: the base draw and the top-up with the titles in sample order (a call held one or two channels' titles), then every title again in a seeded random order (a call mixes channels), which is the labeling of record{', and once more with a fresh seed, the repeat kept for the reliability check' if rep else ''}.{runs_tab}
    {cc_calls:,} calls and {cc_min:.0f} minutes in all; the CLI reported an equivalent API cost of ${cc_cost:.2f}, not charged.
 3. **Scores and groups.** Per channel: shares of left / right / neither and score = (right − left) / n over its sampled titles; left below −{eps:g}, right above +{eps:g}, neutral between.
-4. **Reliability.** Split-half: channels with at least 32 labelled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), and the group at 16 titles against the group at 50.{two_method}
-5. **Words.** Weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11, for the left-read vs right-read titles and for the left vs right channels' whole output. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalised so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
-6. **Log-odds lexicon.** Every word with 3+ occurrences in the two systems together, right against left; right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for the channel groups, and Cohen's kappa of the classes between the two over their shared words. The lexicon check: the labelled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
+4. **Reliability.** Split-half: channels with at least 32 labeled titles, two random halves, Spearman between the two channel rankings, 20 splits. Base vs top-up: the base-draw score against the top-up score per channel (disjoint titles), and the group at 16 titles against the group at 50.{two_method}
+5. **Words.** Weighted log-odds with an informative Dirichlet prior (alpha0 = 500; Monroe, Colaresi and Quinn 2008) and rank-turbulence divergence (alpha = 1/3; Dodds et al. 2023) on the vocabulary tokens of document 11, for the left-read vs right-read titles and for the left vs right channels' whole output. The divergence follows the allotaxonometer's conventions exactly (tied ranks over the union of both vocabularies, absent words at the last tied rank, the sum normalized so that two vocabularies with no word in common give D = 1); `textstats.rank_turbulence_divergence` reproduces the library's per-word contributions to machine precision.
+6. **Log-odds lexicon.** Every word with 3+ occurrences in the two systems together, right against left; right at z ≥ 1.96, left at z ≤ −1.96, neither otherwise; the same for the channel groups, and Cohen's kappa of the classes between the two over their shared words. The lexicon check: the labeled titles split into five folds by channel, the lexicon built on four folds and applied to the fifth (a title is left when it holds more left-class than right-class words, right the other way, neither on a tie or no classified word), then agreement with the judge's labels title by title and channel by channel (`leaning_lexicon.py`).
 7. **Allotaxonographs.** Drawn by allotaxonometer-ui {allo.allotaxonometer_ui.iloc[0] if allo is not None else ''} (the Computational Story Lab's Svelte renderer, the same code behind the lab's web app and py-allotax) through Node and Puppeteer (`pipeline_titles/allotax.py`, `pipeline_titles/allotax_js/`), from the same word counts as the tables (`allotax_summary.csv`, top contributions in `allotax_contributions.csv`).
 8. **Months.** The labels by channel group x month (`leaning_by_group_month.csv`): titles, creators, partisan share, left and right shares, score.
 

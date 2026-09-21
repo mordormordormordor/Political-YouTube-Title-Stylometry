@@ -1,8 +1,8 @@
-# 11. Capitalisation profile, and the words titles are made of
+# 11. Capitalization profile, and the words titles are made of
 
-## Capitalisation profile
+## Capitalization profile
 
-**The question.** How does each channel capitalise its titles: shouting in ALL CAPS, emphasising single words, Title Case, or sentence case?
+**The question.** How does each channel capitalize its titles: shouting in ALL CAPS, emphasising single words, Title Case, or sentence case?
 
 ### The finding in one paragraph
 
@@ -273,15 +273,15 @@ Averaged over the 239 ranked channels (edited uploads), 49 % of titles are Title
 
 ### Method
 
-Each unique title, as published (the raw title: the normalised one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if its first letter or digit is a lower-case letter (a title opening with a number, a quote, "U.S." or "I" is judged on what follows); **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself (961 words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like. Shares are over a channel's unique titles per genre.
+Each unique title, as published (the raw title: the normalized one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if its first letter or digit is a lower-case letter (a title opening with a number, a quote, "U.S." or "I" is judged on what follows); **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself (961 words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like. Shares are over a channel's unique titles per genre.
 
 ### Limitations
 
 - Any single emphasised word makes a title "selective CAPS", so the category mixes light emphasis ("This Is INSANE") with heavy ("MAGA MELTDOWN as Trump LOSES IT").
-- The acronym exemption is corpus-learned: a word that is usually shouted (e.g. a name a channel always capitalises) can be learned as an acronym and stop counting, and a genuine acronym rarely written in mixed case can count as emphasis.
-- Title Case vs sentence case is a threshold (80 % of content words capitalised); headlines dense with proper nouns can tip over it.
-- Computed on raw titles, so a brand tag counts: "| Fox News" adds capitalised words (harmless under the Title Case rule, and a sentence-case title stays sentence case with two more capitals among its content words), and a tag always written in capitals ("| REUTERS") is learned as an acronym and exempt; a tag in capitals on too few titles to be learned would count as a shout.
-- Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labelled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
+- The acronym exemption is corpus-learned: a word that is usually shouted (e.g. a name a channel always capitalizes) can be learned as an acronym and stop counting, and a genuine acronym rarely written in mixed case can count as emphasis.
+- Title Case vs sentence case is a threshold (80 % of content words capitalized); headlines dense with proper nouns can tip over it.
+- Computed on raw titles, so a brand tag counts: "| Fox News" adds capitalized words (harmless under the Title Case rule, and a sentence-case title stays sentence case with two more capitals among its content words), and a tag always written in capitals ("| REUTERS") is learned as an acronym and exempt; a tag in capitals on too few titles to be learned would count as a shout.
+- Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labeled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
 
 ## The twenty most frequent non-stopwords
 
@@ -317,10 +317,10 @@ Trump is in one title in 5 of the average creator's and in 23 % of all titles; t
 
 ### Method
 
-Tokens are lower-cased words from the normalised title with curly apostrophes normalised and possessive "'s" removed (so "Trump's" counts as "trump"); stopwords are the pipeline list plus scikit-learn's English list plus a few title-furniture words (live, new, news, video, full, show, watch, podcast, vs, ft, ep). The creator-balanced share is, for each ranked creator with edited uploads, the share of its unique titles containing the word, averaged over creators; the raw share pools all unique edited-upload titles. The top 400 words by raw count were scored; `top_words.csv` has all of them.
+Tokens are lower-cased words from the normalized title with curly apostrophes normalized and possessive "'s" removed (so "Trump's" counts as "trump"); stopwords are the pipeline list plus scikit-learn's English list plus a few title-furniture words (live, new, news, video, full, show, watch, podcast, vs, ft, ep). The creator-balanced share is, for each ranked creator with edited uploads, the share of its unique titles containing the word, averaged over creators; the raw share pools all unique edited-upload titles. The top 400 words by raw count were scored; `top_words.csv` has all of them.
 
 ### Limitations
 
-Unigrams only, so "white house" is "white" and "house"; hyphenated and censored words ("f***ing") are split by the tokeniser; the stopword list is a choice (it removes "says"-type words only when they are in the list, which "says" is not).
+Unigrams only, so "white house" is "white" and "house"; hyphenated and censored words ("f***ing") are split by the tokenizer; the stopword list is a choice (it removes "says"-type words only when they are in the list, which "says" is not).
 
 Files: `caps_profile.csv`, `caps_acronyms.txt`, `top_words.csv`.

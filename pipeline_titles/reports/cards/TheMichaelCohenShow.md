@@ -1,6 +1,6 @@
 # Michael Cohen (@TheMichaelCohenShow)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 472000.0
+Channel group: **left** (title-leaning score, document 14) · organization: MeidasTouch Network · clipper: no · platform: youtube · subscribers: 472000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Meltdowns and Collapses (16.1%); Iran War and Strait of Hormuz
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 31.4 | 16.7 | -0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 66.1 | 66.5 | 0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 26.4 | 36.8 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 26.4 | 36.8 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 79.5 | 83.3 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 30.1 | 24.3 | -0.2 | 0.1 |
 | F6: Person-centred (named people) | 55.6 | 48.5 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Meltdowns and Collapses (16.1%); Iran War and Strait of Hormuz
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.6% (2.7%); outrage 79.3% (63.9%); humor 0.0% (0.2%); question 11.3% (15.6%); breaking_live 3.8% (2.9%); episode_show 0.2% (2.8%); interview_guest 4.6% (9.8%); reaction 1.2% (2.9%); confrontation 6.9% (7.6%); listicle 0.0% (0.1%); howto_explainer 3.8% (8.0%)
 
 
-Nearest style neighbours: @chicksonright [right]; @JustPearlyThings [right]; @adammockler [left]; @NovaraMedia [left]; @AnthonyBrianLogan [right]
+Nearest style neighbors: @chicksonright [right]; @JustPearlyThings [right]; @adammockler [left]; @NovaraMedia [left]; @AnthonyBrianLogan [right]
 
-Nearest topic neighbours: @MeidasTouch [left]; @FarronBalanced [left]; @aaronparnas1 [left]; @podsaveamerica [left]; @thedavidpakmanshow [left]
+Nearest topic neighbors: @MeidasTouch [left]; @FarronBalanced [left]; @aaronparnas1 [left]; @podsaveamerica [left]; @thedavidpakmanshow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

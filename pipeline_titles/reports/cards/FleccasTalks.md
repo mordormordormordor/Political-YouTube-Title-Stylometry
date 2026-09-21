@@ -1,6 +1,6 @@
 # Fleccas Talks (@FleccasTalks)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Fleccas Talks · clipper: no · platform: youtube · subscribers: 922000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Fleccas Talks · clipper: no · platform: youtube · subscribers: 922000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (10.7%); Walmart Shoplifting and Polic
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 70.3 | 82.8 | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 0.8 | 1.7 | -2.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.9 | 33.5 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.9 | 33.5 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 1.3 | 3.8 | -0.7 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 7.9 | 22.2 | -0.5 | 0.2 |
 | F6: Person-centred (named people) | 10.0 | 10.0 | -0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (10.7%); Walmart Shoplifting and Polic
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.7% (3.6%); outrage 54.5% (59.6%); humor 0.3% (0.2%); question 3.5% (15.6%); breaking_live 0.0% (2.0%); episode_show 33.1% (7.6%); interview_guest 0.3% (8.5%); reaction 0.0% (2.2%); confrontation 1.4% (7.8%); listicle 0.0% (0.1%); howto_explainer 0.7% (9.5%)
 
 
-Nearest style neighbours: @JacksonHinkleOfficial [neutral]; https://rumble.com/c/nickjfuentes [right]; @DueDissidence [left]; @ponderingpolitics [left]; @dineshdsouza [right]
+Nearest style neighbors: @JacksonHinkleOfficial [neutral]; https://rumble.com/c/nickjfuentes [right]; @DueDissidence [left]; @ponderingpolitics [left]; @dineshdsouza [right]
 
-Nearest topic neighbours: @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @AsmonTV [right]; @TheQuartering [right]; @MattWalsh [right]
+Nearest topic neighbors: @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @AsmonTV [right]; @TheQuartering [right]; @MattWalsh [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Lauren Chen Clips (@laurenchenclips)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Lauren Chen · clipper: yes · platform: youtube · subscribers: 11400.0
+Channel group: **right** (title-leaning score, document 14) · organization: Lauren Chen · clipper: yes · platform: youtube · subscribers: 11400.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Hollywood and Oscars Politics (18.4%); Modern Women and Feminism Deb
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 15.9 | 26.8 | -0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 65.7 | 64.9 | 0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 18.8 | 12.6 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 18.8 | 12.6 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 17.6 | 14.2 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 72.4 | 70.7 | 0.6 | 0.2 |
 | F6: Person-centred (named people) | 64.4 | 70.3 | -0.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Hollywood and Oscars Politics (18.4%); Modern Women and Feminism Deb
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.7% (3.6%); outrage 51.4% (59.6%); humor 0.0% (0.2%); question 29.4% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.8% (8.5%); reaction 3.7% (2.2%); confrontation 11.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 21.1% (9.5%)
 
 
-Nearest style neighbours: @chicksonright [right]; @PTLRadioShow [left]; @SaltyCracker [right]; @NovaraMedia [left]; @JackCocchiarellaShow [left]
+Nearest style neighbors: @chicksonright [right]; @PTLRadioShow [left]; @SaltyCracker [right]; @NovaraMedia [left]; @JackCocchiarellaShow [left]
 
-Nearest topic neighbours: @AfterPartyEmily [right]; @bbrettcooper [right]; @MichaelKnowles [right]; @jlptalk [right]; @TheAmalaEkpunobi [right]
+Nearest topic neighbors: @AfterPartyEmily [right]; @bbrettcooper [right]; @MichaelKnowles [right]; @jlptalk [right]; @TheAmalaEkpunobi [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

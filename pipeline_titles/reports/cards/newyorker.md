@@ -1,6 +1,6 @@
 # The New Yorker (@newyorker)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: The New Yorker · clipper: no · platform: youtube · subscribers: 1200000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: The New Yorker · clipper: no · platform: youtube · subscribers: 1200000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Hollywood and Oscars Politics (27.5%); JLP Weekly Series (9.8%); Kni
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 96.7 | 97.1 | 1.0 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 6.3 | 5.0 | -1.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 26.8 | 32.6 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 26.8 | 32.6 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 18.0 | 15.9 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 37.2 | 46.0 | -0.1 | 0.1 |
 | F6: Person-centred (named people) | 93.7 | 93.3 | 1.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Hollywood and Oscars Politics (27.5%); JLP Weekly Series (9.8%); Kni
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.4%); outrage 7.8% (36.0%); humor 0.0% (0.1%); question 5.9% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 25.5% (11.6%); reaction 0.0% (1.9%); confrontation 9.8% (7.4%); listicle 0.0% (0.1%); howto_explainer 3.9% (6.6%)
 
 
-Nearest style neighbours: @oann [right]; @wethefifth [neutral]; @TheJoyReidShow [left]; @ClubRandomPodcast [neutral]; @HasanReactionsfanTwo [left]
+Nearest style neighbors: @oann [right]; @wethefifth [neutral]; @TheJoyReidShow [left]; @ClubRandomPodcast [neutral]; @HasanReactionsfanTwo [left]
 
-Nearest topic neighbours: @nytimes [left]; @RonPlacone [left]; @lovettorleaveitpodcast [left]; @60minutes [neutral]; @TheAdamCarollaShow1 [right]
+Nearest topic neighbors: @nytimes [left]; @RonPlacone [left]; @lovettorleaveitpodcast [left]; @60minutes [neutral]; @TheAdamCarollaShow1 [right]
 
 
 Engagement: n < 100 titles with views, not estimated.

@@ -1,6 +1,6 @@
 # Tim Pool (@Timcast)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Timcast · clipper: no · platform: youtube · subscribers: 1460000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Timcast · clipper: no · platform: youtube · subscribers: 1460000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (29.0%); 2026 Midterm Election Predict
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 17.2 | 31.0 | -0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 84.1 | 97.5 | 0.7 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 29.3 | 22.2 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 29.3 | 22.2 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 5.0 | 76.6 | -0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 2.1 | 10.0 | -0.7 | 0.2 |
 | F6: Person-centred (named people) | 58.2 | 15.9 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (29.0%); 2026 Midterm Election Predict
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.7% (3.6%); outrage 89.1% (59.6%); humor 0.0% (0.2%); question 1.1% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 14.8% (8.5%); reaction 0.0% (2.2%); confrontation 4.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.2% (9.5%)
 
 
-Nearest style neighbours: @TimcastIRL [right]; @TimcastNews [right]; @TheQuartering [right]; @Vaush [left]; @deanwithrs [left]
+Nearest style neighbors: @TimcastIRL [right]; @TimcastNews [right]; @TheQuartering [right]; @Vaush [left]; @deanwithrs [left]
 
-Nearest topic neighbours: @TimcastIRL [right]; @TimcastNews [right]; @RealDanBongino [right]; @LiberalHivemind [right]; @HasanAbi [left]
+Nearest topic neighbors: @TimcastIRL [right]; @TimcastNews [right]; @RealDanBongino [right]; @LiberalHivemind [right]; @HasanAbi [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -87,7 +87,7 @@ Top topics: Modern Women and Feminism Debate (16.7%); Candace Owens and Erika Ki
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -2.8 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.5 | 0.0 |

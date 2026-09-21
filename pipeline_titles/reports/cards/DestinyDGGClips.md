@@ -1,6 +1,6 @@
 # Destiny DGG Clips (@DestinyDGGClips)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Destiny · clipper: yes · platform: youtube · subscribers: 11800.0
+Channel group: **right** (title-leaning score, document 14) · organization: Destiny · clipper: yes · platform: youtube · subscribers: 11800.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Destiny and Ethan Klein debates (20.6%); Hasanabi Reacts to Hasan (1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 32.2 | 38.5 | -0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 92.1 | 92.9 | 1.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 81.6 | 39.7 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 81.6 | 39.7 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 97.5 | 96.7 | 1.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 58.2 | 58.2 | 0.3 | 0.2 |
 | F6: Person-centred (named people) | 25.1 | 38.5 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Destiny and Ethan Klein debates (20.6%); Hasanabi Reacts to Hasan (1
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.6% (3.6%); outrage 62.7% (59.6%); humor 0.0% (0.2%); question 14.3% (15.6%); breaking_live 0.5% (2.0%); episode_show 0.0% (7.6%); interview_guest 13.4% (8.5%); reaction 4.8% (2.2%); confrontation 14.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.9% (9.5%)
 
 
-Nearest style neighbours: @CamHigby [right]; @OfficialSaharTV [right]; @MattWalsh [right]; @glennbeck [right]; @RileyGaines [right]
+Nearest style neighbors: @CamHigby [right]; @OfficialSaharTV [right]; @MattWalsh [right]; @glennbeck [right]; @RileyGaines [right]
 
-Nearest topic neighbours: @hutch [neutral]; @DailyDenims [left]; @destiny [left]; @destinyhqclips [neutral]; @lonerboxlive [right]
+Nearest topic neighbors: @hutch [neutral]; @DailyDenims [left]; @destiny [left]; @destinyhqclips [neutral]; @lonerboxlive [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

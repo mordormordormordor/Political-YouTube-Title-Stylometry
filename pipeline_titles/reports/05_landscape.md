@@ -1,15 +1,15 @@
 # 5. The landscape: who titles like whom
 
-**The question.** Do channels whose titles read the same way politically (the left / neutral / right groups) share a *style*? Who are each creator's real neighbours in style, as opposed to in subject matter? Who gets named, and does the landscape converge on the same hooks?
+**The question.** Do channels whose titles read the same way politically (the left / neutral / right groups) share a *style*? Who are each creator's real neighbors in style, as opposed to in subject matter? Who gets named, and does the landscape converge on the same hooks?
 
 ## The finding in one paragraph
 
-Political grouping predicts style almost not at all. Clustering creators in the twelve-dimensional, topic-controlled style space and comparing the clusters with the three channel groups gives an adjusted Rand index of 0.036 for edited uploads (0.054 on political titles only), and topic clusters do no better (0.010). No group holds together in style space: the tightest is right channels at a cohesion ratio of 0.94 (members 6% closer to each other than to everyone else), and the largest style cluster holds 69 creators from all three groups. So the useful unit is not the group but the five nearest style neighbours on each creator's card, and those cut across politics: for 54 % of the left and right channels the single nearest neighbour is in another group, and 88 % have a channel from the opposite side among their five (@HasanAbi (left) has @TimcastNews (right), @JustPearlyThings (right), @dineshdsouza (right) among its five; @MeidasTouch (left) has @TheOfficerTatum (right), https://rumble.com/c/nickjfuentes (right) among its five; @FoxNews (right) has @msnow (left), @thedavidpakmanshow (left) among its five). The hooks converge too: 474 titles are used verbatim by creators from different organisations ("THIS IS INSANE.." by 12 creators across 3 groups), 38 % of them by channels in more than one group.
+Political grouping predicts style almost not at all. Clustering creators in the twelve-dimensional, topic-controlled style space and comparing the clusters with the three channel groups gives an adjusted Rand index of 0.036 for edited uploads (0.054 on political titles only), and topic clusters do no better (0.010). No group holds together in style space: the tightest is right channels at a cohesion ratio of 0.94 (members 6% closer to each other than to everyone else), and the largest style cluster holds 69 creators from all three groups. So the useful unit is not the group but the five nearest style neighbors on each creator's card, and those cut across politics: for 54 % of the left and right channels the single nearest neighbor is in another group, and 88 % have a channel from the opposite side among their five (@HasanAbi (left) has @TimcastNews (right), @JustPearlyThings (right), @dineshdsouza (right) among its five; @MeidasTouch (left) has @TheOfficerTatum (right), https://rumble.com/c/nickjfuentes (right) among its five; @FoxNews (right) has @msnow (left), @thedavidpakmanshow (left) among its five). The hooks converge too: 474 titles are used verbatim by creators from different organizations ("THIS IS INSANE.." by 12 creators across 3 groups), 38 % of them by channels in more than one group.
 
 ## Clusterings against the channel groups
 
-![Style space: every ranked creator, coloured by channel group. The interactive version, with names on hover and each creator's five neighbours, is on the HTML page.](figures/05_style_map.png)
-*Style space: every ranked creator, coloured by channel group. The interactive version, with names on hover and each creator's five neighbours, is on the HTML page.*
+![Style space: every ranked creator, colored by channel group. The interactive version, with names on hover and each creator's five neighbors, is on the HTML page.](figures/05_style_map.png)
+*Style space: every ranked creator, colored by channel group. The interactive version, with names on hover and each creator's five neighbors, is on the HTML page.*
 
 Style space: agglomerative (Ward) on z-scored topic-controlled factor scores. Topic space: average linkage on the Jensen-Shannon distance between creators' topic mixes. k chosen by silhouette; ARI = adjusted Rand index (1 = identical partitions, 0 = chance).
 
@@ -53,7 +53,7 @@ Every group is split across style clusters; the share of a group in its own larg
 
 Conversely, style clusters span groups: the two largest (69 and 54 creators) each mix left, neutral and right channels. Full membership lists: `disagreements_group_style.csv`, `style_clusters.csv`, `topic_clusters.csv`.
 
-## Nearest style neighbours, a sample
+## Nearest style neighbors, a sample
 
 | creator | group | five nearest in style |
 |---|---|---|
@@ -69,11 +69,11 @@ Conversely, style clusters span groups: the two largest (69 and 54 creators) eac
 | @CNN | left | @CBSNews [neutral], @SkyNews [left], @NBCNews [neutral], @AssociatedPress [neutral], @BBCNews [neutral] |
 
 
-Neighbours are computed on titles with same-organisation cross-posts removed and low-n creators excluded; every creator's five style and five topic neighbours are on its card and in `neighbours_style.csv` / `neighbours_topic.csv`. The maps on the HTML page (PCA of the style space, MDS of the topic space) show the same picture: the group colours are scattered through both.
+Neighbors are computed on titles with same-organization cross-posts removed and low-n creators excluded; every creator's five style and five topic neighbors are on its card and in `neighbours_style.csv` / `neighbours_topic.csv`. The maps on the HTML page (PCA of the style space, MDS of the topic space) show the same picture: the group colors are scattered through both.
 
-## Organisations
+## Organizations
 
-Sister channels do share a house style: the four MeidasTouch Network channels sit together at the outrage end of the tone factor (organisation score -0.99) and high on capitals; the three Timcast channels are the most capitalised organisation (2.35 on F9); the four NYT channels and CBS sit at the positive/neutral end. Title-weighted organisation scores (clippers excluded) are in `org_style.csv`.
+Sister channels do share a house style: the four MeidasTouch Network channels sit together at the outrage end of the tone factor (organization score -0.99) and high on capitals; the three Timcast channels are the most capitalized organization (2.35 on F9); the four NYT channels and CBS sit at the positive/neutral end. Title-weighted organization scores (clippers excluded) are in `org_style.csv`.
 
 ## Who gets named
 
@@ -119,10 +119,10 @@ Trump is in 4.7 % of balanced titles counting both tags, named by 199 of 274 cre
 
 ## Convergent formulas
 
-![The most shared verbatim titles across organisations.](figures/05_shared_titles.png)
-*The most shared verbatim titles across organisations.*
+![The most shared verbatim titles across organizations.](figures/05_shared_titles.png)
+*The most shared verbatim titles across organizations.*
 
-Of 1,575 distinct titles (case-insensitive) used by two or more creators, 474 cross organisations; the rest are same-outlet cross-posts (TYT / The Damage Report alone account for hundreds). The most shared:
+Of 1,575 distinct titles (case-insensitive) used by two or more creators, 474 cross organizations; the rest are same-outlet cross-posts (TYT / The Damage Report alone account for hundreds). The most shared:
 
 | example | n_creators | n_titles | n_groups | groups |
 |---|---|---|---|---|
@@ -166,6 +166,6 @@ These are content-free exclamations, the "Shocking Events and Reactions" topic o
 
 62 % of the shared verbatim titles are used within one channel group and 45 % of the shared templates; with three groups of these sizes a random pair of channels shares a group 38 % of the time, so both run a little more within the camps than chance would give, the verbatim exclamations clearly and the masked templates barely. Either way the same dozen phrases and the same "<ENT> destroys <ENT>" frames serve left, neutral and right channels alike.
 
-Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labelled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
+Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labeled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
 
 Files: `cluster_comparison.csv`, `group_style_cohesion.csv`, `disagreements_group_style.csv`, `style_clusters.csv`, `topic_clusters.csv`, `neighbours_style.csv`, `neighbours_topic.csv`, `map_style.csv`, `map_topic.csv`, `org_style.csv`, `entities_top.csv`, `shared_titles.csv`, `shared_templates.csv`.

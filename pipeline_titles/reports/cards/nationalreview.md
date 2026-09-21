@@ -1,6 +1,6 @@
 # National Review (@nationalreview)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: National Review · clipper: no · platform: youtube · subscribers: 116000.0
+Channel group: **right** (title-leaning score, document 14) · organization: National Review · clipper: no · platform: youtube · subscribers: 116000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (5.8%); Zohran Mamdani and NYC Polit
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 60.3 | 52.3 | 0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 62.3 | 60.7 | 0.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 70.7 | 54.4 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 70.7 | 54.4 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 56.1 | 48.5 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 99.2 | 99.2 | 3.9 | 0.2 |
 | F6: Person-centred (named people) | 47.3 | 56.9 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (5.8%); Zohran Mamdani and NYC Polit
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.7% (3.6%); outrage 53.4% (59.6%); humor 0.5% (0.2%); question 60.2% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 3.7% (8.5%); reaction 0.0% (2.2%); confrontation 1.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 46.6% (9.5%)
 
 
-Nearest style neighbours: @TheDailyBeast [left]; @ColemanHughesOfficial [right]; @nytimes [left]; @chriscuomo [left]; @nousnetwork [left]
+Nearest style neighbors: @TheDailyBeast [left]; @ColemanHughesOfficial [right]; @nytimes [left]; @chriscuomo [left]; @nousnetwork [left]
 
-Nearest topic neighbours: @MichaelKnowles [right]; @BenShapiro [right]; @BlazeTV [right]; @AfterPartyEmily [right]; @RubinReport [right]
+Nearest topic neighbors: @MichaelKnowles [right]; @BenShapiro [right]; @BlazeTV [right]; @AfterPartyEmily [right]; @RubinReport [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Israel-Palestine Conflict Media (50.0%); America's 250th Anniversary
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -3.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.9 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.2 | 0.0 |

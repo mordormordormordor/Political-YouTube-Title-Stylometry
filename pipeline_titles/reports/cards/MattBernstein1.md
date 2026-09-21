@@ -1,6 +1,6 @@
 # matt bernstein (@MattBernstein1)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Matt Bernstein · clipper: no · platform: youtube · subscribers: 451000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Matt Bernstein · clipper: no · platform: youtube · subscribers: 451000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Melania Trump Conspiracy Theories (9.5%); Shocking Events and Reacti
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.3 | 0.1 |
 | F6: Person-centred (named people) | None | None | 0.6 | -0.2 |

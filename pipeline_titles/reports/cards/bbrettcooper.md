@@ -1,6 +1,6 @@
 # Brett Cooper (@bbrettcooper)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Brett Cooper · clipper: no · platform: youtube · subscribers: 1700000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Brett Cooper · clipper: no · platform: youtube · subscribers: 1700000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Hollywood and Oscars Politics (7.7%); TikTok Censorship and Politics
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 64.0 | 75.7 | 0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 98.3 | 96.7 | 1.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 35.6 | 18.8 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 35.6 | 18.8 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 66.5 | 70.3 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 73.6 | 75.3 | 0.7 | 0.2 |
 | F6: Person-centred (named people) | 22.6 | 22.6 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Hollywood and Oscars Politics (7.7%); TikTok Censorship and Politics
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.2% (3.6%); outrage 58.7% (59.6%); humor 0.7% (0.2%); question 18.2% (15.6%); breaking_live 0.0% (2.0%); episode_show 30.1% (7.6%); interview_guest 5.6% (8.5%); reaction 5.6% (2.2%); confrontation 4.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 8.4% (9.5%)
 
 
-Nearest style neighbours: @KimIversen [neutral]; @StevenCrowder [right]; @TheVaushPit [left]; @thomhartmann [left]; @RileyGaines [right]
+Nearest style neighbors: @KimIversen [neutral]; @StevenCrowder [right]; @TheVaushPit [left]; @thomhartmann [left]; @RileyGaines [right]
 
-Nearest topic neighbours: @MichaelKnowles [right]; @BenShapiro [right]; @MattWalsh [right]; @AfterPartyEmily [right]; @TheAdamCarollaShow1 [right]
+Nearest topic neighbors: @MichaelKnowles [right]; @BenShapiro [right]; @MattWalsh [right]; @AfterPartyEmily [right]; @TheAdamCarollaShow1 [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

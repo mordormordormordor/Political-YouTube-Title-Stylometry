@@ -1,6 +1,6 @@
 # Bret Weinstein (@DarkHorsePod)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: DarkHorse · clipper: no · platform: youtube · subscribers: 551000.0
+Channel group: **right** (title-leaning score, document 14) · organization: DarkHorse · clipper: no · platform: youtube · subscribers: 551000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: JLP Weekly Series (8.6%); Covid Vaccine Controversy (7.1%); Big Phar
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 67.8 | 84.5 | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 7.1 | 10.5 | -1.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 92.9 | 90.8 | 0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 92.9 | 90.8 | 0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 74.9 | 69.0 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 71.1 | 77.0 | 0.6 | 0.2 |
 | F6: Person-centred (named people) | 84.9 | 71.5 | 0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: JLP Weekly Series (8.6%); Covid Vaccine Controversy (7.1%); Big Phar
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (3.6%); outrage 18.6% (59.6%); humor 0.0% (0.2%); question 22.9% (15.6%); breaking_live 0.0% (2.0%); episode_show 1.4% (7.6%); interview_guest 7.1% (8.5%); reaction 2.9% (2.2%); confrontation 0.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 12.9% (9.5%)
 
 
-Nearest style neighbours: @TheJoyReidShow [left]; @underthedesknews [left]; @ClubRandomPodcast [neutral]; @MichaelKnowles [right]; @PragerU [right]
+Nearest style neighbors: @TheJoyReidShow [left]; @underthedesknews [left]; @ClubRandomPodcast [neutral]; @MichaelKnowles [right]; @PragerU [right]
 
-Nearest topic neighbours: @morebridgetphetasy [right]; @ZubyMusic [right]; @JillianMichaels [right]; @fightbackpodcast [right]; @Styxhexenhammer666 [right]
+Nearest topic neighbors: @morebridgetphetasy [right]; @ZubyMusic [right]; @JillianMichaels [right]; @fightbackpodcast [right]; @Styxhexenhammer666 [right]
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -53,7 +53,7 @@ Top topics: JLP Weekly Series (18.4%); Modern Women and Feminism Debate (10.5%);
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.0 | -0.3 |
 | F6: Person-centred (named people) | None | None | 4.7 | 0.0 |

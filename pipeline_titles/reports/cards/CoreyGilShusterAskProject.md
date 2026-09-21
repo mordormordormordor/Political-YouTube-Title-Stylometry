@@ -1,6 +1,6 @@
 # Corey Gil-Shuster (@CoreyGilShusterAskProject)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Ask Project · clipper: no · platform: youtube · subscribers: 374000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Ask Project · clipper: no · platform: youtube · subscribers: 374000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (58.5%); Christian Nationalism and P
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 100.0 | 98.3 | 1.9 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 99.2 | 91.2 | 1.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 85.8 | 83.3 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 85.8 | 83.3 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 76.2 | 59.8 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 98.3 | 98.7 | 3.4 | 0.1 |
 | F6: Person-centred (named people) | 0.4 | 0.4 | -1.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (58.5%); Christian Nationalism and P
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.8% (2.4%); outrage 11.3% (36.0%); humor 0.0% (0.1%); question 94.3% (15.9%); breaking_live 0.0% (1.1%); episode_show 3.8% (7.0%); interview_guest 5.7% (11.6%); reaction 0.0% (1.9%); confrontation 3.8% (7.4%); listicle 0.0% (0.1%); howto_explainer 5.7% (6.6%)
 
 
-Nearest style neighbours: @TheEconomist [left]; @moreperfectunion [left]; @Vox [left]; @TechCrunch [neutral]; @theisabelbrown [right]
+Nearest style neighbors: @TheEconomist [left]; @moreperfectunion [left]; @Vox [left]; @TechCrunch [neutral]; @theisabelbrown [right]
 
-Nearest topic neighbours: @ajplus [left]; @DropSiteNews [left]; @TuckerCarlson [neutral]; @DoubleDownNews [left]; @BadEmpanadaLive [left]
+Nearest topic neighbors: @ajplus [left]; @DropSiteNews [left]; @TuckerCarlson [neutral]; @DoubleDownNews [left]; @BadEmpanadaLive [left]
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -53,7 +53,7 @@ Top topics: Israel-Palestine Conflict Media (50.0%); HasanAbi 2026 Schedule (50.
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.7 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 3.8 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 4.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.4 | 0.2 |

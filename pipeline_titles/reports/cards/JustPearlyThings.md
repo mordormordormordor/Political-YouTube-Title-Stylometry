@@ -1,6 +1,6 @@
 # Pearl (@JustPearlyThings)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Pearl · clipper: no · platform: youtube · subscribers: 2060000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Pearl · clipper: no · platform: youtube · subscribers: 2060000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Modern Women and Feminism Debate (47.2%); Christian Nationalism and 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 55.6 | 79.1 | 0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 53.1 | 65.3 | 0.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 73.2 | 43.5 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 73.2 | 43.5 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 64.4 | 68.2 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 29.7 | 64.4 | -0.2 | 0.2 |
 | F6: Person-centred (named people) | 12.1 | 7.1 | -0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Modern Women and Feminism Debate (47.2%); Christian Nationalism and 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.4% (3.6%); outrage 60.5% (59.6%); humor 0.0% (0.2%); question 14.2% (15.6%); breaking_live 0.3% (2.0%); episode_show 0.0% (7.6%); interview_guest 4.9% (8.5%); reaction 1.5% (2.2%); confrontation 7.2% (7.8%); listicle 0.1% (0.1%); howto_explainer 4.2% (9.5%)
 
 
-Nearest style neighbours: @hutch [neutral]; @BenShapiro [right]; @TheVaushPit [left]; @KimIversen [neutral]; @destiny [left]
+Nearest style neighbors: @hutch [neutral]; @BenShapiro [right]; @TheVaushPit [left]; @KimIversen [neutral]; @destiny [left]
 
-Nearest topic neighbours: @FreshFitMiami [right]; @BrittanyVenti [neutral]; @jlptalk [right]; @ZubyMusic [right]; @The_Crucible [right]
+Nearest topic neighbors: @FreshFitMiami [right]; @BrittanyVenti [neutral]; @jlptalk [right]; @ZubyMusic [right]; @The_Crucible [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Modern Women and Feminism Debate (38.5%); Race and Politics in Media
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 93.7 | 97.5 | 0.8 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 54.4 | 65.8 | -0.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 55.7 | 26.6 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 55.7 | 26.6 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 58.2 | 73.4 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 92.4 | 96.2 | 0.4 | -0.3 |
 | F6: Person-centred (named people) | 6.3 | 2.5 | -0.6 | 0.0 |
@@ -104,9 +104,9 @@ Top topics: Modern Women and Feminism Debate (38.5%); Race and Politics in Media
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.1% (3.2%); outrage 46.9% (56.4%); humor 0.0% (0.1%); question 21.9% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 10.4% (14.0%); reaction 5.2% (2.1%); confrontation 7.3% (9.4%); listicle 0.0% (0.2%); howto_explainer 10.4% (5.3%)
 
 
-Nearest style neighbours: @hutch [neutral]; @TheDonLemonShow [left]; @NewsNation [neutral]; @NewsmaxTV [right]; @bulwarkmedia [left]
+Nearest style neighbors: @hutch [neutral]; @TheDonLemonShow [left]; @NewsNation [neutral]; @NewsmaxTV [right]; @bulwarkmedia [left]
 
-Nearest topic neighbours: @FreshFitMiami [right]; @MyronGainesX [right]; @ModernDayDebate [left]; @PhillipScottPodcast [right]; @marclamonthillnetwork [left]
+Nearest topic neighbors: @FreshFitMiami [right]; @MyronGainesX [right]; @ModernDayDebate [left]; @PhillipScottPodcast [right]; @marclamonthillnetwork [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Tim Black TV (@Tim_Black)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Tim Black · clipper: no · platform: youtube · subscribers: 218000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Tim Black · clipper: no · platform: youtube · subscribers: 218000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Race and Politics in Media (20.7%); Black Voting Rights and Politica
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 61.5 | 50.6 | 0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 99.6 | 97.9 | 1.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 42.7 | 16.3 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 42.7 | 16.3 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 91.2 | 89.1 | 0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 74.5 | 71.5 | 0.8 | 0.2 |
 | F6: Person-centred (named people) | 72.0 | 74.9 | 0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Race and Politics in Media (20.7%); Black Voting Rights and Politica
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.7% (3.6%); outrage 68.7% (59.6%); humor 0.6% (0.2%); question 20.7% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.8% (8.5%); reaction 2.4% (2.2%); confrontation 8.2% (7.8%); listicle 0.9% (0.1%); howto_explainer 16.4% (9.5%)
 
 
-Nearest style neighbours: @jimacosta [left]; @MarkDice [right]; @glennbeck [right]; @morebridgetphetasy [right]; @OfficialSaharTV [right]
+Nearest style neighbors: @jimacosta [left]; @MarkDice [right]; @glennbeck [right]; @morebridgetphetasy [right]; @OfficialSaharTV [right]
 
-Nearest topic neighbours: @rolandsmartin [left]; @BlackConservativePerspective [right]; @TheRealTabithaSpeaks [left]; @TheOfficerTatum [right]; @ActualJusticeWarrior [right]
+Nearest topic neighbors: @rolandsmartin [left]; @BlackConservativePerspective [right]; @TheRealTabithaSpeaks [left]; @TheOfficerTatum [right]; @ActualJusticeWarrior [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Karmelo Anthony Trial Verdict (18.8%); Race and Politics in Media (1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.1 | -0.3 |
 | F6: Person-centred (named people) | None | None | 1.0 | 0.0 |

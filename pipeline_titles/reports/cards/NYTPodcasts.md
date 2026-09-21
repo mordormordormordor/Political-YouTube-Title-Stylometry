@@ -1,6 +1,6 @@
 # New York Times Podcasts (@NYTPodcasts)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: New York Times · clipper: no · platform: youtube · subscribers: 523000.0
+Channel group: **left** (title-leaning score, document 14) · organization: New York Times · clipper: no · platform: youtube · subscribers: 523000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.2%); ICE Protests and Shoo
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 94.1 | 89.5 | 0.9 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 21.8 | 21.3 | -0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 45.2 | 62.3 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 45.2 | 62.3 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 58.2 | 56.5 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 80.8 | 79.5 | 1.0 | 0.1 |
 | F6: Person-centred (named people) | 14.2 | 15.5 | -0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.2%); ICE Protests and Shoo
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.9% (2.7%); outrage 32.0% (63.9%); humor 0.0% (0.2%); question 19.1% (15.6%); breaking_live 0.0% (2.9%); episode_show 1.0% (2.8%); interview_guest 5.2% (9.8%); reaction 0.0% (2.9%); confrontation 4.2% (7.6%); listicle 0.2% (0.1%); howto_explainer 9.2% (8.0%)
 
 
-Nearest style neighbours: @TheJoyReidShow [left]; @lizwheeler [right]; @hutch [neutral]; @samharrisorg [left]; @RealDanBongino [right]
+Nearest style neighbors: @TheJoyReidShow [left]; @lizwheeler [right]; @hutch [neutral]; @samharrisorg [left]; @RealDanBongino [right]
 
-Nearest topic neighbours: @CNN [left]; @RealAmericasVoice [right]; @CBSNews [neutral]; @oann [right]; @NewsNation [neutral]
+Nearest topic neighbors: @CNN [left]; @RealAmericasVoice [right]; @CBSNews [neutral]; @oann [right]; @NewsNation [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Niko House (@Forthepeoplepodcast305)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Niko House · clipper: no · platform: youtube · subscribers: 54600.0
+Channel group: **left** (title-leaning score, document 14) · organization: Niko House · clipper: no · platform: youtube · subscribers: 54600.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (13.9%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 23.4 | 19.7 | -0.3 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 35.6 | 35.1 | -0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 17.2 | 24.3 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 17.2 | 24.3 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 31.4 | 34.3 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 38.9 | 37.2 | -0.0 | 0.1 |
 | F6: Person-centred (named people) | 56.1 | 58.2 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (13.9%); Iran War and Strait of Horm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.1% (2.7%); outrage 75.6% (63.9%); humor 0.0% (0.2%); question 13.9% (15.6%); breaking_live 3.5% (2.9%); episode_show 0.0% (2.8%); interview_guest 10.4% (9.8%); reaction 0.0% (2.9%); confrontation 5.2% (7.6%); listicle 0.0% (0.1%); howto_explainer 5.2% (8.0%)
 
 
-Nearest style neighbours: @chicksonright [right]; @PTLRadioShow [left]; @AnthonyBrianLogan [right]; @podsaveamerica [left]; @NovaraMedia [left]
+Nearest style neighbors: @chicksonright [right]; @PTLRadioShow [left]; @AnthonyBrianLogan [right]; @podsaveamerica [left]; @NovaraMedia [left]
 
-Nearest topic neighbours: @KimIversen [neutral]; @thejimmydoreshow [neutral]; @TheYoungTurks [left]; @BadEmpanadaLive [left]; @breakingpoints [left]
+Nearest topic neighbors: @KimIversen [neutral]; @thejimmydoreshow [neutral]; @TheYoungTurks [left]; @BadEmpanadaLive [left]; @breakingpoints [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -83,7 +83,7 @@ Top topics: Members Only Show (17.8%); Iran War and Strait of Hormuz Tensions (1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.4 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.1 | 0.6 |

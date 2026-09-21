@@ -1,6 +1,6 @@
 # Zeihan on Geopolitics (@ZeihanonGeopolitics)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Peter Zeihan · clipper: no · platform: youtube · subscribers: 969000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Peter Zeihan · clipper: no · platform: youtube · subscribers: 969000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Ukraine-Russia War and Political Figures (13.8%); Iran War and Strai
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 97.5 | 82.4 | 1.1 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 4.2 | 7.5 | -1.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 14.2 | 52.3 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 14.2 | 52.3 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 29.7 | 31.4 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 51.0 | 53.1 | 0.2 | 0.1 |
 | F6: Person-centred (named people) | 5.4 | 10.5 | -1.0 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Ukraine-Russia War and Political Figures (13.8%); Iran War and Strai
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.7% (2.4%); outrage 34.6% (36.0%); humor 0.0% (0.1%); question 13.8% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 3.7% (11.6%); reaction 0.0% (1.9%); confrontation 1.8% (7.4%); listicle 0.0% (0.1%); howto_explainer 5.5% (6.6%)
 
 
-Nearest style neighbours: @ThePodcastoftheLotusEaters [right]; @PartOfTheProblem [right]; @Styxhexenhammer666 [right]; @DylanBurnsLIVE [left]; @franifio [left]
+Nearest style neighbors: @ThePodcastoftheLotusEaters [right]; @PartOfTheProblem [right]; @Styxhexenhammer666 [right]; @DylanBurnsLIVE [left]; @franifio [left]
 
-Nearest topic neighbours: @JamarlThomas [left]; @TimesNowWorld [neutral]; @timesofindia [left]; @Reuters [neutral]; @markets [neutral]
+Nearest topic neighbors: @JamarlThomas [left]; @TimesNowWorld [neutral]; @timesofindia [left]; @Reuters [neutral]; @markets [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

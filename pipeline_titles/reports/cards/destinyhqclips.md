@@ -1,6 +1,6 @@
 # destinyhqclips (@destinyhqclips)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Destiny · clipper: yes · platform: youtube · subscribers: 10500.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Destiny · clipper: yes · platform: youtube · subscribers: 10500.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Destiny and Ethan Klein debates (40.1%); Hasanabi Reacts to Hasan (9
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 35.1 | 37.7 | -0.0 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 10.0 | 13.0 | -0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 31.0 | 10.0 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 31.0 | 10.0 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 58.6 | 65.7 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 16.3 | 21.3 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 30.5 | 40.6 | -0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Destiny and Ethan Klein debates (40.1%); Hasanabi Reacts to Hasan (9
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.5% (2.4%); outrage 59.4% (36.0%); humor 0.0% (0.1%); question 4.1% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 7.1% (11.6%); reaction 10.2% (1.9%); confrontation 30.5% (7.4%); listicle 0.0% (0.1%); howto_explainer 4.1% (6.6%)
 
 
-Nearest style neighbours: @The_Crucible [right]; @therationalnational [left]; @BrittanyVenti [neutral]; https://rumble.com/c/nickjfuentes [right]; @TheYoungTurks [left]
+Nearest style neighbors: @The_Crucible [right]; @therationalnational [left]; @BrittanyVenti [neutral]; https://rumble.com/c/nickjfuentes [right]; @TheYoungTurks [left]
 
-Nearest topic neighbours: @destiny [left]; @DestinyDGGClips [right]; @DailyDenims [left]; @hutch [neutral]; @MikeFromPA [left]
+Nearest topic neighbors: @destiny [left]; @DestinyDGGClips [right]; @DailyDenims [left]; @hutch [neutral]; @MikeFromPA [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

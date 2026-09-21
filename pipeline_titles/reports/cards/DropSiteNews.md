@@ -1,6 +1,6 @@
 # Drop Site News (@DropSiteNews)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Drop Site · clipper: no · platform: youtube · subscribers: 219000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Drop Site · clipper: no · platform: youtube · subscribers: 219000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (27.5%); Israel-Palestine Con
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 35.6 | 23.8 | -0.0 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 20.5 | 20.1 | -0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 54.4 | 69.5 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 54.4 | 69.5 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 10.9 | 8.4 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 63.2 | 60.7 | 0.4 | 0.1 |
 | F6: Person-centred (named people) | 74.5 | 67.8 | 0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (27.5%); Israel-Palestine Con
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.5% (2.7%); outrage 48.5% (63.9%); humor 0.0% (0.2%); question 17.6% (15.6%); breaking_live 2.0% (2.9%); episode_show 2.9% (2.8%); interview_guest 15.2% (9.8%); reaction 1.5% (2.9%); confrontation 3.9% (7.6%); listicle 0.0% (0.1%); howto_explainer 3.4% (8.0%)
 
 
-Nearest style neighbours: @MichaelKnowles [right]; @nypost [right]; @NovaraMedia [left]; @winston_marshall [right]; @HangOutwithSeanHannity [right]
+Nearest style neighbors: @MichaelKnowles [right]; @nypost [right]; @NovaraMedia [left]; @winston_marshall [right]; @HangOutwithSeanHannity [right]
 
-Nearest topic neighbours: @thegrayzone7996 [left]; @aljazeeraenglish [left]; @BreakThroughNews [left]; @breakingpoints [left]; @timesofindia [left]
+Nearest topic neighbors: @thegrayzone7996 [left]; @aljazeeraenglish [left]; @BreakThroughNews [left]; @breakingpoints [left]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -87,7 +87,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (39.5%); Israel-Palestine Con
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.1 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.1 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.1 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.6 | 0.6 |

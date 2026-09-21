@@ -7,9 +7,9 @@ diagonal named along the flanks, the rank-turbulence-divergence word shift, the 
 bars and the counts-per-cell legend. Rank-turbulence divergence with alpha = 1/3, the value
 the paper recommends for text.
 
-Comparisons (system 1 on the left flank and the grey bars, system 2 on the right flank and
+Comparisons (system 1 on the left flank and the gray bars, system 2 on the right flank and
 the blue bars):
-    titles   : titles the judge labelled left vs titles it labelled right
+    titles   : titles the judge labeled left vs titles it labeled right
     channels : left channels vs right channels (grouped by their score), every unique edited
                upload in the creator-balanced subset
 Types are the vocabulary tokens of document 11 (lower-cased words minus stopwords and

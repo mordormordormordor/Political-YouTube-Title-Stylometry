@@ -1,6 +1,6 @@
 # Democracy Docket (@DemocracyDocket)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Democracy Docket · clipper: no · platform: youtube · subscribers: 793000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Democracy Docket · clipper: no · platform: youtube · subscribers: 793000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Supreme Court Legal Issues (24.0%); Virginia redistricting and
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 79.9 | 60.7 | 0.6 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 53.6 | 51.0 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 87.9 | 84.5 | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 87.9 | 84.5 | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 13.8 | 16.3 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 54.4 | 44.4 | 0.2 | 0.1 |
 | F6: Person-centred (named people) | 72.4 | 52.7 | 0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Supreme Court Legal Issues (24.0%); Virginia redistricting and
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.8% (2.7%); outrage 82.2% (63.9%); humor 0.0% (0.2%); question 7.8% (15.6%); breaking_live 14.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 3.9% (9.8%); reaction 0.0% (2.9%); confrontation 3.1% (7.6%); listicle 0.0% (0.1%); howto_explainer 3.9% (8.0%)
 
 
-Nearest style neighbours: @clayandbuck [right]; @TheJoyReidShow [left]; @wethefifth [neutral]; https://rumble.com/c/GGreenwald [left]; @bulwarkmedia [left]
+Nearest style neighbors: @clayandbuck [right]; @TheJoyReidShow [left]; @wethefifth [neutral]; https://rumble.com/c/GGreenwald [left]; @bulwarkmedia [left]
 
-Nearest topic neighbours: @GlennKirschner2 [left]; @LegalAFMTN [left]; @katiephangnews [left]; @RobertGouveiaEsq [right]; @briantylercohen [left]
+Nearest topic neighbors: @GlennKirschner2 [left]; @LegalAFMTN [left]; @katiephangnews [left]; @RobertGouveiaEsq [right]; @briantylercohen [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -83,7 +83,7 @@ Top topics: Trump Supreme Court Legal Issues (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.5 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.7 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.2 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.4 | 0.6 |

@@ -1,6 +1,6 @@
 # The Rubin Report (@RubinReport)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Rubin Report · clipper: no · platform: youtube · subscribers: 3230000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Rubin Report · clipper: no · platform: youtube · subscribers: 3230000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Political Talk Show Drama (8.8%); Zohran Mamdani and NYC Politics (4
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 20.9 | 23.0 | -0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 83.3 | 82.4 | 0.7 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 63.6 | 52.7 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 63.6 | 52.7 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 70.3 | 64.0 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 56.9 | 51.5 | 0.3 | 0.2 |
 | F6: Person-centred (named people) | 71.1 | 78.7 | 0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Political Talk Show Drama (8.8%); Zohran Mamdani and NYC Politics (4
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.2% (3.6%); outrage 75.8% (59.6%); humor 0.9% (0.2%); question 4.4% (15.6%); breaking_live 8.7% (2.0%); episode_show 10.4% (7.6%); interview_guest 10.9% (8.5%); reaction 6.2% (2.2%); confrontation 12.8% (7.8%); listicle 0.3% (0.1%); howto_explainer 5.9% (9.5%)
 
 
-Nearest style neighbours: @OfficialSaharTV [right]; @laurenchenclips [right]; @PTLRadioShow [left]; @chicksonright [right]; https://rumble.com/c/GGreenwald [left]
+Nearest style neighbors: @OfficialSaharTV [right]; @laurenchenclips [right]; @PTLRadioShow [left]; @chicksonright [right]; https://rumble.com/c/GGreenwald [left]
 
-Nearest topic neighbours: @bennyjohnson [right]; @BenShapiro [right]; @TheMajorityReport [left]; @BlazeTV [right]; @FoxNewsChannelClips [right]
+Nearest topic neighbors: @bennyjohnson [right]; @BenShapiro [right]; @TheMajorityReport [left]; @BlazeTV [right]; @FoxNewsChannelClips [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Zohran Mamdani and NYC Politics (10.5%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 12.7 | 13.9 | -1.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 91.1 | 97.5 | 0.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 20.3 | 13.9 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 20.3 | 13.9 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 59.5 | 64.6 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 93.7 | 87.3 | 0.4 | -0.3 |
 | F6: Person-centred (named people) | 36.7 | 54.4 | -0.1 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Zohran Mamdani and NYC Politics (10.5%); Iran War and Strait of Horm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.1% (3.2%); outrage 79.0% (56.4%); humor 1.8% (0.1%); question 3.5% (13.7%); breaking_live 5.3% (18.8%); episode_show 0.0% (26.3%); interview_guest 11.4% (14.0%); reaction 14.0% (2.1%); confrontation 13.2% (9.4%); listicle 0.0% (0.2%); howto_explainer 7.0% (5.3%)
 
 
-Nearest style neighbours: @TheYoungTurks [left]; @RedactedNews [right]; @deanwithrs [left]; @TheDonLemonShow [left]; @OwenReport [left]
+Nearest style neighbors: @TheYoungTurks [left]; @RedactedNews [right]; @deanwithrs [left]; @TheDonLemonShow [left]; @OwenReport [left]
 
-Nearest topic neighbours: @TimcastIRL [right]; @PBDPodcast [right]; @TheDamageReport [left]; @bennyjohnson [right]; @NewsmaxTV [right]
+Nearest topic neighbors: @TimcastIRL [right]; @PBDPodcast [right]; @TheDamageReport [left]; @bennyjohnson [right]; @NewsmaxTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

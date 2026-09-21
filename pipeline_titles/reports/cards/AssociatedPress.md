@@ -1,6 +1,6 @@
 # Associated Press (@AssociatedPress)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Associated Press · clipper: no · platform: youtube · subscribers: 4650000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Associated Press · clipper: no · platform: youtube · subscribers: 4650000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.1%); Israel-Lebanon Confli
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 87.4 | 72.4 | 0.8 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 91.6 | 84.9 | 0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 2.5 | 23.8 | -0.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 2.5 | 23.8 | -0.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 71.1 | 56.1 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 26.8 | 23.4 | -0.2 | 0.1 |
 | F6: Person-centred (named people) | 37.2 | 40.2 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.1%); Israel-Lebanon Confli
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.3% (2.4%); outrage 30.0% (36.0%); humor 0.1% (0.1%); question 2.1% (15.9%); breaking_live 0.4% (1.1%); episode_show 0.2% (7.0%); interview_guest 7.8% (11.6%); reaction 3.0% (1.9%); confrontation 3.7% (7.4%); listicle 0.1% (0.1%); howto_explainer 1.4% (6.6%)
 
 
-Nearest style neighbours: @CBSNews [neutral]; @CNN [left]; @Reuters [neutral]; @USATODAY [neutral]; @aljazeeraenglish [left]
+Nearest style neighbors: @CBSNews [neutral]; @CNN [left]; @Reuters [neutral]; @USATODAY [neutral]; @aljazeeraenglish [left]
 
-Nearest topic neighbours: @nypost [right]; @Reuters [neutral]; @CBSNews [neutral]; @BBCNews [neutral]; @USATODAY [neutral]
+Nearest topic neighbors: @nypost [right]; @Reuters [neutral]; @CBSNews [neutral]; @BBCNews [neutral]; @USATODAY [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: 2026 World Cup (7.0%); Artemis II Moon Mission Updates (5.1%); Trump
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 84.8 | 88.6 | 0.6 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 75.9 | 78.5 | 0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 96.2 | 94.9 | 3.0 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 96.2 | 94.9 | 3.0 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 63.3 | 46.8 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 58.2 | 44.3 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 22.8 | 29.1 | -0.3 | 0.2 |
@@ -105,9 +105,9 @@ Top topics: 2026 World Cup (7.0%); Artemis II Moon Mission Updates (5.1%); Trump
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.4% (2.2%); outrage 10.2% (29.7%); humor 0.1% (0.1%); question 0.0% (4.6%); breaking_live 98.4% (52.4%); episode_show 0.2% (2.1%); interview_guest 5.7% (13.2%); reaction 0.7% (1.4%); confrontation 6.2% (7.4%); listicle 0.0% (0.0%); howto_explainer 0.3% (1.0%)
 
 
-Nearest style neighbours: @Reuters [neutral]; @NBCNews [neutral]; @msnow [left]; @USATODAY [neutral]; @ANINewsIndia [neutral]
+Nearest style neighbors: @Reuters [neutral]; @NBCNews [neutral]; @msnow [left]; @USATODAY [neutral]; @ANINewsIndia [neutral]
 
-Nearest topic neighbours: @Reuters [neutral]; @USATODAY [neutral]; @TimesNowWorld [neutral]; @FoxNews [right]; @timesofindia [left]
+Nearest topic neighbors: @Reuters [neutral]; @USATODAY [neutral]; @TimesNowWorld [neutral]; @FoxNews [right]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

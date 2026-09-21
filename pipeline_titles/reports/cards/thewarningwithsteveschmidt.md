@@ -1,6 +1,6 @@
 # The Warning with Steve Schmidt (@thewarningwithsteveschmidt)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Steve Schmidt · clipper: no · platform: youtube · subscribers: 528000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Steve Schmidt · clipper: no · platform: youtube · subscribers: 528000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump's Unwise Actions and Mistakes (21.1%); Trump Meltdowns and Col
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 86.2 | 70.3 | 0.7 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 89.1 | 90.4 | 0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 1.3 | 0.4 | -0.8 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 1.3 | 0.4 | -0.8 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 0.4 | 2.9 | -1.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 56.5 | 52.3 | 0.3 | 0.1 |
 | F6: Person-centred (named people) | 77.0 | 62.3 | 0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump's Unwise Actions and Mistakes (21.1%); Trump Meltdowns and Col
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.7%); outrage 86.5% (63.9%); humor 0.4% (0.2%); question 6.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 1.7% (9.8%); reaction 1.7% (2.9%); confrontation 2.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 9.3% (8.0%)
 
 
-Nearest style neighbours: @OutKick [right]; @LeverNews [left]; @X22Report-y5y [right]; @franifio [left]; @UnHerd [left]
+Nearest style neighbors: @OutKick [right]; @LeverNews [left]; @X22Report-y5y [right]; @franifio [left]; @UnHerd [left]
 
-Nearest topic neighbours: @thedavidpakmanshow [left]; @FarronBalanced [left]; @TheMichaelCohenShow [left]; @adammockler [left]; @harryjsisson [left]
+Nearest topic neighbors: @thedavidpakmanshow [left]; @FarronBalanced [left]; @TheMichaelCohenShow [left]; @adammockler [left]; @harryjsisson [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Political Commentary and Interviews (40.0%); Iran War and Strait of 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 70.9 | 87.3 | 0.3 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 12.7 | 8.9 | -1.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 67.1 | 67.1 | 0.3 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 67.1 | 67.1 | 0.3 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 86.1 | 87.3 | 0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 57.0 | 68.4 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 92.4 | 92.4 | 2.3 | 0.6 |
@@ -104,9 +104,9 @@ Top topics: Political Commentary and Interviews (40.0%); Iran War and Strait of 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (1.9%); outrage 20.0% (63.2%); humor 0.0% (0.1%); question 3.6% (11.3%); breaking_live 13.6% (17.5%); episode_show 0.0% (6.4%); interview_guest 60.9% (18.3%); reaction 0.9% (1.5%); confrontation 1.8% (15.4%); listicle 0.0% (0.0%); howto_explainer 0.9% (2.9%)
 
 
-Nearest style neighbours: @TheMajorityReport [left]; @AnthonyBrianLogan [right]; @franifio [left]; @hutch [neutral]; @judgingfreedom [left]
+Nearest style neighbors: @TheMajorityReport [left]; @AnthonyBrianLogan [right]; @franifio [left]; @hutch [neutral]; @judgingfreedom [left]
 
-Nearest topic neighbours: @underthedesknews [left]; @TheMajorityReport [left]; @RealAmericasVoice [right]; @NewsmaxTV [right]; @jimacosta [left]
+Nearest topic neighbors: @underthedesknews [left]; @TheMajorityReport [left]; @RealAmericasVoice [right]; @NewsmaxTV [right]; @jimacosta [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Riley Gaines (@RileyGaines)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Riley Gaines · clipper: no · platform: youtube · subscribers: 70300.0
+Channel group: **right** (title-leaning score, document 14) · organization: Riley Gaines · clipper: no · platform: youtube · subscribers: 70300.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: WNBA and Sophie Cunningham controversy (9.8%); Transgender Athletes 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 65.3 | 67.4 | 0.4 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 80.8 | 81.2 | 0.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.3 | 54.8 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.3 | 54.8 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 66.1 | 53.6 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 62.3 | 62.8 | 0.4 | 0.2 |
 | F6: Person-centred (named people) | 49.0 | 47.3 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: WNBA and Sophie Cunningham controversy (9.8%); Transgender Athletes 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (3.6%); outrage 49.6% (59.6%); humor 0.0% (0.2%); question 14.7% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 9.8% (8.5%); reaction 1.4% (2.2%); confrontation 11.2% (7.8%); listicle 0.0% (0.1%); howto_explainer 14.0% (9.5%)
 
 
-Nearest style neighbours: @KimIversen [neutral]; @Xanderhal [left]; @MrTariqNasheed [right]; @RealDanBongino [right]; @CamHigby [right]
+Nearest style neighbors: @KimIversen [neutral]; @Xanderhal [left]; @MrTariqNasheed [right]; @RealDanBongino [right]; @CamHigby [right]
 
-Nearest topic neighbours: @theisabelbrown [right]; @MichaelKnowles [right]; @clayandbuck [right]; @bbrettcooper [right]; @AfterPartyEmily [right]
+Nearest topic neighbors: @theisabelbrown [right]; @MichaelKnowles [right]; @clayandbuck [right]; @bbrettcooper [right]; @AfterPartyEmily [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

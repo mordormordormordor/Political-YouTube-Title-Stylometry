@@ -1,13 +1,13 @@
-"""Organisation / clipper seed for the 274 creators (Stage 0).
+"""Organization / clipper seed for the 274 creators (Stage 0).
 
 This is the *seed* that pipeline_titles.creators writes to data/titles/analysis/creators.csv
 for hand correction; every later stage reads creators.csv, never this file, so corrections
 only need to be made in the CSV. Assignments were made from the channel names and channel
 descriptions (2026-09-14).
 
-Entry: creator -> (organisation, clipper, note). organisation groups sister channels of one
+Entry: creator -> (organization, clipper, note). organization groups sister channels of one
 outlet (used to drop same-outlet cross-posts from every similarity calculation and for the
-organisation-level style table); clipper marks channels whose titles are written by fans
+organization-level style table); clipper marks channels whose titles are written by fans
 or an editing team rather than the creator, kept as their own group so a fan editor's style
 is never attributed to the creator. The note is a short description of the channel (format,
 country, network); the channel's political grouping is never assumed here, it comes from the
@@ -159,7 +159,7 @@ CREATORS = {
     "@morebridgetphetasy": ("Bridget Phetasy", False, ""),
     "@ZeihanonGeopolitics": ("Peter Zeihan", False, ""),
     "@CaspianReport": ("CaspianReport", False, ""),
-    "@PerunAU": ("Perun", False, "defence economics"),
+    "@PerunAU": ("Perun", False, "defense economics"),
     "@UnHerd": ("UnHerd", False, "UK; interviews"),
     "@ZubyMusic": ("Zuby", False, ""),
     "@winston_marshall": ("Winston Marshall", False, ""),
@@ -240,7 +240,7 @@ CREATORS = {
     "@RobertGouveiaEsq": ("Robert Gouveia", False, ""),
     "@RekietaLaw": ("Rekieta Law", False, ""),
     "@CashJordan": ("Cash Jordan", False, ""),
-    "@ChadPrather1": ("Chad Prather", False, "faith + humour"),
+    "@ChadPrather1": ("Chad Prather", False, "faith + humor"),
     "@OutKick": ("Fox Corporation", False, "sports & culture (Fox-owned)"),
     "@Shoe0nHead": ("Shoe0nHead", False, ""),
     "@notsoErudite": ("notsoErudite", False, "debate / call-in"),
@@ -254,7 +254,7 @@ CREATORS = {
     "@BadEmpanadaLive": ("BadEmpanada", False, ""),
     "@Lunaoi": ("Luna Oi", False, ""),
     "@revleftradio": ("Rev Left Radio", False, ""),
-    "@franifio": ("Bitchuation Room", False, "comedians + organisers"),
+    "@franifio": ("Bitchuation Room", False, "comedians + organizers"),
     "@BreakThroughNews": ("BreakThrough News", False, ""),
     "@JamarlThomas": ("Jamarl Thomas", False, ""),
     "@NickCruseRBN": ("Revolutionary Blackout Network", False, ""),

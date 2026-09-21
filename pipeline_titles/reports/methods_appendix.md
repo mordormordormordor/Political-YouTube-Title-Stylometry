@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-21T15:56:08+00:00._
+_Generated 2026-09-21T17:54:29+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -25,7 +25,7 @@ Reads data/titles/videos.csv and writes, under data/titles/analysis/:
     creator_genre_summary.csv rows, unique titles, repeat share, low-n flag,
                               balanced n, subscribers, months active
     zipf_check.csv            corpus Zipf exponent (creator-balanced subset) on raw
-                              vs normalised titles, plus the head of each rank list
+                              vs normalized titles, plus the head of each rank list
 
 Brand detection rule (per creator x genre, on unique titles): a delimited leading
 or trailing segment (split on ' | ', ' - ', ' – ', ' — ', ' • ', ' ~ ', a 'LABEL: '
@@ -47,7 +47,7 @@ CLI:
 ```
 Stage 0b - write the creator table (data/titles/analysis/creators.csv).
 
-Columns: creator, channel_name, platform, organisation, clipper, subscribers,
+Columns: creator, channel_name, platform, organization, clipper, subscribers,
 n_videos, n_streams, low_n_videos, low_n_streams, note.
 
 The seed lives in pipeline_titles/creator_seed.py. This script refuses to overwrite an
@@ -69,17 +69,17 @@ Stage 0d - political leaning from titles alone, judged by a frontier model (the 
 runs third, after creators, because its channel groups are what every later stage reports
 by; its runtime record keeps the historical name stage7_leaning).
 
-A creator-balanced sample is labelled left / right / neither by Claude Opus through the
+A creator-balanced sample is labeled left / right / neither by Claude Opus through the
 Claude Code CLI in print mode (a Claude Pro/Max subscription covers it; temperature 0;
 twenty titles per call, sent in a seeded random order so that a call mixes channels and
 the judge sees nothing but the title text; every response cached). The label is the
 viewpoint the TITLE'S OWN WORDING signals, not the subject. Two levels of analysis follow: the
 titles themselves, and the channels grouped as left / neutral / right by their scores.
 
-Runs. The sample was labelled in three runs, all with the same prompt at temperature 0. Runs
+Runs. The sample was labeled in three runs, all with the same prompt at temperature 0. Runs
 1 and 2 (the base draw, then the top-up) sent the titles in sample order, so a call held one
 or two channels' titles and a title was read beside its channel's other titles; run 3 sent
-every title again in shuffled batches. Run 3 is the labelling of record
+every title again in shuffled batches. Run 3 is the labeling of record
 (leaning_labels.csv.gz). Runs 1 and 2 are kept as the first reading
 (leaning_labels_channel_batched.csv.gz, column `run`), and two_readings() compares the two
 readings title by title and channel by channel. The readings differ in their batches by
@@ -105,9 +105,9 @@ Outputs (data/titles/analysis/):
     leaning_labels.csv.gz       one row per sampled title with the label, is_base (base draw vs
                                 month-spread top-up) and month: the labels of record (run 3)
     leaning_labels_channel_batched.csv.gz
-                                the first reading: the same titles labelled in runs 1 and 2, batched
+                                the first reading: the same titles labeled in runs 1 and 2, batched
                                 by channel (column `run`); Claude Opus only
-    leaning_runs.json           the three labelling runs from the run log: titles sent, batch order,
+    leaning_runs.json           the three labeling runs from the run log: titles sent, batch order,
                                 calls, minutes, output tokens, the CLI's reported cost
     leaning_two_readings.json   the first reading against the labels of record: agreement and kappa
                                 (overall and per run), the confusion table, partisan shares, the
@@ -147,28 +147,28 @@ data/titles/analysis/leaning_human_sheet.csv` to get the judge's agreement with 
 (leaning_human_agreement.csv). That is the accuracy check.
 
 CLI:
-    python -m pipeline_titles.leaning --n-per-creator 50            # sample, label, analyse
+    python -m pipeline_titles.leaning --n-per-creator 50            # sample, label, analyze
     python -m pipeline_titles.leaning --n-per-creator 50 --prompt-version v2
-    python -m pipeline_titles.leaning --analyse-only [--human-labels <filled sheet>]
+    python -m pipeline_titles.leaning --analyze-only [--human-labels <filled sheet>]
     python -m pipeline_titles.leaning --repeat [--shuffle-seed N]   # read every title again, fresh shuffle
 ```
 
 ### `pipeline_titles.annotate`
 
 ```
-Stage 0c - spaCy annotation of every unique normalised title.
+Stage 0c - spaCy annotation of every unique normalized title.
 
 Runs en_core_web_sm (tagger, parser, NER) once over the unique `title_norm`
 strings of titles_prepared.parquet and caches the result, so Stage 1 (entities per
-topic), Stage 2 (POS-based style features, named-person / organisation counts) and
+topic), Stage 2 (POS-based style features, named-person / organization counts) and
 Stage 4 (who gets named) never re-run the model.
 
 ALL-CAPS titles ("TRUMP DESTROYS CNN") defeat the NER, so they are truecased first
 with a lexicon learned from the corpus itself: a word is a proper noun if it is
-capitalised in >= 80 % of its non-initial occurrences in mixed-case titles (>= 3
+capitalized in >= 80 % of its non-initial occurrences in mixed-case titles (>= 3
 occurrences), and an acronym if it is ALL-CAPS in >= 80 % of them. The truecased
 text is stored beside the annotations (`text_tc`); every feature that depends on
-capitalisation is computed from the original text, not from `text_tc`.
+capitalization is computed from the original text, not from `text_tc`.
 
 Output: data/titles/analysis/annotations.parquet, one row per unique title_norm:
     title_norm, text_tc, all_caps, tokens, lemmas (\x1f-joined), pos, tag, dep,
@@ -183,10 +183,10 @@ CLI:
 ### `pipeline_titles.embed`
 
 ```
-Stage 1a - sentence embeddings of every unique normalised title.
+Stage 1a - sentence embeddings of every unique normalized title.
 
 Encodes the unique `title_norm` strings of titles_prepared.parquet with a
-sentence-transformers model (all-mpnet-base-v2, 768-d, L2-normalised) on the Mac
+sentence-transformers model (all-mpnet-base-v2, 768-d, L2-normalized) on the Mac
 GPU and caches them, so the topic model (Stage 1), the hook classifier (Stage 3)
 and the template analysis never re-encode.
 
@@ -225,7 +225,7 @@ data/titles/analysis/:
     cache/topic_centroids.npy, cache/topic_fit_sample.parquet
 
 Fit sample: from the creator-balanced subset, per creator x genre capped so that
-the total is ~100,000 (cap found by bisection, seed 20260914). UMAP(15 neighbours,
+the total is ~100,000 (cap found by bisection, seed 20260914). UMAP(15 neighbors,
 5 dims, cosine, min_dist 0) -> HDBSCAN(min_cluster_size 80, min_samples 15, eom).
 If HDBSCAN yields more than --max-topics topics they are merged to that number by
 c-TF-IDF similarity. Outliers and all non-fit titles are assigned to the nearest
@@ -235,7 +235,7 @@ percentile of the similarities of HDBSCAN's own members.
 CLI:
     python -m pipeline_titles.topics
     python -m pipeline_titles.topics --fit-size 100000 --min-cluster-size 80 --max-topics 250
-    python -m pipeline_titles.topics --label-only        # re-run only the LLM labelling
+    python -m pipeline_titles.topics --label-only        # re-run only the LLM labeling
 ```
 
 ### `pipeline_titles.llm_rate`
@@ -289,7 +289,7 @@ Reads titles_prepared.parquet, annotations.parquet and creators.csv. Writes:
     feature_definitions.csv    name, family, text it is computed on, definition, aggregation
 
 Text used: lexical, pronoun, punctuation, syntax and entity features are computed on
-the NORMALISED title (brand prefixes/suffixes, episode numbers and dates removed);
+the NORMALIZED title (brand prefixes/suffixes, episode numbers and dates removed);
 the raw-structure family (lead_colon_label, lead_live, pipe_segments_raw, ...) on
 the RAW title, because a 'LIVE:' label or a '| Show Name' suffix is itself a style
 choice. Humor is never lexicon-scored.
@@ -328,7 +328,7 @@ and creators.csv. Writes, under data/titles/analysis/:
 
 Method. Cells with >= 15 unique titles enter the EFA (each creator x genre
 contributes at most 9 monthly rows, so the matrix is creator-balanced by
-construction). Features are the _p100 / _mean columns minus artefacts (see
+construction). Features are the _p100 / _mean columns minus artifacts (see
 EXCLUDE) and minus features below 0.5 per 100 titles or with |r| > 0.95 to an
 earlier feature. Number of factors: Horn's parallel analysis (100 random matrices,
 95th percentile), capped at MAX_FACTORS. Extraction: minres, oblimin rotation
@@ -380,7 +380,7 @@ CLI:
 ```
 Stage 4 - the landscape: creators clustered in style space and in topic space,
 compared with the channel groups (left / neutral / right, from the leaning stage);
-nearest neighbours; who gets named; convergent formulas.
+nearest neighbors; who gets named; convergent formulas.
 
 Reads dimensions.csv / dimensions_title.parquet (Stage 2), topics.csv +
 topic_labels.csv + creator_topic_mix.csv (Stage 1), formats.parquet (Stage 3),
@@ -388,7 +388,7 @@ annotations.parquet, titles_prepared.parquet and creators.csv (with the groups).
 
 Every similarity is computed per genre over non-low-n creators, with cross-posted
 titles removed (a title whose case-insensitive key also appears under another
-creator of the same organisation, e.g. TYT / The Damage Report). The whole
+creator of the same organization, e.g. TYT / The Damage Report). The whole
 clustering block runs twice: on all titles and on political titles only.
 
 Outputs (data/titles/analysis/):
@@ -396,12 +396,12 @@ Outputs (data/titles/analysis/):
     cluster_comparison.csv                     adjusted Rand index: style vs group, topic vs group, style vs topic
     group_style_cohesion.csv                   within-group vs between-group style distance per channel group
     disagreements_group_style.csv              group-mates in different style clusters, and style-mates across groups
-    neighbours_style.csv, neighbours_topic.csv five nearest neighbours per creator x genre
+    neighbours_style.csv, neighbours_topic.csv five nearest neighbors per creator x genre
     map_style.csv, map_topic.csv               2-D coordinates (PCA of style z-scores; MDS of topic JS distance)
-    entities_top.csv                           top 25 people and organisations (creator-balanced counts), the
+    entities_top.csv                           top 25 people and organizations (creator-balanced counts), the
                                                channel groups naming them most, outrage-frame share vs overall
     shared_titles.csv, shared_templates.csv    verbatim titles / masked templates used by >= 2 creators
-    org_style.csv                              organisation-level style scores (title-weighted mean of members)
+    org_style.csv                              organization-level style scores (title-weighted mean of members)
 
 CLI:
     python -m pipeline_titles.landscape
@@ -448,11 +448,11 @@ dummies and topic dummies (topics with >= 5 titles for that creator, the rest
 pooled) as controls; HC3 standard errors. Predictors are z-scored within the
 creator, so a coefficient is the change in log views per one within-creator
 standard deviation. Views are a snapshot taken at fetch time (2026-09-14), which
-favours older videos; the month dummies absorb that within a creator, but
+favors older videos; the month dummies absorb that within a creator, but
 coefficients still describe views-to-date, not lifetime views.
 
-Subscriber normalisation: log(views / subscribers) = log(views) - log(subscribers),
-a constant within creator, so it leaves every slope unchanged; the standardised
+Subscriber normalization: log(views / subscribers) = log(views) - log(subscribers),
+a constant within creator, so it leaves every slope unchanged; the standardized
 coefficients are therefore already comparable across creators, and subscriber
 count is reported beside them.
 
@@ -478,14 +478,14 @@ For every creator x genre with >= 100 YouTube videos carrying a view count (all
 rows, repeats included: a re-uploaded live loop is a separate video with its own
 views): the Gini coefficient of views, the share of views held by the top 10 % of
 videos, and a Clauset-Shalizi-Newman power-law fit of the tail (powerlaw.Fit,
-discrete, xmin estimated by KS minimisation) with the log-likelihood-ratio test
-against a lognormal (R > 0 favours the power law; p is the significance of R).
+discrete, xmin estimated by KS minimization) with the log-likelihood-ratio test
+against a lognormal (R > 0 favors the power law; p is the significance of R).
 A tail is called power-law-like only when R > 0 and p < 0.05.
 
 Then, within channel group (left / neutral / right): Spearman correlations across
 creators between concentration (Gini, top-10 % share) and the topic-controlled
 dimension scores and hook shares; plus the same correlations with log(number of
-videos) and log(subscribers) as the size-artefact check, and a pooled within-group
+videos) and log(subscribers) as the size-artifact check, and a pooled within-group
 estimate (values demeaned by group x genre).
 
 Outputs (data/titles/analysis/):
@@ -502,14 +502,14 @@ CLI:
 ```
 Stage 6 - channel profiles behind the question documents (9, 11, 12, 13):
 
-    caps_profile.csv        share of each creator x genre's unique titles by capitalisation
+    caps_profile.csv        share of each creator x genre's unique titles by capitalization
                             style (all_caps, selective_caps, title_case, sentence_case,
                             mixed_other, short_other; rules in textstats.caps_style), read
-                            off the raw title as published: the normalised title strips a
+                            off the raw title as published: the normalized title strips a
                             channel's fixed show name and episode number along with its
                             brand tag, which left "Joe Rogan Experience #2551 - Daniel
                             Kokotajlo" as two words and "short / other"; a brand tag adds
-                            capitalised words a Title Case rule does not mind, and one
+                            capitalized words a Title Case rule does not mind, and one
                             always written in capitals is learned as an acronym;
                             caps_style_title.parquet carries the style of every unique
                             title (row_id, caps_style) for the Zipf / views stage
@@ -519,7 +519,7 @@ Stage 6 - channel profiles behind the question documents (9, 11, 12, 13):
     arousal_index.csv       0-1 composite per creator x genre of five components: ALL-CAPS
                             word share, exclamation marks per title, power words per title
                             (shock words + violence verbs + intensifiers), emoji per title,
-                            VADER intensity (positive + negative); each component winsorised
+                            VADER intensity (positive + negative); each component winsorized
                             at the 2nd/98th percentile across ranked creators of the genre,
                             min-max scaled to 0-1, and averaged
     signature_keywords.csv  top 10 words per creator by weighted log-odds (informative
@@ -528,7 +528,7 @@ Stage 6 - channel profiles behind the question documents (9, 11, 12, 13):
                             the leaning stage) with its distance in z-scored topic-controlled
                             style space; style_twins_nearest.csv gives each creator's nearest
                             cross-divide twin and how that distance ranks among all its
-                            neighbours
+                            neighbors
 
 CLI:
     python -m pipeline_titles.profiles
@@ -548,7 +548,7 @@ Three ways of cutting the corpus run through the whole stage:
 Zipf's law for words. For every system (the corpus, each channel group, each title
 label, each caps style) the rank-frequency table of its tokens and the OLS exponent of
 log frequency on log rank over the top 100 / 1,000 / 5,000 types (prepare.zipf_slope,
-the same tokeniser as the Stage 0 Zipf check, stopwords kept: Zipf's law is about the
+the same tokenizer as the Stage 0 Zipf check, stopwords kept: Zipf's law is about the
 whole vocabulary). Systems differ in size and the exponent depends on size, so a
 size-matched exponent is reported beside it: SIZE_MATCH_N titles drawn SIZE_MATCH_REPEATS
 times from the system, exponent over the top 200 ranks, averaged. Creator-level Zipf
@@ -557,7 +557,7 @@ group.
 
 Zipf's law for views. Within a channel, videos ranked by views (hits.views_zipf_slope,
 Stage 5c) give a rank-size slope; those slopes, the Gini and the top-10 % share are
-summarised per channel group and per channel's dominant caps style.
+summarized per channel group and per channel's dominant caps style.
 
 Views over time. Views are a fetch-time snapshot (2026-09-14), so a January video has
 had eight months to collect them and a September one two weeks: the raw curve falls
@@ -587,7 +587,7 @@ Outputs (data/titles/analysis/):
                                  views, creator-median views, relative log views
     caps_style_by_group.csv      caps-style shares per channel group and per title label
     label_by_caps_style.csv      title labels x caps style: share of each label within the
-                                 style, and relative log views of the labelled titles per
+                                 style, and relative log views of the labeled titles per
                                  label x style
 
 CLI:
@@ -1188,7 +1188,7 @@ Titles:
 ## Topic label prompt
 
 ```
-You are labelling a topic found by clustering YouTube video titles from political-media channels.
+You are labeling a topic found by clustering YouTube video titles from political-media channels.
 Top terms (by class TF-IDF): {terms}
 Example titles:
 {examples}
@@ -1695,10 +1695,10 @@ Titles:
 | stage5b_engagement | 9.4 | 9.4 | 2026-09-17T19:18:39+00:00 |  |  |  | creator_genre_models=252 |
 | stage5c_hits | 25.3 | 28.9 | 2026-09-17T19:19:04+00:00 |  |  |  | groups=252, powerlaw_like=1 |
 | report_data | 2.8 | 3.1 | 2026-09-17T19:32:40+00:00 |  |  |  | creators=274 |
-| report | 17.1 | 24.6 | 2026-09-21T15:47:21+00:00 |  |  |  | cards=274 |
+| report | 15.4 | 24.6 | 2026-09-21T17:52:45+00:00 |  |  |  | cards=274 |
 | stage6_profiles | 22.9 | 23.8 | 2026-09-21T15:55:16+00:00 |  |  |  | acronyms=961, twin_pairs=9200 |
 | stage7_leaning | 5.8 | 8120.7 | 2026-09-18T15:58:07+00:00 |  |  | subscription (claude -p); see reported_cost_usd | backend=claude-code, prompt_id=leaning-v1, batch_order=shuffled, llm_seconds=8111.8, reported_cost_usd=56.5... |
-| allotax | 6.4 | 11.9 | 2026-09-21T15:56:08+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
+| allotax | 6.3 | 11.9 | 2026-09-21T17:54:29+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
 | leaning_lexicon | 1.7 | 1.7 | 2026-09-15T18:52:59+00:00 |  |  |  | cutoff=1.96 |
 | stage0b_creators | 0.3 | 0.3 | 2026-09-17T19:05:21+00:00 |  |  |  |  |
 | stage6b_zipf_views | 2.6 | 2.7 | 2026-09-21T15:55:35+00:00 |  |  |  | zipf_systems=13, views_rows=244079 |

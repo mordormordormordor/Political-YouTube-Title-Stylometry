@@ -1,6 +1,6 @@
 # Dave Smith (@PartOfTheProblem)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Dave Smith · clipper: no · platform: youtube · subscribers: 521000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Dave Smith · clipper: no · platform: youtube · subscribers: 521000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: War and Military Analysis (12.6%); Shocking Events and Reactions (3.
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 81.2 | 77.4 | 0.7 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 2.5 | 3.8 | -1.8 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 5.9 | 11.3 | -0.7 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 5.9 | 11.3 | -0.7 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 11.7 | 21.8 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 16.7 | 25.9 | -0.4 | 0.2 |
 | F6: Person-centred (named people) | 8.4 | 22.2 | -0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: War and Military Analysis (12.6%); Shocking Events and Reactions (3.
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 50.5% (59.6%); humor 0.0% (0.2%); question 2.9% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 6.8% (8.5%); reaction 7.8% (2.2%); confrontation 5.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 1.0% (9.5%)
 
 
-Nearest style neighbours: @ZeihanonGeopolitics [neutral]; @DylanBurnsLIVE [left]; @ThePodcastoftheLotusEaters [right]; @Styxhexenhammer666 [right]; @LegalEagle [left]
+Nearest style neighbors: @ZeihanonGeopolitics [neutral]; @DylanBurnsLIVE [left]; @ThePodcastoftheLotusEaters [right]; @Styxhexenhammer666 [right]; @LegalEagle [left]
 
-Nearest topic neighbours: @OwenReport [left]; @TheYoungTurks [left]; @TheMajorityReport [left]; @BenShapiro [right]; https://rumble.com/c/nickjfuentes [right]
+Nearest topic neighbors: @OwenReport [left]; @TheYoungTurks [left]; @TheMajorityReport [left]; @BenShapiro [right]; https://rumble.com/c/nickjfuentes [right]
 
 
 Engagement (n = 103, R2 = 0.3552; log views per within-creator SD, month + topic controls):

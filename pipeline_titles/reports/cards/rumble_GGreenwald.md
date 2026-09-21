@@ -1,6 +1,6 @@
 # GGreenwald (https://rumble.com/c/GGreenwald)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Glenn Greenwald · clipper: no · platform: rumble · subscribers: 
+Channel group: **left** (title-leaning score, document 14) · organization: Glenn Greenwald · clipper: no · platform: rumble · subscribers: 
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (18.4%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 41.8 | 28.9 | 0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 59.8 | 54.4 | 0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.5 | 80.3 | 0.0 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.5 | 80.3 | 0.0 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 10.5 | 8.8 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 79.1 | 76.6 | 1.0 | 0.1 |
 | F6: Person-centred (named people) | 76.2 | 79.9 | 0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (18.4%); Iran War and Strait of Horm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.3% (2.7%); outrage 57.9% (63.9%); humor 0.0% (0.2%); question 35.5% (15.6%); breaking_live 0.0% (2.9%); episode_show 17.1% (2.8%); interview_guest 5.3% (9.8%); reaction 7.9% (2.9%); confrontation 6.6% (7.6%); listicle 0.0% (0.1%); howto_explainer 13.2% (8.0%)
 
 
-Nearest style neighbours: @clayandbuck [right]; @RubinReport [right]; @ChadPrather1 [right]; @DemocracyDocket [left]; @JillianMichaels [right]
+Nearest style neighbors: @clayandbuck [right]; @RubinReport [right]; @ChadPrather1 [right]; @DemocracyDocket [left]; @JillianMichaels [right]
 
-Nearest topic neighbours: @TheYoungTurks [left]; @DueDissidence [left]; @OwenJonesTalks [left]; @usefulidiots [left]; @thegrayzone7996 [left]
+Nearest topic neighbors: @TheYoungTurks [left]; @DueDissidence [left]; @OwenJonesTalks [left]; @usefulidiots [left]; @thegrayzone7996 [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Leeja Miller (@LeejaMiller)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Leeja Miller · clipper: no · platform: youtube · subscribers: 708000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Leeja Miller · clipper: no · platform: youtube · subscribers: 708000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: ICE Protests and Shootings (5.0%); America's 250th Anniversary and F
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 78.2 | 68.6 | 0.6 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 62.8 | 60.3 | 0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 53.6 | 60.7 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 53.6 | 60.7 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 79.9 | 77.8 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 92.5 | 91.2 | 1.8 | 0.1 |
 | F6: Person-centred (named people) | 14.6 | 13.8 | -0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: ICE Protests and Shootings (5.0%); America's 250th Anniversary and F
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 10.0% (2.7%); outrage 40.0% (63.9%); humor 0.0% (0.2%); question 33.3% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 5.0% (9.8%); reaction 0.0% (2.9%); confrontation 0.0% (7.6%); listicle 0.0% (0.1%); howto_explainer 30.0% (8.0%)
 
 
-Nearest style neighbours: @theisabelbrown [right]; @ajplus [left]; @TheAtlantic [left]; @thomhartmann [left]; @AndrewKlavan [right]
+Nearest style neighbors: @theisabelbrown [right]; @ajplus [left]; @TheAtlantic [left]; @thomhartmann [left]; @AndrewKlavan [right]
 
-Nearest topic neighbours: @thomhartmann [left]; @RealAmericasVoice [right]; @msnow [left]; @TheHumanistReport [left]; @NewsmaxTV [right]
+Nearest topic neighbors: @thomhartmann [left]; @RealAmericasVoice [right]; @msnow [left]; @TheHumanistReport [left]; @NewsmaxTV [right]
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -53,7 +53,7 @@ Top topics: Minneapolis political unrest and federal response (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 2.2 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.0 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.0 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.5 | -0.3 |
 | F6: Person-centred (named people) | None | None | -2.3 | 0.6 |

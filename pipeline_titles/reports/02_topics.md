@@ -34,7 +34,7 @@ A BERTopic model fitted on a 100,041-title creator-stratified sample found 236 t
 ![Political share of a creator's titles, by channel group.](figures/02_political_share_by_group.png)
 *Political share of a creator's titles, by channel group (dots = creators, bar = median).*
 
-212 of 236 topics were tagged political by the labelling model (politics, government, elections, war, courts, political figures, the culture war); the 24 non-political topics are crime trials (Nancy Guthrie, Lindsay Clancy, the Brown University shooting), weather and disasters, sport (World Cup, MMA), tech and business, and a few channel-specific series. The tagging is generous, and the political share of a creator's unique titles is therefore high everywhere. The neutral channels, whose titles the judge mostly read as "neither", are also the ones with the most non-political subjects (crime, weather, sport, tech: the news outlets); the left and right groups are political almost throughout:
+212 of 236 topics were tagged political by the labeling model (politics, government, elections, war, courts, political figures, the culture war); the 24 non-political topics are crime trials (Nancy Guthrie, Lindsay Clancy, the Brown University shooting), weather and disasters, sport (World Cup, MMA), tech and business, and a few channel-specific series. The tagging is generous, and the political share of a creator's unique titles is therefore high everywhere. The neutral channels, whose titles the judge mostly read as "neither", are also the ones with the most non-political subjects (crime, weather, sport, tech: the news outlets); the left and right groups are political almost throughout:
 
 | group | mean political share | median political share | n_creators |
 |---|---|---|---|
@@ -100,6 +100,6 @@ Read left to right and 2026 tells itself: the Bondi Beach attack and a Trump Chr
 
 - The topic labels and the political flag come from a local 14B model reading the top terms and eight example titles; the labels are readable but a few are odd ("Hasanabi Reacts to Hasan" is a fan-channel formula, not a subject) and the political flag errs towards "political". Both live in `topic_labels.csv` and can be edited; the political-only analyses re-run from `landscape`.
 - 32% of the fit sample were HDBSCAN outliers; nearest-centroid assignment gives them a topic anyway, and 13% of all titles sit below the 10th-percentile similarity of genuine members. Those weak assignments are flagged per title in `topics.csv`.
-- Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labelled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
+- Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labeled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
 
 Files: `topics.csv` (title -> topic), `topic_labels.csv`, `creator_topic_mix.csv`, `topic_by_group.csv`, `topic_timeline.csv`, `topic_spikes.csv`, `creator_political_share.csv`.

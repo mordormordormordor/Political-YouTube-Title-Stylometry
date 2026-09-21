@@ -1,6 +1,6 @@
 # Xanderhal (@Xanderhal)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Xanderhal · clipper: no · platform: youtube · subscribers: 114000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Xanderhal · clipper: no · platform: youtube · subscribers: 114000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Transgender Rights and Politics (6.0%); Left Wing Political Violence
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 30.5 | 36.0 | -0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 85.4 | 87.0 | 0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 18.4 | 8.8 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 18.4 | 8.8 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 77.4 | 79.9 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 36.4 | 45.2 | -0.1 | 0.1 |
 | F6: Person-centred (named people) | 43.1 | 32.2 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Transgender Rights and Politics (6.0%); Left Wing Political Violence
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.2% (2.7%); outrage 82.0% (63.9%); humor 0.6% (0.2%); question 8.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 3.2% (9.8%); reaction 0.6% (2.9%); confrontation 4.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.2% (8.0%)
 
 
-Nearest style neighbours: @CamHigby [right]; @RileyGaines [right]; @SaltyCracker [right]; @chicksonright [right]; @TheMichaelCohenShow [left]
+Nearest style neighbors: @CamHigby [right]; @RileyGaines [right]; @SaltyCracker [right]; @chicksonright [right]; @TheMichaelCohenShow [left]
 
-Nearest topic neighbours: @TimcastIRL [right]; @TheAmalaEkpunobi [right]; @MichaelKnowles [right]; @TheSerfTimes [left]; @TheVaushPit [left]
+Nearest topic neighbors: @TimcastIRL [right]; @TheAmalaEkpunobi [right]; @MichaelKnowles [right]; @TheSerfTimes [left]; @TheVaushPit [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -87,7 +87,7 @@ Top topics: Iran Conflict and Political Updates (37.0%); Transgender Rights and 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 27.8 | 30.4 | -0.6 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 96.2 | 92.4 | 1.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 13.9 | 5.1 | -0.6 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 13.9 | 5.1 | -0.6 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 75.9 | 72.2 | 0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 25.3 | 36.7 | -0.5 | -0.3 |
 | F6: Person-centred (named people) | 65.8 | 79.7 | 0.6 | 0.6 |
@@ -102,9 +102,9 @@ Top topics: Iran Conflict and Political Updates (37.0%); Transgender Rights and 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.9% (1.9%); outrage 89.8% (63.2%); humor 0.0% (0.1%); question 0.9% (11.3%); breaking_live 0.0% (17.5%); episode_show 0.0% (6.4%); interview_guest 1.8% (18.3%); reaction 0.0% (1.5%); confrontation 18.5% (15.4%); listicle 0.0% (0.0%); howto_explainer 1.8% (2.9%)
 
 
-Nearest style neighbours: @RealAmericasVoice [right]; @deanwithrs [left]; @SkyNews [left]; @DueDissidence [left]; @LukeBeasley [left]
+Nearest style neighbors: @RealAmericasVoice [right]; @deanwithrs [left]; @SkyNews [left]; @DueDissidence [left]; @LukeBeasley [left]
 
-Nearest topic neighbours: @SabbySabs [left]; @AnthonyBrianLogan [right]; @chicksonright [right]; @DueDissidence [left]; @MyronGainesX [right]
+Nearest topic neighbors: @SabbySabs [left]; @AnthonyBrianLogan [right]; @chicksonright [right]; @DueDissidence [left]; @MyronGainesX [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

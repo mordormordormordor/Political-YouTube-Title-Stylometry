@@ -1,6 +1,6 @@
 # Hang Out with Sean Hannity (@HangOutwithSeanHannity)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Sean Hannity · clipper: no · platform: youtube · subscribers: 178000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Sean Hannity · clipper: no · platform: youtube · subscribers: 178000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: FBI and Jan 6 Pipe Bomb Case (5.2%); JLP Weekly Series (4.5%); Chris
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 45.6 | 56.5 | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 66.5 | 64.0 | 0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 51.0 | 50.2 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 51.0 | 50.2 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 28.0 | 23.4 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 74.1 | 73.2 | 0.7 | 0.2 |
 | F6: Person-centred (named people) | 82.0 | 80.3 | 0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: FBI and Jan 6 Pipe Bomb Case (5.2%); JLP Weekly Series (4.5%); Chris
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.9% (3.6%); outrage 33.8% (59.6%); humor 0.0% (0.2%); question 11.7% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 36.4% (8.5%); reaction 0.0% (2.2%); confrontation 2.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 18.8% (9.5%)
 
 
-Nearest style neighbours: @TomiLahrenIsFearless [right]; @DropSiteNews [left]; @RileyGaines [right]; @MichaelKnowles [right]; @BreakThroughNews [left]
+Nearest style neighbors: @TomiLahrenIsFearless [right]; @DropSiteNews [left]; @RileyGaines [right]; @MichaelKnowles [right]; @BreakThroughNews [left]
 
-Nearest topic neighbours: @FoxNewsChannelClips [right]; @MegynKelly [right]; @AndrewKlavan [right]; @fightbackpodcast [right]; @clayandbuck [right]
+Nearest topic neighbors: @FoxNewsChannelClips [right]; @MegynKelly [right]; @AndrewKlavan [right]; @fightbackpodcast [right]; @clayandbuck [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

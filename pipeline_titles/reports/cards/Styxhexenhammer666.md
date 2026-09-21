@@ -1,6 +1,6 @@
 # Styxhexenhammer666 (@Styxhexenhammer666)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Styxhexenhammer · clipper: no · platform: youtube · subscribers: 484000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Styxhexenhammer · clipper: no · platform: youtube · subscribers: 484000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.3%); JLP Weekly Series (4.
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 88.3 | 85.4 | 0.8 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 22.6 | 25.5 | -0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.5 | 27.2 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.5 | 27.2 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 45.6 | 49.8 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 21.8 | 33.5 | -0.3 | 0.2 |
 | F6: Person-centred (named people) | 33.1 | 31.8 | -0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.3%); JLP Weekly Series (4.
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.2% (3.6%); outrage 52.5% (59.6%); humor 0.4% (0.2%); question 8.3% (15.6%); breaking_live 0.9% (2.0%); episode_show 0.0% (7.6%); interview_guest 4.3% (8.5%); reaction 0.2% (2.2%); confrontation 3.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.7% (9.5%)
 
 
-Nearest style neighbours: @ThePodcastoftheLotusEaters [right]; @AlexStein99 [right]; @franifio [left]; @OwenReport [left]; @hutch [neutral]
+Nearest style neighbors: @ThePodcastoftheLotusEaters [right]; @AlexStein99 [right]; @franifio [left]; @OwenReport [left]; @hutch [neutral]
 
-Nearest topic neighbours: @RealAmericasVoice [right]; @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @NYTPodcasts [left]; @MichaelKnowles [right]
+Nearest topic neighbors: @RealAmericasVoice [right]; @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @NYTPodcasts [left]; @MichaelKnowles [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -88,7 +88,7 @@ Top topics: Iran Conflict and Political Updates (33.3%); Trump vs Maduro Venezue
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | 1.6 | 0.0 |

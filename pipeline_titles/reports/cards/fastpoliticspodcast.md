@@ -1,6 +1,6 @@
 # Fast Politics w/ Molly Jong-Fast (@fastpoliticspodcast)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Fast Politics · clipper: no · platform: youtube · subscribers: 91200.0
+Channel group: **left** (title-leaning score, document 14) · organization: Fast Politics · clipper: no · platform: youtube · subscribers: 91200.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump Meltdowns and Collapses (6.9%); MAGA Movement Decline (6.2%); 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 42.7 | 28.5 | 0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 16.3 | 20.9 | -0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 37.7 | 36.0 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 37.7 | 36.0 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 12.1 | 28.5 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 88.3 | 82.8 | 1.4 | 0.1 |
 | F6: Person-centred (named people) | 98.7 | 96.7 | 1.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Trump Meltdowns and Collapses (6.9%); MAGA Movement Decline (6.2%); 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.7%); outrage 67.6% (63.9%); humor 0.0% (0.2%); question 31.7% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 75.2% (9.8%); reaction 0.0% (2.9%); confrontation 1.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 17.2% (8.0%)
 
 
-Nearest style neighbours: @JamarlThomas [left]; @ClubRandomPodcast [neutral]; @fightbackpodcast [right]; @TheAdamCarollaShow1 [right]; @RufoandLomez [right]
+Nearest style neighbors: @JamarlThomas [left]; @ClubRandomPodcast [neutral]; @fightbackpodcast [right]; @TheAdamCarollaShow1 [right]; @RufoandLomez [right]
 
-Nearest topic neighbours: @FarronBalanced [left]; @TheDailyBeast [left]; @podsaveamerica [left]; @aaronparnas1 [left]; @thedavidpakmanshow [left]
+Nearest topic neighbors: @FarronBalanced [left]; @TheDailyBeast [left]; @podsaveamerica [left]; @aaronparnas1 [left]; @thedavidpakmanshow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

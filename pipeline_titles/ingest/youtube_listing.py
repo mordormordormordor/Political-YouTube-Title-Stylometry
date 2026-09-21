@@ -377,7 +377,7 @@ def format_duration(seconds: Optional[float]) -> str:
 
 
 def duration_stats(videos: Sequence[dict]) -> dict:
-    """Summarise the durations of `videos` (ignoring any with an unknown length).
+    """Summarize the durations of `videos` (ignoring any with an unknown length).
 
     Returns count (all videos), with_duration (how many had a length), and the
     mean / median / total in seconds - or None for those three when nothing had a

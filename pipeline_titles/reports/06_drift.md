@@ -8,8 +8,8 @@ Not much, and not in one direction. Of 90 group x genre x measure series (twelve
 
 ## Outrage share by month (edited uploads; mean of creators)
 
-![Outrage-frame share by month, one panel per channel group, against the all-creator mean (grey dashed).](figures/06_drift_outrage.png)
-*Outrage-frame share by month, one panel per channel group, against the all-creator mean (grey dashed).*
+![Outrage-frame share by month, one panel per channel group, against the all-creator mean (gray dashed).](figures/06_drift_outrage.png)
+*Outrage-frame share by month, one panel per channel group, against the all-creator mean (gray dashed).*
 
 | group | 2026-01 | 2026-02 | 2026-03 | 2026-04 | 2026-05 | 2026-06 | 2026-07 | 2026-08 | 2026-09 |
 |---|---|---|---|---|---|---|---|---|---|
@@ -79,6 +79,6 @@ The ordering is the inverse of news dependence: the neutral group, which holds t
 
 - Nine points per series is a short run; a trend that begins in March can look strong. The strong-trend table should be read as "worth a look", not as a finding on its own.
 - September is a half month and appears in the tables for completeness; no volume comparison uses it.
-- Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labelled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
+- Channel groups are the left / neutral / right groups of document 14: each channel's score = (right − left) / titles over its sampled titles as labeled by the judge, sorted at ±0.05. A channel's group says how its *titles* read, not what its host believes.
 
 Files: `drift_group_monthly.csv`, `drift_creator_monthly.csv`, `drift_top30_monthly.csv`, `drift_trends.csv`, `topic_change_monthly.csv`, `topic_change_group_monthly.csv`.

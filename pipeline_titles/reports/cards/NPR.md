@@ -1,6 +1,6 @@
 # NPR (@NPR)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: NPR · clipper: no · platform: youtube · subscribers: 874000.0
+Channel group: **left** (title-leaning score, document 14) · organization: NPR · clipper: no · platform: youtube · subscribers: 874000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Olympics and Team USA Politics (38.6%); Iran War and Strait of Hormu
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 99.6 | 100.0 | 1.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 86.2 | 84.1 | 0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 8.4 | 13.0 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 8.4 | 13.0 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 81.2 | 58.6 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 79.5 | 75.7 | 1.0 | 0.1 |
 | F6: Person-centred (named people) | 89.1 | 82.8 | 0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Olympics and Team USA Politics (38.6%); Iran War and Strait of Hormu
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.7%); outrage 12.9% (63.9%); humor 0.0% (0.2%); question 20.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 2.9% (9.8%); reaction 0.0% (2.9%); confrontation 0.0% (7.6%); listicle 2.9% (0.1%); howto_explainer 10.0% (8.0%)
 
 
-Nearest style neighbours: @TechCrunch [neutral]; @ANINewsIndia [neutral]; @SkyNews [left]; @USATODAY [neutral]; @AssociatedPress [neutral]
+Nearest style neighbors: @TechCrunch [neutral]; @ANINewsIndia [neutral]; @SkyNews [left]; @USATODAY [neutral]; @AssociatedPress [neutral]
 
-Nearest topic neighbours: @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @breakingpoints [left]; @CNN [left]; @BlazeTV [right]
+Nearest topic neighbors: @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @breakingpoints [left]; @CNN [left]; @BlazeTV [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -61,7 +61,7 @@ Top topics: 9/11 Remembered 25 Years Later (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 2.0 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 1.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.5 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.5 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.1 | -0.3 |
 | F6: Person-centred (named people) | None | None | -2.0 | 0.6 |

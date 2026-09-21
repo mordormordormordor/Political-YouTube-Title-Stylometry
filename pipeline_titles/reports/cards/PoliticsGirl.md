@@ -1,6 +1,6 @@
 # PoliticsGirl (@PoliticsGirl)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: PoliticsGirl · clipper: no · platform: youtube · subscribers: 505000.0
+Channel group: **left** (title-leaning score, document 14) · organization: PoliticsGirl · clipper: no · platform: youtube · subscribers: 505000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (16.4%); America's 250th Anniversary a
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 93.7 | 95.0 | 0.9 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 23.8 | 40.6 | -0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 67.8 | 63.6 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 67.8 | 63.6 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 86.6 | 92.9 | 0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 76.2 | 78.2 | 0.8 | 0.1 |
 | F6: Person-centred (named people) | 5.9 | 2.9 | -0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (16.4%); America's 250th Anniversary a
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.2% (2.7%); outrage 43.1% (63.9%); humor 0.0% (0.2%); question 26.7% (15.6%); breaking_live 0.9% (2.9%); episode_show 0.0% (2.8%); interview_guest 19.0% (9.8%); reaction 0.0% (2.9%); confrontation 0.9% (7.6%); listicle 0.0% (0.1%); howto_explainer 6.9% (8.0%)
 
 
-Nearest style neighbours: @franifio [left]; @LeejaMiller [left]; @ThePodcastoftheLotusEaters [right]; @dineshdsouza [right]; @TheAtlantic [left]
+Nearest style neighbors: @franifio [left]; @LeejaMiller [left]; @ThePodcastoftheLotusEaters [right]; @dineshdsouza [right]; @TheAtlantic [left]
 
-Nearest topic neighbours: @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @TheLincolnProject [left]; @Timcast [right]; @RealDanBongino [right]
+Nearest topic neighbors: @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @TheLincolnProject [left]; @Timcast [right]; @RealDanBongino [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

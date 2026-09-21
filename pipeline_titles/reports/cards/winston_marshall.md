@@ -1,6 +1,6 @@
 # Winston Marshall (@winston_marshall)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Winston Marshall · clipper: no · platform: youtube · subscribers: 494000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Winston Marshall · clipper: no · platform: youtube · subscribers: 494000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Islam and Political Discourse (7.3%); UK Political Chaos and Governm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 43.5 | 51.5 | 0.1 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 27.6 | 38.5 | -0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 50.2 | 51.0 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 50.2 | 51.0 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 88.3 | 85.8 | 0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 65.7 | 73.6 | 0.5 | 0.2 |
 | F6: Person-centred (named people) | 46.0 | 29.3 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Islam and Political Discourse (7.3%); UK Political Chaos and Governm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.7% (3.6%); outrage 53.2% (59.6%); humor 0.0% (0.2%); question 12.8% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 3.7% (8.5%); reaction 0.0% (2.2%); confrontation 8.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 13.8% (9.5%)
 
 
-Nearest style neighbours: @JillianMichaels [right]; @DropSiteNews [left]; @therationalnational [left]; @Forthepeoplepodcast305 [left]; @MichaelKnowles [right]
+Nearest style neighbors: @JillianMichaels [right]; @DropSiteNews [left]; @therationalnational [left]; @Forthepeoplepodcast305 [left]; @MichaelKnowles [right]
 
-Nearest topic neighbours: @ThePodcastoftheLotusEaters [right]; @AndrewKlavan [right]; @NovaraMedia [left]; @JillianMichaels [right]; @MichaelKnowles [right]
+Nearest topic neighbors: @ThePodcastoftheLotusEaters [right]; @AndrewKlavan [right]; @NovaraMedia [left]; @JillianMichaels [right]; @MichaelKnowles [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

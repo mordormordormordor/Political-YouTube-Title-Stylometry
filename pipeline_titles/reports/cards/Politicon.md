@@ -1,6 +1,6 @@
 # Politicon (@Politicon)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Politicon · clipper: no · platform: youtube · subscribers: 485000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Politicon · clipper: no · platform: youtube · subscribers: 485000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Political War Room and Figures (11.5%); Political Podcasts and Comme
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 59.0 | 63.2 | 0.3 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 15.1 | 16.7 | -0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 64.0 | 77.0 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 64.0 | 77.0 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 59.4 | 72.4 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 84.9 | 82.0 | 1.2 | 0.1 |
 | F6: Person-centred (named people) | 39.7 | 55.2 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Political War Room and Figures (11.5%); Political Podcasts and Comme
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (2.7%); outrage 40.5% (63.9%); humor 0.4% (0.2%); question 20.2% (15.6%); breaking_live 0.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 14.9% (9.8%); reaction 1.2% (2.9%); confrontation 4.2% (7.6%); listicle 0.0% (0.1%); howto_explainer 8.3% (8.0%)
 
 
-Nearest style neighbours: @samharrisorg [left]; @RufoandLomez [right]; @ClubRandomPodcast [neutral]; @AndrewKlavan [right]; @TheLincolnProject [left]
+Nearest style neighbors: @samharrisorg [left]; @RufoandLomez [right]; @ClubRandomPodcast [neutral]; @AndrewKlavan [right]; @TheLincolnProject [left]
 
-Nearest topic neighbours: @bulwarkmedia [left]; @msnow [left]; @chriscuomo [left]; @jimacosta [left]; @FarronBalanced [left]
+Nearest topic neighbors: @bulwarkmedia [left]; @msnow [left]; @chriscuomo [left]; @jimacosta [left]; @FarronBalanced [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Knicks NBA Finals and Trump controversies (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.7 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.0 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.0 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.8 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.0 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.4 | 0.6 |

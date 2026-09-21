@@ -1,6 +1,6 @@
 # Unpacked (@Unpacked)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Unpacked · clipper: no · platform: youtube · subscribers: 536000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Unpacked · clipper: no · platform: youtube · subscribers: 536000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (70.7%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.9 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.8 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 2.6 | 0.2 |
 | F6: Person-centred (named people) | None | None | -1.3 | -0.2 |

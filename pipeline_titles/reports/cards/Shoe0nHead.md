@@ -1,6 +1,6 @@
 # Shoe0nHead (@Shoe0nHead)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Shoe0nHead · clipper: no · platform: youtube · subscribers: 2520000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Shoe0nHead · clipper: no · platform: youtube · subscribers: 2520000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: America's 250th Anniversary and Founding History (10.0%); War and Mi
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.8 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.1 | 0.2 |
 | F6: Person-centred (named people) | None | None | -1.3 | -0.2 |

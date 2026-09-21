@@ -1,6 +1,6 @@
 # Secular Talk (@SecularTalk)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Kyle Kulinski · clipper: no · platform: youtube · subscribers: 2290000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Kyle Kulinski · clipper: no · platform: youtube · subscribers: 2290000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.3%); MAGA Movement Decline
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 7.1 | 6.7 | -0.9 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 59.0 | 58.2 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 95.4 | 92.1 | 0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 95.4 | 92.1 | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 59.8 | 64.4 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 28.5 | 23.8 | -0.2 | 0.1 |
 | F6: Person-centred (named people) | 59.8 | 66.5 | -0.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.3%); MAGA Movement Decline
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.3% (2.7%); outrage 95.8% (63.9%); humor 0.3% (0.2%); question 2.9% (15.6%); breaking_live 8.9% (2.9%); episode_show 0.0% (2.8%); interview_guest 6.8% (9.8%); reaction 1.0% (2.9%); confrontation 5.5% (7.6%); listicle 0.1% (0.1%); howto_explainer 2.3% (8.0%)
 
 
-Nearest style neighbours: @deanwithrs [left]; @TheOfficerTatum [right]; @StatusCoup [left]; @LegalAFMTN [left]; https://rumble.com/c/TheAlexJonesShowLive [right]
+Nearest style neighbors: @deanwithrs [left]; @TheOfficerTatum [right]; @StatusCoup [left]; @LegalAFMTN [left]; https://rumble.com/c/TheAlexJonesShowLive [right]
 
-Nearest topic neighbours: @TheMajorityReport [left]; @TheYoungTurks [left]; @RebelHQ [left]; @breakingpoints [left]; @dollemore [left]
+Nearest topic neighbors: @TheMajorityReport [left]; @TheYoungTurks [left]; @RebelHQ [left]; @breakingpoints [left]; @dollemore [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 5.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.4 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.4 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.6 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | -3.5 | 0.6 |

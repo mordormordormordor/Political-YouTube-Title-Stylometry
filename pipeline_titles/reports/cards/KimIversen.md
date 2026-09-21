@@ -1,6 +1,6 @@
 # Kim Iversen (@KimIversen)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Kim Iversen · clipper: no · platform: youtube · subscribers: 806000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Kim Iversen · clipper: no · platform: youtube · subscribers: 806000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (16.9%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 62.3 | 45.2 | 0.4 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 74.1 | 69.5 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 31.8 | 42.3 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 31.8 | 42.3 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 71.5 | 66.1 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 63.6 | 62.3 | 0.4 | 0.1 |
 | F6: Person-centred (named people) | 17.2 | 26.8 | -0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (16.9%); Iran War and Strait of Horm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.4% (2.4%); outrage 71.0% (36.0%); humor 0.2% (0.1%); question 23.0% (15.9%); breaking_live 0.2% (1.1%); episode_show 0.0% (7.0%); interview_guest 7.9% (11.6%); reaction 0.0% (1.9%); confrontation 3.2% (7.4%); listicle 0.0% (0.1%); howto_explainer 7.1% (6.6%)
 
 
-Nearest style neighbours: @BenShapiro [right]; @StevenCrowder [right]; @RileyGaines [right]; @TheAmalaEkpunobi [right]; @bbrettcooper [right]
+Nearest style neighbors: @BenShapiro [right]; @StevenCrowder [right]; @RileyGaines [right]; @TheAmalaEkpunobi [right]; @bbrettcooper [right]
 
-Nearest topic neighbours: @thejimmydoreshow [neutral]; @breakingpoints [left]; @TheYoungTurks [left]; @RedactedNews [right]; @DueDissidence [left]
+Nearest topic neighbors: @thejimmydoreshow [neutral]; @breakingpoints [left]; @TheYoungTurks [left]; @RedactedNews [right]; @DueDissidence [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: UK Political Chaos and Government Issues (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.6 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.6 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |
 | F6: Person-centred (named people) | None | None | 1.8 | 0.2 |

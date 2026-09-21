@@ -1,6 +1,6 @@
 # NewsNation (@NewsNation)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: NewsNation · clipper: no · platform: youtube · subscribers: 2760000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: NewsNation · clipper: no · platform: youtube · subscribers: 2760000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.0%); Nancy Guthrie Disappe
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 77.4 | 68.2 | 0.6 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 69.5 | 68.2 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 83.7 | 88.7 | -0.0 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 83.7 | 88.7 | -0.0 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 37.7 | 25.5 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 43.1 | 39.7 | 0.0 | 0.1 |
 | F6: Person-centred (named people) | 79.5 | 77.0 | 0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (9.0%); Nancy Guthrie Disappe
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.3% (2.4%); outrage 28.3% (36.0%); humor 0.1% (0.1%); question 11.2% (15.9%); breaking_live 0.8% (1.1%); episode_show 1.6% (7.0%); interview_guest 6.4% (11.6%); reaction 2.0% (1.9%); confrontation 5.4% (7.4%); listicle 0.0% (0.1%); howto_explainer 3.8% (6.6%)
 
 
-Nearest style neighbours: @thehill [neutral]; @NBCNews [neutral]; @NewsmaxTV [right]; @CBSNews [neutral]; @USATODAY [neutral]
+Nearest style neighbors: @thehill [neutral]; @NBCNews [neutral]; @NewsmaxTV [right]; @CBSNews [neutral]; @USATODAY [neutral]
 
-Nearest topic neighbours: @CBSNews [neutral]; @FoxNewsChannelClips [right]; @ABCNews [neutral]; @USATODAY [neutral]; @FoxNews [right]
+Nearest topic neighbors: @CBSNews [neutral]; @FoxNewsChannelClips [right]; @ABCNews [neutral]; @USATODAY [neutral]; @FoxNews [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump's speeches and events (6.0%); Pete Hegseth and Iran War (4.3%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 91.1 | 79.7 | 0.7 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 72.2 | 70.9 | 0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 77.2 | 74.7 | 0.9 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 77.2 | 74.7 | 0.9 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 72.2 | 63.3 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 96.2 | 93.7 | 0.7 | -0.3 |
 | F6: Person-centred (named people) | 60.8 | 58.2 | 0.6 | 0.2 |
@@ -105,9 +105,9 @@ Top topics: Trump's speeches and events (6.0%); Pete Hegseth and Iran War (4.3%)
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (2.2%); outrage 18.2% (29.7%); humor 0.0% (0.1%); question 25.5% (4.6%); breaking_live 39.4% (52.4%); episode_show 0.3% (2.1%); interview_guest 32.1% (13.2%); reaction 1.0% (1.4%); confrontation 19.5% (7.4%); listicle 0.0% (0.0%); howto_explainer 3.6% (1.0%)
 
 
-Nearest style neighbours: @JustPearlyThings [right]; @USATODAY [neutral]; @ANINewsIndia [neutral]; @SkyNews [left]; @hutch [neutral]
+Nearest style neighbors: @JustPearlyThings [right]; @USATODAY [neutral]; @ANINewsIndia [neutral]; @SkyNews [left]; @hutch [neutral]
 
-Nearest topic neighbours: @FoxNews [right]; @CBSNews [neutral]; @USATODAY [neutral]; @msnow [left]; @thehill [neutral]
+Nearest topic neighbors: @FoxNews [right]; @CBSNews [neutral]; @USATODAY [neutral]; @msnow [left]; @thehill [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Candace Clips (@ClipsCandaceOwens)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Candace Owens · clipper: yes · platform: youtube · subscribers: 161000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Candace Owens · clipper: yes · platform: youtube · subscribers: 161000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Erika Kirk Controversy (13.0%); Charlie Kirk murder trial (9.9%); Ca
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 88.7 | 79.9 | 0.8 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 46.0 | 46.4 | -0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 63.2 | 45.2 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 63.2 | 45.2 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 97.9 | 97.1 | 1.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 70.3 | 66.1 | 0.6 | 0.1 |
 | F6: Person-centred (named people) | 46.9 | 64.9 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Erika Kirk Controversy (13.0%); Charlie Kirk murder trial (9.9%); Ca
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 14.1% (2.4%); outrage 40.6% (36.0%); humor 0.0% (0.1%); question 17.7% (15.9%); breaking_live 0.5% (1.1%); episode_show 0.0% (7.0%); interview_guest 3.1% (11.6%); reaction 4.7% (1.9%); confrontation 6.8% (7.4%); listicle 0.0% (0.1%); howto_explainer 7.8% (6.6%)
 
 
-Nearest style neighbours: https://rumble.com/c/russellbrand [right]; @hutch [neutral]; @XAVIAER [right]; @BenShapiro [right]; @MichaelKnowles [right]
+Nearest style neighbors: https://rumble.com/c/russellbrand [right]; @hutch [neutral]; @XAVIAER [right]; @BenShapiro [right]; @MichaelKnowles [right]
 
-Nearest topic neighbours: @thejimmydoreshow [neutral]; @GrahamAllen [right]; @SabbySabs [left]; @fightbackpodcast [right]; @HasanAbi [left]
+Nearest topic neighbors: @thejimmydoreshow [neutral]; @GrahamAllen [right]; @SabbySabs [left]; @fightbackpodcast [right]; @HasanAbi [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

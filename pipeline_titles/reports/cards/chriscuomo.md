@@ -1,6 +1,6 @@
 # The Chris Cuomo Project (@chriscuomo)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Chris Cuomo · clipper: no · platform: youtube · subscribers: 652000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Chris Cuomo · clipper: no · platform: youtube · subscribers: 652000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (10.6%); Israel-Palestine Con
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 85.4 | 74.5 | 0.7 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 74.9 | 74.9 | 0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 34.3 | 48.1 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 34.3 | 48.1 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 68.6 | 74.1 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 95.8 | 94.6 | 2.2 | 0.1 |
 | F6: Person-centred (named people) | 48.1 | 49.0 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (10.6%); Israel-Palestine Con
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.4% (2.7%); outrage 44.7% (63.9%); humor 0.0% (0.2%); question 30.3% (15.6%); breaking_live 0.5% (2.9%); episode_show 0.0% (2.8%); interview_guest 9.6% (9.8%); reaction 1.0% (2.9%); confrontation 6.2% (7.6%); listicle 1.0% (0.1%); howto_explainer 23.6% (8.0%)
 
 
-Nearest style neighbours: @TheAtlantic [left]; @thomhartmann [left]; @LeejaMiller [left]; @EzraKleinShow [left]; @MrTariqNasheed [right]
+Nearest style neighbors: @TheAtlantic [left]; @thomhartmann [left]; @LeejaMiller [left]; @EzraKleinShow [left]; @MrTariqNasheed [right]
 
-Nearest topic neighbours: @msnow [left]; @bulwarkmedia [left]; @OwenReport [left]; @thomhartmann [left]; @Vaush [left]
+Nearest topic neighbors: @msnow [left]; @bulwarkmedia [left]; @OwenReport [left]; @thomhartmann [left]; @Vaush [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -88,7 +88,7 @@ Top topics: Nancy Guthrie Disappearance Investigation (25.0%); Iran Conflict and
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.6 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.0 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.5 | 0.6 |

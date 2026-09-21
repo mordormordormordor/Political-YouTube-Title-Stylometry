@@ -1,6 +1,6 @@
 # The Ezra Klein Show (@EzraKleinShow)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: New York Times · clipper: no · platform: youtube · subscribers: 560000.0
+Channel group: **left** (title-leaning score, document 14) · organization: New York Times · clipper: no · platform: youtube · subscribers: 560000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: America's 250th Anniversary and Founding History (7.7%); JLP Weekly 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 92.5 | 93.3 | 0.9 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 43.9 | 43.9 | -0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 22.2 | 26.8 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 22.2 | 26.8 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 41.4 | 55.6 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 92.1 | 92.5 | 1.7 | 0.1 |
 | F6: Person-centred (named people) | 48.5 | 30.5 | -0.3 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: America's 250th Anniversary and Founding History (7.7%); JLP Weekly 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.5% (2.7%); outrage 24.6% (63.9%); humor 0.0% (0.2%); question 29.2% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 6.2% (9.8%); reaction 0.0% (2.9%); confrontation 4.6% (7.6%); listicle 0.0% (0.1%); howto_explainer 7.7% (8.0%)
 
 
-Nearest style neighbours: @TheAtlantic [left]; @theisabelbrown [right]; @LeejaMiller [left]; @franifio [left]; @chriscuomo [left]
+Nearest style neighbors: @TheAtlantic [left]; @theisabelbrown [right]; @LeejaMiller [left]; @franifio [left]; @chriscuomo [left]
 
-Nearest topic neighbours: @samharrisorg [left]; @morebridgetphetasy [right]; @PragerU [right]; @Vox [left]; @AndrewKlavan [right]
+Nearest topic neighbors: @samharrisorg [left]; @morebridgetphetasy [right]; @PragerU [right]; @Vox [left]; @AndrewKlavan [right]
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -53,7 +53,7 @@ Top topics: California Election Fraud Scandal (100.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.7 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.3 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.2 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -1.2 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |
 | F6: Person-centred (named people) | None | None | 3.9 | 0.6 |

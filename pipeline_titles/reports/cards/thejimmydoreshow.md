@@ -1,6 +1,6 @@
 # The Jimmy Dore Show (@thejimmydoreshow)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Jimmy Dore · clipper: no · platform: youtube · subscribers: 1870000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Jimmy Dore · clipper: no · platform: youtube · subscribers: 1870000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (12.2%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 20.5 | 19.2 | -0.3 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 33.9 | 32.6 | -0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 48.5 | 48.5 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 48.5 | 48.5 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 44.4 | 39.3 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 44.4 | 41.8 | 0.0 | 0.1 |
 | F6: Person-centred (named people) | 84.5 | 88.7 | 0.5 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (12.2%); Iran War and Strait of Horm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.8% (2.4%); outrage 88.8% (36.0%); humor 0.3% (0.1%); question 4.4% (15.9%); breaking_live 2.4% (1.1%); episode_show 0.0% (7.0%); interview_guest 32.7% (11.6%); reaction 0.3% (1.9%); confrontation 8.8% (7.4%); listicle 0.1% (0.1%); howto_explainer 6.0% (6.6%)
 
 
-Nearest style neighbours: @fightbackpodcast [right]; @MyronGainesX [right]; @TheAdamCarollaShow1 [right]; @podsaveamerica [left]; @Forthepeoplepodcast305 [left]
+Nearest style neighbors: @fightbackpodcast [right]; @MyronGainesX [right]; @TheAdamCarollaShow1 [right]; @podsaveamerica [left]; @Forthepeoplepodcast305 [left]
 
-Nearest topic neighbours: @TheYoungTurks [left]; @DueDissidence [left]; @KimIversen [neutral]; @SabbySabs [left]; @breakingpoints [left]
+Nearest topic neighbors: @TheYoungTurks [left]; @DueDissidence [left]; @KimIversen [neutral]; @SabbySabs [left]; @breakingpoints [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Israel-Palestine Conflict Media (13.9%); Iran War and Strait of Horm
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 24.1 | 26.6 | -0.7 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 59.5 | 58.2 | -0.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.2 | 15.2 | -0.6 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.2 | 15.2 | -0.6 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 30.4 | 29.1 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 22.8 | 40.5 | -0.5 | -0.3 |
 | F6: Person-centred (named people) | 91.1 | 89.9 | 2.2 | 0.2 |
@@ -105,9 +105,9 @@ Top topics: Israel-Palestine Conflict Media (13.9%); Iran War and Strait of Horm
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.2%); outrage 89.6% (29.7%); humor 0.0% (0.1%); question 7.0% (4.6%); breaking_live 0.9% (52.4%); episode_show 0.0% (2.1%); interview_guest 63.5% (13.2%); reaction 0.9% (1.4%); confrontation 13.0% (7.4%); listicle 0.0% (0.0%); howto_explainer 4.3% (1.0%)
 
 
-Nearest style neighbours: @NickCruseRBN [left]; @rolandsmartin [left]; @TheSerfTimes [left]; @chicksonright [right]; @AnthonyBrianLogan [right]
+Nearest style neighbors: @NickCruseRBN [left]; @rolandsmartin [left]; @TheSerfTimes [left]; @chicksonright [right]; @AnthonyBrianLogan [right]
 
-Nearest topic neighbours: @TheYoungTurks [left]; @DueDissidence [left]; @OwenReport [left]; @NickCruseRBN [left]; @RedactedNews [right]
+Nearest topic neighbors: @TheYoungTurks [left]; @DueDissidence [left]; @OwenReport [left]; @NickCruseRBN [left]; @RedactedNews [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

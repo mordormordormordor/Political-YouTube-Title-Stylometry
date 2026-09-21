@@ -1,6 +1,6 @@
 # Rebel News (@RebelNewsOnline)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Rebel News · clipper: no · platform: youtube · subscribers: 1970000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Rebel News · clipper: no · platform: youtube · subscribers: 1970000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Canada-US Political Tensions (32.8%); Shocking Events and Reactions 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 69.9 | 61.5 | 0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 94.6 | 95.0 | 1.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.8 | 40.6 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.8 | 40.6 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 90.0 | 92.5 | 0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 49.0 | 48.5 | 0.1 | 0.2 |
 | F6: Person-centred (named people) | 23.0 | 13.0 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Canada-US Political Tensions (32.8%); Shocking Events and Reactions 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.7% (3.6%); outrage 63.2% (59.6%); humor 0.3% (0.2%); question 11.3% (15.6%); breaking_live 0.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 4.2% (8.5%); reaction 1.2% (2.2%); confrontation 5.6% (7.8%); listicle 0.1% (0.1%); howto_explainer 6.8% (9.5%)
 
 
-Nearest style neighbours: @NBCNews [neutral]; @CBSNews [neutral]; @SkyNews [left]; @thedavidpakmanshow [left]; @ABCNews [neutral]
+Nearest style neighbors: @NBCNews [neutral]; @CBSNews [neutral]; @SkyNews [left]; @thedavidpakmanshow [left]; @ABCNews [neutral]
 
-Nearest topic neighbours: @therationalnational [left]; @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @RealAmericasVoice [right]; @JillianMichaels [right]
+Nearest topic neighbors: @therationalnational [left]; @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @RealAmericasVoice [right]; @JillianMichaels [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Canada-US Political Tensions (63.6%); Covid Vaccine Controversy (3.6
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.5 | 39.2 | -0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 40.5 | 51.9 | -0.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 45.6 | 36.7 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 45.6 | 36.7 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 5.1 | 21.5 | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 5.1 | 3.8 | -0.9 | -0.3 |
 | F6: Person-centred (named people) | 35.4 | 16.5 | -0.1 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Canada-US Political Tensions (63.6%); Covid Vaccine Controversy (3.6
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.1% (3.2%); outrage 67.7% (56.4%); humor 0.0% (0.1%); question 2.1% (13.7%); breaking_live 6.7% (18.8%); episode_show 0.0% (26.3%); interview_guest 4.1% (14.0%); reaction 4.1% (2.1%); confrontation 9.2% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.5% (5.3%)
 
 
-Nearest style neighbours: @FoxNews [right]; @SkyNews [left]; @CNN [left]; @thehill [neutral]; @rolandsmartin [left]
+Nearest style neighbors: @FoxNews [right]; @SkyNews [left]; @CNN [left]; @thehill [neutral]; @rolandsmartin [left]
 
-Nearest topic neighbours: @VivaFrei [right]; @TheSerfTimes [left]; @NewsmaxTV [right]; @RealAmericasVoice [right]; @SkyNews [left]
+Nearest topic neighbors: @VivaFrei [right]; @TheSerfTimes [left]; @NewsmaxTV [right]; @RealAmericasVoice [right]; @SkyNews [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

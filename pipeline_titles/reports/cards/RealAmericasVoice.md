@@ -1,6 +1,6 @@
 # Real America's Voice (@RealAmericasVoice)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Real America's Voice · clipper: no · platform: youtube · subscribers: 323000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Real America's Voice · clipper: no · platform: youtube · subscribers: 323000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.4%); ICE Protests and Shoo
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 39.3 | 34.7 | 0.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 37.2 | 37.2 | -0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 27.2 | 47.3 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 27.2 | 47.3 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 5.9 | 5.9 | -0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 13.0 | 17.6 | -0.4 | 0.2 |
 | F6: Person-centred (named people) | 79.9 | 76.6 | 0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (6.4%); ICE Protests and Shoo
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.7% (3.6%); outrage 64.9% (59.6%); humor 0.0% (0.2%); question 10.4% (15.6%); breaking_live 2.8% (2.0%); episode_show 0.1% (7.6%); interview_guest 3.0% (8.5%); reaction 2.4% (2.2%); confrontation 12.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 7.9% (9.5%)
 
 
-Nearest style neighbours: @oann [right]; @nypost [right]; @dollemore [left]; @MLChristiansen [right]; @DropSiteNews [left]
+Nearest style neighbors: @oann [right]; @nypost [right]; @dollemore [left]; @MLChristiansen [right]; @DropSiteNews [left]
 
-Nearest topic neighbours: @NewsmaxTV [right]; @oann [right]; @FoxNewsChannelClips [right]; @FoxNews [right]; @thehill [neutral]
+Nearest topic neighbors: @NewsmaxTV [right]; @oann [right]; @FoxNewsChannelClips [right]; @FoxNews [right]; @thehill [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (7.4%); Political War Room an
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 8.9 | 20.3 | -1.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 77.2 | 72.2 | 0.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 62.0 | 62.0 | -0.0 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 62.0 | 62.0 | -0.0 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 16.5 | 20.3 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 11.4 | 30.4 | -0.6 | -0.3 |
 | F6: Person-centred (named people) | 75.9 | 77.2 | 1.0 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (7.4%); Political War Room an
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (3.2%); outrage 77.3% (56.4%); humor 0.0% (0.1%); question 0.7% (13.7%); breaking_live 9.5% (18.8%); episode_show 0.1% (26.3%); interview_guest 20.3% (14.0%); reaction 0.4% (2.1%); confrontation 11.2% (9.4%); listicle 1.4% (0.2%); howto_explainer 1.0% (5.3%)
 
 
-Nearest style neighbours: @TimcastIRL [right]; @Xanderhal [left]; @SabbySabs [left]; @LukeBeasley [left]; @TimesNowWorld [neutral]
+Nearest style neighbors: @TimcastIRL [right]; @Xanderhal [left]; @SabbySabs [left]; @LukeBeasley [left]; @TimesNowWorld [neutral]
 
-Nearest topic neighbours: @NewsmaxTV [right]; @timesofindia [left]; @NewsNation [neutral]; @TheMajorityReport [left]; @TimcastIRL [right]
+Nearest topic neighbors: @NewsmaxTV [right]; @timesofindia [left]; @NewsNation [neutral]; @TheMajorityReport [left]; @TimcastIRL [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

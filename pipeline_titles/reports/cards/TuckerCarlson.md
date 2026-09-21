@@ -1,6 +1,6 @@
 # Tucker Carlson (@TuckerCarlson)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Tucker Carlson Network · clipper: no · platform: youtube · subscribers: 5750000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Tucker Carlson Network · clipper: no · platform: youtube · subscribers: 5750000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (15.1%); Christian Nationalism and P
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 5.4 | 9.6 | -1.0 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 47.7 | 43.5 | -0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.1 | 72.8 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.1 | 72.8 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 84.5 | 79.5 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 48.5 | 56.5 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 91.6 | 87.9 | 0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (15.1%); Christian Nationalism and P
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.7% (2.4%); outrage 70.6% (36.0%); humor 0.0% (0.1%); question 2.5% (15.9%); breaking_live 3.4% (1.1%); episode_show 0.0% (7.0%); interview_guest 7.6% (11.6%); reaction 8.4% (1.9%); confrontation 8.4% (7.4%); listicle 0.0% (0.1%); howto_explainer 14.3% (6.6%)
 
 
-Nearest style neighbours: @MyronGainesX [right]; @RubinReport [right]; @TheAdamCarollaShow1 [right]; @thejimmydoreshow [neutral]; https://rumble.com/c/GGreenwald [left]
+Nearest style neighbors: @MyronGainesX [right]; @RubinReport [right]; @TheAdamCarollaShow1 [right]; @thejimmydoreshow [neutral]; https://rumble.com/c/GGreenwald [left]
 
-Nearest topic neighbours: @KimIversen [neutral]; @fightbackpodcast [right]; @RedactedNews [right]; @TheYoungTurks [left]; @thejimmydoreshow [neutral]
+Nearest topic neighbors: @KimIversen [neutral]; @fightbackpodcast [right]; @RedactedNews [right]; @TheYoungTurks [left]; @thejimmydoreshow [neutral]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Coleman Hughes (@ColemanHughesOfficial)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Coleman Hughes · clipper: no · platform: youtube · subscribers: 265000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Coleman Hughes · clipper: no · platform: youtube · subscribers: 265000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (13.0%); Left Wing Political Violenc
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 50.6 | 66.5 | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 74.5 | 70.7 | 0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 54.8 | 56.9 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 54.8 | 56.9 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 14.6 | 13.4 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 97.1 | 97.5 | 2.7 | 0.2 |
 | F6: Person-centred (named people) | 87.0 | 77.4 | 0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (13.0%); Left Wing Political Violenc
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 22.2% (59.6%); humor 0.0% (0.2%); question 46.3% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 14.8% (8.5%); reaction 0.0% (2.2%); confrontation 9.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 18.5% (9.5%)
 
 
-Nearest style neighbours: @nousnetwork [left]; @MrTariqNasheed [right]; @judgingfreedom [left]; @chriscuomo [left]; @nationalreview [right]
+Nearest style neighbors: @nousnetwork [left]; @MrTariqNasheed [right]; @judgingfreedom [left]; @chriscuomo [left]; @nationalreview [right]
 
-Nearest topic neighbours: @BadFaithPodcast [left]; @BadEmpanadaLive [left]; @PragerU [right]; @morebridgetphetasy [right]; @RufoandLomez [right]
+Nearest topic neighbors: @BadFaithPodcast [left]; @BadEmpanadaLive [left]; @PragerU [right]; @morebridgetphetasy [right]; @RufoandLomez [right]
 
 
 Engagement: n < 100 titles with views, not estimated.

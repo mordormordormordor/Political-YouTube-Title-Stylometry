@@ -1,6 +1,6 @@
 # PBD Podcast (@PBDPodcast)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Valuetainment · clipper: no · platform: youtube · subscribers: 2970000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Valuetainment · clipper: no · platform: youtube · subscribers: 2970000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Trump and China political relations (5.3%); Christian Nationalism an
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.4 | 0.2 |
 | F6: Person-centred (named people) | None | None | 0.1 | -0.2 |
@@ -48,7 +48,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (15.2%); Iran Conflict and Po
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 31.6 | 34.2 | -0.5 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 2.5 | 6.3 | -2.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 8.9 | 17.7 | -0.6 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 8.9 | 17.7 | -0.6 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 17.7 | 8.9 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 26.6 | 43.0 | -0.4 | -0.3 |
 | F6: Person-centred (named people) | 53.2 | 57.0 | 0.3 | 0.0 |
@@ -63,9 +63,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (15.2%); Iran Conflict and Po
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.5% (3.2%); outrage 65.2% (56.4%); humor 0.0% (0.1%); question 10.2% (13.7%); breaking_live 0.9% (18.8%); episode_show 84.8% (26.3%); interview_guest 7.6% (14.0%); reaction 1.7% (2.1%); confrontation 19.5% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.9% (5.3%)
 
 
-Nearest style neighbours: @rolandsmartin [left]; @franifio [left]; @markets [neutral]; @marclamonthillnetwork [left]; @FarronBalanced [left]
+Nearest style neighbors: @rolandsmartin [left]; @franifio [left]; @markets [neutral]; @marclamonthillnetwork [left]; @FarronBalanced [left]
 
-Nearest topic neighbours: @TimcastIRL [right]; @RealAmericasVoice [right]; @timesofindia [left]; @OwenReport [left]; @TheMajorityReport [left]
+Nearest topic neighbors: @TimcastIRL [right]; @RealAmericasVoice [right]; @timesofindia [left]; @OwenReport [left]; @TheMajorityReport [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

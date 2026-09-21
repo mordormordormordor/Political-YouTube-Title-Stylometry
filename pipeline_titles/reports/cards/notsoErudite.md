@@ -1,6 +1,6 @@
 # notsoErudite (@notsoErudite)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: notsoErudite · clipper: no · platform: youtube · subscribers: 125000.0
+Channel group: **left** (title-leaning score, document 14) · organization: notsoErudite · clipper: no · platform: youtube · subscribers: 125000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Destiny and Ethan Klein debates (11.6%); America's 250th Anniversary
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.1 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.6 | 0.1 |
 | F6: Person-centred (named people) | None | None | -0.6 | -0.2 |
@@ -48,7 +48,7 @@ Top topics: Political Podcasts and Commentary (15.0%); Members Only Show (15.0%)
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.1 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.1 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.2 | 0.6 |

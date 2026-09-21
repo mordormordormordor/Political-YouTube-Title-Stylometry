@@ -1,6 +1,6 @@
 # Jesse Dollemore (@dollemore)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Jesse Dollemore · clipper: no · platform: youtube · subscribers: 1300000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Jesse Dollemore · clipper: no · platform: youtube · subscribers: 1300000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: ICE Protests and Shootings (4.9%); Fox News and Trump on Air Conflic
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 16.3 | 12.1 | -0.4 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 30.5 | 31.0 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 17.6 | 25.5 | -0.5 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 17.6 | 25.5 | -0.5 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 20.5 | 25.9 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 15.1 | 7.5 | -0.4 | 0.1 |
 | F6: Person-centred (named people) | 80.8 | 81.2 | 0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: ICE Protests and Shootings (4.9%); Fox News and Trump on Air Conflic
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.8% (2.7%); outrage 93.8% (63.9%); humor 0.4% (0.2%); question 0.8% (15.6%); breaking_live 1.1% (2.9%); episode_show 13.7% (2.8%); interview_guest 12.5% (9.8%); reaction 0.8% (2.9%); confrontation 5.5% (7.6%); listicle 0.0% (0.1%); howto_explainer 1.6% (8.0%)
 
 
-Nearest style neighbours: @DueDissidence [left]; @LegalAFMTN [left]; @RealAmericasVoice [right]; @HasanabiClips [left]; @AnthonyBrianLogan [right]
+Nearest style neighbors: @DueDissidence [left]; @LegalAFMTN [left]; @RealAmericasVoice [right]; @HasanabiClips [left]; @AnthonyBrianLogan [right]
 
-Nearest topic neighbours: @FarronBalanced [left]; @RebelHQ [left]; @TheDamageReport [left]; @SecularTalk [left]; @msnow [left]
+Nearest topic neighbors: @FarronBalanced [left]; @RebelHQ [left]; @TheDamageReport [left]; @SecularTalk [left]; @msnow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Pete Hegseth and Iran War (25.0%); Trump State of the Union Address 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.6 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.4 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 3.4 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 1.7 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | -0.3 |
 | F6: Person-centred (named people) | None | None | -1.1 | 0.6 |

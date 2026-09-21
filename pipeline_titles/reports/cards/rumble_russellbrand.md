@@ -1,6 +1,6 @@
 # russellbrand (https://rumble.com/c/russellbrand)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Russell Brand · clipper: no · platform: rumble · subscribers: 
+Channel group: **right** (title-leaning score, document 14) · organization: Russell Brand · clipper: no · platform: rumble · subscribers: 
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (33.2%); JLP Weekly Series (7.7%); Chr
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 54.4 | 82.0 | 0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 72.8 | 92.5 | 0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 68.6 | 57.3 | -0.2 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 68.6 | 57.3 | -0.2 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 98.7 | 99.2 | 1.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 68.2 | 74.1 | 0.6 | 0.2 |
 | F6: Person-centred (named people) | 12.6 | 2.1 | -0.8 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (33.2%); JLP Weekly Series (7.7%); Chr
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 15.4% (3.6%); outrage 54.0% (59.6%); humor 0.0% (0.2%); question 16.2% (15.6%); breaking_live 1.2% (2.0%); episode_show 0.0% (7.6%); interview_guest 2.3% (8.5%); reaction 1.2% (2.2%); confrontation 1.2% (7.8%); listicle 0.0% (0.1%); howto_explainer 8.5% (9.5%)
 
 
-Nearest style neighbours: @ClipsCandaceOwens [neutral]; @DestinyDGGClips [right]; @The_Crucible [right]; @CamHigby [right]; @LiberalHivemind [right]
+Nearest style neighbors: @ClipsCandaceOwens [neutral]; @DestinyDGGClips [right]; @The_Crucible [right]; @CamHigby [right]; @LiberalHivemind [right]
 
-Nearest topic neighbours: @AsmonTV [right]; @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @TimcastNews [right]; @RealDanBongino [right]
+Nearest topic neighbors: @AsmonTV [right]; @ThePodcastoftheLotusEaters [right]; @TimcastIRL [right]; @TimcastNews [right]; @RealDanBongino [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

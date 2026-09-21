@@ -1,6 +1,6 @@
 # Pondering Politics (@ponderingpolitics)
 
-Channel group: **left** (title-leaning score, document 14) · organisation: Pondering Politics · clipper: no · platform: youtube · subscribers: 861000.0
+Channel group: **left** (title-leaning score, document 14) · organization: Pondering Politics · clipper: no · platform: youtube · subscribers: 861000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Fox News and Trump on Air Conflicts (13.2%); Trump Meltdowns and Col
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 13.0 | 10.5 | -0.5 | 0.1 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 42.7 | 28.5 | -0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 94.1 | 95.0 | 0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 94.1 | 95.0 | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 88.7 | 89.5 | 0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 25.9 | 11.7 | -0.2 | 0.1 |
 | F6: Person-centred (named people) | 42.3 | 46.9 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Fox News and Trump on Air Conflicts (13.2%); Trump Meltdowns and Col
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.3% (2.7%); outrage 89.8% (63.9%); humor 0.3% (0.2%); question 2.4% (15.6%); breaking_live 17.1% (2.9%); episode_show 0.1% (2.8%); interview_guest 3.3% (9.8%); reaction 0.1% (2.9%); confrontation 13.4% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.6% (8.0%)
 
 
-Nearest style neighbours: https://rumble.com/c/nickjfuentes [right]; @PiscoLitty [left]; @MeidasTouch [left]; @harryjsisson [left]; @LegalAFMTN [left]
+Nearest style neighbors: https://rumble.com/c/nickjfuentes [right]; @PiscoLitty [left]; @MeidasTouch [left]; @harryjsisson [left]; @LegalAFMTN [left]
 
-Nearest topic neighbours: @LukeBeasley [left]; @JackCocchiarellaShow [left]; @MeidasTouch [left]; @harryjsisson [left]; @thedavidpakmanshow [left]
+Nearest topic neighbors: @LukeBeasley [left]; @JackCocchiarellaShow [left]; @MeidasTouch [left]; @harryjsisson [left]; @thedavidpakmanshow [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Trump's speeches and events (50.0%); Trump State of the Union Addres
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -1.0 | -0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 1.4 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.9 | -0.2 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 1.9 | -0.2 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.6 | -0.3 |
 | F6: Person-centred (named people) | None | None | -2.8 | 0.6 |

@@ -1,6 +1,6 @@
 # Matt Walsh (@MattWalsh)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Daily Wire · clipper: no · platform: youtube · subscribers: 3460000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Daily Wire · clipper: no · platform: youtube · subscribers: 3460000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Race and Politics in Media (5.4%); Modern Women and Feminism Debate 
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.3 | 38.1 | -0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 98.7 | 97.1 | 1.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 79.9 | 67.8 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 79.9 | 67.8 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 89.5 | 87.0 | 0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 87.9 | 87.9 | 1.3 | 0.2 |
 | F6: Person-centred (named people) | 7.5 | 10.9 | -0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Race and Politics in Media (5.4%); Modern Women and Feminism Debate 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.4% (3.6%); outrage 66.0% (59.6%); humor 0.0% (0.2%); question 24.2% (15.6%); breaking_live 2.7% (2.0%); episode_show 43.8% (7.6%); interview_guest 3.7% (8.5%); reaction 1.4% (2.2%); confrontation 4.4% (7.8%); listicle 0.0% (0.1%); howto_explainer 17.5% (9.5%)
 
 
-Nearest style neighbours: @glennbeck [right]; @DestinyDGGClips [right]; @ZubyMusic [right]; @JillianMichaels [right]; @CamHigby [right]
+Nearest style neighbors: @glennbeck [right]; @DestinyDGGClips [right]; @ZubyMusic [right]; @JillianMichaels [right]; @CamHigby [right]
 
-Nearest topic neighbours: @ActualJusticeWarrior [right]; @MichaelKnowles [right]; @BenShapiro [right]; @jlptalk [right]; @FoxNewsChannelClips [right]
+Nearest topic neighbors: @ActualJusticeWarrior [right]; @MichaelKnowles [right]; @BenShapiro [right]; @jlptalk [right]; @FoxNewsChannelClips [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -89,7 +89,7 @@ Top topics: Trump and Greenland politics (50.0%); Trump State of the Union Addre
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.8 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.5 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | -2.3 | 0.0 |

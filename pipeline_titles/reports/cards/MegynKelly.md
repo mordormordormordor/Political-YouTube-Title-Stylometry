@@ -1,6 +1,6 @@
 # Megyn Kelly (@MegynKelly)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Megyn Kelly · clipper: no · platform: youtube · subscribers: 4150000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Megyn Kelly · clipper: no · platform: youtube · subscribers: 4150000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Nancy Guthrie Disappearance Investigation (8.7%); Megyn Kelly and Po
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 46.4 | 42.7 | 0.2 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 36.4 | 36.4 | -0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 82.0 | 79.1 | -0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 82.0 | 79.1 | -0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 75.3 | 60.7 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 77.4 | 72.0 | 0.9 | 0.2 |
 | F6: Person-centred (named people) | 95.4 | 97.1 | 1.1 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Nancy Guthrie Disappearance Investigation (8.7%); Megyn Kelly and Po
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.6% (3.6%); outrage 54.3% (59.6%); humor 0.4% (0.2%); question 15.8% (15.6%); breaking_live 3.3% (2.0%); episode_show 2.1% (7.6%); interview_guest 37.5% (8.5%); reaction 1.3% (2.2%); confrontation 5.9% (7.8%); listicle 0.1% (0.1%); howto_explainer 16.0% (9.5%)
 
 
-Nearest style neighbours: @cafedotcom [left]; @VivaFrei [right]; @marclamonthillnetwork [left]; @PragerU [right]; https://rumble.com/c/GGreenwald [left]
+Nearest style neighbors: @cafedotcom [left]; @VivaFrei [right]; @marclamonthillnetwork [left]; @PragerU [right]; https://rumble.com/c/GGreenwald [left]
 
-Nearest topic neighbours: @NewsNation [neutral]; @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @clayandbuck [right]; @RealAmericasVoice [right]
+Nearest topic neighbors: @NewsNation [neutral]; @FoxNewsChannelClips [right]; @NewsmaxTV [right]; @clayandbuck [right]; @RealAmericasVoice [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Charlie Kirk murder trial (46.2%); Lindsay Clancy Murder Trial (23.1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.8 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.6 | -0.3 |
 | F6: Person-centred (named people) | None | None | -0.2 | 0.0 |

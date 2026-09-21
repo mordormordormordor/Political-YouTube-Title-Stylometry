@@ -1,6 +1,6 @@
 # The Podcast of the Lotus Eaters (@ThePodcastoftheLotusEaters)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Lotus Eaters · clipper: no · platform: youtube · subscribers: 600000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Lotus Eaters · clipper: no · platform: youtube · subscribers: 600000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (14.0%); UK Political Chaos and Govern
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 82.0 | 90.4 | 0.7 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 11.7 | 24.7 | -0.9 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 28.0 | 28.0 | -0.4 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 28.0 | 28.0 | -0.4 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 15.5 | 60.3 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 48.1 | 59.8 | 0.1 | 0.2 |
 | F6: Person-centred (named people) | 6.7 | 4.2 | -0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (14.0%); UK Political Chaos and Govern
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.5% (3.6%); outrage 47.9% (59.6%); humor 0.2% (0.2%); question 12.5% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 1.5% (8.5%); reaction 0.6% (2.2%); confrontation 3.0% (7.8%); listicle 0.2% (0.1%); howto_explainer 3.5% (9.5%)
 
 
-Nearest style neighbours: @ZeihanonGeopolitics [neutral]; @Styxhexenhammer666 [right]; @franifio [left]; @AlexStein99 [right]; @BenShapiro [right]
+Nearest style neighbors: @ZeihanonGeopolitics [neutral]; @Styxhexenhammer666 [right]; @franifio [left]; @AlexStein99 [right]; @BenShapiro [right]
 
-Nearest topic neighbours: https://rumble.com/c/russellbrand [right]; @AsmonTV [right]; @winston_marshall [right]; @TimcastIRL [right]; @NovaraMedia [left]
+Nearest topic neighbors: https://rumble.com/c/russellbrand [right]; @AsmonTV [right]; @winston_marshall [right]; @TimcastIRL [right]; @NovaraMedia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -90,7 +90,7 @@ Top topics: Fast Food and Political Issues (25.1%); UK Prime Minister Andy Burnh
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 63.3 | 77.2 | 0.3 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 21.5 | 29.1 | -1.0 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.3 | 45.6 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.3 | 45.6 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 38.0 | 50.6 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 54.4 | 79.7 | -0.3 | -0.3 |
 | F6: Person-centred (named people) | 38.0 | 26.6 | -0.0 | 0.0 |
@@ -105,9 +105,9 @@ Top topics: Fast Food and Political Issues (25.1%); UK Prime Minister Andy Burnh
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.7% (3.2%); outrage 42.5% (56.4%); humor 0.0% (0.1%); question 11.7% (13.7%); breaking_live 3.4% (18.8%); episode_show 0.6% (26.3%); interview_guest 36.3% (14.0%); reaction 0.6% (2.1%); confrontation 2.2% (9.4%); listicle 0.0% (0.2%); howto_explainer 1.7% (5.3%)
 
 
-Nearest style neighbours: @CamHigby [right]; @hutch [neutral]; @thehill [neutral]; @FarronBalanced [left]; @nypost [right]
+Nearest style neighbors: @CamHigby [right]; @hutch [neutral]; @thehill [neutral]; @FarronBalanced [left]; @nypost [right]
 
-Nearest topic neighbours: @SkyNews [left]; @TimesNowWorld [neutral]; @Reuters [neutral]; @Firstpost [neutral]; @RedactedNews [right]
+Nearest topic neighbors: @SkyNews [left]; @TimesNowWorld [neutral]; @Reuters [neutral]; @Firstpost [neutral]; @RedactedNews [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

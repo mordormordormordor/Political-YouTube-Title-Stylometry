@@ -1,6 +1,6 @@
 # Isabel Brown (@theisabelbrown)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Isabel Brown · clipper: no · platform: youtube · subscribers: 181000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Isabel Brown · clipper: no · platform: youtube · subscribers: 181000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Abortion and Pregnancy Policies (15.6%); Christian Nationalism and P
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 74.1 | 79.5 | 0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 68.6 | 72.8 | 0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 55.2 | 41.8 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 55.2 | 41.8 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 73.2 | 62.8 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 91.6 | 91.6 | 1.6 | 0.2 |
 | F6: Person-centred (named people) | 20.1 | 16.7 | -0.6 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Abortion and Pregnancy Policies (15.6%); Christian Nationalism and P
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.1% (3.6%); outrage 51.1% (59.6%); humor 0.0% (0.2%); question 39.7% (15.6%); breaking_live 0.7% (2.0%); episode_show 0.0% (7.6%); interview_guest 13.5% (8.5%); reaction 0.7% (2.2%); confrontation 2.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 12.8% (9.5%)
 
 
-Nearest style neighbours: @thomhartmann [left]; @LeejaMiller [left]; @AndrewKlavan [right]; @MrTariqNasheed [right]; @morebridgetphetasy [right]
+Nearest style neighbors: @thomhartmann [left]; @LeejaMiller [left]; @AndrewKlavan [right]; @MrTariqNasheed [right]; @morebridgetphetasy [right]
 
-Nearest topic neighbours: @MichaelKnowles [right]; @MattWalsh [right]; @RileyGaines [right]; @ZubyMusic [right]; @bbrettcooper [right]
+Nearest topic neighbors: @MichaelKnowles [right]; @MattWalsh [right]; @RileyGaines [right]; @ZubyMusic [right]; @bbrettcooper [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

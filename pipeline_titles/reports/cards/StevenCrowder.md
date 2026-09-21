@@ -1,6 +1,6 @@
 # StevenCrowder (@StevenCrowder)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Louder with Crowder · clipper: no · platform: youtube · subscribers: 5910000.0
+Channel group: **right** (title-leaning score, document 14) · organization: Louder with Crowder · clipper: no · platform: youtube · subscribers: 5910000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (20.1%); Race and Politics in Media (4
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 74.5 | 77.0 | 0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 73.2 | 86.6 | 0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 52.3 | 34.7 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 52.3 | 34.7 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 39.7 | 82.4 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 68.6 | 69.5 | 0.6 | 0.2 |
 | F6: Person-centred (named people) | 8.8 | 7.5 | -0.9 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (20.1%); Race and Politics in Media (4
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (3.6%); outrage 72.8% (59.6%); humor 0.0% (0.2%); question 12.4% (15.6%); breaking_live 2.4% (2.0%); episode_show 0.0% (7.6%); interview_guest 5.3% (8.5%); reaction 1.8% (2.2%); confrontation 5.3% (7.8%); listicle 1.8% (0.1%); howto_explainer 8.9% (9.5%)
 
 
-Nearest style neighbours: @BenShapiro [right]; @KimIversen [neutral]; @bbrettcooper [right]; @RealDanBongino [right]; @franifio [left]
+Nearest style neighbors: @BenShapiro [right]; @KimIversen [neutral]; @bbrettcooper [right]; @RealDanBongino [right]; @franifio [left]
 
-Nearest topic neighbours: @TimcastIRL [right]; @TimcastNews [right]; @RealDanBongino [right]; @LiberalHivemind [right]; @TheQuartering [right]
+Nearest topic neighbors: @TimcastIRL [right]; @TimcastNews [right]; @RealDanBongino [right]; @LiberalHivemind [right]; @TheQuartering [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -87,7 +87,7 @@ Top topics: Hollywood and Oscars Politics (12.5%); Modern Women and Feminism Deb
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.6 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.6 | 0.0 |

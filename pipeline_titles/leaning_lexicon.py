@@ -9,11 +9,11 @@ titles against the left-side titles and its z-score. A word is `right` when z >=
 `left` when z <= -cutoff, otherwise `neither` (cutoff 1.96 = the two-sided 5 % level; words
 with fewer than 3 occurrences in both sides together are not classified).
 
-Comparisons (left side vs right side): titles (the titles the judge labelled left vs right)
+Comparisons (left side vs right side): titles (the titles the judge labeled left vs right)
 and channels (everything the left channels published vs everything the right channels
 published, channels grouped by their score), the same systems as the allotaxonographs.
 
-The lexicon check. For each judge, its labelled titles are split into five folds by channel;
+The lexicon check. For each judge, its labeled titles are split into five folds by channel;
 the lexicon is built on four folds and applied to the fifth, so no channel's titles help
 classify themselves. A title is `left` when it holds more left-class words than right-class
 words, `right` the other way round, `neither` when the counts tie (including no classified

@@ -1,6 +1,6 @@
 # Hutch (@hutch)
 
-Channel group: **neutral** (title-leaning score, document 14) · organisation: Hutch · clipper: no · platform: youtube · subscribers: 841000.0
+Channel group: **neutral** (title-leaning score, document 14) · organization: Hutch · clipper: no · platform: youtube · subscribers: 841000.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Shocking Events and Reactions (14.2%); Destiny and Ethan Klein debat
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 82.4 | 83.7 | 0.7 | 0.5 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 36.0 | 50.6 | -0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 50.6 | 18.0 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 50.6 | 18.0 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 64.0 | 82.0 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 57.3 | 57.3 | 0.3 | 0.1 |
 | F6: Person-centred (named people) | 18.0 | 23.8 | -0.7 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Shocking Events and Reactions (14.2%); Destiny and Ethan Klein debat
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.1% (2.4%); outrage 51.8% (36.0%); humor 1.8% (0.1%); question 13.0% (15.9%); breaking_live 1.2% (1.1%); episode_show 0.6% (7.0%); interview_guest 14.2% (11.6%); reaction 1.8% (1.9%); confrontation 22.8% (7.4%); listicle 0.0% (0.1%); howto_explainer 3.1% (6.6%)
 
 
-Nearest style neighbours: @JustPearlyThings [right]; @RealDanBongino [right]; @destiny [left]; @BenShapiro [right]; @TheLincolnProject [left]
+Nearest style neighbors: @JustPearlyThings [right]; @RealDanBongino [right]; @destiny [left]; @BenShapiro [right]; @TheLincolnProject [left]
 
-Nearest topic neighbours: @destiny [left]; @DestinyDGGClips [right]; @destinyhqclips [neutral]; @HasanAbi [left]; @DailyDenims [left]
+Nearest topic neighbors: @destiny [left]; @DestinyDGGClips [right]; @destinyhqclips [neutral]; @HasanAbi [left]; @DailyDenims [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -87,7 +87,7 @@ Top topics: Destiny and Ethan Klein debates (24.0%); Hasanabi Reacts to Hasan (1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 89.9 | 82.3 | 0.7 | 0.3 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 17.7 | 21.5 | -1.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.8 | 20.3 | -0.2 | 0.8 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.8 | 20.3 | -0.2 | 0.8 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 81.0 | 83.5 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 67.1 | 69.6 | -0.2 | -0.3 |
 | F6: Person-centred (named people) | 44.3 | 49.4 | 0.0 | 0.2 |
@@ -102,9 +102,9 @@ Top topics: Destiny and Ethan Klein debates (24.0%); Hasanabi Reacts to Hasan (1
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.0% (2.2%); outrage 46.0% (29.7%); humor 2.0% (0.1%); question 10.0% (4.6%); breaking_live 0.0% (52.4%); episode_show 0.0% (2.1%); interview_guest 14.0% (13.2%); reaction 6.0% (1.4%); confrontation 20.0% (7.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (1.0%)
 
 
-Nearest style neighbours: @ThePodcastoftheLotusEaters [right]; @franifio [left]; @nypost [right]; @NewsmaxTV [right]; @JustPearlyThings [right]
+Nearest style neighbors: @ThePodcastoftheLotusEaters [right]; @franifio [left]; @nypost [right]; @NewsmaxTV [right]; @JustPearlyThings [right]
 
-Nearest topic neighbours: @franifio [left]; @TheSerfTimes [left]; @NewsmaxTV [right]; @TheMajorityReport [left]; @NickCruseRBN [left]
+Nearest topic neighbors: @franifio [left]; @TheSerfTimes [left]; @NewsmaxTV [right]; @TheMajorityReport [left]; @NickCruseRBN [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):

@@ -1,6 +1,6 @@
 # Brian Kilmeade (@TheBrianKilmeadeShow)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: Fox News · clipper: no · platform: youtube · subscribers: 17100.0
+Channel group: **right** (title-leaning score, document 14) · organization: Fox News · clipper: no · platform: youtube · subscribers: 17100.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Iran War and Strait of Hormuz Tensions (36.1%); Socialism and Democr
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 73.6 | 51.9 | 0.6 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 49.4 | 47.7 | -0.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 83.3 | 87.0 | -0.0 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 83.3 | 87.0 | -0.0 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 32.2 | 37.2 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 82.4 | 79.1 | 1.1 | 0.2 |
 | F6: Person-centred (named people) | 41.0 | 43.1 | -0.4 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Iran War and Strait of Hormuz Tensions (36.1%); Socialism and Democr
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.3% (3.6%); outrage 57.4% (59.6%); humor 0.0% (0.2%); question 31.0% (15.6%); breaking_live 0.3% (2.0%); episode_show 0.0% (7.6%); interview_guest 4.8% (8.5%); reaction 2.0% (2.2%); confrontation 9.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 15.9% (9.5%)
 
 
-Nearest style neighbours: @zeteo [left]; @winston_marshall [right]; @JillianMichaels [right]; @lonerboxlive [right]; @TomiLahrenIsFearless [right]
+Nearest style neighbors: @zeteo [left]; @winston_marshall [right]; @JillianMichaels [right]; @lonerboxlive [right]; @TomiLahrenIsFearless [right]
 
-Nearest topic neighbours: @FoxNews [right]; @FoxNewsChannelClips [right]; @marklevinshow [right]; @NewsmaxTV [right]; @timesofindia [left]
+Nearest topic neighbors: @FoxNews [right]; @FoxNewsChannelClips [right]; @marklevinshow [right]; @NewsmaxTV [right]; @timesofindia [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
@@ -88,7 +88,7 @@ Top topics: Political Media Broadcasters (50.0%); Political Conferences and Fest
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 6.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.2 | -0.4 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.1 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.1 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 1.3 | -0.3 |
 | F6: Person-centred (named people) | None | None | 0.6 | 0.0 |

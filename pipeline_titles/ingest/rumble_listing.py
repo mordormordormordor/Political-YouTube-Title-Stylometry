@@ -121,7 +121,7 @@ def _session():
 
 # A 429 from Rumble is a per-IP throttle that lasts minutes, not seconds: a short
 # retry just burns the remaining attempts. Back off hard (30 s, 60 s, 90 s, ...) and
-# honour a Retry-After header when Rumble sends one.
+# honor a Retry-After header when Rumble sends one.
 _RATE_LIMIT_BACKOFF = 30.0
 _RATE_LIMIT_ATTEMPTS = 6
 

@@ -1,6 +1,6 @@
 # LonerBox Live (@lonerboxlive)
 
-Channel group: **right** (title-leaning score, document 14) · organisation: LonerBox · clipper: no · platform: youtube · subscribers: 59700.0
+Channel group: **right** (title-leaning score, document 14) · organization: LonerBox · clipper: no · platform: youtube · subscribers: 59700.0
 
 
 ## videos
@@ -15,7 +15,7 @@ Top topics: Israel-Palestine Conflict Media (11.4%); Hasanabi Reacts to Hasan (1
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 41.0 | 32.6 | 0.0 | 0.2 |
 | F2: Clause headline vs noun-phrase (finite verbs, tense) | 39.7 | 40.2 | -0.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 52.7 | 28.9 | -0.3 | -0.3 |
+| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 52.7 | 28.9 | -0.3 | -0.3 |
 | F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 74.5 | 66.9 | 0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 25.1 | 28.5 | -0.2 | 0.2 |
 | F6: Person-centred (named people) | 51.5 | 62.8 | -0.2 | -0.2 |
@@ -30,9 +30,9 @@ Top topics: Israel-Palestine Conflict Media (11.4%); Hasanabi Reacts to Hasan (1
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.1% (3.6%); outrage 65.9% (59.6%); humor 1.1% (0.2%); question 13.6% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 9.1% (8.5%); reaction 4.5% (2.2%); confrontation 25.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 5.7% (9.5%)
 
 
-Nearest style neighbours: @winston_marshall [right]; @TheBrianKilmeadeShow [right]; @RealAmericasVoice [right]; @rolandsmartin [left]; @MLChristiansen [right]
+Nearest style neighbors: @winston_marshall [right]; @TheBrianKilmeadeShow [right]; @RealAmericasVoice [right]; @rolandsmartin [left]; @MLChristiansen [right]
 
-Nearest topic neighbours: @DestinyDGGClips [right]; @HasanabiClips [left]; @destiny [left]; @DailyDenims [left]; @BadEmpanadaLive [left]
+Nearest topic neighbors: @DestinyDGGClips [right]; @HasanabiClips [left]; @destiny [left]; @DailyDenims [left]; @BadEmpanadaLive [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
