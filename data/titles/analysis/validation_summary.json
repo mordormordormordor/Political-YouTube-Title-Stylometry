@@ -1,17 +1,17 @@
 {
-  "n_rated": 3000,
-  "n_matched": 3000,
+  "n_rated": 2854,
+  "n_matched": 2854,
   "n_creator_groups": 318,
-  "n_retest": 300,
+  "n_retest": 289,
   "candidates": [
     {
       "candidate": "Sensational",
       "llm_column": "sensational",
       "best_factor": "F1",
       "factor_auto_name": "+vader_compound -vader_neg -shock_word -violence_verb",
-      "creator_level_r": -0.711,
+      "creator_level_r": -0.709,
       "second_factor": "F5",
-      "second_r": -0.329,
+      "second_r": -0.322,
       "verdict": "merged: Sensational, Critical, Analytical/Informational",
       "merged_with": "Sensational, Critical, Analytical/Informational"
     },
@@ -20,9 +20,9 @@
       "llm_column": "critical",
       "best_factor": "F1",
       "factor_auto_name": "+vader_compound -vader_neg -shock_word -violence_verb",
-      "creator_level_r": -0.489,
+      "creator_level_r": -0.494,
       "second_factor": "F5",
-      "second_r": -0.182,
+      "second_r": -0.167,
       "verdict": "merged: Sensational, Critical, Analytical/Informational",
       "merged_with": "Sensational, Critical, Analytical/Informational"
     },
@@ -31,9 +31,9 @@
       "llm_column": "analytical",
       "best_factor": "F1",
       "factor_auto_name": "+vader_compound -vader_neg -shock_word -violence_verb",
-      "creator_level_r": 0.433,
+      "creator_level_r": 0.422,
       "second_factor": "F5",
-      "second_r": 0.425,
+      "second_r": 0.419,
       "verdict": "merged: Sensational, Critical, Analytical/Informational",
       "merged_with": "Sensational, Critical, Analytical/Informational"
     },
@@ -42,9 +42,9 @@
       "llm_column": "educational",
       "best_factor": "F5",
       "factor_auto_name": "+q_word_start +wh_any +why_marker +q_mark",
-      "creator_level_r": 0.392,
+      "creator_level_r": 0.384,
       "second_factor": "F1",
-      "second_r": 0.32,
+      "second_r": 0.312,
       "verdict": "partial",
       "merged_with": ""
     },
@@ -52,10 +52,10 @@
       "candidate": "Conversational",
       "llm_column": "conversational",
       "best_factor": "F4",
-      "factor_auto_name": "+discourse_marker +trailing_ellipsis +ellipsis +contraction",
-      "creator_level_r": 0.177,
+      "factor_auto_name": "+trailing_ellipsis +discourse_marker +ellipsis +contraction",
+      "creator_level_r": 0.174,
       "second_factor": "F1",
-      "second_r": 0.17,
+      "second_r": 0.166,
       "verdict": "absent",
       "merged_with": ""
     },
@@ -63,10 +63,10 @@
       "candidate": "Humor",
       "llm_column": "humor",
       "best_factor": "F2",
-      "factor_auto_name": "+has_finite_verb +present_tense +past_tense +verb_share",
-      "creator_level_r": 0.082,
+      "factor_auto_name": "+has_finite_verb +present_tense +verb_share +past_tense",
+      "creator_level_r": 0.077,
       "second_factor": "F4",
-      "second_r": 0.063,
+      "second_r": 0.067,
       "verdict": "absent",
       "merged_with": ""
     }
@@ -74,52 +74,52 @@
   "retest": [
     {
       "dimension": "sensational",
-      "n": 300,
-      "exact_agreement": 0.623,
-      "within_1": 0.783,
-      "spearman_r": 0.743,
-      "weighted_kappa": 0.742,
+      "n": 289,
+      "exact_agreement": 0.616,
+      "within_1": 0.782,
+      "spearman_r": 0.74,
+      "weighted_kappa": 0.737,
       "kappa": NaN
     },
     {
       "dimension": "critical",
-      "n": 300,
-      "exact_agreement": 0.713,
-      "within_1": 0.753,
-      "spearman_r": 0.58,
-      "weighted_kappa": 0.581,
+      "n": 289,
+      "exact_agreement": 0.709,
+      "within_1": 0.751,
+      "spearman_r": 0.582,
+      "weighted_kappa": 0.585,
       "kappa": NaN
     },
     {
       "dimension": "analytical",
-      "n": 300,
-      "exact_agreement": 0.583,
-      "within_1": 0.773,
-      "spearman_r": 0.6,
-      "weighted_kappa": 0.561,
+      "n": 289,
+      "exact_agreement": 0.581,
+      "within_1": 0.768,
+      "spearman_r": 0.598,
+      "weighted_kappa": 0.552,
       "kappa": NaN
     },
     {
       "dimension": "educational",
-      "n": 300,
-      "exact_agreement": 0.823,
-      "within_1": 0.953,
-      "spearman_r": 0.268,
-      "weighted_kappa": 0.251,
+      "n": 289,
+      "exact_agreement": 0.824,
+      "within_1": 0.952,
+      "spearman_r": 0.251,
+      "weighted_kappa": 0.236,
       "kappa": NaN
     },
     {
       "dimension": "conversational",
-      "n": 300,
-      "exact_agreement": 0.903,
-      "within_1": 0.947,
-      "spearman_r": 0.518,
-      "weighted_kappa": 0.659,
+      "n": 289,
+      "exact_agreement": 0.9,
+      "within_1": 0.945,
+      "spearman_r": 0.496,
+      "weighted_kappa": 0.632,
       "kappa": NaN
     },
     {
       "dimension": "humor",
-      "n": 300,
+      "n": 289,
       "exact_agreement": 0.993,
       "within_1": NaN,
       "spearman_r": NaN,
@@ -128,40 +128,40 @@
     },
     {
       "dimension": "curiosity_gap",
-      "n": 300,
-      "exact_agreement": 0.98,
+      "n": 289,
+      "exact_agreement": 0.979,
       "within_1": NaN,
       "spearman_r": NaN,
       "weighted_kappa": NaN,
-      "kappa": 0.49
+      "kappa": 0.39
     },
     {
       "dimension": "outrage",
-      "n": 300,
-      "exact_agreement": 0.757,
+      "n": 289,
+      "exact_agreement": 0.754,
       "within_1": NaN,
       "spearman_r": NaN,
       "weighted_kappa": NaN,
-      "kappa": 0.497
+      "kappa": 0.492
     },
     {
       "dimension": "format_llm",
-      "n": 300,
-      "exact_agreement": 0.797,
+      "n": 289,
+      "exact_agreement": 0.796,
       "within_1": NaN,
       "spearman_r": NaN,
       "weighted_kappa": NaN,
-      "kappa": 0.591
+      "kappa": 0.59
     }
   ],
   "llm_means": {
-    "sensational": 2.747,
-    "critical": 2.462,
-    "analytical": 1.856,
-    "educational": 1.18,
+    "sensational": 2.748,
+    "critical": 2.464,
+    "analytical": 1.854,
+    "educational": 1.182,
     "conversational": 1.167,
     "humor": 0.004,
     "curiosity_gap": 0.021,
-    "outrage": 0.572
+    "outrage": 0.574
   }
 }

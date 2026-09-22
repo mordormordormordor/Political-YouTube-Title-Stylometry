@@ -4,16 +4,16 @@
     "name": "Positive tone vs outrage (shock words, violence verbs, negative sentiment)"
   },
   "F2": {
-    "auto": "+has_finite_verb +present_tense +past_tense +verb_share",
-    "name": "Clause headline vs noun-phrase (finite verbs, tense)"
+    "auto": "+has_finite_verb +present_tense +verb_share +past_tense",
+    "name": ""
   },
   "F3": {
     "auto": "+lead_colon_label +lead_live +colon -entity_first",
     "name": "Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels)"
   },
   "F4": {
-    "auto": "+discourse_marker +trailing_ellipsis +ellipsis +contraction",
-    "name": "Conversational stream talk (chat, ellipsis, contractions, imperatives, we)"
+    "auto": "+trailing_ellipsis +discourse_marker +ellipsis +contraction",
+    "name": ""
   },
   "F5": {
     "auto": "+q_word_start +wh_any +why_marker +q_mark",
@@ -40,11 +40,11 @@
     "name": "Quoted speech"
   },
   "F11": {
-    "auto": "+vader_pos +n_chars +nominalisation",
-    "name": "Long, upbeat, abstract (length, positive words, nominalisations)"
+    "auto": "+n_chars +vader_pos +nominalisation +n_org",
+    "name": ""
   },
   "F12": {
-    "auto": "+future_will +modal +first_pl",
-    "name": "Modal and future speculation (will, could, we)"
+    "auto": "+first_pl +future_will +modal",
+    "name": ""
   }
 }

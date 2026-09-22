@@ -5,37 +5,37 @@ Channel group: **right** (title-leaning score, document 14) · organization: Mar
 
 ## videos
 
-Titles: 92 rows, 92 unique (repeat share 0.0%); ranked; political share 96.7%.
+Titles: 89 rows, 89 unique (repeat share 0.0%); ranked; political share 100.0%.
 
 
-Top topics: Race and Politics in Media (6.5%); Shocking Events and Reactions (4.3%); Immigration and Deportation Policies (3.3%); WNBA and Sophie Cunningham controversy (3.3%); TikTok Censorship and Politics (3.3%)
+Top topics: Black America and Racism Discussions (9.0%); Shocking Events and Reactions (4.5%); Immigration and Deportation Policies (4.5%); TikTok Censorship and Political Debates (3.4%); ICE protests in Minneapolis (2.2%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 61.9 | 55.6 | 0.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 97.1 | 93.7 | 1.2 | 0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 20.9 | 14.6 | -0.5 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 87.9 | 84.1 | 0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 64.9 | 61.9 | 0.5 | 0.2 |
-| F6: Person-centred (named people) | 20.5 | 43.9 | -0.6 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 4.6 | 2.1 | -1.2 | -0.7 |
-| F8: Numeric and dated (digits, years) | 63.6 | 51.0 | -0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 52.3 | 62.3 | -0.3 | -0.3 |
-| F10: Quoted speech | 85.4 | 81.2 | 0.5 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 86.6 | 82.8 | 0.6 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 36.8 | 29.3 | -0.3 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 57.2 | 54.2 | 0.3 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 95.8 | 91.1 | 1.1 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 22.5 | 16.9 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 87.7 | 87.7 | 0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 65.3 | 63.6 | 0.5 | 0.2 |
+| F6: Person-centred (named people) | 33.9 | 43.2 | -0.5 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 6.8 | 3.4 | -1.2 | -0.7 |
+| F8: Numeric and dated (digits, years) | 62.3 | 47.5 | -0.1 | -0.1 |
+| F9: ALL-CAPS shouting | 65.7 | 66.9 | -0.1 | -0.3 |
+| F10: Quoted speech | 86.9 | 83.9 | 0.5 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 85.6 | 79.2 | 0.5 | -0.2 |
+| F12: +first_pl +future_will +modal | 17.4 | 14.8 | -0.6 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.2% (3.6%); outrage 76.1% (59.6%); humor 0.0% (0.2%); question 5.4% (15.6%); breaking_live 1.1% (2.0%); episode_show 0.0% (7.6%); interview_guest 7.6% (8.5%); reaction 0.0% (2.2%); confrontation 9.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 9.8% (9.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.5% (4.8%); outrage 75.3% (59.8%); humor 0.0% (0.2%); question 5.6% (15.3%); breaking_live 1.1% (2.0%); episode_show 0.0% (7.5%); interview_guest 6.7% (7.7%); reaction 0.0% (2.2%); confrontation 9.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 10.1% (9.3%)
 
 
-Nearest style neighbors: @glennbeck [right]; @ChadPrather1 [right]; @morebridgetphetasy [right]; @JillianMichaels [right]; @Tim_Black [right]
+Nearest style neighbors: @glennbeck [right]; @JillianMichaels [right]; @ChadPrather1 [right]; @morebridgetphetasy [right]; @Tim_Black [right]
 
-Nearest topic neighbors: @BenShapiro [right]; @bennyjohnson [right]; @franifio [left]; @MichaelKnowles [right]; @RubinReport [right]
+Nearest topic neighbors: @BenShapiro [right]; @MichaelKnowles [right]; @AfterPartyEmily [right]; @TheAmalaEkpunobi [right]; @bennyjohnson [right]
 
 
 Engagement: n < 100 titles with views, not estimated.
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 0.0 per 100, mean length 11.5435 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 0.0 per 100, mean length 11.382 tokens.

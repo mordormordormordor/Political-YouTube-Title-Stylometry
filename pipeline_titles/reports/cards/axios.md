@@ -5,32 +5,32 @@ Channel group: **neutral** (title-leaning score, document 14) · organization: A
 
 ## videos
 
-Titles: 138 rows, 137 unique (repeat share 0.7%); ranked; political share 78.8%.
+Titles: 138 rows, 137 unique (repeat share 0.7%); ranked; political share 82.5%.
 
 
-Top topics: AI and Political Concerns (21.9%); Tech Business and Startups (12.4%); Political Media Figures (5.1%); Political Podcasts and Influencers (5.1%); Iran War and Strait of Hormuz Tensions (4.4%)
+Top topics: AI and Political Implications (21.9%); Tech Business Founders and Industry (13.1%); Political Podcasts and Media (5.1%); Political Figures and Callouts (4.4%); Trump and Iran War Negotiations (3.6%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 76.2 | 92.1 | 0.6 | 0.5 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 43.5 | 26.8 | -0.2 | -0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.4 | 71.1 | -0.3 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 73.6 | 66.5 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 59.8 | 65.7 | 0.3 | 0.1 |
-| F6: Person-centred (named people) | 56.9 | 49.4 | -0.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 84.9 | 84.1 | 0.3 | -0.1 |
-| F8: Numeric and dated (digits, years) | 29.7 | 67.4 | -0.3 | 0.0 |
-| F9: ALL-CAPS shouting | 48.1 | 62.8 | -0.3 | -0.4 |
-| F10: Quoted speech | 27.2 | 18.8 | -0.6 | -0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 58.6 | 61.9 | -0.1 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 56.1 | 69.0 | -0.1 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 71.2 | 91.1 | 0.5 | 0.5 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 43.6 | 29.2 | -0.2 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.4 | 69.1 | -0.4 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 73.7 | 61.9 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 63.6 | 66.1 | 0.4 | 0.1 |
+| F6: Person-centred (named people) | 53.4 | 44.9 | -0.2 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 84.3 | 83.9 | 0.3 | -0.3 |
+| F8: Numeric and dated (digits, years) | 34.3 | 65.3 | -0.3 | 0.0 |
+| F9: ALL-CAPS shouting | 50.8 | 63.6 | -0.3 | -0.3 |
+| F10: Quoted speech | 31.8 | 19.9 | -0.6 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 58.9 | 61.9 | -0.1 | -0.1 |
+| F12: +first_pl +future_will +modal | 65.7 | 72.0 | -0.0 | -0.0 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.6% (2.4%); outrage 12.4% (36.0%); humor 0.0% (0.1%); question 13.1% (15.9%); breaking_live 0.0% (1.1%); episode_show 0.0% (7.0%); interview_guest 24.8% (11.6%); reaction 0.0% (1.9%); confrontation 2.2% (7.4%); listicle 0.7% (0.1%); howto_explainer 9.5% (6.6%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.1% (3.1%); outrage 13.9% (36.7%); humor 0.0% (0.1%); question 13.1% (13.8%); breaking_live 0.0% (1.2%); episode_show 0.0% (7.1%); interview_guest 24.8% (11.7%); reaction 0.0% (2.0%); confrontation 2.2% (7.6%); listicle 0.7% (0.1%); howto_explainer 9.5% (6.8%)
 
 
-Nearest style neighbors: @hutch [neutral]; @LIVESNEAKO [neutral]; @TheJoyReidShow [left]; @OwenReport [left]; @XAVIAER [right]
+Nearest style neighbors: @hutch [neutral]; @TheJoyReidShow [left]; @LIVESNEAKO [neutral]; @OwenReport [left]; @TheDonLemonShow [left]
 
 Nearest topic neighbors: @Semafor [neutral]; @TechCrunch [neutral]; @Forbes [neutral]; @TheAtlantic [left]; @samharrisorg [left]
 
@@ -39,30 +39,29 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-02 | 64 | 0.59 | -1.22 | -0.29 | 0.14 | -0.57 | -0.30 | 0.10 | -0.49 | -0.29 | -0.47 | 0.86 | -0.71 | 0.00 | 0.02 | 0.00 |
-| 2026-04 | 15 | 0.04 | 1.07 | -0.26 | 0.39 | 1.75 | 0.69 | 0.13 | 0.03 | -0.44 | -0.27 | -0.79 | 0.71 | 0.07 | 0.27 | 0.00 |
-| 2026-07 | 15 | 0.71 | -0.07 | -0.37 | -0.37 | 0.47 | 0.57 | 0.70 | -0.50 | -0.38 | -0.74 | -1.23 | 0.03 | 0.00 | 0.13 | 0.00 |
+| 2026-01 | 60 | 0.31 | -1.43 | -0.20 | 0.12 | -0.59 | -0.16 | -0.06 | -0.86 | -0.25 | -0.56 | 0.46 | -0.55 | 0.05 | 0.00 | 0.00 |
+| 2026-02 | 16 | 0.76 | 0.00 | -0.72 | -0.14 | 0.82 | -0.49 | 1.26 | 0.81 | -0.18 | -0.42 | 0.39 | -0.51 | 0.06 | 0.44 | 0.00 |
 
 
-Engagement (n = 137, R2 = 0.7255; log views per within-creator SD, month + topic controls):
+Engagement (n = 137, R2 = 0.713; log views per within-creator SD, month + topic controls):
 
 | predictor | coef_per_sd | se | p |
 |---|---|---|---|
-| F1 | -0.553 | 0.215 | 0.010 |
-| F2 | -0.056 | 0.176 | 0.750 |
-| F3 | -0.338 | 0.211 | 0.110 |
-| F4 | 0.383 | 0.193 | 0.046 |
-| F5 | -0.128 | 0.172 | 0.459 |
-| F6 | -0.034 | 0.191 | 0.858 |
-| F7 | 0.003 | 0.199 | 0.990 |
-| F8 | 0.206 | 0.116 | 0.075 |
-| F9 | 0.392 | 0.153 | 0.010 |
-| F10 | 0.223 | 0.182 | 0.221 |
-| F11 | 0.004 | 0.154 | 0.982 |
-| F12 | -0.023 | 0.232 | 0.922 |
-| curiosity_gap | -0.124 | 0.097 | 0.200 |
-| outrage | 0.001 | 0.226 | 0.997 |
-| n_tokens | -0.006 | 0.200 | 0.976 |
+| F1 | -0.522 | 0.232 | 0.024 |
+| F2 | -0.029 | 0.212 | 0.890 |
+| F3 | -0.405 | 0.224 | 0.071 |
+| F4 | 0.308 | 0.224 | 0.169 |
+| F5 | -0.094 | 0.191 | 0.623 |
+| F6 | -0.036 | 0.211 | 0.863 |
+| F7 | -0.004 | 0.231 | 0.987 |
+| F8 | 0.194 | 0.154 | 0.207 |
+| F9 | 0.400 | 0.154 | 0.009 |
+| F10 | 0.068 | 0.220 | 0.756 |
+| F11 | -0.008 | 0.224 | 0.970 |
+| F12 | -0.077 | 0.284 | 0.786 |
+| curiosity_gap | -0.111 | 0.171 | 0.517 |
+| outrage | 0.129 | 0.201 | 0.520 |
+| n_tokens | 0.163 | 0.245 | 0.506 |
 
 
 Hit concentration: Gini 0.846, top-10 % share 77.6%, power-law tail not supported vs lognormal (LR = -2.0238, p = 0.043).
@@ -76,26 +75,26 @@ Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 
 Titles: 8 rows, 7 unique (repeat share 12.5%); LOW-N (not ranked); political share 57.1%.
 
 
-Top topics: Tech Business and Startups (42.9%); Climate and Weather Politics (28.6%); AI and Political Concerns (14.3%); Trump and Rising Energy Prices (14.3%)
+Top topics: Tech Business Founders and Industry (42.9%); AI and Political Implications (28.6%); Coal Industry Announcements (14.3%); Global Energy Crisis and Policy (14.3%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.6 | 0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -2.3 | 0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | 0.8 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.9 | -0.3 |
-| F6: Person-centred (named people) | None | None | -1.3 | 0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | 0.2 | 0.4 |
-| F8: Numeric and dated (digits, years) | None | None | 0.9 | 0.2 |
-| F9: ALL-CAPS shouting | None | None | -0.1 | -0.4 |
-| F10: Quoted speech | None | None | 0.2 | -0.7 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 0.0 | -0.6 |
-| F12: Modal and future speculation (will, could, we) | None | None | -1.2 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 1.1 | 0.3 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | None | None | -2.1 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | 0.9 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | -1.0 | -0.4 |
+| F6: Person-centred (named people) | None | None | -1.7 | 0.1 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | 0.4 | 0.4 |
+| F8: Numeric and dated (digits, years) | None | None | 0.8 | 0.2 |
+| F9: ALL-CAPS shouting | None | None | -0.3 | -0.4 |
+| F10: Quoted speech | None | None | 0.3 | -0.7 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | None | None | -0.2 | -0.6 |
+| F12: +first_pl +future_will +modal | None | None | -1.0 | 0.1 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.2%); outrage 0.0% (29.7%); humor 0.0% (0.1%); question 0.0% (4.6%); breaking_live 0.0% (52.4%); episode_show 0.0% (2.1%); interview_guest 0.0% (13.2%); reaction 0.0% (1.4%); confrontation 0.0% (7.4%); listicle 0.0% (0.0%); howto_explainer 0.0% (1.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.9%); outrage 0.0% (29.2%); humor 0.0% (0.1%); question 0.0% (4.8%); breaking_live 0.0% (52.5%); episode_show 0.0% (2.2%); interview_guest 0.0% (13.5%); reaction 0.0% (1.3%); confrontation 0.0% (7.6%); listicle 0.0% (0.0%); howto_explainer 0.0% (1.1%)
 
 
 Engagement: n < 100 titles with views, not estimated.

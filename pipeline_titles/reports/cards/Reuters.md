@@ -5,32 +5,32 @@ Channel group: **neutral** (title-leaning score, document 14) · organization: R
 
 ## videos
 
-Titles: 8,092 rows, 8,076 unique (repeat share 0.2%); ranked; political share 83.0%.
+Titles: 7,695 rows, 7,680 unique (repeat share 0.2%); ranked; political share 85.1%.
 
 
-Top topics: Iran War and Strait of Hormuz Tensions (5.9%); Ukraine-Russia War and Political Figures (4.1%); Iran War and Energy Market Impact (3.7%); AI and Political Concerns (3.5%); Trump and China political relations (2.9%)
+Top topics: AI and Political Implications (3.8%); Ukraine-Russia War and Political Figures (3.7%); Trump and Iran War Negotiations (3.7%); Iran War and Oil Market Impact (3.5%); FIFA World Cup and Trump controversy (3.0%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 69.5 | 62.8 | 0.5 | 0.5 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 76.2 | 73.2 | 0.5 | -0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 6.3 | 27.6 | -0.6 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 22.6 | 10.9 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 22.2 | 25.5 | -0.3 | 0.1 |
-| F6: Person-centred (named people) | 13.8 | 14.6 | -0.7 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 99.6 | 99.6 | 1.9 | -0.1 |
-| F8: Numeric and dated (digits, years) | 61.5 | 78.7 | -0.1 | 0.0 |
-| F9: ALL-CAPS shouting | 39.3 | 20.5 | -0.4 | -0.4 |
-| F10: Quoted speech | 66.1 | 70.3 | -0.1 | -0.1 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 42.3 | 49.8 | -0.4 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 80.3 | 87.9 | 0.3 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 72.5 | 63.1 | 0.5 | 0.5 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 77.5 | 72.9 | 0.5 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 5.5 | 22.9 | -0.7 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 19.9 | 7.6 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 25.8 | 27.5 | -0.3 | 0.1 |
+| F6: Person-centred (named people) | 13.6 | 16.1 | -0.7 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 99.6 | 99.6 | 2.0 | -0.3 |
+| F8: Numeric and dated (digits, years) | 57.2 | 79.2 | -0.1 | 0.0 |
+| F9: ALL-CAPS shouting | 41.9 | 24.6 | -0.4 | -0.3 |
+| F10: Quoted speech | 64.0 | 69.9 | -0.1 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 39.8 | 48.3 | -0.4 | -0.1 |
+| F12: +first_pl +future_will +modal | 86.4 | 91.5 | 0.4 | -0.0 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.6% (2.4%); outrage 25.3% (36.0%); humor 0.0% (0.1%); question 7.3% (15.9%); breaking_live 0.1% (1.1%); episode_show 0.1% (7.0%); interview_guest 5.0% (11.6%); reaction 0.6% (1.9%); confrontation 2.9% (7.4%); listicle 0.0% (0.1%); howto_explainer 2.0% (6.6%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.6% (3.1%); outrage 24.5% (36.7%); humor 0.0% (0.1%); question 7.5% (13.8%); breaking_live 0.1% (1.2%); episode_show 0.1% (7.1%); interview_guest 5.0% (11.7%); reaction 0.7% (2.0%); confrontation 3.0% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.1% (6.8%)
 
 
-Nearest style neighbors: @aljazeeraenglish [left]; @CBSNews [neutral]; @AssociatedPress [neutral]; @ABCNews [neutral]; @NBCNews [neutral]
+Nearest style neighbors: @aljazeeraenglish [left]; @CBSNews [neutral]; @ABCNews [neutral]; @AssociatedPress [neutral]; @NBCNews [neutral]
 
 Nearest topic neighbors: @AssociatedPress [neutral]; @BBCNews [neutral]; @CBSNews [neutral]; @aljazeeraenglish [left]; @Firstpost [neutral]
 
@@ -39,70 +39,70 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 784 | 0.33 | 0.15 | -0.21 | -0.25 | -0.57 | -0.67 | 1.90 | 0.35 | -1.28 | -0.26 | 0.24 | 0.46 | 0.03 | 0.26 | 0.00 |
-| 2026-02 | 1018 | 0.49 | 0.42 | -0.54 | -0.27 | -0.55 | -0.73 | 1.99 | -0.09 | -0.70 | -0.07 | -0.10 | 0.25 | 0.01 | 0.25 | 0.00 |
-| 2026-03 | 831 | 0.45 | 0.41 | -0.74 | -0.26 | -0.45 | -0.73 | 1.90 | -0.22 | -0.22 | -0.06 | -0.60 | 0.27 | 0.01 | 0.31 | 0.00 |
-| 2026-04 | 926 | 0.40 | 0.51 | -0.72 | -0.29 | -0.42 | -0.69 | 1.99 | -0.22 | -0.31 | -0.03 | -0.61 | 0.20 | 0.01 | 0.27 | 0.00 |
-| 2026-05 | 1032 | 0.53 | 0.46 | -0.76 | -0.35 | -0.36 | -0.69 | 2.01 | -0.00 | -0.25 | -0.15 | -0.49 | 0.13 | 0.01 | 0.23 | 0.00 |
-| 2026-06 | 965 | 0.61 | 0.60 | -0.74 | -0.34 | -0.35 | -0.77 | 1.97 | -0.13 | -0.27 | -0.12 | -0.43 | 0.25 | 0.01 | 0.25 | 0.00 |
-| 2026-07 | 962 | 0.74 | 0.64 | -0.77 | -0.29 | -0.31 | -0.73 | 1.83 | -0.17 | -0.12 | -0.01 | -0.37 | 0.34 | 0.01 | 0.25 | 0.00 |
-| 2026-08 | 1031 | 0.48 | 0.63 | -0.67 | -0.32 | 0.17 | -0.75 | 1.99 | -0.15 | -0.23 | -0.07 | -0.45 | 0.29 | 0.02 | 0.22 | 0.00 |
-| 2026-09* | 527 | 0.39 | 0.67 | -0.61 | -0.34 | 0.56 | -0.79 | 1.84 | -0.33 | -0.15 | -0.21 | -0.56 | 0.47 | 0.02 | 0.24 | 0.00 |
+| 2026-01 | 934 | 0.32 | 0.22 | -0.32 | -0.24 | -0.61 | -0.70 | 1.87 | 0.22 | -1.28 | -0.30 | 0.11 | 0.61 | 0.01 | 0.25 | 0.00 |
+| 2026-02 | 865 | 0.60 | 0.41 | -0.77 | -0.30 | -0.48 | -0.77 | 2.00 | -0.23 | -0.18 | -0.06 | -0.42 | 0.20 | 0.01 | 0.24 | 0.00 |
+| 2026-03 | 989 | 0.38 | 0.46 | -0.72 | -0.25 | -0.41 | -0.72 | 1.89 | -0.24 | -0.38 | -0.06 | -0.76 | 0.39 | 0.01 | 0.31 | 0.00 |
+| 2026-04 | 947 | 0.52 | 0.46 | -0.77 | -0.37 | -0.35 | -0.65 | 2.09 | -0.11 | -0.31 | -0.23 | -0.52 | 0.21 | 0.01 | 0.23 | 0.00 |
+| 2026-05 | 990 | 0.57 | 0.49 | -0.73 | -0.34 | -0.32 | -0.84 | 2.06 | -0.05 | -0.35 | -0.10 | -0.48 | 0.26 | 0.01 | 0.25 | 0.00 |
+| 2026-06 | 959 | 0.70 | 0.51 | -0.77 | -0.29 | -0.36 | -0.80 | 1.85 | -0.17 | -0.12 | -0.07 | -0.39 | 0.45 | 0.01 | 0.23 | 0.00 |
+| 2026-07 | 944 | 0.60 | 0.67 | -0.74 | -0.29 | -0.09 | -0.73 | 1.86 | -0.11 | -0.18 | -0.05 | -0.47 | 0.34 | 0.03 | 0.24 | 0.00 |
+| 2026-08 | 699 | 0.39 | 0.60 | -0.60 | -0.37 | 0.41 | -0.73 | 2.04 | -0.31 | -0.24 | -0.17 | -0.54 | 0.38 | 0.03 | 0.22 | 0.00 |
+| 2026-09* | 353 | 0.53 | 0.56 | -0.63 | -0.39 | 0.70 | -0.80 | 1.86 | -0.28 | -0.24 | -0.30 | -0.52 | 0.50 | 0.04 | 0.21 | 0.00 |
 
 
-Engagement (n = 8076, R2 = 0.1973; log views per within-creator SD, month + topic controls):
+Engagement (n = 7680, R2 = 0.1975; log views per within-creator SD, month + topic controls):
 
 | predictor | coef_per_sd | se | p |
 |---|---|---|---|
-| F1 | -0.021 | 0.021 | 0.316 |
-| F2 | 0.006 | 0.015 | 0.717 |
-| F3 | -0.109 | 0.018 | 0.000 |
-| F4 | 0.097 | 0.018 | 0.000 |
-| F5 | 0.076 | 0.015 | 0.000 |
-| F6 | 0.123 | 0.016 | 0.000 |
-| F7 | 0.033 | 0.019 | 0.074 |
-| F8 | 0.007 | 0.016 | 0.657 |
-| F9 | -0.007 | 0.017 | 0.690 |
-| F10 | -0.031 | 0.016 | 0.050 |
-| F11 | -0.036 | 0.021 | 0.083 |
-| F12 | 0.004 | 0.017 | 0.813 |
-| curiosity_gap | 0.025 | 0.015 | 0.104 |
-| outrage | 0.114 | 0.017 | 0.000 |
-| humor | 0.018 | 0.010 | 0.057 |
-| n_tokens | 0.089 | 0.018 | 0.000 |
+| F1 | -0.022 | 0.022 | 0.304 |
+| F2 | 0.006 | 0.016 | 0.695 |
+| F3 | -0.116 | 0.018 | 0.000 |
+| F4 | 0.106 | 0.018 | 0.000 |
+| F5 | 0.080 | 0.016 | 0.000 |
+| F6 | 0.120 | 0.017 | 0.000 |
+| F7 | 0.027 | 0.019 | 0.163 |
+| F8 | -0.001 | 0.016 | 0.938 |
+| F9 | -0.015 | 0.018 | 0.396 |
+| F10 | -0.038 | 0.016 | 0.020 |
+| F11 | -0.030 | 0.022 | 0.166 |
+| F12 | 0.019 | 0.019 | 0.301 |
+| curiosity_gap | 0.049 | 0.015 | 0.001 |
+| outrage | 0.116 | 0.017 | 0.000 |
+| humor | 0.016 | 0.008 | 0.043 |
+| n_tokens | 0.093 | 0.018 | 0.000 |
 
 
-Hit concentration: Gini 0.7583, top-10 % share 66.3%, power-law tail not supported vs lognormal (LR = -1.2203, p = 0.2223).
+Hit concentration: Gini 0.7623, top-10 % share 67.0%, power-law tail not supported vs lognormal (LR = -1.2783, p = 0.2012).
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) 0.8801, Zipf 0.6414, formulaic titles 35.1288 per 100, mean length 9.6175 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) 0.882, Zipf 0.63, formulaic titles 33.5026 per 100, mean length 9.575 tokens.
 
 
 ## streams
 
-Titles: 2,294 rows, 2,008 unique (repeat share 12.5%); ranked; political share 78.7%.
+Titles: 2,176 rows, 1,901 unique (repeat share 12.6%); ranked; political share 86.5%.
 
 
-Top topics: G7 Summit and Macron-Trump Bilateral Meetings (7.7%); 2026 World Cup (6.4%); Anti-Trump Protests and Riots (4.6%); Trump's speeches and events (3.7%); Artemis II Moon Mission Updates (3.6%)
+Top topics: NATO Summit and Political Leaders (6.9%); FIFA World Cup and Trump controversy (6.3%); Artemis II Moon Mission Updates (4.3%); Trump and Macron G7 Summit Meetings (3.2%); Trump vs Maduro in Venezuela (2.9%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 86.1 | 83.5 | 0.6 | 0.3 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 74.7 | 77.2 | 0.3 | 0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 98.7 | 100.0 | 3.5 | 0.8 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 64.6 | 48.1 | -0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 27.8 | 29.1 | -0.4 | -0.3 |
-| F6: Person-centred (named people) | 12.7 | 17.7 | -0.5 | 0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 83.5 | 91.1 | 0.8 | 0.4 |
-| F8: Numeric and dated (digits, years) | 6.3 | 22.8 | -0.6 | 0.2 |
-| F9: ALL-CAPS shouting | 59.5 | 46.8 | -0.3 | -0.4 |
-| F10: Quoted speech | 10.1 | 21.5 | -0.9 | -0.7 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 19.0 | 24.1 | -0.7 | -0.6 |
-| F12: Modal and future speculation (will, could, we) | 7.6 | 21.5 | -0.9 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 83.1 | 81.8 | 0.6 | 0.3 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 72.7 | 75.3 | 0.2 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 98.7 | 100.0 | 3.6 | 0.9 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 70.1 | 58.4 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 27.3 | 31.2 | -0.5 | -0.4 |
+| F6: Person-centred (named people) | 11.7 | 18.2 | -0.5 | 0.1 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 83.1 | 90.9 | 0.8 | 0.4 |
+| F8: Numeric and dated (digits, years) | 6.5 | 26.0 | -0.5 | 0.2 |
+| F9: ALL-CAPS shouting | 61.0 | 53.2 | -0.2 | -0.4 |
+| F10: Quoted speech | 14.3 | 20.8 | -0.9 | -0.7 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 10.4 | 22.1 | -0.9 | -0.6 |
+| F12: +first_pl +future_will +modal | 10.4 | 24.7 | -0.7 | 0.1 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (2.2%); outrage 9.1% (29.7%); humor 0.1% (0.1%); question 0.0% (4.6%); breaking_live 99.5% (52.4%); episode_show 0.0% (2.1%); interview_guest 4.9% (13.2%); reaction 0.6% (1.4%); confrontation 1.6% (7.4%); listicle 0.0% (0.0%); howto_explainer 0.1% (1.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.8% (2.9%); outrage 9.3% (29.2%); humor 0.1% (0.1%); question 0.0% (4.8%); breaking_live 99.6% (52.5%); episode_show 0.0% (2.2%); interview_guest 4.9% (13.5%); reaction 0.6% (1.3%); confrontation 1.6% (7.6%); listicle 0.0% (0.0%); howto_explainer 0.1% (1.1%)
 
 
 Nearest style neighbors: @AssociatedPress [neutral]; @NBCNews [neutral]; @msnow [left]; @MeidasTouch [left]; @ABCNews [neutral]
@@ -114,40 +114,40 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 222 | 0.85 | 0.05 | 3.59 | -0.04 | -0.45 | -0.48 | 0.88 | -0.50 | -0.13 | -1.07 | -0.56 | -0.85 | 0.03 | 0.09 | 0.00 |
-| 2026-02 | 323 | 0.73 | 0.25 | 3.48 | -0.10 | -0.42 | -0.59 | 0.86 | -0.40 | -0.24 | -0.74 | -0.63 | -0.88 | 0.03 | 0.07 | 0.00 |
-| 2026-03 | 241 | 0.83 | 0.29 | 3.63 | 0.02 | -0.41 | -0.50 | 0.60 | -0.66 | -0.25 | -0.96 | -0.59 | -0.80 | 0.03 | 0.10 | 0.00 |
-| 2026-04 | 199 | 0.47 | 0.58 | 3.52 | -0.12 | -0.45 | -0.44 | 0.82 | -0.43 | -0.23 | -0.95 | -0.68 | -1.04 | 0.02 | 0.11 | 0.00 |
-| 2026-05 | 205 | 0.49 | 0.36 | 3.47 | -0.04 | -0.40 | -0.64 | 0.62 | -0.29 | -0.16 | -1.03 | -0.88 | -0.91 | 0.04 | 0.10 | 0.00 |
-| 2026-06 | 217 | 0.52 | 0.40 | 3.51 | -0.07 | -0.42 | -0.54 | 0.91 | -0.72 | -0.18 | -0.87 | -0.89 | -0.92 | 0.06 | 0.10 | 0.00 |
-| 2026-07 | 252 | 0.39 | 0.66 | 3.49 | 0.06 | -0.42 | -0.48 | 0.74 | -0.99 | -0.41 | -0.78 | -0.85 | -0.78 | 0.02 | 0.10 | 0.00 |
-| 2026-08 | 231 | 0.69 | 0.27 | 3.65 | 0.06 | -0.38 | -0.61 | 0.64 | -0.77 | -0.41 | -0.81 | -0.69 | -1.07 | 0.02 | 0.09 | 0.00 |
-| 2026-09* | 118 | 0.49 | -0.11 | 3.57 | -0.15 | -0.58 | -0.33 | 0.65 | -0.45 | -0.50 | -0.64 | -0.71 | -1.07 | 0.02 | 0.07 | 0.00 |
+| 2026-01 | 294 | 0.59 | 0.12 | 3.47 | -0.02 | -0.43 | -0.51 | 0.91 | -0.29 | -0.04 | -0.82 | -0.85 | -0.61 | 0.04 | 0.10 | 0.00 |
+| 2026-02 | 268 | 0.77 | 0.06 | 3.69 | 0.02 | -0.48 | -0.58 | 0.82 | -0.47 | -0.41 | -0.82 | -0.66 | -0.73 | 0.04 | 0.09 | 0.00 |
+| 2026-03 | 236 | 0.59 | 0.38 | 3.47 | -0.03 | -0.45 | -0.36 | 0.78 | -0.51 | -0.07 | -1.07 | -0.77 | -0.73 | 0.04 | 0.12 | 0.00 |
+| 2026-04 | 213 | 0.54 | 0.23 | 3.51 | 0.01 | -0.43 | -0.58 | 0.78 | -0.12 | -0.09 | -0.95 | -0.87 | -0.85 | 0.02 | 0.08 | 0.00 |
+| 2026-05 | 189 | 0.43 | 0.19 | 3.51 | 0.04 | -0.43 | -0.72 | 0.82 | -0.53 | -0.24 | -0.88 | -1.21 | -0.74 | 0.04 | 0.10 | 0.00 |
+| 2026-06 | 232 | 0.37 | 0.70 | 3.59 | 0.05 | -0.54 | -0.41 | 0.84 | -0.59 | -0.12 | -0.86 | -0.96 | -0.56 | 0.05 | 0.09 | 0.00 |
+| 2026-07 | 233 | 0.52 | 0.28 | 3.64 | 0.10 | -0.39 | -0.47 | 0.80 | -0.75 | -0.36 | -0.83 | -0.89 | -0.80 | 0.03 | 0.08 | 0.00 |
+| 2026-08 | 161 | 0.46 | 0.20 | 3.74 | 0.11 | -0.47 | -0.65 | 0.71 | -0.52 | -0.31 | -0.82 | -0.96 | -0.82 | 0.01 | 0.09 | 0.00 |
+| 2026-09* | 75 | 0.87 | -0.30 | 3.57 | -0.11 | -0.59 | -0.26 | 0.64 | -0.41 | -0.33 | -0.54 | -0.60 | -1.01 | 0.05 | 0.05 | 0.00 |
 
 
-Engagement (n = 2008, R2 = 0.1716; log views per within-creator SD, month + topic controls):
+Engagement (n = 1901, R2 = 0.1775; log views per within-creator SD, month + topic controls):
 
 | predictor | coef_per_sd | se | p |
 |---|---|---|---|
-| F1 | 0.032 | 0.038 | 0.400 |
-| F2 | 0.087 | 0.033 | 0.008 |
-| F3 | -0.039 | 0.033 | 0.230 |
-| F4 | 0.080 | 0.037 | 0.032 |
-| F5 | 0.095 | 0.038 | 0.012 |
-| F6 | 0.023 | 0.035 | 0.514 |
-| F7 | -0.061 | 0.031 | 0.050 |
-| F8 | 0.034 | 0.032 | 0.287 |
-| F9 | -0.011 | 0.034 | 0.735 |
-| F10 | -0.056 | 0.029 | 0.058 |
-| F11 | 0.044 | 0.044 | 0.320 |
-| F12 | 0.041 | 0.034 | 0.228 |
-| curiosity_gap | 0.006 | 0.021 | 0.781 |
-| outrage | 0.049 | 0.029 | 0.094 |
-| humor | 0.012 | 0.464 | 0.979 |
-| n_tokens | -0.110 | 0.041 | 0.007 |
+| F1 | 0.003 | 0.040 | 0.938 |
+| F2 | 0.080 | 0.033 | 0.016 |
+| F3 | -0.048 | 0.040 | 0.230 |
+| F4 | 0.095 | 0.040 | 0.018 |
+| F5 | 0.069 | 0.037 | 0.067 |
+| F6 | 0.020 | 0.035 | 0.575 |
+| F7 | -0.049 | 0.032 | 0.122 |
+| F8 | 0.015 | 0.031 | 0.639 |
+| F9 | -0.029 | 0.035 | 0.408 |
+| F10 | -0.078 | 0.030 | 0.010 |
+| F11 | 0.023 | 0.047 | 0.624 |
+| F12 | 0.031 | 0.034 | 0.359 |
+| curiosity_gap | -0.018 | 0.027 | 0.511 |
+| outrage | 0.052 | 0.030 | 0.086 |
+| humor | 0.002 | 0.092 | 0.982 |
+| n_tokens | -0.111 | 0.044 | 0.013 |
 
 
-Hit concentration: Gini 0.732, top-10 % share 65.0%, power-law tail not supported vs lognormal (LR = -0.0656, p = 0.9477).
+Hit concentration: Gini 0.7326, top-10 % share 65.2%, power-law tail not supported vs lognormal (LR = -0.0211, p = 0.9831).
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) 0.8333, Zipf 0.6693, formulaic titles 81.8725 per 100, mean length 9.1539 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) 0.8386, Zipf 0.6849, formulaic titles 82.0095 per 100, mean length 9.1689 tokens.

@@ -5,82 +5,74 @@ Channel group: **right** (title-leaning score, document 14) · organization: Ale
 
 ## videos
 
-Titles: 87 rows, 87 unique (repeat share 0.0%); ranked; political share 90.8%.
+Titles: 82 rows, 82 unique (repeat share 0.0%); ranked; political share 93.9%.
 
 
-Top topics: Anti-Trump Protests and Riots (12.6%); Transgender Rights and Politics (6.9%); Homelessness and Socialist Mayors in US Cities (5.8%); Ben Shapiro and Political Commentary (4.6%); Political Podcasts and Influencers (4.6%)
+Top topics: No Kings Protests Movement (7.3%); Transgender Rights and Political Debate (6.1%); Homelessness in US Cities (6.1%); Black America and Racism Discussions (4.9%); Right-Wing Political Figures Debate (4.9%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 70.7 | 72.8 | 0.5 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 39.3 | 33.5 | -0.2 | 0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 40.6 | 61.1 | -0.4 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 52.7 | 46.4 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 39.3 | 36.8 | -0.0 | 0.2 |
-| F6: Person-centred (named people) | 27.6 | 33.9 | -0.6 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 24.3 | 28.9 | -0.8 | -0.7 |
-| F8: Numeric and dated (digits, years) | 8.8 | 20.9 | -0.5 | -0.2 |
-| F9: ALL-CAPS shouting | 33.1 | 35.1 | -0.4 | -0.3 |
-| F10: Quoted speech | 61.1 | 59.0 | -0.2 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 2.1 | 6.3 | -1.5 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 37.7 | 31.8 | -0.3 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 68.2 | 70.3 | 0.4 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 43.2 | 39.0 | -0.2 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 58.1 | 61.0 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 47.0 | 44.5 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 38.6 | 38.6 | -0.1 | 0.2 |
+| F6: Person-centred (named people) | 20.8 | 32.2 | -0.6 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 35.6 | 30.1 | -0.7 | -0.7 |
+| F8: Numeric and dated (digits, years) | 14.8 | 25.8 | -0.4 | -0.1 |
+| F9: ALL-CAPS shouting | 28.0 | 32.6 | -0.5 | -0.3 |
+| F10: Quoted speech | 61.0 | 59.3 | -0.2 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 4.2 | 8.9 | -1.2 | -0.2 |
+| F12: +first_pl +future_will +modal | 46.6 | 33.5 | -0.2 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.1% (3.6%); outrage 43.7% (59.6%); humor 0.0% (0.2%); question 10.3% (15.6%); breaking_live 1.1% (2.0%); episode_show 0.0% (7.6%); interview_guest 6.9% (8.5%); reaction 1.1% (2.2%); confrontation 6.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 4.6% (9.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (4.8%); outrage 48.8% (59.8%); humor 0.0% (0.2%); question 9.8% (15.3%); breaking_live 1.2% (2.0%); episode_show 0.0% (7.5%); interview_guest 7.3% (7.7%); reaction 1.2% (2.2%); confrontation 6.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 4.9% (9.3%)
 
 
-Nearest style neighbors: @BenShapiro [right]; @Styxhexenhammer666 [right]; @BadEmpanadaLive [left]; @StevenCrowder [right]; @destiny [left]
+Nearest style neighbors: @BenShapiro [right]; @destiny [left]; @RealDanBongino [right]; @hutch [neutral]; @StevenCrowder [right]
 
-Nearest topic neighbors: @TheAdamCarollaShow1 [right]; @jlptalk [right]; @MichaelKnowles [right]; @PragerU [right]; @BadEmpanadaLive [left]
+Nearest topic neighbors: @jlptalk [right]; @PragerU [right]; @TheAdamCarollaShow1 [right]; @SaltyCracker [right]; @MichaelKnowles [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-04 | 21 | -0.77 | -0.91 | -0.60 | -0.26 | -0.26 | -0.26 | -0.84 | -0.81 | -0.62 | -0.30 | -0.10 | -0.67 | 0.00 | 0.57 | 0.00 |
-| 2026-07 | 18 | 0.96 | 0.48 | 0.08 | -0.07 | 0.33 | -0.95 | -0.87 | -0.71 | -0.51 | 0.35 | -2.07 | -0.77 | 0.06 | 0.44 | 0.00 |
+| 2026-03 | 20 | -1.11 | -1.21 | -0.28 | -0.47 | -0.52 | -0.19 | -0.43 | -0.73 | -0.88 | -0.65 | 0.16 | -0.41 | 0.00 | 0.60 | 0.00 |
 
 
 Engagement: n < 100 titles with views, not estimated.
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 6.8966 per 100, mean length 7.2069 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 7.3171 per 100, mean length 7.2195 tokens.
 
 
 ## streams
 
-Titles: 41 rows, 41 unique (repeat share 0.0%); LOW-N (not ranked); political share 90.2%.
+Titles: 41 rows, 41 unique (repeat share 0.0%); LOW-N (not ranked); political share 92.7%.
 
 
-Top topics: Members Only Show (14.6%); Political Podcasts and Influencers (14.6%); AOC on the World Stage (7.3%); Political Media Broadcasters (7.3%); Charlie Kirk murder trial (4.9%)
+Top topics: Political Podcasts and Media (24.4%); Members Only Bonus Shows (9.8%); AOC and Political Ambitions (7.3%); Charlie Kirk Murder Trial (4.9%); Political Figures and Callouts (4.9%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.9 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.3 | -0.4 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.1 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.8 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | None | None | -1.4 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.2 | -0.3 |
-| F6: Person-centred (named people) | None | None | 0.1 | 0.0 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.6 | -0.6 |
-| F8: Numeric and dated (digits, years) | None | None | -0.4 | -0.0 |
-| F9: ALL-CAPS shouting | None | None | -0.7 | -0.4 |
+| F6: Person-centred (named people) | None | None | 0.0 | -0.1 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.7 | -0.6 |
+| F8: Numeric and dated (digits, years) | None | None | 0.3 | 0.1 |
+| F9: ALL-CAPS shouting | None | None | -0.3 | -0.4 |
 | F10: Quoted speech | None | None | -0.7 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.6 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | None | None | -0.6 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | None | None | -1.0 | 0.1 |
+| F12: +first_pl +future_will +modal | None | None | -0.4 | -0.2 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (3.2%); outrage 24.4% (56.4%); humor 0.0% (0.1%); question 19.5% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 61.0% (14.0%); reaction 2.4% (2.1%); confrontation 7.3% (9.4%); listicle 0.0% (0.2%); howto_explainer 7.3% (5.3%)
-
-
-Monthly drift (topic-controlled scores and hook shares; * = partial month):
-
-| month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08 | 20 | 0.87 | -1.38 | -0.51 | -0.16 | 0.59 | -0.27 | -0.84 | -0.78 | 0.24 | -0.99 | -0.64 | -0.68 | 0.05 | 0.45 | 0.00 |
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (3.9%); outrage 26.8% (55.8%); humor 0.0% (0.1%); question 19.5% (13.0%); breaking_live 0.0% (16.3%); episode_show 0.0% (25.9%); interview_guest 61.0% (14.2%); reaction 2.4% (2.1%); confrontation 7.3% (9.2%); listicle 0.0% (0.1%); howto_explainer 7.3% (5.4%)
 
 
 Engagement: n < 100 titles with views, not estimated.

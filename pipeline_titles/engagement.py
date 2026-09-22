@@ -95,7 +95,7 @@ def run(info: dict) -> None:
     coefs.to_csv(ANALYSIS_DIR / "engagement_coefficients.csv", index=False)
     info["creator_genre_models"] = int(coefs.groupby(["creator", "genre"]).ngroups)
 
-    def summarise(g: pd.DataFrame) -> pd.Series:
+    def summarize(g: pd.DataFrame) -> pd.Series:
         sign = np.sign(g["coef_per_sd"].median())
         return pd.Series({"n_creators": len(g), "median_coef_per_sd": g["coef_per_sd"].median(), "q25": g["coef_per_sd"].quantile(.25),
                           "q75": g["coef_per_sd"].quantile(.75), "share_positive": (g["coef_per_sd"] > 0).mean(),

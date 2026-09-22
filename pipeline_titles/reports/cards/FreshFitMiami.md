@@ -5,114 +5,92 @@ Channel group: **right** (title-leaning score, document 14) · organization: Fre
 
 ## videos
 
-Titles: 111 rows, 111 unique (repeat share 0.0%); ranked; political share 90.1%.
+Titles: 98 rows, 98 unique (repeat share 0.0%); ranked; political share 67.3%.
 
 
-Top topics: Modern Women and Feminism Debate (41.4%); Myron's Critique of Modern Dating and Feminism (18.9%); Tech Business and Startups (6.3%); Wealth Tax and Billionaires (2.7%); Crypto and Politics Scandal (2.7%)
+Top topics: Feminism and Gender Roles Debate (37.8%); Myron and Dating Standards (23.5%); Tech Business Founders and Industry (6.1%); Billionaire Influence in Politics (4.1%); Andrew Tate Arrest and Legal Issues (3.1%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 48.5 | 69.9 | 0.2 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 67.4 | 79.1 | 0.3 | 0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 31.4 | 5.4 | -0.4 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 34.3 | 44.8 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 82.8 | 90.8 | 1.1 | 0.2 |
-| F6: Person-centred (named people) | 54.8 | 37.2 | -0.2 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 59.0 | 31.0 | -0.5 | -0.7 |
-| F8: Numeric and dated (digits, years) | 80.8 | 66.5 | 0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 16.3 | 5.0 | -0.7 | -0.3 |
-| F10: Quoted speech | 50.2 | 32.2 | -0.4 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 98.3 | 96.7 | 1.4 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 25.9 | 15.1 | -0.4 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 45.8 | 64.8 | 0.1 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 74.2 | 81.4 | 0.4 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 30.5 | 3.0 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 25.8 | 45.3 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 83.1 | 90.3 | 1.1 | 0.2 |
+| F6: Person-centred (named people) | 60.2 | 50.4 | -0.1 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 63.6 | 36.4 | -0.4 | -0.7 |
+| F8: Numeric and dated (digits, years) | 72.9 | 59.3 | 0.0 | -0.1 |
+| F9: ALL-CAPS shouting | 16.9 | 4.7 | -0.7 | -0.3 |
+| F10: Quoted speech | 48.7 | 33.9 | -0.4 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 97.0 | 94.9 | 1.3 | -0.2 |
+| F12: +first_pl +future_will +modal | 21.2 | 7.6 | -0.5 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.5% (3.6%); outrage 58.6% (59.6%); humor 0.0% (0.2%); question 17.1% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 6.3% (8.5%); reaction 0.0% (2.2%); confrontation 16.2% (7.8%); listicle 0.9% (0.1%); howto_explainer 23.4% (9.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.1% (4.8%); outrage 58.2% (59.8%); humor 0.0% (0.2%); question 17.3% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 4.1% (7.7%); reaction 0.0% (2.2%); confrontation 18.4% (7.8%); listicle 0.0% (0.1%); howto_explainer 24.5% (9.3%)
 
 
-Nearest style neighbors: @ChadPrather1 [right]; @TheHumanistReport [left]; @StosselTV [right]; https://rumble.com/c/GGreenwald [left]; @HasanabiClips [left]
+Nearest style neighbors: @ChadPrather1 [right]; @TheHumanistReport [left]; @HasanabiClips [left]; https://rumble.com/c/GGreenwald [left]; @RubinReport [right]
 
-Nearest topic neighbors: @JustPearlyThings [right]; @MyronGainesX [right]; @ZubyMusic [right]; @BrittanyVenti [neutral]; @jlptalk [right]
+Nearest topic neighbors: @MyronGainesX [right]; @JustPearlyThings [right]; @BrittanyVenti [neutral]; @ZubyMusic [right]; @bbrettcooper [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-06 | 17 | 0.29 | 1.33 | -0.75 | -0.11 | 2.73 | 0.16 | -0.81 | 0.95 | -0.11 | -0.40 | 0.90 | -1.13 | 0.06 | 0.53 | 0.00 |
-| 2026-07 | 19 | 0.11 | 0.12 | -0.39 | -0.19 | 0.97 | 0.63 | -0.31 | 0.03 | -0.63 | -0.50 | 1.52 | -0.22 | 0.05 | 0.74 | 0.00 |
-| 2026-08 | 26 | 0.17 | 0.09 | -0.15 | -0.15 | 0.67 | -0.53 | -0.34 | -0.14 | -1.30 | -0.55 | 2.26 | -0.66 | 0.04 | 0.65 | 0.00 |
-| 2026-09* | 18 | -0.00 | 0.23 | 0.10 | -0.25 | -0.09 | -0.51 | -0.41 | -0.69 | -0.80 | -0.25 | 1.19 | -0.74 | 0.06 | 0.61 | 0.00 |
-
-
-Engagement (n = 111, R2 = 0.604; log views per within-creator SD, month + topic controls):
-
-| predictor | coef_per_sd | se | p |
-|---|---|---|---|
-| F1 | -0.050 | 0.151 | 0.739 |
-| F2 | -0.043 | 0.078 | 0.587 |
-| F3 | 0.204 | 0.129 | 0.115 |
-| F4 | -0.022 | 0.111 | 0.840 |
-| F5 | -0.136 | 0.104 | 0.192 |
-| F6 | -0.117 | 0.153 | 0.445 |
-| F7 | 0.066 | 0.104 | 0.528 |
-| F8 | 0.038 | 0.102 | 0.710 |
-| F9 | -0.084 | 0.091 | 0.360 |
-| F10 | 0.067 | 0.081 | 0.405 |
-| F11 | -0.042 | 0.143 | 0.772 |
-| F12 | 0.031 | 0.130 | 0.812 |
-| curiosity_gap | -0.017 | 0.116 | 0.881 |
-| outrage | 0.077 | 0.105 | 0.465 |
-| n_tokens | -0.033 | 0.110 | 0.765 |
-
-
-Hit concentration: Gini 0.4946, top-10 % share 34.4%, power-law tail not supported vs lognormal (LR = -1.9607, p = 0.0499).
-
-
-Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 12.6126 per 100, mean length 11.4865 tokens.
-
-
-## streams
-
-Titles: 82 rows, 75 unique (repeat share 8.5%); ranked; political share 96.0%.
-
-
-Top topics: Modern Women and Feminism Debate (37.3%); Crypto and Politics Scandal (9.3%); Race and Politics in Media (5.3%); Andrew Tate Arrest and Legal Issues (4.0%); Political Media Broadcasters (4.0%)
-
-
-| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
-|---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 94.9 | 94.9 | 0.8 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 55.7 | 64.6 | -0.2 | -0.4 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 41.8 | 22.8 | -0.3 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 97.5 | 96.2 | 0.7 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 82.3 | 92.4 | 0.1 | -0.3 |
-| F6: Person-centred (named people) | 27.8 | 12.7 | -0.2 | 0.0 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 7.6 | 2.5 | -0.9 | -0.6 |
-| F8: Numeric and dated (digits, years) | 75.9 | 67.1 | 0.3 | -0.0 |
-| F9: ALL-CAPS shouting | 55.7 | 57.0 | -0.3 | -0.4 |
-| F10: Quoted speech | 75.9 | 59.5 | -0.2 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 79.7 | 69.6 | 0.6 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | 78.5 | 62.0 | 0.3 | -0.1 |
-
-
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.0% (3.2%); outrage 54.7% (56.4%); humor 0.0% (0.1%); question 22.7% (13.7%); breaking_live 2.7% (18.8%); episode_show 0.0% (26.3%); interview_guest 26.7% (14.0%); reaction 2.7% (2.1%); confrontation 2.7% (9.4%); listicle 2.7% (0.2%); howto_explainer 18.7% (5.3%)
-
-
-Nearest style neighbors: @RekietaLaw [right]; @MyronGainesX [right]; @RedactedNews [right]; @AnthonyBrianLogan [right]; @OwenReport [left]
-
-Nearest topic neighbors: @JustPearlyThings [right]; @MyronGainesX [right]; @PhillipScottPodcast [right]; @TheOfficerTatum [right]; @ModernDayDebate [left]
-
-
-Monthly drift (topic-controlled scores and hook shares; * = partial month):
-
-| month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-06 | 15 | 0.05 | 0.18 | -0.34 | 0.39 | 0.56 | 0.11 | -0.92 | 0.22 | -0.22 | -0.18 | -0.34 | 0.85 | 0.13 | 0.67 | 0.00 |
-| 2026-08 | 22 | 1.07 | -0.27 | -0.33 | 1.04 | -0.20 | -0.24 | -0.73 | 0.37 | -0.20 | -0.12 | 1.09 | 0.45 | 0.09 | 0.64 | 0.00 |
+| 2026-06 | 21 | -0.01 | 0.46 | -0.59 | 0.17 | 1.57 | -0.16 | -0.46 | 0.63 | -0.53 | -0.18 | 1.08 | -0.95 | 0.10 | 0.67 | 0.00 |
+| 2026-07 | 20 | -0.15 | 0.34 | 0.11 | -0.45 | 1.01 | 0.18 | 0.09 | -0.48 | -0.84 | -0.78 | 1.23 | 0.03 | 0.00 | 0.50 | 0.00 |
+| 2026-08 | 20 | 0.96 | -0.08 | -0.18 | 0.05 | 0.28 | -0.76 | -0.65 | -0.23 | -1.20 | -0.59 | 2.26 | -1.06 | 0.10 | 0.70 | 0.00 |
 
 
 Engagement: n < 100 titles with views, not estimated.
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 12.0 per 100, mean length 11.1733 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 14.2857 per 100, mean length 11.6429 tokens.
+
+
+## streams
+
+Titles: 80 rows, 73 unique (repeat share 8.8%); ranked; political share 93.2%.
+
+
+Top topics: Feminism and Gender Roles Debate (37.0%); Trump and Crypto Scandals (5.5%); Black America and Racism Discussions (4.1%); Erika Kirk Political Parody (4.1%); Andrew Tate Arrest and Legal Issues (4.1%)
+
+
+| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
+|---|---|---|---|---|
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 96.1 | 93.5 | 0.9 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 54.5 | 62.3 | -0.2 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 42.9 | 20.8 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 97.4 | 96.1 | 0.7 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 81.8 | 92.2 | 0.1 | -0.3 |
+| F6: Person-centred (named people) | 39.0 | 16.9 | -0.1 | -0.1 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 3.9 | 1.3 | -1.0 | -0.6 |
+| F8: Numeric and dated (digits, years) | 79.2 | 61.0 | 0.4 | 0.1 |
+| F9: ALL-CAPS shouting | 59.7 | 57.1 | -0.2 | -0.4 |
+| F10: Quoted speech | 76.6 | 64.9 | -0.2 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 74.0 | 66.2 | 0.5 | 0.1 |
+| F12: +first_pl +future_will +modal | 61.0 | 40.3 | 0.1 | -0.2 |
+
+
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 11.0% (3.9%); outrage 52.0% (55.8%); humor 0.0% (0.1%); question 21.9% (13.0%); breaking_live 2.7% (16.3%); episode_show 0.0% (25.9%); interview_guest 26.0% (14.2%); reaction 2.7% (2.1%); confrontation 2.7% (9.2%); listicle 1.4% (0.1%); howto_explainer 17.8% (5.4%)
+
+
+Nearest style neighbors: @RekietaLaw [right]; @MyronGainesX [right]; @RedactedNews [right]; @jimacosta [left]; @hutch [neutral]
+
+Nearest topic neighbors: @JustPearlyThings [right]; @MyronGainesX [right]; @ModernDayDebate [left]; @TheOfficerTatum [right]; @NewsmaxTV [right]
+
+
+Monthly drift (topic-controlled scores and hook shares; * = partial month):
+
+| month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-06 | 16 | -0.05 | -0.46 | -0.17 | 0.06 | -0.18 | 0.46 | -0.73 | 0.04 | -0.03 | 0.12 | -0.03 | 0.01 | 0.12 | 0.75 | 0.00 |
+| 2026-08 | 17 | 1.18 | -0.43 | -0.44 | 0.64 | -0.12 | -0.47 | -0.61 | 0.33 | 0.06 | -0.51 | 0.67 | -0.04 | 0.12 | 0.59 | 0.00 |
+
+
+Engagement: n < 100 titles with views, not estimated.
+
+
+Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 10.9589 per 100, mean length 11.3151 tokens.

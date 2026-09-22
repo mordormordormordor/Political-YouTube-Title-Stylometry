@@ -4,7 +4,7 @@
 
 ## The finding in one paragraph
 
-The outrage frame is the landscape's default hook, not a niche device. The rating model flagged 57 % of a 3,000-title creator-stratified sample as framing their subject as outrageous, scandalous or threatening, and a classifier trained on those labels reproduces the judgment well on held-out titles (accuracy 0.76, AUC 0.84, kappa 0.52). Applied to every title, it covers 64 % of the average left channel's edited uploads, 60 % of the average right channel's and 36 % of the average neutral channel's: the frame belongs to partisan titling on both sides, and the neutral group, which is mostly news outlets, uses it least. The two other hooks could not be measured: the rater found a curiosity gap in 2.1 % of titles and humor in 0.4 %, far too few positives to learn from (held-out F1 0.18 and 0.00). Treat both as *unmeasured*, not absent (see document 8).
+The outrage frame is the landscape's default hook, not a niche device. The rating model flagged 57 % of a 3,000-title creator-stratified sample as framing their subject as outrageous, scandalous or threatening, and a classifier trained on those labels reproduces the judgment well on held-out titles (accuracy 0.78, AUC 0.85, kappa 0.55). Applied to every title, it covers 64 % of the average left channel's edited uploads, 60 % of the average right channel's and 37 % of the average neutral channel's: the frame belongs to partisan titling on both sides, and the neutral group, which is mostly news outlets, uses it least. The two other hooks could not be measured: the rater found a curiosity gap in 2.1 % of titles and humor in 0.4 %, far too few positives to learn from (held-out F1 0.14 and 0.67). Treat both as *unmeasured*, not absent (see document 8).
 
 ## Formats by channel group (share of a creator's titles, mean over creators; edited uploads)
 
@@ -14,8 +14,8 @@ The outrage frame is the landscape's default hook, not a niche device. The ratin
 | group | n_creators | question | breaking_live | episode_show | interview_guest | reaction | confrontation | listicle | howto_explainer |
 |---|---|---|---|---|---|---|---|---|---|
 | left channels | 105.00 | 0.16 | 0.03 | 0.03 | 0.10 | 0.03 | 0.08 | 0.00 | 0.08 |
-| neutral channels | 38.00 | 0.16 | 0.01 | 0.07 | 0.12 | 0.02 | 0.07 | 0.00 | 0.07 |
-| right channels | 96.00 | 0.16 | 0.02 | 0.08 | 0.08 | 0.02 | 0.08 | 0.00 | 0.09 |
+| neutral channels | 37.00 | 0.14 | 0.01 | 0.07 | 0.12 | 0.02 | 0.08 | 0.00 | 0.07 |
+| right channels | 94.00 | 0.15 | 0.02 | 0.07 | 0.08 | 0.02 | 0.08 | 0.00 | 0.09 |
 
 
 Questions run at the same rate in all three groups; episode numbering and how-to / explainer wording are a little more common on the right, guest formats a little more in the neutral and left groups (12 %, 10 %, 8 % on the right), and none of the structural formats separates the groups the way the outrage hook does. Live VODs look different again: LIVE/BREAKING labels sit on 52 % of the neutral group's stream titles (the wires' rolling broadcasts), confrontation on 15 % of the left group's (the debate streamers):
@@ -23,8 +23,8 @@ Questions run at the same rate in all three groups; episode numbering and how-to
 | group | n_creators | question | breaking_live | episode_show | interview_guest | confrontation | outrage |
 |---|---|---|---|---|---|---|---|
 | left channels | 33.00 | 0.11 | 0.17 | 0.06 | 0.18 | 0.15 | 0.63 |
-| neutral channels | 16.00 | 0.05 | 0.52 | 0.02 | 0.13 | 0.07 | 0.30 |
-| right channels | 30.00 | 0.14 | 0.19 | 0.26 | 0.14 | 0.09 | 0.56 |
+| neutral channels | 16.00 | 0.05 | 0.52 | 0.02 | 0.14 | 0.08 | 0.29 |
+| right channels | 28.00 | 0.13 | 0.16 | 0.26 | 0.14 | 0.09 | 0.56 |
 
 
 ## The outrage hook by channel group (edited uploads)
@@ -34,9 +34,9 @@ Questions run at the same rate in all three groups; episode numbering and how-to
 
 | group | n_creators | median | q25 | q75 | min | max |
 |---|---|---|---|---|---|---|
-| left channels | 105 | 0.68 | 0.47 | 0.82 | 0.06 | 0.99 |
-| neutral channels | 38 | 0.30 | 0.20 | 0.48 | 0.05 | 0.89 |
-| right channels | 96 | 0.58 | 0.48 | 0.76 | 0.07 | 0.99 |
+| left channels | 105 | 0.67 | 0.46 | 0.84 | 0.06 | 1.00 |
+| neutral channels | 37 | 0.31 | 0.22 | 0.47 | 0.05 | 0.88 |
+| right channels | 94 | 0.58 | 0.50 | 0.75 | 0.09 | 0.99 |
 
 
 Within every group the creator-to-creator spread is wide (the quartiles above): the group is a weak predictor of any one channel. The gradient across groups is the same one the tone factor of the style model finds, measured a second way; the two measures are not independent (the classifier sees the same words the lexicon counts), but they were built from different sources, the tone factor from word lists and sentiment, the hook from a model reading whole titles.
@@ -45,35 +45,35 @@ Within every group the creator-to-creator spread is wide (the quartiles above): 
 
 | category | creator | title |
 |---|---|---|
-| question | @ABCNews | How Sysco acquiring Restaurant Depot could shake up the food industry |
-| question | @nytimes | How Americans Are Struggling With Rising Healthcare Costs |
-| question | @SkyNews | Is Trump about to bring down NATO? \| Trump100 |
-| breaking_live | @StatusCoup | BREAKING: LIVE ICE Protests as Lawsuit Filed to SHUT DOWN Delaney Hall ICE Prison |
-| breaking_live | @TimesNowWorld | FRANCE WILDFIRE LIVE \| Mega-Fire 4x Size Of Paris Out Of Control Near Bordeaux \| TIMES NOW WORLD |
-| breaking_live | @Firstpost | LIVE: 'US Aims For $1.5 Trillion Defence Budget,' Says Hegseth at NATO Defence Ministers' Meet |
-| episode_show | @markets | Micron Earnings Spark Global Tech Rebound \| Daybreak Europe 6/25/2026 |
-| episode_show | @TheDamageReport | The Damage Report: April 20, 2026 |
-| episode_show | @ABCNews | Vance Warns Pope To "Be Careful" On Theology - What You Need To Know - April 15th, 2026 |
-| interview_guest | @underthedesknews | FULL TOP STORY: Sen. Graham Conspired w/ Israel to DESTROY the International Criminal Court |
-| interview_guest | @NBCNews | Father reunites with five daughters after months overseas |
-| interview_guest | @timesofindia | ‘Taco Welcome’: Barred From US, Iran Football Boss Joins Emotional Mexico Crowd \| FIFA World Cup |
-| reaction | @Firstpost | US-Iran War Ceasefire LIVE: Iranians and Americans Reacts to Trump's Ceasefire Announcement \| N18G |
-| reaction | @wethefifth | Media Insiders React to the Scott Pelley 60 Minutes Drama - The Fifth Column |
-| reaction | @msnow | 'This is about Trump': Elections expert reacts to Virginia redistricting measure passing |
-| confrontation | @Firstpost | Red Fort Attack LIVE: Pakistan's Terror Lies Busted As JeM’s Hand Emerge in Lal Qila Blast |
-| confrontation | @timesofindia | '5th Time You Blinked': Reporter Grills Trump On Iran U-Turn; Shock 'I Don't Know' Reply Follows |
-| confrontation | @PTLRadioShow | MAGA Callers Accuse Brian Shapiro Of Lying… Then Get Fact-Checked |
-| listicle | @Firstpost | US-Iran War Top 5 Developments: Tehran Claims Drone Attack Amid Hormuz Tensions \| Firstpost Live |
-| listicle | @TheMajorityReport | 39 Times Trump Claimed An Iran Deal Was Imminent |
-| listicle | @NewsNation | An MLB opening day preview, plus March Madness Sweet 16 predictions \| Morning in America |
-| howto_explainer | @JackCocchiarellaShow | Fox Host Suffers Emotional Breakdown As Trump Loses Senate |
-| howto_explainer | @AssociatedPress | AP reporter breaks down Supreme Court ruling striking down Trump’s tariffs |
-| howto_explainer | @RealAmericasVoice | 9/11 Widow Terry Strada REVEALS What Happened After Her Husband’s FINAL Call |
-| curiosity_gap | @LukeBeasley | Actually, what the f*** just happened?! |
+| question | @CNN | Can Dems take the Senate even without Maine? |
+| question | @FoxNewsChannelClips | Will Cain: Where will Gov. Walz go next with his analogies? |
+| question | @bulwarkmedia | The Next Level LIVE: Texas Primary Results! Megyn Kelly Turns on Trump?! |
+| breaking_live | @RealAmericasVoice | TRUMP'S IRAN DEAL BOMBSHELL, FED HOLDS RATES, SPLC NAZI SCANDAL EXPLODES \| LIVE FROM STUDIO 6B |
+| breaking_live | @ANINewsIndia | WATCH: Sonam Wangchuk breaks 26-day fast amid CJP protest at Jantar Mantar against NEET Paper leak |
+| breaking_live | @Firstpost | 🔴FIFA WORLD CUP LIVE \| Mexico Football Fans Hit Fever Pitch \| Mexico vs South Africa |
+| episode_show | @RealDanBongino | They're Finding Out (Ep. 2549) |
+| episode_show | @glennbeck | Remembering Charlie Kirk: Where Are We Now? \| Hour 1 \| 9/10/26 |
+| episode_show | @RSBN | FULL EVENT: President Trump Creates U.S. Space Academy & Awards Space Medal of Honor - 08/28/26 |
+| interview_guest | @ABCNews | The Obama Legacy: First Joint Interview Post-White House |
+| interview_guest | @bulwarkmedia | Trump Promised Trillions in Cuts—And Delivered Nothing (w/ Jessica Riedl) \| Mona Charen Show |
+| interview_guest | @timesofindia | 'ENOUGH IS ENOUGH': Tucker Carlson Joins Growing Revolt As Trump's Iran Gamble Backfires Inside MAGA |
+| reaction | @DestinyDGGClips | Atrioc Responds After Getting Into MASSIVE Controversy |
+| reaction | @SkyNews | Democrats react to Trump's citizenship defeat outside Supreme Court |
+| reaction | @oann | WV Governor Praises National Guard Officers for Heroic Response to DC Attack |
+| confrontation | @ANINewsIndia | ‘We'll destroy it as we get it’, Trump warns Iran after Khamenei’s 'defiance' over enriched Uranium |
+| confrontation | @RealAmericasVoice | FAUCI TAKES THE FIFTH IN EXPLOSIVE SENATE HEARING, BERENSON DESTROYS COVID LIES \| CHARLIE KIRK SHOW |
+| confrontation | @markets | US-Iran Clashes Hit Stocks as Oil Rises \| Bloomberg Brief 09/02/2026 |
+| listicle | @RealAmericasVoice | FAUCI’S COVID CHAOS STEALS 2020, RNC CHAIR GRUTERS ON GOP FAITH \| AMERICA'S TOP 10 |
+| listicle | @CNN | 4 ways Ukraine changed America’s wars forever |
+| listicle | @nypost | Karoline Leavitt to Depart as White House Press Secretary — Top 5 Moments She Shut Down Reporters |
+| howto_explainer | @SkyNews | Why Trump is fighting for the Arctic but losing in Antarctica |
+| howto_explainer | @PhillipScottPodcast | Latina Explains Why They Didn't Vote For Jasmine Crockett Even Though She Was Pro-Immigration |
+| howto_explainer | @oann | Why Rising Prices Could Trigger a Voter Backlash Before the Midterms |
 | curiosity_gap | https://rumble.com/c/russellbrand | They don't want you knowing this... |
-| curiosity_gap | @AsmonTV | Holy sh*t.. How is this real? |
-| outrage | @timesofindia | ‘Humiliated’ Trump Fires EXPLOSIVE WARNING To Canada In Extreme Meltdown \| ‘NO MORE BENEFITS!’ |
+| curiosity_gap | @CoreyGilShusterAskProject | Palestinians: What happens at the endtimes? |
+| curiosity_gap | @LukeBeasley | Actually, what the f*** just happened?! |
 | outrage | @LukeBeasley | SHOCK BREAKING: TRUMP S*X BOMBSHELL ERUPTS, PUBLIC MELTDOWN BACKFIRES! |
+| outrage | @timesofindia | ‘Humiliated’ Trump Fires EXPLOSIVE WARNING To Canada In Extreme Meltdown \| ‘NO MORE BENEFITS!’ |
 | outrage | @BlackConservativePerspective | Leftists PANIC As Wife EXPOSES Another HUMILIATING Scandal Against IMPLODING Communist Democrat! |
 | humor | @TimcastIRL | THIS IS HILARIOUS |
 | humor | @TimcastNews | THIS IS HILARIOUS |
@@ -86,14 +86,14 @@ Formats are regexes on the raw title (the exact patterns are in `format_rules.cs
 
 | category | rule_positives | llm_positives | precision_rule_vs_llm | recall_rule_vs_llm | kappa |
 |---|---|---|---|---|---|
-| question | 424 | 58 | 0.10 | 0.74 | 0.15 |
-| breaking_live | 251 | 268 | 0.81 | 0.76 | 0.77 |
-| episode_show | 226 | 228 | 0.54 | 0.54 | 0.50 |
-| interview_guest | 326 | 99 | 0.18 | 0.60 | 0.24 |
-| reaction | 78 | 56 | 0.49 | 0.68 | 0.56 |
-| confrontation | 239 | 98 | 0.20 | 0.50 | 0.26 |
-| listicle | 3 | 4 | 0.67 | 0.50 | 0.57 |
-| howto_explainer | 219 | 75 | 0.17 | 0.51 | 0.23 |
+| question | 407 | 54 | 0.10 | 0.78 | 0.15 |
+| breaking_live | 233 | 251 | 0.81 | 0.76 | 0.77 |
+| episode_show | 213 | 211 | 0.53 | 0.53 | 0.49 |
+| interview_guest | 306 | 93 | 0.18 | 0.59 | 0.24 |
+| reaction | 74 | 53 | 0.47 | 0.66 | 0.54 |
+| confrontation | 231 | 93 | 0.21 | 0.52 | 0.26 |
+| listicle | 2 | 4 | 1.00 | 0.50 | 0.67 |
+| howto_explainer | 207 | 71 | 0.17 | 0.49 | 0.22 |
 
 
 The rules fire far more often than the model's single label for interview_guest and howto_explainer (the rules count "with a name" and "why"; the model picks one dominant format per title), so the rule shares above are upper bounds for those two categories. Question, breaking/live and episode formats agree well.

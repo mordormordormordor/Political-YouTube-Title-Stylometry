@@ -112,3 +112,25 @@ def test_truecase_uses_learned_lexicon():
     assert is_all_caps("TRUMP DESTROYS CNN") and not is_all_caps("Trump destroys CNN")
     assert truecase("TRUMP DESTROYS CNN", proper, acronyms) == "Trump destroys CNN"
     assert truecase("Already mixed", proper, acronyms) == "Already mixed"
+
+
+def test_rekey_labels_follows_the_title_to_its_new_row_and_drops_the_gone():
+    from pipeline_titles.llm_rate import rekey_labels
+    prepared = pd.DataFrame({
+        "row_id": [0, 1, 2, 3], "creator": ["@a", "@a", "@a", "@b"], "genre": ["videos"] * 4,
+        "title_raw": ["One", "Two", "Two", "Three"], "video_id": ["v0", "v1", "v1b", "v3"],
+        "month": ["2026-02", "2026-03", "2026-03", "2026-04"], "title_norm": ["one", "two", "two", "three"],
+        "is_dup": [False, False, True, False],
+    })
+    labels = pd.DataFrame({
+        "row_id": [7, 8, 9], "video_id": ["x", "y", "z"], "creator": ["@a", "@a", "@a"], "genre": ["videos"] * 3,
+        "month": ["2026-01", "2026-01", "2026-01"], "title_raw": ["Two", "Gone", "One"], "title_norm": ["old", "old", "old"],
+        "sensational": [5, 4, 3],
+    })
+    out, dropped = rekey_labels(labels, prepared)
+    assert dropped == 1
+    assert out["row_id"].tolist() == [0, 1]
+    assert out["title_raw"].tolist() == ["One", "Two"]
+    assert out["sensational"].tolist() == [3, 5]
+    assert out["video_id"].tolist() == ["v0", "v1"] and out["month"].tolist() == ["2026-02", "2026-03"] and out["title_norm"].tolist() == ["one", "two"]
+    assert list(out.columns) == list(labels.columns)

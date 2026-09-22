@@ -5,73 +5,72 @@ Channel group: **left** (title-leaning score, document 14) · organization: Owen
 
 ## videos
 
-Titles: 233 rows, 233 unique (repeat share 0.0%); ranked; political share 98.7%.
+Titles: 226 rows, 226 unique (repeat share 0.0%); ranked; political share 98.7%.
 
 
-Top topics: Israel-Palestine Conflict Media (26.6%); Iran War and Strait of Hormuz Tensions (19.7%); UK politics and Reform UK (10.3%); UK PM Keir Starmer Resignation Calls (5.6%); UK Prime Minister Andy Burnham (3.0%)
+Top topics: Israel and Palestine Conflict (24.3%); Iran political unrest (13.3%); UK Political Chaos and Reform UK (11.5%); Trump and Iran War Negotiations (10.2%); UK PM Keir Starmer Resignation Calls (6.2%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 8.8 | 11.3 | -0.7 | 0.1 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 49.0 | 49.0 | -0.1 | -0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 9.6 | 17.6 | -0.6 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 48.5 | 42.7 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 59.0 | 61.1 | 0.3 | 0.1 |
-| F6: Person-centred (named people) | 36.8 | 45.2 | -0.4 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 8.8 | 36.0 | -1.1 | -0.5 |
-| F8: Numeric and dated (digits, years) | 6.7 | 5.4 | -0.6 | -0.2 |
-| F9: ALL-CAPS shouting | 66.5 | 64.4 | -0.1 | -0.3 |
-| F10: Quoted speech | 10.5 | 45.2 | -0.8 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 31.0 | 31.4 | -0.6 | -0.3 |
-| F12: Modal and future speculation (will, could, we) | 38.9 | 75.7 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 8.5 | 11.0 | -0.8 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 42.4 | 46.6 | -0.2 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 13.6 | 20.8 | -0.5 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 44.5 | 41.5 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 56.4 | 61.0 | 0.2 | 0.1 |
+| F6: Person-centred (named people) | 46.6 | 48.3 | -0.3 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 11.9 | 33.1 | -1.1 | -0.5 |
+| F8: Numeric and dated (digits, years) | 11.0 | 8.5 | -0.5 | -0.2 |
+| F9: ALL-CAPS shouting | 68.6 | 68.2 | -0.1 | -0.3 |
+| F10: Quoted speech | 9.3 | 47.5 | -0.9 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 25.4 | 25.4 | -0.7 | -0.3 |
+| F12: +first_pl +future_will +modal | 32.6 | 74.2 | -0.4 | -0.1 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (2.7%); outrage 84.1% (63.9%); humor 0.0% (0.2%); question 14.6% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 19.3% (9.8%); reaction 0.0% (2.9%); confrontation 10.3% (7.6%); listicle 0.0% (0.1%); howto_explainer 9.9% (8.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.1% (3.6%); outrage 83.2% (63.9%); humor 0.0% (0.2%); question 14.6% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 19.9% (9.8%); reaction 0.0% (2.9%); confrontation 9.7% (7.7%); listicle 0.0% (0.1%); howto_explainer 9.3% (8.0%)
 
 
 Nearest style neighbors: @TheYoungTurks [left]; @NovaraMedia [left]; @laurenchenclips [right]; @RebelHQ [left]; @FarronBalanced [left]
 
-Nearest topic neighbors: @NovaraMedia [left]; @DoubleDownNews [left]; @thegrayzone7996 [left]; @PoliticsJOE [left]; @DropSiteNews [left]
+Nearest topic neighbors: @NovaraMedia [left]; @PoliticsJOE [left]; @DoubleDownNews [left]; @thegrayzone7996 [left]; @SkyNews [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 18 | -2.50 | 0.05 | -0.61 | -0.60 | 0.57 | -0.22 | -0.48 | -0.61 | 0.34 | -0.70 | -0.30 | -0.52 | 0.06 | 1.00 | 0.00 |
-| 2026-02 | 19 | -1.26 | -0.83 | -0.22 | -0.47 | -0.56 | -0.60 | -0.74 | -0.20 | -0.17 | -0.99 | 0.78 | -0.94 | 0.00 | 0.89 | 0.00 |
-| 2026-03 | 34 | -1.05 | -0.11 | -0.57 | 0.07 | 0.97 | -0.49 | -1.49 | -0.70 | -0.52 | -0.75 | -0.40 | 0.21 | 0.03 | 0.85 | 0.00 |
-| 2026-04 | 29 | -0.31 | -0.68 | -0.74 | -0.03 | 0.15 | 0.26 | -0.85 | -0.52 | -0.15 | -0.69 | -0.26 | -0.04 | 0.03 | 0.86 | 0.00 |
-| 2026-05 | 33 | -0.52 | 0.91 | -0.37 | 0.25 | 0.10 | -0.64 | -1.15 | -0.59 | 0.18 | -0.72 | -0.54 | -1.27 | 0.00 | 0.88 | 0.00 |
-| 2026-06 | 26 | -0.15 | -0.30 | -0.32 | 0.06 | 0.97 | -0.55 | -1.18 | -0.56 | 0.19 | -1.24 | -1.68 | 0.66 | 0.04 | 0.92 | 0.00 |
-| 2026-07 | 29 | -0.78 | 0.45 | -0.91 | -0.41 | 0.04 | -0.62 | -1.44 | -0.80 | -0.04 | -1.03 | -0.89 | 0.47 | 0.03 | 0.69 | 0.00 |
-| 2026-08 | 29 | -0.89 | -0.25 | -0.63 | -0.23 | 0.43 | -0.45 | -0.98 | -0.55 | -0.28 | -0.70 | -0.94 | -0.44 | 0.07 | 0.79 | 0.00 |
-| 2026-09* | 16 | 0.67 | -0.30 | -0.56 | -0.26 | -0.35 | -0.54 | -1.28 | -0.22 | -0.46 | -0.36 | -0.63 | -1.13 | 0.00 | 0.69 | 0.00 |
+| 2026-01 | 19 | -1.59 | -0.54 | -0.44 | -0.43 | 0.06 | 0.54 | -0.95 | -0.30 | 1.01 | -0.90 | -0.23 | -0.09 | 0.05 | 1.00 | 0.00 |
+| 2026-02 | 26 | -1.19 | -0.74 | -0.52 | -0.08 | -0.06 | -0.31 | -1.11 | -0.33 | -0.46 | -0.72 | -0.01 | -0.34 | 0.04 | 0.88 | 0.00 |
+| 2026-03 | 34 | -1.14 | -0.32 | -0.62 | -0.17 | 0.50 | -0.28 | -0.91 | -0.59 | -0.59 | -1.13 | -0.50 | -0.33 | 0.03 | 0.88 | 0.00 |
+| 2026-04 | 29 | -0.35 | -0.09 | -0.48 | 0.24 | 0.55 | 0.03 | -1.04 | -0.61 | 0.45 | -0.51 | -0.53 | -0.60 | 0.00 | 0.79 | 0.00 |
+| 2026-05 | 32 | -0.49 | 0.41 | -0.42 | 0.01 | -0.12 | -0.65 | -1.10 | -0.50 | -0.06 | -0.88 | -0.79 | -0.07 | 0.00 | 0.88 | 0.00 |
+| 2026-06 | 32 | -0.66 | 0.05 | -0.46 | -0.16 | 0.70 | -0.55 | -1.16 | -0.68 | -0.13 | -1.16 | -1.32 | -0.35 | 0.06 | 0.78 | 0.00 |
+| 2026-07 | 23 | -1.10 | -0.04 | -0.85 | -0.52 | 0.49 | -0.36 | -1.00 | -0.42 | 0.20 | -0.88 | -1.33 | 0.62 | 0.09 | 0.74 | 0.00 |
+| 2026-08 | 19 | -0.82 | -0.94 | -0.50 | -0.02 | -0.11 | -0.38 | -1.16 | -0.49 | -0.65 | -0.92 | -0.69 | -1.73 | 0.00 | 0.84 | 0.00 |
 
 
-Engagement (n = 233, R2 = 0.1173; log views per within-creator SD, month + topic controls):
+Engagement (n = 226, R2 = 0.1175; log views per within-creator SD, month + topic controls):
 
 | predictor | coef_per_sd | se | p |
 |---|---|---|---|
-| F1 | -0.059 | 0.072 | 0.409 |
-| F2 | 0.048 | 0.066 | 0.463 |
-| F3 | -0.056 | 0.068 | 0.409 |
-| F4 | 0.009 | 0.068 | 0.889 |
-| F5 | -0.023 | 0.073 | 0.754 |
-| F6 | -0.029 | 0.075 | 0.694 |
-| F7 | -0.078 | 0.066 | 0.238 |
-| F8 | 0.094 | 0.061 | 0.127 |
-| F9 | 0.082 | 0.065 | 0.206 |
-| F10 | -0.098 | 0.062 | 0.116 |
-| F11 | -0.034 | 0.071 | 0.638 |
-| F12 | 0.076 | 0.078 | 0.327 |
-| curiosity_gap | -0.031 | 0.058 | 0.593 |
-| outrage | -0.015 | 0.070 | 0.830 |
-| n_tokens | 0.011 | 0.078 | 0.886 |
+| F1 | -0.062 | 0.071 | 0.381 |
+| F2 | 0.056 | 0.067 | 0.406 |
+| F3 | -0.040 | 0.065 | 0.538 |
+| F4 | 0.028 | 0.069 | 0.684 |
+| F5 | 0.021 | 0.064 | 0.741 |
+| F6 | 0.009 | 0.077 | 0.905 |
+| F7 | -0.066 | 0.066 | 0.317 |
+| F8 | 0.078 | 0.058 | 0.177 |
+| F9 | 0.084 | 0.067 | 0.210 |
+| F10 | -0.106 | 0.073 | 0.146 |
+| F11 | -0.044 | 0.087 | 0.615 |
+| F12 | 0.061 | 0.083 | 0.466 |
+| curiosity_gap | -0.029 | 0.056 | 0.605 |
+| outrage | 0.020 | 0.072 | 0.785 |
+| n_tokens | 0.024 | 0.077 | 0.752 |
 
 
-Hit concentration: Gini 0.4255, top-10 % share 33.4%, power-law tail not supported vs lognormal (LR = -1.2442, p = 0.2134).
+Hit concentration: Gini 0.423, top-10 % share 33.0%, power-law tail not supported vs lognormal (LR = -1.1801, p = 0.2379).
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) 0.7946, Zipf 0.7488, formulaic titles 15.4506 per 100, mean length 8.1974 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) 0.7963, Zipf 0.7592, formulaic titles 15.9292 per 100, mean length 8.177 tokens.

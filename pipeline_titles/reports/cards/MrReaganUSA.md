@@ -5,65 +5,32 @@ Channel group: **right** (title-leaning score, document 14) · organization: Mr 
 
 ## videos
 
-Titles: 26 rows, 26 unique (repeat share 0.0%); LOW-N (not ranked); political share 100.0%.
+Titles: 24 rows, 24 unique (repeat share 0.0%); LOW-N (not ranked); political share 91.7%.
 
 
-Top topics: Race and Politics in Media (15.4%); MAGA Supporters and Arguments (15.4%); Political Podcasts and Commentary (11.5%); MAGA Movement Decline (7.7%); Shocking Events and Reactions (3.9%)
+Top topics: Black America and Racism Discussions (16.7%); MAGA Arguments and Debates (12.5%); MAGA Movement Crisis (8.3%); Political Podcasts and Commentary (8.3%); Christian Nationalism and Politics (4.2%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.8 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.0 | 0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.1 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | 2.0 | 0.2 |
-| F6: Person-centred (named people) | None | None | -0.8 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.6 | -0.7 |
-| F8: Numeric and dated (digits, years) | None | None | 1.3 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.9 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | None | None | -0.8 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | 2.3 | 0.2 |
+| F6: Person-centred (named people) | None | None | -1.0 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.5 | -0.7 |
+| F8: Numeric and dated (digits, years) | None | None | 1.5 | -0.1 |
 | F9: ALL-CAPS shouting | None | None | 0.3 | -0.3 |
-| F10: Quoted speech | None | None | 1.4 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.3 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | None | None | -0.6 | -0.2 |
+| F10: Quoted speech | None | None | 1.5 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | None | None | -1.2 | -0.2 |
+| F12: +first_pl +future_will +modal | None | None | -0.8 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.9% (3.6%); outrage 53.8% (59.6%); humor 0.0% (0.2%); question 30.8% (15.6%); breaking_live 0.0% (2.0%); episode_show 23.1% (7.6%); interview_guest 7.7% (8.5%); reaction 0.0% (2.2%); confrontation 3.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 23.1% (9.5%)
-
-
-Engagement: n < 100 titles with views, not estimated.
-
-
-Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 26.9231 per 100, mean length 7.0769 tokens.
-
-
-## streams
-
-Titles: 2 rows, 2 unique (repeat share 0.0%); LOW-N (not ranked); political share 100.0%.
-
-
-Top topics: Iran Conflict and Political Updates (50.0%); Trump inflation crisis (50.0%)
-
-
-| dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
-|---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -1.8 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -4.1 | -0.4 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.0 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -1.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.7 | -0.3 |
-| F6: Person-centred (named people) | None | None | -1.7 | 0.0 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.4 | -0.6 |
-| F8: Numeric and dated (digits, years) | None | None | -1.1 | -0.0 |
-| F9: ALL-CAPS shouting | None | None | -0.7 | -0.4 |
-| F10: Quoted speech | None | None | -0.4 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.4 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | None | None | -1.4 | -0.1 |
-
-
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.2%); outrage 50.0% (56.4%); humor 0.0% (0.1%); question 0.0% (13.7%); breaking_live 0.0% (18.8%); episode_show 0.0% (26.3%); interview_guest 0.0% (14.0%); reaction 0.0% (2.1%); confrontation 0.0% (9.4%); listicle 0.0% (0.2%); howto_explainer 0.0% (5.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.3% (4.8%); outrage 54.2% (59.8%); humor 0.0% (0.2%); question 33.3% (15.3%); breaking_live 0.0% (2.0%); episode_show 25.0% (7.5%); interview_guest 8.3% (7.7%); reaction 0.0% (2.2%); confrontation 4.2% (7.8%); listicle 0.0% (0.1%); howto_explainer 25.0% (9.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 0.0 per 100, mean length 5.5 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 29.1667 per 100, mean length 6.7083 tokens.

@@ -5,29 +5,29 @@ Channel group: **right** (title-leaning score, document 14) · organization: Rek
 
 ## videos
 
-Titles: 18 rows, 18 unique (repeat share 0.0%); LOW-N (not ranked); political share 44.4%.
+Titles: 18 rows, 18 unique (repeat share 0.0%); LOW-N (not ranked); political share 100.0%.
 
 
-Top topics: Lindsay Clancy Murder Trial (55.6%); Marc Lamont Hill and Joe Budden Podcast Controversy (11.1%); Trump vs Maduro Venezuela Conflict (5.6%); Hollywood and Oscars Politics (5.6%); White House Correspondents Dinner Shooting (5.6%)
+Top topics: Lindsay Clancy Murder Trial (44.4%); Karmelo Anthony Trial Verdict (16.7%); Hollywood and Awards Controversy (11.1%); Trump vs Maduro in Venezuela (5.6%); White House Correspondents Dinner Shooting (5.6%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.4 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -0.6 | 0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.1 | 0.2 |
-| F6: Person-centred (named people) | None | None | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.3 | -0.7 |
-| F8: Numeric and dated (digits, years) | None | None | -0.1 | -0.2 |
-| F9: ALL-CAPS shouting | None | None | -1.4 | -0.3 |
-| F10: Quoted speech | None | None | -0.4 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 1.3 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | None | None | -1.0 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.2 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | None | None | -0.6 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.6 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | 0.0 | 0.2 |
+| F6: Person-centred (named people) | None | None | -0.5 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.2 | -0.7 |
+| F8: Numeric and dated (digits, years) | None | None | -0.1 | -0.1 |
+| F9: ALL-CAPS shouting | None | None | -1.3 | -0.3 |
+| F10: Quoted speech | None | None | -0.5 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | None | None | 1.2 | -0.2 |
+| F12: +first_pl +future_will +modal | None | None | -1.1 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 61.1% (59.6%); humor 0.0% (0.2%); question 22.2% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 5.6% (8.5%); reaction 5.6% (2.2%); confrontation 16.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 11.1% (9.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 61.1% (59.8%); humor 0.0% (0.2%); question 22.2% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 5.6% (7.7%); reaction 5.6% (2.2%); confrontation 16.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 11.1% (9.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -38,44 +38,45 @@ Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 
 
 ## streams
 
-Titles: 106 rows, 106 unique (repeat share 0.0%); ranked; political share 78.3%.
+Titles: 103 rows, 103 unique (repeat share 0.0%); ranked; political share 95.2%.
 
 
-Top topics: Members Only Show (16.0%); Lindsay Clancy Murder Trial (15.1%); Charlie Kirk murder trial (9.4%); Trump Supreme Court Legal Issues (8.5%); ICE Protests and Shootings (3.8%)
+Top topics: Members Only Bonus Shows (17.5%); Charlie Kirk Murder Trial (10.7%); Lindsay Clancy Murder Trial (10.7%); Supreme Court rulings and controversies (10.7%); Karmelo Anthony Trial Verdict (6.8%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 75.9 | 67.1 | 0.5 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 60.8 | 44.3 | -0.1 | -0.4 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 36.7 | 43.0 | -0.3 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 89.9 | 82.3 | 0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 86.1 | 82.3 | 0.2 | -0.3 |
-| F6: Person-centred (named people) | 58.2 | 55.7 | 0.5 | 0.0 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 58.2 | 35.4 | -0.3 | -0.6 |
-| F8: Numeric and dated (digits, years) | 29.1 | 84.8 | -0.2 | -0.0 |
-| F9: ALL-CAPS shouting | 24.1 | 41.8 | -0.8 | -0.4 |
-| F10: Quoted speech | 81.0 | 60.8 | -0.1 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 98.7 | 91.1 | 1.6 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | 44.3 | 26.6 | -0.2 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 62.3 | 61.0 | 0.2 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 57.1 | 35.1 | -0.2 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.0 | 40.3 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 88.3 | 80.5 | 0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 89.6 | 84.4 | 0.2 | -0.3 |
+| F6: Person-centred (named people) | 57.1 | 54.5 | 0.4 | -0.1 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 57.1 | 36.4 | -0.3 | -0.6 |
+| F8: Numeric and dated (digits, years) | 68.8 | 89.6 | 0.2 | 0.1 |
+| F9: ALL-CAPS shouting | 57.1 | 54.5 | -0.3 | -0.4 |
+| F10: Quoted speech | 80.5 | 61.0 | -0.1 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 96.1 | 92.2 | 1.4 | 0.1 |
+| F12: +first_pl +future_will +modal | 40.3 | 19.5 | -0.2 | -0.2 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.9% (3.2%); outrage 37.7% (56.4%); humor 0.0% (0.1%); question 17.9% (13.7%); breaking_live 7.5% (18.8%); episode_show 2.8% (26.3%); interview_guest 12.3% (14.0%); reaction 0.9% (2.1%); confrontation 6.6% (9.4%); listicle 0.0% (0.2%); howto_explainer 9.4% (5.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.9% (3.9%); outrage 35.9% (55.8%); humor 0.0% (0.1%); question 17.5% (13.0%); breaking_live 6.8% (16.3%); episode_show 2.9% (25.9%); interview_guest 11.7% (14.2%); reaction 1.0% (2.1%); confrontation 6.8% (9.2%); listicle 0.0% (0.1%); howto_explainer 9.7% (5.4%)
 
 
-Nearest style neighbors: @VivaFrei [right]; @FreshFitMiami [right]; @OwenReport [left]; @AnthonyBrianLogan [right]; @MyronGainesX [right]
+Nearest style neighbors: @MyronGainesX [right]; @RedactedNews [right]; @FreshFitMiami [right]; @OwenReport [left]; @franifio [left]
 
-Nearest topic neighbors: @TheOfficerTatum [right]; @MyronGainesX [right]; @RealAmericasVoice [right]; @TimcastIRL [right]; @underthedesknews [left]
+Nearest topic neighbors: @TheOfficerTatum [right]; @MLChristiansen [right]; @MyronGainesX [right]; @TimcastIRL [right]; @RobertGouveiaEsq [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-03 | 24 | 0.84 | 0.41 | -0.51 | 0.41 | 0.15 | 0.17 | -0.23 | 0.43 | 0.46 | 0.01 | 2.06 | -0.23 | 0.00 | 0.50 | 0.00 |
+| 2026-02 | 19 | 0.29 | 0.16 | -0.66 | -0.04 | -0.18 | 0.33 | -0.26 | -0.17 | -0.03 | -0.24 | 1.62 | -0.25 | 0.00 | 0.42 | 0.00 |
+| 2026-03 | 22 | 0.47 | 0.48 | -0.01 | 0.57 | 0.75 | 0.27 | -0.44 | 1.55 | 0.60 | -0.01 | 1.19 | -0.15 | 0.00 | 0.36 | 0.00 |
 
 
 Engagement: n < 100 titles with views, not estimated.
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 15.0943 per 100, mean length 12.1604 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 15.534 per 100, mean length 12.1942 tokens.

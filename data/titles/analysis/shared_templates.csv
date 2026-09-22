@@ -1,39 +1,38 @@
 template,n_creators,n_titles,example,creators,groups,n_groups,n_organisations,within_group
-<ENT> 's <ENT>,62,147,Iran's Plan To Make You SIMP,@60minutes; @ANINewsIndia; @BadEmpanadaLive; @BenShapiro; @ClipsCandaceOwens; @DailyDenims; @DemocracyDocket; @DueDissidence; @DylanBurnsLIVE; @FarronBalanced; @FleccasTalks; @GlennKirschner2,left; neutral; right,3,56,False
-<ENT> after <ENT>,37,73,Trump’s Envoys Get RUDE AWAKENING After Putin Meeting,@AfterPartyEmily; @BlackConservativePerspective; @DemocracyNow; @DylanBurnsLIVE; @FarronBalanced; @Firstpost; @FreshFitMiami; @HasanReactionsfanTwo; @JackCocchiarellaShow; @LegalAFMTN; @MeidasTouch; @MichaelKnowles,left; neutral; right,3,34,False
-<ENT> 's <ENT> <ENT>,23,40,California's Election Shakeup + Microsoft's AI Spy Badge | PBD #811,@ANINewsIndia; @ActualJusticeWarrior; @BlazeTV; @DannyHaiphongYT; @Firstpost; @GlennKirschner2; @JamarlThomas; @PBDPodcast; @TheDonLemonShow; @TheMajorityReport; @TheMichaelCohenShow; @TheVaushPit,left; neutral; right,3,23,False
-<ENT> ’s <ENT>,18,28,"AIPAC’s ""Elect Chicago Women"" Super PAC Exposed",@DropSiteNews; @OwenJonesTalks; @PTLRadioShow; @TheMajorityReport; @ThePodcastoftheLotusEaters; @TheYoungTurks; @TimDillonShow; @TimesNowWorld; @ZeihanonGeopolitics; @aljazeeraenglish; @axios; @chinainsights-r2w,left; neutral; right,3,18,False
+<ENT> 's <ENT>,61,142,Iran's Plan To Make You SIMP,@60minutes; @ANINewsIndia; @BadEmpanadaLive; @BenShapiro; @ClipsCandaceOwens; @DailyDenims; @DemocracyDocket; @DueDissidence; @FarronBalanced; @FleccasTalks; @GlennKirschner2; @GrahamAllen,left; neutral; right,3,55,False
+<ENT> after <ENT>,35,67,Trump’s Envoys Get RUDE AWAKENING After Putin Meeting,@AfterPartyEmily; @BlackConservativePerspective; @DylanBurnsLIVE; @FarronBalanced; @FreshFitMiami; @HasanReactionsfanTwo; @JackCocchiarellaShow; @LegalAFMTN; @MeidasTouch; @MichaelKnowles; @OwenJonesTalks; @PTLRadioShow,left; neutral; right,3,32,False
+<ENT> 's <ENT> <ENT>,23,39,California's Election Shakeup + Microsoft's AI Spy Badge | PBD #811,@ANINewsIndia; @ActualJusticeWarrior; @BlazeTV; @DannyHaiphongYT; @Firstpost; @GlennKirschner2; @JamarlThomas; @PBDPodcast; @TheDonLemonShow; @TheMajorityReport; @TheMichaelCohenShow; @TheVaushPit,left; neutral; right,3,23,False
+<ENT> ’s <ENT>,17,27,"AIPAC’s ""Elect Chicago Women"" Super PAC Exposed",@DropSiteNews; @OwenJonesTalks; @PTLRadioShow; @TheMajorityReport; @ThePodcastoftheLotusEaters; @TheYoungTurks; @TimDillonShow; @TimesNowWorld; @ZeihanonGeopolitics; @aljazeeraenglish; @axios; @clayandbuck,left; neutral; right,3,17,False
 <ENT> exposes <ENT>,14,19,Elizabeth Warren Exposes Trump’s Fed Pick In Brutal Hearing,@JackCocchiarellaShow; @JillianMichaels; @PTLRadioShow; @RealAmericasVoice; @RobertGouveiaEsq; @SabbySabs; @TheDamageReport; @TheMajorityReport; @TheYoungTurks; @adammockler; @chicksonright; @fightbackpodcast,left; right,2,13,False
 <ENT> <ENT> 's <ENT>,13,19,US Media's Hasan Piker Derangement Syndrome Is Ridiculous,@CBSNews; @DemocracyDocket; @JamarlThomas; @TheDonLemonShow; @TheMajorityReport; @TheYoungTurks; @TimesNowWorld; @ZeihanonGeopolitics; @jimacosta; @judgingfreedom; @markets; @thomhartmann,left; neutral; right,3,13,False
-<ENT> <ENT> after <ENT>,13,15,OMG: Trump RUSHES OFF after Going to HOSPITAL!,@BlazeTV; @DueDissidence; @DylanBurnsLIVE; @Firstpost; @Forbes; @JesseKellyDC; @LukeBeasley; @RubinReport; @TheYoungTurks; @markets; @nypost; @oann,left; neutral; right,3,13,False
+<ENT> <ENT> after <ENT>,12,13,OMG: Trump RUSHES OFF after Going to HOSPITAL!,@BlazeTV; @DueDissidence; @DylanBurnsLIVE; @Firstpost; @Forbes; @JesseKellyDC; @LukeBeasley; @RubinReport; @TheYoungTurks; @markets; @nypost; @timesofindia,left; neutral; right,3,12,False
 <ENT> after <ENT> <ENT>,11,16,Hakeem Jeffries In Full Panic Mode After Kushner Meeting Pisses Off Democrats,@FarronBalanced; @Firstpost; @RealAmericasVoice; @RebelHQ; @Reuters; @TheMajorityReport; @adammockler; @dollemore; @katiephangnews; @markets; @nypost,left; neutral; right,3,11,False
-<ENT> vs. <ENT>,11,11,Ben Shapiro vs. Fortnite,@BenShapiro; @HasanAbi; @NewsmaxTV; @TheAdamCarollaShow1; @TheAtlantic; @TheBrianKilmeadeShow; @TheLincolnProject; @deanwithrs; @lonerboxlive; @markets; @thomhartmann,left; neutral; right,3,11,False
-<ENT> w/ <ENT>,10,38,Biblical Idolatry & The Role of Moses w/ Jordan B. Peterson,@AndrewKlavan; @BadFaithPodcast; @BenShapiro; @OwenReport; @TheAdamCarollaShow1; @TheHumanistReport; @TheMajorityReport; @bulwarkmedia; @fastpoliticspodcast; @thejimmydoreshow,left; neutral; right,3,9,False
 <ENT> <ENT> w/ <ENT>,10,20,"""It Went Completely Viral"" Brett Cooper Talks Internet Drama & Pendragon Cycle W/ Michael Knowles",@BadFaithPodcast; @BreakThroughNews; @MichaelKnowles; @TheMajorityReport; @TimcastIRL; @bulwarkmedia; @dollemore; @fastpoliticspodcast; @thegrayzone7996; @thejimmydoreshow,left; neutral; right,3,10,False
-<ENT> says <ENT>,10,17,Fox News Lunatic Says Americans Have Data Center Derangement Syndrome,@Firstpost; @JackCocchiarellaShow; @MrTariqNasheed; @Politicon; @TheAmalaEkpunobi; @TheMajorityReport; @TheYoungTurks; @dollemore; @markets; @nypost,left; neutral; right,3,10,False
+<ENT> says <ENT>,10,16,Fox News Lunatic Says Americans Have Data Center Derangement Syndrome,@Firstpost; @JackCocchiarellaShow; @MrTariqNasheed; @Politicon; @TheAmalaEkpunobi; @TheMajorityReport; @TheYoungTurks; @dollemore; @markets; @nypost,left; neutral; right,3,10,False
 <ENT> 's <ENT> in <ENT>,10,13,AOC's DISASTROUS Foreign Policy Debut In Munich,@DropSiteNews; @PerunAU; @RobertGouveiaEsq; @TheDamageReport; @breakingpoints; @chinainsights-r2w; @clayandbuck; @judgingfreedom; @markets; @nypost,left; neutral; right,3,10,False
-<ENT> <ENT> 's <ENT> <ENT>,9,11,Bill Kristol: MAGA's Grievance Culture | The Bulwark Podcast,@Firstpost; @GrahamAllen; @JamarlThomas; @TheMichaelCohenShow; @TimesNowWorld; @bulwarkmedia; @judgingfreedom; @markets; @timesofindia,left; neutral; right,3,8,False
-the truth about <ENT>,9,9,The truth about Blizzard,@AsmonTV; @GrahamAllen; @RealAmericasVoice; @RestPoliticsUS; @TheQuartering; @TheYoungTurks; @katmabu; @thewarningwithsteveschmidt; @winston_marshall,left; right,2,9,False
+<ENT> w/ <ENT>,8,35,Trump’s Ballroom Obsession Has Gone Totally Off the Rails (w/ Ben Terris),@AndrewKlavan; @BadFaithPodcast; @OwenReport; @TheAdamCarollaShow1; @TheHumanistReport; @bulwarkmedia; @fastpoliticspodcast; @thejimmydoreshow,left; neutral; right,3,8,False
+<ENT> <ENT> 's <ENT> <ENT>,8,10,Bill Kristol: MAGA's Grievance Culture | The Bulwark Podcast,@Firstpost; @GrahamAllen; @JamarlThomas; @TheMichaelCohenShow; @TimesNowWorld; @bulwarkmedia; @judgingfreedom; @markets,left; neutral; right,3,8,False
 <ENT> on <ENT> 's <ENT>,8,10,Aaron Rodgers Torched Fauci on ESPN's Own Air,@BenShapiro; @ClubRandomPodcast; @JesseKellyDC; @dollemore; @evanjmez; @fastpoliticspodcast; @marclamonthillnetwork; @markets,left; neutral; right,3,8,False
+<ENT> vs. <ENT>,8,8,Ben Shapiro vs. Fortnite,@BenShapiro; @HasanAbi; @NewsmaxTV; @TheAdamCarollaShow1; @TheBrianKilmeadeShow; @deanwithrs; @lonerboxlive; @thomhartmann,left; right,2,8,False
+the truth about <ENT>,8,8,The truth about Blizzard,@AsmonTV; @GrahamAllen; @RealAmericasVoice; @TheQuartering; @TheYoungTurks; @katmabu; @thewarningwithsteveschmidt; @winston_marshall,left; right,2,8,False
 <ENT> on live tv,7,10,Epstein Victim-Smearer Humiliated On Live TV,@FarronBalanced; @PTLRadioShow; @TheDonLemonShow; @TheMajorityReport; @TheMichaelCohenShow; @adammockler; @ponderingpolitics,left,1,7,True
-<ENT> destroys <ENT>,7,8,Candace Owens EXPOSES & DESTROYS Ben Shapiro!,@ActualJusticeWarrior; @PTLRadioShow; @SabbySabs; @TheDonLemonShow; @TheSerfTimes; @chicksonright; @thejimmydoreshow,left; neutral; right,3,7,False
 <ENT> under the bus,7,8,Dems Throw Trans Folks Under The Bus,@FarronBalanced; @JackCocchiarellaShow; @SMN; @SabbySabs; @TheDamageReport; @TheMajorityReport; @TheYoungTurks,left,1,6,True
 <ENT> is here,7,7,The Radical Left’s Hostile Takeover Is Here,@BenShapiro; @EzraKleinShow; @JacksonHinkleOfficial; @SecondThought; @Xanderhal; @glennbeck; @msnow,left; neutral; right,3,7,False
+<ENT> destroys <ENT>,6,7,Jesse Watters DESTROYS Abdul El-Sayed,@ActualJusticeWarrior; @PTLRadioShow; @SabbySabs; @TheDonLemonShow; @TheSerfTimes; @chicksonright,left; right,2,6,False
 <ENT> ft # <ENT>,6,7,Catholic & Protestant Debunk Islam & Atheist Arguments | ft. Billy Hallowell,@Channel5YouTube; @MichaelKnowles; @RileyGaines; @TheJoyReidShow; @TimDillonShow; https://rumble.com/c/nickjfuentes,left; neutral; right,3,6,False
 <ENT> against <ENT>,6,6,Ben Shapiro Lobs WILD Accusation Against Dave Smith,@LegalAFMTN; @RebelHQ; @RobertGouveiaEsq; @SabbySabs; @TheYoungTurks; @markets,left; neutral; right,3,5,False
 <ENT> off on <ENT>,6,6,Adam Conover GOES OFF on Tech Companies & A.I.,@DueDissidence; @MyronGainesX; @PTLRadioShow; @SabbySabs; @TheDonLemonShow; @lovettorleaveitpodcast,left; right,2,6,False
 <ENT> senator <ENT>,6,6,Republican Senator SLAMS Trump,@JackCocchiarellaShow; @RestPoliticsUS; @TheYoungTurks; @TimesNowWorld; @nypost; @thomhartmann,left; neutral; right,3,6,False
-<ENT> panic as <ENT>,5,14,Republicans PANIC as Reporters Fact-Check Them LIVE!,@DrSteveTurleyTV; @FarronBalanced; @RebelHQ; @TheDamageReport; @aaronparnas1,left; right,2,4,False
+<ENT> panic as <ENT>,5,13,Republicans PANIC as Reporters Fact-Check Them LIVE!,@DrSteveTurleyTV; @FarronBalanced; @RebelHQ; @TheDamageReport; @aaronparnas1,left; right,2,4,False
 <ENT> 's <ENT> <ENT> <ENT>,5,11,Trump's Blasphemous Social Media Weekend; JD Vance Fails; Orban Down | MR Live,@BlazeTV; @DemocracyNow; @Firstpost; @TheMajorityReport; @markets,left; neutral; right,3,5,False
 <ENT> reacts to <ENT>,5,11,Matt Walsh Reacts To CRINGEY New Star Trek Show,@CBSNews; @HasanabiClips; @MattWalsh; @PTLRadioShow; @fightbackpodcast,left; neutral; right,3,5,False
 <ENT> is cooked,5,9,Dave Smith | Pam Bondi is Cooked | Part Of The Problem 1360,@LIVESNEAKO; @PartOfTheProblem; @TheMajorityReport; @TimcastIRL; @TimcastNews,left; neutral; right,3,4,False
 <ENT> 's <ENT> #,5,7,GOP's Ugly Scandal Keeps Getting Worse...,@JacksonHinkleOfficial; @LegalAFMTN; @OwenReport; @TheMajorityReport; @markets,left; neutral,2,5,False
-<ENT> on trump,5,7,MAGA Bros Drop Final Bomb on Trump,@FarronBalanced; @adammockler; @harryjsisson; @podsaveamerica; @ponderingpolitics,left,1,5,True
 <ENT> 's <ENT> on <ENT>,5,6,CNN's DISGUSTING Hitpiece On Hasan,@DropSiteNews; @TechCrunch; @Vaush; @markets; @nypost,left; neutral; right,3,5,False
 <ENT> in <ENT> 's <ENT>,5,6,Key Advice For Fathers in Today's Feminized Culture,@MegynKelly; @TheYoungTurks; @markets; @nypost; @thehill,left; neutral; right,3,5,False
 <ENT> just got worse,5,6,Trump's World Cup Nightmare Just Got Worse,@JackCocchiarellaShow; @RealAmericasVoice; @SavSays; @TheAdamCarollaShow1; @TheDamageReport,left; right,2,5,False
+<ENT> on trump,5,6,MAGA Bros Drop Final Bomb on Trump,@FarronBalanced; @adammockler; @harryjsisson; @podsaveamerica; @ponderingpolitics,left,1,5,True
 <ENT> ’s <ENT> <ENT>,5,6,TLC’S Rozanda “Chilli” Thomas Exposed For Being A Trump/Maga Supporter!,@Firstpost; @OwenJonesTalks; @TheRealTabithaSpeaks; @oann; @timesofindia,left; neutral; right,3,5,False
-<ENT> 's <ENT> and <ENT>,5,5,US's Shocking History Of Stripping Citizenship For Race And Speech,@BlazeTV; @TheMajorityReport; @nationalreview; @revleftradio; @thomhartmann,left; right,2,5,False
 <ENT> gets <ENT>,5,5,Linda McMahon Gets COOKED As Dems Reveal Her School Disaster,@RealAmericasVoice; @RebelHQ; @SabbySabs; @TheMichaelCohenShow; @The_Crucible,left; right,2,5,False
 <ENT> iran <ENT>,5,5,Trump EXTENDS Iran Ultimatum + DHS Shutdown Causes TSA CHAOS | PBD #764,@JamarlThomas; @OwenJonesTalks; @PBDPodcast; @katiephangnews; @markets,left; neutral; right,3,5,False
 <ENT> is dead,5,5,KHAMENEI IS DEAD,@AsmonTV; @SecularTalk; @TimcastIRL; @TimcastNews; @Vaush,left; right,2,4,False
@@ -59,6 +58,7 @@ breaking <ENT> in <ENT>,4,5,BREAKING: Second Fatal ICE Shooting in Minneapolis,@
 this is insane #,4,5,THIS IS INSANE..,@AsmonTV; @JacksonHinkleOfficial; @TimcastNews; https://rumble.com/c/russellbrand,neutral; right,2,4,False
 what happened to <ENT>,4,5,What Happened To Karoline Leavitt?,@RebelNewsOnline; @SabbySabs; @TheMajorityReport; @bbrettcooper,left; right,2,4,False
 <ENT> 's <ENT> # <ENT>,4,4,"Ukraine's Naval Blitz - The Azov Sea Escalation, Russian Retaliation & Export Economics",@Forbes; @PerunAU; @TimesNowWorld; @markets,left; neutral,2,4,False
+<ENT> 's <ENT> and <ENT>,4,4,Trump's Greenland Gambit and The State of the Global Chessboard,@BlazeTV; @nationalreview; @revleftradio; @thomhartmann,left; right,2,4,False
 <ENT> <ENT> <ENT> 's <ENT>,4,4,[M] Trump Launches Tariff War on SCOTUS | Dumb Puck Kash Patel | GOP's Anti-AOC Elitism,@TheDamageReport; @TimesNowWorld; @judgingfreedom; https://rumble.com/c/BannonsWarRoom,left; neutral; right,3,4,False
 <ENT> admits <ENT>,4,4,“Consumers Are The LAST Of Our Concerns!” ADMITS Trump Economic Advisor! ,@JackCocchiarellaShow; @NovaraMedia; @franifio; @thejimmydoreshow,left; neutral,2,4,False
 <ENT> and <ENT> 's <ENT>,4,4,"RFK And Trump's ""Fleshy Dominoes""",@TheJoyReidShow; @TheMajorityReport; @bbrettcooper; @thewarningwithsteveschmidt,left; right,2,4,False
@@ -75,15 +75,14 @@ what happened to <ENT>,4,5,What Happened To Karoline Leavitt?,@RebelNewsOnline; 
 <ENT> ’s <ENT> in <ENT> <ENT>,4,4,MAGA’s Antifa Narrative FALLS APART In One Clip,@Firstpost; @PTLRadioShow; @TimesNowWorld; @timesofindia,left; neutral,2,3,False
 president <ENT> <ENT>,4,4,President Trump Endorses Jake Paul,@MichaelKnowles; @glennbeck; @oann; https://rumble.com/c/BannonsWarRoom,right,1,4,True
 this changes everything #,4,4,This changes everything..,@AsmonTV; @CashJordan; @DestinyDGGClips; https://rumble.com/c/russellbrand,right,1,4,True
-what 's <ENT>,4,4,What's REALLY Causing Autoimmune Diseases,@MegynKelly; @MrTariqNasheed; @chicksonright; @fightbackpodcast,right,1,4,True
-<ENT> 's <ENT> # <ENT> <ENT>,3,7,"Iran's Anti-Ship Missile HITS US Vessel, Trump & Israel CRUMBLE | Stanislav Krapivnik",@DannyHaiphongYT; @Firstpost; @markets,left; neutral,2,3,False
+<ENT> 's <ENT> # <ENT> <ENT>,3,6,"Iran's Anti-Ship Missile HITS US Vessel, Trump & Israel CRUMBLE | Stanislav Krapivnik",@DannyHaiphongYT; @Firstpost; @markets,left; neutral,2,3,False
 <ENT> is done #,3,6,Sykkuno is done..,@AsmonTV; @HasanAbi; @LiberalHivemind,left; right,2,3,False
 <ENT> part <ENT>,3,6,“The Evolution of Gucci Mane” Part 2,@ABCNews; @Channel5YouTube; @RufoandLomez,left; neutral; right,3,3,False
-<ENT> what you need to know,3,6,The Joe Kent Scandal —  What You Need to Know | Ep 240,@ABCNews; @lizwheeler; @markets,neutral; right,2,3,False
 live president <ENT> delivers remarks at <ENT>,3,6,LIVE: President Trump delivers remarks at the Great American State Fair,@NBCNews; @msnow; @nypost,left; neutral; right,3,3,False
-<ENT> <ENT> vs. <ENT>,3,5,“Politics Is Exhausting” — Alex Stein vs. Barstool Fans + Studio Banter,@RealAmericasVoice; @RobertGouveiaEsq; https://rumble.com/c/BannonsWarRoom,right,1,3,True
 <ENT> ends <ENT>,3,5,Somali Fraud ENDS Tim Walz,@ActualJusticeWarrior; @JackCocchiarellaShow; @JacksonHinkleOfficial,left; neutral; right,3,3,False
+<ENT> what you need to know,3,5,The Joe Kent Scandal —  What You Need to Know | Ep 240,@ABCNews; @lizwheeler; @markets,neutral; right,2,3,False
 live trump participates in <ENT>,3,5,LIVE: Trump participates in the Faith & Freedom Coalition Conference,@AssociatedPress; @NBCNews; @msnow,left; neutral,2,3,False
+<ENT> <ENT> vs. <ENT>,3,4,“Politics Is Exhausting” — Alex Stein vs. Barstool Fans + Studio Banter,@RealAmericasVoice; @RobertGouveiaEsq; https://rumble.com/c/BannonsWarRoom,right,1,3,True
 <ENT> attacks <ENT>,3,4,IRAN ATTACKS JORDAN,@HasanAbi; @PoliticsGirl; @TheRealTabithaSpeaks,left,1,3,True
 <ENT> caught in <ENT>,3,4,Pam Bondi CAUGHT in Epstein BOMBSHELL,@RealAmericasVoice; @briantylercohen; @podsaveamerica,left; right,2,3,False
 <ENT> is coming,3,4,DIGITAL ID IS COMING,@DylanBurnsLIVE; @RobertGouveiaEsq; @TimcastIRL,left; right,2,3,False
@@ -107,7 +106,6 @@ why <ENT> 's <ENT>,3,4,Why Trump's Iran War Is An Economic Catastrophe,@Firstpos
 <ENT> at <ENT> finals,3,3,Trump BOOED MERCILESSLY at World Cup finals ,@FarronBalanced; @SabbySabs; @briantylercohen,left,1,3,True
 <ENT> congressman <ENT>,3,3,Trump Stunned MAGA Congressman Quits,@JackCocchiarellaShow; @SabbySabs; @TheRealTabithaSpeaks,left,1,3,True
 <ENT> defeats <ENT>,3,3,ABDUL EL-SAYED DEFEATS HALEY STEVENS!,@ABCNews; @GlennKirschner2; @HasanAbi,left; neutral,2,3,False
-<ENT> demands <ENT>,3,3,Lindsey Graham DEMANDS 'IWO JIMA' Level Sacrifice,@FarronBalanced; @RobertGouveiaEsq; @breakingpoints,left; right,2,3,False
 <ENT> down <ENT>,3,3,MAGA Hospitalization SHUTS DOWN Congress,@JackCocchiarellaShow; @SabbySabs; @fightbackpodcast,left; right,2,3,False
 <ENT> explains <ENT>,3,3,CANDACE EXPLAINS: The Healthcare Cartel,@ClipsCandaceOwens; @LegalAFMTN; @fightbackpodcast,left; neutral; right,3,3,False
 <ENT> exposes <ENT> <ENT>,3,3,Bernie Sanders Exposes US Senate's Scheme To Cut Social Security,@PTLRadioShow; @TheMajorityReport; @marklevinshow,left; right,2,3,False
@@ -115,17 +113,12 @@ why <ENT> 's <ENT>,3,4,Why Trump's Iran War Is An Economic Catastrophe,@Firstpos
 <ENT> humiliates <ENT>,3,3,Kaitlan Collins Humiliates Another Republican Moron,@JacksonHinkleOfficial; @TheMajorityReport; @thejimmydoreshow,left; neutral,2,3,False
 <ENT> is a disaster,3,3,Todd Blanche Is A Disaster,@LegalEagle; @TheMajorityReport; @TheYoungTurks,left,1,3,True
 <ENT> is desperate,3,3,Ben Shapiro Is DESPERATE,@LIVESNEAKO; @TheDonLemonShow; @TheMajorityReport,left; neutral,2,3,False
-<ENT> is done with trump,3,3,Candace Owens Is DONE With Trump,@FarronBalanced; @NYTPodcasts; @TheYoungTurks,left,1,3,True
-<ENT> is out of control,3,3,TALARICO DERANGEMENT SYNDROME IS OUT OF CONTROL | The Kyle Kulinski Show,@LegalEagle; @SecularTalk; @bulwarkmedia,left,1,3,True
 <ENT> is so much worse than you think,3,3,The Gambling Epidemic is So Much Worse Than You Think ,@SecondThought; @SydneyWatson; @TheHumanistReport,left; right,2,3,False
 <ENT> judge <ENT>,3,3,America Needs New Allies for Future Ai Wars | Judge Roy Altman,@LegalAFMTN; @RubinReport; @judgingfreedom,left; right,2,3,False
-<ENT> just dropped,3,3,REACTIONARY ZOHRAN CLONE JUST DROPPED,@HasanAbi; @MarkDice; @RealAmericasVoice,left; right,2,3,False
 <ENT> major <ENT>,3,3,Trump-Iran Deal Faces Major Cracks Amid Hormuz Crisis,@OwenReport; @aljazeeraenglish; https://rumble.com/c/TheAlexJonesShowLive,left; right,2,3,False
 <ENT> now <ENT>,3,3,Iran Now OPENLY TAUNTING Donald Trump!,@OwenReport; @RedactedNews; @thejimmydoreshow,left; neutral; right,3,3,False
 <ENT> on <ENT> after <ENT>,3,3,CBS Staffers TURN On Tony Dokoupil After MAGA Pivot,@PTLRadioShow; @TheDamageReport; @fastpoliticspodcast,left,1,3,True
 <ENT> on air,3,3,Tucker Carlson ATTACKED Catherine On-Air!,@RebelHQ; @TheDamageReport; @bulwarkmedia,left,1,2,True
-<ENT> on the brink,3,3,Trump’s Ceasefire on the Brink!,@NYTPodcasts; @ThePodcastoftheLotusEaters; @chinainsights-r2w,left; neutral; right,3,3,False
-<ENT> praises <ENT>,3,3,Tucker Rips Shapiro & PRAISES Venezuela’s Conservative Social Values!,@SabbySabs; @TimcastNews; @thejimmydoreshow,left; neutral; right,3,3,False
 <ENT> responds to <ENT>,3,3,Steve Bannon RESPONDS To Epstein Backlash,@JesseKellyDC; @TheDonLemonShow; @TheYoungTurks,left; right,2,3,False
 <ENT> right now,3,3,Trump Is Freaking The F**K OUT Right Now,@KimIversen; @TheDonLemonShow; @Vaush,left; neutral,2,3,False
 <ENT> rips <ENT>,3,3,Dave Smith RIPS Sam Harris,@TheDamageReport; @TheYoungTurks; @breakingpoints,left,1,2,True
@@ -142,13 +135,11 @@ actor <ENT> dies at <ENT>,3,3,Actor Robert Carradine dies at 71,@AssociatedPress
 best of <ENT> <ENT>,3,3,Best of RAF09 | Fox Nation,@FoxNews; @JustPearlyThings; https://rumble.com/c/nickjfuentes,right,1,3,True
 breaking <ENT> arrested,3,3,BREAKING: Peter Mandelson Arrested | #novaralive,@FoxNews; @NovaraMedia; @TheDonLemonShow,left; right,2,3,False
 breaking down <ENT>,3,3,Breaking Down the Don Lemon Church Protest Charges with Breaking Points,@CBSNews; @FreshFitMiami; @PiscoLitty,left; neutral; right,3,3,False
-did <ENT> 's <ENT>,3,3,Did Lovett's Pete Hegseth Joke BOMB?,@Unpacked; @judgingfreedom; @lovettorleaveitpodcast,left; right,2,3,False
 i was n't ready for this #,3,3,I wasn't ready for this.,@LiberalHivemind; @RebelNewsOnline; @adammockler,left; right,2,3,False
 inside <ENT> <ENT>,3,3,Inside the Fall of Communist Cuba,@Forbes; @NYTPodcasts; @NickShirley,left; neutral; right,3,3,False
 it 's happening #,3,3,It's happening...,@JacksonHinkleOfficial; @RebelNewsOnline; @adammockler,left; neutral; right,3,3,False
 it 's over for <ENT> #,3,3,It's over for Mitch...,@LiberalHivemind; @adammockler; @harryjsisson,left; right,2,3,False
 judge <ENT> <ENT> <ENT>,3,3,Judge Completely Humiliates Texas Republicans,@DailyDenims; @FarronBalanced; @MikeFromPA,left,1,3,True
-remembering <ENT> <ENT>,3,3,Remembering Bill Moyers: PBS Icon on Corruption of Corporate Media and Power of Public Broadcasting,@CBSNews; @DemocracyNow; @ThePodcastoftheLotusEaters,left; neutral; right,3,3,False
 rep. <ENT> on <ENT>,3,3,Rep. Garcia on Oversight Investigating Trump's Accusations,@fastpoliticspodcast; @markets; @oann,left; neutral; right,3,3,False
 responding to <ENT>,3,3,Responding to Hunter Biden Drama | Members Only Bonus Show 09/09/2026,@LukeBeasley; @TheOfficerTatum; @destiny,left; right,2,3,False
 search for <ENT> enters <ENT>,3,3,Search for Nancy Guthrie enters fourth day,@ABCNews; @NBCNews; @Reuters,neutral,1,3,True
@@ -158,7 +149,7 @@ this ca n't be real #,3,3,This can't be real..,@AsmonTV; @RebelNewsOnline; @adam
 this is f**king crazy #,3,3,THIS IS F**KING CRAZY..,@AsmonTV; @destiny; @ponderingpolitics,left; right,2,3,False
 trump fires <ENT>,3,3,TRUMP FIRES KRISTI NOEM!!!,@HasanAbi; @MeidasTouch; @SkyNews,left,1,3,True
 trump fires <ENT> secretary <ENT>,3,3,Trump fires DHS Secretary Kristi Noem,@AssociatedPress; @CNN; @NBCNews,left; neutral,2,3,False
-what is <ENT> doing,3,3,What is TRUMP DOING?! | Members Only Bonus Show 06/15/2026,@LukeBeasley; @TheMajorityReport; @TheYoungTurks,left,1,3,True
+what 's <ENT>,3,3,What's REALLY Causing Autoimmune Diseases,@MegynKelly; @chicksonright; @fightbackpodcast,right,1,3,True
 <ENT> w/ <ENT> <ENT>,2,17,Trump's War on the Enlightenment (w/ Steven Pinker) | Mona Charen Show,@bulwarkmedia; @judgingfreedom,left,1,2,True
 <ENT> 's <ENT> in <ENT> <ENT>,2,7,China's Economy Slows Sharply in April | The China Show 5/18/2026,@Firstpost; @markets,neutral,1,2,True
 <ENT> for president,2,7,Candace Owens for President?,@Politicon; @chicksonright,left; right,2,2,False
@@ -182,12 +173,9 @@ live <ENT> 's <ENT>,2,4,LIVE: TPUSA's Build the Red Wall Event,@Firstpost; @oann
 live trump delivers remarks at <ENT>,2,4,LIVE: Trump delivers remarks at the White House,@NBCNews; @msnow,left; neutral,2,2,False
 live trump speaks in <ENT>,2,4,LIVE: TRUMP SPEAKS IN PARIS,@Reuters; @oann,neutral; right,2,2,False
 this is going mega viral #,2,4,This is going MEGA viral...,@adammockler; @harryjsisson,left,1,2,True
-<ENT> # <ENT> 's <ENT>,2,3,"WNBA Defines “Woman,” America's Farmer Crisis, & Bibi Rejects Gaza Peace Plan | PBD Podcast #841",@PBDPodcast; @markets,neutral; right,2,2,False
 <ENT> # w/ <ENT>,2,3,"The Disgusting Immigration Failures & Politicization of College Student’s Murder, w/ Michael Malice",@AfterPartyEmily; @BreakThroughNews,left; right,2,2,False
 <ENT> <ENT> under the bus,2,3,Karoline THROWS Stephen Miller UNDER the BUS,@FarronBalanced; @adammockler,left,1,2,True
 <ENT> after <ENT> simple question,2,3,Gen Z Socialist Gets Visibly Angry After Fox Host Corners Him w/ One Simple Question,@PTLRadioShow; @RubinReport,left; right,2,2,False
-<ENT> at everyone over <ENT>,2,3,Trump Screams at Everyone over LEAK,@adammockler; @deanwithrs,left,1,2,True
-<ENT> by <ENT> judge,2,3,Trump Plot SHUTDOWN by GOP Judge,@LegalAFMTN; @RobertGouveiaEsq,left; right,2,2,False
 <ENT> caught lying,2,3,Hegseth Gets CAUGHT LYING,@SabbySabs; @TheYoungTurks,left,1,2,True
 <ENT> ceo <ENT> on <ENT>,2,3,“I’m Leaving”: CEO Sounds Alarm on Seattle’s Radical Tax Grab,@chicksonright; @markets,neutral; right,2,2,False
 <ENT> destroys racist <ENT>,2,3,HOT TAKES! - Hasan Piker DESTROYS Racist Donald Trump!,@HasanReactionsfanTwo; @TheDonLemonShow,left,1,2,True
@@ -197,7 +185,6 @@ this is going mega viral #,2,4,This is going MEGA viral...,@adammockler; @harryj
 <ENT> in front of everyone,2,3,Trump Humiliates Vance in Front of EVERYONE,@adammockler; @harryjsisson,left,1,2,True
 <ENT> is a hero,2,3,Dan Bongino is a Hero!,@AlexStein99; @fightbackpodcast,right,1,2,True
 <ENT> is back,2,3,Britain is back??,@AsmonTV; @PoliticsGirl,left; right,2,2,False
-<ENT> is cooked #,2,3,Britain is cooked..,@AsmonTV; @LIVESNEAKO,neutral; right,2,2,False
 <ENT> is lying,2,3,Hunter Biden Is LYING!,@RealDanBongino; @SabbySabs,left; right,2,2,False
 <ENT> just said the quiet part out loud,2,3,JD Vance Just Said The Quiet Part Out Loud,@OwenJonesTalks; @TheMajorityReport,left,1,2,True
 <ENT> lost his mind #,2,3,Hasan lost his mind.,@AsmonTV; @LIVESNEAKO,neutral; right,2,2,False
@@ -206,11 +193,8 @@ this is going mega viral #,2,4,This is going MEGA viral...,@adammockler; @harryj
 <ENT> out <ENT> 's <ENT>,2,3,Dean Obeidallah Calls Out Trump's 9/11 Islamophobia | The Joy Reid Show,@Firstpost; @TheJoyReidShow,left; neutral,2,2,False
 <ENT> over <ENT> 's <ENT>,2,3,Fox News Is Freaking Out Over Trump's Iran Peace Deal,@TheMajorityReport; @breakingpoints,left,1,2,True
 <ENT> panics as <ENT>,2,3,White House PANICS As Trump’s Pool Disaster Goes Viral!!,@FarronBalanced; @harryjsisson,left,1,2,True
-<ENT> revolt as <ENT>,2,3,Red States REVOLT As Trump's Policies Crush Them,@FarronBalanced; @StatusCoup,left,1,2,True
 <ENT> rocked by <ENT>,2,3,Trump World ROCKED by New Qatari Jet Scandal,@DropSiteNews; @podsaveamerica,left,1,2,True
-<ENT> shooting update,2,3,Brown University shooting update,@NewsNation; @USATODAY,neutral,1,2,True
 <ENT> to trump,2,3,US Facing NIGHTMARE SCENARIO Thanks To Trump,@FarronBalanced; @SabbySabs,left,1,2,True
-<ENT> welcomes <ENT>,2,3,New Zealand welcomes 2026,@ABCNews; @SkyNews,left; neutral,2,2,False
 <ENT> wo n't like this #,2,3,Trump won't like this...,@HasanAbi; @RebelNewsOnline,left; right,2,2,False
 breaking <ENT> #,2,3,🚨BREAKING: Chuck Norris Dead...,@bennyjohnson; @deanwithrs,left; right,2,2,False
 it just got even worse #,2,3,It just got even worse...,@adammockler; @harryjsisson,left,1,2,True
@@ -226,8 +210,6 @@ live may day protests in <ENT>,2,3,LIVE MAY DAY Protests in NYC,@MeidasTouch; @S
 live spacex launches <ENT> satellites,2,3,LIVE: SpaceX launches SDA satellites,@Firstpost; @Reuters,neutral,1,2,True
 live trump delivers remarks on the economy in <ENT>,2,3,LIVE: Trump delivers remarks on the economy in Georgia | NBC News,@AssociatedPress; @NBCNews,neutral,1,2,True
 my thoughts on <ENT>,2,3,My Thoughts on MICHAEL JACKSON?! | Post Show Clarity EP 54,@TheAmalaEkpunobi; @TheOfficerTatum,right,1,2,True
-new epstein bomb rocks <ENT>,2,3,New Epstein BOMB ROCKS Trump’s Term,@adammockler; @deanwithrs,left,1,2,True
-president <ENT> addresses the nation,2,3,PRESIDENT TRUMP ADDRESSES THE NATION,@FoxNews; @RealAmericasVoice,right,1,2,True
 president <ENT> delivers remarks in <ENT>,2,3,President Trump delivers remarks in the Rose Garden: LIVE,@ABCNews; @USATODAY,neutral,1,2,True
 the life and legacy of <ENT>,2,3,The life and legacy of Dolly Parton,@ABCNews; @CBSNews,neutral,1,2,True
 there 's no coming back from this #,2,3,There's no coming back from this...,@LiberalHivemind; https://rumble.com/c/russellbrand,right,1,2,True
@@ -237,24 +219,22 @@ this is not normal #,2,3,This is not normal...,@RebelNewsOnline; @adammockler,le
 war with <ENT> enters <ENT>,2,3,War with Iran enters second week,@ABCNews; @msnow,left; neutral,2,2,False
 warning <ENT> <ENT>,2,3,LEMON DROP | WARNING: 2026 Midterm Danger!,@DemocracyDocket; @TheDonLemonShow,left,1,2,True
 well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1,2,True
+<ENT> # <ENT> 's <ENT>,2,2,"WNBA Defines “Woman,” America's Farmer Crisis, & Bibi Rejects Gaza Peace Plan | PBD Podcast #841",@PBDPodcast; @markets,neutral; right,2,2,False
 <ENT> # <ENT> 's <ENT> <ENT>,2,2,"Trump Orders IMMINENT Strike, Iran's Retaliation FINISHES Gulf Oil | Patrick Henningsen",@DannyHaiphongYT; @Firstpost,left; neutral,2,2,False
 <ENT> # <ENT> prepare for <ENT>,2,2,"Good Luck, Texas (Prepare for the Cold Front) || Peter Zeihan",@NBCNews; @ZeihanonGeopolitics,neutral,1,2,True
 <ENT> # <ENT> speak at <ENT>,2,2,"JD Vance, Thune speak at Graham Capitol Honor Ceremony",@FoxNews; @NewsmaxTV,right,1,2,True
 <ENT> # <ENT> time <ENT> champion # dies at <ENT>,2,2,"Kyle Busch, two-time NASCAR champion, dies at 41",@AssociatedPress; @Reuters,neutral,1,2,True
-<ENT> # <ENT> ’s <ENT>,2,2,"“The Clash Of The Turbans” - Imam Tawhidi EXPOSES Islam Extremism, Iran’s Regime & War On The West",@PBDPodcast; @dollemore,left; right,2,2,False
 <ENT> # it 's <ENT> #,2,2,"Black Woman Fired From Her Job For Refusing To Be Them Folks Therapist, It's A Blessing For Her.",@PhillipScottPodcast; @TheMichaelCohenShow,left; right,2,2,False
 <ENT> # it backfired #,2,2,"The Government Tried to Discredit Them, It BACKFIRED...",@RebelNewsOnline; @TheAmalaEkpunobi,right,1,2,True
 <ENT> # says <ENT>,2,2,"Fed Rate Hike Would Be Important Signal to Market, Says Patrick Harker",@markets; @nypost,neutral; right,2,2,False
 <ENT> # star of <ENT> # dies at <ENT>,2,2,"Hayden Panettiere, Star of 'Nashville,' Dies at 36",@ABCNews; @Reuters,neutral,1,2,True
 <ENT> # then this happened,2,2,"Trump Pretended To Want Peace, Then THIS Happened",@MrTariqNasheed; @TheYoungTurks,left; right,2,2,False
-<ENT> 's <ENT> # <ENT> 's <ENT> <ENT>,2,2,"Fed's Waller Backs More Rate Cuts, Medline's Debut | Bloomberg Businessweek Daily 12/17/2025",@Firstpost; @markets,neutral,1,2,True
 <ENT> 's <ENT> as <ENT>,2,2,American's Economic Outlook Reaches Lowest Point Ever as Iran War Spikes Inflation,@Firstpost; @OwenReport,left; neutral,2,2,False
 <ENT> 's <ENT> from <ENT>,2,2,Fed's Kashkari Says War Creates Uncertainty for Rate Path (Full Interview from Invest),@ANINewsIndia; @markets,neutral,1,2,True
 <ENT> 's <ENT> in <ENT> <ENT> <ENT>,2,2,Iran's Ali Larijani Killed in Strikes; Trump Slams Allies | Horizons Middle East & Africa 3/18/2026,@Firstpost; @markets,neutral,1,2,True
 <ENT> 's <ENT> is <ENT>,2,2,Trump's $1.7 Billion Slush Fund is the Biggest Presidential Scandal of All Time,@FarronBalanced; @podsaveamerica,left,1,2,True
 <ENT> 's <ENT> over <ENT>,2,2,PBD's Fans Turn On Them Over Iran War,@TheMajorityReport; @Xanderhal,left,1,2,True
 <ENT> 's <ENT> revealed,2,2,MAGA's TUCKER Problem Revealed,@DemocracyDocket; @LegalAFMTN,left,1,2,True
-<ENT> 's <ENT> revealed as <ENT>,2,2,Trump's Massive Lies REVEALED As Entire Term Plunges Into Chaos,@DrSteveTurleyTV; @TheDamageReport,left; right,2,2,False
 <ENT> 's <ENT> star <ENT> beek dies at <ENT>,2,2,'Dawson's Creek' star James Van Der Beek dies at age 48,@ABCNews; @Reuters,neutral,1,2,True
 <ENT> 's <ENT> to <ENT>,2,2,Zelensky's Eerie New Warning to Russian Airlines,@DylanBurnsLIVE; @HasanReactionsfanTwo,left,1,2,True
 <ENT> 's <ENT> updates on the <ENT> case,2,2,Tate's Lawyer Joe McBride Gives UPDATES On The Tates' Case!,@FreshFitMiami; @MyronGainesX,right,1,2,True
@@ -289,7 +269,6 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> a conversation with <ENT>,2,2,The Hard Problem of Consciousness: A Conversation with Michael Pollan (Ep. 475),@PoliticsGirl; @samharrisorg,left,1,2,True
 <ENT> about trump,2,2,MAGA Learns Hard Truth About Trump,@TheDailyBeast; @adammockler,left,1,2,True
 <ENT> accuses <ENT>,2,2,UN Accuses Trump Of Major Human Rights Violations,@FarronBalanced; @NovaraMedia,left,1,2,True
-<ENT> admits <ENT> on <ENT>,2,2,Mike Johnson ADMITS TRUMP FAILURE on Fox News,@RealAmericasVoice; @ponderingpolitics,left; right,2,2,False
 <ENT> admits it,2,2,Hegseth’s Pastor ADMITS IT | Members Only Bonus Show 06/09/2026,@LukeBeasley; @franifio,left,1,2,True
 <ENT> admits to killing <ENT> ceo,2,2,Luigi Mangione ADMITS to killing healthcare CEO,@ABCNews; @FoxNewsChannelClips,neutral; right,2,2,False
 <ENT> after <ENT> on <ENT>,2,2,MAGA Short Circuits After Trump Tucks Tail On Greenland,@oann; @podsaveamerica,left; right,2,2,False
@@ -305,13 +284,11 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> against <ENT> revealed,2,2,Deep State Plot Against Nixon REVEALED,@TimcastIRL; @lizwheeler,right,1,2,True
 <ENT> airman found safe and sound after <ENT> shot down by <ENT>,2,2,US airman found ‘safe and sound’ after F-15 shot down by Iran,@ABCNews; @HasanabiClips,left; neutral,2,2,False
 <ENT> all <ENT> missiles used in <ENT>,2,2,'VIRTUALLY ALL' US Missiles USED In Iran War,@JacksonHinkleOfficial; @breakingpoints,left; neutral,2,2,False
-<ENT> all out war on <ENT>,2,2,Alex Jones SNAPS & Declares ALL OUT WAR On Candace Owens | The Kyle Kulinski Show,@SecularTalk; @thejimmydoreshow,left; neutral,2,2,False
 <ENT> amid <ENT>,2,2,IEA Warns of Global Oil Demand Decline Amid Iran War,@Firstpost; @markets,neutral,1,2,True
 <ENT> and <ENT> agree to <ENT> ceasefire,2,2,U.S. and Iran agree to two-week ceasefire,@ABCNews; @NBCNews,neutral,1,2,True
 <ENT> and <ENT> everything,2,2,Trump Goes MAD and Destroys EVERYTHING,@JackCocchiarellaShow; @adammockler,left,1,2,True
 <ENT> and <ENT> get married in <ENT>,2,2,Taylor Swift and Travis Kelce get married in NYC,@ABCNews; @BBCNews,neutral,1,2,True
 <ENT> and <ENT> resume peace talks in <ENT>,2,2,Israel and Lebanon resume peace talks in D.C.,@BBCNews; @CBSNews,neutral,1,2,True
-<ENT> and instantly regrets it,2,2,Trump Picks a Fight and INSTANTLY REGRETS IT,@LegalAFMTN; @PTLRadioShow,left,1,2,True
 <ENT> announces ceasefire between <ENT> and <ENT>,2,2,Trump announces ceasefire between Israel and Lebanon,@NBCNews; @aljazeeraenglish,left; neutral,2,2,False
 <ENT> announces sweeping social media ban for under-16s,2,2,Britain announces sweeping social media ban for under-16s,@Reuters; @aljazeeraenglish,left; neutral,2,2,False
 <ENT> arab gets triggered when we caught her fake crying,2,2,French Arab Gets TRIGGERED When We Caught Her FAKE CRYING!,@FreshFitMiami; @MyronGainesX,right,1,2,True
@@ -321,8 +298,6 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> arrested for domestic violence,2,2,Trump Ally ARRESTED For Domestic Violence,@FarronBalanced; @SaltyCracker,left; right,2,2,False
 <ENT> arrested on suspicion of misconduct in public office,2,2,Andrew Mountbatten-Windsor arrested on suspicion of misconduct in public office | BBC News,@BBCNews; @SkyNews,left; neutral,2,2,False
 <ENT> arrives at <ENT> in <ENT>,2,2,Maduro arrives at Metropolitan Detention Center in Brooklyn,@CNN; @msnow,left,1,2,True
-<ENT> as <ENT> confront her,2,2,Pam Bondi VISIBLY SHAKEN as Survivors CONFRONT HER,@adammockler; @ponderingpolitics,left,1,2,True
-<ENT> as <ENT> maga,2,2,Trump MELTS DOWN as Epstein DESTROYS MAGA,@LegalAFMTN; @ponderingpolitics,left,1,2,True
 <ENT> as <ENT> new low,2,2,Fox News COLLAPSES ON AIR as Trump HITS NEW LOW!!!,@MeidasTouch; @podsaveamerica,left,1,2,True
 <ENT> as <ENT> revolts against him,2,2,Trump SHOCKED as Entire Country REVOLTS AGAINST HIM!,@JackCocchiarellaShow; @adammockler,left,1,2,True
 <ENT> as <ENT> strikes back,2,2,Putin PANICS As Ukraine STRIKES BACK,@RebelHQ; @harryjsisson,left,1,2,True
@@ -351,9 +326,7 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> caught on cam in <ENT>,2,2,Kash Patel CAUGHT ON CAM in Global Embarrassment,@adammockler; @deanwithrs,left,1,2,True
 <ENT> cause of death revealed,2,2,Kyle Busch cause of death revealed,@ABCNews; @CBSNews,neutral,1,2,True
 <ENT> celebrates <ENT>,2,2,'American Pie' celebrates 55 YEARS,@ABCNews; @FoxNews,neutral; right,2,2,False
-<ENT> celebrates <ENT> <ENT>,2,2,NewsNation celebrates the 'Remarkable Women' of 2026,@NewsNation; @TimesNowWorld,neutral,1,2,True
 <ENT> chaos <ENT>,2,2,B.C. Conservatives' chaos EXPLAINED,@RebelNewsOnline; @markets,neutral; right,2,2,False
-<ENT> chief <ENT>,2,2,Ex-FBI Counterterrorism Chief: “Stonewalling Isn’t New”,@RealAmericasVoice; @nypost,right,1,2,True
 <ENT> civil rights leader <ENT> dies aged <ENT>,2,2,US civil rights leader Jesse Jackson dies aged 84 | BBC News,@BBCNews; @aljazeeraenglish,left; neutral,2,2,False
 <ENT> confronts <ENT>,2,2,Laura Ingraham CONFRONTS TRUMP | Members Only Bonus Show 09/10/2026,@LukeBeasley; @RileyGaines,left; right,2,2,False
 <ENT> controls <ENT>,2,2,NETANYAHU CONTROLS TRUMP,@HasanAbi; @fightbackpodcast,left; right,2,2,False
@@ -364,6 +337,7 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> dead in suspected hantavirus outbreak on <ENT> cruise ship,2,2,Three dead in suspected hantavirus outbreak on Atlantic cruise ship | BBC News,@BBCNews; @aljazeeraenglish,left; neutral,2,2,False
 <ENT> deadly turn,2,2,Trump Trip Takes Deadly Turn ,@JackCocchiarellaShow; @adammockler,left,1,2,True
 <ENT> deal <ENT>,2,2,Derangement & Diplomacy: The Politics of the Iran Deal | The NEWSMAX Daily (04/09/26),@NewsNation; @NewsmaxTV,neutral; right,2,2,False
+<ENT> demands <ENT>,2,2,Lindsey Graham DEMANDS 'IWO JIMA' Level Sacrifice,@FarronBalanced; @breakingpoints,left,1,2,True
 <ENT> deploys <ENT> to <ENT>,2,2,CHINA DEPLOYS WARSHIPS TO IRAN,@ABCNews; @JacksonHinkleOfficial,neutral,1,2,True
 <ENT> desperate for <ENT>,2,2,Republicans DESPERATE For 'War On Christmas' Distraction,@FarronBalanced; @TheMajorityReport,left,1,2,True
 <ENT> does n't <ENT>,2,2,Riley Gaines Explains Why Dependency Doesn't Determine Who Deserves Life,@DueDissidence; @turningpointusa,left; right,2,2,False
@@ -373,9 +347,7 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> down over <ENT>,2,2,Trump MELTS DOWN Over Ro Khanna Fox News Hits,@RealAmericasVoice; @breakingpoints,left; right,2,2,False
 <ENT> dr. <ENT>,2,2,America’s Kids Are Falling Behind: A Way Out For Teachers & Parents | Dr. Hutz Hertzberg,@RealAlexClark; @nousnetwork,left; right,2,2,False
 <ENT> dr. <ENT> on <ENT>,2,2,"""I Plead The Fifth"": Dr. Fauci Destroyed On Capitol Hill",@MichaelKnowles; @thejimmydoreshow,neutral; right,2,2,False
-<ENT> during <ENT> <ENT>,2,2,Trump Officials Tout Tax Cuts & Economic Growth During Arizona Frito-Lay Visit,@Firstpost; @oann,neutral; right,2,2,False
 <ENT> economy unexpectedly loses <ENT> jobs in <ENT>,2,2,"U.S. economy unexpectedly loses 92,000 jobs in February",@CBSNews; @NBCNews,neutral,1,2,True
-<ENT> erupts as <ENT>,2,2,Oval Office ERUPTS as Trump EMBARRASSES HIMSELF,@katiephangnews; @ponderingpolitics,left,1,2,True
 <ENT> erupts over <ENT>,2,2,Albania ERUPTS Over Kushner’s Private Island Resort,@RedactedNews; @ThePodcastoftheLotusEaters,right,1,2,True
 <ENT> erupts over <ENT> <ENT>,2,2,Congress ERUPTS Over Epstein As Pam Bondi CRASHES OUT & PERJURS HERSELF Live!! | Kyle Kulinski Show,@SecularTalk; @nypost,left; right,2,2,False
 <ENT> explode after <ENT>,2,2,Supreme Court Reform Calls EXPLODE After Latest Right-Wing Power Grab,@RobertGouveiaEsq; @TheDamageReport,left; right,2,2,False
@@ -386,14 +358,12 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> finally gets caught #,2,2,McConnell FINALLY gets caught…,@adammockler; @deanwithrs,left,1,2,True
 <ENT> finally turns on <ENT>,2,2,UK Finally Turns On Israel,@HasanabiClips; @TheMajorityReport,left,1,2,True
 <ENT> for mocking <ENT>,2,2,Tucker Carlson SLAMS Trump For Mocking Muslims,@FoxNews; @TheYoungTurks,left; right,2,2,False
-<ENT> found guilty of <ENT> degree murder in wife 's death,2,2,Brian Walshe found guilty of first-degree murder in wife's death,@CBSNews; @CNN,left; neutral,2,2,False
 <ENT> founder <ENT> dies at <ENT>,2,2,CNN founder Ted Turner dies at 87 | RISING,@AssociatedPress; @thehill,neutral,1,2,True
 <ENT> from <ENT> 's <ENT> <ENT>,2,2,Trump Gifted Nobel Peace Prize Medal from Venezuela's Machado | The Pulse 1/16,@Firstpost; @markets,neutral,1,2,True
 <ENT> funeral service at <ENT>,2,2,Lindsey Graham’s funeral service at Washington National Cathedral,@CBSNews; @FoxNews,neutral; right,2,2,False
 <ENT> gets busted,2,2,HEGSETH GETS BUSTED,@FarronBalanced; @TheYoungTurks,left,1,2,True
 <ENT> gets exposed,2,2,Sam Altman Gets EXPOSED,@TheYoungTurks; @briantylercohen,left,1,2,True
 <ENT> girls on the truth of the tates cases,2,2,Joe McBride Educates Girls On The TRUTH Of The Tates' Cases,@FreshFitMiami; @MyronGainesX,right,1,2,True
-<ENT> gives <ENT> <ENT>,2,2,MTG Gives Trump Final 'F-U' Before New Years,@KimIversen; @therationalnational,left; neutral,2,2,False
 <ENT> goes off,2,2,TIM POOL GOES OFF,@RealAmericasVoice; @TimcastIRL,right,1,2,True
 <ENT> gone too far,2,2,Trump Realizing He's Gone Too Far?,@KimIversen; @TheMajorityReport,left; neutral,2,2,False
 <ENT> got <ENT>,2,2,Germany got Tommy Robinson’d,@LIVESNEAKO; @thomhartmann,left; neutral,2,2,False
@@ -413,7 +383,6 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> humiliated as <ENT>,2,2,Fox News Host HUMILIATED as Trump Report FALLS APART,@RubinReport; @podsaveamerica,left; right,2,2,False
 <ENT> humiliated by <ENT>,2,2,Bill Maher HUMILIATED By Trump,@TheMajorityReport; @destiny,left,1,2,True
 <ENT> humiliated on <ENT>,2,2,Trump Press Secy HUMILIATED on Fox News,@thedavidpakmanshow; @usefulidiots,left,1,2,True
-<ENT> in <ENT> # killing <ENT>,2,2,"Gunmen Target Jewish Community In Bondi Beach, Killing 15 | #novaralive",@NovaraMedia; @nypost,left; right,2,2,False
 <ENT> in <ENT> after <ENT>,2,2,Trump FACT-CHECKED In Seconds After Blatant Lie To Global Audience,@RebelHQ; @nypost,left; right,2,2,False
 <ENT> in <ENT> after major <ENT>,2,2,Stephen Miller RETREATS in Humiliation After MAJOR Blunder,@RebelHQ; @RobertGouveiaEsq,left; right,2,2,False
 <ENT> in <ENT> election raid,2,2,Trump SECRET Operative BUSTED in Georgia ELECTION RAID,@MeidasTouch; @nypost,left; right,2,2,False
@@ -433,31 +402,28 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> is <ENT> doing,2,2,WTF is Fox News doing,@HasanAbi; @TheVaushPit,left,1,2,True
 <ENT> is a lie,2,2,The Official Jeffries / Kushner Meeting Story Is A LIE,@ActualJusticeWarrior; @TheYoungTurks,left; right,2,2,False
 <ENT> is a monster,2,2,Laura Loomer Is A MONSTER,@TheSerfTimes; @TheYoungTurks,left,1,2,True
-<ENT> is a national security threat,2,2,Canada is a National Security Threat,@FarronBalanced; @StevenCrowder,left; right,2,2,False
 <ENT> is a war criminal,2,2,BENJAMIN NETANYAHU IS A WAR CRIMINAL,@HasanAbi; @fightbackpodcast,left; right,2,2,False
-<ENT> is all over <ENT>,2,2,Steve Bannon Is ALL OVER The Epstein Files,@HasanReactionsfanTwo; @TheYoungTurks,left,1,2,True
-<ENT> is burning down,2,2,JD Vance’s World is Burning Down,@FarronBalanced; @TimcastIRL,left; right,2,2,False
+<ENT> is cooked #,2,2,Britain is cooked..,@AsmonTV; @LIVESNEAKO,neutral; right,2,2,False
 <ENT> is done for #,2,2,TRUMP IS DONE FOR...,@HasanAbi; @harryjsisson,left,1,2,True
+<ENT> is done with trump,2,2,Candace Owens Is DONE With Trump,@NYTPodcasts; @TheYoungTurks,left,1,2,True
 <ENT> is doomed,2,2,SUSAN COLLINS IS DOOMED,@FarronBalanced; @HasanAbi,left,1,2,True
 <ENT> is dying,2,2,The Colorado River Is Dying,@BadEmpanadaLive; @TheVaushPit,left,1,2,True
-<ENT> is finished,2,2,MAGA IS FINISHED | The Kyle Kulinski Show,@FarronBalanced; @SecularTalk,left,1,2,True
 <ENT> is freaking out,2,2,AIPAC IS FREAKING OUT,@FarronBalanced; @TheMajorityReport,left,1,2,True
 <ENT> is going to jail,2,2,Ilhan Omar IS GOING TO JAIL,@ActualJusticeWarrior; @PTLRadioShow,left; right,2,2,False
 <ENT> is humiliating himself,2,2,PBD is humiliating himself,@LIVESNEAKO; @thewarningwithsteveschmidt,left; neutral,2,2,False
 <ENT> is losing it,2,2,Bill Maher is LOSING IT,@HasanAbi; @TheMajorityReport,left,1,2,True
 <ENT> is losing this war,2,2,TRUMP IS LOSING THIS WAR,@HasanAbi; @msnow,left,1,2,True
-<ENT> is lost #,2,2,America is lost...,@LiberalHivemind; @SydneyWatson,right,1,2,True
 <ENT> is missing,2,2,Marco Is MISSING!,@FarronBalanced; @JacksonHinkleOfficial,left; neutral,2,2,False
 <ENT> is not happy #,2,2,China is not happy...,@HasanAbi; @RebelNewsOnline,left; right,2,2,False
 <ENT> is on fire,2,2,EUROPE IS ON FIRE,@HasanAbi; @ThePodcastoftheLotusEaters,left; right,2,2,False
+<ENT> is out of control,2,2,TALARICO DERANGEMENT SYNDROME IS OUT OF CONTROL | The Kyle Kulinski Show,@SecularTalk; @bulwarkmedia,left,1,2,True
 <ENT> is real,2,2,Marco Rubio Video Is REAL!,@RealAmericasVoice; @SabbySabs,left; right,2,2,False
 <ENT> is so cooked,2,2,New York Is So Cooked,@StevenCrowder; @TheVaushPit,left; right,2,2,False
 <ENT> is terrified of <ENT>,2,2,Susan Collins is TERRIFIED Of Graham Platner,@FarronBalanced; @PTLRadioShow,left,1,2,True
-<ENT> is turning on <ENT>,2,2,Alex Jones Is TURNING On Candace Owens,@SabbySabs; @TheDonLemonShow,left,1,2,True
 <ENT> it 's <ENT>,2,2,America First Coalition Forms - But It's Missing Someone,@KimIversen; @nypost,neutral; right,2,2,False
 <ENT> joins <ENT> in war against <ENT>,2,2,🚨 FURIOUS Canada JOINS EUROPE in WAR against TRUMP,@MeidasTouch; @TheVaushPit,left,1,2,True
-<ENT> judge <ENT> <ENT>,2,2,J6 Bomber Confirmed Autistic! Judge Unseals Transcript! Tim Walz Must Resign!,@Politicon; @RobertGouveiaEsq,left; right,2,2,False
 <ENT> judge <ENT> after <ENT>,2,2,PISSED OFF Judge GOES AFTER Alina Habba,@LegalAFMTN; @RobertGouveiaEsq,left; right,2,2,False
+<ENT> just dropped,2,2,CRIMINAL REFERRALS JUST DROPPED,@MarkDice; @RealAmericasVoice,right,1,2,True
 <ENT> just hit rock bottom,2,2,Don Lemon Just Hit Rock Bottom,@TheQuartering; @usefulidiots,left; right,2,2,False
 <ENT> just lost everything #,2,2,Candace Owens just lost EVERYTHING.,@LiberalHivemind; @OfficialSaharTV,right,1,2,True
 <ENT> just proved <ENT>,2,2,Mark Carney Just Proved Trump's Trade War Strategy Failed,@TheDamageReport; @usefulidiots,left,1,2,True
@@ -473,19 +439,17 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> makes announcement in <ENT>,2,2,Trump makes announcement in Oval Office,@SkyNews; @msnow,left,1,2,True
 <ENT> makes emotional new plea to mother 's kidnapper,2,2,Savannah Guthrie makes emotional new plea to mother's kidnapper,@ABCNews; @NBCNews,neutral,1,2,True
 <ENT> meets <ENT> <ENT> in <ENT>,2,2,PM Modi meets Mauritius PM Dr Navin Ramgoolam in Victoria,@ANINewsIndia; @TimesNowWorld,neutral,1,2,True
-<ENT> meets with <ENT> in <ENT>,2,2,Laura Loomer meets with Zelensky in Ukraine,@AssociatedPress; @thehill,neutral,1,2,True
 <ENT> men in america fit her search criteria # but still thinks she 's the exceptional one,2,2,ONLY 102 Men In America Fit Her Search Criteria. But Still Thinks SHE'S The Exceptional One!,@FreshFitMiami; @MyronGainesX,right,1,2,True
-<ENT> move on <ENT>,2,2,Republicans Move On Noem Impeachment As Civil War Erupts,@JackCocchiarellaShow; @X22Report-y5y,left; right,2,2,False
 <ENT> murderer <ENT> dies after prison attack,2,2,Soham murderer Ian Huntley dies after prison attack | BBC News,@BBCNews; @SkyNews,left; neutral,2,2,False
 <ENT> now what,2,2,Keefe D Is Going On Trial For Tupac’s Slaying—Now What?,@MrTariqNasheed; @thomhartmann,left; right,2,2,False
 <ENT> nuclear on <ENT>,2,2,Alex Jones Goes NUCLEAR On Candace Owens,@TheYoungTurks; @chicksonright,left; right,2,2,False
-<ENT> n’t want you to see,2,2,Trump’s Secret Money Laundering He Doesn’t Want You To See | The Kyle Kulinski Show,@DoubleDownNews; @SecularTalk,left,1,2,True
 <ENT> obliterates <ENT>,2,2,CANDACE OWENS OBLITERATES ANDREW WILSON,@JacksonHinkleOfficial; @nypost,neutral; right,2,2,False
 <ENT> old single mom tries to sabotage another woman in her prime ft # <ENT>,2,2,40 Year Old Single Mom Tries To Sabotage Another Woman In Her PRIME! Ft. Andre Williams,@FreshFitMiami; @MyronGainesX,right,1,2,True
 <ENT> on ice protesters,2,2,Trump Administration’s SHOCKING Crackdown On ICE Protesters!,@franifio; @thejimmydoreshow,left; neutral,2,2,False
 <ENT> on joining <ENT>,2,2,Impromptu Destiny Debate on Joining DSA,@ABCNews; @DylanBurnsLIVE,left; neutral,2,2,False
 <ENT> on pope leo,2,2,Steve Schmidt: Trump Strikes Down On Pope Leo,@FoxNews; @thewarningwithsteveschmidt,left; right,2,2,False
 <ENT> on stage,2,2,Vance FLOPS AGAIN On Stage | Members Only Bonus Show 06/08/2026,@LukeBeasley; @deanwithrs,left,1,2,True
+<ENT> on the brink,2,2,Trump’s Ceasefire on the Brink!,@NYTPodcasts; @ThePodcastoftheLotusEaters,left; right,2,2,False
 <ENT> out after <ENT>,2,2,Eric Trump CRASHES OUT After BRUTAL Public Humiliation,@FarronBalanced; @HasanReactionsfanTwo,left,1,2,True
 <ENT> over <ENT> deal,2,2,Fox News COLLAPSES ON AIR over Trump’s HORRIBLE DEAL!!!!,@MeidasTouch; @RestPoliticsUS,left,1,2,True
 <ENT> panel stunned by <ENT>,2,2,CNN Panel STUNNED by Trump’s Polling Collapse,@TheYoungTurks; @ponderingpolitics,left,1,2,True
@@ -495,7 +459,43 @@ well # well # well #,2,3,"Well, well, well..",@AsmonTV; @LiberalHivemind,right,1
 <ENT> plans to <ENT>,2,2,Vermont Plans to Abuse the Youth Some More,@Styxhexenhammer666; @markets,neutral; right,2,2,False
 <ENT> pleads not guilty in parents murders,2,2,Nick Reiner pleads not guilty in parents' murders,@ABCNews; @NewsNation,neutral,1,2,True
 <ENT> posted this,2,2,TRUMP POSTED THIS | Members Only Bonus Show 05/07/2026,@JackCocchiarellaShow; @LukeBeasley,left,1,2,True
+<ENT> praises <ENT>,2,2,Tucker Rips Shapiro & PRAISES Venezuela’s Conservative Social Values!,@TimcastNews; @thejimmydoreshow,neutral; right,2,2,False
 <ENT> prepares <ENT> troops to invade <ENT>,2,2,"Pentagon Prepares 1,500 Troops To Invade Minnesota",@FarronBalanced; @KimIversen,left; neutral,2,2,False
 <ENT> president <ENT>,2,2,Tucker Apologizes For Endorsing President Trump,@MichaelKnowles; @nypost,right,1,2,True
 <ENT> president <ENT> 's <ENT>,2,2,Carla Sands Highlights President Trump's Major Wins & the Need to Win the Midterms - 08/25/26,@RSBN; @TimesNowWorld,neutral; right,2,2,False
 <ENT> president <ENT> <ENT>,2,2,Washington Commanders President Mark Clouse | Bloomberg Newsmakers,@Firstpost; @markets,neutral,1,2,True
+<ENT> president declares no more elections,2,2,Nicaraguan President Declares No More Elections,@nypost; @oann,right,1,2,True
+<ENT> press conference goes off the rails,2,2,Pete Hegseth’s Press Conference Goes Off The Rails,@PTLRadioShow; @TheYoungTurks,left,1,2,True
+<ENT> prime minister <ENT> announces resignation,2,2,UK Prime Minister Keir Starmer announces resignation,@ABCNews; @BBCNews,neutral,1,2,True
+<ENT> protest <ENT>,2,2,South Africans PROTEST Illegal Aliens From Other African Countries!,@AnthonyBrianLogan; @TimesNowWorld,neutral; right,2,2,False
+<ENT> protesters clash with police in <ENT>,2,2,Anti-NATO protesters clash with police in Turkey,@Reuters; @nypost,neutral; right,2,2,False
+<ENT> react to <ENT>,2,2,Lovett & Adam Schiff REACT to Trump's Great American State Fair,@Firstpost; @lovettorleaveitpodcast,left; neutral,2,2,False
+<ENT> reacts <ENT> <ENT>,2,2,Pablo Torre REACTS: 20 Indicted In Basketball POINT SHAVING Scheme,@HasanabiClips; @breakingpoints,left,1,2,True
+<ENT> refuses to answer questions about <ENT> in congressional hearing,2,2,Ghislaine Maxwell refuses to answer questions about Epstein in congressional hearing | BBC News,@BBCNews; @SkyNews,left; neutral,2,2,False
+<ENT> releases <ENT> batch of declassified ufo files,2,2,Pentagon releases third batch of declassified UFO files,@NBCNews; @NewsNation,neutral,1,2,True
+<ENT> remembers <ENT> <ENT>,2,2,Don Jr. Remembers Charlie Kirk: “A Generational Talent Who Built a Movement”,@FoxNews; @RealAmericasVoice,right,1,2,True
+<ENT> responders testify in <ENT> murder trial,2,2,First responders testify in Lindsay Clancy murder trial,@ABCNews; @CBSNews,neutral,1,2,True
+<ENT> retires from international football,2,2,Lionel Messi retires from international football | BBC News,@BBCNews; @SkyNews,left; neutral,2,2,False
+<ENT> reveals <ENT>,2,2,Josh Duhamel REVEALS the Moment That Pushed Him to His Limit,@JillianMichaels; @TomiLahrenIsFearless,right,1,2,True
+<ENT> revolt as <ENT>,2,2,Republicans Revolt As Mike Johnson Falls Apart,@FarronBalanced; @StatusCoup,left,1,2,True
+<ENT> said what,2,2,Zohran Mamdani Said WHAT?,@SabbySabs; @lizwheeler,left; right,2,2,False
+<ENT> says <ENT> # <ENT>,2,2,"Pete Hegseth Says ""No Quarter, No Mercy."" That Would Be A WAR CRIME!",@GlennKirschner2; @markets,left; neutral,2,2,False
+<ENT> says <ENT> <ENT> talks are a historic opportunity,2,2,Rubio says Israel-Lebanon talks are a 'historic opportunity',@Reuters; @aljazeeraenglish,left; neutral,2,2,False
+<ENT> says <ENT> is begging to make a deal # not me,2,2,"Trump says Iran is ""begging to make a deal, not me""",@AssociatedPress; @CBSNews,neutral,1,2,True
+<ENT> says <ENT> will leave <ENT> in <ENT>,2,2,Trump says US will 'leave Iran in two to three weeks' | BBC News,@BBCNews; @SkyNews,left; neutral,2,2,False
+<ENT> says <ENT> will not be drawn into the wider war,2,2,Keir Starmer says UK 'will not be drawn into the wider war',@AssociatedPress; @markets,neutral,1,2,True
+<ENT> says everything,2,2,Trump's Latest Threat Says Everything,@TheYoungTurks; @chicksonright,left; right,2,2,False
+<ENT> says he loves inflation,2,2,Trump Says He LOVES Inflation!,@SabbySabs; @TheMichaelCohenShow,left,1,2,True
+<ENT> says he was an hour away from striking <ENT>,2,2,"Trump says he was ""an hour away"" from striking Iran",@AssociatedPress; @CBSNews,neutral,1,2,True
+<ENT> secretary <ENT> grilled on <ENT>,2,2,HHS Secretary RFK Jr. grilled on Capitol Hill,@ABCNews; @NBCNews,neutral,1,2,True
+<ENT> sen. <ENT>,2,2,Trump Shivs Sen. Bill Cassidy,@RubinReport; @bulwarkmedia,left; right,2,2,False
+<ENT> set to testify in <ENT> <ENT> probe,2,2,Clintons set to testify in House Epstein probe,@msnow; @thehill,left; neutral,2,2,False
+<ENT> shock secret just got blown open,2,2,Hegseth’s SHOCK SECRET just got BLOWN OPEN,@adammockler; @deanwithrs,left,1,2,True
+<ENT> shocks <ENT>,2,2,Trump Assassination Attempt SHOCKS Washington,@JacksonHinkleOfficial; @podsaveamerica,left; neutral,2,2,False
+<ENT> shooting live another assassination attempt on <ENT> <ENT> shooting,2,2,White House Shooting LIVE: Another Assassination Attempt on Trump? | Washington DC Shooting,@Firstpost; @TimesNowWorld,neutral,1,2,True
+<ENT> shut down,2,2,Karmelo Anthony Trial SHUT DOWN,@PTLRadioShow; @TheQuartering,left; right,2,2,False
+<ENT> sister just ended his senate race,2,2,Abdul El-Sayed's Sister Just ENDED His Senate Race!!!,@DrSteveTurleyTV; @JillianMichaels,right,1,2,True
+<ENT> snaps on <ENT>,2,2,Jeremy Scahill SNAPS On Ro Khanna,@PTLRadioShow; @TheYoungTurks,left,1,2,True
+<ENT> sounds the alarm,2,2,ROGAN SOUNDS THE ALARM,@RealAmericasVoice; @TimcastIRL,right,1,2,True
+<ENT> speaks at <ENT> in <ENT>,2,2,Roland speaks at Ubiquitous Women’s Expo 2026 in Maryland,@rolandsmartin; @thehill,left; neutral,2,2,False
+<ENT> speaks in <ENT>,2,2,Candace Owens SPEAKS In Russia,@RobertGouveiaEsq; @SabbySabs,left; right,2,2,False

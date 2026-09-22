@@ -21,6 +21,7 @@ runtimes.jsonl (cost is 0: local model).
 CLI:
     python -m pipeline_titles.llm_rate                     # full run (~1 h)
     python -m pipeline_titles.llm_rate --limit 60          # smoke test
+    python -m pipeline_titles.llm_rate --rekey             # after a re-prepare: re-key labels.csv, no model call
 """
 
 from __future__ import annotations
@@ -222,13 +223,36 @@ def draw_sample(prepared: pd.DataFrame, total: int = N_SAMPLE, seed: int = SEED)
     return sample
 
 
+def rekey_labels(labels: pd.DataFrame, prepared: pd.DataFrame) -> tuple[pd.DataFrame, int]:
+    """labels.csv re-keyed to the current titles_prepared.parquet without a model call.
+
+    The ratings are joined by row_id downstream, and row_id is positional in the analysis
+    table, so a re-prepare that drops or reorders titles (a corpus-window change, new
+    dates) leaves the ratings pointing at the wrong rows. Each rated title is matched to
+    the unique (non-repeat) row with the same creator, genre and raw title; row_id,
+    video_id, month and title_norm are taken from that row and a title no longer in the
+    table is dropped. Returns the re-keyed table and how many rows were dropped."""
+    key = ["creator", "genre", "title_raw"]
+    uniq = prepared.loc[~prepared["is_dup"], key + ["row_id", "video_id", "month", "title_norm"]].drop_duplicates(key)
+    out = labels.drop(columns=["row_id", "video_id", "month", "title_norm"]).merge(uniq, on=key, how="inner")
+    out = out[list(labels.columns)].sort_values("row_id").reset_index(drop=True)
+    return out, len(labels) - len(out)
+
+
 def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--model", default=DEFAULT_MODEL)
     ap.add_argument("--batch-size", type=int, default=BATCH_SIZE)
     ap.add_argument("--limit", type=int, default=None, help="rate only the first N sampled titles (smoke test)")
     ap.add_argument("--no-retest", action="store_true")
+    ap.add_argument("--rekey", action="store_true", help="re-key the existing labels.csv to the current prepared table (no model call) and stop")
     a = ap.parse_args(argv)
+    if a.rekey:
+        labels = pd.read_csv(LABELS_CSV, dtype={"format_llm": str}, keep_default_na=False, na_values=[""])
+        out, dropped = rekey_labels(labels, load_prepared())
+        out.to_csv(LABELS_CSV, index=False)
+        print(f"re-keyed {len(out)} rated titles to the current table; {dropped} no longer in it were dropped")
+        return 0
     with stage_timer("stage2c_llm_rate", model=a.model, temperature=TEMPERATURE, prompt_id=PROMPT_ID,
                      api_cost_usd=0.0) as info:
         prepared = load_prepared()

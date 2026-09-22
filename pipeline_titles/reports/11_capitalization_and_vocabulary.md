@@ -6,7 +6,7 @@
 
 ### The finding in one paragraph
 
-Averaged over the 239 ranked channels (edited uploads), 49 % of titles are Title Case, 34 % use selective CAPS (one or more shouted words inside a normally cased title: "Trump SLAMS Judge"), 13 % are sentence case, 3 % are ALL CAPS, and the rest are too short to classify or mixed. Selective capitals are the signature of the daily commentary channels: @DailyDenims, @DannyHaiphongYT, @MeidasTouch, @katiephangnews, @CashJordan put an emphasised word in more than 99 % of their titles. Full ALL-CAPS titles are rarer and concentrated in a handful of channels on both sides (Jackson Hinkle, TheQuartering, the three Timcast channels, Fleccas, and the streamers Hasan Piker and Vaush); the news outlets are sentence case or Title Case, and the selective capitals they do show are mostly quoted shouted words ('GAME CHANGER': ...) rather than emphasis. By channel group the left and right groups shout at the same rate (40 % and 41 % of the average channel's titles) and the neutral group hardly at all (18 %); document 7 follows the styles into views.
+Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title Case, 34 % use selective CAPS (one or more shouted words inside a normally cased title: "Trump SLAMS Judge"), 13 % are sentence case, 3 % are ALL CAPS, and the rest are too short to classify or mixed. Selective capitals are the signature of the daily commentary channels: @DailyDenims, @DannyHaiphongYT, @MeidasTouch, @katiephangnews, @CashJordan put an emphasised word in more than 99 % of their titles. Full ALL-CAPS titles are rarer and concentrated in a handful of channels on both sides (Jackson Hinkle, TheQuartering, the three Timcast channels, Fleccas, and the streamers Hasan Piker and Vaush); the news outlets are sentence case or Title Case, and the selective capitals they do show are mostly quoted shouted words ('GAME CHANGER': ...) rather than emphasis. By channel group the left and right groups shout at the same rate (40 % and 41 % of the average channel's titles) and the neutral group hardly at all (19 %); document 7 follows the styles into views.
 
 ![Top 45 channels by capitals.](figures/11_caps_profile_top.png)
 *The 45 channels that use ALL CAPS or selective CAPS most; the bar is the whole channel's titles.*
@@ -22,7 +22,7 @@ Averaged over the 239 ranked channels (edited uploads), 49 % of titles are Title
 | group | ALL CAPS | selective CAPS | Title Case | Sentence case | mixed / other | short / other | ALL + selective |
 |---|---|---|---|---|---|---|---|
 | left channels | 0.02 | 0.38 | 0.46 | 0.13 | 0.00 | 0.01 | 0.40 |
-| neutral channels | 0.02 | 0.16 | 0.48 | 0.33 | 0.01 | 0.00 | 0.18 |
+| neutral channels | 0.02 | 0.17 | 0.49 | 0.31 | 0.01 | 0.00 | 0.19 |
 | right channels | 0.04 | 0.37 | 0.53 | 0.06 | 0.00 | 0.01 | 0.41 |
 
 
@@ -31,249 +31,246 @@ Averaged over the 239 ranked channels (edited uploads), 49 % of titles are Title
 | creator | group | n_titles | ALL + selective | ALL CAPS | selective CAPS | Title Case | Sentence case | mixed / other | short / other |
 |---|---|---|---|---|---|---|---|---|---|
 | @DailyDenims | left | 215 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
-| @DannyHaiphongYT | left | 64 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
-| @MeidasTouch | left | 3532 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
-| @katiephangnews | left | 403 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| @DannyHaiphongYT | left | 53 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| @MeidasTouch | left | 3315 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
+| @katiephangnews | left | 381 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
 | @CashJordan | right | 299 | 0.99 | 0.00 | 0.99 | 0.01 | 0.00 | 0.00 | 0.00 |
-| @SabbySabs | left | 626 | 0.99 | 0.00 | 0.99 | 0.01 | 0.00 | 0.00 | 0.00 |
-| @AndWeKnowOfficial-o9b | right | 185 | 0.99 | 0.00 | 0.99 | 0.00 | 0.01 | 0.00 | 0.00 |
-| @BlackConservativePerspective | right | 1271 | 0.99 | 0.00 | 0.99 | 0.01 | 0.00 | 0.00 | 0.00 |
-| @DrSteveTurleyTV | right | 442 | 0.98 | 0.00 | 0.98 | 0.02 | 0.00 | 0.00 | 0.00 |
-| @briantylercohen | left | 1081 | 0.97 | 0.00 | 0.96 | 0.01 | 0.03 | 0.00 | 0.00 |
-| @aaronparnas1 | left | 819 | 0.96 | 0.00 | 0.96 | 0.04 | 0.00 | 0.00 | 0.00 |
-| @ActualJusticeWarrior | right | 392 | 0.96 | 0.00 | 0.96 | 0.04 | 0.00 | 0.00 | 0.00 |
-| @TheOfficerTatum | right | 617 | 0.96 | 0.01 | 0.95 | 0.04 | 0.00 | 0.00 | 0.00 |
-| @StatusCoup | left | 517 | 0.95 | 0.00 | 0.95 | 0.05 | 0.00 | 0.00 | 0.00 |
-| @LukeBeasley | left | 1162 | 0.94 | 0.16 | 0.78 | 0.01 | 0.04 | 0.00 | 0.01 |
-| @RobertGouveiaEsq | right | 696 | 0.94 | 0.00 | 0.93 | 0.06 | 0.00 | 0.00 | 0.00 |
-| @TheDonLemonShow | left | 366 | 0.93 | 0.01 | 0.92 | 0.07 | 0.00 | 0.00 | 0.00 |
-| @breakingpoints | left | 1037 | 0.93 | 0.01 | 0.92 | 0.07 | 0.00 | 0.00 | 0.00 |
-| @LegalAFMTN | left | 2735 | 0.92 | 0.00 | 0.92 | 0.08 | 0.00 | 0.00 | 0.00 |
-| @JacksonHinkleOfficial | neutral | 388 | 0.92 | 0.78 | 0.14 | 0.01 | 0.02 | 0.02 | 0.03 |
-| @harryjsisson | left | 681 | 0.91 | 0.04 | 0.88 | 0.07 | 0.01 | 0.00 | 0.00 |
-| @TimcastIRL | right | 855 | 0.91 | 0.50 | 0.42 | 0.04 | 0.00 | 0.00 | 0.04 |
-| @DueDissidence | left | 643 | 0.91 | 0.00 | 0.91 | 0.09 | 0.00 | 0.00 | 0.00 |
-| @deanwithrs | left | 265 | 0.90 | 0.00 | 0.90 | 0.10 | 0.00 | 0.00 | 0.00 |
-| @PiersMorganUncensored | neutral | 181 | 0.89 | 0.00 | 0.89 | 0.11 | 0.00 | 0.00 | 0.00 |
-| @AnthonyBrianLogan | right | 248 | 0.88 | 0.00 | 0.88 | 0.11 | 0.00 | 0.00 | 0.00 |
-| @SecularTalk | left | 1458 | 0.88 | 0.08 | 0.80 | 0.12 | 0.00 | 0.00 | 0.00 |
-| @ponderingpolitics | left | 1467 | 0.87 | 0.06 | 0.81 | 0.00 | 0.04 | 0.00 | 0.09 |
-| @Timcast | right | 183 | 0.86 | 0.44 | 0.43 | 0.07 | 0.02 | 0.01 | 0.04 |
-| @SMN | left | 197 | 0.86 | 0.00 | 0.86 | 0.14 | 0.00 | 0.00 | 0.00 |
-| @TimcastNews | right | 534 | 0.86 | 0.51 | 0.35 | 0.01 | 0.01 | 0.09 | 0.03 |
-| @bennyjohnson | right | 1508 | 0.86 | 0.00 | 0.85 | 0.14 | 0.00 | 0.00 | 0.00 |
-| @MikeFromPA | left | 129 | 0.85 | 0.16 | 0.70 | 0.14 | 0.01 | 0.00 | 0.00 |
-| @BlazeTV | right | 868 | 0.84 | 0.00 | 0.84 | 0.16 | 0.00 | 0.00 | 0.00 |
-| @dollemore | left | 1439 | 0.81 | 0.00 | 0.81 | 0.19 | 0.00 | 0.00 | 0.00 |
-| @TheQuartering | right | 675 | 0.81 | 0.54 | 0.27 | 0.12 | 0.00 | 0.00 | 0.07 |
-| @JesseKellyDC | right | 504 | 0.80 | 0.00 | 0.80 | 0.20 | 0.00 | 0.00 | 0.00 |
-| @RebelHQ | left | 1292 | 0.80 | 0.00 | 0.80 | 0.20 | 0.00 | 0.00 | 0.00 |
-| @VivaFrei | right | 331 | 0.78 | 0.00 | 0.78 | 0.22 | 0.00 | 0.00 | 0.00 |
+| @SabbySabs | left | 587 | 0.99 | 0.00 | 0.99 | 0.01 | 0.00 | 0.00 | 0.00 |
+| @AndWeKnowOfficial-o9b | right | 184 | 0.99 | 0.00 | 0.99 | 0.00 | 0.01 | 0.00 | 0.00 |
+| @BlackConservativePerspective | right | 1192 | 0.98 | 0.00 | 0.98 | 0.02 | 0.00 | 0.00 | 0.00 |
+| @DrSteveTurleyTV | right | 417 | 0.98 | 0.00 | 0.98 | 0.02 | 0.00 | 0.00 | 0.00 |
+| @briantylercohen | left | 1019 | 0.97 | 0.00 | 0.96 | 0.00 | 0.03 | 0.00 | 0.00 |
+| @ActualJusticeWarrior | right | 368 | 0.96 | 0.00 | 0.96 | 0.04 | 0.00 | 0.00 | 0.00 |
+| @aaronparnas1 | left | 769 | 0.96 | 0.00 | 0.96 | 0.04 | 0.00 | 0.00 | 0.00 |
+| @TheOfficerTatum | right | 599 | 0.95 | 0.01 | 0.95 | 0.05 | 0.00 | 0.00 | 0.00 |
+| @StatusCoup | left | 489 | 0.95 | 0.00 | 0.94 | 0.05 | 0.00 | 0.00 | 0.00 |
+| @LukeBeasley | left | 1109 | 0.94 | 0.15 | 0.79 | 0.01 | 0.04 | 0.00 | 0.01 |
+| @RobertGouveiaEsq | right | 660 | 0.94 | 0.00 | 0.93 | 0.05 | 0.00 | 0.00 | 0.00 |
+| @breakingpoints | left | 998 | 0.93 | 0.01 | 0.93 | 0.07 | 0.00 | 0.00 | 0.00 |
+| @TheDonLemonShow | left | 348 | 0.93 | 0.01 | 0.93 | 0.07 | 0.00 | 0.00 | 0.00 |
+| @harryjsisson | left | 632 | 0.93 | 0.04 | 0.88 | 0.06 | 0.01 | 0.00 | 0.00 |
+| @TimcastIRL | right | 824 | 0.92 | 0.52 | 0.41 | 0.03 | 0.00 | 0.00 | 0.04 |
+| @LegalAFMTN | left | 2593 | 0.92 | 0.00 | 0.92 | 0.08 | 0.00 | 0.00 | 0.00 |
+| @DueDissidence | left | 596 | 0.91 | 0.00 | 0.91 | 0.09 | 0.00 | 0.00 | 0.00 |
+| @JacksonHinkleOfficial | neutral | 343 | 0.91 | 0.76 | 0.15 | 0.01 | 0.02 | 0.02 | 0.04 |
+| @PiersMorganUncensored | neutral | 173 | 0.90 | 0.00 | 0.90 | 0.10 | 0.00 | 0.00 | 0.00 |
+| @deanwithrs | left | 251 | 0.89 | 0.00 | 0.89 | 0.10 | 0.00 | 0.00 | 0.00 |
+| @SecularTalk | left | 1374 | 0.88 | 0.08 | 0.80 | 0.12 | 0.00 | 0.00 | 0.00 |
+| @AnthonyBrianLogan | right | 233 | 0.88 | 0.00 | 0.88 | 0.12 | 0.00 | 0.00 | 0.00 |
+| @Timcast | right | 174 | 0.86 | 0.46 | 0.40 | 0.06 | 0.02 | 0.01 | 0.05 |
+| @ponderingpolitics | left | 1392 | 0.86 | 0.06 | 0.80 | 0.00 | 0.04 | 0.00 | 0.10 |
+| @SMN | left | 190 | 0.86 | 0.00 | 0.86 | 0.14 | 0.00 | 0.00 | 0.00 |
+| @MikeFromPA | left | 125 | 0.86 | 0.16 | 0.70 | 0.14 | 0.01 | 0.00 | 0.00 |
+| @bennyjohnson | right | 1453 | 0.85 | 0.00 | 0.85 | 0.14 | 0.00 | 0.00 | 0.00 |
+| @TimcastNews | right | 519 | 0.85 | 0.51 | 0.34 | 0.01 | 0.01 | 0.09 | 0.03 |
+| @BlazeTV | right | 829 | 0.84 | 0.00 | 0.84 | 0.16 | 0.00 | 0.00 | 0.00 |
+| @TheQuartering | right | 637 | 0.81 | 0.57 | 0.24 | 0.11 | 0.00 | 0.00 | 0.08 |
+| @dollemore | left | 1376 | 0.80 | 0.00 | 0.80 | 0.19 | 0.00 | 0.00 | 0.00 |
+| @JesseKellyDC | right | 478 | 0.80 | 0.00 | 0.80 | 0.20 | 0.00 | 0.00 | 0.00 |
+| @RebelHQ | left | 1190 | 0.80 | 0.00 | 0.80 | 0.20 | 0.00 | 0.00 | 0.00 |
+| @VivaFrei | right | 310 | 0.78 | 0.00 | 0.77 | 0.22 | 0.00 | 0.00 | 0.00 |
 | https://rumble.com/c/nickjfuentes | right | 305 | 0.78 | 0.04 | 0.74 | 0.15 | 0.06 | 0.00 | 0.01 |
-| @thejimmydoreshow | neutral | 1146 | 0.77 | 0.00 | 0.77 | 0.23 | 0.00 | 0.00 | 0.00 |
-| @TimesNowWorld | neutral | 8994 | 0.77 | 0.00 | 0.77 | 0.22 | 0.01 | 0.00 | 0.00 |
-| @MichaelMaliceofficial | right | 55 | 0.76 | 0.02 | 0.75 | 0.24 | 0.00 | 0.00 | 0.00 |
-| @RestPoliticsUS | left | 220 | 0.76 | 0.02 | 0.74 | 0.24 | 0.00 | 0.00 | 0.00 |
-| @OwenJonesTalks | left | 233 | 0.72 | 0.00 | 0.72 | 0.28 | 0.00 | 0.00 | 0.00 |
-| @DoubleDownNews | left | 66 | 0.71 | 0.06 | 0.65 | 0.23 | 0.06 | 0.00 | 0.00 |
-| @HasanReactionsfanTwo | left | 340 | 0.71 | 0.00 | 0.71 | 0.28 | 0.01 | 0.00 | 0.00 |
-| @CamHigby | right | 186 | 0.71 | 0.00 | 0.71 | 0.29 | 0.00 | 0.00 | 0.00 |
-| @lonerboxlive | right | 88 | 0.70 | 0.00 | 0.70 | 0.30 | 0.00 | 0.00 | 0.00 |
-| @jlptalk | right | 304 | 0.70 | 0.00 | 0.70 | 0.29 | 0.00 | 0.00 | 0.00 |
-| @PiscoLitty | left | 56 | 0.70 | 0.04 | 0.66 | 0.29 | 0.02 | 0.00 | 0.00 |
-| @glennbeck | right | 460 | 0.70 | 0.00 | 0.70 | 0.30 | 0.00 | 0.00 | 0.00 |
-| @BadFaithPodcast | left | 81 | 0.69 | 0.00 | 0.69 | 0.31 | 0.00 | 0.00 | 0.00 |
-| @usefulidiots | left | 186 | 0.69 | 0.01 | 0.68 | 0.27 | 0.04 | 0.00 | 0.00 |
-| @adammockler | left | 1117 | 0.69 | 0.02 | 0.66 | 0.13 | 0.18 | 0.00 | 0.00 |
-| @OfficialSaharTV | right | 893 | 0.68 | 0.02 | 0.65 | 0.32 | 0.01 | 0.00 | 0.00 |
-| @TheDamageReport | left | 3204 | 0.67 | 0.00 | 0.67 | 0.33 | 0.00 | 0.00 | 0.00 |
-| @LiberalHivemind | right | 846 | 0.65 | 0.09 | 0.57 | 0.04 | 0.28 | 0.00 | 0.02 |
-| @FoxNews | right | 8210 | 0.65 | 0.00 | 0.65 | 0.02 | 0.33 | 0.00 | 0.00 |
-| @lizwheeler | right | 86 | 0.65 | 0.00 | 0.65 | 0.35 | 0.00 | 0.00 | 0.00 |
-| @thedavidpakmanshow | left | 1641 | 0.65 | 0.05 | 0.60 | 0.00 | 0.35 | 0.00 | 0.00 |
-| @timesofindia | left | 9926 | 0.64 | 0.00 | 0.64 | 0.35 | 0.00 | 0.00 | 0.00 |
-| @fightbackpodcast | right | 627 | 0.64 | 0.01 | 0.63 | 0.35 | 0.01 | 0.00 | 0.00 |
-| @FoxNewsChannelClips | right | 5748 | 0.64 | 0.00 | 0.64 | 0.00 | 0.36 | 0.00 | 0.00 |
-| @thehill | neutral | 4249 | 0.63 | 0.00 | 0.63 | 0.10 | 0.28 | 0.00 | 0.00 |
+| @thejimmydoreshow | neutral | 1077 | 0.77 | 0.00 | 0.77 | 0.23 | 0.00 | 0.00 | 0.00 |
+| @TimesNowWorld | neutral | 8489 | 0.77 | 0.00 | 0.77 | 0.23 | 0.01 | 0.00 | 0.00 |
+| @RestPoliticsUS | left | 208 | 0.76 | 0.02 | 0.74 | 0.24 | 0.00 | 0.00 | 0.00 |
+| @MichaelMaliceofficial | right | 51 | 0.75 | 0.00 | 0.75 | 0.25 | 0.00 | 0.00 | 0.00 |
+| @HasanReactionsfanTwo | left | 319 | 0.73 | 0.00 | 0.73 | 0.26 | 0.01 | 0.00 | 0.00 |
+| @DoubleDownNews | left | 64 | 0.72 | 0.06 | 0.66 | 0.22 | 0.06 | 0.00 | 0.00 |
+| @jlptalk | right | 293 | 0.71 | 0.00 | 0.71 | 0.28 | 0.00 | 0.00 | 0.00 |
+| @OwenJonesTalks | left | 226 | 0.71 | 0.00 | 0.71 | 0.29 | 0.00 | 0.00 | 0.00 |
+| @PiscoLitty | left | 54 | 0.70 | 0.02 | 0.69 | 0.28 | 0.02 | 0.00 | 0.00 |
+| @CamHigby | right | 174 | 0.70 | 0.00 | 0.70 | 0.30 | 0.00 | 0.00 | 0.00 |
+| @lonerboxlive | right | 82 | 0.68 | 0.00 | 0.68 | 0.32 | 0.00 | 0.00 | 0.00 |
+| @glennbeck | right | 437 | 0.68 | 0.00 | 0.68 | 0.31 | 0.00 | 0.00 | 0.00 |
+| @usefulidiots | left | 179 | 0.68 | 0.01 | 0.67 | 0.27 | 0.04 | 0.00 | 0.00 |
+| @adammockler | left | 1055 | 0.68 | 0.02 | 0.66 | 0.14 | 0.18 | 0.00 | 0.00 |
+| @BadFaithPodcast | left | 77 | 0.68 | 0.00 | 0.68 | 0.32 | 0.00 | 0.00 | 0.00 |
+| @OfficialSaharTV | right | 831 | 0.67 | 0.03 | 0.64 | 0.32 | 0.01 | 0.00 | 0.00 |
+| @TheDamageReport | left | 3015 | 0.67 | 0.00 | 0.67 | 0.33 | 0.00 | 0.00 | 0.00 |
+| @FoxNews | right | 7727 | 0.66 | 0.00 | 0.66 | 0.02 | 0.32 | 0.00 | 0.00 |
+| @timesofindia | left | 9372 | 0.65 | 0.00 | 0.65 | 0.34 | 0.00 | 0.00 | 0.00 |
+| @LiberalHivemind | right | 800 | 0.65 | 0.09 | 0.56 | 0.05 | 0.28 | 0.00 | 0.02 |
+| @thedavidpakmanshow | left | 1541 | 0.65 | 0.05 | 0.60 | 0.00 | 0.35 | 0.00 | 0.00 |
+| @lizwheeler | right | 77 | 0.65 | 0.00 | 0.65 | 0.35 | 0.00 | 0.00 | 0.00 |
+| @FoxNewsChannelClips | right | 5421 | 0.65 | 0.00 | 0.65 | 0.00 | 0.35 | 0.00 | 0.00 |
+| @fightbackpodcast | right | 584 | 0.64 | 0.01 | 0.62 | 0.35 | 0.01 | 0.00 | 0.00 |
+| @thehill | neutral | 4045 | 0.63 | 0.00 | 0.63 | 0.09 | 0.29 | 0.00 | 0.00 |
 | https://rumble.com/c/GGreenwald | left | 76 | 0.62 | 0.00 | 0.62 | 0.38 | 0.00 | 0.00 | 0.00 |
-| @DestinyDGGClips | right | 209 | 0.62 | 0.00 | 0.61 | 0.37 | 0.01 | 0.00 | 0.00 |
-| @MyronGainesX | right | 389 | 0.61 | 0.00 | 0.61 | 0.38 | 0.01 | 0.00 | 0.00 |
-| @OutKick | right | 51 | 0.61 | 0.00 | 0.61 | 0.39 | 0.00 | 0.00 | 0.00 |
-| @TheSerfTimes | left | 247 | 0.60 | 0.00 | 0.60 | 0.05 | 0.34 | 0.00 | 0.00 |
-| @lovettorleaveitpodcast | left | 114 | 0.59 | 0.00 | 0.59 | 0.41 | 0.00 | 0.00 | 0.00 |
-| @FarronBalanced | left | 1780 | 0.58 | 0.00 | 0.57 | 0.42 | 0.01 | 0.00 | 0.00 |
-| @FleccasTalks | right | 290 | 0.56 | 0.42 | 0.13 | 0.13 | 0.00 | 0.00 | 0.32 |
-| @podsaveamerica | left | 667 | 0.55 | 0.00 | 0.55 | 0.43 | 0.02 | 0.00 | 0.00 |
-| @PTLRadioShow | left | 1684 | 0.55 | 0.00 | 0.55 | 0.40 | 0.05 | 0.00 | 0.00 |
-| @TheYoungTurks | left | 2868 | 0.54 | 0.00 | 0.54 | 0.46 | 0.00 | 0.00 | 0.00 |
+| @MyronGainesX | right | 365 | 0.62 | 0.00 | 0.62 | 0.38 | 0.01 | 0.00 | 0.00 |
+| @DestinyDGGClips | right | 191 | 0.61 | 0.01 | 0.60 | 0.38 | 0.02 | 0.00 | 0.00 |
+| @TheSerfTimes | left | 233 | 0.59 | 0.00 | 0.59 | 0.06 | 0.35 | 0.00 | 0.00 |
+| @lovettorleaveitpodcast | left | 110 | 0.59 | 0.00 | 0.59 | 0.41 | 0.00 | 0.00 | 0.00 |
+| @FarronBalanced | left | 1705 | 0.59 | 0.00 | 0.59 | 0.40 | 0.01 | 0.00 | 0.00 |
+| @podsaveamerica | left | 643 | 0.56 | 0.00 | 0.56 | 0.42 | 0.02 | 0.00 | 0.00 |
+| @FleccasTalks | right | 288 | 0.56 | 0.42 | 0.14 | 0.12 | 0.00 | 0.00 | 0.32 |
+| @PTLRadioShow | left | 1580 | 0.56 | 0.00 | 0.56 | 0.39 | 0.05 | 0.00 | 0.00 |
+| @TheYoungTurks | left | 2706 | 0.54 | 0.00 | 0.54 | 0.46 | 0.00 | 0.00 | 0.00 |
+| @HasanAbi | left | 591 | 0.54 | 0.51 | 0.04 | 0.23 | 0.13 | 0.05 | 0.05 |
+| @chicksonright | right | 446 | 0.54 | 0.00 | 0.54 | 0.46 | 0.00 | 0.00 | 0.00 |
 | https://rumble.com/c/TheAlexJonesShowLive | right | 513 | 0.54 | 0.28 | 0.25 | 0.45 | 0.01 | 0.00 | 0.00 |
-| @HasanAbi | left | 628 | 0.54 | 0.50 | 0.04 | 0.24 | 0.13 | 0.05 | 0.05 |
-| @TheMichaelCohenShow | left | 479 | 0.53 | 0.01 | 0.53 | 0.46 | 0.00 | 0.00 | 0.00 |
-| @chicksonright | right | 475 | 0.52 | 0.00 | 0.52 | 0.47 | 0.00 | 0.00 | 0.00 |
-| @FreshFitMiami | right | 111 | 0.52 | 0.00 | 0.52 | 0.48 | 0.00 | 0.00 | 0.00 |
-| @The_Crucible | right | 226 | 0.52 | 0.00 | 0.52 | 0.43 | 0.04 | 0.00 | 0.00 |
+| @The_Crucible | right | 218 | 0.52 | 0.00 | 0.52 | 0.44 | 0.04 | 0.00 | 0.00 |
+| @NovaraMedia | left | 565 | 0.50 | 0.00 | 0.50 | 0.50 | 0.00 | 0.00 | 0.00 |
+| @FreshFitMiami | right | 98 | 0.50 | 0.00 | 0.50 | 0.50 | 0.00 | 0.00 | 0.00 |
 | https://rumble.com/c/BannonsWarRoom | right | 4506 | 0.49 | 0.05 | 0.44 | 0.38 | 0.12 | 0.00 | 0.00 |
-| @NovaraMedia | left | 585 | 0.49 | 0.00 | 0.49 | 0.50 | 0.00 | 0.00 | 0.00 |
-| @AfterPartyEmily | right | 410 | 0.48 | 0.00 | 0.48 | 0.52 | 0.00 | 0.00 | 0.00 |
-| @RedactedNews | right | 452 | 0.47 | 0.01 | 0.47 | 0.38 | 0.14 | 0.00 | 0.00 |
-| @RealAmericasVoice | right | 2653 | 0.47 | 0.23 | 0.23 | 0.52 | 0.01 | 0.00 | 0.00 |
+| @TheMichaelCohenShow | left | 437 | 0.49 | 0.01 | 0.48 | 0.50 | 0.00 | 0.00 | 0.00 |
+| @dineshdsouza | right | 62 | 0.48 | 0.40 | 0.08 | 0.45 | 0.00 | 0.00 | 0.06 |
+| @AfterPartyEmily | right | 393 | 0.48 | 0.00 | 0.48 | 0.52 | 0.00 | 0.00 | 0.00 |
+| @RealAmericasVoice | right | 2339 | 0.48 | 0.23 | 0.24 | 0.51 | 0.01 | 0.00 | 0.00 |
+| @MegynKelly | right | 1591 | 0.47 | 0.00 | 0.47 | 0.53 | 0.00 | 0.00 | 0.00 |
+| @RedactedNews | right | 424 | 0.47 | 0.01 | 0.46 | 0.38 | 0.15 | 0.00 | 0.00 |
+| @GlennKirschner2 | left | 244 | 0.47 | 0.00 | 0.47 | 0.51 | 0.02 | 0.00 | 0.00 |
 | @HasanabiClips | left | 474 | 0.47 | 0.01 | 0.45 | 0.35 | 0.18 | 0.01 | 0.00 |
-| @GlennKirschner2 | left | 262 | 0.47 | 0.00 | 0.47 | 0.52 | 0.02 | 0.00 | 0.00 |
-| @MegynKelly | right | 1651 | 0.46 | 0.00 | 0.46 | 0.54 | 0.00 | 0.00 | 0.00 |
-| @Xanderhal | left | 316 | 0.46 | 0.00 | 0.46 | 0.54 | 0.00 | 0.00 | 0.00 |
-| @Vaush | left | 453 | 0.45 | 0.29 | 0.16 | 0.41 | 0.03 | 0.08 | 0.03 |
-| @dineshdsouza | right | 92 | 0.45 | 0.27 | 0.17 | 0.51 | 0.00 | 0.00 | 0.04 |
-| @marclamonthillnetwork | left | 321 | 0.45 | 0.00 | 0.45 | 0.55 | 0.00 | 0.00 | 0.00 |
-| @MichaelKnowles | right | 472 | 0.44 | 0.00 | 0.44 | 0.55 | 0.00 | 0.00 | 0.00 |
-| @JustPearlyThings | right | 669 | 0.43 | 0.01 | 0.42 | 0.55 | 0.02 | 0.00 | 0.00 |
-| @LIVESNEAKO | neutral | 479 | 0.43 | 0.03 | 0.41 | 0.30 | 0.24 | 0.00 | 0.03 |
-| @BadEmpanadaLive | left | 298 | 0.43 | 0.01 | 0.42 | 0.56 | 0.00 | 0.00 | 0.01 |
-| @TomiLahrenIsFearless | right | 118 | 0.39 | 0.00 | 0.39 | 0.61 | 0.00 | 0.00 | 0.00 |
+| @Xanderhal | left | 289 | 0.46 | 0.00 | 0.46 | 0.54 | 0.00 | 0.00 | 0.00 |
+| @Vaush | left | 431 | 0.46 | 0.29 | 0.16 | 0.40 | 0.03 | 0.08 | 0.03 |
+| @marclamonthillnetwork | left | 309 | 0.45 | 0.00 | 0.45 | 0.54 | 0.00 | 0.00 | 0.00 |
+| @MichaelKnowles | right | 445 | 0.44 | 0.00 | 0.44 | 0.55 | 0.00 | 0.00 | 0.00 |
+| @BadEmpanadaLive | left | 274 | 0.43 | 0.01 | 0.42 | 0.56 | 0.00 | 0.00 | 0.01 |
+| @LIVESNEAKO | neutral | 472 | 0.43 | 0.02 | 0.41 | 0.30 | 0.24 | 0.00 | 0.03 |
+| @JustPearlyThings | right | 631 | 0.42 | 0.01 | 0.41 | 0.56 | 0.02 | 0.00 | 0.00 |
 | @destinyhqclips | neutral | 197 | 0.39 | 0.00 | 0.39 | 0.60 | 0.02 | 0.00 | 0.00 |
-| @Forthepeoplepodcast305 | left | 115 | 0.37 | 0.00 | 0.37 | 0.61 | 0.02 | 0.00 | 0.00 |
-| @MattWalsh | right | 297 | 0.37 | 0.00 | 0.37 | 0.62 | 0.00 | 0.00 | 0.00 |
-| @TheHumanistReport | left | 154 | 0.37 | 0.00 | 0.37 | 0.63 | 0.00 | 0.00 | 0.00 |
-| @JillianMichaels | right | 457 | 0.37 | 0.05 | 0.31 | 0.63 | 0.01 | 0.00 | 0.00 |
-| @SydneyWatson | right | 61 | 0.36 | 0.00 | 0.36 | 0.00 | 0.64 | 0.00 | 0.00 |
-| @KimIversen | neutral | 534 | 0.35 | 0.00 | 0.35 | 0.64 | 0.01 | 0.00 | 0.00 |
-| @ChadPrather1 | right | 160 | 0.35 | 0.00 | 0.35 | 0.64 | 0.01 | 0.00 | 0.00 |
-| @TheAmalaEkpunobi | right | 211 | 0.34 | 0.00 | 0.34 | 0.65 | 0.00 | 0.00 | 0.00 |
-| @BrittanyVenti | neutral | 55 | 0.33 | 0.00 | 0.33 | 0.51 | 0.00 | 0.15 | 0.02 |
-| @hutch | neutral | 162 | 0.33 | 0.01 | 0.31 | 0.58 | 0.06 | 0.00 | 0.03 |
-| @fastpoliticspodcast | left | 145 | 0.31 | 0.00 | 0.31 | 0.69 | 0.00 | 0.00 | 0.00 |
+| @MattWalsh | right | 277 | 0.38 | 0.00 | 0.38 | 0.61 | 0.00 | 0.00 | 0.00 |
+| @TomiLahrenIsFearless | right | 113 | 0.38 | 0.00 | 0.38 | 0.62 | 0.00 | 0.00 | 0.00 |
+| @TheHumanistReport | left | 146 | 0.37 | 0.00 | 0.37 | 0.63 | 0.00 | 0.00 | 0.00 |
+| @Forthepeoplepodcast305 | left | 111 | 0.37 | 0.00 | 0.37 | 0.61 | 0.02 | 0.00 | 0.00 |
+| @SydneyWatson | right | 57 | 0.37 | 0.00 | 0.37 | 0.00 | 0.63 | 0.00 | 0.00 |
+| @JillianMichaels | right | 437 | 0.35 | 0.05 | 0.30 | 0.64 | 0.00 | 0.00 | 0.00 |
+| @KimIversen | neutral | 505 | 0.34 | 0.00 | 0.34 | 0.65 | 0.01 | 0.00 | 0.00 |
+| @BrittanyVenti | neutral | 50 | 0.34 | 0.00 | 0.34 | 0.50 | 0.00 | 0.16 | 0.00 |
+| @ChadPrather1 | right | 152 | 0.34 | 0.00 | 0.34 | 0.65 | 0.01 | 0.00 | 0.00 |
+| @TheAmalaEkpunobi | right | 197 | 0.34 | 0.00 | 0.34 | 0.66 | 0.00 | 0.00 | 0.01 |
+| @hutch | neutral | 160 | 0.33 | 0.01 | 0.32 | 0.57 | 0.06 | 0.00 | 0.03 |
+| @fastpoliticspodcast | left | 138 | 0.33 | 0.00 | 0.33 | 0.67 | 0.00 | 0.00 | 0.00 |
+| @underthedesknews | left | 74 | 0.30 | 0.03 | 0.27 | 0.54 | 0.16 | 0.00 | 0.00 |
 | @RealDanBongino | right | 266 | 0.30 | 0.00 | 0.30 | 0.62 | 0.05 | 0.00 | 0.03 |
-| @destiny | left | 267 | 0.29 | 0.00 | 0.29 | 0.56 | 0.01 | 0.08 | 0.06 |
-| @zeteo | left | 206 | 0.28 | 0.00 | 0.28 | 0.71 | 0.00 | 0.00 | 0.00 |
-| @TheAdamCarollaShow1 | right | 395 | 0.28 | 0.01 | 0.27 | 0.71 | 0.01 | 0.00 | 0.00 |
-| @TheVaushPit | left | 403 | 0.28 | 0.12 | 0.16 | 0.50 | 0.02 | 0.18 | 0.03 |
-| @underthedesknews | left | 79 | 0.28 | 0.03 | 0.25 | 0.54 | 0.18 | 0.00 | 0.00 |
+| @TheAdamCarollaShow1 | right | 372 | 0.29 | 0.01 | 0.28 | 0.70 | 0.01 | 0.00 | 0.00 |
+| @destiny | left | 262 | 0.29 | 0.00 | 0.29 | 0.56 | 0.01 | 0.08 | 0.06 |
+| @TheVaushPit | left | 384 | 0.29 | 0.12 | 0.16 | 0.48 | 0.01 | 0.19 | 0.03 |
 | @GrahamAllen | right | 247 | 0.27 | 0.01 | 0.26 | 0.72 | 0.00 | 0.00 | 0.00 |
 | @ClipsCandaceOwens | neutral | 192 | 0.27 | 0.00 | 0.27 | 0.72 | 0.02 | 0.00 | 0.00 |
-| @Tim_Black | right | 329 | 0.26 | 0.00 | 0.26 | 0.74 | 0.00 | 0.00 | 0.00 |
+| @zeteo | left | 198 | 0.26 | 0.00 | 0.26 | 0.73 | 0.01 | 0.00 | 0.00 |
+| @Tim_Black | right | 311 | 0.26 | 0.00 | 0.26 | 0.74 | 0.00 | 0.00 | 0.00 |
+| @msnow | left | 9398 | 0.25 | 0.00 | 0.25 | 0.03 | 0.71 | 0.00 | 0.00 |
 | @RileyGaines | right | 143 | 0.25 | 0.00 | 0.25 | 0.75 | 0.00 | 0.00 | 0.00 |
-| @OwenReport | left | 388 | 0.25 | 0.00 | 0.25 | 0.70 | 0.05 | 0.00 | 0.00 |
-| @msnow | left | 9879 | 0.25 | 0.00 | 0.25 | 0.03 | 0.72 | 0.00 | 0.00 |
-| @BenShapiro | right | 525 | 0.25 | 0.00 | 0.25 | 0.75 | 0.00 | 0.00 | 0.00 |
-| @PoliticsJOE | left | 339 | 0.24 | 0.00 | 0.24 | 0.09 | 0.67 | 0.00 | 0.00 |
-| @MarkDice | right | 92 | 0.24 | 0.07 | 0.17 | 0.74 | 0.00 | 0.01 | 0.01 |
+| @BenShapiro | right | 506 | 0.25 | 0.00 | 0.25 | 0.75 | 0.00 | 0.00 | 0.00 |
+| @RSBN | right | 1553 | 0.25 | 0.00 | 0.25 | 0.74 | 0.01 | 0.00 | 0.00 |
 | @laurenchenclips | right | 109 | 0.24 | 0.00 | 0.24 | 0.75 | 0.01 | 0.00 | 0.00 |
-| @RSBN | right | 1640 | 0.24 | 0.00 | 0.24 | 0.75 | 0.02 | 0.00 | 0.00 |
-| @PoliticsGirl | left | 116 | 0.22 | 0.00 | 0.22 | 0.66 | 0.04 | 0.00 | 0.07 |
-| @thomhartmann | left | 784 | 0.22 | 0.00 | 0.22 | 0.76 | 0.01 | 0.00 | 0.00 |
-| @RebelNewsOnline | right | 1358 | 0.22 | 0.00 | 0.22 | 0.09 | 0.68 | 0.00 | 0.00 |
-| @LeejaMiller | left | 60 | 0.22 | 0.00 | 0.22 | 0.75 | 0.02 | 0.00 | 0.02 |
-| @winston_marshall | right | 109 | 0.21 | 0.00 | 0.21 | 0.68 | 0.10 | 0.01 | 0.00 |
-| @oann | right | 1803 | 0.21 | 0.09 | 0.12 | 0.74 | 0.05 | 0.00 | 0.00 |
-| @clayandbuck | right | 581 | 0.20 | 0.00 | 0.20 | 0.80 | 0.00 | 0.00 | 0.00 |
-| @XAVIAER | right | 71 | 0.20 | 0.00 | 0.20 | 0.73 | 0.07 | 0.00 | 0.00 |
-| @GeopoliticalEconomyReport | left | 72 | 0.19 | 0.00 | 0.19 | 0.00 | 0.81 | 0.00 | 0.00 |
-| @JackCocchiarellaShow | left | 1524 | 0.19 | 0.00 | 0.18 | 0.79 | 0.02 | 0.00 | 0.00 |
-| @NBCNews | neutral | 6499 | 0.18 | 0.00 | 0.18 | 0.08 | 0.74 | 0.00 | 0.00 |
-| @DropSiteNews | left | 204 | 0.18 | 0.00 | 0.18 | 0.78 | 0.04 | 0.00 | 0.00 |
-| @AsmonTV | right | 875 | 0.17 | 0.04 | 0.13 | 0.05 | 0.75 | 0.01 | 0.03 |
-| @DemocracyDocket | left | 129 | 0.17 | 0.00 | 0.17 | 0.81 | 0.02 | 0.00 | 0.00 |
-| @jimacosta | left | 313 | 0.17 | 0.01 | 0.16 | 0.70 | 0.13 | 0.00 | 0.00 |
-| @RealAlexClark | right | 79 | 0.16 | 0.00 | 0.16 | 0.82 | 0.01 | 0.00 | 0.00 |
-| @TheRealTabithaSpeaks | left | 452 | 0.16 | 0.00 | 0.16 | 0.82 | 0.01 | 0.00 | 0.01 |
-| @theisabelbrown | right | 141 | 0.16 | 0.00 | 0.16 | 0.84 | 0.01 | 0.00 | 0.00 |
-| @DarkHorsePod | right | 70 | 0.14 | 0.00 | 0.14 | 0.84 | 0.01 | 0.00 | 0.00 |
-| @marklevinshow | right | 505 | 0.14 | 0.00 | 0.14 | 0.85 | 0.01 | 0.00 | 0.00 |
-| @bbrettcooper | right | 143 | 0.14 | 0.00 | 0.14 | 0.86 | 0.00 | 0.00 | 0.00 |
+| @PoliticsJOE | left | 325 | 0.23 | 0.00 | 0.23 | 0.09 | 0.67 | 0.00 | 0.00 |
+| @thomhartmann | left | 760 | 0.23 | 0.00 | 0.23 | 0.76 | 0.01 | 0.00 | 0.00 |
+| @MarkDice | right | 89 | 0.22 | 0.07 | 0.16 | 0.75 | 0.00 | 0.01 | 0.01 |
+| @RebelNewsOnline | right | 1273 | 0.22 | 0.00 | 0.22 | 0.10 | 0.68 | 0.00 | 0.00 |
+| @winston_marshall | right | 104 | 0.22 | 0.00 | 0.22 | 0.66 | 0.11 | 0.01 | 0.00 |
+| @OwenReport | left | 368 | 0.21 | 0.00 | 0.21 | 0.73 | 0.06 | 0.00 | 0.00 |
+| @oann | right | 1736 | 0.21 | 0.09 | 0.12 | 0.74 | 0.05 | 0.00 | 0.00 |
+| @GeopoliticalEconomyReport | left | 67 | 0.21 | 0.00 | 0.21 | 0.00 | 0.79 | 0.00 | 0.00 |
+| @clayandbuck | right | 565 | 0.20 | 0.00 | 0.20 | 0.80 | 0.00 | 0.00 | 0.00 |
+| @PoliticsGirl | left | 110 | 0.20 | 0.00 | 0.20 | 0.69 | 0.04 | 0.00 | 0.07 |
+| @LeejaMiller | left | 56 | 0.20 | 0.00 | 0.20 | 0.77 | 0.02 | 0.00 | 0.02 |
+| @XAVIAER | right | 68 | 0.19 | 0.00 | 0.19 | 0.75 | 0.06 | 0.00 | 0.00 |
+| @DropSiteNews | left | 198 | 0.18 | 0.00 | 0.18 | 0.78 | 0.04 | 0.00 | 0.00 |
+| @NBCNews | neutral | 6161 | 0.18 | 0.00 | 0.18 | 0.08 | 0.74 | 0.00 | 0.00 |
+| @DemocracyDocket | left | 122 | 0.18 | 0.00 | 0.18 | 0.80 | 0.02 | 0.00 | 0.00 |
+| @AsmonTV | right | 825 | 0.17 | 0.04 | 0.13 | 0.05 | 0.75 | 0.01 | 0.03 |
+| @TheRealTabithaSpeaks | left | 431 | 0.16 | 0.00 | 0.16 | 0.82 | 0.01 | 0.00 | 0.01 |
+| @jimacosta | left | 301 | 0.15 | 0.00 | 0.15 | 0.72 | 0.13 | 0.00 | 0.00 |
+| @RealAlexClark | right | 73 | 0.15 | 0.00 | 0.15 | 0.84 | 0.01 | 0.00 | 0.00 |
+| @marklevinshow | right | 486 | 0.15 | 0.00 | 0.15 | 0.84 | 0.01 | 0.00 | 0.00 |
+| @MrTariqNasheed | right | 354 | 0.15 | 0.00 | 0.14 | 0.84 | 0.00 | 0.00 | 0.01 |
+| @bbrettcooper | right | 139 | 0.14 | 0.00 | 0.14 | 0.86 | 0.00 | 0.00 | 0.00 |
+| @JackCocchiarellaShow | left | 1446 | 0.14 | 0.00 | 0.14 | 0.84 | 0.02 | 0.00 | 0.00 |
+| @rolandsmartin | left | 698 | 0.14 | 0.00 | 0.14 | 0.82 | 0.04 | 0.00 | 0.00 |
+| @DarkHorsePod | right | 65 | 0.14 | 0.00 | 0.14 | 0.86 | 0.00 | 0.00 | 0.00 |
 | @HangOutwithSeanHannity | right | 154 | 0.14 | 0.00 | 0.14 | 0.86 | 0.01 | 0.00 | 0.00 |
-| @rolandsmartin | left | 742 | 0.13 | 0.00 | 0.13 | 0.82 | 0.04 | 0.00 | 0.00 |
-| @MrTariqNasheed | right | 403 | 0.13 | 0.00 | 0.13 | 0.86 | 0.00 | 0.00 | 0.01 |
+| @theisabelbrown | right | 134 | 0.13 | 0.00 | 0.13 | 0.86 | 0.01 | 0.00 | 0.00 |
 | @TheBrianKilmeadeShow | right | 352 | 0.13 | 0.00 | 0.13 | 0.87 | 0.00 | 0.00 | 0.00 |
-| @TheMajorityReport | left | 1657 | 0.12 | 0.01 | 0.11 | 0.86 | 0.00 | 0.00 | 0.01 |
-| @HasanAbiVODs3 | left | 181 | 0.12 | 0.00 | 0.12 | 0.21 | 0.20 | 0.00 | 0.47 |
-| @RonPlacone | left | 66 | 0.12 | 0.00 | 0.12 | 0.88 | 0.00 | 0.00 | 0.00 |
-| @judgingfreedom | left | 355 | 0.12 | 0.00 | 0.12 | 0.86 | 0.02 | 0.00 | 0.00 |
-| @RubinReport | right | 1047 | 0.11 | 0.00 | 0.11 | 0.89 | 0.00 | 0.00 | 0.00 |
+| @RonPlacone | left | 63 | 0.13 | 0.00 | 0.13 | 0.87 | 0.00 | 0.00 | 0.00 |
+| @Reuters | neutral | 7680 | 0.12 | 0.00 | 0.12 | 0.01 | 0.87 | 0.00 | 0.00 |
+| @TheMajorityReport | left | 1520 | 0.12 | 0.01 | 0.11 | 0.87 | 0.00 | 0.00 | 0.01 |
+| @HasanAbiVODs3 | left | 163 | 0.12 | 0.00 | 0.12 | 0.21 | 0.21 | 0.00 | 0.45 |
+| @joerogan | neutral | 133 | 0.11 | 0.00 | 0.11 | 0.89 | 0.00 | 0.00 | 0.00 |
+| @RubinReport | right | 1011 | 0.11 | 0.00 | 0.11 | 0.89 | 0.00 | 0.00 | 0.00 |
+| @judgingfreedom | left | 345 | 0.11 | 0.00 | 0.11 | 0.88 | 0.01 | 0.00 | 0.00 |
 | https://rumble.com/c/russellbrand | right | 259 | 0.11 | 0.01 | 0.10 | 0.50 | 0.36 | 0.00 | 0.03 |
-| @joerogan | neutral | 141 | 0.11 | 0.00 | 0.11 | 0.89 | 0.00 | 0.00 | 0.00 |
-| @nypost | right | 6304 | 0.11 | 0.00 | 0.11 | 0.88 | 0.02 | 0.00 | 0.00 |
-| @NewsmaxTV | right | 3944 | 0.10 | 0.00 | 0.10 | 0.08 | 0.82 | 0.00 | 0.00 |
-| @bulwarkmedia | left | 1826 | 0.10 | 0.00 | 0.10 | 0.90 | 0.00 | 0.00 | 0.00 |
-| @AndrewKlavan | right | 196 | 0.10 | 0.00 | 0.10 | 0.90 | 0.00 | 0.00 | 0.00 |
-| @franifio | left | 282 | 0.10 | 0.00 | 0.09 | 0.89 | 0.01 | 0.00 | 0.00 |
-| @AlexStein99 | right | 87 | 0.09 | 0.02 | 0.07 | 0.82 | 0.09 | 0.00 | 0.00 |
-| @Politicon | left | 496 | 0.09 | 0.00 | 0.09 | 0.85 | 0.01 | 0.00 | 0.04 |
-| @BreakThroughNews | left | 242 | 0.09 | 0.00 | 0.09 | 0.90 | 0.01 | 0.00 | 0.00 |
-| @SaltyCracker | right | 387 | 0.09 | 0.00 | 0.09 | 0.90 | 0.01 | 0.00 | 0.00 |
-| @ANINewsIndia | neutral | 12279 | 0.08 | 0.00 | 0.08 | 0.13 | 0.79 | 0.00 | 0.00 |
-| @TheLincolnProject | left | 123 | 0.08 | 0.00 | 0.08 | 0.72 | 0.02 | 0.00 | 0.19 |
-| @ZubyMusic | right | 139 | 0.08 | 0.00 | 0.08 | 0.91 | 0.00 | 0.00 | 0.01 |
-| @Semafor | neutral | 153 | 0.08 | 0.00 | 0.08 | 0.90 | 0.01 | 0.01 | 0.00 |
-| @TheJoyReidShow | left | 238 | 0.08 | 0.00 | 0.08 | 0.90 | 0.03 | 0.00 | 0.00 |
-| @JamarlThomas | left | 274 | 0.07 | 0.00 | 0.07 | 0.93 | 0.00 | 0.00 | 0.00 |
-| @Styxhexenhammer666 | right | 446 | 0.07 | 0.00 | 0.07 | 0.89 | 0.02 | 0.00 | 0.02 |
-| @StevenCrowder | right | 169 | 0.07 | 0.00 | 0.07 | 0.88 | 0.04 | 0.00 | 0.02 |
-| @RufoandLomez | right | 80 | 0.06 | 0.00 | 0.06 | 0.94 | 0.00 | 0.00 | 0.00 |
-| @thewarningwithsteveschmidt | left | 289 | 0.06 | 0.00 | 0.06 | 0.93 | 0.02 | 0.00 | 0.00 |
-| @triggerpod | right | 151 | 0.05 | 0.00 | 0.05 | 0.95 | 0.00 | 0.00 | 0.00 |
-| @nationalreview | right | 191 | 0.05 | 0.00 | 0.05 | 0.94 | 0.01 | 0.00 | 0.00 |
-| @wethefifth | neutral | 112 | 0.04 | 0.00 | 0.04 | 0.94 | 0.02 | 0.00 | 0.00 |
-| @StosselTV | right | 50 | 0.04 | 0.00 | 0.04 | 0.96 | 0.00 | 0.00 | 0.00 |
+| @nypost | right | 6036 | 0.10 | 0.00 | 0.10 | 0.88 | 0.02 | 0.00 | 0.00 |
+| @NewsmaxTV | right | 3744 | 0.10 | 0.00 | 0.10 | 0.08 | 0.81 | 0.00 | 0.00 |
+| @bulwarkmedia | left | 1730 | 0.10 | 0.00 | 0.10 | 0.89 | 0.00 | 0.00 | 0.00 |
+| @AlexStein99 | right | 82 | 0.10 | 0.02 | 0.07 | 0.84 | 0.06 | 0.00 | 0.00 |
+| @AndrewKlavan | right | 183 | 0.09 | 0.00 | 0.09 | 0.91 | 0.00 | 0.00 | 0.00 |
+| @franifio | left | 271 | 0.09 | 0.00 | 0.09 | 0.89 | 0.01 | 0.00 | 0.00 |
+| @Politicon | left | 480 | 0.09 | 0.00 | 0.09 | 0.85 | 0.01 | 0.00 | 0.04 |
+| @SaltyCracker | right | 361 | 0.09 | 0.00 | 0.09 | 0.90 | 0.01 | 0.00 | 0.00 |
+| @BreakThroughNews | left | 234 | 0.09 | 0.00 | 0.09 | 0.91 | 0.01 | 0.00 | 0.00 |
+| @ZubyMusic | right | 130 | 0.08 | 0.00 | 0.08 | 0.91 | 0.00 | 0.00 | 0.01 |
+| @Semafor | neutral | 149 | 0.08 | 0.00 | 0.08 | 0.90 | 0.01 | 0.01 | 0.00 |
+| @TheJoyReidShow | left | 234 | 0.08 | 0.00 | 0.08 | 0.90 | 0.03 | 0.00 | 0.00 |
+| @TheLincolnProject | left | 119 | 0.08 | 0.00 | 0.08 | 0.71 | 0.02 | 0.00 | 0.19 |
+| @ANINewsIndia | neutral | 11623 | 0.08 | 0.00 | 0.08 | 0.13 | 0.80 | 0.00 | 0.00 |
+| @JamarlThomas | left | 245 | 0.07 | 0.00 | 0.07 | 0.93 | 0.00 | 0.00 | 0.00 |
+| @RufoandLomez | right | 74 | 0.07 | 0.00 | 0.07 | 0.93 | 0.00 | 0.00 | 0.00 |
+| @StevenCrowder | right | 165 | 0.06 | 0.00 | 0.06 | 0.88 | 0.04 | 0.00 | 0.02 |
+| @Styxhexenhammer666 | right | 380 | 0.06 | 0.00 | 0.06 | 0.90 | 0.02 | 0.01 | 0.02 |
+| @triggerpod | right | 143 | 0.06 | 0.00 | 0.06 | 0.94 | 0.00 | 0.00 | 0.00 |
+| @nationalreview | right | 183 | 0.04 | 0.00 | 0.04 | 0.95 | 0.01 | 0.00 | 0.00 |
 | @ajplus | left | 50 | 0.04 | 0.00 | 0.04 | 0.94 | 0.02 | 0.00 | 0.00 |
-| @nousnetwork | left | 156 | 0.04 | 0.00 | 0.04 | 0.92 | 0.03 | 0.01 | 0.00 |
-| @turningpointusa | right | 183 | 0.04 | 0.00 | 0.04 | 0.96 | 0.00 | 0.00 | 0.01 |
+| @nousnetwork | left | 152 | 0.04 | 0.00 | 0.04 | 0.92 | 0.03 | 0.01 | 0.00 |
+| @ClubRandomPodcast | neutral | 185 | 0.04 | 0.00 | 0.04 | 0.95 | 0.01 | 0.01 | 0.00 |
+| @wethefifth | neutral | 107 | 0.04 | 0.00 | 0.04 | 0.94 | 0.02 | 0.00 | 0.00 |
 | @axios | neutral | 137 | 0.04 | 0.00 | 0.04 | 0.42 | 0.55 | 0.00 | 0.00 |
-| @ClubRandomPodcast | neutral | 197 | 0.04 | 0.00 | 0.04 | 0.94 | 0.01 | 0.01 | 0.00 |
-| @therationalnational | left | 142 | 0.04 | 0.00 | 0.04 | 0.95 | 0.01 | 0.00 | 0.00 |
-| @TechCrunch | neutral | 145 | 0.03 | 0.00 | 0.03 | 0.26 | 0.70 | 0.01 | 0.00 |
-| @chriscuomo | left | 208 | 0.03 | 0.00 | 0.03 | 0.94 | 0.03 | 0.00 | 0.00 |
-| @LegalEagle | left | 105 | 0.03 | 0.00 | 0.03 | 0.96 | 0.00 | 0.00 | 0.01 |
-| @PragerU | right | 385 | 0.03 | 0.00 | 0.03 | 0.96 | 0.01 | 0.00 | 0.00 |
-| @LeverNews | left | 73 | 0.03 | 0.00 | 0.03 | 0.96 | 0.01 | 0.00 | 0.00 |
-| @Reuters | neutral | 8076 | 0.03 | 0.00 | 0.03 | 0.01 | 0.96 | 0.00 | 0.00 |
-| @ThePodcastoftheLotusEaters | right | 622 | 0.03 | 0.00 | 0.02 | 0.93 | 0.01 | 0.00 | 0.03 |
-| @chinainsights-r2w | neutral | 278 | 0.03 | 0.00 | 0.03 | 0.90 | 0.07 | 0.00 | 0.00 |
-| @NewsNation | neutral | 7372 | 0.02 | 0.00 | 0.02 | 0.06 | 0.91 | 0.00 | 0.00 |
-| @Firstpost | neutral | 10126 | 0.02 | 0.00 | 0.02 | 0.97 | 0.01 | 0.00 | 0.00 |
-| @USATODAY | neutral | 2221 | 0.02 | 0.00 | 0.02 | 0.00 | 0.97 | 0.00 | 0.00 |
-| @markets | neutral | 7974 | 0.02 | 0.00 | 0.02 | 0.94 | 0.01 | 0.00 | 0.03 |
-| @Forbes | neutral | 1256 | 0.02 | 0.00 | 0.02 | 0.98 | 0.00 | 0.00 | 0.00 |
-| @MLChristiansen | right | 118 | 0.02 | 0.00 | 0.02 | 0.98 | 0.00 | 0.00 | 0.00 |
-| @POLITICO | neutral | 295 | 0.02 | 0.00 | 0.02 | 0.08 | 0.91 | 0.00 | 0.00 |
-| @TuckerCarlson | neutral | 119 | 0.02 | 0.00 | 0.02 | 0.97 | 0.01 | 0.00 | 0.00 |
-| @DylanBurnsLIVE | left | 190 | 0.02 | 0.00 | 0.02 | 0.96 | 0.03 | 0.00 | 0.00 |
-| @60minutes | neutral | 325 | 0.02 | 0.00 | 0.02 | 0.40 | 0.59 | 0.00 | 0.00 |
-| @X22Report-y5y | right | 395 | 0.02 | 0.00 | 0.02 | 0.98 | 0.00 | 0.00 | 0.00 |
-| @ABCNews | neutral | 7971 | 0.01 | 0.00 | 0.01 | 0.19 | 0.79 | 0.00 | 0.00 |
+| @TechCrunch | neutral | 139 | 0.04 | 0.00 | 0.04 | 0.27 | 0.69 | 0.01 | 0.00 |
+| @chriscuomo | left | 203 | 0.03 | 0.00 | 0.03 | 0.94 | 0.03 | 0.00 | 0.00 |
+| @thewarningwithsteveschmidt | left | 273 | 0.03 | 0.00 | 0.03 | 0.95 | 0.02 | 0.00 | 0.00 |
+| @turningpointusa | right | 152 | 0.03 | 0.00 | 0.03 | 0.96 | 0.00 | 0.00 | 0.01 |
+| @LegalEagle | left | 97 | 0.03 | 0.00 | 0.03 | 0.96 | 0.00 | 0.00 | 0.01 |
+| @therationalnational | left | 135 | 0.03 | 0.00 | 0.03 | 0.96 | 0.01 | 0.00 | 0.00 |
+| @chinainsights-r2w | neutral | 238 | 0.03 | 0.00 | 0.03 | 0.89 | 0.08 | 0.00 | 0.00 |
+| @LeverNews | left | 71 | 0.03 | 0.00 | 0.03 | 0.96 | 0.01 | 0.00 | 0.00 |
+| @PragerU | right | 371 | 0.03 | 0.00 | 0.03 | 0.96 | 0.01 | 0.00 | 0.00 |
+| @NewsNation | neutral | 6882 | 0.03 | 0.00 | 0.03 | 0.06 | 0.91 | 0.00 | 0.00 |
+| @ThePodcastoftheLotusEaters | right | 588 | 0.03 | 0.00 | 0.02 | 0.93 | 0.01 | 0.00 | 0.04 |
+| @Firstpost | neutral | 9637 | 0.02 | 0.00 | 0.02 | 0.97 | 0.00 | 0.00 | 0.00 |
+| @USATODAY | neutral | 2135 | 0.02 | 0.00 | 0.02 | 0.00 | 0.97 | 0.00 | 0.00 |
+| @markets | neutral | 7665 | 0.02 | 0.00 | 0.02 | 0.94 | 0.01 | 0.00 | 0.03 |
+| @Forbes | neutral | 1196 | 0.02 | 0.00 | 0.02 | 0.98 | 0.00 | 0.00 | 0.00 |
+| @POLITICO | neutral | 286 | 0.02 | 0.00 | 0.02 | 0.08 | 0.90 | 0.00 | 0.00 |
+| @MLChristiansen | right | 116 | 0.02 | 0.00 | 0.02 | 0.98 | 0.00 | 0.00 | 0.00 |
+| @DylanBurnsLIVE | left | 175 | 0.02 | 0.00 | 0.02 | 0.95 | 0.03 | 0.00 | 0.00 |
+| @60minutes | neutral | 301 | 0.02 | 0.00 | 0.02 | 0.39 | 0.59 | 0.00 | 0.00 |
+| @X22Report-y5y | right | 379 | 0.02 | 0.00 | 0.02 | 0.98 | 0.00 | 0.00 | 0.00 |
+| @ZeihanonGeopolitics | neutral | 202 | 0.01 | 0.00 | 0.01 | 0.98 | 0.00 | 0.00 | 0.00 |
+| @moreperfectunion | left | 68 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
+| @ABCNews | neutral | 7521 | 0.01 | 0.00 | 0.01 | 0.20 | 0.79 | 0.00 | 0.00 |
+| @nytimes | left | 69 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
 | @NPR | left | 70 | 0.01 | 0.00 | 0.01 | 0.03 | 0.94 | 0.00 | 0.01 |
-| @moreperfectunion | left | 71 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
-| @nytimes | left | 71 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
-| @ZeihanonGeopolitics | neutral | 217 | 0.01 | 0.00 | 0.01 | 0.98 | 0.00 | 0.00 | 0.00 |
-| @thegrayzone7996 | left | 155 | 0.01 | 0.00 | 0.01 | 0.02 | 0.97 | 0.00 | 0.00 |
-| @DemocracyNow | left | 814 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
-| @SkyNews | left | 3677 | 0.01 | 0.00 | 0.01 | 0.01 | 0.98 | 0.00 | 0.00 |
-| @BelleRanch | left | 822 | 0.01 | 0.00 | 0.01 | 0.00 | 0.99 | 0.00 | 0.00 |
-| @PartOfTheProblem | right | 103 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
-| @morebridgetphetasy | right | 206 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
-| @CBSNews | neutral | 8322 | 0.01 | 0.00 | 0.01 | 0.01 | 0.98 | 0.00 | 0.00 |
-| @samharrisorg | left | 116 | 0.01 | 0.00 | 0.01 | 0.97 | 0.02 | 0.00 | 0.00 |
-| @BBCNews | neutral | 2440 | 0.01 | 0.00 | 0.01 | 0.06 | 0.94 | 0.00 | 0.00 |
-| @AssociatedPress | neutral | 5572 | 0.01 | 0.00 | 0.01 | 0.01 | 0.98 | 0.00 | 0.00 |
-| @Vox | left | 133 | 0.01 | 0.00 | 0.01 | 0.05 | 0.93 | 0.00 | 0.01 |
-| @TheEconomist | left | 137 | 0.01 | 0.00 | 0.01 | 0.01 | 0.99 | 0.00 | 0.00 |
-| @aljazeeraenglish | left | 7000 | 0.01 | 0.00 | 0.01 | 0.05 | 0.94 | 0.00 | 0.00 |
-| @CNN | left | 1757 | 0.01 | 0.00 | 0.01 | 0.02 | 0.97 | 0.00 | 0.00 |
-| @TheDailyBeast | left | 322 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
-| @NYTPodcasts | left | 481 | 0.00 | 0.00 | 0.00 | 0.99 | 0.00 | 0.00 | 0.00 |
-| @ColemanHughesOfficial | right | 54 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
-| @CoreyGilShusterAskProject | neutral | 53 | 0.00 | 0.00 | 0.00 | 0.08 | 0.92 | 0.00 | 0.00 |
-| @EzraKleinShow | left | 65 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
-| @TheAtlantic | left | 166 | 0.00 | 0.00 | 0.00 | 0.99 | 0.00 | 0.00 | 0.01 |
-| @TimDillonShow | neutral | 68 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
-| @UnHerd | left | 83 | 0.00 | 0.00 | 0.00 | 0.02 | 0.98 | 0.00 | 0.00 |
-| @cafedotcom | left | 54 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
-| @newdiscourses | right | 98 | 0.00 | 0.00 | 0.00 | 0.99 | 0.00 | 0.00 | 0.01 |
-| @newyorker | neutral | 51 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
-| @wsj | neutral | 119 | 0.00 | 0.00 | 0.00 | 0.99 | 0.00 | 0.01 | 0.00 |
+| @thegrayzone7996 | left | 144 | 0.01 | 0.00 | 0.01 | 0.02 | 0.97 | 0.00 | 0.00 |
+| @DemocracyNow | left | 767 | 0.01 | 0.00 | 0.01 | 0.98 | 0.00 | 0.00 | 0.00 |
+| @SkyNews | left | 3412 | 0.01 | 0.00 | 0.01 | 0.01 | 0.98 | 0.00 | 0.00 |
+| @BelleRanch | left | 770 | 0.01 | 0.00 | 0.01 | 0.00 | 0.99 | 0.00 | 0.00 |
+| @PartOfTheProblem | right | 97 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
+| @morebridgetphetasy | right | 200 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
+| @CBSNews | neutral | 7956 | 0.01 | 0.00 | 0.01 | 0.01 | 0.98 | 0.00 | 0.00 |
+| @samharrisorg | left | 108 | 0.01 | 0.00 | 0.01 | 0.97 | 0.02 | 0.00 | 0.00 |
+| @TuckerCarlson | neutral | 113 | 0.01 | 0.00 | 0.01 | 0.98 | 0.01 | 0.00 | 0.00 |
+| @BBCNews | neutral | 2352 | 0.01 | 0.00 | 0.01 | 0.06 | 0.94 | 0.00 | 0.00 |
+| @Vox | left | 127 | 0.01 | 0.00 | 0.01 | 0.06 | 0.94 | 0.00 | 0.00 |
+| @TheEconomist | left | 130 | 0.01 | 0.00 | 0.01 | 0.01 | 0.98 | 0.00 | 0.00 |
+| @aljazeeraenglish | left | 6643 | 0.01 | 0.00 | 0.01 | 0.05 | 0.94 | 0.00 | 0.00 |
+| @AssociatedPress | neutral | 5262 | 0.01 | 0.00 | 0.01 | 0.01 | 0.98 | 0.00 | 0.00 |
+| @TheDailyBeast | left | 294 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
+| @CNN | left | 1638 | 0.01 | 0.00 | 0.01 | 0.02 | 0.97 | 0.00 | 0.00 |
+| @NYTPodcasts | left | 454 | 0.00 | 0.00 | 0.00 | 0.99 | 0.00 | 0.00 | 0.00 |
+| @ColemanHughesOfficial | right | 52 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
+| @EzraKleinShow | left | 60 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
+| @TheAtlantic | left | 157 | 0.00 | 0.00 | 0.00 | 0.99 | 0.00 | 0.00 | 0.01 |
+| @TimDillonShow | neutral | 66 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
+| @UnHerd | left | 76 | 0.00 | 0.00 | 0.00 | 0.03 | 0.97 | 0.00 | 0.00 |
+| @cafedotcom | left | 52 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
+| @newdiscourses | right | 95 | 0.00 | 0.00 | 0.00 | 0.99 | 0.00 | 0.00 | 0.01 |
+| @newyorker | neutral | 50 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
+| @wsj | neutral | 104 | 0.00 | 0.00 | 0.00 | 0.99 | 0.00 | 0.01 | 0.00 |
 
 
 ### Method
 
-Each unique title, as published (the raw title: the normalized one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if its first letter or digit is a lower-case letter (a title opening with a number, a quote, "U.S." or "I" is judged on what follows); **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself (961 words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like. Shares are over a channel's unique titles per genre.
+Each unique title, as published (the raw title: the normalized one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if its first letter or digit is a lower-case letter (a title opening with a number, a quote, "U.S." or "I" is judged on what follows); **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself (938 words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like. Shares are over a channel's unique titles per genre.
 
 ### Limitations
 
@@ -289,31 +286,31 @@ Each unique title, as published (the raw title: the normalized one strips a chan
 
 | rank_balanced | word | balanced_share_of_titles | creators_using | raw_pooled_share_of_titles | rank_raw |
 |---|---|---|---|---|---|
-| 1 | trump | 0.192 | 227 | 0.235 | 1 |
-| 2 | iran | 0.073 | 213 | 0.114 | 2 |
-| 3 | war | 0.049 | 220 | 0.058 | 3 |
-| 4 | america | 0.030 | 213 | 0.030 | 5 |
-| 5 | israel | 0.025 | 160 | 0.022 | 8 |
-| 6 | epstein | 0.022 | 200 | 0.020 | 10 |
-| 7 | ice | 0.022 | 198 | 0.021 | 9 |
-| 8 | maga | 0.021 | 176 | 0.014 | 23 |
-| 9 | says | 0.018 | 178 | 0.042 | 4 |
-| 10 | world | 0.017 | 190 | 0.023 | 6 |
-| 11 | ai | 0.015 | 171 | 0.015 | 22 |
-| 12 | breaking | 0.014 | 147 | 0.017 | 15 |
-| 13 | debate | 0.014 | 153 | 0.006 | 119 |
-| 14 | white | 0.013 | 188 | 0.014 | 24 |
-| 15 | gets | 0.013 | 182 | 0.011 | 36 |
-| 16 | democrats | 0.013 | 157 | 0.010 | 42 |
-| 17 | people | 0.012 | 182 | 0.010 | 39 |
-| 18 | black | 0.012 | 139 | 0.007 | 99 |
-| 19 | truth | 0.012 | 181 | 0.006 | 111 |
-| 20 | china | 0.012 | 145 | 0.016 | 20 |
+| 1 | trump | 0.194 | 224 | 0.235 | 1 |
+| 2 | iran | 0.078 | 211 | 0.120 | 2 |
+| 3 | war | 0.050 | 216 | 0.059 | 3 |
+| 4 | america | 0.030 | 211 | 0.030 | 6 |
+| 5 | israel | 0.025 | 157 | 0.022 | 8 |
+| 6 | ice | 0.023 | 197 | 0.022 | 9 |
+| 7 | maga | 0.021 | 173 | 0.014 | 22 |
+| 8 | epstein | 0.021 | 197 | 0.018 | 10 |
+| 9 | world | 0.018 | 189 | 0.030 | 5 |
+| 10 | says | 0.018 | 176 | 0.043 | 4 |
+| 11 | ai | 0.015 | 170 | 0.015 | 21 |
+| 12 | breaking | 0.014 | 144 | 0.017 | 17 |
+| 13 | debate | 0.014 | 150 | 0.006 | 116 |
+| 14 | gets | 0.013 | 180 | 0.011 | 35 |
+| 15 | democrats | 0.013 | 157 | 0.010 | 41 |
+| 16 | white | 0.013 | 181 | 0.014 | 24 |
+| 17 | black | 0.012 | 136 | 0.007 | 98 |
+| 18 | people | 0.012 | 180 | 0.011 | 37 |
+| 19 | truth | 0.012 | 177 | 0.006 | 111 |
+| 20 | china | 0.012 | 144 | 0.016 | 20 |
 
 
 ![Top words.](figures/11_top_words.png)
 
-Trump is in one title in 5 of the average creator's and in 23 % of all titles; the war words (iran, war, israel) and the year's institutions (ice, epstein, maga, democrats) follow. The two columns disagree where the big news channels differ from everyone else: "says" is the 4th most frequent word in the raw pool (wire headlinese: "X says Y") but only 9th when creators count equally; "debate", "black" and "truth" are commentary words that the pooled count buries.
+Trump is in one title in 5 of the average creator's and in 23 % of all titles; the war words (iran, war, israel) and the year's institutions (ice, epstein, maga, democrats) follow. The two columns disagree where the big news channels differ from everyone else: "says" is the 4th most frequent word in the raw pool (wire headlinese: "X says Y") but only 10th when creators count equally; "debate", "black" and "truth" are commentary words that the pooled count buries.
 
 ### Method
 

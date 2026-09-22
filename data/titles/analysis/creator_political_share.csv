@@ -1,443 +1,441 @@
 creator,genre,n_unique,political_share,weak_share,group,organisation,clipper
-@60minutes,videos,325,0.8707692307692307,0.2676923076923077,neutral,CBS News,False
-@ABCNews,streams,590,0.9203389830508475,0.013559322033898305,neutral,ABC News,False
-@ABCNews,videos,7971,0.7650232091331075,0.2491531802785096,neutral,ABC News,False
-@ANINewsIndia,streams,7579,0.9563266921757487,0.04710383955666975,neutral,ANI,False
-@ANINewsIndia,videos,12279,0.9180715041941526,0.2175258571544914,neutral,ANI,False
-@ActualJusticeWarrior,streams,1,0.0,1.0,right,Actual Justice Warrior,False
-@ActualJusticeWarrior,videos,392,0.8954081632653061,0.27040816326530615,right,Actual Justice Warrior,False
-@AfterPartyEmily,streams,74,0.9324324324324325,0.013513513513513514,right,Emily Jashinsky,False
-@AfterPartyEmily,videos,410,0.9560975609756097,0.05121951219512195,right,Emily Jashinsky,False
-@AlexStein99,streams,41,0.9024390243902439,0.14634146341463414,right,Alex Stein,False
-@AlexStein99,videos,87,0.9080459770114943,0.21839080459770116,right,Alex Stein,False
-@AnaEscobarShow,streams,31,0.8064516129032258,0.2903225806451613,right,Ana Escobar,False
-@AnaEscobarShow,videos,32,0.9375,0.09375,right,Ana Escobar,False
-@AndWeKnowOfficial-o9b,videos,185,0.972972972972973,0.0972972972972973,right,And We Know,False
-@AndrewKlavan,streams,3,1.0,0.0,right,Daily Wire,False
-@AndrewKlavan,videos,196,0.8928571428571429,0.2653061224489796,right,Daily Wire,False
-@AnthonyBrianLogan,streams,52,0.9615384615384616,0.0,right,Anthony Brian Logan,False
-@AnthonyBrianLogan,videos,248,0.782258064516129,0.10887096774193548,right,Anthony Brian Logan,False
-@AsmonTV,videos,875,0.8982857142857142,0.4765714285714286,right,Asmongold,True
-@AssociatedPress,streams,1151,0.7532580364900087,0.0894874022589053,neutral,Associated Press,False
-@AssociatedPress,videos,5572,0.7932519741564967,0.3241206030150754,neutral,Associated Press,False
-@BBCNews,videos,2440,0.8700819672131147,0.19344262295081968,neutral,BBC,False
+@60minutes,videos,301,0.8803986710963455,0.2558139534883721,neutral,CBS News,False
+@ABCNews,streams,547,0.9414990859232175,0.010968921389396709,neutral,ABC News,False
+@ABCNews,videos,7521,0.8256880733944955,0.27070868235606965,neutral,ABC News,False
+@ANINewsIndia,streams,7202,0.9612607608997501,0.053457372951957786,neutral,ANI,False
+@ANINewsIndia,videos,11623,0.9293641916888927,0.22765206917319109,neutral,ANI,False
+@ActualJusticeWarrior,videos,368,0.9483695652173914,0.296195652173913,right,Actual Justice Warrior,False
+@AfterPartyEmily,streams,71,0.9436619718309859,0.014084507042253521,right,Emily Jashinsky,False
+@AfterPartyEmily,videos,393,0.9618320610687023,0.04834605597964377,right,Emily Jashinsky,False
+@AlexStein99,streams,41,0.926829268292683,0.24390243902439024,right,Alex Stein,False
+@AlexStein99,videos,82,0.9390243902439024,0.2682926829268293,right,Alex Stein,False
+@AnaEscobarShow,streams,31,0.7096774193548387,0.3225806451612903,right,Ana Escobar,False
+@AnaEscobarShow,videos,32,0.9375,0.0625,right,Ana Escobar,False
+@AndWeKnowOfficial-o9b,videos,184,0.9402173913043478,0.10869565217391304,right,And We Know,False
+@AndrewKlavan,streams,2,1.0,0.0,right,Daily Wire,False
+@AndrewKlavan,videos,183,0.9344262295081968,0.25136612021857924,right,Daily Wire,False
+@AnthonyBrianLogan,streams,48,0.9791666666666666,0.0,right,Anthony Brian Logan,False
+@AnthonyBrianLogan,videos,233,0.944206008583691,0.19313304721030042,right,Anthony Brian Logan,False
+@AsmonTV,videos,825,0.7854545454545454,0.35393939393939394,right,Asmongold,True
+@AssociatedPress,streams,1098,0.8597449908925319,0.08925318761384335,neutral,Associated Press,False
+@AssociatedPress,videos,5262,0.8418852147472444,0.31908019764348156,neutral,Associated Press,False
+@BBCNews,videos,2352,0.8656462585034014,0.19600340136054423,neutral,BBC,False
 @BadEmpanadaLive,streams,1,1.0,0.0,left,BadEmpanada,False
-@BadEmpanadaLive,videos,298,0.9630872483221476,0.18456375838926176,left,BadEmpanada,False
+@BadEmpanadaLive,videos,274,0.9562043795620438,0.20802919708029197,left,BadEmpanada,False
 @BadFaithPodcast,streams,1,1.0,0.0,left,Bad Faith,False
-@BadFaithPodcast,videos,81,0.9753086419753086,0.024691358024691357,left,Bad Faith,False
-@BelleRanch,videos,822,0.9890510948905109,0.02068126520681265,left,Belle of the Ranch,False
-@BenShapiro,streams,17,0.8823529411764706,0.17647058823529413,right,Daily Wire,False
-@BenShapiro,videos,525,0.9485714285714286,0.11238095238095239,right,Daily Wire,False
+@BadFaithPodcast,videos,77,0.974025974025974,0.012987012987012988,left,Bad Faith,False
+@BelleRanch,videos,770,0.990909090909091,0.023376623376623377,left,Belle of the Ranch,False
+@BenShapiro,streams,16,0.9375,0.25,right,Daily Wire,False
+@BenShapiro,videos,506,0.9604743083003953,0.13438735177865613,right,Daily Wire,False
 @BlackConservativePerspective,streams,1,1.0,0.0,right,Black Conservative Perspective,False
-@BlackConservativePerspective,videos,1271,0.9724626278520849,0.013375295043273014,right,Black Conservative Perspective,False
-@BlaireWhiteX,videos,11,1.0,0.18181818181818182,right,Blaire White,False
+@BlackConservativePerspective,videos,1192,0.9865771812080537,0.01761744966442953,right,Black Conservative Perspective,False
+@BlaireWhiteX,videos,10,0.9,0.2,right,Blaire White,False
 @BlazeTV,streams,14,1.0,0.0,right,Blaze Media,False
-@BlazeTV,videos,868,0.9573732718894009,0.044930875576036866,right,Blaze Media,False
-@BreakThroughNews,streams,57,0.9649122807017544,0.0,left,BreakThrough News,False
-@BreakThroughNews,videos,242,0.9793388429752066,0.01652892561983471,left,BreakThrough News,False
-@BrittanyVenti,streams,19,0.8421052631578947,0.42105263157894735,neutral,Brittany Venti,False
-@BrittanyVenti,videos,55,0.9454545454545454,0.6727272727272727,neutral,Brittany Venti,False
-@CBSNews,streams,368,0.6793478260869565,0.04891304347826087,neutral,CBS News,False
-@CBSNews,videos,8322,0.8090603220379716,0.17483777937995673,neutral,CBS News,False
-@CNN,streams,94,0.7872340425531915,0.11702127659574468,left,CNN,False
-@CNN,videos,1757,0.8810472396129767,0.11041548093340922,left,CNN,False
-@CamHigby,streams,59,0.9661016949152542,0.03389830508474576,right,Cam Higby,False
-@CamHigby,videos,186,0.978494623655914,0.03763440860215054,right,Cam Higby,False
-@CashJordan,videos,299,0.9765886287625418,0.010033444816053512,right,Cash Jordan,False
+@BlazeTV,videos,829,0.97708082026538,0.04101326899879373,right,Blaze Media,False
+@BreakThroughNews,streams,56,1.0,0.08928571428571429,left,BreakThrough News,False
+@BreakThroughNews,videos,234,0.9829059829059829,0.029914529914529916,left,BreakThrough News,False
+@BrittanyVenti,streams,16,0.8125,0.375,neutral,Brittany Venti,False
+@BrittanyVenti,videos,50,0.9,0.74,neutral,Brittany Venti,False
+@CBSNews,streams,346,0.838150289017341,0.08959537572254335,neutral,CBS News,False
+@CBSNews,videos,7956,0.8685268979386627,0.18790849673202614,neutral,CBS News,False
+@CNN,streams,93,0.7741935483870968,0.17204301075268819,left,CNN,False
+@CNN,videos,1638,0.8998778998778999,0.11172161172161173,left,CNN,False
+@CamHigby,streams,59,1.0,0.11864406779661017,right,Cam Higby,False
+@CamHigby,videos,174,1.0,0.05172413793103448,right,Cam Higby,False
+@CashJordan,videos,299,0.9966555183946488,0.016722408026755852,right,Cash Jordan,False
 @CaspianReport,videos,25,1.0,0.0,neutral,CaspianReport,False
-@ChadPrather1,streams,201,0.8109452736318408,0.2537313432835821,right,Chad Prather,False
-@ChadPrather1,videos,160,0.85625,0.11875,right,Chad Prather,False
-@Channel5YouTube,videos,43,0.9534883720930233,0.23255813953488372,left,Channel 5,False
-@ClipsCandaceOwens,videos,192,0.9427083333333334,0.22916666666666666,neutral,Candace Owens,True
-@ClubRandomPodcast,videos,197,0.9644670050761421,0.16243654822335024,neutral,Bill Maher,False
-@ColeHastings,videos,32,1.0,0.21875,right,Cole Hastings,False
-@ColemanHughesOfficial,videos,54,0.9814814814814815,0.09259259259259259,right,Coleman Hughes,False
-@CoreyGilShusterAskProject,streams,2,0.5,0.0,neutral,Ask Project,False
-@CoreyGilShusterAskProject,videos,53,0.9622641509433962,0.37735849056603776,neutral,Ask Project,False
-@DailyDenims,videos,215,0.7813953488372093,0.20930232558139536,left,Denims,True
-@DannyHaiphongYT,streams,227,1.0,0.0,left,Danny Haiphong,False
-@DannyHaiphongYT,videos,64,1.0,0.0,left,Danny Haiphong,False
-@DarkHorsePod,streams,38,0.7631578947368421,0.6578947368421053,right,DarkHorse,False
-@DarkHorsePod,videos,70,0.8428571428571429,0.2714285714285714,right,DarkHorse,False
+@ChadPrather1,streams,190,0.8421052631578947,0.24210526315789474,right,Chad Prather,False
+@ChadPrather1,videos,152,0.875,0.11842105263157894,right,Chad Prather,False
+@Channel5YouTube,videos,42,0.9285714285714286,0.19047619047619047,left,Channel 5,False
+@ClipsCandaceOwens,videos,192,0.96875,0.24479166666666666,neutral,Candace Owens,True
+@ClubRandomPodcast,videos,185,0.9675675675675676,0.16216216216216217,neutral,Bill Maher,False
+@ColeHastings,videos,30,0.9333333333333333,0.16666666666666666,right,Cole Hastings,False
+@ColemanHughesOfficial,videos,52,0.9423076923076923,0.057692307692307696,right,Coleman Hughes,False
+@CoreyGilShusterAskProject,streams,2,1.0,0.0,neutral,Ask Project,False
+@CoreyGilShusterAskProject,videos,49,0.9591836734693877,0.3877551020408163,neutral,Ask Project,False
+@DailyDenims,videos,215,0.7767441860465116,0.20465116279069767,left,Denims,True
+@DannyHaiphongYT,streams,220,1.0,0.0,left,Danny Haiphong,False
+@DannyHaiphongYT,videos,53,1.0,0.0,left,Danny Haiphong,False
+@DarkHorsePod,streams,35,0.9428571428571428,0.6,right,DarkHorse,False
+@DarkHorsePod,videos,65,0.8769230769230769,0.23076923076923078,right,DarkHorse,False
 @DemocracyDocket,streams,4,1.0,0.0,left,Democracy Docket,False
-@DemocracyDocket,videos,129,1.0,0.015503875968992248,left,Democracy Docket,False
+@DemocracyDocket,videos,122,1.0,0.01639344262295082,left,Democracy Docket,False
 @DemocracyNow,streams,1,1.0,0.0,left,Democracy Now!,False
-@DemocracyNow,videos,814,0.9754299754299754,0.05036855036855037,left,Democracy Now!,False
-@DestinyDGGClips,videos,209,0.6985645933014354,0.28708133971291866,right,Destiny,True
-@DoubleDownNews,videos,66,1.0,0.09090909090909091,left,Double Down News,False
-@DrSteveTurleyTV,streams,31,0.967741935483871,0.0,right,Steve Turley,False
-@DrSteveTurleyTV,videos,442,0.9909502262443439,0.01583710407239819,right,Steve Turley,False
-@DropSiteNews,streams,43,1.0,0.0,left,Drop Site,False
-@DropSiteNews,videos,204,0.9901960784313726,0.0784313725490196,left,Drop Site,False
-@DueDissidence,streams,112,0.9910714285714286,0.026785714285714284,left,Due Dissidence,False
-@DueDissidence,videos,643,0.9673405909797823,0.06998444790046657,left,Due Dissidence,False
+@DemocracyNow,videos,767,0.7392438070404173,0.0469361147327249,left,Democracy Now!,False
+@DestinyDGGClips,videos,191,0.6701570680628273,0.2879581151832461,right,Destiny,True
+@DoubleDownNews,videos,64,0.96875,0.09375,left,Double Down News,False
+@DrSteveTurleyTV,streams,29,1.0,0.034482758620689655,right,Steve Turley,False
+@DrSteveTurleyTV,videos,417,0.9928057553956835,0.014388489208633094,right,Steve Turley,False
+@DropSiteNews,streams,42,1.0,0.023809523809523808,left,Drop Site,False
+@DropSiteNews,videos,198,0.9949494949494949,0.06565656565656566,left,Drop Site,False
+@DueDissidence,streams,105,0.9904761904761905,0.02857142857142857,left,Due Dissidence,False
+@DueDissidence,videos,596,0.9832214765100671,0.09563758389261745,left,Due Dissidence,False
 @DylanBurnsLIVE,streams,3,1.0,0.0,left,Dylan Burns,False
-@DylanBurnsLIVE,videos,190,0.9947368421052631,0.05789473684210526,left,Dylan Burns,False
+@DylanBurnsLIVE,videos,175,0.9828571428571429,0.08,left,Dylan Burns,False
 @EzraKleinShow,streams,1,1.0,0.0,left,New York Times,False
-@EzraKleinShow,videos,65,0.8923076923076924,0.24615384615384617,left,New York Times,False
-@FarronBalanced,streams,188,1.0,0.031914893617021274,left,Farron Balanced,False
-@FarronBalanced,videos,1780,0.9926966292134831,0.0449438202247191,left,Farron Balanced,False
-@FinancialTimes,videos,40,0.825,0.275,neutral,Financial Times,False
-@Firstpost,streams,8975,0.884233983286908,0.05136490250696379,neutral,Network18,False
-@Firstpost,videos,10126,0.9133912699980249,0.15099743235236027,neutral,Network18,False
-@FleccasTalks,videos,290,0.7689655172413793,0.6,right,Fleccas Talks,False
+@EzraKleinShow,videos,60,0.9166666666666666,0.16666666666666666,left,New York Times,False
+@FarronBalanced,streams,178,1.0,0.016853932584269662,left,Farron Balanced,False
+@FarronBalanced,videos,1705,0.9976539589442815,0.04750733137829912,left,Farron Balanced,False
+@FinancialTimes,videos,36,0.9166666666666666,0.3055555555555556,neutral,Financial Times,False
+@Firstpost,streams,8485,0.9373011196228639,0.05621685327047731,neutral,Network18,False
+@Firstpost,videos,9637,0.931721490090277,0.14942409463525994,neutral,Network18,False
+@FleccasTalks,videos,288,0.8541666666666666,0.6736111111111112,right,Fleccas Talks,False
 @Forbes,streams,3,0.0,0.0,neutral,Forbes,False
-@Forbes,videos,1256,0.7125796178343949,0.2428343949044586,neutral,Forbes,False
-@Forthepeoplepodcast305,streams,45,0.9555555555555556,0.06666666666666667,left,Niko House,False
-@Forthepeoplepodcast305,videos,115,0.9565217391304348,0.06086956521739131,left,Niko House,False
-@FoxNews,streams,645,0.8682170542635659,0.05891472868217054,right,Fox News,False
-@FoxNews,videos,8210,0.8933008526187576,0.11169305724725943,right,Fox News,False
-@FoxNewsChannelClips,videos,5748,0.8653444676409185,0.1581419624217119,right,Fox News,True
-@FreshFitMiami,streams,75,0.96,0.3466666666666667,right,Fresh & Fit,False
-@FreshFitMiami,videos,111,0.9009009009009009,0.1891891891891892,right,Fresh & Fit,False
-@GeopoliticalEconomyReport,videos,72,1.0,0.0,left,Geopolitical Economy Report,False
-@GlennKirschner2,videos,262,0.9770992366412213,0.019083969465648856,left,Glenn Kirschner,False
-@GrahamAllen,videos,247,0.9757085020242915,0.08502024291497975,right,Graham Allen,False
-@HangOutwithSeanHannity,videos,154,0.8376623376623377,0.18181818181818182,right,Sean Hannity,False
-@HasanAbi,streams,7,1.0,0.5714285714285714,left,HasanAbi,False
-@HasanAbi,videos,628,0.9442675159235668,0.26910828025477707,left,HasanAbi,False
-@HasanAbiVODs3,videos,181,0.06629834254143646,0.0,left,HasanAbi,True
-@HasanReactionsfanTwo,videos,340,0.9705882352941176,0.05,left,HasanAbi,True
-@HasanabiClips,streams,32,0.5,0.84375,left,HasanAbi,True
-@HasanabiClips,videos,474,0.9620253164556962,0.023206751054852322,left,HasanAbi,True
+@Forbes,videos,1196,0.7591973244147158,0.27508361204013376,neutral,Forbes,False
+@Forthepeoplepodcast305,streams,44,0.9772727272727273,0.13636363636363635,left,Niko House,False
+@Forthepeoplepodcast305,videos,111,0.963963963963964,0.06306306306306306,left,Niko House,False
+@FoxNews,streams,597,0.932998324958124,0.08877721943048576,right,Fox News,False
+@FoxNews,videos,7727,0.9261032742332083,0.11867477675682671,right,Fox News,False
+@FoxNewsChannelClips,videos,5421,0.9059214167127836,0.16675890057185022,right,Fox News,True
+@FreshFitMiami,streams,73,0.9315068493150684,0.4246575342465753,right,Fresh & Fit,False
+@FreshFitMiami,videos,98,0.673469387755102,0.14285714285714285,right,Fresh & Fit,False
+@GeopoliticalEconomyReport,videos,67,1.0,0.0,left,Geopolitical Economy Report,False
+@GlennKirschner2,videos,244,0.9918032786885246,0.02459016393442623,left,Glenn Kirschner,False
+@GrahamAllen,videos,247,0.9838056680161943,0.09716599190283401,right,Graham Allen,False
+@HangOutwithSeanHannity,videos,154,0.9155844155844156,0.2532467532467532,right,Sean Hannity,False
+@HasanAbi,streams,7,1.0,0.7142857142857143,left,HasanAbi,False
+@HasanAbi,videos,591,0.949238578680203,0.2622673434856176,left,HasanAbi,False
+@HasanAbiVODs3,videos,163,0.9938650306748467,0.0,left,HasanAbi,True
+@HasanReactionsfanTwo,videos,319,0.9717868338557993,0.0438871473354232,left,HasanAbi,True
+@HasanabiClips,streams,32,0.53125,0.84375,left,HasanAbi,True
+@HasanabiClips,videos,474,0.9746835443037974,0.027426160337552744,left,HasanAbi,True
 @JackCocchiarellaShow,streams,21,1.0,0.09523809523809523,left,Jack Cocchiarella,False
-@JackCocchiarellaShow,videos,1524,0.9934383202099738,0.031496062992125984,left,Jack Cocchiarella,False
-@JacksonHinkleOfficial,streams,81,0.9876543209876543,0.0,neutral,Jackson Hinkle,False
-@JacksonHinkleOfficial,videos,388,0.9896907216494846,0.07989690721649484,neutral,Jackson Hinkle,False
-@JamarlThomas,streams,223,0.9730941704035875,0.05829596412556054,left,Jamarl Thomas,False
-@JamarlThomas,videos,274,0.9890510948905109,0.014598540145985401,left,Jamarl Thomas,False
+@JackCocchiarellaShow,videos,1446,0.995850622406639,0.0338865836791148,left,Jack Cocchiarella,False
+@JacksonHinkleOfficial,streams,76,1.0,0.0,neutral,Jackson Hinkle,False
+@JacksonHinkleOfficial,videos,343,0.9970845481049563,0.0641399416909621,neutral,Jackson Hinkle,False
+@JamarlThomas,streams,217,0.9769585253456221,0.06451612903225806,left,Jamarl Thomas,False
+@JamarlThomas,videos,245,1.0,0.012244897959183673,left,Jamarl Thomas,False
 @JesseKellyDC,streams,1,1.0,0.0,right,Jesse Kelly,False
-@JesseKellyDC,videos,504,0.9821428571428571,0.06944444444444445,right,Jesse Kelly,False
-@JillianMichaels,videos,457,0.9562363238512035,0.15098468271334792,right,Jillian Michaels,False
-@JustPearlyThings,streams,96,0.9270833333333334,0.3645833333333333,right,Pearl,False
-@JustPearlyThings,videos,669,0.8774289985052317,0.3841554559043348,right,Pearl,False
+@JesseKellyDC,videos,478,0.9937238493723849,0.06276150627615062,right,Jesse Kelly,False
+@JillianMichaels,videos,437,0.9405034324942791,0.14874141876430205,right,Jillian Michaels,False
+@JustPearlyThings,streams,88,0.9204545454545454,0.4318181818181818,right,Pearl,False
+@JustPearlyThings,videos,631,0.9223454833597464,0.39144215530903326,right,Pearl,False
 @KimIversen,streams,1,1.0,0.0,neutral,Kim Iversen,False
-@KimIversen,videos,534,0.9606741573033708,0.07677902621722846,neutral,Kim Iversen,False
-@LIVESNEAKO,streams,69,0.8260869565217391,0.391304347826087,neutral,SNEAKO,False
-@LIVESNEAKO,videos,479,0.9269311064718163,0.16701461377870563,neutral,SNEAKO,False
-@LastWeekTonight,videos,35,0.9142857142857143,0.0,left,HBO,False
+@KimIversen,videos,505,0.9762376237623762,0.08316831683168317,neutral,Kim Iversen,False
+@LIVESNEAKO,streams,69,0.8985507246376812,0.4782608695652174,neutral,SNEAKO,False
+@LIVESNEAKO,videos,472,0.951271186440678,0.18008474576271186,neutral,SNEAKO,False
+@LastWeekTonight,videos,35,1.0,0.0,left,HBO,False
 @LeejaMiller,streams,1,1.0,0.0,left,Leeja Miller,False
-@LeejaMiller,videos,60,0.9333333333333333,0.18333333333333332,left,Leeja Miller,False
+@LeejaMiller,videos,56,0.9464285714285714,0.17857142857142858,left,Leeja Miller,False
 @LegalAFMTN,streams,45,1.0,0.0,left,MeidasTouch Network,False
-@LegalAFMTN,videos,2735,0.9919561243144425,0.016453382084095063,left,MeidasTouch Network,False
-@LegalEagle,videos,105,0.8476190476190476,0.2,left,LegalEagle,False
+@LegalAFMTN,videos,2593,0.996529116853066,0.01774006941766294,left,MeidasTouch Network,False
+@LegalEagle,videos,97,0.979381443298969,0.18556701030927836,left,LegalEagle,False
 @LeverNews,streams,9,0.8888888888888888,0.0,left,The Lever,False
-@LeverNews,videos,73,0.9315068493150684,0.0684931506849315,left,The Lever,False
-@LiberalHivemind,videos,846,0.9515366430260047,0.32978723404255317,right,Liberal Hivemind,False
-@LukeBeasley,streams,246,0.983739837398374,0.07723577235772358,left,Luke Beasley,False
-@LukeBeasley,videos,1162,0.9905335628227194,0.0774526678141136,left,Luke Beasley,False
-@Lunaoi,videos,9,1.0,0.3333333333333333,left,Luna Oi,False
-@MLChristiansen,streams,77,0.948051948051948,0.012987012987012988,right,Matt Christiansen,False
-@MLChristiansen,videos,118,0.8898305084745762,0.1016949152542373,right,Matt Christiansen,False
-@MarkDice,videos,92,0.967391304347826,0.14130434782608695,right,Mark Dice,False
-@MattBernstein1,videos,21,0.8571428571428571,0.42857142857142855,left,Matt Bernstein,False
+@LeverNews,videos,71,0.971830985915493,0.028169014084507043,left,The Lever,False
+@LiberalHivemind,videos,800,0.9725,0.34375,right,Liberal Hivemind,False
+@LukeBeasley,streams,246,1.0,0.09349593495934959,left,Luke Beasley,False
+@LukeBeasley,videos,1109,0.9936880072137061,0.07664562669071236,left,Luke Beasley,False
+@Lunaoi,videos,8,1.0,0.5,left,Luna Oi,False
+@MLChristiansen,streams,73,1.0,0.0273972602739726,right,Matt Christiansen,False
+@MLChristiansen,videos,116,0.9827586206896551,0.10344827586206896,right,Matt Christiansen,False
+@MarkDice,videos,89,1.0,0.12359550561797752,right,Mark Dice,False
+@MattBernstein1,videos,20,0.9,0.35,left,Matt Bernstein,False
 @MattWalsh,streams,2,1.0,0.0,right,Daily Wire,False
-@MattWalsh,videos,297,0.8855218855218855,0.21548821548821548,right,Daily Wire,False
-@MegynKelly,streams,13,0.6923076923076923,0.0,right,Megyn Kelly,False
-@MegynKelly,videos,1651,0.821320411871593,0.09448818897637795,right,Megyn Kelly,False
-@MeidasTouch,streams,627,0.9968102073365231,0.003189792663476874,left,MeidasTouch Network,False
-@MeidasTouch,videos,3532,0.9960362400906002,0.01812004530011325,left,MeidasTouch Network,False
-@MichaelKnowles,streams,4,0.75,0.0,right,Daily Wire,False
-@MichaelKnowles,videos,472,0.9385593220338984,0.15889830508474576,right,Daily Wire,False
-@MichaelMaliceofficial,streams,3,0.3333333333333333,0.3333333333333333,right,Michael Malice,False
-@MichaelMaliceofficial,videos,55,0.9090909090909091,0.12727272727272726,right,Michael Malice,False
-@MikeFromPA,videos,129,0.875968992248062,0.10077519379844961,left,Mike from PA,False
-@ModernDayDebate,streams,109,0.9357798165137615,0.3853211009174312,left,Modern-Day Debate,False
-@ModernDayDebate,videos,46,0.9347826086956522,0.13043478260869565,left,Modern-Day Debate,False
-@MrReaganUSA,streams,2,1.0,0.5,right,Mr Reagan,False
-@MrReaganUSA,videos,26,1.0,0.11538461538461539,right,Mr Reagan,False
-@MrTariqNasheed,streams,19,0.8947368421052632,0.21052631578947367,right,Tariq Nasheed,False
-@MrTariqNasheed,videos,403,0.9478908188585607,0.19851116625310175,right,Tariq Nasheed,False
-@MyronGainesX,streams,245,0.9346938775510204,0.08979591836734693,right,Myron Gaines,False
-@MyronGainesX,videos,389,0.9691516709511568,0.07712082262210797,right,Myron Gaines,False
-@NBCNews,streams,367,0.6130790190735694,0.01634877384196185,neutral,NBC News,False
-@NBCNews,videos,6499,0.7933528235113094,0.22926604092937375,neutral,NBC News,False
+@MattWalsh,videos,277,0.9097472924187726,0.23104693140794225,right,Daily Wire,False
+@MegynKelly,streams,13,0.9230769230769231,0.0,right,Megyn Kelly,False
+@MegynKelly,videos,1591,0.8749214330609679,0.10182275298554368,right,Megyn Kelly,False
+@MeidasTouch,streams,586,0.9948805460750854,0.006825938566552901,left,MeidasTouch Network,False
+@MeidasTouch,videos,3315,0.9984917043740573,0.017496229260935144,left,MeidasTouch Network,False
+@MichaelKnowles,streams,3,0.6666666666666666,0.0,right,Daily Wire,False
+@MichaelKnowles,videos,445,0.950561797752809,0.17303370786516853,right,Daily Wire,False
+@MichaelMaliceofficial,streams,3,0.6666666666666666,0.3333333333333333,right,Michael Malice,False
+@MichaelMaliceofficial,videos,51,0.9607843137254902,0.09803921568627451,right,Michael Malice,False
+@MikeFromPA,videos,125,0.912,0.096,left,Mike from PA,False
+@ModernDayDebate,streams,107,0.9252336448598131,0.35514018691588783,left,Modern-Day Debate,False
+@ModernDayDebate,videos,45,0.9555555555555556,0.2,left,Modern-Day Debate,False
+@MrReaganUSA,videos,24,0.9166666666666666,0.125,right,Mr Reagan,False
+@MrTariqNasheed,streams,16,1.0,0.1875,right,Tariq Nasheed,False
+@MrTariqNasheed,videos,354,0.980225988700565,0.24293785310734464,right,Tariq Nasheed,False
+@MyronGainesX,streams,240,0.9916666666666667,0.1125,right,Myron Gaines,False
+@MyronGainesX,videos,365,0.5835616438356165,0.07671232876712329,right,Myron Gaines,False
+@NBCNews,streams,350,0.6257142857142857,0.017142857142857144,neutral,NBC News,False
+@NBCNews,videos,6161,0.8240545366012011,0.24849862035383866,neutral,NBC News,False
 @NPR,streams,1,1.0,0.0,left,NPR,False
-@NPR,videos,70,0.9571428571428572,0.17142857142857143,left,NPR,False
-@NYTOpinion,videos,29,0.7931034482758621,0.3793103448275862,left,New York Times,False
-@NYTPodcasts,videos,481,0.8690228690228691,0.22245322245322247,left,New York Times,False
-@NewsNation,streams,302,0.8377483443708609,0.03642384105960265,neutral,NewsNation,False
-@NewsNation,videos,7372,0.7642430819316333,0.1342919153553988,neutral,NewsNation,False
-@NewsmaxTV,streams,399,0.9373433583959899,0.05764411027568922,right,Newsmax,False
-@NewsmaxTV,videos,3944,0.9363590263691683,0.05476673427991886,right,Newsmax,False
-@NickCruseRBN,streams,103,0.9902912621359223,0.019417475728155338,left,Revolutionary Blackout Network,False
-@NickCruseRBN,videos,23,1.0,0.043478260869565216,left,Revolutionary Blackout Network,False
-@NickShirley,streams,13,1.0,0.07692307692307693,right,Nick Shirley,False
-@NickShirley,videos,32,1.0,0.0625,right,Nick Shirley,False
+@NPR,videos,70,0.9857142857142858,0.15714285714285714,left,NPR,False
+@NYTOpinion,videos,27,0.7777777777777778,0.2962962962962963,left,New York Times,False
+@NYTPodcasts,videos,454,0.8744493392070485,0.20704845814977973,left,New York Times,False
+@NewsNation,streams,282,0.9042553191489362,0.06028368794326241,neutral,NewsNation,False
+@NewsNation,videos,6882,0.8343504795117699,0.14952048823016564,neutral,NewsNation,False
+@NewsmaxTV,streams,383,0.9712793733681462,0.06527415143603134,right,Newsmax,False
+@NewsmaxTV,videos,3744,0.9642094017094017,0.06810897435897435,right,Newsmax,False
+@NickCruseRBN,streams,99,0.98989898989899,0.020202020202020204,left,Revolutionary Blackout Network,False
+@NickCruseRBN,videos,23,0.9565217391304348,0.043478260869565216,left,Revolutionary Blackout Network,False
+@NickShirley,streams,12,0.9166666666666666,0.16666666666666666,right,Nick Shirley,False
+@NickShirley,videos,29,1.0,0.06896551724137931,right,Nick Shirley,False
 @NovaraMedia,streams,4,1.0,0.0,left,Novara Media,False
-@NovaraMedia,videos,585,0.9606837606837607,0.09743589743589744,left,Novara Media,False
-@OfficialFlagrant,videos,35,0.8571428571428571,0.2857142857142857,right,Flagrant,False
+@NovaraMedia,videos,565,0.9628318584070796,0.0920353982300885,left,Novara Media,False
+@OfficialFlagrant,videos,34,0.8529411764705882,0.3235294117647059,right,Flagrant,False
 @OfficialSaharTV,streams,2,1.0,0.0,right,Sahar TV,False
-@OfficialSaharTV,videos,893,0.9910414333706606,0.032474804031354984,right,Sahar TV,False
-@OutKick,videos,51,0.7058823529411765,0.35294117647058826,right,Fox Corporation,False
-@OwenJonesTalks,videos,233,0.9871244635193133,0.03862660944206009,left,Owen Jones,False
-@OwenReport,streams,178,0.9831460674157303,0.033707865168539325,left,Owen Shroyer,False
-@OwenReport,videos,388,0.9768041237113402,0.041237113402061855,left,Owen Shroyer,False
-@PBDPodcast,streams,118,0.9661016949152542,0.01694915254237288,right,Valuetainment,False
-@PBDPodcast,videos,38,0.8947368421052632,0.15789473684210525,right,Valuetainment,False
-@POLITICO,videos,295,0.9661016949152542,0.0576271186440678,neutral,Politico,False
-@PTLRadioShow,streams,201,0.9751243781094527,0.04477611940298507,left,Pushing the Limits,False
-@PTLRadioShow,videos,1684,0.9887173396674585,0.030878859857482184,left,Pushing the Limits,False
-@PartOfTheProblem,videos,103,0.9805825242718447,0.13592233009708737,right,Dave Smith,False
-@PerunAU,videos,37,0.9459459459459459,0.16216216216216217,left,Perun,False
-@PhillipScottPodcast,streams,153,0.9607843137254902,0.17647058823529413,right,Phillip Scott,False
-@PhillipScottPodcast,videos,7,0.8571428571428571,0.2857142857142857,right,Phillip Scott,False
-@PiersMorganUncensored,videos,181,0.9834254143646409,0.022099447513812154,neutral,Piers Morgan,False
-@PiscoLitty,videos,56,0.9464285714285714,0.07142857142857142,left,Pisco,False
-@Politicon,streams,1,1.0,0.0,left,Politicon,False
-@Politicon,videos,496,0.9395161290322581,0.14516129032258066,left,Politicon,False
-@PoliticsGirl,videos,116,0.9310344827586207,0.31896551724137934,left,PoliticsGirl,False
-@PoliticsJOE,videos,339,0.976401179941003,0.07079646017699115,left,PoliticsJOE,False
-@PragerU,streams,31,0.967741935483871,0.22580645161290322,right,PragerU,False
-@PragerU,videos,385,0.8935064935064935,0.14285714285714285,right,PragerU,False
-@PrisonPlanetLive,videos,46,1.0,0.5652173913043478,right,Paul Joseph Watson,False
-@RSBN,streams,337,0.9317507418397626,0.008902077151335312,right,RSBN,False
-@RSBN,videos,1640,0.9640243902439024,0.04939024390243903,right,RSBN,False
-@RealAlexClark,videos,79,0.9367088607594937,0.4936708860759494,right,Turning Point USA,False
-@RealAmericasVoice,streams,1543,0.9559300064808814,0.034348671419313026,right,Real America's Voice,False
-@RealAmericasVoice,videos,2653,0.9479834150018847,0.0761402186204297,right,Real America's Voice,False
-@RealDanBongino,videos,266,0.943609022556391,0.30451127819548873,right,Dan Bongino,False
-@RebelHQ,videos,1292,0.9760061919504643,0.0348297213622291,left,TYT Network,False
-@RebelNewsOnline,streams,195,0.9794871794871794,0.020512820512820513,right,Rebel News,False
-@RebelNewsOnline,videos,1358,0.9558173784977909,0.17378497790868924,right,Rebel News,False
-@RedactedNews,streams,140,0.9642857142857143,0.007142857142857143,right,Redacted,False
-@RedactedNews,videos,452,0.9690265486725663,0.059734513274336286,right,Redacted,False
-@RekietaLaw,streams,106,0.7830188679245284,0.14150943396226415,right,Rekieta Law,False
-@RekietaLaw,videos,18,0.4444444444444444,0.16666666666666666,right,Rekieta Law,False
+@OfficialSaharTV,videos,831,0.9927797833935018,0.039711191335740074,right,Sahar TV,False
+@OutKick,videos,47,0.9787234042553191,0.3404255319148936,right,Fox Corporation,False
+@OwenJonesTalks,videos,226,0.9867256637168141,0.035398230088495575,left,Owen Jones,False
+@OwenReport,streams,167,0.9880239520958084,0.029940119760479042,left,Owen Shroyer,False
+@OwenReport,videos,368,0.9864130434782609,0.0625,left,Owen Shroyer,False
+@PBDPodcast,streams,111,0.990990990990991,0.009009009009009009,right,Valuetainment,False
+@PBDPodcast,videos,34,0.8529411764705882,0.17647058823529413,right,Valuetainment,False
+@POLITICO,videos,286,0.9615384615384616,0.05244755244755245,neutral,Politico,False
+@PTLRadioShow,streams,189,0.9894179894179894,0.06349206349206349,left,Pushing the Limits,False
+@PTLRadioShow,videos,1580,0.9955696202531645,0.030379746835443037,left,Pushing the Limits,False
+@PartOfTheProblem,videos,97,0.9690721649484536,0.13402061855670103,right,Dave Smith,False
+@PerunAU,videos,35,0.9428571428571428,0.11428571428571428,left,Perun,False
+@PhillipScottPodcast,streams,147,1.0,0.1836734693877551,right,Phillip Scott,False
+@PhillipScottPodcast,videos,3,1.0,0.0,right,Phillip Scott,False
+@PiersMorganUncensored,videos,173,0.9826589595375722,0.017341040462427744,neutral,Piers Morgan,False
+@PiscoLitty,videos,54,0.9814814814814815,0.07407407407407407,left,Pisco,False
+@Politicon,streams,1,0.0,0.0,left,Politicon,False
+@Politicon,videos,480,0.9729166666666667,0.15416666666666667,left,Politicon,False
+@PoliticsGirl,videos,110,0.9454545454545454,0.36363636363636365,left,PoliticsGirl,False
+@PoliticsJOE,videos,325,0.9938461538461538,0.08615384615384615,left,PoliticsJOE,False
+@PragerU,streams,31,1.0,0.1935483870967742,right,PragerU,False
+@PragerU,videos,371,0.9272237196765498,0.14555256064690028,right,PragerU,False
+@PrisonPlanetLive,videos,44,1.0,0.5681818181818182,right,Paul Joseph Watson,False
+@RSBN,streams,315,0.9873015873015873,0.01904761904761905,right,RSBN,False
+@RSBN,videos,1553,0.952994204764971,0.0489375402446877,right,RSBN,False
+@RealAlexClark,videos,73,0.5068493150684932,0.4794520547945205,right,Turning Point USA,False
+@RealAmericasVoice,streams,1535,0.9876221498371336,0.036482084690553744,right,Real America's Voice,False
+@RealAmericasVoice,videos,2339,0.9581017528858486,0.09149209063702438,right,Real America's Voice,False
+@RealDanBongino,videos,266,0.9285714285714286,0.29699248120300753,right,Dan Bongino,False
+@RebelHQ,videos,1190,0.992436974789916,0.03529411764705882,left,TYT Network,False
+@RebelNewsOnline,streams,187,0.9946524064171123,0.026737967914438502,right,Rebel News,False
+@RebelNewsOnline,videos,1273,0.98586017282011,0.16967792615868027,right,Rebel News,False
+@RedactedNews,streams,136,0.9632352941176471,0.007352941176470588,right,Redacted,False
+@RedactedNews,videos,424,0.9575471698113207,0.07783018867924528,right,Redacted,False
+@RekietaLaw,streams,103,0.9514563106796117,0.13592233009708737,right,Rekieta Law,False
+@RekietaLaw,videos,18,1.0,0.2222222222222222,right,Rekieta Law,False
 @RestPoliticsUS,streams,5,1.0,0.0,left,The Rest Is Politics US,False
-@RestPoliticsUS,videos,220,0.9954545454545455,0.013636363636363636,left,The Rest Is Politics US,False
-@Reuters,streams,2008,0.7868525896414342,0.11105577689243028,neutral,Reuters,False
-@Reuters,videos,8076,0.8298662704309064,0.3756810302129767,neutral,Reuters,False
-@RileyGaines,videos,143,0.8951048951048951,0.13986013986013987,right,Riley Gaines,False
-@RobertGouveiaEsq,streams,385,0.9766233766233766,0.012987012987012988,right,Robert Gouveia,False
-@RobertGouveiaEsq,videos,696,0.9712643678160919,0.040229885057471264,right,Robert Gouveia,False
+@RestPoliticsUS,videos,208,0.9951923076923077,0.019230769230769232,left,The Rest Is Politics US,False
+@Reuters,streams,1901,0.8648079957916885,0.1020515518148343,neutral,Reuters,False
+@Reuters,videos,7680,0.851171875,0.3729166666666667,neutral,Reuters,False
+@RileyGaines,videos,143,0.916083916083916,0.17482517482517482,right,Riley Gaines,False
+@RobertGouveiaEsq,streams,363,0.9862258953168044,0.01652892561983471,right,Robert Gouveia,False
+@RobertGouveiaEsq,videos,660,0.990909090909091,0.048484848484848485,right,Robert Gouveia,False
 @RonPlacone,streams,28,0.9642857142857143,0.0,left,Ron Placone,False
-@RonPlacone,videos,66,0.9090909090909091,0.19696969696969696,left,Ron Placone,False
-@RubinReport,streams,114,1.0,0.02631578947368421,right,Rubin Report,False
-@RubinReport,videos,1047,0.9608404966571156,0.041069723018147083,right,Rubin Report,False
-@RufoandLomez,videos,80,0.975,0.025,right,Rufo & Lomez,False
+@RonPlacone,videos,63,0.9682539682539683,0.14285714285714285,left,Ron Placone,False
+@RubinReport,streams,112,1.0,0.017857142857142856,right,Rubin Report,False
+@RubinReport,videos,1011,0.960435212660732,0.04154302670623145,right,Rubin Report,False
+@RufoandLomez,videos,74,0.9864864864864865,0.013513513513513514,right,Rufo & Lomez,False
 @SMN,streams,8,0.875,0.0,left,Some More News,False
-@SMN,videos,197,0.9746192893401016,0.09644670050761421,left,Some More News,False
-@SNEAKO,videos,5,1.0,0.6,neutral,SNEAKO,False
-@SabbySabs,streams,103,1.0,0.0,left,Sabby Sabs,False
-@SabbySabs,videos,626,0.9408945686900958,0.09105431309904154,left,Sabby Sabs,False
-@SaltyCracker,videos,387,0.8165374677002584,0.24031007751937986,right,Salty Cracker,False
+@SMN,videos,190,0.968421052631579,0.10526315789473684,left,Some More News,False
+@SNEAKO,videos,3,1.0,0.6666666666666666,neutral,SNEAKO,False
+@SabbySabs,streams,98,1.0,0.0,left,Sabby Sabs,False
+@SabbySabs,videos,587,0.9659284497444633,0.09540034071550256,left,Sabby Sabs,False
+@SaltyCracker,videos,361,0.9529085872576177,0.27146814404432135,right,Salty Cracker,False
 @SavSays,streams,1,1.0,1.0,right,Sav Says,False
-@SavSays,videos,16,0.8125,0.0625,right,Sav Says,False
-@SecondThought,videos,20,0.9,0.2,left,Second Thought,False
+@SavSays,videos,16,1.0,0.1875,right,Sav Says,False
+@SecondThought,videos,19,1.0,0.15789473684210525,left,Second Thought,False
 @SecularTalk,streams,1,1.0,0.0,left,Kyle Kulinski,False
-@SecularTalk,videos,1458,0.9849108367626886,0.03566529492455418,left,Kyle Kulinski,False
-@Semafor,streams,30,0.4666666666666667,0.23333333333333334,neutral,Semafor,False
-@Semafor,videos,153,0.5882352941176471,0.21568627450980393,neutral,Semafor,False
-@Shoe0nHead,videos,10,0.9,0.1,right,Shoe0nHead,False
-@SkyNews,streams,1968,0.8516260162601627,0.18699186991869918,left,Sky News,False
-@SkyNews,videos,3677,0.8615719336415556,0.2545553440304596,left,Sky News,False
-@StatusCoup,streams,157,0.9936305732484076,0.0,left,Status Coup,False
-@StatusCoup,videos,517,0.9555125725338491,0.05222437137330754,left,Status Coup,False
+@SecularTalk,videos,1374,0.9854439592430859,0.039301310043668124,left,Kyle Kulinski,False
+@Semafor,streams,30,0.5333333333333333,0.2,neutral,Semafor,False
+@Semafor,videos,149,0.6174496644295302,0.2080536912751678,neutral,Semafor,False
+@Shoe0nHead,videos,9,1.0,0.1111111111111111,right,Shoe0nHead,False
+@SkyNews,streams,1868,0.895610278372591,0.1937901498929336,left,Sky News,False
+@SkyNews,videos,3412,0.8912661195779601,0.2599648300117233,left,Sky News,False
+@StatusCoup,streams,152,0.993421052631579,0.02631578947368421,left,Status Coup,False
+@StatusCoup,videos,489,0.9877300613496932,0.065439672801636,left,Status Coup,False
 @StevenCrowder,streams,8,1.0,0.0,right,Louder with Crowder,False
-@StevenCrowder,videos,169,0.9526627218934911,0.2603550295857988,right,Louder with Crowder,False
-@StosselTV,videos,50,0.82,0.22,right,John Stossel,False
-@Styxhexenhammer666,streams,27,0.9629629629629629,0.0,right,Styxhexenhammer,False
-@Styxhexenhammer666,videos,446,0.9125560538116592,0.3071748878923767,right,Styxhexenhammer,False
-@SydneyWatson,videos,61,0.9180327868852459,0.3442622950819672,right,Sydney Watson,False
-@TechCrunch,videos,145,0.5172413793103449,0.23448275862068965,neutral,TechCrunch,False
-@TheAdamCarollaShow1,videos,395,0.9139240506329114,0.12151898734177215,right,Adam Carolla,False
-@TheAmalaEkpunobi,streams,12,0.9166666666666666,0.16666666666666666,right,Amala Ekpunobi,False
-@TheAmalaEkpunobi,videos,211,0.9715639810426541,0.16113744075829384,right,Amala Ekpunobi,False
+@StevenCrowder,videos,165,0.9636363636363636,0.2545454545454545,right,Louder with Crowder,False
+@StosselTV,videos,47,0.8297872340425532,0.1702127659574468,right,John Stossel,False
+@Styxhexenhammer666,streams,16,0.9375,0.0,right,Styxhexenhammer,False
+@Styxhexenhammer666,videos,380,0.9,0.3263157894736842,right,Styxhexenhammer,False
+@SydneyWatson,videos,57,0.8070175438596491,0.3333333333333333,right,Sydney Watson,False
+@TechCrunch,videos,139,0.4748201438848921,0.23741007194244604,neutral,TechCrunch,False
+@TheAdamCarollaShow1,videos,372,0.9301075268817204,0.1586021505376344,right,Adam Carolla,False
+@TheAmalaEkpunobi,streams,12,1.0,0.16666666666666666,right,Amala Ekpunobi,False
+@TheAmalaEkpunobi,videos,197,0.9695431472081218,0.18274111675126903,right,Amala Ekpunobi,False
 @TheAtlantic,streams,5,1.0,0.0,left,The Atlantic,False
-@TheAtlantic,videos,166,0.9156626506024096,0.20481927710843373,left,The Atlantic,False
+@TheAtlantic,videos,157,0.9171974522292994,0.19745222929936307,left,The Atlantic,False
 @TheBrianKilmeadeShow,streams,2,1.0,0.0,right,Fox News,False
-@TheBrianKilmeadeShow,videos,352,0.96875,0.045454545454545456,right,Fox News,False
+@TheBrianKilmeadeShow,videos,352,0.9829545454545454,0.056818181818181816,right,Fox News,False
 @TheDailyBeast,streams,34,1.0,0.0,left,Daily Beast,False
-@TheDailyBeast,videos,322,0.9968944099378882,0.009316770186335404,left,Daily Beast,False
-@TheDamageReport,streams,271,1.0,0.0,left,TYT Network,False
-@TheDamageReport,videos,3204,0.9291510611735331,0.1956928838951311,left,TYT Network,False
-@TheDonLemonShow,streams,400,0.825,0.015,left,Don Lemon,False
-@TheDonLemonShow,videos,366,0.9562841530054644,0.060109289617486336,left,Don Lemon,False
-@TheEconomist,videos,137,0.9562043795620438,0.145985401459854,left,The Economist,False
-@TheHumanistReport,streams,35,1.0,0.05714285714285714,left,Humanist Report,False
-@TheHumanistReport,videos,154,0.9675324675324676,0.01948051948051948,left,Humanist Report,False
-@TheJoyReidShow,streams,140,0.9071428571428571,0.1,left,Joy Reid,False
-@TheJoyReidShow,videos,238,0.9201680672268907,0.10084033613445378,left,Joy Reid,False
+@TheDailyBeast,videos,294,0.9965986394557823,0.01020408163265306,left,Daily Beast,False
+@TheDamageReport,streams,259,1.0,0.0,left,TYT Network,False
+@TheDamageReport,videos,3015,0.9359867330016584,0.025207296849087894,left,TYT Network,False
+@TheDonLemonShow,streams,377,0.8249336870026526,0.01856763925729443,left,Don Lemon,False
+@TheDonLemonShow,videos,348,0.9454022988505747,0.06609195402298851,left,Don Lemon,False
+@TheEconomist,videos,130,0.9692307692307692,0.11538461538461539,left,The Economist,False
+@TheHumanistReport,streams,34,0.9705882352941176,0.08823529411764706,left,Humanist Report,False
+@TheHumanistReport,videos,146,0.9794520547945206,0.0273972602739726,left,Humanist Report,False
+@TheJoyReidShow,streams,135,0.9407407407407408,0.14074074074074075,left,Joy Reid,False
+@TheJoyReidShow,videos,234,0.9145299145299145,0.11965811965811966,left,Joy Reid,False
 @TheLincolnProject,streams,28,1.0,0.03571428571428571,left,Lincoln Project,False
-@TheLincolnProject,videos,123,0.9512195121951219,0.18699186991869918,left,Lincoln Project,False
-@TheMajorityReport,streams,195,0.9846153846153847,0.020512820512820513,left,Majority Report,False
-@TheMajorityReport,videos,1657,0.9668074834037417,0.1255280627640314,left,Majority Report,False
-@TheMichaelCohenShow,videos,479,0.9791231732776617,0.05845511482254697,left,MeidasTouch Network,False
-@TheOfficerTatum,streams,194,0.788659793814433,0.09278350515463918,right,Officer Tatum,False
-@TheOfficerTatum,videos,617,0.826580226904376,0.07455429497568881,right,Officer Tatum,False
-@ThePodcastoftheLotusEaters,streams,179,0.9720670391061452,0.35195530726256985,right,Lotus Eaters,False
-@ThePodcastoftheLotusEaters,videos,622,0.9003215434083601,0.36012861736334406,right,Lotus Eaters,False
-@TheQuartering,videos,675,0.8725925925925926,0.26814814814814814,right,TheQuartering,False
-@TheRealTabithaSpeaks,streams,4,0.75,0.25,left,Tabitha Speaks,False
-@TheRealTabithaSpeaks,videos,452,0.9601769911504425,0.23893805309734514,left,Tabitha Speaks,False
-@TheSerfTimes,streams,103,0.9223300970873787,0.009708737864077669,left,Serf Times,False
-@TheSerfTimes,videos,247,0.8623481781376519,0.21052631578947367,left,Serf Times,False
-@TheVaushPit,videos,403,0.9354838709677419,0.27543424317617865,left,Vaush,True
-@TheYoungTurks,streams,428,0.9766355140186916,0.08177570093457943,left,TYT Network,False
-@TheYoungTurks,videos,2868,0.9184100418410042,0.2405857740585774,left,TYT Network,False
-@The_Crucible,streams,5,1.0,0.2,right,The Crucible,False
-@The_Crucible,videos,226,0.9292035398230089,0.21238938053097345,right,The Crucible,False
-@TimDillonShow,videos,68,0.8823529411764706,0.08823529411764706,neutral,Tim Dillon,False
-@Tim_Black,streams,16,0.9375,0.125,right,Tim Black,False
-@Tim_Black,videos,329,0.939209726443769,0.0790273556231003,right,Tim Black,False
-@Timcast,streams,6,1.0,0.0,right,Timcast,False
-@Timcast,videos,183,0.9672131147540983,0.17486338797814208,right,Timcast,False
-@TimcastIRL,streams,154,0.9675324675324676,0.03896103896103896,right,Timcast,False
-@TimcastIRL,videos,855,0.952046783625731,0.3345029239766082,right,Timcast,False
+@TheLincolnProject,videos,119,0.957983193277311,0.21008403361344538,left,Lincoln Project,False
+@TheMajorityReport,streams,183,0.9890710382513661,0.01639344262295082,left,Majority Report,False
+@TheMajorityReport,videos,1520,0.9782894736842105,0.12171052631578948,left,Majority Report,False
+@TheMichaelCohenShow,videos,437,0.977116704805492,0.07322654462242563,left,MeidasTouch Network,False
+@TheOfficerTatum,streams,192,0.828125,0.08333333333333333,right,Officer Tatum,False
+@TheOfficerTatum,videos,599,0.8764607679465777,0.08848080133555926,right,Officer Tatum,False
+@ThePodcastoftheLotusEaters,streams,179,0.9776536312849162,0.12290502793296089,right,Lotus Eaters,False
+@ThePodcastoftheLotusEaters,videos,588,0.9166666666666666,0.37755102040816324,right,Lotus Eaters,False
+@TheQuartering,videos,637,0.9481946624803768,0.2794348508634223,right,TheQuartering,False
+@TheRealTabithaSpeaks,streams,3,1.0,0.3333333333333333,left,Tabitha Speaks,False
+@TheRealTabithaSpeaks,videos,431,0.9698375870069605,0.2552204176334107,left,Tabitha Speaks,False
+@TheSerfTimes,streams,98,0.9591836734693877,0.01020408163265306,left,Serf Times,False
+@TheSerfTimes,videos,233,0.8755364806866953,0.21888412017167383,left,Serf Times,False
+@TheVaushPit,videos,384,0.9244791666666666,0.296875,left,Vaush,True
+@TheYoungTurks,streams,403,0.9801488833746899,0.0967741935483871,left,TYT Network,False
+@TheYoungTurks,videos,2706,0.9297856614929786,0.05395417590539542,left,TYT Network,False
+@The_Crucible,streams,5,0.8,0.2,right,The Crucible,False
+@The_Crucible,videos,218,0.9311926605504587,0.20642201834862386,right,The Crucible,False
+@TimDillonShow,videos,66,0.9090909090909091,0.18181818181818182,neutral,Tim Dillon,False
+@Tim_Black,streams,16,1.0,0.125,right,Tim Black,False
+@Tim_Black,videos,311,0.9614147909967846,0.09003215434083602,right,Tim Black,False
+@Timcast,streams,5,1.0,0.0,right,Timcast,False
+@Timcast,videos,174,1.0,0.19540229885057472,right,Timcast,False
+@TimcastIRL,streams,149,0.9932885906040269,0.04697986577181208,right,Timcast,False
+@TimcastIRL,videos,824,0.9696601941747572,0.35436893203883496,right,Timcast,False
 @TimcastNews,streams,8,1.0,0.0,right,Timcast,False
-@TimcastNews,videos,534,0.9606741573033708,0.32771535580524347,right,Timcast,False
-@TimesNowWorld,streams,3006,0.9025282767797738,0.036593479707252165,neutral,Times Group,False
-@TimesNowWorld,videos,8994,0.9388481209695353,0.05770513675783856,neutral,Times Group,False
-@TomiLahrenIsFearless,videos,118,0.9152542372881356,0.15254237288135594,right,Tomi Lahren,False
-@TuckerCarlson,videos,119,0.957983193277311,0.04201680672268908,neutral,Tucker Carlson Network,False
-@USATODAY,streams,417,0.8273381294964028,0.03836930455635491,neutral,USA Today,False
-@USATODAY,videos,2221,0.820351193156236,0.20441242683475913,neutral,USA Today,False
-@UnHerd,streams,17,0.7647058823529411,0.5882352941176471,left,UnHerd,False
-@UnHerd,videos,83,0.9397590361445783,0.10843373493975904,left,UnHerd,False
-@Unpacked,videos,41,0.926829268292683,0.17073170731707318,right,Unpacked,False
+@TimcastNews,videos,519,0.9845857418111753,0.34104046242774566,right,Timcast,False
+@TimesNowWorld,streams,2827,0.9384506544039618,0.03997170145030067,neutral,Times Group,False
+@TimesNowWorld,videos,8489,0.9433384379785605,0.048179997644009896,neutral,Times Group,False
+@TomiLahrenIsFearless,videos,113,0.9380530973451328,0.1592920353982301,right,Tomi Lahren,False
+@TuckerCarlson,videos,113,0.9823008849557522,0.035398230088495575,neutral,Tucker Carlson Network,False
+@USATODAY,streams,396,0.9090909090909091,0.04292929292929293,neutral,USA Today,False
+@USATODAY,videos,2135,0.8758782201405152,0.2009367681498829,neutral,USA Today,False
+@UnHerd,streams,16,0.9375,0.4375,left,UnHerd,False
+@UnHerd,videos,76,0.9868421052631579,0.05263157894736842,left,UnHerd,False
+@Unpacked,videos,38,0.9473684210526315,0.18421052631578946,right,Unpacked,False
 @Vaush,streams,1,1.0,0.0,left,Vaush,False
-@Vaush,videos,453,0.9448123620309051,0.18543046357615894,left,Vaush,False
-@VivaFrei,streams,52,0.9038461538461539,0.019230769230769232,right,Viva Frei,False
-@VivaFrei,videos,331,0.9003021148036254,0.0513595166163142,right,Viva Frei,False
-@Vox,videos,133,0.7894736842105263,0.3157894736842105,left,Vox,False
-@X22Report-y5y,videos,395,0.9974683544303797,0.007594936708860759,right,X22 Report,False
-@XAVIAER,streams,3,1.0,0.0,right,PragerU,False
-@XAVIAER,videos,71,0.9436619718309859,0.056338028169014086,right,PragerU,False
-@Xanderhal,streams,108,0.9444444444444444,0.06481481481481481,left,Xanderhal,False
-@Xanderhal,videos,316,0.8892405063291139,0.18670886075949367,left,Xanderhal,False
-@YaBoiHakim,videos,16,1.0,0.125,left,Hakim,False
-@ZeihanonGeopolitics,videos,217,0.9585253456221198,0.18433179723502305,neutral,Peter Zeihan,False
-@ZubyMusic,videos,139,0.9136690647482014,0.2302158273381295,right,Zuby,False
+@Vaush,videos,431,0.962877030162413,0.17633410672853828,left,Vaush,False
+@VivaFrei,streams,49,1.0,0.02040816326530612,right,Viva Frei,False
+@VivaFrei,videos,310,0.9741935483870968,0.06451612903225806,right,Viva Frei,False
+@Vox,videos,127,0.8110236220472441,0.3228346456692913,left,Vox,False
+@X22Report-y5y,videos,379,0.9973614775725593,0.018469656992084433,right,X22 Report,False
+@XAVIAER,streams,2,1.0,0.0,right,PragerU,False
+@XAVIAER,videos,68,0.9705882352941176,0.07352941176470588,right,PragerU,False
+@Xanderhal,streams,101,0.9405940594059405,0.07920792079207921,left,Xanderhal,False
+@Xanderhal,videos,289,0.916955017301038,0.17993079584775087,left,Xanderhal,False
+@YaBoiHakim,videos,15,1.0,0.2,left,Hakim,False
+@ZeihanonGeopolitics,videos,202,0.9653465346534653,0.13366336633663367,neutral,Peter Zeihan,False
+@ZubyMusic,videos,130,0.9,0.2230769230769231,right,Zuby,False
 @aaronparnas1,streams,10,0.9,0.0,left,Aaron Parnas,False
-@aaronparnas1,videos,819,0.9951159951159951,0.002442002442002442,left,Aaron Parnas,False
+@aaronparnas1,videos,769,0.9973992197659298,0.002600780234070221,left,Aaron Parnas,False
 @adammockler,streams,2,1.0,0.0,left,Adam Mockler,False
-@adammockler,videos,1117,0.9946284691136974,0.07341092211280215,left,Adam Mockler,False
-@ajplus,videos,50,0.96,0.16,left,Al Jazeera,False
-@aljazeeraenglish,videos,7000,0.9087142857142857,0.20385714285714285,left,Al Jazeera,False
-@axios,streams,7,0.5714285714285714,0.42857142857142855,neutral,Axios,False
-@axios,videos,137,0.7883211678832117,0.24087591240875914,neutral,Axios,False
-@bbrettcooper,videos,143,0.916083916083916,0.3006993006993007,right,Brett Cooper,False
-@bennyjohnson,streams,168,0.9702380952380952,0.005952380952380952,right,Benny Johnson,False
-@bennyjohnson,videos,1508,0.9595490716180372,0.04376657824933687,right,Benny Johnson,False
-@breakingpoints,streams,4,0.75,0.0,left,Breaking Points,False
-@breakingpoints,videos,1037,0.9768563162970106,0.052073288331726135,left,Breaking Points,False
+@adammockler,videos,1055,0.9981042654028436,0.07772511848341232,left,Adam Mockler,False
+@ajplus,videos,50,0.94,0.16,left,Al Jazeera,False
+@aljazeeraenglish,videos,6643,0.9241306638566913,0.180340207737468,left,Al Jazeera,False
+@axios,streams,7,0.5714285714285714,0.5714285714285714,neutral,Axios,False
+@axios,videos,137,0.8248175182481752,0.25547445255474455,neutral,Axios,False
+@bbrettcooper,videos,139,0.9424460431654677,0.37410071942446044,right,Brett Cooper,False
+@bennyjohnson,streams,162,1.0,0.006172839506172839,right,Benny Johnson,False
+@bennyjohnson,videos,1453,0.9745354439091535,0.04542326221610461,right,Benny Johnson,False
+@breakingpoints,streams,4,1.0,0.0,left,Breaking Points,False
+@breakingpoints,videos,998,0.9849699398797596,0.04609218436873747,left,Breaking Points,False
 @briantylercohen,streams,10,1.0,0.0,left,Brian Tyler Cohen,False
-@briantylercohen,videos,1081,0.9935245143385754,0.018501387604070305,left,Brian Tyler Cohen,False
-@bulwarkmedia,streams,228,0.9868421052631579,0.017543859649122806,left,The Bulwark,False
-@bulwarkmedia,videos,1826,0.9830230010952903,0.039978094194961664,left,The Bulwark,False
-@bushrakhanum,videos,22,1.0,0.045454545454545456,neutral,Network18,False
-@cafedotcom,videos,54,0.9814814814814815,0.0,left,CAFE,False
-@chicksonright,streams,179,0.9832402234636871,0.00558659217877095,right,Chicks on the Right,False
-@chicksonright,videos,475,0.96,0.06526315789473684,right,Chicks on the Right,False
-@chinainsights-r2w,videos,278,0.9244604316546763,0.08633093525179857,neutral,China Insights,False
-@chriscuomo,streams,8,0.625,0.625,left,Chris Cuomo,False
-@chriscuomo,videos,208,0.9711538461538461,0.0625,left,Chris Cuomo,False
+@briantylercohen,videos,1019,0.9941118743866536,0.015701668302257114,left,Brian Tyler Cohen,False
+@bulwarkmedia,streams,223,0.9955156950672646,0.013452914798206279,left,The Bulwark,False
+@bulwarkmedia,videos,1730,0.9861271676300578,0.03815028901734104,left,The Bulwark,False
+@bushrakhanum,videos,22,1.0,0.09090909090909091,neutral,Network18,False
+@cafedotcom,videos,52,0.9615384615384616,0.0,left,CAFE,False
+@chicksonright,streams,174,0.9885057471264368,0.005747126436781609,right,Chicks on the Right,False
+@chicksonright,videos,446,0.984304932735426,0.06502242152466367,right,Chicks on the Right,False
+@chinainsights-r2w,videos,238,0.9621848739495799,0.06722689075630252,neutral,China Insights,False
+@chriscuomo,streams,8,0.75,0.625,left,Chris Cuomo,False
+@chriscuomo,videos,203,0.9852216748768473,0.06403940886699508,left,Chris Cuomo,False
 @clayandbuck,streams,42,1.0,0.0,right,Clay & Buck,False
-@clayandbuck,videos,581,0.9328743545611016,0.08777969018932874,right,Clay & Buck,False
-@deanwithrs,streams,266,0.9887218045112782,0.015037593984962405,left,Dean Withers,False
-@deanwithrs,videos,265,0.9962264150943396,0.01509433962264151,left,Dean Withers,False
-@destiny,videos,267,0.8314606741573034,0.27715355805243447,left,Destiny,False
-@destinyhqclips,videos,197,0.5431472081218274,0.12690355329949238,neutral,Destiny,True
+@clayandbuck,videos,565,0.952212389380531,0.09734513274336283,right,Clay & Buck,False
+@deanwithrs,streams,251,0.9960159362549801,0.02390438247011952,left,Dean Withers,False
+@deanwithrs,videos,251,0.9960159362549801,0.01195219123505976,left,Dean Withers,False
+@destiny,videos,262,0.8435114503816794,0.2748091603053435,left,Destiny,False
+@destinyhqclips,videos,197,0.5736040609137056,0.116751269035533,neutral,Destiny,True
 @dineshdsouza,streams,2,1.0,0.5,right,Dinesh D'Souza,False
-@dineshdsouza,videos,92,0.9565217391304348,0.2391304347826087,right,Dinesh D'Souza,False
-@dollemore,streams,4,1.0,0.0,left,Jesse Dollemore,False
-@dollemore,videos,1439,0.9937456567060459,0.022932592077831826,left,Jesse Dollemore,False
-@doomscrollpodcast,videos,17,0.9411764705882353,0.058823529411764705,left,Doomscroll,False
-@evanjmez,videos,22,0.9090909090909091,0.18181818181818182,left,Evan James,False
-@fastpoliticspodcast,videos,145,1.0,0.006896551724137931,left,Fast Politics,False
-@fightbackpodcast,streams,24,0.4166666666666667,0.0,right,Jake Shields,False
-@fightbackpodcast,videos,627,0.8516746411483254,0.2025518341307815,right,Jake Shields,False
-@franifio,streams,62,0.9838709677419355,0.0967741935483871,left,Bitchuation Room,False
-@franifio,videos,282,0.9716312056737588,0.09929078014184398,left,Bitchuation Room,False
-@glennbeck,streams,125,0.952,0.008,right,Blaze Media,False
-@glennbeck,videos,460,0.9195652173913044,0.07608695652173914,right,Blaze Media,False
+@dineshdsouza,videos,62,0.9838709677419355,0.1774193548387097,right,Dinesh D'Souza,False
+@dollemore,streams,4,1.0,0.25,left,Jesse Dollemore,False
+@dollemore,videos,1376,0.998546511627907,0.024709302325581394,left,Jesse Dollemore,False
+@doomscrollpodcast,videos,16,1.0,0.0625,left,Doomscroll,False
+@evanjmez,videos,22,0.9545454545454546,0.13636363636363635,left,Evan James,False
+@fastpoliticspodcast,videos,138,1.0,0.0,left,Fast Politics,False
+@fightbackpodcast,streams,24,1.0,0.0,right,Jake Shields,False
+@fightbackpodcast,videos,584,0.976027397260274,0.2363013698630137,right,Jake Shields,False
+@franifio,streams,60,0.9833333333333333,0.1,left,Bitchuation Room,False
+@franifio,videos,271,0.985239852398524,0.08856088560885608,left,Bitchuation Room,False
+@glennbeck,streams,125,0.984,0.008,right,Blaze Media,False
+@glennbeck,videos,437,0.9405034324942791,0.08695652173913043,right,Blaze Media,False
 @harryjsisson,streams,3,1.0,0.0,left,Harry Sisson,False
-@harryjsisson,videos,681,0.9911894273127754,0.04698972099853157,left,Harry Sisson,False
-@hutch,streams,50,0.74,0.08,neutral,Hutch,False
-@hutch,videos,162,0.8395061728395061,0.25308641975308643,neutral,Hutch,False
-@jimacosta,streams,160,0.9875,0.01875,left,Jim Acosta,False
-@jimacosta,videos,313,0.9808306709265175,0.051118210862619806,left,Jim Acosta,False
-@jlptalk,streams,187,0.4385026737967914,0.10695187165775401,right,Jesse Lee Peterson,False
-@jlptalk,videos,304,0.8552631578947368,0.17434210526315788,right,Jesse Lee Peterson,False
-@joerogan,streams,1,0.0,0.0,neutral,Joe Rogan,False
-@joerogan,videos,141,0.900709219858156,0.07801418439716312,neutral,Joe Rogan,False
-@johnnyharris,videos,13,1.0,0.23076923076923078,left,Johnny Harris,False
-@judgingfreedom,streams,697,0.9913916786226685,0.01721664275466284,left,Judging Freedom,False
-@judgingfreedom,videos,355,0.9859154929577465,0.02535211267605634,left,Judging Freedom,False
+@harryjsisson,videos,632,0.990506329113924,0.05063291139240506,left,Harry Sisson,False
+@hutch,streams,50,0.72,0.08,neutral,Hutch,False
+@hutch,videos,160,0.8375,0.28125,neutral,Hutch,False
+@jimacosta,streams,156,0.9935897435897436,0.019230769230769232,left,Jim Acosta,False
+@jimacosta,videos,301,0.9800664451827242,0.053156146179401995,left,Jim Acosta,False
+@jlptalk,streams,180,0.42777777777777776,0.1111111111111111,right,Jesse Lee Peterson,False
+@jlptalk,videos,293,0.9010238907849829,0.18771331058020477,right,Jesse Lee Peterson,False
+@joerogan,streams,1,1.0,1.0,neutral,Joe Rogan,False
+@joerogan,videos,133,1.0,0.12030075187969924,neutral,Joe Rogan,False
+@johnnyharris,videos,11,1.0,0.2727272727272727,left,Johnny Harris,False
+@judgingfreedom,streams,658,0.9969604863221885,0.013677811550151976,left,Judging Freedom,False
+@judgingfreedom,videos,345,0.9884057971014493,0.02608695652173913,left,Judging Freedom,False
 @katiephangnews,streams,44,1.0,0.0,left,MeidasTouch Network,False
-@katiephangnews,videos,403,0.9875930521091811,0.007444168734491315,left,MeidasTouch Network,False
-@katmabu,videos,34,0.9117647058823529,0.35294117647058826,left,Kat Abughazaleh,False
-@laurenchenclips,videos,109,0.8990825688073395,0.1651376146788991,right,Lauren Chen,True
-@lizwheeler,streams,70,0.9857142857142858,0.014285714285714285,right,Liz Wheeler,False
-@lizwheeler,videos,86,0.9534883720930233,0.06976744186046512,right,Liz Wheeler,False
-@lonerboxlive,videos,88,0.875,0.09090909090909091,right,LonerBox,False
-@lovettorleaveitpodcast,videos,114,0.956140350877193,0.15789473684210525,left,Crooked Media,False
-@marclamonthillnetwork,streams,151,0.8940397350993378,0.0728476821192053,left,Marc Lamont Hill,False
-@marclamonthillnetwork,videos,321,0.9501557632398754,0.028037383177570093,left,Marc Lamont Hill,False
-@markets,streams,56,0.9107142857142857,0.03571428571428571,neutral,Bloomberg,False
-@markets,videos,7974,0.9159769250062704,0.24755455229495862,neutral,Bloomberg,False
-@marklevinshow,videos,505,0.9722772277227723,0.02574257425742574,right,Mark Levin,False
-@mikhaila,videos,27,1.0,0.5555555555555556,right,Mikhaila Peterson,False
-@morebridgetphetasy,videos,206,0.883495145631068,0.2669902912621359,right,Bridget Phetasy,False
+@katiephangnews,videos,381,0.989501312335958,0.013123359580052493,left,MeidasTouch Network,False
+@katmabu,videos,31,0.9354838709677419,0.3548387096774194,left,Kat Abughazaleh,False
+@laurenchenclips,videos,109,0.8990825688073395,0.22018348623853212,right,Lauren Chen,True
+@lizwheeler,streams,67,1.0,0.014925373134328358,right,Liz Wheeler,False
+@lizwheeler,videos,77,0.974025974025974,0.09090909090909091,right,Liz Wheeler,False
+@lonerboxlive,videos,82,0.8658536585365854,0.08536585365853659,right,LonerBox,False
+@lovettorleaveitpodcast,videos,110,0.9727272727272728,0.14545454545454545,left,Crooked Media,False
+@marclamonthillnetwork,streams,145,0.9172413793103448,0.08275862068965517,left,Marc Lamont Hill,False
+@marclamonthillnetwork,videos,309,0.9676375404530745,0.045307443365695796,left,Marc Lamont Hill,False
+@markets,streams,55,0.9090909090909091,0.07272727272727272,neutral,Bloomberg,False
+@markets,videos,7665,0.9225048923679061,0.27188519243313763,neutral,Bloomberg,False
+@marklevinshow,videos,486,0.9794238683127572,0.026748971193415638,right,Mark Levin,False
+@mikhaila,videos,26,0.5,0.5,right,Mikhaila Peterson,False
+@morebridgetphetasy,videos,200,0.84,0.275,right,Bridget Phetasy,False
 @moreperfectunion,streams,4,0.75,0.0,left,More Perfect Union,False
-@moreperfectunion,videos,71,0.8591549295774648,0.22535211267605634,left,More Perfect Union,False
-@msnow,streams,325,0.9353846153846154,0.012307692307692308,left,MS NOW,False
-@msnow,videos,9879,0.9707460269258023,0.06275938860208523,left,MS NOW,False
-@nationalreview,streams,2,1.0,0.5,right,National Review,False
-@nationalreview,videos,191,0.9738219895287958,0.11518324607329843,right,National Review,False
-@newdiscourses,videos,98,0.8367346938775511,0.3163265306122449,right,New Discourses,False
-@newyorker,videos,51,0.9019607843137255,0.2549019607843137,neutral,The New Yorker,False
-@notsoErudite,streams,20,1.0,0.15,left,notsoErudite,False
-@notsoErudite,videos,43,0.8372093023255814,0.27906976744186046,left,notsoErudite,False
-@nousnetwork,videos,156,0.9807692307692307,0.04487179487179487,left,nous,False
-@nypost,streams,110,0.8545454545454545,0.045454545454545456,right,New York Post,False
-@nypost,videos,6304,0.7260469543147208,0.2398477157360406,right,New York Post,False
-@nytimes,videos,71,0.8450704225352113,0.38028169014084506,left,New York Times,False
-@oann,streams,309,0.9611650485436893,0.009708737864077669,right,OAN,False
-@oann,videos,1803,0.9262340543538546,0.136993899057127,right,OAN,False
-@podsaveamerica,videos,667,0.9715142428785607,0.07196401799100449,left,Crooked Media,False
+@moreperfectunion,videos,68,0.9117647058823529,0.29411764705882354,left,More Perfect Union,False
+@msnow,streams,308,0.961038961038961,0.01948051948051948,left,MS NOW,False
+@msnow,videos,9398,0.9819110449031709,0.0645882102575016,left,MS NOW,False
+@nationalreview,streams,2,1.0,0.0,right,National Review,False
+@nationalreview,videos,183,0.9836065573770492,0.12568306010928962,right,National Review,False
+@newdiscourses,videos,95,0.968421052631579,0.3157894736842105,right,New Discourses,False
+@newyorker,videos,50,0.9,0.22,neutral,The New Yorker,False
+@notsoErudite,streams,20,1.0,0.2,left,notsoErudite,False
+@notsoErudite,videos,42,0.8095238095238095,0.2857142857142857,left,notsoErudite,False
+@nousnetwork,videos,152,0.993421052631579,0.05263157894736842,left,nous,False
+@nypost,streams,98,0.8673469387755102,0.030612244897959183,right,New York Post,False
+@nypost,videos,6036,0.822233267064281,0.23807157057654074,right,New York Post,False
+@nytimes,videos,69,0.855072463768116,0.4057971014492754,left,New York Times,False
+@oann,streams,304,0.9901315789473685,0.01644736842105263,right,OAN,False
+@oann,videos,1736,0.9608294930875576,0.14228110599078342,right,OAN,False
+@podsaveamerica,videos,643,0.9595645412130638,0.07153965785381027,left,Crooked Media,False
 @ponderingpolitics,streams,2,1.0,0.0,left,Pondering Politics,False
-@ponderingpolitics,videos,1467,0.9972733469665985,0.019768234492160874,left,Pondering Politics,False
+@ponderingpolitics,videos,1392,0.9985632183908046,0.035201149425287355,left,Pondering Politics,False
 @revleftradio,streams,3,1.0,0.0,left,Rev Left Radio,False
-@revleftradio,videos,38,0.868421052631579,0.13157894736842105,left,Rev Left Radio,False
-@rolandsmartin,streams,584,0.9212328767123288,0.06678082191780822,left,Black Star Network,False
-@rolandsmartin,videos,742,0.9272237196765498,0.0862533692722372,left,Black Star Network,False
-@samharrisorg,videos,116,0.8706896551724138,0.1896551724137931,left,Sam Harris,False
-@theGuardian,videos,39,0.9230769230769231,0.10256410256410256,left,The Guardian,False
+@revleftradio,videos,38,0.8157894736842105,0.18421052631578946,left,Rev Left Radio,False
+@rolandsmartin,streams,569,0.9103690685413005,0.0773286467486819,left,Black Star Network,False
+@rolandsmartin,videos,698,0.9484240687679083,0.08739255014326648,left,Black Star Network,False
+@samharrisorg,videos,108,0.8796296296296297,0.2037037037037037,left,Sam Harris,False
+@theGuardian,videos,38,0.8947368421052632,0.23684210526315788,left,The Guardian,False
 @thedavidpakmanshow,streams,5,1.0,0.0,left,David Pakman,False
-@thedavidpakmanshow,videos,1641,0.9847653869591713,0.13040828762949422,left,David Pakman,False
-@thegrayzone7996,streams,36,0.8888888888888888,0.3055555555555556,left,The Grayzone,False
-@thegrayzone7996,videos,155,0.9870967741935484,0.0967741935483871,left,The Grayzone,False
-@thehill,streams,505,0.9524752475247524,0.07722772277227723,neutral,The Hill,False
-@thehill,videos,4249,0.9625794304542246,0.05083549070369499,neutral,The Hill,False
-@theisabelbrown,videos,141,0.9716312056737588,0.14184397163120568,right,Isabel Brown,False
-@thejimmydoreshow,streams,115,1.0,0.0,neutral,Jimmy Dore,False
-@thejimmydoreshow,videos,1146,0.9712041884816754,0.03577661431064572,neutral,Jimmy Dore,False
-@therationalnational,streams,7,0.8571428571428571,0.2857142857142857,left,Rational National,False
-@therationalnational,videos,142,0.9788732394366197,0.1267605633802817,left,Rational National,False
-@thewarningwithsteveschmidt,streams,110,0.9727272727272728,0.02727272727272727,left,Steve Schmidt,False
-@thewarningwithsteveschmidt,videos,289,0.9826989619377162,0.04152249134948097,left,Steve Schmidt,False
-@thomhartmann,videos,784,0.9757653061224489,0.05994897959183673,left,Thom Hartmann,False
-@timesofindia,streams,2295,0.9289760348583878,0.005664488017429194,left,Times Group,False
-@timesofindia,videos,9926,0.9744106387265766,0.02014910336490026,left,Times Group,False
+@thedavidpakmanshow,videos,1541,0.9883192731992213,0.13692407527579495,left,David Pakman,False
+@thegrayzone7996,streams,35,0.9142857142857143,0.2571428571428571,left,The Grayzone,False
+@thegrayzone7996,videos,144,0.9791666666666666,0.09722222222222222,left,The Grayzone,False
+@thehill,streams,490,0.9612244897959183,0.07346938775510205,neutral,The Hill,False
+@thehill,videos,4045,0.9710754017305315,0.06254635352286773,neutral,The Hill,False
+@theisabelbrown,videos,134,0.9776119402985075,0.17164179104477612,right,Isabel Brown,False
+@thejimmydoreshow,streams,108,0.9907407407407407,0.018518518518518517,neutral,Jimmy Dore,False
+@thejimmydoreshow,videos,1077,0.9767873723305478,0.03806870937790158,neutral,Jimmy Dore,False
+@therationalnational,streams,7,0.8571428571428571,0.14285714285714285,left,Rational National,False
+@therationalnational,videos,135,0.9851851851851852,0.1037037037037037,left,Rational National,False
+@thewarningwithsteveschmidt,streams,110,0.990909090909091,0.02727272727272727,left,Steve Schmidt,False
+@thewarningwithsteveschmidt,videos,273,0.9963369963369964,0.04395604395604396,left,Steve Schmidt,False
+@thomhartmann,videos,760,0.9881578947368421,0.06578947368421052,left,Thom Hartmann,False
+@timesofindia,streams,2094,0.9684813753581661,0.012416427889207259,left,Times Group,False
+@timesofindia,videos,9372,0.9805804524114383,0.015685019206145966,left,Times Group,False
 @triggerpod,streams,6,1.0,0.0,right,Triggernometry,False
-@triggerpod,videos,151,0.8874172185430463,0.3509933774834437,right,Triggernometry,False
-@turningpointusa,streams,13,0.8461538461538461,0.23076923076923078,right,Turning Point USA,False
-@turningpointusa,videos,183,0.9344262295081968,0.06557377049180328,right,Turning Point USA,False
-@underthedesknews,streams,115,0.9304347826086956,0.1565217391304348,left,Under the Desk News,False
-@underthedesknews,videos,79,0.9240506329113924,0.17721518987341772,left,Under the Desk News,False
-@usefulidiots,streams,12,0.8333333333333334,0.0,left,Useful Idiots,False
-@usefulidiots,videos,186,0.989247311827957,0.03225806451612903,left,Useful Idiots,False
-@wethefifth,streams,2,1.0,0.0,neutral,The Fifth Column,False
-@wethefifth,videos,112,0.9732142857142857,0.13392857142857142,neutral,The Fifth Column,False
-@winston_marshall,videos,109,0.9541284403669725,0.09174311926605505,right,Winston Marshall,False
-@wsj,streams,11,0.8181818181818182,0.0,neutral,Wall Street Journal,False
-@wsj,videos,119,0.8235294117647058,0.21008403361344538,neutral,Wall Street Journal,False
-@zeteo,streams,25,0.96,0.0,left,Zeteo,False
-@zeteo,videos,206,0.9951456310679612,0.02912621359223301,left,Zeteo,False
-https://rumble.com/c/BannonsWarRoom,videos,4506,0.9755881047492233,0.09254327563249001,right,War Room,False
+@triggerpod,videos,143,0.916083916083916,0.34965034965034963,right,Triggernometry,False
+@turningpointusa,streams,13,0.8461538461538461,0.3076923076923077,right,Turning Point USA,False
+@turningpointusa,videos,152,0.9342105263157895,0.07894736842105263,right,Turning Point USA,False
+@underthedesknews,streams,115,0.8695652173913043,0.1565217391304348,left,Under the Desk News,False
+@underthedesknews,videos,74,0.9594594594594594,0.16216216216216217,left,Under the Desk News,False
+@usefulidiots,streams,11,0.8181818181818182,0.0,left,Useful Idiots,False
+@usefulidiots,videos,179,0.994413407821229,0.0223463687150838,left,Useful Idiots,False
+@wethefifth,streams,2,0.5,0.0,neutral,The Fifth Column,False
+@wethefifth,videos,107,0.9906542056074766,0.14018691588785046,neutral,The Fifth Column,False
+@winston_marshall,videos,104,0.9903846153846154,0.07692307692307693,right,Winston Marshall,False
+@wsj,streams,10,0.8,0.0,neutral,Wall Street Journal,False
+@wsj,videos,104,0.7884615384615384,0.2403846153846154,neutral,Wall Street Journal,False
+@zeteo,streams,24,1.0,0.0,left,Zeteo,False
+@zeteo,videos,198,0.98989898989899,0.020202020202020204,left,Zeteo,False
+https://rumble.com/c/BannonsWarRoom,videos,4506,0.9695960940967598,0.09254327563249001,right,War Room,False
 https://rumble.com/c/GGreenwald,videos,76,1.0,0.0,left,Glenn Greenwald,False
-https://rumble.com/c/TheAlexJonesShowLive,videos,513,0.9668615984405458,0.07992202729044834,right,InfoWars,False
-https://rumble.com/c/nickjfuentes,videos,305,0.9836065573770492,0.11475409836065574,right,Nick Fuentes,False
-https://rumble.com/c/russellbrand,videos,259,0.9111969111969112,0.26640926640926643,right,Russell Brand,False
+https://rumble.com/c/TheAlexJonesShowLive,videos,513,0.9707602339181286,0.0935672514619883,right,InfoWars,False
+https://rumble.com/c/nickjfuentes,videos,305,0.9868852459016394,0.11147540983606558,right,Nick Fuentes,False
+https://rumble.com/c/russellbrand,videos,259,0.9382239382239382,0.28185328185328185,right,Russell Brand,False

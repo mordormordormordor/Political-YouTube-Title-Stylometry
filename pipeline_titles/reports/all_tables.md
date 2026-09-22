@@ -1,8 +1,8 @@
 # Title Stylometry: all tables (reference dump), 2026-01-01 to 2026-09-14
 
-_Generated 2026-09-21T17:54:14+00:00 by `python -m pipeline_titles.report`. Every table below is read from `data/titles/analysis/`; the code is `pipeline_titles/`._
+_Generated 2026-09-22T14:29:47+00:00 by `python -m pipeline_titles.report`. Every table below is read from `data/titles/analysis/`; the code is `pipeline_titles/`._
 
-Corpus: 309,596 titles from 274 creators (300,420 unique within creator x genre; 256,897 edited uploads, 52,699 live-stream VODs; 5,783 on Rumble). Genres are never pooled; a creator x genre with fewer than 50 unique titles is low-n and never ranked.
+Corpus: 293,590 titles from 274 creators (284,906 unique within creator x genre; 243,563 edited uploads, 50,027 live-stream VODs; 5,783 on Rumble). Genres are never pooled; a creator x genre with fewer than 50 unique titles is low-n and never ranked.
 
 ## Headline findings
 
@@ -22,61 +22,61 @@ _One plain-language finding per stage, written from the tables below (2026-09-14
 
 | genre | groups | rows | unique | balanced | low_n_groups | median_group_size | max_group_size |
 |---|---|---|---|---|---|---|---|
-| streams | 168 | 52699 | 44716 | 32656 | 89 | 42 | 8975 |
-| videos | 274 | 256897 | 255704 | 156584 | 35 | 247 | 12279 |
+| streams | 166 | 50027 | 42483 | 31469 | 89 | 42 | 8485 |
+| videos | 274 | 243563 | 242423 | 151614 | 38 | 234 | 11623 |
 
 
-Verbatim repeats within creator x genre: 9,176 rows (3.0%); they are collapsed for every style and topic computation and kept for volume, view and hit statistics. Balanced subset (<= 2,500 unique titles per creator x genre, seed 20260914): 189,240 titles; it is used for every pooled fit (topic model, templates, corpus Zipf, LLM sample).
+Verbatim repeats within creator x genre: 8,684 rows (3.0%); they are collapsed for every style and topic computation and kept for volume, view and hit statistics. Balanced subset (<= 2,500 unique titles per creator x genre, seed 20260914): 183,083 titles; it is used for every pooled fit (topic model, templates, corpus Zipf, LLM sample).
 
 
 Highest repeat shares (live-broadcast loops):
 
 | creator | genre | n_rows | n_unique | repeat_share |
 |---|---|---|---|---|
-| @usefulidiots | streams | 69 | 12 | 0.826 |
-| @rolandsmartin | streams | 1223 | 584 | 0.522 |
-| @RealAmericasVoice | streams | 2958 | 1543 | 0.478 |
-| @TimesNowWorld | streams | 5323 | 3006 | 0.435 |
-| @timesofindia | streams | 3582 | 2295 | 0.359 |
+| @usefulidiots | streams | 66 | 11 | 0.833 |
+| @rolandsmartin | streams | 1181 | 569 | 0.518 |
+| @RealAmericasVoice | streams | 2944 | 1535 | 0.479 |
+| @TimesNowWorld | streams | 4989 | 2827 | 0.433 |
+| @timesofindia | streams | 3235 | 2094 | 0.353 |
 | @aaronparnas1 | streams | 13 | 10 | 0.231 |
-| @thewarningwithsteveschmidt | videos | 363 | 289 | 0.204 |
-| @PrisonPlanetLive | videos | 56 | 46 | 0.179 |
+| @thewarningwithsteveschmidt | videos | 347 | 273 | 0.213 |
+| @PrisonPlanetLive | videos | 54 | 44 | 0.185 |
 
 
-Brand stripping: 85 creator x genre groups had at least one pattern above the 20 % rule (103 patterns; full list in `stripped_patterns.csv`). The most frequent:
+Brand stripping: 81 creator x genre groups had at least one pattern above the 20 % rule (99 patterns; full list in `stripped_patterns.csv`). The most frequent:
 
 
 | creator | genre | kind | pattern | count | share | example |
 |---|---|---|---|---|---|---|
-| @Firstpost | videos | suffix | n#g | 3523 | 0.348 | N18G |
-| @Firstpost | streams | suffix | n#g | 1959 | 0.218 | N18G |
-| @TimesNowWorld | videos | suffix | times now world | 1807 | 0.201 | Times Now World |
-| @BBCNews | videos | suffix | bbc news | 1768 | 0.725 | BBC News |
-| @thehill | videos | suffix | rising | 1669 | 0.393 | RISING |
-| @SecularTalk | videos | suffix | the kyle kulinski show | 1065 | 0.731 | The Kyle Kulinski Show |
-| @NewsmaxTV | streams | bracket | #/#/# | 291 | 0.729 | 9/11/2026 |
-| @HasanReactionsfanTwo | videos | suffix | hasanabi reacts | 268 | 0.788 | Hasanabi Reacts |
-| @deanwithrs | streams | suffix | debating maga | 258 | 0.970 | Debating MAGA. |
+| @Firstpost | videos | suffix | n#g | 3239 | 0.336 | N18G |
+| @Firstpost | streams | suffix | n#g | 1757 | 0.207 | N18G |
+| @BBCNews | videos | suffix | bbc news | 1698 | 0.722 | BBC News |
+| @thehill | videos | suffix | rising | 1586 | 0.392 | RISING |
+| @SecularTalk | videos | suffix | the kyle kulinski show | 990 | 0.721 | The Kyle Kulinski Show |
+| @NewsmaxTV | streams | bracket | #/#/# | 281 | 0.734 | 9/11/2026 |
 | @TheBrianKilmeadeShow | videos | suffix | brian kilmeade show | 253 | 0.719 | Brian Kilmeade Show |
-| @NBCNews | streams | suffix | nbc news | 234 | 0.638 | NBC News |
-| @ABCNews | streams | prefix | live: abc news live | 232 | 0.393 | LIVE: ABC News Live |
-| @ABCNews | streams | suffix | abc news | 232 | 0.393 | ABC News |
-| @TheJoyReidShow | videos | suffix | the joy reid show | 228 | 0.958 | The Joy Reid Show |
-| @TheDonLemonShow | videos | prefix | lemon drop | 220 | 0.601 | LEMON DROP |
+| @HasanReactionsfanTwo | videos | suffix | hasanabi reacts | 253 | 0.793 | Hasanabi Reacts |
+| @deanwithrs | streams | suffix | debating maga | 244 | 0.972 | Debating MAGA. |
+| @NBCNews | streams | suffix | nbc news | 225 | 0.643 | NBC News |
+| @TheJoyReidShow | videos | suffix | the joy reid show | 224 | 0.957 | The Joy Reid Show |
+| @ABCNews | streams | prefix | live: abc news live | 216 | 0.395 | LIVE: ABC News Live |
+| @ABCNews | streams | suffix | abc news | 216 | 0.395 | ABC News |
+| @TheDonLemonShow | videos | prefix | lemon drop | 206 | 0.592 | LEMON DROP |
+| @DailyDenims | videos | colon | denims | 200 | 0.930 | DENIMS |
 
 
 Zipf check (does stripping remove the show-brand head?):
 
 | level | text | max_rank | zipf_exponent | n_tokens | n_types | top_20 |
 |---|---|---|---|---|---|---|
-| pooled_balanced | raw | 100 | 0.8563 | 2061945 | 55465 | the trump to in on of s iran live is and as for a with us war after at news |
-| pooled_balanced | raw | 1000 | 0.7803 | 2061945 | 55465 | the trump to in on of s iran live is and as for a with us war after at news |
-| pooled_balanced | raw | 5000 | 1.0204 | 2061945 | 55465 | the trump to in on of s iran live is and as for a with us war after at news |
-| pooled_balanced | normalised | 100 | 0.8636 | 2002279 | 53660 | the trump to in on of s iran live is and as for a with us war after at over |
-| pooled_balanced | normalised | 1000 | 0.7838 | 2002279 | 53660 | the trump to in on of s iran live is and as for a with us war after at over |
-| pooled_balanced | normalised | 5000 | 1.0139 | 2002279 | 53660 | the trump to in on of s iran live is and as for a with us war after at over |
-| creator_level_mean | raw | 200 | 0.7990 | 2042611 | 498266 | median 0.7991 over 318 creator x genre groups (>= 50 titles) |
-| creator_level_mean | normalised | 200 | 0.7815 | 1984121 | 494374 | median 0.7829 over 318 creator x genre groups (>= 50 titles) |
+| pooled_balanced | raw | 100 | 0.8573 | 1999165 | 54552 | the trump to in on of iran s live is and as for a with us war after at news |
+| pooled_balanced | raw | 1000 | 0.7813 | 1999165 | 54552 | the trump to in on of iran s live is and as for a with us war after at news |
+| pooled_balanced | raw | 5000 | 1.0212 | 1999165 | 54552 | the trump to in on of iran s live is and as for a with us war after at news |
+| pooled_balanced | normalised | 100 | 0.8636 | 1943465 | 52809 | the trump to in on of iran s live is and as for a with us war after at over |
+| pooled_balanced | normalised | 1000 | 0.7845 | 1943465 | 52809 | the trump to in on of iran s live is and as for a with us war after at over |
+| pooled_balanced | normalised | 5000 | 1.0151 | 1943465 | 52809 | the trump to in on of iran s live is and as for a with us war after at over |
+| creator_level_mean | raw | 200 | 0.7972 | 1977690 | 483657 | median 0.7962 over 313 creator x genre groups (>= 50 titles) |
+| creator_level_mean | normalised | 200 | 0.7806 | 1923441 | 479933 | median 0.7826 over 313 creator x genre groups (>= 50 titles) |
 
 
 Channel groups (left / neutral / right from each channel's title-leaning score, `leaning_by_creator.csv`; the only between-channel grouping in the report):
@@ -96,50 +96,50 @@ Clippers (titles written by fans or an editing team, kept as their own group): @
 
 ## Stage 1: topics
 
-BERTopic on a 100,041-title creator-stratified sample (cap 561 per creator x genre): HDBSCAN found 236 topics (32.4% outliers); every title was then assigned to its nearest topic centroid (agreement with HDBSCAN's own labels on cluster members 85.5%; 13.4% of titles are weak assignments below the 10th-percentile similarity). 212 of 236 topics are political; 90.5% of unique titles (raw pooled) fall in political topics.
+BERTopic on a 100,078-title creator-stratified sample (cap 591 per creator x genre): HDBSCAN found 224 topics (35.3% outliers); every title was then assigned to its nearest topic centroid (agreement with HDBSCAN's own labels on cluster members 86.1%; 13.4% of titles are weak assignments below the 10th-percentile similarity). 202 of 224 topics are political; 92.8% of unique titles (raw pooled) fall in political topics.
 
 
 Political share by channel group (mean of creators, >= 50 unique titles):
 
 | group | genre | n_creators | mean_political_share | median_political_share |
 |---|---|---|---|---|
-| left | streams | 33 | 0.955 | 0.977 |
-| left | videos | 105 | 0.946 | 0.972 |
-| neutral | streams | 16 | 0.849 | 0.861 |
-| neutral | videos | 38 | 0.866 | 0.908 |
-| right | streams | 30 | 0.918 | 0.958 |
-| right | videos | 96 | 0.918 | 0.937 |
+| left | streams | 33 | 0.962 | 0.989 |
+| left | videos | 105 | 0.963 | 0.980 |
+| neutral | streams | 16 | 0.891 | 0.909 |
+| neutral | videos | 37 | 0.882 | 0.909 |
+| right | streams | 28 | 0.945 | 0.987 |
+| right | videos | 94 | 0.932 | 0.955 |
 
 
 Largest topics (mean of group-level creator shares, i.e. creator-balanced):
 
 | topic_id | label | political | category | mean_group_share | n_unique_all | n_creators | top_terms | example_1 |
 |---|---|---|---|---|---|---|---|---|
-| 0 | Iran War and Strait of Hormuz Tensions | yes | war_conflict | 0.0643 | 27609 | 227 | strait hormuz, strait, hormuz, irans, iranian, iran iran, tehran, war iran, bases, iran strikes | IRAN WAR NEWS LIVE \| Iran’s Hidden Strength Shocks Experts — Is Trump Really Getting Nervous Now? |
-| 2 | Israel-Palestine Conflict Media | yes | world_politics | 0.0266 | 6035 | 195 | gaza, palestine, palestinian, israeli, netanyahu, israels, west bank, jews, palestinians, jewish | Ian Carroll: How Israel MANIPULATES Our Media! |
-| 59 | Iran Conflict and Political Updates | yes | world_politics | 0.0236 | 1358 | 124 | joins, renner, ac, fail, reveal, iran hits, sus, durk, jamm, larry johnson | IRAN NUCLEAR DEAL, DOLLY PARTON TRIBUTE, CORY BOOKER REVEAL, PENTAGON INFLUENCER, CNN HASAN SMEAR |
-| 3 | ICE Protests and Shootings | yes | us_politics | 0.0191 | 5189 | 210 | ice shooting, ice, ice agent, antiice, ice agents, minneapolis ice, minneapolis, agents, agent, protesters | Anti-ICE Protests LIVE From Washington DC: Charged Scenes After ICE Killing in Minneapolis \| US News |
-| 1 | Shocking Events and Reactions | yes | media_culture_war | 0.0172 | 3996 | 171 | fing, holy, happening, theyre, holy sht, fck, im, fking, genuinely, fcked | WTF is happening.. |
-| 4 | Ukraine-Russia War and Political Figures | yes | war_conflict | 0.0154 | 9808 | 134 | ukraine, russia, putin, putins, zelensky, russian, ukraine war, zelenskyy, russias, moscow | Russia Ukraine War LIVE: Zelensky's Message to Putin: End the War or Face Russia's Wrath |
-| 40 | Trump's speeches and events | yes | us_politics | 0.0146 | 1944 | 84 | trump delivers, delivers remarks, trump speaks, davos, remarks, world economic, economic forum, delivers, l... | LIVE: Trump delivers remarks at the World Economic Forum |
-| 13 | Modern Women and Feminism Debate | yes | media_culture_war | 0.0124 | 1346 | 170 | dating, women, feminism, modern women, men, modern, marriage, men women, divorce, pill | The Consequences of Modern Women's Actions |
-| 22 | Christian Nationalism and Politics | yes | us_politics | 0.0123 | 1518 | 171 | jesus, christian, god, nationalism, christ, christianity, faith, bible, pastor, gospel | HOT TOPICS \| Pastor EXPOSES the Truth About Donald Trump, MAGA & Christian Nationalism! |
-| 6 | Trump and China political relations | yes | world_politics | 0.0121 | 4790 | 165 | xi, china, chinas, taiwan, jiang, jinping, xi jinping, chinese, beijing, professor jiang | Trump in China: Why Xi Jinping Has the Upper Hand \| The Link \| 4K |
-| 98 | JLP Weekly Series | no | media_culture_war | 0.0110 | 1243 | 182 | jlp wed, jlp, wed, jlp thu, thu, jlp mon, mon, jlp tue, tue, jlp fri | Through Hell to Clarity \| JLP Fri 4-17-26 |
-| 9 | AI and Political Concerns | yes | us_politics | 0.0109 | 3547 | 187 | ai, anthropic, bubble, artificial, researcher, models, humans, ai slop, sanders, bernie sanders | AI Is Coming for Your Job — and Even Tech CEOs Aren’t Safe \| NYNext |
-| 7 | Trump vs Maduro Venezuela Conflict | yes | world_politics | 0.0106 | 3556 | 179 | maduro, venezuela, venezuelas, venezuelan, capture, trumps venezuela, nicolas, venezuela oil, captured, ven... | 'US Will Run Venezuela After Maduro’s Capture': Trump's Big Announcement On Caracas Action |
-| 5 | Trump Supreme Court Legal Issues | yes | us_politics | 0.0104 | 3769 | 166 | supreme court, supreme, trump doj, court, scotus, doj, judges, ruling, judge, legal af | LIVE: Trump DOJ Indictment DOOMED + SCOTUS Ruling BACKFIRE?!?! \| Legal AF |
-| 24 | Trump Meltdowns and Collapses | yes | us_politics | 0.0102 | 4108 | 136 | trump spirals, trump loses, speech trump, spirals, meltdown trump, trump meltdown, presser, trump melts, tr... | Trump STUNNED as IT ALL COLLAPSES |
-| 8 | Epstein Files Political Connections | yes | us_politics | 0.0102 | 2002 | 196 | epstein files, epsteins, jeffrey epstein, files, epstein, files epstein, jeffrey, gates, connections, break... | The Dark Truth in the Epstein Files the Media WON'T TOUCH |
-| 17 | 2026 Midterm Election Predictions | yes | us_politics | 0.0100 | 3465 | 182 | midterm, midterms, midterms democrats, democratic party, republicans, democrats, win midterms, party, 2026 ... | 🚨Stunning New Polls Show Republican SURGE in Midterms \| Dems DOOM in Crisis After Voter Reversal... |
-| 49 | Race and Politics in Media | yes | media_culture_war | 0.0098 | 1303 | 156 | white men, black men, roland martin, black america, white people, roland, black americans, black people, bl... | The Argument Black Progressive Leaders Are Too Afraid to Make |
-| 11 | Hollywood and Oscars Politics | yes | media_culture_war | 0.0097 | 1837 | 172 | odyssey, hollywood, oscars, movie, film, actors, christopher, sunday 60, grammys, red carpet | 'Idiots': Unpacking Oscars' most 'cringe, woke' nonsense \| Rob Schmitt Tonight |
-| 20 | Indian Politics and Parliament | yes | world_politics | 0.0090 | 8886 | 66 | delhi, modi, assembly, singh, pm modi, session, shah, parliament, ram, sir | LIVE: BJP Press Conference by Sudhanshu Trivedi I Nishu Azad Case \| Swatantra Bhardwaj I CJP |
-| 224 | Political Media Broadcasters | yes | media_culture_war | 0.0089 | 1834 | 67 | buck sexton, sexton, clay travis, travis, buck, clay, stream, broadcast, abc, christine | LIVE: ABC News Live |
-| 95 | Tech Business and Startups | no | tech_business | 0.0086 | 1782 | 139 | mode, build, startup, tech, apple, founder, business, waymo, big tech, silicon | The Bold Plan to Make Tech Serve the Nation—And the Founders Who Are All In \| NYNext |
-| 18 | Lindsay Clancy Murder Trial | no | crime_justice | 0.0086 | 2241 | 132 | clancy, lindsay clancy, lindsay, trial, jury, trial day, murder trial, closing arguments, murder, arguments | VERDICT WATCH: Lindsay Clancy Trial |
-| 42 | War and Military Analysis | yes | war_conflict | 0.0084 | 2269 | 193 | hoh, matt hoh, col, macgregor, douglas macgregor, col douglas, douglas, world war, col lawrence, lawrence w... | The Truth About War |
-| 12 | Canada-US Political Tensions | yes | us_politics | 0.0081 | 1899 | 127 | canada, carney, ezra levant, levant, canadian, canadas, ezra, poilievre, buffalo, carneys | ‘CAN’T SAVE CANADA...’: Mark Carney Faces New REVOLT Amid Trump Tariff War; ‘Only Half The Battle...’ |
+| 3 | Trump and Iran War Negotiations | yes | war_conflict | 0.0335 | 13816 | 190 | ceasefire, iran ceasefire, iran trump, trumps iran, deal iran, ceasefire iran, trump says, iran deal, usira... | US-Iran War Live \| 'War Will Continue Until...': Donald Trump Left Red-Faced? \| Iran's Ultimatum |
+| 0 | ICE protests in Minneapolis | yes | us_politics | 0.0254 | 6056 | 213 | minneapolis, ice shooting, walz, ice agents, ice, antiice, tim walz, agents, alex pretti, ice agent | What we know in Minneapolis a day after fatal ICE shooting: Protests, agent details, more |
+| 2 | Israel and Palestine Conflict | yes | world_politics | 0.0241 | 5344 | 192 | gaza, palestine, palestinian, israels, israeli, netanyahu, jewish, israelis, jews, israel | Ian Carroll: How Israel MANIPULATES Our Media! |
+| 7 | Iran political unrest | yes | world_politics | 0.0214 | 6912 | 206 | khamenei, supreme leader, iranians, crown prince, irans, regime, iran iran, funeral, iranian, crown | IRAN’S FINAL CHAPTER |
+| 74 | Iran and Political Updates | yes | world_politics | 0.0191 | 1384 | 124 | joins, fail, brittany, reveal, sus, bye, ac, joins iran, jamm, iran hits | IRAN NUCLEAR DEAL, DOLLY PARTON TRIBUTE, CORY BOOKER REVEAL, PENTAGON INFLUENCER, CNN HASAN SMEAR |
+| 1 | Shocking Events and Reactions | yes | media_culture_war | 0.0174 | 3828 | 170 | holy, holy sht, fing, theyre, sht, fking, fck, happening, genuinely, anymore | THIS JUST F***ING HAPPENED... IT'S INSANE! |
+| 60 | Trump delivering remarks | yes | us_politics | 0.0143 | 1703 | 59 | trump delivers, delivers remarks, trump speaks, remarks, delivers, speaks press, small business, replay pre... | LIVE: PRESIDENT TRUMP GIVES REMARKS |
+| 4 | Ukraine-Russia War and Political Figures | yes | war_conflict | 0.0139 | 8146 | 128 | ukraine, russia, putins, putin, russian, zelensky, ukraine war, moscow, russias, lavrov | LIVE \| 'President Putin, Please...': Trump's 'UNBELIEVABLE' & TERRIFYING Ukraine War Update News |
+| 15 | Christian Nationalism and Politics | yes | us_politics | 0.0135 | 1606 | 172 | pastor, christian, jesus, nationalism, prayer, god, faith, christianity, christ, christians | HOT TOPICS \| Pastor EXPOSES the Truth About Donald Trump, MAGA & Christian Nationalism! |
+| 20 | Feminism and Gender Roles Debate | yes | media_culture_war | 0.0133 | 1323 | 165 | feminism, dating, women, modern women, men, modern, marriage, divorce, men women, feminists | The Harsh Reality About Modern Women Men Are Facing! |
+| 5 | Trump and China Relations | yes | world_politics | 0.0120 | 4318 | 162 | xi, chinas, china, xi jinping, jinping, jiang, taiwan, beijing, chinese, professor jiang | Trump in China: Why Xi Jinping Has the Upper Hand \| The Link \| 4K |
+| 9 | Indian Politics and Delhi Riots | yes | world_politics | 0.0114 | 10330 | 90 | modi, pm modi, delhi, india, pm, nous, nous clips, singh, assembly, indias | BJP PC LIVE \| Sudhanshu Trivedi, Shehzad Poonawalla\|Nehru\|Congress \|Somnath \|Umar Khalid \|Delhi Riot |
+| 8 | AI and Political Implications | yes | media_culture_war | 0.0114 | 3550 | 183 | ai, anthropic, nvidia, humans, bubble, huang, rogue, researcher, tech, companies | AI Is Coming for Your Job — and Even Tech CEOs Aren’t Safe \| NYNext |
+| 25 | American History and Political Threats | yes | us_politics | 0.0109 | 1848 | 217 | liberty, fascism, founders, founding, museum, 5minute videos, 5minute, road, cia, revolution | Conquering from Within: The Dangers Facing America |
+| 34 | Black America and Racism Discussions | yes | us_politics | 0.0107 | 1397 | 154 | black, white people, black people, black america, white woman, black woman, black americans, month, racism,... | The Argument Black Progressive Leaders Are Too Afraid to Make |
+| 46 | Iran-US military conflict in Gulf | yes | war_conflict | 0.0101 | 5406 | 116 | kuwait, fighter jet, fighter, pilot, bases, jet, rescue, dubai, rescued, aircraft | '200 U.S. PILOTS’ RESIDENCES BOMBED: Iranian Army Strikes Back In Biggest Gulf Revenge \| Watch |
+| 6 | Trump vs Maduro in Venezuela | yes | world_politics | 0.0101 | 3197 | 175 | maduro, venezuela, venezuelas, venezuelan, capture, trumps venezuela, venezuela oil, captured, colombia, ve... | 'US Will Run Venezuela After Maduro’s Capture': Trump's Big Announcement On Caracas Action |
+| 13 | Hormuz Strait Blockade Conflict | yes | war_conflict | 0.0095 | 5099 | 124 | strait hormuz, strait, hormuz, blockade, hormuz blockade, ships, closed, open, iran closes, tankers | STRAIT SHOWDOWN: Trump's battle with Iran over Hormuz ramps up |
+| 18 | Epstein Files Revelations | yes | us_politics | 0.0093 | 1771 | 188 | epstein files, files, epsteins, jeffrey epstein, files epstein, epstein, jeffrey, wexner, names, michael tr... | The Dark Truth in the Epstein Files the Media WON'T TOUCH |
+| 32 | Democratic Party and Midterm Elections | yes | us_politics | 0.0090 | 2743 | 175 | democratic party, midterms, 2026 midterms, midterm, democratic, democrats, party, democrats win, win midter... | ‘The Five’: Dems losing ground as midterms near... |
+| 50 | Left-Wing Political Violence | yes | us_politics | 0.0087 | 1394 | 193 | political violence, violence, left, leftists, lefts, right wing, wing, red scare, conservatism, liberalism | Why the Left's Framework Is the Most Dangerous Threat Today |
+| 173 | JLP Weekly Series | no | other | 0.0087 | 761 | 141 | jlp wed, wed, jlp, jlp thu, thu, jlp mon, mon, jlp fri, tue, jlp tue | Seeking for Happiness Destroys It \| JLP Fri 1-23-26 |
+| 14 | Hasan Piker Controversy | yes | media_culture_war | 0.0085 | 936 | 134 | hasan, hasan piker, piker, hasanabi reacts, hasans, hasanabi, mehdi hasan, reacts hasanabi, reacts, mehdi | Hasan's Biggest Meltdown Yet \| Shoe0nHead Reacts |
+| 121 | Tech Business Founders and Industry | no | tech_business | 0.0085 | 1662 | 138 | mode, build, startup, apple, apples, business, tech, cook, founder, ceo | Best of Build Mode: The Founder Mistakes That Cost Time, Money, and Growth |
+| 33 | Candace Owens Controversies | yes | media_culture_war | 0.0084 | 844 | 141 | candace owens, owens, candace, andrew wilson, wilson, erika, erika kirk, candaces, kirk, andrew | EXPLOSIVE: What Did CANDACE OWENS Know?! |
 
 
 Topic share by channel group, top 5 per group (videos; mean of creator shares):
@@ -147,21 +147,21 @@ Topic share by channel group, top 5 per group (videos; mean of creator shares):
 
 | group | topic_id | label | political | mean_creator_share | raw_pooled_share | n_creators |
 |---|---|---|---|---|---|---|
-| neutral | 0 | Iran War and Strait of Hormuz Tensions | yes | 0.069 | 0.103 | 38 |
-| left | 0 | Iran War and Strait of Hormuz Tensions | yes | 0.065 | 0.094 | 105 |
-| left | 2 | Israel-Palestine Conflict Media | yes | 0.046 | 0.033 | 105 |
-| neutral | 2 | Israel-Palestine Conflict Media | yes | 0.044 | 0.016 | 38 |
-| right | 1 | Shocking Events and Reactions | yes | 0.044 | 0.034 | 96 |
-| neutral | 95 | Tech Business and Startups | no | 0.038 | 0.013 | 38 |
-| right | 0 | Iran War and Strait of Hormuz Tensions | yes | 0.037 | 0.069 | 96 |
-| neutral | 9 | AI and Political Concerns | yes | 0.033 | 0.021 | 38 |
-| neutral | 6 | Trump and China political relations | yes | 0.032 | 0.025 | 38 |
-| left | 24 | Trump Meltdowns and Collapses | yes | 0.029 | 0.041 | 105 |
-| right | 13 | Modern Women and Feminism Debate | yes | 0.027 | 0.013 | 96 |
-| left | 3 | ICE Protests and Shootings | yes | 0.024 | 0.023 | 105 |
-| left | 1 | Shocking Events and Reactions | yes | 0.022 | 0.015 | 105 |
-| right | 22 | Christian Nationalism and Politics | yes | 0.021 | 0.013 | 96 |
-| right | 49 | Race and Politics in Media | yes | 0.020 | 0.010 | 96 |
+| left | 2 | Israel and Palestine Conflict | yes | 0.045 | 0.030 | 105 |
+| right | 1 | Shocking Events and Reactions | yes | 0.044 | 0.034 | 94 |
+| neutral | 121 | Tech Business Founders and Industry | no | 0.040 | 0.013 | 37 |
+| left | 3 | Trump and Iran War Negotiations | yes | 0.036 | 0.051 | 105 |
+| neutral | 8 | AI and Political Implications | yes | 0.035 | 0.023 | 37 |
+| neutral | 3 | Trump and Iran War Negotiations | yes | 0.035 | 0.055 | 37 |
+| neutral | 5 | Trump and China Relations | yes | 0.033 | 0.023 | 37 |
+| neutral | 2 | Israel and Palestine Conflict | yes | 0.030 | 0.014 | 37 |
+| right | 20 | Feminism and Gender Roles Debate | yes | 0.029 | 0.013 | 94 |
+| left | 0 | ICE protests in Minneapolis | yes | 0.027 | 0.026 | 105 |
+| left | 7 | Iran political unrest | yes | 0.026 | 0.022 | 105 |
+| right | 15 | Christian Nationalism and Politics | yes | 0.024 | 0.015 | 94 |
+| right | 25 | American History and Political Threats | yes | 0.022 | 0.014 | 94 |
+| left | 1 | Shocking Events and Reactions | yes | 0.022 | 0.016 | 105 |
+| right | 34 | Black America and Racism Discussions | yes | 0.022 | 0.011 | 94 |
 
 
 Monthly spikes (creator-balanced share vs the topic's own nine-month mean; top 3 per month):
@@ -169,59 +169,59 @@ Monthly spikes (creator-balanced share vs the topic's own nine-month mean; top 3
 
 | month | label | z_vs_own_months | share_month | share_mean_all_months | top_entities | example_1 |
 |---|---|---|---|---|---|---|
-| 2026-01 | Christmas and Trump | 2.660 | 0.016 | 0.002 | Trump (26); Bethlehem (17); US (17); Santa (15); America (15) | LIVE: Trump Participates in NORAD Santa Calls \| Christmas \| Trump on Christmas Eve |
-| 2026-01 | Bondi Beach Terror Attack | 2.660 | 0.011 | 0.001 | Australia (155); Bondi Beach (150); Bondi (55); Sydney (39); REUTERS (35) | Bondi Beach Attack LIVE: PM Faces Antisemitism Row \| Father, Son ISIS Plot That Shocked Australia |
-| 2026-01 | Dan Bongino's Political Outbursts | 2.660 | 0.007 | 0.002 | Dan Bongino (44); FBI (28); Bongino (5); Trump (4); New England Patriots (3) | Dan Bongino gets HUMILIATION he DESERVES \| Another Day |
-| 2026-02 | Super Bowl Halftime Show Controversy | 2.660 | 0.011 | 0.002 | Bad Bunny (43); NFL (22); Kid Rock (9); Grammys (7); Patriots (6) | Super Bowl Halftime Show DISGRACE! - Cultural Insurrection Bad Bunny Backlash - Full Analysis |
-| 2026-02 | Alex Pretti Shooting and Federal Agents | 2.660 | 0.011 | 0.002 | Alex Pretti (196); Minneapolis (60); Minnesota (16); DHS (13); Border Patrol (10) | Alex Pretti shooting: Debate continues over what videos show \| NewsNation Prime |
-| 2026-02 | Don Lemon Arrested | 2.660 | 0.016 | 0.003 | Don Lemon (261); Minnesota (24); CNN (9); Don Lemon Arrest (7); Lemon (6) | Don Lemon Arrested: The Details Nobody is Talking About |
-| 2026-03 | Prince Andrew Epstein Arrest | 2.650 | 0.007 | 0.001 | Prince Andrew (70); Andrew (68); UK (44); Andrew Mountbatten-Windsor (33); Epstein (15) | Prince Andrew Arrested — Is the Epstein Reckoning Finally Here? \| Gerry Callahan Show |
-| 2026-03 | Supreme Court and Trump Tariffs | 2.650 | 0.013 | 0.003 | Trump (201); Supreme Court (150); US (36); US Supreme Court (16); Vantage (11) | SPECIAL REPORT: Supreme Court invalidates most of Trump's tariffs |
-| 2026-03 | Trump State of the Union Address | 2.620 | 0.021 | 0.004 | Trump (138); State of the Union (63); Union Address (19); Trump's State of the Union (18); Trump’s State of... | LIVE: Trump’s State of the Union Address |
-| 2026-04 | Joe Kent Resignation and Iran War Scandal | 2.660 | 0.011 | 0.001 | Joe Kent (93); Iran (31); Trump (17); Israel (11); FBI (10) | Joe Kent in HOT WATERS as Trump Exposes Real Reason He Flipped on America & Israel! |
-| 2026-04 | No Kings Protests Movement | 2.650 | 0.010 | 0.002 | Trump (21); Kings (15); US (12); Donald Trump (7); New York (4) | WATCH: The "No Kings" Protests Released New Levels Of ABSURD |
-| 2026-04 | Artemis II Moon Mission Updates | 2.620 | 0.014 | 0.003 | NASA (336); Artemis (118); Artemis II (67); Moon (43); America (20) | NASA news conference on Artemis II mission to the moon \| full video |
-| 2026-05 | White House Correspondents Dinner Shooting | 2.660 | 0.020 | 0.004 | White House (167); Trump (133); White House Correspondents' Dinner (68); Cole Allen (26); US (20) | What we know about the White House Correspondents Dinner shooter |
-| 2026-05 | King Charles III and Trump interactions | 2.660 | 0.007 | 0.001 | US (96); Trump (73); Charles III (66); King Charles (63); UK (63) | Donald Trump And King Charles III Viral Moments Amid King Charles' US Visit \| Firstpost |
-| 2026-05 | Hantavirus outbreak on cruise ship | 2.650 | 0.009 | 0.001 | US (27); Nebraska (19); Tenerife (17); U.S (14); Spain (13) | Hantavirus is 'not a brand new virus.' Official outlines how disease spreads amid cruise outbreak |
-| 2026-06 | Thomas Massie political defeat | 2.630 | 0.009 | 0.002 | Thomas Massie (76); Trump (37); Massie (35); Kentucky (32); Ed Gallrein (13) | Thomas Massie Gets Trumped, Loses His Representative Seat |
-| 2026-06 | Karmelo Anthony Trial Verdict | 2.590 | 0.018 | 0.004 | Karmelo Anthony (114); Austin Metcalf (11); Karmelo (9); Luigi Mangione (9); Karmelo Anthony Trial (8) | Karmelo Anthony Verdict Courthouse Reactions - Here's What REALLY Happened! \| Brianna Morello |
-| 2026-06 | Spencer Pratt LA Mayoral Campaign | 2.520 | 0.015 | 0.003 | Spencer Pratt (141); LA (43); Karen Bass (16); California (13); Los Angeles (12) | Spencer Pratt Is Turning LA Politics Upside Down |
-| 2026-07 | America's 250th Anniversary and Founding History | 2.610 | 0.024 | 0.009 | America (184); US (36); Trump (22); U.S (13); New York (12) | US News Live: Trump's America-First Message Echoes At Salute To America \| 250th Independence Day |
-| 2026-07 | JD Vance and Iran negotiations | 2.510 | 0.009 | 0.002 | Iran (219); US (88); JD Vance (87); Switzerland (52); Vance (32) | BOMBSHELL: JD Vance Turns On Israel After Iran Deal |
-| 2026-07 | Trump Reflecting Pool Scandal | 2.500 | 0.007 | 0.002 | Trump (42); Reflecting Pool (8); David Hearn (8); Lincoln Memorial Reflecting Pool (7); US (7) | Trump goes FULL FREAKOUT over Reflecting Pool UPDATE \| Another Day |
-| 2026-08 | Fauci Senate Testimony Controversy | 2.650 | 0.016 | 0.003 | Fauci (200); Senate (72); Rand Paul (50); Anthony Fauci (44); Congress (24) | 'The Five': Fauci's private diary entries EXPOSED ahead of Senate testimony |
-| 2026-08 | Todd Blanche Attorney General Confirmation | 2.580 | 0.011 | 0.002 | Todd Blanche (153); Blanche (145); Trump (82); AG (59); Senate (56) | LIVE: Todd Blanche testifies at confirmation hearing to be attorney general |
-| 2026-08 | Ceuta Migration Crisis | 2.570 | 0.006 | 0.002 | Spain (201); Morocco (36); Ceuta (29); EU (19); SPAIN (8) | Spain Migrant Crisis LIVE \| Spain Pushes Back Morocco Migrant Surge After Deadly Ceuta Border Crisis |
-| 2026-09 | 9/11 Remembered 25 Years Later | 2.660 | 0.024 | 0.004 | Pentagon (38); America (22); Trump (21); Mamdani (19); New York (19) | 25 Years Later: Remembering the Heroes of 9/11 |
-| 2026-09 | Nepal Floods and Rescue Efforts | 2.650 | 0.009 | 0.002 | Nepal (277); China (49); Nepal Floods (40); India (31); Nepal-Tibet (27) | Nepal floods: The race to find survivors \| Jesse Weber Live Full Show |
-| 2026-09 | Dolly Parton Tribute and Legacy | 2.650 | 0.011 | 0.002 | Dolly Parton (77); Tennessee (7); Trump (4); US (4); National Report (3) | Dolly Parton Death LIVE \| ‘There Will Never Be Anyone Like Her’: Trump Mourns Dolly Parton |
+| 2026-01 | Trump and Greenland politics | 2.660 | 0.031 | 0.004 | Greenland (877); Trump (428); US (234); NATO (165); Denmark (108) | ‘Like it or not’: Trump threatens to take Greenland by force \| Morning in America |
+| 2026-01 | Trump at Davos and World Economic Forum | 2.660 | 0.007 | 0.001 | Davos (151); Trump (78); World Economic Forum (29); WEF (21); US (17) | Davos 2026 LIVE: US President Donald Trump Addresses in Davos for World Economic Forum |
+| 2026-01 | Trump vs Maduro in Venezuela | 2.650 | 0.059 | 0.009 | Venezuela (1046); Maduro (616); US (580); Trump (330); U.S (162) | 'US Will Run Venezuela After Maduro’s Capture': Trump's Big Announcement On Caracas Action |
+| 2026-02 | Prince Andrew Epstein Arrest Revelations | 2.660 | 0.008 | 0.001 | Andrew (89); Prince Andrew (80); UK (51); Andrew Mountbatten-Windsor (34); Epstein (25) | Prince Andrew Arrested — Is the Epstein Reckoning Finally Here? \| Gerry Callahan Show |
+| 2026-02 | Super Bowl Halftime Show Controversy | 2.660 | 0.013 | 0.002 | Bad Bunny (43); NFL (33); Patriots (15); Seahawks (10); Kid Rock (8) | Super Bowl Halftime Show DISGRACE! - Cultural Insurrection Bad Bunny Backlash - Full Analysis |
+| 2026-02 | Nancy Guthrie Disappearance Case | 2.650 | 0.015 | 0.003 | Nancy Guthrie (678); Guthrie (261); FBI (199); Savannah Guthrie (177); America (42) | Nancy Guthrie Case: New Timeline, “Prime Suspect” Rumors, & Missing Camera Footage |
+| 2026-03 | No Kings Protests Movement | 2.650 | 0.007 | 0.002 | Trump (24); US (13); Kings (12); Donald Trump (7); Bruce Springsteen (5) | WATCH LIVE: NO KINGS PROTESTS |
+| 2026-03 | Joe Kent Resignation and Leaks | 2.650 | 0.010 | 0.002 | Joe Kent (88); Iran (28); Trump (17); FBI (10); Israel (10) | Joe Kent in HOT WATERS as Trump Exposes Real Reason He Flipped on America & Israel! |
+| 2026-03 | Iran political unrest | 2.570 | 0.068 | 0.021 | Iran (1549); US (366); Khamenei (92); Israel (84); Tehran (81) | IRAN’S FINAL CHAPTER |
+| 2026-04 | King Charles III and Trump State Visit | 2.640 | 0.007 | 0.001 | US (91); Trump (76); Charles III (65); Congress (61); UK (56) | WATCH : Britain’s King Charles addresses Joint session of U.S. Congress \|Trump \| State Visit \|UK |
+| 2026-04 | Trump and Pope Leo Feud | 2.630 | 0.013 | 0.002 | Trump (139); Pope Leo (104); Leo XIV (53); Iran (48); Jesus (38) | Why Trump And Pope Leo Are at Odds — Inside The Feud And The 'Blasphemous' AI Jesus Photo |
+| 2026-04 | Eric Swalwell Allegations and Resignation | 2.610 | 0.007 | 0.001 | Eric Swalwell (117); Swalwell (51); Congress (29); California (13); House (10) | Serious Allegations Against Rep. Eric Swalwell Have Surfaced |
+| 2026-05 | Thomas Massie and Trump political conflict | 2.640 | 0.011 | 0.002 | Thomas Massie (79); Trump (37); Massie (34); Kentucky (32); Ed Gallrein (13) | Thomas Massie Gets Trumped, Loses His Representative Seat |
+| 2026-05 | Trump and China Relations | 2.600 | 0.029 | 0.011 | China (802); Trump (282); Beijing (169); US (166); Taiwan (162) | Trump in China: Why Xi Jinping Has the Upper Hand \| The Link \| 4K |
+| 2026-05 | Covid Vaccine Controversy | 2.390 | 0.013 | 0.005 | US (38); U.S (21); CDC (20); Nebraska (17); Congo (16) | Senator Just Announced How DEADLY Dr. Fauci’s COVID Vaccine REALLY Is... Horrifying |
+| 2026-06 | NBA Championship Celebrations | 2.640 | 0.009 | 0.002 | Knicks (88); NBA (84); Trump (26); New York Knicks (24); New York (19) | Mayhem in New York City after Knicks win first NBA championship in 53 years |
+| 2026-06 | Karmelo Anthony Trial Verdict | 2.540 | 0.024 | 0.007 | Karmelo Anthony (137); Luigi Mangione (27); Austin Metcalf (13); Karmelo (13); Gilgo Beach (12) | What Everybody Is Missing In The Karmelo Anthony Trial |
+| 2026-06 | UFC at White House Event | 2.470 | 0.013 | 0.003 | UFC (109); White House (95); Trump (56); FBI (22); Dana White (18) | White House UFC Shocker On Cam: ‘OMG, This President Can’t...’: Trump’s Startling Act \| Watch |
+| 2026-07 | Lindsey Graham's Death and Legacy | 2.640 | 0.019 | 0.003 | Lindsey Graham (476); Graham (61); Senate (57); Trump (53); US (30) | Lindsey Graham: The Aftermath |
+| 2026-07 | Mitch McConnell Health Mystery | 2.600 | 0.010 | 0.002 | Mitch McConnell (133); McConnell (50); Kentucky (15); Senate (8); GOP (6) | SHOCKING Mitch McConnell UPDATE |
+| 2026-07 | Christopher Nolan's Odyssey Reviews | 2.480 | 0.008 | 0.002 | Christopher Nolan (20); Odyssey (9); Hollywood (3); Ben Shapiro (3); Nolan (3) | Christopher Nolan's Odyssey: a true Hollywood disaster |
+| 2026-08 | Trump aide Natalie Harp and Jon Ossoff | 2.640 | 0.008 | 0.001 | Natalie Harp (89); Trump (44); Jon Ossoff (18); Ossoff (10); White House (6) | TRENDING NOW! Who is Natalie Harp? Her Trump Connection explained as Jon Ossoff’s attack POTUS |
+| 2026-08 | WNBA and Sophie Cunningham controversy | 2.620 | 0.016 | 0.003 | WNBA (74); NBA (15); Sophie Cunningham (9); Royce White (4); National Report (4) | ‘The Five’: WNBA dribbles up more drama |
+| 2026-08 | Abdul El-Sayed vs AIPAC in Michigan Senate Primary | 2.580 | 0.016 | 0.003 | Abdul El-Sayed (144); Michigan (72); El-Sayed (60); Senate (24); Mike Rogers (22) | Abdul El-Sayed vs AIPAC: Michigan’s real primary \| The Listening Post |
+| 2026-09 | 9/11 Remembrance 25 Years Later | 2.670 | 0.037 | 0.005 | Pentagon (37); America (23); Trump (19); New York (18); Mamdani (17) | 25 Years Later: Remembering the Heroes of 9/11 |
+| 2026-09 | MAGA Mike Johnson political turmoil | 2.520 | 0.003 | 0.002 | Mike Johnson (8); MAGA Mike (2); House (2); Mike Johnson Warns (2); OMG (1) | Trump Keeps Making Mike Johnson's Life A Living Hell |
+| 2026-09 | Lindsay Clancy Murder Trial | 2.500 | 0.046 | 0.009 | Lindsay Clancy (262); Clancy (19); Lindsay Clancy Jury (13); Kevin Reddington (10); Lindsay Clancy Trial (9) | VERDICT WATCH: Lindsay Clancy Trial |
 
 
 Entities most named per topic (top 15 topics): see `topic_labels.csv` columns `top_persons` / `top_orgs`.
 
 | topic_id | label | top_persons | top_orgs |
 |---|---|---|---|
-| 0 | Iran War and Strait of Hormuz Tensions | Hormuz (1783); Trump (1199); Khamenei (251); Netanyahu (210); Donald Trump (187); Firstpost Live (164); Moj... | Trump (2199); Vantage on Firstpost (295); Firstpost America (176); World News (144); Pentagon (142); Suprem... |
-| 2 | Israel-Palestine Conflict Media | Netanyahu (433); Trump (82); Benjamin Netanyahu (47); Inside Story (40); Max Blumenthal (33); Ro Khanna (32... | Trump (134); Hamas (124); UN (77); REUTERS (30); Congress (24); Palestine Action (21); IDF (18); EU (18) |
-| 59 | Iran Conflict and Political Updates | Tom Llamas (186); Top Story (185); Michael Popok (19); Trump (18); Candace Owens (15); Erika Kirk (14); Tuc... | NBC News (185); Trump (85); GOP (18); FBI (13); Bloomberg (12); Candace (11); White House (10); MAGA (10) |
-| 3 | ICE Protests and Shootings | Tom Homan (42); Renee Good (42); Trump (39); JD Vance (19); Katie Pavlich (16); Homan (15); Kristi Noem (14... | Trump (214); DHS (84); REUTERS (39); ICE (35); TSA (34); FBI (28); White House (25); NewsNation Live (25) |
-| 1 | Shocking Events and Reactions | McEnany (27); Jesse Watters (8); Keane (8); Watters (7); Peter Doocy (6); Gen Keane (5); Ben (4); Turley (4) | INSANE (9); NEVER (7); WTF (7); BRUTAL (4); WoW (3); MTG (3); LEAKED (3); DISGUSTING (3) |
-| 4 | Ukraine-Russia War and Political Figures | Putin (1371); Zelensky (450); PUTIN (128); Trump (114); Vladimir Putin (52); Kyiv (51); Firstpost Live (47)... | NATO (347); EU (306); World News (298); Trump (159); CIA (66); Kremlin (66); REUTERS (55); Vantage on First... |
-| 40 | Trump's speeches and events | Trump (370); Donald Trump (167); Trump Speaks (74); Trump Delivers Remarks (39); Trump Holds (36); Trump Pa... | White House (178); Trump (130); TRUMP (23); World Economic Forum (23); Oval Office (21); House (17); Cabine... |
-| 13 | Modern Women and Feminism Debate | Debra Soh (9); Adam Carolla (4); Dating Apps (4); Bret Weinstein (4); Heather Heying (4); Pearl (4); Graham... | JLP (7); Modern Women (6); Excerpt (5); Global Dating Crisis (3); NHS (3); New York Times (2); Post Show Cl... |
-| 22 | Christian Nationalism and Politics | Jesus (70); Charlie Kirk (14); Trump (13); JENNY HOLLAND (12); James Talarico (11); Jesus Christ (11); Chri... | Trump (35); MLB (14); Church (14); JLP (10); HARNWELL (8); GOP (7); Catholic Church (6); MAGA Pastor (5) |
-| 6 | Trump and China political relations | Xi (222); Trump (167); Xi Jinping (114); Putin (87); Kim Jong Un (47); Hormuz (40); Donald Trump (39); Jian... | Trump (283); Vantage on Firstpost (71); REUTERS (47); China MoFA (43); World News (32); CCP (30); Firstpost... |
-| 98 | JLP Weekly Series | Harris Faulkner (28); Bret Weinstein (7); Heather Heying (7); JLP Thu (7); Arthur Brooks (6); Gad Saad (5);... | JLP (38); Chasing Life (11); Velshi Banned Book Club (8); Excerpt (4); DarkHorse (3); DEI (3); LOT (3); Nex... |
-| 9 | AI and Political Concerns | Sam Altman (36); Haslinda Amin (25); Joe Allen (23); Jensen Huang (21); Bernie Sanders (20); OpenAI (20); J... | AI (195); Pentagon (49); OpenAI (36); Vantage on Firstpost (35); Google (32); REUTERS (28); Trump (27); AI ... |
-| 7 | Trump vs Maduro Venezuela Conflict | Maduro (365); Trump (166); Nicolas Maduro (69); Nicolás Maduro (48); Donald Trump (23); Maduro Captured (14... | Maduro (345); Trump (265); REUTERS (76); CIA (33); UN (28); White House (26); Congress (26); NewsNation Liv... |
-| 5 | Trump Supreme Court Legal Issues | Trump (131); Trump PANICS (25); Lisa Cook (23); Trump STUNNED (22); Trump DOJ (20); Obama (18); Legal AF (1... | Supreme Court (584); Trump (431); Court (52); GOP (42); Fed (40); Justice Department (33); DOJ (27); Congre... |
-| 24 | Trump Meltdowns and Collapses | Trump PANICS (155); Trump (109); Donald Trump (60); Trump CRASHES (21); Trump Posts (21); Trump SPIRALS (18... | Trump (532); White House (72); GOP (62); OMG (33); MAGA (18); TRUMP (16); WH (16); Congress (16) |
+| 3 | Trump and Iran War Negotiations | Trump (1243); Donald Trump (232); Netanyahu (171); Hormuz (98); Putin (92); John Bolton (71); Khamenei (65)... | Trump (2257); White House (185); Vantage on Firstpost (135); TRUMP (111); GOP (83); Firstpost America (69);... |
+| 0 | ICE protests in Minneapolis | Alex Pretti (65); Tim Walz (59); Trump (58); Renee Good (54); Border Patrol (30); Jacob Frey (22); JD Vance... | Trump (258); DHS (116); REUTERS (46); FBI (44); ICE (35); White House (33); NewsNation Live (33); TSA (32) |
+| 2 | Israel and Palestine Conflict | Netanyahu (379); Trump (62); Benjamin Netanyahu (48); Inside Story (36); Ro Khanna (32); Max Blumenthal (31... | Trump (103); Hamas (86); UN (77); Congress (21); REUTERS (21); Palestine Action (20); Vantage on Firstpost ... |
+| 7 | Iran political unrest | Khamenei (191); Mojtaba Khamenei (96); Trump (49); Ayatollah Ali Khamenei (46); Ali Khamenei (43); Inside S... | Supreme (92); supreme (68); Trump (55); CIA (52); UN (47); Vantage on Firstpost (40); NewsNation Live (26);... |
+| 74 | Iran and Political Updates | Tom Llamas (176); Top Story (175); Trump (19); Michael Popok (13); Hormuz (12); Candace Owens (12); Erika K... | NBC News (175); Trump (92); GOP (17); Bloomberg (13); White House (11); MAGA (11); FBI (11); Candace (8) |
+| 1 | Shocking Events and Reactions | McEnany (33); Peter Doocy (6); Keane (6); Ben (5); Bongino (5); Watters (5); Trump (3); Nick Shirley (3) | Old School (35); INSANE (7); NEVER (6); WTF (6); BRUTAL (4); PBD (4); MTG (3); LEAKED (3) |
+| 60 | Trump delivering remarks | Trump (331); Donald Trump (159); Trump Speaks (75); Trump Delivers Remarks (40); Trump Holds (31); Trump Ho... | White House (173); Trump (97); House (29); Oval Office (19); GOP (17); Air Force One (14); Cabinet (12); NA... |
+| 4 | Ukraine-Russia War and Political Figures | Putin (1091); Zelensky (376); PUTIN (101); Trump (68); Kyiv (47); Firstpost Live (40); Vladimir Putin (33);... | NATO (282); World News (242); Times Now World (207); EU (156); Trump (90); CIA (74); Kremlin (54); UN (48) |
+| 15 | Christian Nationalism and Politics | Jesus (49); Charlie Kirk (16); JENNY HOLLAND (12); James Talarico (11); Pete Hegseth (9); Christian Nationa... | MLB (16); Trump (14); Church (13); HARNWELL (10); JLP (9); Catholic Church (7); Franklin (6); MAGA Pastor (5) |
+| 20 | Feminism and Gender Roles Debate | Debra Soh (9); Pearl (5); Dating Apps (4); Adam Carolla (3); Rachel Wilson (3); Gloria Steinem (3); Heather... | Modern Women (7); Excerpt (5); JLP (4); Taliban (3); Global Dating Crisis (3); NHS (3); New York Times (2);... |
+| 5 | Trump and China Relations | Xi (213); Trump (160); Xi Jinping (110); Putin (88); Kim Jong Un (47); Donald Trump (41); Firstpost Live (2... | Trump (256); Vantage on Firstpost (74); China MoFA (37); REUTERS (33); CCP (31); Firstpost America (27); Wo... |
+| 9 | Indian Politics and Delhi Riots | Rahul Gandhi (276); Suvendu Adhikari (225); Lok Sabha (128); Yogi Adityanath (126); Tamil Nadu (109); Rajna... | BJP (1150); Congress (473); TMC (284); CJP (259); Parliament (135); TVK (114); PM Modi (112); DMK (93) |
+| 8 | AI and Political Implications | Sam Altman (38); Haslinda Amin (27); Joe Allen (23); OpenAI (21); Jensen Huang (21); JOE ALLEN (19); Bernie... | AI (190); Pentagon (49); OpenAI (34); Vantage on Firstpost (33); Google (31); Trump (28); Meta (23); IPO (22) |
+| 25 | American History and Political Threats | Victor Davis Hanson (17); Trump (16); Obama (9); Ken Burns (9); George Washington (8); Jeffrey Sachs (6); E... | CIA (29); Trump (22); White House Founders Museum (9); NEWSMAX Daily (7); Congress (6); Firstpost America (... |
+| 34 | Black America and Racism Discussions | Jasmine Crockett (10); Roland Martin (10); Michelle Obama (7); James Talarico (6); Laura Loomer (6); Trump ... | Trump (15); JLP (15); Firstpost America (9); White Woman (7); Black America (6); MLK (6); Black Woman (6); ... |
 
 
 ## Stage 2: style dimensions
 
-Exploratory factor analysis on 2,029 creator x genre x month cells (>= 15 unique titles) x 74 features (dropped: 7, listed in the appendix). KMO = 0.725; Bartlett chi2 = 111,975 (p = 0). Parallel analysis retains 16 factors (Kaiser: 21); retained 12 (minres, oblimin), cumulative variance 47.4%. Scree data: `scree.csv` / `scree.png`.
+Exploratory factor analysis on 1,999 creator x genre x month cells (>= 15 unique titles) x 74 features (dropped: 7, listed in the appendix). KMO = 0.721; Bartlett chi2 = 109,531 (p = 0). Parallel analysis retains 16 factors (Kaiser: 21); retained 12 (minres, oblimin), cumulative variance 47.2%. Scree data: `scree.csv` / `scree.png`.
 
 
 Retained factors, named from their loadings (|loading| >= 0.4 shown; full table in the appendix):
@@ -229,36 +229,36 @@ Retained factors, named from their loadings (|loading| >= 0.4 shown; full table 
 
 | factor | name | variance | positive loadings | negative loadings |
 |---|---|---|---|---|
-| F1 | Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 5.3% | vader_compound_mean (+0.91), vader_pos_mean (+0.47) | vader_neg_mean (-0.76), shock_word_p100 (-0.74), violence_verb_p100 (-0.64), curiosity_lex_p100 (-0.40) |
-| F2 | Clause headline vs noun-phrase (finite verbs, tense) | 4.8% | has_finite_verb_p100 (+0.91), present_tense_p100 (+0.74), past_tense_p100 (+0.54), verb_share_mean (+0.51),... | propn_share_mean (-0.48) |
-| F3 | Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 4.7% | lead_colon_label_p100 (+0.85), lead_live_p100 (+0.82), colon_p100 (+0.79), formulaic_p100 (+0.48) | entity_first_p100 (-0.59) |
-| F4 | Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 4.6% | discourse_marker_p100 (+0.84), trailing_ellipsis_p100 (+0.82), ellipsis_p100 (+0.71), contraction_p100 (+0.... |  |
-| F5 | Question and explainer framing (why, what, ?) | 4.5% | q_word_start_p100 (+0.95), wh_any_p100 (+0.85), why_marker_p100 (+0.79), q_mark_p100 (+0.46) |  |
-| F6 | Person-centred (named people) | 4.3% | n_person_p100 (+0.99), has_person_p100 (+0.94) |  |
-| F7 | Descriptive news prose vs title-case (nouns, adjectives, places) | 4.2% | noun_share_mean (+0.81), adj_share_mean (+0.52), n_gpe_p100 (+0.45) | cap_token_share_mean (-0.72), negation_p100 (-0.41) |
-| F8 | Numeric and dated (digits, years) | 3.7% | num_share_mean (+0.95), digit_p100 (+0.85), year_mention_p100 (+0.68) |  |
-| F9 | ALL-CAPS shouting | 3.4% | allcaps_word_share_mean (+0.94), full_caps_title_p100 (+0.86), has_allcaps_word_p100 (+0.44) |  |
+| F1 | Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 5.2% | vader_compound_mean (+0.91), vader_pos_mean (+0.45) | vader_neg_mean (-0.76), shock_word_p100 (-0.75), violence_verb_p100 (-0.64) |
+| F2 | +has_finite_verb +present_tense +verb_share +past_tense | 4.9% | has_finite_verb_p100 (+0.91), present_tense_p100 (+0.73), verb_share_mean (+0.54), past_tense_p100 (+0.53),... | propn_share_mean (-0.48) |
+| F3 | Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 4.7% | lead_colon_label_p100 (+0.84), lead_live_p100 (+0.82), colon_p100 (+0.80), formulaic_p100 (+0.47), adv_shar... | entity_first_p100 (-0.60) |
+| F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | 4.5% | trailing_ellipsis_p100 (+0.84), discourse_marker_p100 (+0.82), ellipsis_p100 (+0.73), contraction_p100 (+0.... |  |
+| F5 | Question and explainer framing (why, what, ?) | 4.4% | q_word_start_p100 (+0.96), wh_any_p100 (+0.84), why_marker_p100 (+0.78), q_mark_p100 (+0.48) |  |
+| F6 | Person-centred (named people) | 4.2% | n_person_p100 (+0.97), has_person_p100 (+0.96) |  |
+| F7 | Descriptive news prose vs title-case (nouns, adjectives, places) | 4.1% | noun_share_mean (+0.80), adj_share_mean (+0.53), n_gpe_p100 (+0.42) | cap_token_share_mean (-0.71), negation_p100 (-0.40) |
+| F8 | Numeric and dated (digits, years) | 3.6% | num_share_mean (+0.95), digit_p100 (+0.83), year_mention_p100 (+0.66) |  |
+| F9 | ALL-CAPS shouting | 3.5% | allcaps_word_share_mean (+0.95), full_caps_title_p100 (+0.84), has_allcaps_word_p100 (+0.47) |  |
 | F10 | Quoted speech | 3.2% | quoted_speech_p100 (+0.93), quotes_p100 (+0.91) |  |
-| F11 | Long, upbeat, abstract (length, positive words, nominalisations) | 2.5% | vader_pos_mean (+0.53), n_chars_mean (+0.52), nominalisation_p100 (+0.42) |  |
-| F12 | Modal and future speculation (will, could, we) | 2.3% | future_will_p100 (+0.54), modal_p100 (+0.53), first_pl_p100 (+0.42) |  |
+| F11 | +n_chars +vader_pos +nominalisation +n_org | 2.6% | n_chars_mean (+0.55), vader_pos_mean (+0.53), nominalisation_p100 (+0.42), n_org_p100 (+0.40) |  |
+| F12 | +first_pl +future_will +modal | 2.3% | first_pl_p100 (+0.47), future_will_p100 (+0.44), modal_p100 (+0.41) |  |
 
 
 Factor correlations (oblimin):
 
 | factor | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| F1 | 1.00 | -0.07 | -0.03 | 0.09 | 0.11 | -0.06 | -0.17 | 0.25 | -0.27 | -0.07 | 0.13 | 0.10 |
-| F2 | -0.07 | 1.00 | 0.06 | 0.08 | -0.04 | -0.08 | -0.07 | -0.29 | 0.22 | 0.09 | 0.20 | -0.04 |
-| F3 | -0.03 | 0.06 | 1.00 | -0.07 | 0.05 | -0.16 | -0.06 | 0.18 | 0.03 | -0.04 | 0.01 | -0.11 |
-| F4 | 0.09 | 0.08 | -0.07 | 1.00 | 0.04 | -0.01 | 0.07 | -0.01 | 0.15 | 0.23 | -0.16 | 0.21 |
-| F5 | 0.11 | -0.04 | 0.05 | 0.04 | 1.00 | 0.01 | -0.05 | 0.02 | -0.18 | -0.07 | 0.06 | 0.05 |
-| F6 | -0.06 | -0.08 | -0.16 | -0.01 | 0.01 | 1.00 | 0.07 | -0.15 | 0.11 | 0.12 | 0.07 | 0.01 |
-| F7 | -0.17 | -0.07 | -0.06 | 0.07 | -0.05 | 0.07 | 1.00 | -0.09 | 0.12 | 0.08 | -0.09 | 0.08 |
-| F8 | 0.25 | -0.29 | 0.18 | -0.01 | 0.02 | -0.15 | -0.09 | 1.00 | -0.21 | -0.06 | -0.18 | 0.12 |
-| F9 | -0.27 | 0.22 | 0.03 | 0.15 | -0.18 | 0.11 | 0.12 | -0.21 | 1.00 | 0.26 | -0.22 | 0.10 |
-| F10 | -0.07 | 0.09 | -0.04 | 0.23 | -0.07 | 0.12 | 0.08 | -0.06 | 0.26 | 1.00 | -0.08 | 0.09 |
-| F11 | 0.13 | 0.20 | 0.01 | -0.16 | 0.06 | 0.07 | -0.09 | -0.18 | -0.22 | -0.08 | 1.00 | -0.17 |
-| F12 | 0.10 | -0.04 | -0.11 | 0.21 | 0.05 | 0.01 | 0.08 | 0.12 | 0.10 | 0.09 | -0.17 | 1.00 |
+| F1 | 1.00 | -0.07 | -0.04 | 0.10 | 0.12 | -0.06 | -0.15 | 0.25 | -0.27 | -0.06 | 0.11 | 0.05 |
+| F2 | -0.07 | 1.00 | 0.05 | 0.09 | -0.04 | -0.09 | -0.06 | -0.28 | 0.22 | 0.07 | 0.20 | -0.05 |
+| F3 | -0.04 | 0.05 | 1.00 | -0.07 | 0.06 | -0.16 | -0.05 | 0.19 | 0.05 | -0.05 | -0.01 | -0.13 |
+| F4 | 0.10 | 0.09 | -0.07 | 1.00 | 0.03 | -0.02 | 0.07 | -0.00 | 0.15 | 0.23 | -0.17 | 0.20 |
+| F5 | 0.12 | -0.04 | 0.06 | 0.03 | 1.00 | 0.01 | -0.06 | 0.02 | -0.20 | -0.06 | 0.06 | 0.07 |
+| F6 | -0.06 | -0.09 | -0.16 | -0.02 | 0.01 | 1.00 | 0.07 | -0.15 | 0.10 | 0.12 | 0.08 | 0.03 |
+| F7 | -0.15 | -0.06 | -0.05 | 0.07 | -0.06 | 0.07 | 1.00 | -0.10 | 0.11 | 0.10 | -0.07 | 0.11 |
+| F8 | 0.25 | -0.28 | 0.19 | -0.00 | 0.02 | -0.15 | -0.10 | 1.00 | -0.19 | -0.06 | -0.19 | 0.06 |
+| F9 | -0.27 | 0.22 | 0.05 | 0.15 | -0.20 | 0.10 | 0.11 | -0.19 | 1.00 | 0.24 | -0.21 | 0.09 |
+| F10 | -0.06 | 0.07 | -0.05 | 0.23 | -0.06 | 0.12 | 0.10 | -0.06 | 0.24 | 1.00 | -0.09 | 0.11 |
+| F11 | 0.11 | 0.20 | -0.01 | -0.17 | 0.06 | 0.08 | -0.07 | -0.19 | -0.21 | -0.09 | 1.00 | -0.16 |
+| F12 | 0.05 | -0.05 | -0.13 | 0.20 | 0.07 | 0.03 | 0.11 | 0.06 | 0.09 | 0.11 | -0.16 | 1.00 |
 
 
 Do the factors map onto the candidate labels? (creator-level Spearman r between the LLM rating aggregated to creator x genre and the raw factor score; present >= 0.5, partial 0.3-0.5, absent < 0.3; 'merged' = two candidates land on the same factor):
@@ -266,124 +266,124 @@ Do the factors map onto the candidate labels? (creator-level Spearman r between 
 
 | candidate | best_factor | factor_auto_name | creator_level_r | second_factor | second_r | verdict |
 |---|---|---|---|---|---|---|
-| Sensational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | -0.711 | F5 | -0.329 | merged: Sensational, Critical, Analytical/Informational |
-| Critical | F1 | +vader_compound -vader_neg -shock_word -violence_verb | -0.489 | F5 | -0.182 | merged: Sensational, Critical, Analytical/Informational |
-| Analytical/Informational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | 0.433 | F5 | 0.425 | merged: Sensational, Critical, Analytical/Informational |
-| Educational | F5 | +q_word_start +wh_any +why_marker +q_mark | 0.392 | F1 | 0.320 | partial |
-| Conversational | F4 | +discourse_marker +trailing_ellipsis +ellipsis +contraction | 0.177 | F1 | 0.170 | absent |
-| Humor | F2 | +has_finite_verb +present_tense +past_tense +verb_share | 0.082 | F4 | 0.063 | absent |
+| Sensational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | -0.709 | F5 | -0.322 | merged: Sensational, Critical, Analytical/Informational |
+| Critical | F1 | +vader_compound -vader_neg -shock_word -violence_verb | -0.494 | F5 | -0.167 | merged: Sensational, Critical, Analytical/Informational |
+| Analytical/Informational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | 0.422 | F5 | 0.419 | merged: Sensational, Critical, Analytical/Informational |
+| Educational | F5 | +q_word_start +wh_any +why_marker +q_mark | 0.384 | F1 | 0.312 | partial |
+| Conversational | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | 0.174 | F1 | 0.166 | absent |
+| Humor | F2 | +has_finite_verb +present_tense +verb_share +past_tense | 0.077 | F4 | 0.067 | absent |
 
 
 LLM rating vs factor score, creator level (Spearman, n = 318 creator x genre groups with >= 5 rated titles):
 
 | llm | F1 | F10 | F11 | F12 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| analytical | 0.43 | 0.23 | 0.11 | 0.38 | -0.00 | 0.21 | -0.13 | 0.42 | 0.01 | 0.01 | 0.18 | -0.26 |
-| conversational | 0.17 | -0.02 | -0.02 | -0.05 | 0.07 | -0.09 | 0.18 | 0.12 | -0.14 | 0.00 | -0.08 | 0.01 |
-| critical | -0.49 | 0.05 | 0.06 | -0.13 | 0.07 | -0.18 | 0.05 | -0.18 | 0.09 | -0.09 | -0.14 | 0.07 |
-| curiosity_gap | -0.03 | -0.08 | -0.12 | -0.09 | 0.11 | -0.09 | 0.17 | 0.14 | -0.16 | -0.17 | -0.15 | 0.17 |
-| educational | 0.32 | 0.13 | 0.05 | 0.17 | 0.02 | 0.03 | 0.01 | 0.39 | -0.11 | -0.05 | 0.06 | -0.06 |
-| humor | -0.02 | 0.02 | -0.01 | -0.05 | 0.08 | -0.06 | 0.06 | -0.04 | -0.02 | 0.05 | -0.03 | -0.02 |
-| outrage | -0.61 | -0.06 | 0.03 | -0.16 | 0.10 | -0.19 | 0.09 | -0.25 | -0.01 | -0.08 | -0.23 | 0.21 |
-| sensational | -0.71 | -0.04 | 0.07 | -0.20 | 0.11 | -0.15 | 0.15 | -0.33 | 0.08 | -0.05 | -0.21 | 0.31 |
+| analytical | 0.42 | 0.25 | 0.14 | 0.35 | 0.02 | 0.20 | -0.17 | 0.42 | -0.01 | -0.02 | 0.16 | -0.27 |
+| conversational | 0.17 | -0.03 | -0.02 | -0.08 | 0.05 | -0.09 | 0.17 | 0.10 | -0.13 | -0.00 | -0.07 | 0.00 |
+| critical | -0.49 | 0.05 | 0.04 | -0.15 | 0.07 | -0.17 | 0.05 | -0.17 | 0.10 | -0.07 | -0.15 | 0.05 |
+| curiosity_gap | -0.03 | -0.06 | -0.14 | -0.13 | 0.10 | -0.08 | 0.17 | 0.14 | -0.15 | -0.15 | -0.14 | 0.17 |
+| educational | 0.31 | 0.16 | 0.06 | 0.14 | 0.03 | 0.01 | -0.02 | 0.38 | -0.14 | -0.06 | 0.03 | -0.07 |
+| humor | -0.02 | 0.02 | -0.02 | -0.06 | 0.08 | -0.06 | 0.07 | -0.04 | -0.02 | 0.06 | -0.03 | -0.02 |
+| outrage | -0.61 | -0.07 | -0.01 | -0.17 | 0.10 | -0.18 | 0.10 | -0.24 | -0.00 | -0.07 | -0.22 | 0.21 |
+| sensational | -0.71 | -0.05 | 0.02 | -0.22 | 0.10 | -0.15 | 0.17 | -0.32 | 0.10 | -0.03 | -0.18 | 0.30 |
 
 
-LLM rating vs factor score, title level (Spearman, n = 3,000 rated titles):
+LLM rating vs factor score, title level (Spearman, n = 2,854 rated titles):
 
 | llm | F1 | F10 | F11 | F12 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| analytical | 0.19 | 0.11 | 0.06 | 0.10 | -0.04 | 0.09 | -0.02 | 0.22 | 0.02 | 0.04 | 0.09 | -0.11 |
-| conversational | 0.15 | -0.02 | 0.03 | 0.01 | 0.03 | -0.03 | 0.14 | 0.07 | -0.08 | -0.04 | -0.03 | 0.06 |
-| critical | -0.28 | 0.03 | 0.03 | -0.03 | 0.06 | -0.15 | -0.08 | -0.15 | 0.09 | -0.01 | -0.05 | -0.01 |
-| curiosity_gap | 0.02 | 0.01 | -0.01 | -0.00 | 0.05 | -0.00 | 0.09 | 0.05 | -0.06 | -0.05 | -0.02 | 0.02 |
-| educational | 0.15 | 0.08 | 0.06 | 0.02 | -0.01 | 0.04 | 0.04 | 0.20 | -0.02 | 0.02 | 0.05 | -0.03 |
-| humor | 0.04 | 0.02 | 0.02 | -0.00 | -0.00 | -0.02 | -0.02 | -0.01 | -0.03 | -0.00 | -0.01 | -0.02 |
-| outrage | -0.34 | 0.01 | 0.03 | -0.03 | 0.10 | -0.08 | -0.02 | -0.13 | -0.03 | -0.03 | -0.07 | 0.05 |
-| sensational | -0.37 | 0.01 | 0.04 | -0.04 | 0.11 | -0.02 | 0.00 | -0.13 | 0.03 | -0.04 | -0.02 | 0.13 |
+| analytical | 0.18 | 0.11 | 0.07 | 0.10 | -0.03 | 0.09 | -0.03 | 0.21 | 0.01 | 0.02 | 0.07 | -0.12 |
+| conversational | 0.15 | -0.03 | 0.04 | 0.00 | 0.02 | -0.04 | 0.13 | 0.06 | -0.07 | -0.04 | -0.04 | 0.05 |
+| critical | -0.28 | 0.03 | 0.02 | -0.03 | 0.06 | -0.15 | -0.08 | -0.15 | 0.10 | -0.00 | -0.03 | -0.02 |
+| curiosity_gap | 0.02 | 0.02 | -0.01 | -0.01 | 0.05 | -0.00 | 0.09 | 0.05 | -0.06 | -0.05 | -0.01 | 0.01 |
+| educational | 0.15 | 0.08 | 0.06 | 0.01 | -0.01 | 0.05 | 0.04 | 0.20 | -0.03 | 0.01 | 0.03 | -0.03 |
+| humor | 0.04 | 0.02 | 0.03 | -0.01 | 0.00 | -0.01 | -0.01 | -0.01 | -0.02 | -0.01 | -0.02 | -0.01 |
+| outrage | -0.33 | 0.01 | 0.02 | -0.03 | 0.10 | -0.08 | -0.02 | -0.13 | -0.03 | -0.02 | -0.07 | 0.05 |
+| sensational | -0.36 | 0.02 | 0.03 | -0.04 | 0.10 | -0.02 | 0.01 | -0.13 | 0.04 | -0.03 | -0.00 | 0.13 |
 
 
-Test-retest reliability of the LLM rater (n = 300 titles rated twice in re-shuffled batches, same model, temperature 0):
+Test-retest reliability of the LLM rater (n = 289 titles rated twice in re-shuffled batches, same model, temperature 0):
 
 | dimension | n | exact_agreement | within_1 | spearman_r | weighted_kappa | kappa |
 |---|---|---|---|---|---|---|
-| sensational | 300 | 0.623 | 0.783 | 0.743 | 0.742 |  |
-| critical | 300 | 0.713 | 0.753 | 0.580 | 0.581 |  |
-| analytical | 300 | 0.583 | 0.773 | 0.600 | 0.561 |  |
-| educational | 300 | 0.823 | 0.953 | 0.268 | 0.251 |  |
-| conversational | 300 | 0.903 | 0.947 | 0.518 | 0.659 |  |
-| humor | 300 | 0.993 |  |  |  | 0.000 |
-| curiosity_gap | 300 | 0.980 |  |  |  | 0.490 |
-| outrage | 300 | 0.757 |  |  |  | 0.497 |
-| format_llm | 300 | 0.797 |  |  |  | 0.591 |
+| sensational | 289 | 0.616 | 0.782 | 0.740 | 0.737 |  |
+| critical | 289 | 0.709 | 0.751 | 0.582 | 0.585 |  |
+| analytical | 289 | 0.581 | 0.768 | 0.598 | 0.552 |  |
+| educational | 289 | 0.824 | 0.952 | 0.251 | 0.236 |  |
+| conversational | 289 | 0.900 | 0.945 | 0.496 | 0.632 |  |
+| humor | 289 | 0.993 |  |  |  | 0.000 |
+| curiosity_gap | 289 | 0.979 |  |  |  | 0.390 |
+| outrage | 289 | 0.754 |  |  |  | 0.492 |
+| format_llm | 289 | 0.796 |  |  |  | 0.590 |
 
 
 Topic control: share of variance in each factor score explained by topic (title level, balanced subset) and how much creator-level variance topic mix accounts for:
 
 | factor | n_topics | title_level_r2_topic | creator_level_r2_topic | creator_level_corr_raw_controlled | auto_name |
 |---|---|---|---|---|---|
-| F1 | 236 | 0.127 | 0.471 | 0.943 | +vader_compound -vader_neg -shock_word -violence_verb |
-| F2 | 236 | 0.057 | 0.280 | 0.954 | +has_finite_verb +present_tense +past_tense +verb_share |
-| F3 | 236 | 0.123 | 0.321 | 0.969 | +lead_colon_label +lead_live +colon -entity_first |
-| F4 | 236 | 0.072 | 0.124 | 0.978 | +discourse_marker +trailing_ellipsis +ellipsis +contraction |
-| F5 | 236 | 0.039 | 0.222 | 0.981 | +q_word_start +wh_any +why_marker +q_mark |
-| F6 | 236 | 0.173 | 0.393 | 0.955 | +n_person +has_person |
-| F7 | 236 | 0.111 | 0.274 | 0.957 | +noun_share -cap_token_share +adj_share +n_gpe |
-| F8 | 236 | 0.176 | 0.681 | 0.801 | +num_share +digit +year_mention |
-| F9 | 236 | 0.054 | 0.164 | 0.981 | +allcaps_word_share +full_caps_title +has_allcaps_word |
-| F10 | 236 | 0.049 | 0.207 | 0.955 | +quoted_speech +quotes |
-| F11 | 236 | 0.086 | 0.272 | 0.956 | +vader_pos +n_chars +nominalisation |
-| F12 | 236 | 0.089 | 0.429 | 0.895 | +future_will +modal +first_pl |
+| F1 | 224 | 0.127 | 0.480 | 0.940 | +vader_compound -vader_neg -shock_word -violence_verb |
+| F2 | 224 | 0.060 | 0.274 | 0.960 | +has_finite_verb +present_tense +verb_share +past_tense |
+| F3 | 224 | 0.121 | 0.316 | 0.968 | +lead_colon_label +lead_live +colon -entity_first |
+| F4 | 224 | 0.150 | 0.438 | 0.972 | +trailing_ellipsis +discourse_marker +ellipsis +contraction |
+| F5 | 224 | 0.037 | 0.216 | 0.982 | +q_word_start +wh_any +why_marker +q_mark |
+| F6 | 224 | 0.183 | 0.385 | 0.950 | +n_person +has_person |
+| F7 | 224 | 0.114 | 0.264 | 0.958 | +noun_share -cap_token_share +adj_share +n_gpe |
+| F8 | 224 | 0.256 | 0.691 | 0.843 | +num_share +digit +year_mention |
+| F9 | 224 | 0.061 | 0.142 | 0.983 | +allcaps_word_share +full_caps_title +has_allcaps_word |
+| F10 | 224 | 0.048 | 0.208 | 0.959 | +quoted_speech +quotes |
+| F11 | 224 | 0.086 | 0.279 | 0.961 | +n_chars +vader_pos +nominalisation +n_org |
+| F12 | 224 | 0.116 | 0.506 | 0.880 | +first_pl +future_will +modal |
 
 
 Channel-group medians of topic-controlled scores, videos (non-low-n creators):
 
 | group | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| left | 105 | 0.13 | -0.08 | -0.31 | -0.13 | 0.14 | -0.25 | -0.53 | -0.19 | -0.27 | -0.44 | -0.30 | -0.11 |
-| neutral | 38 | 0.52 | -0.14 | -0.33 | -0.12 | 0.07 | -0.21 | -0.12 | 0.01 | -0.38 | -0.10 | -0.10 | -0.03 |
-| right | 96 | 0.19 | 0.12 | -0.28 | -0.09 | 0.22 | -0.24 | -0.67 | -0.17 | -0.28 | -0.45 | -0.11 | -0.20 |
+| left | 105 | 0.12 | -0.07 | -0.29 | -0.14 | 0.10 | -0.25 | -0.54 | -0.21 | -0.33 | -0.44 | -0.30 | -0.08 |
+| neutral | 37 | 0.51 | -0.09 | -0.36 | -0.11 | 0.07 | -0.22 | -0.26 | 0.01 | -0.35 | -0.09 | -0.12 | -0.03 |
+| right | 94 | 0.17 | 0.08 | -0.29 | -0.08 | 0.18 | -0.29 | -0.65 | -0.14 | -0.27 | -0.41 | -0.17 | -0.29 |
 
 
 Channel-group medians of topic-controlled scores, streams (non-low-n creators):
 
 | group | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| left | 33 | -0.16 | -0.41 | -0.24 | -0.21 | -0.28 | 0.61 | -0.37 | -0.01 | -0.45 | -0.54 | 0.12 | -0.06 |
-| neutral | 16 | 0.28 | 0.15 | 0.84 | -0.10 | -0.34 | 0.17 | 0.44 | 0.17 | -0.42 | -0.68 | -0.60 | -0.20 |
-| right | 30 | 0.16 | -0.37 | -0.26 | -0.10 | -0.28 | 0.02 | -0.59 | -0.02 | -0.42 | -0.44 | 0.18 | -0.12 |
+| left | 33 | -0.24 | -0.42 | -0.23 | -0.18 | -0.32 | 0.68 | -0.43 | -0.07 | -0.42 | -0.58 | 0.03 | -0.03 |
+| neutral | 16 | 0.28 | 0.14 | 0.91 | -0.10 | -0.36 | 0.13 | 0.35 | 0.16 | -0.43 | -0.67 | -0.64 | 0.06 |
+| right | 28 | 0.14 | -0.33 | -0.25 | -0.10 | -0.28 | -0.09 | -0.64 | 0.10 | -0.37 | -0.44 | 0.13 | -0.16 |
 
 
 Creators at the extremes of each topic-controlled dimension (videos):
 
 | factor | name | highest (videos) | lowest (videos) |
 |---|---|---|---|
-| F1 | Positive tone vs outrage (shock words, violence verbs, negative sentiment) | @CoreyGilShusterAskProject, @NPR, @turningpointusa, @POLITICO, @RonPlacone | @DannyHaiphongYT, @BlackConservativePerspective, @katiephangnews, @DoubleDownNews, @bennyjohnson |
-| F2 | Clause headline vs noun-phrase (finite verbs, tense) | @moreperfectunion, @Tim_Black, @CoreyGilShusterAskProject, @MattWalsh, @bbrettcooper | @joerogan, @FleccasTalks, @TimDillonShow, @BelleRanch, @newdiscourses |
-| F3 | Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | @RSBN, @aaronparnas1, @TimesNowWorld, @DailyDenims, @LukeBeasley | @DylanBurnsLIVE, @ANINewsIndia, @thewarningwithsteveschmidt, @lovettorleaveitpodcast, @thegrayzone7996 |
-| F4 | Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | @BelleRanch, @AsmonTV, @bennyjohnson, https://rumble.com/c/russellbrand, @harryjsisson | @thewarningwithsteveschmidt, @ActualJusticeWarrior, @FleccasTalks, @OutKick, @joerogan |
-| F5 | Question and explainer framing (why, what, ?) | @TheEconomist, @wsj, @nationalreview, @TheDailyBeast, @CoreyGilShusterAskProject | @AndWeKnowOfficial-o9b, @CashJordan, @BlackConservativePerspective, @ActualJusticeWarrior, @Timcast |
-| F6 | Person-centred (named people) | @BadFaithPodcast, @DannyHaiphongYT, @JamarlThomas, @fastpoliticspodcast, @Semafor | @CoreyGilShusterAskProject, @GeopoliticalEconomyReport, @moreperfectunion, @dineshdsouza, @thedavidpakmanshow |
-| F7 | Descriptive news prose vs title-case (nouns, adjectives, places) | @aljazeeraenglish, @Reuters, @CBSNews, @USATODAY, @thegrayzone7996 | @moreperfectunion, @DrSteveTurleyTV, @jlptalk, @DoubleDownNews, @PiersMorganUncensored |
-| F8 | Numeric and dated (digits, years) | @HasanAbiVODs3, @60minutes, @Firstpost, @Forbes, @jlptalk | @PoliticsGirl, @triggerpod, @TheEconomist, @UnHerd, @LukeBeasley |
-| F9 | ALL-CAPS shouting | @JacksonHinkleOfficial, @FleccasTalks, @AndWeKnowOfficial-o9b, @katiephangnews, @TimcastNews | @joerogan, @JackCocchiarellaShow, @TheHumanistReport, @TheDailyBeast, @triggerpod |
-| F10 | Quoted speech | @PiersMorganUncensored, @timesofindia, @jlptalk, @CashJordan, @msnow | @DrSteveTurleyTV, @ZeihanonGeopolitics, @PartOfTheProblem, @SabbySabs, @ThePodcastoftheLotusEaters |
-| F11 | Long, upbeat, abstract (length, positive words, nominalisations) | @AndWeKnowOfficial-o9b, https://rumble.com/c/BannonsWarRoom, @BlackConservativePerspective, @DrSteveTurleyT... | @SydneyWatson, @thewarningwithsteveschmidt, @PartOfTheProblem, @joerogan, @AlexStein99 |
-| F12 | Modal and future speculation (will, could, we) | @moreperfectunion, @thewarningwithsteveschmidt, @BelleRanch, @CoreyGilShusterAskProject, @TheEconomist | @AsmonTV, @destinyhqclips, @bennyjohnson, @SydneyWatson, @The_Crucible |
+| F1 | Positive tone vs outrage (shock words, violence verbs, negative sentiment) | @NPR, @AndWeKnowOfficial-o9b, @turningpointusa, @MichaelMaliceofficial, @TimDillonShow | @DannyHaiphongYT, @BlackConservativePerspective, @katiephangnews, @DoubleDownNews, @TheDamageReport |
+| F2 | +has_finite_verb +present_tense +verb_share +past_tense | @moreperfectunion, @Tim_Black, @UnHerd, @MattWalsh, @X22Report-y5y | @joerogan, @FleccasTalks, @TimDillonShow, @newdiscourses, @RobertGouveiaEsq |
+| F3 | Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | @RSBN, @aaronparnas1, @TimesNowWorld, @LukeBeasley, @DailyDenims | @ANINewsIndia, @DylanBurnsLIVE, @thewarningwithsteveschmidt, @lovettorleaveitpodcast, @thegrayzone7996 |
+| F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | @BelleRanch, @AsmonTV, @bennyjohnson, https://rumble.com/c/russellbrand, @harryjsisson | @thewarningwithsteveschmidt, @ActualJusticeWarrior, @FleccasTalks, @joerogan, @TimcastNews |
+| F5 | Question and explainer framing (why, what, ?) | @TheEconomist, @wsj, @nationalreview, @TheDailyBeast, @nytimes | @CashJordan, @ActualJusticeWarrior, @BlackConservativePerspective, @SydneyWatson, @Timcast |
+| F6 | Person-centred (named people) | @BadFaithPodcast, @DannyHaiphongYT, @JamarlThomas, @fastpoliticspodcast, @RealAlexClark | @moreperfectunion, @GeopoliticalEconomyReport, @dineshdsouza, @ajplus, @TheVaushPit |
+| F7 | Descriptive news prose vs title-case (nouns, adjectives, places) | @aljazeeraenglish, @Reuters, @thegrayzone7996, @CBSNews, @USATODAY | @moreperfectunion, @jlptalk, @DrSteveTurleyTV, @MattWalsh, @DoubleDownNews |
+| F8 | Numeric and dated (digits, years) | @HasanAbiVODs3, @60minutes, @Firstpost, @Forbes, @ponderingpolitics | @PoliticsGirl, @TheEconomist, @UnHerd, @triggerpod, @GeopoliticalEconomyReport |
+| F9 | ALL-CAPS shouting | @JacksonHinkleOfficial, @AndWeKnowOfficial-o9b, @katiephangnews, @FleccasTalks, @TheQuartering | @TheDamageReport, @JackCocchiarellaShow, @joerogan, @TheDailyBeast, @TheHumanistReport |
+| F10 | Quoted speech | @PiersMorganUncensored, @timesofindia, @jlptalk, @CashJordan, @msnow | @ZeihanonGeopolitics, @PartOfTheProblem, @DrSteveTurleyTV, @UnHerd, @SabbySabs |
+| F11 | +n_chars +vader_pos +nominalisation +n_org | @AndWeKnowOfficial-o9b, https://rumble.com/c/BannonsWarRoom, @BlackConservativePerspective, @jlptalk, @RonP... | @SydneyWatson, @joerogan, @thewarningwithsteveschmidt, @PartOfTheProblem, @UnHerd |
+| F12 | +first_pl +future_will +modal | @thewarningwithsteveschmidt, @BelleRanch, @moreperfectunion, @TheEconomist, https://rumble.com/c/BannonsWar... | @AsmonTV, @bennyjohnson, @The_Crucible, @destinyhqclips, @PiscoLitty |
 
 
 Lexical diversity: Heaps' exponent and Zipf exponent on 20 subsamples per creator x genre; rank correlations across subsample sizes (sample-size sensitivity):
 
 | measure | n_a | n_b | n_groups | spearman | mean_a | mean_b |
 |---|---|---|---|---|---|---|
-| heaps_beta | 1000 | 1500 | 215 | 0.995 | 0.829 | 0.817 |
-| zipf | 1000 | 1500 | 215 | 0.971 | 0.687 | 0.718 |
-| heaps_beta | 1500 | 3000 | 143 | 0.991 | 0.820 | 0.798 |
-| zipf | 1500 | 3000 | 143 | 0.919 | 0.719 | 0.770 |
-| heaps_beta | 1000 | 3000 | 143 | 0.978 | 0.831 | 0.798 |
-| zipf | 1000 | 3000 | 143 | 0.817 | 0.687 | 0.770 |
+| heaps_beta | 1000 | 1500 | 212 | 0.996 | 0.828 | 0.817 |
+| zipf | 1000 | 1500 | 212 | 0.971 | 0.688 | 0.719 |
+| heaps_beta | 1500 | 3000 | 139 | 0.991 | 0.819 | 0.798 |
+| zipf | 1500 | 3000 | 139 | 0.927 | 0.719 | 0.770 |
+| heaps_beta | 1000 | 3000 | 139 | 0.979 | 0.830 | 0.798 |
+| zipf | 1000 | 3000 | 139 | 0.828 | 0.687 | 0.770 |
 
 
-Heaps' exponent at 1,500 tokens, videos (n = 164): lowest (most repetitive vocabulary) @harryjsisson, @ponderingpolitics, @LukeBeasley, @JackCocchiarellaShow, @briantylercohen; highest @nypost, @MLChristiansen, @Reuters, @Styxhexenhammer666, @FoxNewsChannelClips. Mean 0.822, sd 0.035.
+Heaps' exponent at 1,500 tokens, videos (n = 165): lowest (most repetitive vocabulary) @harryjsisson, @LukeBeasley, @briantylercohen, @ponderingpolitics, @adammockler; highest @Reuters, @MLChristiansen, @ANINewsIndia, @FoxNewsChannelClips, @nypost. Mean 0.821, sd 0.036.
 
 
 ## Stage 3: formats and hooks
@@ -392,76 +392,76 @@ Hook classifier (StandardScaler + LogisticRegression(class_weight=balanced); fea
 
 | hook | n_train | n_test | base_rate | C | holdout_accuracy | holdout_balanced_accuracy | holdout_f1 | holdout_auc | holdout_kappa |
 |---|---|---|---|---|---|---|---|---|---|
-| curiosity_gap | 2400 | 600 | 0.021 | 0.300 | 0.953 | 0.609 | 0.176 | 0.736 | 0.155 |
-| outrage | 2400 | 600 | 0.572 | 0.030 | 0.762 | 0.760 | 0.787 | 0.843 | 0.517 |
-| humor | 2400 | 600 | 0.004 | 0.030 | 0.997 | 0.500 | 0.000 | 0.729 | 0.000 |
+| curiosity_gap | 2283 | 571 | 0.021 | 0.030 | 0.956 | 0.570 | 0.138 | 0.694 | 0.116 |
+| outrage | 2283 | 571 | 0.574 | 0.030 | 0.778 | 0.773 | 0.806 | 0.847 | 0.545 |
+| humor | 2283 | 571 | 0.004 | 0.030 | 0.998 | 0.750 | 0.667 | 0.939 | 0.666 |
 
 
 Share of titles per category, videos (mean of creator shares, non-low-n creators):
 
 | group | n_creators | question | breaking_live | episode_show | interview_guest | reaction | confrontation | listicle | howto_explainer | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| left | 105.00 | 0.16 | 0.03 | 0.03 | 0.10 | 0.03 | 0.08 | 0.00 | 0.08 | 0.03 | 0.64 | 0.00 |
-| neutral | 38.00 | 0.16 | 0.01 | 0.07 | 0.12 | 0.02 | 0.07 | 0.00 | 0.07 | 0.02 | 0.36 | 0.00 |
-| right | 96.00 | 0.16 | 0.02 | 0.08 | 0.08 | 0.02 | 0.08 | 0.00 | 0.09 | 0.04 | 0.60 | 0.00 |
+| left | 105.00 | 0.16 | 0.03 | 0.03 | 0.10 | 0.03 | 0.08 | 0.00 | 0.08 | 0.04 | 0.64 | 0.00 |
+| neutral | 37.00 | 0.14 | 0.01 | 0.07 | 0.12 | 0.02 | 0.08 | 0.00 | 0.07 | 0.03 | 0.37 | 0.00 |
+| right | 94.00 | 0.15 | 0.02 | 0.07 | 0.08 | 0.02 | 0.08 | 0.00 | 0.09 | 0.05 | 0.60 | 0.00 |
 
 
 Share of titles per category, streams (mean of creator shares, non-low-n creators):
 
 | group | n_creators | question | breaking_live | episode_show | interview_guest | reaction | confrontation | listicle | howto_explainer | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| left | 33.00 | 0.11 | 0.17 | 0.06 | 0.18 | 0.01 | 0.15 | 0.00 | 0.03 | 0.02 | 0.63 | 0.00 |
-| neutral | 16.00 | 0.05 | 0.52 | 0.02 | 0.13 | 0.01 | 0.07 | 0.00 | 0.01 | 0.02 | 0.30 | 0.00 |
-| right | 30.00 | 0.14 | 0.19 | 0.26 | 0.14 | 0.02 | 0.09 | 0.00 | 0.05 | 0.03 | 0.56 | 0.00 |
+| left | 33.00 | 0.11 | 0.17 | 0.06 | 0.18 | 0.01 | 0.15 | 0.00 | 0.03 | 0.03 | 0.63 | 0.00 |
+| neutral | 16.00 | 0.05 | 0.52 | 0.02 | 0.14 | 0.01 | 0.08 | 0.00 | 0.01 | 0.03 | 0.29 | 0.00 |
+| right | 28.00 | 0.13 | 0.16 | 0.26 | 0.14 | 0.02 | 0.09 | 0.00 | 0.05 | 0.04 | 0.56 | 0.00 |
 
 
 Rule vs LLM format label on the rated sample (rule = regex on the raw title; LLM = single format label):
 
 | category | n | rule_positives | llm_positives | precision_rule_vs_llm | recall_rule_vs_llm | f1 | kappa | agreement |
 |---|---|---|---|---|---|---|---|---|
-| question | 3000 | 424 | 58 | 0.101 | 0.741 | 0.178 | 0.149 | 0.868 |
-| breaking_live | 3000 | 251 | 268 | 0.813 | 0.761 | 0.786 | 0.766 | 0.963 |
-| episode_show | 3000 | 226 | 228 | 0.544 | 0.539 | 0.542 | 0.504 | 0.931 |
-| interview_guest | 3000 | 326 | 99 | 0.181 | 0.596 | 0.278 | 0.239 | 0.898 |
-| reaction | 3000 | 78 | 56 | 0.487 | 0.679 | 0.567 | 0.558 | 0.981 |
-| confrontation | 3000 | 239 | 98 | 0.205 | 0.500 | 0.291 | 0.256 | 0.920 |
-| listicle | 3000 | 3 | 4 | 0.667 | 0.500 | 0.571 | 0.571 | 0.999 |
-| howto_explainer | 3000 | 219 | 75 | 0.174 | 0.507 | 0.259 | 0.230 | 0.927 |
+| question | 2854 | 407 | 54 | 0.103 | 0.778 | 0.182 | 0.154 | 0.868 |
+| breaking_live | 2854 | 233 | 251 | 0.815 | 0.757 | 0.785 | 0.765 | 0.964 |
+| episode_show | 2854 | 213 | 211 | 0.526 | 0.531 | 0.528 | 0.490 | 0.930 |
+| interview_guest | 2854 | 306 | 93 | 0.180 | 0.591 | 0.276 | 0.238 | 0.899 |
+| reaction | 2854 | 74 | 53 | 0.473 | 0.660 | 0.551 | 0.541 | 0.980 |
+| confrontation | 2854 | 231 | 93 | 0.208 | 0.516 | 0.296 | 0.262 | 0.920 |
+| listicle | 2854 | 2 | 4 | 1.000 | 0.500 | 0.667 | 0.666 | 0.999 |
+| howto_explainer | 2854 | 207 | 71 | 0.169 | 0.493 | 0.252 | 0.223 | 0.927 |
 
 
 Examples (corpus-wide, three per category):
 
 | category | creator | title |
 |---|---|---|
-| question | @ABCNews | How Sysco acquiring Restaurant Depot could shake up the food industry |
-| question | @nytimes | How Americans Are Struggling With Rising Healthcare Costs |
-| question | @SkyNews | Is Trump about to bring down NATO? \| Trump100 |
-| breaking_live | @StatusCoup | BREAKING: LIVE ICE Protests as Lawsuit Filed to SHUT DOWN Delaney Hall ICE Prison |
-| breaking_live | @TimesNowWorld | FRANCE WILDFIRE LIVE \| Mega-Fire 4x Size Of Paris Out Of Control Near Bordeaux \| TIMES NOW WORLD |
-| breaking_live | @Firstpost | LIVE: 'US Aims For $1.5 Trillion Defence Budget,' Says Hegseth at NATO Defence Ministers' Meet |
-| episode_show | @markets | Micron Earnings Spark Global Tech Rebound \| Daybreak Europe 6/25/2026 |
-| episode_show | @TheDamageReport | The Damage Report: April 20, 2026 |
-| episode_show | @ABCNews | Vance Warns Pope To "Be Careful" On Theology - What You Need To Know - April 15th, 2026 |
-| interview_guest | @underthedesknews | FULL TOP STORY: Sen. Graham Conspired w/ Israel to DESTROY the International Criminal Court |
-| interview_guest | @NBCNews | Father reunites with five daughters after months overseas |
-| interview_guest | @timesofindia | ‘Taco Welcome’: Barred From US, Iran Football Boss Joins Emotional Mexico Crowd \| FIFA World Cup |
-| reaction | @Firstpost | US-Iran War Ceasefire LIVE: Iranians and Americans Reacts to Trump's Ceasefire Announcement \| N18G |
-| reaction | @wethefifth | Media Insiders React to the Scott Pelley 60 Minutes Drama - The Fifth Column |
-| reaction | @msnow | 'This is about Trump': Elections expert reacts to Virginia redistricting measure passing |
-| confrontation | @Firstpost | Red Fort Attack LIVE: Pakistan's Terror Lies Busted As JeM’s Hand Emerge in Lal Qila Blast |
-| confrontation | @timesofindia | '5th Time You Blinked': Reporter Grills Trump On Iran U-Turn; Shock 'I Don't Know' Reply Follows |
-| confrontation | @PTLRadioShow | MAGA Callers Accuse Brian Shapiro Of Lying… Then Get Fact-Checked |
-| listicle | @Firstpost | US-Iran War Top 5 Developments: Tehran Claims Drone Attack Amid Hormuz Tensions \| Firstpost Live |
-| listicle | @TheMajorityReport | 39 Times Trump Claimed An Iran Deal Was Imminent |
-| listicle | @NewsNation | An MLB opening day preview, plus March Madness Sweet 16 predictions \| Morning in America |
-| howto_explainer | @JackCocchiarellaShow | Fox Host Suffers Emotional Breakdown As Trump Loses Senate |
-| howto_explainer | @AssociatedPress | AP reporter breaks down Supreme Court ruling striking down Trump’s tariffs |
-| howto_explainer | @RealAmericasVoice | 9/11 Widow Terry Strada REVEALS What Happened After Her Husband’s FINAL Call |
-| curiosity_gap | @LukeBeasley | Actually, what the f*** just happened?! |
+| question | @CNN | Can Dems take the Senate even without Maine? |
+| question | @FoxNewsChannelClips | Will Cain: Where will Gov. Walz go next with his analogies? |
+| question | @bulwarkmedia | The Next Level LIVE: Texas Primary Results! Megyn Kelly Turns on Trump?! |
+| breaking_live | @RealAmericasVoice | TRUMP'S IRAN DEAL BOMBSHELL, FED HOLDS RATES, SPLC NAZI SCANDAL EXPLODES \| LIVE FROM STUDIO 6B |
+| breaking_live | @ANINewsIndia | WATCH: Sonam Wangchuk breaks 26-day fast amid CJP protest at Jantar Mantar against NEET Paper leak |
+| breaking_live | @Firstpost | 🔴FIFA WORLD CUP LIVE \| Mexico Football Fans Hit Fever Pitch \| Mexico vs South Africa |
+| episode_show | @RealDanBongino | They're Finding Out (Ep. 2549) |
+| episode_show | @glennbeck | Remembering Charlie Kirk: Where Are We Now? \| Hour 1 \| 9/10/26 |
+| episode_show | @RSBN | FULL EVENT: President Trump Creates U.S. Space Academy & Awards Space Medal of Honor - 08/28/26 |
+| interview_guest | @ABCNews | The Obama Legacy: First Joint Interview Post-White House |
+| interview_guest | @bulwarkmedia | Trump Promised Trillions in Cuts—And Delivered Nothing (w/ Jessica Riedl) \| Mona Charen Show |
+| interview_guest | @timesofindia | 'ENOUGH IS ENOUGH': Tucker Carlson Joins Growing Revolt As Trump's Iran Gamble Backfires Inside MAGA |
+| reaction | @DestinyDGGClips | Atrioc Responds After Getting Into MASSIVE Controversy |
+| reaction | @SkyNews | Democrats react to Trump's citizenship defeat outside Supreme Court |
+| reaction | @oann | WV Governor Praises National Guard Officers for Heroic Response to DC Attack |
+| confrontation | @ANINewsIndia | ‘We'll destroy it as we get it’, Trump warns Iran after Khamenei’s 'defiance' over enriched Uranium |
+| confrontation | @RealAmericasVoice | FAUCI TAKES THE FIFTH IN EXPLOSIVE SENATE HEARING, BERENSON DESTROYS COVID LIES \| CHARLIE KIRK SHOW |
+| confrontation | @markets | US-Iran Clashes Hit Stocks as Oil Rises \| Bloomberg Brief 09/02/2026 |
+| listicle | @RealAmericasVoice | FAUCI’S COVID CHAOS STEALS 2020, RNC CHAIR GRUTERS ON GOP FAITH \| AMERICA'S TOP 10 |
+| listicle | @CNN | 4 ways Ukraine changed America’s wars forever |
+| listicle | @nypost | Karoline Leavitt to Depart as White House Press Secretary — Top 5 Moments She Shut Down Reporters |
+| howto_explainer | @SkyNews | Why Trump is fighting for the Arctic but losing in Antarctica |
+| howto_explainer | @PhillipScottPodcast | Latina Explains Why They Didn't Vote For Jasmine Crockett Even Though She Was Pro-Immigration |
+| howto_explainer | @oann | Why Rising Prices Could Trigger a Voter Backlash Before the Midterms |
 | curiosity_gap | https://rumble.com/c/russellbrand | They don't want you knowing this... |
-| curiosity_gap | @AsmonTV | Holy sh*t.. How is this real? |
-| outrage | @timesofindia | ‘Humiliated’ Trump Fires EXPLOSIVE WARNING To Canada In Extreme Meltdown \| ‘NO MORE BENEFITS!’ |
+| curiosity_gap | @CoreyGilShusterAskProject | Palestinians: What happens at the endtimes? |
+| curiosity_gap | @LukeBeasley | Actually, what the f*** just happened?! |
 | outrage | @LukeBeasley | SHOCK BREAKING: TRUMP S*X BOMBSHELL ERUPTS, PUBLIC MELTDOWN BACKFIRES! |
+| outrage | @timesofindia | ‘Humiliated’ Trump Fires EXPLOSIVE WARNING To Canada In Extreme Meltdown \| ‘NO MORE BENEFITS!’ |
 | outrage | @BlackConservativePerspective | Leftists PANIC As Wife EXPOSES Another HUMILIATING Scandal Against IMPLODING Communist Democrat! |
 | humor | @TimcastIRL | THIS IS HILARIOUS |
 | humor | @TimcastNews | THIS IS HILARIOUS |
@@ -475,103 +475,103 @@ Agglomerative clustering of creators in style space (topic-controlled factor sco
 
 | genre | titles | n_creators | n_groups | style_k | style_silhouette | topic_k | topic_silhouette | ari_style_vs_group | ari_topic_vs_group | ari_style_vs_topic | ari_style_vs_group_k_groups | ari_topic_vs_group_k_groups | ari_style_vs_topic_k_groups |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| videos | all | 239 | 3 | 11 | 0.128 | 3 | 0.144 | 0.036 | 0.010 | 0.003 | -0.003 | 0.010 | -0.009 |
-| videos | political | 234 | 3 | 10 | 0.136 | 3 | 0.110 | 0.054 | 0.017 | -0.004 | 0.009 | 0.017 | -0.008 |
-| streams | all | 79 | 3 | 9 | 0.159 | 12 | 0.089 | 0.025 | 0.117 | 0.075 | 0.007 | -0.009 | 0.024 |
-| streams | political | 77 | 3 | 3 | 0.150 | 3 | 0.088 | -0.006 | 0.008 | 0.143 | -0.006 | 0.008 | 0.143 |
+| videos | all | 236 | 3 | 10 | 0.119 | 3 | 0.170 | 0.044 | 0.004 | 0.001 | -0.010 | 0.004 | -0.002 |
+| videos | political | 229 | 3 | 10 | 0.131 | 3 | 0.180 | 0.046 | 0.005 | 0.001 | 0.035 | 0.005 | 0.002 |
+| streams | all | 77 | 3 | 11 | 0.165 | 3 | 0.097 | 0.020 | 0.009 | 0.005 | 0.047 | 0.009 | -0.018 |
+| streams | political | 76 | 3 | 9 | 0.162 | 4 | 0.069 | 0.043 | -0.014 | 0.027 | 0.026 | 0.000 | -0.024 |
 
 
 Style cohesion per channel group (mean within-group vs between-group distance in z-scored style space; ratio < 1 = group-mates are closer than average):
 
 | genre | group | n_creators | within_group_distance | between_group_distance | cohesion_ratio |
 |---|---|---|---|---|---|
-| streams | neutral | 16 | 4.163 | 4.654 | 0.895 |
-| streams | left | 33 | 4.483 | 4.667 | 0.961 |
-| streams | right | 30 | 5.003 | 4.789 | 1.045 |
-| videos | right | 96 | 4.231 | 4.506 | 0.939 |
-| videos | neutral | 38 | 4.751 | 4.750 | 1.000 |
-| videos | left | 105 | 4.608 | 4.549 | 1.013 |
+| streams | neutral | 16 | 4.071 | 4.631 | 0.879 |
+| streams | left | 33 | 4.436 | 4.678 | 0.948 |
+| streams | right | 28 | 5.117 | 4.826 | 1.060 |
+| videos | right | 94 | 4.305 | 4.539 | 0.948 |
+| videos | neutral | 37 | 4.647 | 4.721 | 0.984 |
+| videos | left | 105 | 4.628 | 4.574 | 1.012 |
 
 
 Where channel group and style disagree (videos, all titles):
 
 | kind | group | n_creators | n_style_clusters | largest_cluster_share | members |
 |---|---|---|---|---|---|
-| channel group split across style clusters | left | 105 | 10 | 0.286 | https://rumble.com/c/GGreenwald (S0); @LeejaMiller (S0); @TheAtlantic (S0); @ajplus (S0); @MikeFromPA (S0);... |
-| channel group split across style clusters | neutral | 38 | 8 | 0.316 | @wsj (S0); @hutch (S0); @KimIversen (S0); @TimesNowWorld (S1); @JacksonHinkleOfficial (S1); @joerogan (S2);... |
-| channel group split across style clusters | right | 96 | 8 | 0.375 | @LiberalHivemind (S0); @JillianMichaels (S0); @JustPearlyThings (S0); @StevenCrowder (S0); @MarkDice (S0); ... |
-| style cluster spanning channel groups | S6 | 54 | 3 | 0.426 | @BadFaithPodcast (left); @DannyHaiphongYT (left); @DemocracyDocket (left); @DropSiteNews (left); @HasanReac... |
-| style cluster spanning channel groups | S1 | 20 | 3 | 0.500 | @DailyDenims (left); @DoubleDownNews (left); @LegalAFMTN (left); @LukeBeasley (left); @MeidasTouch (left); ... |
-| style cluster spanning channel groups | S7 | 2 | 2 | 0.500 | @aaronparnas1 (left); @RSBN (right) |
-| style cluster spanning channel groups | S0 | 69 | 3 | 0.522 | @BreakThroughNews (left); @EzraKleinShow (left); @GeopoliticalEconomyReport (left); @HasanAbi (left); @Leej... |
-| style cluster spanning channel groups | S2 | 51 | 3 | 0.529 | @BadEmpanadaLive (left); @DueDissidence (left); @DylanBurnsLIVE (left); @FarronBalanced (left); @Forthepeop... |
-| style cluster spanning channel groups | S9 | 21 | 3 | 0.571 | @CNN (left); @NPR (left); @SkyNews (left); @aljazeeraenglish (left); @msnow (left); @thegrayzone7996 (left)... |
-| style cluster spanning channel groups | S4 | 10 | 3 | 0.600 | @DemocracyNow (left); @rolandsmartin (left); @timesofindia (left); @PiersMorganUncensored (neutral); @Blaze... |
-| style cluster spanning channel groups | S3 | 4 | 2 | 0.750 | @TheEconomist (left); @moreperfectunion (left); @thewarningwithsteveschmidt (left); @CoreyGilShusterAskProj... |
-| style cluster spanning channel groups | S10 | 5 | 2 | 0.800 | @HasanAbiVODs3 (left); @60minutes (neutral); @Firstpost (neutral); @Forbes (neutral); @chinainsights-r2w (n... |
+| channel group split across style clusters | neutral | 37 | 9 | 0.297 | @KimIversen (S0); @BrittanyVenti (S0); @destinyhqclips (S0); @ClipsCandaceOwens (S0); @JacksonHinkleOfficia... |
+| channel group split across style clusters | left | 105 | 10 | 0.324 | https://rumble.com/c/GGreenwald (S0); @Vaush (S0); @TheHumanistReport (S0); @zeteo (S0); @Xanderhal (S0); @... |
+| channel group split across style clusters | right | 94 | 8 | 0.340 | https://rumble.com/c/russellbrand (S0); @morebridgetphetasy (S0); @HangOutwithSeanHannity (S0); @RileyGaine... |
+| style cluster spanning channel groups | S4 | 3 | 3 | 0.333 | @timesofindia (left); @PiersMorganUncensored (neutral); @jlptalk (right) |
+| style cluster spanning channel groups | S7 | 3 | 3 | 0.333 | @aaronparnas1 (left); @TimesNowWorld (neutral); @RSBN (right) |
+| style cluster spanning channel groups | S6 | 29 | 3 | 0.448 | @BadFaithPodcast (left); @DannyHaiphongYT (left); @DemocracyNow (left); @JamarlThomas (left); @LeverNews (l... |
+| style cluster spanning channel groups | S1 | 26 | 3 | 0.500 | @DailyDenims (left); @DoubleDownNews (left); @LegalAFMTN (left); @LukeBeasley (left); @MeidasTouch (left); ... |
+| style cluster spanning channel groups | S3 | 64 | 3 | 0.531 | @BadEmpanadaLive (left); @DropSiteNews (left); @DueDissidence (left); @DylanBurnsLIVE (left); @FarronBalanc... |
+| style cluster spanning channel groups | S5 | 20 | 3 | 0.550 | @CNN (left); @NPR (left); @SkyNews (left); @aljazeeraenglish (left); @msnow (left); @thegrayzone7996 (left)... |
+| style cluster spanning channel groups | S0 | 52 | 3 | 0.615 | @BreakThroughNews (left); @DemocracyDocket (left); @HasanAbi (left); @HasanabiClips (left); @SMN (left); @T... |
+| style cluster spanning channel groups | S2 | 33 | 3 | 0.667 | @EzraKleinShow (left); @GeopoliticalEconomyReport (left); @LeejaMiller (left); @MikeFromPA (left); @NYTPodc... |
+| style cluster spanning channel groups | S8 | 5 | 2 | 0.800 | @HasanAbiVODs3 (left); @60minutes (neutral); @Firstpost (neutral); @Forbes (neutral); @chinainsights-r2w (n... |
 
 
 Who gets named (creator-balanced titles; people keyed by surname, so 'Kirk' pools Charlie and Erika Kirk):
 
 | entity | n_titles_balanced | share_of_balanced_titles | n_creators | share_by_group | outrage_share | overall_outrage_share | outrage_ratio |
 |---|---|---|---|---|---|---|---|
-| Trump | 7619 | 0.041 | 199 | left (5.6%); neutral (3.8%); right (2.3%) | 0.668 | 0.567 | 1.180 |
-| Hormuz | 1065 | 0.006 | 86 | neutral (1.0%); left (0.5%); right (0.3%) | 0.515 | 0.567 | 0.910 |
-| Hegseth | 1062 | 0.006 | 106 | left (0.8%); neutral (0.7%); right (0.2%) | 0.533 | 0.567 | 0.940 |
-| Putin | 992 | 0.005 | 67 | neutral (1.0%); left (0.5%); right (0.1%) | 0.689 | 0.567 | 1.210 |
-| Charlie Kirk | 910 | 0.005 | 118 | right (0.9%); neutral (0.4%); left (0.2%) | 0.534 | 0.567 | 0.940 |
-| JD Vance | 886 | 0.005 | 120 | left (0.6%); neutral (0.5%); right (0.4%) | 0.568 | 0.567 | 1.000 |
-| Mamdani | 765 | 0.004 | 111 | right (0.7%); neutral (0.4%); left (0.2%) | 0.699 | 0.567 | 1.230 |
-| Netanyahu | 726 | 0.004 | 113 | neutral (0.5%); left (0.4%); right (0.2%) | 0.696 | 0.567 | 1.230 |
-| Epstein | 708 | 0.004 | 114 | left (0.5%); neutral (0.4%); right (0.2%) | 0.720 | 0.567 | 1.270 |
-| Lindsey Graham | 628 | 0.003 | 123 | left (0.4%); neutral (0.3%); right (0.3%) | 0.478 | 0.567 | 0.840 |
-| Brian Shapiro | 594 | 0.003 | 85 | left (0.6%); right (0.2%); neutral (0.1%) | 0.769 | 0.567 | 1.360 |
-| Nancy Guthrie | 550 | 0.003 | 35 | neutral (0.6%); right (0.4%); left (0.0%) | 0.165 | 0.567 | 0.290 |
-| Kristi Noem | 543 | 0.003 | 103 | left (0.5%); neutral (0.2%); right (0.2%) | 0.737 | 0.567 | 1.300 |
-| Mike Johnson | 538 | 0.003 | 91 | left (0.4%); right (0.2%); neutral (0.2%) | 0.572 | 0.567 | 1.010 |
-| Kash Patel | 479 | 0.003 | 89 | left (0.4%); neutral (0.2%); right (0.1%) | 0.766 | 0.567 | 1.350 |
-| Karoline Leavitt | 473 | 0.003 | 55 | left (0.3%); right (0.2%); neutral (0.2%) | 0.526 | 0.567 | 0.930 |
-| Jack Smith | 449 | 0.002 | 95 | right (0.3%); left (0.2%); neutral (0.2%) | 0.552 | 0.567 | 0.970 |
-| Pam Bondi | 447 | 0.002 | 92 | left (0.4%); neutral (0.2%); right (0.1%) | 0.826 | 0.567 | 1.460 |
-| Candace Owens | 416 | 0.002 | 71 | right (0.3%); neutral (0.2%); left (0.2%) | 0.743 | 0.567 | 1.310 |
-| Keir Starmer | 397 | 0.002 | 43 | left (0.3%); neutral (0.3%); right (0.1%) | 0.471 | 0.567 | 0.830 |
-| Hillary Clinton | 396 | 0.002 | 88 | neutral (0.3%); right (0.2%); left (0.2%) | 0.697 | 0.567 | 1.230 |
-| Graham Platner | 393 | 0.002 | 102 | left (0.2%); right (0.2%); neutral (0.2%) | 0.588 | 0.567 | 1.040 |
-| Lindsay Clancy | 392 | 0.002 | 52 | neutral (0.5%); right (0.2%); left (0.0%) | 0.184 | 0.567 | 0.320 |
-| Marco Rubio | 388 | 0.002 | 85 | neutral (0.4%); left (0.1%); right (0.1%) | 0.392 | 0.567 | 0.690 |
-| Obama | 345 | 0.002 | 97 | right (0.2%); left (0.2%); neutral (0.1%) | 0.603 | 0.567 | 1.060 |
+| Trump | 7277 | 0.040 | 197 | left (5.6%); neutral (3.7%); right (2.2%) | 0.666 | 0.563 | 1.180 |
+| Hegseth | 1054 | 0.006 | 106 | left (0.8%); neutral (0.7%); right (0.2%) | 0.578 | 0.563 | 1.030 |
+| Hormuz | 1041 | 0.006 | 85 | neutral (1.0%); left (0.5%); right (0.3%) | 0.492 | 0.563 | 0.870 |
+| Putin | 888 | 0.005 | 62 | neutral (0.9%); left (0.5%); right (0.1%) | 0.685 | 0.563 | 1.220 |
+| JD Vance | 858 | 0.005 | 120 | left (0.5%); neutral (0.5%); right (0.4%) | 0.570 | 0.563 | 1.010 |
+| Charlie Kirk | 744 | 0.004 | 115 | right (0.8%); neutral (0.3%); left (0.2%) | 0.539 | 0.563 | 0.960 |
+| Mamdani | 717 | 0.004 | 111 | right (0.7%); neutral (0.3%); left (0.2%) | 0.697 | 0.563 | 1.240 |
+| Netanyahu | 708 | 0.004 | 109 | neutral (0.5%); left (0.5%); right (0.2%) | 0.733 | 0.563 | 1.300 |
+| Lindsey Graham | 647 | 0.004 | 124 | left (0.4%); neutral (0.4%); right (0.4%) | 0.459 | 0.563 | 0.820 |
+| Epstein | 624 | 0.003 | 108 | left (0.4%); neutral (0.4%); right (0.2%) | 0.726 | 0.563 | 1.290 |
+| Nancy Guthrie | 579 | 0.003 | 33 | neutral (0.7%); right (0.4%); left (0.0%) | 0.171 | 0.563 | 0.300 |
+| Kristi Noem | 536 | 0.003 | 103 | left (0.5%); neutral (0.2%); right (0.2%) | 0.743 | 0.563 | 1.320 |
+| Brian Shapiro | 511 | 0.003 | 75 | left (0.5%); right (0.1%); neutral (0.1%) | 0.757 | 0.563 | 1.350 |
+| Karoline Leavitt | 479 | 0.003 | 53 | left (0.3%); right (0.2%); neutral (0.2%) | 0.476 | 0.563 | 0.850 |
+| Mike Johnson | 477 | 0.003 | 87 | left (0.3%); right (0.2%); neutral (0.2%) | 0.587 | 0.563 | 1.040 |
+| Kash Patel | 440 | 0.002 | 86 | left (0.4%); neutral (0.2%); right (0.1%) | 0.775 | 0.563 | 1.380 |
+| Jack Smith | 420 | 0.002 | 91 | right (0.3%); left (0.2%); neutral (0.2%) | 0.536 | 0.563 | 0.950 |
+| Keir Starmer | 411 | 0.002 | 42 | neutral (0.3%); left (0.3%); right (0.1%) | 0.499 | 0.563 | 0.890 |
+| Lindsay Clancy | 408 | 0.002 | 53 | neutral (0.5%); right (0.2%); left (0.0%) | 0.164 | 0.563 | 0.290 |
+| Pam Bondi | 403 | 0.002 | 89 | left (0.3%); neutral (0.2%); right (0.1%) | 0.834 | 0.563 | 1.480 |
+| Graham Platner | 398 | 0.002 | 100 | left (0.3%); neutral (0.2%); right (0.2%) | 0.595 | 0.563 | 1.060 |
+| Marco Rubio | 370 | 0.002 | 84 | neutral (0.4%); left (0.1%); right (0.1%) | 0.403 | 0.563 | 0.720 |
+| Hillary Clinton | 352 | 0.002 | 84 | neutral (0.2%); right (0.2%); left (0.1%) | 0.688 | 0.563 | 1.220 |
+| Candace Owens | 343 | 0.002 | 64 | right (0.3%); neutral (0.2%); left (0.1%) | 0.703 | 0.563 | 1.250 |
+| Stephen Miller | 335 | 0.002 | 75 | left (0.3%); right (0.1%); neutral (0.1%) | 0.672 | 0.563 | 1.190 |
 
 
 | entity | n_titles_balanced | share_of_balanced_titles | n_creators | share_by_group | outrage_share | overall_outrage_share | outrage_ratio |
 |---|---|---|---|---|---|---|---|
-| Trump | 8817 | 0.047 | 193 | left (7.0%); neutral (4.5%); right (1.9%) | 0.667 | 0.567 | 1.180 |
-| White House | 1565 | 0.008 | 120 | neutral (1.3%); left (0.7%); right (0.7%) | 0.414 | 0.567 | 0.730 |
-| GOP | 1509 | 0.008 | 106 | left (1.1%); right (0.7%); neutral (0.5%) | 0.718 | 0.567 | 1.270 |
-| MAGA | 1009 | 0.005 | 123 | left (1.2%); right (0.1%); neutral (0.1%) | 0.926 | 0.567 | 1.630 |
-| Senate | 976 | 0.005 | 97 | neutral (0.8%); right (0.4%); left (0.4%) | 0.379 | 0.567 | 0.670 |
-| FBI | 885 | 0.005 | 119 | right (0.7%); neutral (0.4%); left (0.3%) | 0.739 | 0.567 | 1.300 |
-| Supreme Court | 856 | 0.005 | 107 | neutral (0.5%); left (0.5%); right (0.4%) | 0.522 | 0.567 | 0.920 |
-| NATO | 822 | 0.004 | 86 | neutral (0.9%); left (0.3%); right (0.2%) | 0.513 | 0.567 | 0.910 |
-| House | 815 | 0.004 | 94 | neutral (0.7%); left (0.3%); right (0.3%) | 0.406 | 0.567 | 0.720 |
-| Congress | 773 | 0.004 | 113 | neutral (0.6%); left (0.4%); right (0.3%) | 0.492 | 0.567 | 0.870 |
-| CNN | 583 | 0.003 | 95 | right (0.4%); left (0.4%); neutral (0.1%) | 0.798 | 0.567 | 1.410 |
-| DHS | 515 | 0.003 | 68 | neutral (0.4%); right (0.3%); left (0.2%) | 0.423 | 0.567 | 0.750 |
-| EU | 447 | 0.002 | 41 | neutral (0.6%); left (0.1%); right (0.1%) | 0.443 | 0.567 | 0.780 |
-| NASA | 430 | 0.002 | 44 | neutral (0.6%); right (0.1%); left (0.1%) | 0.077 | 0.567 | 0.140 |
-| Pentagon | 421 | 0.002 | 73 | neutral (0.4%); left (0.2%); right (0.1%) | 0.428 | 0.567 | 0.750 |
-| REUTERS | 402 | 0.002 | 3 | neutral (0.8%) | 0.214 | 0.567 | 0.380 |
-| CIA | 375 | 0.002 | 104 | right (0.3%); left (0.2%); neutral (0.2%) | 0.661 | 0.567 | 1.170 |
-| World News | 375 | 0.002 | 2 | neutral (0.7%) | 0.765 | 0.567 | 1.350 |
-| HasanAbi | 365 | 0.002 | 5 | left (0.5%); right (0.0%) | 0.433 | 0.567 | 0.760 |
-| BJP | 342 | 0.002 | 5 | neutral (0.6%); left (0.0%) | 0.295 | 0.567 | 0.520 |
-| Fed | 333 | 0.002 | 57 | neutral (0.3%); left (0.1%); right (0.1%) | 0.423 | 0.567 | 0.750 |
-| Vantage on Firstpost | 315 | 0.002 | 1 | neutral (0.6%) | 0.463 | 0.567 | 0.820 |
-| ABC News Live | 314 | 0.002 | 1 | neutral (0.6%) | 0.010 | 0.567 | 0.020 |
-| Fox News | 313 | 0.002 | 60 | left (0.4%); right (0.0%); neutral (0.0%) | 0.917 | 0.567 | 1.620 |
-| UN | 289 | 0.002 | 51 | neutral (0.3%); left (0.1%); right (0.0%) | 0.467 | 0.567 | 0.820 |
+| Trump | 8617 | 0.048 | 192 | left (7.1%); neutral (4.5%); right (2.0%) | 0.660 | 0.563 | 1.170 |
+| White House | 1502 | 0.008 | 114 | neutral (1.2%); left (0.7%); right (0.7%) | 0.410 | 0.563 | 0.730 |
+| GOP | 1462 | 0.008 | 105 | left (1.1%); right (0.7%); neutral (0.5%) | 0.722 | 0.563 | 1.280 |
+| MAGA | 973 | 0.005 | 122 | left (1.2%); right (0.1%); neutral (0.1%) | 0.921 | 0.563 | 1.640 |
+| Senate | 958 | 0.005 | 97 | neutral (0.9%); right (0.4%); left (0.4%) | 0.364 | 0.563 | 0.650 |
+| Supreme Court | 858 | 0.005 | 107 | neutral (0.5%); left (0.5%); right (0.4%) | 0.515 | 0.563 | 0.910 |
+| NATO | 826 | 0.005 | 86 | neutral (0.8%); left (0.4%); right (0.2%) | 0.522 | 0.563 | 0.930 |
+| FBI | 809 | 0.004 | 115 | right (0.6%); neutral (0.4%); left (0.3%) | 0.714 | 0.563 | 1.270 |
+| House | 777 | 0.004 | 95 | neutral (0.7%); left (0.3%); right (0.3%) | 0.395 | 0.563 | 0.700 |
+| Congress | 768 | 0.004 | 111 | neutral (0.6%); left (0.4%); right (0.3%) | 0.479 | 0.563 | 0.850 |
+| CNN | 563 | 0.003 | 100 | right (0.4%); left (0.4%); neutral (0.1%) | 0.789 | 0.563 | 1.400 |
+| DHS | 549 | 0.003 | 68 | neutral (0.5%); right (0.3%); left (0.2%) | 0.424 | 0.563 | 0.750 |
+| NASA | 436 | 0.002 | 45 | neutral (0.6%); right (0.1%); left (0.1%) | 0.073 | 0.563 | 0.130 |
+| Pentagon | 413 | 0.002 | 73 | neutral (0.4%); left (0.2%); right (0.1%) | 0.387 | 0.563 | 0.690 |
+| EU | 392 | 0.002 | 40 | neutral (0.5%); left (0.1%); right (0.1%) | 0.454 | 0.563 | 0.810 |
+| World News | 368 | 0.002 | 2 | neutral (0.7%) | 0.750 | 0.563 | 1.330 |
+| CIA | 364 | 0.002 | 101 | right (0.3%); left (0.2%); neutral (0.2%) | 0.662 | 0.563 | 1.180 |
+| HasanAbi | 347 | 0.002 | 5 | left (0.5%); right (0.0%) | 0.447 | 0.563 | 0.790 |
+| BJP | 344 | 0.002 | 4 | neutral (0.7%); left (0.0%) | 0.326 | 0.563 | 0.580 |
+| Fed | 315 | 0.002 | 57 | neutral (0.3%); left (0.1%); right (0.1%) | 0.435 | 0.563 | 0.770 |
+| Vantage on Firstpost | 310 | 0.002 | 1 | neutral (0.6%) | 0.458 | 0.563 | 0.810 |
+| ABC News Live | 305 | 0.002 | 1 | neutral (0.6%) | 0.000 | 0.563 | 0.000 |
+| Fox News | 303 | 0.002 | 58 | left (0.4%); right (0.0%); neutral (0.0%) | 0.898 | 0.563 | 1.590 |
+| REUTERS | 303 | 0.002 | 4 | neutral (0.6%); left (0.0%) | 0.208 | 0.563 | 0.370 |
+| UN | 275 | 0.002 | 49 | neutral (0.3%); left (0.1%); right (0.0%) | 0.480 | 0.563 | 0.850 |
 
 
-Convergent formulas: 1,575 distinct titles (case-insensitive) are used verbatim by two or more creators, 474 of them by creators from different organizations (the rest are same-outlet cross-posts such as TYT / The Damage Report); of those 474, 61.8% stay within one channel group. 500 masked templates (names and numbers replaced, at least one content word) are shared across organizations; 45.4% within one channel group.
+Convergent formulas: 1,477 distinct titles (case-insensitive) are used verbatim by two or more creators, 454 of them by creators from different organizations (the rest are same-outlet cross-posts such as TYT / The Damage Report); of those 454, 62.1% stay within one channel group. 500 masked templates (names and numbers replaced, at least one content word) are shared across organizations; 45.8% within one channel group.
 
 
 | example | n_creators | n_titles | groups | creators |
@@ -584,10 +584,8 @@ Convergent formulas: 1,575 distinct titles (case-insensitive) are used verbatim 
 | it’s over. | 5 | 9 | left; neutral; right | @AsmonTV; @HasanAbi; @JacksonHinkleOfficial; @bennyjohnson; @destiny |
 | It’s finally happening.. | 5 | 6 | left; right | @AsmonTV; @JackCocchiarellaShow; @RebelNewsOnline; @TimcastIRL; @bennyjohnson |
 | Don Lemon ARRESTED! | 5 | 5 | left; right | @BenShapiro; @GlennKirschner2; @TheYoungTurks; @TimcastNews; @marclamonthillnetwork |
-| This can't be real.. | 5 | 5 | left; right | @AsmonTV; @RebelNewsOnline; @TimcastIRL; @Vaush; @adammockler |
-| This is so embarrassing.. | 5 | 5 | left; right | @AsmonTV; @TheVaushPit; @TheYoungTurks; @destiny; @harryjsisson |
 | This is terrifying... | 5 | 5 | left; right | @HasanAbi; @TheMajorityReport; @TheQuartering; @TheVaushPit; @TimcastNews |
-| Oh.. my.. god... | 4 | 8 | left; right | @AsmonTV; @HasanAbi; @JackCocchiarellaShow; @TheQuartering |
+| Oh.. my.. GOD... | 4 | 8 | left; right | @AsmonTV; @HasanAbi; @JackCocchiarellaShow; @TheQuartering |
 | It finally happened | 4 | 6 | left | @HasanAbi; @JackCocchiarellaShow; @LukeBeasley; @adammockler |
 | BREAKING: TRUMP FIRES PAM BONDI | 4 | 5 | left | @Vaush; @aaronparnas1; @bulwarkmedia; @podsaveamerica |
 | HOLY SH*T.. | 4 | 5 | left; neutral; right | @AsmonTV; @HasanAbi; @JacksonHinkleOfficial; @LiberalHivemind |
@@ -597,66 +595,72 @@ Convergent formulas: 1,575 distinct titles (case-insensitive) are used verbatim 
 | It has begun | 4 | 4 | left; right | @HasanAbi; @Timcast; @TimcastIRL; @TimcastNews |
 | It’s getting worse… | 4 | 4 | left; right | @TheQuartering; @TimcastIRL; @adammockler; @ponderingpolitics |
 | 🚨They Actually Did It… | 4 | 4 | right | @TheQuartering; @TimcastIRL; @TimcastNews; @bennyjohnson |
+| This can't be real.. | 4 | 4 | left; right | @AsmonTV; @RebelNewsOnline; @TimcastIRL; @adammockler |
 | THIS COULD CHANGE EVERYTHING | 4 | 4 | right | @RealAmericasVoice; @TimcastIRL; @TimcastNews; https://rumble.com/c/russellbrand |
 | THIS IS CRAZY | 4 | 4 | left; right | @HasanAbi; @TheQuartering; @TimcastIRL; @TimcastNews |
+| This is so embarrassing.. | 4 | 4 | left; right | @AsmonTV; @TheYoungTurks; @destiny; @harryjsisson |
 | TRUMP JUST LOST IT! | 4 | 4 | left | @FarronBalanced; @JackCocchiarellaShow; @LukeBeasley; @MeidasTouch |
 | We need to talk about this.. | 4 | 4 | left; right | @AsmonTV; @TheQuartering; @TheVaushPit; @therationalnational |
 
 
 | template | n_creators | n_titles | groups | example |
 |---|---|---|---|---|
-| <ENT> 's <ENT> | 62 | 147 | left; neutral; right | Iran's Plan To Make You SIMP |
-| <ENT> after <ENT> | 37 | 73 | left; neutral; right | Trump’s Envoys Get RUDE AWAKENING After Putin Meeting |
-| <ENT> 's <ENT> <ENT> | 23 | 40 | left; neutral; right | California's Election Shakeup + Microsoft's AI Spy Badge \| PBD #811 |
-| <ENT> ’s <ENT> | 18 | 28 | left; neutral; right | AIPAC’s "Elect Chicago Women" Super PAC Exposed |
+| <ENT> 's <ENT> | 61 | 142 | left; neutral; right | Iran's Plan To Make You SIMP |
+| <ENT> after <ENT> | 35 | 67 | left; neutral; right | Trump’s Envoys Get RUDE AWAKENING After Putin Meeting |
+| <ENT> 's <ENT> <ENT> | 23 | 39 | left; neutral; right | California's Election Shakeup + Microsoft's AI Spy Badge \| PBD #811 |
+| <ENT> ’s <ENT> | 17 | 27 | left; neutral; right | AIPAC’s "Elect Chicago Women" Super PAC Exposed |
 | <ENT> exposes <ENT> | 14 | 19 | left; right | Elizabeth Warren Exposes Trump’s Fed Pick In Brutal Hearing |
 | <ENT> <ENT> 's <ENT> | 13 | 19 | left; neutral; right | US Media's Hasan Piker Derangement Syndrome Is Ridiculous |
-| <ENT> <ENT> after <ENT> | 13 | 15 | left; neutral; right | OMG: Trump RUSHES OFF after Going to HOSPITAL! |
+| <ENT> <ENT> after <ENT> | 12 | 13 | left; neutral; right | OMG: Trump RUSHES OFF after Going to HOSPITAL! |
 | <ENT> after <ENT> <ENT> | 11 | 16 | left; neutral; right | Hakeem Jeffries In Full Panic Mode After Kushner Meeting Pisses Off Democrats |
-| <ENT> vs. <ENT> | 11 | 11 | left; neutral; right | Ben Shapiro vs. Fortnite |
-| <ENT> w/ <ENT> | 10 | 38 | left; neutral; right | Biblical Idolatry & The Role of Moses w/ Jordan B. Peterson |
 | <ENT> <ENT> w/ <ENT> | 10 | 20 | left; neutral; right | "It Went Completely Viral" Brett Cooper Talks Internet Drama & Pendragon Cycle W/ Michael Knowles |
-| <ENT> says <ENT> | 10 | 17 | left; neutral; right | Fox News Lunatic Says Americans Have Data Center Derangement Syndrome |
+| <ENT> says <ENT> | 10 | 16 | left; neutral; right | Fox News Lunatic Says Americans Have Data Center Derangement Syndrome |
 | <ENT> 's <ENT> in <ENT> | 10 | 13 | left; neutral; right | AOC's DISASTROUS Foreign Policy Debut In Munich |
-| <ENT> <ENT> 's <ENT> <ENT> | 9 | 11 | left; neutral; right | Bill Kristol: MAGA's Grievance Culture \| The Bulwark Podcast |
-| the truth about <ENT> | 9 | 9 | left; right | The truth about Blizzard |
+| <ENT> w/ <ENT> | 8 | 35 | left; neutral; right | Trump’s Ballroom Obsession Has Gone Totally Off the Rails (w/ Ben Terris) |
+| <ENT> <ENT> 's <ENT> <ENT> | 8 | 10 | left; neutral; right | Bill Kristol: MAGA's Grievance Culture \| The Bulwark Podcast |
 | <ENT> on <ENT> 's <ENT> | 8 | 10 | left; neutral; right | Aaron Rodgers Torched Fauci on ESPN's Own Air |
+| <ENT> vs. <ENT> | 8 | 8 | left; right | Ben Shapiro vs. Fortnite |
+| the truth about <ENT> | 8 | 8 | left; right | The truth about Blizzard |
 | <ENT> on live tv | 7 | 10 | left | Epstein Victim-Smearer Humiliated On Live TV |
-| <ENT> destroys <ENT> | 7 | 8 | left; neutral; right | Candace Owens EXPOSES & DESTROYS Ben Shapiro! |
 | <ENT> under the bus | 7 | 8 | left | Dems Throw Trans Folks Under The Bus |
 | <ENT> is here | 7 | 7 | left; neutral; right | The Radical Left’s Hostile Takeover Is Here |
+| <ENT> destroys <ENT> | 6 | 7 | left; right | Jesse Watters DESTROYS Abdul El-Sayed |
 | <ENT> ft # <ENT> | 6 | 7 | left; neutral; right | Catholic & Protestant Debunk Islam & Atheist Arguments \| ft. Billy Hallowell |
 | <ENT> against <ENT> | 6 | 6 | left; neutral; right | Ben Shapiro Lobs WILD Accusation Against Dave Smith |
 | <ENT> off on <ENT> | 6 | 6 | left; right | Adam Conover GOES OFF on Tech Companies & A.I. |
 | <ENT> senator <ENT> | 6 | 6 | left; neutral; right | Republican Senator SLAMS Trump |
-| <ENT> panic as <ENT> | 5 | 14 | left; right | Republicans PANIC as Reporters Fact-Check Them LIVE! |
+| <ENT> panic as <ENT> | 5 | 13 | left; right | Republicans PANIC as Reporters Fact-Check Them LIVE! |
 
 
 ## Stage 5: time and engagement
 
-Monthly drift, January-September (September is 1-14 and never compared on volume). Channel-group trends with |Spearman| >= 0.6 and p < 0.05 over the nine months (9 of 90 group x genre x measure series):
+Monthly drift, January-September (September is 1-14 and never compared on volume). Channel-group trends with |Spearman| >= 0.6 and p < 0.05 over the nine months (13 of 90 group x genre x measure series):
 
 
 | group | genre | measure | spearman_trend | p | first_month_value | last_full_month_value |
 |---|---|---|---|---|---|---|
-| right | videos | F5_controlled | -0.950 | 0.000 | 0.358 | 0.170 |
-| left | streams | F11_controlled | -0.867 | 0.003 | 0.145 | -0.094 |
-| left | videos | outrage | -0.783 | 0.013 | 0.702 | 0.651 |
-| left | streams | curiosity_gap | 0.667 | 0.050 | 0.013 | 0.027 |
-| left | streams | F6_controlled | 0.700 | 0.036 | 0.579 | 0.956 |
-| neutral | streams | F8_controlled | 0.717 | 0.030 | -0.172 | 0.043 |
-| neutral | streams | F5_controlled | 0.833 | 0.005 | -0.406 | -0.178 |
-| neutral | streams | F6_controlled | 0.850 | 0.004 | 0.110 | 0.297 |
-| neutral | streams | F10_controlled | 0.867 | 0.003 | -0.761 | -0.500 |
+| right | videos | humor | -0.883 | 0.002 | 0.003 | 0.002 |
+| neutral | streams | F3_controlled | -0.767 | 0.016 | 1.634 | 1.288 |
+| left | videos | outrage | -0.683 | 0.042 | 0.702 | 0.654 |
+| left | videos | F2_controlled | 0.700 | 0.036 | -0.152 | -0.095 |
+| left | streams | F10_controlled | 0.733 | 0.025 | -0.525 | -0.382 |
+| left | videos | F4_controlled | 0.733 | 0.025 | 0.003 | 0.053 |
+| left | streams | F4_controlled | 0.783 | 0.013 | -0.202 | -0.006 |
+| left | videos | curiosity_gap | 0.783 | 0.013 | 0.035 | 0.041 |
+| neutral | videos | F5_controlled | 0.833 | 0.005 | -0.086 | 0.271 |
+| neutral | streams | F10_controlled | 0.850 | 0.004 | -0.670 | -0.453 |
+| neutral | videos | F2_controlled | 0.900 | 0.001 | -0.270 | -0.058 |
+| right | videos | F8_controlled | 0.900 | 0.001 | -0.129 | -0.071 |
+| neutral | streams | F8_controlled | 0.917 | 0.001 | 0.011 | 0.390 |
 
 
 Month-to-month topic change (mean Jensen-Shannon distance between a creator's consecutive monthly topic mixes; videos):
 
 | group | 2026-02 | 2026-03 | 2026-04 | 2026-05 | 2026-06 | 2026-07 | 2026-08 | 2026-09 |
 |---|---|---|---|---|---|---|---|---|
-| left | 0.64 | 0.67 | 0.62 | 0.63 | 0.64 | 0.61 | 0.63 | 0.63 |
-| neutral | 0.57 | 0.60 | 0.52 | 0.56 | 0.56 | 0.54 | 0.54 | 0.57 |
-| right | 0.70 | 0.71 | 0.67 | 0.68 | 0.68 | 0.68 | 0.68 | 0.67 |
+| left | 0.68 | 0.69 | 0.64 | 0.65 | 0.63 | 0.64 | 0.63 | 0.64 |
+| neutral | 0.59 | 0.60 | 0.54 | 0.57 | 0.54 | 0.51 | 0.53 | 0.59 |
+| right | 0.72 | 0.71 | 0.68 | 0.68 | 0.67 | 0.68 | 0.67 | 0.68 |
 
 
 Engagement, within creator (OLS of log views on standardized title predictors with month and topic controls, HC3; views are a fetch-time snapshot that favors older videos):
@@ -664,129 +668,129 @@ Engagement, within creator (OLS of log views on standardized title predictors wi
 
 | genre | predictor | n_creators | median_coef_per_sd | q25 | q75 | share_positive | share_sig_positive | share_sig_negative | share_same_sign_as_median | median_r2 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| streams | F1 | 59.000 | -0.013 | -0.061 | 0.023 | 0.339 | 0.034 | 0.085 | 0.661 | 0.405 |
-| streams | F10 | 59.000 | 0.004 | -0.027 | 0.033 | 0.542 | 0.017 | 0.051 | 0.542 | 0.405 |
-| streams | F11 | 59.000 | 0.002 | -0.031 | 0.034 | 0.525 | 0.085 | 0.051 | 0.525 | 0.405 |
-| streams | F12 | 59.000 | 0.004 | -0.034 | 0.033 | 0.576 | 0.034 | 0.068 | 0.576 | 0.405 |
-| streams | F2 | 59.000 | 0.019 | -0.020 | 0.054 | 0.576 | 0.051 | 0.017 | 0.576 | 0.405 |
-| streams | F3 | 59.000 | 0.008 | -0.035 | 0.051 | 0.559 | 0.085 | 0.085 | 0.559 | 0.405 |
-| streams | F4 | 59.000 | 0.014 | -0.012 | 0.057 | 0.661 | 0.169 | 0.051 | 0.661 | 0.405 |
-| streams | F5 | 59.000 | 0.010 | -0.042 | 0.039 | 0.508 | 0.102 | 0.017 | 0.508 | 0.405 |
-| streams | F6 | 59.000 | 0.021 | -0.028 | 0.073 | 0.593 | 0.085 | 0.051 | 0.593 | 0.405 |
-| streams | F7 | 59.000 | -0.010 | -0.057 | 0.026 | 0.458 | 0.034 | 0.136 | 0.542 | 0.405 |
-| streams | F8 | 59.000 | 0.006 | -0.027 | 0.063 | 0.525 | 0.085 | 0.051 | 0.525 | 0.405 |
-| streams | F9 | 59.000 | 0.007 | -0.027 | 0.043 | 0.559 | 0.085 | 0.051 | 0.559 | 0.405 |
-| streams | curiosity_gap | 54.000 | -0.001 | -0.020 | 0.021 | 0.481 | 0.019 | 0.111 | 0.519 | 0.405 |
-| streams | humor | 13.000 | 0.011 | -0.006 | 0.021 | 0.692 | 0.077 | 0.000 | 0.692 | 0.376 |
-| streams | n_tokens | 59.000 | -0.003 | -0.045 | 0.033 | 0.458 | 0.085 | 0.085 | 0.542 | 0.405 |
-| streams | outrage | 59.000 | 0.044 | 0.000 | 0.096 | 0.746 | 0.203 | 0.000 | 0.746 | 0.405 |
-| videos | F1 | 193.000 | -0.023 | -0.070 | 0.019 | 0.352 | 0.021 | 0.187 | 0.648 | 0.296 |
-| videos | F10 | 193.000 | -0.006 | -0.050 | 0.023 | 0.425 | 0.036 | 0.124 | 0.575 | 0.296 |
-| videos | F11 | 193.000 | -0.010 | -0.054 | 0.042 | 0.430 | 0.067 | 0.109 | 0.570 | 0.296 |
-| videos | F12 | 193.000 | -0.031 | -0.081 | 0.005 | 0.295 | 0.026 | 0.145 | 0.705 | 0.296 |
-| videos | F2 | 193.000 | 0.011 | -0.026 | 0.056 | 0.611 | 0.104 | 0.031 | 0.611 | 0.296 |
-| videos | F3 | 193.000 | -0.008 | -0.061 | 0.034 | 0.435 | 0.104 | 0.078 | 0.565 | 0.296 |
-| videos | F4 | 193.000 | 0.016 | -0.017 | 0.056 | 0.663 | 0.119 | 0.047 | 0.663 | 0.296 |
-| videos | F5 | 193.000 | -0.022 | -0.052 | 0.015 | 0.368 | 0.062 | 0.104 | 0.632 | 0.296 |
-| videos | F6 | 193.000 | 0.028 | -0.022 | 0.072 | 0.637 | 0.150 | 0.036 | 0.637 | 0.296 |
-| videos | F7 | 193.000 | -0.023 | -0.075 | 0.012 | 0.347 | 0.073 | 0.119 | 0.653 | 0.296 |
-| videos | F8 | 193.000 | -0.011 | -0.058 | 0.034 | 0.425 | 0.073 | 0.093 | 0.575 | 0.296 |
-| videos | F9 | 193.000 | 0.014 | -0.020 | 0.055 | 0.596 | 0.088 | 0.036 | 0.596 | 0.296 |
-| videos | curiosity_gap | 185.000 | 0.000 | -0.020 | 0.025 | 0.503 | 0.016 | 0.027 | 0.503 | 0.294 |
-| videos | humor | 92.000 | 0.002 | -0.021 | 0.024 | 0.533 | 0.076 | 0.033 | 0.533 | 0.255 |
-| videos | n_tokens | 193.000 | 0.011 | -0.041 | 0.065 | 0.549 | 0.140 | 0.088 | 0.549 | 0.296 |
-| videos | outrage | 193.000 | 0.042 | -0.003 | 0.082 | 0.731 | 0.238 | 0.010 | 0.731 | 0.296 |
+| streams | F1 | 56.000 | -0.016 | -0.073 | 0.005 | 0.304 | 0.018 | 0.036 | 0.696 | 0.398 |
+| streams | F10 | 56.000 | 0.014 | -0.022 | 0.042 | 0.554 | 0.018 | 0.071 | 0.554 | 0.398 |
+| streams | F11 | 56.000 | 0.017 | -0.022 | 0.048 | 0.625 | 0.054 | 0.018 | 0.625 | 0.398 |
+| streams | F12 | 56.000 | 0.001 | -0.028 | 0.030 | 0.500 | 0.036 | 0.054 | 0.500 | 0.398 |
+| streams | F2 | 56.000 | 0.007 | -0.017 | 0.034 | 0.589 | 0.071 | 0.036 | 0.589 | 0.398 |
+| streams | F3 | 56.000 | 0.003 | -0.032 | 0.053 | 0.554 | 0.089 | 0.107 | 0.554 | 0.398 |
+| streams | F4 | 56.000 | 0.011 | -0.021 | 0.040 | 0.607 | 0.125 | 0.018 | 0.607 | 0.398 |
+| streams | F5 | 56.000 | 0.003 | -0.047 | 0.048 | 0.554 | 0.071 | 0.054 | 0.554 | 0.398 |
+| streams | F6 | 56.000 | 0.019 | -0.006 | 0.080 | 0.661 | 0.143 | 0.071 | 0.661 | 0.398 |
+| streams | F7 | 56.000 | -0.005 | -0.051 | 0.020 | 0.464 | 0.018 | 0.125 | 0.536 | 0.398 |
+| streams | F8 | 56.000 | 0.003 | -0.025 | 0.046 | 0.500 | 0.089 | 0.054 | 0.500 | 0.398 |
+| streams | F9 | 56.000 | 0.011 | -0.029 | 0.041 | 0.571 | 0.036 | 0.018 | 0.571 | 0.398 |
+| streams | curiosity_gap | 52.000 | 0.001 | -0.018 | 0.026 | 0.519 | 0.096 | 0.058 | 0.519 | 0.392 |
+| streams | humor | 13.000 | 0.006 | -0.001 | 0.017 | 0.615 | 0.000 | 0.000 | 0.615 | 0.385 |
+| streams | n_tokens | 56.000 | -0.006 | -0.049 | 0.048 | 0.446 | 0.089 | 0.071 | 0.554 | 0.398 |
+| streams | outrage | 56.000 | 0.047 | 0.017 | 0.097 | 0.839 | 0.161 | 0.000 | 0.839 | 0.398 |
+| videos | F1 | 188.000 | -0.022 | -0.065 | 0.021 | 0.356 | 0.043 | 0.149 | 0.644 | 0.285 |
+| videos | F10 | 188.000 | -0.008 | -0.047 | 0.031 | 0.441 | 0.032 | 0.112 | 0.559 | 0.285 |
+| videos | F11 | 188.000 | -0.007 | -0.056 | 0.041 | 0.468 | 0.064 | 0.117 | 0.532 | 0.285 |
+| videos | F12 | 188.000 | -0.031 | -0.095 | 0.008 | 0.287 | 0.032 | 0.160 | 0.713 | 0.285 |
+| videos | F2 | 188.000 | 0.014 | -0.025 | 0.066 | 0.606 | 0.096 | 0.048 | 0.606 | 0.285 |
+| videos | F3 | 188.000 | -0.003 | -0.050 | 0.037 | 0.473 | 0.085 | 0.096 | 0.527 | 0.285 |
+| videos | F4 | 188.000 | 0.018 | -0.011 | 0.056 | 0.681 | 0.128 | 0.032 | 0.681 | 0.285 |
+| videos | F5 | 188.000 | -0.022 | -0.060 | 0.018 | 0.383 | 0.053 | 0.106 | 0.617 | 0.285 |
+| videos | F6 | 188.000 | 0.025 | -0.015 | 0.077 | 0.628 | 0.154 | 0.027 | 0.628 | 0.285 |
+| videos | F7 | 188.000 | -0.018 | -0.069 | 0.019 | 0.372 | 0.064 | 0.101 | 0.628 | 0.285 |
+| videos | F8 | 188.000 | -0.007 | -0.053 | 0.034 | 0.447 | 0.059 | 0.106 | 0.553 | 0.285 |
+| videos | F9 | 188.000 | 0.018 | -0.020 | 0.060 | 0.644 | 0.096 | 0.037 | 0.644 | 0.285 |
+| videos | curiosity_gap | 185.000 | 0.008 | -0.022 | 0.038 | 0.578 | 0.054 | 0.011 | 0.578 | 0.281 |
+| videos | humor | 89.000 | 0.008 | -0.025 | 0.025 | 0.528 | 0.101 | 0.045 | 0.528 | 0.254 |
+| videos | n_tokens | 188.000 | 0.010 | -0.051 | 0.067 | 0.548 | 0.160 | 0.096 | 0.548 | 0.285 |
+| videos | outrage | 188.000 | 0.038 | 0.003 | 0.094 | 0.755 | 0.229 | 0.005 | 0.755 | 0.285 |
 
 
 The outrage effect by channel group (videos):
 
 | group | n_creators | median_coef_per_sd | q25 | q75 | share_positive | share_sig_positive | share_sig_negative |
 |---|---|---|---|---|---|---|---|
-| left | 86.000 | 0.037 | -0.001 | 0.082 | 0.744 | 0.209 | 0.023 |
-| neutral | 32.000 | 0.070 | 0.022 | 0.103 | 0.781 | 0.406 | 0.000 |
-| right | 75.000 | 0.039 | -0.005 | 0.077 | 0.693 | 0.200 | 0.000 |
+| left | 84.000 | 0.041 | 0.005 | 0.094 | 0.762 | 0.202 | 0.000 |
+| neutral | 32.000 | 0.074 | 0.029 | 0.107 | 0.875 | 0.406 | 0.000 |
+| right | 72.000 | 0.020 | -0.014 | 0.086 | 0.694 | 0.181 | 0.014 |
 
 
 Hit concentration (creator x genre with >= 100 videos carrying views):
 
 | genre | n_creators | median_gini | median_top10_share | median_top1_share | powerlaw_like | median_alpha |
 |---|---|---|---|---|---|---|
-| streams | 59 | 0.358 | 0.292 | 0.066 | 0.017 | 2.739 |
-| videos | 193 | 0.512 | 0.382 | 0.094 | 0.000 | 2.748 |
+| streams | 57 | 0.363 | 0.298 | 0.072 | 0.018 | 2.754 |
+| videos | 188 | 0.515 | 0.394 | 0.095 | 0.000 | 2.702 |
 
 
 Concentration vs style, pooled within channel group (group-demeaned Spearman across creators):
 
 | genre | target | predictor | n_creators | spearman_r | p |
 |---|---|---|---|---|---|
-| streams | gini | F10_controlled | 59 | -0.077 | 0.562 |
-| streams | gini | F11_controlled | 59 | -0.214 | 0.103 |
-| streams | gini | F12_controlled | 59 | -0.041 | 0.759 |
-| streams | gini | F1_controlled | 59 | 0.368 | 0.004 |
-| streams | gini | F2_controlled | 59 | -0.055 | 0.680 |
-| streams | gini | F3_controlled | 59 | 0.470 | 0.000 |
-| streams | gini | F4_controlled | 59 | -0.015 | 0.909 |
-| streams | gini | F5_controlled | 59 | -0.175 | 0.185 |
-| streams | gini | F6_controlled | 59 | -0.162 | 0.220 |
-| streams | gini | F7_controlled | 59 | 0.228 | 0.082 |
-| streams | gini | F8_controlled | 59 | -0.060 | 0.651 |
-| streams | gini | F9_controlled | 59 | 0.042 | 0.752 |
-| streams | gini | curiosity_gap | 59 | -0.178 | 0.177 |
-| streams | gini | humor | 59 | 0.037 | 0.778 |
-| streams | gini | log_n_videos | 59 | 0.352 | 0.006 |
-| streams | gini | log_subscribers | 59 | 0.368 | 0.004 |
-| streams | gini | outrage | 59 | -0.465 | 0.000 |
-| streams | top10_share | F10_controlled | 59 | -0.088 | 0.506 |
-| streams | top10_share | F11_controlled | 59 | -0.254 | 0.052 |
-| streams | top10_share | F12_controlled | 59 | -0.028 | 0.832 |
-| streams | top10_share | F1_controlled | 59 | 0.394 | 0.002 |
-| streams | top10_share | F2_controlled | 59 | -0.079 | 0.552 |
-| streams | top10_share | F3_controlled | 59 | 0.434 | 0.001 |
-| streams | top10_share | F4_controlled | 59 | -0.001 | 0.996 |
-| streams | top10_share | F5_controlled | 59 | -0.147 | 0.268 |
-| streams | top10_share | F6_controlled | 59 | -0.182 | 0.169 |
-| streams | top10_share | F7_controlled | 59 | 0.244 | 0.062 |
-| streams | top10_share | F8_controlled | 59 | -0.031 | 0.814 |
-| streams | top10_share | F9_controlled | 59 | 0.006 | 0.962 |
-| streams | top10_share | curiosity_gap | 59 | -0.155 | 0.240 |
-| streams | top10_share | humor | 59 | 0.069 | 0.606 |
-| streams | top10_share | log_n_videos | 59 | 0.338 | 0.009 |
-| streams | top10_share | log_subscribers | 59 | 0.353 | 0.006 |
-| streams | top10_share | outrage | 59 | -0.467 | 0.000 |
-| videos | gini | F10_controlled | 193 | 0.262 | 0.000 |
-| videos | gini | F11_controlled | 193 | 0.185 | 0.010 |
-| videos | gini | F12_controlled | 193 | 0.257 | 0.000 |
-| videos | gini | F1_controlled | 193 | 0.209 | 0.004 |
-| videos | gini | F2_controlled | 193 | 0.059 | 0.412 |
-| videos | gini | F3_controlled | 193 | 0.029 | 0.684 |
-| videos | gini | F4_controlled | 193 | -0.041 | 0.572 |
-| videos | gini | F5_controlled | 193 | 0.246 | 0.001 |
-| videos | gini | F6_controlled | 193 | 0.186 | 0.010 |
-| videos | gini | F7_controlled | 193 | 0.079 | 0.276 |
-| videos | gini | F8_controlled | 193 | 0.195 | 0.006 |
-| videos | gini | F9_controlled | 193 | -0.118 | 0.102 |
-| videos | gini | curiosity_gap | 193 | -0.159 | 0.027 |
-| videos | gini | humor | 193 | -0.027 | 0.706 |
-| videos | gini | log_n_videos | 193 | 0.203 | 0.005 |
-| videos | gini | log_subscribers | 193 | 0.004 | 0.954 |
-| videos | gini | outrage | 193 | -0.436 | 0.000 |
-| videos | top10_share | F10_controlled | 193 | 0.263 | 0.000 |
-| videos | top10_share | F11_controlled | 193 | 0.186 | 0.010 |
-| videos | top10_share | F12_controlled | 193 | 0.225 | 0.002 |
-| videos | top10_share | F1_controlled | 193 | 0.224 | 0.002 |
-| videos | top10_share | F2_controlled | 193 | 0.059 | 0.418 |
-| videos | top10_share | F3_controlled | 193 | -0.002 | 0.976 |
-| videos | top10_share | F4_controlled | 193 | -0.068 | 0.350 |
-| videos | top10_share | F5_controlled | 193 | 0.230 | 0.001 |
-| videos | top10_share | F6_controlled | 193 | 0.176 | 0.015 |
-| videos | top10_share | F7_controlled | 193 | 0.078 | 0.282 |
-| videos | top10_share | F8_controlled | 193 | 0.179 | 0.013 |
-| videos | top10_share | F9_controlled | 193 | -0.126 | 0.082 |
-| videos | top10_share | curiosity_gap | 193 | -0.159 | 0.027 |
-| videos | top10_share | humor | 193 | -0.019 | 0.792 |
-| videos | top10_share | log_n_videos | 193 | 0.179 | 0.013 |
-| videos | top10_share | log_subscribers | 193 | -0.026 | 0.723 |
-| videos | top10_share | outrage | 193 | -0.428 | 0.000 |
+| streams | gini | F10_controlled | 57 | -0.038 | 0.778 |
+| streams | gini | F11_controlled | 57 | -0.118 | 0.381 |
+| streams | gini | F12_controlled | 57 | 0.025 | 0.851 |
+| streams | gini | F1_controlled | 57 | 0.385 | 0.003 |
+| streams | gini | F2_controlled | 57 | -0.045 | 0.742 |
+| streams | gini | F3_controlled | 57 | 0.440 | 0.001 |
+| streams | gini | F4_controlled | 57 | -0.007 | 0.957 |
+| streams | gini | F5_controlled | 57 | -0.169 | 0.210 |
+| streams | gini | F6_controlled | 57 | -0.090 | 0.504 |
+| streams | gini | F7_controlled | 57 | 0.263 | 0.049 |
+| streams | gini | F8_controlled | 57 | -0.050 | 0.711 |
+| streams | gini | F9_controlled | 57 | 0.065 | 0.633 |
+| streams | gini | curiosity_gap | 57 | -0.160 | 0.236 |
+| streams | gini | humor | 57 | 0.026 | 0.850 |
+| streams | gini | log_n_videos | 57 | 0.303 | 0.022 |
+| streams | gini | log_subscribers | 57 | 0.336 | 0.011 |
+| streams | gini | outrage | 57 | -0.447 | 0.001 |
+| streams | top10_share | F10_controlled | 57 | -0.046 | 0.736 |
+| streams | top10_share | F11_controlled | 57 | -0.146 | 0.279 |
+| streams | top10_share | F12_controlled | 57 | 0.025 | 0.856 |
+| streams | top10_share | F1_controlled | 57 | 0.419 | 0.001 |
+| streams | top10_share | F2_controlled | 57 | -0.045 | 0.742 |
+| streams | top10_share | F3_controlled | 57 | 0.395 | 0.002 |
+| streams | top10_share | F4_controlled | 57 | 0.011 | 0.935 |
+| streams | top10_share | F5_controlled | 57 | -0.117 | 0.387 |
+| streams | top10_share | F6_controlled | 57 | -0.127 | 0.345 |
+| streams | top10_share | F7_controlled | 57 | 0.278 | 0.036 |
+| streams | top10_share | F8_controlled | 57 | -0.056 | 0.681 |
+| streams | top10_share | F9_controlled | 57 | 0.010 | 0.939 |
+| streams | top10_share | curiosity_gap | 57 | -0.124 | 0.358 |
+| streams | top10_share | humor | 57 | 0.046 | 0.733 |
+| streams | top10_share | log_n_videos | 57 | 0.258 | 0.052 |
+| streams | top10_share | log_subscribers | 57 | 0.340 | 0.010 |
+| streams | top10_share | outrage | 57 | -0.458 | 0.000 |
+| videos | gini | F10_controlled | 188 | 0.267 | 0.000 |
+| videos | gini | F11_controlled | 188 | 0.174 | 0.017 |
+| videos | gini | F12_controlled | 188 | 0.234 | 0.001 |
+| videos | gini | F1_controlled | 188 | 0.214 | 0.003 |
+| videos | gini | F2_controlled | 188 | 0.035 | 0.629 |
+| videos | gini | F3_controlled | 188 | -0.027 | 0.713 |
+| videos | gini | F4_controlled | 188 | -0.085 | 0.248 |
+| videos | gini | F5_controlled | 188 | 0.272 | 0.000 |
+| videos | gini | F6_controlled | 188 | 0.149 | 0.041 |
+| videos | gini | F7_controlled | 188 | 0.067 | 0.359 |
+| videos | gini | F8_controlled | 188 | 0.204 | 0.005 |
+| videos | gini | F9_controlled | 188 | -0.145 | 0.047 |
+| videos | gini | curiosity_gap | 188 | -0.210 | 0.004 |
+| videos | gini | humor | 188 | -0.041 | 0.580 |
+| videos | gini | log_n_videos | 188 | 0.177 | 0.015 |
+| videos | gini | log_subscribers | 188 | 0.008 | 0.910 |
+| videos | gini | outrage | 188 | -0.467 | 0.000 |
+| videos | top10_share | F10_controlled | 188 | 0.265 | 0.000 |
+| videos | top10_share | F11_controlled | 188 | 0.177 | 0.015 |
+| videos | top10_share | F12_controlled | 188 | 0.205 | 0.005 |
+| videos | top10_share | F1_controlled | 188 | 0.230 | 0.002 |
+| videos | top10_share | F2_controlled | 188 | 0.043 | 0.560 |
+| videos | top10_share | F3_controlled | 188 | -0.054 | 0.463 |
+| videos | top10_share | F4_controlled | 188 | -0.110 | 0.134 |
+| videos | top10_share | F5_controlled | 188 | 0.258 | 0.000 |
+| videos | top10_share | F6_controlled | 188 | 0.136 | 0.063 |
+| videos | top10_share | F7_controlled | 188 | 0.068 | 0.351 |
+| videos | top10_share | F8_controlled | 188 | 0.191 | 0.009 |
+| videos | top10_share | F9_controlled | 188 | -0.149 | 0.041 |
+| videos | top10_share | curiosity_gap | 188 | -0.204 | 0.005 |
+| videos | top10_share | humor | 188 | -0.037 | 0.611 |
+| videos | top10_share | log_n_videos | 188 | 0.158 | 0.031 |
+| videos | top10_share | log_subscribers | 188 | -0.024 | 0.745 |
+| videos | top10_share | outrage | 188 | -0.456 | 0.000 |
 
 
 ## Stage 6b: Zipf's law and views over time (document 7)
@@ -795,188 +799,188 @@ Zipf exponents per system (tokens with stopwords; OLS of log frequency on log ra
 
 | grouping | system | n_titles | n_tokens | n_types | tokens_per_title | zipf_top100 | zipf_top1000 | zipf_top5000 | zipf_r2_top1000 | zipf_size_matched | zipf_size_matched_sd | top1_share | top_10 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| corpus | all edited uploads (balanced) | 155636 | 1612982 | 48959 | 10.3600 | 0.8592 | 0.7847 | 1.0143 | 0.9954 | 0.8129 | 0.0097 | 0.0245 | the trump to in on of s is iran and |
-| channel_group | left | 64947 | 618335 | 26834 | 9.5200 | 0.8572 | 0.8244 | 1.0867 | 0.9963 | 0.8180 | 0.0083 | 0.0383 | trump the to in as on s is of iran |
-| channel_group | neutral | 39161 | 442699 | 28903 | 11.3000 | 0.8481 | 0.7922 | 1.0063 | 0.9945 | 0.8009 | 0.0108 | 0.0197 | in to the of trump on iran s for us |
-| channel_group | right | 51528 | 551948 | 27779 | 10.7100 | 0.8282 | 0.7863 | 1.0233 | 0.9959 | 0.7865 | 0.0079 | 0.0336 | the to in is of trump on and a s |
-| title_label | left | 3031 | 29617 | 6005 | 9.7700 | 0.8587 | 0.8180 | 0.9967 | 0.9954 | 0.8471 | 0.0070 | 0.0380 | trump the to is s in on of and as |
-| title_label | right | 2550 | 26617 | 6104 | 10.4400 | 0.7689 | 0.7750 | 0.9654 | 0.9960 | 0.7730 | 0.0037 | 0.0408 | the to is on trump in of and for s |
-| title_label | neither | 6881 | 62974 | 11081 | 9.1500 | 0.8643 | 0.8113 | 0.9644 | 0.9964 | 0.8147 | 0.0058 | 0.0404 | the to in is of a on s and trump |
-| caps_style | all_caps | 3980 | 24648 | 4808 | 6.1900 | 0.7581 | 0.8765 | 0.9801 | 0.9939 | 0.7935 | 0.0088 | 0.0247 | the is trump this to it they in iran on |
-| caps_style | selective_caps | 57793 | 600713 | 26847 | 10.3900 | 0.8100 | 0.7934 | 1.0669 | 0.9966 | 0.7837 | 0.0074 | 0.0321 | trump the to in as on s is of iran |
-| caps_style | title_case | 53189 | 542216 | 30259 | 10.1900 | 0.8430 | 0.7971 | 1.0165 | 0.9963 | 0.8170 | 0.0104 | 0.0340 | the trump to s in on of is and a |
-| caps_style | sentence_case | 39555 | 441122 | 28459 | 11.1500 | 0.8618 | 0.7962 | 1.0137 | 0.9953 | 0.8094 | 0.0109 | 0.0216 | to in the of trump on iran and for s |
-| caps_style | mixed_other | 274 | 1914 | 800 | 6.9900 | 0.7530 | 0.7008 | 0.7008 | 0.9211 |  |  | 0.0481 | this is the to f it i a you just |
-| caps_style | short_other | 845 | 2369 | 794 | 2.8000 | 0.9581 | 0.7639 | 0.7639 | 0.8730 |  |  | 0.0595 | 26 episode full hasanabi 2026 bloomberg surveillance 4 5 a |
+| corpus | all edited uploads (balanced) | 150571 | 1566114 | 48201 | 10.4000 | 0.8585 | 0.7848 | 1.0155 | 0.9953 | 0.8188 | 0.0076 | 0.0244 | the trump to in on of s is iran as |
+| channel_group | left | 62517 | 596492 | 26294 | 9.5400 | 0.8576 | 0.8246 | 1.0872 | 0.9959 | 0.8118 | 0.0087 | 0.0381 | trump the to in as on s is iran of |
+| channel_group | neutral | 38562 | 438415 | 28428 | 11.3700 | 0.8491 | 0.7993 | 1.0080 | 0.9947 | 0.8061 | 0.0078 | 0.0199 | in to the of trump iran on s for us |
+| channel_group | right | 49492 | 531207 | 27335 | 10.7300 | 0.8312 | 0.7869 | 1.0236 | 0.9959 | 0.7963 | 0.0065 | 0.0336 | the to in is of trump on and a s |
+| title_label | left | 2585 | 28077 | 6598 | 10.8600 | 0.8529 | 0.7840 | 0.9616 | 0.9930 | 0.8164 | 0.0036 | 0.0261 | trump the to in s on of iran as for |
+| title_label | right | 2149 | 22134 | 6218 | 10.3000 | 0.8312 | 0.7722 | 0.8875 | 0.9932 | 0.8183 | 0.0024 | 0.0244 | the to trump s in on is of iran a |
+| title_label | neither | 5967 | 62982 | 10934 | 10.5600 | 0.8370 | 0.7846 | 0.9596 | 0.9954 | 0.8039 | 0.0067 | 0.0217 | the trump to in s on of iran is for |
+| caps_style | all_caps | 3820 | 23184 | 4561 | 6.0700 | 0.7706 | 0.8769 | 0.9762 | 0.9944 | 0.8006 | 0.0086 | 0.0260 | the is trump this to it they in iran just |
+| caps_style | selective_caps | 55962 | 584638 | 26553 | 10.4500 | 0.8117 | 0.7914 | 1.0686 | 0.9968 | 0.7861 | 0.0083 | 0.0319 | trump the to in as on s is of iran |
+| caps_style | title_case | 51133 | 522555 | 29636 | 10.2200 | 0.8398 | 0.7983 | 1.0161 | 0.9963 | 0.8205 | 0.0072 | 0.0336 | the trump to s in on of is and a |
+| caps_style | sentence_case | 38563 | 431543 | 28063 | 11.1900 | 0.8659 | 0.8000 | 1.0142 | 0.9950 | 0.8120 | 0.0089 | 0.0220 | to in the of trump on iran and s for |
+| caps_style | mixed_other | 272 | 1906 | 810 | 7.0100 | 0.7595 | 0.6930 | 0.6930 | 0.9173 |  |  | 0.0472 | this is the to f i it a you just |
+| caps_style | short_other | 821 | 2288 | 770 | 2.7900 | 0.9773 | 0.7576 | 0.7576 | 0.8697 |  |  | 0.0612 | 26 episode full 2026 hasanabi bloomberg surveillance 4 5 1 |
 
 
 Creator-level Zipf / Heaps and the views rank-size slopes per channel group and per dominant capitalization style:
 
 | grouping | group | n_creators | zipf_words_top200_mean | zipf_words_top200_median | n_creators_1500 | zipf_words_1500_mean | heaps_beta_1500_mean | top1_word_share_mean | n_creators_with_views | zipf_views_all_median | zipf_views_head_median | gini_median | top10_share_median | powerlaw_like_share | caps_any_mean |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| channel_group | left | 105 | 0.797 | 0.791 | 72 | 0.724 | 0.810 | 0.050 | 86 | 0.876 | 0.425 | 0.494 | 0.373 | 0.000 | 0.396 |
-| channel_group | neutral | 38 | 0.789 | 0.809 | 25 | 0.712 | 0.843 | 0.043 | 32 | 1.244 | 0.603 | 0.670 | 0.538 | 0.000 | 0.183 |
-| channel_group | right | 96 | 0.750 | 0.757 | 67 | 0.690 | 0.827 | 0.046 | 75 | 0.898 | 0.419 | 0.495 | 0.361 | 0.000 | 0.406 |
-| dominant_caps_style | all_caps | 7 | 0.735 | 0.740 | 5 | 0.692 | 0.814 | 0.036 | 5 | 0.583 | 0.312 | 0.347 | 0.263 | 0.000 | 0.778 |
-| dominant_caps_style | selective_caps | 78 | 0.781 | 0.784 | 66 | 0.700 | 0.809 | 0.045 | 66 | 0.833 | 0.385 | 0.472 | 0.349 | 0.000 | 0.758 |
-| dominant_caps_style | title_case | 123 | 0.762 | 0.762 | 72 | 0.715 | 0.829 | 0.050 | 96 | 0.924 | 0.463 | 0.516 | 0.392 | 0.000 | 0.168 |
-| dominant_caps_style | sentence_case | 30 | 0.830 | 0.835 | 21 | 0.718 | 0.843 | 0.042 | 25 | 1.236 | 0.634 | 0.681 | 0.557 | 0.000 | 0.070 |
+| channel_group | left | 105 | 0.792 | 0.788 | 72 | 0.724 | 0.810 | 0.051 | 84 | 0.880 | 0.433 | 0.494 | 0.378 | 0.000 | 0.395 |
+| channel_group | neutral | 37 | 0.792 | 0.807 | 26 | 0.713 | 0.838 | 0.043 | 32 | 1.257 | 0.597 | 0.671 | 0.537 | 0.000 | 0.190 |
+| channel_group | right | 94 | 0.750 | 0.752 | 67 | 0.691 | 0.826 | 0.046 | 72 | 0.899 | 0.435 | 0.496 | 0.373 | 0.000 | 0.407 |
+| dominant_caps_style | all_caps | 7 | 0.745 | 0.743 | 5 | 0.698 | 0.808 | 0.037 | 5 | 0.591 | 0.311 | 0.352 | 0.256 | 0.000 | 0.780 |
+| dominant_caps_style | selective_caps | 77 | 0.783 | 0.788 | 66 | 0.702 | 0.808 | 0.045 | 64 | 0.809 | 0.389 | 0.474 | 0.352 | 0.000 | 0.759 |
+| dominant_caps_style | title_case | 122 | 0.758 | 0.756 | 73 | 0.715 | 0.828 | 0.050 | 93 | 0.954 | 0.473 | 0.533 | 0.410 | 0.000 | 0.169 |
+| dominant_caps_style | sentence_case | 29 | 0.830 | 0.838 | 21 | 0.716 | 0.842 | 0.041 | 25 | 1.245 | 0.635 | 0.682 | 0.557 | 0.000 | 0.076 |
 
 
 Views by publication month (edited uploads, YouTube, unique titles): median views, the median over channels of the channel's median, and log views relative to the same channel's mean that month:
 
 | grouping | group | month | n_videos | n_creators | median_views | creator_median_views | mean_log_views | relative_log_views | relative_log_views_se |
 |---|---|---|---|---|---|---|---|---|---|
-| channel_group | left | 2026-01 | 8344 | 102 | 59000.000 | 55500.000 | 10.845 | 0.000 | 0.012 |
-| channel_group | left | 2026-02 | 9528 | 101 | 59000.000 | 59000.000 | 10.831 | -0.000 | 0.011 |
-| channel_group | left | 2026-03 | 8713 | 100 | 69000.000 | 59000.000 | 10.949 | 0.000 | 0.012 |
-| channel_group | left | 2026-04 | 9805 | 102 | 71000.000 | 54750.000 | 11.032 | -0.000 | 0.011 |
-| channel_group | left | 2026-05 | 9327 | 103 | 47000.000 | 41000.000 | 10.628 | 0.000 | 0.011 |
-| channel_group | left | 2026-06 | 9285 | 104 | 41000.000 | 40500.000 | 10.491 | 0.000 | 0.011 |
-| channel_group | left | 2026-07 | 9235 | 103 | 43000.000 | 47000.000 | 10.505 | -0.000 | 0.012 |
-| channel_group | left | 2026-08 | 12492 | 104 | 44000.000 | 45500.000 | 10.557 | -0.000 | 0.010 |
-| channel_group | left | 2026-09 | 6461 | 101 | 70000.000 | 79000.000 | 11.022 | 0.000 | 0.013 |
-| channel_group | left | all | 83190 | 104 | 54000.000 | 49500.000 | 10.745 | 0.000 | 0.004 |
-| channel_group | neutral | 2026-01 | 9577 | 36 | 9700.000 | 15000.000 | 9.274 | -0.000 | 0.015 |
-| channel_group | neutral | 2026-02 | 11510 | 36 | 9900.000 | 19500.000 | 9.296 | -0.000 | 0.014 |
-| channel_group | neutral | 2026-03 | 10728 | 35 | 11000.000 | 23000.000 | 9.434 | 0.000 | 0.015 |
-| channel_group | neutral | 2026-04 | 11245 | 36 | 9900.000 | 14250.000 | 9.349 | 0.000 | 0.014 |
-| channel_group | neutral | 2026-05 | 11060 | 36 | 7700.000 | 13500.000 | 9.085 | -0.000 | 0.014 |
-| channel_group | neutral | 2026-06 | 11249 | 36 | 7600.000 | 14175.000 | 9.022 | -0.000 | 0.013 |
-| channel_group | neutral | 2026-07 | 10836 | 36 | 6800.000 | 18500.000 | 8.943 | 0.000 | 0.014 |
-| channel_group | neutral | 2026-08 | 14402 | 36 | 7200.000 | 19500.000 | 8.967 | -0.000 | 0.011 |
-| channel_group | neutral | 2026-09 | 7714 | 37 | 11000.000 | 25000.000 | 9.529 | -0.000 | 0.015 |
-| channel_group | neutral | all | 98321 | 38 | 8800.000 | 20000.000 | 9.191 | -0.000 | 0.005 |
-| channel_group | right | 2026-01 | 6259 | 88 | 32000.000 | 26500.000 | 10.111 | -0.000 | 0.014 |
-| channel_group | right | 2026-02 | 7323 | 90 | 32000.000 | 28500.000 | 10.098 | 0.000 | 0.013 |
-| channel_group | right | 2026-03 | 6908 | 90 | 32000.000 | 29000.000 | 10.075 | -0.000 | 0.014 |
-| channel_group | right | 2026-04 | 7092 | 90 | 35000.000 | 35500.000 | 10.194 | 0.000 | 0.013 |
-| channel_group | right | 2026-05 | 6905 | 92 | 33000.000 | 22000.000 | 10.254 | 0.000 | 0.013 |
-| channel_group | right | 2026-06 | 6913 | 92 | 28000.000 | 20500.000 | 10.115 | 0.000 | 0.014 |
-| channel_group | right | 2026-07 | 6449 | 92 | 28000.000 | 17250.000 | 10.137 | -0.000 | 0.014 |
-| channel_group | right | 2026-08 | 9011 | 92 | 28000.000 | 19250.000 | 10.155 | 0.000 | 0.012 |
-| channel_group | right | 2026-09 | 4769 | 90 | 44000.000 | 39500.000 | 10.602 | -0.000 | 0.016 |
-| channel_group | right | all | 61629 | 92 | 32000.000 | 20500.000 | 10.178 | 0.000 | 0.004 |
-| title_label | left | 2026-01 | 319 | 120 | 57000.000 | 52750.000 | 10.814 | 0.035 | 0.054 |
-| title_label | left | 2026-02 | 357 | 129 | 60000.000 | 64000.000 | 10.749 | -0.047 | 0.047 |
-| title_label | left | 2026-03 | 338 | 123 | 67000.000 | 54000.000 | 10.814 | 0.031 | 0.048 |
-| title_label | left | 2026-04 | 316 | 125 | 51000.000 | 55000.000 | 10.563 | -0.084 | 0.052 |
-| title_label | left | 2026-05 | 340 | 125 | 39500.000 | 36000.000 | 10.367 | -0.018 | 0.048 |
-| title_label | left | 2026-06 | 358 | 130 | 54000.000 | 50750.000 | 10.550 | 0.063 | 0.048 |
-| title_label | left | 2026-07 | 311 | 120 | 43000.000 | 47000.000 | 10.470 | 0.056 | 0.056 |
-| title_label | left | 2026-08 | 295 | 127 | 49000.000 | 47350.000 | 10.496 | 0.014 | 0.050 |
-| title_label | left | 2026-09 | 246 | 106 | 86500.000 | 87000.000 | 11.182 | 0.041 | 0.051 |
-| title_label | left | all | 2880 | 214 | 55000.000 | 43500.000 | 10.654 | 0.009 | 0.017 |
-| title_label | right | 2026-01 | 276 | 108 | 40500.000 | 33775.000 | 10.444 | 0.050 | 0.054 |
-| title_label | right | 2026-02 | 290 | 112 | 27000.000 | 33250.000 | 10.230 | -0.024 | 0.050 |
-| title_label | right | 2026-03 | 274 | 109 | 26500.000 | 37000.000 | 10.159 | -0.021 | 0.056 |
-| title_label | right | 2026-04 | 275 | 106 | 45000.000 | 44500.000 | 10.464 | 0.131 | 0.055 |
-| title_label | right | 2026-05 | 279 | 116 | 30000.000 | 41750.000 | 10.302 | -0.001 | 0.051 |
-| title_label | right | 2026-06 | 301 | 110 | 29000.000 | 32500.000 | 10.192 | 0.110 | 0.049 |
-| title_label | right | 2026-07 | 262 | 109 | 26500.000 | 30000.000 | 10.196 | 0.018 | 0.058 |
-| title_label | right | 2026-08 | 291 | 114 | 29000.000 | 25500.000 | 10.297 | 0.019 | 0.051 |
-| title_label | right | 2026-09 | 184 | 92 | 54500.000 | 48750.000 | 10.785 | 0.064 | 0.068 |
-| title_label | right | all | 2432 | 190 | 32000.000 | 37000.000 | 10.323 | 0.038 | 0.018 |
-| title_label | neither | 2026-01 | 684 | 217 | 28000.000 | 37000.000 | 10.209 | 0.005 | 0.039 |
-| title_label | neither | 2026-02 | 721 | 225 | 38000.000 | 49400.000 | 10.294 | 0.009 | 0.040 |
-| title_label | neither | 2026-03 | 718 | 228 | 42500.000 | 45500.000 | 10.387 | 0.011 | 0.039 |
-| title_label | neither | 2026-04 | 745 | 232 | 29000.000 | 36500.000 | 10.235 | -0.023 | 0.039 |
-| title_label | neither | 2026-05 | 807 | 237 | 31000.000 | 35000.000 | 10.332 | 0.053 | 0.038 |
-| title_label | neither | 2026-06 | 738 | 227 | 21000.000 | 24000.000 | 9.930 | -0.091 | 0.036 |
-| title_label | neither | 2026-07 | 760 | 221 | 25000.000 | 28000.000 | 9.969 | -0.080 | 0.038 |
-| title_label | neither | 2026-08 | 728 | 227 | 28500.000 | 37000.000 | 10.146 | 0.028 | 0.038 |
-| title_label | neither | 2026-09 | 577 | 211 | 39000.000 | 41000.000 | 10.521 | -0.065 | 0.039 |
-| title_label | neither | all | 6478 | 267 | 30000.000 | 34000.000 | 10.217 | -0.016 | 0.013 |
-| caps_style | all_caps | 2026-01 | 262 | 30 | 94000.000 | 123000.000 | 10.161 | 0.116 | 0.054 |
-| caps_style | all_caps | 2026-02 | 392 | 36 | 109000.000 | 71500.000 | 10.692 | 0.026 | 0.043 |
-| caps_style | all_caps | 2026-03 | 348 | 40 | 101000.000 | 114750.000 | 11.174 | 0.045 | 0.037 |
-| caps_style | all_caps | 2026-04 | 576 | 38 | 31500.000 | 69000.000 | 9.112 | 0.023 | 0.039 |
-| caps_style | all_caps | 2026-05 | 417 | 32 | 59000.000 | 92500.000 | 10.032 | 0.050 | 0.049 |
-| caps_style | all_caps | 2026-06 | 388 | 34 | 36500.000 | 78750.000 | 9.797 | 0.033 | 0.051 |
-| caps_style | all_caps | 2026-07 | 309 | 33 | 83000.000 | 90000.000 | 10.988 | 0.087 | 0.039 |
-| caps_style | all_caps | 2026-08 | 445 | 33 | 71000.000 | 90000.000 | 10.877 | 0.023 | 0.029 |
-| caps_style | all_caps | 2026-09 | 174 | 30 | 139500.000 | 114000.000 | 11.378 | 0.024 | 0.053 |
-| caps_style | all_caps | all | 3311 | 74 | 71000.000 | 53500.000 | 10.326 | 0.044 | 0.015 |
-| caps_style | selective_caps | 2026-01 | 7686 | 181 | 54000.000 | 41000.000 | 10.654 | 0.052 | 0.012 |
-| caps_style | selective_caps | 2026-02 | 8736 | 193 | 54000.000 | 49000.000 | 10.641 | 0.045 | 0.011 |
-| caps_style | selective_caps | 2026-03 | 7997 | 184 | 61000.000 | 45000.000 | 10.716 | 0.084 | 0.012 |
-| caps_style | selective_caps | 2026-04 | 9110 | 196 | 55000.000 | 45900.000 | 10.711 | 0.065 | 0.011 |
-| caps_style | selective_caps | 2026-05 | 8946 | 195 | 43000.000 | 33500.000 | 10.507 | 0.062 | 0.011 |
-| caps_style | selective_caps | 2026-06 | 8961 | 197 | 38000.000 | 32000.000 | 10.348 | 0.056 | 0.012 |
-| caps_style | selective_caps | 2026-07 | 8558 | 190 | 36000.000 | 33500.000 | 10.284 | 0.025 | 0.012 |
-| caps_style | selective_caps | 2026-08 | 12157 | 207 | 38000.000 | 33000.000 | 10.317 | 0.043 | 0.010 |
-| caps_style | selective_caps | 2026-09 | 6378 | 177 | 59000.000 | 61000.000 | 10.747 | 0.052 | 0.013 |
-| caps_style | selective_caps | all | 78529 | 245 | 47000.000 | 37000.000 | 10.529 | 0.053 | 0.004 |
-| caps_style | title_case | 2026-01 | 6806 | 223 | 19000.000 | 39000.000 | 9.764 | -0.016 | 0.016 |
-| caps_style | title_case | 2026-02 | 8149 | 226 | 18000.000 | 38250.000 | 9.709 | -0.025 | 0.014 |
-| caps_style | title_case | 2026-03 | 7741 | 224 | 18000.000 | 38750.000 | 9.698 | -0.053 | 0.015 |
-| caps_style | title_case | 2026-04 | 7858 | 234 | 20000.000 | 40500.000 | 9.908 | -0.040 | 0.015 |
-| caps_style | title_case | 2026-05 | 8100 | 229 | 15000.000 | 33000.000 | 9.658 | -0.024 | 0.014 |
-| caps_style | title_case | 2026-06 | 8597 | 230 | 12000.000 | 29000.000 | 9.515 | -0.033 | 0.014 |
-| caps_style | title_case | 2026-07 | 8438 | 234 | 12000.000 | 28000.000 | 9.518 | 0.001 | 0.014 |
-| caps_style | title_case | 2026-08 | 11374 | 239 | 12000.000 | 28000.000 | 9.550 | -0.017 | 0.011 |
-| caps_style | title_case | 2026-09 | 5982 | 217 | 23000.000 | 52000.000 | 10.092 | -0.020 | 0.016 |
-| caps_style | title_case | all | 73045 | 259 | 16000.000 | 35000.000 | 9.691 | -0.025 | 0.005 |
-| caps_style | sentence_case | 2026-01 | 9417 | 93 | 16000.000 | 23000.000 | 9.729 | -0.035 | 0.014 |
-| caps_style | sentence_case | 2026-02 | 11101 | 94 | 17000.000 | 35000.000 | 9.736 | -0.019 | 0.013 |
-| caps_style | sentence_case | 2026-03 | 10263 | 90 | 19000.000 | 31000.000 | 9.901 | -0.028 | 0.014 |
-| caps_style | sentence_case | 2026-04 | 10560 | 104 | 19000.000 | 40000.000 | 9.900 | -0.029 | 0.013 |
-| caps_style | sentence_case | 2026-05 | 9823 | 91 | 13000.000 | 23500.000 | 9.569 | -0.043 | 0.014 |
-| caps_style | sentence_case | 2026-06 | 9474 | 90 | 13000.000 | 24750.000 | 9.530 | -0.026 | 0.014 |
-| caps_style | sentence_case | 2026-07 | 9182 | 89 | 12000.000 | 23000.000 | 9.511 | -0.029 | 0.014 |
-| caps_style | sentence_case | 2026-08 | 11909 | 97 | 12000.000 | 27000.000 | 9.542 | -0.030 | 0.012 |
-| caps_style | sentence_case | 2026-09 | 6420 | 85 | 20000.000 | 70000.000 | 10.061 | -0.033 | 0.016 |
-| caps_style | sentence_case | all | 88149 | 179 | 15000.000 | 26500.000 | 9.707 | -0.030 | 0.005 |
-| caps_style | mixed_other | 2026-03 | 25 | 11 | 96000.000 | 59000.000 | 10.649 | -0.143 | 0.143 |
-| caps_style | mixed_other | 2026-04 | 65 | 14 | 113000.000 | 114000.000 | 11.580 | 0.026 | 0.087 |
-| caps_style | mixed_other | 2026-05 | 37 | 10 | 97000.000 | 91000.000 | 11.310 | -0.079 | 0.164 |
-| caps_style | mixed_other | 2026-06 | 35 | 12 | 100000.000 | 83000.000 | 10.983 | -0.147 | 0.107 |
-| caps_style | mixed_other | 2026-07 | 39 | 8 | 77000.000 | 81500.000 | 11.172 | 0.018 | 0.054 |
-| caps_style | mixed_other | 2026-08 | 42 | 9 | 68500.000 | 66000.000 | 11.129 | 0.017 | 0.075 |
-| caps_style | mixed_other | all | 282 | 39 | 94500.000 | 58000.000 | 11.171 | -0.086 | 0.048 |
-| caps_style | short_other | 2026-01 | 81 | 27 | 17000.000 | 56000.000 | 9.856 | 0.153 | 0.102 |
-| caps_style | short_other | 2026-02 | 79 | 27 | 41000.000 | 101500.000 | 10.633 | 0.211 | 0.092 |
-| caps_style | short_other | 2026-03 | 74 | 21 | 43500.000 | 89000.000 | 10.821 | 0.238 | 0.071 |
-| caps_style | short_other | 2026-04 | 83 | 26 | 32000.000 | 60500.000 | 10.250 | 0.137 | 0.103 |
-| caps_style | short_other | 2026-05 | 77 | 25 | 47000.000 | 128000.000 | 10.860 | 0.559 | 0.088 |
-| caps_style | short_other | 2026-06 | 101 | 20 | 36000.000 | 55000.000 | 9.972 | 0.189 | 0.065 |
-| caps_style | short_other | 2026-07 | 94 | 19 | 17500.000 | 79000.000 | 9.605 | 0.142 | 0.075 |
-| caps_style | short_other | 2026-08 | 124 | 28 | 18000.000 | 41500.000 | 9.556 | 0.195 | 0.068 |
-| caps_style | short_other | 2026-09 | 50 | 20 | 20500.000 | 48750.000 | 10.076 | 0.054 | 0.097 |
-| caps_style | short_other | all | 763 | 67 | 25000.000 | 47000.000 | 10.124 | 0.210 | 0.028 |
-| all | all channels | 2026-01 | 24180 | 226 | 25000.000 | 34000.000 | 10.033 |  |  |
-| all | all channels | 2026-02 | 28361 | 227 | 25000.000 | 43000.000 | 10.019 |  |  |
-| all | all channels | 2026-03 | 26349 | 225 | 27000.000 | 39000.000 | 10.103 |  |  |
-| all | all channels | 2026-04 | 28142 | 228 | 28000.000 | 42000.000 | 10.148 |  |  |
-| all | all channels | 2026-05 | 27292 | 231 | 21000.000 | 33000.000 | 9.908 |  |  |
-| all | all channels | 2026-06 | 27447 | 232 | 18000.000 | 28750.000 | 9.794 |  |  |
-| all | all channels | 2026-07 | 26520 | 231 | 18000.000 | 29000.000 | 9.777 |  |  |
-| all | all channels | 2026-08 | 35905 | 232 | 18000.000 | 28750.000 | 9.818 |  |  |
-| all | all channels | 2026-09 | 18944 | 228 | 30000.000 | 52000.000 | 10.308 |  |  |
+| channel_group | left | 2026-01 | 9111 | 102 | 62000.000 | 58000.000 | 10.896 | -0.000 | 0.011 |
+| channel_group | left | 2026-02 | 8471 | 101 | 57000.000 | 52000.000 | 10.785 | 0.000 | 0.012 |
+| channel_group | left | 2026-03 | 9849 | 100 | 75000.000 | 60750.000 | 11.065 | -0.000 | 0.011 |
+| channel_group | left | 2026-04 | 9606 | 102 | 59000.000 | 49750.000 | 10.852 | 0.000 | 0.011 |
+| channel_group | left | 2026-05 | 9159 | 103 | 41000.000 | 40000.000 | 10.509 | -0.000 | 0.011 |
+| channel_group | left | 2026-06 | 9308 | 103 | 42000.000 | 43000.000 | 10.495 | 0.000 | 0.012 |
+| channel_group | left | 2026-07 | 9641 | 103 | 42000.000 | 53000.000 | 10.512 | -0.000 | 0.011 |
+| channel_group | left | 2026-08 | 9277 | 103 | 50000.000 | 50500.000 | 10.698 | 0.000 | 0.011 |
+| channel_group | left | 2026-09 | 4098 | 101 | 69000.000 | 79000.000 | 11.017 | 0.000 | 0.017 |
+| channel_group | left | all | 78520 | 104 | 54000.000 | 49500.000 | 10.743 | -0.000 | 0.004 |
+| channel_group | neutral | 2026-01 | 10903 | 35 | 9900.000 | 21500.000 | 9.301 | -0.000 | 0.014 |
+| channel_group | neutral | 2026-02 | 10362 | 35 | 10000.000 | 20000.000 | 9.338 | 0.000 | 0.015 |
+| channel_group | neutral | 2026-03 | 11857 | 34 | 11000.000 | 20500.000 | 9.425 | -0.000 | 0.014 |
+| channel_group | neutral | 2026-04 | 11136 | 35 | 8400.000 | 13000.000 | 9.188 | 0.000 | 0.014 |
+| channel_group | neutral | 2026-05 | 10889 | 35 | 8100.000 | 21000.000 | 9.085 | 0.000 | 0.014 |
+| channel_group | neutral | 2026-06 | 11144 | 35 | 7100.000 | 14000.000 | 8.971 | -0.000 | 0.014 |
+| channel_group | neutral | 2026-07 | 11343 | 35 | 7000.000 | 17000.000 | 8.944 | -0.000 | 0.013 |
+| channel_group | neutral | 2026-08 | 10471 | 35 | 8200.000 | 23000.000 | 9.095 | -0.000 | 0.013 |
+| channel_group | neutral | 2026-09 | 5149 | 36 | 11000.000 | 24000.000 | 9.530 | 0.000 | 0.019 |
+| channel_group | neutral | all | 93254 | 37 | 8800.000 | 22000.000 | 9.189 | -0.000 | 0.005 |
+| channel_group | right | 2026-01 | 6994 | 88 | 34500.000 | 24500.000 | 10.170 | -0.000 | 0.013 |
+| channel_group | right | 2026-02 | 6662 | 89 | 32000.000 | 23000.000 | 10.071 | -0.000 | 0.014 |
+| channel_group | right | 2026-03 | 7510 | 88 | 32000.000 | 30500.000 | 10.107 | -0.000 | 0.013 |
+| channel_group | right | 2026-04 | 6883 | 89 | 35000.000 | 24500.000 | 10.285 | 0.000 | 0.014 |
+| channel_group | right | 2026-05 | 6816 | 89 | 29000.000 | 20000.000 | 10.154 | 0.000 | 0.013 |
+| channel_group | right | 2026-06 | 6705 | 90 | 29000.000 | 17250.000 | 10.142 | 0.000 | 0.014 |
+| channel_group | right | 2026-07 | 6882 | 89 | 28000.000 | 17000.000 | 10.163 | 0.000 | 0.013 |
+| channel_group | right | 2026-08 | 6727 | 89 | 31000.000 | 25000.000 | 10.244 | 0.000 | 0.014 |
+| channel_group | right | 2026-09 | 3000 | 87 | 45000.000 | 48000.000 | 10.620 | 0.000 | 0.019 |
+| channel_group | right | all | 58179 | 90 | 32000.000 | 20750.000 | 10.190 | 0.000 | 0.005 |
+| title_label | left | 2026-01 | 275 | 68 | 39000.000 | 66500.000 | 10.085 | -0.012 | 0.074 |
+| title_label | left | 2026-02 | 343 | 73 | 22000.000 | 68000.000 | 9.834 | -0.008 | 0.058 |
+| title_label | left | 2026-03 | 326 | 68 | 21000.000 | 76750.000 | 9.927 | 0.065 | 0.064 |
+| title_label | left | 2026-04 | 330 | 70 | 32000.000 | 66500.000 | 10.163 | 0.031 | 0.065 |
+| title_label | left | 2026-05 | 241 | 59 | 27000.000 | 38000.000 | 10.120 | 0.049 | 0.064 |
+| title_label | left | 2026-06 | 273 | 71 | 31000.000 | 51000.000 | 10.201 | 0.019 | 0.064 |
+| title_label | left | 2026-07 | 368 | 60 | 25000.000 | 38000.000 | 10.138 | 0.014 | 0.058 |
+| title_label | left | 2026-08 | 209 | 59 | 60000.000 | 53000.000 | 10.759 | 0.034 | 0.061 |
+| title_label | left | 2026-09 | 123 | 46 | 47000.000 | 46000.000 | 10.689 | -0.043 | 0.087 |
+| title_label | left | all | 2488 | 139 | 31000.000 | 57500.000 | 10.150 | 0.020 | 0.022 |
+| title_label | right | 2026-01 | 254 | 50 | 19500.000 | 45000.000 | 9.680 | 0.058 | 0.078 |
+| title_label | right | 2026-02 | 186 | 50 | 30000.000 | 81000.000 | 9.963 | 0.066 | 0.096 |
+| title_label | right | 2026-03 | 218 | 49 | 26500.000 | 49500.000 | 9.623 | 0.048 | 0.082 |
+| title_label | right | 2026-04 | 240 | 49 | 33000.000 | 48900.000 | 10.023 | 0.008 | 0.077 |
+| title_label | right | 2026-05 | 263 | 45 | 13000.000 | 37500.000 | 9.434 | 0.001 | 0.086 |
+| title_label | right | 2026-06 | 251 | 58 | 12000.000 | 26500.000 | 9.575 | -0.147 | 0.075 |
+| title_label | right | 2026-07 | 260 | 55 | 36000.000 | 43000.000 | 10.122 | 0.019 | 0.068 |
+| title_label | right | 2026-08 | 209 | 58 | 37000.000 | 50250.000 | 10.221 | -0.004 | 0.071 |
+| title_label | right | 2026-09 | 144 | 32 | 17000.000 | 87500.000 | 9.686 | -0.069 | 0.108 |
+| title_label | right | all | 2025 | 122 | 24000.000 | 39000.000 | 9.809 | -0.002 | 0.027 |
+| title_label | neither | 2026-01 | 645 | 105 | 27000.000 | 48500.000 | 10.002 | 0.081 | 0.051 |
+| title_label | neither | 2026-02 | 670 | 109 | 30000.000 | 64000.000 | 9.954 | 0.034 | 0.045 |
+| title_label | neither | 2026-03 | 613 | 111 | 21000.000 | 61000.000 | 9.834 | -0.010 | 0.049 |
+| title_label | neither | 2026-04 | 791 | 93 | 20000.000 | 40500.000 | 9.713 | -0.050 | 0.043 |
+| title_label | neither | 2026-05 | 626 | 114 | 19000.000 | 36500.000 | 9.711 | 0.007 | 0.049 |
+| title_label | neither | 2026-06 | 622 | 114 | 39000.000 | 42500.000 | 10.331 | 0.013 | 0.042 |
+| title_label | neither | 2026-07 | 733 | 107 | 27000.000 | 38500.000 | 10.071 | -0.029 | 0.041 |
+| title_label | neither | 2026-08 | 589 | 110 | 30000.000 | 40250.000 | 10.185 | 0.040 | 0.047 |
+| title_label | neither | 2026-09 | 339 | 82 | 24000.000 | 48000.000 | 10.057 | -0.030 | 0.069 |
+| title_label | neither | all | 5628 | 204 | 26000.000 | 33000.000 | 9.973 | 0.006 | 0.016 |
+| caps_style | all_caps | 2026-01 | 353 | 31 | 112000.000 | 109000.000 | 10.556 | 0.043 | 0.041 |
+| caps_style | all_caps | 2026-02 | 326 | 36 | 108000.000 | 76000.000 | 11.285 | 0.040 | 0.044 |
+| caps_style | all_caps | 2026-03 | 500 | 40 | 54500.000 | 96750.000 | 9.740 | 0.064 | 0.038 |
+| caps_style | all_caps | 2026-04 | 492 | 37 | 57000.000 | 87000.000 | 9.733 | 0.013 | 0.048 |
+| caps_style | all_caps | 2026-05 | 405 | 31 | 34000.000 | 56000.000 | 9.638 | 0.017 | 0.049 |
+| caps_style | all_caps | 2026-06 | 340 | 29 | 73000.000 | 103000.000 | 10.679 | 0.046 | 0.043 |
+| caps_style | all_caps | 2026-07 | 318 | 30 | 71000.000 | 103750.000 | 10.897 | 0.045 | 0.039 |
+| caps_style | all_caps | 2026-08 | 321 | 28 | 83000.000 | 80500.000 | 11.010 | 0.033 | 0.038 |
+| caps_style | all_caps | 2026-09 | 106 | 30 | 147000.000 | 121000.000 | 11.376 | 0.009 | 0.065 |
+| caps_style | all_caps | all | 3161 | 72 | 72000.000 | 56250.000 | 10.378 | 0.036 | 0.015 |
+| caps_style | selective_caps | 2026-01 | 9072 | 189 | 48000.000 | 42000.000 | 10.523 | 0.043 | 0.012 |
+| caps_style | selective_caps | 2026-02 | 7943 | 187 | 51000.000 | 42000.000 | 10.558 | 0.059 | 0.012 |
+| caps_style | selective_caps | 2026-03 | 9046 | 192 | 61000.000 | 46000.000 | 10.759 | 0.070 | 0.011 |
+| caps_style | selective_caps | 2026-04 | 8911 | 195 | 52000.000 | 34000.000 | 10.678 | 0.079 | 0.011 |
+| caps_style | selective_caps | 2026-05 | 8989 | 196 | 38000.000 | 32000.000 | 10.360 | 0.048 | 0.011 |
+| caps_style | selective_caps | 2026-06 | 8777 | 194 | 38000.000 | 32250.000 | 10.342 | 0.041 | 0.012 |
+| caps_style | selective_caps | 2026-07 | 9045 | 194 | 37000.000 | 30000.000 | 10.288 | 0.030 | 0.012 |
+| caps_style | selective_caps | 2026-08 | 9202 | 190 | 43000.000 | 39500.000 | 10.440 | 0.045 | 0.011 |
+| caps_style | selective_caps | 2026-09 | 4036 | 167 | 59000.000 | 59500.000 | 10.722 | 0.060 | 0.017 |
+| caps_style | selective_caps | all | 75021 | 245 | 46000.000 | 34000.000 | 10.505 | 0.052 | 0.004 |
+| caps_style | title_case | 2026-01 | 7632 | 221 | 19000.000 | 39000.000 | 9.764 | -0.012 | 0.015 |
+| caps_style | title_case | 2026-02 | 7331 | 224 | 16000.000 | 40250.000 | 9.669 | -0.045 | 0.015 |
+| caps_style | title_case | 2026-03 | 8327 | 227 | 19000.000 | 41000.000 | 9.815 | -0.047 | 0.015 |
+| caps_style | title_case | 2026-04 | 8058 | 234 | 17000.000 | 36000.000 | 9.795 | -0.036 | 0.015 |
+| caps_style | title_case | 2026-05 | 8084 | 227 | 14000.000 | 29000.000 | 9.588 | -0.021 | 0.014 |
+| caps_style | title_case | 2026-06 | 8680 | 229 | 12000.000 | 27000.000 | 9.496 | -0.012 | 0.014 |
+| caps_style | title_case | 2026-07 | 8923 | 233 | 12000.000 | 27000.000 | 9.498 | -0.009 | 0.013 |
+| caps_style | title_case | 2026-08 | 8290 | 231 | 15000.000 | 37000.000 | 9.711 | -0.015 | 0.014 |
+| caps_style | title_case | 2026-09 | 3889 | 205 | 23000.000 | 51000.000 | 10.087 | -0.021 | 0.019 |
+| caps_style | title_case | all | 69214 | 259 | 16000.000 | 33000.000 | 9.687 | -0.024 | 0.005 |
+| caps_style | sentence_case | 2026-01 | 9994 | 96 | 19000.000 | 31500.000 | 9.860 | -0.033 | 0.014 |
+| caps_style | sentence_case | 2026-02 | 9914 | 90 | 17000.000 | 33750.000 | 9.789 | -0.017 | 0.014 |
+| caps_style | sentence_case | 2026-03 | 11328 | 103 | 19000.000 | 43750.000 | 9.940 | -0.025 | 0.013 |
+| caps_style | sentence_case | 2026-04 | 10157 | 92 | 15000.000 | 29500.000 | 9.694 | -0.044 | 0.014 |
+| caps_style | sentence_case | 2026-05 | 9406 | 91 | 14000.000 | 27000.000 | 9.584 | -0.031 | 0.014 |
+| caps_style | sentence_case | 2026-06 | 9335 | 91 | 12000.000 | 23000.000 | 9.498 | -0.030 | 0.014 |
+| caps_style | sentence_case | 2026-07 | 9563 | 85 | 12000.000 | 28000.000 | 9.559 | -0.024 | 0.014 |
+| caps_style | sentence_case | 2026-08 | 8676 | 86 | 13000.000 | 28925.000 | 9.632 | -0.036 | 0.014 |
+| caps_style | sentence_case | 2026-09 | 4230 | 73 | 20000.000 | 70000.000 | 10.071 | -0.036 | 0.020 |
+| caps_style | sentence_case | all | 82603 | 178 | 15000.000 | 26750.000 | 9.722 | -0.030 | 0.005 |
+| caps_style | mixed_other | 2026-03 | 63 | 15 | 109000.000 | 103000.000 | 11.296 | -0.039 | 0.084 |
+| caps_style | mixed_other | 2026-04 | 38 | 9 | 106500.000 | 106500.000 | 11.414 | -0.110 | 0.149 |
+| caps_style | mixed_other | 2026-05 | 35 | 12 | 79000.000 | 68250.000 | 10.985 | -0.060 | 0.110 |
+| caps_style | mixed_other | 2026-06 | 36 | 7 | 104000.000 | 112000.000 | 11.144 | -0.064 | 0.089 |
+| caps_style | mixed_other | 2026-07 | 39 | 9 | 81000.000 | 108000.000 | 11.258 | 0.055 | 0.076 |
+| caps_style | mixed_other | 2026-08 | 26 | 10 | 67000.000 | 82500.000 | 11.148 | 0.002 | 0.083 |
+| caps_style | mixed_other | all | 276 | 39 | 93500.000 | 58000.000 | 11.160 | -0.086 | 0.048 |
+| caps_style | short_other | 2026-01 | 75 | 25 | 29000.000 | 66000.000 | 10.438 | 0.235 | 0.081 |
+| caps_style | short_other | 2026-02 | 70 | 23 | 55000.000 | 103000.000 | 10.926 | 0.203 | 0.090 |
+| caps_style | short_other | 2026-03 | 81 | 30 | 24000.000 | 93500.000 | 10.218 | 0.228 | 0.110 |
+| caps_style | short_other | 2026-04 | 90 | 30 | 66000.000 | 112000.000 | 10.892 | 0.347 | 0.084 |
+| caps_style | short_other | 2026-05 | 76 | 20 | 24500.000 | 59500.000 | 10.017 | 0.330 | 0.086 |
+| caps_style | short_other | 2026-06 | 104 | 18 | 36000.000 | 78250.000 | 9.895 | 0.156 | 0.070 |
+| caps_style | short_other | 2026-07 | 103 | 25 | 18000.000 | 62000.000 | 9.646 | 0.227 | 0.075 |
+| caps_style | short_other | 2026-08 | 85 | 27 | 18000.000 | 39000.000 | 9.671 | 0.103 | 0.081 |
+| caps_style | short_other | 2026-09 | 29 | 14 | 18000.000 | 51500.000 | 9.851 | -0.028 | 0.153 |
+| caps_style | short_other | all | 713 | 61 | 27000.000 | 46000.000 | 10.165 | 0.216 | 0.029 |
+| all | all channels | 2026-01 | 27008 | 225 | 26000.000 | 40000.000 | 10.064 |  |  |
+| all | all channels | 2026-02 | 25495 | 225 | 25000.000 | 37000.000 | 10.011 |  |  |
+| all | all channels | 2026-03 | 29216 | 222 | 29000.000 | 46500.000 | 10.153 |  |  |
+| all | all channels | 2026-04 | 27625 | 226 | 25000.000 | 35750.000 | 10.040 |  |  |
+| all | all channels | 2026-05 | 26864 | 227 | 19000.000 | 30500.000 | 9.842 |  |  |
+| all | all channels | 2026-06 | 27157 | 228 | 18000.000 | 27250.000 | 9.783 |  |  |
+| all | all channels | 2026-07 | 27866 | 227 | 18000.000 | 28000.000 | 9.788 |  |  |
+| all | all channels | 2026-08 | 26475 | 227 | 21000.000 | 37500.000 | 9.949 |  |  |
+| all | all channels | 2026-09 | 12247 | 224 | 30000.000 | 56500.000 | 10.294 |  |  |
 
 
 Capitalisation style by channel group and by title label:
 
 | grouping | group | n_titles | all_caps | selective_caps | title_case | sentence_case | mixed_other | short_other | caps_any |
 |---|---|---|---|---|---|---|---|---|---|
-| channel_group | left | 64947 | 0.018 | 0.472 | 0.323 | 0.178 | 0.003 | 0.006 | 0.490 |
-| channel_group | neutral | 39161 | 0.008 | 0.162 | 0.277 | 0.550 | 0.001 | 0.003 | 0.170 |
-| channel_group | right | 51528 | 0.049 | 0.403 | 0.415 | 0.126 | 0.001 | 0.006 | 0.452 |
-| title_label | left | 3031 | 0.011 | 0.469 | 0.438 | 0.077 | 0.002 | 0.002 | 0.481 |
-| title_label | right | 2550 | 0.022 | 0.460 | 0.471 | 0.043 | 0.001 | 0.002 | 0.482 |
-| title_label | neither | 6881 | 0.034 | 0.222 | 0.534 | 0.192 | 0.004 | 0.014 | 0.256 |
+| channel_group | left | 62517 | 0.017 | 0.472 | 0.322 | 0.180 | 0.003 | 0.006 | 0.490 |
+| channel_group | neutral | 38562 | 0.007 | 0.167 | 0.278 | 0.545 | 0.001 | 0.003 | 0.174 |
+| channel_group | right | 49492 | 0.050 | 0.404 | 0.411 | 0.127 | 0.001 | 0.007 | 0.454 |
+| title_label | left | 2585 | 0.014 | 0.433 | 0.284 | 0.261 | 0.002 | 0.006 | 0.447 |
+| title_label | right | 2149 | 0.076 | 0.306 | 0.362 | 0.243 | 0.006 | 0.007 | 0.382 |
+| title_label | neither | 5967 | 0.051 | 0.332 | 0.341 | 0.265 | 0.002 | 0.009 | 0.383 |
 
 
 Title label x capitalization style (label shares within each style; relative log views per cell):
 
 | caps_style | n_titles | share_left | share_right | share_neither | relative_log_views_left | n_left | relative_log_views_right | n_right | relative_log_views_neither | n_neither |
 |---|---|---|---|---|---|---|---|---|---|---|
-| all_caps | 324 | 0.108 | 0.173 | 0.719 | -0.060 | 29 | 0.069 | 49 | 0.000 | 179 |
-| selective_caps | 4123 | 0.345 | 0.284 | 0.370 | -0.005 | 1347 | 0.070 | 1105 | 0.039 | 1445 |
-| title_case | 6204 | 0.214 | 0.194 | 0.592 | 0.012 | 1258 | -0.001 | 1166 | -0.033 | 3451 |
-| sentence_case | 1667 | 0.140 | 0.067 | 0.793 | 0.084 | 234 | 0.116 | 104 | -0.025 | 1293 |
-| mixed_other | 39 | 0.179 | 0.051 | 0.769 |  | 7 |  | 2 | -0.408 | 29 |
-| short_other | 105 | 0.048 | 0.057 | 0.895 |  | 5 |  | 6 | 0.017 | 81 |
+| all_caps | 506 | 0.073 | 0.324 | 0.603 | 0.219 | 36 | -0.007 | 138 | 0.005 | 281 |
+| selective_caps | 3755 | 0.298 | 0.175 | 0.527 | 0.066 | 1093 | 0.117 | 632 | 0.090 | 1875 |
+| title_case | 3549 | 0.207 | 0.220 | 0.573 | -0.040 | 670 | -0.047 | 715 | -0.056 | 1869 |
+| sentence_case | 2778 | 0.243 | 0.188 | 0.569 | -0.008 | 675 | -0.067 | 517 | -0.017 | 1561 |
+| mixed_other | 30 | 0.133 | 0.400 | 0.467 |  | 4 |  | 11 |  | 13 |
+| short_other | 83 | 0.181 | 0.181 | 0.639 |  | 10 |  | 12 | -0.120 | 29 |
 
 
 ## Files

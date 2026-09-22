@@ -5,44 +5,44 @@ Channel group: **right** (title-leaning score, document 14) · organization: Win
 
 ## videos
 
-Titles: 109 rows, 109 unique (repeat share 0.0%); ranked; political share 95.4%.
+Titles: 104 rows, 104 unique (repeat share 0.0%); ranked; political share 99.0%.
 
 
-Top topics: Islam and Political Discourse (7.3%); UK Political Chaos and Government Issues (6.4%); Modern Women and Feminism Debate (5.5%); War and Military Analysis (5.5%); Christian Nationalism and Politics (4.6%)
+Top topics: Islam and Political Extremism (8.6%); UK Political Chaos and Reform UK (8.6%); Feminism and Gender Roles Debate (6.7%); American History and Political Threats (5.8%); Christian Nationalism and Politics (4.8%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 43.5 | 51.5 | 0.1 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 27.6 | 38.5 | -0.4 | 0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 50.2 | 51.0 | -0.3 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 88.3 | 85.8 | 0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 65.7 | 73.6 | 0.5 | 0.2 |
-| F6: Person-centred (named people) | 46.0 | 29.3 | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 20.5 | 22.6 | -0.9 | -0.7 |
-| F8: Numeric and dated (digits, years) | 37.2 | 35.1 | -0.2 | -0.2 |
-| F9: ALL-CAPS shouting | 58.2 | 51.0 | -0.2 | -0.3 |
-| F10: Quoted speech | 82.8 | 84.1 | 0.3 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 71.1 | 66.9 | 0.2 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | 19.2 | 35.6 | -0.5 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 39.4 | 52.1 | 0.0 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 25.4 | 36.0 | -0.5 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 51.3 | 55.1 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 88.1 | 85.2 | 0.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 66.9 | 74.2 | 0.5 | 0.2 |
+| F6: Person-centred (named people) | 43.6 | 31.8 | -0.4 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 26.3 | 31.8 | -0.8 | -0.7 |
+| F8: Numeric and dated (digits, years) | 46.2 | 41.9 | -0.2 | -0.1 |
+| F9: ALL-CAPS shouting | 62.7 | 55.1 | -0.1 | -0.3 |
+| F10: Quoted speech | 84.7 | 85.2 | 0.5 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 66.1 | 65.3 | 0.0 | -0.2 |
+| F12: +first_pl +future_will +modal | 13.1 | 28.0 | -0.6 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.7% (3.6%); outrage 53.2% (59.6%); humor 0.0% (0.2%); question 12.8% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 3.7% (8.5%); reaction 0.0% (2.2%); confrontation 8.3% (7.8%); listicle 0.0% (0.1%); howto_explainer 13.8% (9.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.8% (4.8%); outrage 58.7% (59.8%); humor 0.0% (0.2%); question 12.5% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 2.9% (7.7%); reaction 0.0% (2.2%); confrontation 8.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 14.4% (9.3%)
 
 
-Nearest style neighbors: @JillianMichaels [right]; @DropSiteNews [left]; @therationalnational [left]; @Forthepeoplepodcast305 [left]; @MichaelKnowles [right]
+Nearest style neighbors: @JillianMichaels [right]; @DropSiteNews [left]; @therationalnational [left]; @MichaelKnowles [right]; @nypost [right]
 
-Nearest topic neighbors: @ThePodcastoftheLotusEaters [right]; @AndrewKlavan [right]; @NovaraMedia [left]; @JillianMichaels [right]; @MichaelKnowles [right]
+Nearest topic neighbors: @ThePodcastoftheLotusEaters [right]; @PragerU [right]; @ZubyMusic [right]; @NovaraMedia [left]; @AndrewKlavan [right]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08 | 20 | -0.60 | -0.96 | -0.33 | -0.21 | 0.06 | 0.04 | -0.98 | -0.32 | -0.81 | -0.29 | 0.36 | -1.26 | 0.00 | 0.55 | 0.00 |
+| 2026-08 | 16 | -0.89 | -0.48 | -0.12 | -0.05 | -0.03 | -0.36 | -0.94 | -0.17 | -0.98 | 0.46 | 0.34 | -0.98 | 0.00 | 0.50 | 0.00 |
 
 
 Engagement: n < 100 titles with views, not estimated.
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 16.5138 per 100, mean length 9.5963 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 15.3846 per 100, mean length 9.625 tokens.

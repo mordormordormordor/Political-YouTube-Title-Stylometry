@@ -5,29 +5,29 @@ Channel group: **left** (title-leaning score, document 14) · organization: Revo
 
 ## videos
 
-Titles: 23 rows, 23 unique (repeat share 0.0%); LOW-N (not ranked); political share 100.0%.
+Titles: 23 rows, 23 unique (repeat share 0.0%); LOW-N (not ranked); political share 95.7%.
 
 
-Top topics: Israel-Palestine Conflict Media (26.1%); Trump and NATO Relations (17.4%); Ukraine-Russia War and Political Figures (8.7%); MAGA backlash over Iran war (8.7%); Iran War and Strait of Hormuz Tensions (4.3%)
+Top topics: Israel and Palestine Conflict (30.4%); Trump and NATO Relations (13.0%); Ukraine-Russia War and Political Figures (8.7%); Trump and Iran War Negotiations (4.3%); Trump vs Maduro in Venezuela (4.3%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.5 | 0.1 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 0.6 | -0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.8 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | -0.2 | 0.1 |
-| F6: Person-centred (named people) | None | None | 0.7 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.6 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | None | None | 0.5 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.7 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | 0.1 |
+| F6: Person-centred (named people) | None | None | 0.8 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.7 | -0.5 |
-| F8: Numeric and dated (digits, years) | None | None | -0.2 | -0.2 |
-| F9: ALL-CAPS shouting | None | None | -0.4 | -0.3 |
-| F10: Quoted speech | None | None | -0.8 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | 0.5 | -0.3 |
-| F12: Modal and future speculation (will, could, we) | None | None | -1.0 | -0.1 |
+| F8: Numeric and dated (digits, years) | None | None | -0.3 | -0.2 |
+| F9: ALL-CAPS shouting | None | None | -0.3 | -0.3 |
+| F10: Quoted speech | None | None | -1.0 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | None | None | 0.5 | -0.3 |
+| F12: +first_pl +future_will +modal | None | None | -0.8 | -0.1 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.7%); outrage 95.7% (63.9%); humor 0.0% (0.2%); question 4.3% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 17.4% (9.8%); reaction 0.0% (2.9%); confrontation 8.7% (7.6%); listicle 0.0% (0.1%); howto_explainer 8.7% (8.0%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 95.7% (63.9%); humor 0.0% (0.2%); question 4.3% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 17.4% (9.8%); reaction 0.0% (2.9%); confrontation 8.7% (7.7%); listicle 0.0% (0.1%); howto_explainer 8.7% (8.0%)
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -38,65 +38,44 @@ Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 
 
 ## streams
 
-Titles: 103 rows, 103 unique (repeat share 0.0%); ranked; political share 99.0%.
+Titles: 99 rows, 99 unique (repeat share 0.0%); ranked; political share 99.0%.
 
 
-Top topics: Israel-Palestine Conflict Media (12.6%); Iran Conflict and Political Updates (11.7%); Iran War and Strait of Hormuz Tensions (10.7%); Trump and NATO Relations (7.8%); Ukraine-Russia War and Political Figures (5.8%)
+Top topics: Israel and Palestine Conflict (13.1%); Iran and Political Updates (12.1%); Trump and Iran War Negotiations (6.1%); Ukraine-Russia War and Political Figures (6.1%); Trump and NATO Relations (6.1%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 20.3 | 21.5 | -0.8 | -0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | 39.2 | 35.4 | -0.5 | -0.4 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 7.6 | 12.7 | -0.7 | -0.2 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | 49.4 | 51.9 | -0.2 | -0.2 |
-| F5: Question and explainer framing (why, what, ?) | 62.0 | 65.8 | -0.2 | -0.3 |
-| F6: Person-centred (named people) | 89.9 | 88.6 | 2.2 | 0.6 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 45.6 | 59.5 | -0.4 | -0.4 |
-| F8: Numeric and dated (digits, years) | 59.5 | 50.6 | 0.1 | -0.0 |
-| F9: ALL-CAPS shouting | 8.9 | 12.7 | -1.0 | -0.5 |
-| F10: Quoted speech | 45.6 | 64.6 | -0.6 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | 88.6 | 86.1 | 0.9 | 0.1 |
-| F12: Modal and future speculation (will, could, we) | 50.6 | 78.5 | -0.1 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 24.7 | 20.8 | -0.7 | -0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 29.9 | 31.2 | -0.7 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 3.9 | 9.1 | -0.7 | -0.2 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 45.5 | 44.2 | -0.2 | -0.2 |
+| F5: Question and explainer framing (why, what, ?) | 59.7 | 63.6 | -0.3 | -0.3 |
+| F6: Person-centred (named people) | 92.2 | 87.0 | 2.2 | 0.7 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 48.1 | 57.1 | -0.4 | -0.4 |
+| F8: Numeric and dated (digits, years) | 46.8 | 49.4 | -0.0 | -0.1 |
+| F9: ALL-CAPS shouting | 11.7 | 16.9 | -0.9 | -0.4 |
+| F10: Quoted speech | 42.9 | 66.2 | -0.6 | -0.6 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 89.6 | 90.9 | 0.9 | 0.0 |
+| F12: +first_pl +future_will +modal | 46.8 | 76.6 | -0.1 | -0.0 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.9% (1.9%); outrage 85.4% (63.2%); humor 0.0% (0.1%); question 16.5% (11.3%); breaking_live 2.9% (17.5%); episode_show 2.9% (6.4%); interview_guest 38.8% (18.3%); reaction 0.0% (1.5%); confrontation 9.7% (15.4%); listicle 0.0% (0.0%); howto_explainer 9.7% (2.9%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (2.6%); outrage 85.9% (62.7%); humor 0.0% (0.1%); question 17.2% (11.3%); breaking_live 3.0% (17.4%); episode_show 3.0% (6.2%); interview_guest 40.4% (18.4%); reaction 0.0% (1.4%); confrontation 10.1% (15.4%); listicle 0.0% (0.0%); howto_explainer 9.1% (2.8%)
 
 
-Nearest style neighbors: @thejimmydoreshow [neutral]; @rolandsmartin [left]; @chicksonright [right]; @AnthonyBrianLogan [right]; @TheSerfTimes [left]
+Nearest style neighbors: @thejimmydoreshow [neutral]; @rolandsmartin [left]; @franifio [left]; @chicksonright [right]; @TheMajorityReport [left]
 
-Nearest topic neighbors: @JamarlThomas [left]; @DueDissidence [left]; @RedactedNews [right]; @judgingfreedom [left]; @TheMajorityReport [left]
+Nearest topic neighbors: @JamarlThomas [left]; @DueDissidence [left]; @TheMajorityReport [left]; @RedactedNews [right]; @judgingfreedom [left]
 
 
 Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08 | 16 | -0.78 | -0.32 | -1.03 | -0.26 | -0.16 | 3.32 | -0.69 | -0.32 | -0.92 | -0.95 | 0.90 | -0.55 | 0.00 | 0.75 | 0.00 |
+| 2026-05 | 15 | 0.51 | -1.21 | -0.63 | 0.29 | -0.46 | 1.73 | -0.35 | 0.34 | -0.70 | -0.58 | 1.63 | -0.22 | 0.07 | 0.93 | 0.00 |
 
 
-Engagement (n = 103, R2 = 0.5937; log views per within-creator SD, month + topic controls):
-
-| predictor | coef_per_sd | se | p |
-|---|---|---|---|
-| F1 | -0.002 | 0.059 | 0.970 |
-| F2 | 0.045 | 0.034 | 0.188 |
-| F3 | -0.043 | 0.030 | 0.147 |
-| F4 | -0.005 | 0.036 | 0.884 |
-| F5 | 0.016 | 0.040 | 0.688 |
-| F6 | -0.011 | 0.041 | 0.786 |
-| F7 | 0.015 | 0.036 | 0.673 |
-| F8 | -0.031 | 0.036 | 0.391 |
-| F9 | -0.004 | 0.047 | 0.933 |
-| F10 | -0.024 | 0.040 | 0.541 |
-| F11 | -0.004 | 0.058 | 0.950 |
-| F12 | -0.084 | 0.033 | 0.011 |
-| curiosity_gap | 0.014 | 0.029 | 0.622 |
-| outrage | 0.005 | 0.035 | 0.891 |
-| n_tokens | 0.001 | 0.042 | 0.973 |
+Engagement: n < 100 titles with views, not estimated.
 
 
-Hit concentration: Gini 0.1712, top-10 % share 18.3%, power-law tail not supported vs lognormal (LR = -4.0685, p = 0.0).
-
-
-Lexical diversity: Heaps' beta (1,500 tokens) 0.8096, Zipf 0.7178, formulaic titles 25.2427 per 100, mean length 14.6311 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 22.2222 per 100, mean length 14.6465 tokens.

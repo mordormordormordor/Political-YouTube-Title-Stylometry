@@ -5,65 +5,65 @@ Channel group: **right** (title-leaning score, document 14) · organization: Nic
 
 ## videos
 
-Titles: 32 rows, 32 unique (repeat share 0.0%); LOW-N (not ranked); political share 100.0%.
+Titles: 29 rows, 29 unique (repeat share 0.0%); LOW-N (not ranked); political share 100.0%.
 
 
-Top topics: California fraud investigation (25.0%); Somali fraud scandal in Minnesota (12.5%); California Election Fraud Scandal (9.4%); Cuba-US Political Tensions (9.4%); Shocking Events and Reactions (6.2%)
+Top topics: Anti-Fraud Efforts by VP Vance (31.0%); California Election Fraud Scandal (17.2%); US-Cuba Relations and Political Tensions (10.3%); Shocking Events and Reactions (6.9%); American History and Political Threats (6.9%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.3 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | 1.0 | 0.1 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.7 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | -0.4 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | None | None | 1.1 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.5 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | 0.9 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.4 | 0.2 |
-| F6: Person-centred (named people) | None | None | -0.4 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.6 | -0.7 |
-| F8: Numeric and dated (digits, years) | None | None | -0.1 | -0.2 |
-| F9: ALL-CAPS shouting | None | None | -1.3 | -0.3 |
-| F10: Quoted speech | None | None | -0.1 | -0.5 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -1.0 | -0.1 |
-| F12: Modal and future speculation (will, could, we) | None | None | -1.2 | -0.2 |
+| F6: Person-centred (named people) | None | None | -0.5 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.8 | -0.7 |
+| F8: Numeric and dated (digits, years) | None | None | -0.0 | -0.1 |
+| F9: ALL-CAPS shouting | None | None | -1.5 | -0.3 |
+| F10: Quoted speech | None | None | 0.0 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | None | None | -1.0 | -0.2 |
+| F12: +first_pl +future_will +modal | None | None | -1.2 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.1% (3.6%); outrage 50.0% (59.6%); humor 0.0% (0.2%); question 0.0% (15.6%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.6%); interview_guest 12.5% (8.5%); reaction 0.0% (2.2%); confrontation 9.4% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.1% (9.5%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.9% (4.8%); outrage 55.2% (59.8%); humor 0.0% (0.2%); question 0.0% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 13.8% (7.7%); reaction 0.0% (2.2%); confrontation 3.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.5% (9.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 0.0 per 100, mean length 8.1562 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 0.0 per 100, mean length 8.1379 tokens.
 
 
 ## streams
 
-Titles: 13 rows, 13 unique (repeat share 0.0%); LOW-N (not ranked); political share 100.0%.
+Titles: 12 rows, 12 unique (repeat share 0.0%); LOW-N (not ranked); political share 91.7%.
 
 
-Top topics: California fraud investigation (15.4%); Tim Walz and Minnesota Fraud Scandal (15.4%); Iran War and Strait of Hormuz Tensions (7.7%); Shocking Events and Reactions (7.7%); America's 250th Anniversary and Founding History (7.7%)
+Top topics: Anti-Fraud Efforts by VP Vance (33.3%); Shocking Events and Reactions (8.3%); Iran political unrest (8.3%); UK Political Chaos and Reform UK (8.3%); American History and Political Threats (8.3%)
 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.3 | 0.2 |
-| F2: Clause headline vs noun-phrase (finite verbs, tense) | None | None | -1.1 | -0.4 |
-| F3: Labeled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | -0.0 | -0.3 |
-| F4: Conversational stream talk (chat, ellipsis, contractions, imperatives, we) | None | None | 0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | None | None | 0.1 | -0.3 |
-| F6: Person-centred (named people) | None | None | -0.6 | 0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.0 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | None | None | -0.9 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.1 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | 0.5 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | None | None | 0.0 | -0.3 |
+| F6: Person-centred (named people) | None | None | -0.9 | -0.1 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.5 | -0.6 |
-| F8: Numeric and dated (digits, years) | None | None | -0.7 | -0.0 |
+| F8: Numeric and dated (digits, years) | None | None | -0.6 | 0.1 |
 | F9: ALL-CAPS shouting | None | None | -0.4 | -0.4 |
-| F10: Quoted speech | None | None | -1.0 | -0.4 |
-| F11: Long, upbeat, abstract (length, positive words, nominalisations) | None | None | -0.1 | 0.2 |
-| F12: Modal and future speculation (will, could, we) | None | None | -1.3 | -0.1 |
+| F10: Quoted speech | None | None | -0.8 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | None | None | -0.4 | 0.1 |
+| F12: +first_pl +future_will +modal | None | None | -1.1 | -0.2 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 7.7% (3.2%); outrage 23.1% (56.4%); humor 0.0% (0.1%); question 23.1% (13.7%); breaking_live 7.7% (18.8%); episode_show 0.0% (26.3%); interview_guest 7.7% (14.0%); reaction 0.0% (2.1%); confrontation 7.7% (9.4%); listicle 0.0% (0.2%); howto_explainer 7.7% (5.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.3% (3.9%); outrage 16.7% (55.8%); humor 0.0% (0.1%); question 25.0% (13.0%); breaking_live 8.3% (16.3%); episode_show 0.0% (25.9%); interview_guest 8.3% (14.2%); reaction 0.0% (2.1%); confrontation 8.3% (9.2%); listicle 0.0% (0.1%); howto_explainer 8.3% (5.4%)
 
 
 Engagement: n < 100 titles with views, not estimated.
 
 
-Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 0.0 per 100, mean length 7.5385 tokens.
+Lexical diversity: Heaps' beta (1,500 tokens) None, Zipf None, formulaic titles 0.0 per 100, mean length 7.5 tokens.
