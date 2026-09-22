@@ -95,3 +95,16 @@ def test_collocations_bind_names_and_replace_their_words_in_the_titles_that_carr
     assert "graham" in terms_of(tokens[60], {"lindsey graham"})   # alone, the word counts on its own
     assert content_tokens("Trump's letter to Greenland")[0] == ("trump", True)
     assert content_tokens("the end")[0] == ("the", False)
+
+
+def test_pick_examples_prefers_a_title_that_also_carries_a_companion():
+    import pandas as pd
+    from pipeline_titles.year import pick_examples
+    uniq = pd.DataFrame({"row_id": [0, 1, 2], "week": ["w"] * 3, "creator": ["@a", "@b", "@c"], "title_raw": ["Trump talks golf", "Trump and the ceasefire", "Trump again"],
+                         "video_id": ["v0", "v1", "v2"], "url": [None] * 3, "view_count": [900.0, 500.0, 100.0]})
+    hits = pd.DataFrame({"row_id": [0, 1, 2, 1], "word": ["trump", "trump", "trump", "ceasefire"]})
+    terms = {0: {"trump", "golf"}, 1: {"trump", "ceasefire"}, 2: {"trump"}}
+    got = pick_examples(uniq, hits, "week", [("w", "trump")], {("w", "trump"): ["ceasefire", "golf"]}, terms)
+    assert got.iloc[0]["example_title"] == "Trump and the ceasefire" and got.iloc[0]["example_with"] == "ceasefire"   # the strongest companion first, not the most views
+    got = pick_examples(uniq, hits, "week", [("w", "trump")], {("w", "trump"): ["iran"]}, terms)
+    assert got.iloc[0]["example_title"] == "Trump talks golf" and got.iloc[0]["example_with"] == ""
