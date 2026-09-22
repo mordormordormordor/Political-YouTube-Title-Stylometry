@@ -30,8 +30,9 @@ Outputs (data/titles/analysis/):
                          channel-months: a word's count for a month is how many
                          channels used it that month, so a super-uploader counts
                          once; each with the month's most-viewed title that carries
-                         the word and another of the month's standouts (example_with),
-                         else the most-viewed title that carries the word at all
+                         the word and the month's standout that travels with it most
+                         (example_with), else the most-viewed title that carries the
+                         word at all
     year_weeks_meta.csv  every week, Monday-keyed: titles, channels with WEEK_MIN or
                          more titles, partial (runs past the corpus window)
     year_weeks.csv       the vocabulary's channel-weighted share by week (over the
@@ -41,11 +42,12 @@ Outputs (data/titles/analysis/):
     year_spikes.csv      the SPIKES words whose weekly share departed furthest above
                          their own average over the full weeks, with the peak week,
                          the baseline, the departure, and that week's most-viewed
-                         title that carries the word and another word spiking that
-                         week (its share CO_SPIKE_MIN above its own average;
-                         example_with names it), else the most-viewed title that
-                         carries the word at all: for a word as common as "trump"
-                         the most-viewed title alone says nothing about the spike
+                         title that carries the word and the word spiking that week
+                         (its share CO_SPIKE_MIN above its own average) that travels
+                         with it most (example_with names it), else the most-viewed
+                         title that carries the word at all: for a word as common
+                         as "trump" the most-viewed title alone says nothing about
+                         the spike
 
 CLI:
     python -m pipeline_titles.year
@@ -141,9 +143,10 @@ EXAMPLE_COLUMNS = ["example_creator", "example_title", "example_video", "example
 
 def pick_examples(uniq: pd.DataFrame, hits: pd.DataFrame, by: str, wanted: list[tuple[str, str]], companions: dict[tuple[str, str], list[str]],
                   terms_by_row: dict[int, set[str]]) -> pd.DataFrame:
-    """For each (period, word) in `wanted`, the period's most-viewed title that carries the word and the strongest of its `companions` (the other
-    words standing out or spiking in that period, strongest first) that any such title carries, else the most-viewed title that carries the word
-    at all; `example_with` is the companion matched, or empty."""
+    """For each (period, word) in `wanted`, the period's most-viewed title that carries the word and its closest companion: of the `companions`
+    (the other words standing out or spiking in that period, strongest first), the one that travels with the word most, in the most of the
+    period's titles carrying the word (ties to the stronger). Else the most-viewed title that carries the word at all. `example_with` names the
+    companion matched, or is empty."""
     h = hits.merge(uniq[["row_id", by, "creator", "title_raw", "video_id", "url", "view_count"]], on="row_id")
     h = h.sort_values(["view_count", "row_id"], ascending=[False, True], na_position="last")
     groups = {k: g for k, g in h.groupby([by, "word"], sort=False)}
@@ -154,13 +157,13 @@ def pick_examples(uniq: pd.DataFrame, hits: pd.DataFrame, by: str, wanted: list[
             rows.append({by: period, "word": word, **{c: None for c in EXAMPLE_COLUMNS}})
             continue
         pick, matched = None, ""
-        for companion in companions.get((period, word), []):
-            for rid in g["row_id"]:
-                if companion in terms_by_row.get(int(rid), set()):
-                    pick, matched = rid, companion
-                    break
-            if pick is not None:
-                break
+        order = companions.get((period, word), [])
+        together = Counter()
+        for rid in g["row_id"]:
+            together.update(terms_by_row.get(int(rid), set()).intersection(order))
+        if together:
+            matched = max(order, key=lambda w: (together.get(w, 0), -order.index(w)))
+            pick = next(rid for rid in g["row_id"] if matched in terms_by_row.get(int(rid), set()))
         r = g[g["row_id"] == pick].iloc[0] if pick is not None else g.iloc[0]
         rows.append({by: period, "word": word, "example_creator": r["creator"], "example_title": r["title_raw"], "example_video": r["video_id"],
                      "example_url": r["url"], "example_views": r["view_count"], "example_with": matched})

@@ -105,6 +105,9 @@ def test_pick_examples_prefers_a_title_that_also_carries_a_companion():
     hits = pd.DataFrame({"row_id": [0, 1, 2, 1], "word": ["trump", "trump", "trump", "ceasefire"]})
     terms = {0: {"trump", "golf"}, 1: {"trump", "ceasefire"}, 2: {"trump"}}
     got = pick_examples(uniq, hits, "week", [("w", "trump")], {("w", "trump"): ["ceasefire", "golf"]}, terms)
-    assert got.iloc[0]["example_title"] == "Trump and the ceasefire" and got.iloc[0]["example_with"] == "ceasefire"   # the strongest companion first, not the most views
+    assert got.iloc[0]["example_title"] == "Trump and the ceasefire" and got.iloc[0]["example_with"] == "ceasefire"   # a tie in co-occurrence goes to the stronger companion
+    terms2 = {0: {"trump", "golf"}, 1: {"trump", "ceasefire"}, 2: {"trump", "golf"}}
+    got = pick_examples(uniq, hits, "week", [("w", "trump")], {("w", "trump"): ["ceasefire", "golf"]}, terms2)
+    assert got.iloc[0]["example_with"] == "golf" and got.iloc[0]["example_title"] == "Trump talks golf"   # golf travels with trump in more titles
     got = pick_examples(uniq, hits, "week", [("w", "trump")], {("w", "trump"): ["iran"]}, terms)
     assert got.iloc[0]["example_title"] == "Trump talks golf" and got.iloc[0]["example_with"] == ""
