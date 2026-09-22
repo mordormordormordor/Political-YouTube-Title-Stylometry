@@ -3,6 +3,11 @@
     caps_profile.csv        share of each creator x genre's unique titles by capitalization
                             style (all_caps, selective_caps, title_case, sentence_case,
                             mixed_other, short_other; rules in textstats.caps_style), read
+                            with the channel's own tag words exempt from the shout test
+                            (caps_tag_words.csv: the words of an edge segment the channel
+                            repeats on at least CAPS_TAG_SHARE of its titles and CAPS_TAG_COUNT
+                            times, "| REUTERS", "GRAPHIC WARNING:", detected with prepare's
+                            brand patterns at that lower threshold), and
                             off the raw title as published: the normalized title strips a
                             channel's fixed show name and episode number along with its
                             brand tag, which left "Joe Rogan Experience #2551 - Daniel
@@ -43,9 +48,26 @@ import pandas as pd
 
 from pipeline_titles.annotate import build_case_lexicon
 from pipeline_titles.common import ANALYSIS_DIR, CAPS_STYLE_TITLE, DIMENSIONS_CSV, FEATURES_TITLE, LOW_N, load_creators, load_prepared, stage_timer
+from pipeline_titles.prepare import _WORD_RE_TAG, detect_brand_patterns
 from pipeline_titles.textstats import CAPS_STYLES, caps_style, vocab_tokens, weighted_log_odds
 
 EXCL_CAP = 3
+# A channel's own tag: an edge segment (prefix, suffix, colon label, bracket, hashtag) it repeats on
+# more than this share of its unique titles and at least this many times. Lower than prepare's brand
+# threshold (20 %), because a tag used for one month ("| REUTERS" in January) is still the channel's.
+CAPS_TAG_SHARE = 0.05
+CAPS_TAG_COUNT = 20
+
+
+def tag_words(titles, min_share: float = CAPS_TAG_SHARE, min_count: int = CAPS_TAG_COUNT) -> list[dict]:
+    """The words (three or more letters, lower-cased) of one creator x genre's repeated edge segments, one row per word x pattern."""
+    bp = detect_brand_patterns(list(titles), min_share, min_count)
+    rows = []
+    for r in bp.rows(len(titles)):
+        for w in _WORD_RE_TAG.findall(r["pattern"]):
+            if len(w) >= 3:
+                rows.append({"word": w.lower(), "kind": r["kind"], "pattern": r["pattern"], "count": r["count"], "share": r["share"]})
+    return rows
 AROUSAL_COMPONENTS = ["caps_share", "exclamations", "power_words", "emoji", "vader_intensity"]
 
 
@@ -75,8 +97,16 @@ def run(info: dict) -> None:
 
     # ---- capitalization profile (on the raw title: the normalization strips show names and episode numbers, not just brand tags) ----
     _, acronyms = build_case_lexicon(uniq["title_raw"].drop_duplicates())
-    uniq["caps_style"] = [caps_style(t, acronyms) for t in uniq["title_raw"]]
+    tag_rows, styles = [], {}
+    for (creator, genre), g in uniq.groupby(["creator", "genre"], sort=True):
+        words = tag_words(g["title_raw"].tolist())
+        tag_rows.extend({"creator": creator, "genre": genre, **w} for w in words)
+        own = {w["word"] for w in words}
+        for rid, t in zip(g["row_id"], g["title_raw"]):
+            styles[rid] = caps_style(t, acronyms, own)
+    uniq["caps_style"] = uniq["row_id"].map(styles)
     uniq[["row_id", "caps_style"]].to_parquet(CAPS_STYLE_TITLE, index=False)
+    pd.DataFrame(tag_rows, columns=["creator", "genre", "word", "kind", "pattern", "count", "share"]).to_csv(ANALYSIS_DIR / "caps_tag_words.csv", index=False)
     cp = uniq.groupby(["creator", "genre"])["caps_style"].value_counts(normalize=True).unstack(fill_value=0.0).reindex(columns=CAPS_STYLES, fill_value=0.0).reset_index()
     cp["n_titles"] = uniq.groupby(["creator", "genre"]).size().to_numpy()
     cp["caps_any"] = cp["all_caps"] + cp["selective_caps"]

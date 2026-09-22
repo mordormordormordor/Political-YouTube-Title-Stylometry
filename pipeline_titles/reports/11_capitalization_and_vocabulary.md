@@ -6,7 +6,7 @@
 
 ### The finding in one paragraph
 
-Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title Case, 34 % use selective CAPS (one or more shouted words inside a normally cased title: "Trump SLAMS Judge"), 13 % are sentence case, 3 % are ALL CAPS, and the rest are too short to classify or mixed. Selective capitals are the signature of the daily commentary channels: @DailyDenims, @DannyHaiphongYT, @MeidasTouch, @katiephangnews, @CashJordan put an emphasised word in more than 99 % of their titles. Full ALL-CAPS titles are rarer and concentrated in a handful of channels on both sides (Jackson Hinkle, TheQuartering, the three Timcast channels, Fleccas, and the streamers Hasan Piker and Vaush); the news outlets are sentence case or Title Case, and the selective capitals they do show are mostly quoted shouted words ('GAME CHANGER': ...) rather than emphasis. By channel group the left and right groups shout at the same rate (40 % and 41 % of the average channel's titles) and the neutral group hardly at all (19 %); document 7 follows the styles into views.
+Averaged over the 236 ranked channels (edited uploads), 51 % of titles are Title Case, 32 % use selective CAPS (one or more shouted words inside a normally cased title: "Trump SLAMS Judge"), 13 % are sentence case, 3 % are ALL CAPS, and the rest are too short to classify or mixed. Selective capitals are the signature of the daily commentary channels: @DannyHaiphongYT, @MeidasTouch, @katiephangnews, @CashJordan, @SabbySabs put an emphasised word in more than 99 % of their titles. Full ALL-CAPS titles are rarer and concentrated in a handful of channels on both sides (Jackson Hinkle, TheQuartering, the three Timcast channels, Fleccas, and the streamers Hasan Piker and Vaush); the news outlets are sentence case or Title Case, and the selective capitals they do show are mostly quoted shouted words ('GAME CHANGER': ...) rather than emphasis. By channel group the left and right groups shout at the same rate (37 % and 40 % of the average channel's titles) and the neutral group hardly at all (18 %); document 7 follows the styles into views.
 
 ![Top 45 channels by capitals.](figures/11_caps_profile_top.png)
 *The 45 channels that use ALL CAPS or selective CAPS most; the bar is the whole channel's titles.*
@@ -21,16 +21,15 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 
 | group | ALL CAPS | selective CAPS | Title Case | Sentence case | mixed / other | short / other | ALL + selective |
 |---|---|---|---|---|---|---|---|
-| left channels | 0.02 | 0.38 | 0.46 | 0.13 | 0.00 | 0.01 | 0.40 |
-| neutral channels | 0.02 | 0.17 | 0.49 | 0.31 | 0.01 | 0.00 | 0.19 |
-| right channels | 0.04 | 0.37 | 0.53 | 0.06 | 0.00 | 0.01 | 0.41 |
+| left channels | 0.02 | 0.36 | 0.48 | 0.13 | 0.00 | 0.01 | 0.37 |
+| neutral channels | 0.02 | 0.16 | 0.49 | 0.32 | 0.01 | 0.00 | 0.18 |
+| right channels | 0.04 | 0.35 | 0.54 | 0.06 | 0.00 | 0.01 | 0.40 |
 
 
 ### Every ranked channel, sorted by ALL CAPS + selective CAPS
 
 | creator | group | n_titles | ALL + selective | ALL CAPS | selective CAPS | Title Case | Sentence case | mixed / other | short / other |
 |---|---|---|---|---|---|---|---|---|---|
-| @DailyDenims | left | 215 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
 | @DannyHaiphongYT | left | 53 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
 | @MeidasTouch | left | 3315 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
 | @katiephangnews | left | 381 | 1.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 |
@@ -47,19 +46,17 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 | @LukeBeasley | left | 1109 | 0.94 | 0.15 | 0.79 | 0.01 | 0.04 | 0.00 | 0.01 |
 | @RobertGouveiaEsq | right | 660 | 0.94 | 0.00 | 0.93 | 0.05 | 0.00 | 0.00 | 0.00 |
 | @breakingpoints | left | 998 | 0.93 | 0.01 | 0.93 | 0.07 | 0.00 | 0.00 | 0.00 |
-| @TheDonLemonShow | left | 348 | 0.93 | 0.01 | 0.93 | 0.07 | 0.00 | 0.00 | 0.00 |
-| @harryjsisson | left | 632 | 0.93 | 0.04 | 0.88 | 0.06 | 0.01 | 0.00 | 0.00 |
 | @TimcastIRL | right | 824 | 0.92 | 0.52 | 0.41 | 0.03 | 0.00 | 0.00 | 0.04 |
 | @LegalAFMTN | left | 2593 | 0.92 | 0.00 | 0.92 | 0.08 | 0.00 | 0.00 | 0.00 |
 | @DueDissidence | left | 596 | 0.91 | 0.00 | 0.91 | 0.09 | 0.00 | 0.00 | 0.00 |
 | @JacksonHinkleOfficial | neutral | 343 | 0.91 | 0.76 | 0.15 | 0.01 | 0.02 | 0.02 | 0.04 |
+| @harryjsisson | left | 632 | 0.90 | 0.04 | 0.86 | 0.08 | 0.01 | 0.00 | 0.00 |
 | @PiersMorganUncensored | neutral | 173 | 0.90 | 0.00 | 0.90 | 0.10 | 0.00 | 0.00 | 0.00 |
 | @deanwithrs | left | 251 | 0.89 | 0.00 | 0.89 | 0.10 | 0.00 | 0.00 | 0.00 |
 | @SecularTalk | left | 1374 | 0.88 | 0.08 | 0.80 | 0.12 | 0.00 | 0.00 | 0.00 |
 | @AnthonyBrianLogan | right | 233 | 0.88 | 0.00 | 0.88 | 0.12 | 0.00 | 0.00 | 0.00 |
 | @Timcast | right | 174 | 0.86 | 0.46 | 0.40 | 0.06 | 0.02 | 0.01 | 0.05 |
 | @ponderingpolitics | left | 1392 | 0.86 | 0.06 | 0.80 | 0.00 | 0.04 | 0.00 | 0.10 |
-| @SMN | left | 190 | 0.86 | 0.00 | 0.86 | 0.14 | 0.00 | 0.00 | 0.00 |
 | @MikeFromPA | left | 125 | 0.86 | 0.16 | 0.70 | 0.14 | 0.01 | 0.00 | 0.00 |
 | @bennyjohnson | right | 1453 | 0.85 | 0.00 | 0.85 | 0.14 | 0.00 | 0.00 | 0.00 |
 | @TimcastNews | right | 519 | 0.85 | 0.51 | 0.34 | 0.01 | 0.01 | 0.09 | 0.03 |
@@ -69,14 +66,11 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 | @JesseKellyDC | right | 478 | 0.80 | 0.00 | 0.80 | 0.20 | 0.00 | 0.00 | 0.00 |
 | @RebelHQ | left | 1190 | 0.80 | 0.00 | 0.80 | 0.20 | 0.00 | 0.00 | 0.00 |
 | @VivaFrei | right | 310 | 0.78 | 0.00 | 0.77 | 0.22 | 0.00 | 0.00 | 0.00 |
-| https://rumble.com/c/nickjfuentes | right | 305 | 0.78 | 0.04 | 0.74 | 0.15 | 0.06 | 0.00 | 0.01 |
 | @thejimmydoreshow | neutral | 1077 | 0.77 | 0.00 | 0.77 | 0.23 | 0.00 | 0.00 | 0.00 |
-| @TimesNowWorld | neutral | 8489 | 0.77 | 0.00 | 0.77 | 0.23 | 0.01 | 0.00 | 0.00 |
-| @RestPoliticsUS | left | 208 | 0.76 | 0.02 | 0.74 | 0.24 | 0.00 | 0.00 | 0.00 |
-| @MichaelMaliceofficial | right | 51 | 0.75 | 0.00 | 0.75 | 0.25 | 0.00 | 0.00 | 0.00 |
+| @TimesNowWorld | neutral | 8489 | 0.76 | 0.00 | 0.76 | 0.23 | 0.01 | 0.00 | 0.00 |
+| https://rumble.com/c/nickjfuentes | right | 305 | 0.76 | 0.04 | 0.72 | 0.17 | 0.06 | 0.00 | 0.01 |
 | @HasanReactionsfanTwo | left | 319 | 0.73 | 0.00 | 0.73 | 0.26 | 0.01 | 0.00 | 0.00 |
 | @DoubleDownNews | left | 64 | 0.72 | 0.06 | 0.66 | 0.22 | 0.06 | 0.00 | 0.00 |
-| @jlptalk | right | 293 | 0.71 | 0.00 | 0.71 | 0.28 | 0.00 | 0.00 | 0.00 |
 | @OwenJonesTalks | left | 226 | 0.71 | 0.00 | 0.71 | 0.29 | 0.00 | 0.00 | 0.00 |
 | @PiscoLitty | left | 54 | 0.70 | 0.02 | 0.69 | 0.28 | 0.02 | 0.00 | 0.00 |
 | @CamHigby | right | 174 | 0.70 | 0.00 | 0.70 | 0.30 | 0.00 | 0.00 | 0.00 |
@@ -94,13 +88,14 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 | @lizwheeler | right | 77 | 0.65 | 0.00 | 0.65 | 0.35 | 0.00 | 0.00 | 0.00 |
 | @FoxNewsChannelClips | right | 5421 | 0.65 | 0.00 | 0.65 | 0.00 | 0.35 | 0.00 | 0.00 |
 | @fightbackpodcast | right | 584 | 0.64 | 0.01 | 0.62 | 0.35 | 0.01 | 0.00 | 0.00 |
-| @thehill | neutral | 4045 | 0.63 | 0.00 | 0.63 | 0.09 | 0.29 | 0.00 | 0.00 |
 | https://rumble.com/c/GGreenwald | left | 76 | 0.62 | 0.00 | 0.62 | 0.38 | 0.00 | 0.00 | 0.00 |
 | @MyronGainesX | right | 365 | 0.62 | 0.00 | 0.62 | 0.38 | 0.01 | 0.00 | 0.00 |
 | @DestinyDGGClips | right | 191 | 0.61 | 0.01 | 0.60 | 0.38 | 0.02 | 0.00 | 0.00 |
 | @TheSerfTimes | left | 233 | 0.59 | 0.00 | 0.59 | 0.06 | 0.35 | 0.00 | 0.00 |
 | @lovettorleaveitpodcast | left | 110 | 0.59 | 0.00 | 0.59 | 0.41 | 0.00 | 0.00 | 0.00 |
 | @FarronBalanced | left | 1705 | 0.59 | 0.00 | 0.59 | 0.40 | 0.01 | 0.00 | 0.00 |
+| @jlptalk | right | 293 | 0.59 | 0.00 | 0.59 | 0.41 | 0.00 | 0.00 | 0.00 |
+| @RestPoliticsUS | left | 208 | 0.57 | 0.02 | 0.55 | 0.43 | 0.00 | 0.00 | 0.00 |
 | @podsaveamerica | left | 643 | 0.56 | 0.00 | 0.56 | 0.42 | 0.02 | 0.00 | 0.00 |
 | @FleccasTalks | right | 288 | 0.56 | 0.42 | 0.14 | 0.12 | 0.00 | 0.00 | 0.32 |
 | @PTLRadioShow | left | 1580 | 0.56 | 0.00 | 0.56 | 0.39 | 0.05 | 0.00 | 0.00 |
@@ -111,11 +106,11 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 | @The_Crucible | right | 218 | 0.52 | 0.00 | 0.52 | 0.44 | 0.04 | 0.00 | 0.00 |
 | @NovaraMedia | left | 565 | 0.50 | 0.00 | 0.50 | 0.50 | 0.00 | 0.00 | 0.00 |
 | @FreshFitMiami | right | 98 | 0.50 | 0.00 | 0.50 | 0.50 | 0.00 | 0.00 | 0.00 |
-| https://rumble.com/c/BannonsWarRoom | right | 4506 | 0.49 | 0.05 | 0.44 | 0.38 | 0.12 | 0.00 | 0.00 |
 | @TheMichaelCohenShow | left | 437 | 0.49 | 0.01 | 0.48 | 0.50 | 0.00 | 0.00 | 0.00 |
 | @dineshdsouza | right | 62 | 0.48 | 0.40 | 0.08 | 0.45 | 0.00 | 0.00 | 0.06 |
 | @AfterPartyEmily | right | 393 | 0.48 | 0.00 | 0.48 | 0.52 | 0.00 | 0.00 | 0.00 |
 | @RealAmericasVoice | right | 2339 | 0.48 | 0.23 | 0.24 | 0.51 | 0.01 | 0.00 | 0.00 |
+| @thehill | neutral | 4045 | 0.47 | 0.00 | 0.47 | 0.12 | 0.41 | 0.00 | 0.00 |
 | @MegynKelly | right | 1591 | 0.47 | 0.00 | 0.47 | 0.53 | 0.00 | 0.00 | 0.00 |
 | @RedactedNews | right | 424 | 0.47 | 0.01 | 0.46 | 0.38 | 0.15 | 0.00 | 0.00 |
 | @GlennKirschner2 | left | 244 | 0.47 | 0.00 | 0.47 | 0.51 | 0.02 | 0.00 | 0.00 |
@@ -123,6 +118,7 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 | @Xanderhal | left | 289 | 0.46 | 0.00 | 0.46 | 0.54 | 0.00 | 0.00 | 0.00 |
 | @Vaush | left | 431 | 0.46 | 0.29 | 0.16 | 0.40 | 0.03 | 0.08 | 0.03 |
 | @marclamonthillnetwork | left | 309 | 0.45 | 0.00 | 0.45 | 0.54 | 0.00 | 0.00 | 0.00 |
+| https://rumble.com/c/BannonsWarRoom | right | 4506 | 0.45 | 0.05 | 0.40 | 0.43 | 0.12 | 0.00 | 0.00 |
 | @MichaelKnowles | right | 445 | 0.44 | 0.00 | 0.44 | 0.55 | 0.00 | 0.00 | 0.00 |
 | @BadEmpanadaLive | left | 274 | 0.43 | 0.01 | 0.42 | 0.56 | 0.00 | 0.00 | 0.01 |
 | @LIVESNEAKO | neutral | 472 | 0.43 | 0.02 | 0.41 | 0.30 | 0.24 | 0.00 | 0.03 |
@@ -152,22 +148,22 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 | @msnow | left | 9398 | 0.25 | 0.00 | 0.25 | 0.03 | 0.71 | 0.00 | 0.00 |
 | @RileyGaines | right | 143 | 0.25 | 0.00 | 0.25 | 0.75 | 0.00 | 0.00 | 0.00 |
 | @BenShapiro | right | 506 | 0.25 | 0.00 | 0.25 | 0.75 | 0.00 | 0.00 | 0.00 |
-| @RSBN | right | 1553 | 0.25 | 0.00 | 0.25 | 0.74 | 0.01 | 0.00 | 0.00 |
 | @laurenchenclips | right | 109 | 0.24 | 0.00 | 0.24 | 0.75 | 0.01 | 0.00 | 0.00 |
 | @PoliticsJOE | left | 325 | 0.23 | 0.00 | 0.23 | 0.09 | 0.67 | 0.00 | 0.00 |
 | @thomhartmann | left | 760 | 0.23 | 0.00 | 0.23 | 0.76 | 0.01 | 0.00 | 0.00 |
 | @MarkDice | right | 89 | 0.22 | 0.07 | 0.16 | 0.75 | 0.00 | 0.01 | 0.01 |
-| @RebelNewsOnline | right | 1273 | 0.22 | 0.00 | 0.22 | 0.10 | 0.68 | 0.00 | 0.00 |
+| @TheDonLemonShow | left | 348 | 0.22 | 0.01 | 0.22 | 0.78 | 0.00 | 0.00 | 0.00 |
 | @winston_marshall | right | 104 | 0.22 | 0.00 | 0.22 | 0.66 | 0.11 | 0.01 | 0.00 |
+| @MichaelMaliceofficial | right | 51 | 0.22 | 0.00 | 0.22 | 0.76 | 0.02 | 0.00 | 0.00 |
 | @OwenReport | left | 368 | 0.21 | 0.00 | 0.21 | 0.73 | 0.06 | 0.00 | 0.00 |
 | @oann | right | 1736 | 0.21 | 0.09 | 0.12 | 0.74 | 0.05 | 0.00 | 0.00 |
 | @GeopoliticalEconomyReport | left | 67 | 0.21 | 0.00 | 0.21 | 0.00 | 0.79 | 0.00 | 0.00 |
 | @clayandbuck | right | 565 | 0.20 | 0.00 | 0.20 | 0.80 | 0.00 | 0.00 | 0.00 |
 | @PoliticsGirl | left | 110 | 0.20 | 0.00 | 0.20 | 0.69 | 0.04 | 0.00 | 0.07 |
+| @SMN | left | 190 | 0.20 | 0.00 | 0.20 | 0.80 | 0.00 | 0.00 | 0.00 |
 | @LeejaMiller | left | 56 | 0.20 | 0.00 | 0.20 | 0.77 | 0.02 | 0.00 | 0.02 |
 | @XAVIAER | right | 68 | 0.19 | 0.00 | 0.19 | 0.75 | 0.06 | 0.00 | 0.00 |
 | @DropSiteNews | left | 198 | 0.18 | 0.00 | 0.18 | 0.78 | 0.04 | 0.00 | 0.00 |
-| @NBCNews | neutral | 6161 | 0.18 | 0.00 | 0.18 | 0.08 | 0.74 | 0.00 | 0.00 |
 | @DemocracyDocket | left | 122 | 0.18 | 0.00 | 0.18 | 0.80 | 0.02 | 0.00 | 0.00 |
 | @AsmonTV | right | 825 | 0.17 | 0.04 | 0.13 | 0.05 | 0.75 | 0.01 | 0.03 |
 | @TheRealTabithaSpeaks | left | 431 | 0.16 | 0.00 | 0.16 | 0.82 | 0.01 | 0.00 | 0.01 |
@@ -175,27 +171,28 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 | @RealAlexClark | right | 73 | 0.15 | 0.00 | 0.15 | 0.84 | 0.01 | 0.00 | 0.00 |
 | @marklevinshow | right | 486 | 0.15 | 0.00 | 0.15 | 0.84 | 0.01 | 0.00 | 0.00 |
 | @MrTariqNasheed | right | 354 | 0.15 | 0.00 | 0.14 | 0.84 | 0.00 | 0.00 | 0.01 |
+| @DailyDenims | left | 215 | 0.14 | 0.00 | 0.14 | 0.82 | 0.03 | 0.00 | 0.00 |
 | @bbrettcooper | right | 139 | 0.14 | 0.00 | 0.14 | 0.86 | 0.00 | 0.00 | 0.00 |
 | @JackCocchiarellaShow | left | 1446 | 0.14 | 0.00 | 0.14 | 0.84 | 0.02 | 0.00 | 0.00 |
 | @rolandsmartin | left | 698 | 0.14 | 0.00 | 0.14 | 0.82 | 0.04 | 0.00 | 0.00 |
 | @DarkHorsePod | right | 65 | 0.14 | 0.00 | 0.14 | 0.86 | 0.00 | 0.00 | 0.00 |
 | @HangOutwithSeanHannity | right | 154 | 0.14 | 0.00 | 0.14 | 0.86 | 0.01 | 0.00 | 0.00 |
 | @theisabelbrown | right | 134 | 0.13 | 0.00 | 0.13 | 0.86 | 0.01 | 0.00 | 0.00 |
-| @TheBrianKilmeadeShow | right | 352 | 0.13 | 0.00 | 0.13 | 0.87 | 0.00 | 0.00 | 0.00 |
+| @RSBN | right | 1553 | 0.13 | 0.00 | 0.13 | 0.86 | 0.01 | 0.00 | 0.00 |
 | @RonPlacone | left | 63 | 0.13 | 0.00 | 0.13 | 0.87 | 0.00 | 0.00 | 0.00 |
-| @Reuters | neutral | 7680 | 0.12 | 0.00 | 0.12 | 0.01 | 0.87 | 0.00 | 0.00 |
+| @RebelNewsOnline | right | 1273 | 0.13 | 0.00 | 0.12 | 0.10 | 0.77 | 0.00 | 0.00 |
+| @TheBrianKilmeadeShow | right | 352 | 0.12 | 0.00 | 0.12 | 0.87 | 0.00 | 0.00 | 0.00 |
 | @TheMajorityReport | left | 1520 | 0.12 | 0.01 | 0.11 | 0.87 | 0.00 | 0.00 | 0.01 |
 | @HasanAbiVODs3 | left | 163 | 0.12 | 0.00 | 0.12 | 0.21 | 0.21 | 0.00 | 0.45 |
 | @joerogan | neutral | 133 | 0.11 | 0.00 | 0.11 | 0.89 | 0.00 | 0.00 | 0.00 |
-| @RubinReport | right | 1011 | 0.11 | 0.00 | 0.11 | 0.89 | 0.00 | 0.00 | 0.00 |
 | @judgingfreedom | left | 345 | 0.11 | 0.00 | 0.11 | 0.88 | 0.01 | 0.00 | 0.00 |
 | https://rumble.com/c/russellbrand | right | 259 | 0.11 | 0.01 | 0.10 | 0.50 | 0.36 | 0.00 | 0.03 |
 | @nypost | right | 6036 | 0.10 | 0.00 | 0.10 | 0.88 | 0.02 | 0.00 | 0.00 |
-| @NewsmaxTV | right | 3744 | 0.10 | 0.00 | 0.10 | 0.08 | 0.81 | 0.00 | 0.00 |
 | @bulwarkmedia | left | 1730 | 0.10 | 0.00 | 0.10 | 0.89 | 0.00 | 0.00 | 0.00 |
 | @AlexStein99 | right | 82 | 0.10 | 0.02 | 0.07 | 0.84 | 0.06 | 0.00 | 0.00 |
 | @AndrewKlavan | right | 183 | 0.09 | 0.00 | 0.09 | 0.91 | 0.00 | 0.00 | 0.00 |
 | @franifio | left | 271 | 0.09 | 0.00 | 0.09 | 0.89 | 0.01 | 0.00 | 0.00 |
+| @NewsmaxTV | right | 3744 | 0.09 | 0.00 | 0.09 | 0.08 | 0.83 | 0.00 | 0.00 |
 | @Politicon | left | 480 | 0.09 | 0.00 | 0.09 | 0.85 | 0.01 | 0.00 | 0.04 |
 | @SaltyCracker | right | 361 | 0.09 | 0.00 | 0.09 | 0.90 | 0.01 | 0.00 | 0.00 |
 | @BreakThroughNews | left | 234 | 0.09 | 0.00 | 0.09 | 0.91 | 0.01 | 0.00 | 0.00 |
@@ -219,15 +216,16 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 | @chriscuomo | left | 203 | 0.03 | 0.00 | 0.03 | 0.94 | 0.03 | 0.00 | 0.00 |
 | @thewarningwithsteveschmidt | left | 273 | 0.03 | 0.00 | 0.03 | 0.95 | 0.02 | 0.00 | 0.00 |
 | @turningpointusa | right | 152 | 0.03 | 0.00 | 0.03 | 0.96 | 0.00 | 0.00 | 0.01 |
+| @NBCNews | neutral | 6161 | 0.03 | 0.00 | 0.03 | 0.23 | 0.74 | 0.00 | 0.00 |
 | @LegalEagle | left | 97 | 0.03 | 0.00 | 0.03 | 0.96 | 0.00 | 0.00 | 0.01 |
 | @therationalnational | left | 135 | 0.03 | 0.00 | 0.03 | 0.96 | 0.01 | 0.00 | 0.00 |
 | @chinainsights-r2w | neutral | 238 | 0.03 | 0.00 | 0.03 | 0.89 | 0.08 | 0.00 | 0.00 |
-| @LeverNews | left | 71 | 0.03 | 0.00 | 0.03 | 0.96 | 0.01 | 0.00 | 0.00 |
-| @PragerU | right | 371 | 0.03 | 0.00 | 0.03 | 0.96 | 0.01 | 0.00 | 0.00 |
 | @NewsNation | neutral | 6882 | 0.03 | 0.00 | 0.03 | 0.06 | 0.91 | 0.00 | 0.00 |
 | @ThePodcastoftheLotusEaters | right | 588 | 0.03 | 0.00 | 0.02 | 0.93 | 0.01 | 0.00 | 0.04 |
+| @Reuters | neutral | 7680 | 0.03 | 0.00 | 0.03 | 0.01 | 0.96 | 0.00 | 0.00 |
 | @Firstpost | neutral | 9637 | 0.02 | 0.00 | 0.02 | 0.97 | 0.00 | 0.00 | 0.00 |
 | @USATODAY | neutral | 2135 | 0.02 | 0.00 | 0.02 | 0.00 | 0.97 | 0.00 | 0.00 |
+| @PragerU | right | 371 | 0.02 | 0.00 | 0.02 | 0.96 | 0.01 | 0.00 | 0.00 |
 | @markets | neutral | 7665 | 0.02 | 0.00 | 0.02 | 0.94 | 0.01 | 0.00 | 0.03 |
 | @Forbes | neutral | 1196 | 0.02 | 0.00 | 0.02 | 0.98 | 0.00 | 0.00 | 0.00 |
 | @POLITICO | neutral | 286 | 0.02 | 0.00 | 0.02 | 0.08 | 0.90 | 0.00 | 0.00 |
@@ -250,6 +248,7 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 | @samharrisorg | left | 108 | 0.01 | 0.00 | 0.01 | 0.97 | 0.02 | 0.00 | 0.00 |
 | @TuckerCarlson | neutral | 113 | 0.01 | 0.00 | 0.01 | 0.98 | 0.01 | 0.00 | 0.00 |
 | @BBCNews | neutral | 2352 | 0.01 | 0.00 | 0.01 | 0.06 | 0.94 | 0.00 | 0.00 |
+| @RubinReport | right | 1011 | 0.01 | 0.00 | 0.01 | 0.99 | 0.00 | 0.00 | 0.00 |
 | @Vox | left | 127 | 0.01 | 0.00 | 0.01 | 0.06 | 0.94 | 0.00 | 0.00 |
 | @TheEconomist | left | 130 | 0.01 | 0.00 | 0.01 | 0.01 | 0.98 | 0.00 | 0.00 |
 | @aljazeeraenglish | left | 6643 | 0.01 | 0.00 | 0.01 | 0.05 | 0.94 | 0.00 | 0.00 |
@@ -259,6 +258,7 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 | @NYTPodcasts | left | 454 | 0.00 | 0.00 | 0.00 | 0.99 | 0.00 | 0.00 | 0.00 |
 | @ColemanHughesOfficial | right | 52 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
 | @EzraKleinShow | left | 60 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
+| @LeverNews | left | 71 | 0.00 | 0.00 | 0.00 | 0.99 | 0.01 | 0.00 | 0.00 |
 | @TheAtlantic | left | 157 | 0.00 | 0.00 | 0.00 | 0.99 | 0.00 | 0.00 | 0.01 |
 | @TimDillonShow | neutral | 66 | 0.00 | 0.00 | 0.00 | 1.00 | 0.00 | 0.00 | 0.00 |
 | @UnHerd | left | 76 | 0.00 | 0.00 | 0.00 | 0.03 | 0.97 | 0.00 | 0.00 |
@@ -270,7 +270,7 @@ Averaged over the 236 ranked channels (edited uploads), 49 % of titles are Title
 
 ### Method
 
-Each unique title, as published (the raw title: the normalized one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if its first letter or digit is a lower-case letter (a title opening with a number, a quote, "U.S." or "I" is judged on what follows); **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself (938 words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like. Shares are over a channel's unique titles per genre.
+Each unique title, as published (the raw title: the normalized one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if its first letter or digit is a lower-case letter (a title opening with a number, a quote, "U.S." or "I" is judged on what follows); **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself (938 words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like; and a channel's own tag words are exempt for that channel: the words of an edge segment (a "| REUTERS" suffix, a "GRAPHIC WARNING:" label, a show name) it repeats on more than 5 % of its unique titles and at least 20 times (`caps_tag_words.csv`), so a brand tag written in capitals for a month is not a month of shouting. Shares are over a channel's unique titles per genre.
 
 ### Limitations
 

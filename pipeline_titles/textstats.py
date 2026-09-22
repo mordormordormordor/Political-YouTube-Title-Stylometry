@@ -41,12 +41,14 @@ def vocab_tokens(text: str, min_len: int = 2) -> list[str]:
     return out
 
 
-def caps_style(title: str, acronyms: Iterable[str] = ()) -> str:
+def caps_style(title: str, acronyms: Iterable[str] = (), labels: Iterable[str] = ()) -> str:
     """Capitalization style of one title.
 
     short_other: fewer than three 2+-letter words. all_caps: >= 90 % of words
     ALL CAPS. selective_caps: at least one ALL-CAPS word of 3+ letters that is
-    neither a known acronym nor a generic label (LIVE, BREAKING, ...): emphasis
+    neither a known acronym, a generic label (LIVE, BREAKING, ...) nor one of
+    `labels`, the channel's own tag words (the words of an edge segment it
+    repeats, "| REUTERS", "GRAPHIC WARNING:"; profiles.tag_words): emphasis
     capitals. mixed_other: the title's first letter or digit is a lower-case
     letter ("this is getting too crazy", "iPhone Duo"); a title that opens with
     a number, a quote, "U.S." or "I" is judged on what follows, since the word
@@ -61,7 +63,8 @@ def caps_style(title: str, acronyms: Iterable[str] = ()) -> str:
     if len(upper) / len(words) >= 0.9:
         return "all_caps"
     acr = set(acronyms)
-    if any(len(w) >= 3 and w.lower() not in acr and w.lower() not in CAPS_LABELS for w in upper):
+    own = set(labels)
+    if any(len(w) >= 3 and w.lower() not in acr and w.lower() not in CAPS_LABELS and w.lower() not in own for w in upper):
         return "selective_caps"
     first = next((ch for ch in title if ch.isalnum()), "")
     if first.isalpha() and first.islower():

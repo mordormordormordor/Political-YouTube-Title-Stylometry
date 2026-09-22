@@ -1,0 +1,404 @@
+creator,genre,word,kind,pattern,count,share
+@60minutes,videos,minutes,suffix,# minutes full episodes,48,0.1595
+@60minutes,videos,full,suffix,# minutes full episodes,48,0.1595
+@60minutes,videos,episodes,suffix,# minutes full episodes,48,0.1595
+@60minutes,videos,minutes,suffix,# minutes,38,0.1262
+@60minutes,videos,minutes,suffix,# minutes archive,74,0.2458
+@60minutes,videos,archive,suffix,# minutes archive,74,0.2458
+@60minutes,videos,sunday,suffix,sunday on # minutes,41,0.1362
+@60minutes,videos,minutes,suffix,sunday on # minutes,41,0.1362
+@ABCNews,streams,live,prefix,live: abc news live,216,0.3949
+@ABCNews,streams,abc,prefix,live: abc news live,216,0.3949
+@ABCNews,streams,news,prefix,live: abc news live,216,0.3949
+@ABCNews,streams,live,prefix,live: abc news live,216,0.3949
+@ABCNews,streams,abc,suffix,abc news,216,0.3949
+@ABCNews,streams,news,suffix,abc news,216,0.3949
+@ANINewsIndia,streams,bjp,suffix,bjp,496,0.0689
+@AnthonyBrianLogan,streams,abl,colon,🔴 abl live,48,1.0
+@AnthonyBrianLogan,streams,live,colon,🔴 abl live,48,1.0
+@BBCNews,videos,the,suffix,the global story,127,0.054
+@BBCNews,videos,global,suffix,the global story,127,0.054
+@BBCNews,videos,story,suffix,the global story,127,0.054
+@BBCNews,videos,bbc,suffix,bbc news,1698,0.7219
+@BBCNews,videos,news,suffix,bbc news,1698,0.7219
+@BBCNews,videos,bbc,suffix,bbc newscast,213,0.0906
+@BBCNews,videos,newscast,suffix,bbc newscast,213,0.0906
+@BBCNews,videos,global,suffix,global news podcast,162,0.0689
+@BBCNews,videos,news,suffix,global news podcast,162,0.0689
+@BBCNews,videos,podcast,suffix,global news podcast,162,0.0689
+@CBSNews,streams,full,suffix,full coverage,47,0.1358
+@CBSNews,streams,coverage,suffix,full coverage,47,0.1358
+@ClubRandomPodcast,videos,club,suffix,club random with bill maher,37,0.2
+@ClubRandomPodcast,videos,random,suffix,club random with bill maher,37,0.2
+@ClubRandomPodcast,videos,with,suffix,club random with bill maher,37,0.2
+@ClubRandomPodcast,videos,bill,suffix,club random with bill maher,37,0.2
+@ClubRandomPodcast,videos,maher,suffix,club random with bill maher,37,0.2
+@DailyDenims,videos,denims,colon,denims,200,0.9302
+@DarkHorsePod,videos,darkhorse,suffix,darkhorse #,30,0.4615
+@EzraKleinShow,videos,the,suffix,the ezra klein show,58,0.9667
+@EzraKleinShow,videos,ezra,suffix,the ezra klein show,58,0.9667
+@EzraKleinShow,videos,klein,suffix,the ezra klein show,58,0.9667
+@EzraKleinShow,videos,show,suffix,the ezra klein show,58,0.9667
+@Firstpost,streams,iran,colon,us iran war live,498,0.0587
+@Firstpost,streams,war,colon,us iran war live,498,0.0587
+@Firstpost,streams,live,colon,us iran war live,498,0.0587
+@Firstpost,videos,vantage,prefix,vantage on firstpost,1274,0.1322
+@Firstpost,videos,firstpost,prefix,vantage on firstpost,1274,0.1322
+@Firstpost,videos,firstpost,prefix,firstpost america,574,0.0596
+@Firstpost,videos,america,prefix,firstpost america,574,0.0596
+@Firstpost,videos,firstpost,prefix,firstpost live,764,0.0793
+@Firstpost,videos,live,prefix,firstpost live,764,0.0793
+@Firstpost,videos,firstpost,prefix,firstpost africa,563,0.0584
+@Firstpost,videos,africa,prefix,firstpost africa,563,0.0584
+@Firstpost,videos,vantage,suffix,vantage on firstpost,1517,0.1574
+@Firstpost,videos,firstpost,suffix,vantage on firstpost,1517,0.1574
+@Firstpost,videos,firstpost,suffix,firstpost america,962,0.0998
+@Firstpost,videos,america,suffix,firstpost america,962,0.0998
+@Firstpost,videos,spotlight,suffix,spotlight,635,0.0659
+@Firstpost,videos,first,suffix,first sports with rupha ramani,630,0.0654
+@Firstpost,videos,sports,suffix,first sports with rupha ramani,630,0.0654
+@Firstpost,videos,with,suffix,first sports with rupha ramani,630,0.0654
+@Firstpost,videos,rupha,suffix,first sports with rupha ramani,630,0.0654
+@Firstpost,videos,ramani,suffix,first sports with rupha ramani,630,0.0654
+@Firstpost,videos,firstpost,suffix,firstpost live,1758,0.1824
+@Firstpost,videos,live,suffix,firstpost live,1758,0.1824
+@Firstpost,videos,firstpost,suffix,firstpost africa,839,0.0871
+@Firstpost,videos,africa,suffix,firstpost africa,839,0.0871
+@Firstpost,videos,vantage,suffix,vantage with palki sharma,774,0.0803
+@Firstpost,videos,with,suffix,vantage with palki sharma,774,0.0803
+@Firstpost,videos,palki,suffix,vantage with palki sharma,774,0.0803
+@Firstpost,videos,sharma,suffix,vantage with palki sharma,774,0.0803
+@HangOutwithSeanHannity,videos,hang,suffix,hang out with sean hannity,53,0.3442
+@HangOutwithSeanHannity,videos,out,suffix,hang out with sean hannity,53,0.3442
+@HangOutwithSeanHannity,videos,with,suffix,hang out with sean hannity,53,0.3442
+@HangOutwithSeanHannity,videos,sean,suffix,hang out with sean hannity,53,0.3442
+@HangOutwithSeanHannity,videos,hannity,suffix,hang out with sean hannity,53,0.3442
+@HasanReactionsfanTwo,videos,hasanabi,suffix,hasanabi reacts,253,0.7931
+@HasanReactionsfanTwo,videos,reacts,suffix,hasanabi reacts,253,0.7931
+@LastWeekTonight,videos,hbo,bracket,hbo,23,0.6571
+@LeverNews,videos,lever,suffix,lever time,22,0.3099
+@LeverNews,videos,time,suffix,lever time,22,0.3099
+@LukeBeasley,streams,members,suffix,members only bonus show,74,0.3008
+@LukeBeasley,streams,only,suffix,members only bonus show,74,0.3008
+@LukeBeasley,streams,bonus,suffix,members only bonus show,74,0.3008
+@LukeBeasley,streams,show,suffix,members only bonus show,74,0.3008
+@LukeBeasley,streams,shock,colon,shock breaking,38,0.1545
+@LukeBeasley,streams,breaking,colon,shock breaking,38,0.1545
+@LukeBeasley,streams,shock,colon,shock live,21,0.0854
+@LukeBeasley,streams,live,colon,shock live,21,0.0854
+@LukeBeasley,videos,members,suffix,members only bonus show,66,0.0595
+@LukeBeasley,videos,only,suffix,members only bonus show,66,0.0595
+@LukeBeasley,videos,bonus,suffix,members only bonus show,66,0.0595
+@LukeBeasley,videos,show,suffix,members only bonus show,66,0.0595
+@LukeBeasley,videos,omg,colon,omg,64,0.0577
+@MLChristiansen,streams,live,suffix,mc live,71,0.9726
+@MLChristiansen,videos,live,suffix,mc live clips,29,0.25
+@MLChristiansen,videos,clips,suffix,mc live clips,29,0.25
+@MeidasTouch,streams,legal,suffix,legal af,69,0.1177
+@MeidasTouch,streams,politicsgirl,suffix,politicsgirl,34,0.058
+@MichaelMaliceofficial,videos,your,suffix,your welcome,25,0.4902
+@MichaelMaliceofficial,videos,welcome,suffix,your welcome,25,0.4902
+@NBCNews,streams,nbc,suffix,nbc news,225,0.6429
+@NBCNews,streams,news,suffix,nbc news,225,0.6429
+@NBCNews,videos,nbc,suffix,nbc news now,380,0.0617
+@NBCNews,videos,news,suffix,nbc news now,380,0.0617
+@NBCNews,videos,now,suffix,nbc news now,380,0.0617
+@NewsNation,streams,hot,suffix,hot take with jesse weber,30,0.1064
+@NewsNation,streams,take,suffix,hot take with jesse weber,30,0.1064
+@NewsNation,streams,with,suffix,hot take with jesse weber,30,0.1064
+@NewsNation,streams,jesse,suffix,hot take with jesse weber,30,0.1064
+@NewsNation,streams,weber,suffix,hot take with jesse weber,30,0.1064
+@NewsNation,streams,prove,suffix,prove it! with batya,30,0.1064
+@NewsNation,streams,with,suffix,prove it! with batya,30,0.1064
+@NewsNation,streams,batya,suffix,prove it! with batya,30,0.1064
+@NewsNation,videos,newsnation,suffix,newsnation live,911,0.1324
+@NewsNation,videos,live,suffix,newsnation live,911,0.1324
+@NewsNation,videos,cuomo,suffix,cuomo,345,0.0501
+@NewsNation,videos,jesse,suffix,jesse weber live,364,0.0529
+@NewsNation,videos,weber,suffix,jesse weber live,364,0.0529
+@NewsNation,videos,live,suffix,jesse weber live,364,0.0529
+@NewsNation,videos,morning,suffix,morning in america,861,0.1251
+@NewsNation,videos,america,suffix,morning in america,861,0.1251
+@NewsmaxTV,streams,the,prefix,the rob carson show (#/#/#),31,0.0809
+@NewsmaxTV,streams,rob,prefix,the rob carson show (#/#/#),31,0.0809
+@NewsmaxTV,streams,carson,prefix,the rob carson show (#/#/#),31,0.0809
+@NewsmaxTV,streams,show,prefix,the rob carson show (#/#/#),31,0.0809
+@NewsmaxTV,streams,newsmax,suffix,newsmax podcasts,49,0.1279
+@NewsmaxTV,streams,podcasts,suffix,newsmax podcasts,49,0.1279
+@NewsmaxTV,streams,the,suffix,the rob carson show,123,0.3211
+@NewsmaxTV,streams,rob,suffix,the rob carson show,123,0.3211
+@NewsmaxTV,streams,carson,suffix,the rob carson show,123,0.3211
+@NewsmaxTV,streams,show,suffix,the rob carson show,123,0.3211
+@NewsmaxTV,streams,the,suffix,the gerry callahan show,126,0.329
+@NewsmaxTV,streams,gerry,suffix,the gerry callahan show,126,0.329
+@NewsmaxTV,streams,callahan,suffix,the gerry callahan show,126,0.329
+@NewsmaxTV,streams,show,suffix,the gerry callahan show,126,0.329
+@NewsmaxTV,streams,greta,suffix,greta wire,34,0.0888
+@NewsmaxTV,streams,wire,suffix,greta wire,34,0.0888
+@NewsmaxTV,streams,gerry,suffix,gerry callahan show,21,0.0548
+@NewsmaxTV,streams,callahan,suffix,gerry callahan show,21,0.0548
+@NewsmaxTV,streams,show,suffix,gerry callahan show,21,0.0548
+@NewsmaxTV,streams,the,suffix,the rob carson show (#/#/#),31,0.0809
+@NewsmaxTV,streams,rob,suffix,the rob carson show (#/#/#),31,0.0809
+@NewsmaxTV,streams,carson,suffix,the rob carson show (#/#/#),31,0.0809
+@NewsmaxTV,streams,show,suffix,the rob carson show (#/#/#),31,0.0809
+@NewsmaxTV,videos,national,suffix,national report,389,0.1039
+@NewsmaxTV,videos,report,suffix,national report,389,0.1039
+@NewsmaxTV,videos,wake,suffix,wake up america,326,0.0871
+@NewsmaxTV,videos,america,suffix,wake up america,326,0.0871
+@NewsmaxTV,videos,bianca,suffix,bianca across the nation,220,0.0588
+@NewsmaxTV,videos,across,suffix,bianca across the nation,220,0.0588
+@NewsmaxTV,videos,the,suffix,bianca across the nation,220,0.0588
+@NewsmaxTV,videos,nation,suffix,bianca across the nation,220,0.0588
+@NovaraMedia,videos,novara,suffix,novara live,47,0.0832
+@NovaraMedia,videos,live,suffix,novara live,47,0.0832
+@NovaraMedia,videos,novaralive,suffix,novaralive,42,0.0743
+@NovaraMedia,videos,novaralive,hashtag,#novaralive,41,0.0726
+@OutKick,videos,outkick,suffix,outkick the show w/ clay travis,22,0.4681
+@OutKick,videos,the,suffix,outkick the show w/ clay travis,22,0.4681
+@OutKick,videos,show,suffix,outkick the show w/ clay travis,22,0.4681
+@OutKick,videos,clay,suffix,outkick the show w/ clay travis,22,0.4681
+@OutKick,videos,travis,suffix,outkick the show w/ clay travis,22,0.4681
+@PBDPodcast,streams,pbd,suffix,pbd,77,0.6937
+@PBDPodcast,streams,pbd,suffix,pbd podcast,28,0.2523
+@PBDPodcast,streams,podcast,suffix,pbd podcast,28,0.2523
+@PTLRadioShow,videos,maga,hashtag,#maga,86,0.0544
+@PartOfTheProblem,videos,dave,prefix,dave smith,97,1.0
+@PartOfTheProblem,videos,smith,prefix,dave smith,97,1.0
+@PartOfTheProblem,videos,part,suffix,part of the problem #,96,0.9897
+@PartOfTheProblem,videos,the,suffix,part of the problem #,96,0.9897
+@PartOfTheProblem,videos,problem,suffix,part of the problem #,96,0.9897
+@Politicon,videos,james,colon,james carville,104,0.2167
+@Politicon,videos,carville,colon,james carville,104,0.2167
+@Politicon,videos,sistersinlaw,hashtag,#sistersinlaw,28,0.0583
+@PragerU,videos,minute,prefix,#-minute videos,37,0.0997
+@PragerU,videos,videos,prefix,#-minute videos,37,0.0997
+@PragerU,videos,the,suffix,the brief,34,0.0916
+@PragerU,videos,brief,suffix,the brief,34,0.0916
+@PragerU,videos,victor,suffix,victor davis hanson,24,0.0647
+@PragerU,videos,davis,suffix,victor davis hanson,24,0.0647
+@PragerU,videos,hanson,suffix,victor davis hanson,24,0.0647
+@PragerU,videos,prageru,suffix,prageru,174,0.469
+@PragerU,videos,minute,suffix,#-minute videos,37,0.0997
+@PragerU,videos,videos,suffix,#-minute videos,37,0.0997
+@PragerU,videos,the,suffix,the wrap up,21,0.0566
+@PragerU,videos,wrap,suffix,the wrap up,21,0.0566
+@PragerU,videos,real,suffix,real talk,23,0.062
+@PragerU,videos,talk,suffix,real talk,23,0.062
+@RSBN,videos,full,colon,full event,189,0.1217
+@RSBN,videos,event,colon,full event,189,0.1217
+@RealAmericasVoice,streams,just,prefix,just the news,109,0.071
+@RealAmericasVoice,streams,the,prefix,just the news,109,0.071
+@RealAmericasVoice,streams,news,prefix,just the news,109,0.071
+@RealAmericasVoice,streams,live,suffix,live from studio #b,90,0.0586
+@RealAmericasVoice,streams,from,suffix,live from studio #b,90,0.0586
+@RealAmericasVoice,streams,studio,suffix,live from studio #b,90,0.0586
+@RealAmericasVoice,streams,noise,suffix,no noise,109,0.071
+@RealAmericasVoice,streams,just,suffix,just the news,108,0.0704
+@RealAmericasVoice,streams,the,suffix,just the news,108,0.0704
+@RealAmericasVoice,streams,news,suffix,just the news,108,0.0704
+@RebelNewsOnline,streams,rebel,suffix,rebel roundtable,31,0.1658
+@RebelNewsOnline,streams,roundtable,suffix,rebel roundtable,31,0.1658
+@RebelNewsOnline,streams,rebel,suffix,rebel roundup,101,0.5401
+@RebelNewsOnline,streams,roundup,suffix,rebel roundup,101,0.5401
+@RebelNewsOnline,streams,buffalo,suffix,buffalo roundtable,36,0.1925
+@RebelNewsOnline,streams,roundtable,suffix,buffalo roundtable,36,0.1925
+@RebelNewsOnline,videos,the,suffix,the ezra levant show,107,0.0841
+@RebelNewsOnline,videos,ezra,suffix,the ezra levant show,107,0.0841
+@RebelNewsOnline,videos,levant,suffix,the ezra levant show,107,0.0841
+@RebelNewsOnline,videos,show,suffix,the ezra levant show,107,0.0841
+@RedactedNews,streams,redacted,suffix,redacted,32,0.2353
+@RedactedNews,streams,redacted,suffix,redacted news,21,0.1544
+@RedactedNews,streams,news,suffix,redacted news,21,0.1544
+@RedactedNews,videos,redacted,suffix,redacted w clayton morris,39,0.092
+@RedactedNews,videos,clayton,suffix,redacted w clayton morris,39,0.092
+@RedactedNews,videos,morris,suffix,redacted w clayton morris,39,0.092
+@RedactedNews,videos,redacted,suffix,redacted,36,0.0849
+@RedactedNews,videos,redacted,suffix,redacted news,49,0.1156
+@RedactedNews,videos,news,suffix,redacted news,49,0.1156
+@RestPoliticsUS,videos,free,prefix,ad free,70,0.3365
+@Reuters,videos,reuters,suffix,reuters,787,0.1025
+@RileyGaines,videos,the,suffix,the riley gaines show,71,0.4965
+@RileyGaines,videos,riley,suffix,the riley gaines show,71,0.4965
+@RileyGaines,videos,gaines,suffix,the riley gaines show,71,0.4965
+@RileyGaines,videos,show,suffix,the riley gaines show,71,0.4965
+@RubinReport,videos,first,suffix,first look,108,0.1068
+@RubinReport,videos,look,suffix,first look,108,0.1068
+@SMN,videos,some,suffix,some more news,21,0.1105
+@SMN,videos,more,suffix,some more news,21,0.1105
+@SMN,videos,news,suffix,some more news,21,0.1105
+@SMN,videos,even,suffix,even more news,45,0.2368
+@SMN,videos,more,suffix,even more news,45,0.2368
+@SMN,videos,news,suffix,even more news,45,0.2368
+@SMN,videos,free,colon,ad-free,60,0.3158
+@SecularTalk,videos,the,suffix,the kyle kulinski show,990,0.7205
+@SecularTalk,videos,kyle,suffix,the kyle kulinski show,990,0.7205
+@SecularTalk,videos,kulinski,suffix,the kyle kulinski show,990,0.7205
+@SecularTalk,videos,show,suffix,the kyle kulinski show,990,0.7205
+@SecularTalk,videos,kyle,suffix,kyle kulinski show,71,0.0517
+@SecularTalk,videos,kulinski,suffix,kyle kulinski show,71,0.0517
+@SecularTalk,videos,show,suffix,kyle kulinski show,71,0.0517
+@Semafor,streams,semafor,suffix,semafor world economy #,20,0.6667
+@Semafor,streams,world,suffix,semafor world economy #,20,0.6667
+@Semafor,streams,economy,suffix,semafor world economy #,20,0.6667
+@TechCrunch,videos,equity,suffix,equity podcast,65,0.4676
+@TechCrunch,videos,podcast,suffix,equity podcast,65,0.4676
+@TheAdamCarollaShow1,videos,the,suffix,the adam & dr. drew show,21,0.0565
+@TheAdamCarollaShow1,videos,adam,suffix,the adam & dr. drew show,21,0.0565
+@TheAdamCarollaShow1,videos,drew,suffix,the adam & dr. drew show,21,0.0565
+@TheAdamCarollaShow1,videos,show,suffix,the adam & dr. drew show,21,0.0565
+@TheAtlantic,videos,the,suffix,the david frum show,37,0.2357
+@TheAtlantic,videos,david,suffix,the david frum show,37,0.2357
+@TheAtlantic,videos,frum,suffix,the david frum show,37,0.2357
+@TheAtlantic,videos,show,suffix,the david frum show,37,0.2357
+@TheBrianKilmeadeShow,videos,brian,suffix,brian kilmeade show,253,0.7188
+@TheBrianKilmeadeShow,videos,kilmeade,suffix,brian kilmeade show,253,0.7188
+@TheBrianKilmeadeShow,videos,show,suffix,brian kilmeade show,253,0.7188
+@TheDailyBeast,videos,the,suffix,the daily beast podcast,138,0.4694
+@TheDailyBeast,videos,daily,suffix,the daily beast podcast,138,0.4694
+@TheDailyBeast,videos,beast,suffix,the daily beast podcast,138,0.4694
+@TheDailyBeast,videos,podcast,suffix,the daily beast podcast,138,0.4694
+@TheDailyBeast,videos,inside,suffix,inside trump's head,110,0.3741
+@TheDailyBeast,videos,trump's,suffix,inside trump's head,110,0.3741
+@TheDailyBeast,videos,head,suffix,inside trump's head,110,0.3741
+@TheDonLemonShow,streams,hot,prefix,hot topics,172,0.4562
+@TheDonLemonShow,streams,topics,prefix,hot topics,172,0.4562
+@TheDonLemonShow,streams,lemon,prefix,lemon live at #,156,0.4138
+@TheDonLemonShow,streams,live,prefix,lemon live at #,156,0.4138
+@TheDonLemonShow,videos,lemon,prefix,lemon drop,206,0.592
+@TheDonLemonShow,videos,drop,prefix,lemon drop,206,0.592
+@TheDonLemonShow,videos,hot,prefix,hot takes,89,0.2557
+@TheDonLemonShow,videos,takes,prefix,hot takes,89,0.2557
+@TheEconomist,videos,the,suffix,the economist,106,0.8154
+@TheEconomist,videos,economist,suffix,the economist,106,0.8154
+@TheHumanistReport,streams,leftist,suffix,leftist mafia,31,0.9118
+@TheHumanistReport,streams,mafia,suffix,leftist mafia,31,0.9118
+@TheJoyReidShow,streams,the,suffix,the joy reid show live,110,0.8148
+@TheJoyReidShow,streams,joy,suffix,the joy reid show live,110,0.8148
+@TheJoyReidShow,streams,reid,suffix,the joy reid show live,110,0.8148
+@TheJoyReidShow,streams,show,suffix,the joy reid show live,110,0.8148
+@TheJoyReidShow,streams,live,suffix,the joy reid show live,110,0.8148
+@TheJoyReidShow,videos,the,suffix,the joy reid show,224,0.9573
+@TheJoyReidShow,videos,joy,suffix,the joy reid show,224,0.9573
+@TheJoyReidShow,videos,reid,suffix,the joy reid show,224,0.9573
+@TheJoyReidShow,videos,show,suffix,the joy reid show,224,0.9573
+@TheMajorityReport,streams,live,suffix,mr live,173,0.9454
+@TheMajorityReport,videos,tmr,suffix,tmr,244,0.1605
+@TheMichaelCohenShow,videos,mea,suffix,mea culpa,27,0.0618
+@TheMichaelCohenShow,videos,culpa,suffix,mea culpa,27,0.0618
+@TheOfficerTatum,streams,officer,suffix,officer tatum show,52,0.2708
+@TheOfficerTatum,streams,tatum,suffix,officer tatum show,52,0.2708
+@TheOfficerTatum,streams,show,suffix,officer tatum show,52,0.2708
+@TheOfficerTatum,streams,post,suffix,post show clarity,44,0.2292
+@TheOfficerTatum,streams,show,suffix,post show clarity,44,0.2292
+@TheOfficerTatum,streams,clarity,suffix,post show clarity,44,0.2292
+@TimDillonShow,videos,bonus,prefix,bonus,26,0.3939
+@TimDillonShow,videos,the,suffix,the tim dillon show,57,0.8636
+@TimDillonShow,videos,tim,suffix,the tim dillon show,57,0.8636
+@TimDillonShow,videos,dillon,suffix,the tim dillon show,57,0.8636
+@TimDillonShow,videos,show,suffix,the tim dillon show,57,0.8636
+@TimcastIRL,streams,timcast,suffix,timcast irl,117,0.7852
+@TimcastIRL,streams,irl,suffix,timcast irl,117,0.7852
+@TimcastNews,videos,tim,suffix,tim pool,158,0.3044
+@TimcastNews,videos,pool,suffix,tim pool,158,0.3044
+@TimesNowWorld,streams,times,suffix,times now world,215,0.0761
+@TimesNowWorld,streams,now,suffix,times now world,215,0.0761
+@TimesNowWorld,streams,world,suffix,times now world,215,0.0761
+@TimesNowWorld,videos,times,suffix,times now world,1626,0.1915
+@TimesNowWorld,videos,now,suffix,times now world,1626,0.1915
+@TimesNowWorld,videos,world,suffix,times now world,1626,0.1915
+@TimesNowWorld,videos,iran,suffix,us-iran war,554,0.0653
+@TimesNowWorld,videos,war,suffix,us-iran war,554,0.0653
+@USATODAY,videos,the,suffix,the excerpt,174,0.0815
+@USATODAY,videos,excerpt,suffix,the excerpt,174,0.0815
+@UnHerd,videos,yanis,prefix,yanis varoufakis & wolfgang munchau,27,0.3553
+@UnHerd,videos,varoufakis,prefix,yanis varoufakis & wolfgang munchau,27,0.3553
+@UnHerd,videos,wolfgang,prefix,yanis varoufakis & wolfgang munchau,27,0.3553
+@UnHerd,videos,munchau,prefix,yanis varoufakis & wolfgang munchau,27,0.3553
+@UnHerd,videos,the,suffix,the econoclasts,38,0.5
+@UnHerd,videos,econoclasts,suffix,the econoclasts,38,0.5
+@UnHerd,videos,yanis,suffix,yanis varoufakis & wolfgang munchau,27,0.3553
+@UnHerd,videos,varoufakis,suffix,yanis varoufakis & wolfgang munchau,27,0.3553
+@UnHerd,videos,wolfgang,suffix,yanis varoufakis & wolfgang munchau,27,0.3553
+@UnHerd,videos,munchau,suffix,yanis varoufakis & wolfgang munchau,27,0.3553
+@Vox,videos,the,suffix,the gray area,47,0.3701
+@Vox,videos,gray,suffix,the gray area,47,0.3701
+@Vox,videos,area,suffix,the gray area,47,0.3701
+@Vox,videos,america,suffix,"america, actually",24,0.189
+@Vox,videos,actually,suffix,"america, actually",24,0.189
+@ZeihanonGeopolitics,videos,peter,suffix,peter zeihan,199,0.9851
+@ZeihanonGeopolitics,videos,zeihan,suffix,peter zeihan,199,0.9851
+@briantylercohen,videos,another,suffix,another day,176,0.1727
+@briantylercohen,videos,day,suffix,another day,176,0.1727
+@briantylercohen,videos,omg,colon,omg,63,0.0618
+@bulwarkmedia,streams,bulwark,suffix,bulwark on sunday,23,0.1031
+@bulwarkmedia,streams,sunday,suffix,bulwark on sunday,23,0.1031
+@bulwarkmedia,streams,command,suffix,command post,20,0.0897
+@bulwarkmedia,streams,post,suffix,command post,20,0.0897
+@bulwarkmedia,videos,bulwark,suffix,bulwark podcast,138,0.0798
+@bulwarkmedia,videos,podcast,suffix,bulwark podcast,138,0.0798
+@bulwarkmedia,videos,the,suffix,the bulwark podcast,146,0.0844
+@bulwarkmedia,videos,bulwark,suffix,the bulwark podcast,146,0.0844
+@bulwarkmedia,videos,podcast,suffix,the bulwark podcast,146,0.0844
+@deanwithrs,streams,debating,suffix,debating maga,244,0.9721
+@deanwithrs,streams,maga,suffix,debating maga,244,0.9721
+@fightbackpodcast,videos,fight,suffix,fight back,55,0.0942
+@fightbackpodcast,videos,back,suffix,fight back,55,0.0942
+@glennbeck,streams,hour,suffix,hour #,122,0.976
+@harryjsisson,videos,omg,colon,omg,61,0.0965
+@jlptalk,videos,best,colon,best of week,35,0.1195
+@jlptalk,videos,week,colon,best of week,35,0.1195
+@jlptalk,videos,jlp,bracket,jlp reacts,34,0.116
+@jlptalk,videos,reacts,bracket,jlp reacts,34,0.116
+@joerogan,videos,joe,prefix,joe rogan experience,119,0.8947
+@joerogan,videos,rogan,prefix,joe rogan experience,119,0.8947
+@joerogan,videos,experience,prefix,joe rogan experience,119,0.8947
+@judgingfreedom,streams,alastair,colon,alastair crooke,35,0.0532
+@judgingfreedom,streams,crooke,colon,alastair crooke,35,0.0532
+@judgingfreedom,streams,prof,colon,prof. jeffrey sachs,41,0.0623
+@judgingfreedom,streams,jeffrey,colon,prof. jeffrey sachs,41,0.0623
+@judgingfreedom,streams,sachs,colon,prof. jeffrey sachs,41,0.0623
+@judgingfreedom,streams,larry,colon,larry johnson,40,0.0608
+@judgingfreedom,streams,johnson,colon,larry johnson,40,0.0608
+@katmabu,videos,kat,suffix,kat abughazaleh for illinois,24,0.7742
+@katmabu,videos,abughazaleh,suffix,kat abughazaleh for illinois,24,0.7742
+@katmabu,videos,for,suffix,kat abughazaleh for illinois,24,0.7742
+@katmabu,videos,illinois,suffix,kat abughazaleh for illinois,24,0.7742
+@marclamonthillnetwork,streams,ascending,suffix,ascending,29,0.2
+@marclamonthillnetwork,streams,night,colon,night school,63,0.4345
+@marclamonthillnetwork,streams,school,colon,night school,63,0.4345
+@markets,streams,bloomberg,suffix,bloomberg this weekend,25,0.4545
+@markets,streams,this,suffix,bloomberg this weekend,25,0.4545
+@markets,streams,weekend,suffix,bloomberg this weekend,25,0.4545
+@marklevinshow,videos,mark,colon,mark levin,32,0.0658
+@marklevinshow,videos,levin,colon,mark levin,32,0.0658
+@morebridgetphetasy,videos,walk,suffix,walk-ins welcome #,24,0.12
+@morebridgetphetasy,videos,ins,suffix,walk-ins welcome #,24,0.12
+@morebridgetphetasy,videos,welcome,suffix,walk-ins welcome #,24,0.12
+@podsaveamerica,videos,terminally,colon,terminally online,35,0.0544
+@podsaveamerica,videos,online,colon,terminally online,35,0.0544
+@ponderingpolitics,videos,breaking,colon,🚨 breaking,96,0.069
+@rolandsmartin,streams,thebreakdown,hashtag,#thebreakdown,60,0.1054
+@thehill,streams,happening,colon,happening now,89,0.1816
+@thehill,streams,now,colon,happening now,89,0.1816
+@thehill,videos,rising,suffix,rising,1586,0.3921
+@thehill,videos,sunrise,suffix,sunrise,308,0.0761
+@thehill,videos,newsnation,suffix,newsnation,302,0.0747
+@thewarningwithsteveschmidt,streams,dead,colon,dead air,34,0.3091
+@thewarningwithsteveschmidt,streams,air,colon,dead air,34,0.3091
+@thewarningwithsteveschmidt,videos,steve,suffix,steve schmidt,115,0.4212
+@thewarningwithsteveschmidt,videos,schmidt,suffix,steve schmidt,115,0.4212
+@thewarningwithsteveschmidt,videos,steve,colon,steve schmidt,127,0.4652
+@thewarningwithsteveschmidt,videos,schmidt,colon,steve schmidt,127,0.4652
+@wethefifth,videos,the,suffix,the fifth column,61,0.5701
+@wethefifth,videos,fifth,suffix,the fifth column,61,0.5701
+@wethefifth,videos,column,suffix,the fifth column,61,0.5701
+@wsj,videos,wsj,suffix,wsj,76,0.7308
+https://rumble.com/c/BannonsWarRoom,videos,bannon,colon,bannon,385,0.0854
+https://rumble.com/c/TheAlexJonesShowLive,videos,bowne,colon,bowne report,44,0.0858
+https://rumble.com/c/TheAlexJonesShowLive,videos,report,colon,bowne report,44,0.0858
+https://rumble.com/c/nickjfuentes,videos,america,suffix,america first,127,0.4164
+https://rumble.com/c/nickjfuentes,videos,first,suffix,america first,127,0.4164
+https://rumble.com/c/nickjfuentes,videos,iran,colon,iran war day #,32,0.1049
+https://rumble.com/c/nickjfuentes,videos,war,colon,iran war day #,32,0.1049
+https://rumble.com/c/nickjfuentes,videos,day,colon,iran war day #,32,0.1049

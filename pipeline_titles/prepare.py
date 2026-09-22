@@ -101,6 +101,10 @@ DATE_RES = [
 _EDGE_PUNCT_RE = re.compile(r"^[\s|\-–—•~:;,.»«/]+|[\s|\-–—•~:;,»«/]+$")
 
 
+# The words of a brand-pattern key (lower-case letters, apostrophes), for the caps rule's own-tag exemption.
+_WORD_RE_TAG = re.compile(r"[a-z][a-z'’]*")
+
+
 def segment_key(seg: str) -> str:
     """Case-insensitive key of a segment with digit runs collapsed to '#'."""
     k = re.sub(r"\d+", "#", nfkc(seg).lower())

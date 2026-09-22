@@ -16,6 +16,9 @@ def test_caps_style_rules():
     assert caps_style("THIS IS INSANE", acr) == "all_caps"
     assert caps_style("Trump SLAMS Judge in Ballroom Appeal", acr) == "selective_caps"
     assert caps_style("FBI raids ICE office in Chicago", acr) == "sentence_case"          # acronyms exempt
+    assert caps_style("Gazans wary as US names board | REUTERS", acr) == "selective_caps"
+    assert caps_style("Gazans wary as US names board | REUTERS", acr, {"reuters"}) == "sentence_case"   # the channel's own tag exempt
+    assert caps_style("Trump SLAMS judge | REUTERS", acr, {"reuters"}) == "selective_caps"
     assert caps_style("BREAKING: Trump signs the order", acr) == "sentence_case"           # generic label exempt
     assert caps_style("The Truth About Tariffs And Trade", acr) == "title_case"
     assert caps_style("Why the Fed can't cut rates", acr) == "sentence_case"
@@ -51,3 +54,13 @@ def test_rank_turbulence_divergence_follows_the_allotaxonometer_conventions():
     assert by["x"][0] > 0 and by["q"][0] < 0                                 # positive = more prominent in A
     assert by["x"][2] == 3.0 and by["q"][1] == 3.0                           # an absent type takes the tied last rank of the union
     assert tied_ranks({"a": 5, "b": 5, "c": 1}, ["a", "b", "c", "d"]) == {"a": 1.5, "b": 1.5, "c": 3.0, "d": 4.0}
+
+
+def test_tag_words_finds_a_repeated_edge_segment_at_the_low_threshold():
+    from pipeline_titles.profiles import tag_words
+    letters = "abcdefghijklmnopqrstuvwxy"
+    titles = [f"{letters[i]} story about {letters[i] * 3} | REUTERS" for i in range(25)] + [f"{letters[i % 25]} other {letters[(i * 7) % 25] * 2} story {i}" for i in range(300)]
+    rows = tag_words(titles)
+    assert [(r["word"], r["kind"]) for r in rows] == [("reuters", "suffix")]
+    assert rows[0]["count"] == 25
+    assert tag_words(titles[:10] + titles[25:]) == []      # ten uses is under the count floor
