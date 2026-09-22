@@ -80,3 +80,16 @@ def test_week_of_is_the_monday():
     assert week_of("2026-01-01") == "2025-12-29"
     assert week_of("2026-09-14") == "2026-09-14"
     assert week_of("2026-03-08") == "2026-03-02"
+
+
+def test_collocations_bind_names_and_replace_their_words_in_the_titles_that_carry_them():
+    from pipeline_titles.year import content_tokens, find_collocations, terms_of
+    titles = [f"Lindsey Graham on the war, take {i}" for i in range(60)] + [f"Graham cracker recipe {i}" for i in range(10)] + [f"Donald Trump again {i}" for i in range(200)] + [f"Trump signs order {i}" for i in range(400)]
+    creators = [f"@c{i % 12}" for i in range(len(titles))]
+    tokens = [content_tokens(t) for t in titles]
+    found = find_collocations(tokens, creators, min_titles=50, min_channels=10)
+    assert found["pair"].tolist() == ["lindsey graham"]          # "donald trump" is not bound: trump is mostly on its own
+    assert terms_of(tokens[0], {"lindsey graham"}) == {"lindsey graham", "war", "take"}
+    assert "graham" in terms_of(tokens[60], {"lindsey graham"})   # alone, the word counts on its own
+    assert content_tokens("Trump's letter to Greenland")[0] == ("trump", True)
+    assert content_tokens("the end")[0] == ("the", False)

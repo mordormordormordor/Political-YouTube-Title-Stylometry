@@ -7,10 +7,16 @@ is averaged, channel-weighted: a word's share is the mean over channels of the
 share of the channel's titles that contain it, so the ten largest channels,
 which publish four titles in ten, weigh the same as any other. Content words
 are textstats.vocab_tokens of the normalized title (brand tags, show names and
-episode numbers stripped; stopwords dropped; possessives folded). The shouted
-counts use the capitalization rule's own test on the raw title (three or more
-letters written in capitals, neither a learned acronym, a generic label nor one
-of the channel's own tag words), a word once per title.
+episode numbers stripped; stopwords dropped; possessives folded), except that a
+pair of adjacent content words bound to each other (a name: "lindsey graham",
+"dolly parton") is one term: a pair that appears in BIGRAM_MIN_TITLES titles
+from BIGRAM_MIN_CHANNELS channels and accounts for at least BIGRAM_MIN_BOUND of
+each of its words' own titles (year_bigrams.csv). In a title that carries the
+pair, the pair replaces its two words; elsewhere each word counts on its own.
+The shouted counts use the capitalization rule's own test on the raw title
+(three or more letters written in capitals, neither a learned acronym, a
+generic label nor one of the channel's own tag words), a word once per title;
+a pair is shouted when both its words are.
 
 Outputs (data/titles/analysis/):
     year_words.csv       the VOCAB most frequent content words by channel-weighted
@@ -28,6 +34,8 @@ Outputs (data/titles/analysis/):
                          more titles, partial (runs past the corpus window)
     year_weeks.csv       the vocabulary's channel-weighted share by week (over the
                          channels with WEEK_MIN or more titles that week)
+    year_bigrams.csv     the pairs counted as one term: pair, titles, channels, and the
+                         share of each word's titles the pair accounts for
     year_spikes.csv      the SPIKES words whose weekly share departed furthest above
                          their own average over the full weeks, with the peak week,
                          the baseline, the departure, and that week's most-viewed
@@ -51,9 +59,12 @@ import pandas as pd
 from pipeline_titles.annotate import build_case_lexicon
 from pipeline_titles.common import ANALYSIS_DIR, WINDOW_FROM, WINDOW_TO, load_prepared, stage_timer
 from pipeline_titles.profiles import tag_words
-from pipeline_titles.textstats import CAPS_LABELS, shouted_words, vocab_tokens, weighted_log_odds
+from pipeline_titles.textstats import _TOKEN_RE, CAPS_LABELS, VOCAB_STOP, shouted_words, weighted_log_odds
 
 VOCAB = 400
+BIGRAM_MIN_TITLES = 50
+BIGRAM_MIN_CHANNELS = 10
+BIGRAM_MIN_BOUND = 0.5
 MONTH_TOP = 12
 MONTH_MIN_CHANNELS = 5
 WEEK_MIN = 5
@@ -66,6 +77,55 @@ def week_of(published: str) -> str:
     """The Monday that starts the week of a YYYY-MM-DD date."""
     d = date.fromisoformat(published)
     return (d - timedelta(days=d.weekday())).isoformat()
+
+
+def content_tokens(text: str) -> list[tuple[str, bool]]:
+    """The title's tokens in order, each with whether it is a content word (vocab_tokens's rule: two or more letters, not a stopword), possessives folded."""
+    out = []
+    for t in _TOKEN_RE.findall(str(text).lower().replace("\u2019", "'")):
+        if t.endswith("'s"):
+            t = t[:-2]
+        out.append((t, len(t) >= 2 and t not in VOCAB_STOP))
+    return out
+
+
+def adjacent_pairs(tokens: list[tuple[str, bool]]) -> set[str]:
+    """Every pair of adjacent content words in the title, as "a b"."""
+    return {f"{a} {b}" for (a, ca), (b, cb) in zip(tokens, tokens[1:]) if ca and cb}
+
+
+def find_collocations(token_lists: list[list[tuple[str, bool]]], creators: list[str],
+                      min_titles: int = BIGRAM_MIN_TITLES, min_channels: int = BIGRAM_MIN_CHANNELS, min_bound: float = BIGRAM_MIN_BOUND) -> pd.DataFrame:
+    """The adjacent pairs bound to each other: in `min_titles` titles from `min_channels` channels, and at least `min_bound` of each word's own titles."""
+    word_titles: Counter = Counter()
+    pair_titles: Counter = Counter()
+    pair_channels: dict[str, set[str]] = {}
+    for tokens, creator in zip(token_lists, creators):
+        for w in {t for t, c in tokens if c}:
+            word_titles[w] += 1
+        for p in adjacent_pairs(tokens):
+            pair_titles[p] += 1
+            pair_channels.setdefault(p, set()).add(creator)
+    rows = []
+    for p, n in pair_titles.items():
+        if n < min_titles or len(pair_channels[p]) < min_channels:
+            continue
+        a, b = p.split(" ")
+        bound_a, bound_b = n / word_titles[a], n / word_titles[b]
+        if bound_a >= min_bound and bound_b >= min_bound:
+            rows.append({"pair": p, "titles": n, "channels": len(pair_channels[p]), "bound_first": round(bound_a, 4), "bound_second": round(bound_b, 4)})
+    return pd.DataFrame(rows, columns=["pair", "titles", "channels", "bound_first", "bound_second"]).sort_values("titles", ascending=False).reset_index(drop=True)
+
+
+def terms_of(tokens: list[tuple[str, bool]], collocations: set[str]) -> set[str]:
+    """A title's terms: its content words, with each collocation it carries standing in for its two words."""
+    words = {t for t, c in tokens if c}
+    pairs = adjacent_pairs(tokens) & collocations
+    for p in pairs:
+        a, b = p.split(" ")
+        words.discard(a)
+        words.discard(b)
+    return words | pairs
 
 
 def example_rows(uniq: pd.DataFrame, hits: pd.DataFrame, by: str) -> pd.DataFrame:
@@ -85,9 +145,14 @@ def run(info: dict) -> None:
     n_titles = len(uniq)
     channel_titles = uniq.groupby("creator").size()
 
-    # ---- (row_id, word) for every content word of the normalized title, once per title ----
+    # ---- (row_id, word) for every term of the normalized title, once per title; a bound pair is one term ----
+    token_lists = [content_tokens(t) for t in uniq["title_norm"]]
+    bigrams = find_collocations(token_lists, uniq["creator"].tolist())
+    bigrams.to_csv(ANALYSIS_DIR / "year_bigrams.csv", index=False)
+    collocations = set(bigrams["pair"])
+    title_terms = [terms_of(tokens, collocations) for tokens in token_lists]
     hits = pd.DataFrame(
-        [(rid, w) for rid, t in zip(uniq["row_id"], uniq["title_norm"]) for w in set(vocab_tokens(t))],
+        [(rid, w) for rid, terms in zip(uniq["row_id"], title_terms) for w in terms],
         columns=["row_id", "word"],
     )
     hits = hits.merge(uniq[["row_id", "creator", "month", "week"]], on="row_id")
@@ -114,12 +179,21 @@ def run(info: dict) -> None:
     shouted = Counter()
     mentioned = Counter()
     shouting_channels: dict[str, set[str]] = {}
-    for creator, raw in zip(uniq["creator"], uniq["title_raw"]):
+    for creator, raw, terms in zip(uniq["creator"], uniq["title_raw"], title_terms):
         s, m = shouted_words(raw, acronyms, own_tags.get(creator, ()))
         mentioned.update(m)
         shouted.update(s)
         for w in s:
             shouting_channels.setdefault(w, set()).add(creator)
+        # a bound pair is mentioned when both its words are, and shouted when both are shouted
+        for term in terms:
+            if " " in term:
+                a, b = term.split(" ")
+                if a in m and b in m:
+                    mentioned[term] += 1
+                if a in s and b in s:
+                    shouted[term] += 1
+                    shouting_channels.setdefault(term, set()).add(creator)
     words["shouted"] = words["word"].map(lambda w: shouted.get(w, 0))
     words["of"] = words["word"].map(lambda w: mentioned.get(w, 0))
     words["rate"] = np.where(words["of"] > 0, words["shouted"] / words["of"].replace(0, 1), 0.0)
@@ -182,8 +256,8 @@ def run(info: dict) -> None:
     spikes = spikes.merge(example_rows(uniq, hits[["row_id", "word"]], "week")[["week", "word", "example_creator", "example_title", "example_video", "example_url", "example_views"]], on=["week", "word"], how="left")
     spikes.to_csv(ANALYSIS_DIR / "year_spikes.csv", index=False, float_format="%.6f")
 
-    info.update({"unique_titles": int(n_titles), "channels": int(n_channels), "vocab": int(len(words)), "months": int(months["month"].nunique()), "weeks": int(len(weeks_meta)), "spikes": int(len(spikes))})
-    print(f"{n_titles} unique titles, {n_channels} channels; vocabulary {len(words)}; {months['month'].nunique()} months, {len(weeks_meta)} weeks, {len(spikes)} spikes")
+    info.update({"unique_titles": int(n_titles), "channels": int(n_channels), "vocab": int(len(words)), "bigrams": int(len(bigrams)), "months": int(months["month"].nunique()), "weeks": int(len(weeks_meta)), "spikes": int(len(spikes))})
+    print(f"{n_titles} unique titles, {n_channels} channels; vocabulary {len(words)} with {len(bigrams)} bound pairs; {months['month'].nunique()} months, {len(weeks_meta)} weeks, {len(spikes)} spikes")
 
 
 def main(argv: Optional[Sequence[str]] = None) -> int:

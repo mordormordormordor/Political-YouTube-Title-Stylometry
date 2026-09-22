@@ -177,3 +177,4 @@
 {"stage": "report", "seconds": 14.9, "started": "2026-09-22T14:35:37+00:00", "finished": "2026-09-22T14:35:52+00:00", "cards": 274}
 {"stage": "stage6c_year", "seconds": 15.7, "started": "2026-09-22T15:08:58+00:00", "finished": "2026-09-22T15:09:14+00:00", "unique_titles": 284906, "channels": 274, "vocab": 400, "months": 9, "weeks": 38, "spikes": 40}
 {"stage": "stage6c_year", "seconds": 15.8, "started": "2026-09-22T15:09:49+00:00", "finished": "2026-09-22T15:10:05+00:00", "unique_titles": 284906, "channels": 274, "vocab": 400, "months": 9, "weeks": 38, "spikes": 40}
+{"stage": "stage6c_year", "seconds": 17.7, "started": "2026-09-22T16:35:41+00:00", "finished": "2026-09-22T16:35:59+00:00", "unique_titles": 284906, "channels": 274, "vocab": 400, "bigrams": 88, "months": 9, "weeks": 38, "spikes": 40}
