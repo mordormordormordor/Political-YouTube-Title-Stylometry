@@ -39,6 +39,11 @@ Outputs (data/titles/analysis/):
                          channels with WEEK_MIN or more titles that week)
     year_bigrams.csv     the pairs counted as one term: pair, titles, channels, and the
                          share of each word's titles the pair accounts for
+    year_word_weeks.csv  every vocabulary word in every week it appears: share, channels,
+                         titles, the week's most-viewed title carrying it (plain_*) and the
+                         one carrying it with its companion (example_*, see the spikes)
+    year_week_spikes.csv per week, the WEEK_TOP words furthest above their own average
+                         that week (rank, share, baseline, delta, channels)
     year_spikes.csv      the SPIKES words whose weekly share departed furthest above
                          their own average over the full weeks, with the peak week,
                          the baseline, the departure, and that week's most-viewed
@@ -78,6 +83,7 @@ MONTH_MIN_CHANNELS = 5
 WEEK_MIN = 5
 SPIKES = 40
 SPIKE_MIN_CHANNELS = 10
+WEEK_TOP = 20
 # A word is spiking in a week when its share is this far above its own average: the example title must carry one such word beside the spike's.
 CO_SPIKE_MIN = 0.02
 ALPHA0 = 500.0
@@ -138,15 +144,16 @@ def terms_of(tokens: list[tuple[str, bool]], collocations: set[str]) -> set[str]
     return words | pairs
 
 
-EXAMPLE_COLUMNS = ["example_creator", "example_title", "example_video", "example_url", "example_views", "example_with"]
+EXAMPLE_COLUMNS = ["example_creator", "example_title", "example_video", "example_url", "example_views", "example_with",
+                   "plain_creator", "plain_title", "plain_video", "plain_url", "plain_views"]
 
 
 def pick_examples(uniq: pd.DataFrame, hits: pd.DataFrame, by: str, wanted: list[tuple[str, str]], companions: dict[tuple[str, str], list[str]],
                   terms_by_row: dict[int, set[str]]) -> pd.DataFrame:
-    """For each (period, word) in `wanted`, the period's most-viewed title that carries the word and its closest companion: of the `companions`
-    (the other words standing out or spiking in that period, strongest first), the one that travels with the word most, in the most of the
-    period's titles carrying the word (ties to the stronger). Else the most-viewed title that carries the word at all. `example_with` names the
-    companion matched, or is empty."""
+    """For each (period, word) in `wanted`, two titles. plain_*: the period's most-viewed title that carries the word. example_*: the most-viewed
+    title that carries the word and its closest companion: of the `companions` (the other words standing out or spiking in that period,
+    strongest first), the one that travels with the word most, in the most of the period's titles carrying the word (ties to the stronger);
+    `example_with` names it. With no companion found, example_* is the plain title and example_with is empty."""
     h = hits.merge(uniq[["row_id", by, "creator", "title_raw", "video_id", "url", "view_count"]], on="row_id")
     h = h.sort_values(["view_count", "row_id"], ascending=[False, True], na_position="last")
     groups = {k: g for k, g in h.groupby([by, "word"], sort=False)}
@@ -165,8 +172,10 @@ def pick_examples(uniq: pd.DataFrame, hits: pd.DataFrame, by: str, wanted: list[
             matched = max(order, key=lambda w: (together.get(w, 0), -order.index(w)))
             pick = next(rid for rid in g["row_id"] if matched in terms_by_row.get(int(rid), set()))
         r = g[g["row_id"] == pick].iloc[0] if pick is not None else g.iloc[0]
+        p0 = g.iloc[0]
         rows.append({by: period, "word": word, "example_creator": r["creator"], "example_title": r["title_raw"], "example_video": r["video_id"],
-                     "example_url": r["url"], "example_views": r["view_count"], "example_with": matched})
+                     "example_url": r["url"], "example_views": r["view_count"], "example_with": matched,
+                     "plain_creator": p0["creator"], "plain_title": p0["title_raw"], "plain_video": p0["video_id"], "plain_url": p0["url"], "plain_views": p0["view_count"]})
     return pd.DataFrame(rows, columns=[by, "word"] + EXAMPLE_COLUMNS)
 
 
@@ -290,11 +299,37 @@ def run(info: dict) -> None:
     spikes["delta"] = spikes["share"] - spikes["baseline"]
     spikes["channels"] = [int(ch.get((w, k), 0)) for w, k in zip(spikes["week"], spikes["word"])]
     spikes = spikes[spikes["channels"] >= SPIKE_MIN_CHANNELS].sort_values("delta", ascending=False).head(SPIKES)
+    # every week (the part-weeks too) against the full-week baseline: who is spiking in each week, strongest first
+    all_grid = wk.pivot(index="word", columns="week", values="share").reindex(sorted(vocab)).reindex(columns=sorted(weeks_meta["week"]), fill_value=0.0).fillna(0.0)
+    rise_all = all_grid.sub(baseline.reindex(all_grid.index).fillna(0.0), axis=0)
+    spiking = {week: [w for w in rise_all[week].sort_values(ascending=False).index if rise_all.at[w, week] >= CO_SPIKE_MIN] for week in rise_all.columns}
+
     # the example: the week's most-viewed title carrying the word and another word spiking that week
-    rise = grid.sub(baseline, axis=0)
-    companions = {(r.week, r.word): [w for w in rise[r.week].sort_values(ascending=False).index if w != r.word and rise.at[w, r.week] >= CO_SPIKE_MIN] for r in spikes.itertuples()}
+    companions = {(r.week, r.word): [w for w in spiking[r.week] if w != r.word] for r in spikes.itertuples()}
     spikes = spikes.merge(pick_examples(uniq, hits[["row_id", "word"]], "week", list(zip(spikes["week"], spikes["word"])), companions, terms_by_row), on=["week", "word"], how="left")
     spikes.to_csv(ANALYSIS_DIR / "year_spikes.csv", index=False, float_format="%.6f")
+
+    # ---- every vocabulary word in every week: its share and both titles, for the word search ----
+    ww = wk[wk["word"].isin(vocab)][["word", "week", "share", "channels", "titles"]].copy()
+    wanted = list(zip(ww["week"], ww["word"]))
+    companions = {(week, word): [w for w in spiking[week] if w != word] for week, word in wanted}
+    ww = ww.merge(pick_examples(uniq, hits[["row_id", "word"]], "week", wanted, companions, terms_by_row), on=["week", "word"], how="left")
+    ww.sort_values(["word", "week"]).to_csv(ANALYSIS_DIR / "year_word_weeks.csv", index=False, float_format="%.6f")
+
+    # ---- every week's own spikes: the words furthest above their average that week ----
+    ch_all = wk.set_index(["week", "word"])["channels"]
+    week_rows = []
+    for week in rise_all.columns:
+        col = rise_all[week].sort_values(ascending=False)
+        rank = 0
+        for w, delta in col.items():
+            if delta <= 0 or rank >= WEEK_TOP:
+                break
+            if int(ch_all.get((week, w), 0)) < SPIKE_MIN_CHANNELS:
+                continue
+            rank += 1
+            week_rows.append({"week": week, "rank": rank, "word": w, "share": all_grid.at[w, week], "baseline": baseline.get(w, 0.0), "delta": delta, "channels": int(ch_all.get((week, w), 0))})
+    pd.DataFrame(week_rows, columns=["week", "rank", "word", "share", "baseline", "delta", "channels"]).to_csv(ANALYSIS_DIR / "year_week_spikes.csv", index=False, float_format="%.6f")
 
     info.update({"unique_titles": int(n_titles), "channels": int(n_channels), "vocab": int(len(words)), "bigrams": int(len(bigrams)), "months": int(months["month"].nunique()), "weeks": int(len(weeks_meta)), "spikes": int(len(spikes))})
     print(f"{n_titles} unique titles, {n_channels} channels; vocabulary {len(words)} with {len(bigrams)} bound pairs; {months['month'].nunique()} months, {len(weeks_meta)} weeks, {len(spikes)} spikes")
