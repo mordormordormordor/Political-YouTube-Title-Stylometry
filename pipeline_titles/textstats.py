@@ -76,6 +76,35 @@ def caps_style(title: str, acronyms: Iterable[str] = (), labels: Iterable[str] =
     return "title_case" if share >= 0.8 else "sentence_case"
 
 
+def _word_key(w: str) -> str:
+    """A raw word's key: lower-case, straight apostrophe, a possessive or a quotation mark stuck to the end dropped (TRUMP, TRUMP'S, TRUMP' are one word)."""
+    k = w.lower().replace("\u2019", "'")
+    if k.endswith("'s"):
+        k = k[:-2]
+    return k.rstrip("'")
+
+
+def shouted_words(title: str, acronyms: Iterable[str] = (), labels: Iterable[str] = ()) -> tuple[set[str], set[str]]:
+    """(shouted, mentioned) for one raw title, by the caps rule's own test: the keys of
+    the words written in capitals (three or more letters, neither a learned acronym, a
+    generic label nor one of `labels`, the channel's own tag words), and the keys of every
+    word, so a word's shout rate is shouted / mentioned over mixed-case titles. A title
+    too short to sort or written entirely in capitals returns two empty sets: it has no
+    shout and is not a mixed-case title."""
+    words = _WORD_RE.findall(title)
+    if len(words) < 3:
+        return set(), set()
+    upper = [w for w in words if w.isupper()]
+    if len(upper) / len(words) >= 0.9:
+        return set(), set()
+    acr = set(acronyms)
+    own = set(labels)
+    mentioned = {_word_key(w) for w in words}
+    shouted = {_word_key(w) for w in upper if len(w) >= 3 and w.lower() not in acr and w.lower() not in CAPS_LABELS and w.lower() not in own
+               and _word_key(w) not in acr and _word_key(w) not in CAPS_LABELS and _word_key(w) not in own}
+    return shouted, mentioned
+
+
 def weighted_log_odds(counts_a: Counter, counts_b: Counter, alpha0: float = 500.0, min_count: int = 1) -> dict[str, tuple[float, float, int, int]]:
     """Weighted log-odds ratio of word use in A vs B with an informative Dirichlet
     prior proportional to the pooled frequencies (Monroe, Colaresi & Quinn 2008).

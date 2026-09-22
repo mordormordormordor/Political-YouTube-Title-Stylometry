@@ -175,3 +175,5 @@
 {"stage": "report_data", "seconds": 2.9, "started": "2026-09-22T14:35:35+00:00", "finished": "2026-09-22T14:35:37+00:00", "creators": 274}
 {"stage": "allotax", "seconds": 6.2, "started": "2026-09-22T14:35:45+00:00", "finished": "2026-09-22T14:35:52+00:00", "alpha": 0.3333, "top_n": 40, "versions": {"allotaxonometer-ui": "0.2.2", "puppeteer": "24.43.1", "node": "v25.5.0"}, "figures": 2}
 {"stage": "report", "seconds": 14.9, "started": "2026-09-22T14:35:37+00:00", "finished": "2026-09-22T14:35:52+00:00", "cards": 274}
+{"stage": "stage6c_year", "seconds": 15.7, "started": "2026-09-22T15:08:58+00:00", "finished": "2026-09-22T15:09:14+00:00", "unique_titles": 284906, "channels": 274, "vocab": 400, "months": 9, "weeks": 38, "spikes": 40}
+{"stage": "stage6c_year", "seconds": 15.8, "started": "2026-09-22T15:09:49+00:00", "finished": "2026-09-22T15:10:05+00:00", "unique_titles": 284906, "channels": 274, "vocab": 400, "months": 9, "weeks": 38, "spikes": 40}

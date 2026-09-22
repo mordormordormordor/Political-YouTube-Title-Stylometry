@@ -191,6 +191,7 @@ from `data/titles/analysis/` and appends its runtime to `runtimes.jsonl`):
 | `engagement` | within-creator regressions of log views on style with month and topic controls |
 | `hits` | Gini, top-10 % share, Clauset-Shalizi-Newman tail fit vs lognormal |
 | `profiles` | the question documents 9, 11, 12, 13: stylistic twins across the left / right groups, capitalization profiles and top words, the arousal index, signature keywords |
+| `year` | the site's article No. 3, the year in words: the most frequent content words by channel-weighted share with their shout rates, each month's standout words by weighted log-odds over channel-months, the vocabulary's channel-weighted share by week, and the widest weekly spikes, each with the period's most-viewed title (`year_words.csv`, `year_months.csv`, `year_weeks_meta.csv`, `year_weeks.csv`, `year_spikes.csv`) |
 | `zipf_views` | document 7: Zipf's law for words (per channel group, title label and capitalization style, with size-matched exponents) and for views (rank-size slopes), views by publication month, and views relative to each channel's monthly baseline by capitalization style and title label |
 | `allotax` | allotaxonographs for document 14 (needs Node; see above) |
 | `report_data`, `report` | cards JSON, Markdown report, methods appendix, cards, HTML page |

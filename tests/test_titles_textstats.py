@@ -4,7 +4,7 @@ from collections import Counter
 
 import numpy as np
 
-from pipeline_titles.textstats import caps_style, rank_turbulence_divergence, tied_ranks, vocab_tokens, weighted_log_odds
+from pipeline_titles.textstats import caps_style, shouted_words, rank_turbulence_divergence, tied_ranks, vocab_tokens, weighted_log_odds
 
 
 def test_vocab_tokens_strips_possessives_and_stopwords():
@@ -64,3 +64,19 @@ def test_tag_words_finds_a_repeated_edge_segment_at_the_low_threshold():
     assert [(r["word"], r["kind"]) for r in rows] == [("reuters", "suffix")]
     assert rows[0]["count"] == 25
     assert tag_words(titles[:10] + titles[25:]) == []      # ten uses is under the count floor
+
+
+def test_shouted_words_follow_the_caps_rule_and_fold_possessives():
+    acr = {"fbi", "ice"}
+    assert shouted_words("Trump SLAMS Judge in Ballroom Appeal", acr) == ({"slams"}, {"trump", "slams", "judge", "in", "ballroom", "appeal"})
+    assert shouted_words("FBI raids ICE office | REUTERS", acr, {"reuters"})[0] == set()
+    assert shouted_words("TRUMP'S plan EXPOSED: the end", acr)[0] == {"trump", "exposed"}
+    assert shouted_words("THIS IS INSANE", acr) == (set(), set())
+    assert shouted_words("Ep. 41", acr) == (set(), set())
+
+
+def test_week_of_is_the_monday():
+    from pipeline_titles.year import week_of
+    assert week_of("2026-01-01") == "2025-12-29"
+    assert week_of("2026-09-14") == "2026-09-14"
+    assert week_of("2026-03-08") == "2026-03-02"

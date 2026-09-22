@@ -22,7 +22,7 @@ import sys
 import time
 
 STAGES = ["prepare", "creators", "leaning", "annotate", "embed", "topics", "llm_rate", "features", "factors", "validate",
-          "formats", "landscape", "timeline", "engagement", "hits", "profiles", "zipf_views", "report_data", "report"]
+          "formats", "landscape", "timeline", "engagement", "hits", "profiles", "year", "zipf_views", "report_data", "report"]
 
 
 def main(argv=None) -> int:
