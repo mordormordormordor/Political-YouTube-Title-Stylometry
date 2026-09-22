@@ -205,8 +205,7 @@ each, and the agreement between rule and LLM labels where both apply.
   factor_analyzer, spacy with a small English model, vaderSentiment, powerlaw) and pin
   them in `requirements-titles.txt`. Embedding 300k short titles is a few minutes on
   this Mac; topic-model fitting on the 100k stratified sample is the heaviest step.
-- LLM ratings and labels: use the model the project already has credentials for (the
-  quote pipeline's OpenAI setup via `OPENAI_API_KEY`, or a local Ollama model). Record
+- LLM ratings and labels: use the model the project already has credentials for. Record
   the model id, the exact rating prompt, temperature and date in `labels.csv`, and cache
   every response so a re-run costs nothing.
 

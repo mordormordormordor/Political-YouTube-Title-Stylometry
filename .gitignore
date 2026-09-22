@@ -7,6 +7,8 @@ __pycache__/
 .env
 # Raw fetch superset (176 MB, rebuildable from the fetcher; videos.csv is the analysis table)
 data/titles/videos.jsonl
+# The Data API ledger (rebuildable, resumable; publish_dates.csv.gz is the tracked export)
+data/titles/publish_dates.jsonl
 # Binary caches rebuilt by the pipeline (embeddings, spaCy annotations, title-level parquet)
 data/titles/analysis/cache/
 data/titles/analysis/*.parquet
@@ -17,3 +19,4 @@ data/titles/fetch.log
 data/titles/analysis/*.log
 # --relabel keeps the previous labels here
 data/titles/analysis/leaning_labels_previous.csv.gz
+data/titles/publish_dates.log

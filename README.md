@@ -89,9 +89,31 @@ python -m venv .venv
 .venv/bin/python -m spacy download en_core_web_sm
 ```
 
-The title ratings and topic labels use local Ollama models (`qwen3:14b`, `gemma3:12b`);
-every response is cached under `data/titles/analysis/cache/llm*/`, so re-running over an
-unchanged corpus makes no model calls. There is no paid API involved.
+Exact publish dates (optional; without them YouTube titles are dated to the month, which
+is all yt-dlp's channel listing gives) come from the YouTube Data API v3, which is free:
+in the [Google Cloud Console](https://console.cloud.google.com/) make a project, enable
+*YouTube Data API v3* under APIs & Services, create an API key under Credentials (restrict
+it to that API), and put it in `.env` at the repo root (`cp .env.example .env`). The
+corpus is about 6,100 `videos.list` calls at one quota unit each against a daily quota of
+10,000, so one run:
+
+```bash
+.venv/bin/python -m pipeline_titles.ingest.fetch_publish_dates --dry-run    # what would be fetched
+.venv/bin/python -m pipeline_titles.ingest.fetch_publish_dates --limit 500  # a first look
+.venv/bin/python -m pipeline_titles.ingest.fetch_publish_dates              # the rest; resumable
+.venv/bin/python -m pipeline_titles.run_all                                 # then the pipeline over exact dates
+```
+
+The fetch writes `data/titles/publish_dates.csv.gz` (tracked) from an untracked ledger it
+resumes from; if the day's quota runs out it stops and says how many ids remain. Once the
+CSV exists, `prepare` dates every YouTube title to the day (`published`, `date_precision =
+exact`, plus `published_at` to the second; a stream is dated by its actual start), keeps only
+the titles published inside the corpus window (`WINDOW_FROM`..`WINDOW_TO` in `common.py`;
+the listing's approximate dates had let about 16,000 December 2025 titles in as January),
+and the site's import picks the dates up from the parquet.
+
+The title ratings and topic labels are cached under `data/titles/analysis/cache/llm*/`, so
+re-running over an unchanged corpus makes no model calls.
 
 The leaning labels (document 14) come from a frontier model through the Claude Code CLI in
 print mode, which a Claude Pro/Max subscription covers (`npm install -g @anthropic-ai/claude-code`,

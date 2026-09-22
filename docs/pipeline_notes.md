@@ -58,6 +58,8 @@ A failing handle is logged with its error and the run continues.
 | `channels.jsonl` | yes | creator × tab | channel name/id, follower count, description, tags, verified flag, videos listed |
 | `videos.jsonl` | no | creator × tab × video | every flat field yt-dlp returned (superset of the CSV), rebuildable |
 | `fetch_log.jsonl` | no | creator × tab | ok/error, listed/kept/undated counts, seconds, timestamp - the resume ledger |
+| `publish_dates.csv.gz` | yes | YouTube video | exact publish time from the Data API (`ingest.fetch_publish_dates`): `published_at`, `actual_start`, `scheduled_start`, `published_exact` (UTC date a stream went live, else of the publish time); `load_videos` applies it to `published` when the file exists |
+| `publish_dates.jsonl` | no | YouTube video | the fetch's ledger, one line per id as it was fetched (ids the API did not return marked `missing`); resumable, rebuildable |
 
 `videos.csv` columns: `creator` (handle or Rumble URL as listed), `platform`,
 `tab` (videos / streams / shorts), `video_id`, `title`, `published`
@@ -65,9 +67,25 @@ A failing handle is logged with its error and the run continues.
 month-accurate; `exact` for Rumble), `duration` (s), `view_count` (at fetch
 time; blank for Rumble), `live_status`, `url`, `channel_name`, `channel_id`.
 
+Exact YouTube publish times come separately, from the Data API's `videos.list`
+(fifty ids a call, one quota unit each, 10,000 units a day free: the corpus is
+about 6,100 calls): `python -m pipeline_titles.ingest.fetch_publish_dates` with a
+key in `.env`. With `publish_dates.csv.gz` present, `load_videos` (and so
+`prepare` and every stage after it) reads `published` as the exact UTC date,
+`date_precision = exact`, and adds `published_at`; the listing's own date is
+kept as `published_listed`, and only titles published inside the corpus window
+(`WINDOW_FROM`..`WINDOW_TO` in `common.py`, 2026-01-01..2026-09-14) are kept: the
+listing's relative dates are a band that widens with age, so half the titles
+change month once dated exactly, and 15,999 titles it had filed as January
+2026 were published in December 2025 (they are dropped, as are the 7 one channel
+made public after the fetch and the 21 no longer on YouTube). Two more things
+move: a repeated title's kept copy is the earliest published, so a few `is_dup`
+flags can flip, and the corpus count changes (293,590 titles from the 2026-09-22
+run).
+
 Not collected (each would need one request per video): descriptions, tags,
-like/comment counts, exact YouTube upload dates, chapters. If a subset ever
-needs them, fetch that subset per video rather than the whole corpus.
+like/comment counts, chapters. If a subset ever needs them, fetch that subset
+per video rather than the whole corpus.
 
 ## Layout
 
@@ -84,7 +102,7 @@ pipeline_titles/
   embed.py         # Stage 1a: all-mpnet-base-v2 sentence embeddings (cached, incremental)
   topics.py        # Stage 1: BERTopic on a ~100k creator-stratified sample; nearest-centroid assignment;
                    #          LLM topic labels + political flag; per-creator mix, group shares, monthly spikes
-  llm_rate.py      # Stage 2c: 3,000-title stratified sample rated by a local Ollama model (+300 retest)
+  llm_rate.py      # Stage 2c: 3,000-title stratified sample rated on five style dimensions (+300 retest)
   lexicons.py      # word lists used by the style features (documented in the methods appendix)
   features.py      # Stage 2a: ~75 title-level style features -> creator x genre x month (features.csv),
                    #          formulaicity, Heaps' / Zipf lexical diversity with sample-size sensitivity
@@ -120,11 +138,10 @@ call / token counts) to `data/titles/analysis/runtimes.jsonl`. The interface tab
 are `features.csv`, `dimensions.csv`, `topics.csv`, `labels.csv`, `creators.csv` and
 `leaning_by_creator.csv` (the channel groups).
 
-LLM work (title ratings, topic labels) uses the local Ollama model `qwen3:14b`
-(no `OPENAI_API_KEY` is configured on this machine); every response is cached under
-`data/titles/analysis/cache/llm*/`, so a re-run over an unchanged corpus makes no
-model calls. Ollama serves requests one at a time: run `llm_rate` before `topics`
-if you re-fit the topic model, or the topic labeling crawls behind the rating batches.
+LLM work (title ratings, topic labels) is cached under `data/titles/analysis/cache/llm*/`,
+so a re-run over an unchanged corpus makes no model calls. The rater serves requests one
+at a time: run `llm_rate` before `topics` if you re-fit the topic model, or the topic
+labeling crawls behind the rating batches.
 
 Hand-edited files that survive re-runs: `data/titles/analysis/creators.csv` (organization /
 clipper per creator; correct it, then re-run from `features`), `data/titles/analysis/factor_names.json`

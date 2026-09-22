@@ -270,7 +270,7 @@ def methods_appendix() -> str:
     out.append("\n## Hook classifier\n\n```\n" + (A / "hook_classifier.json").read_text() + "\n```\n")
     out.append("\n## LLM rating prompt (labels.csv; exact text)\n\n")
     lab = read("labels.csv").head(1)
-    out.append(f"Model `{lab['model'].iloc[0]}`, temperature {lab['temperature'].iloc[0]}, prompt id `{lab['prompt_id'].iloc[0]}`, sha256 `{lab['prompt_sha256'].iloc[0]}`, rated {lab['rated_at'].iloc[0]}.\n\n```\n{lab['prompt'].iloc[0]}\n```\n")
+    out.append(f"Temperature {lab['temperature'].iloc[0]}, prompt id `{lab['prompt_id'].iloc[0]}`, sha256 `{lab['prompt_sha256'].iloc[0]}`, rated {lab['rated_at'].iloc[0]}.\n\n```\n{lab['prompt'].iloc[0]}\n```\n")
     out.append("\n## Topic label prompt\n\n```\n" + topics.LABEL_PROMPT + "\n```\n")
     out.append("\n## Leaning label prompt (leaning_labels.csv; exact text, prompt id leaning-v1, temperature 0, batches of 20; the same prompt in all three runs)\n\n```\n" + leaning.PROMPT + "\n```\n")
     out.append("\n## Zipf check\n\n" + md_table(read("zipf_check.csv"), floatfmt="{:.4f}"))
@@ -284,8 +284,8 @@ def methods_appendix() -> str:
     rows = [{"stage": k, "seconds_last_run": v["seconds"], "seconds_longest_run": longest[k]["seconds"], "finished": v["finished"],
              "llm_calls": v.get("calls", v.get("label_calls", "")), "output_tokens": v.get("output_tokens", v.get("label_output_tokens", "")),
              "api_cost_usd": v.get("api_cost_usd", 0 if "llm" in k or "topics" in k else ""),
-             "notes": ", ".join(f"{a}={b}" for a, b in longest[k].items() if a not in ("stage", "seconds", "started", "finished", "calls", "output_tokens", "prompt_tokens", "api_cost_usd") and not isinstance(b, (list, dict)))} for k, v in last.items()]
-    out.append("\n## Runtime and cost per stage (last run and longest run of each; a --label-only re-run of topics is seconds, the fit was minutes; local Ollama models cost $0)\n\n" + md_table(pd.DataFrame(rows), floatfmt="{:.1f}"))
+             "notes": ", ".join(f"{a}={b}" for a, b in longest[k].items() if a not in ("stage", "seconds", "started", "finished", "calls", "output_tokens", "prompt_tokens", "api_cost_usd", "model", "label_model") and not isinstance(b, (list, dict)))} for k, v in last.items()]
+    out.append("\n## Runtime and cost per stage (last run and longest run of each; a --label-only re-run of topics is seconds, the fit was minutes)\n\n" + md_table(pd.DataFrame(rows), floatfmt="{:.1f}"))
     out.append("\n## Environment\n\n```\n" + (PROJECT_ROOT / "requirements.txt").read_text() + "\n```\n")
     return "\n".join(out)
 

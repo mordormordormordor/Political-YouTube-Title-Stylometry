@@ -39,6 +39,10 @@ ANALYSIS_DIR = TITLES_DIR / "analysis"
 CACHE_DIR = ANALYSIS_DIR / "cache"
 REPORTS_DIR = PROJECT_ROOT / "pipeline_titles" / "reports"
 VIDEOS_CSV = TITLES_DIR / "videos.csv.gz"          # the large tables are stored gzipped; pandas reads them by extension
+PUBLISH_DATES_CSV = TITLES_DIR / "publish_dates.csv.gz"   # exact YouTube publish times from the Data API (ingest.fetch_publish_dates); optional
+# The corpus window (the agreed scope, 2026-09-14). The listing fetch used its approximate
+# dates to stop paging; with exact dates known, load_videos keeps only titles published inside it.
+WINDOW_FROM, WINDOW_TO = "2026-01-01", "2026-09-14"
 CHANNELS_JSONL = TITLES_DIR / "channels.jsonl"
 CREATOR_LIST = PROJECT_ROOT / "data" / "creator_lists" / "title_stylometry_creators.txt"
 RUNTIMES = ANALYSIS_DIR / "runtimes.jsonl"
@@ -163,11 +167,51 @@ def top_share(values, frac: float = 0.10) -> float:
 # --------------------------------------------------------------------------- #
 # Loading
 # --------------------------------------------------------------------------- #
-def load_videos(path: Path = VIDEOS_CSV) -> pd.DataFrame:
-    """videos.csv.gz with `genre` (= tab) and `month` added; view_count/duration numeric."""
+def apply_publish_dates(df: pd.DataFrame, dates: pd.DataFrame) -> pd.DataFrame:
+    """Replace the listing's approximate `published` with the Data API's exact date where one is known.
+
+    `dates` is publish_dates.csv.gz (video_id, published_at, actual_start, scheduled_start,
+    published_exact). A row with a match gets `published` = published_exact (the UTC date a
+    stream went live, else of the publish time), `date_precision` = "exact" and `published_at`
+    = the full timestamp; every other row keeps what the listing said and an empty
+    `published_at`. `month` is recomputed from `published`."""
+    d = dates[dates["published_exact"].astype(str).str.len() > 0].drop_duplicates("video_id").set_index("video_id")
+    exact = df["video_id"].map(d["published_exact"])
+    stamp = df["video_id"].map(d["published_at"])
+    has = exact.notna() & (exact.astype(str).str.len() > 0)
+    out = df.copy()
+    out["published_listed"] = out["published"]
+    out.loc[has, "published"] = exact[has].astype(str)
+    out.loc[has, "date_precision"] = "exact"
+    out["published_at"] = stamp.where(has, "").fillna("").astype(str)
+    out["month"] = out["published"].map(month_of)
+    return out
+
+
+def in_window(df: pd.DataFrame, since: str = WINDOW_FROM, until: str = WINDOW_TO) -> pd.DataFrame:
+    """The rows whose `published` (YYYY-MM-DD) lies in [since, until]; an undated row is kept."""
+    p = df["published"].astype(str)
+    keep = (p == "") | ((p >= since) & (p <= until))
+    return df[keep].reset_index(drop=True)
+
+
+def load_videos(path: Path = VIDEOS_CSV, dates_path: Path = PUBLISH_DATES_CSV, window: Optional[tuple[str, str]] = (WINDOW_FROM, WINDOW_TO)) -> pd.DataFrame:
+    """videos.csv.gz with `genre` (= tab) and `month` added; view_count/duration numeric; the
+    Data API's exact dates applied when publish_dates.csv.gz exists (see apply_publish_dates),
+    and then only the titles published inside the corpus window (about 16,000 of the listing's
+    "January" titles were December 2025 by their exact date). row_id is assigned after the
+    filter, so it is contiguous; the caches downstream are keyed by title text, not row."""
     df = pd.read_csv(path, dtype=str, keep_default_na=False)
     df["genre"] = df["tab"]
     df["month"] = df["published"].map(month_of)
+    df["published_at"] = ""
+    if dates_path.exists():
+        df = apply_publish_dates(df, pd.read_csv(dates_path, dtype=str, keep_default_na=False))
+    if window:
+        before = len(df)
+        df = in_window(df, *window)
+        if len(df) != before:
+            print(f"load_videos: {before - len(df):,} titles published outside {window[0]}..{window[1]} dropped, {len(df):,} kept", flush=True)
     df["duration"] = pd.to_numeric(df["duration"], errors="coerce")
     df["view_count"] = pd.to_numeric(df["view_count"].replace("", np.nan), errors="coerce")
     df["row_id"] = np.arange(len(df), dtype=np.int64)

@@ -3,7 +3,7 @@
 Draws the sample from titles_prepared.parquet (unique titles only; every creator x
 genre gets a base allocation - 8 titles for groups with >= 50 titles, 2 for low-n
 groups - and the remainder is spread in proportion to log10(n), seed 20260914),
-rates each RAW title with a local Ollama model in batches of 20, and writes
+rates each RAW title with the rating model in batches of 20, and writes
 data/titles/analysis/labels.csv with, per title:
 
     sensational, critical, analytical, educational, conversational   1-5
@@ -19,9 +19,8 @@ so a re-run costs nothing; the run's call count, token counts and wall-clock go 
 runtimes.jsonl (cost is 0: local model).
 
 CLI:
-    python -m pipeline_titles.llm_rate                     # full run (~1 h on qwen3:14b)
+    python -m pipeline_titles.llm_rate                     # full run (~1 h)
     python -m pipeline_titles.llm_rate --limit 60          # smoke test
-    python -m pipeline_titles.llm_rate --model qwen3:30b --batch-size 20
 """
 
 from __future__ import annotations

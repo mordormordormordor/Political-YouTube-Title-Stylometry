@@ -364,7 +364,7 @@ def run(min_share: float = MIN_SHARE, min_count: int = MIN_COUNT) -> pd.DataFram
     df["has_views"] = df["view_count"].notna()
 
     cols = ["row_id", "creator", "platform", "genre", "video_id", "title_raw", "title_norm", "stripped",
-            "norm_fallback", "title_key", "title_key_raw", "published", "date_precision", "month",
+            "norm_fallback", "title_key", "title_key_raw", "published", "published_at", "date_precision", "month",
             "duration", "view_count", "has_views", "live_status", "url", "channel_name", "channel_id",
             "is_dup", "dup_count", "n_unique", "low_n", "in_balanced"]
     out = df[cols].copy()
