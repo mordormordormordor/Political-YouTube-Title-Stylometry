@@ -585,6 +585,43 @@ the left, wrote titles that fuse the two ("Iran war as a distraction from the
 Epstein files"), enough to make 6 % of channels significant on their own and none of the
 pooled estimates. The broad concepts give the same answers as the narrow ones.
 
+## 10b. The same battery over the year's twenty biggest spikes
+
+The case-study tests also run over every pair of a word list (`--battery spikes:20`
+takes the top twenty of `year_spikes.csv`, the words whose weekly share rose furthest
+above their own average; `--battery a,b,c` takes a list). Per pair it reports the
+detrended correlation with its bootstrap interval and shift p, the peak cross-correlation
+with its shift null and its prewhitened confirmation, Granger both ways, the
+Mantel-Haenszel odds ratio within creator-weeks and creator-days and in each channel half,
+the group odds ratios and their heterogeneity, the leave-one-organization-out range, and
+the per-channel meta-analysis; then two readings. The timing reading names a lag only when
+the raw peak beats the shift null at p < 0.01, is at least 0.3 in size, and the prewhitened
+peak agrees in sign and lag (within three days) above its band. The title reading is
+"none" unless the stratified statistic passes in both channel halves, then "group" when the
+channel groups disagree (heterogeneity p < 0.01 with one group at null), "channels" when
+fewer than a tenth of channels carry it on their own or one organization can move it under
+the threshold, and "landscape" otherwise. 190 pairs take two minutes
+(`assoc_battery_words.csv`, `assoc_battery_pairs.csv`).
+
+**Run of 2026-09-23** (iran, war, epstein, venezuela, ice, deal, maduro, greenland,
+fauci, trump, state, platner, epstein files, ceasefire, china, shooting, minneapolis, alex,
+lindsey graham, america; "alex" is Alex Pretti, "state" the State of the Union week).
+Title level: 99 pairs show nothing, 32 are landscape-wide, 6 differ by group, 53 rest on a
+few channels; among the 91 that pass, 68 are avoidance and 23 co-mention. The
+co-mentions are the year's stories recovered from the pairs alone: Iran with war, Trump,
+deal and ceasefire; ICE with shooting, Minneapolis and Alex Pretti; Venezuela with Maduro;
+Greenland with Trump; Epstein with its files. The avoidances are the stories that do not
+share a title: Iran with Epstein, ICE, shooting, Venezuela and Greenland, Trump with ICE,
+Minneapolis and shooting. The six group pairs are readable: Iran with Venezuela and with
+Greenland are avoided on the left (odds ratios 0.29 and 0.22) and not on the right (1.16
+and 1.05, both including one), where the three make one "Trump's wars" frame; Minneapolis
+with Alex Pretti co-mention on the left and neutral channels (3.8 and 6.7) and barely on
+the right (1.3). Timing: twelve pairs earn a reading. Three co-move (Iran and war,
+Epstein and its files, shooting and Minneapolis); the Iran-to-Epstein displacement of
+section 10 is one; the rest are small (peaks of 0.31 to 0.36) and mostly involve the
+generic "america", which is the June 29 "America 250" week meeting other stories. No pair
+in the list shows a positive lead of one story into another beyond its own words.
+
 ## 11. The first implementation
 
 `pipeline_titles/associations.py` (about 1,050 lines; pandas, NumPy, SciPy sparse,
@@ -599,7 +636,8 @@ and `topics.csv.gz`, reuses the year stage's tokenizer, and is not yet registere
 What it does not yet do, in the order worth building: a channel bootstrap of community
 co-membership; rank-turbulence drift instead of Jaccard; a Unicode-aware token rule for
 accented names; the negative-association screen of section 3 as its own table; and the
-figures of section 9 in the figures stage.
+figures of section 9 in the figures stage. The battery's word list could take a channel-breadth rule beside
+the spike rule, and its per-pair regression is the one case-study test it skips.
 
 ## References
 

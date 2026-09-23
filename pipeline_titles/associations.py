@@ -46,7 +46,8 @@ Six blocks, each writing its own tables to data/titles/analysis/assoc_*:
 
 CLI:
     python -m pipeline_titles.associations
-    python -m pipeline_titles.associations --case-only     # block 5 alone (fast)
+    python -m pipeline_titles.associations --case-only            # block 5 alone (fast)
+    python -m pipeline_titles.associations --battery spikes:20    # block 5's tests over every pair of the 20 biggest spikes
 """
 
 from __future__ import annotations
@@ -1031,12 +1032,253 @@ def case_block(uniq: pd.DataFrame, title_terms: list[set[str]]) -> dict:
 
 
 # --------------------------------------------------------------------------- #
-def run(info: dict, case_only: bool = False) -> None:
+# block 5b: the deep battery over a word list (every pair)
+# --------------------------------------------------------------------------- #
+BATTERY_DRAWS = 500         # shift-null and bootstrap draws per pair in the battery (the case study uses NULL_DRAWS and BOOT_DRAWS)
+
+
+def battery_words(spec: str, vocab: pd.DataFrame) -> pd.DataFrame:
+    """The word list: "spikes:N" takes the top N of year_spikes.csv (a name fragment replaced by its
+    phrase when the vocabulary has one), else a comma-separated list. Words outside the vocabulary are dropped."""
+    terms = set(vocab["term"])
+    phrases = {t: t.split(" ") for t in vocab.loc[vocab["is_phrase"], "term"]}
+    rows = []
+    if spec.startswith("spikes:"):
+        n = int(spec.split(":")[1])
+        sp = pd.read_csv(ANALYSIS_DIR / "year_spikes.csv")
+        for r in sp.itertuples():
+            w = r.word
+            if w not in terms:
+                continue
+            if " " not in w:
+                owners = [ph for ph, ws in phrases.items() if w in ws and ph.split(" ")[0] == w or (w in ws and len(ws) == 2)]
+                # replace a first-name fragment by its phrase when the phrase carries most of the word's titles
+                for ph in owners:
+                    n_ph = int(vocab.loc[vocab["term"] == ph, "n_titles"].iloc[0]); n_w = int(vocab.loc[vocab["term"] == w, "n_titles"].iloc[0])
+                    if n_ph >= 0.6 * n_w and ph not in [x["word"] for x in rows]:
+                        w = ph
+                        break
+            if w in [x["word"] for x in rows]:
+                continue
+            rows.append({"word": w, "source": f"spike rank {r.Index + 1}", "spike_week": r.week, "spike_share": r.share, "spike_baseline": r.baseline, "spike_channels": r.channels})
+            if len(rows) >= n:
+                break
+    else:
+        for w in [x.strip().lower() for x in spec.split(",") if x.strip()]:
+            if w in terms:
+                rows.append({"word": w, "source": "given", "spike_week": "", "spike_share": np.nan, "spike_baseline": np.nan, "spike_channels": np.nan})
+            else:
+                print(f"battery: '{w}' is not in the vocabulary, skipped", flush=True)
+    out = pd.DataFrame(rows)
+    out["n_titles"] = out["word"].map(vocab.set_index("term")["n_titles"])
+    out["n_channels"] = out["word"].map(vocab.set_index("term")["n_channels"])
+    return out
+
+
+def cmh_parts(x: np.ndarray, y: np.ndarray, strata: np.ndarray) -> dict[str, np.ndarray]:
+    """Per-stratum pieces of the CMH statistic and the Mantel-Haenszel odds ratio, so that any subset of
+    strata (a channel group, everything but one organization) is a sum."""
+    x = x.astype(float); y = y.astype(float)
+    S = int(strata.max()) + 1
+    a = np.bincount(strata, weights=x * y, minlength=S)
+    ni = np.bincount(strata, weights=x, minlength=S)
+    nj = np.bincount(strata, weights=y, minlength=S)
+    n = np.bincount(strata, minlength=S).astype(float)
+    ok = n >= 2
+    b, c, d = ni - a, nj - a, n - ni - nj + a
+    with np.errstate(divide="ignore", invalid="ignore"):
+        E = np.where(ok, ni * nj / n, 0.0)
+        V = np.where(ok, ni * nj * (n - ni) * (n - nj) / (n * n * np.maximum(n - 1, 1)), 0.0)
+        R = np.where(ok, a * d / n, 0.0)
+        Sm = np.where(ok, b * c / n, 0.0)
+        PR = np.where(ok, (a + d) / n * R, 0.0); PS = np.where(ok, (a + d) / n * Sm, 0.0)
+        QR = np.where(ok, (b + c) / n * R, 0.0); QS = np.where(ok, (b + c) / n * Sm, 0.0)
+    return {"O": np.where(ok, a, 0.0), "E": E, "V": V, "R": R, "S": Sm, "PR": PR, "PS": PS, "QR": QR, "QS": QS}
+
+
+def cmh_from_parts(parts: dict[str, np.ndarray], keep: Optional[np.ndarray] = None) -> dict:
+    tot = {k: (v[keep].sum() if keep is not None else v.sum()) for k, v in parts.items()}
+    z = (tot["O"] - tot["E"]) / math.sqrt(tot["V"]) if tot["V"] > 0 else float("nan")
+    if tot["R"] > 0 and tot["S"] > 0:
+        or_mh = tot["R"] / tot["S"]
+        var = tot["PR"] / (2 * tot["R"] ** 2) + (tot["PS"] + tot["QR"]) / (2 * tot["R"] * tot["S"]) + tot["QS"] / (2 * tot["S"] ** 2)
+        se = math.sqrt(var)
+    else:
+        or_mh, se = float("nan"), float("nan")
+    return {"observed": float(tot["O"]), "expected": float(tot["E"]), "lift": float(tot["O"] / tot["E"]) if tot["E"] > 0 else float("nan"),
+            "z": float(z), "p": float(2 * stats.norm.sf(abs(z))) if not math.isnan(z) else float("nan"),
+            "or_mh": float(or_mh), "or_lo": float(math.exp(math.log(or_mh) - 1.96 * se)) if or_mh > 0 else float("nan"),
+            "or_hi": float(math.exp(math.log(or_mh) + 1.96 * se)) if or_mh > 0 else float("nan"), "log_or_se": float(se)}
+
+
+def battery_block(uniq: pd.DataFrame, title_terms: list[set[str]], vocab: pd.DataFrame, spec: str) -> dict:
+    from statsmodels.tsa.stattools import grangercausalitytests
+    from statsmodels.tsa.api import VAR
+    rng = np.random.default_rng(SEED)
+    words = battery_words(spec, vocab)
+    words.to_csv(ANALYSIS_DIR / "assoc_battery_words.csv", index=False, float_format="%.4f")
+    wl = words["word"].tolist()
+    print(f"battery: {len(wl)} words, {len(wl) * (len(wl) - 1) // 2} pairs: {', '.join(wl)}", flush=True)
+    ind = {w: np.fromiter((w in t for t in title_terms), dtype=bool, count=len(title_terms)) for w in wl}
+    days = pd.date_range(WINDOW_FROM, WINDOW_TO, freq="D")
+    di = pd.Index(days).get_indexer(uniq["day"])
+    n_days = len(days)
+    N = np.bincount(di, minlength=n_days).astype(float)
+    ci, creators = pd.factorize(uniq["creator"])
+    active = np.array([len(np.unique(ci[di == d])) for d in range(n_days)], dtype=float)
+    Dm = design_matrix(days)
+    Dk = {k: design_matrix(days, knots=k) for k in (3, 10)}
+    series = {}
+    for w in wl:
+        cnt = np.bincount(di, weights=ind[w].astype(float), minlength=n_days)
+        key = di[ind[w]] * len(creators) + ci[ind[w]]
+        br = np.bincount(np.unique(key) // len(creators), minlength=n_days).astype(float)
+        yp, yb = np.log((cnt + 0.5) / (N + 1)), np.log((br + 0.5) / (active + 1))
+        series[w] = {"pooled": residualize(yp[:, None], Dm).ravel(), "channels": residualize(yb[:, None], Dm).ravel(),
+                     "pooled_k3": residualize(yp[:, None], Dk[3]).ravel(), "pooled_k10": residualize(yp[:, None], Dk[10]).ravel()}
+    strata_w = strata_of(uniq, ["creator", "week"])
+    strata_d = strata_of(uniq, ["creator", "published"])
+    halves = channel_halves(uniq)
+    orgs = uniq["org"].to_numpy(); groups = uniq["group"].to_numpy()
+    org_of_stratum = pd.Series(orgs).groupby(strata_w).first().reindex(range(strata_w.max() + 1)).to_numpy()
+    group_of_stratum = pd.Series(groups).groupby(strata_w).first().reindex(range(strata_w.max() + 1)).to_numpy()
+    half_of_stratum = pd.Series(halves).groupby(strata_w).first().reindex(range(strata_w.max() + 1)).to_numpy()
+    pairs_table = pd.read_csv(ANALYSIS_DIR / "assoc_pairs.csv.gz", usecols=["term_a", "term_b", "lift_strat", "z_cmh", "q_cmh", "replicated", "channels", "npmi"]) if (ANALYSIS_DIR / "assoc_pairs.csv.gz").exists() else None
+    if pairs_table is not None:
+        pairs_table = pairs_table.set_index(["term_a", "term_b"])
+    phrase_words = {t: set(w.split("|")) for t, w in zip(vocab["term"], vocab["phrase_words"].fillna("")) if w}
+    rows = []
+    from itertools import combinations
+    for k, (a, b) in enumerate(combinations(wl, 2), start=1):
+        x, y = ind[a], ind[b]
+        row = {"a": a, "b": b, "co_mentions": int((x & y).sum()), "channels_co_mentioning": int(uniq.loc[x & y, "creator"].nunique()),
+               "phrase_pair": bool((a in phrase_words and b in phrase_words[a]) or (b in phrase_words and a in phrase_words[b]) or any(v == {a, b} for v in phrase_words.values()))}
+        # ---- time: contemporaneous r, its bootstrap interval and shift p; peak cross-correlation with a shift null; prewhitened peak; Granger ----
+        for kind in ("pooled", "channels"):
+            xs, ys = series[a][kind], series[b][kind]
+            r = float(np.corrcoef(xs, ys)[0, 1])
+            boot = np.array([np.corrcoef(xs[idx], ys[idx])[0, 1] for idx in (stationary_bootstrap_index(n_days, rng) for _ in range(BATTERY_DRAWS))])
+            cc = ccf_series(xs, ys, LAG_MAX)
+            peak_i = int(np.nanargmax(np.abs(cc)))
+            null_r, null_max = np.empty(BATTERY_DRAWS), np.empty(BATTERY_DRAWS)
+            for i in range(BATTERY_DRAWS):
+                ysh = np.roll(ys, int(rng.integers(21, n_days - 21)))
+                null_r[i] = np.corrcoef(xs, ysh)[0, 1]
+                null_max[i] = np.nanmax(np.abs(ccf_series(xs, ysh, LAG_MAX)))
+            xw, yw, p_ar = prewhiten(xs, ys)
+            ccw = ccf_series(xw, yw, LAG_MAX)
+            best = int(np.nanargmax(np.abs(ccw)))
+            row.update({f"r_{kind}": r, f"r_lo_{kind}": float(np.nanpercentile(boot, 2.5)), f"r_hi_{kind}": float(np.nanpercentile(boot, 97.5)),
+                        f"r_shift_p_{kind}": float((np.abs(null_r) >= abs(r)).mean()),
+                        f"peak_ccf_{kind}": float(cc[peak_i]), f"peak_lag_{kind}": peak_i - LAG_MAX, f"peak_shift_p_{kind}": float((null_max >= abs(cc[peak_i])).mean()),
+                        f"pw_peak_ccf_{kind}": float(ccw[best]), f"pw_peak_lag_{kind}": best - LAG_MAX, f"pw_band_{kind}": 1.96 / math.sqrt(len(xw))})
+        row["r_pooled_knots3"] = float(np.corrcoef(series[a]["pooled_k3"], series[b]["pooled_k3"])[0, 1])
+        row["r_pooled_knots10"] = float(np.corrcoef(series[a]["pooled_k10"], series[b]["pooled_k10"])[0, 1])
+        try:
+            xs, ys = series[a]["pooled"], series[b]["pooled"]
+            order = int(max(1, VAR(np.column_stack([xs, ys])).select_order(maxlags=LAG_MAX).aic))
+            row["granger_order"] = order
+            row["granger_a_to_b_p"] = float(grangercausalitytests(np.column_stack([ys, xs]), maxlag=[order])[order][0]["ssr_ftest"][1])
+            row["granger_b_to_a_p"] = float(grangercausalitytests(np.column_stack([xs, ys]), maxlag=[order])[order][0]["ssr_ftest"][1])
+        except Exception:
+            row["granger_order"] = np.nan; row["granger_a_to_b_p"] = np.nan; row["granger_b_to_a_p"] = np.nan
+        # ---- titles: naive, creator x week, creator x day; the halves; the groups; leave one organization out; the channels ----
+        naive = cmh_from_parts(cmh_parts(x, y, np.zeros(len(x), dtype=int)))
+        row["naive_or"] = naive["or_mh"]
+        parts = cmh_parts(x, y, strata_w)
+        full = cmh_from_parts(parts)
+        for kk, v in full.items():
+            row[f"week_{kk}"] = v
+        dayr = cmh_from_parts(cmh_parts(x, y, strata_d))
+        row["day_or_mh"], row["day_or_lo"], row["day_or_hi"], row["day_z"] = dayr["or_mh"], dayr["or_lo"], dayr["or_hi"], dayr["z"]
+        for h in (0, 1):
+            hr = cmh_from_parts(parts, half_of_stratum == h)
+            row[f"z_half_{'ab'[h]}"] = hr["z"]; row[f"or_half_{'ab'[h]}"] = hr["or_mh"]
+        row["title_replicated"] = bool(abs(full["z"]) >= 3 and np.sign(row["z_half_a"]) == np.sign(full["z"]) and np.sign(row["z_half_b"]) == np.sign(full["z"]) and abs(row["z_half_a"]) >= 2 and abs(row["z_half_b"]) >= 2)
+        th, se_ = [], []
+        n_groups_sig, n_groups_null = 0, 0
+        for g in ("left", "neutral", "right"):
+            gr = cmh_from_parts(parts, group_of_stratum == g)
+            row[f"group_{g}_or"], row[f"group_{g}_lo"], row[f"group_{g}_hi"] = gr["or_mh"], gr["or_lo"], gr["or_hi"]
+            if gr["or_mh"] > 0 and not math.isnan(gr["log_or_se"]):
+                th.append(math.log(gr["or_mh"])); se_.append(gr["log_or_se"])
+                sig = (gr["or_lo"] > 1) or (gr["or_hi"] < 1)
+                n_groups_sig += int(sig); n_groups_null += int(not sig)
+        if len(th) >= 2:
+            th_, se__ = np.array(th), np.array(se_); w_ = 1 / se__ ** 2
+            Qh = float((w_ * (th_ - (w_ * th_).sum() / w_.sum()) ** 2).sum())
+            row["group_heterogeneity_p"] = float(stats.chi2.sf(Qh, len(th_) - 1))
+        else:
+            row["group_heterogeneity_p"] = np.nan
+        loo = {}
+        for o in np.unique(org_of_stratum[~pd.isna(org_of_stratum)]):
+            loo[o] = cmh_from_parts(parts, org_of_stratum != o)
+        ors = pd.Series({o: v["or_mh"] for o, v in loo.items()}).dropna()
+        zs = pd.Series({o: v["z"] for o, v in loo.items()}).dropna()
+        if len(ors):
+            row["loo_or_min"], row["loo_or_max"] = float(ors.min()), float(ors.max())
+            row["loo_z_min"], row["loo_z_max"] = float(zs.min()), float(zs.max())
+            row["loo_most_influential_org"] = str((zs - full["z"]).abs().idxmax())
+        # per channel 2 x 2 (channels with >= 5 titles of each word), DerSimonian-Laird
+        both = np.bincount(ci, weights=(x & y).astype(float), minlength=len(creators))
+        na = np.bincount(ci, weights=x.astype(float), minlength=len(creators)); nb = np.bincount(ci, weights=y.astype(float), minlength=len(creators))
+        nt = np.bincount(ci, minlength=len(creators)).astype(float)
+        el = (na >= 5) & (nb >= 5)
+        aa, bb, cc_, dd = both[el], na[el] - both[el], nb[el] - both[el], nt[el] - na[el] - nb[el] + both[el]
+        lo_ = np.log((aa + 0.5) * (dd + 0.5) / ((bb + 0.5) * (cc_ + 0.5))); se_c = np.sqrt(1 / (aa + 0.5) + 1 / (bb + 0.5) + 1 / (cc_ + 0.5) + 1 / (dd + 0.5))
+        dl = dersimonian_laird(lo_, se_c)
+        row.update({f"meta_{kk}": v for kk, v in dl.items()})
+        if len(lo_):
+            row["meta_share_or_gt1"] = float((lo_ > 0).mean()); row["meta_share_sig_pos"] = float(((lo_ - 1.96 * se_c) > 0).mean()); row["meta_share_sig_neg"] = float(((lo_ + 1.96 * se_c) < 0).mean())
+        # the screen's view of the pair
+        if pairs_table is not None:
+            key = (a, b) if (a, b) in pairs_table.index else ((b, a) if (b, a) in pairs_table.index else None)
+            if key is not None:
+                pr = pairs_table.loc[key]
+                row["screen_lift"], row["screen_q"], row["screen_replicated"], row["screen_channels"] = float(pr["lift_strat"]), float(pr["q_cmh"]), bool(pr["replicated"]), int(pr["channels"])
+        # ---- the reading ----
+        sig_side = row.get("meta_share_sig_pos", 0.0) if full["z"] > 0 else row.get("meta_share_sig_neg", 0.0)
+        if not row["title_replicated"]:
+            kind = "none"
+        elif n_groups_sig >= 1 and n_groups_null >= 1 and row["group_heterogeneity_p"] < 0.01:
+            kind = "group"
+        elif sig_side < 0.10 or (row.get("loo_z_min", full["z"]) < 3 and full["z"] > 0) or (row.get("loo_z_max", full["z"]) > -3 and full["z"] < 0):
+            kind = "channels"
+        else:
+            kind = "landscape"
+        row["title_kind"] = kind
+        row["title_direction"] = "co-mention" if full["z"] > 0 else "avoid"
+        # a timing reading needs the raw peak to beat the shift null, to be at least 0.3, and the prewhitened peak to
+        # confirm it: above its band, same sign, within three days of the raw lag
+        tp = min(row["peak_shift_p_pooled"], row["peak_shift_p_channels"])
+        pw_ok = (abs(row["pw_peak_ccf_pooled"]) >= row["pw_band_pooled"] and np.sign(row["pw_peak_ccf_pooled"]) == np.sign(row["peak_ccf_pooled"])
+                 and abs(row["pw_peak_lag_pooled"] - row["peak_lag_pooled"]) <= 3)
+        if tp < 0.01 and abs(row["peak_ccf_pooled"]) >= 0.3 and pw_ok:
+            lag = row["peak_lag_pooled"]
+            row["time_reading"] = ("co-move" if lag == 0 else (f"{a} leads by {lag} d" if lag > 0 else f"{b} leads by {-lag} d")) + (" (negative)" if row["peak_ccf_pooled"] < 0 else "")
+        else:
+            row["time_reading"] = "none"
+        rows.append(row)
+        if k % 20 == 0:
+            print(f"  {k} pairs done", flush=True)
+    out = pd.DataFrame(rows)
+    out["abs_week_z"] = out["week_z"].abs()
+    out = out.sort_values("abs_week_z", ascending=False).drop(columns=["abs_week_z"]).reset_index(drop=True)
+    out.to_csv(ANALYSIS_DIR / "assoc_battery_pairs.csv", index=False, float_format="%.4f")
+    print(f"battery: {len(out)} pairs; title kinds {out['title_kind'].value_counts().to_dict()}; time readings other than none: {int((out['time_reading'] != 'none').sum())}", flush=True)
+    return {"words": len(wl), "pairs": int(len(out)), "title_kinds": out["title_kind"].value_counts().to_dict(), "time_readings": int((out["time_reading"] != "none").sum())}
+
+
+# --------------------------------------------------------------------------- #
+def run(info: dict, case_only: bool = False, battery: Optional[str] = None) -> None:
     uniq = build_corpus()
     title_terms, vocab, X, index = build_terms(uniq)
     vocab.to_csv(ANALYSIS_DIR / "assoc_vocab.csv", index=False)
     info.update({"titles": int(len(uniq)), "vocab": int(len(vocab)), "thresholds": {"min_titles": MIN_TITLES, "min_channels": MIN_CHANNELS, "series_min_titles": SERIES_MIN_TITLES,
                  "pair_min_obs": PAIR_MIN_OBS, "pair_min_channels": PAIR_MIN_CHANNELS, "q_fdr": Q_FDR, "lift_min": LIFT_MIN, "lag_max": LAG_MAX, "spline_knots": SPLINE_KNOTS}})
+    if battery:
+        info["battery"] = battery_block(uniq, title_terms, vocab, battery)
+        return
     if not case_only:
         info["temporal"] = temporal_block(uniq, X, vocab)
         pairs, pinfo = pairs_block(uniq, X, vocab)
@@ -1051,9 +1293,10 @@ def run(info: dict, case_only: bool = False) -> None:
 def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--case-only", action="store_true", help="run the case study alone")
+    ap.add_argument("--battery", default=None, help='the deep battery over every pair of a word list: "spikes:20" (top of year_spikes.csv) or "iran,war,epstein"; writes assoc_battery_*.csv and nothing else')
     a = ap.parse_args(argv)
-    with stage_timer("associations") as info:
-        run(info, case_only=a.case_only)
+    with stage_timer("associations_battery" if a.battery else "associations") as info:
+        run(info, case_only=a.case_only, battery=a.battery)
     return 0
 
 
