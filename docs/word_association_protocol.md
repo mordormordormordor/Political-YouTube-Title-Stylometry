@@ -622,6 +622,31 @@ section 10 is one; the rest are small (peaks of 0.31 to 0.36) and mostly involve
 generic "america", which is the June 29 "America 250" week meeting other stories. No pair
 in the list shows a positive lead of one story into another beyond its own words.
 
+**Run over eighty words (2026-09-23).** The list rule for a longer list: the spike
+ranking recomputed for all 400 year-stage words (`spike_ranking`), a word on the generic
+list skipped (GENERIC in the module: "america", "big", "says", "th", and so on), a fragment
+replaced by its phrase when the phrase carries 60 % of its titles, a timing reading
+requiring p < 0.001 against 1,000 shifts because 3,160 pairs at p < 0.01 would admit about
+thirty by chance, and a word with its own phrase counted as "phrase" rather than as a pair.
+The run took 53 minutes. Of 3,160 pairs, 877 pass the title-level test in both channel
+halves: 621 avoidances and 256 co-mentions; 255 pairs are landscape-wide, 54 differ by
+group, 568 rest on a few channels, 2,277 show nothing. The per-word table
+(`assoc_battery_summary.csv`) reads as a map of the year: Trump and Iran are the hubs
+(20 and 15 landscape co-mentions, 22 and 23 avoidances each), and every other word's
+partners are its own story (oil with prices, Venezuela and Hormuz; Minnesota with fraud,
+ICE and shooting; Charlie Kirk with hearing, case, trial and Candace Owens; Epstein with
+DOJ, Melania, Andrew, hearing, the UK and arrests). The 54 group pairs are where the three
+audiences frame differently: Iran with Netanyahu is a right-channel pairing (odds ratio
+3.1 against 1.1 on the left), Iran with Venezuela and Greenland a right-channel one too,
+Election with Texas a left one (5.5 against 1.4). Timing: 57 readings, forty of them
+co-movement at lag zero inside one story (Iran and strikes, Israel and Lebanon, NYC and
+Mamdani, UK and Starmer, oil and prices); the leads inside a story are one to three days
+(Iranian leads Israel by a day, oil leads Iranian by three); and about ten readings of nine
+to fourteen days between unrelated words at peaks of 0.31 to 0.34 are the residue the
+threshold still admits, three of them expected by chance, and should be read as noise
+unless a later corpus repeats them. Epstein's own row: six landscape co-mentions, all
+its own story; two avoidances, Iran and Trump; no timing lead into any war word.
+
 ## 11. The first implementation
 
 `pipeline_titles/associations.py` (about 1,050 lines; pandas, NumPy, SciPy sparse,
@@ -636,8 +661,9 @@ and `topics.csv.gz`, reuses the year stage's tokenizer, and is not yet registere
 What it does not yet do, in the order worth building: a channel bootstrap of community
 co-membership; rank-turbulence drift instead of Jaccard; a Unicode-aware token rule for
 accented names; the negative-association screen of section 3 as its own table; and the
-figures of section 9 in the figures stage. The battery's word list could take a channel-breadth rule beside
-the spike rule, and its per-pair regression is the one case-study test it skips.
+figures of section 9 in the figures stage. The battery's per-pair regression is the one case-study test it
+skips, and `--battery-summary` rebuilds its readings and per-word table from the saved
+pairs without recomputing.
 
 ## References
 

@@ -1035,43 +1035,70 @@ def case_block(uniq: pd.DataFrame, title_terms: list[set[str]]) -> dict:
 # --------------------------------------------------------------------------- #
 # block 5b: the deep battery over a word list (every pair)
 # --------------------------------------------------------------------------- #
-BATTERY_DRAWS = 500         # shift-null and bootstrap draws per pair in the battery (the case study uses NULL_DRAWS and BOOT_DRAWS)
+BATTERY_DRAWS = 1000        # shift-null and bootstrap draws per pair in the battery (the case study uses NULL_DRAWS and BOOT_DRAWS)
+BATTERY_TIME_P = 0.001      # a timing reading needs the raw peak to beat this share of the shifts (a thousand pairs let a p of 0.01 through ten times)
+SPIKE_MIN_CHANNELS = 10
+# Words a spike ranking surfaces that name no story: the year's furniture, left out of a "spikes:N" list.
+GENERIC = {"america", "american", "americans", "bad", "big", "best", "day", "end", "first", "full", "gets", "going", "good", "great", "joe", "king",
+           "know", "last", "latest", "look", "need", "new", "people", "real", "right", "says", "stop", "things", "time", "today", "tonight", "top",
+           "update", "updates", "want", "wants", "watch", "way", "week", "world", "breaking", "live", "news", "video",
+           "th", "dr", "tim", "years"}
+
+
+def spike_ranking() -> pd.DataFrame:
+    """Every year-stage vocabulary word by the furthest its channel-weighted weekly share rose above its own
+    average over the full weeks (year_weeks.csv, year_weeks_meta.csv), with the peak week and the channels
+    using it that week: year_spikes.csv's rule for all 400 words instead of its top 40."""
+    wk = pd.read_csv(ANALYSIS_DIR / "year_weeks.csv")
+    meta = pd.read_csv(ANALYSIS_DIR / "year_weeks_meta.csv")
+    full = sorted(meta.loc[~meta["partial"], "week"])
+    grid = wk[wk["week"].isin(full)].pivot(index="word", columns="week", values="share").reindex(columns=full).fillna(0.0)
+    ch = wk.set_index(["word", "week"])["channels"]
+    out = pd.DataFrame({"word": grid.index, "week": grid.idxmax(axis=1).to_numpy(), "share": grid.max(axis=1).to_numpy(), "baseline": grid.mean(axis=1).to_numpy()})
+    out["delta"] = out["share"] - out["baseline"]
+    out["channels"] = [int(ch.get((w, k), 0)) for w, k in zip(out["word"], out["week"])]
+    return out[out["channels"] >= SPIKE_MIN_CHANNELS].sort_values(["delta", "word"], ascending=[False, True]).reset_index(drop=True)
 
 
 def battery_words(spec: str, vocab: pd.DataFrame) -> pd.DataFrame:
-    """The word list: "spikes:N" takes the top N of year_spikes.csv (a name fragment replaced by its
-    phrase when the vocabulary has one), else a comma-separated list. Words outside the vocabulary are dropped."""
+    """The word list. "spikes:N" walks the spike ranking and keeps N words: a word in GENERIC is skipped, a
+    word that is a fragment of a vocabulary phrase carrying at least 60 % of its titles is replaced by the
+    phrase ("alex" by "alex pretti"), a word already listed is skipped. Otherwise a comma-separated list.
+    Words outside the vocabulary are dropped."""
+    n_titles = vocab.set_index("term")["n_titles"]
     terms = set(vocab["term"])
-    phrases = {t: t.split(" ") for t in vocab.loc[vocab["is_phrase"], "term"]}
+    phrase_of: dict[str, list[str]] = {}
+    for t, w in zip(vocab["term"], vocab["phrase_words"].fillna("")):
+        if w:
+            for part in w.split("|"):
+                phrase_of.setdefault(part, []).append(t)
     rows = []
+    listed = set()
     if spec.startswith("spikes:"):
         n = int(spec.split(":")[1])
-        sp = pd.read_csv(ANALYSIS_DIR / "year_spikes.csv")
-        for r in sp.itertuples():
+        for r in spike_ranking().itertuples():
             w = r.word
-            if w not in terms:
+            if w not in terms or w in GENERIC:
                 continue
             if " " not in w:
-                owners = [ph for ph, ws in phrases.items() if w in ws and ph.split(" ")[0] == w or (w in ws and len(ws) == 2)]
-                # replace a first-name fragment by its phrase when the phrase carries most of the word's titles
-                for ph in owners:
-                    n_ph = int(vocab.loc[vocab["term"] == ph, "n_titles"].iloc[0]); n_w = int(vocab.loc[vocab["term"] == w, "n_titles"].iloc[0])
-                    if n_ph >= 0.6 * n_w and ph not in [x["word"] for x in rows]:
-                        w = ph
-                        break
-            if w in [x["word"] for x in rows]:
+                owners = sorted((ph for ph in phrase_of.get(w, []) if n_titles[ph] >= 0.6 * n_titles[w]), key=lambda ph: -n_titles[ph])
+                if owners:
+                    w = owners[0]
+            if w in listed:
                 continue
-            rows.append({"word": w, "source": f"spike rank {r.Index + 1}", "spike_week": r.week, "spike_share": r.share, "spike_baseline": r.baseline, "spike_channels": r.channels})
+            listed.add(w)
+            rows.append({"word": w, "source": f"spike rank {r.Index + 1}" + (f" ({r.word})" if w != r.word else ""), "spike_week": r.week, "spike_share": r.share, "spike_baseline": r.baseline, "spike_channels": r.channels})
             if len(rows) >= n:
                 break
     else:
         for w in [x.strip().lower() for x in spec.split(",") if x.strip()]:
-            if w in terms:
+            if w in terms and w not in listed:
+                listed.add(w)
                 rows.append({"word": w, "source": "given", "spike_week": "", "spike_share": np.nan, "spike_baseline": np.nan, "spike_channels": np.nan})
-            else:
+            elif w not in terms:
                 print(f"battery: '{w}' is not in the vocabulary, skipped", flush=True)
     out = pd.DataFrame(rows)
-    out["n_titles"] = out["word"].map(vocab.set_index("term")["n_titles"])
+    out["n_titles"] = out["word"].map(n_titles)
     out["n_channels"] = out["word"].map(vocab.set_index("term")["n_channels"])
     return out
 
@@ -1254,7 +1281,7 @@ def battery_block(uniq: pd.DataFrame, title_terms: list[set[str]], vocab: pd.Dat
         tp = min(row["peak_shift_p_pooled"], row["peak_shift_p_channels"])
         pw_ok = (abs(row["pw_peak_ccf_pooled"]) >= row["pw_band_pooled"] and np.sign(row["pw_peak_ccf_pooled"]) == np.sign(row["peak_ccf_pooled"])
                  and abs(row["pw_peak_lag_pooled"] - row["peak_lag_pooled"]) <= 3)
-        if tp < 0.01 and abs(row["peak_ccf_pooled"]) >= 0.3 and pw_ok:
+        if tp < BATTERY_TIME_P and abs(row["peak_ccf_pooled"]) >= 0.3 and pw_ok:
             lag = row["peak_lag_pooled"]
             row["time_reading"] = ("co-move" if lag == 0 else (f"{a} leads by {lag} d" if lag > 0 else f"{b} leads by {-lag} d")) + (" (negative)" if row["peak_ccf_pooled"] < 0 else "")
         else:
@@ -1265,9 +1292,42 @@ def battery_block(uniq: pd.DataFrame, title_terms: list[set[str]], vocab: pd.Dat
     out = pd.DataFrame(rows)
     out["abs_week_z"] = out["week_z"].abs()
     out = out.sort_values(["abs_week_z", "a", "b"], ascending=[False, True, True]).drop(columns=["abs_week_z"]).reset_index(drop=True)
+    out = battery_summary(out, wl)
+    print(f"battery: {len(out)} pairs; title kinds {out['title_kind'].value_counts().to_dict()}; time readings other than none: {int(~out['time_reading'].isin(['none', 'phrase'])).sum()}", flush=True)
+    return {"words": len(wl), "pairs": int(len(out)), "title_kinds": out["title_kind"].value_counts().to_dict(), "time_readings": int((~out["time_reading"].isin(["none", "phrase"])).sum())}
+
+
+def battery_summary(out: pd.DataFrame, wl: Sequence[str]) -> pd.DataFrame:
+    """A word with its own phrase, or the two words of one phrase, is one thing twice: both readings become
+    "phrase". Writes assoc_battery_pairs.csv and one row per word (assoc_battery_summary.csv): its partners
+    by kind, strongest first."""
+    out = out.copy()
+    out.loc[out["phrase_pair"], ["title_kind", "time_reading"]] = "phrase"
     out.to_csv(ANALYSIS_DIR / "assoc_battery_pairs.csv", index=False, float_format="%.4f")
-    print(f"battery: {len(out)} pairs; title kinds {out['title_kind'].value_counts().to_dict()}; time readings other than none: {int((out['time_reading'] != 'none').sum())}", flush=True)
-    return {"words": len(wl), "pairs": int(len(out)), "title_kinds": out["title_kind"].value_counts().to_dict(), "time_readings": int((out["time_reading"] != "none").sum())}
+    srows = []
+    for w in wl:
+        mine = out[(out["a"] == w) | (out["b"] == w)].copy()
+        mine["other"] = np.where(mine["a"] == w, mine["b"], mine["a"])
+        mine = mine.sort_values("week_z", key=lambda c: c.abs(), ascending=False)
+        def lst(mask, fmt):
+            return "; ".join(fmt(r) for r in mine[mask].itertuples())
+        co = (mine["title_kind"] == "landscape") & (mine["week_z"] > 0)
+        av = (mine["title_kind"] == "landscape") & (mine["week_z"] < 0)
+        gr = mine["title_kind"] == "group"
+        chn = (mine["title_kind"] == "channels") & (mine["week_z"] > 0)
+        tm = ~mine["time_reading"].isin(["none", "phrase"])
+        def grp_fmt(r):
+            ors = {g: getattr(r, f"group_{g}_or") for g in ("left", "neutral", "right")}
+            return f"{r.other} (" + ", ".join(f"{g} {v:.2f}" for g, v in ors.items() if not (isinstance(v, float) and math.isnan(v))) + ")"
+        srows.append({"word": w, "pairs": int(len(mine)), "landscape_co_mentions": int(co.sum()), "landscape_avoidances": int(av.sum()), "group_pairs": int(gr.sum()),
+                      "channel_co_mentions": int(chn.sum()), "timing_readings": int(tm.sum()),
+                      "co_mention_partners": lst(co, lambda r: f"{r.other} ({r.week_or_mh:.1f}x)"),
+                      "avoidance_partners": lst(av, lambda r: f"{r.other} ({r.week_or_mh:.2f})"),
+                      "group_partners": lst(gr, grp_fmt),
+                      "channel_partners": lst(chn, lambda r: f"{r.other} ({r.week_or_mh:.1f}x, {r.channels_co_mentioning} ch)"),
+                      "timing": lst(tm, lambda r: f"{r.other}: {r.time_reading} ({r.peak_ccf_pooled:+.2f})")})
+    pd.DataFrame(srows).to_csv(ANALYSIS_DIR / "assoc_battery_summary.csv", index=False)
+    return out
 
 
 # --------------------------------------------------------------------------- #
@@ -1294,8 +1354,15 @@ def run(info: dict, case_only: bool = False, battery: Optional[str] = None) -> N
 def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--case-only", action="store_true", help="run the case study alone")
+    ap.add_argument("--battery-summary", action="store_true", help="rebuild the readings and the per-word summary from the saved assoc_battery_pairs.csv (no computation)")
     ap.add_argument("--battery", default=None, help='the deep battery over every pair of a word list: "spikes:20" (top of year_spikes.csv) or "iran,war,epstein"; writes assoc_battery_*.csv and nothing else')
     a = ap.parse_args(argv)
+    if a.battery_summary:
+        out = pd.read_csv(ANALYSIS_DIR / "assoc_battery_pairs.csv")
+        wl = pd.read_csv(ANALYSIS_DIR / "assoc_battery_words.csv")["word"].tolist()
+        out = battery_summary(out, wl)
+        print(f"battery summary: {len(out)} pairs; title kinds {out['title_kind'].value_counts().to_dict()}; time readings: {int((~out['time_reading'].isin(['none', 'phrase'])).sum())}")
+        return 0
     with stage_timer("associations_battery" if a.battery else "associations") as info:
         run(info, case_only=a.case_only, battery=a.battery)
     return 0
