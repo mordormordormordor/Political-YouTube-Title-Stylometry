@@ -291,7 +291,12 @@ discourse. Its neighbors by lift: subpoena, howard (Lutnick), survivors, comer, 
 oversight, probe, suicide, note, clinton, deposition, testify, ties, hillary, gates.
 
 **Save.** `assoc_nodes.csv` (measures and community per term), `assoc_edges.csv`,
-`assoc_communities.csv` (size and top terms per community), `assoc_focus_neighbors.csv`.
+`assoc_communities.csv` (size and top terms per community), `assoc_focus_neighbors.csv`;
+and the page to explore it, `pipeline_titles/reports/word_network.html`
+(`python -m pipeline_titles.network_page`): every node and edge on a ForceAtlas2 layout,
+a word's partners with their lift, z, titles and channels on a click, each month's own
+edges, a lift threshold, and the communities as a toggleable legend. Self-contained, no
+libraries.
 
 **Complements.** The network is section 3 read globally: it answers "same discourse?"
 where section 3 answers "same sentence?". It is blind to time, which section 5 restores.

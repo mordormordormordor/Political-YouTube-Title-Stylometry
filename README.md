@@ -45,6 +45,9 @@ Five answer a question of their own, each with its method and limitations:
 - `pipeline_titles/reports/methods_appendix.md`: preprocessing, stopwords, feature
   definitions, lexicons, factor loadings, validation numbers, sample sizes, prompts,
   runtimes.
+- `pipeline_titles/reports/word_network.html`: the word-association network to explore (2,767
+  words, 11,714 edges, each month's edges, a word's partners on a click; `python -m
+  pipeline_titles.network_page` rebuilds it). Self-contained; open it directly in a browser.
 - `pipeline_titles/reports/title_stylometry.html`: the interactive page. A creator selector
   renders each profile card, and the two landscape maps (style space, topic space) show
   every creator with names on hover and the selected creator's neighbors drawn in. It is
