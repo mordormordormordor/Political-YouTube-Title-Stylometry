@@ -84,6 +84,7 @@ MONTH_PAIR_MIN_CHANNELS = 3
 NEIGHBORS = 20
 LOUVAIN_SEEDS = 20
 EVENT_Z = 2.0
+GZ = {"method": "gzip", "mtime": 0}   # no timestamp in the gzip header, so identical tables are identical files
 PHRASE_MIN_TITLES = 50      # a phrase (two content words adjacent or one stopword apart) needs this many titles ...
 PHRASE_MIN_CHANNELS = 10    # ... from this many channels ...
 PHRASE_NPMI = 0.5           # ... and this much normalized PMI at the title level
@@ -332,7 +333,7 @@ def find_phrases(candidates: list[dict[str, tuple[str, str]]], word_titles: Coun
         npmi = pmi / -math.log(n_ab / n_docs)
         if npmi >= PHRASE_NPMI:
             rows.append({"phrase": name, "word_a": a, "word_b": b, "gap": int(name.count(" ") == 2), "titles": n_ab, "channels": len(channels[name]), "npmi": round(npmi, 4)})
-    return pd.DataFrame(rows, columns=["phrase", "word_a", "word_b", "gap", "titles", "channels", "npmi"]).sort_values("titles", ascending=False).reset_index(drop=True)
+    return pd.DataFrame(rows, columns=["phrase", "word_a", "word_b", "gap", "titles", "channels", "npmi"]).sort_values(["titles", "phrase"], ascending=[False, True]).reset_index(drop=True)
 
 
 def build_terms(uniq: pd.DataFrame) -> tuple[list[set[str]], pd.DataFrame, sp.csr_matrix, dict[str, int]]:
@@ -489,14 +490,14 @@ def temporal_block(uniq: pd.DataFrame, X: sp.csr_matrix, vocab: pd.DataFrame) ->
     calib["empirical_fdr"] = np.where(calib["observed_pairs"] > 0, calib["null_pairs_mean"] / calib["observed_pairs"], np.nan)
     calib["note"] = ["q<0.05 cutoff" if np.isclose(t, cut05) else ("q<0.01 cutoff" if np.isclose(t, cut01) else "") for t in thresholds]
     calib.to_csv(ANALYSIS_DIR / "assoc_temporal_calibration.csv", index=False, float_format="%.4f")
-    sig = pairs[pairs["q"] < 0.05].drop(columns=["_i", "_j"]).sort_values("r", ascending=False)
-    sig.to_csv(ANALYSIS_DIR / "assoc_temporal_pairs.csv.gz", index=False, float_format="%.5f")
+    sig = pairs[pairs["q"] < 0.05].drop(columns=["_i", "_j"]).sort_values(["r", "term_a", "term_b"], ascending=[False, True, True])
+    sig.to_csv(ANALYSIS_DIR / "assoc_temporal_pairs.csv.gz", index=False, float_format="%.5f", compression=GZ)
     # the daily table for the vocabulary (long form) and the residual series
     long = pd.DataFrame({"day": np.repeat(days.strftime("%Y-%m-%d"), V), "term": np.tile(terms, n),
                          "titles": D[:, keep].ravel(), "channels": B[:, keep].ravel(),
                          "share_pooled": (D[:, keep] / N[:, None]).ravel(), "share_channels": (B[:, keep] / active[:, None]).ravel(),
                          "residual": R.ravel()})
-    long.to_csv(ANALYSIS_DIR / "assoc_daily.csv.gz", index=False, float_format="%.6f")
+    long.to_csv(ANALYSIS_DIR / "assoc_daily.csv.gz", index=False, float_format="%.6f", compression=GZ)
     pd.DataFrame({"day": days.strftime("%Y-%m-%d"), "titles": N, "active_channels": active}).to_csv(ANALYSIS_DIR / "assoc_days.csv", index=False)
     pd.DataFrame({"term": terms, "n_titles": vocab["n_titles"].to_numpy()[keep], "acf_lag1_residual": A[:, 0], "mean_channels_per_day": B[:, keep].mean(axis=0)}).to_csv(ANALYSIS_DIR / "assoc_series_terms.csv", index=False, float_format="%.4f")
     info = {"series_terms": int(V), "days": int(n), "pairs_tested": int(len(pairs)), "pairs_q01": int((q < 0.01).sum()), "pairs_q05": int(len(sig)),
@@ -637,8 +638,8 @@ def pairs_block(uniq: pd.DataFrame, X: sp.csr_matrix, vocab: pd.DataFrame) -> tu
     pairs["q_cmh"] = bh_q(pairs["p_cmh"].to_numpy())
     same_sign = (np.sign(pairs["z_half_a"]) == np.sign(pairs["z_cmh"])) & (np.sign(pairs["z_half_b"]) == np.sign(pairs["z_cmh"]))
     pairs["replicated"] = (pairs["q_cmh"] < Q_FDR) & same_sign & (pairs["q_half_a"] < Q_FDR) & (pairs["q_half_b"] < Q_FDR)
-    pairs = pairs.sort_values("z_cmh", ascending=False).reset_index(drop=True)
-    pairs.to_csv(ANALYSIS_DIR / "assoc_pairs.csv.gz", index=False, float_format="%.5f")
+    pairs = pairs.sort_values(["z_cmh", "term_a", "term_b"], ascending=[False, True, True], na_position="last").reset_index(drop=True)
+    pairs.to_csv(ANALYSIS_DIR / "assoc_pairs.csv.gz", index=False, float_format="%.5f", compression=GZ)
     # the fixed-margins null: the same z over permuted matrices with every stratum's margins kept (E and Vr are unchanged by construction)
     zpos = pairs.loc[(pairs["q_cmh"] < Q_FDR) & (pairs["z_cmh"] > 0), "z_cmh"]
     cut = float(zpos.min()) if len(zpos) else float("nan")
@@ -691,7 +692,7 @@ def network_block(pairs: pd.DataFrame, vocab: pd.DataFrame, focus: Sequence[str]
     for r in edges.itertuples():
         G.add_edge(r.term_a, r.term_b, weight=float(r.weight), lift=float(r.lift_strat), z=float(r.z_cmh), channels=int(r.channels), observed=int(r.observed))
     comms = nx.community.louvain_communities(G, weight="weight", seed=SEED)
-    comms = sorted(comms, key=len, reverse=True)
+    comms = sorted((sorted(c) for c in comms), key=lambda c: (-len(c), c[0]))
     member = {n: i for i, c in enumerate(comms) for n in c}
     strength = dict(G.degree(weight="weight"))
     degree = dict(G.degree())
@@ -704,12 +705,12 @@ def network_block(pairs: pd.DataFrame, vocab: pd.DataFrame, focus: Sequence[str]
     nodes["strength"] = nodes["term"].map(strength)
     nodes["betweenness"] = nodes["term"].map(betw)
     nodes["community"] = nodes["term"].map(member)
-    nodes = nodes.sort_values(["community", "strength"], ascending=[True, False]).reset_index(drop=True)
+    nodes = nodes.sort_values(["community", "strength", "term"], ascending=[True, False, True]).reset_index(drop=True)
     nodes.to_csv(ANALYSIS_DIR / "assoc_nodes.csv", index=False, float_format="%.5f")
     edges[["term_a", "term_b", "observed", "expected_strat", "lift_strat", "z_cmh", "q_cmh", "channels", "npmi", "log_or", "weight"]].to_csv(ANALYSIS_DIR / "assoc_edges.csv", index=False, float_format="%.5f")
     rows = []
     for i, c in enumerate(comms):
-        top = sorted(c, key=lambda t: -strength.get(t, 0))[:15]
+        top = sorted(c, key=lambda t: (-strength.get(t, 0), t))[:15]
         rows.append({"community": i, "size": len(c), "top_terms": ", ".join(top), "focus": ", ".join(t for t in focus if t in c)})
     pd.DataFrame(rows).to_csv(ANALYSIS_DIR / "assoc_communities.csv", index=False)
     # do the focus words share a community, across Louvain seeds?
@@ -725,7 +726,7 @@ def network_block(pairs: pd.DataFrame, vocab: pd.DataFrame, focus: Sequence[str]
     stability = {f"{a}|{b}": co[(a, b)] / LOUVAIN_SEEDS for a in present for b in present if a < b}
     focus_rows = []
     for t in present:
-        nb = sorted(G[t].items(), key=lambda kv: -kv[1]["lift"])[:NEIGHBORS]
+        nb = sorted(G[t].items(), key=lambda kv: (-kv[1]["lift"], kv[0]))[:NEIGHBORS]
         focus_rows.append({"term": t, "community": member[t], "degree": degree[t], "strength": round(strength[t], 3), "betweenness": round(betw.get(t, 0), 5),
                            "neighbors": "; ".join(f"{n} ({d['lift']:.1f}x, {d['channels']} ch)" for n, d in nb)})
     pd.DataFrame(focus_rows).to_csv(ANALYSIS_DIR / "assoc_focus_neighbors.csv", index=False)
@@ -765,7 +766,7 @@ def monthly_block(uniq: pd.DataFrame, X: sp.csr_matrix, vocab: pd.DataFrame, foc
         df["term_a"], df["term_b"] = terms[df["a"]], terms[df["b"]]
         df = drop_phrase_pairs(df, vocab).drop(columns=["term_a", "term_b"])
         both = pd.concat([df, df.rename(columns={"a": "b", "b": "a"})])
-        both = both.sort_values(["a", "lift"], ascending=[True, False])
+        both = both.sort_values(["a", "lift", "b"], ascending=[True, False, True])
         both["rank"] = both.groupby("a").cumcount() + 1
         top = both[both["rank"] <= NEIGHBORS]
         neighbor_sets[m] = {terms[a]: set(terms[g["b"].to_numpy()]) for a, g in top.groupby("a")}
@@ -773,10 +774,10 @@ def monthly_block(uniq: pd.DataFrame, X: sp.csr_matrix, vocab: pd.DataFrame, foc
             rows.append({"month": m, "term": terms[r.a], "rank": int(r.rank), "neighbor": terms[r.b], "lift": float(r.lift), "z": float(r.z), "observed": int(r.observed), "channels": int(r.channels)})
         print(f"monthly {m}: {int(ok.sum()):,} edges of {int(keep.sum()):,} pairs with >= {MONTH_PAIR_MIN_OBS} co-mentions", flush=True)
     nb = pd.DataFrame(rows)
-    nb.to_csv(ANALYSIS_DIR / "assoc_monthly_neighbors.csv.gz", index=False, float_format="%.4f")
+    nb.to_csv(ANALYSIS_DIR / "assoc_monthly_neighbors.csv.gz", index=False, float_format="%.4f", compression=GZ)
     # drift: Jaccard of a term's neighbor set between consecutive months
     drift_rows = []
-    all_terms = set().union(*[set(d) for d in neighbor_sets.values()])
+    all_terms = sorted(set().union(*[set(d) for d in neighbor_sets.values()]))
     for t in all_terms:
         js = []
         for m0, m1 in zip(months, months[1:]):
@@ -786,7 +787,7 @@ def monthly_block(uniq: pd.DataFrame, X: sp.csr_matrix, vocab: pd.DataFrame, foc
         present = sum(1 for m in months if neighbor_sets[m].get(t))
         if js:
             drift_rows.append({"term": t, "months_with_neighbors": present, "month_pairs": len(js), "jaccard_mean": float(np.mean(js)), "jaccard_min": float(np.min(js))})
-    drift = pd.DataFrame(drift_rows).sort_values(["jaccard_mean", "month_pairs"], ascending=[True, False])
+    drift = pd.DataFrame(drift_rows).sort_values(["jaccard_mean", "month_pairs", "term"], ascending=[True, False, True])
     drift.to_csv(ANALYSIS_DIR / "assoc_drift.csv", index=False, float_format="%.4f")
     focus_rows = []
     for t in focus:
@@ -1018,10 +1019,10 @@ def case_block(uniq: pd.DataFrame, title_terms: list[set[str]]) -> dict:
     pd.DataFrame(chan_rows).to_csv(ANALYSIS_DIR / "assoc_case_channels.csv", index=False, float_format="%.4f")
     # the co-mention titles themselves, for reading
     x, y = Cm["epstein"].to_numpy(), Cm["iran"].to_numpy()
-    both = uniq.loc[x & y, ["published", "creator", "group", "title_raw", "view_count", "url"]].sort_values("published")
+    both = uniq.loc[x & y, ["published", "creator", "group", "title_raw", "view_count", "url"]].sort_values(["published", "creator", "title_raw"])
     both.to_csv(ANALYSIS_DIR / "assoc_case_epstein_iran_titles.csv", index=False)
     x, y = Cm["epstein"].to_numpy(), Cm["war"].to_numpy()
-    uniq.loc[x & y, ["published", "creator", "group", "title_raw", "view_count", "url"]].sort_values("published").to_csv(ANALYSIS_DIR / "assoc_case_epstein_war_titles.csv", index=False)
+    uniq.loc[x & y, ["published", "creator", "group", "title_raw", "view_count", "url"]].sort_values(["published", "creator", "title_raw"]).to_csv(ANALYSIS_DIR / "assoc_case_epstein_war_titles.csv", index=False)
     out["timeseries"] = ts.to_dict(orient="records")
     out["title_level"] = pairs.to_dict(orient="records")
     out["regression"] = reg_rows
@@ -1263,7 +1264,7 @@ def battery_block(uniq: pd.DataFrame, title_terms: list[set[str]], vocab: pd.Dat
             print(f"  {k} pairs done", flush=True)
     out = pd.DataFrame(rows)
     out["abs_week_z"] = out["week_z"].abs()
-    out = out.sort_values("abs_week_z", ascending=False).drop(columns=["abs_week_z"]).reset_index(drop=True)
+    out = out.sort_values(["abs_week_z", "a", "b"], ascending=[False, True, True]).drop(columns=["abs_week_z"]).reset_index(drop=True)
     out.to_csv(ANALYSIS_DIR / "assoc_battery_pairs.csv", index=False, float_format="%.4f")
     print(f"battery: {len(out)} pairs; title kinds {out['title_kind'].value_counts().to_dict()}; time readings other than none: {int((out['time_reading'] != 'none').sum())}", flush=True)
     return {"words": len(wl), "pairs": int(len(out)), "title_kinds": out["title_kind"].value_counts().to_dict(), "time_readings": int((out["time_reading"] != "none").sum())}
