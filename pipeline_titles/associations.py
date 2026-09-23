@@ -685,7 +685,24 @@ def edge_mask(pairs: pd.DataFrame) -> pd.Series:
 # --------------------------------------------------------------------------- #
 # block 3: the network
 # --------------------------------------------------------------------------- #
-def network_block(pairs: pd.DataFrame, vocab: pd.DataFrame, focus: Sequence[str] = ("epstein", "iran", "war")) -> dict:
+def node_months(uniq: pd.DataFrame, X: sp.csr_matrix, vocab: pd.DataFrame, terms: Sequence[str]) -> pd.DataFrame:
+    """Per network node and month: titles carrying it and channels using it (assoc_node_months.csv, for the page's timeline)."""
+    months = sorted(uniq["month"].unique())
+    mi = pd.Categorical(uniq["month"], categories=months).codes
+    ci = pd.factorize(uniq["creator"])[0]
+    index = {t: i for i, t in enumerate(vocab["term"])}
+    Xc = X.tocsc()
+    rows = []
+    for t in terms:
+        j = index[t]
+        r = Xc.indices[Xc.indptr[j]:Xc.indptr[j + 1]]
+        titles = np.bincount(mi[r], minlength=len(months))
+        chans = [len(np.unique(ci[r][mi[r] == k])) for k in range(len(months))]
+        rows.append({"term": t, **{f"titles_{m}": int(c) for m, c in zip(months, titles)}, **{f"channels_{m}": int(c) for m, c in zip(months, chans)}})
+    return pd.DataFrame(rows)
+
+
+def network_block(pairs: pd.DataFrame, vocab: pd.DataFrame, focus: Sequence[str] = ("epstein", "iran", "war"), uniq: Optional[pd.DataFrame] = None, X: Optional[sp.csr_matrix] = None) -> dict:
     edges = pairs[edge_mask(pairs)].copy()
     edges["weight"] = np.log2(edges["lift_strat"])
     G = nx.Graph()
@@ -707,6 +724,8 @@ def network_block(pairs: pd.DataFrame, vocab: pd.DataFrame, focus: Sequence[str]
     nodes["community"] = nodes["term"].map(member)
     nodes = nodes.sort_values(["community", "strength", "term"], ascending=[True, False, True]).reset_index(drop=True)
     nodes.to_csv(ANALYSIS_DIR / "assoc_nodes.csv", index=False, float_format="%.5f")
+    if uniq is not None and X is not None:
+        node_months(uniq, X, vocab, nodes["term"].tolist()).to_csv(ANALYSIS_DIR / "assoc_node_months.csv", index=False)
     edges[["term_a", "term_b", "observed", "expected_strat", "lift_strat", "z_cmh", "q_cmh", "channels", "npmi", "log_or", "weight"]].to_csv(ANALYSIS_DIR / "assoc_edges.csv", index=False, float_format="%.5f")
     rows = []
     for i, c in enumerate(comms):
@@ -1344,7 +1363,7 @@ def run(info: dict, case_only: bool = False, battery: Optional[str] = None) -> N
         info["temporal"] = temporal_block(uniq, X, vocab)
         pairs, pinfo = pairs_block(uniq, X, vocab)
         info["pairs"] = pinfo
-        info["network"] = network_block(pairs, vocab)
+        info["network"] = network_block(pairs, vocab, uniq=uniq, X=X)
         info["monthly"] = monthly_block(uniq, X, vocab)
     info["case"] = case_block(uniq, title_terms)
     with open(ANALYSIS_DIR / "assoc_summary.json", "w", encoding="utf-8") as f:

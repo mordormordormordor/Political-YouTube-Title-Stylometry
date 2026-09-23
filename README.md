@@ -46,8 +46,12 @@ Five answer a question of their own, each with its method and limitations:
   definitions, lexicons, factor loadings, validation numbers, sample sizes, prompts,
   runtimes.
 - `pipeline_titles/reports/word_network.html`: the word-association network to explore (2,767
-  words, 11,714 edges, each month's edges, a word's partners on a click; `python -m
-  pipeline_titles.network_page` rebuilds it). Self-contained; open it directly in a browser.
+  words, 11,714 edges). It opens on the communities, one disc each, joined by the pairs that
+  cross between them; a community opens into its words; a word gives its partners and a
+  timeline of its months. Degree and strength follow the edges on screen (month, lift
+  threshold), betweenness is the year's, and community detection is Louvain run in the page,
+  with a resolution slider and a reshuffle. `python -m pipeline_titles.network_page` rebuilds
+  it. Self-contained; open it directly in a browser.
 - `pipeline_titles/reports/title_stylometry.html`: the interactive page. A creator selector
   renders each profile card, and the two landscape maps (style space, topic space) show
   every creator with names on hover and the selected creator's neighbors drawn in. It is
