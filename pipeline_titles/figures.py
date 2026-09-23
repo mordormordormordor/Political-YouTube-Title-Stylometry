@@ -655,6 +655,9 @@ def main() -> int:
     for fn in (fig_corpus, fig_topics, fig_formats, fig_landscape, fig_drift, fig_zipf_words, fig_zipf_views, fig_views_over_time, fig_caps_by_group, fig_profiles,
                fig_leaning, fig_leaning_channels, fig_leaning_stability, fig_leaning_logodds, fig_allotax):
         fn(); print("done", fn.__name__, flush=True)
+    if (A / "assoc_summary.json").exists():
+        from pipeline_titles import figures_associations
+        figures_associations.main()
     print(f"{len(list(FIG.glob('*.png')))} figures in {FIG}")
     return 0
 

@@ -508,6 +508,22 @@ visible as change.
   two windows, with intervals and channel counts; and the drift ranking of
   `assoc_drift.csv`.
 
+All of these are drawn by `python -m pipeline_titles.figures_associations` (also run by the
+figures stage) into `pipeline_titles/reports/figures/`: `assoc_01_trajectories.png` and
+`assoc_01b_small_multiples.png` (the three words by day, and the twenty biggest spikes),
+`assoc_02_crosscorrelation.png` (raw and prewhitened cross-correlation with the band, and
+the event study), `assoc_03_heatmap.png` (the eighty battery words against each other,
+co-mention red and avoidance blue, ordered by community), `assoc_04_monthly_matrices.png`
+(the twenty spike words month by month), `assoc_05_network.png` and `assoc_05b_ego.png`
+(the 150 strongest terms by community; Epstein's and Iran's neighborhoods),
+`assoc_06_network_by_month.png` (the same layout with each month's edges) and
+`assoc_07_emerging.png` (the strongest associations between established words that are new
+in a month: State of the Union in February, the NATO summit in July, oil and prices in
+March, Andrew and arrest in February). What the figures show is what the tables said:
+the Epstein and Iran seasons are weeks apart, Epstein sits in the investigations cluster
+at the far side of the map from the war cluster, and the year's new associations are
+events, not drift between stories.
+
 ## 10. The Iran / war / Epstein case study
 
 **Hypothesis.** The appearance of "Epstein" in political video titles is temporally
