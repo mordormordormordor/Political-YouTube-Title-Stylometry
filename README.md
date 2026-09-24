@@ -53,7 +53,8 @@ Five answer a question of their own, each with its method and limitations:
   with a resolution slider and a reshuffle. The left, neutral and right channels each have
   their own network (the same test on their titles alone), and the whole network's edges can
   be colored by which audience makes the pair. Every network sits on one shared layout, so
-  two can be compared side by side with one selection ("compare two networks"), "left only",
+  the left and right networks can be compared side by side ("compare right vs left") with one
+  selection and one set of communities, those of the whole network, "left only",
   "right only" and "left and right" are derived from the edge sets, and a selected word gets a
   card of its degree, strength and partners in every network. `--no-leaning` writes `word_network_site.html`,
   the build with nothing derived from the leaning labels, for the website. `python -m pipeline_titles.network_page` rebuilds
