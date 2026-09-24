@@ -17,8 +17,8 @@ the networks. Degree and strength are recomputed from the edges on screen (month
 betweenness is the year's, precomputed per network; community detection is Louvain run in the
 browser, with a resolution slider and a reshuffle. Self-contained: no network access, no libraries.
 
-    python -m pipeline_titles.network_page                # everything
-    python -m pipeline_titles.network_page --no-leaning   # word_network_site.html: nothing derived from the leaning labels
+    python -m pipeline_titles.network_page           # everything
+    python -m pipeline_titles.network_page --site    # word_network_site.html: the words view only, nothing derived from the leaning labels
 """
 
 from __future__ import annotations
@@ -42,7 +42,7 @@ def read_network(suffix: str) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]
     return pd.read_csv(A / f"assoc_nodes{suffix}.csv"), pd.read_csv(A / f"assoc_edges{suffix}.csv"), pd.read_csv(A / f"assoc_node_months{suffix}.csv").set_index("term")
 
 
-def build_data(with_leaning: bool = True) -> dict:
+def build_data(with_leaning: bool = True, site: bool = False) -> dict:
     """The page's data. with_leaning=False leaves out everything derived from the leaning labels (the
     audience networks, the title-lean networks, the co-mentions by audience on each edge)."""
     nets = {"all": read_network("")}
@@ -68,7 +68,7 @@ def build_data(with_leaning: bool = True) -> dict:
     xy = (xy - xy.mean(axis=0)) / xy.std(axis=0).max()
     idx = {t: i for i, t in enumerate(union)}
     data = {"terms": union, "x": [round(float(v), 4) for v in xy[:, 0]], "y": [round(float(v), 4) for v in xy[:, 1]], "networks": {}, "palette": CAT[:7],
-            "meta": {"months": months}}
+            "meta": {"months": months, "site": site}}
     aud = json.loads((A / "assoc_audience.json").read_text()) if (A / "assoc_audience.json").exists() and with_leaning else {"titles": {}}
     data["group_titles"] = aud["titles"]
     for key, (nodes, edges, nm) in nets.items():
@@ -605,6 +605,8 @@ document.getElementById('reshuffle').addEventListener('click', () => { seed++; r
 document.getElementById('fit').addEventListener('click', fitVisible);
 document.getElementById('labels').addEventListener('change', e => { showLabels = e.target.checked; drawAll(); });
 window.addEventListener('resize', resizeAll);
+if (D.meta.site) { mode = 'words'; document.querySelector('.tabs').style.display = 'none'; document.getElementById('compare').style.display = 'none';
+  document.getElementById('intro').textContent = `${NETS.all.nodes.size.toLocaleString()} words, ${NETS.all.edges.length.toLocaleString()} edges. An edge joins two words that share titles beyond chance within the same channel and week, in both random halves of the channels (lift at least 2, from at least 5 channels). Click a word for its partners and its months; a legend chip shows one community alone.`; }
 runCommunities(); buildLegend(); showPanel(); resizeAll();
 </script>
 </body>
@@ -615,11 +617,11 @@ runCommunities(); buildLegend(); showPanel(); resizeAll();
 def main(argv=None) -> int:
     import argparse
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--no-leaning", action="store_true", help="leave out everything derived from the leaning labels (audience networks, audience colors): the build for the website")
-    ap.add_argument("--out", default=None, help="where to write (default: reports/word_network.html, or word_network_site.html with --no-leaning)")
+    ap.add_argument("--site", "--no-leaning", dest="site", action="store_true", help="the build for the website: the words view only, and nothing derived from the leaning labels (no audience networks, no compare, no audience colors)")
+    ap.add_argument("--out", default=None, help="where to write (default: reports/word_network.html, or word_network_site.html with --site)")
     a = ap.parse_args(argv)
-    out = Path(a.out) if a.out else (REPORTS_DIR / "word_network_site.html" if a.no_leaning else OUT)
-    data = build_data(with_leaning=not a.no_leaning)
+    out = Path(a.out) if a.out else (REPORTS_DIR / "word_network_site.html" if a.site else OUT)
+    data = build_data(with_leaning=not a.site, site=a.site)
     html = TEMPLATE.replace("__DATA__", json.dumps(data, separators=(",", ":")).replace("</", "<\\/")).replace("__NODES__", f"{data['meta']['nodes']:,}").replace("__EDGES__", f"{data['meta']['edges']:,}")
     out.write_text(html, encoding="utf-8")
     print(f"{out} ({out.stat().st_size / 1e6:.1f} MB): {data['meta']['nodes']:,} nodes, {data['meta']['edges']:,} edges, {len(data['networks'])} networks")

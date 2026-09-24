@@ -56,8 +56,9 @@ Five answer a question of their own, each with its method and limitations:
   the left and right networks can be compared side by side ("compare right vs left") with one
   selection and one set of communities, those of the whole network, "left only",
   "right only" and "left and right" are derived from the edge sets, and a selected word gets a
-  card of its degree, strength and partners in every network. `--no-leaning` writes `word_network_site.html`,
-  the build with nothing derived from the leaning labels, for the website. `python -m pipeline_titles.network_page` rebuilds
+  card of its degree, strength and partners in every network. `--site` writes `word_network_site.html`,
+  the build for the website: the words view only, one network, nothing derived from the
+  leaning labels. `python -m pipeline_titles.network_page` rebuilds
   it. Self-contained; open it directly in a browser.
 - `pipeline_titles/reports/title_stylometry.html`: the interactive page. A creator selector
   renders each profile card, and the two landscape maps (style space, topic space) show
