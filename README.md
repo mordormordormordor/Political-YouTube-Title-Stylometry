@@ -52,7 +52,10 @@ Five answer a question of their own, each with its method and limitations:
   threshold), betweenness is the year's, and community detection is Louvain run in the page,
   with a resolution slider and a reshuffle. The left, neutral and right channels each have
   their own network (the same test on their titles alone), and the whole network's edges can
-  be colored by which audience makes the pair. `--no-leaning` writes `word_network_site.html`,
+  be colored by which audience makes the pair. Every network sits on one shared layout, so
+  two can be compared side by side with one selection ("compare two networks"), "left only",
+  "right only" and "left and right" are derived from the edge sets, and a selected word gets a
+  card of its degree, strength and partners in every network. `--no-leaning` writes `word_network_site.html`,
   the build with nothing derived from the leaning labels, for the website. `python -m pipeline_titles.network_page` rebuilds
   it. Self-contained; open it directly in a browser.
 - `pipeline_titles/reports/title_stylometry.html`: the interactive page. A creator selector
@@ -88,6 +91,36 @@ Fetching (yt-dlp flat channel listings, no per-video requests):
 ```
 
 See `docs/pipeline_notes.md` for the fetch notes (Rumble rate limits, resume behavior).
+
+### Adding channels
+
+```bash
+.venv/bin/python -m pipeline_titles.add_channels @SecretScholars                 # add, fetch, date, analyze
+.venv/bin/python -m pipeline_titles.add_channels @A rumble.com/c/B --fetch-only  # data only
+.venv/bin/python -m pipeline_titles.add_channels @A --dry-run
+```
+
+One command per batch of channels (YouTube handles or URLs, Rumble channel URLs). It appends
+them to the creator list under a dated comment, lists their videos and streams (the fetcher's
+ledger skips every channel already settled, so this takes seconds per channel), fetches their
+exact dates from the Data API (new ids only), prints what each channel contributes inside the
+corpus window with a note when it is under the low-n rule, and then runs
+`run_all --incremental`. Every step is safe to run again.
+
+`--incremental` is the rule that makes this cheap and keeps the record intact: the stages
+that draw a sample keep their sample of record and only take the new channels in. `leaning`
+draws the new channel's 50 titles with a seed of its own (the shared draw would otherwise
+shift every channel sorted after it) and sends only those to the judge (about three CLI
+calls per channel); the three readings are matched by title, so the record's comparisons
+are unchanged. `topics` assigns the new titles to the fitted topics (`--label-only`) rather
+than refitting. `llm_rate` re-keys its 3,000-title sample (`--rekey`) rather than redrawing
+it, so a new channel is not in the rating sample (which only trains and validates). `creators`
+appends the new rows to `creators.csv` (organization defaults to the channel name, note dated;
+correct it in the CSV). Everything else, factors included, recomputes over the whole corpus,
+so every table, card and figure moves a little; the run takes about a quarter of an hour.
+
+Not updated by the command: the hand-written counts in this README and in
+`reports/headlines.md`, and the website's import (`scripts/import-*.mjs` in the site repo).
 
 ## Setup
 

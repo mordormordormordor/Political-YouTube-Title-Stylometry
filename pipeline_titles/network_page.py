@@ -4,18 +4,21 @@ Nodes are the vocabulary terms of the associations stage; an edge is a pair that
 beyond chance within creator-weeks (Cochran-Mantel-Haenszel q < 0.01), replicated in both channel
 halves, with lift >= 2 from >= 5 channels (assoc_edges.csv, assoc_nodes.csv); the month view uses
 each month's own edges (assoc_monthly_neighbors.csv.gz); the timeline uses each node's titles and
-channels per month (assoc_node_months.csv). Positions come from ForceAtlas2 on the edge weights
-(log2 lift), seed fixed.
+channels per month (assoc_node_months.csv). The left, neutral and right channels' own networks
+(assoc_edges_<group>.csv and companions) sit beside the whole; "left only", "right only" and "left
+and right" are derived in the page from the edge sets. Every network is drawn on one shared layout
+(ForceAtlas2 over the union of the networks' edges, seed fixed), so the same word is in the same
+place in every network and two networks can be compared side by side.
 
-The page has two views. Communities: one node per community, sized by its words, joined by the
-pairs that cross between communities; a card per community lists its words and months. Words:
-every node and edge; a click gives a word's partners and a timeline of its months. Degree and
-strength are recomputed from the edges on screen (month, lift threshold); betweenness is the
-year's, precomputed; community detection is Louvain run in the browser, with a resolution slider
-and a reshuffle, so the stability of the groups is something to see rather than take on trust.
-The page is self-contained: no network access, no libraries.
+Two views. Communities: one disc per community, sized by its words, joined by the pairs crossing
+between communities; a card per community. Words: every node and edge; a click gives a word's
+partners, a strip of its months, and, when two panels are open, a card comparing the word across
+the networks. Degree and strength are recomputed from the edges on screen (month, lift threshold);
+betweenness is the year's, precomputed per network; community detection is Louvain run in the
+browser, with a resolution slider and a reshuffle. Self-contained: no network access, no libraries.
 
-    python -m pipeline_titles.network_page
+    python -m pipeline_titles.network_page                # everything
+    python -m pipeline_titles.network_page --no-leaning   # word_network_site.html: nothing derived from the leaning labels
 """
 
 from __future__ import annotations
@@ -31,64 +34,64 @@ from pipeline_titles.common import ANALYSIS_DIR as A, REPORTS_DIR, SEED
 from pipeline_titles.figures import CAT
 
 OUT = REPORTS_DIR / "word_network.html"
+GROUPS = ("left", "neutral", "right")
+EXTRA_NETWORKS = GROUPS + ("title_left", "title_neither", "title_right")   # any assoc_edges_<name>.csv with its nodes and node months
 
 
-def layout_of(nodes: pd.DataFrame, edges: pd.DataFrame) -> np.ndarray:
-    G = nx.Graph()
-    for r in nodes.itertuples():
-        G.add_node(r.term)
-    for r in edges.itertuples():
-        G.add_edge(r.term_a, r.term_b, weight=float(r.weight))
-    pos = nx.forceatlas2_layout(G, max_iter=400, weight="weight", seed=SEED, scaling_ratio=2.0, gravity=1.0)
-    xy = np.array([pos[t] for t in nodes["term"]])
-    return (xy - xy.mean(axis=0)) / xy.std(axis=0).max()
-
-
-def network_of(suffix: str, months: list[str], with_monthly: bool) -> dict:
-    nodes = pd.read_csv(A / f"assoc_nodes{suffix}.csv")
-    edges = pd.read_csv(A / f"assoc_edges{suffix}.csv")
-    nm = pd.read_csv(A / f"assoc_node_months{suffix}.csv").set_index("term")
-    xy = layout_of(nodes, edges)
-    idx = {t: i for i, t in enumerate(nodes["term"])}
-    data_nodes = [{"t": r.term, "x": round(float(xy[i, 0]), 4), "y": round(float(xy[i, 1]), 4), "c": int(r.community), "n": int(r.n_titles), "b": round(float(r.betweenness), 5),
-                   "mt": [int(nm.loc[r.term, f"titles_{m}"]) for m in months], "mc": [int(nm.loc[r.term, f"channels_{m}"]) for m in months]} for i, r in enumerate(nodes.itertuples())]
-    has_co = all(c in edges.columns for c in ("co_left", "co_neutral", "co_right"))
-    data_edges = [[idx[r.term_a], idx[r.term_b], round(float(r.lift_strat), 2), round(float(r.z_cmh), 1), int(r.channels), int(r.observed)] + ([int(r.co_left), int(r.co_neutral), int(r.co_right)] if has_co else [])
-                  for r in edges.itertuples()]
-    out = {"nodes": data_nodes, "edges": data_edges, "monthly": {}}
-    if with_monthly:
-        nb = pd.read_csv(A / "assoc_monthly_neighbors.csv.gz")
-        nb = nb[nb["term"].isin(idx) & nb["neighbor"].isin(idx)]
-        for m, g in nb.groupby("month"):
-            seen = {}
-            for r in g.itertuples():
-                key = (min(idx[r.term], idx[r.neighbor]), max(idx[r.term], idx[r.neighbor]))
-                if key not in seen:
-                    seen[key] = [key[0], key[1], round(float(r.lift), 2), int(r.channels), int(r.observed)]
-            out["monthly"][m] = list(seen.values())
-    return out
-
-
-EXTRA_NETWORKS = ("left", "neutral", "right", "title_left", "title_neither", "title_right")   # any assoc_edges_<name>.csv with its nodes and node months
+def read_network(suffix: str) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    return pd.read_csv(A / f"assoc_nodes{suffix}.csv"), pd.read_csv(A / f"assoc_edges{suffix}.csv"), pd.read_csv(A / f"assoc_node_months{suffix}.csv").set_index("term")
 
 
 def build_data(with_leaning: bool = True) -> dict:
     """The page's data. with_leaning=False leaves out everything derived from the leaning labels (the
     audience networks, the title-lean networks, the co-mentions by audience on each edge)."""
-    nm = pd.read_csv(A / "assoc_node_months.csv")
-    months = sorted(c[len("titles_"):] for c in nm.columns if c.startswith("titles_"))
-    aud = json.loads((A / "assoc_audience.json").read_text()) if (A / "assoc_audience.json").exists() else {"titles": {}}
-    networks = {"all": network_of("", months, True)}
-    if not with_leaning:
-        networks["all"]["edges"] = [e[:6] for e in networks["all"]["edges"]]
-        aud = {"titles": {}}
-    else:
+    nets = {"all": read_network("")}
+    if with_leaning:
         for g in EXTRA_NETWORKS:
-            if (A / f"assoc_edges_{g}.csv").exists() and (A / f"assoc_nodes_{g}.csv").exists() and (A / f"assoc_node_months_{g}.csv").exists():
-                networks[g] = network_of(f"_{g}", months, False)
-                print(f"{g}: {len(networks[g]['nodes'])} nodes, {len(networks[g]['edges'])} edges", flush=True)
-    return {"networks": networks, "palette": CAT[:7], "group_titles": aud["titles"],
-            "meta": {"nodes": len(networks["all"]["nodes"]), "edges": len(networks["all"]["edges"]), "months": months}}
+            if all((A / f"assoc_{k}_{g}.csv").exists() for k in ("edges", "nodes", "node_months")):
+                nets[g] = read_network(f"_{g}")
+    months = sorted(c[len("titles_"):] for c in nets["all"][2].columns if c.startswith("titles_"))
+    # one layout for every network: ForceAtlas2 over the union of the edges, each pair at its heaviest weight
+    G = nx.Graph()
+    for key, (nodes, edges, _) in nets.items():
+        for r in nodes.itertuples():
+            G.add_node(r.term)
+        for r in edges.itertuples():
+            w = float(r.weight)
+            if G.has_edge(r.term_a, r.term_b):
+                G[r.term_a][r.term_b]["weight"] = max(G[r.term_a][r.term_b]["weight"], w)
+            else:
+                G.add_edge(r.term_a, r.term_b, weight=w)
+    union = sorted(G.nodes())
+    pos = nx.forceatlas2_layout(G, max_iter=400, weight="weight", seed=SEED, scaling_ratio=2.0, gravity=1.0)
+    xy = np.array([pos[t] for t in union])
+    xy = (xy - xy.mean(axis=0)) / xy.std(axis=0).max()
+    idx = {t: i for i, t in enumerate(union)}
+    data = {"terms": union, "x": [round(float(v), 4) for v in xy[:, 0]], "y": [round(float(v), 4) for v in xy[:, 1]], "networks": {}, "palette": CAT[:7],
+            "meta": {"months": months}}
+    aud = json.loads((A / "assoc_audience.json").read_text()) if (A / "assoc_audience.json").exists() and with_leaning else {"titles": {}}
+    data["group_titles"] = aud["titles"]
+    for key, (nodes, edges, nm) in nets.items():
+        has_co = with_leaning and all(c in edges.columns for c in ("co_left", "co_neutral", "co_right"))
+        n_rows = [[idx[r.term], int(r.n_titles), round(float(r.betweenness), 5), int(r.community),
+                   [int(nm.loc[r.term, f"titles_{m}"]) for m in months], [int(nm.loc[r.term, f"channels_{m}"]) for m in months]] for r in nodes.itertuples()]
+        e_rows = [[idx[r.term_a], idx[r.term_b], round(float(r.lift_strat), 2), round(float(r.z_cmh), 1), int(r.channels), int(r.observed)] + ([int(r.co_left), int(r.co_neutral), int(r.co_right)] if has_co else [])
+                  for r in edges.itertuples()]
+        net = {"nodes": n_rows, "edges": e_rows, "monthly": {}}
+        if key == "all":
+            nb = pd.read_csv(A / "assoc_monthly_neighbors.csv.gz")
+            nb = nb[nb["term"].isin(idx) & nb["neighbor"].isin(idx)]
+            for m, g in nb.groupby("month"):
+                seen = {}
+                for r in g.itertuples():
+                    k2 = (min(idx[r.term], idx[r.neighbor]), max(idx[r.term], idx[r.neighbor]))
+                    if k2 not in seen:
+                        seen[k2] = [k2[0], k2[1], round(float(r.lift), 2), int(r.channels), int(r.observed)]
+                net["monthly"][m] = list(seen.values())
+        data["networks"][key] = net
+        print(f"{key}: {len(n_rows)} nodes, {len(e_rows)} edges", flush=True)
+    data["meta"]["nodes"] = len(nets["all"][0]); data["meta"]["edges"] = len(nets["all"][1])
+    return data
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -104,22 +107,25 @@ html, body { margin:0; height:100%; background:var(--surface); color:var(--ink);
 header { padding:10px 16px 8px; border-bottom:1px solid var(--grid); }
 h1 { font-size:17px; margin:0 0 2px; display:inline-block; margin-right:14px; }
 header p { margin:4px 0 8px; color:var(--ink2); font-size:13px; }
-.tabs { display:inline-flex; gap:2px; vertical-align:middle; }
-.tabs button { font:inherit; font-size:13px; padding:3px 10px; border:1px solid var(--grid); background:var(--panel); color:var(--ink2); cursor:pointer; border-radius:4px; }
-.tabs button.on { background:var(--accent); color:#fff; border-color:var(--accent); }
+.tabs { display:inline-flex; gap:2px; vertical-align:middle; margin-right:14px; }
+.tabs button, button.small { font:inherit; font-size:13px; padding:3px 10px; border:1px solid var(--grid); background:var(--panel); color:var(--ink2); cursor:pointer; border-radius:4px; }
+.tabs button.on, button.small.on { background:var(--accent); color:#fff; border-color:var(--accent); }
 .controls { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; font-size:13px; }
 .controls label { display:flex; align-items:center; gap:6px; color:var(--ink2); white-space:nowrap; }
-input[type=search] { padding:4px 8px; border:1px solid var(--grid); border-radius:4px; font:inherit; width:180px; }
-select, button.small { font:inherit; font-size:13px; padding:3px 6px; }
-button.small { border:1px solid var(--grid); background:var(--panel); border-radius:4px; cursor:pointer; }
-.legend { display:flex; flex-wrap:wrap; gap:6px 12px; }
+input[type=search] { padding:4px 8px; border:1px solid var(--grid); border-radius:4px; font:inherit; width:170px; }
+select { font:inherit; font-size:13px; padding:3px 6px; }
+.legend { display:flex; flex-wrap:wrap; gap:6px 12px; align-items:center; }
+.legend .who { color:var(--muted); font-size:12px; }
 .chip { display:inline-flex; align-items:center; gap:5px; cursor:pointer; user-select:none; color:var(--ink2); }
 .chip.off { opacity:.35; }
 .chip i { width:11px; height:11px; border-radius:50%; display:inline-block; }
-main { display:flex; height:calc(100% - 128px); }
+main { display:flex; height:calc(100% - 150px); }
+.stages { flex:1; display:flex; min-width:0; }
 .stage { flex:1; position:relative; min-width:0; }
-canvas { position:absolute; inset:0; width:100%; height:100%; display:block; cursor:grab; }
-#timeline { position:absolute; left:0; right:0; bottom:0; max-height:0; overflow:hidden; border-top:1px solid var(--grid); background:rgba(244,243,240,0.94); transition:max-height .15s; }
+.stage + .stage { border-left:1px solid var(--grid); }
+.stage canvas { position:absolute; inset:0; width:100%; height:100%; display:block; cursor:grab; }
+.stage .head { position:absolute; left:8px; top:6px; z-index:2; display:flex; gap:6px; align-items:center; font-size:12px; color:var(--ink2); background:rgba(252,252,251,0.85); padding:3px 6px; border-radius:4px; }
+#timeline { position:absolute; left:0; right:0; bottom:0; max-height:0; overflow:hidden; border-top:1px solid var(--grid); background:rgba(244,243,240,0.94); transition:max-height .15s; z-index:3; }
 #timeline.open { max-height:190px; overflow:auto; }
 #timeline .close { position:absolute; right:10px; top:6px; cursor:pointer; color:var(--muted); font-size:12px; }
 .tl { display:grid; grid-template-columns:repeat(9, 1fr); gap:6px; padding:8px 12px; font-size:12px; }
@@ -129,12 +135,12 @@ canvas { position:absolute; inset:0; width:100%; height:100%; display:block; cur
 .tl .cnt { color:var(--muted); font-size:11px; margin-bottom:3px; }
 .tl .p { color:var(--ink2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; cursor:pointer; }
 .tl .p:hover { color:var(--accent); }
-aside { width:360px; border-left:1px solid var(--grid); background:var(--panel); padding:12px 14px; overflow:auto; font-size:13px; }
+aside { width:370px; border-left:1px solid var(--grid); background:var(--panel); padding:12px 14px; overflow:auto; font-size:13px; }
 aside h2 { font-size:15px; margin:0 0 4px; }
 aside h3 { font-size:13px; margin:12px 0 4px; color:var(--ink2); }
 aside .sub { color:var(--muted); margin-bottom:8px; }
 table { border-collapse:collapse; width:100%; }
-th, td { text-align:left; padding:3px 4px; border-bottom:1px solid var(--grid); font-variant-numeric:tabular-nums; }
+th, td { text-align:left; padding:3px 4px; border-bottom:1px solid var(--grid); font-variant-numeric:tabular-nums; vertical-align:top; }
 th { color:var(--muted); font-weight:600; font-size:12px; }
 td.num, th.num { text-align:right; }
 tr.link { cursor:pointer; }
@@ -143,7 +149,8 @@ tr.link:hover { background:#ebeae6; }
 .card:hover { border-color:var(--accent); }
 .card.on { border-color:var(--ink); }
 .card b { display:flex; align-items:center; gap:6px; }
-.card i { width:10px; height:10px; border-radius:50%; display:inline-block; }
+.card i, .dot { width:10px; height:10px; border-radius:50%; display:inline-block; }
+.dot { width:9px; height:9px; margin-right:4px; }
 .card .w { color:var(--ink2); font-size:12px; }
 .card .mm { color:var(--muted); font-size:11px; margin-top:2px; }
 .tip { position:fixed; pointer-events:none; background:#fff; border:1px solid var(--grid); border-radius:4px; padding:6px 8px; font-size:12px; color:var(--ink2); box-shadow:0 2px 8px rgba(0,0,0,.08); display:none; z-index:5; max-width:280px; }
@@ -157,42 +164,41 @@ a.x { color:var(--accent); cursor:pointer; }
 <header>
   <h1>Word association network</h1>
   <span class="tabs"><button id="tabC" class="on">Communities</button><button id="tabW">Words</button></span>
+  <button class="small" id="compare">compare two networks</button>
   <p id="intro">__NODES__ words, __EDGES__ edges. An edge joins two words that share titles beyond chance within the same channel and week, in both random halves of the channels (lift at least 2, from at least 5 channels). Start from the communities; open one to see its words.</p>
   <div class="controls">
-    <label>Network <select id="net"></select></label>
     <label>Find <input type="search" id="q" list="terms" placeholder="a word"><datalist id="terms"></datalist></label>
     <label>Edges of <select id="month"><option value="all">the whole year</option></select></label>
-    <label>Edge color <select id="edgecolor"><option value="strength">strength</option><option value="audience">audience</option></select></label>
-    <button class="small" id="fit" title="fit the view to what is shown">fit</button>
     <label>Lift ≥ <input type="range" id="lift" min="1" max="6" step="0.25" value="1" style="width:90px"> <span id="liftv">2x</span></label>
     <label>Size by <select id="sizeby"><option value="strength">strength</option><option value="degree">degree</option><option value="betweenness">betweenness</option><option value="titles">titles</option></select></label>
     <label>Color by <select id="colorby"><option value="community">community</option><option value="betweenness">betweenness</option><option value="strength">strength</option></select></label>
+    <label>Edge color <select id="edgecolor"><option value="strength">strength</option><option value="audience">audience</option></select></label>
     <label>Communities: resolution <input type="range" id="res" min="0.4" max="2.0" step="0.1" value="1.0" style="width:90px"> <span id="resv">1.0</span></label>
     <button class="small" id="reshuffle" title="run Louvain again with a new random order">reshuffle</button>
-    <span id="modq" style="color:var(--muted)"></span>
+    <button class="small" id="fit" title="fit the view to what is shown">fit</button>
     <label><input type="checkbox" id="labels" checked> labels</label>
   </div>
   <div class="legend" id="legend" style="margin-top:6px"></div>
 </header>
 <main>
-  <div class="stage"><canvas id="c"></canvas><div id="timeline"></div></div>
+  <div class="stages" id="stages"></div>
   <aside id="panel"></aside>
 </main>
 <div class="tip" id="tip"></div>
 <script id="data" type="application/json">__DATA__</script>
 <script>
-// ---------- pure functions: Louvain, modularity, measures ----------
+// ---------- pure functions: Louvain, modularity ----------
 function mulberry32(a) { return function() { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
 function louvain(n, edges, resolution, seed) {
-  // edges: [[i, j, w], ...]. Returns {comm: Int32Array (0..k-1), modularity}
   const rnd = mulberry32(seed);
   let nodes = n, E = edges.map(e => [e[0], e[1], e[2]]);
-  let membership = Array.from({length: n}, (_, i) => i);   // original node -> current super-node
+  let membership = Array.from({length: n}, (_, i) => i);
   for (let level = 0; level < 20; level++) {
     const adj = Array.from({length: nodes}, () => new Map());
     const k = new Float64Array(nodes); let m2 = 0;
     E.forEach(([i, j, w]) => { if (i === j) { k[i] += 2 * w; m2 += 2 * w; adj[i].set(i, (adj[i].get(i) || 0) + w); return; }
       adj[i].set(j, (adj[i].get(j) || 0) + w); adj[j].set(i, (adj[j].get(i) || 0) + w); k[i] += w; k[j] += w; m2 += 2 * w; });
+    if (m2 === 0) break;
     const comm = Int32Array.from({length: nodes}, (_, i) => i), tot = Float64Array.from(k);
     let improved = true, moves = 0, rounds = 0;
     while (improved && rounds++ < 50) {
@@ -208,7 +214,6 @@ function louvain(n, edges, resolution, seed) {
         if (best !== ci) { comm[i] = best; improved = true; moves++; }
       }
     }
-    // renumber
     const ids = new Map(); comm.forEach(c => { if (!ids.has(c)) ids.set(c, ids.size); });
     const newComm = Int32Array.from(comm, c => ids.get(c));
     membership = membership.map(s => newComm[s]);
@@ -221,344 +226,366 @@ function louvain(n, edges, resolution, seed) {
 }
 function modularity(n, edges, comm) {
   const k = new Float64Array(n); let m2 = 0; edges.forEach(([i, j, w]) => { k[i] += w; k[j] += w; m2 += 2 * w; });
+  if (m2 === 0) return 0;
   const tot = new Map(); for (let i = 0; i < n; i++) tot.set(comm[i], (tot.get(comm[i]) || 0) + k[i]);
   let inside = 0; edges.forEach(([i, j, w]) => { if (comm[i] === comm[j]) inside += 2 * w; });
   let s = 0; tot.forEach(t => s += t * t); return inside / m2 - s / (m2 * m2);
 }
-// ---------- data and state ----------
+// ---------- data ----------
 const D = JSON.parse(document.getElementById('data').textContent);
-const MONTHS = D.meta.months, PAL = D.palette, GT = D.group_titles;
-let NET = 'all', N = D.networks.all.nodes, E = D.networks.all.edges, MONTHLY = D.networks.all.monthly;
-let byName = new Map(N.map((n, i) => [n.t, i]));
-let edgeColor = 'strength';
-const NETNAME = {all: 'all channels', left: 'left channels', neutral: 'neutral channels', right: 'right channels', title_left: 'titles labeled left', title_neither: 'titles labeled neither', title_right: 'titles labeled right'};
-const netSel = document.getElementById('net'); Object.keys(D.networks).forEach(k => { const o = document.createElement('option'); o.value = k; o.textContent = NETNAME[k] || k.replace(/_/g, ' '); netSel.appendChild(o); });
-if (Object.keys(D.networks).length < 2) netSel.parentElement.style.display = 'none';
-function audienceBalance(e) {
-  // rates per thousand titles of the left and the right channels; -1 = only the left makes the pair, +1 = only the right
-  if (e.length < 9 || !GT.left) return null;
-  const l = e[6] / GT.left * 1000, r = e[8] / GT.right * 1000; if (l + r === 0) return null; return (r - l) / (r + l);
+const T = D.terms, X = D.x, Y = D.y, U = T.length, MONTHS = D.meta.months, PAL = D.palette, GT = D.group_titles;
+const byName = new Map(T.map((t, i) => [t, i]));
+const NETNAME = {all: 'all channels', left: 'left channels', neutral: 'neutral channels', right: 'right channels', title_left: 'titles labeled left', title_neither: 'titles labeled neither', title_right: 'titles labeled right',
+                 left_only: 'left only (edges the right channels lack)', right_only: 'right only (edges the left channels lack)', left_and_right: 'left and right (edges both make)'};
+const NETS = {};   // key -> {nodes: Map(ui -> {n, b, c0, mt, mc}), edges}
+Object.entries(D.networks).forEach(([k, v]) => { NETS[k] = {nodes: new Map(v.nodes.map(r => [r[0], {n: r[1], b: r[2], c0: r[3], mt: r[4], mc: r[5]}])), edges: v.edges, monthly: v.monthly || {}}; });
+function deriveDiff(a, b, keep) {   // edges of a whose pair is (keep=false) absent from b, or (keep=true) present in b
+  const key = e => e[0] < e[1] ? e[0] + ':' + e[1] : e[1] + ':' + e[0];
+  const inB = new Set(NETS[b].edges.map(key));
+  const edges = NETS[a].edges.filter(e => inB.has(key(e)) === keep);
+  const nodes = new Map(); edges.forEach(e => [e[0], e[1]].forEach(i => { if (!nodes.has(i)) nodes.set(i, {n: NETS[a].nodes.get(i)?.n || 0, b: 0, c0: 0, mt: NETS[a].nodes.get(i)?.mt || MONTHS.map(() => 0), mc: NETS[a].nodes.get(i)?.mc || MONTHS.map(() => 0)}); }));
+  return {nodes, edges, monthly: {}, derived: true};
 }
+if (NETS.left && NETS.right) { NETS.left_only = deriveDiff('left', 'right', false); NETS.right_only = deriveDiff('right', 'left', false); NETS.left_and_right = deriveDiff('left', 'right', true); }
+function audienceBalance(e) { if (e.length < 9 || !GT.left) return null; const l = e[6] / GT.left * 1000, r = e[8] / GT.right * 1000; if (l + r === 0) return null; return (r - l) / (r + l); }
 function balanceColor(b) { const t = Math.abs(b); const base = b < 0 ? [42, 120, 214] : [235, 104, 52]; const g = [150, 149, 143]; return `rgba(${base.map((v, k) => Math.round(g[k] + (v - g[k]) * t)).join(',')},`; }
-const canvas = document.getElementById('c'), ctx = canvas.getContext('2d');
-const tip = document.getElementById('tip'), panel = document.getElementById('panel'), timeline = document.getElementById('timeline');
-let view = {k: 1, tx: 0, ty: 0}, dragging = false, moved = false, last = null;
-let mode = 'communities', selected = -1, selComm = -1, hover = -1, month = 'all', minLift = 2, showLabels = true, sizeBy = 'strength', colorBy = 'community';
-let resolution = 1.0, seed = 1, comm, commInfo = [], hidden = new Set(), openComm = -1;
-let edgesNow = E, adj = new Map(), deg = new Float64Array(N.length), str = new Float64Array(N.length);
-function setNetwork(key) {
-  NET = key; N = D.networks[key].nodes; E = D.networks[key].edges; MONTHLY = D.networks[key].monthly || {};
-  byName = new Map(N.map((n, i) => [n.t, i])); deg = new Float64Array(N.length); str = new Float64Array(N.length);
-  selected = -1; selComm = -1; openComm = -1; hover = -1; month = 'all'; document.getElementById('month').value = 'all';
-  document.getElementById('month').disabled = key !== 'all'; document.getElementById('edgecolor').disabled = key !== 'all'; if (key !== 'all') { edgeColor = 'strength'; document.getElementById('edgecolor').value = 'strength'; }
-  document.getElementById('intro').textContent = `${N.length.toLocaleString()} words, ${E.length.toLocaleString()} edges among the ${NETNAME[key] || key}` + (key === 'all' ? '. An edge joins two words that share titles beyond chance within the same channel and week, in both random halves of the channels (lift at least 2, from at least 5 channels). Start from the communities; open one to see its words.' : `: the same test run on ${GT[key] ? GT[key].toLocaleString() + ' ' : ''}titles alone, with their own channel halves, communities and layout. Fewer titles mean fewer pairs clear the gates, so this network is sparser than the whole.`);
-  const dl = document.getElementById('terms'); dl.innerHTML = ''; N.slice().sort((a, b) => b.n - a.n).forEach(n => { const o = document.createElement('option'); o.value = n.t; dl.appendChild(o); });
-  timeline.classList.remove('open'); timeline.innerHTML = '';
-  buildEdges(); runCommunities(); view.init = false; resize(); showPanel();
-}
-let cNodes = [], cEdges = [];
 const monthName = m => new Date(m + '-15').toLocaleString('en-US', {month: 'long'});
 const monthShort = m => new Date(m + '-15').toLocaleString('en-US', {month: 'short'});
-
-function buildEdges() {
-  edgesNow = month === 'all' ? E : (MONTHLY[month] || []).map(e => [e[0], e[1], e[2], NaN, e[3], e[4]]);
-  adj = new Map(); deg.fill(0); str.fill(0);
-  edgesNow.forEach(e => {
-    if (e[2] < minLift) return;
-    const w = Math.log2(e[2]);
-    if (!adj.has(e[0])) adj.set(e[0], []); if (!adj.has(e[1])) adj.set(e[1], []);
-    adj.get(e[0]).push({j: e[1], lift: e[2], z: e[3], ch: e[4], obs: e[5], e}); adj.get(e[1]).push({j: e[0], lift: e[2], z: e[3], ch: e[4], obs: e[5], e});
-    deg[e[0]]++; deg[e[1]]++; str[e[0]] += w; str[e[1]] += w;
-  });
-}
-function runCommunities() {
-  const r = louvain(N.length, E.map(e => [e[0], e[1], Math.log2(e[2])]), resolution, seed);
-  comm = r.comm;
-  const groups = new Map(); comm.forEach((c, i) => { if (!groups.has(c)) groups.set(c, []); groups.get(c).push(i); });
-  commInfo = [...groups.entries()].map(([id, members]) => {
-    const strength = i => E.reduce ? 0 : 0;   // placeholder (strength computed below from year edges)
-    return {id, members};
-  });
-  // year strength per node for ranking words inside communities
-  const ys = new Float64Array(N.length); E.forEach(e => { const w = Math.log2(e[2]); ys[e[0]] += w; ys[e[1]] += w; });
-  commInfo.forEach(c => {
-    c.members.sort((a, b) => ys[b] - ys[a]); c.size = c.members.length;
-    c.top = c.members.slice(0, 10).map(i => N[i].t);
-    c.x = c.members.reduce((s, i) => s + N[i].x, 0) / c.size; c.y = c.members.reduce((s, i) => s + N[i].y, 0) / c.size;
-    const mt = MONTHS.map((_, k) => c.members.reduce((s, i) => s + N[i].mt[k], 0)); c.months = mt;
-    c.titles = c.members.reduce((s, i) => s + N[i].n, 0);
-  });
-  commInfo.sort((a, b) => b.size - a.size);
-  commInfo.forEach((c, rank) => { c.rank = rank; c.color = rank < PAL.length ? PAL[rank] : '#b3b2ad'; c.label = c.top.slice(0, 3).join(', '); });
-  document.getElementById('modq').textContent = `${commInfo.length} communities, modularity ${r.modularity.toFixed(3)}`;
-  hidden = new Set(); selComm = -1; if (openComm >= 0) openComm = -1;
-  layoutCommunities(); buildLegend();
-}
-const commOf = i => commInfo.find(c => c.id === comm[i]);
-function layoutCommunities() {
-  // community nodes at their members' centroids, pushed apart so the discs do not overlap
-  cNodes = commInfo.map(c => ({c, x: c.x, y: c.y, r: 0.03 + 0.11 * Math.sqrt(c.size / commInfo[0].size)}));
-  for (let it = 0; it < 200; it++) {
-    for (let a = 0; a < cNodes.length; a++) for (let b = a + 1; b < cNodes.length; b++) {
-      const A = cNodes[a], B = cNodes[b]; const dx = B.x - A.x, dy = B.y - A.y; const d = Math.hypot(dx, dy) || 1e-6, min = A.r + B.r + 0.02;
-      if (d < min) { const push = (min - d) / 2; A.x -= dx / d * push; A.y -= dy / d * push; B.x += dx / d * push; B.y += dy / d * push; }
-    }
-  }
-  const agg = new Map();
-  edgesNow.forEach(e => { if (e[2] < minLift) return; const a = comm[e[0]], b = comm[e[1]]; if (a === b) return; const key = a < b ? a + ':' + b : b + ':' + a;
-    const v = agg.get(key) || {a: Math.min(a, b), b: Math.max(a, b), n: 0, w: 0, top: []}; v.n++; v.w += Math.log2(e[2]); v.top.push(e); agg.set(key, v); });
-  cEdges = [...agg.values()]; cEdges.forEach(v => v.top.sort((p, q) => q[2] - p[2]));
-}
-// ---------- drawing ----------
-function resize() {
-  const r = canvas.getBoundingClientRect();
-  canvas.width = r.width * devicePixelRatio; canvas.height = r.height * devicePixelRatio;
-  ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
-  if (!view.init) { view.k = Math.min(r.width, r.height) * 0.42; view.tx = r.width / 2; view.ty = r.height / 2; view.init = true; }
-  draw();
-}
-const sx = p => p.x * view.k + view.tx, sy = p => p.y * view.k + view.ty;
-let sizeMax = 1;
-function measure(i) { return sizeBy === 'strength' ? str[i] : sizeBy === 'degree' ? deg[i] : sizeBy === 'betweenness' ? N[i].b : N[i].n; }
-function radius(i) { return 2 + 9 * Math.sqrt(Math.max(0, measure(i)) / sizeMax); }
+// ---------- shared state ----------
+let view = {k: 1, tx: 0, ty: 0}, dragging = false, moved = false, last = null;
+let mode = 'communities', selected = -1, hover = -1, hoverPanel = null, month = 'all', minLift = 2, showLabels = true, sizeBy = 'strength', colorBy = 'community', edgeColor = 'strength';
+let resolution = 1.0, seed = 1, compare = false, active = null;
+const tip = document.getElementById('tip'), panelEl = document.getElementById('panel'), stages = document.getElementById('stages');
 const SEQ = ['#f4f8fd', '#cde2fb', '#6da7ec', '#256abf', '#0d366b'];
 function ramp(v) { const t = Math.max(0, Math.min(1, v)); const p = t * (SEQ.length - 1), i = Math.floor(p), f = p - i; if (i >= SEQ.length - 1) return SEQ[SEQ.length - 1];
   const a = SEQ[i].match(/\w\w/g).map(h => parseInt(h, 16)), b = SEQ[i + 1].match(/\w\w/g).map(h => parseInt(h, 16)); return `rgb(${a.map((x, k) => Math.round(x + (b[k] - x) * f)).join(',')})`; }
-let colorMax = 1;
-function colorOfNode(i) {
-  if (colorBy === 'community') return commOf(i).color;
-  const v = colorBy === 'betweenness' ? N[i].b : str[i];
-  return ramp(Math.sqrt(v / colorMax));
-}
-function visibleNode(i) { return !hidden.has(comm[i]); }
-function inFocusComm(i) { return openComm < 0 || comm[i] === openComm; }
-function draw() {
-  const r = canvas.getBoundingClientRect();
-  ctx.clearRect(0, 0, r.width, r.height);
-  if (mode === 'communities') return drawCommunities(r);
-  sizeMax = Math.max(1e-9, ...N.map((_, i) => visibleNode(i) && inFocusComm(i) ? measure(i) : 0));
-  colorMax = Math.max(1e-9, ...N.map((_, i) => colorBy === 'betweenness' ? N[i].b : str[i]));
-  const focus = selected >= 0 ? new Set([selected, ...(adj.get(selected) || []).map(a => a.j)]) : null;
-  ctx.lineCap = 'round';
-  edgesNow.forEach(e => {
-    if (e[2] < minLift || !visibleNode(e[0]) || !visibleNode(e[1])) return;
-    if (!inFocusComm(e[0]) || !inFocusComm(e[1])) return;
-    const inFocus = focus && (e[0] === selected || e[1] === selected);
-    if (focus && !inFocus) return;
-    const w = Math.log2(e[2]);
-    const bal = edgeColor === 'audience' ? audienceBalance(e) : null;
-    if (bal !== null) ctx.strokeStyle = balanceColor(bal) + (inFocus ? '0.9)' : `${Math.min(0.75, 0.25 + 0.25 * Math.abs(bal) + 0.05 * w)})`);
-    else ctx.strokeStyle = inFocus ? 'rgba(42,120,214,0.75)' : `rgba(82,81,78,${Math.min(0.45, 0.05 + 0.05 * w)})`;
-    ctx.lineWidth = Math.max(0.4, Math.min(3, 0.3 + 0.35 * w)) * (inFocus ? 1.4 : 1);
-    ctx.beginPath(); ctx.moveTo(sx(N[e[0]]), sy(N[e[0]])); ctx.lineTo(sx(N[e[1]]), sy(N[e[1]])); ctx.stroke();
-  });
-  const order = N.map((n, i) => i).filter(visibleNode).sort((a, b) => measure(a) - measure(b));
-  order.forEach(i => {
-    const n = N[i], dim = (focus && !focus.has(i)) || !inFocusComm(i);
-    ctx.globalAlpha = dim ? 0.12 : 1;
-    ctx.beginPath(); ctx.arc(sx(n), sy(n), radius(i), 0, Math.PI * 2);
-    ctx.fillStyle = colorOfNode(i); ctx.fill();
-    ctx.lineWidth = i === selected || i === hover ? 2 : 1; ctx.strokeStyle = i === selected ? '#0b0b0b' : '#fcfcfb'; ctx.stroke();
-    ctx.globalAlpha = 1;
-  });
-  if (showLabels) {
-    ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
-    const budget = Math.round(40 * Math.max(1, view.k / (Math.min(r.width, r.height) * 0.42)) ** 1.6);
-    const labeled = new Set(order.slice(-budget)); if (focus) focus.forEach(i => labeled.add(i));
-    const placed = [];
-    [...labeled].sort((a, b) => measure(b) - measure(a)).forEach(i => {
-      const n = N[i]; if (!visibleNode(i) || !inFocusComm(i) || (focus && !focus.has(i))) return;
-      ctx.font = (i === selected ? 'bold 12px' : '11px') + ' -apple-system, "Segoe UI", Helvetica, Arial, sans-serif';
-      const x = sx(n), y = sy(n) - radius(i) - 2, w = ctx.measureText(n.t).width;
-      if (x < -20 || y < -20 || x > r.width + 20 || y > r.height + 20) return;
-      if (placed.some(p => Math.abs(p.x - x) < (p.w + w) / 2 + 4 && Math.abs(p.y - y) < 13)) return;
-      placed.push({x, y, w});
-      ctx.strokeStyle = 'rgba(252,252,251,0.9)'; ctx.lineWidth = 3; ctx.strokeText(n.t, x, y);
-      ctx.fillStyle = i === selected ? '#0b0b0b' : '#52514e'; ctx.fillText(n.t, x, y);
+// ---------- a panel: one network on one canvas ----------
+class Panel {
+  constructor(key, label) {
+    this.key = key; this.label = label;
+    this.el = document.createElement('div'); this.el.className = 'stage';
+    this.el.innerHTML = `<canvas></canvas><div class="head"><b>${label}</b> <select class="netsel"></select></div>`;
+    stages.appendChild(this.el);
+    this.canvas = this.el.querySelector('canvas'); this.ctx = this.canvas.getContext('2d');
+    const sel = this.el.querySelector('.netsel');
+    Object.keys(NETS).forEach(k => { const o = document.createElement('option'); o.value = k; o.textContent = NETNAME[k] || k; sel.appendChild(o); });
+    sel.value = key; sel.addEventListener('change', e => { this.setNetwork(e.target.value); });
+    if (Object.keys(NETS).length < 2) sel.style.display = 'none';
+    this.openComm = -1; this.selComm = -1; this.hidden = new Set();
+    this.bind(); this.setNetwork(key);
+  }
+  setNetwork(key) {
+    this.key = key; this.net = NETS[key]; this.openComm = -1; this.selComm = -1; this.hidden = new Set();
+    this.el.querySelector('.netsel').value = key;
+    this.buildEdges(); this.runCommunities(); this.resize();
+    if (active === this) showPanel(); buildLegend();
+  }
+  has(i) { return this.net.nodes.has(i); }
+  buildEdges() {
+    const m = month === 'all' || !this.net.monthly[month] ? null : month;
+    this.edgesNow = m ? this.net.monthly[m].map(e => [e[0], e[1], e[2], NaN, e[3], e[4]]) : this.net.edges;
+    this.adj = new Map(); this.deg = new Map(); this.str = new Map();
+    this.edgesNow.forEach(e => {
+      if (e[2] < minLift) return;
+      const w = Math.log2(e[2]);
+      [[e[0], e[1]], [e[1], e[0]]].forEach(([a, b]) => { if (!this.adj.has(a)) this.adj.set(a, []); this.adj.get(a).push({j: b, lift: e[2], z: e[3], ch: e[4], obs: e[5], e}); this.deg.set(a, (this.deg.get(a) || 0) + 1); this.str.set(a, (this.str.get(a) || 0) + w); });
     });
   }
-}
-function drawCommunities(r) {
-  const maxN = Math.max(1, ...cEdges.map(v => v.n));
-  ctx.lineCap = 'round';
-  cEdges.forEach(v => {
-    const A = cNodes.find(c => c.c.id === v.a), B = cNodes.find(c => c.c.id === v.b); if (!A || !B) return;
-    if (hidden.has(v.a) || hidden.has(v.b)) return;
-    const inFocus = selComm >= 0 && (v.a === selComm || v.b === selComm);
-    if (selComm >= 0 && !inFocus) return;
-    ctx.strokeStyle = inFocus ? 'rgba(42,120,214,0.7)' : 'rgba(82,81,78,0.35)';
-    ctx.lineWidth = 0.6 + 9 * Math.sqrt(v.n / maxN);
-    ctx.beginPath(); ctx.moveTo(sx(A), sy(A)); ctx.lineTo(sx(B), sy(B)); ctx.stroke();
-  });
-  cNodes.forEach(cn => {
-    const c = cn.c; if (hidden.has(c.id)) return;
-    const dim = selComm >= 0 && c.id !== selComm && !cEdges.some(v => (v.a === selComm && v.b === c.id) || (v.b === selComm && v.a === c.id));
-    ctx.globalAlpha = dim ? 0.18 : 1;
-    ctx.beginPath(); ctx.arc(sx(cn), sy(cn), cn.r * view.k, 0, Math.PI * 2);
-    ctx.fillStyle = c.color; ctx.fill(); ctx.lineWidth = c.id === selComm ? 2.5 : 1.5; ctx.strokeStyle = c.id === selComm ? '#0b0b0b' : '#fcfcfb'; ctx.stroke();
-    if (showLabels && (cn.r * view.k > 14 || c.id === selComm)) {
-      ctx.font = 'bold 12px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillStyle = c.rank < PAL.length ? '#fff' : '#0b0b0b';
-      const lines = c.top.slice(0, cn.r * view.k > 40 ? 3 : 1);
-      lines.forEach((t, k) => ctx.fillText(t, sx(cn), sy(cn) + (k - (lines.length - 1) / 2) * 14));
-      ctx.font = '11px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif'; ctx.fillStyle = '#52514e'; ctx.textBaseline = 'top';
-      ctx.fillText(`${c.size} words`, sx(cn), sy(cn) + cn.r * view.k + 3);
+  runCommunities() {
+    const ids = [...this.net.nodes.keys()]; const local = new Map(ids.map((u, i) => [u, i]));
+    const edges = this.net.edges.map(e => [local.get(e[0]), local.get(e[1]), Math.log2(e[2])]);
+    const r = louvain(ids.length, edges, resolution, seed);
+    this.comm = new Map(ids.map((u, i) => [u, r.comm[i]])); this.modularity = r.modularity;
+    const ys = new Map(); this.net.edges.forEach(e => { const w = Math.log2(e[2]); ys.set(e[0], (ys.get(e[0]) || 0) + w); ys.set(e[1], (ys.get(e[1]) || 0) + w); });
+    const groups = new Map(); this.comm.forEach((c, u) => { if (!groups.has(c)) groups.set(c, []); groups.get(c).push(u); });
+    this.commInfo = [...groups.entries()].map(([id, members]) => {
+      members.sort((a, b) => (ys.get(b) || 0) - (ys.get(a) || 0));
+      const st = this.net.nodes;
+      return {id, members, size: members.length, top: members.slice(0, 10).map(u => T[u]),
+              x: members.reduce((s, u) => s + X[u], 0) / members.length, y: members.reduce((s, u) => s + Y[u], 0) / members.length,
+              months: MONTHS.map((_, k) => members.reduce((s, u) => s + (st.get(u).mt[k] || 0), 0)), titles: members.reduce((s, u) => s + st.get(u).n, 0)};
+    }).sort((a, b) => b.size - a.size);
+    this.commInfo.forEach((c, rank) => { c.rank = rank; c.color = rank < PAL.length ? PAL[rank] : '#b3b2ad'; c.label = c.top.slice(0, 3).join(', '); });
+    this.layoutCommunities();
+  }
+  commOf(u) { const c = this.comm.get(u); return this.commInfo.find(x => x.id === c); }
+  layoutCommunities() {
+    this.cNodes = this.commInfo.map(c => ({c, x: c.x, y: c.y, r: 0.03 + 0.11 * Math.sqrt(c.size / this.commInfo[0].size)}));
+    for (let it = 0; it < 200; it++) for (let a = 0; a < this.cNodes.length; a++) for (let b = a + 1; b < this.cNodes.length; b++) {
+      const A = this.cNodes[a], B = this.cNodes[b]; const dx = B.x - A.x, dy = B.y - A.y; const d = Math.hypot(dx, dy) || 1e-6, min = A.r + B.r + 0.02;
+      if (d < min) { const push = (min - d) / 2; A.x -= dx / d * push; A.y -= dy / d * push; B.x += dx / d * push; B.y += dy / d * push; }
     }
-    ctx.globalAlpha = 1;
-  });
-}
-// ---------- hit testing ----------
-function nodeAt(px, py) {
-  if (mode === 'communities') { let best = -1; cNodes.forEach(cn => { if (hidden.has(cn.c.id)) return; if (Math.hypot(sx(cn) - px, sy(cn) - py) <= cn.r * view.k + 3) best = cn.c.id; }); return best; }
-  let best = -1, bd = 1e9;
-  N.forEach((n, i) => { if (!visibleNode(i) || !inFocusComm(i)) return; const d = Math.hypot(sx(n) - px, sy(n) - py); if (d < Math.max(radius(i) + 3, 8) && d < bd) { bd = d; best = i; } });
-  return best;
+    const agg = new Map();
+    this.edgesNow.forEach(e => { if (e[2] < minLift) return; const a = this.comm.get(e[0]), b = this.comm.get(e[1]); if (a === undefined || b === undefined || a === b) return; const key = a < b ? a + ':' + b : b + ':' + a;
+      const v = agg.get(key) || {a: Math.min(a, b), b: Math.max(a, b), n: 0, w: 0, top: []}; v.n++; v.w += Math.log2(e[2]); v.top.push(e); agg.set(key, v); });
+    this.cEdges = [...agg.values()]; this.cEdges.forEach(v => v.top.sort((p, q) => q[2] - p[2]));
+  }
+  resize() {
+    const r = this.canvas.getBoundingClientRect(); if (!r.width) return;
+    this.canvas.width = r.width * devicePixelRatio; this.canvas.height = r.height * devicePixelRatio;
+    this.ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+    if (!view.init) { view.k = Math.min(r.width, r.height) * 0.42; view.tx = r.width / 2; view.ty = r.height / 2; view.init = true; }
+    this.draw();
+  }
+  sx(u) { return X[u] * view.k + view.tx; } sy(u) { return Y[u] * view.k + view.ty; }
+  measure(u) { return sizeBy === 'strength' ? (this.str.get(u) || 0) : sizeBy === 'degree' ? (this.deg.get(u) || 0) : sizeBy === 'betweenness' ? this.net.nodes.get(u).b : this.net.nodes.get(u).n; }
+  radius(u) { return 2 + 9 * Math.sqrt(Math.max(0, this.measure(u)) / this.sizeMax); }
+  visible(u) { return this.has(u) && !this.hidden.has(this.comm.get(u)); }
+  inFocus(u) { return this.openComm < 0 || this.comm.get(u) === this.openComm; }
+  colorOf(u) { if (colorBy === 'community') return this.commOf(u).color; const v = colorBy === 'betweenness' ? this.net.nodes.get(u).b : (this.str.get(u) || 0); return ramp(Math.sqrt(v / this.colorMax)); }
+  draw() {
+    const ctx = this.ctx, r = this.canvas.getBoundingClientRect();
+    ctx.clearRect(0, 0, r.width, r.height);
+    if (mode === 'communities') return this.drawCommunities(r);
+    const ids = [...this.net.nodes.keys()].filter(u => this.visible(u) && this.inFocus(u));
+    this.sizeMax = Math.max(1e-9, ...ids.map(u => this.measure(u)));
+    this.colorMax = Math.max(1e-9, ...[...this.net.nodes.keys()].map(u => colorBy === 'betweenness' ? this.net.nodes.get(u).b : (this.str.get(u) || 0)));
+    const focus = selected >= 0 ? new Set([selected, ...(this.adj.get(selected) || []).map(a => a.j)]) : null;
+    ctx.lineCap = 'round';
+    this.edgesNow.forEach(e => {
+      if (e[2] < minLift || !this.visible(e[0]) || !this.visible(e[1]) || !this.inFocus(e[0]) || !this.inFocus(e[1])) return;
+      const inF = focus && (e[0] === selected || e[1] === selected); if (focus && !inF) return;
+      const w = Math.log2(e[2]); const bal = edgeColor === 'audience' ? audienceBalance(e) : null;
+      ctx.strokeStyle = bal !== null ? balanceColor(bal) + (inF ? '0.9)' : `${Math.min(0.75, 0.25 + 0.25 * Math.abs(bal) + 0.05 * w)})`) : (inF ? 'rgba(42,120,214,0.75)' : `rgba(82,81,78,${Math.min(0.45, 0.05 + 0.05 * w)})`);
+      ctx.lineWidth = Math.max(0.4, Math.min(3, 0.3 + 0.35 * w)) * (inF ? 1.4 : 1);
+      ctx.beginPath(); ctx.moveTo(this.sx(e[0]), this.sy(e[0])); ctx.lineTo(this.sx(e[1]), this.sy(e[1])); ctx.stroke();
+    });
+    const order = [...this.net.nodes.keys()].filter(u => this.visible(u)).sort((a, b) => this.measure(a) - this.measure(b));
+    order.forEach(u => {
+      const dim = (focus && !focus.has(u)) || !this.inFocus(u);
+      ctx.globalAlpha = dim ? 0.12 : 1;
+      ctx.beginPath(); ctx.arc(this.sx(u), this.sy(u), this.radius(u), 0, Math.PI * 2);
+      ctx.fillStyle = this.colorOf(u); ctx.fill();
+      ctx.lineWidth = u === selected || (u === hover && hoverPanel === this) ? 2 : 1; ctx.strokeStyle = u === selected ? '#0b0b0b' : '#fcfcfb'; ctx.stroke();
+      ctx.globalAlpha = 1;
+    });
+    if (showLabels) {
+      ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+      const budget = Math.round(40 * Math.max(1, view.k / (Math.min(r.width, r.height) * 0.42)) ** 1.6);
+      const labeled = new Set(order.filter(u => this.inFocus(u)).slice(-budget)); if (focus) focus.forEach(u => { if (this.has(u)) labeled.add(u); });
+      const placed = [];
+      [...labeled].sort((a, b) => this.measure(b) - this.measure(a)).forEach(u => {
+        if (!this.visible(u) || !this.inFocus(u) || (focus && !focus.has(u))) return;
+        ctx.font = (u === selected ? 'bold 12px' : '11px') + ' -apple-system, "Segoe UI", Helvetica, Arial, sans-serif';
+        const x = this.sx(u), y = this.sy(u) - this.radius(u) - 2, w = ctx.measureText(T[u]).width;
+        if (x < -20 || y < -20 || x > r.width + 20 || y > r.height + 20) return;
+        if (placed.some(p => Math.abs(p.x - x) < (p.w + w) / 2 + 4 && Math.abs(p.y - y) < 13)) return;
+        placed.push({x, y, w});
+        ctx.strokeStyle = 'rgba(252,252,251,0.9)'; ctx.lineWidth = 3; ctx.strokeText(T[u], x, y);
+        ctx.fillStyle = u === selected ? '#0b0b0b' : '#52514e'; ctx.fillText(T[u], x, y);
+      });
+    }
+  }
+  drawCommunities(r) {
+    const ctx = this.ctx, maxN = Math.max(1, ...this.cEdges.map(v => v.n));
+    const px = c => c.x * view.k + view.tx, py = c => c.y * view.k + view.ty;
+    this.cEdges.forEach(v => {
+      const A = this.cNodes.find(c => c.c.id === v.a), B = this.cNodes.find(c => c.c.id === v.b); if (!A || !B || this.hidden.has(v.a) || this.hidden.has(v.b)) return;
+      const inF = this.selComm >= 0 && (v.a === this.selComm || v.b === this.selComm); if (this.selComm >= 0 && !inF) return;
+      ctx.strokeStyle = inF ? 'rgba(42,120,214,0.7)' : 'rgba(82,81,78,0.35)'; ctx.lineWidth = 0.6 + 9 * Math.sqrt(v.n / maxN);
+      ctx.beginPath(); ctx.moveTo(px(A), py(A)); ctx.lineTo(px(B), py(B)); ctx.stroke();
+    });
+    this.cNodes.forEach(cn => {
+      const c = cn.c; if (this.hidden.has(c.id)) return;
+      const dim = this.selComm >= 0 && c.id !== this.selComm && !this.cEdges.some(v => (v.a === this.selComm && v.b === c.id) || (v.b === this.selComm && v.a === c.id));
+      ctx.globalAlpha = dim ? 0.18 : 1;
+      ctx.beginPath(); ctx.arc(px(cn), py(cn), cn.r * view.k, 0, Math.PI * 2);
+      ctx.fillStyle = c.color; ctx.fill(); ctx.lineWidth = c.id === this.selComm ? 2.5 : 1.5; ctx.strokeStyle = c.id === this.selComm ? '#0b0b0b' : '#fcfcfb'; ctx.stroke();
+      if (showLabels && (cn.r * view.k > 14 || c.id === this.selComm)) {
+        ctx.font = 'bold 12px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = c.rank < PAL.length ? '#fff' : '#0b0b0b';
+        const lines = c.top.slice(0, cn.r * view.k > 40 ? 3 : 1); lines.forEach((t, k) => ctx.fillText(t, px(cn), py(cn) + (k - (lines.length - 1) / 2) * 14));
+        ctx.font = '11px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif'; ctx.fillStyle = '#52514e'; ctx.textBaseline = 'top'; ctx.fillText(`${c.size} words`, px(cn), py(cn) + cn.r * view.k + 3);
+      }
+      ctx.globalAlpha = 1;
+    });
+  }
+  nodeAt(pxl, pyl) {
+    if (mode === 'communities') { let best = -1; this.cNodes.forEach(cn => { if (this.hidden.has(cn.c.id)) return; if (Math.hypot(cn.x * view.k + view.tx - pxl, cn.y * view.k + view.ty - pyl) <= cn.r * view.k + 3) best = cn.c.id; }); return best; }
+    let best = -1, bd = 1e9;
+    this.net.nodes.forEach((_, u) => { if (!this.visible(u) || !this.inFocus(u)) return; const d = Math.hypot(this.sx(u) - pxl, this.sy(u) - pyl); if (d < Math.max(this.radius(u) + 3, 8) && d < bd) { bd = d; best = u; } });
+    return best;
+  }
+  bind() {
+    const c = this.canvas;
+    c.addEventListener('mousedown', e => { dragging = true; moved = false; last = [e.clientX, e.clientY]; c.style.cursor = 'grabbing'; active = this; });
+    c.addEventListener('mouseup', e => {
+      if (dragging && !moved) { const r = c.getBoundingClientRect(); const i = this.nodeAt(e.clientX - r.left, e.clientY - r.top); active = this;
+        if (mode === 'communities') { if (i >= 0 && i === this.selComm) openCommunity(this, i); else { this.selComm = i; showPanel(); drawAll(); } } else select(i); }
+      dragging = false; c.style.cursor = 'grab';
+    });
+    c.addEventListener('mousemove', e => {
+      const r = c.getBoundingClientRect(), pxl = e.clientX - r.left, pyl = e.clientY - r.top;
+      if (dragging) { const dx = e.clientX - last[0], dy = e.clientY - last[1]; if (Math.abs(dx) + Math.abs(dy) > 2) moved = true; view.tx += dx; view.ty += dy; last = [e.clientX, e.clientY]; drawAll(); return; }
+      const i = this.nodeAt(pxl, pyl);
+      if (i !== hover || hoverPanel !== this) { hover = i; hoverPanel = this; drawAll(); }
+      if (i >= 0) { tip.style.display = 'block'; tip.style.left = (e.clientX + 14) + 'px'; tip.style.top = (e.clientY + 14) + 'px';
+        if (mode === 'communities') { const cc = this.commInfo.find(x => x.id === i); tip.innerHTML = `<b>${cc.top.slice(0, 5).join(', ')}</b><br>${cc.size} words · click to see, click again to open`; }
+        else tip.innerHTML = `<b>${T[i]}</b><br>${this.net.nodes.get(i).n.toLocaleString()} titles · degree ${this.deg.get(i) || 0} · strength ${(this.str.get(i) || 0).toFixed(1)} · betweenness ${this.net.nodes.get(i).b}`; }
+      else tip.style.display = 'none';
+    });
+    c.addEventListener('mouseleave', () => { tip.style.display = 'none'; hover = -1; drawAll(); });
+    c.addEventListener('wheel', e => { e.preventDefault(); const r = c.getBoundingClientRect(), pxl = e.clientX - r.left, pyl = e.clientY - r.top; const f = Math.exp(-e.deltaY * 0.0015); view.tx = pxl - (pxl - view.tx) * f; view.ty = pyl - (pyl - view.ty) * f; view.k *= f; drawAll(); }, {passive: false});
+  }
 }
 // ---------- panels ----------
+let panels = [new Panel('all', 'A')];
+active = panels[0];
+const timeline = document.createElement('div'); timeline.id = 'timeline'; stages.appendChild(timeline);
+function drawAll() { panels.forEach(p => p.draw()); }
+function resizeAll() { panels.forEach(p => p.resize()); }
+function setCompare(on) {
+  compare = on; document.getElementById('compare').classList.toggle('on', on); document.getElementById('compare').textContent = on ? 'one network' : 'compare two networks';
+  if (on && panels.length === 1) { const second = NETS.right ? 'right' : (Object.keys(NETS).find(k => k !== 'all') || 'all'); panels.push(new Panel(second, 'B')); stages.appendChild(timeline); }
+  if (!on && panels.length === 2) { const p = panels.pop(); p.el.remove(); active = panels[0]; }
+  stages.appendChild(timeline); resizeAll(); buildLegend(); showPanel();
+}
+// ---------- side panel ----------
 function buildLegend() {
   const legend = document.getElementById('legend'); legend.innerHTML = '';
-  commInfo.slice(0, PAL.length).forEach(c => { const s = document.createElement('span'); s.className = 'chip' + (openComm >= 0 && openComm !== c.id ? ' off' : ''); s.title = mode === 'words' ? 'show only this community (click again for all)' : 'select this community';
-    s.innerHTML = `<i style="background:${c.color}"></i>${c.label} (${c.size})`;
-    s.addEventListener('click', () => { if (mode === 'communities') { selectCommunity(c.id); return; } openComm = openComm === c.id ? -1 : c.id; selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; buildLegend(); showPanel(); draw(); }); legend.appendChild(s); });
-  const others = document.createElement('span'); others.className = 'chip'; others.innerHTML = `<i style="background:#b3b2ad"></i>${Math.max(0, commInfo.length - PAL.length)} smaller communities`; legend.appendChild(others);
+  panels.forEach(p => {
+    if (panels.length > 1) { const w = document.createElement('span'); w.className = 'who'; w.textContent = `${p.label} (${NETNAME[p.key] || p.key}):`; legend.appendChild(w); }
+    p.commInfo.slice(0, PAL.length).forEach(c => { const s = document.createElement('span'); s.className = 'chip' + (p.openComm >= 0 && p.openComm !== c.id ? ' off' : ''); s.title = mode === 'words' ? 'show only this community (click again for all)' : 'select this community';
+      s.innerHTML = `<i style="background:${c.color}"></i>${c.label} (${c.size})`;
+      s.addEventListener('click', () => { active = p; if (mode === 'communities') { p.selComm = c.id; showPanel(); drawAll(); return; } p.openComm = p.openComm === c.id ? -1 : c.id; selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; buildLegend(); showPanel(); drawAll(); }); legend.appendChild(s); });
+    const others = document.createElement('span'); others.className = 'chip'; others.innerHTML = `<i style="background:#b3b2ad"></i>${Math.max(0, p.commInfo.length - PAL.length)} smaller · modularity ${p.modularity.toFixed(2)}`; legend.appendChild(others);
+  });
   if (colorBy !== 'community') { const s = document.createElement('span'); s.className = 'chip'; s.innerHTML = `<i style="background:linear-gradient(90deg,#cde2fb,#0d366b);border-radius:2px;width:40px"></i>${colorBy}, light to dark`; legend.appendChild(s); }
-  if (edgeColor === 'audience' && NET === 'all' && E.length && E[0].length >= 9) { const s = document.createElement('span'); s.className = 'chip'; s.innerHTML = `<i style="background:linear-gradient(90deg,#2a78d6,#96958f,#eb6834);border-radius:2px;width:60px"></i>edges: left channels make the pair · both · right channels`; legend.appendChild(s); }
+  if (edgeColor === 'audience' && GT.left) { const s = document.createElement('span'); s.className = 'chip'; s.innerHTML = `<i style="background:linear-gradient(90deg,#2a78d6,#96958f,#eb6834);border-radius:2px;width:60px"></i>edges (all channels): left makes the pair · both · right`; legend.appendChild(s); }
 }
-function communityCards() {
-  let h = `<h2>${commInfo.length} communities</h2><div class="sub">Louvain on the year's edges at resolution ${resolution.toFixed(1)}. Click a card or a disc; open it to see its words.</div>`;
-  commInfo.forEach(c => {
-    const active = c.months.map((v, k) => v > 0 ? monthShort(MONTHS[k]) : null).filter(Boolean);
-    const peak = c.months.indexOf(Math.max(...c.months));
-    const links = cEdges.filter(v => v.a === c.id || v.b === c.id).length;
-    h += `<div class="card${c.id === selComm ? ' on' : ''}" data-c="${c.id}"><b><i style="background:${c.color}"></i>${c.top.slice(0, 3).join(', ')} <span style="color:var(--muted);font-weight:normal">· ${c.size} words</span></b>
+const dot = c => `<i class="dot" style="background:${c}"></i>`;
+function communityCards(p) {
+  let h = `<h2>${p.commInfo.length} communities${panels.length > 1 ? ' in ' + p.label : ''}</h2><div class="sub">${NETNAME[p.key] || p.key}: Louvain on its edges at resolution ${resolution.toFixed(1)}, modularity ${p.modularity.toFixed(2)}. Click a card or a disc; open it to see its words.</div>`;
+  p.commInfo.forEach(c => {
+    const peak = c.months.indexOf(Math.max(...c.months)); const links = p.cEdges.filter(v => v.a === c.id || v.b === c.id).length;
+    h += `<div class="card${c.id === p.selComm ? ' on' : ''}" data-c="${c.id}"><b><i style="background:${c.color}"></i>${c.top.slice(0, 3).join(', ')} <span style="color:var(--muted);font-weight:normal">· ${c.size} words</span></b>
       <div class="w">${c.top.slice(3, 10).join(', ')}</div><div class="mm">peak ${monthName(MONTHS[peak])} · ${c.titles.toLocaleString()} title mentions · linked to ${links} communities</div></div>`;
   });
-  panel.innerHTML = h;
-  panel.querySelectorAll('.card').forEach(el => el.addEventListener('click', () => selectCommunity(+el.dataset.c)));
+  panelEl.innerHTML = h;
+  panelEl.querySelectorAll('.card').forEach(el => el.addEventListener('click', () => { active = p; p.selComm = +el.dataset.c; showPanel(); drawAll(); }));
 }
-function communityDetail(id) {
-  const c = commInfo.find(x => x.id === id);
-  const links = cEdges.filter(v => v.a === id || v.b === id).sort((p, q) => q.n - p.n);
-  let h = `<h2><i style="display:inline-block;width:11px;height:11px;border-radius:50%;background:${c.color}"></i> ${c.top.slice(0, 3).join(', ')}</h2>
-    <div class="sub">${c.size} words · ${c.titles.toLocaleString()} title mentions · <a class="x" id="open">open its words</a> · <a class="x" id="back">all communities</a></div>`;
-  h += '<h3>Words, by strength</h3><div class="w" style="font-size:12px;color:var(--ink2)">' + c.members.slice(0, 30).map(i => `<a class="x" data-i="${i}">${N[i].t}</a>`).join(', ') + (c.size > 30 ? ` and ${c.size - 30} more` : '') + '</div>';
-  h += '<h3>Titles by month</h3><div class="tl" style="grid-template-columns:repeat(9,1fr);padding:0">' + c.months.map((v, k) => `<div class="m"><h4>${monthShort(MONTHS[k])}</h4><div class="bar" style="width:${Math.round(100 * v / Math.max(...c.months))}%"></div><div class="cnt">${v.toLocaleString()}</div></div>`).join('') + '</div>';
+function communityDetail(p, id) {
+  const c = p.commInfo.find(x => x.id === id); const links = p.cEdges.filter(v => v.a === id || v.b === id).sort((a, b) => b.n - a.n);
+  let h = `<h2>${dot(c.color)} ${c.top.slice(0, 3).join(', ')}</h2><div class="sub">${NETNAME[p.key] || p.key} · ${c.size} words · ${c.titles.toLocaleString()} title mentions · <a class="x" id="open">open its words</a> · <a class="x" id="back">all communities</a></div>`;
+  h += '<h3>Words, by strength</h3><div class="w" style="font-size:12px;color:var(--ink2)">' + c.members.slice(0, 30).map(u => `<a class="x" data-i="${u}">${T[u]}</a>`).join(', ') + (c.size > 30 ? ` and ${c.size - 30} more` : '') + '</div>';
+  h += '<h3>Titles by month</h3><div class="tl" style="grid-template-columns:repeat(9,1fr);padding:0">' + c.months.map((v, k) => `<div class="m"><h4>${monthShort(MONTHS[k])}</h4><div class="bar" style="width:${Math.round(100 * v / Math.max(1, ...c.months))}%"></div><div class="cnt">${v.toLocaleString()}</div></div>`).join('') + '</div>';
   h += `<h3>Linked communities (pairs crossing between them)</h3><table><tr><th>community</th><th class="num">pairs</th><th>strongest pair</th></tr>`;
-  links.forEach(v => { const o = commInfo.find(x => x.id === (v.a === id ? v.b : v.a)); const t = v.top[0]; h += `<tr class="link" data-c="${o.id}"><td><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${o.color};margin-right:4px"></i>${o.top.slice(0, 2).join(', ')}</td><td class="num">${v.n}</td><td>${N[t[0]].t} + ${N[t[1]].t} (${t[2].toFixed(0)}x)</td></tr>`; });
+  links.forEach(v => { const o = p.commInfo.find(x => x.id === (v.a === id ? v.b : v.a)); const t = v.top[0]; h += `<tr class="link" data-c="${o.id}"><td>${dot(o.color)}${o.top.slice(0, 2).join(', ')}</td><td class="num">${v.n}</td><td>${T[t[0]]} + ${T[t[1]]} (${t[2].toFixed(0)}x)</td></tr>`; });
   h += '</table><div class="note">Cross-community pairs are the places where two stories meet in the same titles.</div>';
-  panel.innerHTML = h;
-  panel.querySelector('#open').addEventListener('click', () => openCommunity(id));
-  panel.querySelector('#back').addEventListener('click', () => selectCommunity(-1));
-  panel.querySelectorAll('a.x[data-i]').forEach(a => a.addEventListener('click', () => { openCommunity(id); select(+a.dataset.i); }));
-  panel.querySelectorAll('tr.link').forEach(tr => tr.addEventListener('click', () => selectCommunity(+tr.dataset.c)));
+  panelEl.innerHTML = h;
+  panelEl.querySelector('#open').addEventListener('click', () => openCommunity(p, id));
+  panelEl.querySelector('#back').addEventListener('click', () => { p.selComm = -1; showPanel(); drawAll(); });
+  panelEl.querySelectorAll('a.x[data-i]').forEach(a => a.addEventListener('click', () => { openCommunity(p, id); select(+a.dataset.i); }));
+  panelEl.querySelectorAll('tr.link').forEach(tr => tr.addEventListener('click', () => { p.selComm = +tr.dataset.c; showPanel(); drawAll(); }));
 }
-function rankingPanel() {
-  const measures = [['strength', i => str[i], v => v.toFixed(1)], ['degree', i => deg[i], v => v], ['betweenness (year)', i => N[i].b, v => v.toFixed(3)]];
-  let h = `<h2>${openComm >= 0 ? commInfo.find(c => c.id === openComm).top.slice(0, 3).join(', ') : 'All words'}</h2><div class="sub">${openComm >= 0 ? '<a class="x" id="back">all communities</a> · ' : ''}Click a word in the map or a name below. Degree and strength are for the edges on screen (${month === 'all' ? 'the whole year' : monthName(month)}, lift ≥ ${minLift}x).</div>`;
+function rankingPanel(p) {
+  const measures = [['strength', u => p.str.get(u) || 0, v => v.toFixed(1)], ['degree', u => p.deg.get(u) || 0, v => v], ['betweenness (year)', u => p.net.nodes.get(u).b, v => v.toFixed(3)]];
+  let h = `<h2>${p.openComm >= 0 ? p.commInfo.find(c => c.id === p.openComm).top.slice(0, 3).join(', ') : (NETNAME[p.key] || p.key)}${panels.length > 1 ? ' (' + p.label + ')' : ''}</h2><div class="sub">${p.openComm >= 0 ? '<a class="x" id="back">all communities</a> · ' : ''}Click a word in the map or a name below. Degree and strength are for the edges on screen (${month === 'all' || !p.net.monthly[month] ? 'the whole year' : monthName(month)}, lift ≥ ${minLift}x).</div>`;
   measures.forEach(([name, f, fmt]) => {
-    const top = N.map((_, i) => i).filter(i => visibleNode(i) && inFocusComm(i)).sort((a, b) => f(b) - f(a)).slice(0, 12);
-    h += `<h3>Top by ${name}</h3><table>` + top.map(i => `<tr class="link" data-i="${i}"><td><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${commOf(i).color};margin-right:4px"></i>${N[i].t}</td><td class="num">${fmt(f(i))}</td></tr>`).join('') + '</table>';
+    const top = [...p.net.nodes.keys()].filter(u => p.visible(u) && p.inFocus(u)).sort((a, b) => f(b) - f(a)).slice(0, 12);
+    h += `<h3>Top by ${name}</h3><table>` + top.map(u => `<tr class="link" data-i="${u}"><td>${dot(p.commOf(u).color)}${T[u]}</td><td class="num">${fmt(f(u))}</td></tr>`).join('') + '</table>';
   });
   h += "<div class='note'>Degree: how many partners. Strength: the sum of the partners' log2 lifts. Betweenness: how often the word lies on the shortest path between two others, a bridge between stories.</div>";
-  panel.innerHTML = h;
-  panel.querySelectorAll('tr.link').forEach(tr => tr.addEventListener('click', () => select(+tr.dataset.i)));
-  const b = panel.querySelector('#back'); if (b) b.addEventListener('click', () => { openComm = -1; setMode('communities'); buildLegend(); });
+  panelEl.innerHTML = h;
+  panelEl.querySelectorAll('tr.link').forEach(tr => tr.addEventListener('click', () => select(+tr.dataset.i)));
+  const b = panelEl.querySelector('#back'); if (b) b.addEventListener('click', () => { p.openComm = -1; setMode('communities'); });
 }
-function wordPanel(i) {
-  const n = N[i], nb = (adj.get(i) || []).slice().sort((a, b) => b.lift - a.lift), c = commOf(i);
-  let h = `<h2>${n.t}</h2><div class="sub">${n.n.toLocaleString()} titles · degree ${deg[i]} · strength ${str[i].toFixed(1)} · betweenness ${n.b} · community <a class="x" id="cm"><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${c.color}"></i> ${c.top.slice(0, 3).join(', ')}</a></div>`;
-  h += `<div class="sub">${nb.length} partners ${month === 'all' ? 'over the year' : 'in ' + monthName(month)} at lift ≥ ${minLift}x</div>`;
-  const showAud = NET === 'all' && month === 'all' && GT.left && E.length && E[0].length >= 9;
-  h += '<table><tr><th>partner</th><th class="num">lift</th>' + (month === 'all' ? '<th class="num">z</th>' : '') + '<th class="num">titles</th><th class="num">channels</th>' + (showAud ? '<th title="co-mentions per thousand titles of the left and of the right channels">L / R per 1k</th>' : '') + '</tr>';
+function partnersTable(p, u) {
+  const nb = (p.adj.get(u) || []).slice().sort((a, b) => b.lift - a.lift);
+  if (!p.has(u)) return `<div class="sub">${T[u]} has no edge in ${NETNAME[p.key] || p.key}.</div>`;
+  const yr = month === 'all' || !p.net.monthly[month];
+  const showAud = p.key === 'all' && yr && GT.left && p.net.edges.length && p.net.edges[0].length >= 9;
+  let h = `<div class="sub">${nb.length} partners ${yr ? 'over the year' : 'in ' + monthName(month)} at lift ≥ ${minLift}x · degree ${p.deg.get(u) || 0} · strength ${(p.str.get(u) || 0).toFixed(1)} · betweenness ${p.net.nodes.get(u).b}</div>`;
+  h += '<table><tr><th>partner</th><th class="num">lift</th>' + (yr ? '<th class="num">z</th>' : '') + '<th class="num">titles</th><th class="num">ch</th>' + (showAud ? '<th title="co-mentions per thousand titles of the left and of the right channels">L / R per 1k</th>' : '') + '</tr>';
   nb.forEach(a => { let aud = '';
-    if (showAud && a.e) { const b = audienceBalance(a.e); if (b !== null) aud = `<td><i style="display:inline-block;width:9px;height:9px;border-radius:2px;background:${balanceColor(b)}1)"></i> ${(a.e[6] / GT.left * 1000).toFixed(1)} / ${(a.e[8] / GT.right * 1000).toFixed(1)}</td>`; else aud = '<td></td>'; }
-    h += `<tr class="link" data-i="${a.j}"><td><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${commOf(a.j).color};margin-right:4px"></i>${N[a.j].t}</td><td class="num">${a.lift.toFixed(1)}</td>` + (month === 'all' ? `<td class="num">${a.z}</td>` : '') + `<td class="num">${a.obs}</td><td class="num">${a.ch}</td>${aud}</tr>`; });
-  h += '</table>';
-  if (showAud) h += '<div class="note">Audience: blue when the left channels make the pair more often per title, orange when the right do, gray when both do alike. Neutral channels count in titles and lift but not in the balance.</div>';
-  panel.innerHTML = h;
-  panel.querySelectorAll('tr.link').forEach(tr => tr.addEventListener('click', () => select(+tr.dataset.i)));
-  panel.querySelector('#cm').addEventListener('click', () => { setMode('communities'); selectCommunity(comm[i]); });
+    if (showAud) { const b = audienceBalance(a.e); aud = b !== null ? `<td><i class="dot" style="border-radius:2px;background:${balanceColor(b)}1)"></i>${(a.e[6] / GT.left * 1000).toFixed(1)} / ${(a.e[8] / GT.right * 1000).toFixed(1)}</td>` : '<td></td>'; }
+    h += `<tr class="link" data-i="${a.j}"><td>${dot(p.commOf(a.j).color)}${T[a.j]}</td><td class="num">${a.lift.toFixed(1)}</td>` + (yr ? `<td class="num">${a.z}</td>` : '') + `<td class="num">${a.obs}</td><td class="num">${a.ch}</td>${aud}</tr>`; });
+  return h + '</table>';
 }
-function timelineFor(i) {
-  const n = N[i]; const maxT = Math.max(1, ...n.mt);
+function wordPanel(u) {
+  const c0 = panels.find(p => p.has(u)) || panels[0];
+  let h = `<h2>${T[u]}</h2>`;
+  if (panels.length > 1 || Object.keys(NETS).length > 1) {
+    // the comparison card: the word in every network
+    h += '<h3>Across the networks</h3><table><tr><th>network</th><th class="num">titles</th><th class="num">degree</th><th class="num">strength</th><th>top partners</th></tr>';
+    Object.keys(NETS).forEach(k => {
+      const net = NETS[k]; if (!net.nodes.has(u)) { h += `<tr><td>${NETNAME[k] || k}</td><td class="num">${(NETS[k].nodes.get(u) || {}).n || ''}</td><td colspan="3" style="color:var(--muted)">no edge</td></tr>`; return; }
+      const nb = net.edges.filter(e => (e[0] === u || e[1] === u) && e[2] >= minLift).map(e => ({j: e[0] === u ? e[1] : e[0], lift: e[2]})).sort((a, b) => b.lift - a.lift);
+      const st = nb.reduce((s, a) => s + Math.log2(a.lift), 0);
+      h += `<tr><td>${NETNAME[k] || k}</td><td class="num">${net.nodes.get(u).n.toLocaleString()}</td><td class="num">${nb.length}</td><td class="num">${st.toFixed(1)}</td><td>${nb.slice(0, 5).map(a => `<a class="x" data-i="${a.j}">${T[a.j]}</a>`).join(', ')}</td></tr>`;
+    });
+    h += '</table>';
+  }
+  panels.forEach(p => { h += `<h3>${panels.length > 1 ? p.label + ': ' : ''}${NETNAME[p.key] || p.key}${p.has(u) ? ' · community <a class="x" data-cm="' + p.label + '">' + dot(p.commOf(u).color) + p.commOf(u).top.slice(0, 3).join(', ') + '</a>' : ''}</h3>` + partnersTable(p, u); });
+  if (GT.left && panels.some(p => p.key === 'all')) h += '<div class="note">Audience: blue when the left channels make the pair more often per title, orange when the right do, gray when both do alike. Neutral channels count in titles and lift but not in the balance.</div>';
+  panelEl.innerHTML = h;
+  panelEl.querySelectorAll('tr.link, a.x[data-i]').forEach(el => el.addEventListener('click', () => select(+el.dataset.i)));
+  panelEl.querySelectorAll('a.x[data-cm]').forEach(el => el.addEventListener('click', () => { const p = panels.find(x => x.label === el.dataset.cm); setMode('communities'); p.selComm = p.comm.get(u); showPanel(); drawAll(); }));
+}
+function timelineFor(u) {
+  const p = panels.find(x => x.has(x) || x.has(u)) || panels[0]; const st = p.net.nodes.get(u) || {mt: MONTHS.map(() => 0), mc: MONTHS.map(() => 0)}; const maxT = Math.max(1, ...st.mt);
+  const monthlyNet = panels.find(x => x.key === 'all') ? NETS.all : null;
   let h = '<div class="tl">';
   MONTHS.forEach((m, k) => {
-    const partners = (MONTHLY[m] || []).filter(e => e[0] === i || e[1] === i).map(e => ({j: e[0] === i ? e[1] : e[0], lift: e[2]})).sort((a, b) => b.lift - a.lift).slice(0, 6);
-    h += `<div class="m"><h4>${monthShort(m)}</h4><div class="bar" style="width:${Math.round(100 * n.mt[k] / maxT)}%"></div><div class="cnt">${n.mt[k].toLocaleString()} titles · ${n.mc[k]} ch</div>` +
-      partners.map(p => `<div class="p" data-i="${p.j}" title="${N[p.j].t}, ${p.lift.toFixed(1)}x">${N[p.j].t} <span style="color:var(--muted)">${p.lift.toFixed(0)}x</span></div>`).join('') + '</div>';
+    const partners = monthlyNet ? (monthlyNet.monthly[m] || []).filter(e => e[0] === u || e[1] === u).map(e => ({j: e[0] === u ? e[1] : e[0], lift: e[2]})).sort((a, b) => b.lift - a.lift).slice(0, 6) : [];
+    h += `<div class="m"><h4>${monthShort(m)}</h4><div class="bar" style="width:${Math.round(100 * st.mt[k] / maxT)}%"></div><div class="cnt">${st.mt[k].toLocaleString()} titles · ${st.mc[k]} ch</div>` + partners.map(q => `<div class="p" data-i="${q.j}" title="${T[q.j]}, ${q.lift.toFixed(1)}x">${T[q.j]} <span style="color:var(--muted)">${q.lift.toFixed(0)}x</span></div>`).join('') + '</div>';
   });
   h += '</div>';
-  if (NET !== 'all') h += '<div class="note" style="padding:0 12px 8px">Partners by month are computed for the all-channel network only; the bars are this audience\'s titles.</div>';
+  if (!monthlyNet) h += '<div class="note" style="padding:0 12px 8px">Partners by month exist for the all-channel network only; the bars are this network\'s titles.</div>';
+  else if (p.key !== 'all') h += `<div class="note" style="padding:0 12px 8px">Bars: the word's titles among ${NETNAME[p.key] || p.key}; partners by month from the all-channel network.</div>`;
   timeline.innerHTML = '<span class="close" title="hide the months">hide ×</span>' + h; timeline.classList.add('open');
   timeline.querySelectorAll('.p').forEach(el => el.addEventListener('click', () => select(+el.dataset.i)));
   timeline.querySelector('.close').addEventListener('click', () => timeline.classList.remove('open'));
 }
 function showPanel() {
-  if (mode === 'communities') { if (selComm >= 0) communityDetail(selComm); else communityCards(); return; }
-  if (selected >= 0) wordPanel(selected); else rankingPanel();
+  const p = active || panels[0];
+  if (mode === 'communities') { if (p.selComm >= 0) communityDetail(p, p.selComm); else communityCards(p); return; }
+  if (selected >= 0) wordPanel(selected); else rankingPanel(p);
 }
 // ---------- actions ----------
 function setMode(m) {
   mode = m; document.getElementById('tabC').classList.toggle('on', m === 'communities'); document.getElementById('tabW').classList.toggle('on', m === 'words');
   if (m === 'communities') { selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; }
-  showPanel(); draw();
+  buildLegend(); showPanel(); drawAll();
 }
-function selectCommunity(id) { selComm = id; showPanel(); draw(); }
-function openCommunity(id) { openComm = id; selComm = -1; selected = -1; setMode('words'); buildLegend(); }
+function openCommunity(p, id) { p.openComm = id; p.selComm = -1; selected = -1; active = p; setMode('words'); }
 function fitVisible() {
-  const r = canvas.getBoundingClientRect(); const vis = N.filter((_, i) => visibleNode(i) && inFocusComm(i)); if (!vis.length) return;
-  const xs = vis.map(n => n.x), ys = vis.map(n => n.y); const w = Math.max(...xs) - Math.min(...xs) || 1, h = Math.max(...ys) - Math.min(...ys) || 1;
-  view.k = Math.min(r.width / w, r.height / h) * 0.8; view.tx = r.width / 2 - (Math.min(...xs) + w / 2) * view.k; view.ty = r.height / 2 - (Math.min(...ys) + h / 2) * view.k; draw();
+  const p = active || panels[0]; const r = p.canvas.getBoundingClientRect(); const vis = [...p.net.nodes.keys()].filter(u => p.visible(u) && p.inFocus(u)); if (!vis.length) return;
+  const xs = vis.map(u => X[u]), ys = vis.map(u => Y[u]); const w = Math.max(...xs) - Math.min(...xs) || 1, h = Math.max(...ys) - Math.min(...ys) || 1;
+  view.k = Math.min(r.width / w, r.height / h) * 0.8; view.tx = r.width / 2 - (Math.min(...xs) + w / 2) * view.k; view.ty = r.height / 2 - (Math.min(...ys) + h / 2) * view.k; drawAll();
 }
-function select(i, center) {
-  if (mode !== 'words') { openComm = -1; setMode('words'); }
-  if (i >= 0 && !visibleNode(i)) { openComm = -1; buildLegend(); }
-  selected = i;
-  if (i >= 0) {
-    const n = N[i]; const r = canvas.getBoundingClientRect();
-    const off = sx(n) < 20 || sy(n) < 20 || sx(n) > r.width - 20 || sy(n) > r.height - 20;
-    if (center || off) { view.tx = r.width / 2 - n.x * view.k; view.ty = r.height / 2 - n.y * view.k; }
-    timelineFor(i);
+function select(u, center) {
+  if (mode !== 'words') { panels.forEach(p => p.openComm = -1); setMode('words'); }
+  panels.forEach(p => { if (u >= 0 && p.has(u) && !p.visible(u)) p.hidden.delete(p.comm.get(u)); if (u >= 0 && p.has(u) && !p.inFocus(u)) p.openComm = -1; });
+  selected = u;
+  if (u >= 0) {
+    const p = active || panels[0]; const r = p.canvas.getBoundingClientRect();
+    const off = p.sx(u) < 20 || p.sy(u) < 20 || p.sx(u) > r.width - 20 || p.sy(u) > r.height - 20;
+    if (center || off) { view.tx = r.width / 2 - X[u] * view.k; view.ty = r.height / 2 - Y[u] * view.k; }
+    timelineFor(u);
   } else { timeline.classList.remove('open'); timeline.innerHTML = ''; }
-  showPanel(); draw();
+  buildLegend(); showPanel(); drawAll();
 }
-canvas.addEventListener('mousedown', e => { dragging = true; moved = false; last = [e.clientX, e.clientY]; canvas.style.cursor = 'grabbing'; });
-window.addEventListener('mouseup', e => {
-  if (dragging && !moved) { const r = canvas.getBoundingClientRect(); const i = nodeAt(e.clientX - r.left, e.clientY - r.top);
-    if (mode === 'communities') { if (i >= 0 && i === selComm) openCommunity(i); else selectCommunity(i); } else select(i); }
-  dragging = false; canvas.style.cursor = 'grab';
-});
-canvas.addEventListener('mousemove', e => {
-  const r = canvas.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top;
-  if (dragging) { const dx = e.clientX - last[0], dy = e.clientY - last[1]; if (Math.abs(dx) + Math.abs(dy) > 2) moved = true; view.tx += dx; view.ty += dy; last = [e.clientX, e.clientY]; draw(); return; }
-  const i = nodeAt(px, py);
-  if (i !== hover) { hover = i; draw(); }
-  if (i >= 0) { tip.style.display = 'block'; tip.style.left = (e.clientX + 14) + 'px'; tip.style.top = (e.clientY + 14) + 'px';
-    if (mode === 'communities') { const c = commInfo.find(x => x.id === i); tip.innerHTML = `<b>${c.top.slice(0, 5).join(', ')}</b><br>${c.size} words · click to see, click again to open`; }
-    else { const n = N[i]; tip.innerHTML = `<b>${n.t}</b><br>${n.n.toLocaleString()} titles · degree ${deg[i]} · strength ${str[i].toFixed(1)} · betweenness ${n.b}`; } }
-  else tip.style.display = 'none';
-});
-canvas.addEventListener('mouseleave', () => { tip.style.display = 'none'; hover = -1; draw(); });
-canvas.addEventListener('wheel', e => { e.preventDefault(); const r = canvas.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top; const f = Math.exp(-e.deltaY * 0.0015); view.tx = px - (px - view.tx) * f; view.ty = py - (py - view.ty) * f; view.k *= f; draw(); }, {passive: false});
-window.addEventListener('keydown', e => { if (e.key === 'Escape') { if (mode === 'words') select(-1); else selectCommunity(-1); } });
-document.getElementById('tabC').addEventListener('click', () => { openComm = -1; setMode('communities'); buildLegend(); });
-document.getElementById('tabW').addEventListener('click', () => { openComm = -1; setMode('words'); buildLegend(); });
-const dl = document.getElementById('terms'); N.slice().sort((a, b) => b.n - a.n).forEach(n => { const o = document.createElement('option'); o.value = n.t; dl.appendChild(o); });
-document.getElementById('q').addEventListener('change', e => { const i = byName.get(e.target.value.trim().toLowerCase()); if (i !== undefined) select(i, true); });
-const ms = document.getElementById('month'); MONTHS.forEach(m => { const o = document.createElement('option'); o.value = m; o.textContent = monthName(m) + ' 2026'; ms.appendChild(o); });
-ms.addEventListener('change', e => { month = e.target.value; buildEdges(); layoutCommunities(); showPanel(); draw(); });
-document.getElementById('lift').addEventListener('input', e => { minLift = Math.pow(2, +e.target.value); document.getElementById('liftv').textContent = minLift.toFixed(minLift < 4 ? 1 : 0) + 'x'; buildEdges(); layoutCommunities(); showPanel(); draw(); });
-document.getElementById('sizeby').addEventListener('change', e => { sizeBy = e.target.value; draw(); });
-document.getElementById('colorby').addEventListener('change', e => { colorBy = e.target.value; buildLegend(); draw(); });
-document.getElementById('res').addEventListener('change', e => { resolution = +e.target.value; document.getElementById('resv').textContent = resolution.toFixed(1); runCommunities(); showPanel(); draw(); });
+window.addEventListener('keydown', e => { if (e.key === 'Escape') { if (mode === 'words') select(-1); else { (active || panels[0]).selComm = -1; showPanel(); drawAll(); } } });
+document.getElementById('tabC').addEventListener('click', () => { panels.forEach(p => p.openComm = -1); setMode('communities'); });
+document.getElementById('tabW').addEventListener('click', () => { panels.forEach(p => p.openComm = -1); setMode('words'); });
+document.getElementById('compare').addEventListener('click', () => setCompare(!compare));
+if (Object.keys(NETS).length < 2) document.getElementById('compare').style.display = 'none';
+const dl = document.getElementById('terms'); [...NETS.all.nodes.entries()].sort((a, b) => b[1].n - a[1].n).forEach(([u]) => { const o = document.createElement('option'); o.value = T[u]; dl.appendChild(o); });
+document.getElementById('q').addEventListener('change', e => { const u = byName.get(e.target.value.trim().toLowerCase()); if (u !== undefined) select(u, true); });
+const ms = document.getElementById('month'); MONTHS.forEach(m => { const o = document.createElement('option'); o.value = m; o.textContent = monthName(m) + ' 2026 (all channels)'; ms.appendChild(o); });
+ms.addEventListener('change', e => { month = e.target.value; panels.forEach(p => { p.buildEdges(); p.layoutCommunities(); }); showPanel(); drawAll(); });
+document.getElementById('lift').addEventListener('input', e => { minLift = Math.pow(2, +e.target.value); document.getElementById('liftv').textContent = minLift.toFixed(minLift < 4 ? 1 : 0) + 'x'; panels.forEach(p => { p.buildEdges(); p.layoutCommunities(); }); showPanel(); drawAll(); });
+document.getElementById('sizeby').addEventListener('change', e => { sizeBy = e.target.value; drawAll(); });
+document.getElementById('colorby').addEventListener('change', e => { colorBy = e.target.value; buildLegend(); drawAll(); });
+document.getElementById('edgecolor').addEventListener('change', e => { edgeColor = e.target.value; buildLegend(); drawAll(); });
+if (!GT.left) document.getElementById('edgecolor').parentElement.style.display = 'none';
+document.getElementById('res').addEventListener('change', e => { resolution = +e.target.value; document.getElementById('resv').textContent = resolution.toFixed(1); panels.forEach(p => p.runCommunities()); buildLegend(); showPanel(); drawAll(); });
 document.getElementById('res').addEventListener('input', e => { document.getElementById('resv').textContent = (+e.target.value).toFixed(1); });
-document.getElementById('reshuffle').addEventListener('click', () => { seed++; runCommunities(); showPanel(); draw(); });
-document.getElementById('labels').addEventListener('change', e => { showLabels = e.target.checked; draw(); });
-document.getElementById('net').addEventListener('change', e => setNetwork(e.target.value));
-document.getElementById('edgecolor').addEventListener('change', e => { edgeColor = e.target.value; buildLegend(); draw(); });
+document.getElementById('reshuffle').addEventListener('click', () => { seed++; panels.forEach(p => p.runCommunities()); buildLegend(); showPanel(); drawAll(); });
 document.getElementById('fit').addEventListener('click', fitVisible);
-window.addEventListener('resize', resize);
-buildEdges(); runCommunities(); showPanel(); resize();
+document.getElementById('labels').addEventListener('change', e => { showLabels = e.target.checked; drawAll(); });
+window.addEventListener('resize', resizeAll);
+buildLegend(); showPanel(); resizeAll();
 </script>
 </body>
 </html>
