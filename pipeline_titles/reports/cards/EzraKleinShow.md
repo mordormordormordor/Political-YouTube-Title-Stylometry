@@ -13,18 +13,18 @@ Top topics: American History and Political Threats (10.0%); AI and Political Imp
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 91.5 | 90.3 | 0.8 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 45.3 | 53.0 | -0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 23.7 | 25.8 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 37.3 | 51.3 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 92.8 | 93.6 | 1.8 | 0.1 |
-| F6: Person-centred (named people) | 43.2 | 22.0 | -0.4 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 31.4 | 28.4 | -0.8 | -0.5 |
-| F8: Numeric and dated (digits, years) | 12.3 | 10.2 | -0.5 | -0.2 |
-| F9: ALL-CAPS shouting | 30.9 | 49.2 | -0.5 | -0.3 |
-| F10: Quoted speech | 63.1 | 63.6 | -0.2 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 21.2 | 29.7 | -0.8 | -0.3 |
-| F12: +first_pl +future_will +modal | 58.5 | 59.7 | -0.1 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 91.6 | 90.3 | 0.8 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 44.7 | 52.7 | -0.1 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 23.6 | 26.2 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 37.1 | 51.5 | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 92.8 | 93.7 | 1.8 | 0.1 |
+| F6: Person-centred (named people) | 43.0 | 21.9 | -0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 31.2 | 28.3 | -0.8 | -0.5 |
+| F8: Numeric and dated (digits, years) | 12.2 | 10.1 | -0.5 | -0.2 |
+| F9: ALL-CAPS shouting | 31.2 | 49.4 | -0.5 | -0.3 |
+| F10: Quoted speech | 63.3 | 63.7 | -0.2 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 21.1 | 29.5 | -0.8 | -0.3 |
+| F12: +first_pl +future_will +modal | 58.6 | 59.9 | -0.1 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.7% (3.6%); outrage 26.7% (63.9%); humor 0.0% (0.2%); question 31.7% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 3.3% (9.8%); reaction 0.0% (2.9%); confrontation 5.0% (7.7%); listicle 0.0% (0.1%); howto_explainer 8.3% (8.0%)

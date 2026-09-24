@@ -283,3 +283,6 @@ https://rumble.com/c/russellbrand                # Russell Brand
 https://rumble.com/c/BannonsWarRoom              # Bannon's War Room
 https://rumble.com/c/nickjfuentes                # Nicholas J. Fuentes
 https://rumble.com/c/TheAlexJonesShowLive        # Alex Jones
+
+# ---------- added 2026-09-24 (pipeline_titles.add_channels) ----------
+@SecretScholars

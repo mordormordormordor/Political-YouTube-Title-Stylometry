@@ -22,7 +22,7 @@ Top topics: Socialism in the Democratic Party (37.5%); War and Military Analysis
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.6 | -0.5 |
 | F8: Numeric and dated (digits, years) | None | None | 1.4 | -0.2 |
 | F9: ALL-CAPS shouting | None | None | -1.4 | -0.3 |
-| F10: Quoted speech | None | None | -0.8 | -0.4 |
+| F10: Quoted speech | None | None | -0.7 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | None | None | -0.2 | -0.3 |
 | F12: +first_pl +future_will +modal | None | None | -1.2 | -0.1 |
 

@@ -19,7 +19,7 @@ Top topics: Trump and China Relations (5.9%); Christian Nationalism and Politics
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.2 | 0.2 |
 | F6: Person-centred (named people) | None | None | 0.1 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.7 | -0.7 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.7 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | 1.0 | -0.1 |
 | F9: ALL-CAPS shouting | None | None | -1.1 | -0.3 |
 | F10: Quoted speech | None | None | 0.4 | -0.4 |
@@ -27,7 +27,7 @@ Top topics: Trump and China Relations (5.9%); Christian Nationalism and Politics
 | F12: +first_pl +future_will +modal | None | None | -0.7 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.9% (4.8%); outrage 32.4% (59.8%); humor 0.0% (0.2%); question 11.8% (15.3%); breaking_live 0.0% (2.0%); episode_show 88.2% (7.5%); interview_guest 2.9% (7.7%); reaction 0.0% (2.2%); confrontation 8.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 8.8% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.9% (4.8%); outrage 32.4% (60.1%); humor 0.0% (0.2%); question 11.8% (15.2%); breaking_live 0.0% (2.0%); episode_show 88.2% (7.4%); interview_guest 2.9% (7.8%); reaction 0.0% (2.2%); confrontation 8.8% (8.2%); listicle 0.0% (0.1%); howto_explainer 8.8% (9.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -50,14 +50,14 @@ Top topics: Trump and Iran War Negotiations (7.2%); Iran political unrest (6.3%)
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 2.6 | 6.5 | -2.1 | -0.3 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 7.8 | 16.9 | -0.7 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 18.2 | 10.4 | -0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 20.8 | 39.0 | -0.5 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 19.5 | 39.0 | -0.5 | -0.3 |
 | F6: Person-centred (named people) | 55.8 | 59.7 | 0.4 | -0.1 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 24.7 | 24.7 | -0.7 | -0.6 |
 | F8: Numeric and dated (digits, years) | 80.5 | 79.2 | 0.4 | 0.1 |
 | F9: ALL-CAPS shouting | 19.5 | 22.1 | -0.8 | -0.4 |
 | F10: Quoted speech | 68.8 | 80.5 | -0.4 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 45.5 | 50.6 | -0.0 | 0.1 |
-| F12: +first_pl +future_will +modal | 14.3 | 37.7 | -0.6 | -0.2 |
+| F12: +first_pl +future_will +modal | 13.0 | 37.7 | -0.6 | -0.2 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.6% (3.9%); outrage 65.8% (55.8%); humor 0.0% (0.1%); question 9.9% (13.0%); breaking_live 0.9% (16.3%); episode_show 89.2% (25.9%); interview_guest 8.1% (14.2%); reaction 1.8% (2.1%); confrontation 18.9% (9.2%); listicle 0.0% (0.1%); howto_explainer 0.9% (5.4%)

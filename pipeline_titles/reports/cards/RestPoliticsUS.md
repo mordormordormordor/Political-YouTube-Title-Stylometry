@@ -13,18 +13,18 @@ Top topics: Trump and Iran War Negotiations (19.2%); Trump's Mental Decline (5.8
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 31.4 | 21.6 | -0.1 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 47.0 | 47.5 | -0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.4 | 71.6 | -0.2 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 42.4 | 68.2 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 96.6 | 95.3 | 2.5 | 0.1 |
-| F6: Person-centred (named people) | 40.3 | 45.3 | -0.4 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 22.9 | 37.3 | -0.9 | -0.5 |
-| F8: Numeric and dated (digits, years) | 22.9 | 27.1 | -0.4 | -0.2 |
-| F9: ALL-CAPS shouting | 86.4 | 84.7 | 0.7 | -0.3 |
-| F10: Quoted speech | 11.0 | 30.5 | -0.8 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 32.2 | 36.4 | -0.6 | -0.3 |
-| F12: +first_pl +future_will +modal | 35.6 | 72.5 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 31.6 | 21.9 | -0.1 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 46.8 | 47.3 | -0.1 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.6 | 71.7 | -0.2 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 42.2 | 68.4 | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 96.6 | 95.4 | 2.5 | 0.1 |
+| F6: Person-centred (named people) | 40.1 | 45.1 | -0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 22.8 | 37.1 | -0.9 | -0.5 |
+| F8: Numeric and dated (digits, years) | 22.8 | 27.4 | -0.4 | -0.2 |
+| F9: ALL-CAPS shouting | 86.5 | 84.8 | 0.7 | -0.3 |
+| F10: Quoted speech | 11.0 | 30.4 | -0.8 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 32.1 | 36.3 | -0.6 | -0.3 |
+| F12: +first_pl +future_will +modal | 35.9 | 72.6 | -0.3 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.4% (3.6%); outrage 79.8% (63.9%); humor 0.0% (0.2%); question 26.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 2.4% (2.8%); interview_guest 6.2% (9.8%); reaction 0.0% (2.9%); confrontation 7.2% (7.7%); listicle 0.0% (0.1%); howto_explainer 22.6% (8.0%)
@@ -40,12 +40,12 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 21 | 0.29 | -1.22 | -0.06 | -0.33 | 4.46 | -0.30 | -0.97 | 0.00 | 0.09 | -0.92 | -0.50 | 0.62 | 0.00 | 0.71 | 0.00 |
-| 2026-02 | 21 | -0.52 | 0.42 | -0.45 | -0.26 | 3.71 | -0.57 | 0.03 | -0.10 | 0.28 | -0.95 | -0.65 | -0.28 | 0.00 | 0.76 | 0.00 |
+| 2026-02 | 21 | -0.51 | 0.42 | -0.45 | -0.26 | 3.71 | -0.57 | 0.03 | -0.10 | 0.28 | -0.95 | -0.65 | -0.28 | 0.00 | 0.76 | 0.00 |
 | 2026-03 | 29 | -0.74 | -0.86 | -0.21 | -0.80 | 2.98 | -0.23 | -0.92 | -0.68 | 1.62 | -1.50 | -0.21 | -0.65 | 0.00 | 0.79 | 0.00 |
 | 2026-04 | 32 | -0.35 | -0.73 | -0.49 | -0.00 | 1.98 | -0.64 | -0.80 | -0.44 | 1.49 | -1.06 | -0.12 | 0.10 | 0.06 | 0.81 | 0.00 |
 | 2026-05 | 30 | -0.44 | 0.69 | -0.36 | -0.25 | 1.93 | -0.70 | -1.17 | -1.01 | 0.81 | -0.63 | -0.77 | -0.53 | 0.07 | 0.80 | 0.00 |
 | 2026-06 | 23 | -0.53 | -0.95 | -0.20 | -0.01 | 0.64 | -0.45 | -0.58 | 0.16 | 1.29 | -1.14 | 0.08 | -1.55 | 0.00 | 0.96 | 0.00 |
-| 2026-07 | 22 | 0.27 | 0.95 | -0.00 | -0.16 | 3.93 | -0.52 | -1.34 | -0.60 | 0.48 | -0.05 | -0.89 | 1.02 | 0.05 | 0.77 | 0.00 |
+| 2026-07 | 22 | 0.28 | 0.95 | -0.00 | -0.16 | 3.93 | -0.52 | -1.34 | -0.60 | 0.48 | -0.05 | -0.89 | 1.02 | 0.05 | 0.77 | 0.00 |
 | 2026-08 | 22 | 0.75 | 1.79 | -0.01 | 0.59 | 1.36 | 0.48 | -1.14 | -0.24 | -0.13 | 0.21 | -1.03 | -0.65 | 0.09 | 0.77 | 0.00 |
 
 

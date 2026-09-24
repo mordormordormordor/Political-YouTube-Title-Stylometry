@@ -14,17 +14,17 @@ Top topics: Books and Cultural Commentary (5.9%); ICE protests in Minneapolis (4
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 93.2 | 89.0 | 0.9 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 23.7 | 21.6 | -0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.0 | 57.2 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 57.6 | 53.4 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 80.1 | 79.2 | 1.0 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 23.6 | 21.5 | -0.5 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.2 | 57.4 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 57.8 | 53.6 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 80.2 | 79.3 | 1.0 | 0.1 |
 | F6: Person-centred (named people) | 8.9 | 12.7 | -0.9 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 12.7 | 20.3 | -1.1 | -0.5 |
-| F8: Numeric and dated (digits, years) | 80.9 | 83.5 | 0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 39.4 | 33.9 | -0.4 | -0.3 |
-| F10: Quoted speech | 52.1 | 57.6 | -0.4 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 68.2 | 70.8 | 0.1 | -0.3 |
-| F12: +first_pl +future_will +modal | 63.1 | 70.8 | -0.0 | -0.1 |
+| F8: Numeric and dated (digits, years) | 81.0 | 83.5 | 0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 39.7 | 34.2 | -0.4 | -0.3 |
+| F10: Quoted speech | 51.9 | 57.8 | -0.4 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 67.9 | 70.5 | 0.1 | -0.3 |
+| F12: +first_pl +future_will +modal | 63.3 | 70.9 | -0.0 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (3.6%); outrage 34.4% (63.9%); humor 0.0% (0.2%); question 18.7% (15.6%); breaking_live 0.0% (2.9%); episode_show 1.1% (2.8%); interview_guest 4.9% (9.8%); reaction 0.0% (2.9%); confrontation 4.2% (7.7%); listicle 0.2% (0.1%); howto_explainer 9.2% (8.0%)
@@ -44,9 +44,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-03 | 58 | 0.02 | -0.55 | -0.38 | -0.13 | 0.62 | -1.04 | -1.08 | 0.08 | -0.41 | -0.05 | -0.26 | 0.08 | 0.00 | 0.41 | 0.00 |
 | 2026-04 | 57 | 1.18 | -0.73 | -0.49 | -0.05 | 0.62 | -0.79 | -1.20 | -0.00 | -0.29 | -0.61 | 0.22 | -0.32 | 0.00 | 0.30 | 0.00 |
 | 2026-05 | 49 | 0.52 | -0.83 | -0.26 | -0.23 | 1.49 | -1.00 | -0.77 | 0.26 | -0.42 | 0.10 | -0.00 | -0.54 | 0.00 | 0.33 | 0.00 |
-| 2026-06 | 58 | 1.21 | -0.48 | -0.39 | -0.19 | 1.17 | -1.05 | -0.93 | 0.35 | -0.49 | -0.54 | 0.31 | -0.11 | 0.00 | 0.22 | 0.00 |
-| 2026-07 | 57 | 0.99 | -0.57 | -0.26 | -0.13 | 1.08 | -0.73 | -0.94 | -0.28 | -0.27 | -0.89 | -0.15 | -0.17 | 0.00 | 0.37 | 0.00 |
-| 2026-08 | 53 | 1.03 | 0.04 | -0.31 | 0.04 | 1.81 | -1.11 | -1.20 | 0.04 | -0.34 | -0.30 | 0.28 | 0.80 | 0.06 | 0.23 | 0.00 |
+| 2026-06 | 58 | 1.21 | -0.48 | -0.39 | -0.19 | 1.17 | -1.05 | -0.93 | 0.35 | -0.49 | -0.54 | 0.31 | -0.10 | 0.00 | 0.22 | 0.00 |
+| 2026-07 | 57 | 0.99 | -0.57 | -0.26 | -0.13 | 1.08 | -0.73 | -0.94 | -0.28 | -0.27 | -0.88 | -0.15 | -0.17 | 0.00 | 0.37 | 0.00 |
+| 2026-08 | 53 | 1.03 | 0.04 | -0.31 | 0.04 | 1.81 | -1.11 | -1.20 | 0.04 | -0.34 | -0.30 | 0.28 | 0.81 | 0.06 | 0.23 | 0.00 |
 | 2026-09* | 24 | 0.72 | 0.34 | -0.11 | 0.04 | 1.70 | -1.19 | -1.09 | -0.22 | -0.55 | -0.29 | 0.06 | -0.01 | 0.04 | 0.33 | 0.00 |
 
 

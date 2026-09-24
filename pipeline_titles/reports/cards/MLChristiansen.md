@@ -13,21 +13,21 @@ Top topics: ICE protests in Minneapolis (7.8%); police bodycam and law enforceme
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.7 | 28.8 | 0.0 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 34.7 | 35.2 | -0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 40.3 | 36.0 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 31.4 | 14.8 | -0.2 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.9 | 29.1 | 0.1 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 34.6 | 35.0 | -0.4 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 40.5 | 36.3 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 31.2 | 14.8 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 3.8 | 5.1 | -0.7 | 0.2 |
-| F6: Person-centred (named people) | 75.4 | 65.3 | 0.3 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 34.3 | 63.6 | -0.7 | -0.7 |
-| F8: Numeric and dated (digits, years) | 71.2 | 70.3 | 0.0 | -0.1 |
-| F9: ALL-CAPS shouting | 6.4 | 1.7 | -0.9 | -0.3 |
-| F10: Quoted speech | 91.9 | 91.5 | 0.9 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 84.3 | 82.6 | 0.5 | -0.2 |
-| F12: +first_pl +future_will +modal | 62.3 | 51.7 | -0.0 | -0.3 |
+| F6: Person-centred (named people) | 75.5 | 65.0 | 0.3 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 34.2 | 63.3 | -0.7 | -0.6 |
+| F8: Numeric and dated (digits, years) | 71.3 | 70.5 | 0.0 | -0.1 |
+| F9: ALL-CAPS shouting | 6.8 | 1.7 | -0.9 | -0.3 |
+| F10: Quoted speech | 92.0 | 91.6 | 0.9 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 84.4 | 82.7 | 0.5 | -0.2 |
+| F12: +first_pl +future_will +modal | 62.4 | 51.9 | -0.0 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 54.3% (59.8%); humor 0.0% (0.2%); question 7.8% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 1.7% (7.7%); reaction 0.0% (2.2%); confrontation 9.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.5% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 54.3% (60.1%); humor 0.0% (0.2%); question 7.8% (15.2%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.4%); interview_guest 1.7% (7.8%); reaction 0.0% (2.2%); confrontation 9.5% (8.2%); listicle 0.0% (0.1%); howto_explainer 3.5% (9.3%)
 
 
 Nearest style neighbors: @nypost [right]; @rolandsmartin [left]; @clayandbuck [right]; @oann [right]; @DemocracyNow [left]
@@ -39,9 +39,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-06 | 21 | -1.15 | -0.60 | -0.37 | -0.29 | -0.74 | 0.72 | -0.83 | 0.39 | -0.90 | 0.76 | -0.10 | -0.11 | 0.00 | 0.52 | 0.00 |
+| 2026-06 | 21 | -1.15 | -0.60 | -0.37 | -0.29 | -0.74 | 0.72 | -0.83 | 0.39 | -0.90 | 0.76 | -0.11 | -0.11 | 0.00 | 0.52 | 0.00 |
 | 2026-07 | 21 | 0.75 | -1.08 | -0.23 | -0.21 | -0.74 | 0.03 | -0.82 | -0.08 | -0.72 | 1.36 | 0.84 | 0.27 | 0.00 | 0.38 | 0.00 |
-| 2026-08 | 15 | 0.89 | -0.60 | -0.45 | -0.08 | -0.38 | 1.16 | -0.92 | -0.11 | -0.15 | -0.73 | 0.77 | -0.25 | 0.00 | 0.60 | 0.00 |
+| 2026-08 | 15 | 0.89 | -0.60 | -0.45 | -0.08 | -0.38 | 1.16 | -0.92 | -0.11 | -0.15 | -0.72 | 0.77 | -0.24 | 0.00 | 0.60 | 0.00 |
 
 
 Engagement (n = 116, R2 = 0.5687; log views per within-creator SD, month + topic controls):

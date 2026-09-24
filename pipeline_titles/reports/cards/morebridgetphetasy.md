@@ -13,21 +13,21 @@ Top topics: Left-Wing Political Violence (7.0%); JLP Weekly Series (6.5%); AI an
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 79.2 | 91.9 | 0.6 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 91.1 | 88.1 | 0.9 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 23.3 | 23.3 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 53.0 | 64.4 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 76.7 | 83.5 | 0.8 | 0.2 |
-| F6: Person-centred (named people) | 26.7 | 11.9 | -0.6 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 36.9 | 39.0 | -0.7 | -0.7 |
-| F8: Numeric and dated (digits, years) | 44.5 | 63.1 | -0.2 | -0.1 |
-| F9: ALL-CAPS shouting | 63.1 | 61.4 | -0.1 | -0.3 |
-| F10: Quoted speech | 34.7 | 43.2 | -0.5 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 71.6 | 73.7 | 0.2 | -0.2 |
-| F12: +first_pl +future_will +modal | 61.0 | 50.4 | -0.0 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 79.3 | 92.0 | 0.6 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 91.1 | 88.2 | 0.9 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 23.2 | 23.6 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 52.7 | 64.6 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 76.8 | 83.5 | 0.8 | 0.2 |
+| F6: Person-centred (named people) | 26.6 | 11.8 | -0.6 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 36.7 | 38.8 | -0.7 | -0.6 |
+| F8: Numeric and dated (digits, years) | 44.7 | 63.3 | -0.2 | -0.1 |
+| F9: ALL-CAPS shouting | 63.3 | 61.6 | -0.1 | -0.3 |
+| F10: Quoted speech | 35.0 | 43.0 | -0.5 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 71.3 | 73.4 | 0.2 | -0.2 |
+| F12: +first_pl +future_will +modal | 62.0 | 50.6 | -0.0 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (4.8%); outrage 44.0% (59.8%); humor 0.5% (0.2%); question 20.5% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 2.0% (7.7%); reaction 1.0% (2.2%); confrontation 4.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 12.5% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (4.8%); outrage 44.0% (60.1%); humor 0.5% (0.2%); question 20.5% (15.2%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.4%); interview_guest 2.0% (7.8%); reaction 1.0% (2.2%); confrontation 4.0% (8.2%); listicle 0.0% (0.1%); howto_explainer 12.5% (9.3%)
 
 
 Nearest style neighbors: @thomhartmann [left]; @ChadPrather1 [right]; @theisabelbrown [right]; @JillianMichaels [right]; @RileyGaines [right]
@@ -39,14 +39,14 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 16 | 1.15 | 1.23 | -0.64 | 0.08 | 0.64 | -0.77 | -0.19 | -1.29 | 0.07 | -0.39 | 0.87 | -0.64 | 0.00 | 0.19 | 0.00 |
-| 2026-02 | 22 | 0.13 | 0.68 | -0.60 | -0.30 | 1.03 | -0.77 | -0.67 | -0.64 | -0.41 | -0.71 | 0.25 | 0.16 | 0.00 | 0.50 | 0.00 |
-| 2026-03 | 27 | 0.48 | 0.80 | -0.31 | -0.07 | 1.71 | -0.83 | -0.78 | 0.02 | -0.38 | -0.67 | 0.01 | -0.19 | 0.00 | 0.44 | 0.00 |
+| 2026-01 | 16 | 1.15 | 1.23 | -0.64 | 0.08 | 0.64 | -0.77 | -0.19 | -1.29 | 0.07 | -0.39 | 0.87 | -0.63 | 0.00 | 0.19 | 0.00 |
+| 2026-02 | 22 | 0.13 | 0.68 | -0.60 | -0.30 | 1.03 | -0.77 | -0.66 | -0.64 | -0.41 | -0.71 | 0.25 | 0.16 | 0.00 | 0.50 | 0.00 |
+| 2026-03 | 27 | 0.49 | 0.80 | -0.31 | -0.07 | 1.71 | -0.83 | -0.78 | 0.02 | -0.37 | -0.67 | 0.01 | -0.19 | 0.00 | 0.44 | 0.00 |
 | 2026-04 | 23 | 0.44 | -0.05 | -0.29 | -0.24 | 1.70 | -0.33 | -0.30 | 0.10 | -0.40 | -0.58 | 0.56 | -0.76 | 0.00 | 0.30 | 0.04 |
-| 2026-05 | 25 | 0.48 | 0.77 | -0.40 | -0.01 | 1.50 | -0.20 | -0.60 | -0.08 | -0.43 | -0.33 | 0.11 | -0.23 | 0.00 | 0.52 | 0.00 |
-| 2026-06 | 27 | 0.12 | 0.21 | -0.52 | -0.01 | 0.25 | -0.34 | -0.80 | 0.05 | -0.52 | -0.57 | -0.73 | 0.31 | 0.00 | 0.52 | 0.00 |
-| 2026-07 | 21 | 1.36 | 1.69 | -0.35 | 0.07 | 0.39 | -1.23 | -0.32 | -0.52 | 0.48 | -0.45 | 0.90 | 0.03 | 0.05 | 0.24 | 0.00 |
-| 2026-08 | 28 | 0.59 | 2.38 | -0.49 | -0.36 | -0.23 | -0.30 | -1.20 | 0.10 | 0.03 | -0.41 | -0.22 | 1.02 | 0.00 | 0.57 | 0.00 |
+| 2026-05 | 25 | 0.48 | 0.77 | -0.40 | -0.01 | 1.50 | -0.20 | -0.60 | -0.08 | -0.43 | -0.33 | 0.11 | -0.22 | 0.00 | 0.52 | 0.00 |
+| 2026-06 | 27 | 0.12 | 0.21 | -0.52 | -0.01 | 0.25 | -0.34 | -0.80 | 0.05 | -0.51 | -0.57 | -0.73 | 0.32 | 0.00 | 0.52 | 0.00 |
+| 2026-07 | 21 | 1.36 | 1.68 | -0.35 | 0.07 | 0.39 | -1.23 | -0.32 | -0.52 | 0.48 | -0.45 | 0.90 | 0.03 | 0.05 | 0.24 | 0.00 |
+| 2026-08 | 28 | 0.59 | 2.38 | -0.49 | -0.36 | -0.23 | -0.30 | -1.20 | 0.10 | 0.03 | -0.41 | -0.22 | 1.03 | 0.00 | 0.57 | 0.00 |
 
 
 Engagement (n = 200, R2 = 0.4051; log views per within-creator SD, month + topic controls):

@@ -13,18 +13,18 @@ Top topics: Feminism and Gender Roles Debate (20.0%); Candace Owens Controversie
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 34.7 | 54.7 | -0.1 | 0.5 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 53.4 | 64.8 | 0.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 57.6 | 33.9 | -0.3 | -0.4 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 65.7 | 77.5 | -0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 75.8 | 81.8 | 0.8 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 35.0 | 54.9 | -0.1 | 0.5 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 53.2 | 64.6 | 0.0 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 57.8 | 34.2 | -0.3 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 65.8 | 77.6 | -0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 75.9 | 81.9 | 0.8 | 0.1 |
 | F6: Person-centred (named people) | 5.1 | 11.0 | -1.0 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 80.9 | 78.8 | 0.0 | -0.3 |
-| F8: Numeric and dated (digits, years) | 23.7 | 20.8 | -0.4 | 0.0 |
-| F9: ALL-CAPS shouting | 29.7 | 29.7 | -0.5 | -0.3 |
-| F10: Quoted speech | 67.8 | 60.6 | -0.1 | -0.1 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 41.5 | 35.2 | -0.4 | -0.1 |
-| F12: +first_pl +future_will +modal | 5.1 | 3.0 | -0.9 | -0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 81.0 | 78.9 | 0.0 | -0.3 |
+| F8: Numeric and dated (digits, years) | 23.6 | 20.7 | -0.4 | 0.0 |
+| F9: ALL-CAPS shouting | 30.0 | 30.0 | -0.5 | -0.3 |
+| F10: Quoted speech | 67.5 | 60.8 | -0.1 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 41.4 | 35.0 | -0.4 | -0.1 |
+| F12: +first_pl +future_will +modal | 5.5 | 3.4 | -0.9 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.0% (3.1%); outrage 42.0% (36.7%); humor 0.0% (0.1%); question 20.0% (13.8%); breaking_live 0.0% (1.2%); episode_show 0.0% (7.1%); interview_guest 8.0% (11.7%); reaction 4.0% (2.0%); confrontation 12.0% (7.6%); listicle 0.0% (0.1%); howto_explainer 14.0% (6.8%)

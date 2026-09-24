@@ -13,18 +13,18 @@ Top topics: Hasan Piker Controversy (15.2%); Trump and China Relations (10.4%); 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 57.6 | 63.6 | 0.3 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 67.4 | 59.7 | 0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 33.1 | 19.5 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 45.3 | 43.6 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 86.9 | 82.6 | 1.3 | 0.1 |
-| F6: Person-centred (named people) | 69.1 | 77.1 | 0.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 53.0 | 46.2 | -0.5 | -0.5 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 58.2 | 63.7 | 0.3 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 67.1 | 59.5 | 0.3 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 33.8 | 19.8 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 45.1 | 43.5 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 86.9 | 82.7 | 1.3 | 0.1 |
+| F6: Person-centred (named people) | 68.8 | 77.2 | 0.1 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 52.7 | 46.0 | -0.5 | -0.5 |
 | F8: Numeric and dated (digits, years) | 5.5 | 3.8 | -0.6 | -0.2 |
 | F9: ALL-CAPS shouting | 92.8 | 92.4 | 1.6 | -0.3 |
-| F10: Quoted speech | 75.0 | 66.5 | 0.1 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 55.5 | 47.9 | -0.2 | -0.3 |
-| F12: +first_pl +future_will +modal | 16.9 | 15.3 | -0.6 | -0.1 |
+| F10: Quoted speech | 75.1 | 66.7 | 0.1 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 55.3 | 47.7 | -0.2 | -0.3 |
+| F12: +first_pl +future_will +modal | 17.3 | 15.6 | -0.6 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.0% (3.6%); outrage 74.4% (63.9%); humor 0.8% (0.2%); question 14.4% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 8.0% (9.8%); reaction 4.0% (2.9%); confrontation 5.6% (7.7%); listicle 0.0% (0.1%); howto_explainer 20.0% (8.0%)
@@ -40,10 +40,10 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-03 | 17 | 0.79 | 0.27 | -0.23 | 0.26 | 1.24 | 0.33 | -0.10 | -0.21 | 1.44 | 1.48 | 0.12 | -1.19 | 0.06 | 0.53 | 0.00 |
-| 2026-05 | 15 | 0.08 | 0.42 | -0.45 | -0.37 | 0.51 | 0.26 | -0.79 | -0.63 | 1.05 | -0.32 | -0.91 | 0.00 | 0.00 | 0.53 | 0.07 |
-| 2026-06 | 17 | 0.08 | 0.57 | -0.38 | -0.15 | 0.89 | 1.05 | -0.43 | -0.72 | 1.80 | -0.87 | -0.52 | -0.88 | 0.06 | 0.76 | 0.00 |
+| 2026-05 | 15 | 0.08 | 0.42 | -0.45 | -0.37 | 0.51 | 0.26 | -0.79 | -0.63 | 1.05 | -0.32 | -0.91 | 0.01 | 0.00 | 0.53 | 0.07 |
+| 2026-06 | 17 | 0.08 | 0.57 | -0.38 | -0.15 | 0.88 | 1.05 | -0.43 | -0.72 | 1.80 | -0.87 | -0.52 | -0.88 | 0.06 | 0.76 | 0.00 |
 | 2026-07 | 19 | 0.38 | 0.55 | -0.41 | -0.12 | 1.39 | -0.60 | -1.04 | -0.83 | 1.71 | -0.77 | 0.17 | -0.02 | 0.05 | 0.74 | 0.00 |
-| 2026-08 | 18 | 0.03 | 0.25 | -0.40 | -0.09 | 2.65 | 0.66 | -0.10 | -0.61 | 1.23 | -0.50 | -0.47 | -1.10 | 0.06 | 0.89 | 0.00 |
+| 2026-08 | 18 | 0.04 | 0.24 | -0.40 | -0.09 | 2.65 | 0.66 | -0.11 | -0.61 | 1.23 | -0.50 | -0.47 | -1.09 | 0.06 | 0.89 | 0.00 |
 
 
 Engagement (n = 125, R2 = 0.4718; log views per within-creator SD, month + topic controls):

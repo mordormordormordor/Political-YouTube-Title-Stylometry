@@ -33,7 +33,7 @@
     "run": 3,
     "what": "every title again",
     "batch_order": "shuffled",
-    "titles": 12478,
+    "titles": 12528,
     "calls": 624,
     "minutes": 135.3,
     "output_tokens": 387933,

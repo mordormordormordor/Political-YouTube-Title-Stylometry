@@ -13,18 +13,18 @@ Top topics: Israel and Palestine Conflict (7.0%); Hasan Piker Controversy (3.7%)
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 74.6 | 66.5 | 0.5 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 37.7 | 35.6 | -0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 14.8 | 15.3 | -0.5 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 36.4 | 32.6 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 74.2 | 68.6 | 0.7 | 0.1 |
-| F6: Person-centred (named people) | 36.9 | 52.1 | -0.4 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 41.1 | 44.9 | -0.7 | -0.5 |
-| F8: Numeric and dated (digits, years) | 7.6 | 12.3 | -0.6 | -0.2 |
-| F9: ALL-CAPS shouting | 34.3 | 36.9 | -0.5 | -0.3 |
-| F10: Quoted speech | 5.9 | 12.3 | -0.9 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 74.7 | 66.7 | 0.5 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 37.6 | 35.4 | -0.3 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 14.8 | 15.6 | -0.5 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 36.3 | 32.5 | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 74.3 | 68.8 | 0.7 | 0.1 |
+| F6: Person-centred (named people) | 36.7 | 51.9 | -0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 40.9 | 44.7 | -0.7 | -0.5 |
+| F8: Numeric and dated (digits, years) | 7.6 | 12.2 | -0.6 | -0.2 |
+| F9: ALL-CAPS shouting | 34.6 | 37.1 | -0.5 | -0.3 |
+| F10: Quoted speech | 5.9 | 12.2 | -0.9 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 6.8 | 11.4 | -1.1 | -0.3 |
-| F12: +first_pl +future_will +modal | 81.8 | 73.3 | 0.3 | -0.1 |
+| F12: +first_pl +future_will +modal | 81.9 | 73.4 | 0.3 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.5% (3.6%); outrage 59.4% (63.9%); humor 0.7% (0.2%); question 26.9% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.4% (2.8%); interview_guest 14.8% (9.8%); reaction 0.4% (2.9%); confrontation 2.2% (7.7%); listicle 0.0% (0.1%); howto_explainer 5.9% (8.0%)
@@ -44,9 +44,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-03 | 33 | 0.36 | -0.75 | -0.30 | -0.19 | 0.41 | -0.58 | -0.47 | -0.77 | -0.50 | -1.22 | -0.79 | 0.10 | 0.09 | 0.52 | 0.00 |
 | 2026-04 | 26 | 0.71 | -0.05 | -0.58 | -0.43 | 1.22 | -0.75 | -0.64 | -0.89 | -0.37 | -1.12 | -0.99 | 0.64 | 0.04 | 0.50 | 0.04 |
 | 2026-05 | 43 | 0.76 | -0.33 | -0.22 | 0.34 | 0.84 | -0.53 | -0.80 | -0.56 | -0.15 | -0.58 | -0.88 | 0.33 | 0.12 | 0.53 | 0.00 |
-| 2026-06 | 38 | 0.37 | -0.43 | -0.60 | -0.40 | 0.87 | -0.23 | -0.84 | -0.87 | -0.56 | -0.95 | -1.19 | 0.76 | 0.00 | 0.58 | 0.03 |
-| 2026-07 | 37 | 0.34 | -0.46 | -0.66 | -0.25 | -0.05 | -1.01 | -0.55 | -0.04 | -0.67 | -0.57 | -1.52 | -0.14 | 0.05 | 0.70 | 0.00 |
-| 2026-08 | 25 | 1.06 | 0.39 | -0.47 | -0.18 | 1.79 | -0.07 | -0.70 | -0.81 | -0.35 | -0.98 | -0.73 | -0.24 | 0.12 | 0.60 | 0.00 |
+| 2026-06 | 38 | 0.37 | -0.43 | -0.60 | -0.40 | 0.87 | -0.23 | -0.84 | -0.87 | -0.56 | -0.95 | -1.19 | 0.77 | 0.00 | 0.58 | 0.03 |
+| 2026-07 | 37 | 0.34 | -0.46 | -0.66 | -0.25 | -0.05 | -1.01 | -0.55 | -0.04 | -0.66 | -0.57 | -1.52 | -0.14 | 0.05 | 0.70 | 0.00 |
+| 2026-08 | 25 | 1.06 | 0.38 | -0.47 | -0.18 | 1.79 | -0.08 | -0.70 | -0.81 | -0.35 | -0.98 | -0.73 | -0.24 | 0.12 | 0.60 | 0.00 |
 
 
 Engagement (n = 257, R2 = 0.2546; log views per within-creator SD, month + topic controls):
@@ -104,7 +104,7 @@ Top topics: Political Figures and Callouts (6.7%); ICE protests in Minneapolis (
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.6%); outrage 40.0% (62.7%); humor 1.7% (0.1%); question 6.7% (11.3%); breaking_live 0.0% (17.4%); episode_show 28.3% (6.2%); interview_guest 78.3% (18.4%); reaction 0.0% (1.4%); confrontation 1.7% (15.4%); listicle 0.0% (0.0%); howto_explainer 1.7% (2.8%)
 
 
-Nearest style neighbors: @rolandsmartin [left]; @NewsmaxTV [right]; @hutch [neutral]; @thewarningwithsteveschmidt [left]; @TheYoungTurks [left]
+Nearest style neighbors: @rolandsmartin [left]; @NewsmaxTV [right]; @thewarningwithsteveschmidt [left]; @TheYoungTurks [left]; @hutch [neutral]
 
 Nearest topic neighbors: @TheMajorityReport [left]; @NewsmaxTV [right]; @RealAmericasVoice [right]; @thewarningwithsteveschmidt [left]; @underthedesknews [left]
 

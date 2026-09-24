@@ -19,7 +19,7 @@ Top topics: Lindsay Clancy Murder Trial (44.4%); Karmelo Anthony Trial Verdict (
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 0.0 | 0.2 |
 | F6: Person-centred (named people) | None | None | -0.5 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.2 | -0.7 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.2 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | -0.1 | -0.1 |
 | F9: ALL-CAPS shouting | None | None | -1.3 | -0.3 |
 | F10: Quoted speech | None | None | -0.5 | -0.4 |
@@ -27,7 +27,7 @@ Top topics: Lindsay Clancy Murder Trial (44.4%); Karmelo Anthony Trial Verdict (
 | F12: +first_pl +future_will +modal | None | None | -1.1 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 61.1% (59.8%); humor 0.0% (0.2%); question 22.2% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 5.6% (7.7%); reaction 5.6% (2.2%); confrontation 16.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 11.1% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 61.1% (60.1%); humor 0.0% (0.2%); question 22.2% (15.2%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.4%); interview_guest 5.6% (7.8%); reaction 5.6% (2.2%); confrontation 16.7% (8.2%); listicle 0.0% (0.1%); howto_explainer 11.1% (9.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.
@@ -72,7 +72,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-02 | 19 | 0.29 | 0.16 | -0.66 | -0.04 | -0.18 | 0.33 | -0.26 | -0.17 | -0.03 | -0.24 | 1.62 | -0.25 | 0.00 | 0.42 | 0.00 |
+| 2026-02 | 19 | 0.29 | 0.16 | -0.66 | -0.04 | -0.18 | 0.33 | -0.26 | -0.17 | -0.02 | -0.24 | 1.62 | -0.25 | 0.00 | 0.42 | 0.00 |
 | 2026-03 | 22 | 0.47 | 0.48 | -0.01 | 0.57 | 0.75 | 0.27 | -0.44 | 1.55 | 0.60 | -0.01 | 1.19 | -0.15 | 0.00 | 0.36 | 0.00 |
 
 

@@ -13,18 +13,18 @@ Top topics: Trump's Mental Decline (13.9%); Shocking Events and Reactions (12.2%
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 9.3 | 8.1 | -0.7 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 19.9 | 38.6 | -0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 91.9 | 87.3 | 0.2 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 9.7 | 8.4 | -0.7 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 19.8 | 38.4 | -0.6 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 92.0 | 87.3 | 0.2 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 98.3 | 98.7 | 1.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 19.1 | 13.6 | -0.3 | 0.1 |
-| F6: Person-centred (named people) | 57.2 | 32.6 | -0.2 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 55.5 | 47.9 | -0.5 | -0.5 |
-| F8: Numeric and dated (digits, years) | 55.1 | 16.5 | -0.1 | -0.2 |
+| F5: Question and explainer framing (why, what, ?) | 19.0 | 13.5 | -0.4 | 0.1 |
+| F6: Person-centred (named people) | 57.0 | 32.5 | -0.2 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 55.3 | 47.7 | -0.5 | -0.5 |
+| F8: Numeric and dated (digits, years) | 55.3 | 16.5 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 91.1 | 94.9 | 1.4 | -0.3 |
 | F10: Quoted speech | 16.5 | 2.5 | -0.7 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 29.2 | 16.9 | -0.6 | -0.3 |
-| F12: +first_pl +future_will +modal | 11.9 | 8.1 | -0.7 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 29.1 | 16.9 | -0.6 | -0.3 |
+| F12: +first_pl +future_will +modal | 12.2 | 8.4 | -0.7 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 12.2% (3.6%); outrage 93.8% (63.9%); humor 0.0% (0.2%); question 1.6% (15.6%); breaking_live 5.7% (2.9%); episode_show 0.0% (2.8%); interview_guest 2.7% (9.8%); reaction 0.2% (2.9%); confrontation 8.9% (7.7%); listicle 0.0% (0.1%); howto_explainer 1.1% (8.0%)
@@ -44,10 +44,10 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-03 | 77 | -1.00 | -1.23 | -0.08 | 1.22 | -0.54 | -0.31 | -0.71 | -0.44 | 1.45 | -1.21 | -0.52 | -1.06 | 0.10 | 0.96 | 0.00 |
 | 2026-04 | 67 | -1.58 | -1.01 | -0.11 | 0.56 | -0.43 | -0.47 | -0.41 | -0.26 | 1.49 | -0.95 | -0.21 | -1.00 | 0.09 | 1.00 | 0.00 |
 | 2026-05 | 114 | -0.79 | -0.51 | 0.30 | 1.74 | -0.43 | 0.09 | -0.37 | -0.15 | 2.77 | -0.68 | -0.49 | -0.59 | 0.11 | 0.98 | 0.00 |
-| 2026-06 | 91 | -0.45 | -0.57 | 0.46 | 1.34 | -0.28 | 0.14 | -0.37 | -0.13 | 2.52 | -0.65 | -0.43 | -0.37 | 0.14 | 0.95 | 0.00 |
+| 2026-06 | 91 | -0.45 | -0.57 | 0.46 | 1.34 | -0.28 | 0.14 | -0.37 | -0.13 | 2.53 | -0.65 | -0.43 | -0.37 | 0.14 | 0.95 | 0.00 |
 | 2026-07 | 48 | -0.65 | -0.62 | 0.53 | 1.49 | -0.41 | -0.10 | -0.45 | 0.14 | 0.90 | -0.59 | -0.48 | -0.79 | 0.12 | 0.92 | 0.00 |
 | 2026-08 | 66 | -0.32 | -0.82 | 0.21 | 1.66 | -0.39 | 0.14 | -0.66 | 0.00 | 0.92 | -0.64 | -0.77 | -0.66 | 0.17 | 0.97 | 0.00 |
-| 2026-09* | 47 | -0.13 | -0.26 | 0.51 | 2.54 | 0.05 | -0.23 | -0.43 | -0.07 | -0.43 | -0.54 | -0.73 | -0.20 | 0.21 | 0.64 | 0.00 |
+| 2026-09* | 47 | -0.13 | -0.27 | 0.51 | 2.54 | 0.05 | -0.23 | -0.43 | -0.07 | -0.43 | -0.54 | -0.73 | -0.20 | 0.21 | 0.64 | 0.00 |
 
 
 Engagement (n = 632, R2 = 0.1526; log views per within-creator SD, month + topic controls):

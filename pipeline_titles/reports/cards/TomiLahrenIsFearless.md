@@ -13,21 +13,21 @@ Top topics: Megyn Kelly and Political Rants (9.7%); UFC at White House Event (6.
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 54.7 | 59.7 | 0.3 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 66.1 | 65.7 | 0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 50.8 | 46.6 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 54.2 | 51.7 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 63.1 | 61.4 | 0.4 | 0.2 |
-| F6: Person-centred (named people) | 91.9 | 93.2 | 0.8 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 20.3 | 12.3 | -0.9 | -0.7 |
-| F8: Numeric and dated (digits, years) | 49.6 | 48.7 | -0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 18.6 | 17.4 | -0.7 | -0.3 |
-| F10: Quoted speech | 88.1 | 87.7 | 0.7 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 54.7 | 60.2 | -0.2 | -0.2 |
-| F12: +first_pl +future_will +modal | 33.9 | 25.8 | -0.3 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 54.9 | 59.9 | 0.3 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 65.8 | 65.4 | 0.3 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 51.1 | 46.8 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 54.4 | 51.9 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 63.3 | 61.6 | 0.4 | 0.2 |
+| F6: Person-centred (named people) | 92.0 | 93.2 | 0.8 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 20.3 | 12.2 | -0.9 | -0.6 |
+| F8: Numeric and dated (digits, years) | 49.8 | 48.9 | -0.1 | -0.1 |
+| F9: ALL-CAPS shouting | 19.0 | 17.7 | -0.7 | -0.3 |
+| F10: Quoted speech | 88.2 | 87.8 | 0.7 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 54.4 | 59.9 | -0.2 | -0.2 |
+| F12: +first_pl +future_will +modal | 34.2 | 26.2 | -0.3 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (4.8%); outrage 54.0% (59.8%); humor 0.0% (0.2%); question 13.3% (15.3%); breaking_live 0.9% (2.0%); episode_show 0.0% (7.5%); interview_guest 13.3% (7.7%); reaction 3.5% (2.2%); confrontation 17.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 18.6% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.8% (4.8%); outrage 54.0% (60.1%); humor 0.0% (0.2%); question 13.3% (15.2%); breaking_live 0.9% (2.0%); episode_show 0.0% (7.4%); interview_guest 13.3% (7.8%); reaction 3.5% (2.2%); confrontation 17.7% (8.2%); listicle 0.0% (0.1%); howto_explainer 18.6% (9.3%)
 
 
 Nearest style neighbors: @HangOutwithSeanHannity [right]; @clayandbuck [right]; @rolandsmartin [left]; @DropSiteNews [left]; @PTLRadioShow [left]
@@ -39,10 +39,10 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 16 | -0.21 | 0.73 | -0.39 | 0.11 | 0.04 | 0.79 | -1.01 | -0.05 | -0.81 | 0.01 | -0.54 | -0.72 | 0.00 | 0.50 | 0.00 |
-| 2026-02 | 15 | 0.41 | -0.21 | -0.39 | -0.54 | -0.50 | 1.09 | -0.38 | -0.01 | -1.11 | -0.42 | 0.00 | -0.27 | 0.00 | 0.53 | 0.00 |
-| 2026-03 | 16 | 0.05 | 0.57 | -0.21 | 0.09 | 0.70 | 0.65 | -1.15 | 0.12 | -0.44 | 1.29 | -0.65 | -1.17 | 0.00 | 0.75 | 0.00 |
-| 2026-05 | 15 | 0.75 | 0.35 | -0.01 | 0.02 | 1.10 | 0.93 | -1.04 | -0.26 | -0.58 | 1.88 | -0.32 | 0.00 | 0.00 | 0.67 | 0.00 |
+| 2026-01 | 16 | -0.21 | 0.73 | -0.39 | 0.11 | 0.04 | 0.79 | -1.01 | -0.05 | -0.81 | 0.01 | -0.54 | -0.71 | 0.00 | 0.50 | 0.00 |
+| 2026-02 | 15 | 0.41 | -0.21 | -0.39 | -0.54 | -0.50 | 1.08 | -0.38 | -0.01 | -1.11 | -0.42 | 0.00 | -0.27 | 0.00 | 0.53 | 0.00 |
+| 2026-03 | 16 | 0.06 | 0.57 | -0.21 | 0.10 | 0.70 | 0.65 | -1.15 | 0.12 | -0.44 | 1.29 | -0.65 | -1.16 | 0.00 | 0.75 | 0.00 |
+| 2026-05 | 15 | 0.76 | 0.35 | -0.01 | 0.02 | 1.10 | 0.93 | -1.04 | -0.26 | -0.58 | 1.88 | -0.32 | 0.01 | 0.00 | 0.67 | 0.00 |
 
 
 Engagement (n = 113, R2 = 0.412; log views per within-creator SD, month + topic controls):

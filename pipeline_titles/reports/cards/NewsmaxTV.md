@@ -13,21 +13,21 @@ Top topics: Trump and Iran War Negotiations (5.0%); Iran political unrest (4.0%)
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 86.4 | 72.0 | 0.7 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 92.4 | 87.7 | 1.0 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 86.5 | 72.2 | 0.7 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 92.4 | 87.8 | 1.0 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 96.2 | 95.8 | 0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 60.2 | 53.8 | -0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 30.5 | 31.8 | -0.2 | 0.2 |
-| F6: Person-centred (named people) | 88.6 | 86.4 | 0.7 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 87.7 | 88.6 | 0.5 | -0.7 |
-| F8: Numeric and dated (digits, years) | 39.8 | 49.6 | -0.2 | -0.1 |
-| F9: ALL-CAPS shouting | 53.4 | 46.2 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 60.3 | 54.0 | -0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 30.8 | 31.6 | -0.2 | 0.2 |
+| F6: Person-centred (named people) | 88.6 | 86.5 | 0.7 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 87.8 | 88.6 | 0.5 | -0.6 |
+| F8: Numeric and dated (digits, years) | 39.7 | 49.8 | -0.2 | -0.1 |
+| F9: ALL-CAPS shouting | 53.6 | 46.4 | -0.3 | -0.3 |
 | F10: Quoted speech | 92.8 | 92.8 | 1.0 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 66.9 | 70.3 | 0.0 | -0.2 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 66.7 | 70.0 | 0.0 | -0.2 |
 | F12: +first_pl +future_will +modal | 95.8 | 92.4 | 0.8 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.1% (4.8%); outrage 48.7% (59.8%); humor 0.1% (0.2%); question 3.9% (15.3%); breaking_live 3.1% (2.0%); episode_show 5.4% (7.5%); interview_guest 5.9% (7.7%); reaction 2.3% (2.2%); confrontation 6.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.9% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.1% (4.8%); outrage 48.7% (60.1%); humor 0.1% (0.2%); question 3.9% (15.2%); breaking_live 3.1% (2.0%); episode_show 5.4% (7.4%); interview_guest 5.9% (7.8%); reaction 2.3% (2.2%); confrontation 6.5% (8.2%); listicle 0.0% (0.1%); howto_explainer 3.9% (9.3%)
 
 
 Nearest style neighbors: @NewsNation [neutral]; @msnow [left]; @thehill [neutral]; @FoxNewsChannelClips [right]; @FoxNews [right]
@@ -39,15 +39,15 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 492 | 0.72 | 1.03 | 0.48 | -0.04 | -0.23 | 0.59 | 0.54 | -0.19 | -0.36 | 0.79 | -0.16 | 1.01 | 0.01 | 0.51 | 0.00 |
-| 2026-02 | 424 | 0.73 | 1.01 | 0.35 | -0.10 | -0.12 | 0.83 | 0.41 | -0.29 | -0.19 | 1.09 | -0.02 | 0.98 | 0.01 | 0.47 | 0.00 |
-| 2026-03 | 502 | 0.75 | 0.95 | 0.43 | 0.06 | -0.09 | 0.65 | 0.45 | -0.23 | -0.32 | 1.11 | 0.09 | 0.50 | 0.00 | 0.52 | 0.00 |
+| 2026-01 | 492 | 0.72 | 1.03 | 0.48 | -0.04 | -0.23 | 0.59 | 0.54 | -0.18 | -0.36 | 0.79 | -0.16 | 1.01 | 0.01 | 0.51 | 0.00 |
+| 2026-02 | 424 | 0.73 | 1.01 | 0.35 | -0.10 | -0.12 | 0.83 | 0.41 | -0.28 | -0.19 | 1.09 | -0.02 | 0.98 | 0.01 | 0.47 | 0.00 |
+| 2026-03 | 502 | 0.75 | 0.95 | 0.44 | 0.06 | -0.09 | 0.65 | 0.45 | -0.23 | -0.32 | 1.11 | 0.09 | 0.50 | 0.00 | 0.52 | 0.00 |
 | 2026-04 | 488 | 0.80 | 0.83 | 0.38 | -0.02 | -0.11 | 0.70 | 0.50 | -0.27 | -0.19 | 1.07 | -0.00 | 0.90 | 0.02 | 0.45 | 0.00 |
 | 2026-05 | 456 | 0.63 | 0.94 | 0.38 | -0.06 | -0.32 | 0.68 | 0.71 | -0.20 | -0.32 | 0.60 | -0.08 | 0.79 | 0.02 | 0.49 | 0.00 |
-| 2026-06 | 401 | 0.77 | 1.03 | 0.43 | -0.01 | -0.17 | 0.65 | 0.51 | -0.27 | -0.13 | 1.00 | 0.25 | 0.61 | 0.01 | 0.52 | 0.00 |
-| 2026-07 | 397 | 0.77 | 1.02 | 0.41 | 0.02 | -0.22 | 0.67 | 0.58 | -0.13 | -0.20 | 1.15 | 0.12 | 0.68 | 0.01 | 0.48 | 0.00 |
-| 2026-08 | 392 | 0.68 | 0.89 | 0.48 | -0.08 | -0.08 | 0.55 | 0.65 | -0.22 | -0.33 | 0.97 | 0.18 | 1.02 | 0.01 | 0.45 | 0.00 |
-| 2026-09* | 192 | 0.78 | 0.99 | 0.21 | -0.05 | -0.17 | 0.73 | 0.20 | -0.11 | -0.18 | 1.14 | 0.21 | 1.04 | 0.03 | 0.43 | 0.00 |
+| 2026-06 | 401 | 0.77 | 1.03 | 0.43 | -0.00 | -0.17 | 0.65 | 0.51 | -0.27 | -0.13 | 1.00 | 0.25 | 0.61 | 0.01 | 0.52 | 0.00 |
+| 2026-07 | 397 | 0.78 | 1.02 | 0.41 | 0.02 | -0.22 | 0.67 | 0.58 | -0.13 | -0.20 | 1.15 | 0.11 | 0.68 | 0.01 | 0.48 | 0.00 |
+| 2026-08 | 392 | 0.68 | 0.89 | 0.49 | -0.08 | -0.07 | 0.55 | 0.65 | -0.22 | -0.33 | 0.97 | 0.18 | 1.02 | 0.01 | 0.45 | 0.00 |
+| 2026-09* | 192 | 0.78 | 0.99 | 0.21 | -0.05 | -0.18 | 0.73 | 0.20 | -0.11 | -0.18 | 1.14 | 0.21 | 1.04 | 0.03 | 0.43 | 0.00 |
 
 
 Engagement (n = 3744, R2 = 0.2359; log views per within-creator SD, month + topic controls):
@@ -93,7 +93,7 @@ Top topics: Political Podcasts and Media (7.8%); Democratic Party and Midterm El
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 45.5 | 48.1 | -0.2 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 33.8 | 35.1 | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 66.2 | 72.7 | -0.2 | -0.3 |
-| F6: Person-centred (named people) | 35.1 | 33.8 | -0.1 | -0.1 |
+| F6: Person-centred (named people) | 36.4 | 33.8 | -0.1 | -0.1 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 15.6 | 19.5 | -0.8 | -0.6 |
 | F8: Numeric and dated (digits, years) | 75.3 | 71.4 | 0.3 | 0.1 |
 | F9: ALL-CAPS shouting | 39.0 | 41.6 | -0.5 | -0.4 |
@@ -115,14 +115,14 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 30 | -1.15 | 0.59 | -0.06 | -0.07 | 0.61 | 1.45 | -0.78 | 1.37 | -1.21 | -0.51 | 0.02 | -0.16 | 0.00 | 0.33 | 0.00 |
-| 2026-02 | 41 | 0.19 | -0.52 | -0.03 | -0.20 | -0.31 | -0.20 | -0.84 | -0.12 | -0.39 | -0.59 | 0.15 | -0.36 | 0.00 | 0.46 | 0.00 |
-| 2026-03 | 40 | 0.08 | -0.62 | -0.38 | -0.22 | -0.75 | -0.74 | -0.57 | 0.15 | -0.13 | -0.82 | 0.27 | -0.67 | 0.05 | 0.68 | 0.00 |
+| 2026-02 | 41 | 0.19 | -0.52 | -0.03 | -0.20 | -0.31 | -0.20 | -0.84 | -0.12 | -0.39 | -0.59 | 0.15 | -0.35 | 0.00 | 0.46 | 0.00 |
+| 2026-03 | 40 | 0.08 | -0.62 | -0.38 | -0.22 | -0.75 | -0.74 | -0.57 | 0.15 | -0.13 | -0.82 | 0.27 | -0.66 | 0.05 | 0.68 | 0.00 |
 | 2026-04 | 50 | 0.67 | -0.14 | -0.34 | -0.15 | -0.40 | -0.59 | -0.82 | 0.58 | -0.26 | -1.07 | 0.03 | -0.34 | 0.00 | 0.62 | 0.00 |
-| 2026-05 | 52 | 0.21 | 0.38 | -0.16 | -0.23 | -0.52 | -0.18 | -1.00 | -0.10 | -0.27 | -0.72 | -0.04 | 0.69 | 0.00 | 0.58 | 0.00 |
+| 2026-05 | 52 | 0.21 | 0.37 | -0.16 | -0.23 | -0.52 | -0.18 | -1.00 | -0.10 | -0.27 | -0.72 | -0.04 | 0.70 | 0.00 | 0.58 | 0.00 |
 | 2026-06 | 52 | 0.04 | 0.05 | -0.22 | -0.25 | -0.27 | 0.01 | -0.84 | -0.06 | -0.63 | -0.72 | 0.35 | 0.08 | 0.00 | 0.56 | 0.00 |
-| 2026-07 | 52 | 0.52 | -0.21 | -0.28 | -0.12 | 0.42 | -0.18 | -0.64 | 0.30 | -0.68 | -0.61 | 0.00 | -0.35 | 0.00 | 0.54 | 0.00 |
-| 2026-08 | 45 | -0.20 | -0.73 | -0.41 | -0.49 | -0.37 | -0.30 | -0.81 | 0.42 | -0.74 | -1.01 | -0.54 | 0.17 | 0.02 | 0.49 | 0.00 |
-| 2026-09* | 21 | -0.08 | 0.73 | -0.22 | -0.51 | -0.58 | 0.55 | -0.82 | 0.75 | -0.88 | -0.61 | -0.16 | 0.38 | 0.00 | 0.29 | 0.05 |
+| 2026-07 | 52 | 0.53 | -0.21 | -0.28 | -0.12 | 0.43 | -0.18 | -0.64 | 0.30 | -0.68 | -0.61 | 0.00 | -0.35 | 0.00 | 0.54 | 0.00 |
+| 2026-08 | 45 | -0.20 | -0.73 | -0.40 | -0.49 | -0.37 | -0.30 | -0.81 | 0.42 | -0.74 | -1.01 | -0.54 | 0.17 | 0.02 | 0.49 | 0.00 |
+| 2026-09* | 21 | -0.08 | 0.73 | -0.22 | -0.51 | -0.58 | 0.55 | -0.82 | 0.75 | -0.87 | -0.61 | -0.16 | 0.38 | 0.00 | 0.29 | 0.05 |
 
 
 Engagement (n = 383, R2 = 0.5514; log views per within-creator SD, month + topic controls):

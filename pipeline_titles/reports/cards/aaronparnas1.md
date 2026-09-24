@@ -13,18 +13,18 @@ Top topics: Trump and Epstein Files Scandal (16.6%); Trump Midterm Election Sche
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 2.5 | 1.7 | -1.2 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 39.8 | 34.3 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 3.0 | 1.7 | -1.2 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 39.7 | 34.2 | -0.3 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 99.6 | 99.6 | 2.2 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 5.9 | 10.6 | -0.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 23.3 | 11.4 | -0.3 | 0.1 |
-| F6: Person-centred (named people) | 47.5 | 49.6 | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 77.1 | 79.7 | -0.2 | -0.5 |
-| F8: Numeric and dated (digits, years) | 17.8 | 18.2 | -0.4 | -0.2 |
-| F9: ALL-CAPS shouting | 59.7 | 70.8 | -0.2 | -0.3 |
-| F10: Quoted speech | 35.6 | 27.1 | -0.5 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 93.6 | 92.4 | 1.0 | -0.3 |
-| F12: +first_pl +future_will +modal | 30.5 | 38.1 | -0.4 | -0.1 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 5.9 | 10.5 | -0.5 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 23.2 | 11.4 | -0.3 | 0.1 |
+| F6: Person-centred (named people) | 47.3 | 49.4 | -0.3 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 77.2 | 79.7 | -0.2 | -0.5 |
+| F8: Numeric and dated (digits, years) | 17.7 | 18.1 | -0.4 | -0.2 |
+| F9: ALL-CAPS shouting | 59.9 | 70.9 | -0.2 | -0.3 |
+| F10: Quoted speech | 35.4 | 27.0 | -0.5 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 93.7 | 92.4 | 1.0 | -0.3 |
+| F12: +first_pl +future_will +modal | 30.8 | 38.4 | -0.4 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.3% (3.6%); outrage 98.7% (63.9%); humor 0.0% (0.2%); question 0.1% (15.6%); breaking_live 81.7% (2.9%); episode_show 0.0% (2.8%); interview_guest 4.8% (9.8%); reaction 0.1% (2.9%); confrontation 6.6% (7.7%); listicle 0.0% (0.1%); howto_explainer 5.3% (8.0%)
@@ -46,7 +46,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-05 | 83 | -1.45 | -0.13 | 2.73 | -0.47 | -0.30 | -0.37 | -0.17 | -0.54 | -0.24 | -0.44 | 0.98 | -0.20 | 0.01 | 0.99 | 0.00 |
 | 2026-06 | 79 | -1.27 | 0.14 | 2.74 | -0.68 | -0.36 | -0.44 | -0.07 | -0.34 | -0.20 | -0.35 | 0.81 | 0.25 | 0.00 | 1.00 | 0.00 |
 | 2026-07 | 86 | -0.91 | -0.05 | 1.58 | -0.31 | -0.27 | -0.20 | -0.45 | -0.38 | 0.03 | -0.31 | 0.94 | -0.20 | 0.00 | 0.98 | 0.00 |
-| 2026-08 | 76 | -0.91 | 0.31 | 0.35 | 0.06 | -0.39 | 0.11 | -0.66 | -0.20 | 0.44 | -0.82 | 1.60 | -0.73 | 0.01 | 0.97 | 0.00 |
+| 2026-08 | 76 | -0.91 | 0.31 | 0.36 | 0.06 | -0.39 | 0.11 | -0.66 | -0.20 | 0.44 | -0.82 | 1.60 | -0.73 | 0.01 | 0.97 | 0.00 |
 | 2026-09* | 35 | -1.64 | 0.33 | 0.12 | -0.18 | -0.49 | -0.18 | -0.38 | 0.07 | 0.59 | -0.80 | 1.23 | -0.62 | 0.00 | 0.94 | 0.00 |
 
 

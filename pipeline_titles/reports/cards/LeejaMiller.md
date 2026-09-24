@@ -13,18 +13,18 @@ Top topics: American History and Political Threats (10.7%); ICE protests in Minn
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 80.9 | 75.0 | 0.6 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 67.8 | 63.1 | 0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 56.4 | 62.7 | -0.3 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 81.0 | 75.1 | 0.6 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 67.5 | 62.9 | 0.3 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 56.5 | 62.9 | -0.3 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 83.1 | 79.7 | 0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 91.9 | 89.8 | 1.6 | 0.1 |
-| F6: Person-centred (named people) | 12.3 | 13.6 | -0.8 | -0.2 |
+| F5: Question and explainer framing (why, what, ?) | 92.0 | 89.9 | 1.6 | 0.1 |
+| F6: Person-centred (named people) | 11.8 | 13.5 | -0.8 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 7.6 | 8.9 | -1.1 | -0.5 |
-| F8: Numeric and dated (digits, years) | 25.8 | 30.9 | -0.4 | -0.2 |
-| F9: ALL-CAPS shouting | 71.2 | 66.1 | -0.1 | -0.3 |
-| F10: Quoted speech | 10.2 | 16.5 | -0.8 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 13.1 | 26.7 | -0.9 | -0.3 |
-| F12: +first_pl +future_will +modal | 84.3 | 75.4 | 0.3 | -0.1 |
+| F8: Numeric and dated (digits, years) | 25.7 | 31.2 | -0.4 | -0.2 |
+| F9: ALL-CAPS shouting | 71.3 | 66.2 | -0.1 | -0.3 |
+| F10: Quoted speech | 10.1 | 16.5 | -0.8 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 13.1 | 26.6 | -0.9 | -0.3 |
+| F12: +first_pl +future_will +modal | 84.4 | 75.5 | 0.3 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 12.5% (3.6%); outrage 44.6% (63.9%); humor 0.0% (0.2%); question 32.1% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 5.4% (9.8%); reaction 0.0% (2.9%); confrontation 0.0% (7.7%); listicle 0.0% (0.1%); howto_explainer 30.4% (8.0%)

@@ -115,3 +115,39 @@ def test_repeat_check_gives_all_three_pairs_and_the_three_way_agreement():
     assert t["n_titles"] == 60 and t["all_three_agree"] == round(57 / 60, 4) and t["record_and_repeat_agree"] == round(58 / 60, 4) and t["no_majority"] == 0
     # without a first reading only the pair of record and repeat is given
     assert set(repeat_check(df, None, rp, "label_m", min_titles=16)[0]) == {"judge", "reading_of_record", "repeat", "record_vs_repeat"}
+
+
+def test_draw_new_creators_is_fixed_by_the_creator_alone_and_leaves_the_record_untouched():
+    from pipeline_titles.leaning import draw_new_creators
+    prep = _prepared({"@a": 120, "@m": 120, "@z": 120})
+    record = draw_sample(prep, 50)
+    with_insert = draw_sample(_prepared({"@a": 120, "@m": 120, "@s": 120, "@z": 120}), 50)
+    shifted = set(record[record.creator == "@z"].row_id) != set(with_insert[with_insert.creator == "@z"].row_id)
+    assert shifted                                        # the shared stream: an inserted creator moves the later ones' draws
+    prep2 = pd.concat([prep, _prepared({"@s": 120}).assign(row_id=lambda d: d.row_id + 1000)], ignore_index=True)
+    alone = draw_new_creators(prep2, ["@s"], 50)
+    assert alone.creator.eq("@s").all() and len(alone) == 50 and alone.is_base.sum() == N_BASE
+    prep3 = pd.concat([prep2, _prepared({"@b": 80}).assign(row_id=lambda d: d.row_id + 2000)], ignore_index=True)
+    both = draw_new_creators(prep3, ["@b", "@s"], 50)
+    assert set(both[both.creator == "@s"].row_id) == set(alone.row_id)   # @s's draw does not depend on @b
+    assert set(draw_new_creators(prep3, ["@s"], 50).row_id) == set(alone.row_id)
+    assert draw_new_creators(prep3, [], 50).empty
+
+
+def test_readings_are_matched_by_title_when_both_files_carry_it():
+    rows, first = [], []
+    for creator, labels in (("@r", ["right"] * 16 + ["neither"] * 4), ("@l", ["left"] * 16 + ["neither"] * 4)):
+        for i, lab in enumerate(labels):
+            rid = len(rows)
+            rows.append({"row_id": rid, "creator": creator, "genre": "videos", "title_raw": f"t{rid}", "label_m": lab})
+            first.append({"row_id": rid, "creator": creator, "genre": "videos", "title_raw": f"t{rid}", "run": 1, "label_m": lab})
+    df, fr = pd.DataFrame(rows), pd.DataFrame(first)
+    # a channel added later: its row_ids collide with the record's stale ones, and the first reading never saw it
+    new = pd.DataFrame({"row_id": range(20), "creator": "@new", "genre": "videos", "title_raw": [f"n{i}" for i in range(20)], "label_m": ["right"] * 20})
+    summ, ch, changed = two_readings(pd.concat([df, new], ignore_index=True), fr, "label_m", min_titles=16)
+    assert summ["n_titles"] == 40 and summ["exact_agreement"] == 1.0 and set(ch.creator) == {"@r", "@l"} and changed.empty
+    # the record's row_ids can move (a re-prepare) without breaking the match
+    fr2 = fr.assign(row_id=fr.row_id + 5000)
+    assert two_readings(df, fr2, "label_m", min_titles=16)[0]["n_titles"] == 40
+    rep = fr2.drop(columns="run")
+    assert repeat_check(df, fr2, rep, "label_m", min_titles=16)[0]["three_readings"]["n_titles"] == 40

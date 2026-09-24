@@ -14,17 +14,17 @@ Top topics: US Politics and Winter Olympics (40.0%); Iran political unrest (2.9%
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 100.0 | 100.0 | 1.5 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 89.8 | 85.6 | 0.9 | -0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 89.9 | 85.7 | 0.9 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 9.3 | 11.0 | -0.6 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 77.1 | 55.5 | 0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 78.8 | 74.6 | 0.9 | 0.1 |
-| F6: Person-centred (named people) | 89.0 | 80.1 | 0.7 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 85.6 | 89.4 | 0.3 | -0.5 |
-| F8: Numeric and dated (digits, years) | 75.0 | 75.4 | 0.0 | -0.2 |
-| F9: ALL-CAPS shouting | 81.8 | 78.4 | 0.4 | -0.3 |
-| F10: Quoted speech | 94.1 | 91.9 | 1.0 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 86.9 | 91.5 | 0.5 | -0.3 |
-| F12: +first_pl +future_will +modal | 72.5 | 58.9 | 0.1 | -0.1 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 77.2 | 55.7 | 0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 78.9 | 74.7 | 0.9 | 0.1 |
+| F6: Person-centred (named people) | 89.0 | 80.2 | 0.7 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 85.7 | 89.5 | 0.3 | -0.5 |
+| F8: Numeric and dated (digits, years) | 75.1 | 75.5 | 0.0 | -0.2 |
+| F9: ALL-CAPS shouting | 81.9 | 78.5 | 0.4 | -0.3 |
+| F10: Quoted speech | 94.1 | 92.0 | 1.0 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 86.9 | 91.6 | 0.5 | -0.3 |
+| F12: +first_pl +future_will +modal | 72.6 | 59.1 | 0.1 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 12.9% (63.9%); humor 0.0% (0.2%); question 20.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 2.9% (9.8%); reaction 0.0% (2.9%); confrontation 0.0% (7.7%); listicle 2.9% (0.1%); howto_explainer 10.0% (8.0%)

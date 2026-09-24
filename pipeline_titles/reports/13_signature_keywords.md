@@ -14,7 +14,7 @@ Each channel's signature is scored by weighted log-odds against all other channe
 |---|---|---|---|
 | @60minutes | 60 Minutes | neutral | minutes (63), episodes (33), sunday (29), laden (12), sasse (11) |
 | @aaronparnas1 | Aaron Parnas | left | breaking (90), furious (29), republicans (29), major (28), trump (28) |
-| @ABCNews | ABC News | neutral | abc (55), broadcast (51), good (49), know (43), need (43) |
+| @ABCNews | ABC News | neutral | abc (55), broadcast (52), good (49), know (43), need (43) |
 | @ActualJusticeWarrior | Actual Justice Warrior | right | leftist (18), entitled (16), mamdani (16), black (16), mafia (15) |
 | @adammockler | Adam Mockler | left | trump (36), maga (22), bomb (20), slip (20), lets (19) |
 | @AfterPartyEmily | After Party with Emily Jashinsky | right | plus (21), truth (20), media (16), malice (16), culture (14) |
@@ -103,7 +103,7 @@ Each channel's signature is scored by weighted log-odds against all other channe
 | @HasanabiClips | Hasanabi Clips | left | hasanabi (91), reacts (87), hasan (32), flame (17), asmongold (16) |
 | @HasanAbiVODs3 | HasanAbi VODs | left | hasanabi (72), august (31), june (30), january (28), july (26) |
 | @HasanReactionsfanTwo | Hasan Reactions | left | hasanabi (35), reacts (29), hasan (22), coffeezilla (11), abdul (11) |
-| @hutch | Hutch | neutral | destiny (27), hasan (24), lib (21), pisco (17), learn (16) |
+| @hutch | Hutch | neutral | destiny (26), hasan (24), lib (21), pisco (17), learn (16) |
 | @JackCocchiarellaShow | Jack Cocchiarella | left | trump (44), leaks (39), ends (32), finally (31), posts (30) |
 | @JacksonHinkleOfficial | Jackson Hinkle Official | neutral | candace (25), owens (25), iran (22), erika (22), fuentes (17) |
 | @JamarlThomas | Jamarl Thomas | left | garland (22), sleboda (21), nixon (20), chess (20), kiev (20) |
@@ -143,7 +143,7 @@ Each channel's signature is scored by weighted log-odds against all other channe
 | @MikeFromPA | Mike From PA | left | mike (26), hasan (22), ethan (16), jealous (15), klein (14) |
 | @mikhaila | Mikhaila Peterson | right | carnivore (0) |
 | @MLChristiansen | Matt Christiansen | right | guest (26), frank (16), frankly (15), quite (15), shooting (10) |
-| @ModernDayDebate | Modern-Day Debate | left | debate (36), evolution (20), jake (19), wilson (18), feminism (18) |
+| @ModernDayDebate | Modern-Day Debate | left | debate (36), evolution (20), jake (19), feminism (18), wilson (18) |
 | @morebridgetphetasy | Walk-Ins Welcome with Bridget Phetasy | right | welcome (23), generation (11), therapy (10), therapists (7), revolution (7) |
 | @moreperfectunion | More Perfect Union | left | uncovered (18), investigated (14), skyrocketing (9), tracked (9), went (8) |
 | @MrReaganUSA | Mr Reagan | right | black (3), maga-man (1) |
@@ -157,7 +157,7 @@ Each channel's signature is scored by weighted log-odds against all other channe
 | @NewsNation | NewsNation | neutral | newsnation (79), morning (73), jesse (60), reports (56), tonight (53) |
 | @newyorker | The New Yorker | neutral | yorker (22), mini (18), pack (15), essentials (14), cultural (13) |
 | @NickCruseRBN | Nick Cruse | left | zionist (16), nick (15), joins (15), jamarl (14), kshama (13) |
-| @NickShirley | Nick Shirley | right | irl (12), fraud (11), shirley (9), investigated (9), confronting (9) |
+| @NickShirley | Nick Shirley | right | irl (12), fraud (11), investigated (9), shirley (9), confronting (9) |
 | @notsoErudite | notsoErudite | left | tilly (12), debate (8), liberal (7), christian (7), wilson (6) |
 | @nousnetwork | nous | left | clips (39), muslims (24), muslim (14), india (13), hindutva (12) |
 | @NovaraMedia | Novara Media | left | meets (23), aaron (22), labour (21), burnham (20), ash (18) |
@@ -168,7 +168,7 @@ Each channel's signature is scored by weighted log-odds against all other channe
 | @NYTPodcasts | New York Times Podcasts | left | serial (14), productions (12), opinions (11), guide (10), cease-fire (10) |
 | @oann | One America News Network | right | president (28), gaetz (21), matt (20), oan (20), fraud (18) |
 | @OfficialFlagrant | FLAGRANT | right | flagrant (13), stories (8), knicks (6), reaction (5), epstein (4) |
-| @OfficialSaharTV | SaharTV | right | muslim (51), islam (39), muslims (31), tommy (30), islamist (27) |
+| @OfficialSaharTV | SaharTV | right | muslim (51), islam (38), muslims (31), tommy (30), islamist (27) |
 | @OutKick | OutKick | right | travis (13), clay (13), fade (12), espn (9), football (9) |
 | @OwenJonesTalks | Owen Jones | left | labour (17), farage (15), polanski (14), zack (13), israel (13) |
 | @OwenReport | Owen Report | left | owen (27), shroyer (22), maga (17), israel (14), cult (13) |
@@ -190,14 +190,14 @@ Each channel's signature is scored by weighted log-odds against all other channe
 | @RealAlexClark | Real Alex Clark | right | dr (14), md (12), skin (12), phd (10), kids (7) |
 | @RealAmericasVoice | Real America's Voice | right | steve (52), room (49), bannon (48), stein (38), alex (36) |
 | @RealDanBongino | Dan Bongino | right | bongino (12), simple (6), thing (6), dan (6), happened (6) |
-| @RebelHQ | Rebel HQ | left | gets (31), fox (30), terrified (28), republicans (25), maga (24) |
+| @RebelHQ | Rebel HQ | left | gets (30), fox (30), terrified (28), republicans (25), maga (24) |
 | @RebelNewsOnline | Rebel News | right | canada (42), carney (40), toronto (35), ezra (33), roundtable (31) |
 | @RedactedNews | Redacted | right | redacted (38), clayton (34), morris (28), col (15), coming (14) |
 | @RekietaLaw | Rekieta Law | right | richins (22), kouri (22), trial (17), member (15), fitzsimmons (15) |
 | @RestPoliticsUS | The Rest Is Politics US | left | trump (17), exclusive (13), members (13), panicking (10), hugely (9) |
 | @Reuters | Reuters | neutral | market (34), bid (32), fans (27), reuters (27), weekly (25) |
 | @revleftradio | Rev Left Radio | left | marxism (10), socialist (8), class (6), politics (4), fight (3) |
-| @RileyGaines | Riley Gaines | right | riley (22), vlog (16), wnba (14), shirley (12), motherhood (11) |
+| @RileyGaines | Riley Gaines | right | riley (22), vlog (16), wnba (14), shirley (11), motherhood (11) |
 | @RobertGouveiaEsq | Robert Gouveia Esq. | right | election (36), judge (30), fulton (28), appeal (27), crushed (26) |
 | @rolandsmartin | Roland S. Martin | left | black (77), roland (34), voting (24), racist (21), rights (18) |
 | @RonPlacone | Ron Placone | left | comedy (11), punk (10), lefty (8), amidst (8), rfk (7) |
@@ -205,9 +205,10 @@ Each channel's signature is scored by weighted log-odds against all other channe
 | @RubinReport | The Rubin Report | right | host (48), look (38), humiliated (28), zohran (26), rubin (25) |
 | @RufoandLomez | Rufo & Lomez | right | left (9), right (8), splc (6), spencer (5), pratt (5) |
 | @SabbySabs | Sabby Sabs | left | joins (21), mohammad (20), marandi (19), erika (19), kirk (18) |
-| @SaltyCracker | Salty Cracker | right | lefty (20), man (19), antifa (16), woman (14), streamer (14) |
+| @SaltyCracker | Salty Cracker | right | lefty (21), man (19), antifa (16), woman (14), streamer (14) |
 | @samharrisorg | Sam Harris | left | conversation (27), sam (18), harris (10), ai (8), end (5) |
 | @SavSays | Sav Says | right | trial (4) |
+| @SecretScholars | Warren Smith - Secret Scholar Society | right | leftist (22), wilson (17), confronts (14), exposes (13), andrew (12) |
 | @SecularTalk | Secular Talk | left | kyle (48), kulinski (37), maga (30), completely (27), ck (24) |
 | @Semafor | Semafor | neutral | ceo (30), economy (28), semafor (24), world (15), signal (13) |
 | @Shoe0nHead | Shoe0nHead | right | cult (8) |
@@ -250,14 +251,14 @@ Each channel's signature is scored by weighted log-odds against all other channe
 | @TheYoungTurks | The Young Turks | left | tyt (69), hour (67), indisputable (46), rashad (46), richey (45) |
 | @thomhartmann | Thom Hartmann Program | left | trump (17), thom (15), billionaires (13), america (11), democracy (10) |
 | @Tim_Black | Tim Black TV | right | black (48), tim (20), roland (18), martin (17), fba (15) |
-| @Timcast | Tim Pool | right | democrats (12), culture (8), cooked (8), leftists (7), leftist (7) |
+| @Timcast | Tim Pool | right | democrats (12), culture (8), cooked (8), leftists (7), begun (6) |
 | @TimcastIRL | Timcast IRL | right | irl (32), timcast (20), leftists (17), they're (16), democrat (16) |
-| @TimcastNews | Timcast | right | got (18), proves (16), actually (13), democrat (13), dude (11) |
+| @TimcastNews | Timcast | right | got (18), proves (16), democrat (13), actually (13), dude (11) |
 | @TimDillonShow | The Tim Dillon Show | neutral | ray (25), dillon (17), tim (10), bonus (7), summer (6) |
 | @TimesNowWorld | Times Now World | neutral | world (118), russia (89), times (82), ukraine (70), putin (60) |
 | @timesofindia | Times Of India | left | big (54), putin (54), iran (48), cam (48), irgc (44) |
 | @TomiLahrenIsFearless | Tomi Lahren Is Fearless | right | lahren (27), tomi (27), caitlyn (11), jenner (11), dana (11) |
-| @triggerpod | Triggernometry | right | members (27), questions (27), konstantin (17), kisin (14), triggernometry (11) |
+| @triggerpod | Triggernometry | right | members (27), questions (27), konstantin (19), kisin (18), triggernometry (11) |
 | @TuckerCarlson | Tucker Carlson | neutral | tucker (17), demons (9), israel (8), globalist (8), neocons (8) |
 | @turningpointusa | Turning Point USA | right | kirk (31), charlie (30), shane (21), witt (19), abortion (18) |
 | @underthedesknews | Under The Desk News | left | hot (27), geopolitical (25), fool (24), gossip (19), die (17) |
@@ -267,7 +268,7 @@ Each channel's signature is scored by weighted log-odds against all other channe
 | @usefulidiots | Useful Idiots | left | mat (23), aaron (21), halper (19), useful (16), israel (15) |
 | @Vaush | Vaush | left | insane (11), hasan (11), actually (10), wtf (10), christ (10) |
 | @VivaFrei | Viva Frei | right | viva (20), frei (20), pipe (18), jan (17), baker (16) |
-| @Vox | Vox | left | actually (22), america (13), explained (12), today (11), dating (7) |
+| @Vox | Vox | left | actually (21), america (13), explained (12), today (11), dating (7) |
 | @wethefifth | The Fifth Column - A Podcast | neutral | fifth (34), column (26), christie (11), rahm (9), chris (8) |
 | @winston_marshall | Winston Marshall | right | britain (13), edition (13), portsmouth (10), members (10), elites (9) |
 | @wsj | The Wall Street Journal | neutral | wsj (32), coveted (12), economics (11), pro (10), equipped (9) |

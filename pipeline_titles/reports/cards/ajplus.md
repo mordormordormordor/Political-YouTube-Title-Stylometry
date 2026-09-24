@@ -13,17 +13,17 @@ Top topics: Israel and Palestine Conflict (32.0%); African refugees and FBAs in 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 75.4 | 62.3 | 0.5 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 73.7 | 74.2 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 76.7 | 76.3 | -0.1 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 86.4 | 77.1 | 0.2 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 75.5 | 62.4 | 0.5 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 73.4 | 73.8 | 0.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 76.4 | 76.4 | -0.1 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 86.5 | 77.2 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 96.2 | 96.6 | 2.4 | 0.1 |
 | F6: Person-centred (named people) | 1.7 | 5.9 | -1.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 5.1 | 13.6 | -1.3 | -0.5 |
-| F8: Numeric and dated (digits, years) | 9.3 | 16.1 | -0.5 | -0.2 |
-| F9: ALL-CAPS shouting | 72.0 | 55.9 | -0.0 | -0.3 |
-| F10: Quoted speech | 54.7 | 63.1 | -0.3 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 3.4 | 8.1 | -1.2 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 5.1 | 13.5 | -1.3 | -0.5 |
+| F8: Numeric and dated (digits, years) | 9.3 | 16.0 | -0.5 | -0.2 |
+| F9: ALL-CAPS shouting | 72.2 | 56.1 | -0.0 | -0.3 |
+| F10: Quoted speech | 54.4 | 63.3 | -0.3 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 3.4 | 8.0 | -1.2 | -0.3 |
 | F12: +first_pl +future_will +modal | 85.2 | 88.6 | 0.3 | -0.1 |
 
 

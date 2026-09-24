@@ -46,7 +46,7 @@ Top topics: Christian Nationalism and Politics (27.1%); Islam and Political Extr
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 70.1 | 76.6 | 0.3 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 71.4 | 76.6 | 0.3 | -0.2 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 50.6 | 57.1 | -0.3 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 83.1 | 77.9 | 1.6 | -0.2 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 1.3 | 1.3 | -0.9 | -0.2 |
@@ -72,7 +72,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 21 | 0.06 | 0.93 | 1.42 | -1.06 | 0.42 | 0.49 | -0.21 | 0.12 | -0.73 | -0.37 | 0.45 | 0.06 | 0.00 | 0.19 | 0.00 |
+| 2026-01 | 21 | 0.07 | 0.92 | 1.42 | -1.06 | 0.42 | 0.49 | -0.21 | 0.12 | -0.73 | -0.37 | 0.44 | 0.06 | 0.00 | 0.19 | 0.00 |
 | 2026-04 | 18 | 0.98 | -0.50 | 2.07 | -0.67 | -0.72 | 1.19 | -0.35 | 0.73 | -0.30 | -0.52 | 0.85 | -0.10 | 0.00 | 0.00 | 0.00 |
 
 

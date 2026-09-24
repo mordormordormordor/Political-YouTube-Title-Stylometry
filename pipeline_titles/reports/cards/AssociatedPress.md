@@ -13,18 +13,18 @@ Top topics: Trump and Iran War Negotiations (3.9%); Israel-Lebanon Conflict and 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 92.4 | 73.7 | 0.8 | 0.5 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 92.4 | 73.8 | 0.8 | 0.5 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 90.3 | 85.2 | 0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 3.0 | 17.8 | -0.8 | -0.4 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 67.4 | 50.8 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 29.2 | 25.0 | -0.2 | 0.1 |
-| F6: Person-centred (named people) | 35.6 | 36.4 | -0.5 | -0.2 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 3.0 | 18.1 | -0.8 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 67.5 | 51.1 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 29.1 | 24.9 | -0.2 | 0.1 |
+| F6: Person-centred (named people) | 35.4 | 36.3 | -0.5 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 97.0 | 98.3 | 1.3 | -0.3 |
-| F8: Numeric and dated (digits, years) | 77.1 | 87.3 | 0.1 | 0.0 |
-| F9: ALL-CAPS shouting | 73.3 | 59.7 | 0.0 | -0.3 |
-| F10: Quoted speech | 80.9 | 80.9 | 0.2 | -0.1 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 64.4 | 66.9 | -0.0 | -0.1 |
-| F12: +first_pl +future_will +modal | 89.4 | 91.9 | 0.5 | -0.0 |
+| F8: Numeric and dated (digits, years) | 77.2 | 87.3 | 0.1 | 0.0 |
+| F9: ALL-CAPS shouting | 73.4 | 59.9 | 0.0 | -0.3 |
+| F10: Quoted speech | 81.0 | 81.0 | 0.2 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 64.1 | 66.7 | -0.0 | -0.1 |
+| F12: +first_pl +future_will +modal | 89.5 | 92.0 | 0.5 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (3.1%); outrage 29.8% (36.7%); humor 0.1% (0.1%); question 2.1% (13.8%); breaking_live 0.5% (1.2%); episode_show 0.2% (7.1%); interview_guest 7.8% (11.7%); reaction 2.8% (2.0%); confrontation 3.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 1.4% (6.8%)

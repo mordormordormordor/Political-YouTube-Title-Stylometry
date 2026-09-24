@@ -1,6 +1,6 @@
 {
- "titles": 277438,
- "vocab": 3665,
+ "titles": 277545,
+ "vocab": 3670,
  "thresholds": {
   "min_titles": 100,
   "min_channels": 10,
@@ -13,37 +13,67 @@
   "spline_knots": 6
  },
  "temporal": {
-  "series_terms": 1746,
+  "series_terms": 1747,
   "days": 257,
-  "pairs_tested": 1522989,
-  "pairs_q01": 352,
-  "pairs_q05": 660,
-  "pairs_replicated": 597,
-  "shift_null_fdr_at_q05_cutoff": 0.23100441501103752
+  "pairs_tested": 1524735,
+  "pairs_q01": 348,
+  "pairs_q05": 662,
+  "pairs_replicated": 591,
+  "shift_null_fdr_at_q05_cutoff": 0.23114097641250686
  },
  "pairs": {
-  "pairs_tabulated": 31420,
-  "pairs_q01_positive": 19130,
-  "pairs_q01_negative": 2094,
-  "pairs_replicated": 13479,
-  "edges": 11714,
-  "strata": 9325,
-  "curveball_fdr_positive_at_q01_cutoff": 0.011871406168322007
+  "pairs_tabulated": 31435,
+  "pairs_q01_positive": 19135,
+  "pairs_q01_negative": 2093,
+  "pairs_replicated": 13856,
+  "edges": 11854,
+  "strata": 9363,
+  "curveball_fdr_positive_at_q01_cutoff": 0.012432714920303109
  },
  "network": {
-  "nodes": 2767,
-  "edges": 11714,
-  "communities": 31,
-  "modularity": 0.5919200818817982,
+  "nodes": 2760,
+  "edges": 11854,
+  "communities": 32,
+  "modularity": 0.5952034557219178,
   "focus_community": {
-   "epstein": 1,
-   "iran": 10,
-   "war": 10
+   "epstein": 2,
+   "iran": 6,
+   "war": 8
   },
   "focus_co_membership_across_seeds": {
    "epstein|iran": 0.0,
    "epstein|war": 0.0,
-   "iran|war": 0.4
+   "iran|war": 0.25
+  }
+ },
+ "audience": {
+  "titles": {
+   "left": 90981,
+   "neutral": 115350,
+   "right": 71214
+  },
+  "networks": {
+   "left": {
+    "pairs_tabulated": 7297,
+    "edges": 1591,
+    "nodes": 1054,
+    "communities": 85,
+    "modularity": 0.8441337669471141
+   },
+   "neutral": {
+    "pairs_tabulated": 14487,
+    "edges": 5596,
+    "nodes": 1807,
+    "communities": 45,
+    "modularity": 0.6881124420859724
+   },
+   "right": {
+    "pairs_tabulated": 3532,
+    "edges": 1555,
+    "nodes": 929,
+    "communities": 73,
+    "modularity": 0.8298039121357966
+   }
   }
  },
  "monthly": {

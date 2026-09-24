@@ -14,17 +14,17 @@ Top topics: Trump and Epstein Files Scandal (10.8%); Trump Court Legal Battles (
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 1.3 | 1.3 | -1.7 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 24.2 | 22.0 | -0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 32.6 | 47.5 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 69.9 | 66.5 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 14.4 | 5.5 | -0.4 | 0.1 |
-| F6: Person-centred (named people) | 50.0 | 47.5 | -0.2 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 83.9 | 85.2 | 0.3 | -0.5 |
-| F8: Numeric and dated (digits, years) | 59.7 | 47.9 | -0.1 | -0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 24.1 | 21.9 | -0.5 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 32.9 | 47.7 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 70.0 | 66.7 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 14.8 | 5.5 | -0.4 | 0.1 |
+| F6: Person-centred (named people) | 49.8 | 47.3 | -0.2 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 84.0 | 85.2 | 0.3 | -0.5 |
+| F8: Numeric and dated (digits, years) | 59.9 | 48.1 | -0.1 | -0.2 |
 | F9: ALL-CAPS shouting | 99.2 | 99.2 | 2.7 | -0.3 |
-| F10: Quoted speech | 10.6 | 5.5 | -0.8 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 90.3 | 89.8 | 0.8 | -0.3 |
-| F12: +first_pl +future_will +modal | 27.5 | 24.2 | -0.4 | -0.1 |
+| F10: Quoted speech | 10.5 | 5.5 | -0.8 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 90.3 | 89.9 | 0.8 | -0.3 |
+| F12: +first_pl +future_will +modal | 27.8 | 24.5 | -0.4 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.6% (3.6%); outrage 98.4% (63.9%); humor 0.0% (0.2%); question 7.1% (15.6%); breaking_live 2.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 7.6% (9.8%); reaction 1.1% (2.9%); confrontation 10.2% (7.7%); listicle 0.0% (0.1%); howto_explainer 0.5% (8.0%)

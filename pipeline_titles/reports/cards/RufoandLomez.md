@@ -13,21 +13,21 @@ Top topics: Left-Wing Political Violence (14.9%); MAGA Movement Crisis (5.4%); I
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.3 | 41.5 | 0.0 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 28.0 | 29.7 | -0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 76.3 | 74.2 | -0.1 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 52.1 | 49.2 | -0.1 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 40.5 | 41.8 | 0.0 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 27.8 | 29.5 | -0.5 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 76.8 | 74.3 | -0.1 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 51.9 | 48.9 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 93.2 | 92.4 | 1.8 | 0.2 |
-| F6: Person-centred (named people) | 72.5 | 69.5 | 0.1 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 30.1 | 30.9 | -0.8 | -0.7 |
-| F8: Numeric and dated (digits, years) | 67.4 | 60.2 | -0.0 | -0.1 |
-| F9: ALL-CAPS shouting | 7.6 | 5.9 | -0.9 | -0.3 |
-| F10: Quoted speech | 30.5 | 45.8 | -0.6 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 14.0 | 20.3 | -0.9 | -0.2 |
-| F12: +first_pl +future_will +modal | 38.1 | 33.1 | -0.3 | -0.3 |
+| F6: Person-centred (named people) | 72.2 | 69.2 | 0.1 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 30.0 | 30.8 | -0.8 | -0.6 |
+| F8: Numeric and dated (digits, years) | 67.5 | 60.3 | -0.0 | -0.1 |
+| F9: ALL-CAPS shouting | 8.0 | 6.3 | -0.9 | -0.3 |
+| F10: Quoted speech | 30.0 | 45.6 | -0.6 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 13.9 | 20.3 | -0.9 | -0.2 |
+| F12: +first_pl +future_will +modal | 39.2 | 33.3 | -0.3 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (4.8%); outrage 52.7% (59.8%); humor 0.0% (0.2%); question 29.7% (15.3%); breaking_live 2.7% (2.0%); episode_show 66.2% (7.5%); interview_guest 14.9% (7.7%); reaction 0.0% (2.2%); confrontation 2.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 14.9% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (4.8%); outrage 52.7% (60.1%); humor 0.0% (0.2%); question 29.7% (15.2%); breaking_live 2.7% (2.0%); episode_show 66.2% (7.4%); interview_guest 14.9% (7.8%); reaction 0.0% (2.2%); confrontation 2.7% (8.2%); listicle 0.0% (0.1%); howto_explainer 14.9% (9.3%)
 
 
 Nearest style neighbors: @Politicon [left]; @XAVIAER [right]; @MrTariqNasheed [right]; @judgingfreedom [left]; @nousnetwork [left]

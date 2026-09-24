@@ -13,21 +13,21 @@ Top topics: Media Culture War Involving CNN and CBS (8.0%); Zohran Mamdani and N
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 21.6 | 22.9 | -0.3 | 0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 22.8 | 23.2 | -0.3 | 0.2 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 86.9 | 83.1 | 0.8 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.7 | 49.2 | -0.2 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 70.3 | 64.0 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 54.2 | 50.4 | 0.2 | 0.2 |
-| F6: Person-centred (named people) | 68.6 | 78.4 | 0.1 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 48.3 | 38.1 | -0.6 | -0.7 |
-| F8: Numeric and dated (digits, years) | 40.3 | 39.0 | -0.2 | -0.1 |
-| F9: ALL-CAPS shouting | 41.5 | 51.3 | -0.4 | -0.3 |
-| F10: Quoted speech | 49.2 | 50.8 | -0.4 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 81.8 | 77.1 | 0.4 | -0.2 |
-| F12: +first_pl +future_will +modal | 62.7 | 47.5 | -0.0 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 65.8 | 49.4 | -0.2 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 70.5 | 64.1 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 54.4 | 50.2 | 0.2 | 0.2 |
+| F6: Person-centred (named people) | 68.4 | 78.5 | 0.1 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 48.1 | 38.0 | -0.6 | -0.6 |
+| F8: Numeric and dated (digits, years) | 40.1 | 39.2 | -0.2 | -0.1 |
+| F9: ALL-CAPS shouting | 42.2 | 51.5 | -0.4 | -0.3 |
+| F10: Quoted speech | 49.4 | 50.6 | -0.4 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 81.4 | 77.2 | 0.4 | -0.2 |
+| F12: +first_pl +future_will +modal | 62.9 | 47.7 | -0.0 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.7% (4.8%); outrage 74.8% (59.8%); humor 0.9% (0.2%); question 4.2% (15.3%); breaking_live 8.8% (2.0%); episode_show 10.8% (7.5%); interview_guest 10.8% (7.7%); reaction 6.3% (2.2%); confrontation 12.5% (7.8%); listicle 0.3% (0.1%); howto_explainer 5.3% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.7% (4.8%); outrage 74.8% (60.1%); humor 0.9% (0.2%); question 4.2% (15.2%); breaking_live 8.8% (2.0%); episode_show 10.8% (7.4%); interview_guest 10.8% (7.8%); reaction 6.3% (2.2%); confrontation 12.5% (8.2%); listicle 0.3% (0.1%); howto_explainer 5.3% (9.3%)
 
 
 Nearest style neighbors: @ChadPrather1 [right]; @PTLRadioShow [left]; https://rumble.com/c/GGreenwald [left]; @laurenchenclips [right]; @MyronGainesX [right]
@@ -39,15 +39,15 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 114 | 0.00 | 0.83 | -0.29 | 0.00 | 0.49 | -0.06 | -0.55 | -0.51 | -0.36 | -0.45 | 0.37 | -0.01 | 0.04 | 0.79 | 0.00 |
+| 2026-01 | 114 | 0.00 | 0.83 | -0.29 | 0.00 | 0.49 | -0.06 | -0.55 | -0.51 | -0.36 | -0.45 | 0.37 | -0.00 | 0.04 | 0.79 | 0.00 |
 | 2026-02 | 83 | -0.19 | 0.74 | -0.09 | 0.13 | 0.38 | 0.29 | -0.81 | -0.20 | -0.53 | -0.53 | -0.16 | -0.30 | 0.02 | 0.72 | 0.02 |
-| 2026-03 | 134 | -0.49 | 1.26 | -0.09 | 0.08 | 0.38 | -0.04 | -0.74 | -0.39 | -0.32 | -0.40 | 0.17 | 0.08 | 0.04 | 0.78 | 0.01 |
-| 2026-04 | 138 | -0.58 | 0.62 | -0.16 | 0.00 | -0.07 | -0.14 | -0.46 | -0.49 | -0.53 | -0.69 | 0.26 | -0.27 | 0.02 | 0.78 | 0.01 |
+| 2026-03 | 134 | -0.49 | 1.25 | -0.09 | 0.08 | 0.38 | -0.04 | -0.74 | -0.39 | -0.32 | -0.40 | 0.17 | 0.08 | 0.04 | 0.78 | 0.01 |
+| 2026-04 | 138 | -0.57 | 0.62 | -0.16 | 0.00 | -0.07 | -0.14 | -0.46 | -0.49 | -0.53 | -0.68 | 0.26 | -0.27 | 0.02 | 0.78 | 0.01 |
 | 2026-05 | 120 | -0.89 | 0.65 | -0.30 | 0.01 | 0.14 | 0.04 | -0.45 | -0.38 | -0.47 | -0.21 | 0.40 | -0.11 | 0.03 | 0.82 | 0.00 |
-| 2026-06 | 126 | -0.20 | 0.37 | -0.28 | 0.04 | 0.19 | 0.34 | -0.79 | -0.15 | -0.43 | -0.54 | 0.66 | 0.03 | 0.03 | 0.72 | 0.02 |
+| 2026-06 | 126 | -0.20 | 0.37 | -0.28 | 0.04 | 0.19 | 0.34 | -0.79 | -0.15 | -0.42 | -0.54 | 0.66 | 0.03 | 0.03 | 0.72 | 0.02 |
 | 2026-07 | 136 | -0.14 | 1.07 | -0.26 | 0.04 | 0.05 | -0.22 | -0.48 | -0.22 | -0.30 | -0.11 | 0.15 | -0.02 | 0.01 | 0.76 | 0.01 |
-| 2026-08 | 102 | -0.01 | 0.59 | -0.08 | 0.03 | 0.15 | 0.69 | -0.49 | 0.56 | -0.08 | -0.14 | 0.98 | 0.04 | 0.01 | 0.56 | 0.00 |
-| 2026-09* | 58 | -0.18 | 0.81 | -0.50 | -0.15 | -0.09 | -0.10 | -0.94 | 0.15 | -0.33 | -0.56 | 0.85 | 0.36 | 0.03 | 0.74 | 0.00 |
+| 2026-08 | 102 | -0.00 | 0.59 | -0.08 | 0.04 | 0.15 | 0.68 | -0.49 | 0.56 | -0.07 | -0.14 | 0.98 | 0.04 | 0.01 | 0.56 | 0.00 |
+| 2026-09* | 58 | -0.17 | 0.81 | -0.50 | -0.15 | -0.09 | -0.10 | -0.94 | 0.15 | -0.33 | -0.56 | 0.85 | 0.36 | 0.03 | 0.74 | 0.00 |
 
 
 Engagement (n = 1011, R2 = 0.3601; log views per within-creator SD, month + topic controls):
@@ -117,7 +117,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-01 | 15 | -0.74 | 1.77 | -0.49 | -0.29 | 0.84 | 0.31 | -0.51 | 0.28 | -0.90 | 1.51 | -0.45 | -0.36 | 0.07 | 0.47 | 0.00 |
 | 2026-03 | 16 | -1.47 | 1.14 | -0.44 | 0.18 | 0.26 | -0.97 | -0.66 | -0.97 | -0.29 | -0.30 | 0.25 | -1.27 | 0.19 | 0.81 | 0.00 |
 | 2026-04 | 17 | -1.17 | -0.31 | -0.84 | -0.22 | 0.00 | 0.13 | -0.87 | -0.62 | -0.76 | -0.33 | 0.83 | -1.46 | 0.00 | 0.76 | 0.06 |
-| 2026-06 | 15 | -0.78 | -0.01 | -0.57 | -0.07 | -0.10 | -0.67 | -0.56 | -0.43 | -0.23 | 1.17 | 0.18 | -0.69 | 0.07 | 0.87 | 0.00 |
+| 2026-06 | 15 | -0.77 | -0.01 | -0.57 | -0.07 | -0.10 | -0.67 | -0.56 | -0.43 | -0.23 | 1.17 | 0.18 | -0.69 | 0.07 | 0.87 | 0.00 |
 | 2026-07 | 18 | -1.25 | 0.26 | -0.31 | -0.04 | 0.47 | 0.04 | -0.34 | -0.65 | -0.10 | -0.53 | 0.09 | -1.01 | 0.00 | 0.89 | 0.00 |
 
 

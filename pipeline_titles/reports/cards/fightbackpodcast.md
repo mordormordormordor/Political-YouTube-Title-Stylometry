@@ -13,21 +13,21 @@ Top topics: Israel and Palestine Conflict (14.7%); Right-Wing Political Figures 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 28.0 | 37.7 | -0.2 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 39.0 | 32.2 | -0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.3 | 51.3 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 50.0 | 42.8 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 68.2 | 69.9 | 0.6 | 0.2 |
-| F6: Person-centred (named people) | 82.6 | 85.2 | 0.5 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 42.4 | 35.6 | -0.7 | -0.7 |
-| F8: Numeric and dated (digits, years) | 38.6 | 43.6 | -0.2 | -0.1 |
-| F9: ALL-CAPS shouting | 78.8 | 78.8 | 0.2 | -0.3 |
-| F10: Quoted speech | 29.2 | 36.9 | -0.6 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 58.1 | 50.8 | -0.1 | -0.2 |
-| F12: +first_pl +future_will +modal | 36.4 | 31.4 | -0.3 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 28.3 | 38.0 | -0.2 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 38.8 | 32.1 | -0.3 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.5 | 51.5 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 49.8 | 42.6 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 68.4 | 70.0 | 0.6 | 0.2 |
+| F6: Person-centred (named people) | 82.7 | 85.2 | 0.5 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 41.8 | 35.4 | -0.7 | -0.6 |
+| F8: Numeric and dated (digits, years) | 38.4 | 43.9 | -0.2 | -0.1 |
+| F9: ALL-CAPS shouting | 78.9 | 78.9 | 0.2 | -0.3 |
+| F10: Quoted speech | 29.1 | 36.7 | -0.6 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 57.8 | 50.6 | -0.1 | -0.2 |
+| F12: +first_pl +future_will +modal | 36.7 | 31.6 | -0.3 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.3% (4.8%); outrage 54.6% (59.8%); humor 0.0% (0.2%); question 23.1% (15.3%); breaking_live 0.0% (2.0%); episode_show 13.2% (7.5%); interview_guest 6.5% (7.7%); reaction 8.6% (2.2%); confrontation 6.2% (7.8%); listicle 0.2% (0.1%); howto_explainer 9.6% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.3% (4.8%); outrage 54.6% (60.1%); humor 0.0% (0.2%); question 23.1% (15.2%); breaking_live 0.0% (2.0%); episode_show 13.2% (7.4%); interview_guest 6.5% (7.8%); reaction 8.6% (2.2%); confrontation 6.2% (8.2%); listicle 0.2% (0.1%); howto_explainer 9.6% (9.3%)
 
 
 Nearest style neighbors: @thejimmydoreshow [neutral]; @TheDonLemonShow [left]; @judgingfreedom [left]; @MyronGainesX [right]; @NovaraMedia [left]
@@ -39,14 +39,14 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 79 | 0.06 | -0.46 | -0.29 | -0.21 | 0.37 | 0.79 | -0.77 | -0.48 | 0.66 | -0.68 | -0.28 | 0.03 | 0.00 | 0.39 | 0.00 |
-| 2026-02 | 70 | 0.18 | -0.76 | -0.28 | -0.05 | 0.25 | 1.00 | -0.34 | -0.36 | 0.59 | -1.15 | -0.39 | -0.22 | 0.01 | 0.54 | 0.00 |
-| 2026-03 | 66 | 0.21 | -0.05 | -0.10 | 0.07 | 1.15 | 0.22 | -0.48 | -0.29 | -0.03 | -1.02 | -0.32 | -0.23 | 0.06 | 0.44 | 0.00 |
-| 2026-04 | 77 | -0.11 | -0.83 | -0.41 | -0.43 | 0.17 | 0.01 | -0.60 | -0.41 | -0.29 | -0.80 | -0.75 | 0.12 | 0.05 | 0.55 | 0.00 |
-| 2026-05 | 69 | 0.02 | 0.32 | -0.21 | -0.18 | 0.45 | 0.36 | -0.68 | -0.07 | 0.62 | -0.41 | 0.34 | -0.64 | 0.06 | 0.64 | 0.00 |
-| 2026-06 | 55 | -0.33 | -0.38 | -0.18 | -0.11 | 0.40 | 0.57 | -0.58 | -0.23 | 0.37 | -0.59 | 0.19 | -0.37 | 0.05 | 0.47 | 0.00 |
+| 2026-01 | 79 | 0.07 | -0.47 | -0.29 | -0.21 | 0.37 | 0.79 | -0.77 | -0.48 | 0.66 | -0.68 | -0.28 | 0.03 | 0.00 | 0.39 | 0.00 |
+| 2026-02 | 70 | 0.18 | -0.76 | -0.28 | -0.05 | 0.25 | 1.00 | -0.34 | -0.36 | 0.59 | -1.15 | -0.39 | -0.21 | 0.01 | 0.54 | 0.00 |
+| 2026-03 | 66 | 0.21 | -0.05 | -0.10 | 0.07 | 1.15 | 0.22 | -0.48 | -0.29 | -0.03 | -1.02 | -0.32 | -0.22 | 0.06 | 0.44 | 0.00 |
+| 2026-04 | 77 | -0.11 | -0.83 | -0.41 | -0.43 | 0.17 | 0.01 | -0.60 | -0.41 | -0.29 | -0.80 | -0.76 | 0.12 | 0.05 | 0.55 | 0.00 |
+| 2026-05 | 69 | 0.02 | 0.32 | -0.21 | -0.18 | 0.45 | 0.36 | -0.69 | -0.06 | 0.62 | -0.41 | 0.34 | -0.64 | 0.06 | 0.64 | 0.00 |
+| 2026-06 | 55 | -0.33 | -0.38 | -0.18 | -0.11 | 0.40 | 0.57 | -0.58 | -0.22 | 0.37 | -0.59 | 0.19 | -0.37 | 0.05 | 0.47 | 0.00 |
 | 2026-07 | 63 | -0.37 | -0.49 | -0.20 | -0.25 | 0.61 | 0.21 | -0.83 | -0.45 | 0.50 | -0.58 | 0.06 | -0.05 | 0.00 | 0.65 | 0.00 |
-| 2026-08 | 70 | -1.26 | -0.17 | -0.37 | 0.26 | 0.80 | 0.56 | -0.83 | -0.10 | -0.47 | -0.05 | 0.11 | -1.03 | 0.10 | 0.69 | 0.00 |
+| 2026-08 | 70 | -1.26 | -0.17 | -0.37 | 0.26 | 0.80 | 0.56 | -0.83 | -0.10 | -0.47 | -0.05 | 0.11 | -1.02 | 0.10 | 0.69 | 0.00 |
 | 2026-09* | 35 | -0.51 | 0.87 | -0.28 | 0.11 | 1.13 | 0.44 | -1.04 | 0.72 | 0.03 | 0.42 | 0.26 | -0.86 | 0.06 | 0.57 | 0.00 |
 
 
@@ -98,7 +98,7 @@ Top topics: Right-Wing Political Figures Debate (45.8%); UFC at White House Even
 | F9: ALL-CAPS shouting | None | None | 0.0 | -0.4 |
 | F10: Quoted speech | None | None | -0.7 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | None | None | -0.3 | 0.1 |
-| F12: +first_pl +future_will +modal | None | None | -0.0 | -0.2 |
+| F12: +first_pl +future_will +modal | None | None | 0.0 | -0.2 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.9%); outrage 29.2% (55.8%); humor 0.0% (0.1%); question 0.0% (13.0%); breaking_live 16.7% (16.3%); episode_show 20.8% (25.9%); interview_guest 16.7% (14.2%); reaction 8.3% (2.1%); confrontation 16.7% (9.2%); listicle 0.0% (0.1%); howto_explainer 0.0% (5.4%)

@@ -13,18 +13,18 @@ Top topics: Ukraine-Russia War and Political Figures (12.4%); Trump and China Re
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 97.0 | 80.1 | 1.1 | 0.5 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 97.0 | 80.2 | 1.1 | 0.5 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 5.1 | 8.9 | -1.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.4 | 50.8 | -0.6 | -0.4 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 30.1 | 22.9 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 51.3 | 53.0 | 0.1 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.4 | 51.1 | -0.6 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 30.0 | 22.8 | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 51.5 | 53.2 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 2.5 | 8.9 | -1.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 4.2 | 21.6 | -1.3 | -0.3 |
-| F8: Numeric and dated (digits, years) | 8.1 | 30.1 | -0.6 | 0.0 |
-| F9: ALL-CAPS shouting | 44.1 | 32.2 | -0.4 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 4.2 | 21.5 | -1.3 | -0.3 |
+| F8: Numeric and dated (digits, years) | 8.0 | 30.4 | -0.6 | 0.0 |
+| F9: ALL-CAPS shouting | 43.9 | 32.5 | -0.4 | -0.3 |
 | F10: Quoted speech | 0.4 | 14.8 | -1.2 | -0.1 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 7.6 | 19.9 | -1.1 | -0.1 |
-| F12: +first_pl +future_will +modal | 43.2 | 87.3 | -0.3 | -0.0 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 7.6 | 19.8 | -1.1 | -0.1 |
+| F12: +first_pl +future_will +modal | 43.5 | 87.3 | -0.3 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.5% (3.1%); outrage 35.6% (36.7%); humor 0.0% (0.1%); question 13.4% (13.8%); breaking_live 0.0% (1.2%); episode_show 0.0% (7.1%); interview_guest 3.5% (11.7%); reaction 0.0% (2.0%); confrontation 2.0% (7.6%); listicle 0.0% (0.1%); howto_explainer 5.5% (6.8%)

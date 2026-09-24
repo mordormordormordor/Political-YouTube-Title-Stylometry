@@ -13,24 +13,24 @@ Top topics: Trump press conference outbursts (5.2%); ICE protests in Minneapolis
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 24.6 | 14.4 | -0.3 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 30.9 | 28.4 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.3 | 22.0 | -0.5 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 14.8 | 24.6 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 20.8 | 10.6 | -0.3 | 0.1 |
-| F6: Person-centred (named people) | 81.8 | 84.7 | 0.4 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 78.0 | 78.0 | -0.2 | -0.5 |
-| F8: Numeric and dated (digits, years) | 69.1 | 53.0 | -0.0 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 24.9 | 14.8 | -0.3 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 30.8 | 28.3 | -0.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 15.2 | 22.4 | -0.5 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 14.8 | 24.5 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 20.7 | 10.5 | -0.3 | 0.1 |
+| F6: Person-centred (named people) | 81.4 | 84.8 | 0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 78.1 | 78.1 | -0.2 | -0.5 |
+| F8: Numeric and dated (digits, years) | 69.2 | 53.2 | -0.0 | -0.2 |
 | F9: ALL-CAPS shouting | 89.0 | 88.6 | 1.0 | -0.3 |
-| F10: Quoted speech | 60.2 | 53.0 | -0.2 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 82.6 | 78.4 | 0.4 | -0.3 |
-| F12: +first_pl +future_will +modal | 59.7 | 50.8 | -0.1 | -0.1 |
+| F10: Quoted speech | 60.3 | 52.7 | -0.2 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 82.7 | 78.5 | 0.4 | -0.3 |
+| F12: +first_pl +future_will +modal | 59.9 | 51.1 | -0.1 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.8% (3.6%); outrage 93.6% (63.9%); humor 0.4% (0.2%); question 0.8% (15.6%); breaking_live 1.1% (2.9%); episode_show 13.7% (2.8%); interview_guest 12.5% (9.8%); reaction 0.9% (2.9%); confrontation 5.6% (7.7%); listicle 0.0% (0.1%); howto_explainer 1.7% (8.0%)
 
 
-Nearest style neighbors: @DueDissidence [left]; @RealAmericasVoice [right]; @LegalAFMTN [left]; @AnthonyBrianLogan [right]; @TheAdamCarollaShow1 [right]
+Nearest style neighbors: @DueDissidence [left]; @RealAmericasVoice [right]; @LegalAFMTN [left]; @AnthonyBrianLogan [right]; @fightbackpodcast [right]
 
 Nearest topic neighbors: @TheDamageReport [left]; @RebelHQ [left]; @FarronBalanced [left]; @SecularTalk [left]; @podsaveamerica [left]
 
@@ -45,9 +45,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-04 | 148 | -0.24 | -0.50 | -0.70 | -0.50 | -0.40 | 0.41 | 0.02 | -0.03 | 2.16 | -0.25 | 0.18 | -0.31 | 0.01 | 0.89 | 0.00 |
 | 2026-05 | 147 | -0.22 | 0.06 | -0.46 | -0.48 | -0.43 | 0.12 | 0.27 | -0.22 | 1.52 | 0.08 | -0.08 | 0.01 | 0.01 | 0.97 | 0.00 |
 | 2026-06 | 171 | -0.13 | -0.60 | -0.28 | -0.35 | -0.24 | 0.21 | -0.20 | 0.08 | 0.40 | -0.06 | -0.00 | -0.00 | 0.00 | 0.91 | 0.01 |
-| 2026-07 | 186 | -0.19 | -0.43 | -0.56 | -0.27 | -0.42 | 0.47 | -0.18 | -0.15 | -0.59 | -0.35 | 0.33 | -0.33 | 0.01 | 0.90 | 0.01 |
-| 2026-08 | 189 | 0.16 | -0.42 | -0.50 | -0.26 | -0.36 | 0.32 | -0.36 | -0.25 | -0.84 | -0.39 | 0.26 | -0.21 | 0.00 | 0.89 | 0.02 |
-| 2026-09* | 68 | -0.32 | -0.73 | -0.33 | -0.30 | -0.30 | 0.42 | -0.23 | -0.11 | -0.57 | -0.15 | -0.02 | -0.53 | 0.00 | 0.94 | 0.00 |
+| 2026-07 | 186 | -0.19 | -0.43 | -0.56 | -0.27 | -0.42 | 0.47 | -0.18 | -0.15 | -0.58 | -0.35 | 0.33 | -0.33 | 0.01 | 0.90 | 0.01 |
+| 2026-08 | 189 | 0.16 | -0.42 | -0.50 | -0.26 | -0.36 | 0.32 | -0.36 | -0.24 | -0.84 | -0.39 | 0.26 | -0.21 | 0.00 | 0.89 | 0.02 |
+| 2026-09* | 68 | -0.32 | -0.74 | -0.32 | -0.30 | -0.30 | 0.42 | -0.23 | -0.11 | -0.57 | -0.15 | -0.02 | -0.53 | 0.00 | 0.94 | 0.00 |
 
 
 Engagement (n = 1376, R2 = 0.1698; log views per within-creator SD, month + topic controls):

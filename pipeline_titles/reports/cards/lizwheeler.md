@@ -13,21 +13,21 @@ Top topics: Spencer Pratt LA Mayoral Race (7.8%); Trump and China Relations (6.5
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 78.0 | 64.0 | 0.6 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 9.7 | 12.3 | -1.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 17.8 | 19.1 | -0.5 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 13.1 | 8.5 | -0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 73.3 | 67.8 | 0.7 | 0.2 |
-| F6: Person-centred (named people) | 32.2 | 69.1 | -0.5 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 50.0 | 45.8 | -0.6 | -0.7 |
-| F8: Numeric and dated (digits, years) | 33.5 | 39.4 | -0.3 | -0.1 |
-| F9: ALL-CAPS shouting | 72.9 | 69.1 | -0.0 | -0.3 |
-| F10: Quoted speech | 16.9 | 31.4 | -0.7 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 53.8 | 56.8 | -0.2 | -0.2 |
-| F12: +first_pl +future_will +modal | 6.8 | 11.4 | -0.8 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 78.1 | 64.1 | 0.6 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 9.7 | 12.2 | -1.0 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 17.7 | 19.4 | -0.5 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 13.1 | 8.4 | -0.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 73.4 | 67.9 | 0.7 | 0.2 |
+| F6: Person-centred (named people) | 32.1 | 68.8 | -0.5 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 49.8 | 45.6 | -0.6 | -0.6 |
+| F8: Numeric and dated (digits, years) | 33.3 | 39.7 | -0.3 | -0.1 |
+| F9: ALL-CAPS shouting | 73.0 | 69.2 | -0.0 | -0.3 |
+| F10: Quoted speech | 16.9 | 31.2 | -0.7 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 53.6 | 56.5 | -0.2 | -0.2 |
+| F12: +first_pl +future_will +modal | 7.2 | 11.8 | -0.8 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 11.7% (4.8%); outrage 62.3% (59.8%); humor 0.0% (0.2%); question 26.0% (15.3%); breaking_live 0.0% (2.0%); episode_show 23.4% (7.5%); interview_guest 5.2% (7.7%); reaction 2.6% (2.2%); confrontation 3.9% (7.8%); listicle 2.6% (0.1%); howto_explainer 16.9% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 11.7% (4.8%); outrage 62.3% (60.1%); humor 0.0% (0.2%); question 26.0% (15.2%); breaking_live 0.0% (2.0%); episode_show 23.4% (7.4%); interview_guest 5.2% (7.8%); reaction 2.6% (2.2%); confrontation 3.9% (8.2%); listicle 2.6% (0.1%); howto_explainer 16.9% (9.3%)
 
 
 Nearest style neighbors: @marklevinshow [right]; @therationalnational [left]; @TheJoyReidShow [left]; @hutch [neutral]; @XAVIAER [right]

@@ -13,17 +13,17 @@ Top topics: Trump and Iran War Discussion (34.4%); Trump Economy and Economic Co
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 80.1 | 76.3 | 0.6 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 4.7 | 3.4 | -1.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 87.7 | 88.6 | 0.1 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 80.2 | 76.4 | 0.6 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 4.6 | 3.4 | -1.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 87.8 | 88.6 | 0.1 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 100.0 | 100.0 | 8.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 39.8 | 36.0 | -0.1 | 0.1 |
-| F6: Person-centred (named people) | 30.1 | 15.7 | -0.5 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 85.2 | 87.7 | 0.3 | -0.5 |
-| F8: Numeric and dated (digits, years) | 27.1 | 34.7 | -0.3 | -0.2 |
-| F9: ALL-CAPS shouting | 44.5 | 20.3 | -0.4 | -0.3 |
-| F10: Quoted speech | 82.2 | 84.7 | 0.3 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 80.9 | 86.9 | 0.4 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 39.7 | 35.9 | -0.1 | 0.1 |
+| F6: Person-centred (named people) | 30.0 | 15.6 | -0.5 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 85.2 | 87.8 | 0.3 | -0.5 |
+| F8: Numeric and dated (digits, years) | 27.0 | 35.0 | -0.3 | -0.2 |
+| F9: ALL-CAPS shouting | 44.7 | 20.7 | -0.4 | -0.3 |
+| F10: Quoted speech | 82.3 | 84.8 | 0.3 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 80.6 | 86.9 | 0.4 | -0.3 |
 | F12: +first_pl +future_will +modal | 99.6 | 100.0 | 2.5 | -0.1 |
 
 
@@ -40,10 +40,10 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 93 | 0.77 | -1.26 | 0.01 | 9.06 | -0.04 | -0.56 | 0.26 | -0.24 | -0.29 | 0.62 | 0.23 | 2.86 | 0.23 | 0.16 | 0.00 |
-| 2026-02 | 84 | 0.91 | -1.54 | 0.12 | 8.75 | -0.07 | -0.59 | 0.32 | -0.21 | -0.24 | 0.27 | 0.49 | 2.23 | 0.11 | 0.17 | 0.00 |
+| 2026-02 | 84 | 0.91 | -1.54 | 0.12 | 8.75 | -0.07 | -0.59 | 0.32 | -0.21 | -0.24 | 0.27 | 0.49 | 2.24 | 0.11 | 0.17 | 0.00 |
 | 2026-03 | 93 | 0.53 | -1.31 | 0.03 | 6.34 | -0.16 | -0.51 | 0.36 | -0.21 | -0.52 | 0.27 | 0.30 | 2.10 | 0.12 | 0.17 | 0.01 |
 | 2026-04 | 90 | 0.94 | -1.42 | 0.04 | 8.33 | 0.05 | -0.64 | 0.26 | -0.53 | -0.13 | -0.18 | 0.48 | 2.41 | 0.13 | 0.13 | 0.00 |
-| 2026-05 | 93 | 0.59 | -1.35 | 0.09 | 8.19 | -0.20 | -0.62 | 0.41 | -0.37 | -0.46 | 0.37 | 0.50 | 2.56 | 0.14 | 0.12 | 0.00 |
+| 2026-05 | 93 | 0.60 | -1.35 | 0.09 | 8.19 | -0.20 | -0.62 | 0.41 | -0.37 | -0.46 | 0.37 | 0.50 | 2.57 | 0.14 | 0.12 | 0.00 |
 | 2026-06 | 90 | 0.55 | -1.09 | 0.00 | 7.40 | -0.01 | -0.41 | 0.32 | -0.49 | -0.40 | 0.43 | 0.41 | 2.34 | 0.11 | 0.23 | 0.00 |
 | 2026-07 | 93 | 0.01 | -1.37 | 0.07 | 8.07 | -0.02 | -0.39 | 0.33 | -0.26 | -0.39 | 0.63 | -0.01 | 2.62 | 0.06 | 0.22 | 0.00 |
 | 2026-08 | 93 | 0.63 | -1.44 | 0.11 | 8.08 | -0.09 | -0.62 | 0.37 | -0.39 | -0.34 | 0.27 | 0.46 | 2.47 | 0.13 | 0.13 | 0.01 |

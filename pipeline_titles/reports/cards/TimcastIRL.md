@@ -13,21 +13,21 @@ Top topics: Shocking Events and Reactions (32.6%); ICE protests in Minneapolis (
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 28.8 | 43.6 | -0.2 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 85.6 | 97.0 | 0.8 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.0 | 8.5 | -0.6 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 3.8 | 78.0 | -0.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 3.0 | 8.1 | -0.7 | 0.2 |
-| F6: Person-centred (named people) | 17.8 | 5.5 | -0.7 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 53.8 | 36.9 | -0.5 | -0.7 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.1 | 43.9 | -0.2 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 85.7 | 97.0 | 0.8 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.0 | 8.4 | -0.6 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 4.2 | 78.1 | -0.5 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 3.0 | 8.0 | -0.7 | 0.2 |
+| F6: Person-centred (named people) | 17.7 | 5.5 | -0.7 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 53.6 | 36.7 | -0.5 | -0.6 |
 | F8: Numeric and dated (digits, years) | 20.3 | 5.1 | -0.4 | -0.1 |
 | F9: ALL-CAPS shouting | 97.5 | 98.7 | 2.4 | -0.3 |
-| F10: Quoted speech | 17.8 | 6.8 | -0.7 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 28.0 | 9.3 | -0.6 | -0.2 |
+| F10: Quoted speech | 17.7 | 6.8 | -0.7 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 27.8 | 9.3 | -0.6 | -0.2 |
 | F12: +first_pl +future_will +modal | 96.2 | 83.5 | 0.9 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.5% (4.8%); outrage 86.5% (59.8%); humor 0.5% (0.2%); question 0.1% (15.3%); breaking_live 0.4% (2.0%); episode_show 0.1% (7.5%); interview_guest 2.1% (7.7%); reaction 0.6% (2.2%); confrontation 5.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 1.2% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.5% (4.8%); outrage 86.5% (60.1%); humor 0.5% (0.2%); question 0.1% (15.2%); breaking_live 0.4% (2.0%); episode_show 0.1% (7.4%); interview_guest 2.1% (7.8%); reaction 0.6% (2.2%); confrontation 5.9% (8.2%); listicle 0.0% (0.1%); howto_explainer 1.2% (9.3%)
 
 
 Nearest style neighbors: @Timcast [right]; @TimcastNews [right]; @Vaush [left]; @TheQuartering [right]; @TheVaushPit [left]
@@ -90,7 +90,7 @@ Top topics: ICE protests in Minneapolis (6.7%); Shocking Events and Reactions (4
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 14.3 | 15.6 | -1.1 | 0.1 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 53.2 | 55.8 | -0.3 | -0.3 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 29.9 | 32.5 | -0.4 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 31.2 | 32.5 | -0.4 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 15.6 | 32.5 | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 10.4 | 20.8 | -0.7 | -0.3 |
 | F6: Person-centred (named people) | 48.1 | 40.3 | 0.1 | -0.1 |
@@ -115,13 +115,13 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 17 | -0.75 | 0.80 | -0.48 | -0.56 | -0.39 | 0.50 | -0.90 | 0.12 | 2.39 | -0.94 | -0.71 | 1.54 | 0.00 | 1.00 | 0.00 |
-| 2026-02 | 19 | -0.84 | 0.14 | 0.31 | 0.42 | -0.39 | 0.11 | -0.74 | 2.80 | 3.31 | -0.70 | -1.21 | 0.74 | 0.00 | 0.89 | 0.00 |
-| 2026-03 | 20 | -0.76 | 0.20 | -0.36 | -0.19 | -0.46 | 1.09 | -0.18 | 1.96 | 1.51 | -0.72 | -0.79 | 1.35 | 0.00 | 0.85 | 0.00 |
+| 2026-02 | 19 | -0.83 | 0.14 | 0.31 | 0.42 | -0.39 | 0.11 | -0.74 | 2.80 | 3.32 | -0.69 | -1.22 | 0.75 | 0.00 | 0.89 | 0.00 |
+| 2026-03 | 20 | -0.76 | 0.20 | -0.35 | -0.19 | -0.46 | 1.09 | -0.18 | 1.96 | 1.51 | -0.71 | -0.79 | 1.36 | 0.00 | 0.85 | 0.00 |
 | 2026-04 | 18 | -1.51 | -0.39 | -0.20 | -0.23 | -0.72 | 0.03 | -0.14 | 0.49 | 2.81 | -0.88 | -0.82 | 0.52 | 0.00 | 0.89 | 0.00 |
 | 2026-05 | 16 | -0.81 | -2.20 | -0.41 | -0.61 | -0.96 | -0.78 | -0.74 | 0.58 | 2.63 | -0.86 | -0.65 | 1.64 | 0.00 | 1.00 | 0.00 |
 | 2026-06 | 17 | -1.39 | -0.74 | -0.76 | -1.03 | -0.74 | -0.36 | -0.02 | 0.50 | 1.44 | -0.87 | -0.59 | 0.42 | 0.00 | 1.00 | 0.00 |
 | 2026-07 | 19 | -1.92 | 0.62 | -0.44 | -0.53 | -0.70 | -0.81 | -0.24 | -0.42 | 0.54 | -0.81 | -0.66 | 0.73 | 0.00 | 0.84 | 0.00 |
-| 2026-08 | 17 | -0.70 | 0.06 | -0.75 | -0.57 | -0.96 | 0.43 | -0.66 | 0.56 | 2.49 | -0.90 | -1.08 | 0.56 | 0.06 | 1.00 | 0.00 |
+| 2026-08 | 17 | -0.70 | 0.06 | -0.75 | -0.57 | -0.96 | 0.43 | -0.66 | 0.56 | 2.48 | -0.90 | -1.09 | 0.56 | 0.06 | 1.00 | 0.00 |
 
 
 Engagement (n = 149, R2 = 0.5029; log views per within-creator SD, month + topic controls):

@@ -14,20 +14,20 @@ Top topics: Iran and Political Updates (15.2%); Inflation and Precious Metals (1
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 99.6 | 96.6 | 1.4 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 48.7 | 50.4 | -0.1 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 60.6 | 55.9 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 68.2 | 65.3 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 4.7 | 11.9 | -0.6 | 0.2 |
-| F6: Person-centred (named people) | 30.5 | 29.2 | -0.5 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 80.5 | 80.9 | 0.0 | -0.7 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 48.5 | 50.2 | -0.1 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 60.8 | 56.1 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 68.4 | 65.4 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 4.6 | 11.8 | -0.6 | 0.2 |
+| F6: Person-centred (named people) | 30.4 | 29.1 | -0.5 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 80.6 | 81.0 | 0.0 | -0.6 |
 | F8: Numeric and dated (digits, years) | 94.5 | 94.5 | 0.6 | -0.1 |
 | F9: ALL-CAPS shouting | 99.6 | 97.5 | 2.8 | -0.3 |
 | F10: Quoted speech | 18.6 | 16.9 | -0.7 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 100.0 | 100.0 | 4.6 | -0.2 |
-| F12: +first_pl +future_will +modal | 73.3 | 82.6 | 0.2 | -0.3 |
+| F12: +first_pl +future_will +modal | 73.4 | 82.7 | 0.2 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.5% (4.8%); outrage 76.6% (59.8%); humor 0.0% (0.2%); question 17.4% (15.3%); breaking_live 0.0% (2.0%); episode_show 100.0% (7.5%); interview_guest 3.3% (7.7%); reaction 0.5% (2.2%); confrontation 6.5% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.8% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.5% (4.8%); outrage 76.6% (60.1%); humor 0.0% (0.2%); question 17.4% (15.2%); breaking_live 0.0% (2.0%); episode_show 100.0% (7.4%); interview_guest 3.3% (7.8%); reaction 0.5% (2.2%); confrontation 6.5% (8.2%); listicle 0.0% (0.1%); howto_explainer 3.8% (9.3%)
 
 
 Nearest style neighbors: https://rumble.com/c/BannonsWarRoom [right]; @RonPlacone [left]; @HasanabiClips [left]; @MichaelMaliceofficial [right]; @LegalAFMTN [left]
@@ -40,8 +40,8 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 22 | 0.85 | 0.18 | -0.28 | 0.03 | 0.10 | -0.15 | 0.35 | 0.55 | 1.19 | -0.83 | 3.90 | -0.02 | 0.09 | 0.77 | 0.00 |
-| 2026-02 | 17 | 0.46 | 0.63 | -0.23 | -0.02 | -0.87 | 0.00 | 0.31 | 0.66 | 2.21 | -0.52 | 3.27 | -0.13 | 0.18 | 0.59 | 0.00 |
-| 2026-03 | 16 | 1.96 | 1.06 | -0.46 | -0.22 | -0.75 | -0.77 | -1.38 | 0.04 | 3.10 | -0.69 | 5.11 | 2.38 | 0.00 | 0.88 | 0.00 |
+| 2026-02 | 17 | 0.46 | 0.63 | -0.23 | -0.02 | -0.87 | 0.00 | 0.31 | 0.66 | 2.21 | -0.52 | 3.27 | -0.12 | 0.18 | 0.59 | 0.00 |
+| 2026-03 | 16 | 1.96 | 1.06 | -0.46 | -0.22 | -0.76 | -0.77 | -1.38 | 0.04 | 3.10 | -0.70 | 5.10 | 2.38 | 0.00 | 0.88 | 0.00 |
 | 2026-04 | 26 | 1.48 | -0.52 | -0.30 | 0.07 | -0.67 | -0.43 | -0.02 | 0.43 | 3.55 | -0.97 | 5.03 | -0.20 | 0.04 | 0.77 | 0.00 |
 | 2026-05 | 21 | 0.65 | -0.40 | -0.41 | -0.32 | -1.02 | -0.43 | 0.64 | 0.65 | 2.91 | -0.36 | 3.92 | -0.65 | 0.05 | 0.86 | 0.00 |
 | 2026-06 | 22 | 2.89 | -0.11 | -0.33 | 0.11 | -0.25 | -1.08 | 0.23 | 0.34 | 2.46 | -1.04 | 5.85 | 0.19 | 0.09 | 0.55 | 0.00 |

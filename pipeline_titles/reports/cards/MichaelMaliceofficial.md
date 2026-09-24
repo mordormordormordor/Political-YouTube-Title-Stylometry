@@ -14,20 +14,20 @@ Top topics: Political Commentary and Guests (23.5%); American History and Politi
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 98.7 | 99.2 | 1.2 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 11.9 | 10.2 | -0.9 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.2 | 66.5 | -0.2 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 69.5 | 68.6 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 83.5 | 84.3 | 1.1 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 11.8 | 10.1 | -0.9 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.3 | 66.7 | -0.2 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 69.6 | 68.8 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 83.5 | 84.4 | 1.1 | 0.2 |
 | F6: Person-centred (named people) | 93.2 | 92.8 | 0.9 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 58.5 | 17.4 | -0.5 | -0.7 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 58.2 | 17.3 | -0.5 | -0.6 |
 | F8: Numeric and dated (digits, years) | 90.7 | 83.1 | 0.3 | -0.1 |
-| F9: ALL-CAPS shouting | 81.4 | 83.5 | 0.3 | -0.3 |
-| F10: Quoted speech | 88.6 | 86.0 | 0.7 | -0.4 |
+| F9: ALL-CAPS shouting | 81.0 | 83.5 | 0.3 | -0.3 |
+| F10: Quoted speech | 88.6 | 86.1 | 0.7 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 94.1 | 91.1 | 1.0 | -0.2 |
-| F12: +first_pl +future_will +modal | 60.6 | 44.9 | -0.1 | -0.3 |
+| F12: +first_pl +future_will +modal | 60.3 | 45.1 | -0.1 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 13.7% (59.8%); humor 2.0% (0.2%); question 21.6% (15.3%); breaking_live 0.0% (2.0%); episode_show 70.6% (7.5%); interview_guest 31.4% (7.7%); reaction 0.0% (2.2%); confrontation 9.8% (7.8%); listicle 0.0% (0.1%); howto_explainer 15.7% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 13.7% (60.1%); humor 2.0% (0.2%); question 21.6% (15.2%); breaking_live 0.0% (2.0%); episode_show 70.6% (7.4%); interview_guest 31.4% (7.8%); reaction 0.0% (2.2%); confrontation 9.8% (8.2%); listicle 0.0% (0.1%); howto_explainer 15.7% (9.3%)
 
 
 Nearest style neighbors: @PragerU [right]; @MegynKelly [right]; @turningpointusa [right]; @underthedesknews [left]; @RonPlacone [left]

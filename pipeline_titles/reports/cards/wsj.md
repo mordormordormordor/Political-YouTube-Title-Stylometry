@@ -13,18 +13,18 @@ Top topics: Tech Business Founders and Industry (12.5%); Ukraine-Russia War and 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 49.2 | 58.1 | 0.2 | 0.5 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 53.8 | 50.8 | 0.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 53.8 | 74.6 | -0.3 | -0.4 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 61.9 | 46.2 | -0.0 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 49.4 | 58.2 | 0.2 | 0.5 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 53.6 | 50.6 | 0.0 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 54.0 | 74.7 | -0.3 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 62.0 | 46.0 | -0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 99.6 | 99.6 | 4.4 | 0.1 |
-| F6: Person-centred (named people) | 4.2 | 10.6 | -1.0 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 43.6 | 72.5 | -0.7 | -0.3 |
+| F6: Person-centred (named people) | 4.2 | 10.5 | -1.0 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 43.5 | 72.6 | -0.7 | -0.3 |
 | F8: Numeric and dated (digits, years) | 95.8 | 96.2 | 0.7 | 0.0 |
-| F9: ALL-CAPS shouting | 3.4 | 1.3 | -1.0 | -0.3 |
-| F10: Quoted speech | 47.0 | 56.8 | -0.4 | -0.1 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 31.4 | 45.8 | -0.6 | -0.1 |
-| F12: +first_pl +future_will +modal | 25.4 | 60.2 | -0.5 | -0.0 |
+| F9: ALL-CAPS shouting | 3.8 | 1.3 | -1.0 | -0.3 |
+| F10: Quoted speech | 46.8 | 56.5 | -0.4 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 31.2 | 45.6 | -0.6 | -0.1 |
+| F12: +first_pl +future_will +modal | 25.7 | 60.3 | -0.5 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.9% (3.1%); outrage 23.1% (36.7%); humor 0.0% (0.1%); question 62.5% (13.8%); breaking_live 1.0% (1.2%); episode_show 0.0% (7.1%); interview_guest 6.7% (11.7%); reaction 0.0% (2.0%); confrontation 2.9% (7.6%); listicle 1.0% (0.1%); howto_explainer 37.5% (6.8%)

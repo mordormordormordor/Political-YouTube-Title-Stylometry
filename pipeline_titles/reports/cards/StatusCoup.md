@@ -13,18 +13,18 @@ Top topics: ICE protests in Minneapolis (34.2%); Trump and Epstein Files Scandal
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 8.9 | 7.2 | -0.7 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 17.8 | 17.4 | -0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.1 | 91.5 | 0.1 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 50.8 | 41.1 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 21.6 | 16.9 | -0.3 | 0.1 |
-| F6: Person-centred (named people) | 47.9 | 41.9 | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 42.8 | 61.0 | -0.7 | -0.5 |
-| F8: Numeric and dated (digits, years) | 74.6 | 69.5 | 0.0 | -0.2 |
-| F9: ALL-CAPS shouting | 91.5 | 90.7 | 1.5 | -0.3 |
-| F10: Quoted speech | 96.2 | 95.3 | 1.4 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 47.0 | 52.1 | -0.3 | -0.3 |
-| F12: +first_pl +future_will +modal | 44.9 | 39.4 | -0.2 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 9.3 | 7.6 | -0.7 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 17.7 | 17.3 | -0.7 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 88.2 | 91.6 | 0.1 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 50.6 | 40.9 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 21.5 | 16.9 | -0.3 | 0.1 |
+| F6: Person-centred (named people) | 47.7 | 41.8 | -0.3 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 42.6 | 60.8 | -0.7 | -0.5 |
+| F8: Numeric and dated (digits, years) | 74.7 | 69.6 | 0.0 | -0.2 |
+| F9: ALL-CAPS shouting | 91.6 | 90.7 | 1.5 | -0.3 |
+| F10: Quoted speech | 96.2 | 95.4 | 1.4 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 46.8 | 51.9 | -0.3 | -0.3 |
+| F12: +first_pl +future_will +modal | 45.1 | 39.7 | -0.2 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.0% (3.6%); outrage 89.0% (63.9%); humor 0.0% (0.2%); question 10.0% (15.6%); breaking_live 8.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 7.6% (9.8%); reaction 0.0% (2.9%); confrontation 7.2% (7.7%); listicle 0.2% (0.1%); howto_explainer 2.5% (8.0%)
@@ -43,7 +43,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-02 | 68 | -0.73 | -0.43 | 0.16 | -0.21 | -0.33 | -0.13 | -0.68 | 0.21 | 1.91 | 3.12 | -0.19 | 0.09 | 0.00 | 0.93 | 0.00 |
 | 2026-03 | 60 | -1.22 | -0.27 | 0.14 | -0.23 | -0.05 | -0.50 | -0.71 | 0.28 | 0.53 | 2.03 | -0.37 | -0.69 | 0.03 | 0.90 | 0.00 |
 | 2026-04 | 50 | -0.61 | -0.35 | -0.12 | -0.20 | -0.46 | -0.15 | -0.95 | -0.34 | 1.16 | 1.17 | -0.46 | -0.36 | 0.04 | 0.94 | 0.00 |
-| 2026-05 | 57 | -0.71 | -1.12 | 0.20 | -0.09 | -0.46 | -0.37 | -0.57 | -0.38 | 1.91 | 1.51 | 0.07 | -0.53 | 0.04 | 0.77 | 0.00 |
+| 2026-05 | 57 | -0.71 | -1.12 | 0.20 | -0.09 | -0.46 | -0.37 | -0.57 | -0.38 | 1.91 | 1.51 | 0.07 | -0.52 | 0.04 | 0.77 | 0.00 |
 | 2026-06 | 50 | -0.70 | -0.84 | 0.35 | 0.09 | -0.49 | -0.28 | -0.33 | 0.11 | 2.82 | 0.94 | 0.11 | -0.50 | 0.04 | 0.84 | 0.00 |
 | 2026-07 | 54 | -0.44 | -1.20 | -0.23 | 0.61 | -0.27 | -0.24 | -0.51 | -0.11 | 0.91 | -0.62 | -0.44 | -0.27 | 0.02 | 0.89 | 0.00 |
 | 2026-08 | 62 | -0.99 | -0.75 | -0.00 | -0.33 | -0.39 | -0.26 | -0.87 | 0.12 | 0.62 | -0.09 | -0.67 | 0.17 | 0.02 | 0.85 | 0.00 |
@@ -113,8 +113,8 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 30 | -0.86 | 0.36 | 2.09 | 0.39 | -0.46 | 0.21 | -0.35 | 0.13 | 3.22 | -0.81 | -0.14 | 1.09 | 0.00 | 0.90 | 0.00 |
-| 2026-04 | 19 | -0.33 | -1.71 | 1.61 | -0.05 | -0.73 | -0.58 | -0.83 | -0.57 | 2.12 | -0.23 | -0.49 | -0.59 | 0.00 | 0.79 | 0.00 |
+| 2026-01 | 30 | -0.87 | 0.36 | 2.09 | 0.39 | -0.46 | 0.21 | -0.35 | 0.13 | 3.22 | -0.81 | -0.14 | 1.09 | 0.00 | 0.90 | 0.00 |
+| 2026-04 | 19 | -0.33 | -1.70 | 1.61 | -0.05 | -0.73 | -0.58 | -0.83 | -0.57 | 2.12 | -0.23 | -0.49 | -0.59 | 0.00 | 0.79 | 0.00 |
 | 2026-05 | 24 | -1.35 | -0.23 | 1.72 | 0.01 | -0.55 | -0.69 | -0.48 | -0.27 | 2.41 | -0.82 | -0.68 | 1.00 | 0.00 | 0.75 | 0.00 |
 | 2026-06 | 19 | -1.24 | -0.86 | 1.73 | -0.15 | -0.59 | -0.86 | 0.00 | 0.61 | 1.17 | -0.29 | 0.28 | -0.90 | 0.00 | 1.00 | 0.00 |
 | 2026-07 | 20 | -0.96 | -1.21 | 1.69 | 0.09 | -0.64 | 0.45 | -0.16 | -0.54 | 2.40 | -1.05 | -0.48 | 0.51 | 0.00 | 0.90 | 0.00 |

@@ -13,18 +13,18 @@ Top topics: Trump and Iran War Negotiations (7.8%); ICE protests in Minneapolis 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 70.3 | 52.5 | 0.5 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 88.1 | 82.2 | 0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 94.5 | 95.3 | 0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 78.0 | 70.8 | 0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 58.9 | 50.8 | 0.3 | 0.1 |
-| F6: Person-centred (named people) | 45.3 | 53.0 | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 91.5 | 91.5 | 0.8 | -0.5 |
-| F8: Numeric and dated (digits, years) | 41.9 | 53.8 | -0.2 | -0.2 |
-| F9: ALL-CAPS shouting | 39.0 | 39.4 | -0.4 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 70.5 | 52.7 | 0.5 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 88.2 | 82.3 | 0.8 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 94.5 | 95.4 | 0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 78.1 | 70.9 | 0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 59.1 | 50.6 | 0.3 | 0.1 |
+| F6: Person-centred (named people) | 45.1 | 52.7 | -0.3 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 91.6 | 91.6 | 0.8 | -0.5 |
+| F8: Numeric and dated (digits, years) | 42.2 | 54.0 | -0.2 | -0.2 |
+| F9: ALL-CAPS shouting | 39.2 | 39.7 | -0.4 | -0.3 |
 | F10: Quoted speech | 98.3 | 98.3 | 2.5 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 70.3 | 72.5 | 0.1 | -0.3 |
-| F12: +first_pl +future_will +modal | 83.5 | 84.7 | 0.3 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 70.0 | 72.2 | 0.1 | -0.3 |
+| F12: +first_pl +future_will +modal | 83.5 | 84.8 | 0.3 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.3% (3.6%); outrage 54.8% (63.9%); humor 0.1% (0.2%); question 9.0% (15.6%); breaking_live 4.7% (2.9%); episode_show 0.0% (2.8%); interview_guest 9.2% (9.8%); reaction 4.6% (2.9%); confrontation 10.5% (7.7%); listicle 0.0% (0.1%); howto_explainer 4.5% (8.0%)
@@ -40,7 +40,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 1110 | 0.64 | 1.00 | 0.27 | 0.14 | 0.23 | -0.31 | 0.94 | -0.21 | -0.66 | 2.37 | 0.05 | 0.40 | 0.02 | 0.54 | 0.00 |
-| 2026-02 | 1036 | 0.66 | 0.82 | 0.22 | 0.10 | 0.22 | -0.28 | 0.87 | -0.24 | -0.55 | 2.19 | 0.01 | 0.37 | 0.01 | 0.55 | 0.00 |
+| 2026-02 | 1036 | 0.66 | 0.82 | 0.23 | 0.10 | 0.22 | -0.28 | 0.87 | -0.24 | -0.55 | 2.19 | 0.01 | 0.38 | 0.01 | 0.55 | 0.00 |
 | 2026-03 | 1148 | 0.39 | 0.90 | 0.20 | 0.10 | 0.22 | -0.47 | 0.72 | -0.31 | -0.34 | 2.40 | -0.10 | 0.35 | 0.01 | 0.53 | 0.00 |
 | 2026-04 | 1173 | 0.48 | 0.95 | 0.26 | 0.09 | 0.13 | -0.27 | 0.78 | -0.23 | -0.26 | 2.25 | 0.18 | 0.16 | 0.01 | 0.54 | 0.00 |
 | 2026-05 | 1102 | 0.61 | 0.82 | 0.31 | 0.08 | 0.25 | -0.40 | 0.91 | -0.10 | -0.33 | 2.63 | 0.12 | 0.22 | 0.01 | 0.54 | 0.00 |
@@ -93,7 +93,7 @@ Top topics: Trump delivering remarks (14.9%); DHS Shutdown and Government Fundin
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 90.9 | 88.3 | 2.2 | -0.2 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 31.2 | 23.4 | -0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 32.5 | 19.5 | -0.4 | -0.3 |
-| F6: Person-centred (named people) | 44.2 | 55.8 | 0.1 | 0.7 |
+| F6: Person-centred (named people) | 45.5 | 55.8 | 0.1 | 0.7 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 88.3 | 92.2 | 1.1 | -0.4 |
 | F8: Numeric and dated (digits, years) | 37.7 | 40.3 | -0.1 | -0.1 |
 | F9: ALL-CAPS shouting | 36.4 | 31.2 | -0.6 | -0.4 |
@@ -120,8 +120,8 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-04 | 44 | 0.14 | 0.96 | 3.05 | -0.30 | -0.53 | -0.09 | 0.92 | -0.20 | -0.46 | -0.49 | -0.07 | -0.64 | 0.02 | 0.23 | 0.00 |
 | 2026-05 | 39 | 0.11 | 1.03 | 2.98 | -0.46 | -0.51 | 0.23 | 1.15 | -0.12 | -0.87 | -0.94 | -0.27 | -0.95 | 0.05 | 0.08 | 0.00 |
 | 2026-06 | 36 | 0.53 | 0.68 | 2.58 | -0.30 | -0.33 | 0.62 | 0.29 | -0.19 | -0.30 | -0.78 | 0.32 | -0.59 | 0.00 | 0.11 | 0.00 |
-| 2026-07 | 44 | 0.18 | 0.69 | -0.49 | -0.23 | -0.24 | 0.29 | 1.47 | 0.32 | 0.02 | -0.61 | 0.09 | -0.46 | 0.00 | 0.09 | 0.00 |
-| 2026-08 | 18 | 0.74 | 0.49 | -0.34 | -0.04 | -0.51 | -0.61 | 1.03 | -0.28 | -0.49 | 0.05 | 0.77 | 0.08 | 0.00 | 0.06 | 0.00 |
+| 2026-07 | 44 | 0.18 | 0.69 | -0.49 | -0.23 | -0.25 | 0.29 | 1.47 | 0.32 | 0.02 | -0.61 | 0.09 | -0.46 | 0.00 | 0.09 | 0.00 |
+| 2026-08 | 18 | 0.74 | 0.49 | -0.33 | -0.04 | -0.51 | -0.61 | 1.03 | -0.28 | -0.49 | 0.05 | 0.77 | 0.08 | 0.00 | 0.06 | 0.00 |
 
 
 Engagement (n = 308, R2 = 0.3883; log views per within-creator SD, month + topic controls):

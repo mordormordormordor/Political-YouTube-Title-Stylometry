@@ -13,24 +13,24 @@ Top topics: Morning News Headlines (13.0%); Israel and Palestine Conflict (10.6%
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 27.5 | 30.9 | -0.2 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 22.9 | 4.7 | -0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 54.7 | 60.2 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 22.0 | 14.0 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 35.2 | 25.8 | -0.1 | 0.1 |
-| F6: Person-centred (named people) | 44.5 | 36.9 | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 52.1 | 11.9 | -0.5 | -0.5 |
-| F8: Numeric and dated (digits, years) | 13.6 | 97.9 | -0.4 | -0.2 |
-| F9: ALL-CAPS shouting | 66.1 | 83.1 | -0.1 | -0.3 |
-| F10: Quoted speech | 28.8 | 15.3 | -0.6 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 34.7 | 6.8 | -0.5 | -0.3 |
-| F12: +first_pl +future_will +modal | 27.1 | 33.9 | -0.4 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 27.8 | 31.2 | -0.2 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 22.8 | 4.6 | -0.6 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 54.9 | 60.3 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 21.9 | 13.9 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 35.0 | 25.7 | -0.1 | 0.1 |
+| F6: Person-centred (named people) | 44.3 | 36.7 | -0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 51.9 | 11.8 | -0.5 | -0.5 |
+| F8: Numeric and dated (digits, years) | 13.5 | 97.9 | -0.4 | -0.2 |
+| F9: ALL-CAPS shouting | 66.2 | 83.1 | -0.1 | -0.3 |
+| F10: Quoted speech | 28.7 | 15.2 | -0.6 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 34.6 | 6.8 | -0.5 | -0.3 |
+| F12: +first_pl +future_will +modal | 27.4 | 34.2 | -0.4 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.9% (3.6%); outrage 56.1% (63.9%); humor 0.1% (0.2%); question 4.1% (15.6%); breaking_live 1.2% (2.9%); episode_show 31.6% (2.8%); interview_guest 10.6% (9.8%); reaction 1.3% (2.9%); confrontation 6.6% (7.7%); listicle 0.0% (0.1%); howto_explainer 3.2% (8.0%)
 
 
-Nearest style neighbors: @NovaraMedia [left]; @BadEmpanadaLive [left]; @OwenJonesTalks [left]; @JesseKellyDC [right]; @LIVESNEAKO [neutral]
+Nearest style neighbors: @NovaraMedia [left]; @BadEmpanadaLive [left]; @OwenJonesTalks [left]; @JesseKellyDC [right]; @FarronBalanced [left]
 
 Nearest topic neighbors: @DueDissidence [left]; @breakingpoints [left]; @thejimmydoreshow [neutral]; @SabbySabs [left]; @SecularTalk [left]
 
@@ -45,7 +45,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-04 | 337 | -0.07 | -0.47 | -0.31 | -0.27 | -0.16 | -0.33 | -0.58 | -0.51 | -0.01 | -0.67 | -0.58 | -0.40 | 0.01 | 0.58 | 0.01 |
 | 2026-05 | 317 | -0.31 | -0.45 | -0.27 | -0.21 | -0.17 | -0.36 | -0.51 | -0.45 | 0.02 | -0.64 | -0.42 | -0.55 | 0.02 | 0.59 | 0.00 |
 | 2026-06 | 309 | -0.26 | -0.40 | -0.28 | -0.31 | -0.23 | -0.28 | -0.52 | -0.54 | -0.12 | -0.63 | -0.56 | -0.35 | 0.02 | 0.58 | 0.00 |
-| 2026-07 | 323 | -0.32 | -0.43 | -0.26 | -0.35 | 0.01 | -0.39 | -0.45 | -0.52 | -0.21 | -0.64 | -0.60 | -0.52 | 0.02 | 0.55 | 0.00 |
+| 2026-07 | 323 | -0.32 | -0.43 | -0.26 | -0.35 | 0.01 | -0.39 | -0.45 | -0.52 | -0.20 | -0.63 | -0.60 | -0.52 | 0.02 | 0.55 | 0.00 |
 | 2026-08 | 324 | -0.22 | -0.60 | -0.20 | -0.28 | -0.01 | -0.50 | -0.60 | -0.40 | -0.08 | -0.52 | -0.45 | -0.45 | 0.03 | 0.52 | 0.00 |
 | 2026-09* | 137 | -0.29 | -0.95 | -0.28 | -0.31 | -0.19 | -0.44 | -0.58 | -0.58 | -0.17 | -0.57 | -0.24 | -0.33 | 0.01 | 0.54 | 0.00 |
 
@@ -89,7 +89,7 @@ Top topics: Israel and Palestine Conflict (16.1%); Trump and Iran War Negotiatio
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 23.4 | 26.0 | -0.7 | -0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 42.9 | 44.2 | -0.5 | -0.4 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 41.6 | 44.2 | -0.5 | -0.4 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 49.4 | 44.2 | -0.2 | -0.2 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 42.9 | 51.9 | -0.2 | -0.2 |
 | F5: Question and explainer framing (why, what, ?) | 77.9 | 76.6 | -0.1 | -0.3 |
@@ -97,7 +97,7 @@ Top topics: Israel and Palestine Conflict (16.1%); Trump and Iran War Negotiatio
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 40.3 | 39.0 | -0.5 | -0.4 |
 | F8: Numeric and dated (digits, years) | 15.6 | 16.9 | -0.3 | -0.1 |
 | F9: ALL-CAPS shouting | 75.3 | 77.9 | 0.2 | -0.4 |
-| F10: Quoted speech | 10.4 | 24.7 | -0.9 | -0.6 |
+| F10: Quoted speech | 11.7 | 24.7 | -0.9 | -0.6 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 71.4 | 61.0 | 0.3 | 0.0 |
 | F12: +first_pl +future_will +modal | 9.1 | 26.0 | -0.8 | -0.0 |
 
@@ -116,9 +116,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 45 | -0.58 | -1.19 | 0.25 | 0.22 | 0.12 | 0.14 | -0.53 | -0.44 | 0.18 | -0.67 | 0.42 | -0.56 | 0.02 | 0.56 | 0.00 |
 | 2026-02 | 41 | 0.45 | -1.63 | 0.14 | -0.21 | -0.26 | -0.16 | -0.13 | -0.16 | 0.29 | -1.17 | 0.54 | -0.72 | 0.10 | 0.73 | 0.00 |
-| 2026-03 | 42 | -0.71 | -0.99 | -0.03 | -0.09 | 0.42 | 0.71 | -0.83 | -0.07 | 0.29 | -1.15 | 0.44 | -0.61 | 0.00 | 0.60 | 0.00 |
+| 2026-03 | 42 | -0.71 | -0.99 | -0.03 | -0.09 | 0.42 | 0.71 | -0.83 | -0.06 | 0.29 | -1.15 | 0.45 | -0.61 | 0.00 | 0.60 | 0.00 |
 | 2026-04 | 50 | -2.42 | 0.69 | -0.43 | -0.18 | -0.25 | 1.11 | -0.32 | -0.23 | 0.17 | -0.86 | 0.77 | -1.36 | 0.06 | 1.00 | 0.00 |
-| 2026-05 | 50 | -1.66 | -0.15 | -0.53 | -0.08 | -0.17 | 0.81 | -0.66 | -0.66 | -0.44 | -0.74 | -0.17 | -0.71 | 0.04 | 0.82 | 0.00 |
+| 2026-05 | 50 | -1.66 | -0.15 | -0.53 | -0.08 | -0.17 | 0.81 | -0.66 | -0.66 | -0.44 | -0.74 | -0.17 | -0.70 | 0.04 | 0.82 | 0.00 |
 | 2026-06 | 51 | 0.13 | -0.17 | -0.26 | -0.24 | -0.14 | -0.27 | -0.61 | -0.61 | 0.23 | -1.02 | 0.49 | -1.15 | 0.00 | 0.80 | 0.00 |
 | 2026-07 | 53 | -0.20 | -0.27 | -0.31 | -0.40 | 0.30 | 0.02 | -0.27 | 0.36 | 0.77 | -1.15 | -0.19 | -0.85 | 0.02 | 0.75 | 0.00 |
 | 2026-08 | 53 | -0.54 | -0.53 | -0.30 | -0.25 | -0.29 | 0.31 | -0.69 | -0.32 | 0.54 | -0.97 | 0.20 | -0.49 | 0.08 | 0.77 | 0.00 |

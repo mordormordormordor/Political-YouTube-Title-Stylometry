@@ -13,18 +13,18 @@ Top topics: UK Political Chaos and Reform UK (11.3%); Israel and Palestine Confl
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 27.1 | 31.8 | -0.2 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 29.2 | 37.3 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 49.6 | 63.6 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 18.6 | 14.4 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 40.7 | 51.7 | -0.0 | 0.1 |
-| F6: Person-centred (named people) | 58.9 | 56.4 | -0.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 45.3 | 68.6 | -0.6 | -0.5 |
-| F8: Numeric and dated (digits, years) | 18.6 | 24.2 | -0.4 | -0.2 |
-| F9: ALL-CAPS shouting | 45.3 | 50.8 | -0.4 | -0.3 |
-| F10: Quoted speech | 19.5 | 46.6 | -0.7 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 25.8 | 30.9 | -0.7 | -0.3 |
-| F12: +first_pl +future_will +modal | 42.4 | 68.6 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 27.4 | 32.1 | -0.2 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 29.1 | 37.1 | -0.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 49.8 | 63.7 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 18.6 | 14.3 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 40.5 | 51.9 | -0.0 | 0.1 |
+| F6: Person-centred (named people) | 58.6 | 56.1 | -0.1 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 45.1 | 68.8 | -0.6 | -0.5 |
+| F8: Numeric and dated (digits, years) | 18.6 | 24.1 | -0.4 | -0.2 |
+| F9: ALL-CAPS shouting | 45.6 | 51.1 | -0.4 | -0.3 |
+| F10: Quoted speech | 19.4 | 46.4 | -0.7 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 25.7 | 30.8 | -0.7 | -0.3 |
+| F12: +first_pl +future_will +modal | 42.6 | 68.8 | -0.3 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.1% (3.6%); outrage 63.4% (63.9%); humor 0.0% (0.2%); question 12.2% (15.6%); breaking_live 1.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 8.0% (9.8%); reaction 1.1% (2.9%); confrontation 6.9% (7.7%); listicle 0.0% (0.1%); howto_explainer 5.1% (8.0%)
@@ -40,10 +40,10 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 65 | -0.25 | -0.44 | -0.62 | -0.32 | -0.12 | -0.41 | -0.71 | -0.41 | -0.42 | -0.34 | -0.74 | -0.57 | 0.06 | 0.69 | 0.00 |
-| 2026-02 | 70 | -0.05 | -0.57 | -0.30 | -0.34 | -0.26 | -0.21 | -0.75 | -0.28 | -0.40 | -0.57 | -0.50 | -0.57 | 0.00 | 0.70 | 0.00 |
+| 2026-02 | 70 | -0.04 | -0.57 | -0.30 | -0.34 | -0.26 | -0.21 | -0.75 | -0.28 | -0.40 | -0.57 | -0.50 | -0.56 | 0.00 | 0.70 | 0.00 |
 | 2026-03 | 83 | -0.43 | -0.22 | -0.22 | -0.19 | 0.09 | -0.25 | -0.72 | -0.50 | -0.18 | -0.75 | -0.84 | 0.26 | 0.02 | 0.73 | 0.00 |
-| 2026-04 | 69 | -0.22 | -0.56 | -0.41 | -0.34 | 0.00 | -0.37 | -0.45 | -0.24 | -0.07 | -1.01 | -0.63 | -0.18 | 0.04 | 0.58 | 0.00 |
-| 2026-05 | 61 | 0.06 | 0.15 | -0.04 | 0.00 | 0.08 | 0.11 | -0.74 | -0.30 | -0.32 | -0.77 | -0.23 | -0.79 | 0.07 | 0.56 | 0.00 |
+| 2026-04 | 69 | -0.22 | -0.57 | -0.41 | -0.34 | 0.00 | -0.37 | -0.45 | -0.24 | -0.07 | -1.01 | -0.63 | -0.18 | 0.04 | 0.58 | 0.00 |
+| 2026-05 | 61 | 0.06 | 0.15 | -0.04 | 0.00 | 0.08 | 0.11 | -0.74 | -0.30 | -0.32 | -0.77 | -0.23 | -0.78 | 0.07 | 0.56 | 0.00 |
 | 2026-06 | 64 | -0.28 | -0.28 | -0.18 | -0.24 | 0.32 | -0.01 | -0.62 | -0.33 | -0.30 | -0.67 | -0.59 | -0.20 | 0.05 | 0.66 | 0.00 |
 | 2026-07 | 65 | 0.00 | -0.78 | -0.45 | -0.55 | -0.17 | -0.19 | -0.53 | -0.68 | -0.63 | -0.76 | -1.07 | -0.20 | 0.06 | 0.58 | 0.00 |
 | 2026-08 | 60 | -0.74 | -0.38 | -0.09 | -0.48 | -0.06 | 0.61 | -0.60 | -0.43 | -0.50 | -0.58 | -0.89 | 0.00 | 0.03 | 0.50 | 0.00 |
@@ -98,7 +98,7 @@ Top topics: UK Political Chaos and Reform UK (75.0%); Israel and Palestine Confl
 | F9: ALL-CAPS shouting | None | None | -1.8 | -0.4 |
 | F10: Quoted speech | None | None | 0.9 | -0.6 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | None | None | 0.9 | 0.0 |
-| F12: +first_pl +future_will +modal | None | None | -1.5 | -0.0 |
+| F12: +first_pl +future_will +modal | None | None | -1.4 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (2.6%); outrage 75.0% (62.7%); humor 0.0% (0.1%); question 0.0% (11.3%); breaking_live 0.0% (17.4%); episode_show 0.0% (6.2%); interview_guest 0.0% (18.4%); reaction 0.0% (1.4%); confrontation 25.0% (15.4%); listicle 0.0% (0.0%); howto_explainer 25.0% (2.8%)

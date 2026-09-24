@@ -15,7 +15,7 @@ The outrage frame is the landscape's default hook, not a niche device. The ratin
 |---|---|---|---|---|---|---|---|---|---|
 | left channels | 105.00 | 0.16 | 0.03 | 0.03 | 0.10 | 0.03 | 0.08 | 0.00 | 0.08 |
 | neutral channels | 37.00 | 0.14 | 0.01 | 0.07 | 0.12 | 0.02 | 0.08 | 0.00 | 0.07 |
-| right channels | 94.00 | 0.15 | 0.02 | 0.07 | 0.08 | 0.02 | 0.08 | 0.00 | 0.09 |
+| right channels | 95.00 | 0.15 | 0.02 | 0.07 | 0.08 | 0.02 | 0.08 | 0.00 | 0.09 |
 
 
 Questions run at the same rate in all three groups; episode numbering and how-to / explainer wording are a little more common on the right, guest formats a little more in the neutral and left groups (12 %, 10 %, 8 % on the right), and none of the structural formats separates the groups the way the outrage hook does. Live VODs look different again: LIVE/BREAKING labels sit on 52 % of the neutral group's stream titles (the wires' rolling broadcasts), confrontation on 15 % of the left group's (the debate streamers):
@@ -36,7 +36,7 @@ Questions run at the same rate in all three groups; episode numbering and how-to
 |---|---|---|---|---|---|---|
 | left channels | 105 | 0.67 | 0.46 | 0.84 | 0.06 | 1.00 |
 | neutral channels | 37 | 0.31 | 0.22 | 0.47 | 0.05 | 0.88 |
-| right channels | 94 | 0.58 | 0.50 | 0.75 | 0.09 | 0.99 |
+| right channels | 95 | 0.59 | 0.50 | 0.76 | 0.09 | 0.99 |
 
 
 Within every group the creator-to-creator spread is wide (the quartiles above): the group is a weak predictor of any one channel. The gradient across groups is the same one the tone factor of the style model finds, measured a second way; the two measures are not independent (the classifier sees the same words the lexicon counts), but they were built from different sources, the tone factor from word lists and sentiment, the hook from a model reading whole titles.
@@ -45,30 +45,30 @@ Within every group the creator-to-creator spread is wide (the quartiles above): 
 
 | category | creator | title |
 |---|---|---|
-| question | @CNN | Can Dems take the Senate even without Maine? |
-| question | @FoxNewsChannelClips | Will Cain: Where will Gov. Walz go next with his analogies? |
-| question | @bulwarkmedia | The Next Level LIVE: Texas Primary Results! Megyn Kelly Turns on Trump?! |
+| question | @timesofindia | Trump's Greenland Threat Backfires? EU Boss VDL Warns 'Tariffs A Mistake', Signals De-dollarisation |
+| question | @judgingfreedom | Aaron Maté  :  Will Trump Sacrifice the Gulf States? |
+| question | @theisabelbrown | Is Evie’s New Magazine A S*x “Issue?” I’m Here For It, TBH |
 | breaking_live | @RealAmericasVoice | TRUMP'S IRAN DEAL BOMBSHELL, FED HOLDS RATES, SPLC NAZI SCANDAL EXPLODES \| LIVE FROM STUDIO 6B |
 | breaking_live | @ANINewsIndia | WATCH: Sonam Wangchuk breaks 26-day fast amid CJP protest at Jantar Mantar against NEET Paper leak |
 | breaking_live | @Firstpost | 🔴FIFA WORLD CUP LIVE \| Mexico Football Fans Hit Fever Pitch \| Mexico vs South Africa |
 | episode_show | @RealDanBongino | They're Finding Out (Ep. 2549) |
 | episode_show | @glennbeck | Remembering Charlie Kirk: Where Are We Now? \| Hour 1 \| 9/10/26 |
 | episode_show | @RSBN | FULL EVENT: President Trump Creates U.S. Space Academy & Awards Space Medal of Honor - 08/28/26 |
-| interview_guest | @ABCNews | The Obama Legacy: First Joint Interview Post-White House |
-| interview_guest | @bulwarkmedia | Trump Promised Trillions in Cuts—And Delivered Nothing (w/ Jessica Riedl) \| Mona Charen Show |
-| interview_guest | @timesofindia | 'ENOUGH IS ENOUGH': Tucker Carlson Joins Growing Revolt As Trump's Iran Gamble Backfires Inside MAGA |
-| reaction | @DestinyDGGClips | Atrioc Responds After Getting Into MASSIVE Controversy |
-| reaction | @SkyNews | Democrats react to Trump's citizenship defeat outside Supreme Court |
-| reaction | @oann | WV Governor Praises National Guard Officers for Heroic Response to DC Attack |
-| confrontation | @ANINewsIndia | ‘We'll destroy it as we get it’, Trump warns Iran after Khamenei’s 'defiance' over enriched Uranium |
-| confrontation | @RealAmericasVoice | FAUCI TAKES THE FIFTH IN EXPLOSIVE SENATE HEARING, BERENSON DESTROYS COVID LIES \| CHARLIE KIRK SHOW |
-| confrontation | @markets | US-Iran Clashes Hit Stocks as Oil Rises \| Bloomberg Brief 09/02/2026 |
-| listicle | @RealAmericasVoice | FAUCI’S COVID CHAOS STEALS 2020, RNC CHAIR GRUTERS ON GOP FAITH \| AMERICA'S TOP 10 |
-| listicle | @CNN | 4 ways Ukraine changed America’s wars forever |
-| listicle | @nypost | Karoline Leavitt to Depart as White House Press Secretary — Top 5 Moments She Shut Down Reporters |
-| howto_explainer | @SkyNews | Why Trump is fighting for the Arctic but losing in Antarctica |
-| howto_explainer | @PhillipScottPodcast | Latina Explains Why They Didn't Vote For Jasmine Crockett Even Though She Was Pro-Immigration |
-| howto_explainer | @oann | Why Rising Prices Could Trigger a Voter Backlash Before the Midterms |
+| interview_guest | @deanwithrs | Cocky MAGA Man HUMILIATES Himself With His "Solution" To Poverty |
+| interview_guest | @LegalAFMTN | Trump HIT with FIRST LAWSUIT to STOP SLUSH FUND!!! |
+| interview_guest | @judgingfreedom | Poland's Secret Deal With Ukraine Has Washington Concerned |
+| reaction | @TimesNowWorld | EXPLAINED: Olympic Village Condom Shortage Goes Viral As IOC Responds At Milan Cortina |
+| reaction | @nypost | Trump Reacts to 'CATASTROPHE' in Spanish Enclave as Thousands of Illegal Migrants Enter Border |
+| reaction | @RubinReport | Trump's Unexpected Ted Turner Reaction, Obama Faces Backlash, Massive LA Raid \| 5/7/26 FIRST LOOK |
+| confrontation | @ANINewsIndia | IND vs PAK T20 World Cup: Wishes and good luck pour in from across India ahead of ultimate showdown |
+| confrontation | @MyronGainesX | Senator BREAKS Marine’s Arm After He CALLS OUT Israel Over Iran War! |
+| confrontation | @JackCocchiarellaShow | SCREAMING Hearing Shuts Down As Bessent CAUGHT In Crime |
+| listicle | @ANINewsIndia | Gujarat's CSMCRI: 26 Scientists in Bhavnagar Ranked Among World's Top 5% Researchers |
+| listicle | @thehill | Trump’s Lincoln Memorial Reflecting Pool work comes under scrutiny: 4 things to know |
+| listicle | @Forbes | America’s Top 25 Philanthropists — And Why Musk, Page And Ellison Aren’t On The List |
+| howto_explainer | @CBSNews | Why Tom Homan says ICE operation in Minnesota is ending |
+| howto_explainer | @lovettorleaveitpodcast | John Stamos Ponders How To Turn Republicans Against Trump |
+| howto_explainer | @wsj | Why Hyundai Is Betting $26B Going All-In on the U.S. \| WSJ |
 | curiosity_gap | https://rumble.com/c/russellbrand | They don't want you knowing this... |
 | curiosity_gap | @CoreyGilShusterAskProject | Palestinians: What happens at the endtimes? |
 | curiosity_gap | @LukeBeasley | Actually, what the f*** just happened?! |

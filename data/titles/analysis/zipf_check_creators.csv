@@ -155,6 +155,7 @@ creator,genre,text,zipf_exponent_top200,n_titles,n_tokens,n_types,top_5,top1_sha
 @SabbySabs,streams,raw,0.6808,98,1438,680,iran trump joins kirk reveal,0.0396
 @SabbySabs,videos,raw,0.7105,587,3564,1398,trump iran breaking w is,0.0314
 @SaltyCracker,videos,raw,0.7818,361,3738,1623,to a in after the,0.0321
+@SecretScholars,videos,raw,0.6614,106,1202,498,the to on leftist of,0.03
 @SecularTalk,videos,raw,0.9439,1374,18357,3083,the kyle kulinski show trump,0.0637
 @Semafor,videos,raw,0.9163,149,1765,885,semafor the on ceo world,0.0374
 @SkyNews,streams,raw,0.8167,1868,21435,3934,the with in to of,0.0283
@@ -468,6 +469,7 @@ https://rumble.com/c/russellbrand,videos,raw,0.777,259,1758,779,the this is to w
 @SabbySabs,streams,normalised,0.6808,98,1438,680,iran trump joins kirk reveal,0.0396
 @SabbySabs,videos,normalised,0.7105,587,3564,1398,trump iran breaking w is,0.0314
 @SaltyCracker,videos,normalised,0.7818,361,3738,1623,to a in after the,0.0321
+@SecretScholars,videos,normalised,0.6614,106,1202,498,the to on leftist of,0.03
 @SecularTalk,videos,normalised,0.8071,1374,14405,3083,trump as to in s,0.0427
 @Semafor,videos,normalised,0.9163,149,1765,885,semafor the on ceo world,0.0374
 @SkyNews,streams,normalised,0.8213,1868,20884,3915,the with in to of,0.0291

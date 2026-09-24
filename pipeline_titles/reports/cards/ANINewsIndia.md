@@ -13,24 +13,24 @@ Top topics: Indian Politics and Delhi Riots (35.4%); BRICS and India Diplomacy (
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 63.1 | 72.9 | 0.4 | 0.5 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 81.4 | 76.3 | 0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 0.4 | 84.3 | -0.9 | -0.4 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 61.0 | 31.4 | -0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 33.1 | 14.8 | -0.2 | 0.1 |
-| F6: Person-centred (named people) | 73.3 | 83.1 | 0.2 | -0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 63.3 | 73.0 | 0.4 | 0.5 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 81.4 | 75.9 | 0.6 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 0.4 | 84.4 | -0.9 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 61.2 | 31.2 | -0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 32.9 | 14.8 | -0.2 | 0.1 |
+| F6: Person-centred (named people) | 73.0 | 83.1 | 0.2 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 92.4 | 96.6 | 0.9 | -0.3 |
 | F8: Numeric and dated (digits, years) | 79.7 | 91.1 | 0.1 | 0.0 |
-| F9: ALL-CAPS shouting | 69.5 | 43.6 | -0.1 | -0.3 |
-| F10: Quoted speech | 95.3 | 96.2 | 1.2 | -0.1 |
+| F9: ALL-CAPS shouting | 69.6 | 43.9 | -0.1 | -0.3 |
+| F10: Quoted speech | 95.4 | 96.2 | 1.2 | -0.1 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 90.7 | 96.6 | 0.8 | -0.1 |
-| F12: +first_pl +future_will +modal | 73.7 | 89.8 | 0.2 | -0.0 |
+| F12: +first_pl +future_will +modal | 73.8 | 89.9 | 0.2 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.6% (3.1%); outrage 37.6% (36.7%); humor 0.0% (0.1%); question 4.9% (13.8%); breaking_live 7.4% (1.2%); episode_show 0.1% (7.1%); interview_guest 10.1% (11.7%); reaction 2.4% (2.0%); confrontation 6.0% (7.6%); listicle 0.2% (0.1%); howto_explainer 2.3% (6.8%)
 
 
-Nearest style neighbors: @USATODAY [neutral]; @AssociatedPress [neutral]; @CBSNews [neutral]; @SkyNews [left]; @ABCNews [neutral]
+Nearest style neighbors: @USATODAY [neutral]; @AssociatedPress [neutral]; @CBSNews [neutral]; @ABCNews [neutral]; @SkyNews [left]
 
 Nearest topic neighbors: @Firstpost [neutral]; @nousnetwork [left]; @aljazeeraenglish [left]; @AssociatedPress [neutral]; @Reuters [neutral]
 
@@ -47,7 +47,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-06 | 1404 | 0.39 | 0.69 | -0.94 | -0.03 | -0.14 | 0.12 | 0.89 | 0.00 | -0.01 | 1.10 | 0.74 | 0.11 | 0.03 | 0.33 | 0.00 |
 | 2026-07 | 1461 | 0.25 | 0.54 | -0.85 | -0.03 | -0.08 | 0.20 | 0.83 | -0.09 | -0.23 | 1.00 | 0.64 | 0.02 | 0.03 | 0.42 | 0.00 |
 | 2026-08 | 1437 | 0.22 | 0.59 | -1.01 | -0.06 | -0.21 | 0.14 | 0.84 | 0.10 | -0.20 | 1.05 | 0.82 | 0.03 | 0.03 | 0.36 | 0.00 |
-| 2026-09* | 757 | 0.35 | 0.61 | -0.93 | -0.16 | -0.15 | 0.22 | 0.67 | 0.25 | -0.32 | 0.77 | 0.95 | -0.05 | 0.03 | 0.31 | 0.00 |
+| 2026-09* | 757 | 0.35 | 0.61 | -0.93 | -0.16 | -0.15 | 0.22 | 0.67 | 0.25 | -0.32 | 0.78 | 0.95 | -0.05 | 0.03 | 0.31 | 0.00 |
 
 
 Engagement (n = 11623, R2 = 0.1032; log views per within-creator SD, month + topic controls):

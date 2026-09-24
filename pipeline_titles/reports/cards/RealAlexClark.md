@@ -14,20 +14,20 @@ Top topics: Health Industry and Big Pharma (45.2%); Feminism and Gender Roles De
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 79.7 | 94.1 | 0.6 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 41.9 | 46.2 | -0.3 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 41.8 | 46.0 | -0.3 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 94.9 | 94.5 | 0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 72.0 | 59.3 | 0.0 | -0.1 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 72.2 | 59.5 | 0.0 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 94.5 | 97.0 | 2.0 | 0.2 |
-| F6: Person-centred (named people) | 98.3 | 91.9 | 1.6 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 18.2 | 24.6 | -1.0 | -0.7 |
-| F8: Numeric and dated (digits, years) | 82.6 | 75.0 | 0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 84.7 | 80.5 | 0.6 | -0.3 |
-| F10: Quoted speech | 63.6 | 64.4 | -0.1 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 92.8 | 91.9 | 0.9 | -0.2 |
+| F6: Person-centred (named people) | 98.3 | 92.0 | 1.6 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 18.1 | 24.5 | -1.0 | -0.6 |
+| F8: Numeric and dated (digits, years) | 82.7 | 75.1 | 0.1 | -0.1 |
+| F9: ALL-CAPS shouting | 84.8 | 80.6 | 0.6 | -0.3 |
+| F10: Quoted speech | 63.7 | 64.6 | -0.1 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 92.8 | 92.0 | 0.9 | -0.2 |
 | F12: +first_pl +future_will +modal | 92.8 | 79.7 | 0.6 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (4.8%); outrage 21.9% (59.8%); humor 0.0% (0.2%); question 39.7% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 4.1% (7.7%); reaction 1.4% (2.2%); confrontation 4.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 31.5% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (4.8%); outrage 21.9% (60.1%); humor 0.0% (0.2%); question 39.7% (15.2%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.4%); interview_guest 4.1% (7.8%); reaction 1.4% (2.2%); confrontation 4.1% (8.2%); listicle 0.0% (0.1%); howto_explainer 31.5% (9.3%)
 
 
 Nearest style neighbors: @cafedotcom [left]; @PragerU [right]; @MichaelMaliceofficial [right]; @MegynKelly [right]; https://rumble.com/c/GGreenwald [left]

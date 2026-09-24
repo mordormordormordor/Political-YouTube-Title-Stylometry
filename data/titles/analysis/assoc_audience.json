@@ -2,29 +2,29 @@
  "titles": {
   "left": 90981,
   "neutral": 115350,
-  "right": 71107
+  "right": 71214
  },
  "networks": {
   "left": {
-   "pairs_tabulated": 7296,
-   "edges": 1564,
-   "nodes": 1034,
-   "communities": 94,
-   "modularity": 0.8400007863229403
+   "pairs_tabulated": 7297,
+   "edges": 1591,
+   "nodes": 1054,
+   "communities": 85,
+   "modularity": 0.8441337669471141
   },
   "neutral": {
-   "pairs_tabulated": 14486,
-   "edges": 5585,
-   "nodes": 1823,
+   "pairs_tabulated": 14487,
+   "edges": 5596,
+   "nodes": 1807,
    "communities": 45,
-   "modularity": 0.6902922118169446
+   "modularity": 0.6881124420859724
   },
   "right": {
-   "pairs_tabulated": 3531,
-   "edges": 1525,
-   "nodes": 913,
-   "communities": 70,
-   "modularity": 0.8328214074903718
+   "pairs_tabulated": 3532,
+   "edges": 1555,
+   "nodes": 929,
+   "communities": 73,
+   "modularity": 0.8298039121357966
   }
  }
 }

@@ -13,24 +13,24 @@ Top topics: Israel and Palestine Conflict (12.6%); Trump and Iran War Negotiatio
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 22.5 | 16.1 | -0.3 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 38.1 | 37.7 | -0.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 14.0 | 22.5 | -0.5 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 20.8 | 30.5 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 41.9 | 39.0 | -0.0 | 0.1 |
-| F6: Person-centred (named people) | 58.5 | 58.5 | -0.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 31.8 | 54.2 | -0.8 | -0.5 |
-| F8: Numeric and dated (digits, years) | 68.6 | 64.8 | -0.0 | -0.2 |
-| F9: ALL-CAPS shouting | 15.7 | 15.3 | -0.7 | -0.3 |
-| F10: Quoted speech | 39.0 | 57.2 | -0.5 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 53.0 | 51.7 | -0.2 | -0.3 |
-| F12: +first_pl +future_will +modal | 15.3 | 52.1 | -0.6 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 21.9 | 16.5 | -0.3 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 38.0 | 37.6 | -0.3 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 13.9 | 22.8 | -0.5 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 20.7 | 30.4 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 41.8 | 38.8 | -0.0 | 0.1 |
+| F6: Person-centred (named people) | 58.2 | 58.2 | -0.1 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 31.6 | 54.0 | -0.8 | -0.5 |
+| F8: Numeric and dated (digits, years) | 68.8 | 65.0 | -0.0 | -0.2 |
+| F9: ALL-CAPS shouting | 16.0 | 15.6 | -0.7 | -0.3 |
+| F10: Quoted speech | 38.8 | 57.0 | -0.5 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 52.7 | 51.5 | -0.2 | -0.3 |
+| F12: +first_pl +future_will +modal | 15.6 | 52.3 | -0.6 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 9.0% (3.6%); outrage 73.0% (63.9%); humor 0.0% (0.2%); question 13.5% (15.6%); breaking_live 2.7% (2.9%); episode_show 0.0% (2.8%); interview_guest 10.8% (9.8%); reaction 0.0% (2.9%); confrontation 5.4% (7.7%); listicle 0.0% (0.1%); howto_explainer 5.4% (8.0%)
 
 
-Nearest style neighbors: @chicksonright [right]; @PTLRadioShow [left]; @GrahamAllen [right]; @SaltyCracker [right]; @RebelHQ [left]
+Nearest style neighbors: @chicksonright [right]; @PTLRadioShow [left]; @GrahamAllen [right]; @SaltyCracker [right]; @FarronBalanced [left]
 
 Nearest topic neighbors: @KimIversen [neutral]; @thejimmydoreshow [neutral]; @TheYoungTurks [left]; @thegrayzone7996 [left]; @breakingpoints [left]
 
@@ -39,9 +39,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-03 | 17 | -0.72 | -0.12 | -0.07 | -0.57 | 0.44 | -0.71 | -0.86 | 0.15 | -1.35 | -0.81 | -0.86 | -0.83 | 0.12 | 0.71 | 0.00 |
+| 2026-03 | 17 | -0.72 | -0.12 | -0.07 | -0.57 | 0.44 | -0.72 | -0.86 | 0.15 | -1.35 | -0.81 | -0.86 | -0.83 | 0.12 | 0.71 | 0.00 |
 | 2026-05 | 22 | 0.07 | 1.05 | -0.14 | 0.28 | 0.51 | 0.59 | -0.51 | 0.41 | 0.31 | -0.05 | 0.57 | -0.27 | 0.14 | 0.86 | 0.00 |
-| 2026-06 | 16 | -0.14 | -1.28 | -0.64 | -0.46 | -0.19 | -0.95 | -0.93 | -0.52 | -0.88 | -0.22 | -0.40 | -0.27 | 0.06 | 0.88 | 0.00 |
+| 2026-06 | 16 | -0.14 | -1.28 | -0.64 | -0.46 | -0.19 | -0.95 | -0.93 | -0.52 | -0.88 | -0.22 | -0.40 | -0.26 | 0.06 | 0.88 | 0.00 |
 
 
 Engagement (n = 111, R2 = 0.4551; log views per within-creator SD, month + topic controls):

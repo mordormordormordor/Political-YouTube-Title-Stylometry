@@ -14,23 +14,23 @@ Top topics: California Election Fraud Scandal (4.0%); Covid Vaccine Controversy 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 94.1 | 90.7 | 0.9 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 8.1 | 8.1 | -1.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 80.5 | 80.5 | -0.1 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 79.7 | 73.7 | 0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 59.7 | 58.9 | 0.3 | 0.1 |
-| F6: Person-centred (named people) | 55.1 | 61.4 | -0.2 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 54.7 | 54.7 | -0.5 | -0.5 |
-| F8: Numeric and dated (digits, years) | 58.5 | 67.4 | -0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 43.2 | 48.7 | -0.4 | -0.3 |
-| F10: Quoted speech | 55.1 | 55.5 | -0.3 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 86.4 | 84.3 | 0.5 | -0.3 |
-| F12: +first_pl +future_will +modal | 49.2 | 44.1 | -0.2 | -0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 8.0 | 8.0 | -1.1 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 80.6 | 80.6 | -0.1 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 79.7 | 73.8 | 0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 59.9 | 59.1 | 0.3 | 0.1 |
+| F6: Person-centred (named people) | 54.9 | 61.2 | -0.2 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 54.4 | 54.4 | -0.5 | -0.5 |
+| F8: Numeric and dated (digits, years) | 58.2 | 67.5 | -0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 43.5 | 48.9 | -0.4 | -0.3 |
+| F10: Quoted speech | 54.9 | 55.3 | -0.3 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 86.5 | 84.4 | 0.5 | -0.3 |
+| F12: +first_pl +future_will +modal | 49.4 | 44.3 | -0.2 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.4% (3.6%); outrage 29.7% (63.9%); humor 0.0% (0.2%); question 23.0% (15.6%); breaking_live 5.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 24.3% (9.8%); reaction 0.0% (2.9%); confrontation 5.4% (7.7%); listicle 0.0% (0.1%); howto_explainer 13.5% (8.0%)
 
 
-Nearest style neighbors: @TheJoyReidShow [left]; @DarkHorsePod [right]; @marklevinshow [right]; @therationalnational [left]; @NYTPodcasts [left]
+Nearest style neighbors: @TheJoyReidShow [left]; @marklevinshow [right]; @DarkHorsePod [right]; @therationalnational [left]; @NYTPodcasts [left]
 
 Nearest topic neighbors: @franifio [left]; @JillianMichaels [right]; @NYTPodcasts [left]; @RealAmericasVoice [right]; https://rumble.com/c/BannonsWarRoom [right]
 

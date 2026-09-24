@@ -13,16 +13,16 @@ Top topics: Anti-Fraud Efforts by VP Vance (11.8%); Billionaire Influence in Pol
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 68.6 | 73.3 | 0.5 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 68.8 | 73.4 | 0.5 | 0.1 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 100.0 | 99.6 | 2.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.0 | 54.2 | -0.3 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 61.2 | 54.4 | -0.2 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 93.2 | 87.3 | 0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 90.3 | 90.7 | 1.5 | 0.1 |
 | F6: Person-centred (named people) | 0.4 | 0.4 | -1.8 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 0.4 | 0.4 | -2.1 | -0.5 |
-| F8: Numeric and dated (digits, years) | 4.7 | 33.9 | -0.6 | -0.2 |
-| F9: ALL-CAPS shouting | 73.7 | 59.3 | 0.0 | -0.3 |
-| F10: Quoted speech | 52.5 | 49.2 | -0.4 | -0.4 |
+| F8: Numeric and dated (digits, years) | 4.6 | 34.2 | -0.6 | -0.2 |
+| F9: ALL-CAPS shouting | 73.8 | 59.5 | 0.0 | -0.3 |
+| F10: Quoted speech | 52.3 | 48.9 | -0.4 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 83.5 | 83.1 | 0.4 | -0.3 |
 | F12: +first_pl +future_will +modal | 99.2 | 98.3 | 2.1 | -0.1 |
 
@@ -30,7 +30,7 @@ Top topics: Anti-Fraud Efforts by VP Vance (11.8%); Billionaire Influence in Pol
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.6%); outrage 45.6% (63.9%); humor 0.0% (0.2%); question 23.5% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 5.9% (9.8%); reaction 0.0% (2.9%); confrontation 1.5% (7.7%); listicle 0.0% (0.1%); howto_explainer 13.2% (8.0%)
 
 
-Nearest style neighbors: @ajplus [left]; @theisabelbrown [right]; @LeejaMiller [left]; @bbrettcooper [right]; @X22Report-y5y [right]
+Nearest style neighbors: @ajplus [left]; @theisabelbrown [right]; @LeejaMiller [left]; @bbrettcooper [right]; @TheVaushPit [left]
 
 Nearest topic neighbors: @Forbes [neutral]; @Vox [left]; @LeverNews [left]; @wsj [neutral]; @Semafor [neutral]
 

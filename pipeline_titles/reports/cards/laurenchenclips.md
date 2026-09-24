@@ -13,21 +13,21 @@ Top topics: Hollywood and Awards Controversy (11.0%); Christopher Nolan's Odysse
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 16.9 | 27.5 | -0.4 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 63.1 | 62.7 | 0.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 22.9 | 12.7 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 19.1 | 13.6 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 72.5 | 71.6 | 0.7 | 0.2 |
-| F6: Person-centred (named people) | 65.3 | 71.6 | -0.0 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 47.5 | 49.6 | -0.6 | -0.7 |
-| F8: Numeric and dated (digits, years) | 55.9 | 52.5 | -0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 19.5 | 13.6 | -0.6 | -0.3 |
-| F10: Quoted speech | 11.9 | 30.1 | -0.8 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 33.1 | 35.6 | -0.5 | -0.2 |
-| F12: +first_pl +future_will +modal | 63.6 | 36.0 | -0.0 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 17.3 | 27.8 | -0.4 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 62.9 | 62.4 | 0.2 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 22.8 | 12.7 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 19.0 | 13.5 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 72.6 | 71.7 | 0.7 | 0.2 |
+| F6: Person-centred (named people) | 65.0 | 71.3 | -0.0 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 47.3 | 49.4 | -0.6 | -0.6 |
+| F8: Numeric and dated (digits, years) | 55.7 | 52.7 | -0.1 | -0.1 |
+| F9: ALL-CAPS shouting | 19.8 | 13.9 | -0.6 | -0.3 |
+| F10: Quoted speech | 11.8 | 30.0 | -0.8 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 32.9 | 35.4 | -0.5 | -0.2 |
+| F12: +first_pl +future_will +modal | 63.7 | 36.3 | -0.0 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.7% (4.8%); outrage 54.1% (59.8%); humor 0.0% (0.2%); question 29.4% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 1.8% (7.7%); reaction 3.7% (2.2%); confrontation 11.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 21.1% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.7% (4.8%); outrage 54.1% (60.1%); humor 0.0% (0.2%); question 29.4% (15.2%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.4%); interview_guest 1.8% (7.8%); reaction 3.7% (2.2%); confrontation 11.0% (8.2%); listicle 0.0% (0.1%); howto_explainer 21.1% (9.3%)
 
 
 Nearest style neighbors: @PTLRadioShow [left]; @NovaraMedia [left]; @chicksonright [right]; @SaltyCracker [right]; @TheDonLemonShow [left]
@@ -39,9 +39,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05 | 24 | -0.72 | -0.29 | -0.25 | -0.28 | 0.41 | -0.32 | -0.62 | -0.51 | -0.90 | -0.65 | -0.06 | -0.16 | 0.04 | 0.54 | 0.00 |
+| 2026-05 | 24 | -0.72 | -0.29 | -0.24 | -0.28 | 0.41 | -0.32 | -0.62 | -0.51 | -0.90 | -0.65 | -0.06 | -0.15 | 0.04 | 0.54 | 0.00 |
 | 2026-06 | 24 | -1.10 | -0.59 | -0.29 | -0.62 | 1.80 | 0.22 | -0.63 | 0.94 | -0.61 | -0.85 | -0.82 | -0.06 | 0.00 | 0.71 | 0.00 |
-| 2026-07 | 17 | -0.93 | 0.78 | -0.48 | -0.22 | 0.04 | -0.32 | -0.88 | -0.17 | -0.70 | -0.78 | -0.89 | -0.63 | 0.06 | 0.59 | 0.00 |
+| 2026-07 | 17 | -0.92 | 0.78 | -0.48 | -0.22 | 0.04 | -0.32 | -0.88 | -0.17 | -0.70 | -0.78 | -0.89 | -0.63 | 0.06 | 0.59 | 0.00 |
 | 2026-08 | 28 | 0.24 | 0.32 | -0.61 | -0.45 | 0.38 | 0.13 | -0.40 | -0.42 | -0.70 | -0.90 | -0.41 | -0.15 | 0.04 | 0.39 | 0.00 |
 
 

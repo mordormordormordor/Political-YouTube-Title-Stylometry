@@ -13,21 +13,21 @@ Top topics: American History and Political Threats (14.5%); Christian Nationalis
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 87.7 | 92.8 | 0.8 | 0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 87.8 | 92.8 | 0.8 | 0.2 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 3.4 | 6.8 | -1.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 33.5 | 43.6 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 75.0 | 72.0 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 61.9 | 67.4 | 0.4 | 0.2 |
-| F6: Person-centred (named people) | 1.3 | 4.7 | -1.3 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 65.3 | 66.9 | -0.4 | -0.7 |
-| F8: Numeric and dated (digits, years) | 44.1 | 57.6 | -0.2 | -0.1 |
-| F9: ALL-CAPS shouting | 95.8 | 93.6 | 2.0 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 33.3 | 43.9 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 75.1 | 72.2 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 62.0 | 67.5 | 0.4 | 0.2 |
+| F6: Person-centred (named people) | 1.3 | 4.6 | -1.3 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 65.0 | 66.7 | -0.4 | -0.6 |
+| F8: Numeric and dated (digits, years) | 44.3 | 57.8 | -0.2 | -0.1 |
+| F9: ALL-CAPS shouting | 95.8 | 93.7 | 2.0 | -0.3 |
 | F10: Quoted speech | 5.1 | 9.7 | -1.0 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 22.0 | 37.7 | -0.7 | -0.2 |
-| F12: +first_pl +future_will +modal | 14.0 | 24.6 | -0.6 | -0.3 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 21.9 | 37.6 | -0.7 | -0.2 |
+| F12: +first_pl +future_will +modal | 13.9 | 24.9 | -0.6 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.5% (4.8%); outrage 43.5% (59.8%); humor 0.0% (0.2%); question 16.1% (15.3%); breaking_live 1.6% (2.0%); episode_show 0.0% (7.5%); interview_guest 3.2% (7.7%); reaction 0.0% (2.2%); confrontation 0.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 6.5% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.5% (4.8%); outrage 43.5% (60.1%); humor 0.0% (0.2%); question 16.1% (15.2%); breaking_live 1.6% (2.0%); episode_show 0.0% (7.4%); interview_guest 3.2% (7.8%); reaction 0.0% (2.2%); confrontation 0.0% (8.2%); listicle 0.0% (0.1%); howto_explainer 6.5% (9.3%)
 
 
 Nearest style neighbors: https://rumble.com/c/nickjfuentes [right]; @lizwheeler [right]; @HasanAbi [left]; @SabbySabs [left]; @BadEmpanadaLive [left]

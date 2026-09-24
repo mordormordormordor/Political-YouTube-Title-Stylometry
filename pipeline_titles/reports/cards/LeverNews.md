@@ -13,17 +13,17 @@ Top topics: Iran political unrest (7.0%); Abdul El-Sayed vs AIPAC in Michigan Se
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 53.4 | 72.5 | 0.2 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 75.4 | 66.1 | 0.5 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 43.6 | 42.4 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 80.1 | 70.3 | 0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 93.6 | 92.8 | 1.9 | 0.1 |
-| F6: Person-centred (named people) | 93.6 | 90.3 | 0.9 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 4.7 | 5.1 | -1.3 | -0.5 |
-| F8: Numeric and dated (digits, years) | 91.9 | 89.8 | 0.4 | -0.2 |
-| F9: ALL-CAPS shouting | 64.4 | 63.1 | -0.1 | -0.3 |
-| F10: Quoted speech | 58.5 | 61.4 | -0.2 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 3.8 | 17.8 | -1.2 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 53.6 | 72.6 | 0.2 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 75.1 | 65.8 | 0.5 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 43.9 | 42.6 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 80.2 | 70.5 | 0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 93.7 | 92.8 | 1.9 | 0.1 |
+| F6: Person-centred (named people) | 93.7 | 90.3 | 0.9 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 4.6 | 5.1 | -1.3 | -0.5 |
+| F8: Numeric and dated (digits, years) | 92.0 | 89.9 | 0.4 | -0.2 |
+| F9: ALL-CAPS shouting | 64.6 | 63.3 | -0.1 | -0.3 |
+| F10: Quoted speech | 58.6 | 61.6 | -0.2 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 3.8 | 17.7 | -1.2 | -0.3 |
 | F12: +first_pl +future_will +modal | 97.5 | 92.8 | 0.9 | -0.1 |
 
 

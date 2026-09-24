@@ -13,15 +13,15 @@ Top topics: Iran political unrest (11.8%); Europe and Trump Political Relations 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 55.9 | 58.9 | 0.3 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 56.1 | 59.1 | 0.3 | 0.1 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 99.2 | 96.6 | 1.3 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 19.1 | 43.2 | -0.5 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 31.8 | 36.4 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 83.9 | 83.9 | 1.2 | 0.1 |
-| F6: Person-centred (named people) | 19.9 | 24.2 | -0.7 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 83.1 | 84.3 | 0.1 | -0.5 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 19.0 | 43.5 | -0.5 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 32.1 | 36.3 | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 84.0 | 84.0 | 1.2 | 0.1 |
+| F6: Person-centred (named people) | 19.8 | 24.1 | -0.7 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 83.1 | 84.4 | 0.1 | -0.5 |
 | F8: Numeric and dated (digits, years) | 1.3 | 1.3 | -0.8 | -0.2 |
-| F9: ALL-CAPS shouting | 25.0 | 30.1 | -0.6 | -0.3 |
+| F9: ALL-CAPS shouting | 25.3 | 30.4 | -0.6 | -0.3 |
 | F10: Quoted speech | 1.7 | 20.3 | -1.1 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 2.1 | 11.0 | -1.3 | -0.3 |
 | F12: +first_pl +future_will +modal | 81.4 | 91.1 | 0.3 | -0.1 |

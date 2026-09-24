@@ -13,18 +13,18 @@ Top topics: JLP Weekly Series (7.9%); Feminism and Gender Roles Debate (5.5%); G
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 89.0 | 93.6 | 0.8 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 89.0 | 93.7 | 0.8 | 0.1 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 88.6 | 88.6 | 0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 70.8 | 65.3 | -0.2 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 83.5 | 80.9 | 0.2 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 70.9 | 65.4 | -0.2 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 83.5 | 81.0 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 97.9 | 98.3 | 2.8 | 0.1 |
-| F6: Person-centred (named people) | 6.4 | 7.6 | -0.9 | -0.2 |
+| F6: Person-centred (named people) | 6.3 | 7.6 | -0.9 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 93.2 | 91.1 | 1.0 | -0.5 |
-| F8: Numeric and dated (digits, years) | 11.9 | 33.1 | -0.5 | -0.2 |
-| F9: ALL-CAPS shouting | 61.4 | 60.2 | -0.2 | -0.3 |
-| F10: Quoted speech | 51.3 | 48.3 | -0.4 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 19.5 | 31.4 | -0.8 | -0.3 |
-| F12: +first_pl +future_will +modal | 75.4 | 69.1 | 0.2 | -0.1 |
+| F8: Numeric and dated (digits, years) | 11.8 | 33.3 | -0.5 | -0.2 |
+| F9: ALL-CAPS shouting | 61.6 | 60.3 | -0.2 | -0.3 |
+| F10: Quoted speech | 51.1 | 48.1 | -0.4 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 19.4 | 31.2 | -0.8 | -0.3 |
+| F12: +first_pl +future_will +modal | 75.5 | 69.2 | 0.2 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.9% (3.6%); outrage 26.0% (63.9%); humor 0.0% (0.2%); question 45.7% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 3.9% (9.8%); reaction 0.0% (2.9%); confrontation 4.7% (7.7%); listicle 0.0% (0.1%); howto_explainer 32.3% (8.0%)
@@ -39,9 +39,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-03 | 19 | 0.49 | 0.91 | -0.14 | 0.03 | 2.44 | -1.07 | 1.60 | -0.89 | -0.49 | -1.05 | -0.87 | -0.30 | 0.00 | 0.11 | 0.00 |
+| 2026-03 | 19 | 0.49 | 0.90 | -0.14 | 0.03 | 2.44 | -1.07 | 1.60 | -0.89 | -0.49 | -1.05 | -0.87 | -0.30 | 0.00 | 0.11 | 0.00 |
 | 2026-04 | 19 | 0.97 | 0.27 | -0.22 | -0.21 | 2.28 | -0.88 | 1.48 | -0.14 | -0.48 | -0.43 | -0.18 | -0.55 | 0.00 | 0.37 | 0.00 |
-| 2026-05 | 16 | 1.10 | -0.08 | -0.10 | 0.48 | 2.83 | -1.01 | 0.90 | 0.05 | -0.09 | 0.48 | -0.79 | -0.15 | 0.00 | 0.12 | 0.00 |
+| 2026-05 | 16 | 1.10 | -0.08 | -0.10 | 0.48 | 2.83 | -1.01 | 0.91 | 0.05 | -0.09 | 0.48 | -0.79 | -0.15 | 0.00 | 0.12 | 0.00 |
 | 2026-07 | 17 | 1.22 | 0.94 | -0.09 | 0.18 | 2.97 | -1.02 | 0.65 | -0.69 | -0.08 | -0.12 | -0.65 | -0.46 | 0.00 | 0.29 | 0.00 |
 | 2026-08 | 19 | 0.68 | 1.59 | -0.13 | 0.48 | 2.97 | -1.18 | 0.40 | -0.96 | 0.27 | -0.79 | -0.47 | 1.57 | 0.16 | 0.26 | 0.00 |
 

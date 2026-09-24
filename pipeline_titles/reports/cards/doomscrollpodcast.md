@@ -13,7 +13,7 @@ Top topics: Socialism in the Democratic Party (25.0%); Epstein Files Revelations
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.3 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.4 | 0.1 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | None | None | -2.8 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.1 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.5 | -0.1 |

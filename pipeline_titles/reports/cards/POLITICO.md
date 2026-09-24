@@ -14,23 +14,23 @@ Top topics: Global Energy Crisis and Policy (9.4%); Trump and Iran War Negotiati
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 96.6 | 93.2 | 1.1 | 0.5 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 44.1 | 43.6 | -0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 12.3 | 28.8 | -0.6 | -0.4 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 39.0 | 29.7 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 82.6 | 79.7 | 1.1 | 0.1 |
-| F6: Person-centred (named people) | 28.4 | 34.7 | -0.6 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 94.5 | 93.6 | 1.0 | -0.3 |
-| F8: Numeric and dated (digits, years) | 65.3 | 69.1 | -0.1 | 0.0 |
-| F9: ALL-CAPS shouting | 35.2 | 37.7 | -0.5 | -0.3 |
-| F10: Quoted speech | 40.3 | 51.3 | -0.5 | -0.1 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 23.7 | 39.0 | -0.7 | -0.1 |
-| F12: +first_pl +future_will +modal | 65.3 | 80.9 | -0.0 | -0.0 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 43.9 | 43.5 | -0.2 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 11.8 | 29.1 | -0.6 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 38.8 | 29.5 | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 82.7 | 79.7 | 1.1 | 0.1 |
+| F6: Person-centred (named people) | 28.3 | 34.6 | -0.6 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 94.5 | 93.7 | 1.0 | -0.3 |
+| F8: Numeric and dated (digits, years) | 65.4 | 69.2 | -0.1 | 0.0 |
+| F9: ALL-CAPS shouting | 35.0 | 38.0 | -0.5 | -0.3 |
+| F10: Quoted speech | 40.5 | 51.1 | -0.5 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 23.6 | 38.8 | -0.7 | -0.1 |
+| F12: +first_pl +future_will +modal | 65.0 | 81.0 | -0.0 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.1% (3.1%); outrage 31.5% (36.7%); humor 0.0% (0.1%); question 26.2% (13.8%); breaking_live 0.7% (1.2%); episode_show 0.0% (7.1%); interview_guest 6.3% (11.7%); reaction 1.4% (2.0%); confrontation 3.9% (7.6%); listicle 0.0% (0.1%); howto_explainer 8.4% (6.8%)
 
 
-Nearest style neighbors: @NBCNews [neutral]; @ABCNews [neutral]; @axios [neutral]; @BBCNews [neutral]; @CNN [left]
+Nearest style neighbors: @NBCNews [neutral]; @ABCNews [neutral]; @BBCNews [neutral]; @axios [neutral]; @CNN [left]
 
 Nearest topic neighbors: @thehill [neutral]; @msnow [left]; @thomhartmann [left]; @CNN [left]; @bulwarkmedia [left]
 
@@ -45,7 +45,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-04 | 37 | 1.39 | -0.28 | -0.59 | -0.04 | 1.04 | -0.70 | 0.97 | -0.38 | -0.51 | -0.87 | -0.30 | -0.58 | 0.03 | 0.19 | 0.00 |
 | 2026-05 | 36 | 1.16 | -0.22 | -0.61 | -0.08 | 0.08 | -0.83 | 0.69 | 0.54 | 0.26 | -0.16 | -0.60 | -0.08 | 0.00 | 0.33 | 0.00 |
 | 2026-06 | 35 | 1.07 | -0.17 | -0.53 | -0.01 | 1.36 | -0.37 | 0.71 | -0.51 | -0.53 | -0.77 | -0.65 | -0.08 | 0.06 | 0.23 | 0.00 |
-| 2026-07 | 41 | 0.91 | -0.04 | -0.65 | -0.31 | 1.87 | 0.08 | 1.12 | 0.33 | -0.71 | -0.89 | -1.18 | 0.08 | 0.05 | 0.34 | 0.00 |
+| 2026-07 | 41 | 0.91 | -0.04 | -0.64 | -0.31 | 1.87 | 0.08 | 1.12 | 0.33 | -0.71 | -0.89 | -1.18 | 0.08 | 0.05 | 0.34 | 0.00 |
 | 2026-08 | 29 | 0.97 | -0.11 | -0.84 | -0.33 | 1.21 | -0.36 | 1.17 | -0.24 | -0.04 | 0.52 | -1.41 | 0.51 | 0.00 | 0.31 | 0.00 |
 | 2026-09* | 17 | 0.80 | -0.71 | -0.59 | 0.03 | 2.04 | -0.80 | 0.77 | -0.31 | -0.44 | -1.06 | -1.13 | 0.96 | 0.06 | 0.24 | 0.00 |
 

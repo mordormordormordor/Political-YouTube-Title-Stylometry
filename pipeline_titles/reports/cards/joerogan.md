@@ -13,18 +13,18 @@ Top topics: Political Figures and Callouts (83.5%); UFC at White House Event (10
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 19.1 | 70.8 | -0.4 | 0.5 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 19.0 | 70.9 | -0.4 | 0.5 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 0.4 | 0.4 | -3.0 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 80.9 | 38.1 | -0.1 | -0.4 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 81.0 | 38.4 | -0.1 | -0.4 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 1.7 | 0.4 | -0.6 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 2.5 | 2.1 | -0.7 | 0.1 |
 | F6: Person-centred (named people) | 91.1 | 98.7 | 0.8 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 59.3 | 11.4 | -0.5 | -0.3 |
-| F8: Numeric and dated (digits, years) | 90.3 | 87.7 | 0.3 | 0.0 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 59.1 | 11.4 | -0.5 | -0.3 |
+| F8: Numeric and dated (digits, years) | 90.3 | 87.8 | 0.3 | 0.0 |
 | F9: ALL-CAPS shouting | 1.3 | 0.8 | -1.3 | -0.3 |
-| F10: Quoted speech | 53.0 | 2.1 | -0.4 | -0.1 |
+| F10: Quoted speech | 53.2 | 2.1 | -0.4 | -0.1 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 0.8 | 0.4 | -2.1 | -0.1 |
-| F12: +first_pl +future_will +modal | 87.3 | 60.6 | 0.4 | -0.0 |
+| F12: +first_pl +future_will +modal | 87.3 | 60.8 | 0.4 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (3.1%); outrage 5.3% (36.7%); humor 0.0% (0.1%); question 0.0% (13.8%); breaking_live 0.0% (1.2%); episode_show 99.2% (7.1%); interview_guest 9.0% (11.7%); reaction 0.0% (2.0%); confrontation 0.0% (7.6%); listicle 0.0% (0.1%); howto_explainer 0.0% (6.8%)

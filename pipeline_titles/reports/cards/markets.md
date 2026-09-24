@@ -13,18 +13,18 @@ Top topics: Trump and Iran War Negotiations (8.7%); AI and Political Implication
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 76.7 | 74.2 | 0.6 | 0.5 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 9.3 | 11.9 | -1.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 25.8 | 58.9 | -0.4 | -0.4 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 28.0 | 16.9 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 11.4 | 23.7 | -0.4 | 0.1 |
-| F6: Person-centred (named people) | 69.5 | 59.7 | 0.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 67.8 | 82.2 | -0.3 | -0.3 |
-| F8: Numeric and dated (digits, years) | 89.4 | 92.4 | 0.3 | 0.0 |
-| F9: ALL-CAPS shouting | 38.6 | 24.2 | -0.4 | -0.3 |
-| F10: Quoted speech | 28.0 | 44.1 | -0.6 | -0.1 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 42.4 | 55.5 | -0.4 | -0.1 |
-| F12: +first_pl +future_will +modal | 90.3 | 93.6 | 0.5 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 75.9 | 74.3 | 0.6 | 0.5 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 9.3 | 11.8 | -1.1 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 26.2 | 59.1 | -0.4 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 27.8 | 16.9 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 11.4 | 23.6 | -0.4 | 0.1 |
+| F6: Person-centred (named people) | 69.2 | 59.5 | 0.1 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 67.5 | 82.3 | -0.3 | -0.3 |
+| F8: Numeric and dated (digits, years) | 89.5 | 92.4 | 0.3 | 0.0 |
+| F9: ALL-CAPS shouting | 38.4 | 24.5 | -0.4 | -0.3 |
+| F10: Quoted speech | 27.8 | 43.9 | -0.6 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 42.2 | 55.3 | -0.4 | -0.1 |
+| F12: +first_pl +future_will +modal | 90.3 | 93.7 | 0.5 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.7% (3.1%); outrage 18.8% (36.7%); humor 0.0% (0.1%); question 7.2% (13.8%); breaking_live 0.3% (1.2%); episode_show 31.6% (7.1%); interview_guest 7.6% (11.7%); reaction 0.6% (2.0%); confrontation 1.8% (7.6%); listicle 0.0% (0.1%); howto_explainer 2.1% (6.8%)
@@ -43,7 +43,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-02 | 784 | 0.56 | -0.85 | -0.41 | -0.24 | -0.31 | 0.20 | -0.31 | 0.37 | -0.31 | -0.56 | -0.20 | 0.64 | 0.02 | 0.14 | 0.00 |
 | 2026-03 | 987 | 0.27 | -0.89 | -0.40 | -0.27 | -0.20 | 0.11 | -0.54 | 0.19 | -0.49 | -0.69 | -0.58 | 0.40 | 0.00 | 0.27 | 0.00 |
 | 2026-04 | 836 | 0.74 | -1.25 | -0.36 | -0.19 | -0.38 | 0.10 | -0.42 | 0.10 | -0.39 | -0.72 | -0.10 | 0.22 | 0.00 | 0.19 | 0.00 |
-| 2026-05 | 896 | 0.66 | -1.17 | -0.40 | -0.19 | -0.48 | 0.06 | -0.32 | 0.33 | -0.46 | -0.60 | -0.30 | 0.37 | 0.01 | 0.19 | 0.00 |
+| 2026-05 | 896 | 0.66 | -1.17 | -0.40 | -0.19 | -0.48 | 0.06 | -0.32 | 0.33 | -0.46 | -0.59 | -0.30 | 0.37 | 0.01 | 0.19 | 0.00 |
 | 2026-06 | 933 | 0.66 | -1.17 | -0.41 | -0.23 | -0.53 | 0.15 | -0.32 | 0.42 | -0.38 | -0.65 | -0.34 | 0.54 | 0.01 | 0.16 | 0.00 |
 | 2026-07 | 976 | 0.55 | -1.19 | -0.44 | -0.25 | -0.59 | 0.16 | -0.30 | 0.19 | -0.33 | -0.61 | -0.45 | 0.53 | 0.00 | 0.18 | 0.00 |
 | 2026-08 | 1028 | 0.53 | -1.01 | -0.39 | -0.38 | -0.56 | 0.03 | -0.26 | 0.12 | -0.43 | -0.55 | -0.36 | 0.41 | 0.01 | 0.18 | 0.00 |
@@ -88,7 +88,7 @@ Top topics: Fed Chair Kevin Warsh and Interest Rates (18.2%); Trump and Iran War
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 71.4 | 75.3 | 0.3 | 0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 70.1 | 75.3 | 0.3 | 0.3 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 1.3 | 1.3 | -2.2 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 63.6 | 67.5 | 0.1 | 0.9 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 46.8 | 31.2 | -0.2 | -0.1 |

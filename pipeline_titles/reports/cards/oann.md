@@ -13,21 +13,21 @@ Top topics: Trump and Iran War Negotiations (3.9%); California Election Fraud Sc
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 59.3 | 55.1 | 0.3 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 15.7 | 16.9 | -0.7 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 36.4 | 67.8 | -0.4 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 59.5 | 55.3 | 0.3 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 15.6 | 16.9 | -0.7 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 36.7 | 67.9 | -0.4 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 3.0 | 1.3 | -0.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 19.9 | 21.6 | -0.3 | 0.2 |
-| F6: Person-centred (named people) | 80.5 | 74.6 | 0.4 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 58.9 | 77.1 | -0.5 | -0.7 |
-| F8: Numeric and dated (digits, years) | 88.1 | 89.0 | 0.2 | -0.1 |
-| F9: ALL-CAPS shouting | 59.3 | 42.8 | -0.2 | -0.3 |
-| F10: Quoted speech | 77.5 | 77.5 | 0.1 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 71.2 | 79.7 | 0.2 | -0.2 |
-| F12: +first_pl +future_will +modal | 52.1 | 67.4 | -0.1 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 19.8 | 21.5 | -0.3 | 0.2 |
+| F6: Person-centred (named people) | 80.6 | 74.3 | 0.4 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 58.6 | 77.2 | -0.5 | -0.6 |
+| F8: Numeric and dated (digits, years) | 88.2 | 89.0 | 0.2 | -0.1 |
+| F9: ALL-CAPS shouting | 59.5 | 43.0 | -0.2 | -0.3 |
+| F10: Quoted speech | 77.6 | 77.6 | 0.1 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 70.9 | 79.7 | 0.2 | -0.2 |
+| F12: +first_pl +future_will +modal | 51.9 | 67.5 | -0.1 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.2% (4.8%); outrage 40.0% (59.8%); humor 0.2% (0.2%); question 11.3% (15.3%); breaking_live 0.9% (2.0%); episode_show 0.0% (7.5%); interview_guest 7.0% (7.7%); reaction 2.2% (2.2%); confrontation 7.6% (7.8%); listicle 0.1% (0.1%); howto_explainer 4.5% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.2% (4.8%); outrage 40.0% (60.1%); humor 0.2% (0.2%); question 11.3% (15.2%); breaking_live 0.9% (2.0%); episode_show 0.0% (7.4%); interview_guest 7.0% (7.8%); reaction 2.2% (2.2%); confrontation 7.6% (8.2%); listicle 0.1% (0.1%); howto_explainer 4.5% (9.3%)
 
 
 Nearest style neighbors: @nypost [right]; @RealAmericasVoice [right]; @clayandbuck [right]; @AnthonyBrianLogan [right]; @HasanReactionsfanTwo [left]
@@ -43,9 +43,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-02 | 146 | 0.25 | -0.76 | -0.08 | -0.41 | -0.04 | 0.07 | -0.85 | 0.11 | 0.05 | 0.25 | 0.11 | 0.10 | 0.03 | 0.41 | 0.00 |
 | 2026-03 | 149 | -0.04 | -0.10 | -0.14 | -0.45 | 0.02 | 0.25 | -0.80 | -0.17 | 0.43 | 1.11 | 0.37 | -0.13 | 0.03 | 0.56 | 0.00 |
 | 2026-04 | 138 | 0.23 | -0.74 | -0.35 | -0.63 | -0.41 | 0.49 | -0.22 | 0.41 | -0.05 | -0.14 | 0.31 | -0.39 | 0.01 | 0.49 | 0.00 |
-| 2026-05 | 242 | 0.05 | -0.89 | -0.45 | -0.57 | -0.60 | 0.52 | -0.37 | 0.23 | -0.29 | 0.17 | 0.32 | -0.34 | 0.02 | 0.37 | 0.00 |
+| 2026-05 | 242 | 0.05 | -0.89 | -0.44 | -0.57 | -0.60 | 0.52 | -0.37 | 0.23 | -0.29 | 0.17 | 0.32 | -0.34 | 0.02 | 0.37 | 0.00 |
 | 2026-06 | 249 | 0.47 | -0.58 | -0.46 | -0.53 | -0.38 | 0.23 | -0.39 | 0.13 | -0.10 | 0.16 | 0.15 | -0.28 | 0.02 | 0.39 | 0.00 |
-| 2026-07 | 289 | 0.65 | -0.55 | -0.49 | -0.57 | -0.31 | 0.58 | -0.35 | 0.21 | -0.06 | 0.28 | 0.25 | -0.28 | 0.01 | 0.34 | 0.01 |
+| 2026-07 | 289 | 0.66 | -0.55 | -0.49 | -0.57 | -0.31 | 0.58 | -0.35 | 0.21 | -0.06 | 0.28 | 0.25 | -0.28 | 0.01 | 0.34 | 0.01 |
 | 2026-08 | 241 | 0.35 | -0.88 | -0.42 | -0.68 | -0.53 | 0.52 | -0.33 | 0.44 | -0.41 | -0.29 | -0.05 | 0.16 | 0.01 | 0.37 | 0.00 |
 | 2026-09* | 120 | 0.57 | -0.83 | -0.16 | -0.37 | -0.52 | 0.33 | -0.74 | 0.66 | -0.69 | -0.16 | 0.02 | 0.30 | 0.03 | 0.41 | 0.00 |
 

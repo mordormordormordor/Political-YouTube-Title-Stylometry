@@ -13,17 +13,17 @@ Top topics: Trump and China Relations (16.4%); Iran War and Oil Market Impact (1
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 15.7 | 11.9 | -0.4 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 16.0 | 12.2 | -0.4 | 0.1 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 94.9 | 89.0 | 1.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.6 | 69.9 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 81.4 | 75.4 | 0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 91.5 | 88.6 | 1.6 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.8 | 70.0 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 81.4 | 75.5 | 0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 91.6 | 88.6 | 1.6 | 0.1 |
 | F6: Person-centred (named people) | 0.8 | 0.8 | -1.7 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 90.3 | 92.8 | 0.7 | -0.5 |
 | F8: Numeric and dated (digits, years) | 2.1 | 11.0 | -0.8 | -0.2 |
-| F9: ALL-CAPS shouting | 19.1 | 8.1 | -0.6 | -0.3 |
-| F10: Quoted speech | 7.6 | 40.7 | -0.9 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 69.5 | 74.6 | 0.1 | -0.3 |
+| F9: ALL-CAPS shouting | 19.4 | 8.4 | -0.6 | -0.3 |
+| F10: Quoted speech | 7.6 | 40.5 | -0.9 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 69.2 | 74.7 | 0.1 | -0.3 |
 | F12: +first_pl +future_will +modal | 94.1 | 97.9 | 0.7 | -0.1 |
 
 

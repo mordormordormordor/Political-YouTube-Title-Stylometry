@@ -4,17 +4,17 @@
 
 ## The finding in one paragraph
 
-The corpus is 293,590 titles from 274 creators, but it is wildly uneven: four Indian news channels (Firstpost, ANI, Times Now, Times of India) hold 64,520 of them, the median creator x genre has 145 titles and the largest has 11,623. 8,684 rows (3.0 %) are verbatim repeats within a creator x genre, almost all live-broadcast loops on news stream tabs. So three rules run through everything downstream: edited uploads (`videos`) and live VODs (`streams`) are never pooled; a creator x genre with fewer than 50 unique titles is reported but never ranked (127 of 440 groups); and any statistic that pools titles uses a creator-balanced subset capped at 2,500 titles per creator x genre (183,083 titles), while corpus- and group-level figures are means of creator-level values.
+The corpus is 293,697 titles from 275 creators, but it is wildly uneven: four Indian news channels (Firstpost, ANI, Times Now, Times of India) hold 64,520 of them, the median creator x genre has 144 titles and the largest has 11,623. 8,684 rows (3.0 %) are verbatim repeats within a creator x genre, almost all live-broadcast loops on news stream tabs. So three rules run through everything downstream: edited uploads (`videos`) and live VODs (`streams`) are never pooled; a creator x genre with fewer than 50 unique titles is reported but never ranked (128 of 442 groups); and any statistic that pools titles uses a creator-balanced subset capped at 2,500 titles per creator x genre (183,190 titles), while corpus- and group-level figures are means of creator-level values.
 
 ## Size by genre
 
 | genre | groups | rows | unique | balanced | low_n | median_size | max_size |
 |---|---|---|---|---|---|---|---|
-| streams | 166 | 50027 | 42483 | 31469 | 89 | 42 | 8485 |
-| videos | 274 | 243563 | 242423 | 151614 | 38 | 234 | 11623 |
+| streams | 167 | 50028 | 42484 | 31470 | 90 | 42 | 8485 |
+| videos | 275 | 243669 | 242529 | 151720 | 38 | 234 | 11623 |
 
 
-The `streams` genre is small and thin: 89 of its 166 groups are low-n, so stream-level results in the later documents rest on roughly 77 creators.
+The `streams` genre is small and thin: 90 of its 167 groups are low-n, so stream-level results in the later documents rest on roughly 77 creators.
 
 ![Creator x genre group sizes on a log scale, with the low-n line (50) and the balanced cap (2,500).](figures/01_group_sizes.png)
 *Creator x genre group sizes on a log scale, with the low-n line (50) and the balanced cap (2,500).*
@@ -42,7 +42,7 @@ Titles carry brand furniture that would otherwise dominate any vocabulary-based 
 | @DailyDenims | videos | colon | denims | 200 | 0.93 | DENIMS |
 
 
-**Check that it worked.** If stripping removed the show-brand head of each creator's vocabulary, the creator-level Zipf exponent should fall (the most frequent tokens were the brand) and the top-token share should drop most for show-branded channels. Both happened: the mean creator-level Zipf exponent went from 0.797 (raw) to 0.781 (normalized), and the share of the single most frequent token fell most for Joe Rogan (from 14 % to 4 %: "Joe Rogan Experience #"), Denims, The Economist and the Hasan fan channels. The pooled corpus exponent barely moves (the brand tokens are a small share of a 189k-title pool), which is exactly why the report uses creator-level figures. Document 7 takes Zipf's law further.
+**Check that it worked.** If stripping removed the show-brand head of each creator's vocabulary, the creator-level Zipf exponent should fall (the most frequent tokens were the brand) and the top-token share should drop most for show-branded channels. Both happened: the mean creator-level Zipf exponent went from 0.797 (raw) to 0.780 (normalized), and the share of the single most frequent token fell most for Joe Rogan (from 14 % to 4 %: "Joe Rogan Experience #"), Denims, The Economist and the Hasan fan channels. The pooled corpus exponent barely moves (the brand tokens are a small share of a 189k-title pool), which is exactly why the report uses creator-level figures. Document 7 takes Zipf's law further.
 
 ## The creator table, and the one grouping used everywhere
 
@@ -57,7 +57,7 @@ No channel is assigned a category by hand. The one between-channel grouping in t
 |---|---|---|
 | left channels | 122 | 94641 |
 | neutral channels | 42 | 118472 |
-| right channels | 110 | 71793 |
+| right channels | 111 | 71900 |
 
 
 The group is a description of how a channel's titles read, produced by the same measurement as everything else here; it is not an editorial judgment about the channel, and document 14 gives its reliability (split-half Spearman of the score 0.96) and its limits. Every "by group" table in documents 2-13 is a mean or median over the ranked channels of a group, never a pool of their titles.

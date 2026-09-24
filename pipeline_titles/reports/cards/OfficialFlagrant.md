@@ -19,15 +19,15 @@ Top topics: NBA Championship Celebrations (11.8%); Black America and Racism Disc
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.4 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.1 | 0.2 |
 | F6: Person-centred (named people) | None | None | -0.5 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.6 | -0.7 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.6 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | 0.1 | -0.1 |
 | F9: ALL-CAPS shouting | None | None | -0.6 | -0.3 |
 | F10: Quoted speech | None | None | -0.4 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | None | None | 1.0 | -0.2 |
-| F12: +first_pl +future_will +modal | None | None | -0.6 | -0.3 |
+| F12: +first_pl +future_will +modal | None | None | -0.5 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.9% (4.8%); outrage 50.0% (59.8%); humor 0.0% (0.2%); question 23.5% (15.3%); breaking_live 0.0% (2.0%); episode_show 38.2% (7.5%); interview_guest 8.8% (7.7%); reaction 8.8% (2.2%); confrontation 5.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 20.6% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.9% (4.8%); outrage 50.0% (60.1%); humor 0.0% (0.2%); question 23.5% (15.2%); breaking_live 0.0% (2.0%); episode_show 38.2% (7.4%); interview_guest 8.8% (7.8%); reaction 8.8% (2.2%); confrontation 5.9% (8.2%); listicle 0.0% (0.1%); howto_explainer 20.6% (9.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

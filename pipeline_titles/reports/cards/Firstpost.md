@@ -13,17 +13,17 @@ Top topics: Indian Politics and Delhi Riots (9.2%); Trump and Iran War Negotiati
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 21.2 | 24.2 | -0.3 | 0.5 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 18.6 | 19.9 | -0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 64.4 | 91.9 | -0.2 | -0.4 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 48.7 | 28.0 | -0.1 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 52.1 | 44.9 | 0.2 | 0.1 |
-| F6: Person-centred (named people) | 81.4 | 78.0 | 0.4 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 74.2 | 84.7 | -0.3 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 21.1 | 24.5 | -0.3 | 0.5 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 18.6 | 19.8 | -0.7 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 64.6 | 92.0 | -0.2 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 48.5 | 27.8 | -0.1 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 52.3 | 44.7 | 0.2 | 0.1 |
+| F6: Person-centred (named people) | 81.9 | 78.1 | 0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 74.3 | 84.8 | -0.3 | -0.3 |
 | F8: Numeric and dated (digits, years) | 99.2 | 99.2 | 1.2 | 0.0 |
-| F9: ALL-CAPS shouting | 47.5 | 27.5 | -0.3 | -0.3 |
-| F10: Quoted speech | 78.8 | 82.2 | 0.2 | -0.1 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 78.0 | 84.7 | 0.3 | -0.1 |
+| F9: ALL-CAPS shouting | 47.7 | 27.8 | -0.3 | -0.3 |
+| F10: Quoted speech | 78.9 | 82.3 | 0.2 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 77.6 | 84.8 | 0.3 | -0.1 |
 | F12: +first_pl +future_will +modal | 97.9 | 97.5 | 1.0 | -0.0 |
 
 
@@ -116,7 +116,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 813 | -0.24 | -0.90 | 2.02 | -0.05 | -0.40 | 0.51 | -0.56 | 0.62 | -1.32 | -0.25 | 0.00 | 0.55 | 0.03 | 0.44 | 0.00 |
 | 2026-02 | 869 | 0.08 | -1.03 | 2.13 | 0.01 | -0.47 | 0.21 | -0.65 | 0.48 | -1.36 | -0.35 | 0.13 | 0.40 | 0.01 | 0.32 | 0.00 |
-| 2026-03 | 852 | -1.38 | -0.85 | 2.05 | 0.10 | -0.28 | 0.26 | -0.64 | 0.24 | -1.79 | -0.16 | -0.35 | 1.28 | 0.01 | 0.60 | 0.00 |
+| 2026-03 | 852 | -1.38 | -0.85 | 2.05 | 0.10 | -0.28 | 0.26 | -0.64 | 0.24 | -1.79 | -0.15 | -0.35 | 1.28 | 0.01 | 0.60 | 0.00 |
 | 2026-04 | 1263 | -1.01 | -0.64 | 2.20 | 0.12 | -0.39 | 0.46 | -0.70 | 0.32 | -1.35 | -0.03 | -0.00 | 0.99 | 0.03 | 0.58 | 0.00 |
 | 2026-05 | 1479 | -0.81 | -0.61 | 1.17 | 0.04 | -0.24 | 0.45 | -0.69 | 0.39 | -1.29 | 0.03 | -0.09 | 0.71 | 0.04 | 0.52 | 0.00 |
 | 2026-06 | 1068 | -0.37 | -0.44 | 0.79 | 0.05 | -0.26 | 0.78 | -0.65 | 0.81 | -0.66 | -0.21 | 0.31 | 0.70 | 0.02 | 0.50 | 0.00 |

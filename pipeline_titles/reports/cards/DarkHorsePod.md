@@ -13,21 +13,21 @@ Top topics: Covid Vaccine Controversy (7.7%); Islam and Political Extremism (4.6
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 62.3 | 82.2 | 0.4 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 8.5 | 10.6 | -1.1 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 62.4 | 82.3 | 0.4 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 8.4 | 10.5 | -1.1 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 92.8 | 91.1 | 0.2 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 63.1 | 58.9 | -0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 69.5 | 76.7 | 0.6 | 0.2 |
-| F6: Person-centred (named people) | 78.4 | 65.7 | 0.3 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 23.7 | 22.5 | -0.9 | -0.7 |
-| F8: Numeric and dated (digits, years) | 67.8 | 75.8 | -0.0 | -0.1 |
-| F9: ALL-CAPS shouting | 45.8 | 40.7 | -0.3 | -0.3 |
-| F10: Quoted speech | 66.1 | 66.1 | -0.1 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 47.9 | 54.7 | -0.3 | -0.2 |
-| F12: +first_pl +future_will +modal | 53.0 | 42.4 | -0.1 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 63.3 | 59.1 | -0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 69.6 | 76.8 | 0.6 | 0.2 |
+| F6: Person-centred (named people) | 78.5 | 65.4 | 0.3 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 23.6 | 22.4 | -0.9 | -0.6 |
+| F8: Numeric and dated (digits, years) | 67.9 | 75.9 | -0.0 | -0.1 |
+| F9: ALL-CAPS shouting | 46.0 | 40.9 | -0.3 | -0.3 |
+| F10: Quoted speech | 66.2 | 66.2 | -0.1 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 47.7 | 54.4 | -0.3 | -0.2 |
+| F12: +first_pl +future_will +modal | 53.2 | 42.6 | -0.1 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.1% (4.8%); outrage 13.9% (59.8%); humor 0.0% (0.2%); question 21.5% (15.3%); breaking_live 0.0% (2.0%); episode_show 1.5% (7.5%); interview_guest 6.2% (7.7%); reaction 3.1% (2.2%); confrontation 0.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 12.3% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.1% (4.8%); outrage 13.9% (60.1%); humor 0.0% (0.2%); question 21.5% (15.2%); breaking_live 0.0% (2.0%); episode_show 1.5% (7.4%); interview_guest 6.2% (7.8%); reaction 3.1% (2.2%); confrontation 0.0% (8.2%); listicle 0.0% (0.1%); howto_explainer 12.3% (9.3%)
 
 
 Nearest style neighbors: @MichaelKnowles [right]; @TheJoyReidShow [left]; @DropSiteNews [left]; @underthedesknews [left]; @ClubRandomPodcast [neutral]

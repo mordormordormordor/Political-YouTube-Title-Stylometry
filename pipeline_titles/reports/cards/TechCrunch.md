@@ -14,17 +14,17 @@ Top topics: Tech Business Founders and Industry (47.5%); AI and Political Implic
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 94.5 | 99.6 | 0.9 | 0.5 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 87.3 | 78.0 | 0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 77.1 | 75.0 | -0.1 | -0.4 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 84.3 | 63.6 | 0.2 | -0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 87.3 | 77.6 | 0.8 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 77.2 | 75.1 | -0.1 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 84.4 | 63.7 | 0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 91.1 | 94.1 | 1.6 | 0.1 |
-| F6: Person-centred (named people) | 50.8 | 30.5 | -0.2 | -0.2 |
+| F6: Person-centred (named people) | 50.6 | 30.4 | -0.2 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 86.9 | 87.3 | 0.5 | -0.3 |
-| F8: Numeric and dated (digits, years) | 10.6 | 76.7 | -0.5 | 0.0 |
-| F9: ALL-CAPS shouting | 69.9 | 66.5 | -0.1 | -0.3 |
-| F10: Quoted speech | 72.9 | 61.0 | 0.0 | -0.1 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 89.8 | 94.1 | 0.7 | -0.1 |
-| F12: +first_pl +future_will +modal | 64.8 | 67.8 | -0.0 | -0.0 |
+| F8: Numeric and dated (digits, years) | 10.5 | 76.8 | -0.5 | 0.0 |
+| F9: ALL-CAPS shouting | 70.0 | 66.7 | -0.1 | -0.3 |
+| F10: Quoted speech | 73.0 | 61.2 | 0.0 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 89.9 | 94.1 | 0.7 | -0.1 |
+| F12: +first_pl +future_will +modal | 64.6 | 67.9 | -0.0 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.4% (3.1%); outrage 7.9% (36.7%); humor 0.0% (0.1%); question 35.2% (13.8%); breaking_live 0.0% (1.2%); episode_show 0.7% (7.1%); interview_guest 20.1% (11.7%); reaction 0.0% (2.0%); confrontation 4.3% (7.6%); listicle 0.7% (0.1%); howto_explainer 17.3% (6.8%)

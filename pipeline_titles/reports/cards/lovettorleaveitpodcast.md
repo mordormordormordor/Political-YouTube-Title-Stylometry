@@ -13,18 +13,18 @@ Top topics: Hollywood and Awards Controversy (4.5%); Trump press conference outb
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 7.6 | 12.7 | -0.8 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 33.1 | 25.4 | -0.4 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 8.0 | 13.1 | -0.8 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 33.3 | 25.3 | -0.4 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 1.7 | 1.3 | -0.8 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 8.9 | 13.1 | -0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 53.8 | 48.7 | 0.2 | 0.1 |
+| F5: Question and explainer framing (why, what, ?) | 54.0 | 48.5 | 0.2 | 0.1 |
 | F6: Person-centred (named people) | 96.2 | 97.0 | 1.2 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 32.6 | 25.4 | -0.7 | -0.5 |
-| F8: Numeric and dated (digits, years) | 35.6 | 37.7 | -0.3 | -0.2 |
-| F9: ALL-CAPS shouting | 5.9 | 8.5 | -1.0 | -0.3 |
-| F10: Quoted speech | 22.5 | 32.2 | -0.7 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 76.3 | 75.4 | 0.3 | -0.3 |
-| F12: +first_pl +future_will +modal | 33.1 | 28.4 | -0.4 | -0.1 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 32.5 | 25.3 | -0.7 | -0.5 |
+| F8: Numeric and dated (digits, years) | 35.4 | 38.0 | -0.3 | -0.2 |
+| F9: ALL-CAPS shouting | 6.3 | 8.9 | -0.9 | -0.3 |
+| F10: Quoted speech | 22.4 | 32.1 | -0.7 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 75.9 | 75.5 | 0.3 | -0.3 |
+| F12: +first_pl +future_will +modal | 33.3 | 28.7 | -0.4 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.7% (3.6%); outrage 47.3% (63.9%); humor 0.9% (0.2%); question 14.5% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 16.4% (9.8%); reaction 10.0% (2.9%); confrontation 21.8% (7.7%); listicle 0.0% (0.1%); howto_explainer 11.8% (8.0%)

@@ -1,9 +1,9 @@
 level,text,max_rank,zipf_exponent,ranks_used,n_titles,n_tokens,n_types,top_20
-pooled_balanced,raw,100,0.8573,100,183083,1999165,54552,the trump to in on of iran s live is and as for a with us war after at news
-pooled_balanced,raw,1000,0.7813,1000,183083,1999165,54552,the trump to in on of iran s live is and as for a with us war after at news
-pooled_balanced,raw,5000,1.0212,5000,183083,1999165,54552,the trump to in on of iran s live is and as for a with us war after at news
-pooled_balanced,normalised,100,0.8636,100,183083,1943465,52809,the trump to in on of iran s live is and as for a with us war after at over
-pooled_balanced,normalised,1000,0.7845,1000,183083,1943465,52809,the trump to in on of iran s live is and as for a with us war after at over
-pooled_balanced,normalised,5000,1.0151,5000,183083,1943465,52809,the trump to in on of iran s live is and as for a with us war after at over
-creator_level_mean,raw,200,0.7972,200,180878,1977690,483657,median 0.7962 over 313 creator x genre groups (>= 50 titles)
-creator_level_mean,normalised,200,0.7806,200,180878,1923441,479933,median 0.7826 over 313 creator x genre groups (>= 50 titles)
+pooled_balanced,raw,100,0.8573,100,183190,2000377,54559,the trump to in on of iran s live is and as for a with us war after at news
+pooled_balanced,raw,1000,0.7813,1000,183190,2000377,54559,the trump to in on of iran s live is and as for a with us war after at news
+pooled_balanced,raw,5000,1.0212,5000,183190,2000377,54559,the trump to in on of iran s live is and as for a with us war after at news
+pooled_balanced,normalised,100,0.8635,100,183190,1944677,52816,the trump to in on of iran s live is and as for a with us war after at over
+pooled_balanced,normalised,1000,0.7845,1000,183190,1944677,52816,the trump to in on of iran s live is and as for a with us war after at over
+pooled_balanced,normalised,5000,1.0152,5000,183190,1944677,52816,the trump to in on of iran s live is and as for a with us war after at over
+creator_level_mean,raw,200,0.7968,200,180984,1978892,484155,median 0.7955 over 314 creator x genre groups (>= 50 titles)
+creator_level_mean,normalised,200,0.7802,200,180984,1924643,480431,median 0.7822 over 314 creator x genre groups (>= 50 titles)

@@ -13,21 +13,21 @@ Top topics: Alberta independence movement (7.7%); Lindsay Clancy Murder Trial (4
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 22.0 | 17.8 | -0.3 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 63.6 | 61.0 | 0.2 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 71.6 | 65.7 | -0.2 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 22.9 | 15.7 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 60.2 | 54.7 | 0.3 | 0.2 |
-| F6: Person-centred (named people) | 92.8 | 93.6 | 0.9 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 11.4 | 20.8 | -1.1 | -0.7 |
-| F8: Numeric and dated (digits, years) | 86.4 | 82.2 | 0.2 | -0.1 |
-| F9: ALL-CAPS shouting | 53.0 | 42.4 | -0.3 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 22.4 | 18.1 | -0.3 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 63.3 | 60.8 | 0.2 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 71.7 | 65.8 | -0.2 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 22.8 | 15.6 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 60.3 | 54.9 | 0.3 | 0.2 |
+| F6: Person-centred (named people) | 92.8 | 93.7 | 0.9 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 11.4 | 20.7 | -1.1 | -0.6 |
+| F8: Numeric and dated (digits, years) | 86.5 | 82.3 | 0.2 | -0.1 |
+| F9: ALL-CAPS shouting | 53.2 | 42.6 | -0.3 | -0.3 |
 | F10: Quoted speech | 92.4 | 90.3 | 0.9 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 97.9 | 95.3 | 1.3 | -0.2 |
-| F12: +first_pl +future_will +modal | 19.9 | 23.3 | -0.6 | -0.3 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 97.9 | 95.4 | 1.3 | -0.2 |
+| F12: +first_pl +future_will +modal | 20.3 | 23.6 | -0.6 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.2% (4.8%); outrage 79.3% (59.8%); humor 0.3% (0.2%); question 36.8% (15.3%); breaking_live 2.6% (2.0%); episode_show 0.0% (7.5%); interview_guest 20.0% (7.7%); reaction 0.7% (2.2%); confrontation 7.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 18.4% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.2% (4.8%); outrage 79.3% (60.1%); humor 0.3% (0.2%); question 36.8% (15.2%); breaking_live 2.6% (2.0%); episode_show 0.0% (7.4%); interview_guest 20.0% (7.8%); reaction 0.7% (2.2%); confrontation 7.7% (8.2%); listicle 0.0% (0.1%); howto_explainer 18.4% (9.3%)
 
 
 Nearest style neighbors: @MegynKelly [right]; @rolandsmartin [left]; @TomiLahrenIsFearless [right]; @MLChristiansen [right]; https://rumble.com/c/GGreenwald [left]
@@ -39,14 +39,14 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 37 | -0.38 | 0.11 | -0.28 | -0.40 | -0.03 | 1.01 | -1.38 | 0.50 | -0.47 | 0.48 | 1.41 | -0.32 | 0.00 | 0.92 | 0.00 |
+| 2026-01 | 37 | -0.38 | 0.11 | -0.28 | -0.40 | -0.03 | 1.01 | -1.38 | 0.50 | -0.46 | 0.47 | 1.41 | -0.32 | 0.00 | 0.92 | 0.00 |
 | 2026-02 | 37 | -1.76 | 0.47 | -0.11 | -0.15 | 0.34 | 0.93 | -0.85 | -0.10 | -0.26 | 1.10 | 0.71 | -0.96 | 0.03 | 0.92 | 0.00 |
 | 2026-03 | 36 | -0.70 | 0.70 | -0.08 | -0.10 | -0.29 | -0.17 | -1.05 | 0.47 | -0.39 | 1.74 | 0.79 | -0.16 | 0.06 | 0.78 | 0.03 |
 | 2026-04 | 38 | 0.27 | -0.09 | -0.38 | -0.42 | 1.13 | 0.94 | -1.15 | 0.90 | -0.36 | 0.43 | 1.28 | -0.60 | 0.05 | 0.82 | 0.00 |
 | 2026-05 | 39 | -0.15 | 0.15 | -0.30 | -0.51 | 0.07 | 0.78 | -0.75 | -0.07 | -0.30 | 0.87 | 1.27 | -0.45 | 0.03 | 0.72 | 0.00 |
-| 2026-06 | 37 | -0.07 | 0.16 | 0.12 | 0.07 | 0.45 | 1.46 | -1.42 | -0.07 | 0.66 | 1.49 | 1.44 | -0.45 | 0.05 | 0.84 | 0.00 |
+| 2026-06 | 37 | -0.07 | 0.16 | 0.12 | 0.07 | 0.44 | 1.46 | -1.42 | -0.07 | 0.66 | 1.49 | 1.44 | -0.45 | 0.05 | 0.84 | 0.00 |
 | 2026-07 | 25 | 0.67 | 0.07 | -0.19 | -0.10 | 0.40 | 1.65 | -0.74 | 0.15 | -0.74 | 0.86 | 2.00 | -1.19 | 0.00 | 0.64 | 0.00 |
-| 2026-08 | 39 | 0.64 | 0.19 | -0.19 | -0.49 | 0.46 | 0.87 | -1.12 | 0.04 | -0.53 | 0.64 | 2.05 | -0.58 | 0.05 | 0.72 | 0.00 |
+| 2026-08 | 39 | 0.65 | 0.19 | -0.19 | -0.49 | 0.46 | 0.87 | -1.12 | 0.04 | -0.53 | 0.64 | 2.04 | -0.57 | 0.05 | 0.72 | 0.00 |
 | 2026-09* | 22 | -1.72 | 0.32 | -0.26 | -0.41 | 0.21 | 0.30 | -1.18 | 0.32 | -0.09 | 0.97 | 0.74 | -0.41 | 0.00 | 0.73 | 0.00 |
 
 

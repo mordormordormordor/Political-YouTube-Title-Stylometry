@@ -13,18 +13,18 @@ Top topics: Alberta independence movement (12.6%); Canada-US Trade War (6.7%); S
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 66.9 | 59.3 | 0.4 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 20.8 | 27.5 | -0.6 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 66.5 | 57.6 | -0.2 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 21.6 | 35.6 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 33.5 | 30.1 | -0.2 | 0.1 |
-| F6: Person-centred (named people) | 45.8 | 51.3 | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 56.8 | 68.2 | -0.5 | -0.5 |
-| F8: Numeric and dated (digits, years) | 32.6 | 39.8 | -0.3 | -0.2 |
-| F9: ALL-CAPS shouting | 11.9 | 14.0 | -0.8 | -0.3 |
-| F10: Quoted speech | 73.3 | 72.9 | 0.0 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 70.8 | 66.5 | 0.1 | -0.3 |
-| F12: +first_pl +future_will +modal | 6.4 | 20.8 | -0.8 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 67.1 | 59.5 | 0.4 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 20.7 | 27.4 | -0.6 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 66.7 | 57.8 | -0.2 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 21.5 | 35.4 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 33.3 | 30.0 | -0.2 | 0.1 |
+| F6: Person-centred (named people) | 45.6 | 51.1 | -0.3 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 56.5 | 68.4 | -0.5 | -0.5 |
+| F8: Numeric and dated (digits, years) | 32.5 | 40.1 | -0.3 | -0.2 |
+| F9: ALL-CAPS shouting | 12.2 | 14.3 | -0.8 | -0.3 |
+| F10: Quoted speech | 73.4 | 73.0 | 0.0 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 70.5 | 66.2 | 0.1 | -0.3 |
+| F12: +first_pl +future_will +modal | 6.8 | 21.1 | -0.8 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (3.6%); outrage 62.2% (63.9%); humor 1.5% (0.2%); question 3.7% (15.6%); breaking_live 0.7% (2.9%); episode_show 0.0% (2.8%); interview_guest 16.3% (9.8%); reaction 4.4% (2.9%); confrontation 5.9% (7.7%); listicle 0.0% (0.1%); howto_explainer 8.2% (8.0%)
@@ -40,12 +40,12 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 17 | 1.13 | -0.52 | -0.49 | 0.02 | -0.02 | -0.79 | -0.25 | -0.56 | -1.16 | -0.93 | 1.86 | -1.71 | 0.00 | 0.71 | 0.06 |
-| 2026-02 | 16 | 0.51 | -1.07 | -0.43 | -0.65 | -0.68 | -0.07 | -0.46 | -0.24 | -0.92 | -1.05 | 0.41 | -1.02 | 0.00 | 0.56 | 0.00 |
+| 2026-02 | 16 | 0.52 | -1.07 | -0.43 | -0.65 | -0.68 | -0.07 | -0.46 | -0.24 | -0.92 | -1.05 | 0.41 | -1.02 | 0.00 | 0.56 | 0.00 |
 | 2026-03 | 16 | 0.78 | -1.51 | -0.30 | -0.49 | -0.13 | -0.11 | -0.59 | -0.41 | -1.04 | -0.32 | -0.24 | -1.45 | 0.00 | 0.75 | 0.00 |
 | 2026-04 | 16 | 0.19 | 0.99 | 0.04 | 0.32 | 0.18 | -0.27 | -0.61 | -0.98 | -0.32 | 0.92 | -1.09 | -0.23 | 0.06 | 0.44 | 0.00 |
-| 2026-06 | 19 | 0.44 | -1.31 | -0.20 | -0.44 | 0.44 | -0.48 | -0.85 | 0.07 | -0.84 | 0.86 | -0.20 | -0.33 | 0.05 | 0.68 | 0.00 |
+| 2026-06 | 19 | 0.44 | -1.32 | -0.20 | -0.44 | 0.43 | -0.48 | -0.85 | 0.07 | -0.84 | 0.86 | -0.20 | -0.33 | 0.05 | 0.68 | 0.00 |
 | 2026-07 | 16 | -0.11 | -0.80 | 0.04 | -0.44 | -0.13 | -0.73 | -0.61 | -0.03 | -0.69 | 0.50 | -0.20 | -0.13 | 0.00 | 0.69 | 0.00 |
-| 2026-08 | 18 | 0.00 | -0.01 | -0.00 | -0.45 | -0.17 | -0.08 | -0.59 | -0.00 | -0.70 | 0.72 | 0.44 | -1.16 | 0.00 | 0.72 | 0.00 |
+| 2026-08 | 18 | 0.00 | -0.01 | -0.00 | -0.45 | -0.17 | -0.08 | -0.59 | -0.00 | -0.70 | 0.72 | 0.43 | -1.16 | 0.00 | 0.72 | 0.00 |
 
 
 Engagement (n = 135, R2 = 0.313; log views per within-creator SD, month + topic controls):

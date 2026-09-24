@@ -13,18 +13,18 @@ Top topics: Israel and Palestine Conflict (18.7%); Iran political unrest (12.6%)
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 35.2 | 23.7 | -0.1 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 16.5 | 19.5 | -0.7 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 60.2 | 69.5 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 10.6 | 8.1 | -0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 60.6 | 59.3 | 0.3 | 0.1 |
-| F6: Person-centred (named people) | 69.9 | 61.9 | 0.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 29.7 | 66.1 | -0.8 | -0.5 |
-| F8: Numeric and dated (digits, years) | 60.2 | 61.0 | -0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 32.6 | 25.0 | -0.5 | -0.3 |
-| F10: Quoted speech | 81.8 | 86.4 | 0.3 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 35.2 | 40.7 | -0.5 | -0.3 |
-| F12: +first_pl +future_will +modal | 41.1 | 85.6 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 35.4 | 24.1 | -0.1 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 16.5 | 19.4 | -0.7 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 59.9 | 69.6 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 10.5 | 8.0 | -0.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 60.8 | 59.5 | 0.3 | 0.1 |
+| F6: Person-centred (named people) | 69.6 | 61.6 | 0.1 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 29.5 | 65.8 | -0.8 | -0.5 |
+| F8: Numeric and dated (digits, years) | 60.3 | 61.2 | -0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 32.9 | 25.3 | -0.5 | -0.3 |
+| F10: Quoted speech | 81.9 | 86.5 | 0.3 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 35.0 | 40.5 | -0.5 | -0.3 |
+| F12: +first_pl +future_will +modal | 41.4 | 85.7 | -0.3 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.0% (3.6%); outrage 46.5% (63.9%); humor 0.0% (0.2%); question 17.2% (15.6%); breaking_live 2.0% (2.9%); episode_show 3.0% (2.8%); interview_guest 15.7% (9.8%); reaction 1.5% (2.9%); confrontation 4.0% (7.7%); listicle 0.0% (0.1%); howto_explainer 3.5% (8.0%)
@@ -39,10 +39,10 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 19 | 0.55 | -0.79 | -0.31 | 0.06 | -0.14 | -0.14 | -0.73 | -0.39 | 0.21 | 1.68 | -0.53 | -0.61 | 0.11 | 0.47 | 0.00 |
+| 2026-01 | 19 | 0.55 | -0.79 | -0.31 | 0.06 | -0.14 | -0.14 | -0.73 | -0.38 | 0.21 | 1.68 | -0.53 | -0.61 | 0.11 | 0.47 | 0.00 |
 | 2026-02 | 22 | 0.65 | -0.25 | -0.35 | -0.46 | 0.26 | 0.10 | -0.40 | 0.25 | -0.47 | 0.58 | -0.16 | -0.19 | 0.00 | 0.50 | 0.00 |
 | 2026-03 | 28 | -0.16 | -1.13 | -0.06 | -0.24 | 0.52 | 0.01 | -0.44 | 0.19 | -0.15 | -0.39 | -1.14 | -0.58 | 0.04 | 0.32 | 0.00 |
-| 2026-04 | 28 | -0.06 | -1.12 | -0.31 | -0.43 | -0.27 | 0.02 | -1.07 | -0.28 | -0.22 | 0.09 | -0.64 | 0.26 | 0.04 | 0.50 | 0.00 |
+| 2026-04 | 28 | -0.06 | -1.12 | -0.30 | -0.43 | -0.27 | 0.02 | -1.07 | -0.28 | -0.22 | 0.09 | -0.64 | 0.26 | 0.04 | 0.50 | 0.00 |
 | 2026-05 | 28 | -0.20 | -0.31 | -0.26 | -0.63 | 0.90 | 0.59 | -1.05 | -0.01 | -0.87 | 0.36 | -0.33 | 0.23 | 0.00 | 0.46 | 0.00 |
 | 2026-06 | 24 | -0.12 | -0.54 | -0.20 | -0.13 | 0.14 | 0.38 | -0.96 | -0.43 | -0.47 | -0.17 | -0.37 | -1.08 | 0.00 | 0.50 | 0.00 |
 | 2026-07 | 20 | -0.58 | -0.01 | -0.33 | -0.73 | -0.19 | 0.29 | -0.90 | -0.42 | -0.91 | 0.20 | -0.51 | 0.12 | 0.05 | 0.60 | 0.00 |

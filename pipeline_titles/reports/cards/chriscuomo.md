@@ -13,18 +13,18 @@ Top topics: Iran political unrest (5.9%); Trump's Unthinkable Actions (5.9%); Tr
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 87.3 | 75.8 | 0.7 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 75.0 | 77.1 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.8 | 50.0 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 57.2 | 74.6 | -0.1 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 87.3 | 75.9 | 0.7 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 74.7 | 76.8 | 0.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 40.1 | 50.2 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 57.4 | 74.7 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 94.9 | 93.2 | 2.1 | 0.1 |
-| F6: Person-centred (named people) | 46.2 | 47.0 | -0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 41.9 | 43.6 | -0.7 | -0.5 |
-| F8: Numeric and dated (digits, years) | 56.8 | 54.7 | -0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 33.1 | 44.1 | -0.5 | -0.3 |
-| F10: Quoted speech | 6.4 | 15.7 | -0.9 | -0.4 |
+| F6: Person-centred (named people) | 46.0 | 46.8 | -0.3 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 42.2 | 43.5 | -0.7 | -0.5 |
+| F8: Numeric and dated (digits, years) | 56.5 | 54.9 | -0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 33.3 | 44.3 | -0.5 | -0.3 |
+| F10: Quoted speech | 6.3 | 15.6 | -0.9 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 11.0 | 16.5 | -1.0 | -0.3 |
-| F12: +first_pl +future_will +modal | 47.0 | 61.4 | -0.2 | -0.1 |
+| F12: +first_pl +future_will +modal | 47.3 | 61.6 | -0.2 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 3.5% (3.6%); outrage 45.8% (63.9%); humor 0.0% (0.2%); question 29.1% (15.6%); breaking_live 0.5% (2.9%); episode_show 0.0% (2.8%); interview_guest 9.8% (9.8%); reaction 1.0% (2.9%); confrontation 6.4% (7.7%); listicle 1.0% (0.1%); howto_explainer 22.7% (8.0%)
@@ -43,11 +43,11 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-02 | 25 | 0.64 | 0.34 | -0.32 | 0.05 | 2.33 | 0.30 | -0.21 | -0.13 | -0.55 | -0.76 | -0.99 | 0.57 | 0.00 | 0.40 | 0.00 |
 | 2026-03 | 31 | 0.94 | -0.18 | -0.25 | 0.26 | 2.02 | -0.55 | -0.86 | -0.21 | -0.16 | -1.42 | -0.82 | -0.86 | 0.00 | 0.39 | 0.00 |
 | 2026-04 | 22 | 0.59 | 0.76 | -0.52 | 0.12 | 1.34 | -1.07 | -1.18 | -0.78 | -0.58 | -0.90 | -0.62 | -0.10 | 0.05 | 0.59 | 0.00 |
-| 2026-05 | 23 | 0.59 | 1.42 | -0.28 | -0.04 | 0.43 | -0.36 | -0.48 | 0.37 | -0.50 | -0.53 | -0.60 | -0.76 | 0.09 | 0.48 | 0.00 |
-| 2026-06 | 27 | 0.33 | 0.22 | -0.44 | -0.52 | 2.15 | -0.08 | -0.68 | 0.01 | -0.45 | -0.66 | -1.04 | -0.29 | 0.04 | 0.59 | 0.00 |
+| 2026-05 | 23 | 0.59 | 1.42 | -0.28 | -0.04 | 0.43 | -0.36 | -0.48 | 0.37 | -0.50 | -0.53 | -0.61 | -0.76 | 0.09 | 0.48 | 0.00 |
+| 2026-06 | 27 | 0.33 | 0.22 | -0.44 | -0.52 | 2.15 | -0.08 | -0.68 | 0.01 | -0.45 | -0.67 | -1.04 | -0.29 | 0.04 | 0.59 | 0.00 |
 | 2026-07 | 20 | 1.10 | 0.33 | -0.48 | -0.62 | 2.02 | -0.56 | -0.78 | 0.02 | -0.62 | -0.99 | -0.66 | -0.67 | 0.00 | 0.55 | 0.00 |
 | 2026-08 | 24 | 0.57 | 0.33 | -0.33 | -0.01 | 2.77 | -0.47 | -0.93 | -0.54 | -0.90 | -0.92 | -1.42 | 0.37 | 0.00 | 0.38 | 0.00 |
-| 2026-09* | 16 | 1.15 | 1.11 | -0.37 | 0.13 | 2.62 | 0.37 | -0.22 | -0.34 | -0.26 | -1.12 | -1.37 | 0.30 | 0.06 | 0.44 | 0.00 |
+| 2026-09* | 16 | 1.16 | 1.11 | -0.37 | 0.13 | 2.62 | 0.37 | -0.22 | -0.34 | -0.26 | -1.12 | -1.37 | 0.30 | 0.06 | 0.44 | 0.00 |
 
 
 Engagement (n = 122, R2 = 0.5464; log views per within-creator SD, month + topic controls):

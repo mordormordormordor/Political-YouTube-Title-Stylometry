@@ -13,18 +13,18 @@ Top topics: Israel and Palestine Conflict (13.8%); Trump and Iran War Negotiatio
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 17.4 | 20.8 | -0.4 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 6.4 | 9.3 | -1.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 28.8 | 30.9 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 14.0 | 12.3 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 17.7 | 21.1 | -0.4 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 6.3 | 9.3 | -1.2 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 29.1 | 31.2 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 13.9 | 12.2 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 6.8 | 9.3 | -0.5 | 0.1 |
-| F6: Person-centred (named people) | 71.2 | 77.5 | 0.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 72.0 | 72.9 | -0.3 | -0.5 |
-| F8: Numeric and dated (digits, years) | 76.3 | 71.2 | 0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 90.7 | 89.8 | 1.2 | -0.3 |
-| F10: Quoted speech | 64.4 | 67.8 | -0.1 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 62.3 | 58.1 | -0.1 | -0.3 |
-| F12: +first_pl +future_will +modal | 25.8 | 40.3 | -0.5 | -0.1 |
+| F6: Person-centred (named people) | 70.9 | 77.6 | 0.1 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 71.7 | 73.0 | -0.3 | -0.5 |
+| F8: Numeric and dated (digits, years) | 76.4 | 71.3 | 0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 90.7 | 89.9 | 1.2 | -0.3 |
+| F10: Quoted speech | 64.6 | 67.9 | -0.1 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 62.0 | 57.8 | -0.1 | -0.3 |
+| F12: +first_pl +future_will +modal | 26.2 | 40.5 | -0.5 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.2% (3.6%); outrage 72.5% (63.9%); humor 0.7% (0.2%); question 2.9% (15.6%); breaking_live 0.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 17.4% (9.8%); reaction 0.2% (2.9%); confrontation 7.9% (7.7%); listicle 0.0% (0.1%); howto_explainer 1.2% (8.0%)
@@ -39,10 +39,10 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 91 | 0.07 | -1.00 | -0.54 | -0.51 | -0.50 | 0.25 | -0.23 | 0.12 | 1.26 | 0.03 | 0.19 | -0.56 | 0.00 | 0.75 | 0.00 |
-| 2026-02 | 71 | -0.54 | -1.30 | -0.32 | -0.43 | -0.60 | -0.32 | -0.27 | -0.02 | 1.55 | -0.56 | -0.03 | -0.31 | 0.00 | 0.80 | 0.01 |
+| 2026-01 | 91 | 0.07 | -1.00 | -0.54 | -0.51 | -0.50 | 0.25 | -0.23 | 0.12 | 1.27 | 0.03 | 0.19 | -0.56 | 0.00 | 0.75 | 0.00 |
+| 2026-02 | 71 | -0.53 | -1.30 | -0.32 | -0.43 | -0.60 | -0.32 | -0.27 | -0.02 | 1.55 | -0.56 | -0.03 | -0.31 | 0.00 | 0.80 | 0.01 |
 | 2026-03 | 68 | -1.01 | -0.97 | -0.45 | -0.28 | -0.67 | -0.00 | -0.38 | -0.42 | 1.08 | -0.27 | -0.11 | -0.64 | 0.03 | 0.69 | 0.00 |
-| 2026-04 | 64 | -0.66 | -0.90 | -0.31 | -0.32 | -0.51 | 0.54 | -0.50 | -0.13 | 0.90 | 0.08 | -0.28 | -0.49 | 0.00 | 0.83 | 0.02 |
+| 2026-04 | 64 | -0.66 | -0.90 | -0.31 | -0.32 | -0.51 | 0.54 | -0.50 | -0.13 | 0.91 | 0.08 | -0.28 | -0.48 | 0.00 | 0.83 | 0.02 |
 | 2026-05 | 69 | -0.57 | -1.34 | -0.50 | -0.47 | -0.56 | 0.43 | -0.21 | -0.03 | 0.86 | 0.02 | -0.10 | -0.53 | 0.01 | 0.71 | 0.01 |
 | 2026-06 | 68 | -0.60 | -1.23 | -0.44 | -0.22 | -0.61 | -0.08 | -0.27 | 0.18 | 1.31 | -0.10 | -0.22 | -0.54 | 0.01 | 0.75 | 0.01 |
 | 2026-07 | 62 | -0.15 | -1.79 | -0.58 | -0.29 | -0.83 | 0.07 | -0.04 | 0.48 | 0.75 | -0.41 | -0.19 | -0.35 | 0.02 | 0.69 | 0.00 |
@@ -114,7 +114,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-03 | 15 | -2.82 | 0.10 | -0.20 | -0.40 | -0.94 | 1.79 | -0.17 | 0.33 | 1.33 | 0.26 | 0.28 | 0.16 | 0.00 | 0.73 | 0.00 |
+| 2026-03 | 15 | -2.82 | 0.09 | -0.20 | -0.40 | -0.94 | 1.79 | -0.17 | 0.33 | 1.33 | 0.26 | 0.28 | 0.16 | 0.00 | 0.73 | 0.00 |
 
 
 Engagement (n = 105, R2 = 0.4416; log views per within-creator SD, month + topic controls):

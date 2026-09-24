@@ -1,7 +1,7 @@
 caps_style,n_titles,share_left,share_right,share_neither,relative_log_views_left,n_left,relative_log_views_right,n_right,relative_log_views_neither,n_neither
 all_caps,506,0.0731,0.3241,0.6028,0.219,36,-0.0069,138,0.0052,281
-selective_caps,3621,0.2969,0.1748,0.5283,0.0706,1052,0.1163,616,0.0818,1816
-title_case,3627,0.2071,0.2189,0.574,-0.0513,683,-0.0441,730,-0.048,1912
+selective_caps,3659,0.2938,0.1815,0.5247,0.0706,1052,0.1158,647,0.0817,1823
+title_case,3639,0.2067,0.2207,0.5727,-0.0508,684,-0.0429,739,-0.048,1914
 sentence_case,2834,0.2481,0.1874,0.5646,0.0009,703,-0.0651,518,-0.0111,1577
 mixed_other,30,0.1333,0.4,0.4667,,4,,11,,13
 short_other,83,0.1807,0.1807,0.6386,,10,,12,-0.12,29

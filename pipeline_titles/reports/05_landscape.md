@@ -4,7 +4,7 @@
 
 ## The finding in one paragraph
 
-Political grouping predicts style almost not at all. Clustering creators in the twelve-dimensional, topic-controlled style space and comparing the clusters with the three channel groups gives an adjusted Rand index of 0.044 for edited uploads (0.046 on political titles only), and topic clusters do no better (0.004). No group holds together in style space: the tightest is right channels at a cohesion ratio of 0.95 (members 5% closer to each other than to everyone else), and the largest style cluster holds 64 creators from all three groups. So the useful unit is not the group but the five nearest style neighbors on each creator's card, and those cut across politics: for 52 % of the left and right channels the single nearest neighbor is in another group, and 88 % have a channel from the opposite side among their five (@HasanAbi (left) has @TimcastNews (right), @JustPearlyThings (right) among its five; @MeidasTouch (left) has @TheOfficerTatum (right) among its five; @FoxNews (right) has @msnow (left) among its five). The hooks converge too: 454 titles are used verbatim by creators from different organizations ("THIS IS INSANE.." by 12 creators across 3 groups), 38 % of them by channels in more than one group.
+Political grouping predicts style almost not at all. Clustering creators in the twelve-dimensional, topic-controlled style space and comparing the clusters with the three channel groups gives an adjusted Rand index of 0.033 for edited uploads (0.042 on political titles only), and topic clusters do no better (0.004). No group holds together in style space: the tightest is right channels at a cohesion ratio of 0.95 (members 5% closer to each other than to everyone else), and the largest style cluster holds 74 creators from all three groups. So the useful unit is not the group but the five nearest style neighbors on each creator's card, and those cut across politics: for 52 % of the left and right channels the single nearest neighbor is in another group, and 89 % have a channel from the opposite side among their five (@HasanAbi (left) has @TimcastNews (right), @JustPearlyThings (right) among its five; @MeidasTouch (left) has @TheOfficerTatum (right) among its five; @FoxNews (right) has @msnow (left), @thedavidpakmanshow (left) among its five). The hooks converge too: 454 titles are used verbatim by creators from different organizations ("THIS IS INSANE.." by 12 creators across 3 groups), 38 % of them by channels in more than one group.
 
 ## Clusterings against the channel groups
 
@@ -15,8 +15,8 @@ Style space: agglomerative (Ward) on z-scored topic-controlled factor scores. To
 
 | genre | titles | n_creators | style_k | style_silhouette | topic_k | topic_silhouette | ari_style_vs_group | ari_topic_vs_group | ari_style_vs_topic |
 |---|---|---|---|---|---|---|---|---|---|
-| videos | all | 236 | 10 | 0.119 | 3 | 0.170 | 0.044 | 0.004 | 0.001 |
-| videos | political | 229 | 10 | 0.131 | 3 | 0.180 | 0.046 | 0.005 | 0.001 |
+| videos | all | 237 | 10 | 0.120 | 3 | 0.169 | 0.033 | 0.004 | 0.001 |
+| videos | political | 230 | 4 | 0.139 | 3 | 0.179 | 0.042 | 0.005 | 0.010 |
 | streams | all | 77 | 11 | 0.165 | 3 | 0.097 | 0.020 | 0.009 | 0.005 |
 | streams | political | 76 | 9 | 0.162 | 4 | 0.069 | 0.043 | -0.014 | 0.027 |
 
@@ -35,9 +35,9 @@ Mean distance in style space between members of a group, over the mean distance 
 
 | group | n_creators | within_group_distance | between_group_distance | cohesion_ratio |
 |---|---|---|---|---|
-| left channels | 105 | 4.63 | 4.57 | 1.01 |
-| neutral channels | 37 | 4.65 | 4.72 | 0.98 |
-| right channels | 94 | 4.30 | 4.54 | 0.95 |
+| left channels | 105 | 4.62 | 4.58 | 1.01 |
+| neutral channels | 37 | 4.64 | 4.72 | 0.98 |
+| right channels | 95 | 4.32 | 4.54 | 0.95 |
 
 
 ## Where group and style disagree
@@ -46,12 +46,12 @@ Every group is split across style clusters; the share of a group in its own larg
 
 | group | n_creators | n_style_clusters | largest_cluster_share |
 |---|---|---|---|
-| left channels | 105 | 10 | 0.32 |
-| neutral channels | 37 | 9 | 0.30 |
-| right channels | 94 | 8 | 0.34 |
+| left channels | 105 | 10 | 0.30 |
+| neutral channels | 37 | 9 | 0.38 |
+| right channels | 95 | 8 | 0.34 |
 
 
-Conversely, style clusters span groups: the two largest (64 and 52 creators) each mix left, neutral and right channels. Full membership lists: `disagreements_group_style.csv`, `style_clusters.csv`, `topic_clusters.csv`.
+Conversely, style clusters span groups: the two largest (74 and 50 creators) each mix left, neutral and right channels. Full membership lists: `disagreements_group_style.csv`, `style_clusters.csv`, `topic_clusters.csv`.
 
 ## Nearest style neighbors, a sample
 
@@ -59,13 +59,13 @@ Conversely, style clusters span groups: the two largest (64 and 52 creators) eac
 |---|---|---|
 | @HasanAbi | left | @Vaush [left], @TheVaushPit [left], @TimcastNews [right], @TheMichaelCohenShow [left], @JustPearlyThings [right] |
 | @BenShapiro | right | @KimIversen [neutral], @StevenCrowder [right], @RealDanBongino [right], @AlexStein99 [right], @hutch [neutral] |
-| @FoxNews | right | @FoxNewsChannelClips [right], @msnow [left], @RebelNewsOnline [right], @NBCNews [neutral], https://rumble.com/c/TheAl... |
+| @FoxNews | right | @FoxNewsChannelClips [right], @msnow [left], @RebelNewsOnline [right], @NBCNews [neutral], @thedavidpakmanshow [left] |
 | @MeidasTouch | left | @LegalAFMTN [left], @TheOfficerTatum [right], @deanwithrs [left], @adammockler [left], @katiephangnews [left] |
 | @TuckerCarlson | neutral | @MyronGainesX [right], @RubinReport [right], https://rumble.com/c/GGreenwald [left], @lovettorleaveitpodcast [left], ... |
 | @joerogan | neutral | @markets [neutral], @breakingpoints [left], @TheMajorityReport [left], @TheLincolnProject [left], @triggerpod [right] |
 | @Reuters | neutral | @aljazeeraenglish [left], @CBSNews [neutral], @ABCNews [neutral], @AssociatedPress [neutral], @NBCNews [neutral] |
 | @destiny | left | @TheLincolnProject [left], @TheMajorityReport [left], @hutch [neutral], @AlexStein99 [right], @LIVESNEAKO [neutral] |
-| @bennyjohnson | right | @OfficialSaharTV [right], @BlazeTV [right], @DestinyDGGClips [right], @harryjsisson [left], @The_Crucible [right] |
+| @bennyjohnson | right | @OfficialSaharTV [right], @BlazeTV [right], @DestinyDGGClips [right], @SecretScholars [right], @harryjsisson [left] |
 | @CNN | left | @CBSNews [neutral], @SkyNews [left], @ABCNews [neutral], @NBCNews [neutral], @AssociatedPress [neutral] |
 
 
@@ -89,14 +89,14 @@ Counted on the creator-balanced subset; people keyed by surname, so "Kirk" pools
 | Hormuz | 1041 | 85 | neutral (1.0%); left (0.5%); right (0.3%) | 0.49 | 0.87 |
 | Putin | 888 | 62 | neutral (0.9%); left (0.5%); right (0.1%) | 0.69 | 1.22 |
 | JD Vance | 858 | 120 | left (0.5%); neutral (0.5%); right (0.4%) | 0.57 | 1.01 |
-| Charlie Kirk | 744 | 115 | right (0.8%); neutral (0.3%); left (0.2%) | 0.54 | 0.96 |
-| Mamdani | 717 | 111 | right (0.7%); neutral (0.3%); left (0.2%) | 0.70 | 1.24 |
+| Charlie Kirk | 748 | 116 | right (0.8%); neutral (0.3%); left (0.2%) | 0.54 | 0.96 |
+| Mamdani | 718 | 112 | right (0.7%); neutral (0.3%); left (0.2%) | 0.70 | 1.24 |
 | Netanyahu | 708 | 109 | neutral (0.5%); left (0.5%); right (0.2%) | 0.73 | 1.30 |
-| Lindsey Graham | 647 | 124 | left (0.4%); neutral (0.4%); right (0.4%) | 0.46 | 0.82 |
+| Lindsey Graham | 647 | 124 | left (0.4%); neutral (0.4%); right (0.3%) | 0.46 | 0.82 |
 | Epstein | 624 | 108 | left (0.4%); neutral (0.4%); right (0.2%) | 0.73 | 1.29 |
 | Nancy Guthrie | 579 | 33 | neutral (0.7%); right (0.4%); left (0.0%) | 0.17 | 0.30 |
 | Kristi Noem | 536 | 103 | left (0.5%); neutral (0.2%); right (0.2%) | 0.74 | 1.32 |
-| Brian Shapiro | 511 | 75 | left (0.5%); right (0.1%); neutral (0.1%) | 0.76 | 1.35 |
+| Brian Shapiro | 515 | 76 | left (0.5%); right (0.1%); neutral (0.1%) | 0.76 | 1.34 |
 | Karoline Leavitt | 479 | 53 | left (0.3%); right (0.2%); neutral (0.2%) | 0.48 | 0.85 |
 | Mike Johnson | 477 | 87 | left (0.3%); right (0.2%); neutral (0.2%) | 0.59 | 1.04 |
 
@@ -106,7 +106,7 @@ Counted on the creator-balanced subset; people keyed by surname, so "Kirk" pools
 | Trump | 8617 | 192 | left (7.1%); neutral (4.5%); right (2.0%) | 0.66 | 1.17 |
 | White House | 1502 | 114 | neutral (1.2%); left (0.7%); right (0.7%) | 0.41 | 0.73 |
 | GOP | 1462 | 105 | left (1.1%); right (0.7%); neutral (0.5%) | 0.72 | 1.28 |
-| MAGA | 973 | 122 | left (1.2%); right (0.1%); neutral (0.1%) | 0.92 | 1.64 |
+| MAGA | 973 | 122 | left (1.2%); right (0.1%); neutral (0.1%) | 0.92 | 1.63 |
 | Senate | 958 | 97 | neutral (0.9%); right (0.4%); left (0.4%) | 0.36 | 0.65 |
 | Supreme Court | 858 | 107 | neutral (0.5%); left (0.5%); right (0.4%) | 0.52 | 0.91 |
 | NATO | 826 | 86 | neutral (0.8%); left (0.4%); right (0.2%) | 0.52 | 0.93 |

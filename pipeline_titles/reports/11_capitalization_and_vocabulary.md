@@ -6,7 +6,7 @@
 
 ### The finding in one paragraph
 
-Averaged over the 236 ranked channels (edited uploads), 51 % of titles are Title Case, 32 % use selective CAPS (one or more shouted words inside a normally cased title: "Trump SLAMS Judge"), 13 % are sentence case, 3 % are ALL CAPS, and the rest are too short to classify or mixed. Selective capitals are the signature of the daily commentary channels: @DannyHaiphongYT, @MeidasTouch, @katiephangnews, @CashJordan, @SabbySabs put an emphasised word in more than 99 % of their titles. Full ALL-CAPS titles are rarer and concentrated in a handful of channels on both sides (Jackson Hinkle, TheQuartering, the three Timcast channels, Fleccas, and the streamers Hasan Piker and Vaush); the news outlets are sentence case or Title Case, and the selective capitals they do show are mostly quoted shouted words ('GAME CHANGER': ...) rather than emphasis. By channel group the left and right groups shout at the same rate (37 % and 40 % of the average channel's titles) and the neutral group hardly at all (18 %); document 7 follows the styles into views.
+Averaged over the 237 ranked channels (edited uploads), 51 % of titles are Title Case, 33 % use selective CAPS (one or more shouted words inside a normally cased title: "Trump SLAMS Judge"), 13 % are sentence case, 3 % are ALL CAPS, and the rest are too short to classify or mixed. Selective capitals are the signature of the daily commentary channels: @DannyHaiphongYT, @MeidasTouch, @katiephangnews, @CashJordan, @SabbySabs put an emphasised word in more than 99 % of their titles. Full ALL-CAPS titles are rarer and concentrated in a handful of channels on both sides (Jackson Hinkle, TheQuartering, the three Timcast channels, Fleccas, and the streamers Hasan Piker and Vaush); the news outlets are sentence case or Title Case, and the selective capitals they do show are mostly quoted shouted words ('GAME CHANGER': ...) rather than emphasis. By channel group the left and right groups shout at the same rate (37 % and 40 % of the average channel's titles) and the neutral group hardly at all (18 %); document 7 follows the styles into views.
 
 ![Top 45 channels by capitals.](figures/11_caps_profile_top.png)
 *The 45 channels that use ALL CAPS or selective CAPS most; the bar is the whole channel's titles.*
@@ -23,7 +23,7 @@ Averaged over the 236 ranked channels (edited uploads), 51 % of titles are Title
 |---|---|---|---|---|---|---|---|
 | left channels | 0.02 | 0.36 | 0.48 | 0.13 | 0.00 | 0.01 | 0.37 |
 | neutral channels | 0.02 | 0.16 | 0.49 | 0.32 | 0.01 | 0.00 | 0.18 |
-| right channels | 0.04 | 0.35 | 0.54 | 0.06 | 0.00 | 0.01 | 0.40 |
+| right channels | 0.04 | 0.36 | 0.53 | 0.06 | 0.00 | 0.01 | 0.40 |
 
 
 ### Every ranked channel, sorted by ALL CAPS + selective CAPS
@@ -65,6 +65,7 @@ Averaged over the 236 ranked channels (edited uploads), 51 % of titles are Title
 | @dollemore | left | 1376 | 0.80 | 0.00 | 0.80 | 0.19 | 0.00 | 0.00 | 0.00 |
 | @JesseKellyDC | right | 478 | 0.80 | 0.00 | 0.80 | 0.20 | 0.00 | 0.00 | 0.00 |
 | @RebelHQ | left | 1190 | 0.80 | 0.00 | 0.80 | 0.20 | 0.00 | 0.00 | 0.00 |
+| @SecretScholars | right | 106 | 0.79 | 0.00 | 0.79 | 0.21 | 0.00 | 0.00 | 0.00 |
 | @VivaFrei | right | 310 | 0.78 | 0.00 | 0.77 | 0.22 | 0.00 | 0.00 | 0.00 |
 | @thejimmydoreshow | neutral | 1077 | 0.77 | 0.00 | 0.77 | 0.23 | 0.00 | 0.00 | 0.00 |
 | @TimesNowWorld | neutral | 8489 | 0.76 | 0.00 | 0.76 | 0.23 | 0.01 | 0.00 | 0.00 |
@@ -270,7 +271,7 @@ Averaged over the 236 ranked channels (edited uploads), 51 % of titles are Title
 
 ### Method
 
-Each unique title, as published (the raw title: the normalized one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if its first letter or digit is a lower-case letter (a title opening with a number, a quote, "U.S." or "I" is judged on what follows); **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself (938 words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like; and a channel's own tag words are exempt for that channel: the words of an edge segment (a "| REUTERS" suffix, a "GRAPHIC WARNING:" label, a show name) it repeats on more than 5 % of its unique titles and at least 20 times (`caps_tag_words.csv`), so a brand tag written in capitals for a month is not a month of shouting. Shares are over a channel's unique titles per genre.
+Each unique title, as published (the raw title: the normalized one strips a channel's fixed show name and episode number along with its brand tag, which left "Joe Rogan Experience #2551 - Daniel Kokotajlo" as two words), is classified by one rule in this order: **short / other** if it has fewer than three 2+-letter words; **ALL CAPS** if at least 90 % of its words are all-capitals; **selective CAPS** if it contains at least one all-capitals word of three or more letters that is neither a known acronym nor a generic label; **mixed / other** if its first letter or digit is a lower-case letter (a title opening with a number, a quote, "U.S." or "I" is judged on what follows); **Title Case** if at least 80 % of the remaining content words (function words excluded) start with a capital; **sentence case** otherwise. Acronyms are learned from the corpus itself (939 words that are all-capitals in at least 80 % of their non-initial occurrences in mixed-case titles, e.g. FBI, ICE, GOP, NATO, AI; the list is `caps_acronyms.txt`); the generic labels are LIVE, BREAKING, WATCH, NEW, FULL, EXCLUSIVE, UPDATE, REPLAY and the like; and a channel's own tag words are exempt for that channel: the words of an edge segment (a "| REUTERS" suffix, a "GRAPHIC WARNING:" label, a show name) it repeats on more than 5 % of its unique titles and at least 20 times (`caps_tag_words.csv`), so a brand tag written in capitals for a month is not a month of shouting. Shares are over a channel's unique titles per genre.
 
 ### Limitations
 
@@ -286,25 +287,25 @@ Each unique title, as published (the raw title: the normalized one strips a chan
 
 | rank_balanced | word | balanced_share_of_titles | creators_using | raw_pooled_share_of_titles | rank_raw |
 |---|---|---|---|---|---|
-| 1 | trump | 0.194 | 224 | 0.235 | 1 |
-| 2 | iran | 0.078 | 211 | 0.120 | 2 |
-| 3 | war | 0.050 | 216 | 0.059 | 3 |
+| 1 | trump | 0.193 | 225 | 0.235 | 1 |
+| 2 | iran | 0.078 | 212 | 0.120 | 2 |
+| 3 | war | 0.050 | 217 | 0.059 | 3 |
 | 4 | america | 0.030 | 211 | 0.030 | 6 |
 | 5 | israel | 0.025 | 157 | 0.022 | 8 |
-| 6 | ice | 0.023 | 197 | 0.022 | 9 |
+| 6 | ice | 0.023 | 198 | 0.022 | 9 |
 | 7 | maga | 0.021 | 173 | 0.014 | 22 |
 | 8 | epstein | 0.021 | 197 | 0.018 | 10 |
-| 9 | world | 0.018 | 189 | 0.030 | 5 |
+| 9 | world | 0.018 | 190 | 0.030 | 5 |
 | 10 | says | 0.018 | 176 | 0.043 | 4 |
 | 11 | ai | 0.015 | 170 | 0.015 | 21 |
-| 12 | breaking | 0.014 | 144 | 0.017 | 17 |
-| 13 | debate | 0.014 | 150 | 0.006 | 116 |
-| 14 | gets | 0.013 | 180 | 0.011 | 35 |
-| 15 | democrats | 0.013 | 157 | 0.010 | 41 |
-| 16 | white | 0.013 | 181 | 0.014 | 24 |
-| 17 | black | 0.012 | 136 | 0.007 | 98 |
-| 18 | people | 0.012 | 180 | 0.011 | 37 |
-| 19 | truth | 0.012 | 177 | 0.006 | 111 |
+| 12 | debate | 0.014 | 151 | 0.006 | 111 |
+| 13 | breaking | 0.014 | 144 | 0.017 | 17 |
+| 14 | gets | 0.013 | 181 | 0.011 | 35 |
+| 15 | white | 0.013 | 182 | 0.014 | 24 |
+| 16 | democrats | 0.013 | 157 | 0.010 | 41 |
+| 17 | black | 0.012 | 137 | 0.007 | 98 |
+| 18 | people | 0.012 | 181 | 0.011 | 37 |
+| 19 | truth | 0.012 | 177 | 0.006 | 112 |
 | 20 | china | 0.012 | 144 | 0.016 | 20 |
 
 

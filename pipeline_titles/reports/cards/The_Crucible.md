@@ -13,21 +13,21 @@ Top topics: Christian Nationalism and Politics (10.5%); Candace Owens Controvers
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 17.8 | 34.3 | -0.4 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 33.5 | 39.4 | -0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.2 | 18.6 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 94.9 | 94.5 | 0.8 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 24.6 | 36.4 | -0.3 | 0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 18.1 | 34.6 | -0.4 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 32.9 | 39.2 | -0.4 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 46.4 | 19.0 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 95.4 | 94.5 | 0.8 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 24.5 | 36.3 | -0.3 | 0.2 |
 | F6: Person-centred (named people) | 6.8 | 16.5 | -0.9 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 76.7 | 59.3 | -0.2 | -0.7 |
-| F8: Numeric and dated (digits, years) | 52.5 | 32.2 | -0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 40.7 | 53.8 | -0.4 | -0.3 |
-| F10: Quoted speech | 46.6 | 35.2 | -0.4 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 19.1 | 16.1 | -0.8 | -0.2 |
-| F12: +first_pl +future_will +modal | 1.3 | 1.3 | -1.3 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 76.8 | 59.1 | -0.2 | -0.6 |
+| F8: Numeric and dated (digits, years) | 53.2 | 32.5 | -0.1 | -0.1 |
+| F9: ALL-CAPS shouting | 40.9 | 54.0 | -0.4 | -0.3 |
+| F10: Quoted speech | 46.4 | 35.0 | -0.4 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 19.0 | 16.0 | -0.8 | -0.2 |
+| F12: +first_pl +future_will +modal | 1.7 | 1.7 | -1.3 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 10.1% (4.8%); outrage 60.6% (59.8%); humor 0.5% (0.2%); question 9.2% (15.3%); breaking_live 0.9% (2.0%); episode_show 1.4% (7.5%); interview_guest 14.7% (7.7%); reaction 3.2% (2.2%); confrontation 32.1% (7.8%); listicle 0.0% (0.1%); howto_explainer 4.1% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 10.1% (4.8%); outrage 60.6% (60.1%); humor 0.5% (0.2%); question 9.2% (15.2%); breaking_live 0.9% (2.0%); episode_show 1.4% (7.4%); interview_guest 14.7% (7.8%); reaction 3.2% (2.2%); confrontation 32.1% (8.2%); listicle 0.0% (0.1%); howto_explainer 4.1% (9.3%)
 
 
 Nearest style neighbors: @destinyhqclips [neutral]; @BrittanyVenti [neutral]; https://rumble.com/c/russellbrand [right]; @adammockler [left]; @TheYoungTurks [left]
@@ -39,13 +39,13 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-02 | 21 | -0.10 | -0.22 | -0.22 | 1.38 | 0.07 | -0.53 | -0.34 | 0.07 | -0.73 | -0.06 | -0.48 | -1.43 | 0.05 | 0.57 | 0.05 |
-| 2026-03 | 30 | -0.29 | -0.00 | -0.47 | 1.36 | -0.21 | -0.66 | -0.31 | -0.31 | 0.01 | -0.44 | -1.06 | -1.38 | 0.23 | 0.50 | 0.00 |
-| 2026-04 | 27 | 0.26 | -0.98 | -0.39 | 0.45 | -0.23 | -0.79 | -0.71 | -0.18 | -0.31 | -0.55 | -0.76 | -0.91 | 0.04 | 0.52 | 0.00 |
-| 2026-05 | 27 | -0.68 | -1.45 | -0.40 | 0.84 | -1.02 | -1.34 | -0.46 | -0.04 | -0.85 | -0.76 | -0.92 | -1.45 | 0.04 | 0.56 | 0.00 |
-| 2026-06 | 29 | -0.57 | -0.52 | -0.34 | 0.42 | -0.99 | -1.11 | 0.08 | 0.16 | -0.11 | -0.65 | -0.71 | -1.74 | 0.03 | 0.55 | 0.00 |
-| 2026-07 | 27 | -0.88 | -0.61 | -0.21 | 0.66 | -0.39 | -1.41 | 0.07 | -0.08 | -0.63 | -0.69 | -0.35 | -1.92 | 0.07 | 0.78 | 0.00 |
-| 2026-08 | 33 | -0.67 | 0.49 | -0.15 | 0.59 | 0.21 | -0.93 | 0.16 | -0.21 | -0.50 | 0.20 | -0.97 | -0.93 | 0.15 | 0.67 | 0.00 |
+| 2026-02 | 21 | -0.10 | -0.22 | -0.22 | 1.38 | 0.07 | -0.53 | -0.34 | 0.07 | -0.73 | -0.06 | -0.48 | -1.42 | 0.05 | 0.57 | 0.05 |
+| 2026-03 | 30 | -0.29 | -0.01 | -0.47 | 1.36 | -0.21 | -0.67 | -0.31 | -0.31 | 0.01 | -0.44 | -1.06 | -1.38 | 0.23 | 0.50 | 0.00 |
+| 2026-04 | 27 | 0.26 | -0.98 | -0.39 | 0.45 | -0.23 | -0.79 | -0.71 | -0.18 | -0.30 | -0.55 | -0.76 | -0.90 | 0.04 | 0.52 | 0.00 |
+| 2026-05 | 27 | -0.68 | -1.45 | -0.40 | 0.85 | -1.02 | -1.35 | -0.46 | -0.04 | -0.85 | -0.76 | -0.93 | -1.45 | 0.04 | 0.56 | 0.00 |
+| 2026-06 | 29 | -0.56 | -0.53 | -0.34 | 0.42 | -0.99 | -1.12 | 0.08 | 0.16 | -0.10 | -0.65 | -0.71 | -1.73 | 0.03 | 0.55 | 0.00 |
+| 2026-07 | 27 | -0.88 | -0.61 | -0.21 | 0.66 | -0.39 | -1.41 | 0.07 | -0.08 | -0.62 | -0.69 | -0.35 | -1.91 | 0.07 | 0.78 | 0.00 |
+| 2026-08 | 33 | -0.67 | 0.48 | -0.15 | 0.59 | 0.21 | -0.93 | 0.16 | -0.21 | -0.49 | 0.20 | -0.98 | -0.92 | 0.15 | 0.67 | 0.00 |
 
 
 Engagement (n = 218, R2 = 0.3126; log views per within-creator SD, month + topic controls):
@@ -87,7 +87,7 @@ Top topics: Christian Nationalism and Politics (40.0%); Candace Owens Controvers
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | None | None | 0.3 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | None | None | -0.4 | -0.3 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | None | None | -0.5 | -0.3 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | None | None | 0.2 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.5 | -0.3 |

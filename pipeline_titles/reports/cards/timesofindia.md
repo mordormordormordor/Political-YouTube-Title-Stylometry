@@ -13,18 +13,18 @@ Top topics: Ukraine-Russia War and Political Figures (14.1%); Iran-US military c
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 7.2 | 4.2 | -0.8 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 36.0 | 32.6 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 7.6 | 4.2 | -0.8 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 35.9 | 32.5 | -0.3 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 95.8 | 96.6 | 0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 89.4 | 83.5 | 0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 23.7 | 16.1 | -0.3 | 0.1 |
-| F6: Person-centred (named people) | 84.3 | 80.5 | 0.5 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 13.6 | 53.4 | -1.0 | -0.5 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 89.5 | 83.5 | 0.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 23.6 | 16.0 | -0.3 | 0.1 |
+| F6: Person-centred (named people) | 84.4 | 80.6 | 0.5 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 13.5 | 53.2 | -1.0 | -0.5 |
 | F8: Numeric and dated (digits, years) | 89.0 | 90.7 | 0.3 | -0.2 |
-| F9: ALL-CAPS shouting | 82.6 | 79.7 | 0.5 | -0.3 |
+| F9: ALL-CAPS shouting | 82.7 | 79.7 | 0.5 | -0.3 |
 | F10: Quoted speech | 99.6 | 99.6 | 3.3 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 93.2 | 93.2 | 1.0 | -0.3 |
-| F12: +first_pl +future_will +modal | 77.1 | 95.3 | 0.2 | -0.1 |
+| F12: +first_pl +future_will +modal | 76.8 | 95.4 | 0.2 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.2% (3.6%); outrage 89.7% (63.9%); humor 0.1% (0.2%); question 26.3% (15.6%); breaking_live 2.8% (2.9%); episode_show 0.2% (2.8%); interview_guest 7.3% (9.8%); reaction 1.2% (2.9%); confrontation 15.6% (7.7%); listicle 0.0% (0.1%); howto_explainer 2.0% (8.0%)
@@ -116,13 +116,13 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 426 | -0.74 | 0.00 | 0.73 | 0.44 | -0.51 | 0.71 | -0.72 | 0.45 | -0.40 | 2.12 | 0.49 | 1.20 | 0.03 | 0.78 | 0.00 |
 | 2026-02 | 283 | -0.59 | -0.28 | 0.77 | 0.63 | -0.34 | 0.71 | -0.80 | 0.15 | -0.43 | 2.28 | 0.44 | 1.30 | 0.01 | 0.76 | 0.00 |
-| 2026-03 | 214 | -1.37 | -0.35 | 1.07 | 0.63 | -0.05 | 0.26 | -0.78 | 0.39 | -0.84 | 2.37 | 0.46 | 1.26 | 0.02 | 0.79 | 0.00 |
+| 2026-03 | 214 | -1.37 | -0.35 | 1.07 | 0.63 | -0.05 | 0.26 | -0.78 | 0.39 | -0.84 | 2.38 | 0.46 | 1.26 | 0.02 | 0.79 | 0.00 |
 | 2026-04 | 206 | -1.43 | -0.08 | 0.99 | 0.43 | -0.35 | 0.19 | -0.91 | 0.48 | -0.20 | 2.80 | 0.42 | 1.05 | 0.04 | 0.82 | 0.00 |
-| 2026-05 | 164 | -0.98 | -0.14 | 0.76 | 0.30 | -0.22 | 0.23 | -0.82 | 0.24 | -0.23 | 2.59 | 0.78 | 1.13 | 0.03 | 0.75 | 0.00 |
+| 2026-05 | 164 | -0.98 | -0.14 | 0.76 | 0.30 | -0.22 | 0.23 | -0.82 | 0.24 | -0.23 | 2.59 | 0.78 | 1.14 | 0.03 | 0.75 | 0.00 |
 | 2026-06 | 279 | -0.72 | 0.01 | 0.88 | 0.40 | -0.15 | 0.52 | -0.92 | 0.17 | 0.27 | 2.72 | 0.81 | 0.87 | 0.02 | 0.75 | 0.00 |
 | 2026-07 | 310 | -0.84 | -0.13 | 0.81 | 0.53 | -0.45 | 0.94 | -0.71 | 0.33 | 0.34 | 2.05 | 0.71 | 0.51 | 0.04 | 0.65 | 0.00 |
-| 2026-08 | 154 | -1.19 | -0.36 | 1.11 | 0.42 | -0.23 | 0.53 | -0.90 | 0.37 | 0.81 | 2.40 | 0.43 | 0.33 | 0.03 | 0.66 | 0.00 |
-| 2026-09* | 58 | -0.18 | -0.08 | 0.79 | 0.45 | -0.39 | 0.88 | -0.39 | 0.55 | 0.22 | 1.37 | 1.31 | 0.36 | 0.02 | 0.53 | 0.00 |
+| 2026-08 | 154 | -1.19 | -0.36 | 1.11 | 0.42 | -0.23 | 0.53 | -0.89 | 0.37 | 0.81 | 2.40 | 0.44 | 0.33 | 0.03 | 0.66 | 0.00 |
+| 2026-09* | 58 | -0.18 | -0.08 | 0.79 | 0.45 | -0.39 | 0.88 | -0.39 | 0.56 | 0.22 | 1.37 | 1.31 | 0.36 | 0.02 | 0.53 | 0.00 |
 
 
 Engagement (n = 2094, R2 = 0.3899; log views per within-creator SD, month + topic controls):

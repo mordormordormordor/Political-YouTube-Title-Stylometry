@@ -1,14 +1,14 @@
 grouping,system,n_titles,n_tokens,n_types,tokens_per_title,type_token_ratio,zipf_top100,ranks_used_top100,zipf_top1000,ranks_used_top1000,zipf_top5000,ranks_used_top5000,zipf_r2_top1000,zipf_size_matched,zipf_size_matched_sd,top1_share,top_10
-corpus,all edited uploads (balanced),150571,1566114,48201,10.4,0.0308,0.8585,100,0.7848,1000,1.0155,5000,0.9953,0.8188,0.0076,0.0244,the trump to in on of s is iran as
+corpus,all edited uploads (balanced),150677,1567316,48209,10.4,0.0308,0.8584,100,0.7848,1000,1.0156,5000,0.9953,0.8193,0.0079,0.0244,the trump to in on of s is iran as
 channel_group,left,62517,596492,26294,9.54,0.0441,0.8576,100,0.8246,1000,1.0872,5000,0.9959,0.8118,0.0087,0.0381,trump the to in as on s is iran of
 channel_group,neutral,38562,438415,28428,11.37,0.0648,0.8491,100,0.7993,1000,1.008,5000,0.9947,0.8061,0.0078,0.0199,in to the of trump iran on s for us
-channel_group,right,49492,531207,27335,10.73,0.0515,0.8312,100,0.7869,1000,1.0236,5000,0.9959,0.7963,0.0065,0.0336,the to in is of trump on and a s
-title_label,left,2585,28077,6598,10.86,0.235,0.8529,100,0.784,1000,0.9616,5000,0.993,0.8164,0.0036,0.0261,trump the to in s on of iran as for
-title_label,right,2149,22134,6218,10.3,0.2809,0.8312,100,0.7722,1000,0.8875,5000,0.9932,0.8183,0.0024,0.0244,the to trump s in on is of iran a
-title_label,neither,5967,62982,10934,10.56,0.1736,0.837,100,0.7846,1000,0.9596,5000,0.9954,0.8039,0.0067,0.0217,the trump to in s on of iran is for
+channel_group,right,49598,532409,27351,10.73,0.0514,0.8308,100,0.7867,1000,1.024,5000,0.9959,0.791,0.0097,0.0336,the to in is of trump on and a s
+title_label,left,2586,28088,6598,10.86,0.2349,0.8525,100,0.7839,1000,0.9617,5000,0.9931,0.8151,0.0033,0.0261,trump the to in s on of iran as for
+title_label,right,2189,22582,6270,10.32,0.2777,0.8288,100,0.7708,1000,0.8946,5000,0.9931,0.8136,0.0025,0.0245,the to trump in s of on is iran for
+title_label,neither,5976,63079,10942,10.56,0.1735,0.8371,100,0.7842,1000,0.9601,5000,0.9954,0.8034,0.0051,0.0217,the trump to in s on of iran is for
 caps_style,all_caps,3820,23184,4561,6.07,0.1967,0.7706,100,0.8769,1000,0.9762,4561,0.9944,0.8006,0.0086,0.026,the is trump this to it they in iran just
-caps_style,selective_caps,53681,560301,25997,10.44,0.0464,0.8096,100,0.795,1000,1.0695,5000,0.9966,0.788,0.0074,0.0324,trump the to in as on s is of iran
-caps_style,title_case,52673,537961,29813,10.21,0.0554,0.8359,100,0.7999,1000,1.0188,5000,0.996,0.8201,0.0082,0.0338,the trump to s in on of is and a
+caps_style,selective_caps,53765,561241,26014,10.44,0.0464,0.8094,100,0.7948,1000,1.0698,5000,0.9966,0.7896,0.0063,0.0323,trump the to in as on s is of iran
+caps_style,title_case,52695,538223,29815,10.21,0.0554,0.8358,100,0.7998,1000,1.0189,5000,0.996,0.8171,0.0083,0.0338,the trump to s in on of is and a
 caps_style,sentence_case,39304,440474,28309,11.21,0.0643,0.8627,100,0.7989,1000,1.0134,5000,0.9951,0.8083,0.0088,0.0219,to in the of trump on iran and s for
 caps_style,mixed_other,272,1906,810,7.01,0.425,0.7595,100,0.693,810,0.693,810,0.9173,,,0.0472,this is the to f i it a you just
 caps_style,short_other,821,2288,770,2.79,0.3365,0.9773,100,0.7576,770,0.7576,770,0.8697,,,0.0612,26 episode full 2026 hasanabi bloomberg surveillance 4 5 1

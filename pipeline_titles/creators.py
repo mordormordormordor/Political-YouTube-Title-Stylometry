@@ -12,6 +12,7 @@ time by common.load_creators().
 
 CLI:
     python -m pipeline_titles.creators            # write if missing
+    python -m pipeline_titles.creators --append   # add rows for creators the CSV lacks (channels added to the corpus); existing rows untouched
     python -m pipeline_titles.creators --force    # rebuild from the seed
 """
 
@@ -21,6 +22,8 @@ import argparse
 from typing import Optional, Sequence
 
 import pandas as pd
+
+from datetime import date
 
 from pipeline_titles.common import ANALYSIS_DIR, CREATORS_CSV, LOW_N, load_channels, load_prepared, stage_timer
 from pipeline_titles.creator_seed import CREATORS
@@ -47,12 +50,34 @@ def build_creators(prepared: pd.DataFrame, channels: pd.DataFrame, seed: dict = 
     return pd.DataFrame(rows)
 
 
+def append_creators(existing: pd.DataFrame, built: pd.DataFrame, today: Optional[str] = None) -> tuple[pd.DataFrame, list[str]]:
+    """`existing` (creators.csv as it is, hand corrections included) plus a row for every creator
+    of `built` (build_creators over the current corpus) that it lacks. A new creator not in the
+    seed keeps the channel name as its organization and gets a dated note saying so, so the row
+    is easy to find and correct by hand. Returns (the table, the creators added)."""
+    today = today or date.today().isoformat()
+    new = built[~built["creator"].isin(set(existing["creator"]))].copy()
+    new.loc[new["note"] == "not in seed", "note"] = f"added {today}; organization defaulted to the channel name, clipper to False: correct here"
+    out = pd.concat([existing, new.astype(str)[list(existing.columns)]], ignore_index=True) if len(new) else existing
+    return out, new["creator"].tolist()
+
+
 def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--force", action="store_true", help="overwrite an existing creators.csv")
+    ap.add_argument("--append", action="store_true", help="add rows for creators in the corpus that creators.csv lacks; existing rows are untouched")
     a = ap.parse_args(argv)
+    if CREATORS_CSV.exists() and a.append and not a.force:
+        with stage_timer("stage0b_creators", mode="append") as info:
+            existing = pd.read_csv(CREATORS_CSV, dtype=str, keep_default_na=False)
+            out, added = append_creators(existing, build_creators(load_prepared(), load_channels()))
+            if added:
+                out.to_csv(CREATORS_CSV, index=False)
+            info["added"] = added
+            print(f"creators: {len(out)}   added {len(added)}: {', '.join(added) or 'none'}")
+        return 0
     if CREATORS_CSV.exists() and not a.force:
-        print(f"{CREATORS_CSV} exists (may hold hand corrections); use --force to rebuild from the seed")
+        print(f"{CREATORS_CSV} exists (may hold hand corrections); use --append to add new creators or --force to rebuild from the seed")
         return 0
     with stage_timer("stage0b_creators"):
         cr = build_creators(load_prepared(), load_channels())

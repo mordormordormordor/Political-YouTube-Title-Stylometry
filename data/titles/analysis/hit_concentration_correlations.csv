@@ -1,6 +1,6 @@
 scope,group,genre,target,predictor,n_creators,spearman_r,p
 within_group,left,streams,gini,F1_controlled,24,0.318,0.1296
-within_group,left,streams,gini,F2_controlled,24,-0.039,0.8559
+within_group,left,streams,gini,F2_controlled,24,-0.04,0.8528
 within_group,left,streams,gini,F3_controlled,24,0.457,0.0246
 within_group,left,streams,gini,F4_controlled,24,0.037,0.8623
 within_group,left,streams,gini,F5_controlled,24,-0.237,0.264
@@ -17,7 +17,7 @@ within_group,left,streams,gini,humor,24,0.099,0.6451
 within_group,left,streams,gini,log_n_videos,24,0.317,0.1307
 within_group,left,streams,gini,log_subscribers,24,0.407,0.0484
 within_group,left,streams,top10_share,F1_controlled,24,0.329,0.1168
-within_group,left,streams,top10_share,F2_controlled,24,0.049,0.8212
+within_group,left,streams,top10_share,F2_controlled,24,0.046,0.8307
 within_group,left,streams,top10_share,F3_controlled,24,0.39,0.0599
 within_group,left,streams,top10_share,F4_controlled,24,0.102,0.6362
 within_group,left,streams,top10_share,F5_controlled,24,-0.226,0.2881
@@ -34,34 +34,34 @@ within_group,left,streams,top10_share,humor,24,0.099,0.6451
 within_group,left,streams,top10_share,log_n_videos,24,0.305,0.147
 within_group,left,streams,top10_share,log_subscribers,24,0.399,0.0533
 within_group,left,videos,gini,F1_controlled,84,0.158,0.15
-within_group,left,videos,gini,F2_controlled,84,0.12,0.277
+within_group,left,videos,gini,F2_controlled,84,0.12,0.2764
 within_group,left,videos,gini,F3_controlled,84,0.012,0.9172
 within_group,left,videos,gini,F4_controlled,84,-0.018,0.8731
-within_group,left,videos,gini,F5_controlled,84,0.335,0.0018
+within_group,left,videos,gini,F5_controlled,84,0.336,0.0018
 within_group,left,videos,gini,F6_controlled,84,0.064,0.5651
-within_group,left,videos,gini,F7_controlled,84,-0.053,0.6333
-within_group,left,videos,gini,F8_controlled,84,0.191,0.0821
+within_group,left,videos,gini,F7_controlled,84,-0.054,0.6285
+within_group,left,videos,gini,F8_controlled,84,0.19,0.0835
 within_group,left,videos,gini,F9_controlled,84,-0.15,0.1731
-within_group,left,videos,gini,F10_controlled,84,0.128,0.247
+within_group,left,videos,gini,F10_controlled,84,0.128,0.2472
 within_group,left,videos,gini,F11_controlled,84,0.088,0.4276
-within_group,left,videos,gini,F12_controlled,84,0.226,0.0383
+within_group,left,videos,gini,F12_controlled,84,0.228,0.0374
 within_group,left,videos,gini,curiosity_gap,84,-0.035,0.7544
 within_group,left,videos,gini,outrage,84,-0.396,0.0002
 within_group,left,videos,gini,humor,84,0.006,0.9567
 within_group,left,videos,gini,log_n_videos,84,-0.01,0.9286
 within_group,left,videos,gini,log_subscribers,84,0.121,0.2742
 within_group,left,videos,top10_share,F1_controlled,84,0.182,0.0975
-within_group,left,videos,top10_share,F2_controlled,84,0.142,0.1968
+within_group,left,videos,top10_share,F2_controlled,84,0.142,0.1965
 within_group,left,videos,top10_share,F3_controlled,84,-0.028,0.8012
 within_group,left,videos,top10_share,F4_controlled,84,-0.047,0.6713
-within_group,left,videos,top10_share,F5_controlled,84,0.325,0.0025
+within_group,left,videos,top10_share,F5_controlled,84,0.326,0.0025
 within_group,left,videos,top10_share,F6_controlled,84,0.037,0.7369
-within_group,left,videos,top10_share,F7_controlled,84,-0.057,0.6051
-within_group,left,videos,top10_share,F8_controlled,84,0.15,0.1733
+within_group,left,videos,top10_share,F7_controlled,84,-0.058,0.6013
+within_group,left,videos,top10_share,F8_controlled,84,0.149,0.1759
 within_group,left,videos,top10_share,F9_controlled,84,-0.149,0.1765
-within_group,left,videos,top10_share,F10_controlled,84,0.104,0.3448
+within_group,left,videos,top10_share,F10_controlled,84,0.104,0.346
 within_group,left,videos,top10_share,F11_controlled,84,0.069,0.5304
-within_group,left,videos,top10_share,F12_controlled,84,0.161,0.1445
+within_group,left,videos,top10_share,F12_controlled,84,0.161,0.1426
 within_group,left,videos,top10_share,curiosity_gap,84,-0.003,0.9807
 within_group,left,videos,top10_share,outrage,84,-0.381,0.0004
 within_group,left,videos,top10_share,humor,84,0.029,0.7911
@@ -77,7 +77,7 @@ within_group,neutral,streams,gini,F7_controlled,12,0.552,0.0625
 within_group,neutral,streams,gini,F8_controlled,12,-0.133,0.6806
 within_group,neutral,streams,gini,F9_controlled,12,-0.287,0.3663
 within_group,neutral,streams,gini,F10_controlled,12,-0.252,0.4299
-within_group,neutral,streams,gini,F11_controlled,12,-0.231,0.4705
+within_group,neutral,streams,gini,F11_controlled,12,-0.189,0.5567
 within_group,neutral,streams,gini,F12_controlled,12,-0.21,0.5128
 within_group,neutral,streams,gini,curiosity_gap,12,0.273,0.3911
 within_group,neutral,streams,gini,outrage,12,-0.399,0.1993
@@ -94,7 +94,7 @@ within_group,neutral,streams,top10_share,F7_controlled,12,0.51,0.0899
 within_group,neutral,streams,top10_share,F8_controlled,12,-0.266,0.4038
 within_group,neutral,streams,top10_share,F9_controlled,12,-0.189,0.5567
 within_group,neutral,streams,top10_share,F10_controlled,12,-0.287,0.3663
-within_group,neutral,streams,top10_share,F11_controlled,12,-0.301,0.3423
+within_group,neutral,streams,top10_share,F11_controlled,12,-0.287,0.3663
 within_group,neutral,streams,top10_share,F12_controlled,12,-0.07,0.829
 within_group,neutral,streams,top10_share,curiosity_gap,12,0.259,0.4168
 within_group,neutral,streams,top10_share,outrage,12,-0.35,0.2652
@@ -110,7 +110,7 @@ within_group,neutral,videos,gini,F6_controlled,32,0.068,0.7108
 within_group,neutral,videos,gini,F7_controlled,32,0.449,0.0099
 within_group,neutral,videos,gini,F8_controlled,32,0.382,0.031
 within_group,neutral,videos,gini,F9_controlled,32,-0.061,0.7408
-within_group,neutral,videos,gini,F10_controlled,32,0.427,0.0149
+within_group,neutral,videos,gini,F10_controlled,32,0.432,0.0135
 within_group,neutral,videos,gini,F11_controlled,32,0.329,0.0661
 within_group,neutral,videos,gini,F12_controlled,32,0.371,0.0364
 within_group,neutral,videos,gini,curiosity_gap,32,-0.146,0.4256
@@ -127,7 +127,7 @@ within_group,neutral,videos,top10_share,F6_controlled,32,0.059,0.7483
 within_group,neutral,videos,top10_share,F7_controlled,32,0.442,0.0113
 within_group,neutral,videos,top10_share,F8_controlled,32,0.386,0.0293
 within_group,neutral,videos,top10_share,F9_controlled,32,-0.076,0.6783
-within_group,neutral,videos,top10_share,F10_controlled,32,0.41,0.0197
+within_group,neutral,videos,top10_share,F10_controlled,32,0.418,0.0174
 within_group,neutral,videos,top10_share,F11_controlled,32,0.328,0.0671
 within_group,neutral,videos,top10_share,F12_controlled,32,0.411,0.0194
 within_group,neutral,videos,top10_share,curiosity_gap,32,-0.138,0.4512
@@ -169,42 +169,42 @@ within_group,right,streams,top10_share,outrage,21,-0.516,0.0167
 within_group,right,streams,top10_share,humor,21,-0.215,0.3482
 within_group,right,streams,top10_share,log_n_videos,21,0.335,0.1376
 within_group,right,streams,top10_share,log_subscribers,21,0.217,0.345
-within_group,right,videos,gini,F1_controlled,72,0.2,0.0928
-within_group,right,videos,gini,F2_controlled,72,-0.171,0.1517
-within_group,right,videos,gini,F3_controlled,72,0.058,0.6308
-within_group,right,videos,gini,F4_controlled,72,-0.117,0.3262
-within_group,right,videos,gini,F5_controlled,72,0.308,0.0086
-within_group,right,videos,gini,F6_controlled,72,0.279,0.0176
-within_group,right,videos,gini,F7_controlled,72,-0.14,0.2421
-within_group,right,videos,gini,F8_controlled,72,0.12,0.3172
-within_group,right,videos,gini,F9_controlled,72,-0.202,0.0887
-within_group,right,videos,gini,F10_controlled,72,0.321,0.0059
-within_group,right,videos,gini,F11_controlled,72,0.202,0.0881
-within_group,right,videos,gini,F12_controlled,72,0.104,0.3869
-within_group,right,videos,gini,curiosity_gap,72,-0.382,0.0009
-within_group,right,videos,gini,outrage,72,-0.499,0.0
-within_group,right,videos,gini,humor,72,-0.098,0.4117
-within_group,right,videos,gini,log_n_videos,72,0.085,0.4782
-within_group,right,videos,gini,log_subscribers,72,-0.207,0.081
-within_group,right,videos,top10_share,F1_controlled,72,0.231,0.0507
-within_group,right,videos,top10_share,F2_controlled,72,-0.185,0.1188
-within_group,right,videos,top10_share,F3_controlled,72,0.048,0.6908
-within_group,right,videos,top10_share,F4_controlled,72,-0.135,0.2598
-within_group,right,videos,top10_share,F5_controlled,72,0.301,0.0101
-within_group,right,videos,top10_share,F6_controlled,72,0.261,0.0268
-within_group,right,videos,top10_share,F7_controlled,72,-0.167,0.1615
-within_group,right,videos,top10_share,F8_controlled,72,0.091,0.4447
-within_group,right,videos,top10_share,F9_controlled,72,-0.243,0.0399
-within_group,right,videos,top10_share,F10_controlled,72,0.336,0.0039
-within_group,right,videos,top10_share,F11_controlled,72,0.202,0.0885
-within_group,right,videos,top10_share,F12_controlled,72,0.072,0.5502
-within_group,right,videos,top10_share,curiosity_gap,72,-0.398,0.0005
-within_group,right,videos,top10_share,outrage,72,-0.518,0.0
-within_group,right,videos,top10_share,humor,72,-0.087,0.4656
-within_group,right,videos,top10_share,log_n_videos,72,0.048,0.687
-within_group,right,videos,top10_share,log_subscribers,72,-0.238,0.0443
+within_group,right,videos,gini,F1_controlled,73,0.216,0.0661
+within_group,right,videos,gini,F2_controlled,73,-0.181,0.1263
+within_group,right,videos,gini,F3_controlled,73,0.069,0.5609
+within_group,right,videos,gini,F4_controlled,73,-0.116,0.3266
+within_group,right,videos,gini,F5_controlled,73,0.301,0.0096
+within_group,right,videos,gini,F6_controlled,73,0.263,0.0244
+within_group,right,videos,gini,F7_controlled,73,-0.155,0.19
+within_group,right,videos,gini,F8_controlled,73,0.122,0.3035
+within_group,right,videos,gini,F9_controlled,73,-0.172,0.1465
+within_group,right,videos,gini,F10_controlled,73,0.316,0.0065
+within_group,right,videos,gini,F11_controlled,73,0.181,0.126
+within_group,right,videos,gini,F12_controlled,73,0.124,0.2955
+within_group,right,videos,gini,curiosity_gap,73,-0.369,0.0013
+within_group,right,videos,gini,outrage,73,-0.508,0.0
+within_group,right,videos,gini,humor,73,-0.12,0.312
+within_group,right,videos,gini,log_n_videos,73,0.107,0.3658
+within_group,right,videos,gini,log_subscribers,73,-0.202,0.0865
+within_group,right,videos,top10_share,F1_controlled,73,0.245,0.0365
+within_group,right,videos,top10_share,F2_controlled,73,-0.193,0.1019
+within_group,right,videos,top10_share,F3_controlled,73,0.058,0.6248
+within_group,right,videos,top10_share,F4_controlled,73,-0.131,0.2694
+within_group,right,videos,top10_share,F5_controlled,73,0.299,0.0102
+within_group,right,videos,top10_share,F6_controlled,73,0.248,0.0347
+within_group,right,videos,top10_share,F7_controlled,73,-0.181,0.1256
+within_group,right,videos,top10_share,F8_controlled,73,0.095,0.4265
+within_group,right,videos,top10_share,F9_controlled,73,-0.217,0.0655
+within_group,right,videos,top10_share,F10_controlled,73,0.332,0.0041
+within_group,right,videos,top10_share,F11_controlled,73,0.185,0.1177
+within_group,right,videos,top10_share,F12_controlled,73,0.09,0.451
+within_group,right,videos,top10_share,curiosity_gap,73,-0.386,0.0007
+within_group,right,videos,top10_share,outrage,73,-0.526,0.0
+within_group,right,videos,top10_share,humor,73,-0.105,0.3778
+within_group,right,videos,top10_share,log_n_videos,73,0.067,0.5722
+within_group,right,videos,top10_share,log_subscribers,73,-0.234,0.0462
 pooled_within_group (group-demeaned),ALL,streams,gini,F1_controlled,57,0.385,0.0031
-pooled_within_group (group-demeaned),ALL,streams,gini,F2_controlled,57,-0.045,0.7415
+pooled_within_group (group-demeaned),ALL,streams,gini,F2_controlled,57,-0.045,0.7408
 pooled_within_group (group-demeaned),ALL,streams,gini,F3_controlled,57,0.44,0.0006
 pooled_within_group (group-demeaned),ALL,streams,gini,F4_controlled,57,-0.007,0.9565
 pooled_within_group (group-demeaned),ALL,streams,gini,F5_controlled,57,-0.169,0.2102
@@ -213,7 +213,7 @@ pooled_within_group (group-demeaned),ALL,streams,gini,F7_controlled,57,0.263,0.0
 pooled_within_group (group-demeaned),ALL,streams,gini,F8_controlled,57,-0.05,0.7113
 pooled_within_group (group-demeaned),ALL,streams,gini,F9_controlled,57,0.065,0.6326
 pooled_within_group (group-demeaned),ALL,streams,gini,F10_controlled,57,-0.038,0.778
-pooled_within_group (group-demeaned),ALL,streams,gini,F11_controlled,57,-0.118,0.3806
+pooled_within_group (group-demeaned),ALL,streams,gini,F11_controlled,57,-0.118,0.3832
 pooled_within_group (group-demeaned),ALL,streams,gini,F12_controlled,57,0.025,0.8508
 pooled_within_group (group-demeaned),ALL,streams,gini,curiosity_gap,57,-0.16,0.2359
 pooled_within_group (group-demeaned),ALL,streams,gini,outrage,57,-0.447,0.0005
@@ -221,7 +221,7 @@ pooled_within_group (group-demeaned),ALL,streams,gini,humor,57,0.026,0.8496
 pooled_within_group (group-demeaned),ALL,streams,gini,log_n_videos,57,0.303,0.0219
 pooled_within_group (group-demeaned),ALL,streams,gini,log_subscribers,57,0.336,0.0106
 pooled_within_group (group-demeaned),ALL,streams,top10_share,F1_controlled,57,0.419,0.0012
-pooled_within_group (group-demeaned),ALL,streams,top10_share,F2_controlled,57,-0.045,0.7422
+pooled_within_group (group-demeaned),ALL,streams,top10_share,F2_controlled,57,-0.045,0.7408
 pooled_within_group (group-demeaned),ALL,streams,top10_share,F3_controlled,57,0.395,0.0024
 pooled_within_group (group-demeaned),ALL,streams,top10_share,F4_controlled,57,0.011,0.9355
 pooled_within_group (group-demeaned),ALL,streams,top10_share,F5_controlled,57,-0.117,0.3874
@@ -230,44 +230,44 @@ pooled_within_group (group-demeaned),ALL,streams,top10_share,F7_controlled,57,0.
 pooled_within_group (group-demeaned),ALL,streams,top10_share,F8_controlled,57,-0.056,0.6808
 pooled_within_group (group-demeaned),ALL,streams,top10_share,F9_controlled,57,0.01,0.939
 pooled_within_group (group-demeaned),ALL,streams,top10_share,F10_controlled,57,-0.046,0.7364
-pooled_within_group (group-demeaned),ALL,streams,top10_share,F11_controlled,57,-0.146,0.2786
+pooled_within_group (group-demeaned),ALL,streams,top10_share,F11_controlled,57,-0.146,0.279
 pooled_within_group (group-demeaned),ALL,streams,top10_share,F12_controlled,57,0.025,0.8564
 pooled_within_group (group-demeaned),ALL,streams,top10_share,curiosity_gap,57,-0.124,0.3581
 pooled_within_group (group-demeaned),ALL,streams,top10_share,outrage,57,-0.458,0.0003
 pooled_within_group (group-demeaned),ALL,streams,top10_share,humor,57,0.046,0.7332
 pooled_within_group (group-demeaned),ALL,streams,top10_share,log_n_videos,57,0.258,0.0524
 pooled_within_group (group-demeaned),ALL,streams,top10_share,log_subscribers,57,0.34,0.0098
-pooled_within_group (group-demeaned),ALL,videos,gini,F1_controlled,188,0.214,0.0031
-pooled_within_group (group-demeaned),ALL,videos,gini,F2_controlled,188,0.035,0.6293
-pooled_within_group (group-demeaned),ALL,videos,gini,F3_controlled,188,-0.027,0.7134
-pooled_within_group (group-demeaned),ALL,videos,gini,F4_controlled,188,-0.085,0.2485
-pooled_within_group (group-demeaned),ALL,videos,gini,F5_controlled,188,0.272,0.0002
-pooled_within_group (group-demeaned),ALL,videos,gini,F6_controlled,188,0.149,0.0407
-pooled_within_group (group-demeaned),ALL,videos,gini,F7_controlled,188,0.067,0.3589
-pooled_within_group (group-demeaned),ALL,videos,gini,F8_controlled,188,0.204,0.0049
-pooled_within_group (group-demeaned),ALL,videos,gini,F9_controlled,188,-0.145,0.047
-pooled_within_group (group-demeaned),ALL,videos,gini,F10_controlled,188,0.267,0.0002
-pooled_within_group (group-demeaned),ALL,videos,gini,F11_controlled,188,0.174,0.0168
-pooled_within_group (group-demeaned),ALL,videos,gini,F12_controlled,188,0.234,0.0012
-pooled_within_group (group-demeaned),ALL,videos,gini,curiosity_gap,188,-0.21,0.0038
-pooled_within_group (group-demeaned),ALL,videos,gini,outrage,188,-0.467,0.0
-pooled_within_group (group-demeaned),ALL,videos,gini,humor,188,-0.041,0.58
-pooled_within_group (group-demeaned),ALL,videos,gini,log_n_videos,188,0.177,0.0152
-pooled_within_group (group-demeaned),ALL,videos,gini,log_subscribers,188,0.008,0.91
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F1_controlled,188,0.23,0.0015
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F2_controlled,188,0.043,0.5602
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F3_controlled,188,-0.054,0.4633
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F4_controlled,188,-0.11,0.1337
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F5_controlled,188,0.258,0.0003
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F6_controlled,188,0.136,0.0631
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F7_controlled,188,0.068,0.3512
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F8_controlled,188,0.191,0.0086
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F9_controlled,188,-0.149,0.0411
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F10_controlled,188,0.265,0.0002
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F11_controlled,188,0.177,0.015
-pooled_within_group (group-demeaned),ALL,videos,top10_share,F12_controlled,188,0.205,0.0048
-pooled_within_group (group-demeaned),ALL,videos,top10_share,curiosity_gap,188,-0.204,0.0049
-pooled_within_group (group-demeaned),ALL,videos,top10_share,outrage,188,-0.456,0.0
-pooled_within_group (group-demeaned),ALL,videos,top10_share,humor,188,-0.037,0.6111
-pooled_within_group (group-demeaned),ALL,videos,top10_share,log_n_videos,188,0.158,0.0306
-pooled_within_group (group-demeaned),ALL,videos,top10_share,log_subscribers,188,-0.024,0.7451
+pooled_within_group (group-demeaned),ALL,videos,gini,F1_controlled,189,0.222,0.0021
+pooled_within_group (group-demeaned),ALL,videos,gini,F2_controlled,189,0.03,0.6817
+pooled_within_group (group-demeaned),ALL,videos,gini,F3_controlled,189,-0.023,0.7545
+pooled_within_group (group-demeaned),ALL,videos,gini,F4_controlled,189,-0.083,0.2546
+pooled_within_group (group-demeaned),ALL,videos,gini,F5_controlled,189,0.271,0.0002
+pooled_within_group (group-demeaned),ALL,videos,gini,F6_controlled,189,0.144,0.0477
+pooled_within_group (group-demeaned),ALL,videos,gini,F7_controlled,189,0.063,0.3897
+pooled_within_group (group-demeaned),ALL,videos,gini,F8_controlled,189,0.204,0.0048
+pooled_within_group (group-demeaned),ALL,videos,gini,F9_controlled,189,-0.134,0.0653
+pooled_within_group (group-demeaned),ALL,videos,gini,F10_controlled,189,0.265,0.0002
+pooled_within_group (group-demeaned),ALL,videos,gini,F11_controlled,189,0.167,0.0219
+pooled_within_group (group-demeaned),ALL,videos,gini,F12_controlled,189,0.24,0.0009
+pooled_within_group (group-demeaned),ALL,videos,gini,curiosity_gap,189,-0.204,0.0049
+pooled_within_group (group-demeaned),ALL,videos,gini,outrage,189,-0.468,0.0
+pooled_within_group (group-demeaned),ALL,videos,gini,humor,189,-0.049,0.5027
+pooled_within_group (group-demeaned),ALL,videos,gini,log_n_videos,189,0.182,0.0122
+pooled_within_group (group-demeaned),ALL,videos,gini,log_subscribers,189,0.007,0.9186
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F1_controlled,189,0.237,0.001
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F2_controlled,189,0.038,0.6046
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F3_controlled,189,-0.05,0.4945
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F4_controlled,189,-0.11,0.1312
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F5_controlled,189,0.259,0.0003
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F6_controlled,189,0.131,0.0724
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F7_controlled,189,0.065,0.3754
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F8_controlled,189,0.191,0.0085
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F9_controlled,189,-0.14,0.0546
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F10_controlled,189,0.263,0.0003
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F11_controlled,189,0.169,0.0198
+pooled_within_group (group-demeaned),ALL,videos,top10_share,F12_controlled,189,0.211,0.0036
+pooled_within_group (group-demeaned),ALL,videos,top10_share,curiosity_gap,189,-0.199,0.0059
+pooled_within_group (group-demeaned),ALL,videos,top10_share,outrage,189,-0.459,0.0
+pooled_within_group (group-demeaned),ALL,videos,top10_share,humor,189,-0.044,0.5518
+pooled_within_group (group-demeaned),ALL,videos,top10_share,log_n_videos,189,0.162,0.0256
+pooled_within_group (group-demeaned),ALL,videos,top10_share,log_subscribers,189,-0.023,0.7545

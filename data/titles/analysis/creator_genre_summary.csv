@@ -223,6 +223,8 @@ creator,platform,genre,n_rows,n_unique,n_balanced,n_with_views,first_month,last_
 @SavSays,youtube,streams,1,1,1,0,2026-03,2026-03,0,0.0,True,Sav Says,144000.0,
 @SavSays,youtube,videos,16,16,16,16,2026-02,2026-09,0,0.0,True,Sav Says,144000.0,
 @SecondThought,youtube,videos,19,19,19,19,2026-01,2026-09,0,0.0,True,Second Thought,1920000.0,True
+@SecretScholars,youtube,streams,1,1,1,1,2026-08,2026-08,0,0.0,True,Warren Smith - Secret Scholar Society,658000.0,
+@SecretScholars,youtube,videos,106,106,106,106,2026-01,2026-09,0,0.0,False,Warren Smith - Secret Scholar Society,658000.0,
 @SecularTalk,youtube,streams,1,1,1,1,2026-03,2026-03,0,0.0,True,Secular Talk,2290000.0,True
 @SecularTalk,youtube,videos,1375,1374,1374,1375,2026-01,2026-09,0,0.0007,False,Secular Talk,2290000.0,True
 @Semafor,youtube,streams,30,30,30,30,2026-02,2026-07,0,0.0,True,Semafor,33300.0,True

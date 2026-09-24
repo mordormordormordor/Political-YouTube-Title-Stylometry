@@ -13,21 +13,21 @@ Top topics: Feminism and Gender Roles Debate (37.8%); Myron and Dating Standards
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 45.8 | 64.8 | 0.1 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 74.2 | 81.4 | 0.4 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 30.5 | 3.0 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 25.8 | 45.3 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 46.0 | 65.0 | 0.1 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 73.8 | 81.4 | 0.4 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 30.8 | 3.0 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 25.7 | 45.1 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 83.1 | 90.3 | 1.1 | 0.2 |
-| F6: Person-centred (named people) | 60.2 | 50.4 | -0.1 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 63.6 | 36.4 | -0.4 | -0.7 |
-| F8: Numeric and dated (digits, years) | 72.9 | 59.3 | 0.0 | -0.1 |
-| F9: ALL-CAPS shouting | 16.9 | 4.7 | -0.7 | -0.3 |
-| F10: Quoted speech | 48.7 | 33.9 | -0.4 | -0.4 |
+| F6: Person-centred (named people) | 59.9 | 50.2 | -0.1 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 63.3 | 36.3 | -0.4 | -0.6 |
+| F8: Numeric and dated (digits, years) | 73.0 | 59.5 | 0.0 | -0.1 |
+| F9: ALL-CAPS shouting | 17.3 | 5.1 | -0.7 | -0.3 |
+| F10: Quoted speech | 48.5 | 33.8 | -0.4 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 97.0 | 94.9 | 1.3 | -0.2 |
-| F12: +first_pl +future_will +modal | 21.2 | 7.6 | -0.5 | -0.3 |
+| F12: +first_pl +future_will +modal | 21.5 | 8.0 | -0.5 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.1% (4.8%); outrage 58.2% (59.8%); humor 0.0% (0.2%); question 17.3% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 4.1% (7.7%); reaction 0.0% (2.2%); confrontation 18.4% (7.8%); listicle 0.0% (0.1%); howto_explainer 24.5% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.1% (4.8%); outrage 58.2% (60.1%); humor 0.0% (0.2%); question 17.3% (15.2%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.4%); interview_guest 4.1% (7.8%); reaction 0.0% (2.2%); confrontation 18.4% (8.2%); listicle 0.0% (0.1%); howto_explainer 24.5% (9.3%)
 
 
 Nearest style neighbors: @ChadPrather1 [right]; @TheHumanistReport [left]; @HasanabiClips [left]; https://rumble.com/c/GGreenwald [left]; @RubinReport [right]
@@ -86,7 +86,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-06 | 16 | -0.05 | -0.46 | -0.17 | 0.06 | -0.18 | 0.46 | -0.73 | 0.04 | -0.03 | 0.12 | -0.03 | 0.01 | 0.12 | 0.75 | 0.00 |
+| 2026-06 | 16 | -0.05 | -0.46 | -0.17 | 0.06 | -0.18 | 0.46 | -0.73 | 0.04 | -0.02 | 0.12 | -0.03 | 0.01 | 0.12 | 0.75 | 0.00 |
 | 2026-08 | 17 | 1.18 | -0.43 | -0.44 | 0.64 | -0.12 | -0.47 | -0.61 | 0.33 | 0.06 | -0.51 | 0.67 | -0.04 | 0.12 | 0.59 | 0.00 |
 
 

@@ -19,7 +19,7 @@ Top topics: Black America and Racism Discussions (16.7%); MAGA Arguments and Deb
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | -0.2 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | 2.3 | 0.2 |
 | F6: Person-centred (named people) | None | None | -1.0 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.5 | -0.7 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -0.5 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | 1.5 | -0.1 |
 | F9: ALL-CAPS shouting | None | None | 0.3 | -0.3 |
 | F10: Quoted speech | None | None | 1.5 | -0.4 |
@@ -27,7 +27,7 @@ Top topics: Black America and Racism Discussions (16.7%); MAGA Arguments and Deb
 | F12: +first_pl +future_will +modal | None | None | -0.8 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.3% (4.8%); outrage 54.2% (59.8%); humor 0.0% (0.2%); question 33.3% (15.3%); breaking_live 0.0% (2.0%); episode_show 25.0% (7.5%); interview_guest 8.3% (7.7%); reaction 0.0% (2.2%); confrontation 4.2% (7.8%); listicle 0.0% (0.1%); howto_explainer 25.0% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 8.3% (4.8%); outrage 54.2% (60.1%); humor 0.0% (0.2%); question 33.3% (15.2%); breaking_live 0.0% (2.0%); episode_show 25.0% (7.4%); interview_guest 8.3% (7.8%); reaction 0.0% (2.2%); confrontation 4.2% (8.2%); listicle 0.0% (0.1%); howto_explainer 25.0% (9.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

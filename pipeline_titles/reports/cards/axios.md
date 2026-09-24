@@ -13,24 +13,24 @@ Top topics: AI and Political Implications (21.9%); Tech Business Founders and In
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 71.2 | 91.1 | 0.5 | 0.5 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 43.6 | 29.2 | -0.2 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.4 | 69.1 | -0.4 | -0.4 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 73.7 | 61.9 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 63.6 | 66.1 | 0.4 | 0.1 |
-| F6: Person-centred (named people) | 53.4 | 44.9 | -0.2 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 84.3 | 83.9 | 0.3 | -0.3 |
-| F8: Numeric and dated (digits, years) | 34.3 | 65.3 | -0.3 | 0.0 |
-| F9: ALL-CAPS shouting | 50.8 | 63.6 | -0.3 | -0.3 |
-| F10: Quoted speech | 31.8 | 19.9 | -0.6 | -0.1 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 58.9 | 61.9 | -0.1 | -0.1 |
-| F12: +first_pl +future_will +modal | 65.7 | 72.0 | -0.0 | -0.0 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 71.3 | 91.1 | 0.5 | 0.5 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 43.5 | 29.1 | -0.2 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 39.7 | 69.2 | -0.4 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 73.8 | 62.0 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 63.7 | 66.2 | 0.4 | 0.1 |
+| F6: Person-centred (named people) | 53.2 | 44.7 | -0.2 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 84.4 | 84.0 | 0.3 | -0.3 |
+| F8: Numeric and dated (digits, years) | 34.2 | 65.4 | -0.3 | 0.0 |
+| F9: ALL-CAPS shouting | 51.1 | 63.7 | -0.3 | -0.3 |
+| F10: Quoted speech | 31.6 | 19.8 | -0.6 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 58.6 | 61.6 | -0.1 | -0.1 |
+| F12: +first_pl +future_will +modal | 65.8 | 72.2 | -0.0 | -0.0 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.1% (3.1%); outrage 13.9% (36.7%); humor 0.0% (0.1%); question 13.1% (13.8%); breaking_live 0.0% (1.2%); episode_show 0.0% (7.1%); interview_guest 24.8% (11.7%); reaction 0.0% (2.0%); confrontation 2.2% (7.6%); listicle 0.7% (0.1%); howto_explainer 9.5% (6.8%)
 
 
-Nearest style neighbors: @hutch [neutral]; @TheJoyReidShow [left]; @LIVESNEAKO [neutral]; @OwenReport [left]; @TheDonLemonShow [left]
+Nearest style neighbors: @hutch [neutral]; @LIVESNEAKO [neutral]; @TheJoyReidShow [left]; @OwenReport [left]; @TheDonLemonShow [left]
 
 Nearest topic neighbors: @Semafor [neutral]; @TechCrunch [neutral]; @Forbes [neutral]; @TheAtlantic [left]; @samharrisorg [left]
 

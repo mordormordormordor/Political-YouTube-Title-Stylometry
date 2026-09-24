@@ -13,21 +13,21 @@ Top topics: Democratic Party and Midterm Elections (9.3%); Iran political unrest
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 10.6 | 12.3 | -0.7 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 79.7 | 79.7 | 0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.0 | 85.2 | 0.0 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 93.6 | 92.8 | 0.6 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 64.8 | 62.3 | 0.5 | 0.2 |
-| F6: Person-centred (named people) | 41.5 | 39.0 | -0.4 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 1.3 | 2.5 | -1.5 | -0.7 |
-| F8: Numeric and dated (digits, years) | 45.8 | 53.4 | -0.2 | -0.1 |
-| F9: ALL-CAPS shouting | 89.4 | 87.7 | 1.1 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 11.0 | 12.7 | -0.7 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 79.3 | 79.7 | 0.5 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.1 | 85.2 | 0.0 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 93.7 | 92.8 | 0.6 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 65.0 | 62.4 | 0.5 | 0.2 |
+| F6: Person-centred (named people) | 41.4 | 38.8 | -0.4 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 1.3 | 2.5 | -1.5 | -0.6 |
+| F8: Numeric and dated (digits, years) | 46.0 | 53.6 | -0.2 | -0.1 |
+| F9: ALL-CAPS shouting | 89.5 | 87.8 | 1.1 | -0.3 |
 | F10: Quoted speech | 1.3 | 11.4 | -1.2 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 96.2 | 95.8 | 1.2 | -0.2 |
-| F12: +first_pl +future_will +modal | 29.2 | 62.7 | -0.4 | -0.3 |
+| F12: +first_pl +future_will +modal | 29.1 | 62.9 | -0.4 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 13.9% (4.8%); outrage 97.4% (59.8%); humor 0.0% (0.2%); question 0.7% (15.3%); breaking_live 6.2% (2.0%); episode_show 0.0% (7.5%); interview_guest 3.8% (7.7%); reaction 0.2% (2.2%); confrontation 7.2% (7.8%); listicle 0.2% (0.1%); howto_explainer 2.2% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 13.9% (4.8%); outrage 97.4% (60.1%); humor 0.0% (0.2%); question 0.7% (15.2%); breaking_live 6.2% (2.0%); episode_show 0.0% (7.4%); interview_guest 3.8% (7.8%); reaction 0.2% (2.2%); confrontation 7.2% (8.2%); listicle 0.2% (0.1%); howto_explainer 2.2% (9.3%)
 
 
 Nearest style neighbors: @DoubleDownNews [left]; @LegalAFMTN [left]; @RubinReport [right]; @JillianMichaels [right]; @TheOfficerTatum [right]
@@ -44,7 +44,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-03 | 58 | -0.60 | 0.66 | -0.07 | 0.53 | 0.46 | -0.35 | -1.60 | -0.11 | 1.63 | -1.22 | 1.44 | -0.17 | 0.12 | 1.00 | 0.00 |
 | 2026-04 | 54 | -0.86 | 0.64 | 0.16 | 0.90 | 0.42 | -0.74 | -1.95 | -0.20 | 1.61 | -1.06 | 1.14 | -0.29 | 0.19 | 0.98 | 0.00 |
 | 2026-05 | 47 | -0.91 | 0.52 | 0.04 | 0.51 | 0.14 | -0.41 | -1.66 | -0.22 | 0.26 | -1.08 | 1.11 | -0.48 | 0.17 | 0.98 | 0.00 |
-| 2026-06 | 37 | -0.75 | 0.53 | -0.21 | -0.01 | 0.69 | -0.50 | -1.81 | -0.44 | 0.68 | -1.23 | 1.50 | -0.51 | 0.11 | 0.95 | 0.00 |
+| 2026-06 | 37 | -0.75 | 0.53 | -0.21 | -0.01 | 0.69 | -0.50 | -1.80 | -0.44 | 0.68 | -1.23 | 1.50 | -0.50 | 0.11 | 0.95 | 0.00 |
 | 2026-07 | 54 | -0.38 | 1.14 | -0.04 | 0.68 | 0.46 | -0.42 | -0.95 | 0.26 | 0.42 | -1.26 | 0.59 | -0.66 | 0.19 | 0.98 | 0.00 |
 | 2026-08 | 54 | -0.17 | 0.68 | 0.17 | 0.69 | 0.49 | -0.29 | -1.29 | -0.17 | 1.45 | -1.08 | 1.51 | -0.39 | 0.09 | 0.94 | 0.00 |
 | 2026-09* | 18 | -0.66 | 1.07 | 0.19 | 0.62 | 0.04 | -0.25 | -0.79 | -0.43 | 0.50 | -1.16 | 0.79 | -0.45 | 0.06 | 0.94 | 0.00 |

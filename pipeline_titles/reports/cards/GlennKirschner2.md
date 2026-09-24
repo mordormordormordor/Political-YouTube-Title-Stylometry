@@ -13,18 +13,18 @@ Top topics: Trump and DOJ Legal Issues (20.5%); Trump Court Legal Battles (9.0%)
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 50.4 | 28.4 | 0.2 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 50.6 | 28.7 | 0.2 | 0.1 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 11.0 | 11.0 | -0.9 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 10.6 | 24.2 | -0.6 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 24.6 | 19.5 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 32.2 | 18.2 | -0.2 | 0.1 |
-| F6: Person-centred (named people) | 29.2 | 34.3 | -0.5 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 43.2 | 55.5 | -0.7 | -0.5 |
-| F8: Numeric and dated (digits, years) | 47.0 | 45.3 | -0.2 | -0.2 |
-| F9: ALL-CAPS shouting | 2.5 | 11.0 | -1.1 | -0.3 |
-| F10: Quoted speech | 65.7 | 55.9 | -0.1 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 65.3 | 75.0 | 0.0 | -0.3 |
-| F12: +first_pl +future_will +modal | 57.2 | 41.1 | -0.1 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 10.5 | 24.5 | -0.6 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 24.5 | 19.4 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 32.1 | 18.1 | -0.2 | 0.1 |
+| F6: Person-centred (named people) | 29.1 | 34.2 | -0.5 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 43.0 | 55.3 | -0.7 | -0.5 |
+| F8: Numeric and dated (digits, years) | 47.3 | 45.6 | -0.2 | -0.2 |
+| F9: ALL-CAPS shouting | 3.0 | 11.4 | -1.1 | -0.3 |
+| F10: Quoted speech | 65.8 | 55.7 | -0.1 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 65.0 | 75.1 | 0.0 | -0.3 |
+| F12: +first_pl +future_will +modal | 57.4 | 41.4 | -0.1 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.8% (3.6%); outrage 83.6% (63.9%); humor 0.0% (0.2%); question 4.5% (15.6%); breaking_live 0.4% (2.9%); episode_show 0.0% (2.8%); interview_guest 2.9% (9.8%); reaction 0.0% (2.9%); confrontation 4.9% (7.7%); listicle 0.0% (0.1%); howto_explainer 1.6% (8.0%)

@@ -13,21 +13,21 @@ Top topics: Black America and Racism Discussions (10.3%); Iran political unrest 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 48.7 | 39.8 | 0.2 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 40.7 | 42.4 | -0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.6 | 63.1 | -0.2 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 29.7 | 25.4 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 72.9 | 71.2 | 0.7 | 0.2 |
-| F6: Person-centred (named people) | 62.7 | 60.2 | -0.0 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 66.1 | 65.3 | -0.4 | -0.7 |
-| F8: Numeric and dated (digits, years) | 72.0 | 55.5 | 0.0 | -0.1 |
-| F9: ALL-CAPS shouting | 24.6 | 19.9 | -0.6 | -0.3 |
-| F10: Quoted speech | 14.0 | 39.0 | -0.8 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 35.6 | 39.8 | -0.5 | -0.2 |
-| F12: +first_pl +future_will +modal | 8.9 | 15.7 | -0.7 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 48.9 | 40.1 | 0.2 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 40.5 | 42.2 | -0.3 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 74.7 | 63.3 | -0.2 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 29.5 | 25.3 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 73.0 | 71.3 | 0.7 | 0.2 |
+| F6: Person-centred (named people) | 62.4 | 59.9 | -0.0 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 65.8 | 65.0 | -0.4 | -0.6 |
+| F8: Numeric and dated (digits, years) | 72.2 | 55.7 | 0.0 | -0.1 |
+| F9: ALL-CAPS shouting | 24.9 | 20.3 | -0.6 | -0.3 |
+| F10: Quoted speech | 13.9 | 38.8 | -0.8 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 35.4 | 39.7 | -0.5 | -0.2 |
+| F12: +first_pl +future_will +modal | 9.3 | 16.0 | -0.7 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 55.9% (59.8%); humor 0.0% (0.2%); question 25.0% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 10.3% (7.7%); reaction 20.6% (2.2%); confrontation 2.9% (7.8%); listicle 0.0% (0.1%); howto_explainer 7.3% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 55.9% (60.1%); humor 0.0% (0.2%); question 25.0% (15.2%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.4%); interview_guest 10.3% (7.8%); reaction 20.6% (2.2%); confrontation 2.9% (8.2%); listicle 0.0% (0.1%); howto_explainer 7.3% (9.3%)
 
 
 Nearest style neighbors: @MichaelKnowles [right]; @LIVESNEAKO [neutral]; @Forthepeoplepodcast305 [left]; @NovaraMedia [left]; @PTLRadioShow [left]

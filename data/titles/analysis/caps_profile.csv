@@ -149,6 +149,7 @@ creator,genre,all_caps,selective_caps,title_case,sentence_case,mixed_other,short
 @Politicon,streams,0.0,0.0,1.0,0.0,0.0,0.0,1,0.0,True,left,Politicon,False
 @PragerU,streams,0.0,0.0,1.0,0.0,0.0,0.0,31,0.0,True,right,PragerU,False
 @SavSays,streams,0.0,0.0,1.0,0.0,0.0,0.0,1,0.0,True,right,Sav Says,False
+@SecretScholars,streams,0.0,0.0,1.0,0.0,0.0,0.0,1,0.0,True,right,@SecretScholars,False
 @Semafor,streams,0.0,0.0,1.0,0.0,0.0,0.0,30,0.0,True,neutral,Semafor,False
 @StevenCrowder,streams,0.0,0.0,1.0,0.0,0.0,0.0,8,0.0,True,right,Louder with Crowder,False
 @TheAtlantic,streams,0.0,0.0,0.8,0.2,0.0,0.0,5,0.0,True,left,The Atlantic,False
@@ -201,6 +202,7 @@ creator,genre,all_caps,selective_caps,title_case,sentence_case,mixed_other,short
 @dollemore,videos,0.002180232558139535,0.8023255813953488,0.19476744186046513,0.0007267441860465116,0.0,0.0,1376,0.8045058139534883,False,left,Jesse Dollemore,False
 @JesseKellyDC,videos,0.0,0.799163179916318,0.200836820083682,0.0,0.0,0.0,478,0.799163179916318,False,right,Jesse Kelly,False
 @RebelHQ,videos,0.0,0.7966386554621848,0.20336134453781513,0.0,0.0,0.0,1190,0.7966386554621848,False,left,TYT Network,False
+@SecretScholars,videos,0.0,0.7924528301886793,0.20754716981132076,0.0,0.0,0.0,106,0.7924528301886793,False,right,@SecretScholars,False
 @VivaFrei,videos,0.0032258064516129032,0.7741935483870968,0.21935483870967742,0.0032258064516129032,0.0,0.0,310,0.7774193548387096,False,right,Viva Frei,False
 @thejimmydoreshow,videos,0.0,0.7706592386258124,0.22934076137418755,0.0,0.0,0.0,1077,0.7706592386258124,False,neutral,Jimmy Dore,False
 @TimesNowWorld,videos,0.0,0.7629873954529391,0.23124042879019907,0.005654376251619743,0.00011779950524207798,0.0,8489,0.7629873954529391,False,neutral,Times Group,False

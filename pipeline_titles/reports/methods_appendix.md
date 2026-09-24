@@ -1,6 +1,6 @@
 # Title Stylometry: methods appendix
 
-_Generated 2026-09-22T14:35:52+00:00._
+_Generated 2026-09-24T14:52:45+00:00._
 
 ## Pipeline stages (module docstrings, verbatim)
 
@@ -59,6 +59,7 @@ time by common.load_creators().
 
 CLI:
     python -m pipeline_titles.creators            # write if missing
+    python -m pipeline_titles.creators --append   # add rows for creators the CSV lacks (channels added to the corpus); existing rows untouched
     python -m pipeline_titles.creators --force    # rebuild from the seed
 ```
 
@@ -900,85 +901,85 @@ Full loadings (oblimin; varimax beside):
 | llm | factor | factor_auto_name | score | spearman_r | pearson_r | p | n_groups |
 |---|---|---|---|---|---|---|---|
 | sensational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | raw | -0.709 | -0.720 | 0.000 | 318 |
-| sensational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | -0.634 | -0.650 | 0.000 | 318 |
+| sensational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | -0.633 | -0.650 | 0.000 | 318 |
 | sensational | F2 | +has_finite_verb +present_tense +verb_share +past_tense | raw | 0.099 | 0.143 | 0.078 | 318 |
 | sensational | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.068 | 0.091 | 0.225 | 318 |
 | sensational | F3 | +lead_colon_label +lead_live +colon -entity_first | raw | -0.146 | -0.078 | 0.009 | 318 |
 | sensational | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.042 | -0.009 | 0.454 | 318 |
 | sensational | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | raw | 0.167 | 0.059 | 0.003 | 318 |
-| sensational | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | 0.027 | 0.017 | 0.636 | 318 |
+| sensational | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | 0.027 | 0.017 | 0.635 | 318 |
 | sensational | F5 | +q_word_start +wh_any +why_marker +q_mark | raw | -0.322 | -0.334 | 0.000 | 318 |
 | sensational | F5 | +q_word_start +wh_any +why_marker +q_mark | controlled | -0.317 | -0.316 | 0.000 | 318 |
 | sensational | F6 | +n_person +has_person | raw | 0.099 | 0.127 | 0.077 | 318 |
 | sensational | F6 | +n_person +has_person | controlled | 0.101 | 0.133 | 0.071 | 318 |
 | sensational | F7 | +noun_share -cap_token_share +adj_share +n_gpe | raw | -0.030 | -0.179 | 0.597 | 318 |
-| sensational | F7 | +noun_share -cap_token_share +adj_share +n_gpe | controlled | -0.067 | -0.155 | 0.230 | 318 |
+| sensational | F7 | +noun_share -cap_token_share +adj_share +n_gpe | controlled | -0.068 | -0.155 | 0.230 | 318 |
 | sensational | F8 | +num_share +digit +year_mention | raw | -0.183 | -0.150 | 0.001 | 318 |
-| sensational | F8 | +num_share +digit +year_mention | controlled | -0.043 | -0.074 | 0.449 | 318 |
+| sensational | F8 | +num_share +digit +year_mention | controlled | -0.042 | -0.074 | 0.452 | 318 |
 | sensational | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | raw | 0.300 | 0.438 | 0.000 | 318 |
 | sensational | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | 0.234 | 0.393 | 0.000 | 318 |
 | sensational | F10 | +quoted_speech +quotes | raw | -0.050 | 0.009 | 0.378 | 318 |
-| sensational | F10 | +quoted_speech +quotes | controlled | -0.036 | 0.020 | 0.520 | 318 |
+| sensational | F10 | +quoted_speech +quotes | controlled | -0.036 | 0.020 | 0.517 | 318 |
 | sensational | F11 | +n_chars +vader_pos +nominalisation +n_org | raw | 0.021 | 0.062 | 0.704 | 318 |
 | sensational | F11 | +n_chars +vader_pos +nominalisation +n_org | controlled | 0.112 | 0.137 | 0.047 | 318 |
 | sensational | F12 | +first_pl +future_will +modal | raw | -0.217 | -0.156 | 0.000 | 318 |
 | sensational | F12 | +first_pl +future_will +modal | controlled | -0.257 | -0.227 | 0.000 | 318 |
 | critical | F1 | +vader_compound -vader_neg -shock_word -violence_verb | raw | -0.494 | -0.508 | 0.000 | 318 |
-| critical | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | -0.385 | -0.417 | 0.000 | 318 |
+| critical | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | -0.384 | -0.417 | 0.000 | 318 |
 | critical | F2 | +has_finite_verb +present_tense +verb_share +past_tense | raw | 0.067 | 0.097 | 0.231 | 318 |
-| critical | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.048 | 0.068 | 0.390 | 318 |
+| critical | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.048 | 0.068 | 0.389 | 318 |
 | critical | F3 | +lead_colon_label +lead_live +colon -entity_first | raw | -0.166 | -0.174 | 0.003 | 318 |
-| critical | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.068 | -0.117 | 0.226 | 318 |
+| critical | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.068 | -0.117 | 0.225 | 318 |
 | critical | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | raw | 0.052 | -0.022 | 0.358 | 318 |
-| critical | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | -0.043 | -0.046 | 0.442 | 318 |
+| critical | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | -0.043 | -0.046 | 0.444 | 318 |
 | critical | F5 | +q_word_start +wh_any +why_marker +q_mark | raw | -0.167 | -0.195 | 0.003 | 318 |
 | critical | F5 | +q_word_start +wh_any +why_marker +q_mark | controlled | -0.174 | -0.186 | 0.002 | 318 |
 | critical | F6 | +n_person +has_person | raw | 0.102 | 0.153 | 0.068 | 318 |
 | critical | F6 | +n_person +has_person | controlled | 0.121 | 0.173 | 0.031 | 318 |
 | critical | F7 | +noun_share -cap_token_share +adj_share +n_gpe | raw | -0.072 | -0.141 | 0.201 | 318 |
-| critical | F7 | +noun_share -cap_token_share +adj_share +n_gpe | controlled | -0.095 | -0.120 | 0.091 | 318 |
+| critical | F7 | +noun_share -cap_token_share +adj_share +n_gpe | controlled | -0.095 | -0.120 | 0.090 | 318 |
 | critical | F8 | +num_share +digit +year_mention | raw | -0.146 | -0.120 | 0.009 | 318 |
-| critical | F8 | +num_share +digit +year_mention | controlled | -0.021 | -0.027 | 0.704 | 318 |
+| critical | F8 | +num_share +digit +year_mention | controlled | -0.021 | -0.027 | 0.711 | 318 |
 | critical | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | raw | 0.045 | 0.105 | 0.419 | 318 |
-| critical | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | -0.014 | 0.073 | 0.807 | 318 |
+| critical | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | -0.014 | 0.073 | 0.808 | 318 |
 | critical | F10 | +quoted_speech +quotes | raw | 0.047 | 0.077 | 0.401 | 318 |
-| critical | F10 | +quoted_speech +quotes | controlled | 0.013 | 0.071 | 0.818 | 318 |
+| critical | F10 | +quoted_speech +quotes | controlled | 0.013 | 0.071 | 0.822 | 318 |
 | critical | F11 | +n_chars +vader_pos +nominalisation +n_org | raw | 0.038 | 0.075 | 0.499 | 318 |
 | critical | F11 | +n_chars +vader_pos +nominalisation +n_org | controlled | 0.079 | 0.103 | 0.158 | 318 |
 | critical | F12 | +first_pl +future_will +modal | raw | -0.150 | -0.084 | 0.007 | 318 |
 | critical | F12 | +first_pl +future_will +modal | controlled | -0.168 | -0.119 | 0.003 | 318 |
 | analytical | F1 | +vader_compound -vader_neg -shock_word -violence_verb | raw | 0.422 | 0.431 | 0.000 | 318 |
-| analytical | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | 0.435 | 0.421 | 0.000 | 318 |
+| analytical | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | 0.435 | 0.420 | 0.000 | 318 |
 | analytical | F2 | +has_finite_verb +present_tense +verb_share +past_tense | raw | 0.017 | 0.001 | 0.761 | 318 |
-| analytical | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.031 | 0.022 | 0.583 | 318 |
+| analytical | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.031 | 0.022 | 0.585 | 318 |
 | analytical | F3 | +lead_colon_label +lead_live +colon -entity_first | raw | 0.199 | 0.105 | 0.000 | 318 |
-| analytical | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | 0.042 | 0.036 | 0.452 | 318 |
+| analytical | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | 0.042 | 0.036 | 0.456 | 318 |
 | analytical | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | raw | -0.165 | -0.052 | 0.003 | 318 |
 | analytical | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | -0.047 | -0.005 | 0.402 | 318 |
 | analytical | F5 | +q_word_start +wh_any +why_marker +q_mark | raw | 0.419 | 0.423 | 0.000 | 318 |
 | analytical | F5 | +q_word_start +wh_any +why_marker +q_mark | controlled | 0.415 | 0.423 | 0.000 | 318 |
 | analytical | F6 | +n_person +has_person | raw | -0.011 | -0.048 | 0.843 | 318 |
-| analytical | F6 | +n_person +has_person | controlled | 0.005 | -0.025 | 0.933 | 318 |
+| analytical | F6 | +n_person +has_person | controlled | 0.005 | -0.025 | 0.932 | 318 |
 | analytical | F7 | +noun_share -cap_token_share +adj_share +n_gpe | raw | -0.021 | 0.123 | 0.704 | 318 |
 | analytical | F7 | +noun_share -cap_token_share +adj_share +n_gpe | controlled | -0.111 | 0.023 | 0.048 | 318 |
 | analytical | F8 | +num_share +digit +year_mention | raw | 0.159 | 0.013 | 0.004 | 318 |
-| analytical | F8 | +num_share +digit +year_mention | controlled | 0.031 | -0.040 | 0.583 | 318 |
+| analytical | F8 | +num_share +digit +year_mention | controlled | 0.030 | -0.040 | 0.588 | 318 |
 | analytical | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | raw | -0.269 | -0.316 | 0.000 | 318 |
 | analytical | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | -0.179 | -0.261 | 0.001 | 318 |
 | analytical | F10 | +quoted_speech +quotes | raw | 0.245 | 0.154 | 0.000 | 318 |
-| analytical | F10 | +quoted_speech +quotes | controlled | 0.114 | 0.081 | 0.043 | 318 |
+| analytical | F10 | +quoted_speech +quotes | controlled | 0.114 | 0.081 | 0.042 | 318 |
 | analytical | F11 | +n_chars +vader_pos +nominalisation +n_org | raw | 0.137 | 0.157 | 0.015 | 318 |
 | analytical | F11 | +n_chars +vader_pos +nominalisation +n_org | controlled | 0.030 | 0.057 | 0.591 | 318 |
 | analytical | F12 | +first_pl +future_will +modal | raw | 0.347 | 0.284 | 0.000 | 318 |
 | analytical | F12 | +first_pl +future_will +modal | controlled | 0.269 | 0.232 | 0.000 | 318 |
 | educational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | raw | 0.312 | 0.342 | 0.000 | 318 |
-| educational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | 0.336 | 0.322 | 0.000 | 318 |
+| educational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | 0.335 | 0.322 | 0.000 | 318 |
 | educational | F2 | +has_finite_verb +present_tense +verb_share +past_tense | raw | 0.025 | -0.010 | 0.651 | 318 |
-| educational | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.026 | 0.007 | 0.640 | 318 |
+| educational | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.026 | 0.007 | 0.638 | 318 |
 | educational | F3 | +lead_colon_label +lead_live +colon -entity_first | raw | 0.012 | -0.028 | 0.835 | 318 |
-| educational | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.026 | -0.046 | 0.637 | 318 |
+| educational | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.027 | -0.046 | 0.633 | 318 |
 | educational | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | raw | -0.019 | 0.056 | 0.729 | 318 |
-| educational | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | 0.042 | 0.083 | 0.459 | 318 |
+| educational | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | 0.042 | 0.083 | 0.458 | 318 |
 | educational | F5 | +q_word_start +wh_any +why_marker +q_mark | raw | 0.384 | 0.413 | 0.000 | 318 |
 | educational | F5 | +q_word_start +wh_any +why_marker +q_mark | controlled | 0.362 | 0.397 | 0.000 | 318 |
 | educational | F6 | +n_person +has_person | raw | -0.140 | -0.131 | 0.013 | 318 |
@@ -986,73 +987,73 @@ Full loadings (oblimin; varimax beside):
 | educational | F7 | +noun_share -cap_token_share +adj_share +n_gpe | raw | -0.062 | 0.048 | 0.271 | 318 |
 | educational | F7 | +noun_share -cap_token_share +adj_share +n_gpe | controlled | -0.118 | 0.013 | 0.035 | 318 |
 | educational | F8 | +num_share +digit +year_mention | raw | 0.035 | 0.030 | 0.539 | 318 |
-| educational | F8 | +num_share +digit +year_mention | controlled | -0.040 | 0.004 | 0.476 | 318 |
+| educational | F8 | +num_share +digit +year_mention | controlled | -0.040 | 0.004 | 0.475 | 318 |
 | educational | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | raw | -0.071 | -0.126 | 0.206 | 318 |
-| educational | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | -0.047 | -0.102 | 0.400 | 318 |
+| educational | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | -0.048 | -0.102 | 0.396 | 318 |
 | educational | F10 | +quoted_speech +quotes | raw | 0.158 | 0.069 | 0.005 | 318 |
-| educational | F10 | +quoted_speech +quotes | controlled | 0.082 | 0.044 | 0.145 | 318 |
+| educational | F10 | +quoted_speech +quotes | controlled | 0.082 | 0.044 | 0.144 | 318 |
 | educational | F11 | +n_chars +vader_pos +nominalisation +n_org | raw | 0.058 | 0.088 | 0.307 | 318 |
-| educational | F11 | +n_chars +vader_pos +nominalisation +n_org | controlled | -0.004 | 0.026 | 0.950 | 318 |
+| educational | F11 | +n_chars +vader_pos +nominalisation +n_org | controlled | -0.004 | 0.026 | 0.948 | 318 |
 | educational | F12 | +first_pl +future_will +modal | raw | 0.138 | 0.115 | 0.014 | 318 |
 | educational | F12 | +first_pl +future_will +modal | controlled | 0.102 | 0.091 | 0.069 | 318 |
 | conversational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | raw | 0.166 | 0.180 | 0.003 | 318 |
-| conversational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | 0.140 | 0.174 | 0.012 | 318 |
+| conversational | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | 0.141 | 0.174 | 0.012 | 318 |
 | conversational | F2 | +has_finite_verb +present_tense +verb_share +past_tense | raw | 0.052 | 0.016 | 0.352 | 318 |
 | conversational | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.030 | -0.009 | 0.597 | 318 |
 | conversational | F3 | +lead_colon_label +lead_live +colon -entity_first | raw | -0.094 | -0.079 | 0.095 | 318 |
-| conversational | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.002 | -0.050 | 0.970 | 318 |
+| conversational | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.002 | -0.050 | 0.978 | 318 |
 | conversational | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | raw | 0.174 | 0.620 | 0.002 | 318 |
 | conversational | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | 0.161 | 0.592 | 0.004 | 318 |
 | conversational | F5 | +q_word_start +wh_any +why_marker +q_mark | raw | 0.102 | 0.029 | 0.070 | 318 |
-| conversational | F5 | +q_word_start +wh_any +why_marker +q_mark | controlled | 0.069 | 0.005 | 0.220 | 318 |
+| conversational | F5 | +q_word_start +wh_any +why_marker +q_mark | controlled | 0.069 | 0.005 | 0.219 | 318 |
 | conversational | F6 | +n_person +has_person | raw | -0.135 | -0.158 | 0.016 | 318 |
 | conversational | F6 | +n_person +has_person | controlled | -0.127 | -0.124 | 0.024 | 318 |
 | conversational | F7 | +noun_share -cap_token_share +adj_share +n_gpe | raw | -0.005 | 0.002 | 0.932 | 318 |
-| conversational | F7 | +noun_share -cap_token_share +adj_share +n_gpe | controlled | 0.056 | 0.048 | 0.319 | 318 |
+| conversational | F7 | +noun_share -cap_token_share +adj_share +n_gpe | controlled | 0.056 | 0.048 | 0.318 | 318 |
 | conversational | F8 | +num_share +digit +year_mention | raw | -0.071 | 0.022 | 0.209 | 318 |
-| conversational | F8 | +num_share +digit +year_mention | controlled | -0.018 | 0.018 | 0.747 | 318 |
+| conversational | F8 | +num_share +digit +year_mention | controlled | -0.018 | 0.018 | 0.751 | 318 |
 | conversational | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | raw | 0.001 | -0.015 | 0.984 | 318 |
-| conversational | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | -0.020 | -0.020 | 0.719 | 318 |
+| conversational | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | -0.020 | -0.020 | 0.722 | 318 |
 | conversational | F10 | +quoted_speech +quotes | raw | -0.028 | -0.036 | 0.624 | 318 |
-| conversational | F10 | +quoted_speech +quotes | controlled | 0.003 | -0.008 | 0.952 | 318 |
+| conversational | F10 | +quoted_speech +quotes | controlled | 0.004 | -0.008 | 0.948 | 318 |
 | conversational | F11 | +n_chars +vader_pos +nominalisation +n_org | raw | -0.020 | 0.031 | 0.721 | 318 |
 | conversational | F11 | +n_chars +vader_pos +nominalisation +n_org | controlled | -0.003 | 0.081 | 0.960 | 318 |
 | conversational | F12 | +first_pl +future_will +modal | raw | -0.078 | 0.057 | 0.165 | 318 |
-| conversational | F12 | +first_pl +future_will +modal | controlled | -0.032 | 0.102 | 0.572 | 318 |
+| conversational | F12 | +first_pl +future_will +modal | controlled | -0.032 | 0.102 | 0.573 | 318 |
 | humor | F1 | +vader_compound -vader_neg -shock_word -violence_verb | raw | -0.020 | 0.006 | 0.724 | 318 |
-| humor | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | -0.018 | 0.002 | 0.744 | 318 |
+| humor | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | -0.018 | 0.002 | 0.753 | 318 |
 | humor | F2 | +has_finite_verb +present_tense +verb_share +past_tense | raw | 0.077 | 0.058 | 0.171 | 318 |
-| humor | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.060 | 0.052 | 0.288 | 318 |
+| humor | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.059 | 0.052 | 0.292 | 318 |
 | humor | F3 | +lead_colon_label +lead_live +colon -entity_first | raw | -0.055 | -0.041 | 0.325 | 318 |
-| humor | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.023 | -0.038 | 0.679 | 318 |
+| humor | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.023 | -0.038 | 0.685 | 318 |
 | humor | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | raw | 0.067 | 0.019 | 0.234 | 318 |
 | humor | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | 0.032 | 0.021 | 0.568 | 318 |
 | humor | F5 | +q_word_start +wh_any +why_marker +q_mark | raw | -0.039 | -0.008 | 0.493 | 318 |
 | humor | F5 | +q_word_start +wh_any +why_marker +q_mark | controlled | -0.057 | -0.011 | 0.311 | 318 |
 | humor | F6 | +n_person +has_person | raw | -0.021 | -0.024 | 0.709 | 318 |
-| humor | F6 | +n_person +has_person | controlled | -0.014 | -0.028 | 0.798 | 318 |
+| humor | F6 | +n_person +has_person | controlled | -0.015 | -0.028 | 0.792 | 318 |
 | humor | F7 | +noun_share -cap_token_share +adj_share +n_gpe | raw | 0.060 | 0.077 | 0.289 | 318 |
 | humor | F7 | +noun_share -cap_token_share +adj_share +n_gpe | controlled | 0.079 | 0.092 | 0.161 | 318 |
 | humor | F8 | +num_share +digit +year_mention | raw | -0.026 | -0.015 | 0.646 | 318 |
-| humor | F8 | +num_share +digit +year_mention | controlled | 0.002 | -0.001 | 0.975 | 318 |
+| humor | F8 | +num_share +digit +year_mention | controlled | 0.002 | -0.001 | 0.966 | 318 |
 | humor | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | raw | -0.018 | -0.018 | 0.749 | 318 |
-| humor | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | -0.033 | -0.017 | 0.562 | 318 |
+| humor | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | -0.032 | -0.017 | 0.567 | 318 |
 | humor | F10 | +quoted_speech +quotes | raw | 0.019 | 0.039 | 0.738 | 318 |
-| humor | F10 | +quoted_speech +quotes | controlled | 0.020 | 0.040 | 0.719 | 318 |
+| humor | F10 | +quoted_speech +quotes | controlled | 0.020 | 0.039 | 0.719 | 318 |
 | humor | F11 | +n_chars +vader_pos +nominalisation +n_org | raw | -0.015 | -0.002 | 0.787 | 318 |
 | humor | F11 | +n_chars +vader_pos +nominalisation +n_org | controlled | 0.011 | 0.006 | 0.850 | 318 |
 | humor | F12 | +first_pl +future_will +modal | raw | -0.055 | -0.038 | 0.328 | 318 |
-| humor | F12 | +first_pl +future_will +modal | controlled | -0.007 | -0.008 | 0.902 | 318 |
+| humor | F12 | +first_pl +future_will +modal | controlled | -0.006 | -0.007 | 0.911 | 318 |
 | curiosity_gap | F1 | +vader_compound -vader_neg -shock_word -violence_verb | raw | -0.026 | -0.006 | 0.643 | 318 |
-| curiosity_gap | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | -0.014 | 0.020 | 0.806 | 318 |
+| curiosity_gap | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | -0.014 | 0.021 | 0.808 | 318 |
 | curiosity_gap | F2 | +has_finite_verb +present_tense +verb_share +past_tense | raw | 0.104 | 0.082 | 0.064 | 318 |
 | curiosity_gap | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.062 | 0.039 | 0.268 | 318 |
 | curiosity_gap | F3 | +lead_colon_label +lead_live +colon -entity_first | raw | -0.077 | -0.094 | 0.169 | 318 |
-| curiosity_gap | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.043 | -0.078 | 0.450 | 318 |
+| curiosity_gap | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.042 | -0.078 | 0.455 | 318 |
 | curiosity_gap | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | raw | 0.173 | 0.124 | 0.002 | 318 |
 | curiosity_gap | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | 0.146 | 0.113 | 0.009 | 318 |
 | curiosity_gap | F5 | +q_word_start +wh_any +why_marker +q_mark | raw | 0.138 | 0.036 | 0.014 | 318 |
-| curiosity_gap | F5 | +q_word_start +wh_any +why_marker +q_mark | controlled | 0.131 | 0.026 | 0.020 | 318 |
+| curiosity_gap | F5 | +q_word_start +wh_any +why_marker +q_mark | controlled | 0.130 | 0.026 | 0.020 | 318 |
 | curiosity_gap | F6 | +n_person +has_person | raw | -0.148 | -0.132 | 0.008 | 318 |
 | curiosity_gap | F6 | +n_person +has_person | controlled | -0.164 | -0.144 | 0.003 | 318 |
 | curiosity_gap | F7 | +noun_share -cap_token_share +adj_share +n_gpe | raw | -0.152 | -0.124 | 0.007 | 318 |
@@ -1062,31 +1063,31 @@ Full loadings (oblimin; varimax beside):
 | curiosity_gap | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | raw | 0.173 | 0.045 | 0.002 | 318 |
 | curiosity_gap | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | 0.134 | 0.018 | 0.017 | 318 |
 | curiosity_gap | F10 | +quoted_speech +quotes | raw | -0.063 | -0.054 | 0.260 | 318 |
-| curiosity_gap | F10 | +quoted_speech +quotes | controlled | -0.058 | -0.059 | 0.303 | 318 |
+| curiosity_gap | F10 | +quoted_speech +quotes | controlled | -0.058 | -0.059 | 0.304 | 318 |
 | curiosity_gap | F11 | +n_chars +vader_pos +nominalisation +n_org | raw | -0.143 | -0.125 | 0.011 | 318 |
-| curiosity_gap | F11 | +n_chars +vader_pos +nominalisation +n_org | controlled | -0.086 | -0.082 | 0.128 | 318 |
+| curiosity_gap | F11 | +n_chars +vader_pos +nominalisation +n_org | controlled | -0.086 | -0.082 | 0.127 | 318 |
 | curiosity_gap | F12 | +first_pl +future_will +modal | raw | -0.132 | -0.135 | 0.019 | 318 |
 | curiosity_gap | F12 | +first_pl +future_will +modal | controlled | -0.147 | -0.152 | 0.009 | 318 |
 | outrage | F1 | +vader_compound -vader_neg -shock_word -violence_verb | raw | -0.608 | -0.601 | 0.000 | 318 |
-| outrage | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | -0.513 | -0.511 | 0.000 | 318 |
+| outrage | F1 | +vader_compound -vader_neg -shock_word -violence_verb | controlled | -0.512 | -0.511 | 0.000 | 318 |
 | outrage | F2 | +has_finite_verb +present_tense +verb_share +past_tense | raw | 0.097 | 0.141 | 0.085 | 318 |
-| outrage | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.058 | 0.084 | 0.303 | 318 |
+| outrage | F2 | +has_finite_verb +present_tense +verb_share +past_tense | controlled | 0.058 | 0.084 | 0.299 | 318 |
 | outrage | F3 | +lead_colon_label +lead_live +colon -entity_first | raw | -0.182 | -0.152 | 0.001 | 318 |
 | outrage | F3 | +lead_colon_label +lead_live +colon -entity_first | controlled | -0.090 | -0.091 | 0.110 | 318 |
 | outrage | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | raw | 0.098 | -0.011 | 0.080 | 318 |
-| outrage | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | -0.032 | -0.051 | 0.575 | 318 |
+| outrage | F4 | +trailing_ellipsis +discourse_marker +ellipsis +contraction | controlled | -0.032 | -0.051 | 0.573 | 318 |
 | outrage | F5 | +q_word_start +wh_any +why_marker +q_mark | raw | -0.243 | -0.241 | 0.000 | 318 |
 | outrage | F5 | +q_word_start +wh_any +why_marker +q_mark | controlled | -0.241 | -0.238 | 0.000 | 318 |
 | outrage | F6 | +n_person +has_person | raw | -0.002 | 0.012 | 0.978 | 318 |
-| outrage | F6 | +n_person +has_person | controlled | 0.006 | 0.024 | 0.912 | 318 |
+| outrage | F6 | +n_person +has_person | controlled | 0.006 | 0.024 | 0.913 | 318 |
 | outrage | F7 | +noun_share -cap_token_share +adj_share +n_gpe | raw | -0.067 | -0.199 | 0.231 | 318 |
 | outrage | F7 | +noun_share -cap_token_share +adj_share +n_gpe | controlled | -0.093 | -0.187 | 0.098 | 318 |
 | outrage | F8 | +num_share +digit +year_mention | raw | -0.224 | -0.187 | 0.000 | 318 |
-| outrage | F8 | +num_share +digit +year_mention | controlled | -0.101 | -0.131 | 0.074 | 318 |
+| outrage | F8 | +num_share +digit +year_mention | controlled | -0.100 | -0.131 | 0.074 | 318 |
 | outrage | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | raw | 0.209 | 0.280 | 0.000 | 318 |
 | outrage | F9 | +allcaps_word_share +full_caps_title +has_allcaps_word | controlled | 0.177 | 0.247 | 0.002 | 318 |
 | outrage | F10 | +quoted_speech +quotes | raw | -0.069 | -0.003 | 0.223 | 318 |
-| outrage | F10 | +quoted_speech +quotes | controlled | -0.087 | -0.016 | 0.122 | 318 |
+| outrage | F10 | +quoted_speech +quotes | controlled | -0.087 | -0.016 | 0.121 | 318 |
 | outrage | F11 | +n_chars +vader_pos +nominalisation +n_org | raw | -0.005 | 0.016 | 0.926 | 318 |
 | outrage | F11 | +n_chars +vader_pos +nominalisation +n_org | controlled | 0.066 | 0.072 | 0.238 | 318 |
 | outrage | F12 | +first_pl +future_will +modal | raw | -0.168 | -0.111 | 0.003 | 318 |
@@ -1224,14 +1225,14 @@ Titles:
 
 | level | text | max_rank | zipf_exponent | ranks_used | n_titles | n_tokens | n_types | top_20 |
 |---|---|---|---|---|---|---|---|---|
-| pooled_balanced | raw | 100 | 0.8573 | 100 | 183083 | 1999165 | 54552 | the trump to in on of iran s live is and as for a with us war after at news |
-| pooled_balanced | raw | 1000 | 0.7813 | 1000 | 183083 | 1999165 | 54552 | the trump to in on of iran s live is and as for a with us war after at news |
-| pooled_balanced | raw | 5000 | 1.0212 | 5000 | 183083 | 1999165 | 54552 | the trump to in on of iran s live is and as for a with us war after at news |
-| pooled_balanced | normalised | 100 | 0.8636 | 100 | 183083 | 1943465 | 52809 | the trump to in on of iran s live is and as for a with us war after at over |
-| pooled_balanced | normalised | 1000 | 0.7845 | 1000 | 183083 | 1943465 | 52809 | the trump to in on of iran s live is and as for a with us war after at over |
-| pooled_balanced | normalised | 5000 | 1.0151 | 5000 | 183083 | 1943465 | 52809 | the trump to in on of iran s live is and as for a with us war after at over |
-| creator_level_mean | raw | 200 | 0.7972 | 200 | 180878 | 1977690 | 483657 | median 0.7962 over 313 creator x genre groups (>= 50 titles) |
-| creator_level_mean | normalised | 200 | 0.7806 | 200 | 180878 | 1923441 | 479933 | median 0.7826 over 313 creator x genre groups (>= 50 titles) |
+| pooled_balanced | raw | 100 | 0.8573 | 100 | 183190 | 2000377 | 54559 | the trump to in on of iran s live is and as for a with us war after at news |
+| pooled_balanced | raw | 1000 | 0.7813 | 1000 | 183190 | 2000377 | 54559 | the trump to in on of iran s live is and as for a with us war after at news |
+| pooled_balanced | raw | 5000 | 1.0212 | 5000 | 183190 | 2000377 | 54559 | the trump to in on of iran s live is and as for a with us war after at news |
+| pooled_balanced | normalised | 100 | 0.8635 | 100 | 183190 | 1944677 | 52816 | the trump to in on of iran s live is and as for a with us war after at over |
+| pooled_balanced | normalised | 1000 | 0.7845 | 1000 | 183190 | 1944677 | 52816 | the trump to in on of iran s live is and as for a with us war after at over |
+| pooled_balanced | normalised | 5000 | 1.0152 | 5000 | 183190 | 1944677 | 52816 | the trump to in on of iran s live is and as for a with us war after at over |
+| creator_level_mean | raw | 200 | 0.7968 | 200 | 180984 | 1978892 | 484155 | median 0.7955 over 314 creator x genre groups (>= 50 titles) |
+| creator_level_mean | normalised | 200 | 0.7802 | 200 | 180984 | 1924643 | 480431 | median 0.7822 over 314 creator x genre groups (>= 50 titles) |
 
 
 ## Sample sizes
@@ -1462,6 +1463,8 @@ Titles:
 | @SavSays | streams | 1 | 1 | 1 | 0 | 0.000 | yes |
 | @SavSays | videos | 16 | 16 | 16 | 16 | 0.000 | yes |
 | @SecondThought | videos | 19 | 19 | 19 | 19 | 0.000 | yes |
+| @SecretScholars | streams | 1 | 1 | 1 | 1 | 0.000 | yes |
+| @SecretScholars | videos | 106 | 106 | 106 | 106 | 0.000 | no |
 | @SecularTalk | streams | 1 | 1 | 1 | 1 | 0.000 | yes |
 | @SecularTalk | videos | 1375 | 1374 | 1374 | 1375 | 0.001 | no |
 | @Semafor | streams | 30 | 30 | 30 | 30 | 0.000 | yes |
@@ -1684,27 +1687,31 @@ Titles:
 
 | stage | seconds_last_run | seconds_longest_run | finished | llm_calls | output_tokens | api_cost_usd | notes |
 |---|---|---|---|---|---|---|---|
-| stage0_prepare | 30.7 | 34.4 | 2026-09-22T14:11:00+00:00 |  |  |  | min_share=0.2, min_count=10, rows=309596, unique=300420, balanced=189240, low_n_groups=124 |
-| stage0c_annotate | 11.4 | 108.8 | 2026-09-22T14:14:20+00:00 |  |  |  | titles=292688, all_caps=11192, proper_lexicon=11667, acronyms=956 |
-| stage1a_embed | 6.0 | 289.2 | 2026-09-22T14:14:30+00:00 |  |  |  | device=mps, n=292688, dim=768 |
+| stage0_prepare | 31.5 | 34.4 | 2026-09-24T14:44:59+00:00 |  |  |  | min_share=0.2, min_count=10, rows=309596, unique=300420, balanced=189240, low_n_groups=124 |
+| stage0c_annotate | 9.4 | 108.8 | 2026-09-24T14:46:11+00:00 |  |  |  | titles=292688, all_caps=11192, proper_lexicon=11667, acronyms=956 |
+| stage1a_embed | 4.4 | 289.2 | 2026-09-24T14:46:18+00:00 |  |  |  | device=mps, n=292688, dim=768 |
 | stage2c_llm_rate | 6265.5 | 6265.5 | 2026-09-14T22:35:38+00:00 | 172 | 69430 | 0.0 | temperature=0.0, prompt_id=title-style-v3, cache_hits=2, llm_seconds=6264.3, n_rated=3000, flag_coercions=0... |
-| stage2a_features | 66.8 | 353.2 | 2026-09-22T14:25:53+00:00 |  |  |  |  |
-| stage1_topics | 616.5 | 6343.9 | 2026-09-22T14:24:46+00:00 | 224 | 5706 | 0.0 | fit_size=100000, min_cluster_size=80, min_samples=15, max_topics=250, fit_n=100041, fit_cap=561, hdbscan_to... |
-| stage2b_factors | 2.2 | 2.5 | 2026-09-22T14:25:55+00:00 |  |  |  | n_factors_forced=None, n_cells=2029, n_features=74, retained=12, parallel=16, kmo=0.725 |
-| stage2d_validate | 0.7 | 0.7 | 2026-09-22T14:27:26+00:00 |  |  |  | n_rated_matched=2854, n_creator_groups=318, n_retest=289 |
-| stage3_formats | 13.5 | 13.5 | 2026-09-22T14:27:39+00:00 |  |  |  | curiosity_gap_holdout_f1=0.1379, outrage_holdout_f1=0.8061, humor_holdout_f1=0.6667 |
-| stage4_landscape | 22.9 | 26.2 | 2026-09-22T14:28:02+00:00 |  |  |  | crossposted_titles=2237, cluster_runs=4, shared_titles_any=1575, shared_titles_cross_org=474, shared_titles... |
-| stage5a_timeline | 1.0 | 1.4 | 2026-09-22T14:28:03+00:00 |  |  |  | group_month_rows=54, top30=30, topic_change_rows=1667 |
-| stage5b_engagement | 5.7 | 9.4 | 2026-09-22T14:28:55+00:00 |  |  |  | creator_genre_models=252 |
-| stage5c_hits | 25.8 | 28.9 | 2026-09-22T14:29:21+00:00 |  |  |  | groups=252, powerlaw_like=1 |
-| report_data | 2.9 | 3.2 | 2026-09-22T14:35:37+00:00 |  |  |  | creators=274 |
-| report | 15.7 | 24.6 | 2026-09-22T14:30:02+00:00 |  |  |  | cards=274 |
-| stage6_profiles | 28.5 | 28.5 | 2026-09-22T14:35:32+00:00 |  |  |  | acronyms=938, twin_pairs=9000 |
-| stage7_leaning | 5.8 | 8120.7 | 2026-09-22T14:13:55+00:00 |  |  | subscription (claude -p); see reported_cost_usd | backend=claude-code, prompt_id=leaning-v1, batch_order=shuffled, llm_seconds=8111.8, reported_cost_usd=56.5... |
-| allotax | 6.2 | 11.9 | 2026-09-22T14:35:52+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
+| stage2a_features | 62.0 | 353.2 | 2026-09-24T14:47:33+00:00 |  |  |  |  |
+| stage1_topics | 13.3 | 6343.9 | 2026-09-24T14:46:31+00:00 | 1 | 26 | 0.0 | fit_size=100000, min_cluster_size=80, min_samples=15, max_topics=250, fit_n=100041, fit_cap=561, hdbscan_to... |
+| stage2b_factors | 2.2 | 2.5 | 2026-09-24T14:47:35+00:00 |  |  |  | n_factors_forced=None, n_cells=2029, n_features=74, retained=12, parallel=16, kmo=0.725 |
+| stage2d_validate | 0.2 | 0.7 | 2026-09-24T14:47:36+00:00 |  |  |  | n_rated_matched=2854, n_creator_groups=318, n_retest=289 |
+| stage3_formats | 12.3 | 13.5 | 2026-09-24T14:47:48+00:00 |  |  |  | curiosity_gap_holdout_f1=0.1379, outrage_holdout_f1=0.8061, humor_holdout_f1=0.6667 |
+| stage4_landscape | 23.1 | 26.2 | 2026-09-24T14:48:11+00:00 |  |  |  | crossposted_titles=2237, cluster_runs=4, shared_titles_any=1575, shared_titles_cross_org=474, shared_titles... |
+| stage5a_timeline | 1.0 | 1.4 | 2026-09-24T14:48:12+00:00 |  |  |  | group_month_rows=54, top30=30, topic_change_rows=1667 |
+| stage5b_engagement | 5.4 | 9.4 | 2026-09-24T14:48:17+00:00 |  |  |  | creator_genre_models=252 |
+| stage5c_hits | 26.2 | 28.9 | 2026-09-24T14:48:43+00:00 |  |  |  | groups=252, powerlaw_like=1 |
+| report_data | 3.0 | 3.2 | 2026-09-24T14:52:23+00:00 |  |  |  | creators=274 |
+| report | 14.9 | 24.6 | 2026-09-22T14:35:52+00:00 |  |  |  | cards=274 |
+| stage6_profiles | 29.5 | 29.5 | 2026-09-24T14:49:13+00:00 |  |  |  | acronyms=939, twin_pairs=9100 |
+| stage7_leaning | 62.2 | 8120.7 | 2026-09-24T14:46:02+00:00 | 3 | 3938 | subscription (claude -p); see reported_cost_usd | backend=claude-code, prompt_id=leaning-v1, batch_order=shuffled, llm_seconds=8111.8, reported_cost_usd=56.5... |
+| allotax | 7.2 | 11.9 | 2026-09-24T14:52:39+00:00 |  |  |  | alpha=0.3333, top_n=40, figures=5 |
 | leaning_lexicon | 1.7 | 1.7 | 2026-09-15T18:52:59+00:00 |  |  |  | cutoff=1.96 |
-| stage0b_creators | 0.3 | 0.3 | 2026-09-17T19:05:21+00:00 |  |  |  |  |
-| stage6b_zipf_views | 2.3 | 2.7 | 2026-09-22T14:35:35+00:00 |  |  |  | zipf_systems=13, views_rows=244079 |
+| stage0b_creators | 0.3 | 0.3 | 2026-09-24T14:44:59+00:00 |  |  |  | mode=append |
+| stage6b_zipf_views | 2.3 | 2.7 | 2026-09-24T14:52:20+00:00 |  |  |  | zipf_systems=13, views_rows=244079 |
+| stage6c_year | 51.5 | 51.5 | 2026-09-24T14:50:04+00:00 |  |  |  | unique_titles=285013, channels=275, vocab=400, bigrams=88, months=9, weeks=38, spikes=40 |
+| associations | 133.5 | 133.5 | 2026-09-24T14:52:18+00:00 |  |  |  | titles=277545, vocab=3670 |
+| associations_battery | 3183.6 | 3183.6 | 2026-09-23T17:58:19+00:00 |  |  |  | titles=277438, vocab=3665 |
+| associations_audience | 9.8 | 9.8 | 2026-09-24T14:10:31+00:00 |  |  |  |  |
 
 
 ## Environment

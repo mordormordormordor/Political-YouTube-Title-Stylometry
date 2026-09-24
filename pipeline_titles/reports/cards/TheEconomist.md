@@ -13,24 +13,24 @@ Top topics: AI and Political Implications (13.9%); Iran political unrest (6.9%);
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 81.8 | 76.7 | 0.7 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 81.9 | 76.8 | 0.7 | 0.1 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 96.6 | 92.8 | 1.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 29.7 | 48.7 | -0.4 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 30.0 | 48.9 | -0.4 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 5.5 | 4.2 | -0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 100.0 | 100.0 | 4.7 | 0.1 |
-| F6: Person-centred (named people) | 8.1 | 11.4 | -0.9 | -0.2 |
+| F6: Person-centred (named people) | 8.0 | 11.4 | -0.9 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 90.7 | 92.4 | 0.8 | -0.5 |
 | F8: Numeric and dated (digits, years) | 0.8 | 3.4 | -0.9 | -0.2 |
-| F9: ALL-CAPS shouting | 74.6 | 73.7 | 0.1 | -0.3 |
-| F10: Quoted speech | 25.0 | 48.7 | -0.7 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 14.4 | 27.1 | -0.9 | -0.3 |
+| F9: ALL-CAPS shouting | 74.7 | 73.8 | 0.1 | -0.3 |
+| F10: Quoted speech | 24.9 | 48.5 | -0.7 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 14.3 | 27.0 | -0.9 | -0.3 |
 | F12: +first_pl +future_will +modal | 98.7 | 98.7 | 1.6 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 6.9% (3.6%); outrage 32.3% (63.9%); humor 0.0% (0.2%); question 76.9% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 6.9% (9.8%); reaction 0.8% (2.9%); confrontation 0.0% (7.7%); listicle 0.0% (0.1%); howto_explainer 21.5% (8.0%)
 
 
-Nearest style neighbors: @Vox [left]; @nationalreview [right]; @TheDailyBeast [left]; @BBCNews [neutral]; @GeopoliticalEconomyReport [left]
+Nearest style neighbors: @Vox [left]; @nationalreview [right]; @TheDailyBeast [left]; @GeopoliticalEconomyReport [left]; @BBCNews [neutral]
 
 Nearest topic neighbors: @markets [neutral]; @Reuters [neutral]; @UnHerd [left]; @RedactedNews [right]; @GeopoliticalEconomyReport [left]
 

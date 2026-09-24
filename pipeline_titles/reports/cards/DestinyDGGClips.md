@@ -13,21 +13,21 @@ Top topics: Hasan Piker Controversy (20.9%); Destiny and Ethan Klein legal dispu
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.2 | 38.1 | -0.2 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 94.5 | 91.9 | 1.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.3 | 52.5 | -0.0 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.5 | 38.4 | -0.2 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 94.5 | 92.0 | 1.0 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.8 | 52.7 | -0.0 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 97.5 | 96.6 | 1.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 57.2 | 57.2 | 0.2 | 0.2 |
-| F6: Person-centred (named people) | 28.8 | 41.5 | -0.5 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 19.1 | 8.1 | -0.9 | -0.7 |
-| F8: Numeric and dated (digits, years) | 38.1 | 15.3 | -0.2 | -0.1 |
-| F9: ALL-CAPS shouting | 53.8 | 74.2 | -0.3 | -0.3 |
-| F10: Quoted speech | 58.1 | 28.8 | -0.2 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 36.4 | 14.8 | -0.5 | -0.2 |
-| F12: +first_pl +future_will +modal | 37.3 | 6.4 | -0.3 | -0.3 |
+| F5: Question and explainer framing (why, what, ?) | 56.5 | 57.4 | 0.2 | 0.2 |
+| F6: Person-centred (named people) | 28.7 | 41.4 | -0.6 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 18.6 | 8.0 | -0.9 | -0.6 |
+| F8: Numeric and dated (digits, years) | 38.0 | 15.2 | -0.2 | -0.1 |
+| F9: ALL-CAPS shouting | 54.9 | 74.3 | -0.3 | -0.3 |
+| F10: Quoted speech | 58.2 | 28.7 | -0.2 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 35.9 | 14.8 | -0.5 | -0.2 |
+| F12: +first_pl +future_will +modal | 37.6 | 6.8 | -0.3 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 10.5% (4.8%); outrage 64.4% (59.8%); humor 0.0% (0.2%); question 14.1% (15.3%); breaking_live 0.5% (2.0%); episode_show 0.0% (7.5%); interview_guest 12.0% (7.7%); reaction 4.2% (2.2%); confrontation 14.7% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.6% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 10.5% (4.8%); outrage 64.4% (60.1%); humor 0.0% (0.2%); question 14.1% (15.2%); breaking_live 0.5% (2.0%); episode_show 0.0% (7.4%); interview_guest 12.0% (7.8%); reaction 4.2% (2.2%); confrontation 14.7% (8.2%); listicle 0.0% (0.1%); howto_explainer 2.6% (9.3%)
 
 
 Nearest style neighbors: @OfficialSaharTV [right]; @CamHigby [right]; @glennbeck [right]; @MattWalsh [right]; @RileyGaines [right]
@@ -39,11 +39,11 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 31 | -0.42 | 0.28 | -0.29 | 0.61 | -0.06 | -0.42 | -0.51 | -0.08 | -0.21 | -0.12 | -0.34 | -0.11 | 0.03 | 0.48 | 0.00 |
-| 2026-02 | 34 | -0.36 | 0.94 | -0.06 | 0.73 | 0.19 | -0.31 | -0.60 | -0.54 | -0.43 | -0.39 | -0.71 | -0.74 | 0.06 | 0.71 | 0.00 |
-| 2026-06 | 30 | -0.22 | 1.35 | 0.20 | 0.79 | -0.03 | -1.12 | -1.70 | -0.33 | -0.01 | -0.26 | -0.84 | -0.22 | 0.13 | 0.70 | 0.00 |
-| 2026-07 | 34 | -0.10 | 0.81 | -0.06 | 1.51 | -0.05 | -0.91 | -0.84 | -0.10 | -0.76 | -0.21 | -0.54 | -0.09 | 0.21 | 0.74 | 0.00 |
-| 2026-08 | 37 | 0.01 | 1.67 | 0.01 | 1.24 | 0.53 | -0.05 | -1.13 | -0.20 | 0.08 | -0.19 | -0.46 | -0.28 | 0.05 | 0.59 | 0.00 |
+| 2026-01 | 31 | -0.41 | 0.27 | -0.29 | 0.61 | -0.06 | -0.43 | -0.51 | -0.08 | -0.20 | -0.12 | -0.35 | -0.10 | 0.03 | 0.48 | 0.00 |
+| 2026-02 | 34 | -0.36 | 0.93 | -0.06 | 0.74 | 0.18 | -0.32 | -0.60 | -0.54 | -0.42 | -0.40 | -0.71 | -0.74 | 0.06 | 0.71 | 0.00 |
+| 2026-06 | 30 | -0.22 | 1.34 | 0.20 | 0.79 | -0.03 | -1.12 | -1.70 | -0.33 | -0.00 | -0.26 | -0.84 | -0.21 | 0.13 | 0.70 | 0.00 |
+| 2026-07 | 34 | -0.09 | 0.80 | -0.06 | 1.51 | -0.05 | -0.91 | -0.84 | -0.10 | -0.75 | -0.21 | -0.54 | -0.09 | 0.21 | 0.74 | 0.00 |
+| 2026-08 | 37 | 0.02 | 1.66 | 0.02 | 1.24 | 0.52 | -0.06 | -1.14 | -0.20 | 0.08 | -0.19 | -0.46 | -0.27 | 0.05 | 0.59 | 0.00 |
 
 
 Engagement (n = 191, R2 = 0.2886; log views per within-creator SD, month + topic controls):

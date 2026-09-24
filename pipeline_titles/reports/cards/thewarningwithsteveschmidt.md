@@ -13,16 +13,16 @@ Top topics: Trump's Unthinkable Actions (23.4%); Trump's Mental Decline (12.8%);
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 91.9 | 71.6 | 0.8 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 92.0 | 71.7 | 0.8 | 0.1 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 96.2 | 96.2 | 1.1 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 1.3 | 0.4 | -0.8 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 0.4 | 1.7 | -0.9 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 61.0 | 58.1 | 0.4 | 0.1 |
-| F6: Person-centred (named people) | 80.1 | 67.8 | 0.4 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 6.4 | 2.1 | -1.2 | -0.5 |
+| F5: Question and explainer framing (why, what, ?) | 61.2 | 58.2 | 0.4 | 0.1 |
+| F6: Person-centred (named people) | 80.2 | 67.5 | 0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 6.3 | 2.1 | -1.2 | -0.5 |
 | F8: Numeric and dated (digits, years) | 4.2 | 0.4 | -0.7 | -0.2 |
-| F9: ALL-CAPS shouting | 11.4 | 45.8 | -0.8 | -0.3 |
-| F10: Quoted speech | 31.4 | 7.2 | -0.6 | -0.4 |
+| F9: ALL-CAPS shouting | 11.8 | 46.0 | -0.8 | -0.3 |
+| F10: Quoted speech | 31.2 | 7.2 | -0.6 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 1.3 | 1.7 | -1.8 | -0.3 |
 | F12: +first_pl +future_will +modal | 100.0 | 99.2 | 2.5 | -0.1 |
 
@@ -30,7 +30,7 @@ Top topics: Trump's Unthinkable Actions (23.4%); Trump's Mental Decline (12.8%);
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.4% (3.6%); outrage 89.7% (63.9%); humor 0.0% (0.2%); question 7.0% (15.6%); breaking_live 0.0% (2.9%); episode_show 0.0% (2.8%); interview_guest 1.5% (9.8%); reaction 1.5% (2.9%); confrontation 1.8% (7.7%); listicle 0.0% (0.1%); howto_explainer 9.5% (8.0%)
 
 
-Nearest style neighbors: @LeverNews [left]; @franifio [left]; @bbrettcooper [right]; @bulwarkmedia [left]; @UnHerd [left]
+Nearest style neighbors: @LeverNews [left]; @bbrettcooper [right]; @franifio [left]; @bulwarkmedia [left]; @UnHerd [left]
 
 Nearest topic neighbors: @thedavidpakmanshow [left]; @FarronBalanced [left]; @adammockler [left]; @harryjsisson [left]; @TheMichaelCohenShow [left]
 

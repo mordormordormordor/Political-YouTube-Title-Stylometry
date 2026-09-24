@@ -1,6 +1,6 @@
 # Political YouTube Title Stylometry
 
-How 274 political-media creators (269 YouTube channels, 5 Rumble channels) title their
+How 275 political-media creators (270 YouTube channels, 5 Rumble channels) title their
 videos: every title they published between 2026-01-01 and 2026-09-14 (309,596 titles),
 described along data-driven style dimensions, controlled for topic, clustered into a
 landscape, tracked month by month, and tested against views.
@@ -38,7 +38,7 @@ Five answer a question of their own, each with its method and limitations:
 14. [Political leaning from titles](pipeline_titles/reports/14_political_leaning.md): two
     levels. Titles: a frontier model labels 12,478 titles left / right / neither from the title
     text alone, and the vocabulary of each label is analyzed (allotaxonographs, log-odds, a
-    lexicon check). Channels: each channel's score from its sampled titles sorts the 274
+    lexicon check). Channels: each channel's score from its sampled titles sorts the 275
     channels into left, neutral and right groups, whose whole output is then compared
 
 - `pipeline_titles/reports/all_tables.md`: the reference dump of every table in one file.

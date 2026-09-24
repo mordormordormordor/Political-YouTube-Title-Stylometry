@@ -13,17 +13,17 @@ Top topics: Democratic Party and Midterm Elections (9.6%); American History and 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 46.2 | 45.8 | 0.1 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 70.3 | 67.8 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 85.2 | 84.7 | -0.0 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 67.8 | 61.4 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 89.0 | 86.4 | 1.4 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 46.4 | 46.0 | 0.1 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 70.5 | 67.5 | 0.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 85.2 | 84.8 | -0.0 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 67.9 | 61.6 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 89.0 | 86.5 | 1.4 | 0.1 |
 | F6: Person-centred (named people) | 97.5 | 94.1 | 1.4 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 32.2 | 45.3 | -0.8 | -0.5 |
-| F8: Numeric and dated (digits, years) | 93.6 | 93.2 | 0.5 | -0.2 |
-| F9: ALL-CAPS shouting | 16.5 | 17.8 | -0.7 | -0.3 |
-| F10: Quoted speech | 80.1 | 77.1 | 0.2 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 88.1 | 88.1 | 0.5 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 32.1 | 45.1 | -0.8 | -0.5 |
+| F8: Numeric and dated (digits, years) | 93.7 | 93.2 | 0.5 | -0.2 |
+| F9: ALL-CAPS shouting | 16.9 | 18.1 | -0.7 | -0.3 |
+| F10: Quoted speech | 80.2 | 77.2 | 0.2 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 88.2 | 88.2 | 0.5 | -0.3 |
 | F12: +first_pl +future_will +modal | 94.9 | 90.7 | 0.7 | -0.1 |
 
 

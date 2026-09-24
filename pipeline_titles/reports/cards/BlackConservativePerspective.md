@@ -13,21 +13,21 @@ Top topics: Media Culture War Involving CNN and CBS (13.0%); Black America and R
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 0.8 | 0.8 | -2.3 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 68.2 | 68.6 | 0.3 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 62.7 | 37.3 | -0.2 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 0.8 | 0.8 | -2.2 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 67.9 | 68.4 | 0.3 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 62.9 | 37.6 | -0.2 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 16.5 | 11.0 | -0.3 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 1.3 | 1.3 | -0.8 | 0.2 |
-| F6: Person-centred (named people) | 70.3 | 70.8 | 0.1 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 82.2 | 81.8 | 0.1 | -0.7 |
-| F8: Numeric and dated (digits, years) | 36.9 | 36.4 | -0.3 | -0.1 |
-| F9: ALL-CAPS shouting | 94.1 | 91.9 | 1.8 | -0.3 |
-| F10: Quoted speech | 32.6 | 44.9 | -0.6 | -0.4 |
+| F6: Person-centred (named people) | 70.0 | 70.5 | 0.1 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 82.3 | 81.9 | 0.1 | -0.6 |
+| F8: Numeric and dated (digits, years) | 36.7 | 36.7 | -0.3 | -0.1 |
+| F9: ALL-CAPS shouting | 94.1 | 92.0 | 1.8 | -0.3 |
+| F10: Quoted speech | 32.5 | 44.7 | -0.6 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 99.2 | 98.3 | 1.6 | -0.2 |
-| F12: +first_pl +future_will +modal | 29.7 | 28.8 | -0.4 | -0.3 |
+| F12: +first_pl +future_will +modal | 30.0 | 29.1 | -0.4 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.9% (4.8%); outrage 99.3% (59.8%); humor 0.2% (0.2%); question 0.1% (15.3%); breaking_live 0.2% (2.0%); episode_show 0.0% (7.5%); interview_guest 11.7% (7.7%); reaction 0.4% (2.2%); confrontation 19.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 2.5% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.9% (4.8%); outrage 99.3% (60.1%); humor 0.2% (0.2%); question 0.1% (15.2%); breaking_live 0.2% (2.0%); episode_show 0.0% (7.4%); interview_guest 11.7% (7.8%); reaction 0.4% (2.2%); confrontation 19.0% (8.2%); listicle 0.0% (0.1%); howto_explainer 2.5% (9.3%)
 
 
 Nearest style neighbors: @katiephangnews [left]; @TheOfficerTatum [right]; @MeidasTouch [left]; @LegalAFMTN [left]; @SecularTalk [left]
@@ -39,14 +39,14 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 141 | -2.15 | 0.00 | -0.44 | -0.41 | -0.82 | 0.16 | 0.02 | -0.29 | 2.01 | -0.54 | 1.65 | -0.66 | 0.02 | 1.00 | 0.00 |
+| 2026-01 | 141 | -2.15 | 0.00 | -0.44 | -0.41 | -0.82 | 0.16 | 0.02 | -0.29 | 2.01 | -0.54 | 1.65 | -0.65 | 0.02 | 1.00 | 0.00 |
 | 2026-02 | 130 | -2.38 | 0.17 | -0.24 | -0.39 | -0.74 | 0.10 | 0.07 | -0.18 | 1.55 | -0.62 | 1.46 | -0.35 | 0.02 | 1.00 | 0.00 |
-| 2026-03 | 145 | -2.29 | 0.51 | -0.28 | -0.37 | -0.80 | 0.14 | 0.29 | -0.21 | 1.75 | -0.61 | 1.47 | -0.40 | 0.00 | 0.99 | 0.00 |
+| 2026-03 | 145 | -2.29 | 0.51 | -0.28 | -0.37 | -0.80 | 0.14 | 0.29 | -0.21 | 1.75 | -0.61 | 1.47 | -0.39 | 0.00 | 0.99 | 0.00 |
 | 2026-04 | 143 | -2.41 | 0.25 | -0.26 | -0.36 | -0.86 | 0.01 | 0.10 | -0.25 | 1.91 | -0.45 | 1.35 | -0.12 | 0.01 | 0.99 | 0.01 |
-| 2026-05 | 142 | -1.97 | 0.28 | -0.15 | -0.31 | -0.84 | -0.05 | 0.25 | -0.28 | 2.02 | -0.57 | 1.74 | -0.56 | 0.01 | 0.97 | 0.00 |
-| 2026-06 | 134 | -2.15 | 0.64 | -0.22 | -0.30 | -0.81 | 0.47 | 0.04 | -0.31 | 1.33 | -0.59 | 1.66 | -0.25 | 0.00 | 1.00 | 0.00 |
+| 2026-05 | 142 | -1.96 | 0.28 | -0.15 | -0.31 | -0.84 | -0.05 | 0.25 | -0.28 | 2.03 | -0.57 | 1.74 | -0.56 | 0.01 | 0.97 | 0.00 |
+| 2026-06 | 134 | -2.14 | 0.64 | -0.22 | -0.30 | -0.81 | 0.47 | 0.04 | -0.31 | 1.33 | -0.59 | 1.66 | -0.25 | 0.00 | 1.00 | 0.00 |
 | 2026-07 | 145 | -2.21 | 0.52 | -0.26 | -0.29 | -0.81 | 0.20 | 0.17 | -0.21 | 1.92 | -0.58 | 1.49 | -0.17 | 0.01 | 0.99 | 0.00 |
-| 2026-08 | 148 | -2.42 | 0.23 | -0.15 | -0.30 | -0.71 | -0.01 | 0.18 | -0.37 | 1.73 | -0.57 | 1.69 | -0.67 | 0.00 | 0.99 | 0.00 |
+| 2026-08 | 148 | -2.42 | 0.24 | -0.15 | -0.30 | -0.71 | -0.01 | 0.18 | -0.37 | 1.73 | -0.57 | 1.69 | -0.67 | 0.00 | 0.99 | 0.00 |
 | 2026-09* | 64 | -2.31 | 0.59 | -0.14 | -0.08 | -0.69 | -0.06 | -0.03 | -0.21 | 1.55 | -0.50 | 1.43 | 0.06 | 0.00 | 1.00 | 0.02 |
 
 

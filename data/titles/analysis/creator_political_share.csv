@@ -223,6 +223,8 @@ creator,genre,n_unique,political_share,weak_share,group,organisation,clipper
 @SavSays,streams,1,1.0,1.0,right,Sav Says,False
 @SavSays,videos,16,1.0,0.1875,right,Sav Says,False
 @SecondThought,videos,19,1.0,0.15789473684210525,left,Second Thought,False
+@SecretScholars,streams,1,1.0,0.0,right,@SecretScholars,False
+@SecretScholars,videos,106,0.9528301886792453,0.0660377358490566,right,@SecretScholars,False
 @SecularTalk,streams,1,1.0,0.0,left,Kyle Kulinski,False
 @SecularTalk,videos,1374,0.9854439592430859,0.039301310043668124,left,Kyle Kulinski,False
 @Semafor,streams,30,0.5333333333333333,0.2,neutral,Semafor,False

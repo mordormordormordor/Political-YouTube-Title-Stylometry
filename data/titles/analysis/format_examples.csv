@@ -1,15 +1,15 @@
 category,scope,creator,title
-question,corpus,@CNN,Can Dems take the Senate even without Maine?
-question,corpus,@FoxNewsChannelClips,Will Cain: Where will Gov. Walz go next with his analogies?
-question,corpus,@bulwarkmedia,The Next Level LIVE: Texas Primary Results! Megyn Kelly Turns on Trump?!
-question,left,@CNN,Can Dems take the Senate even without Maine?
-question,left,@bulwarkmedia,The Next Level LIVE: Texas Primary Results! Megyn Kelly Turns on Trump?!
-question,left,@msnow,Should Democrats feel confident ahead of the midterms? 
-question,neutral,@BBCNews,What's life like inside Ukraine after four years of war? | The Global Story Podcast
-question,neutral,@TimesNowWorld,GERMANY UNDER THREAT? Ukraine Offers Help as Russian Drone Amid Sabotage Fear  | Times Now World
-question,neutral,@NewsNation,Why the Lindsay Clancy trial is sparking division among women
-question,right,@FoxNewsChannelClips,Will Cain: Where will Gov. Walz go next with his analogies?
-question,right,@nationalreview,Why Does Sunny Hostin Think Ancient Greece Was African?
+question,corpus,@timesofindia,"Trump's Greenland Threat Backfires? EU Boss VDL Warns 'Tariffs A Mistake', Signals De-dollarisation"
+question,corpus,@judgingfreedom,Aaron Maté  :  Will Trump Sacrifice the Gulf States?
+question,corpus,@theisabelbrown,"Is Evie’s New Magazine A S*x “Issue?” I’m Here For It, TBH"
+question,left,@timesofindia,"Trump's Greenland Threat Backfires? EU Boss VDL Warns 'Tariffs A Mistake', Signals De-dollarisation"
+question,left,@judgingfreedom,Aaron Maté  :  Will Trump Sacrifice the Gulf States?
+question,left,@JamarlThomas,"306 | US Iran Dangerous Escalation Trap, Iran Unbowed. IS US Blockade Really An Attack On China?"
+question,neutral,@NewsNation,How AI is helping advance students' education as push to include it in schools increases | The Hill
+question,neutral,@Forbes,How These Founders Built Billion-Dollar Industry Disruptors Despite Investor Skepticism
+question,neutral,@TimesNowWorld,"""JOINT CONTROL?"" Iran Mocks Trump’s Shocking Plan for the Strait of Hormuz | US-Iran War"
+question,right,@theisabelbrown,"Is Evie’s New Magazine A S*x “Issue?” I’m Here For It, TBH"
+question,right,@BlazeTV,Trump FIRED UP over SAVE Act Delay... So What's the Senate's Problem?
 question,right,@MattWalsh,Conservative Influencer Cheating SCANDAL: Was The Manosphere Right All Along? | Ep. 1730
 breaking_live,corpus,@RealAmericasVoice,"TRUMP'S IRAN DEAL BOMBSHELL, FED HOLDS RATES, SPLC NAZI SCANDAL EXPLODES | LIVE FROM STUDIO 6B"
 breaking_live,corpus,@ANINewsIndia,WATCH: Sonam Wangchuk breaks 26-day fast amid CJP protest at Jantar Mantar against NEET Paper leak
@@ -35,66 +35,66 @@ episode_show,neutral,@TimDillonShow,Bonus Episode #328 - Something Is Truly Off 
 episode_show,right,@RealDanBongino,They're Finding Out (Ep. 2549)
 episode_show,right,@glennbeck,Remembering Charlie Kirk: Where Are We Now? | Hour 1 | 9/10/26
 episode_show,right,@RSBN,FULL EVENT: President Trump Creates U.S. Space Academy & Awards Space Medal of Honor - 08/28/26
-interview_guest,corpus,@ABCNews,The Obama Legacy: First Joint Interview Post-White House
-interview_guest,corpus,@bulwarkmedia,Trump Promised Trillions in Cuts—And Delivered Nothing (w/ Jessica Riedl) | Mona Charen Show
-interview_guest,corpus,@timesofindia,'ENOUGH IS ENOUGH': Tucker Carlson Joins Growing Revolt As Trump's Iran Gamble Backfires Inside MAGA
-interview_guest,left,@bulwarkmedia,Trump Promised Trillions in Cuts—And Delivered Nothing (w/ Jessica Riedl) | Mona Charen Show
-interview_guest,left,@timesofindia,'ENOUGH IS ENOUGH': Tucker Carlson Joins Growing Revolt As Trump's Iran Gamble Backfires Inside MAGA
-interview_guest,left,@TheDamageReport,"Indisputable with Dr. Rashad Richey: February 16, 2026"
-interview_guest,neutral,@ABCNews,The Obama Legacy: First Joint Interview Post-White House
-interview_guest,neutral,@thehill,Jon Ossoff JABS Trump for 'traveling with Natalie' (Plus: Jason Arday found dead) | RISING
-interview_guest,neutral,@TimesNowWorld,"SNUBBED! Putin REFUSES Direct Talks With Zelensky, Demands Elections in Ukraine First!"
-interview_guest,right,@NewsmaxTV,'Willing to sit down with them': Tom Homan's 'disappointed' in Catholic Church
-interview_guest,right,@PragerU,A Deal With Iran | The Wrap Up | PragerU
-interview_guest,right,@RobertGouveiaEsq,NJ Governor CAVES in Illegal Voter Fight with DHS!
-reaction,corpus,@DestinyDGGClips,Atrioc Responds After Getting Into MASSIVE Controversy
-reaction,corpus,@SkyNews,Democrats react to Trump's citizenship defeat outside Supreme Court
-reaction,corpus,@oann,WV Governor Praises National Guard Officers for Heroic Response to DC Attack
-reaction,left,@SkyNews,Democrats react to Trump's citizenship defeat outside Supreme Court
-reaction,left,@ponderingpolitics,"🚨 UPDATE: Trump RESPONDS, Shooter ARRESTED & IDENTIFIED"
-reaction,left,@HasanabiClips,Mamdani Supports a United Ireland at St  Patrick's Day Parade   HasanAbi Reacts
-reaction,neutral,@ANINewsIndia,Iran gives bold response to US Prez Trump’s ‘unlawful’ & ‘reckless’ threat amid escalating tensions
-reaction,neutral,@Firstpost,LIVE: Ursula Von der Leyen Holds Press Conference on EU's Emergency Response
-reaction,neutral,@NewsNation,Jemele Hill reacts to Stephen A. Smith’s 'Thumbs Down' controversy
-reaction,right,@DestinyDGGClips,Atrioc Responds After Getting Into MASSIVE Controversy
-reaction,right,@oann,WV Governor Praises National Guard Officers for Heroic Response to DC Attack
-reaction,right,@BlazeTV,Glenn Beck REACTS to Foreigners LOVING Their Visit to America!
-confrontation,corpus,@ANINewsIndia,"‘We'll destroy it as we get it’, Trump warns Iran after Khamenei’s 'defiance' over enriched Uranium"
-confrontation,corpus,@RealAmericasVoice,"FAUCI TAKES THE FIFTH IN EXPLOSIVE SENATE HEARING, BERENSON DESTROYS COVID LIES | CHARLIE KIRK SHOW"
-confrontation,corpus,@markets,US-Iran Clashes Hit Stocks as Oil Rises | Bloomberg Brief 09/02/2026
-confrontation,left,@fastpoliticspodcast,Ted Cruz Vs. Trump: The Breaking Point w/ Rick Wilson
-confrontation,left,@RebelHQ,Trump Hit With REALITY CHECK As His Own Base Turns On Him
-confrontation,left,@timesofindia,'American Pirate': Lula Blasts Trump's 'Hormuz Piracy' In Explosive Iran War Speech | Watch
-confrontation,neutral,@ANINewsIndia,"‘We'll destroy it as we get it’, Trump warns Iran after Khamenei’s 'defiance' over enriched Uranium"
-confrontation,neutral,@markets,US-Iran Clashes Hit Stocks as Oil Rises | Bloomberg Brief 09/02/2026
-confrontation,neutral,@CBSNews,"Doctor fact-checks Dr. Oz's comments about vaccines, drug prices"
-confrontation,right,@RealAmericasVoice,"FAUCI TAKES THE FIFTH IN EXPLOSIVE SENATE HEARING, BERENSON DESTROYS COVID LIES | CHARLIE KIRK SHOW"
-confrontation,right,@BenShapiro,LIVE: Supreme Court WRECKS Trump's Tariffs
-confrontation,right,@nypost,"‘When They Hit, We Hit Back Much Harder’: Trump on Iran"
-listicle,corpus,@RealAmericasVoice,"FAUCI’S COVID CHAOS STEALS 2020, RNC CHAIR GRUTERS ON GOP FAITH | AMERICA'S TOP 10"
-listicle,corpus,@CNN,4 ways Ukraine changed America’s wars forever
-listicle,corpus,@nypost,Karoline Leavitt to Depart as White House Press Secretary — Top 5 Moments She Shut Down Reporters
-listicle,left,@CNN,4 ways Ukraine changed America’s wars forever
+interview_guest,corpus,@deanwithrs,"Cocky MAGA Man HUMILIATES Himself With His ""Solution"" To Poverty"
+interview_guest,corpus,@LegalAFMTN,Trump HIT with FIRST LAWSUIT to STOP SLUSH FUND!!!
+interview_guest,corpus,@judgingfreedom,Poland's Secret Deal With Ukraine Has Washington Concerned
+interview_guest,left,@deanwithrs,"Cocky MAGA Man HUMILIATES Himself With His ""Solution"" To Poverty"
+interview_guest,left,@LegalAFMTN,Trump HIT with FIRST LAWSUIT to STOP SLUSH FUND!!!
+interview_guest,left,@judgingfreedom,Poland's Secret Deal With Ukraine Has Washington Concerned
+interview_guest,neutral,@TimesNowWorld,CODENAME K10: Leaked Contracts Expose Russia's Secret €500 Million Missile Deal With Iran
+interview_guest,neutral,@Firstpost,Israel Boosts Long-Range Strike Power With KC-46 Refuelling Jets | Firstpost Live
+interview_guest,neutral,@ANINewsIndia,“Salute to Congress’ patience with Rahul Gandhi…”  Rijiju explodes
+interview_guest,right,@NewsmaxTV,"Franklin Graham: America has become morally rotten, sick with sin"
+interview_guest,right,@MegynKelly,"Trump Calls Out ""Pirates"" and Celebrates Heroes at SOTU, and Robert De Niro Literally Cries, w/ RCP"
+interview_guest,right,@RubinReport,Jillian Reveals the Interview She Regrets & the Death Threats That Followed It
+reaction,corpus,@TimesNowWorld,EXPLAINED: Olympic Village Condom Shortage Goes Viral As IOC Responds At Milan Cortina
+reaction,corpus,@nypost,Trump Reacts to 'CATASTROPHE' in Spanish Enclave as Thousands of Illegal Migrants Enter Border
+reaction,corpus,@RubinReport,"Trump's Unexpected Ted Turner Reaction, Obama Faces Backlash, Massive LA Raid | 5/7/26 FIRST LOOK"
+reaction,left,@HasanabiClips,Donald Trump tells UK to 'go get your own oil'   Iran war   HasanAbi Reacts
+reaction,left,@aljazeeraenglish,"Strait of Hormuz crisis: Trump Uutimatums, Iran response & rising war fears explained"
+reaction,left,@TheRealTabithaSpeaks,"Hasan Piker Stans Are Angry... I Understand, I'm Angry Too; So Let's Respond To Some Comments!"
+reaction,neutral,@TimesNowWorld,EXPLAINED: Olympic Village Condom Shortage Goes Viral As IOC Responds At Milan Cortina
+reaction,neutral,@ANINewsIndia,"Vietnam Boat Tragedy: Several Indian Tourists Killed Near Phu Quoc Island, Ashwini Vaishnaw reacts"
+reaction,neutral,@Firstpost,"LIVE | Bangladesh Election Day: BNP Leads, Jamaat Rises, Hasina Responds | Vantage with Palki Sharma"
+reaction,right,@nypost,Trump Reacts to 'CATASTROPHE' in Spanish Enclave as Thousands of Illegal Migrants Enter Border
+reaction,right,@RubinReport,"Trump's Unexpected Ted Turner Reaction, Obama Faces Backlash, Massive LA Raid | 5/7/26 FIRST LOOK"
+reaction,right,@RealAmericasVoice,Church Invasions Will Be Prosecuted: Jack Posobiec Reacts to Don Lemon Arrest
+confrontation,corpus,@ANINewsIndia,IND vs PAK T20 World Cup: Wishes and good luck pour in from across India ahead of ultimate showdown
+confrontation,corpus,@MyronGainesX,Senator BREAKS Marine’s Arm After He CALLS OUT Israel Over Iran War!
+confrontation,corpus,@JackCocchiarellaShow,SCREAMING Hearing Shuts Down As Bessent CAUGHT In Crime
+confrontation,left,@JackCocchiarellaShow,SCREAMING Hearing Shuts Down As Bessent CAUGHT In Crime
+confrontation,left,@aaronparnas1,BREAKING: Republican SHREDS Trump’s DHS Nominee as Hearing Devolves into CHAOS
+confrontation,left,@TheMajorityReport,RIP Dolly Parton
+confrontation,neutral,@ANINewsIndia,IND vs PAK T20 World Cup: Wishes and good luck pour in from across India ahead of ultimate showdown
+confrontation,neutral,@TimesNowWorld,"HORMUZ OPEN! Iran's Araghchi Declare Strait Of Hormuz Open, Snubbed Trump Fires back With Blockade!"
+confrontation,neutral,@Firstpost,Lok Sabha LIVE: Rahul Gandhi Slams Govt Amid Anti-Paper Leak Bill Debate |Parliament Monsoon Session
+confrontation,right,@MyronGainesX,Senator BREAKS Marine’s Arm After He CALLS OUT Israel Over Iran War!
+confrontation,right,@RobertGouveiaEsq,White House DESTROYS New '5-year-old boy' Hoax
+confrontation,right,@RubinReport,Dem Humiliated When She Can’t Answer This Simple Question
+listicle,corpus,@ANINewsIndia,Gujarat's CSMCRI: 26 Scientists in Bhavnagar Ranked Among World's Top 5% Researchers
+listicle,corpus,@thehill,Trump’s Lincoln Memorial Reflecting Pool work comes under scrutiny: 4 things to know
+listicle,corpus,@Forbes,"America’s Top 25 Philanthropists — And Why Musk, Page And Ellison Aren’t On The List"
+listicle,left,@timesofindia,Trump STRIKES Europe; Top 8 U.S. Allies TARGETED & Big Greenland Ultimatum ISSUED | Tariff War
 listicle,left,@BelleRanch,Let's talk about 3 questions on the Iran deal....
-listicle,left,@bulwarkmedia,The 5 Most Unhinged Things Trump Said in One Cabinet Meeting
-listicle,neutral,@ANINewsIndia,"Must Watch! Top 5 moments when MEA’s Sibi George schooled Western Journalists in Oslo, Norway"
-listicle,neutral,@Forbes,3 Ways Startup Founders Can Find Success In A Rapidly Changing World
-listicle,neutral,@TimesNowWorld,PENTAGON REVEALS: 15 Ways US Can Launch Ground Invasion of Iran
-listicle,right,@RealAmericasVoice,"FAUCI’S COVID CHAOS STEALS 2020, RNC CHAIR GRUTERS ON GOP FAITH | AMERICA'S TOP 10"
-listicle,right,@nypost,Karoline Leavitt to Depart as White House Press Secretary — Top 5 Moments She Shut Down Reporters
-listicle,right,@RubinReport,Dave Rubin: 5 Things I Wish I Knew Before Turning 50
-howto_explainer,corpus,@SkyNews,Why Trump is fighting for the Arctic but losing in Antarctica
-howto_explainer,corpus,@PhillipScottPodcast,Latina Explains Why They Didn't Vote For Jasmine Crockett Even Though She Was Pro-Immigration
-howto_explainer,corpus,@oann,Why Rising Prices Could Trigger a Voter Backlash Before the Midterms
-howto_explainer,left,@SkyNews,Why Trump is fighting for the Arctic but losing in Antarctica
-howto_explainer,left,@EzraKleinShow,This Is Why I Find Pema Chödrön So Essential | The Ezra Klein Show
-howto_explainer,left,@msnow,WATCH: Why John Cornyn should be skeptical of any promises from Todd Blanche
-howto_explainer,neutral,@Forbes,Why Ellie Kildunne Had To Turn Down The Olympics To Become The Best Rugby Player In The World
-howto_explainer,neutral,@thehill,2026 Midterms: Texas BOE Candidate Breaks Down Exactly What Students Are Learning | RAISING AMERICA
-howto_explainer,neutral,@Firstpost,Why PM Modi's New Zealand Visit Matters for the Indo-Pacific | Vantage Select | 4K
-howto_explainer,right,@PhillipScottPodcast,Latina Explains Why They Didn't Vote For Jasmine Crockett Even Though She Was Pro-Immigration
-howto_explainer,right,@oann,Why Rising Prices Could Trigger a Voter Backlash Before the Midterms
-howto_explainer,right,https://rumble.com/c/BannonsWarRoom,"Dr. Bradley Thayer: Given The History Of Irish Nationalism, What Larry Fink Is Doing Is Jumping From The Frying Pan Into The Fire"
+listicle,left,@aljazeeraenglish,Deadly heatwave grips Europe as temperatures top 40°C and deaths rise across the continent
+listicle,neutral,@ANINewsIndia,Gujarat's CSMCRI: 26 Scientists in Bhavnagar Ranked Among World's Top 5% Researchers
+listicle,neutral,@thehill,Trump’s Lincoln Memorial Reflecting Pool work comes under scrutiny: 4 things to know
+listicle,neutral,@Forbes,"America’s Top 25 Philanthropists — And Why Musk, Page And Ellison Aren’t On The List"
+listicle,right,@RealAmericasVoice,"MAMDANI DRIVING NY'ERS TO RED STATES, TRUMP EMERGENCY DRAFT | AMERICA'S TOP 10 W WAYNE ALLEN ROOT"
+listicle,right,@JustPearlyThings,Top 3 and Bottom 3 Types of Modern Women
+listicle,right,@nypost,Top 5 Wildest Moments From Donald Trump’s State of the Union Address
+howto_explainer,corpus,@CBSNews,Why Tom Homan says ICE operation in Minnesota is ending
+howto_explainer,corpus,@lovettorleaveitpodcast,John Stamos Ponders How To Turn Republicans Against Trump
+howto_explainer,corpus,@wsj,Why Hyundai Is Betting $26B Going All-In on the U.S. | WSJ
+howto_explainer,left,@lovettorleaveitpodcast,John Stamos Ponders How To Turn Republicans Against Trump
+howto_explainer,left,@PTLRadioShow,Trump Can’t Explain Where $13 BILLION Went
+howto_explainer,left,@underthedesknews,What Really Happened with the Voters Rights Act with SCOTUSblog Editor Katie Bart
+howto_explainer,neutral,@CBSNews,Why Tom Homan says ICE operation in Minnesota is ending
+howto_explainer,neutral,@wsj,Why Hyundai Is Betting $26B Going All-In on the U.S. | WSJ
+howto_explainer,neutral,@ANINewsIndia,"Nuwakot, Nepal (Aug 26) LIVE: What happened within 30 minutes of flood fury? Visuals from Devi Ghat"
+howto_explainer,right,@AlexStein99,What REALLY Happened to Hayden Panettiere | After Hours with Alex Stein
+howto_explainer,right,@JillianMichaels,When Did Everyone Become So Extreme… And Why?
+howto_explainer,right,@VivaFrei,CELLULAR IRRADIATION! How to Oppose Installation of Towers Neat You! Lawyer & Journalist Explain
 curiosity_gap,corpus,https://rumble.com/c/russellbrand,They don't want you knowing this...
 curiosity_gap,corpus,@CoreyGilShusterAskProject,Palestinians: What happens at the endtimes?
 curiosity_gap,corpus,@LukeBeasley,"Actually, what the f*** just happened?!"

@@ -13,18 +13,18 @@ Top topics: Fox News and Trump on Air (12.7%); Members Only Bonus Shows (9.5%); 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 14.8 | 11.4 | -0.4 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 39.4 | 26.7 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 15.6 | 11.8 | -0.4 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 39.2 | 26.6 | -0.3 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 94.1 | 94.1 | 0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 89.0 | 91.5 | 0.4 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 25.0 | 11.0 | -0.3 | 0.1 |
-| F6: Person-centred (named people) | 44.1 | 44.1 | -0.4 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 84.7 | 81.4 | 0.3 | -0.5 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 89.0 | 91.6 | 0.4 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 24.9 | 11.0 | -0.3 | 0.1 |
+| F6: Person-centred (named people) | 43.9 | 43.9 | -0.4 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 84.8 | 81.4 | 0.3 | -0.5 |
 | F8: Numeric and dated (digits, years) | 98.3 | 97.0 | 1.1 | -0.2 |
-| F9: ALL-CAPS shouting | 93.6 | 94.5 | 1.7 | -0.3 |
-| F10: Quoted speech | 15.7 | 3.8 | -0.8 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 37.3 | 19.5 | -0.5 | -0.3 |
-| F12: +first_pl +future_will +modal | 14.4 | 12.7 | -0.6 | -0.1 |
+| F9: ALL-CAPS shouting | 93.7 | 94.5 | 1.7 | -0.3 |
+| F10: Quoted speech | 15.6 | 3.8 | -0.8 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 37.1 | 19.4 | -0.5 | -0.3 |
+| F12: +first_pl +future_will +modal | 14.8 | 13.1 | -0.6 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.4% (3.6%); outrage 87.9% (63.9%); humor 0.4% (0.2%); question 2.4% (15.6%); breaking_live 17.7% (2.9%); episode_show 0.1% (2.8%); interview_guest 3.2% (9.8%); reaction 0.1% (2.9%); confrontation 13.2% (7.7%); listicle 0.0% (0.1%); howto_explainer 0.7% (8.0%)
@@ -39,11 +39,11 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 169 | -0.71 | -0.04 | -0.04 | -0.09 | -0.25 | -0.60 | 0.43 | 1.69 | 1.35 | -0.65 | -0.61 | -0.80 | 0.01 | 0.82 | 0.01 |
+| 2026-01 | 169 | -0.71 | -0.04 | -0.04 | -0.09 | -0.25 | -0.60 | 0.43 | 1.69 | 1.36 | -0.65 | -0.61 | -0.80 | 0.01 | 0.82 | 0.01 |
 | 2026-02 | 113 | -0.83 | -0.50 | 0.15 | -0.00 | -0.37 | -0.44 | 0.31 | -0.27 | 1.80 | -0.71 | -0.18 | -0.61 | 0.00 | 0.97 | 0.00 |
-| 2026-03 | 157 | -1.19 | -0.60 | 0.29 | 0.30 | -0.50 | -0.45 | 0.22 | -0.27 | 1.51 | -0.95 | -0.36 | -0.56 | 0.00 | 0.97 | 0.01 |
-| 2026-04 | 188 | -0.52 | -0.28 | 0.42 | 0.23 | -0.29 | -0.44 | 0.37 | 1.93 | 1.58 | -0.79 | -0.50 | -0.44 | 0.02 | 0.82 | 0.01 |
-| 2026-05 | 192 | -0.09 | -0.23 | 0.24 | 0.45 | -0.16 | -0.25 | 0.36 | 1.97 | 1.39 | -0.72 | -0.48 | -0.64 | 0.05 | 0.82 | 0.00 |
+| 2026-03 | 157 | -1.18 | -0.60 | 0.29 | 0.30 | -0.50 | -0.45 | 0.22 | -0.27 | 1.51 | -0.95 | -0.36 | -0.56 | 0.00 | 0.97 | 0.01 |
+| 2026-04 | 188 | -0.52 | -0.29 | 0.42 | 0.23 | -0.29 | -0.44 | 0.37 | 1.93 | 1.58 | -0.79 | -0.50 | -0.44 | 0.02 | 0.82 | 0.01 |
+| 2026-05 | 192 | -0.09 | -0.23 | 0.24 | 0.45 | -0.16 | -0.25 | 0.36 | 1.97 | 1.40 | -0.72 | -0.48 | -0.64 | 0.05 | 0.82 | 0.00 |
 | 2026-06 | 179 | -0.08 | -0.04 | 0.44 | 0.59 | -0.20 | -0.16 | 0.17 | 1.10 | 1.81 | -0.89 | -0.49 | -0.84 | 0.04 | 0.89 | 0.01 |
 | 2026-07 | 182 | -0.34 | -0.40 | 0.58 | 0.24 | -0.36 | -0.23 | 0.22 | 0.65 | 2.06 | -0.74 | -0.48 | -0.56 | 0.02 | 0.92 | 0.00 |
 | 2026-08 | 165 | -0.03 | -0.27 | 0.12 | 0.72 | -0.22 | -0.37 | 0.36 | 0.97 | 2.05 | -0.59 | -0.38 | -0.52 | 0.05 | 0.87 | 0.00 |

@@ -1,13 +1,13 @@
 factor,n_topics,title_level_r2_topic,creator_level_r2_topic,creator_level_corr_raw_controlled,auto_name
-F1,224,0.1267,0.4799,0.9402,+vader_compound -vader_neg -shock_word -violence_verb
-F2,224,0.0603,0.2742,0.9603,+has_finite_verb +present_tense +verb_share +past_tense
-F3,224,0.1215,0.3156,0.9683,+lead_colon_label +lead_live +colon -entity_first
+F1,224,0.1267,0.4774,0.9407,+vader_compound -vader_neg -shock_word -violence_verb
+F2,224,0.0603,0.2738,0.9603,+has_finite_verb +present_tense +verb_share +past_tense
+F3,224,0.1216,0.316,0.9683,+lead_colon_label +lead_live +colon -entity_first
 F4,224,0.1499,0.438,0.9724,+trailing_ellipsis +discourse_marker +ellipsis +contraction
-F5,224,0.0375,0.216,0.9815,+q_word_start +wh_any +why_marker +q_mark
+F5,224,0.0375,0.2158,0.9815,+q_word_start +wh_any +why_marker +q_mark
 F6,224,0.1832,0.3845,0.9497,+n_person +has_person
 F7,224,0.1139,0.2637,0.9578,+noun_share -cap_token_share +adj_share +n_gpe
-F8,224,0.2558,0.6906,0.8431,+num_share +digit +year_mention
-F9,224,0.061,0.1416,0.9825,+allcaps_word_share +full_caps_title +has_allcaps_word
-F10,224,0.0479,0.2084,0.9585,+quoted_speech +quotes
-F11,224,0.0863,0.2786,0.9605,+n_chars +vader_pos +nominalisation +n_org
-F12,224,0.1162,0.5062,0.8799,+first_pl +future_will +modal
+F8,224,0.2558,0.6908,0.8431,+num_share +digit +year_mention
+F9,224,0.061,0.1417,0.9825,+allcaps_word_share +full_caps_title +has_allcaps_word
+F10,224,0.0479,0.2084,0.9586,+quoted_speech +quotes
+F11,224,0.0863,0.2777,0.9604,+n_chars +vader_pos +nominalisation +n_org
+F12,224,0.1164,0.5039,0.8828,+first_pl +future_will +modal

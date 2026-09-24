@@ -13,18 +13,18 @@ Top topics: HasanAbi 2026 Events (93.2%); ICE protests in Minneapolis (1.2%); Ha
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 23.7 | 83.9 | -0.3 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 13.6 | 1.7 | -0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 49.2 | 1.7 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 28.4 | 5.9 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 8.1 | 0.4 | -0.5 | 0.1 |
-| F6: Person-centred (named people) | 68.2 | 50.0 | 0.1 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 73.3 | 14.0 | -0.3 | -0.5 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 24.1 | 84.0 | -0.3 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 13.5 | 1.7 | -0.8 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 49.4 | 1.7 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 28.3 | 5.9 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 8.0 | 0.4 | -0.5 | 0.1 |
+| F6: Person-centred (named people) | 67.9 | 49.8 | 0.1 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 73.4 | 13.9 | -0.3 | -0.5 |
 | F8: Numeric and dated (digits, years) | 100.0 | 100.0 | 3.7 | -0.2 |
-| F9: ALL-CAPS shouting | 71.6 | 61.9 | -0.0 | -0.3 |
-| F10: Quoted speech | 44.5 | 0.4 | -0.4 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 52.1 | 33.9 | -0.2 | -0.3 |
-| F12: +first_pl +future_will +modal | 84.7 | 78.0 | 0.3 | -0.1 |
+| F9: ALL-CAPS shouting | 71.7 | 62.0 | -0.0 | -0.3 |
+| F10: Quoted speech | 44.3 | 0.4 | -0.4 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 51.9 | 33.8 | -0.2 | -0.3 |
+| F12: +first_pl +future_will +modal | 84.8 | 78.1 | 0.3 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.9% (3.6%); outrage 6.1% (63.9%); humor 0.0% (0.2%); question 1.2% (15.6%); breaking_live 0.0% (2.9%); episode_show 100.0% (2.8%); interview_guest 11.7% (9.8%); reaction 0.6% (2.9%); confrontation 3.7% (7.7%); listicle 0.0% (0.1%); howto_explainer 0.6% (8.0%)
@@ -40,7 +40,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-01 | 28 | 0.00 | -1.35 | -0.30 | -0.23 | -0.47 | -0.13 | -0.32 | 3.59 | 0.71 | -0.43 | 0.52 | -0.22 | 0.11 | 0.11 | 0.00 |
-| 2026-05 | 29 | -0.24 | -0.40 | -0.33 | -0.38 | -0.26 | 0.69 | 0.01 | 3.30 | 0.44 | -0.24 | -0.14 | 1.20 | 0.07 | 0.03 | 0.00 |
+| 2026-05 | 29 | -0.24 | -0.39 | -0.33 | -0.38 | -0.26 | 0.69 | 0.01 | 3.30 | 0.44 | -0.24 | -0.14 | 1.20 | 0.07 | 0.03 | 0.00 |
 | 2026-06 | 30 | -0.39 | -0.81 | -0.23 | -0.27 | -0.51 | -0.32 | -0.42 | 3.96 | -0.46 | -0.50 | -1.00 | 0.31 | 0.00 | 0.00 | 0.00 |
 | 2026-07 | 31 | -0.31 | -0.43 | -0.35 | -0.22 | -0.49 | -0.19 | -0.46 | 3.55 | -0.20 | -0.43 | -0.17 | 0.18 | 0.06 | 0.13 | 0.00 |
 | 2026-08 | 31 | -0.66 | -0.84 | -0.29 | -0.15 | -0.56 | -0.00 | -0.34 | 3.81 | -0.48 | -0.55 | -0.37 | 0.25 | 0.03 | 0.06 | 0.00 |

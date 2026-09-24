@@ -4,7 +4,7 @@
 
 ## The finding in one paragraph
 
-A BERTopic model fitted on a 100,078-title creator-stratified sample found 224 topics; every title was then assigned to its nearest topic centroid (86% agreement with HDBSCAN's own labels on cluster members, 13% weak assignments). One story dominates 2026: the Iran war and the Strait of Hormuz, 6,056 unique titles across 213 of 274 creators, with a second energy-markets topic on the same war. 10 of the twelve largest topics are each shared by 100 or more of the 274 creators. That is the central fact for everything after this document: the whole landscape covered the same stories, so raw vocabulary similarity between two channels mostly measures the news cycle, not their style. It also shows in the clustering: creators grouped by topic mix do not line up with the left / neutral / right channel groups (adjusted Rand index 0.004 for edited uploads).
+A BERTopic model fitted on a 100,078-title creator-stratified sample found 224 topics; every title was then assigned to its nearest topic centroid (86% agreement with HDBSCAN's own labels on cluster members, 13% weak assignments). One story dominates 2026: the Iran war and the Strait of Hormuz, 6,057 unique titles across 214 of 274 creators, with a second energy-markets topic on the same war. 10 of the twelve largest topics are each shared by 100 or more of the 274 creators. That is the central fact for everything after this document: the whole landscape covered the same stories, so raw vocabulary similarity between two channels mostly measures the news cycle, not their style. It also shows in the clustering: creators grouped by topic mix do not line up with the left / neutral / right channel groups (adjusted Rand index 0.004 for edited uploads).
 
 ## The largest topics (creator-balanced share)
 
@@ -14,14 +14,14 @@ A BERTopic model fitted on a 100,078-title creator-stratified sample found 224 t
 | topic_id | label | political | balanced_share | n_unique_all | n_creators | top_terms |
 |---|---|---|---|---|---|---|
 | 3 | Trump and Iran War Negotiations | yes | 0.033 | 13816 | 190 | ceasefire, iran ceasefire, iran trump, trumps iran, deal iran, ceasefire iran, trump says, iran deal, usiran, says iran |
-| 0 | ICE protests in Minneapolis | yes | 0.025 | 6056 | 213 | minneapolis, ice shooting, walz, ice agents, ice, antiice, tim walz, agents, alex pretti, ice agent |
+| 0 | ICE protests in Minneapolis | yes | 0.025 | 6057 | 214 | minneapolis, ice shooting, walz, ice agents, ice, antiice, tim walz, agents, alex pretti, ice agent |
 | 2 | Israel and Palestine Conflict | yes | 0.024 | 5344 | 192 | gaza, palestine, palestinian, israels, israeli, netanyahu, jewish, israelis, jews, israel |
 | 7 | Iran political unrest | yes | 0.021 | 6912 | 206 | khamenei, supreme leader, iranians, crown prince, irans, regime, iran iran, funeral, iranian, crown |
 | 74 | Iran and Political Updates | yes | 0.019 | 1384 | 124 | joins, fail, brittany, reveal, sus, bye, ac, joins iran, jamm, iran hits |
 | 1 | Shocking Events and Reactions | yes | 0.017 | 3828 | 170 | holy, holy sht, fing, theyre, sht, fking, fck, happening, genuinely, anymore |
 | 60 | Trump delivering remarks | yes | 0.014 | 1703 | 59 | trump delivers, delivers remarks, trump speaks, remarks, delivers, speaks press, small business, replay president, pr... |
-| 4 | Ukraine-Russia War and Political Figures | yes | 0.014 | 8146 | 128 | ukraine, russia, putins, putin, russian, zelensky, ukraine war, moscow, russias, lavrov |
-| 15 | Christian Nationalism and Politics | yes | 0.014 | 1606 | 172 | pastor, christian, jesus, nationalism, prayer, god, faith, christianity, christ, christians |
+| 4 | Ukraine-Russia War and Political Figures | yes | 0.014 | 8147 | 129 | ukraine, russia, putins, putin, russian, zelensky, ukraine war, moscow, russias, lavrov |
+| 15 | Christian Nationalism and Politics | yes | 0.013 | 1607 | 173 | pastor, christian, jesus, nationalism, prayer, god, faith, christianity, christ, christians |
 | 20 | Feminism and Gender Roles Debate | yes | 0.013 | 1323 | 165 | feminism, dating, women, modern women, men, modern, marriage, divorce, men women, feminists |
 | 5 | Trump and China Relations | yes | 0.012 | 4318 | 162 | xi, chinas, china, xi jinping, jinping, jiang, taiwan, beijing, chinese, professor jiang |
 | 9 | Indian Politics and Delhi Riots | yes | 0.011 | 10330 | 90 | modi, pm modi, delhi, india, pm, nous, nous clips, singh, assembly, indias |
@@ -40,7 +40,7 @@ A BERTopic model fitted on a 100,078-title creator-stratified sample found 224 t
 |---|---|---|---|
 | left channels | 0.96 | 0.98 | 105 |
 | neutral channels | 0.88 | 0.91 | 37 |
-| right channels | 0.93 | 0.96 | 94 |
+| right channels | 0.93 | 0.95 | 95 |
 
 
 Document 5 repeats the whole landscape analysis on political titles only; the conclusions do not change.
@@ -57,10 +57,10 @@ Document 5 repeats the whole landscape analysis on political titles only; the co
 | neutral channels | AI and Political Implications | 0.035 | 37 |
 | neutral channels | Trump and Iran War Negotiations | 0.035 | 37 |
 | neutral channels | Trump and China Relations | 0.033 | 37 |
-| right channels | Shocking Events and Reactions | 0.044 | 94 |
-| right channels | Feminism and Gender Roles Debate | 0.029 | 94 |
-| right channels | Christian Nationalism and Politics | 0.024 | 94 |
-| right channels | American History and Political Threats | 0.022 | 94 |
+| right channels | Shocking Events and Reactions | 0.044 | 95 |
+| right channels | Feminism and Gender Roles Debate | 0.028 | 95 |
+| right channels | Christian Nationalism and Politics | 0.024 | 95 |
+| right channels | Black America and Racism Discussions | 0.022 | 95 |
 
 
 The war story leads in the ; the left channels put "Israel and Palestine Conflict" first and neutral channels put "Tech Business Founders and Industry" first and right channels put "Shocking Events and Reactions" first, with the war second. Beyond it the groups' attention differs at the margin rather than in kind: what separates them in document 14 is the wording about the shared subjects, not the subjects.
@@ -89,7 +89,7 @@ For each month the topics that rose most against their own nine-month mean (crea
 | 2026-07 | Lindsey Graham's Death and Legacy | 2.640 | 0.019 | Lindsey Graham (476); Graham (61); Senate (57); Trump (53); US (30) |
 | 2026-07 | Mitch McConnell Health Mystery | 2.600 | 0.010 | Mitch McConnell (133); McConnell (50); Kentucky (15); Senate (8); GOP (6) |
 | 2026-08 | Trump aide Natalie Harp and Jon Ossoff | 2.640 | 0.008 | Natalie Harp (89); Trump (44); Jon Ossoff (18); Ossoff (10); White House (6) |
-| 2026-08 | WNBA and Sophie Cunningham controversy | 2.620 | 0.016 | WNBA (74); NBA (15); Sophie Cunningham (9); Royce White (4); National Report (4) |
+| 2026-08 | WNBA and Sophie Cunningham controversy | 2.610 | 0.016 | WNBA (74); NBA (15); Sophie Cunningham (9); Royce White (4); National Report (4) |
 | 2026-09 | 9/11 Remembrance 25 Years Later | 2.670 | 0.037 | Pentagon (37); America (23); Trump (19); New York (18); Mamdani (17) |
 | 2026-09 | MAGA Mike Johnson political turmoil | 2.520 | 0.003 | Mike Johnson (8); MAGA Mike (2); House (2); Mike Johnson Warns (2); OMG (1) |
 

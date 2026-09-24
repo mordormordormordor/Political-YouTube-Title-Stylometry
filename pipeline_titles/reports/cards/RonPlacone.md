@@ -14,17 +14,17 @@ Top topics: Books and Cultural Commentary (9.5%); Left-Wing Political Violence (
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 96.2 | 94.9 | 1.0 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 8.9 | 8.5 | -1.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.5 | 70.3 | -0.2 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 91.9 | 88.6 | 0.5 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 34.3 | 41.9 | -0.1 | 0.1 |
-| F6: Person-centred (named people) | 89.4 | 83.9 | 0.7 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 55.9 | 59.7 | -0.5 | -0.5 |
-| F8: Numeric and dated (digits, years) | 52.1 | 65.7 | -0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 21.6 | 23.3 | -0.6 | -0.3 |
-| F10: Quoted speech | 36.0 | 42.8 | -0.5 | -0.4 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 8.9 | 8.4 | -1.1 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 72.6 | 70.5 | -0.2 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 92.0 | 88.6 | 0.5 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 34.2 | 41.8 | -0.1 | 0.1 |
+| F6: Person-centred (named people) | 89.5 | 84.0 | 0.7 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 55.7 | 59.5 | -0.5 | -0.5 |
+| F8: Numeric and dated (digits, years) | 52.3 | 65.8 | -0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 21.9 | 23.6 | -0.6 | -0.3 |
+| F10: Quoted speech | 36.3 | 42.6 | -0.5 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 98.3 | 98.7 | 1.5 | -0.3 |
-| F12: +first_pl +future_will +modal | 66.9 | 52.5 | 0.0 | -0.1 |
+| F12: +first_pl +future_will +modal | 67.1 | 52.7 | 0.0 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.8% (3.6%); outrage 31.8% (63.9%); humor 0.0% (0.2%); question 22.2% (15.6%); breaking_live 7.9% (2.9%); episode_show 0.0% (2.8%); interview_guest 9.5% (9.8%); reaction 0.0% (2.9%); confrontation 9.5% (7.7%); listicle 0.0% (0.1%); howto_explainer 4.8% (8.0%)

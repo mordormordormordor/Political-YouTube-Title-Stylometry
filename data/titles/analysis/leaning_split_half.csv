@@ -1,2 +1,2 @@
 model,n_channels,min_titles_per_half,median_titles_per_half,split_half_spearman_mean,split_half_spearman_sd
-label_claude_code_opus,239,16,25,0.959,0.004
+label_claude_code_opus,240,16,25,0.959,0.004

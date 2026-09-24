@@ -13,17 +13,17 @@ Top topics: Ukraine-Russia War and Political Figures (21.2%); Iran political unr
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 22.9 | 13.6 | -0.3 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 72.9 | 68.2 | 0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 53.4 | 81.8 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 80.9 | 73.3 | 0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 62.7 | 60.6 | 0.4 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 23.2 | 13.9 | -0.3 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 72.6 | 67.9 | 0.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 53.6 | 81.9 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 81.0 | 73.4 | 0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 62.9 | 60.8 | 0.4 | 0.1 |
 | F6: Person-centred (named people) | 99.2 | 97.9 | 1.8 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 7.2 | 22.0 | -1.2 | -0.5 |
-| F8: Numeric and dated (digits, years) | 50.4 | 68.6 | -0.1 | -0.2 |
-| F9: ALL-CAPS shouting | 67.4 | 61.0 | -0.1 | -0.3 |
-| F10: Quoted speech | 69.1 | 82.6 | -0.1 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 9.7 | 21.2 | -1.0 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 7.2 | 21.9 | -1.2 | -0.5 |
+| F8: Numeric and dated (digits, years) | 50.2 | 68.8 | -0.1 | -0.2 |
+| F9: ALL-CAPS shouting | 67.1 | 61.2 | -0.1 | -0.3 |
+| F10: Quoted speech | 69.6 | 82.7 | -0.1 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 9.7 | 21.1 | -1.0 | -0.3 |
 | F12: +first_pl +future_will +modal | 91.1 | 96.6 | 0.5 | -0.1 |
 
 
@@ -41,9 +41,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-04 | 27 | -0.66 | 0.61 | -0.23 | 0.23 | -0.29 | 1.87 | -1.43 | -0.25 | 0.07 | 0.55 | -0.85 | 0.68 | 0.04 | 0.63 | 0.00 |
 | 2026-05 | 42 | -0.39 | -0.03 | -0.23 | 0.20 | 0.01 | 1.82 | -1.03 | -0.40 | 0.12 | 0.44 | -1.60 | 0.08 | 0.00 | 0.57 | 0.00 |
-| 2026-06 | 55 | -0.37 | -0.18 | -0.24 | 0.27 | 0.17 | 1.80 | -0.83 | -0.33 | -0.38 | -0.92 | -0.86 | -0.10 | 0.00 | 0.71 | 0.00 |
+| 2026-06 | 55 | -0.37 | -0.18 | -0.24 | 0.27 | 0.17 | 1.80 | -0.83 | -0.33 | -0.38 | -0.92 | -0.86 | -0.09 | 0.00 | 0.71 | 0.00 |
 | 2026-07 | 43 | -0.29 | 0.84 | -0.34 | 0.17 | 0.77 | 2.30 | -1.64 | -0.56 | -0.22 | -0.11 | -1.18 | 1.06 | 0.02 | 0.77 | 0.00 |
-| 2026-08 | 47 | 0.09 | 0.82 | -0.49 | -0.06 | 0.62 | 1.30 | -1.37 | 0.20 | 0.14 | 0.05 | -0.70 | 0.99 | 0.04 | 0.74 | 0.00 |
+| 2026-08 | 47 | 0.09 | 0.82 | -0.48 | -0.06 | 0.62 | 1.30 | -1.37 | 0.20 | 0.14 | 0.05 | -0.70 | 0.99 | 0.04 | 0.74 | 0.00 |
 | 2026-09* | 22 | -0.85 | 1.47 | -0.06 | 0.13 | 1.36 | 1.62 | -1.45 | 0.86 | -0.59 | -0.34 | -0.83 | 0.97 | 0.00 | 0.73 | 0.00 |
 
 
@@ -94,7 +94,7 @@ Top topics: Trump and Iran War Negotiations (20.3%); Ukraine-Russia War and Poli
 | F8: Numeric and dated (digits, years) | 90.9 | 87.0 | 0.6 | -0.1 |
 | F9: ALL-CAPS shouting | 29.9 | 32.5 | -0.7 | -0.4 |
 | F10: Quoted speech | 27.3 | 77.9 | -0.7 | -0.6 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 16.9 | 15.6 | -0.7 | 0.0 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 18.2 | 15.6 | -0.7 | 0.0 |
 | F12: +first_pl +future_will +modal | 97.4 | 98.7 | 1.1 | -0.0 |
 
 

@@ -13,24 +13,24 @@ Top topics: Media headlines and trends (22.8%); ICE protests in Minneapolis (8.7
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 30.1 | 44.1 | -0.2 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 18.2 | 7.6 | -0.7 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 30.4 | 44.3 | -0.2 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 18.1 | 7.6 | -0.7 | -0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 86.9 | 89.0 | 0.0 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 28.8 | 6.8 | -0.3 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 29.7 | 29.7 | -0.2 | 0.1 |
-| F6: Person-centred (named people) | 78.8 | 50.8 | 0.3 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 44.9 | 58.1 | -0.6 | -0.5 |
-| F8: Numeric and dated (digits, years) | 84.7 | 86.4 | 0.2 | -0.2 |
-| F9: ALL-CAPS shouting | 17.8 | 8.9 | -0.7 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 28.7 | 6.8 | -0.3 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 29.5 | 29.5 | -0.2 | 0.1 |
+| F6: Person-centred (named people) | 78.9 | 50.6 | 0.3 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 44.7 | 57.8 | -0.6 | -0.5 |
+| F8: Numeric and dated (digits, years) | 84.8 | 86.5 | 0.2 | -0.2 |
+| F9: ALL-CAPS shouting | 18.1 | 9.3 | -0.7 | -0.3 |
 | F10: Quoted speech | 97.9 | 97.9 | 2.1 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 80.5 | 78.8 | 0.4 | -0.3 |
-| F12: +first_pl +future_will +modal | 80.1 | 73.7 | 0.2 | -0.1 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 80.2 | 78.9 | 0.4 | -0.3 |
+| F12: +first_pl +future_will +modal | 80.2 | 73.8 | 0.2 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (3.6%); outrage 37.5% (63.9%); humor 0.0% (0.2%); question 6.5% (15.6%); breaking_live 0.3% (2.9%); episode_show 22.8% (2.8%); interview_guest 2.6% (9.8%); reaction 0.1% (2.9%); confrontation 4.4% (7.7%); listicle 0.0% (0.1%); howto_explainer 2.2% (8.0%)
 
 
-Nearest style neighbors: @MLChristiansen [right]; @rolandsmartin [left]; @nypost [right]; @timesofindia [left]; @lonerboxlive [right]
+Nearest style neighbors: @MLChristiansen [right]; @rolandsmartin [left]; @nypost [right]; @lonerboxlive [right]; @timesofindia [left]
 
 Nearest topic neighbors: @BreakThroughNews [left]; @AssociatedPress [neutral]; @aljazeeraenglish [left]; @breakingpoints [left]; @CBSNews [neutral]
 
@@ -46,7 +46,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-05 | 81 | -0.38 | -0.73 | -0.06 | -0.24 | -0.28 | 0.48 | -0.51 | 0.24 | -0.88 | 1.68 | 0.15 | 0.00 | 0.00 | 0.46 | 0.00 |
 | 2026-06 | 97 | 0.24 | -1.22 | -0.03 | -0.30 | -0.06 | 0.49 | -0.64 | 0.06 | -0.54 | 2.44 | 0.37 | 0.30 | 0.01 | 0.31 | 0.00 |
 | 2026-07 | 97 | -0.15 | -0.52 | -0.01 | -0.21 | -0.31 | 0.68 | -0.44 | 0.31 | -0.96 | 2.00 | 0.43 | 0.18 | 0.00 | 0.37 | 0.00 |
-| 2026-08 | 87 | -0.41 | -0.45 | 0.28 | -0.17 | -0.26 | 0.56 | -0.45 | 0.51 | -0.80 | 2.87 | 0.04 | 0.29 | 0.00 | 0.25 | 0.00 |
+| 2026-08 | 87 | -0.41 | -0.45 | 0.28 | -0.17 | -0.26 | 0.56 | -0.45 | 0.51 | -0.79 | 2.87 | 0.04 | 0.29 | 0.00 | 0.25 | 0.00 |
 | 2026-09* | 36 | -0.98 | -0.78 | -0.02 | -0.06 | -0.24 | -0.36 | -0.67 | 0.39 | -0.79 | 2.02 | 0.12 | 0.61 | 0.03 | 0.42 | 0.00 |
 
 

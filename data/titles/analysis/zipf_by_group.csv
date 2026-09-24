@@ -1,8 +1,8 @@
 grouping,group,n_creators,zipf_words_top200_mean,zipf_words_top200_median,n_creators_1500,zipf_words_1500_mean,heaps_beta_1500_mean,top1_word_share_mean,n_creators_with_views,zipf_views_all_median,zipf_views_head_median,gini_median,top10_share_median,powerlaw_like_share,caps_any_mean
 channel_group,left,105,0.7925,0.788,72,0.7242,0.8098,0.0505,84,0.8797,0.4332,0.4936,0.3781,0.0,0.3716
 channel_group,neutral,37,0.7924,0.8072,26,0.7131,0.8384,0.043,32,1.257,0.5971,0.6709,0.5372,0.0,0.1787
-channel_group,right,94,0.7498,0.7524,67,0.691,0.8264,0.0458,72,0.8991,0.4354,0.4957,0.3734,0.0,0.3959
+channel_group,right,95,0.7489,0.7521,67,0.691,0.8264,0.0457,73,0.8973,0.4336,0.4929,0.3719,0.0,0.4001
 dominant_caps_style,all_caps,7,0.7453,0.7426,5,0.6978,0.8081,0.0374,5,0.5912,0.3106,0.3517,0.2557,0.0,0.7801
-dominant_caps_style,selective_caps,72,0.7859,0.7939,62,0.7036,0.8074,0.0453,62,0.7645,0.3873,0.4592,0.3434,0.0,0.7483
+dominant_caps_style,selective_caps,73,0.7842,0.7929,62,0.7036,0.8074,0.0451,63,0.7535,0.3865,0.4457,0.338,0.0,0.7489
 dominant_caps_style,title_case,127,0.757,0.7537,77,0.7122,0.8271,0.05,95,0.9608,0.4855,0.539,0.4151,0.0,0.1696
 dominant_caps_style,sentence_case,29,0.8299,0.8383,21,0.716,0.8421,0.0411,25,1.2452,0.6352,0.6818,0.5575,0.0,0.064

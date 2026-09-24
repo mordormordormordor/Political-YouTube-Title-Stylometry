@@ -14,16 +14,16 @@ Top topics: Trump and Iran War Negotiations (39.6%); Iran-US military conflict i
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 0.4 | 0.4 | -2.9 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 84.7 | 81.8 | 0.8 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 47.5 | 79.2 | -0.3 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 50.4 | 50.0 | -0.1 | -0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 84.8 | 81.9 | 0.8 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 47.7 | 79.3 | -0.3 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 50.2 | 50.2 | -0.1 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | 5.9 | 3.0 | -0.6 | 0.1 |
 | F6: Person-centred (named people) | 99.6 | 98.3 | 2.0 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 16.1 | 61.9 | -1.0 | -0.5 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 16.0 | 61.6 | -1.0 | -0.5 |
 | F8: Numeric and dated (digits, years) | 88.6 | 90.3 | 0.3 | -0.2 |
-| F9: ALL-CAPS shouting | 49.2 | 35.2 | -0.3 | -0.3 |
-| F10: Quoted speech | 27.1 | 74.6 | -0.6 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 67.4 | 67.4 | 0.1 | -0.3 |
+| F9: ALL-CAPS shouting | 49.4 | 35.4 | -0.3 | -0.3 |
+| F10: Quoted speech | 27.0 | 74.7 | -0.6 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 67.1 | 67.1 | 0.1 | -0.3 |
 | F12: +first_pl +future_will +modal | 97.0 | 99.6 | 0.9 | -0.1 |
 
 
@@ -77,7 +77,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 18 | -2.15 | -0.97 | -0.04 | -0.09 | -0.95 | 2.18 | -0.65 | 0.58 | -0.42 | -1.03 | 0.52 | 0.41 | 0.00 | 1.00 | 0.00 |
+| 2026-01 | 18 | -2.15 | -0.97 | -0.04 | -0.09 | -0.95 | 2.17 | -0.65 | 0.58 | -0.42 | -1.03 | 0.52 | 0.41 | 0.00 | 1.00 | 0.00 |
 | 2026-02 | 19 | -2.45 | -0.48 | -0.08 | 0.33 | -0.74 | 2.41 | -0.23 | 0.78 | -0.42 | -1.91 | 0.18 | 0.50 | 0.00 | 1.00 | 0.00 |
 | 2026-03 | 28 | -1.90 | -0.75 | -0.56 | 0.02 | -0.81 | 3.40 | -1.24 | 0.43 | 0.09 | -1.08 | -0.33 | 0.16 | 0.04 | 1.00 | 0.00 |
 | 2026-04 | 27 | -1.58 | -0.52 | -0.73 | -0.13 | -0.92 | 3.06 | -0.92 | 0.81 | -0.65 | -1.17 | -0.07 | -0.07 | 0.00 | 0.96 | 0.00 |
@@ -85,7 +85,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-06 | 29 | -1.68 | 0.69 | -0.26 | 0.24 | -0.42 | 3.23 | -0.69 | 0.06 | 0.68 | -0.76 | -0.62 | 0.55 | 0.00 | 1.00 | 0.00 |
 | 2026-07 | 29 | -2.16 | 0.50 | -0.51 | 0.02 | -0.66 | 3.43 | -0.87 | 1.06 | 0.43 | -1.18 | -0.73 | 0.60 | 0.00 | 1.00 | 0.00 |
 | 2026-08 | 29 | -1.32 | -1.39 | -0.45 | 0.37 | -0.84 | 3.43 | -0.88 | 0.79 | 0.85 | -0.64 | -0.10 | 0.65 | 0.03 | 1.00 | 0.00 |
-| 2026-09* | 16 | -1.06 | -0.51 | -0.04 | 0.03 | -0.63 | 2.40 | -0.70 | 0.87 | 0.70 | -0.07 | 0.28 | 0.89 | 0.00 | 1.00 | 0.00 |
+| 2026-09* | 16 | -1.05 | -0.51 | -0.04 | 0.03 | -0.63 | 2.40 | -0.70 | 0.87 | 0.70 | -0.07 | 0.28 | 0.89 | 0.00 | 1.00 | 0.00 |
 
 
 Engagement (n = 219, R2 = 0.5308; log views per within-creator SD, month + topic controls):

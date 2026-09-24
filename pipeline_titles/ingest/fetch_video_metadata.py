@@ -88,12 +88,14 @@ def strip_comment(line: str) -> str:
     return line.strip()
 
 
+def read_creator_list_text(text: str) -> list[str]:
+    """Creators from the text of a list, one per line, comments and blanks removed."""
+    return [c for line in text.splitlines() if (c := strip_comment(line))]
+
+
 def read_creator_list(path: Path) -> list[str]:
     """Creators from a text file, one per line, comments and blanks removed."""
-    return [
-        c for line in Path(path).read_text(encoding="utf-8").splitlines()
-        if (c := strip_comment(line))
-    ]
+    return read_creator_list_text(Path(path).read_text(encoding="utf-8"))
 
 
 def platform_of(creator: str) -> str:

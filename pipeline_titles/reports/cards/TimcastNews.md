@@ -13,21 +13,21 @@ Top topics: Shocking Events and Reactions (43.7%); Democratic Party and Midterm 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 29.7 | 50.0 | -0.2 | 0.2 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 30.0 | 50.2 | -0.2 | 0.2 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 83.1 | 98.3 | 0.7 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.1 | 25.4 | -0.3 | -0.3 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 44.3 | 25.7 | -0.3 | -0.3 |
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 2.1 | 86.9 | -0.6 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 10.6 | 22.9 | -0.5 | 0.2 |
+| F5: Question and explainer framing (why, what, ?) | 10.5 | 22.8 | -0.5 | 0.2 |
 | F6: Person-centred (named people) | 14.8 | 1.7 | -0.7 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 76.3 | 51.7 | -0.2 | -0.7 |
-| F8: Numeric and dated (digits, years) | 53.0 | 18.6 | -0.1 | -0.1 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 76.4 | 51.5 | -0.2 | -0.6 |
+| F8: Numeric and dated (digits, years) | 52.7 | 18.6 | -0.1 | -0.1 |
 | F9: ALL-CAPS shouting | 97.0 | 99.6 | 2.4 | -0.3 |
-| F10: Quoted speech | 30.9 | 7.6 | -0.6 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 24.6 | 4.2 | -0.7 | -0.2 |
-| F12: +first_pl +future_will +modal | 51.3 | 23.7 | -0.2 | -0.3 |
+| F10: Quoted speech | 30.8 | 7.6 | -0.6 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 24.5 | 4.2 | -0.7 | -0.2 |
+| F12: +first_pl +future_will +modal | 51.5 | 24.1 | -0.2 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.8% (4.8%); outrage 90.4% (59.8%); humor 0.6% (0.2%); question 2.5% (15.3%); breaking_live 0.6% (2.0%); episode_show 0.0% (7.5%); interview_guest 0.8% (7.7%); reaction 0.2% (2.2%); confrontation 4.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 1.2% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.8% (4.8%); outrage 90.4% (60.1%); humor 0.6% (0.2%); question 2.5% (15.2%); breaking_live 0.6% (2.0%); episode_show 0.0% (7.4%); interview_guest 0.8% (7.8%); reaction 0.2% (2.2%); confrontation 4.6% (8.2%); listicle 0.0% (0.1%); howto_explainer 1.2% (9.3%)
 
 
 Nearest style neighbors: @Timcast [right]; @TheQuartering [right]; @TimcastIRL [right]; @deanwithrs [left]; @HasanAbi [left]
@@ -45,8 +45,8 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-04 | 75 | -0.17 | 0.78 | -0.25 | -0.61 | -0.30 | -0.68 | -0.23 | -0.15 | 1.98 | -0.46 | -0.85 | -0.36 | 0.08 | 0.89 | 0.00 |
 | 2026-05 | 41 | 0.17 | 0.08 | -0.52 | -0.59 | -0.29 | -1.66 | -0.50 | -0.81 | 3.28 | -0.46 | -0.16 | -0.22 | 0.02 | 0.98 | 0.00 |
 | 2026-06 | 65 | -0.27 | 0.56 | -0.60 | -0.56 | -0.60 | -1.00 | -0.17 | -0.46 | 2.75 | -0.75 | -0.72 | 0.12 | 0.05 | 0.97 | 0.02 |
-| 2026-07 | 45 | -0.13 | 0.63 | -0.44 | -0.58 | -0.30 | -0.63 | 0.03 | -0.24 | 1.98 | -0.56 | -0.87 | -0.22 | 0.07 | 0.87 | 0.02 |
-| 2026-08 | 54 | -0.46 | 0.37 | -0.55 | -0.61 | -0.50 | -0.70 | -0.17 | -0.06 | 2.58 | -0.61 | -0.28 | 0.17 | 0.04 | 0.80 | 0.00 |
+| 2026-07 | 45 | -0.13 | 0.63 | -0.44 | -0.58 | -0.30 | -0.63 | 0.03 | -0.24 | 1.98 | -0.56 | -0.87 | -0.21 | 0.07 | 0.87 | 0.02 |
+| 2026-08 | 54 | -0.46 | 0.37 | -0.55 | -0.61 | -0.50 | -0.70 | -0.16 | -0.06 | 2.58 | -0.61 | -0.28 | 0.18 | 0.04 | 0.80 | 0.00 |
 | 2026-09* | 19 | -0.19 | -0.26 | -0.28 | -0.78 | -0.71 | -0.41 | -0.27 | -0.08 | 1.76 | -0.79 | -1.22 | -0.09 | 0.05 | 0.95 | 0.00 |
 
 

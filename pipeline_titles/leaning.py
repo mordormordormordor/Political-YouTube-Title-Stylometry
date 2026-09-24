@@ -276,6 +276,23 @@ def draw_sample(prepared: pd.DataFrame, n_per: int = N_PER_CREATOR, seed: int = 
     return pd.concat(parts).sort_values("row_id").reset_index(drop=True)
 
 
+def creator_seed(creator: str, seed: int = SEED) -> int:
+    """A seed of its own per creator, so a channel's draw depends on nothing but its name and its titles."""
+    return (seed + int(hashlib.sha1(creator.encode("utf-8")).hexdigest()[:8], 16)) % (2 ** 32)
+
+
+def draw_new_creators(prepared: pd.DataFrame, creators: Sequence[str], n_per: int = N_PER_CREATOR, min_uploads: int = 50,
+                      n_base: int = N_BASE) -> pd.DataFrame:
+    """The sample for channels added after the sample of record was drawn: draw_sample run on
+    each creator alone with creator_seed(creator). draw_sample's shared random stream means that
+    a creator inserted into the sorted list would shift every later creator's draw, so channels
+    added later are never drawn together with the record; each one's draw is fixed by its own
+    name, whatever else is added before or after it."""
+    parts = [draw_sample(prepared[prepared["creator"] == c], n_per, seed=creator_seed(c), n_base=n_base, min_uploads=min_uploads)
+             for c in sorted(set(creators))]
+    return pd.concat(parts).reset_index(drop=True) if parts else prepared.iloc[0:0].assign(is_base=pd.Series(dtype=bool))
+
+
 def split_half_reliability(df: pd.DataFrame, cols: list[str], min_titles: int = 32, seed: int = SEED) -> pd.DataFrame:
     """Score each channel from two random halves of its titles; Spearman across channels
     per model (and the mean over 20 random splits)."""
@@ -412,6 +429,15 @@ def compare_readings(m: pd.DataFrame, col_a: str, col_b: str, name_a: str, name_
     return out, ch.sort_values("change").reset_index(drop=True), changed.reset_index(drop=True)
 
 
+def _reading_key(a: pd.DataFrame, b: pd.DataFrame) -> list[str]:
+    """The columns two label files are matched on: the title itself (creator, genre, title_raw)
+    when both carry it, else row_id. row_id is positional in the analysis table, so it goes
+    stale when the corpus is re-prepared, and a channel added later takes row_ids that a stale
+    record row may still hold; the title never collides."""
+    title = ["creator", "genre", "title_raw"]
+    return title if all(c in a.columns and c in b.columns for c in title) else ["row_id"]
+
+
 def two_readings(df: pd.DataFrame, first: pd.DataFrame, judge: str, min_titles: int = N_BASE) -> tuple[dict, pd.DataFrame, pd.DataFrame]:
     """The judge's two readings of the same titles: the labels of record (`df`, shuffled batches)
     against the first reading (`first`, batches in sample order, so a title was read beside its
@@ -419,7 +445,8 @@ def two_readings(df: pd.DataFrame, first: pd.DataFrame, judge: str, min_titles: 
     by channel. The readings differ in their batches by design, so the disagreement is the judge's
     own inconsistency and the effect of a title's company together; neither is measured alone.
     Returns (summary, per-channel frame, the titles whose label changed)."""
-    m = df[["row_id", "creator", "title_raw", judge]].merge(first[["row_id", "run", judge]].rename(columns={judge: "label_first"}), on="row_id")
+    key = _reading_key(df, first)
+    m = df[list(dict.fromkeys(["row_id", "creator", "title_raw"] + key))  + [judge]].merge(first[key + ["run", judge]].rename(columns={judge: "label_first"}), on=key)
     out, ch, changed = compare_readings(m, "label_first", judge, "first", "shuffled", min_titles)
     return {"judge": judge, "first_reading": "runs 1 and 2, batches in sample order", "reading_of_record": "run 3, shuffled batches", **out}, ch, changed
 
@@ -431,11 +458,13 @@ def repeat_check(df: pd.DataFrame, first: Optional[pd.DataFrame], repeat: pd.Dat
     too, all three pairs are given, so the batch-context effect can be read against the judge's
     noise: what the first reading loses beyond what the repeat loses is the company a title was
     read in. Returns (summary, per-channel frame, the titles the repeat changed)."""
-    m = df[["row_id", "creator", "title_raw", judge]].merge(repeat[["row_id", judge]].rename(columns={judge: "label_repeat"}), on="row_id")
+    key = _reading_key(df, repeat)
+    m = df[list(dict.fromkeys(["row_id", "creator", "title_raw"] + key)) + [judge]].merge(repeat[key + [judge]].rename(columns={judge: "label_repeat"}), on=key)
     out, ch, changed = compare_readings(m, judge, "label_repeat", "record", "repeat", min_titles)
     summ = {"judge": judge, "reading_of_record": "run 3, shuffled batches", "repeat": "run 4, shuffled batches, a fresh seed", "record_vs_repeat": out}
     if first is not None and judge in first.columns:
-        m3 = m.merge(first[["row_id", "run", judge]].rename(columns={judge: "label_first"}), on="row_id").dropna(subset=[judge, "label_first", "label_repeat"])
+        key3 = _reading_key(m, first)
+        m3 = m.merge(first[key3 + ["run", judge]].rename(columns={judge: "label_first"}), on=key3).dropna(subset=[judge, "label_first", "label_repeat"])
         f_vs_rep, _, _ = compare_readings(m3, "label_first", "label_repeat", "first", "repeat", min_titles)
         f_vs_rec, _, _ = compare_readings(m3, "label_first", judge, "first", "record", min_titles)
         pair = lambda d: {k: d[k] for k in ("n_titles", "exact_agreement", "kappa", "channel_spearman")}
@@ -642,17 +671,27 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                 df[[c for c in keep_cols if c in df.columns] + [c for c in df.columns if c not in keep_cols]].to_csv(LABELS_CSV, index=False)
         else:
             prepared = load_prepared()
-            df = draw_sample(prepared, a.n_per_creator, min_uploads=a.min_uploads)
-            if a.limit:
-                df = df.head(a.limit)
-            if LABELS_CSV.exists() and not a.relabel:   # keep labels already on disk
+            if LABELS_CSV.exists() and not a.relabel:
+                # The sample of record stays exactly as it is on disk (its rows, its labels, its
+                # row_ids: they are matched to the other readings by title, not position). A
+                # channel that is not in it (added to the corpus since) gets its own draw, seeded
+                # by its name, and only its titles go to the judge.
                 old = pd.read_csv(LABELS_CSV)
-                for c in [c for c in old.columns if c.startswith("label_")]:
-                    df = df.merge(old[["row_id", c]], on="row_id", how="left")
-            elif LABELS_CSV.exists():
-                archive = ANALYSIS_DIR / "leaning_labels_previous.csv.gz"
-                shutil.copy(LABELS_CSV, archive)
-                print(f"--relabel: previous labels kept at {archive.name}; labeling afresh with {a.models}", flush=True)
+                added = sorted(set(prepared["creator"]) - set(old["creator"]))
+                new = draw_new_creators(prepared, added, a.n_per_creator, min_uploads=a.min_uploads)
+                if a.limit:
+                    new = new.head(a.limit)
+                df = pd.concat([old, new[[c for c in keep_cols if c in new.columns]]], ignore_index=True)
+                print(f"sample of record: {len(old)} titles from {old['creator'].nunique()} creators; "
+                      f"{len(added)} channel(s) not in it, {len(new)} titles drawn: {', '.join(added) or 'none'}", flush=True)
+            else:
+                if LABELS_CSV.exists():
+                    archive = ANALYSIS_DIR / "leaning_labels_previous.csv.gz"
+                    shutil.copy(LABELS_CSV, archive)
+                    print(f"--relabel: previous labels kept at {archive.name}; labeling afresh with {a.models}", flush=True)
+                df = draw_sample(prepared, a.n_per_creator, min_uploads=a.min_uploads)
+                if a.limit:
+                    df = df.head(a.limit)
             print(f"sample: {len(df)} titles from {df['creator'].nunique()} creators", flush=True)
             for model in a.models:
                 col = model_col(f"claude_code_{model}") + ("" if a.prompt_version == "v1" else f"_{a.prompt_version}")

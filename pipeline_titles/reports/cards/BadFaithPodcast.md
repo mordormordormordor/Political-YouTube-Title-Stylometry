@@ -13,18 +13,18 @@ Top topics: Israel and Palestine Conflict (16.9%); Left-Wing Political Violence 
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 89.4 | 83.5 | 0.8 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 33.9 | 27.1 | -0.4 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 83.9 | 75.4 | -0.0 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 40.3 | 27.5 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 51.7 | 56.4 | 0.1 | 0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 89.5 | 83.5 | 0.8 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 33.8 | 27.0 | -0.4 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 84.4 | 75.5 | -0.0 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 40.1 | 27.4 | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 51.9 | 56.5 | 0.1 | 0.1 |
 | F6: Person-centred (named people) | 100.0 | 100.0 | 2.6 | -0.2 |
 | F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 8.9 | 6.8 | -1.1 | -0.5 |
-| F8: Numeric and dated (digits, years) | 93.2 | 85.6 | 0.5 | -0.2 |
-| F9: ALL-CAPS shouting | 23.7 | 34.3 | -0.6 | -0.3 |
+| F8: Numeric and dated (digits, years) | 93.2 | 85.7 | 0.5 | -0.2 |
+| F9: ALL-CAPS shouting | 24.1 | 34.6 | -0.6 | -0.3 |
 | F10: Quoted speech | 93.2 | 90.7 | 1.0 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 94.5 | 90.7 | 1.0 | -0.3 |
-| F12: +first_pl +future_will +modal | 78.0 | 61.9 | 0.2 | -0.1 |
+| F12: +first_pl +future_will +modal | 78.1 | 62.0 | 0.2 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.3% (3.6%); outrage 49.4% (63.9%); humor 0.0% (0.2%); question 31.2% (15.6%); breaking_live 2.6% (2.9%); episode_show 0.0% (2.8%); interview_guest 89.6% (9.8%); reaction 0.0% (2.9%); confrontation 13.0% (7.7%); listicle 0.0% (0.1%); howto_explainer 5.2% (8.0%)

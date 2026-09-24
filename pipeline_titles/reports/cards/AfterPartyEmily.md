@@ -13,21 +13,21 @@ Top topics: Hollywood and Awards Controversy (5.6%); Media and Journalism Critiq
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 25.4 | 30.1 | -0.3 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 77.1 | 72.5 | 0.5 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 79.2 | 72.5 | -0.1 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 72.9 | 64.8 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 95.3 | 94.5 | 2.2 | 0.2 |
-| F6: Person-centred (named people) | 95.8 | 95.3 | 1.1 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 35.2 | 32.6 | -0.7 | -0.7 |
-| F8: Numeric and dated (digits, years) | 58.1 | 50.8 | -0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 4.2 | 3.4 | -1.0 | -0.3 |
-| F10: Quoted speech | 68.2 | 69.5 | -0.1 | -0.4 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 25.7 | 30.4 | -0.3 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 76.8 | 72.2 | 0.5 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 79.3 | 72.6 | -0.1 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 73.0 | 65.0 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 95.4 | 94.5 | 2.2 | 0.2 |
+| F6: Person-centred (named people) | 95.8 | 95.4 | 1.1 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 35.0 | 32.5 | -0.7 | -0.6 |
+| F8: Numeric and dated (digits, years) | 58.6 | 51.1 | -0.1 | -0.1 |
+| F9: ALL-CAPS shouting | 4.6 | 3.8 | -1.0 | -0.3 |
+| F10: Quoted speech | 68.4 | 69.6 | -0.1 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 94.9 | 92.8 | 1.0 | -0.2 |
-| F12: +first_pl +future_will +modal | 24.6 | 19.9 | -0.5 | -0.3 |
+| F12: +first_pl +future_will +modal | 24.9 | 20.3 | -0.5 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.3% (4.8%); outrage 50.9% (59.8%); humor 0.2% (0.2%); question 29.0% (15.3%); breaking_live 1.5% (2.0%); episode_show 0.0% (7.5%); interview_guest 50.9% (7.7%); reaction 1.5% (2.2%); confrontation 10.4% (7.8%); listicle 0.0% (0.1%); howto_explainer 30.0% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 2.3% (4.8%); outrage 50.9% (60.1%); humor 0.2% (0.2%); question 29.0% (15.2%); breaking_live 1.5% (2.0%); episode_show 0.0% (7.4%); interview_guest 50.9% (7.8%); reaction 1.5% (2.2%); confrontation 10.4% (8.2%); listicle 0.0% (0.1%); howto_explainer 30.0% (9.3%)
 
 
 Nearest style neighbors: @MegynKelly [right]; https://rumble.com/c/GGreenwald [left]; @FreshFitMiami [right]; @MyronGainesX [right]; @BlazeTV [right]
@@ -39,14 +39,14 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 44 | -0.62 | 1.40 | 0.14 | -0.09 | 3.81 | 1.10 | -0.78 | -0.13 | -1.46 | -0.08 | 1.76 | -0.27 | 0.00 | 0.30 | 0.00 |
+| 2026-01 | 44 | -0.62 | 1.40 | 0.14 | -0.09 | 3.81 | 1.10 | -0.78 | -0.13 | -1.45 | -0.07 | 1.76 | -0.26 | 0.00 | 0.30 | 0.00 |
 | 2026-02 | 43 | 0.29 | 0.78 | 0.00 | 0.03 | 3.15 | 1.17 | -0.66 | 0.22 | -1.09 | -0.03 | 2.06 | -0.83 | 0.07 | 0.37 | 0.00 |
 | 2026-03 | 50 | -0.27 | 1.27 | -0.08 | -0.02 | 1.81 | 1.40 | -0.55 | -0.09 | -1.12 | 0.26 | 2.03 | -0.62 | 0.00 | 0.58 | 0.00 |
-| 2026-04 | 48 | -0.73 | -0.09 | -0.13 | 0.12 | 1.98 | 2.10 | -0.94 | -0.10 | -0.58 | -0.22 | 1.35 | -0.49 | 0.00 | 0.46 | 0.02 |
-| 2026-05 | 39 | -0.18 | -0.13 | 0.05 | 0.03 | 2.77 | 1.30 | -0.32 | -0.13 | -0.93 | -0.22 | 0.69 | -0.77 | 0.00 | 0.67 | 0.00 |
+| 2026-04 | 48 | -0.72 | -0.09 | -0.13 | 0.12 | 1.98 | 2.10 | -0.94 | -0.09 | -0.58 | -0.23 | 1.35 | -0.49 | 0.00 | 0.46 | 0.02 |
+| 2026-05 | 39 | -0.18 | -0.13 | 0.05 | 0.03 | 2.78 | 1.30 | -0.32 | -0.13 | -0.92 | -0.22 | 0.69 | -0.76 | 0.00 | 0.67 | 0.00 |
 | 2026-06 | 50 | 0.02 | 0.47 | -0.14 | 0.10 | 3.07 | 1.02 | -0.66 | -0.12 | -0.93 | 0.03 | 0.55 | -0.32 | 0.04 | 0.44 | 0.00 |
 | 2026-07 | 49 | 0.27 | 0.20 | -0.26 | -0.02 | 1.19 | 0.91 | -0.91 | -0.36 | -0.33 | -0.21 | 0.58 | -0.05 | 0.00 | 0.49 | 0.00 |
-| 2026-08 | 49 | -0.57 | -0.29 | -0.40 | -0.01 | 0.46 | 0.30 | -0.92 | -0.22 | -1.32 | -0.48 | -0.08 | -0.67 | 0.06 | 0.71 | 0.00 |
+| 2026-08 | 49 | -0.56 | -0.29 | -0.40 | -0.01 | 0.46 | 0.30 | -0.92 | -0.22 | -1.32 | -0.48 | -0.08 | -0.67 | 0.06 | 0.71 | 0.00 |
 | 2026-09* | 21 | -0.97 | 0.83 | -0.27 | 0.38 | 1.05 | 0.67 | -0.55 | -0.11 | -0.95 | 0.49 | -0.42 | -0.04 | 0.05 | 0.62 | 0.00 |
 
 

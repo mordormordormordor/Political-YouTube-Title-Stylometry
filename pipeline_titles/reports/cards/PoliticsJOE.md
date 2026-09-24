@@ -13,24 +13,24 @@ Top topics: UK Political Chaos and Reform UK (26.2%); UK PM Keir Starmer Resigna
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 32.2 | 44.9 | -0.1 | 0.1 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 56.4 | 64.0 | 0.1 | -0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 89.8 | 89.8 | 0.1 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 41.5 | 34.3 | -0.2 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 65.7 | 70.8 | 0.5 | 0.1 |
-| F6: Person-centred (named people) | 84.7 | 85.6 | 0.5 | -0.2 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 86.0 | 89.0 | 0.4 | -0.5 |
-| F8: Numeric and dated (digits, years) | 28.0 | 16.9 | -0.3 | -0.2 |
-| F9: ALL-CAPS shouting | 36.9 | 47.9 | -0.4 | -0.3 |
-| F10: Quoted speech | 4.7 | 23.7 | -1.0 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 41.1 | 41.5 | -0.4 | -0.3 |
-| F12: +first_pl +future_will +modal | 36.0 | 64.0 | -0.3 | -0.1 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 32.5 | 45.1 | -0.1 | 0.1 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 56.1 | 63.7 | 0.1 | -0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 89.9 | 89.9 | 0.1 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 41.4 | 34.2 | -0.2 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 65.8 | 70.9 | 0.5 | 0.1 |
+| F6: Person-centred (named people) | 84.8 | 85.7 | 0.5 | -0.2 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 86.1 | 89.0 | 0.4 | -0.5 |
+| F8: Numeric and dated (digits, years) | 27.8 | 16.9 | -0.3 | -0.2 |
+| F9: ALL-CAPS shouting | 37.1 | 48.1 | -0.4 | -0.3 |
+| F10: Quoted speech | 4.6 | 23.6 | -1.0 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 40.9 | 41.4 | -0.4 | -0.3 |
+| F12: +first_pl +future_will +modal | 36.3 | 64.1 | -0.3 | -0.1 |
 
 
 Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 5.9% (3.6%); outrage 49.2% (63.9%); humor 0.0% (0.2%); question 16.3% (15.6%); breaking_live 6.2% (2.9%); episode_show 0.0% (2.8%); interview_guest 18.1% (9.8%); reaction 3.7% (2.9%); confrontation 12.3% (7.7%); listicle 0.0% (0.1%); howto_explainer 7.7% (8.0%)
 
 
-Nearest style neighbors: @XAVIAER [right]; @fightbackpodcast [right]; @PTLRadioShow [left]; @TheSerfTimes [left]; @LIVESNEAKO [neutral]
+Nearest style neighbors: @XAVIAER [right]; @fightbackpodcast [right]; @PTLRadioShow [left]; @TheSerfTimes [left]; @axios [neutral]
 
 Nearest topic neighbors: @NovaraMedia [left]; @OwenJonesTalks [left]; @SkyNews [left]; @ThePodcastoftheLotusEaters [right]; @BBCNews [neutral]
 
@@ -39,14 +39,14 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 50 | 0.02 | 1.17 | 0.07 | -0.14 | 0.41 | 0.43 | 0.32 | -0.25 | -0.03 | -1.02 | -0.41 | -0.05 | 0.02 | 0.52 | 0.00 |
-| 2026-02 | 44 | 0.28 | -0.06 | 0.32 | 0.00 | 0.51 | 0.95 | -0.10 | -0.54 | -0.23 | -1.20 | -0.10 | -0.13 | 0.09 | 0.57 | 0.00 |
-| 2026-03 | 61 | -0.52 | 0.32 | 0.08 | -0.08 | 0.25 | 0.51 | 0.40 | -0.22 | -0.44 | -0.93 | -0.74 | -0.08 | 0.00 | 0.46 | 0.00 |
-| 2026-04 | 50 | -0.28 | 0.00 | -0.27 | -0.35 | 0.68 | 0.84 | 0.38 | -0.44 | -0.55 | -1.24 | -0.27 | -0.04 | 0.18 | 0.54 | 0.00 |
-| 2026-05 | 24 | -0.63 | 0.47 | -0.03 | -0.33 | 2.06 | -0.02 | -0.28 | -0.42 | -1.04 | -1.03 | -0.88 | 0.65 | 0.04 | 0.50 | 0.00 |
-| 2026-06 | 36 | -0.26 | -0.90 | 0.43 | 0.15 | 0.32 | 0.21 | 0.52 | -0.14 | -0.79 | -0.90 | -0.41 | -0.86 | 0.06 | 0.58 | 0.00 |
-| 2026-07 | 31 | 0.17 | -0.43 | 0.43 | -0.21 | 0.11 | 0.45 | 0.57 | -0.30 | -0.47 | -1.08 | 0.20 | -1.42 | 0.00 | 0.32 | 0.00 |
-| 2026-08 | 16 | -0.17 | -0.19 | -0.26 | -0.61 | 0.83 | 1.05 | 0.88 | -0.35 | -0.71 | -0.91 | -0.90 | -1.34 | 0.12 | 0.38 | 0.00 |
+| 2026-01 | 50 | 0.02 | 1.17 | 0.08 | -0.14 | 0.41 | 0.43 | 0.32 | -0.25 | -0.03 | -1.02 | -0.41 | -0.05 | 0.02 | 0.52 | 0.00 |
+| 2026-02 | 44 | 0.29 | -0.06 | 0.32 | 0.00 | 0.51 | 0.95 | -0.10 | -0.54 | -0.23 | -1.20 | -0.10 | -0.13 | 0.09 | 0.57 | 0.00 |
+| 2026-03 | 61 | -0.52 | 0.32 | 0.08 | -0.08 | 0.25 | 0.50 | 0.40 | -0.22 | -0.44 | -0.93 | -0.74 | -0.08 | 0.00 | 0.46 | 0.00 |
+| 2026-04 | 50 | -0.28 | 0.00 | -0.26 | -0.35 | 0.69 | 0.84 | 0.38 | -0.44 | -0.55 | -1.24 | -0.27 | -0.04 | 0.18 | 0.54 | 0.00 |
+| 2026-05 | 24 | -0.63 | 0.47 | -0.02 | -0.33 | 2.06 | -0.03 | -0.28 | -0.42 | -1.04 | -1.03 | -0.88 | 0.65 | 0.04 | 0.50 | 0.00 |
+| 2026-06 | 36 | -0.26 | -0.90 | 0.44 | 0.15 | 0.32 | 0.20 | 0.52 | -0.14 | -0.79 | -0.90 | -0.41 | -0.86 | 0.06 | 0.58 | 0.00 |
+| 2026-07 | 31 | 0.17 | -0.44 | 0.43 | -0.21 | 0.11 | 0.45 | 0.57 | -0.30 | -0.46 | -1.07 | 0.20 | -1.42 | 0.00 | 0.32 | 0.00 |
+| 2026-08 | 16 | -0.16 | -0.19 | -0.26 | -0.61 | 0.83 | 1.05 | 0.88 | -0.35 | -0.71 | -0.90 | -0.90 | -1.33 | 0.12 | 0.38 | 0.00 |
 
 
 Engagement (n = 325, R2 = 0.158; log views per within-creator SD, month + topic controls):

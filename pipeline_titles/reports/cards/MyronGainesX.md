@@ -13,21 +13,21 @@ Top topics: Myron and Dating Standards (40.0%); Feminism and Gender Roles Debate
 
 | dimension | percentile (topic-controlled) | percentile (raw) | score | group median |
 |---|---|---|---|---|
-| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 9.7 | 10.6 | -0.7 | 0.2 |
-| F2: +has_finite_verb +present_tense +verb_share +past_tense | 49.6 | 60.6 | -0.0 | 0.1 |
-| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 37.7 | 2.1 | -0.4 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 72.5 | 75.8 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 67.4 | 72.5 | 0.5 | 0.2 |
-| F6: Person-centred (named people) | 80.9 | 86.0 | 0.4 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 54.2 | 21.2 | -0.5 | -0.7 |
-| F8: Numeric and dated (digits, years) | 62.7 | 42.8 | -0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 42.4 | 28.8 | -0.4 | -0.3 |
-| F10: Quoted speech | 26.3 | 25.8 | -0.6 | -0.4 |
-| F11: +n_chars +vader_pos +nominalisation +n_org | 81.4 | 78.0 | 0.4 | -0.2 |
-| F12: +first_pl +future_will +modal | 11.4 | 3.8 | -0.7 | -0.3 |
+| F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 10.1 | 11.0 | -0.7 | 0.2 |
+| F2: +has_finite_verb +present_tense +verb_share +past_tense | 49.4 | 60.3 | -0.0 | 0.1 |
+| F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 38.0 | 2.1 | -0.4 | -0.3 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 72.6 | 75.9 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 67.5 | 72.6 | 0.5 | 0.2 |
+| F6: Person-centred (named people) | 81.0 | 86.1 | 0.4 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 54.0 | 21.1 | -0.5 | -0.6 |
+| F8: Numeric and dated (digits, years) | 62.9 | 43.0 | -0.1 | -0.1 |
+| F9: ALL-CAPS shouting | 42.6 | 29.1 | -0.4 | -0.3 |
+| F10: Quoted speech | 26.2 | 25.7 | -0.6 | -0.4 |
+| F11: +n_chars +vader_pos +nominalisation +n_org | 81.0 | 78.1 | 0.4 | -0.2 |
+| F12: +first_pl +future_will +modal | 11.0 | 4.2 | -0.7 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.1% (4.8%); outrage 80.8% (59.8%); humor 0.0% (0.2%); question 7.1% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 11.5% (7.7%); reaction 8.2% (2.2%); confrontation 16.2% (7.8%); listicle 0.0% (0.1%); howto_explainer 25.8% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 4.1% (4.8%); outrage 80.8% (60.1%); humor 0.0% (0.2%); question 7.1% (15.2%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.4%); interview_guest 11.5% (7.8%); reaction 8.2% (2.2%); confrontation 16.2% (8.2%); listicle 0.0% (0.1%); howto_explainer 25.8% (9.3%)
 
 
 Nearest style neighbors: @thejimmydoreshow [neutral]; @chicksonright [right]; @fightbackpodcast [right]; @PTLRadioShow [left]; @Forthepeoplepodcast305 [left]
@@ -39,13 +39,13 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 
 | month | n | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | curiosity_gap | outrage | humor |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-01 | 59 | -0.35 | 0.14 | -0.23 | 0.19 | 0.63 | 0.17 | -0.74 | -0.24 | 0.08 | -0.69 | 0.51 | -0.07 | 0.07 | 0.83 | 0.00 |
-| 2026-02 | 48 | -0.61 | 0.15 | -0.28 | 0.10 | 0.15 | 0.52 | -0.65 | -0.08 | 0.12 | -0.73 | 0.48 | -0.85 | 0.02 | 0.85 | 0.00 |
+| 2026-01 | 59 | -0.34 | 0.14 | -0.23 | 0.19 | 0.63 | 0.17 | -0.74 | -0.24 | 0.08 | -0.69 | 0.51 | -0.07 | 0.07 | 0.83 | 0.00 |
+| 2026-02 | 48 | -0.60 | 0.15 | -0.28 | 0.10 | 0.15 | 0.52 | -0.65 | -0.08 | 0.12 | -0.73 | 0.48 | -0.85 | 0.02 | 0.85 | 0.00 |
 | 2026-03 | 45 | -1.87 | -0.25 | -0.30 | -0.19 | 1.12 | 0.16 | -1.01 | -0.36 | -0.82 | -0.82 | 0.01 | -1.19 | 0.04 | 0.78 | 0.00 |
 | 2026-04 | 44 | -1.20 | 0.13 | -0.47 | 0.24 | 1.37 | 0.24 | -0.76 | -0.16 | -0.57 | -0.68 | 0.02 | -1.30 | 0.02 | 0.77 | 0.00 |
-| 2026-05 | 40 | -0.60 | -0.46 | -0.30 | 0.04 | 0.67 | 0.29 | -0.39 | 0.49 | -0.20 | -0.63 | 0.36 | 0.20 | 0.00 | 0.78 | 0.00 |
+| 2026-05 | 40 | -0.60 | -0.47 | -0.30 | 0.04 | 0.67 | 0.29 | -0.39 | 0.49 | -0.20 | -0.63 | 0.36 | 0.20 | 0.00 | 0.78 | 0.00 |
 | 2026-06 | 47 | -0.52 | -0.40 | -0.58 | 0.02 | 0.11 | 0.87 | -0.23 | -0.17 | -0.50 | -0.60 | 0.66 | -1.31 | 0.04 | 0.79 | 0.00 |
-| 2026-07 | 35 | -0.08 | 0.09 | -0.35 | -0.10 | 0.29 | 0.46 | -0.19 | -0.58 | -0.17 | -0.79 | 0.62 | -0.10 | 0.06 | 0.86 | 0.00 |
+| 2026-07 | 35 | -0.08 | 0.10 | -0.35 | -0.10 | 0.29 | 0.46 | -0.19 | -0.58 | -0.17 | -0.79 | 0.62 | -0.10 | 0.06 | 0.86 | 0.00 |
 | 2026-08 | 29 | -0.18 | 0.28 | -0.44 | 0.17 | -0.07 | 0.58 | -0.04 | 0.59 | -1.17 | -0.05 | 0.47 | -0.63 | 0.07 | 0.83 | 0.00 |
 | 2026-09* | 18 | -0.85 | -0.02 | -0.31 | -0.49 | 0.03 | 0.47 | -0.21 | 0.30 | -0.74 | -0.27 | 0.19 | -0.88 | 0.06 | 0.78 | 0.00 |
 
@@ -115,9 +115,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-04 | 30 | -0.09 | -1.59 | -0.04 | -0.18 | 0.54 | 0.62 | -1.01 | 0.12 | -0.75 | -0.79 | 0.34 | 0.05 | 0.03 | 0.70 | 0.00 |
 | 2026-05 | 45 | 0.06 | -1.00 | -0.36 | 0.32 | 0.24 | 0.55 | -0.40 | 0.54 | -0.40 | -0.42 | 0.62 | -0.54 | 0.09 | 0.69 | 0.00 |
-| 2026-06 | 35 | -0.26 | -0.62 | -0.50 | 0.07 | -0.16 | 0.93 | -0.81 | 0.74 | -0.79 | -0.18 | 0.25 | 0.18 | 0.06 | 0.77 | 0.00 |
-| 2026-07 | 58 | -1.17 | -0.95 | -0.39 | 0.45 | -0.19 | 0.73 | -0.46 | 0.59 | -1.15 | -0.50 | 0.17 | 0.59 | 0.09 | 0.86 | 0.00 |
-| 2026-08 | 46 | -0.17 | -0.80 | -0.39 | 0.50 | 0.22 | 1.51 | -1.12 | 1.26 | -0.53 | -0.28 | -0.24 | 0.36 | 0.04 | 0.74 | 0.00 |
+| 2026-06 | 35 | -0.26 | -0.62 | -0.50 | 0.07 | -0.16 | 0.93 | -0.81 | 0.74 | -0.79 | -0.18 | 0.25 | 0.19 | 0.06 | 0.77 | 0.00 |
+| 2026-07 | 58 | -1.17 | -0.96 | -0.39 | 0.45 | -0.19 | 0.73 | -0.46 | 0.59 | -1.15 | -0.50 | 0.17 | 0.59 | 0.09 | 0.86 | 0.00 |
+| 2026-08 | 46 | -0.17 | -0.81 | -0.39 | 0.50 | 0.22 | 1.51 | -1.12 | 1.26 | -0.53 | -0.28 | -0.24 | 0.36 | 0.04 | 0.74 | 0.00 |
 | 2026-09* | 16 | 0.37 | -0.22 | -0.47 | 1.19 | 0.25 | 1.28 | -1.17 | -0.55 | -1.29 | -0.58 | 1.12 | -0.21 | 0.00 | 0.75 | 0.00 |
 
 

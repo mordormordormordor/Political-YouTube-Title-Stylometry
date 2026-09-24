@@ -16,21 +16,21 @@ Top topics: Trump delivering remarks (12.3%); Trump Medal of Honor Ceremonies (5
 | F1: Positive tone vs outrage (shock words, violence verbs, negative sentiment) | 97.5 | 98.7 | 1.1 | 0.2 |
 | F2: +has_finite_verb +present_tense +verb_share +past_tense | 5.5 | 4.2 | -1.3 | 0.1 |
 | F3: Labelled live/formulaic headline (LIVE:, BREAKING:, colon labels) | 100.0 | 100.0 | 2.6 | -0.3 |
-| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 74.6 | 58.1 | 0.0 | -0.1 |
-| F5: Question and explainer framing (why, what, ?) | 28.4 | 22.5 | -0.2 | 0.2 |
-| F6: Person-centred (named people) | 86.4 | 89.4 | 0.6 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 10.6 | 34.7 | -1.1 | -0.7 |
-| F8: Numeric and dated (digits, years) | 57.6 | 74.6 | -0.1 | -0.1 |
-| F9: ALL-CAPS shouting | 75.4 | 67.8 | 0.1 | -0.3 |
-| F10: Quoted speech | 28.4 | 22.0 | -0.6 | -0.4 |
+| F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | 74.7 | 58.2 | 0.0 | -0.1 |
+| F5: Question and explainer framing (why, what, ?) | 28.3 | 22.4 | -0.2 | 0.2 |
+| F6: Person-centred (named people) | 86.5 | 89.5 | 0.6 | -0.3 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | 10.5 | 34.6 | -1.1 | -0.6 |
+| F8: Numeric and dated (digits, years) | 57.8 | 74.7 | -0.1 | -0.1 |
+| F9: ALL-CAPS shouting | 75.5 | 67.9 | 0.1 | -0.3 |
+| F10: Quoted speech | 28.3 | 21.9 | -0.6 | -0.4 |
 | F11: +n_chars +vader_pos +nominalisation +n_org | 96.6 | 99.2 | 1.2 | -0.2 |
-| F12: +first_pl +future_will +modal | 22.5 | 32.2 | -0.5 | -0.3 |
+| F12: +first_pl +future_will +modal | 22.8 | 32.5 | -0.5 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (4.8%); outrage 14.0% (59.8%); humor 0.0% (0.2%); question 0.1% (15.3%); breaking_live 62.4% (2.0%); episode_show 99.4% (7.5%); interview_guest 22.4% (7.7%); reaction 0.7% (2.2%); confrontation 2.6% (7.8%); listicle 0.0% (0.1%); howto_explainer 3.0% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 1.0% (4.8%); outrage 14.0% (60.1%); humor 0.0% (0.2%); question 0.1% (15.2%); breaking_live 62.4% (2.0%); episode_show 99.4% (7.4%); interview_guest 22.4% (7.8%); reaction 0.7% (2.2%); confrontation 2.6% (8.2%); listicle 0.0% (0.1%); howto_explainer 3.0% (9.3%)
 
 
-Nearest style neighbors: @aaronparnas1 [left]; @TimesNowWorld [neutral]; https://rumble.com/c/TheAlexJonesShowLive [right]; @DailyDenims [left]; @DarkHorsePod [right]
+Nearest style neighbors: @aaronparnas1 [left]; @TimesNowWorld [neutral]; https://rumble.com/c/TheAlexJonesShowLive [right]; @DailyDenims [left]; @LukeBeasley [left]
 
 Nearest topic neighbors: @oann [right]; @USATODAY [neutral]; https://rumble.com/c/BannonsWarRoom [right]; @FoxNewsChannelClips [right]; @NewsmaxTV [right]
 
@@ -45,7 +45,7 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-04 | 129 | 0.93 | -1.47 | 3.08 | 0.20 | -0.08 | 0.28 | -1.36 | -0.40 | 0.02 | -0.70 | 1.23 | -0.42 | 0.02 | 0.15 | 0.00 |
 | 2026-05 | 232 | 0.97 | -1.51 | 2.98 | -0.10 | -0.32 | 0.32 | -0.85 | -0.23 | 0.15 | -0.51 | 1.08 | -0.45 | 0.00 | 0.12 | 0.00 |
 | 2026-06 | 163 | 1.07 | -2.21 | 3.24 | 0.17 | -0.29 | 0.84 | -1.07 | -0.31 | 0.04 | -0.58 | 0.85 | -0.52 | 0.01 | 0.10 | 0.00 |
-| 2026-07 | 215 | 1.03 | -1.41 | 3.13 | 0.13 | -0.13 | 0.45 | -0.92 | -0.28 | -0.26 | -0.63 | 1.29 | -0.67 | 0.02 | 0.10 | 0.00 |
+| 2026-07 | 215 | 1.03 | -1.42 | 3.13 | 0.13 | -0.13 | 0.45 | -0.92 | -0.28 | -0.26 | -0.63 | 1.29 | -0.67 | 0.02 | 0.10 | 0.00 |
 | 2026-08 | 162 | 1.18 | -0.85 | 1.27 | -0.23 | -0.32 | 1.00 | -0.85 | -0.30 | 0.05 | -0.70 | 1.84 | -0.38 | 0.00 | 0.12 | 0.00 |
 | 2026-09* | 151 | 1.37 | -0.51 | -0.30 | -0.38 | -0.33 | 1.13 | -0.72 | -0.04 | -0.07 | -0.40 | 2.26 | -0.77 | 0.00 | 0.11 | 0.00 |
 
@@ -119,9 +119,9 @@ Monthly drift (topic-controlled scores and hook shares; * = partial month):
 | 2026-04 | 40 | 0.98 | -1.57 | 2.97 | 0.01 | -0.27 | -0.36 | -0.67 | -0.37 | 0.53 | -0.42 | 1.22 | -0.21 | 0.03 | 0.07 | 0.00 |
 | 2026-05 | 38 | 0.71 | -1.68 | 3.00 | -0.11 | -0.30 | 0.05 | -0.59 | -0.08 | 0.23 | -0.68 | 0.80 | -0.27 | 0.03 | 0.05 | 0.00 |
 | 2026-06 | 29 | 1.69 | -1.90 | 2.58 | -0.09 | -0.21 | -0.49 | -0.83 | -0.19 | 0.58 | -0.44 | 1.78 | -0.60 | 0.00 | 0.07 | 0.00 |
-| 2026-07 | 42 | 1.01 | -1.22 | 2.49 | -0.25 | -0.30 | -0.22 | -0.22 | -0.24 | 0.15 | 0.08 | 1.18 | -0.70 | 0.00 | 0.02 | 0.00 |
+| 2026-07 | 42 | 1.01 | -1.22 | 2.49 | -0.25 | -0.30 | -0.22 | -0.22 | -0.24 | 0.15 | 0.08 | 1.18 | -0.69 | 0.00 | 0.02 | 0.00 |
 | 2026-08 | 29 | 0.93 | -1.97 | 2.60 | -0.14 | -0.24 | -0.30 | -0.36 | -0.08 | -0.39 | 0.07 | 1.16 | -0.49 | 0.03 | 0.10 | 0.00 |
-| 2026-09* | 16 | 0.46 | -1.81 | 3.05 | -0.21 | -0.82 | -0.64 | -0.39 | 1.18 | -0.35 | -0.33 | 0.62 | -0.31 | 0.00 | 0.00 | 0.00 |
+| 2026-09* | 16 | 0.46 | -1.81 | 3.05 | -0.21 | -0.82 | -0.64 | -0.38 | 1.18 | -0.35 | -0.33 | 0.62 | -0.31 | 0.00 | 0.00 | 0.00 |
 
 
 Engagement (n = 315, R2 = 0.605; log views per within-creator SD, month + topic controls):

@@ -19,7 +19,7 @@ Top topics: Transgender Rights and Political Debate (20.0%); TikTok Censorship a
 | F4: +trailing_ellipsis +discourse_marker +ellipsis +contraction | None | None | 0.5 | -0.1 |
 | F5: Question and explainer framing (why, what, ?) | None | None | -0.7 | 0.2 |
 | F6: Person-centred (named people) | None | None | -0.8 | -0.3 |
-| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.0 | -0.7 |
+| F7: Descriptive news prose vs title-case (nouns, adjectives, places) | None | None | -1.0 | -0.6 |
 | F8: Numeric and dated (digits, years) | None | None | -0.9 | -0.1 |
 | F9: ALL-CAPS shouting | None | None | -0.7 | -0.3 |
 | F10: Quoted speech | None | None | -0.9 | -0.4 |
@@ -27,7 +27,7 @@ Top topics: Transgender Rights and Political Debate (20.0%); TikTok Censorship a
 | F12: +first_pl +future_will +modal | None | None | 0.1 | -0.3 |
 
 
-Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 70.0% (59.8%); humor 0.0% (0.2%); question 0.0% (15.3%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.5%); interview_guest 0.0% (7.7%); reaction 20.0% (2.2%); confrontation 0.0% (7.8%); listicle 0.0% (0.1%); howto_explainer 0.0% (9.3%)
+Hooks / formats (share of titles; channel-group mean in brackets): curiosity_gap 0.0% (4.8%); outrage 70.0% (60.1%); humor 0.0% (0.2%); question 0.0% (15.2%); breaking_live 0.0% (2.0%); episode_show 0.0% (7.4%); interview_guest 0.0% (7.8%); reaction 20.0% (2.2%); confrontation 0.0% (8.2%); listicle 0.0% (0.1%); howto_explainer 0.0% (9.3%)
 
 
 Engagement: n < 100 titles with views, not estimated.

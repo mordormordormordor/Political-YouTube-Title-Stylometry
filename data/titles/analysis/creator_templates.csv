@@ -1099,6 +1099,8 @@ creator,genre,kind,template,n_titles,share
 @SaltyCracker,videos,trailing,<ENT> to <ENT>,6,0.0166
 @SaltyCracker,videos,trailing,""" <ENT> """,4,0.0111
 @SaltyCracker,videos,trailing,<ENT> in <ENT>,4,0.0111
+@SecretScholars,videos,trailing,live on air,5,0.0472
+@SecretScholars,videos,trailing,it backfires spectacularly,4,0.0377
 @SecularTalk,videos,leading,,46,0.0335
 @SecularTalk,videos,leading,breaking : <ENT>,37,0.0269
 @SecularTalk,videos,leading,breaking : trump,24,0.0175
