@@ -452,7 +452,7 @@ const timeline = document.createElement('div'); timeline.id = 'timeline'; stages
 function drawAll() { panels.forEach(p => p.draw()); }
 function resizeAll() { panels.forEach(p => p.resize()); }
 function setCompare(on) {
-  compare = on; document.getElementById('compare').classList.toggle('on', on); document.getElementById('compare').textContent = on ? 'one network' : 'compare right vs left';
+  compare = on; if ($('compare')) { $('compare').classList.toggle('on', on); $('compare').textContent = on ? 'one network' : 'compare right vs left'; }
   if (on && panels.length === 1) { panels[0].setNetwork('left'); panels.push(new Panel('right', 'B')); }
   if (!on && panels.length === 2) { const p = panels.pop(); p.el.remove(); active = panels[0]; panels[0].setNetwork('all'); }
   stages.appendChild(timeline); resizeAll(); buildLegend(); showPanel();
@@ -563,7 +563,7 @@ function showPanel() {
 }
 // ---------- actions ----------
 function setMode(m) {
-  mode = m; document.getElementById('tabC').classList.toggle('on', m === 'communities'); document.getElementById('tabW').classList.toggle('on', m === 'words');
+  mode = m; if ($('tabC')) { $('tabC').classList.toggle('on', m === 'communities'); $('tabW').classList.toggle('on', m === 'words'); }
   if (m === 'communities') { selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; }
   buildLegend(); showPanel(); drawAll();
 }
@@ -586,10 +586,9 @@ function select(u, center) {
   buildLegend(); showPanel(); drawAll();
 }
 window.addEventListener('keydown', e => { if (e.key === 'Escape') { if (mode === 'words') select(-1); else { selComm = -1; showPanel(); drawAll(); } } });
-document.getElementById('tabC').addEventListener('click', () => { openComm = -1; setMode('communities'); });
-document.getElementById('tabW').addEventListener('click', () => { openComm = -1; setMode('words'); });
-document.getElementById('compare').addEventListener('click', () => setCompare(!compare));
-if (!NETS.left || !NETS.right) document.getElementById('compare').style.display = 'none';
+const $ = id => document.getElementById(id);
+if ($('tabC')) { $('tabC').addEventListener('click', () => { openComm = -1; setMode('communities'); }); $('tabW').addEventListener('click', () => { openComm = -1; setMode('words'); }); }
+if ($('compare')) { $('compare').addEventListener('click', () => setCompare(!compare)); if (!NETS.left || !NETS.right) $('compare').style.display = 'none'; }
 const dl = document.getElementById('terms'); [...NETS.all.nodes.entries()].sort((a, b) => b[1].n - a[1].n).forEach(([u]) => { const o = document.createElement('option'); o.value = T[u]; dl.appendChild(o); });
 document.getElementById('q').addEventListener('change', e => { const u = byName.get(e.target.value.trim().toLowerCase()); if (u !== undefined) select(u, true); });
 const ms = document.getElementById('month'); MONTHS.forEach(m => { const o = document.createElement('option'); o.value = m; o.textContent = monthName(m) + ' 2026 (all channels)'; ms.appendChild(o); });
@@ -597,15 +596,14 @@ ms.addEventListener('change', e => { month = e.target.value; panels.forEach(p =>
 document.getElementById('lift').addEventListener('input', e => { minLift = Math.pow(2, +e.target.value); document.getElementById('liftv').textContent = minLift.toFixed(minLift < 4 ? 1 : 0) + 'x'; panels.forEach(p => { p.buildEdges(); p.layoutCommunities(); }); showPanel(); drawAll(); });
 document.getElementById('sizeby').addEventListener('change', e => { sizeBy = e.target.value; drawAll(); });
 document.getElementById('colorby').addEventListener('change', e => { colorBy = e.target.value; buildLegend(); drawAll(); });
-document.getElementById('edgecolor').addEventListener('change', e => { edgeColor = e.target.value; buildLegend(); drawAll(); });
-if (!GT.left) document.getElementById('edgecolor').parentElement.style.display = 'none';
+if ($('edgecolor')) { $('edgecolor').addEventListener('change', e => { edgeColor = e.target.value; buildLegend(); drawAll(); }); if (!GT.left) $('edgecolor').parentElement.style.display = 'none'; }
 document.getElementById('res').addEventListener('change', e => { resolution = +e.target.value; document.getElementById('resv').textContent = resolution.toFixed(1); runCommunities(); buildLegend(); showPanel(); drawAll(); });
 document.getElementById('res').addEventListener('input', e => { document.getElementById('resv').textContent = (+e.target.value).toFixed(1); });
 document.getElementById('reshuffle').addEventListener('click', () => { seed++; runCommunities(); buildLegend(); showPanel(); drawAll(); });
 document.getElementById('fit').addEventListener('click', fitVisible);
 document.getElementById('labels').addEventListener('change', e => { showLabels = e.target.checked; drawAll(); });
 window.addEventListener('resize', resizeAll);
-if (D.meta.site) { mode = 'words'; document.querySelector('.tabs').style.display = 'none'; document.getElementById('compare').style.display = 'none';
+if (D.meta.site) { mode = 'words';
   document.getElementById('intro').textContent = `${NETS.all.nodes.size.toLocaleString()} words, ${NETS.all.edges.length.toLocaleString()} edges. An edge joins two words that share titles beyond chance within the same channel and week, in both random halves of the channels (lift at least 2, from at least 5 channels). Click a word for its partners and its months; a legend chip shows one community alone.`; }
 runCommunities(); buildLegend(); showPanel(); resizeAll();
 </script>
@@ -623,6 +621,14 @@ def main(argv=None) -> int:
     out = Path(a.out) if a.out else (REPORTS_DIR / "word_network_site.html" if a.site else OUT)
     data = build_data(with_leaning=not a.site, site=a.site)
     html = TEMPLATE.replace("__DATA__", json.dumps(data, separators=(",", ":")).replace("</", "<\\/")).replace("__NODES__", f"{data['meta']['nodes']:,}").replace("__EDGES__", f"{data['meta']['edges']:,}")
+    if a.site:
+        # nothing about channel leaning in the website's build: no view tabs, no compare button, no edge-color menu, no names for the other networks
+        import re
+        html = re.sub(r'  <span class="tabs">.*?</span>\n', "", html, count=1)
+        html = re.sub(r'  <button class="small" id="compare">.*?</button>\n', "", html, count=1)
+        html = re.sub(r'    <label>Edge color <select id="edgecolor">.*?</select></label>\n', "", html, count=1)
+        html = re.sub(r"const NETNAME = \{.*?\};", "const NETNAME = {all: 'all channels'};", html, count=1, flags=re.S)
+        assert not re.search(r"left channels|right channels|audience", html.split('<script id="data"')[0]), "leaning markup left in the site build"
     out.write_text(html, encoding="utf-8")
     print(f"{out} ({out.stat().st_size / 1e6:.1f} MB): {data['meta']['nodes']:,} nodes, {data['meta']['edges']:,} edges, {len(data['networks'])} networks")
     return 0
