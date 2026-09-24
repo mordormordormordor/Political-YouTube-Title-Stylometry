@@ -278,7 +278,7 @@ class Panel {
     this.key = key; this.net = NETS[key]; this.openComm = -1; this.selComm = -1; this.hidden = new Set();
     this.el.querySelector('.netsel').value = key;
     this.buildEdges(); this.runCommunities(); this.resize();
-    if (active === this) showPanel(); buildLegend();
+    if (panels.length) { if (active === this) showPanel(); buildLegend(); }
   }
   has(i) { return this.net.nodes.has(i); }
   buildEdges() {
@@ -428,7 +428,8 @@ class Panel {
   }
 }
 // ---------- panels ----------
-let panels = [new Panel('all', 'A')];
+const panels = [];
+panels.push(new Panel('all', 'A'));
 active = panels[0];
 const timeline = document.createElement('div'); timeline.id = 'timeline'; stages.appendChild(timeline);
 function drawAll() { panels.forEach(p => p.draw()); }
