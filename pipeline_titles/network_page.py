@@ -32,11 +32,7 @@ from pipeline_titles.figures import CAT
 OUT = REPORTS_DIR / "word_network.html"
 
 
-def build_data() -> dict:
-    nodes = pd.read_csv(A / "assoc_nodes.csv")
-    edges = pd.read_csv(A / "assoc_edges.csv")
-    nm = pd.read_csv(A / "assoc_node_months.csv").set_index("term")
-    months = sorted(c[len("titles_"):] for c in nm.columns if c.startswith("titles_"))
+def layout_of(nodes: pd.DataFrame, edges: pd.DataFrame) -> np.ndarray:
     G = nx.Graph()
     for r in nodes.itertuples():
         G.add_node(r.term)
@@ -44,27 +40,45 @@ def build_data() -> dict:
         G.add_edge(r.term_a, r.term_b, weight=float(r.weight))
     pos = nx.forceatlas2_layout(G, max_iter=400, weight="weight", seed=SEED, scaling_ratio=2.0, gravity=1.0)
     xy = np.array([pos[t] for t in nodes["term"]])
-    xy = (xy - xy.mean(axis=0)) / xy.std(axis=0).max()
+    return (xy - xy.mean(axis=0)) / xy.std(axis=0).max()
+
+
+def network_of(suffix: str, months: list[str], with_monthly: bool) -> dict:
+    nodes = pd.read_csv(A / f"assoc_nodes{suffix}.csv")
+    edges = pd.read_csv(A / f"assoc_edges{suffix}.csv")
+    nm = pd.read_csv(A / f"assoc_node_months{suffix}.csv").set_index("term")
+    xy = layout_of(nodes, edges)
     idx = {t: i for i, t in enumerate(nodes["term"])}
-    data_nodes = []
-    for i, r in enumerate(nodes.itertuples()):
-        data_nodes.append({"t": r.term, "x": round(float(xy[i, 0]), 4), "y": round(float(xy[i, 1]), 4), "c": int(r.community), "n": int(r.n_titles),
-                           "b": round(float(r.betweenness), 5),
-                           "mt": [int(nm.loc[r.term, f"titles_{m}"]) for m in months], "mc": [int(nm.loc[r.term, f"channels_{m}"]) for m in months]})
-    data_edges = [[idx[r.term_a], idx[r.term_b], round(float(r.lift_strat), 2), round(float(r.z_cmh), 1), int(r.channels), int(r.observed)] for r in edges.itertuples()]
-    nb = pd.read_csv(A / "assoc_monthly_neighbors.csv.gz")
-    keep = set(idx)
-    nb = nb[nb["term"].isin(keep) & nb["neighbor"].isin(keep)]
-    monthly = {}
-    for m, g in nb.groupby("month"):
-        seen = {}
-        for r in g.itertuples():
-            key = (min(idx[r.term], idx[r.neighbor]), max(idx[r.term], idx[r.neighbor]))
-            if key not in seen:
-                seen[key] = [key[0], key[1], round(float(r.lift), 2), int(r.channels), int(r.observed)]
-        monthly[m] = list(seen.values())
-    return {"nodes": data_nodes, "edges": data_edges, "monthly": monthly, "palette": CAT[:7],
-            "meta": {"nodes": len(data_nodes), "edges": len(data_edges), "months": months}}
+    data_nodes = [{"t": r.term, "x": round(float(xy[i, 0]), 4), "y": round(float(xy[i, 1]), 4), "c": int(r.community), "n": int(r.n_titles), "b": round(float(r.betweenness), 5),
+                   "mt": [int(nm.loc[r.term, f"titles_{m}"]) for m in months], "mc": [int(nm.loc[r.term, f"channels_{m}"]) for m in months]} for i, r in enumerate(nodes.itertuples())]
+    has_co = all(c in edges.columns for c in ("co_left", "co_neutral", "co_right"))
+    data_edges = [[idx[r.term_a], idx[r.term_b], round(float(r.lift_strat), 2), round(float(r.z_cmh), 1), int(r.channels), int(r.observed)] + ([int(r.co_left), int(r.co_neutral), int(r.co_right)] if has_co else [])
+                  for r in edges.itertuples()]
+    out = {"nodes": data_nodes, "edges": data_edges, "monthly": {}}
+    if with_monthly:
+        nb = pd.read_csv(A / "assoc_monthly_neighbors.csv.gz")
+        nb = nb[nb["term"].isin(idx) & nb["neighbor"].isin(idx)]
+        for m, g in nb.groupby("month"):
+            seen = {}
+            for r in g.itertuples():
+                key = (min(idx[r.term], idx[r.neighbor]), max(idx[r.term], idx[r.neighbor]))
+                if key not in seen:
+                    seen[key] = [key[0], key[1], round(float(r.lift), 2), int(r.channels), int(r.observed)]
+            out["monthly"][m] = list(seen.values())
+    return out
+
+
+def build_data() -> dict:
+    nm = pd.read_csv(A / "assoc_node_months.csv")
+    months = sorted(c[len("titles_"):] for c in nm.columns if c.startswith("titles_"))
+    aud = json.loads((A / "assoc_audience.json").read_text()) if (A / "assoc_audience.json").exists() else {"titles": {}}
+    networks = {"all": network_of("", months, True)}
+    for g in ("left", "neutral", "right"):
+        if (A / f"assoc_edges_{g}.csv").exists():
+            networks[g] = network_of(f"_{g}", months, False)
+            print(f"{g}: {len(networks[g]['nodes'])} nodes, {len(networks[g]['edges'])} edges", flush=True)
+    return {"networks": networks, "palette": CAT[:7], "group_titles": aud["titles"],
+            "meta": {"nodes": len(networks["all"]["nodes"]), "edges": len(networks["all"]["edges"]), "months": months}}
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -134,8 +148,11 @@ a.x { color:var(--accent); cursor:pointer; }
   <span class="tabs"><button id="tabC" class="on">Communities</button><button id="tabW">Words</button></span>
   <p id="intro">__NODES__ words, __EDGES__ edges. An edge joins two words that share titles beyond chance within the same channel and week, in both random halves of the channels (lift at least 2, from at least 5 channels). Start from the communities; open one to see its words.</p>
   <div class="controls">
+    <label>Network <select id="net"><option value="all">all channels</option><option value="left">left channels</option><option value="neutral">neutral channels</option><option value="right">right channels</option></select></label>
     <label>Find <input type="search" id="q" list="terms" placeholder="a word"><datalist id="terms"></datalist></label>
     <label>Edges of <select id="month"><option value="all">the whole year</option></select></label>
+    <label>Edge color <select id="edgecolor"><option value="strength">strength</option><option value="audience">audience</option></select></label>
+    <button class="small" id="fit" title="fit the view to what is shown">fit</button>
     <label>Lift ≥ <input type="range" id="lift" min="1" max="6" step="0.25" value="1" style="width:90px"> <span id="liftv">2x</span></label>
     <label>Size by <select id="sizeby"><option value="strength">strength</option><option value="degree">degree</option><option value="betweenness">betweenness</option><option value="titles">titles</option></select></label>
     <label>Color by <select id="colorby"><option value="community">community</option><option value="betweenness">betweenness</option><option value="strength">strength</option></select></label>
@@ -199,26 +216,45 @@ function modularity(n, edges, comm) {
 }
 // ---------- data and state ----------
 const D = JSON.parse(document.getElementById('data').textContent);
-const N = D.nodes, E = D.edges, MONTHS = D.meta.months, PAL = D.palette;
-const byName = new Map(N.map((n, i) => [n.t, i]));
+const MONTHS = D.meta.months, PAL = D.palette, GT = D.group_titles;
+let NET = 'all', N = D.networks.all.nodes, E = D.networks.all.edges, MONTHLY = D.networks.all.monthly;
+let byName = new Map(N.map((n, i) => [n.t, i]));
+let edgeColor = 'strength';
+const NETNAME = {all: 'all channels', left: 'left channels', neutral: 'neutral channels', right: 'right channels'};
+function audienceBalance(e) {
+  // rates per thousand titles of the left and the right channels; -1 = only the left makes the pair, +1 = only the right
+  if (e.length < 9 || !GT.left) return null;
+  const l = e[6] / GT.left * 1000, r = e[8] / GT.right * 1000; if (l + r === 0) return null; return (r - l) / (r + l);
+}
+function balanceColor(b) { const t = Math.abs(b); const base = b < 0 ? [42, 120, 214] : [235, 104, 52]; const g = [150, 149, 143]; return `rgba(${base.map((v, k) => Math.round(g[k] + (v - g[k]) * t)).join(',')},`; }
 const canvas = document.getElementById('c'), ctx = canvas.getContext('2d');
 const tip = document.getElementById('tip'), panel = document.getElementById('panel'), timeline = document.getElementById('timeline');
 let view = {k: 1, tx: 0, ty: 0}, dragging = false, moved = false, last = null;
 let mode = 'communities', selected = -1, selComm = -1, hover = -1, month = 'all', minLift = 2, showLabels = true, sizeBy = 'strength', colorBy = 'community';
 let resolution = 1.0, seed = 1, comm, commInfo = [], hidden = new Set(), openComm = -1;
 let edgesNow = E, adj = new Map(), deg = new Float64Array(N.length), str = new Float64Array(N.length);
+function setNetwork(key) {
+  NET = key; N = D.networks[key].nodes; E = D.networks[key].edges; MONTHLY = D.networks[key].monthly || {};
+  byName = new Map(N.map((n, i) => [n.t, i])); deg = new Float64Array(N.length); str = new Float64Array(N.length);
+  selected = -1; selComm = -1; openComm = -1; hover = -1; month = 'all'; document.getElementById('month').value = 'all';
+  document.getElementById('month').disabled = key !== 'all'; document.getElementById('edgecolor').disabled = key !== 'all'; if (key !== 'all') { edgeColor = 'strength'; document.getElementById('edgecolor').value = 'strength'; }
+  document.getElementById('intro').textContent = `${N.length.toLocaleString()} words, ${E.length.toLocaleString()} edges among the ${NETNAME[key]}` + (key === 'all' ? '. An edge joins two words that share titles beyond chance within the same channel and week, in both random halves of the channels (lift at least 2, from at least 5 channels). Start from the communities; open one to see its words.' : `: the same test run on the ${GT[key].toLocaleString()} titles of those channels alone, with its own channel halves, communities and layout. Fewer titles mean fewer pairs clear the gates, so this network is sparser than the whole.`);
+  const dl = document.getElementById('terms'); dl.innerHTML = ''; N.slice().sort((a, b) => b.n - a.n).forEach(n => { const o = document.createElement('option'); o.value = n.t; dl.appendChild(o); });
+  timeline.classList.remove('open'); timeline.innerHTML = '';
+  buildEdges(); runCommunities(); view.init = false; resize(); showPanel();
+}
 let cNodes = [], cEdges = [];
 const monthName = m => new Date(m + '-15').toLocaleString('en-US', {month: 'long'});
 const monthShort = m => new Date(m + '-15').toLocaleString('en-US', {month: 'short'});
 
 function buildEdges() {
-  edgesNow = month === 'all' ? E : D.monthly[month].map(e => [e[0], e[1], e[2], NaN, e[3], e[4]]);
+  edgesNow = month === 'all' ? E : (MONTHLY[month] || []).map(e => [e[0], e[1], e[2], NaN, e[3], e[4]]);
   adj = new Map(); deg.fill(0); str.fill(0);
   edgesNow.forEach(e => {
     if (e[2] < minLift) return;
     const w = Math.log2(e[2]);
     if (!adj.has(e[0])) adj.set(e[0], []); if (!adj.has(e[1])) adj.set(e[1], []);
-    adj.get(e[0]).push({j: e[1], lift: e[2], z: e[3], ch: e[4], obs: e[5]}); adj.get(e[1]).push({j: e[0], lift: e[2], z: e[3], ch: e[4], obs: e[5]});
+    adj.get(e[0]).push({j: e[1], lift: e[2], z: e[3], ch: e[4], obs: e[5], e}); adj.get(e[1]).push({j: e[0], lift: e[2], z: e[3], ch: e[4], obs: e[5], e});
     deg[e[0]]++; deg[e[1]]++; str[e[0]] += w; str[e[1]] += w;
   });
 }
@@ -281,27 +317,31 @@ function colorOfNode(i) {
   const v = colorBy === 'betweenness' ? N[i].b : str[i];
   return ramp(Math.sqrt(v / colorMax));
 }
-function visibleNode(i) { if (hidden.has(comm[i])) return false; if (openComm >= 0 && comm[i] !== openComm) return false; return true; }
+function visibleNode(i) { return !hidden.has(comm[i]); }
+function inFocusComm(i) { return openComm < 0 || comm[i] === openComm; }
 function draw() {
   const r = canvas.getBoundingClientRect();
   ctx.clearRect(0, 0, r.width, r.height);
   if (mode === 'communities') return drawCommunities(r);
-  sizeMax = Math.max(1e-9, ...N.map((_, i) => visibleNode(i) ? measure(i) : 0));
+  sizeMax = Math.max(1e-9, ...N.map((_, i) => visibleNode(i) && inFocusComm(i) ? measure(i) : 0));
   colorMax = Math.max(1e-9, ...N.map((_, i) => colorBy === 'betweenness' ? N[i].b : str[i]));
   const focus = selected >= 0 ? new Set([selected, ...(adj.get(selected) || []).map(a => a.j)]) : null;
   ctx.lineCap = 'round';
   edgesNow.forEach(e => {
     if (e[2] < minLift || !visibleNode(e[0]) || !visibleNode(e[1])) return;
+    if (!inFocusComm(e[0]) || !inFocusComm(e[1])) return;
     const inFocus = focus && (e[0] === selected || e[1] === selected);
     if (focus && !inFocus) return;
     const w = Math.log2(e[2]);
-    ctx.strokeStyle = inFocus ? 'rgba(42,120,214,0.75)' : `rgba(82,81,78,${Math.min(0.45, 0.05 + 0.05 * w)})`;
+    const bal = edgeColor === 'audience' ? audienceBalance(e) : null;
+    if (bal !== null) ctx.strokeStyle = balanceColor(bal) + (inFocus ? '0.9)' : `${Math.min(0.75, 0.25 + 0.25 * Math.abs(bal) + 0.05 * w)})`);
+    else ctx.strokeStyle = inFocus ? 'rgba(42,120,214,0.75)' : `rgba(82,81,78,${Math.min(0.45, 0.05 + 0.05 * w)})`;
     ctx.lineWidth = Math.max(0.4, Math.min(3, 0.3 + 0.35 * w)) * (inFocus ? 1.4 : 1);
     ctx.beginPath(); ctx.moveTo(sx(N[e[0]]), sy(N[e[0]])); ctx.lineTo(sx(N[e[1]]), sy(N[e[1]])); ctx.stroke();
   });
   const order = N.map((n, i) => i).filter(visibleNode).sort((a, b) => measure(a) - measure(b));
   order.forEach(i => {
-    const n = N[i], dim = focus && !focus.has(i);
+    const n = N[i], dim = (focus && !focus.has(i)) || !inFocusComm(i);
     ctx.globalAlpha = dim ? 0.12 : 1;
     ctx.beginPath(); ctx.arc(sx(n), sy(n), radius(i), 0, Math.PI * 2);
     ctx.fillStyle = colorOfNode(i); ctx.fill();
@@ -314,7 +354,7 @@ function draw() {
     const labeled = new Set(order.slice(-budget)); if (focus) focus.forEach(i => labeled.add(i));
     const placed = [];
     [...labeled].sort((a, b) => measure(b) - measure(a)).forEach(i => {
-      const n = N[i]; if (!visibleNode(i) || (focus && !focus.has(i))) return;
+      const n = N[i]; if (!visibleNode(i) || !inFocusComm(i) || (focus && !focus.has(i))) return;
       ctx.font = (i === selected ? 'bold 12px' : '11px') + ' -apple-system, "Segoe UI", Helvetica, Arial, sans-serif';
       const x = sx(n), y = sy(n) - radius(i) - 2, w = ctx.measureText(n.t).width;
       if (x < -20 || y < -20 || x > r.width + 20 || y > r.height + 20) return;
@@ -358,7 +398,7 @@ function drawCommunities(r) {
 function nodeAt(px, py) {
   if (mode === 'communities') { let best = -1; cNodes.forEach(cn => { if (hidden.has(cn.c.id)) return; if (Math.hypot(sx(cn) - px, sy(cn) - py) <= cn.r * view.k + 3) best = cn.c.id; }); return best; }
   let best = -1, bd = 1e9;
-  N.forEach((n, i) => { if (!visibleNode(i)) return; const d = Math.hypot(sx(n) - px, sy(n) - py); if (d < Math.max(radius(i) + 3, 8) && d < bd) { bd = d; best = i; } });
+  N.forEach((n, i) => { if (!visibleNode(i) || !inFocusComm(i)) return; const d = Math.hypot(sx(n) - px, sy(n) - py); if (d < Math.max(radius(i) + 3, 8) && d < bd) { bd = d; best = i; } });
   return best;
 }
 // ---------- panels ----------
@@ -366,9 +406,10 @@ function buildLegend() {
   const legend = document.getElementById('legend'); legend.innerHTML = '';
   commInfo.slice(0, PAL.length).forEach(c => { const s = document.createElement('span'); s.className = 'chip' + (openComm >= 0 && openComm !== c.id ? ' off' : ''); s.title = mode === 'words' ? 'show only this community (click again for all)' : 'select this community';
     s.innerHTML = `<i style="background:${c.color}"></i>${c.label} (${c.size})`;
-    s.addEventListener('click', () => { if (mode === 'communities') { selectCommunity(c.id); return; } openComm = openComm === c.id ? -1 : c.id; selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; buildLegend(); showPanel(); fitVisible(); }); legend.appendChild(s); });
+    s.addEventListener('click', () => { if (mode === 'communities') { selectCommunity(c.id); return; } openComm = openComm === c.id ? -1 : c.id; selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; buildLegend(); showPanel(); setTimeout(resize, 160); }); legend.appendChild(s); });
   const others = document.createElement('span'); others.className = 'chip'; others.innerHTML = `<i style="background:#b3b2ad"></i>${Math.max(0, commInfo.length - PAL.length)} smaller communities`; legend.appendChild(others);
   if (colorBy !== 'community') { const s = document.createElement('span'); s.className = 'chip'; s.innerHTML = `<i style="background:linear-gradient(90deg,#cde2fb,#0d366b);border-radius:2px;width:40px"></i>${colorBy}, light to dark`; legend.appendChild(s); }
+  if (edgeColor === 'audience' && NET === 'all') { const s = document.createElement('span'); s.className = 'chip'; s.innerHTML = `<i style="background:linear-gradient(90deg,#2a78d6,#96958f,#eb6834);border-radius:2px;width:60px"></i>edges: left channels make the pair · both · right channels`; legend.appendChild(s); }
 }
 function communityCards() {
   let h = `<h2>${commInfo.length} communities</h2><div class="sub">Louvain on the year's edges at resolution ${resolution.toFixed(1)}. Click a card or a disc; open it to see its words.</div>`;
@@ -402,7 +443,7 @@ function rankingPanel() {
   const measures = [['strength', i => str[i], v => v.toFixed(1)], ['degree', i => deg[i], v => v], ['betweenness (year)', i => N[i].b, v => v.toFixed(3)]];
   let h = `<h2>${openComm >= 0 ? commInfo.find(c => c.id === openComm).top.slice(0, 3).join(', ') : 'All words'}</h2><div class="sub">${openComm >= 0 ? '<a class="x" id="back">all communities</a> · ' : ''}Click a word in the map or a name below. Degree and strength are for the edges on screen (${month === 'all' ? 'the whole year' : monthName(month)}, lift ≥ ${minLift}x).</div>`;
   measures.forEach(([name, f, fmt]) => {
-    const top = N.map((_, i) => i).filter(visibleNode).sort((a, b) => f(b) - f(a)).slice(0, 12);
+    const top = N.map((_, i) => i).filter(i => visibleNode(i) && inFocusComm(i)).sort((a, b) => f(b) - f(a)).slice(0, 12);
     h += `<h3>Top by ${name}</h3><table>` + top.map(i => `<tr class="link" data-i="${i}"><td><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${commOf(i).color};margin-right:4px"></i>${N[i].t}</td><td class="num">${fmt(f(i))}</td></tr>`).join('') + '</table>';
   });
   h += "<div class='note'>Degree: how many partners. Strength: the sum of the partners' log2 lifts. Betweenness: how often the word lies on the shortest path between two others, a bridge between stories.</div>";
@@ -414,9 +455,13 @@ function wordPanel(i) {
   const n = N[i], nb = (adj.get(i) || []).slice().sort((a, b) => b.lift - a.lift), c = commOf(i);
   let h = `<h2>${n.t}</h2><div class="sub">${n.n.toLocaleString()} titles · degree ${deg[i]} · strength ${str[i].toFixed(1)} · betweenness ${n.b} · community <a class="x" id="cm"><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${c.color}"></i> ${c.top.slice(0, 3).join(', ')}</a></div>`;
   h += `<div class="sub">${nb.length} partners ${month === 'all' ? 'over the year' : 'in ' + monthName(month)} at lift ≥ ${minLift}x</div>`;
-  h += '<table><tr><th>partner</th><th class="num">lift</th>' + (month === 'all' ? '<th class="num">z</th>' : '') + '<th class="num">titles</th><th class="num">channels</th></tr>';
-  nb.forEach(a => { h += `<tr class="link" data-i="${a.j}"><td><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${commOf(a.j).color};margin-right:4px"></i>${N[a.j].t}</td><td class="num">${a.lift.toFixed(1)}</td>` + (month === 'all' ? `<td class="num">${a.z}</td>` : '') + `<td class="num">${a.obs}</td><td class="num">${a.ch}</td></tr>`; });
+  const showAud = NET === 'all' && month === 'all' && GT.left;
+  h += '<table><tr><th>partner</th><th class="num">lift</th>' + (month === 'all' ? '<th class="num">z</th>' : '') + '<th class="num">titles</th><th class="num">channels</th>' + (showAud ? '<th title="co-mentions per thousand titles of the left and of the right channels">L / R per 1k</th>' : '') + '</tr>';
+  nb.forEach(a => { let aud = '';
+    if (showAud && a.e) { const b = audienceBalance(a.e); if (b !== null) aud = `<td><i style="display:inline-block;width:9px;height:9px;border-radius:2px;background:${balanceColor(b)}1)"></i> ${(a.e[6] / GT.left * 1000).toFixed(1)} / ${(a.e[8] / GT.right * 1000).toFixed(1)}</td>`; else aud = '<td></td>'; }
+    h += `<tr class="link" data-i="${a.j}"><td><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${commOf(a.j).color};margin-right:4px"></i>${N[a.j].t}</td><td class="num">${a.lift.toFixed(1)}</td>` + (month === 'all' ? `<td class="num">${a.z}</td>` : '') + `<td class="num">${a.obs}</td><td class="num">${a.ch}</td>${aud}</tr>`; });
   h += '</table>';
+  if (showAud) h += '<div class="note">Audience: blue when the left channels make the pair more often per title, orange when the right do, gray when both do alike. Neutral channels count in titles and lift but not in the balance.</div>';
   panel.innerHTML = h;
   panel.querySelectorAll('tr.link').forEach(tr => tr.addEventListener('click', () => select(+tr.dataset.i)));
   panel.querySelector('#cm').addEventListener('click', () => { setMode('communities'); selectCommunity(comm[i]); });
@@ -425,11 +470,12 @@ function timelineFor(i) {
   const n = N[i]; const maxT = Math.max(1, ...n.mt);
   let h = '<div class="tl">';
   MONTHS.forEach((m, k) => {
-    const partners = (D.monthly[m] || []).filter(e => e[0] === i || e[1] === i).map(e => ({j: e[0] === i ? e[1] : e[0], lift: e[2]})).sort((a, b) => b.lift - a.lift).slice(0, 6);
+    const partners = (MONTHLY[m] || []).filter(e => e[0] === i || e[1] === i).map(e => ({j: e[0] === i ? e[1] : e[0], lift: e[2]})).sort((a, b) => b.lift - a.lift).slice(0, 6);
     h += `<div class="m"><h4>${monthShort(m)}</h4><div class="bar" style="width:${Math.round(100 * n.mt[k] / maxT)}%"></div><div class="cnt">${n.mt[k].toLocaleString()} titles · ${n.mc[k]} ch</div>` +
       partners.map(p => `<div class="p" data-i="${p.j}" title="${N[p.j].t}, ${p.lift.toFixed(1)}x">${N[p.j].t} <span style="color:var(--muted)">${p.lift.toFixed(0)}x</span></div>`).join('') + '</div>';
   });
   h += '</div>';
+  if (NET !== 'all') h += '<div class="note" style="padding:0 12px 8px">Partners by month are computed for the all-channel network only; the bars are this audience\'s titles.</div>';
   timeline.innerHTML = h; timeline.classList.add('open');
   timeline.querySelectorAll('.p').forEach(el => el.addEventListener('click', () => select(+el.dataset.i)));
   setTimeout(resize, 160);
@@ -445,9 +491,9 @@ function setMode(m) {
   showPanel(); draw();
 }
 function selectCommunity(id) { selComm = id; showPanel(); draw(); }
-function openCommunity(id) { openComm = id; selComm = -1; selected = -1; setMode('words'); buildLegend(); fitVisible(); }
+function openCommunity(id) { openComm = id; selComm = -1; selected = -1; setMode('words'); buildLegend(); }
 function fitVisible() {
-  const r = canvas.getBoundingClientRect(); const vis = N.filter((_, i) => visibleNode(i)); if (!vis.length) return;
+  const r = canvas.getBoundingClientRect(); const vis = N.filter((_, i) => visibleNode(i) && inFocusComm(i)); if (!vis.length) return;
   const xs = vis.map(n => n.x), ys = vis.map(n => n.y); const w = Math.max(...xs) - Math.min(...xs) || 1, h = Math.max(...ys) - Math.min(...ys) || 1;
   view.k = Math.min(r.width / w, r.height / h) * 0.8; view.tx = r.width / 2 - (Math.min(...xs) + w / 2) * view.k; view.ty = r.height / 2 - (Math.min(...ys) + h / 2) * view.k; draw();
 }
@@ -491,6 +537,9 @@ document.getElementById('res').addEventListener('change', e => { resolution = +e
 document.getElementById('res').addEventListener('input', e => { document.getElementById('resv').textContent = (+e.target.value).toFixed(1); });
 document.getElementById('reshuffle').addEventListener('click', () => { seed++; runCommunities(); showPanel(); draw(); });
 document.getElementById('labels').addEventListener('change', e => { showLabels = e.target.checked; draw(); });
+document.getElementById('net').addEventListener('change', e => setNetwork(e.target.value));
+document.getElementById('edgecolor').addEventListener('change', e => { edgeColor = e.target.value; buildLegend(); draw(); });
+document.getElementById('fit').addEventListener('click', fitVisible);
 window.addEventListener('resize', resize);
 buildEdges(); runCommunities(); showPanel(); resize();
 </script>
@@ -503,7 +552,7 @@ def main() -> int:
     data = build_data()
     html = TEMPLATE.replace("__DATA__", json.dumps(data, separators=(",", ":")).replace("</", "<\\/")).replace("__NODES__", f"{data['meta']['nodes']:,}").replace("__EDGES__", f"{data['meta']['edges']:,}")
     OUT.write_text(html, encoding="utf-8")
-    print(f"{OUT} ({OUT.stat().st_size / 1e6:.1f} MB): {data['meta']['nodes']:,} nodes, {data['meta']['edges']:,} edges, {len(data['monthly'])} months")
+    print(f"{OUT} ({OUT.stat().st_size / 1e6:.1f} MB): {data['meta']['nodes']:,} nodes, {data['meta']['edges']:,} edges, {len(data['networks'])} networks")
     return 0
 
 

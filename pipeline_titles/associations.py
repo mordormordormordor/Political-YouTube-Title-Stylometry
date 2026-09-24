@@ -35,6 +35,9 @@ Six blocks, each writing its own tables to data/titles/analysis/assoc_*:
   3 network     the pairs that pass (q, lift, channels) as a weighted graph: Louvain
                 communities, degree, strength, betweenness, and whether the case-study words
                 share a community across Louvain seeds
+  3b audience   the same pair test on the left, neutral and right channels alone, each its own
+                network (edges, nodes, communities, node months per group), and for every edge of
+                the whole network the co-mentions each group contributed
   4 monthly     block 2 per month, each term's top neighbors per month, and the drift of each
                 term's neighborhood (Jaccard of consecutive months)
   5 case        the Iran / war / Epstein protocol: detrended correlation with a circular-shift
@@ -756,6 +759,84 @@ def network_block(pairs: pd.DataFrame, vocab: pd.DataFrame, focus: Sequence[str]
 
 
 # --------------------------------------------------------------------------- #
+# block 3b: one network per audience, and who makes each edge of the whole
+# --------------------------------------------------------------------------- #
+AUDIENCES = ("left", "neutral", "right")
+
+
+def audience_block(uniq: pd.DataFrame, X: sp.csr_matrix, vocab: pd.DataFrame) -> dict:
+    """The pair test of block 2 run on each channel group alone (its own creator x week strata, its
+    own channel halves, the same gates), each group's edges as its own network with Louvain
+    communities and measures (assoc_edges_<group>.csv, assoc_nodes_<group>.csv,
+    assoc_node_months_<group>.csv); and, for every edge of the all-channel network, the
+    co-mentions that came from each group (columns co_left / co_neutral / co_right added to
+    assoc_edges.csv), with the groups' title counts in assoc_audience.json."""
+    terms = vocab["term"].to_numpy()
+    V = len(terms)
+    strata = strata_of(uniq, ["creator", "week"])
+    halves = channel_halves(uniq)
+    groups = uniq["group"].to_numpy()
+    creator_idx = pd.factorize(uniq["creator"])[0]
+    edges_all = pd.read_csv(ANALYSIS_DIR / "assoc_edges.csv")
+    index = {t: i for i, t in enumerate(terms)}
+    ia = edges_all["term_a"].map(index).to_numpy(); ib = edges_all["term_b"].map(index).to_numpy()
+    info = {"titles": {}, "networks": {}}
+    for g in AUDIENCES:
+        m = groups == g
+        info["titles"][g] = int(m.sum())
+        Xg = X[m]
+        O, E, Vr = stratified_stats(Xg, pd.factorize(strata[m])[0])
+        edges_all[f"co_{g}"] = O[ia, ib].astype(int)
+        iu, ju = np.triu_indices(V, k=1)
+        keep = O[iu, ju] >= PAIR_MIN_OBS
+        iu, ju = iu[keep], ju[keep]
+        with np.errstate(divide="ignore", invalid="ignore"):
+            z = np.where(Vr[iu, ju] > 0, (O[iu, ju] - E[iu, ju]) / np.sqrt(Vr[iu, ju]), np.nan)
+            lift = O[iu, ju] / E[iu, ju]
+        PC = pair_channels(Xg, pd.factorize(uniq.loc[m, "creator"])[0])
+        pairs = pd.DataFrame({"term_a": terms[iu], "term_b": terms[ju], "observed": O[iu, ju], "expected_strat": E[iu, ju], "lift_strat": lift, "z_cmh": z,
+                              "p_cmh": 2 * stats.norm.sf(np.abs(z)), "channels": np.asarray(PC[iu, ju]).ravel()})
+        for h in (0, 1):
+            mh = m & (halves == h)
+            Oh, Eh, Vh = stratified_stats(X[mh], pd.factorize(strata[mh])[0])
+            with np.errstate(divide="ignore", invalid="ignore"):
+                zh = np.where(Vh[iu, ju] > 0, (Oh[iu, ju] - Eh[iu, ju]) / np.sqrt(Vh[iu, ju]), np.nan)
+            pairs[f"z_half_{'ab'[h]}"] = zh
+            pairs[f"q_half_{'ab'[h]}"] = bh_q(2 * stats.norm.sf(np.abs(zh)))
+            del Oh, Eh, Vh
+        pairs = drop_phrase_pairs(pairs, vocab)
+        pairs["q_cmh"] = bh_q(pairs["p_cmh"].to_numpy())
+        same = (np.sign(pairs["z_half_a"]) == np.sign(pairs["z_cmh"])) & (np.sign(pairs["z_half_b"]) == np.sign(pairs["z_cmh"]))
+        pairs["replicated"] = (pairs["q_cmh"] < Q_FDR) & same & (pairs["q_half_a"] < Q_FDR) & (pairs["q_half_b"] < Q_FDR)
+        edges = pairs[edge_mask(pairs)].copy()
+        edges["weight"] = np.log2(edges["lift_strat"])
+        edges = edges.sort_values(["z_cmh", "term_a", "term_b"], ascending=[False, True, True]).reset_index(drop=True)
+        edges[["term_a", "term_b", "observed", "expected_strat", "lift_strat", "z_cmh", "q_cmh", "channels", "weight"]].to_csv(ANALYSIS_DIR / f"assoc_edges_{g}.csv", index=False, float_format="%.5f", compression=None)
+        G = nx.Graph()
+        for r in edges.itertuples():
+            G.add_edge(r.term_a, r.term_b, weight=float(r.weight))
+        comms = sorted((sorted(c) for c in nx.community.louvain_communities(G, weight="weight", seed=SEED)), key=lambda c: (-len(c), c[0])) if G.number_of_edges() else []
+        member = {n: i for i, c in enumerate(comms) for n in c}
+        strength = dict(G.degree(weight="weight")); degree = dict(G.degree())
+        betw = nx.betweenness_centrality(G, k=min(500, G.number_of_nodes()), seed=SEED) if G.number_of_nodes() else {}
+        n_titles_g = np.asarray(Xg.sum(axis=0)).ravel()
+        nodes = pd.DataFrame({"term": list(G.nodes())})
+        nodes["n_titles"] = nodes["term"].map(lambda t: int(n_titles_g[index[t]]))
+        nodes["degree"] = nodes["term"].map(degree); nodes["strength"] = nodes["term"].map(strength); nodes["betweenness"] = nodes["term"].map(betw); nodes["community"] = nodes["term"].map(member)
+        nodes = nodes.sort_values(["community", "strength", "term"], ascending=[True, False, True]).reset_index(drop=True)
+        nodes.to_csv(ANALYSIS_DIR / f"assoc_nodes_{g}.csv", index=False, float_format="%.5f")
+        node_months(uniq[m].reset_index(drop=True), Xg, vocab, nodes["term"].tolist()).to_csv(ANALYSIS_DIR / f"assoc_node_months_{g}.csv", index=False)
+        info["networks"][g] = {"pairs_tabulated": int(len(pairs)), "edges": int(len(edges)), "nodes": int(G.number_of_nodes()), "communities": len(comms),
+                               "modularity": float(nx.community.modularity(G, comms, weight="weight")) if G.number_of_edges() else float("nan")}
+        print(f"audience {g}: {int(m.sum()):,} titles; {len(pairs):,} pairs tabulated, {len(edges):,} edges, {G.number_of_nodes():,} nodes, {len(comms)} communities", flush=True)
+        del O, E, Vr
+    edges_all.to_csv(ANALYSIS_DIR / "assoc_edges.csv", index=False, float_format="%.5f")
+    with open(ANALYSIS_DIR / "assoc_audience.json", "w", encoding="utf-8") as f:
+        json.dump(info, f, indent=1)
+    return info
+
+
+# --------------------------------------------------------------------------- #
 # block 4: month by month
 # --------------------------------------------------------------------------- #
 def monthly_block(uniq: pd.DataFrame, X: sp.csr_matrix, vocab: pd.DataFrame, focus: Sequence[str] = ("epstein", "iran", "war")) -> dict:
@@ -1364,6 +1445,7 @@ def run(info: dict, case_only: bool = False, battery: Optional[str] = None) -> N
         pairs, pinfo = pairs_block(uniq, X, vocab)
         info["pairs"] = pinfo
         info["network"] = network_block(pairs, vocab, uniq=uniq, X=X)
+        info["audience"] = audience_block(uniq, X, vocab)
         info["monthly"] = monthly_block(uniq, X, vocab)
     info["case"] = case_block(uniq, title_terms)
     with open(ANALYSIS_DIR / "assoc_summary.json", "w", encoding="utf-8") as f:

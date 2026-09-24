@@ -434,6 +434,17 @@ BEGGING Iran for mercy"). That frame is a creator-specific phenomenon (c), not a
 standard error, group), the group, leave-one-out and meta columns of
 `assoc_case_pairs.csv`.
 
+**The audiences' own networks.** The pair test of section 3 also runs on each channel group
+alone (its own creator x week strata, its own channel halves, the same gates), giving a left,
+a neutral and a right network (`assoc_edges_<group>.csv`, `assoc_nodes_<group>.csv`, with
+communities and node months), and every edge of the whole network carries the co-mentions
+each group contributed (`co_left`, `co_neutral`, `co_right` in `assoc_edges.csv`;
+`assoc_audience.json` has the groups' title counts). A third of the titles clears a third of
+the gates: 1,564 edges on the left, 5,585 on the neutral channels, 1,525 on the right, against
+11,714 for the whole. The page shows the four as separate networks, and colors the whole
+network's edges by audience balance, the difference of the left and right co-mention rates per
+thousand titles over their sum.
+
 **Complements.** Every other section can be fooled by one channel's habits; this is the
 check that none was.
 

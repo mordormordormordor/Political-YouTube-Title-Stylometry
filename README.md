@@ -50,7 +50,9 @@ Five answer a question of their own, each with its method and limitations:
   cross between them; a community opens into its words; a word gives its partners and a
   timeline of its months. Degree and strength follow the edges on screen (month, lift
   threshold), betweenness is the year's, and community detection is Louvain run in the page,
-  with a resolution slider and a reshuffle. `python -m pipeline_titles.network_page` rebuilds
+  with a resolution slider and a reshuffle. The left, neutral and right channels each have
+  their own network (the same test on their titles alone), and the whole network's edges can
+  be colored by which audience makes the pair. `python -m pipeline_titles.network_page` rebuilds
   it. Self-contained; open it directly in a browser.
 - `pipeline_titles/reports/title_stylometry.html`: the interactive page. A creator selector
   renders each profile card, and the two landscape maps (style space, topic space) show

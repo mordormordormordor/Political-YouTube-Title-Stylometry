@@ -1,0 +1,30 @@
+{
+ "titles": {
+  "left": 90981,
+  "neutral": 115350,
+  "right": 71107
+ },
+ "networks": {
+  "left": {
+   "pairs_tabulated": 7296,
+   "edges": 1564,
+   "nodes": 1034,
+   "communities": 94,
+   "modularity": 0.8400007863229403
+  },
+  "neutral": {
+   "pairs_tabulated": 14486,
+   "edges": 5585,
+   "nodes": 1823,
+   "communities": 45,
+   "modularity": 0.6902922118169446
+  },
+  "right": {
+   "pairs_tabulated": 3531,
+   "edges": 1525,
+   "nodes": 913,
+   "communities": 70,
+   "modularity": 0.8328214074903718
+  }
+ }
+}
