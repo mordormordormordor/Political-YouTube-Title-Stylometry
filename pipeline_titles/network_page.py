@@ -364,8 +364,9 @@ function nodeAt(px, py) {
 // ---------- panels ----------
 function buildLegend() {
   const legend = document.getElementById('legend'); legend.innerHTML = '';
-  commInfo.slice(0, PAL.length).forEach(c => { const s = document.createElement('span'); s.className = 'chip' + (hidden.has(c.id) ? ' off' : ''); s.innerHTML = `<i style="background:${c.color}"></i>${c.label} (${c.size})`;
-    s.addEventListener('click', () => { if (hidden.has(c.id)) hidden.delete(c.id); else hidden.add(c.id); s.classList.toggle('off'); draw(); }); legend.appendChild(s); });
+  commInfo.slice(0, PAL.length).forEach(c => { const s = document.createElement('span'); s.className = 'chip' + (openComm >= 0 && openComm !== c.id ? ' off' : ''); s.title = mode === 'words' ? 'show only this community (click again for all)' : 'select this community';
+    s.innerHTML = `<i style="background:${c.color}"></i>${c.label} (${c.size})`;
+    s.addEventListener('click', () => { if (mode === 'communities') { selectCommunity(c.id); return; } openComm = openComm === c.id ? -1 : c.id; selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; buildLegend(); showPanel(); fitVisible(); }); legend.appendChild(s); });
   const others = document.createElement('span'); others.className = 'chip'; others.innerHTML = `<i style="background:#b3b2ad"></i>${Math.max(0, commInfo.length - PAL.length)} smaller communities`; legend.appendChild(others);
   if (colorBy !== 'community') { const s = document.createElement('span'); s.className = 'chip'; s.innerHTML = `<i style="background:linear-gradient(90deg,#cde2fb,#0d366b);border-radius:2px;width:40px"></i>${colorBy}, light to dark`; legend.appendChild(s); }
 }
@@ -407,7 +408,7 @@ function rankingPanel() {
   h += "<div class='note'>Degree: how many partners. Strength: the sum of the partners' log2 lifts. Betweenness: how often the word lies on the shortest path between two others, a bridge between stories.</div>";
   panel.innerHTML = h;
   panel.querySelectorAll('tr.link').forEach(tr => tr.addEventListener('click', () => select(+tr.dataset.i)));
-  const b = panel.querySelector('#back'); if (b) b.addEventListener('click', () => { openComm = -1; setMode('communities'); });
+  const b = panel.querySelector('#back'); if (b) b.addEventListener('click', () => { openComm = -1; setMode('communities'); buildLegend(); });
 }
 function wordPanel(i) {
   const n = N[i], nb = (adj.get(i) || []).slice().sort((a, b) => b.lift - a.lift), c = commOf(i);
@@ -444,7 +445,7 @@ function setMode(m) {
   showPanel(); draw();
 }
 function selectCommunity(id) { selComm = id; showPanel(); draw(); }
-function openCommunity(id) { openComm = id; selComm = -1; selected = -1; setMode('words'); fitVisible(); }
+function openCommunity(id) { openComm = id; selComm = -1; selected = -1; setMode('words'); buildLegend(); fitVisible(); }
 function fitVisible() {
   const r = canvas.getBoundingClientRect(); const vis = N.filter((_, i) => visibleNode(i)); if (!vis.length) return;
   const xs = vis.map(n => n.x), ys = vis.map(n => n.y); const w = Math.max(...xs) - Math.min(...xs) || 1, h = Math.max(...ys) - Math.min(...ys) || 1;
@@ -452,7 +453,7 @@ function fitVisible() {
 }
 function select(i) {
   if (mode !== 'words') { openComm = -1; setMode('words'); }
-  if (i >= 0 && !visibleNode(i)) { openComm = -1; hidden.delete(comm[i]); }
+  if (i >= 0 && !visibleNode(i)) { openComm = -1; buildLegend(); }
   selected = i;
   if (i >= 0) { const n = N[i]; const r = canvas.getBoundingClientRect(); view.tx = r.width / 2 - n.x * view.k; view.ty = r.height / 2 - n.y * view.k; timelineFor(i); }
   else { timeline.classList.remove('open'); timeline.innerHTML = ''; setTimeout(resize, 160); }
@@ -477,8 +478,8 @@ canvas.addEventListener('mousemove', e => {
 canvas.addEventListener('mouseleave', () => { tip.style.display = 'none'; hover = -1; draw(); });
 canvas.addEventListener('wheel', e => { e.preventDefault(); const r = canvas.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top; const f = Math.exp(-e.deltaY * 0.0015); view.tx = px - (px - view.tx) * f; view.ty = py - (py - view.ty) * f; view.k *= f; draw(); }, {passive: false});
 window.addEventListener('keydown', e => { if (e.key === 'Escape') { if (mode === 'words') select(-1); else selectCommunity(-1); } });
-document.getElementById('tabC').addEventListener('click', () => { openComm = -1; setMode('communities'); });
-document.getElementById('tabW').addEventListener('click', () => { openComm = -1; setMode('words'); });
+document.getElementById('tabC').addEventListener('click', () => { openComm = -1; setMode('communities'); buildLegend(); });
+document.getElementById('tabW').addEventListener('click', () => { openComm = -1; setMode('words'); buildLegend(); });
 const dl = document.getElementById('terms'); N.slice().sort((a, b) => b.n - a.n).forEach(n => { const o = document.createElement('option'); o.value = n.t; dl.appendChild(o); });
 document.getElementById('q').addEventListener('change', e => { const i = byName.get(e.target.value.trim().toLowerCase()); if (i !== undefined) select(i); });
 const ms = document.getElementById('month'); MONTHS.forEach(m => { const o = document.createElement('option'); o.value = m; o.textContent = monthName(m) + ' 2026'; ms.appendChild(o); });
