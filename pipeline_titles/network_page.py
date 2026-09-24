@@ -21,6 +21,7 @@ The page is self-contained: no network access, no libraries.
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 import networkx as nx
 import numpy as np
@@ -68,15 +69,24 @@ def network_of(suffix: str, months: list[str], with_monthly: bool) -> dict:
     return out
 
 
-def build_data() -> dict:
+EXTRA_NETWORKS = ("left", "neutral", "right", "title_left", "title_neither", "title_right")   # any assoc_edges_<name>.csv with its nodes and node months
+
+
+def build_data(with_leaning: bool = True) -> dict:
+    """The page's data. with_leaning=False leaves out everything derived from the leaning labels (the
+    audience networks, the title-lean networks, the co-mentions by audience on each edge)."""
     nm = pd.read_csv(A / "assoc_node_months.csv")
     months = sorted(c[len("titles_"):] for c in nm.columns if c.startswith("titles_"))
     aud = json.loads((A / "assoc_audience.json").read_text()) if (A / "assoc_audience.json").exists() else {"titles": {}}
     networks = {"all": network_of("", months, True)}
-    for g in ("left", "neutral", "right"):
-        if (A / f"assoc_edges_{g}.csv").exists():
-            networks[g] = network_of(f"_{g}", months, False)
-            print(f"{g}: {len(networks[g]['nodes'])} nodes, {len(networks[g]['edges'])} edges", flush=True)
+    if not with_leaning:
+        networks["all"]["edges"] = [e[:6] for e in networks["all"]["edges"]]
+        aud = {"titles": {}}
+    else:
+        for g in EXTRA_NETWORKS:
+            if (A / f"assoc_edges_{g}.csv").exists() and (A / f"assoc_nodes_{g}.csv").exists() and (A / f"assoc_node_months_{g}.csv").exists():
+                networks[g] = network_of(f"_{g}", months, False)
+                print(f"{g}: {len(networks[g]['nodes'])} nodes, {len(networks[g]['edges'])} edges", flush=True)
     return {"networks": networks, "palette": CAT[:7], "group_titles": aud["titles"],
             "meta": {"nodes": len(networks["all"]["nodes"]), "edges": len(networks["all"]["edges"]), "months": months}}
 
@@ -107,10 +117,11 @@ button.small { border:1px solid var(--grid); background:var(--panel); border-rad
 .chip.off { opacity:.35; }
 .chip i { width:11px; height:11px; border-radius:50%; display:inline-block; }
 main { display:flex; height:calc(100% - 128px); }
-.stage { flex:1; display:flex; flex-direction:column; min-width:0; }
-canvas { flex:1; display:block; cursor:grab; min-height:0; }
-#timeline { height:0; overflow:hidden; border-top:1px solid var(--grid); background:var(--panel); transition:height .15s; }
-#timeline.open { height:190px; overflow:auto; }
+.stage { flex:1; position:relative; min-width:0; }
+canvas { position:absolute; inset:0; width:100%; height:100%; display:block; cursor:grab; }
+#timeline { position:absolute; left:0; right:0; bottom:0; max-height:0; overflow:hidden; border-top:1px solid var(--grid); background:rgba(244,243,240,0.94); transition:max-height .15s; }
+#timeline.open { max-height:190px; overflow:auto; }
+#timeline .close { position:absolute; right:10px; top:6px; cursor:pointer; color:var(--muted); font-size:12px; }
 .tl { display:grid; grid-template-columns:repeat(9, 1fr); gap:6px; padding:8px 12px; font-size:12px; }
 .tl .m { border-left:1px solid var(--grid); padding-left:6px; min-width:0; }
 .tl .m h4 { margin:0 0 2px; font-size:12px; color:var(--ink); font-weight:600; }
@@ -148,7 +159,7 @@ a.x { color:var(--accent); cursor:pointer; }
   <span class="tabs"><button id="tabC" class="on">Communities</button><button id="tabW">Words</button></span>
   <p id="intro">__NODES__ words, __EDGES__ edges. An edge joins two words that share titles beyond chance within the same channel and week, in both random halves of the channels (lift at least 2, from at least 5 channels). Start from the communities; open one to see its words.</p>
   <div class="controls">
-    <label>Network <select id="net"><option value="all">all channels</option><option value="left">left channels</option><option value="neutral">neutral channels</option><option value="right">right channels</option></select></label>
+    <label>Network <select id="net"></select></label>
     <label>Find <input type="search" id="q" list="terms" placeholder="a word"><datalist id="terms"></datalist></label>
     <label>Edges of <select id="month"><option value="all">the whole year</option></select></label>
     <label>Edge color <select id="edgecolor"><option value="strength">strength</option><option value="audience">audience</option></select></label>
@@ -220,7 +231,9 @@ const MONTHS = D.meta.months, PAL = D.palette, GT = D.group_titles;
 let NET = 'all', N = D.networks.all.nodes, E = D.networks.all.edges, MONTHLY = D.networks.all.monthly;
 let byName = new Map(N.map((n, i) => [n.t, i]));
 let edgeColor = 'strength';
-const NETNAME = {all: 'all channels', left: 'left channels', neutral: 'neutral channels', right: 'right channels'};
+const NETNAME = {all: 'all channels', left: 'left channels', neutral: 'neutral channels', right: 'right channels', title_left: 'titles labeled left', title_neither: 'titles labeled neither', title_right: 'titles labeled right'};
+const netSel = document.getElementById('net'); Object.keys(D.networks).forEach(k => { const o = document.createElement('option'); o.value = k; o.textContent = NETNAME[k] || k.replace(/_/g, ' '); netSel.appendChild(o); });
+if (Object.keys(D.networks).length < 2) netSel.parentElement.style.display = 'none';
 function audienceBalance(e) {
   // rates per thousand titles of the left and the right channels; -1 = only the left makes the pair, +1 = only the right
   if (e.length < 9 || !GT.left) return null;
@@ -238,7 +251,7 @@ function setNetwork(key) {
   byName = new Map(N.map((n, i) => [n.t, i])); deg = new Float64Array(N.length); str = new Float64Array(N.length);
   selected = -1; selComm = -1; openComm = -1; hover = -1; month = 'all'; document.getElementById('month').value = 'all';
   document.getElementById('month').disabled = key !== 'all'; document.getElementById('edgecolor').disabled = key !== 'all'; if (key !== 'all') { edgeColor = 'strength'; document.getElementById('edgecolor').value = 'strength'; }
-  document.getElementById('intro').textContent = `${N.length.toLocaleString()} words, ${E.length.toLocaleString()} edges among the ${NETNAME[key]}` + (key === 'all' ? '. An edge joins two words that share titles beyond chance within the same channel and week, in both random halves of the channels (lift at least 2, from at least 5 channels). Start from the communities; open one to see its words.' : `: the same test run on the ${GT[key].toLocaleString()} titles of those channels alone, with its own channel halves, communities and layout. Fewer titles mean fewer pairs clear the gates, so this network is sparser than the whole.`);
+  document.getElementById('intro').textContent = `${N.length.toLocaleString()} words, ${E.length.toLocaleString()} edges among the ${NETNAME[key] || key}` + (key === 'all' ? '. An edge joins two words that share titles beyond chance within the same channel and week, in both random halves of the channels (lift at least 2, from at least 5 channels). Start from the communities; open one to see its words.' : `: the same test run on ${GT[key] ? GT[key].toLocaleString() + ' ' : ''}titles alone, with their own channel halves, communities and layout. Fewer titles mean fewer pairs clear the gates, so this network is sparser than the whole.`);
   const dl = document.getElementById('terms'); dl.innerHTML = ''; N.slice().sort((a, b) => b.n - a.n).forEach(n => { const o = document.createElement('option'); o.value = n.t; dl.appendChild(o); });
   timeline.classList.remove('open'); timeline.innerHTML = '';
   buildEdges(); runCommunities(); view.init = false; resize(); showPanel();
@@ -406,10 +419,10 @@ function buildLegend() {
   const legend = document.getElementById('legend'); legend.innerHTML = '';
   commInfo.slice(0, PAL.length).forEach(c => { const s = document.createElement('span'); s.className = 'chip' + (openComm >= 0 && openComm !== c.id ? ' off' : ''); s.title = mode === 'words' ? 'show only this community (click again for all)' : 'select this community';
     s.innerHTML = `<i style="background:${c.color}"></i>${c.label} (${c.size})`;
-    s.addEventListener('click', () => { if (mode === 'communities') { selectCommunity(c.id); return; } openComm = openComm === c.id ? -1 : c.id; selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; buildLegend(); showPanel(); setTimeout(resize, 160); }); legend.appendChild(s); });
+    s.addEventListener('click', () => { if (mode === 'communities') { selectCommunity(c.id); return; } openComm = openComm === c.id ? -1 : c.id; selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; buildLegend(); showPanel(); draw(); }); legend.appendChild(s); });
   const others = document.createElement('span'); others.className = 'chip'; others.innerHTML = `<i style="background:#b3b2ad"></i>${Math.max(0, commInfo.length - PAL.length)} smaller communities`; legend.appendChild(others);
   if (colorBy !== 'community') { const s = document.createElement('span'); s.className = 'chip'; s.innerHTML = `<i style="background:linear-gradient(90deg,#cde2fb,#0d366b);border-radius:2px;width:40px"></i>${colorBy}, light to dark`; legend.appendChild(s); }
-  if (edgeColor === 'audience' && NET === 'all') { const s = document.createElement('span'); s.className = 'chip'; s.innerHTML = `<i style="background:linear-gradient(90deg,#2a78d6,#96958f,#eb6834);border-radius:2px;width:60px"></i>edges: left channels make the pair · both · right channels`; legend.appendChild(s); }
+  if (edgeColor === 'audience' && NET === 'all' && E.length && E[0].length >= 9) { const s = document.createElement('span'); s.className = 'chip'; s.innerHTML = `<i style="background:linear-gradient(90deg,#2a78d6,#96958f,#eb6834);border-radius:2px;width:60px"></i>edges: left channels make the pair · both · right channels`; legend.appendChild(s); }
 }
 function communityCards() {
   let h = `<h2>${commInfo.length} communities</h2><div class="sub">Louvain on the year's edges at resolution ${resolution.toFixed(1)}. Click a card or a disc; open it to see its words.</div>`;
@@ -455,7 +468,7 @@ function wordPanel(i) {
   const n = N[i], nb = (adj.get(i) || []).slice().sort((a, b) => b.lift - a.lift), c = commOf(i);
   let h = `<h2>${n.t}</h2><div class="sub">${n.n.toLocaleString()} titles · degree ${deg[i]} · strength ${str[i].toFixed(1)} · betweenness ${n.b} · community <a class="x" id="cm"><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${c.color}"></i> ${c.top.slice(0, 3).join(', ')}</a></div>`;
   h += `<div class="sub">${nb.length} partners ${month === 'all' ? 'over the year' : 'in ' + monthName(month)} at lift ≥ ${minLift}x</div>`;
-  const showAud = NET === 'all' && month === 'all' && GT.left;
+  const showAud = NET === 'all' && month === 'all' && GT.left && E.length && E[0].length >= 9;
   h += '<table><tr><th>partner</th><th class="num">lift</th>' + (month === 'all' ? '<th class="num">z</th>' : '') + '<th class="num">titles</th><th class="num">channels</th>' + (showAud ? '<th title="co-mentions per thousand titles of the left and of the right channels">L / R per 1k</th>' : '') + '</tr>';
   nb.forEach(a => { let aud = '';
     if (showAud && a.e) { const b = audienceBalance(a.e); if (b !== null) aud = `<td><i style="display:inline-block;width:9px;height:9px;border-radius:2px;background:${balanceColor(b)}1)"></i> ${(a.e[6] / GT.left * 1000).toFixed(1)} / ${(a.e[8] / GT.right * 1000).toFixed(1)}</td>`; else aud = '<td></td>'; }
@@ -476,9 +489,9 @@ function timelineFor(i) {
   });
   h += '</div>';
   if (NET !== 'all') h += '<div class="note" style="padding:0 12px 8px">Partners by month are computed for the all-channel network only; the bars are this audience\'s titles.</div>';
-  timeline.innerHTML = h; timeline.classList.add('open');
+  timeline.innerHTML = '<span class="close" title="hide the months">hide ×</span>' + h; timeline.classList.add('open');
   timeline.querySelectorAll('.p').forEach(el => el.addEventListener('click', () => select(+el.dataset.i)));
-  setTimeout(resize, 160);
+  timeline.querySelector('.close').addEventListener('click', () => timeline.classList.remove('open'));
 }
 function showPanel() {
   if (mode === 'communities') { if (selComm >= 0) communityDetail(selComm); else communityCards(); return; }
@@ -487,7 +500,7 @@ function showPanel() {
 // ---------- actions ----------
 function setMode(m) {
   mode = m; document.getElementById('tabC').classList.toggle('on', m === 'communities'); document.getElementById('tabW').classList.toggle('on', m === 'words');
-  if (m === 'communities') { selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; setTimeout(resize, 160); }
+  if (m === 'communities') { selected = -1; timeline.classList.remove('open'); timeline.innerHTML = ''; }
   showPanel(); draw();
 }
 function selectCommunity(id) { selComm = id; showPanel(); draw(); }
@@ -497,12 +510,16 @@ function fitVisible() {
   const xs = vis.map(n => n.x), ys = vis.map(n => n.y); const w = Math.max(...xs) - Math.min(...xs) || 1, h = Math.max(...ys) - Math.min(...ys) || 1;
   view.k = Math.min(r.width / w, r.height / h) * 0.8; view.tx = r.width / 2 - (Math.min(...xs) + w / 2) * view.k; view.ty = r.height / 2 - (Math.min(...ys) + h / 2) * view.k; draw();
 }
-function select(i) {
+function select(i, center) {
   if (mode !== 'words') { openComm = -1; setMode('words'); }
   if (i >= 0 && !visibleNode(i)) { openComm = -1; buildLegend(); }
   selected = i;
-  if (i >= 0) { const n = N[i]; const r = canvas.getBoundingClientRect(); view.tx = r.width / 2 - n.x * view.k; view.ty = r.height / 2 - n.y * view.k; timelineFor(i); }
-  else { timeline.classList.remove('open'); timeline.innerHTML = ''; setTimeout(resize, 160); }
+  if (i >= 0) {
+    const n = N[i]; const r = canvas.getBoundingClientRect();
+    const off = sx(n) < 20 || sy(n) < 20 || sx(n) > r.width - 20 || sy(n) > r.height - 20;
+    if (center || off) { view.tx = r.width / 2 - n.x * view.k; view.ty = r.height / 2 - n.y * view.k; }
+    timelineFor(i);
+  } else { timeline.classList.remove('open'); timeline.innerHTML = ''; }
   showPanel(); draw();
 }
 canvas.addEventListener('mousedown', e => { dragging = true; moved = false; last = [e.clientX, e.clientY]; canvas.style.cursor = 'grabbing'; });
@@ -527,7 +544,7 @@ window.addEventListener('keydown', e => { if (e.key === 'Escape') { if (mode ===
 document.getElementById('tabC').addEventListener('click', () => { openComm = -1; setMode('communities'); buildLegend(); });
 document.getElementById('tabW').addEventListener('click', () => { openComm = -1; setMode('words'); buildLegend(); });
 const dl = document.getElementById('terms'); N.slice().sort((a, b) => b.n - a.n).forEach(n => { const o = document.createElement('option'); o.value = n.t; dl.appendChild(o); });
-document.getElementById('q').addEventListener('change', e => { const i = byName.get(e.target.value.trim().toLowerCase()); if (i !== undefined) select(i); });
+document.getElementById('q').addEventListener('change', e => { const i = byName.get(e.target.value.trim().toLowerCase()); if (i !== undefined) select(i, true); });
 const ms = document.getElementById('month'); MONTHS.forEach(m => { const o = document.createElement('option'); o.value = m; o.textContent = monthName(m) + ' 2026'; ms.appendChild(o); });
 ms.addEventListener('change', e => { month = e.target.value; buildEdges(); layoutCommunities(); showPanel(); draw(); });
 document.getElementById('lift').addEventListener('input', e => { minLift = Math.pow(2, +e.target.value); document.getElementById('liftv').textContent = minLift.toFixed(minLift < 4 ? 1 : 0) + 'x'; buildEdges(); layoutCommunities(); showPanel(); draw(); });
@@ -548,11 +565,17 @@ buildEdges(); runCommunities(); showPanel(); resize();
 """
 
 
-def main() -> int:
-    data = build_data()
+def main(argv=None) -> int:
+    import argparse
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--no-leaning", action="store_true", help="leave out everything derived from the leaning labels (audience networks, audience colors): the build for the website")
+    ap.add_argument("--out", default=None, help="where to write (default: reports/word_network.html, or word_network_site.html with --no-leaning)")
+    a = ap.parse_args(argv)
+    out = Path(a.out) if a.out else (REPORTS_DIR / "word_network_site.html" if a.no_leaning else OUT)
+    data = build_data(with_leaning=not a.no_leaning)
     html = TEMPLATE.replace("__DATA__", json.dumps(data, separators=(",", ":")).replace("</", "<\\/")).replace("__NODES__", f"{data['meta']['nodes']:,}").replace("__EDGES__", f"{data['meta']['edges']:,}")
-    OUT.write_text(html, encoding="utf-8")
-    print(f"{OUT} ({OUT.stat().st_size / 1e6:.1f} MB): {data['meta']['nodes']:,} nodes, {data['meta']['edges']:,} edges, {len(data['networks'])} networks")
+    out.write_text(html, encoding="utf-8")
+    print(f"{out} ({out.stat().st_size / 1e6:.1f} MB): {data['meta']['nodes']:,} nodes, {data['meta']['edges']:,} edges, {len(data['networks'])} networks")
     return 0
 
 

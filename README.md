@@ -52,7 +52,8 @@ Five answer a question of their own, each with its method and limitations:
   threshold), betweenness is the year's, and community detection is Louvain run in the page,
   with a resolution slider and a reshuffle. The left, neutral and right channels each have
   their own network (the same test on their titles alone), and the whole network's edges can
-  be colored by which audience makes the pair. `python -m pipeline_titles.network_page` rebuilds
+  be colored by which audience makes the pair. `--no-leaning` writes `word_network_site.html`,
+  the build with nothing derived from the leaning labels, for the website. `python -m pipeline_titles.network_page` rebuilds
   it. Self-contained; open it directly in a browser.
 - `pipeline_titles/reports/title_stylometry.html`: the interactive page. A creator selector
   renders each profile card, and the two landscape maps (style space, topic space) show
