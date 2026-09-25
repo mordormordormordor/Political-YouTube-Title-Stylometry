@@ -1,5 +1,13 @@
 {
  "titles": 277545,
+ "corpus": {
+  "rows": 293697,
+  "channels": 275,
+  "unique_within_channel": 285013,
+  "cross_posts_dropped": 7468,
+  "kept": 277545,
+  "channels_kept": 275
+ },
  "vocab": 3673,
  "vocab_phrases": 278,
  "seen": {

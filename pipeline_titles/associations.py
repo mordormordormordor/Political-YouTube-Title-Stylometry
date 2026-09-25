@@ -290,6 +290,8 @@ def build_corpus() -> pd.DataFrame:
     uniq = uniq.sort_values(["published", "row_id"]).drop_duplicates(["org", "title_key"], keep="first")
     uniq = uniq.sort_values("row_id").reset_index(drop=True)
     print(f"{before:,} unique titles, {before - len(uniq):,} same-organization cross-posts dropped, {len(uniq):,} kept", flush=True)
+    uniq.attrs["corpus"] = {"rows": int(len(prepared)), "channels": int(prepared["creator"].nunique()), "unique_within_channel": int(before),
+                            "cross_posts_dropped": int(before - len(uniq)), "kept": int(len(uniq)), "channels_kept": int(uniq["creator"].nunique())}
     topics_path = ANALYSIS_DIR / "topics.csv.gz"
     if topics_path.exists():
         t = pd.read_csv(topics_path, usecols=["row_id", "political"])
@@ -1438,7 +1440,7 @@ def run(info: dict, case_only: bool = False, battery: Optional[str] = None) -> N
     uniq = build_corpus()
     title_terms, vocab, X, index = build_terms(uniq)
     vocab.to_csv(ANALYSIS_DIR / "assoc_vocab.csv", index=False)
-    info.update({"titles": int(len(uniq)), "vocab": int(len(vocab)), "vocab_phrases": int(vocab["is_phrase"].sum()), "seen": vocab.attrs.get("seen", {}), "thresholds": {"min_titles": MIN_TITLES, "min_channels": MIN_CHANNELS, "series_min_titles": SERIES_MIN_TITLES,
+    info.update({"titles": int(len(uniq)), "corpus": uniq.attrs.get("corpus", {}), "vocab": int(len(vocab)), "vocab_phrases": int(vocab["is_phrase"].sum()), "seen": vocab.attrs.get("seen", {}), "thresholds": {"min_titles": MIN_TITLES, "min_channels": MIN_CHANNELS, "series_min_titles": SERIES_MIN_TITLES,
                  "pair_min_obs": PAIR_MIN_OBS, "pair_min_channels": PAIR_MIN_CHANNELS, "q_fdr": Q_FDR, "lift_min": LIFT_MIN, "lag_max": LAG_MAX, "spline_knots": SPLINE_KNOTS}})
     if battery:
         info["battery"] = battery_block(uniq, title_terms, vocab, battery)
