@@ -6,6 +6,7 @@ prior (Monroe, Colaresi & Quinn 2008), rank-turbulence divergence (Dodds et al.
 from __future__ import annotations
 
 import re
+import unicodedata
 from collections import Counter
 from typing import Iterable, Optional, Sequence
 
@@ -20,6 +21,14 @@ except Exception:  # pragma: no cover
 
 VOCAB_STOP = frozenset(set(STOPWORDS) | set(ENGLISH_STOP_WORDS) | {"amp", "vs", "w", "ft", "ep", "pt", "live", "new", "news", "video", "full", "show", "watch", "podcast", "ing", "ed", "er"})
 _TOKEN_RE = re.compile(r"[a-z][a-z'’-]*[a-z]|[a-z]")
+
+
+def fold_accents(text: str) -> str:
+    """Accented letters folded to their base letters before tokenizing ("Nicolás" -> "Nicolas", "Orbán" -> "Orban"):
+    the text is decomposed (NFKD) and the combining marks dropped, so a name spelled with and without its accent is one
+    word rather than two, and the letter run no longer breaks at the accent. Letters with no decomposition (ß, ø) are
+    left as they are; a non-Latin script loses its combining marks too, but its letters never form a token anyway."""
+    return "".join(c for c in unicodedata.normalize("NFKD", str(text)) if not unicodedata.combining(c))
 _WORD_RE = re.compile(r"[A-Za-z][A-Za-z'’]+")
 FUNCTION_WORDS = {"a", "an", "the", "of", "in", "on", "at", "to", "for", "and", "or", "but", "with", "by", "vs", "from", "as", "is",
                   "are", "was", "be", "it", "its", "nor", "per", "via", "into", "over", "than", "that", "this", "up", "out", "off", "so", "if"}
@@ -33,7 +42,7 @@ def vocab_tokens(text: str, min_len: int = 2) -> list[str]:
     """Lower-cased word tokens minus stopwords and digits (for vocabulary tables);
     curly apostrophes normalized and possessive 's dropped ("Trump’s" -> "trump")."""
     out = []
-    for t in _TOKEN_RE.findall(str(text).lower().replace("’", "'")):
+    for t in _TOKEN_RE.findall(fold_accents(text).lower().replace("’", "'")):
         if t.endswith("'s"):
             t = t[:-2]
         if len(t) >= min_len and t not in VOCAB_STOP:

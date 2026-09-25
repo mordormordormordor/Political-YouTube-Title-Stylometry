@@ -77,11 +77,11 @@ house correspondents,house,correspondents,0,289,51,0.5035,False
 winter storm,winter,storm,0,287,33,0.7277,False
 savannah guthrie,savannah,guthrie,0,283,33,0.7176,False
 board of peace,board,peace,1,282,47,0.5901,False
-death toll,death,toll,0,279,37,0.654,False
+death toll,death,toll,0,279,37,0.6539,False
 piers morgan,piers,morgan,0,279,55,0.9507,True
 regime change,regime,change,0,273,73,0.6209,False
 super bowl,super,bowl,0,270,80,0.9225,True
-ben shapiro,ben,shapiro,0,268,60,0.728,False
+ben shapiro,ben,shapiro,0,268,60,0.7282,False
 tulsi gabbard,tulsi,gabbard,0,268,74,0.9211,True
 fed chair,fed,chair,0,267,40,0.6932,False
 tom homan,tom,homan,0,265,53,0.8409,False
@@ -92,11 +92,11 @@ south carolina,south,carolina,0,256,40,0.6932,False
 fox host,fox,host,0,254,24,0.5626,False
 stephen miller,stephen,miller,0,254,57,0.7787,False
 dhs funding,dhs,funding,0,253,31,0.5703,False
+renee good,renee,good,0,253,67,0.7792,False
 alex jones,alex,jones,0,252,62,0.7017,False
 secret service,secret,service,0,252,56,0.5528,False
 epic fury,epic,fury,0,251,36,0.8031,False
 markwayne mullin,markwayne,mullin,0,251,36,0.9111,True
-renee good,renee,good,0,251,67,0.7786,False
 breaks silence,breaks,silence,0,246,52,0.6164,False
 real reason,real,reason,0,246,89,0.634,False
 border patrol,border,patrol,0,240,55,0.7507,False
@@ -117,7 +117,7 @@ jesse jackson,jesse,jackson,0,226,46,0.6973,False
 mike johnson,mike,johnson,0,226,44,0.6073,False
 ro khanna,ro,khanna,0,226,63,0.9713,True
 sounds alarm,sounds,alarm,0,224,38,0.7929,False
-th anniversary,th,anniversary,0,224,45,0.6111,False
+th anniversary,th,anniversary,0,224,45,0.6113,False
 breaks loose,breaks,loose,0,222,18,0.7039,False
 jack posobiec,jack,posobiec,0,221,14,0.8008,False
 kennedy center,kennedy,center,0,220,45,0.6742,False
@@ -137,7 +137,7 @@ nyc mayor,nyc,mayor,0,195,40,0.5041,False
 justice department,justice,department,0,194,29,0.7199,False
 eric swalwell,eric,swalwell,0,193,59,0.7588,False
 foreign policy,foreign,policy,0,193,53,0.5638,False
-red line,red,line,0,193,43,0.5656,False
+red line,red,line,0,193,43,0.5658,False
 rand paul,rand,paul,0,192,46,0.8715,False
 hunter biden,hunter,biden,0,191,71,0.755,False
 ebola outbreak,ebola,outbreak,0,189,32,0.7252,False
@@ -177,6 +177,7 @@ laura ingraham,laura,ingraham,0,162,14,0.9091,True
 won't believe,won't,believe,0,162,33,0.5617,False
 fighter jets,fighter,jets,0,160,25,0.7299,False
 jeffrey sachs,jeffrey,sachs,0,159,17,0.8363,False
+nicolas maduro,nicolas,maduro,0,159,41,0.6872,False
 turning point,turning,point,0,159,56,0.6606,False
 confirmation hearing,confirmation,hearing,0,156,33,0.5787,False
 glenn beck,glenn,beck,0,155,26,0.8804,False
@@ -184,7 +185,7 @@ jimmy kimmel,jimmy,kimmel,0,154,53,0.8522,True
 sources say,sources,say,0,154,10,0.6299,False
 ballistic missiles,ballistic,missiles,0,152,24,0.5826,False
 khamenei funeral,khamenei,funeral,0,152,18,0.5595,False
-union address,union,address,0,151,47,0.5196,False
+union address,union,address,0,151,47,0.5198,False
 holy sh,holy,sh,0,149,16,0.7326,False
 red carpet,red,carpet,0,149,20,0.6752,False
 stephen a smith,stephen,smith,1,149,39,0.6114,False
@@ -192,7 +193,7 @@ washington dc,washington,dc,0,147,29,0.5408,False
 larry johnson,larry,johnson,0,145,10,0.6981,False
 homeland security,homeland,security,0,144,33,0.6034,False
 nepal floods,nepal,floods,0,144,17,0.5975,False
-th amendment,th,amendment,0,144,51,0.581,False
+th amendment,th,amendment,0,144,51,0.5812,False
 protests erupt,protests,erupt,0,143,39,0.5414,False
 voter id,voter,id,0,143,43,0.7452,False
 andrew wilson,andrew,wilson,0,141,37,0.6584,False
@@ -205,7 +206,7 @@ mental health,mental,health,0,136,48,0.6073,False
 tiger woods,tiger,woods,0,135,27,0.9327,True
 tim pool,tim,pool,0,135,41,0.5448,False
 natalie harp,natalie,harp,0,134,42,0.9087,True
-death penalty,death,penalty,0,133,42,0.6283,False
+death penalty,death,penalty,0,133,42,0.6282,False
 scott jennings,scott,jennings,0,133,35,0.7454,False
 pleads guilty,pleads,guilty,0,131,43,0.6642,False
 prince harry,prince,harry,0,131,20,0.7123,False
@@ -214,7 +215,7 @@ midterm convention,midterm,convention,0,129,29,0.6202,False
 service members,service,members,0,129,29,0.5459,False
 ballistic missile,ballistic,missile,0,128,18,0.508,False
 bilateral meeting,bilateral,meeting,0,127,14,0.5165,False
-dr oz,dr,oz,0,126,35,0.6669,False
+dr oz,dr,oz,0,126,35,0.667,False
 jim jordan,jim,jordan,0,126,29,0.6722,False
 years later,years,later,0,126,53,0.5956,False
 fulton county,fulton,county,0,125,23,0.8706,False
@@ -242,23 +243,24 @@ abraham lincoln,abraham,lincoln,0,116,28,0.8108,False
 john bolton,john,bolton,0,116,37,0.67,False
 magnitude earthquake,magnitude,earthquake,0,116,16,0.7291,False
 henry nowak,henry,nowak,0,115,39,0.9181,True
-medal of honor,medal,honor,1,115,29,0.7911,False
+medal of honor,medal,honor,1,115,29,0.7921,False
 taylor greene,taylor,greene,0,115,42,0.7927,False
 pays tribute,pays,tribute,0,114,19,0.7763,False
+raul castro,raul,castro,0,114,29,0.9466,True
 vladimir putin,vladimir,putin,0,114,19,0.5539,False
 jill biden,jill,biden,0,113,35,0.712,False
 spirit airlines,spirit,airlines,0,113,40,0.8214,False
 steve hilton,steve,hilton,0,113,34,0.6521,False
 adam carolla,adam,carolla,0,111,19,0.8255,False
 james comey,james,comey,0,111,39,0.6205,False
-th birthday,th,birthday,0,111,35,0.5464,False
+th birthday,th,birthday,0,111,35,0.5466,False
 michelle obama,michelle,obama,0,110,47,0.6954,False
 coast guard,coast,guard,0,109,29,0.6733,False
 guthrie disappearance,guthrie,disappearance,0,109,18,0.5618,False
 lake ontario,lake,ontario,0,109,37,0.8375,False
 north carolina,north,carolina,0,108,31,0.61,False
 michigan synagogue,michigan,synagogue,0,107,24,0.6921,False
-el mencho,el,mencho,0,105,34,0.8594,False
+el mencho,el,mencho,0,105,34,0.8598,False
 caught on camera,caught,camera,1,104,41,0.5183,False
 jon ossoff,jon,ossoff,0,104,37,0.7895,False
 human rights,human,rights,0,103,25,0.5616,False
@@ -314,6 +316,7 @@ insider trading,insider,trading,0,86,46,0.7608,False
 james comer,james,comer,0,86,18,0.6363,False
 space station,space,station,0,86,17,0.6328,False
 trita parsi,trita,parsi,0,86,20,0.9944,True
+delcy rodriguez,delcy,rodriguez,0,85,20,0.922,True
 flock cameras,flock,cameras,0,85,43,0.7723,False
 iron dome,iron,dome,0,85,17,0.8862,True
 speaker johnson,speaker,johnson,0,85,22,0.5731,False
@@ -326,6 +329,7 @@ delaney hall,delaney,hall,0,82,27,0.8389,False
 karen bass,karen,bass,0,82,31,0.8305,False
 ransom note,ransom,note,0,82,15,0.7749,False
 victor davis,victor,davis,0,82,14,0.7847,False
+viktor orban,viktor,orban,0,82,30,0.8374,False
 aircraft carrier,aircraft,carrier,0,81,27,0.684,False
 detention center,detention,center,0,81,25,0.5329,False
 dire warning,dire,warning,0,81,25,0.5256,False
@@ -335,15 +339,13 @@ power plants,power,plants,0,81,27,0.5266,False
 rude awakening,rude,awakening,0,81,12,0.954,True
 south korean,south,korean,0,81,14,0.5511,False
 benjamin netanyahu,benjamin,netanyahu,0,80,29,0.563,False
-nicol s maduro,nicol,maduro,1,80,25,0.6431,False
 preliminary hearing,preliminary,hearing,0,80,22,0.5618,False
 sophie cunningham,sophie,cunningham,0,80,34,0.9611,True
 dark past,dark,past,0,79,10,0.5596,False
 explosions rock,explosions,rock,0,79,10,0.6339,False
 hayden panettiere,hayden,panettiere,0,79,23,0.9796,True
 lady melania,lady,melania,0,79,19,0.5688,False
-nicolas maduro,nicolas,maduro,0,79,27,0.6158,False
-peter mandelson,peter,mandelson,0,79,15,0.6162,False
+peter mandelson,peter,mandelson,0,79,15,0.6104,False
 powers resolution,powers,resolution,0,79,25,0.7227,False
 task force,task,force,0,79,28,0.6411,False
 chris cuomo,chris,cuomo,0,78,15,0.5541,False
@@ -355,7 +357,7 @@ sharia law,sharia,law,0,78,24,0.6212,False
 tupac shakur,tupac,shakur,0,78,17,0.8878,False
 extreme heat,extreme,heat,0,77,20,0.6446,False
 grand prix,grand,prix,0,76,25,0.7871,False
-jean carroll,jean,carroll,0,76,35,0.9548,True
+jean carroll,jean,carroll,0,76,35,0.9561,True
 second term,second,term,0,76,26,0.5283,False
 colombia earthquake,colombia,earthquake,0,74,16,0.535,False
 howard lutnick,howard,lutnick,0,74,29,0.849,False
@@ -398,10 +400,11 @@ heavy rain,heavy,rain,0,66,13,0.6338,False
 st petersburg,st,petersburg,0,66,17,0.7581,False
 takes aim,takes,aim,0,66,26,0.5569,False
 cory booker,cory,booker,0,65,28,0.9185,True
+el nino,el,nino,0,65,18,0.808,False
 haley stevens,haley,stevens,0,65,28,0.9288,True
 humanoid robots,humanoid,robots,0,65,19,0.7996,False
 rev jesse,rev,jesse,0,65,20,0.6065,False
-ana kasparian,ana,kasparian,0,64,28,0.8925,False
+ana kasparian,ana,kasparian,0,64,28,0.8933,False
 cargo ship,cargo,ship,0,64,20,0.5479,False
 common sense,common,sense,0,64,28,0.7976,False
 deadline looms,deadline,looms,0,64,23,0.5635,False
@@ -418,7 +421,7 @@ met gala,met,gala,0,62,30,0.7794,False
 dignified transfer,dignified,transfer,0,61,22,0.9217,True
 francesca hong,francesca,hong,0,61,31,0.8321,False
 jay clayton,jay,clayton,0,61,16,0.7848,False
-pay tribute,pay,tribute,0,61,11,0.5044,False
+pay tribute,pay,tribute,0,61,11,0.5046,False
 soccer team,soccer,team,0,61,19,0.5193,False
 years ago,years,ago,0,61,37,0.5487,False
 blue origin,blue,origin,0,60,21,0.7265,False
@@ -428,7 +431,6 @@ glenn greenwald,glenn,greenwald,0,60,19,0.7596,False
 issues stark,issues,stark,0,60,14,0.5595,False
 prediction markets,prediction,markets,0,60,24,0.5747,False
 professor jiang,professor,jiang,0,60,18,0.762,False
-ra l castro,ra,castro,1,60,18,0.8711,False
 ayatollah ali,ayatollah,ali,0,59,16,0.6338,False
 bowl halftime,bowl,halftime,0,59,38,0.6731,False
 chip roy,chip,roy,0,59,13,0.7223,False
@@ -448,7 +450,6 @@ randy fine,randy,fine,0,58,26,0.8632,False
 simple question,simple,question,0,58,26,0.5828,False
 tate brothers,tate,brothers,0,58,35,0.7177,False
 daily wire,daily,wire,0,57,29,0.6035,False
-delcy rodriguez,delcy,rodriguez,0,57,14,0.8712,True
 elizabeth warren,elizabeth,warren,0,57,26,0.6289,False
 ethan klein,ethan,klein,0,57,13,0.9121,True
 firefighters battle,firefighters,battle,0,57,10,0.5552,False
@@ -464,7 +465,7 @@ whca dinner,whca,dinner,0,57,14,0.653,False
 artificial intelligence,artificial,intelligence,0,56,21,0.7309,False
 billie eilish,billie,eilish,0,56,36,0.9841,True
 gilgo beach,gilgo,beach,0,56,12,0.8064,False
-nancy grace,nancy,grace,0,56,17,0.5651,False
+nancy grace,nancy,grace,0,56,17,0.5639,False
 nicki minaj,nicki,minaj,0,56,32,0.9799,True
 scorched earth,scorched,earth,0,56,29,0.7449,False
 brandon gill,brandon,gill,0,55,25,0.7968,False
@@ -480,14 +481,13 @@ derangement syndrome,derangement,syndrome,0,54,31,0.9098,True
 exact moment,exact,moment,0,54,11,0.6144,False
 guilty plea,guilty,plea,0,54,16,0.5139,False
 john thune,john,thune,0,54,23,0.5389,False
-raul castro,raul,castro,0,54,23,0.8595,False
 rescue teams,rescue,teams,0,54,14,0.5418,False
 tim cook,tim,cook,0,54,20,0.5517,False
 cenk uygur,cenk,uygur,0,53,32,0.8529,False
 hantavirus cruise,hantavirus,cruise,0,53,19,0.5261,False
 lauren boebert,lauren,boebert,0,53,24,0.8416,False
 real estate,real,estate,0,53,24,0.5483,False
-van hollen,van,hollen,0,53,20,0.8107,False
+van hollen,van,hollen,0,53,20,0.8102,False
 adam mockler,adam,mockler,0,52,22,0.7533,False
 ballroom construction,ballroom,construction,0,52,16,0.5992,False
 bodycam footage,bodycam,footage,0,52,25,0.5473,False
@@ -508,5 +508,4 @@ wes moore,wes,moore,0,51,23,0.83,False
 partial shutdown,partial,shutdown,0,50,14,0.5337,False
 rhode island,rhode,island,0,50,20,0.7042,False
 ryan grim,ryan,grim,0,50,18,0.7422,False
-viktor orb,viktor,orb,0,50,23,0.8254,False
 year-old boy,year-old,boy,0,50,20,0.5738,False

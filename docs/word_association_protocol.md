@@ -49,8 +49,10 @@ instead of them: "epstein" counts whether or not the title says "epstein files",
 word is never tested against the phrase that contains it or against the other word of
 its own phrase, so "epstein" with "files" is not a pair in any table below (the
 case-study concept tests, which work from indicator columns, still report it). The
-tokenizer's one weakness shows in the phrase list: an accented name splits ("nicol s
-maduro"), which a Unicode-aware token rule would fix.
+tokenizer folds accents to their base letters before it reads a word (NFKD, combining marks
+dropped, 2026-09-25): "Nicolás Maduro" is "nicolas maduro", one phrase, where before the
+letter run broke at the accent and left "nicol" as a fragment; a name spelled with and without
+its accent is one word.
 
 **No stemming or lemmatization for names; a documented alias table for everything else.**
 Political vocabulary is where stemmers do harm: "files" and "file" are different stories
@@ -691,8 +693,7 @@ and `topics.csv.gz`, reuses the year stage's tokenizer, and is not yet registere
 `--case-only` reruns section 10 in 45 seconds.
 
 What it does not yet do, in the order worth building: a channel bootstrap of community
-co-membership; rank-turbulence drift instead of Jaccard; a Unicode-aware token rule for
-accented names; the negative-association screen of section 3 as its own table; and the
+co-membership; rank-turbulence drift instead of Jaccard; the negative-association screen of section 3 as its own table; and the
 figures of section 9 in the figures stage. The battery's per-pair regression is the one case-study test it
 skips, and `--battery-summary` rebuilds its readings and per-word table from the saved
 pairs without recomputing.

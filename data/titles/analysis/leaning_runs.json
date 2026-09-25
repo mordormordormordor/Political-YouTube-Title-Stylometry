@@ -60,5 +60,22 @@
     "started": "2026-09-18T13:44:18+00:00",
     "finished": "2026-09-18T15:57:03+00:00",
     "labels": "repeat"
+  },
+  {
+    "run": 5,
+    "what": "every title again, a fresh shuffle",
+    "batch_order": "shuffled",
+    "titles": 12478,
+    "calls": 3,
+    "minutes": 1.0,
+    "output_tokens": 3938,
+    "reported_cost_usd": 0.3663,
+    "model_ids": [
+      "claude-opus-5"
+    ],
+    "shuffle_seed": 20260914,
+    "started": "2026-09-24T14:45:00+00:00",
+    "finished": "2026-09-24T14:46:02+00:00",
+    "labels": "repeat"
   }
 ]

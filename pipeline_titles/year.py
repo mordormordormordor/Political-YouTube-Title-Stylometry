@@ -72,7 +72,7 @@ import pandas as pd
 from pipeline_titles.annotate import build_case_lexicon
 from pipeline_titles.common import ANALYSIS_DIR, WINDOW_FROM, WINDOW_TO, load_prepared, stage_timer
 from pipeline_titles.profiles import tag_words
-from pipeline_titles.textstats import _TOKEN_RE, CAPS_LABELS, VOCAB_STOP, shouted_words, weighted_log_odds
+from pipeline_titles.textstats import _TOKEN_RE, CAPS_LABELS, VOCAB_STOP, fold_accents, shouted_words, weighted_log_odds
 
 VOCAB = 400
 BIGRAM_MIN_TITLES = 50
@@ -98,7 +98,7 @@ def week_of(published: str) -> str:
 def content_tokens(text: str) -> list[tuple[str, bool]]:
     """The title's tokens in order, each with whether it is a content word (vocab_tokens's rule: two or more letters, not a stopword), possessives folded."""
     out = []
-    for t in _TOKEN_RE.findall(str(text).lower().replace("\u2019", "'")):
+    for t in _TOKEN_RE.findall(fold_accents(text).lower().replace("\u2019", "'")):
         if t.endswith("'s"):
             t = t[:-2]
         out.append((t, len(t) >= 2 and t not in VOCAB_STOP))

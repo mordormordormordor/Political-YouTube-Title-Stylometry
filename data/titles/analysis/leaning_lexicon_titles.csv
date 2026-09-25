@@ -4007,7 +4007,7 @@ row_id,creator,label,lexicon_class,n_left_words,n_right_words,fold
 184616,@AssociatedPress,neither,left,1,0,1
 184754,@AssociatedPress,neither,neither,0,0,1
 185428,@AssociatedPress,neither,left,3,0,1
-185487,@AssociatedPress,neither,left,2,1,1
+185487,@AssociatedPress,neither,left,2,0,1
 185499,@AssociatedPress,neither,neither,0,0,1
 185524,@AssociatedPress,neither,left,2,0,1
 185812,@AssociatedPress,neither,left,2,0,1
@@ -10915,7 +10915,7 @@ row_id,creator,label,lexicon_class,n_left_words,n_right_words,fold
 66074,@usefulidiots,left,left,4,0,4
 68417,@thegrayzone7996,left,left,1,0,4
 68418,@thegrayzone7996,left,neither,0,0,4
-68419,@thegrayzone7996,neither,left,1,0,4
+68419,@thegrayzone7996,neither,neither,1,1,4
 68421,@thegrayzone7996,neither,neither,0,0,4
 68424,@thegrayzone7996,left,neither,1,1,4
 68428,@thegrayzone7996,left,right,0,1,4

@@ -112,3 +112,13 @@ def test_pick_examples_prefers_a_title_that_also_carries_a_companion():
     assert got.iloc[0]["example_with"] == "golf" and got.iloc[0]["example_title"] == "Trump talks golf"   # golf travels with trump in more titles
     got = pick_examples(uniq, hits, "week", [("w", "trump")], {("w", "trump"): ["iran"]}, terms)
     assert got.iloc[0]["example_title"] == "Trump talks golf" and got.iloc[0]["example_with"] == ""
+
+
+def test_fold_accents_keeps_names_whole():
+    """An accented name is one word, folded to its base letters, in both tokenizers; a letter with no decomposition stays."""
+    from pipeline_titles.textstats import fold_accents, vocab_tokens
+    from pipeline_titles.year import content_tokens
+
+    assert vocab_tokens("Nicolás Maduro meets Viktor Orbán") == ["nicolas", "maduro", "meets", "viktor", "orban"]
+    assert [t for t, ok in content_tokens("Raúl Castro's Cuba") if ok] == ["raul", "castro", "cuba"]
+    assert fold_accents("Straße") == "Straße"

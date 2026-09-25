@@ -6,18 +6,18 @@
  },
  "networks": {
   "left": {
-   "pairs_tabulated": 7297,
-   "edges": 1591,
-   "nodes": 1054,
-   "communities": 85,
-   "modularity": 0.8441337669471141
+   "pairs_tabulated": 7301,
+   "edges": 1592,
+   "nodes": 1056,
+   "communities": 88,
+   "modularity": 0.8447248271296891
   },
   "neutral": {
-   "pairs_tabulated": 14487,
-   "edges": 5596,
-   "nodes": 1807,
+   "pairs_tabulated": 14500,
+   "edges": 5609,
+   "nodes": 1811,
    "communities": 45,
-   "modularity": 0.6881124420859724
+   "modularity": 0.6901712529996997
   },
   "right": {
    "pairs_tabulated": 3532,

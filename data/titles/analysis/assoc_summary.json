@@ -1,6 +1,6 @@
 {
  "titles": 277545,
- "vocab": 3670,
+ "vocab": 3673,
  "thresholds": {
   "min_titles": 100,
   "min_channels": 10,
@@ -13,37 +13,37 @@
   "spline_knots": 6
  },
  "temporal": {
-  "series_terms": 1747,
+  "series_terms": 1748,
   "days": 257,
-  "pairs_tested": 1524735,
-  "pairs_q01": 348,
-  "pairs_q05": 662,
-  "pairs_replicated": 591,
-  "shift_null_fdr_at_q05_cutoff": 0.23114097641250686
+  "pairs_tested": 1526482,
+  "pairs_q01": 349,
+  "pairs_q05": 664,
+  "pairs_replicated": 592,
+  "shift_null_fdr_at_q05_cutoff": 0.23270787746170676
  },
  "pairs": {
-  "pairs_tabulated": 31435,
-  "pairs_q01_positive": 19135,
+  "pairs_tabulated": 31460,
+  "pairs_q01_positive": 19159,
   "pairs_q01_negative": 2093,
-  "pairs_replicated": 13856,
-  "edges": 11854,
+  "pairs_replicated": 13877,
+  "edges": 11880,
   "strata": 9363,
-  "curveball_fdr_positive_at_q01_cutoff": 0.012432714920303109
+  "curveball_fdr_positive_at_q01_cutoff": 0.011884753901560624
  },
  "network": {
-  "nodes": 2760,
-  "edges": 11854,
-  "communities": 32,
-  "modularity": 0.5952034557219178,
+  "nodes": 2764,
+  "edges": 11880,
+  "communities": 31,
+  "modularity": 0.5915514584014344,
   "focus_community": {
    "epstein": 2,
-   "iran": 6,
-   "war": 8
+   "iran": 9,
+   "war": 4
   },
   "focus_co_membership_across_seeds": {
    "epstein|iran": 0.0,
    "epstein|war": 0.0,
-   "iran|war": 0.25
+   "iran|war": 0.2
   }
  },
  "audience": {
@@ -54,18 +54,18 @@
   },
   "networks": {
    "left": {
-    "pairs_tabulated": 7297,
-    "edges": 1591,
-    "nodes": 1054,
-    "communities": 85,
-    "modularity": 0.8441337669471141
+    "pairs_tabulated": 7301,
+    "edges": 1592,
+    "nodes": 1056,
+    "communities": 88,
+    "modularity": 0.8447248271296891
    },
    "neutral": {
-    "pairs_tabulated": 14487,
-    "edges": 5596,
-    "nodes": 1807,
+    "pairs_tabulated": 14500,
+    "edges": 5609,
+    "nodes": 1811,
     "communities": 45,
-    "modularity": 0.6881124420859724
+    "modularity": 0.6901712529996997
    },
    "right": {
     "pairs_tabulated": 3532,
@@ -78,7 +78,7 @@
  },
  "monthly": {
   "months": 9,
-  "terms_with_drift": 513
+  "terms_with_drift": 514
  },
  "case": {
   "case_pairs": 9
