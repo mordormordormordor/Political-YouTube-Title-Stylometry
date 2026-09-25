@@ -369,7 +369,10 @@ def build_terms(uniq: pd.DataFrame) -> tuple[list[set[str]], pd.DataFrame, sp.cs
     phrases.to_csv(ANALYSIS_DIR / "assoc_phrases.csv", index=False)
     vocab = pd.DataFrame([(w, n, len(channels[w]), w in accepted, "|".join(phrase_words[w]) if w in accepted else "") for w, n in n_titles.items()],
                          columns=["term", "n_titles", "n_channels", "is_phrase", "phrase_words"])
+    seen = {"terms": int(len(vocab)), "words": int((~vocab["is_phrase"]).sum()), "phrases": int(vocab["is_phrase"].sum()),
+            "terms_at_min_titles": int((vocab["n_titles"] >= MIN_TITLES).sum())}           # before the floors, for the write-up
     vocab = vocab[(vocab["n_titles"] >= MIN_TITLES) & (vocab["n_channels"] >= MIN_CHANNELS)].sort_values(["n_titles", "term"], ascending=[False, True]).reset_index(drop=True)
+    vocab.attrs["seen"] = seen
     index = {w: i for i, w in enumerate(vocab["term"])}
     rows, cols = [], []
     for r, terms in enumerate(title_terms):
@@ -1435,7 +1438,7 @@ def run(info: dict, case_only: bool = False, battery: Optional[str] = None) -> N
     uniq = build_corpus()
     title_terms, vocab, X, index = build_terms(uniq)
     vocab.to_csv(ANALYSIS_DIR / "assoc_vocab.csv", index=False)
-    info.update({"titles": int(len(uniq)), "vocab": int(len(vocab)), "thresholds": {"min_titles": MIN_TITLES, "min_channels": MIN_CHANNELS, "series_min_titles": SERIES_MIN_TITLES,
+    info.update({"titles": int(len(uniq)), "vocab": int(len(vocab)), "vocab_phrases": int(vocab["is_phrase"].sum()), "seen": vocab.attrs.get("seen", {}), "thresholds": {"min_titles": MIN_TITLES, "min_channels": MIN_CHANNELS, "series_min_titles": SERIES_MIN_TITLES,
                  "pair_min_obs": PAIR_MIN_OBS, "pair_min_channels": PAIR_MIN_CHANNELS, "q_fdr": Q_FDR, "lift_min": LIFT_MIN, "lag_max": LAG_MAX, "spline_knots": SPLINE_KNOTS}})
     if battery:
         info["battery"] = battery_block(uniq, title_terms, vocab, battery)

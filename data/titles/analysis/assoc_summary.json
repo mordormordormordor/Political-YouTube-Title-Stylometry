@@ -1,6 +1,13 @@
 {
  "titles": 277545,
  "vocab": 3673,
+ "vocab_phrases": 278,
+ "seen": {
+  "terms": 57251,
+  "words": 56741,
+  "phrases": 510,
+  "terms_at_min_titles": 3837
+ },
  "thresholds": {
   "min_titles": 100,
   "min_channels": 10,
